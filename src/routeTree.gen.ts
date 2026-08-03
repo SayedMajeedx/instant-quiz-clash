@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as JoinRouteImport } from './routes/join'
 import { Route as PlayCodeRouteImport } from './routes/play.$code'
 import { Route as AuthenticatedHostIndexRouteImport } from './routes/_authenticated/host.index'
@@ -20,6 +21,10 @@ import { Route as AuthenticatedQuizzesQuizIdRouteImport } from './routes/_authen
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const JoinRoute = JoinRouteImport.update({
@@ -33,26 +38,26 @@ const PlayCodeRoute = PlayCodeRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthenticatedHostIndexRoute = AuthenticatedHostIndexRouteImport.update({
-  id: '/_authenticated/host/',
+  id: '/host/',
   path: '/host/',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const AuthenticatedHostCodeRoute = AuthenticatedHostCodeRouteImport.update({
-  id: '/_authenticated/host/$code',
+  id: '/host/$code',
   path: '/host/$code',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const AuthenticatedQuizzesIndexRoute =
   AuthenticatedQuizzesIndexRouteImport.update({
-    id: '/_authenticated/quizzes/',
+    id: '/quizzes/',
     path: '/quizzes/',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
 const AuthenticatedQuizzesQuizIdRoute =
   AuthenticatedQuizzesQuizIdRouteImport.update({
-    id: '/_authenticated/quizzes/$quizId',
+    id: '/quizzes/$quizId',
     path: '/quizzes/$quizId',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
 
 export interface FileRoutesByFullPath {
@@ -76,6 +81,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/join': typeof JoinRoute
   '/play/$code': typeof PlayCodeRoute
   '/_authenticated/host/$code': typeof AuthenticatedHostCodeRoute
@@ -105,6 +111,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/_authenticated'
     | '/join'
     | '/play/$code'
     | '/_authenticated/host/$code'
@@ -115,12 +122,9 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   JoinRoute: typeof JoinRoute
   PlayCodeRoute: typeof PlayCodeRoute
-  AuthenticatedHostCodeRoute: typeof AuthenticatedHostCodeRoute
-  AuthenticatedQuizzesQuizIdRoute: typeof AuthenticatedQuizzesQuizIdRoute
-  AuthenticatedHostIndexRoute: typeof AuthenticatedHostIndexRoute
-  AuthenticatedQuizzesIndexRoute: typeof AuthenticatedQuizzesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -130,6 +134,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/join': {
@@ -151,40 +162,54 @@ declare module '@tanstack/react-router' {
       path: '/host'
       fullPath: '/host/'
       preLoaderRoute: typeof AuthenticatedHostIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/host/$code': {
       id: '/_authenticated/host/$code'
       path: '/host/$code'
       fullPath: '/host/$code'
       preLoaderRoute: typeof AuthenticatedHostCodeRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/quizzes/': {
       id: '/_authenticated/quizzes/'
       path: '/quizzes'
       fullPath: '/quizzes/'
       preLoaderRoute: typeof AuthenticatedQuizzesIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/quizzes/$quizId': {
       id: '/_authenticated/quizzes/$quizId'
       path: '/quizzes/$quizId'
       fullPath: '/quizzes/$quizId'
       preLoaderRoute: typeof AuthenticatedQuizzesQuizIdRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
   }
 }
 
-const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  JoinRoute: JoinRoute,
-  PlayCodeRoute: PlayCodeRoute,
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedHostCodeRoute: typeof AuthenticatedHostCodeRoute
+  AuthenticatedQuizzesQuizIdRoute: typeof AuthenticatedQuizzesQuizIdRoute
+  AuthenticatedHostIndexRoute: typeof AuthenticatedHostIndexRoute
+  AuthenticatedQuizzesIndexRoute: typeof AuthenticatedQuizzesIndexRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedHostCodeRoute: AuthenticatedHostCodeRoute,
   AuthenticatedQuizzesQuizIdRoute: AuthenticatedQuizzesQuizIdRoute,
   AuthenticatedHostIndexRoute: AuthenticatedHostIndexRoute,
   AuthenticatedQuizzesIndexRoute: AuthenticatedQuizzesIndexRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
+  JoinRoute: JoinRoute,
+  PlayCodeRoute: PlayCodeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
