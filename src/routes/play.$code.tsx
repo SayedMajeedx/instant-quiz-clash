@@ -5,10 +5,12 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownRing } from "@/components/quiz/CountdownRing";
 import { Podium } from "@/components/quiz/Podium";
+import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { standings, TEAM_COLORS } from "@/lib/quizclash";
+import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
+
 import { cn } from "@/lib/utils";
 import { storedPlayerId } from "@/lib/session";
 
