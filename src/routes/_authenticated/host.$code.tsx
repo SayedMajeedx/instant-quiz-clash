@@ -9,7 +9,8 @@ import { Podium } from "@/components/quiz/Podium";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { standings } from "@/lib/quizclash";
+import { standings, teamStandings, TEAM_COLORS } from "@/lib/quizclash";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/host/$code")({
   head: () => ({
@@ -36,7 +37,11 @@ function HostRoom() {
   // land on the podium. Gameplay itself never depends on this device.
   useEffect(() => {
     if (room && room.status === "active" && phase.kind === "ended") {
-      void supabase.from("rooms").update({ status: "ended" }).eq("id", room.id);
+      void (async () => {
+        await supabase.from("rooms").update({ status: "ended" }).eq("id", room.id);
+        // Snapshot the final standings so they survive room cleanup.
+        await supabase.rpc("archive_room", { p_room_id: room.id });
+      })();
     }
   }, [phase.kind, room]);
 
@@ -44,6 +49,14 @@ function HostRoom() {
     const upTo = phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard" ? phase.index : questions.length - 1;
     return standings(players, answers, questions, upTo);
   }, [players, answers, questions, phase]);
+
+  const teams = useMemo(() => teamStandings(rows), [rows]);
+
+  async function setTeamCount(next: number) {
+    if (!room) return;
+    await supabase.from("rooms").update({ team_count: next }).eq("id", room.id);
+    await state.refresh();
+  }
 
   async function start() {
     if (!room) return;
@@ -123,6 +136,24 @@ function HostRoom() {
                 {players.length}
               </span>
             </div>
+            <div className="mt-5 flex flex-wrap items-center gap-2">
+              <span className="text-sm font-semibold text-muted-foreground">{t("host.teamMode")}</span>
+              {[0, 2, 3, 4].map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  onClick={() => void setTeamCount(n)}
+                  className={cn(
+                    "press rounded-full border px-4 py-1.5 text-sm font-semibold",
+                    (room.team_count ?? 0) === n ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
+                  )}
+                >
+                  {n === 0 ? t("host.solo") : t("host.teamsN", { n })}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-xs text-muted-foreground">{t("host.teamNote")}</p>
+
             <div className="mt-5 flex flex-wrap gap-2">
               {players.length === 0 ? (
                 <p className="text-muted-foreground">{t("host.waiting")}</p>
@@ -134,6 +165,14 @@ function HostRoom() {
                 >
                   <span className="size-4 rounded-full" style={{ backgroundColor: p.avatar_color }} />
                   {p.nickname}
+                  {p.team_index !== null ? (
+                    <span
+                      className="rounded-full px-2 py-0.5 text-[10px] font-bold text-background"
+                      style={{ backgroundColor: TEAM_COLORS[p.team_index % TEAM_COLORS.length] }}
+                    >
+                      {p.team_index + 1}
+                    </span>
+                  ) : null}
                 </span>
               ))}
             </div>
@@ -175,6 +214,28 @@ function HostRoom() {
           <div className="mt-10">
             <Leaderboard rows={rows} />
           </div>
+          {teams.length > 1 ? (
+            <div className="mt-10">
+              <h2 className="mb-3 text-center font-display text-2xl">{t("board.teamScores")}</h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {teams.map((team) => (
+                  <div
+                    key={team.teamIndex}
+                    className="flex items-center justify-between rounded-2xl border border-border bg-surface-gradient px-4 py-3"
+                  >
+                    <span className="flex items-center gap-3 font-display text-lg">
+                      <span
+                        className="size-4 rounded-full"
+                        style={{ backgroundColor: TEAM_COLORS[team.teamIndex % TEAM_COLORS.length] }}
+                      />
+                      {t("team.name", { n: team.teamIndex + 1 })}
+                    </span>
+                    <span className="font-display text-2xl tabular-nums">{team.total}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
           <p className="mt-8 text-center text-muted-foreground">
             {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
           </p>
