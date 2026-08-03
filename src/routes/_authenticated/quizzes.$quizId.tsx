@@ -36,6 +36,8 @@ function Editor() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [saving, setSaving] = useState(false);
   const [importOpen, setImportOpen] = useState(Boolean(search.import));
+  const [uploading, setUploading] = useState<string | null>(null);
+
   const timers = useRef<Record<string, number>>({});
   const pending = useRef<Record<string, Partial<Question>>>({});
   const pendingTitle = useRef<string | null>(null);
