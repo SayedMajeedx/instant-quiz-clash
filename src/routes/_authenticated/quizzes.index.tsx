@@ -5,7 +5,7 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { ownerId } from "@/lib/session";
+
 import type { Quiz } from "@/lib/quizclash";
 
 export const Route = createFileRoute("/_authenticated/quizzes/")({
@@ -23,16 +23,16 @@ export const Route = createFileRoute("/_authenticated/quizzes/")({
 function MyQuizzes() {
   const navigate = useNavigate();
   const { t } = useI18n();
+  const { user } = Route.useRouteContext();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
 
   const load = useCallback(async () => {
-    const owner = ownerId();
     const { data } = await supabase
       .from("quizzes")
       .select("*")
-      .eq("owner_id", owner)
+      .eq("user_id", user.id)
       .order("created_at", { ascending: false });
     const rows = (data ?? []) as unknown as Quiz[];
     setQuizzes(rows);
@@ -46,7 +46,8 @@ function MyQuizzes() {
       setCounts(map);
     }
     setLoading(false);
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user.id]);
 
   useEffect(() => {
     void load();
@@ -55,7 +56,7 @@ function MyQuizzes() {
   async function createQuiz() {
     const { data, error } = await supabase
       .from("quizzes")
-      .insert({ owner_id: ownerId(), title: t("quizzes.newTitle") })
+      .insert({ user_id: user.id, title: t("quizzes.newTitle") })
       .select()
       .single();
     if (error || !data) {
