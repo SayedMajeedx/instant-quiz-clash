@@ -25,6 +25,8 @@ function Editor() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [saving, setSaving] = useState(false);
   const timers = useRef<Record<string, number>>({});
+  const pending = useRef<Record<string, Partial<Question>>>({});
+
 
   useEffect(() => {
     void (async () => {
