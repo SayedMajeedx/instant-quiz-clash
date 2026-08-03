@@ -1,0 +1,237 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useMemo, useState } from "react";
+import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { AnswerTile } from "@/components/quiz/AnswerTile";
+import { CountdownRing } from "@/components/quiz/CountdownRing";
+import { Podium } from "@/components/quiz/Podium";
+import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
+import { supabase } from "@/integrations/supabase/client";
+import { pointsFor, questionStartMs, standings } from "@/lib/quizclash";
+import { storedPlayerId } from "@/lib/session";
+
+export const Route = createFileRoute("/play/$code")({
+  head: () => ({
+    meta: [
+      { title: "Play — QuizClash" },
+      { name: "description", content: "Your QuizClash controller: tap the shape that matches the right answer, fast." },
+      { property: "og:title", content: "Play — QuizClash" },
+      { property: "og:description", content: "Answer fast to score up to 1000 points per question." },
+    ],
+  }),
+  component: Play,
+});
+
+function Play() {
+  const { code } = Route.useParams();
+  const state = useRoomGame(code);
+  const phase = usePhase(state);
+  const { room, quiz, questions, players, answers } = state;
+  const [playerId, setPlayerId] = useState<string | null>(null);
+  const [sending, setSending] = useState(false);
+
+  useEffect(() => {
+    setPlayerId(storedPlayerId(code));
+  }, [code]);
+
+  const me = players.find((p) => p.id === playerId) ?? null;
+  const rows = useMemo(() => {
+    const upTo =
+      phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
+        ? phase.index
+        : questions.length - 1;
+    return standings(players, answers, questions, upTo);
+  }, [players, answers, questions, phase]);
+  const myRow = rows.find((r) => r.player.id === playerId) ?? null;
+
+  const currentQuestion = phase.kind === "question" || phase.kind === "reveal" ? phase.question : null;
+  const myAnswer = currentQuestion
+    ? (answers.find((a) => a.question_id === currentQuestion.id && a.player_id === playerId) ?? null)
+    : null;
+
+  async function submit(choice: number) {
+    if (phase.kind !== "question" || !room?.started_at || !playerId || myAnswer || sending) return;
+    setSending(true);
+    const question = phase.question;
+    const startMs = questionStartMs(room.started_at, questions, phase.index);
+    const msUsed = Math.max(0, Date.now() - startMs);
+    const isCorrect = choice === question.correct_index;
+    const points = isCorrect ? pointsFor(question.time_limit_seconds, msUsed) : 0;
+
+    const { data } = await supabase
+      .from("answers")
+      .insert({
+        room_id: room.id,
+        question_id: question.id,
+        player_id: playerId,
+        choice_index: choice,
+        is_correct: isCorrect,
+        points_awarded: points,
+      })
+      .select()
+      .single();
+    if (data) await state.refresh();
+    setSending(false);
+  }
+
+  if (state.loading) {
+    return (
+      <main className="grid min-h-screen place-items-center">
+        <AnimatedBg />
+        <p className="text-muted-foreground">Connecting…</p>
+      </main>
+    );
+  }
+
+  if (state.missing || !room) {
+    return (
+      <main className="grid min-h-screen place-items-center px-5 text-center">
+        <AnimatedBg />
+        <div>
+          <h1 className="font-display text-3xl">Game not found</h1>
+          <Link to="/join" className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky">
+            Try another code
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  if (!playerId || !me) {
+    return (
+      <main className="grid min-h-screen place-items-center px-5 text-center">
+        <AnimatedBg />
+        <div>
+          <h1 className="font-display text-3xl">You&apos;re not in this game yet</h1>
+          <Link
+            to="/join"
+            search={{ code: room.code }}
+            className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
+          >
+            Join room {room.code}
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  if (phase.kind === "ended") {
+    return (
+      <main className="relative min-h-screen">
+        <AnimatedBg dense />
+        <Podium rows={rows} title={quiz?.title ?? "QuizClash"} highlightPlayerId={playerId} actions />
+      </main>
+    );
+  }
+
+  if (phase.kind === "lobby") {
+    const startsIn = room.started_at ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000) : null;
+    return (
+      <main className="relative grid min-h-screen place-items-center px-5 text-center">
+        <AnimatedBg dense />
+        <div className="animate-pop">
+          <span
+            className="mx-auto block size-24 animate-float rounded-full border-4 border-background shadow-glow"
+            style={{ backgroundColor: me.avatar_color }}
+          />
+          <h1 className="mt-6 font-display text-4xl text-gradient">You&apos;re in!</h1>
+          <p className="mt-2 font-display text-2xl">{me.nickname}</p>
+          <p className="mt-6 text-muted-foreground">
+            {startsIn !== null && startsIn > 0 ? `Starting in ${startsIn}…` : "Look at the big screen. Waiting for the host…"}
+          </p>
+          <p className="mt-10 text-sm text-muted-foreground">Room {room.code}</p>
+        </div>
+      </main>
+    );
+  }
+
+  if (phase.kind === "leaderboard") {
+    return (
+      <main className="relative grid min-h-screen place-items-center px-5 text-center">
+        <AnimatedBg dense />
+        <div className="w-full max-w-sm animate-pop rounded-3xl border border-border bg-surface-gradient p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">Your rank</p>
+          <p className="mt-2 font-display text-7xl text-gradient tabular-nums">#{myRow?.rank ?? "-"}</p>
+          <p className="mt-2 font-display text-3xl tabular-nums">{myRow?.total ?? 0} pts</p>
+          {myRow && myRow.rank > 1 ? (
+            <p className="mt-4 text-muted-foreground">
+              {(rows[myRow.rank - 2]?.total ?? 0) - myRow.total} points behind {rows[myRow.rank - 2]?.player.nickname}
+            </p>
+          ) : (
+            <p className="mt-4 text-sun">You&apos;re in the lead 🔥</p>
+          )}
+          <p className="mt-8 text-sm text-muted-foreground">Next question in {Math.ceil(phase.msLeft / 1000)}s</p>
+        </div>
+      </main>
+    );
+  }
+
+  const question = phase.question;
+
+  if (phase.kind === "reveal") {
+    const correct = myAnswer?.is_correct;
+    return (
+      <main className="relative grid min-h-screen place-items-center px-5 text-center">
+        <AnimatedBg dense />
+        <div className="w-full max-w-sm animate-pop">
+          <p className="font-display text-7xl">{correct ? "✅" : myAnswer ? "❌" : "⏰"}</p>
+          <h1 className="mt-4 font-display text-4xl">
+            {correct ? "Correct!" : myAnswer ? "Incorrect" : "Too slow"}
+          </h1>
+          <p className="mt-3 font-display text-3xl text-sun tabular-nums">
+            +{myAnswer?.points_awarded ?? 0} pts
+          </p>
+          {myRow && myRow.streak > 1 ? (
+            <p className="mt-2 font-display text-lg text-lime">🔥 {myRow.streak} in a row</p>
+          ) : null}
+          <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
+            <p className="text-sm text-muted-foreground">Correct answer</p>
+            <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground">Total {myRow?.total ?? 0} pts</p>
+        </div>
+      </main>
+    );
+  }
+
+  const totalMs = Math.max(1, question.time_limit_seconds) * 1000;
+
+  return (
+    <main className="relative flex min-h-screen flex-col px-4 py-4">
+      <AnimatedBg />
+      <header className="flex items-center justify-between">
+        <span className="flex items-center gap-2 font-semibold">
+          <span className="size-5 rounded-full" style={{ backgroundColor: me.avatar_color }} />
+          {me.nickname}
+        </span>
+        <span className="font-display tabular-nums">{myRow?.total ?? 0} pts</span>
+      </header>
+
+      {myAnswer ? (
+        <div className="flex flex-1 flex-col items-center justify-center text-center">
+          <div className="animate-pop">
+            <p className="font-display text-6xl">🔒</p>
+            <h1 className="mt-4 font-display text-3xl text-gradient">Answer locked in</h1>
+            <p className="mt-2 text-muted-foreground">Waiting for everyone else…</p>
+          </div>
+          <div className="mt-10">
+            <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={110} />
+          </div>
+        </div>
+      ) : (
+        <>
+          <div className="flex items-center justify-center py-3">
+            <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={96} />
+          </div>
+          <p className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+            Question {phase.index + 1} of {questions.length} — look up!
+          </p>
+          <div className="mt-3 grid flex-1 grid-cols-2 gap-3 pb-2">
+            {[0, 1, 2, 3].map((i) => (
+              <AnswerTile key={i} index={i} size="player" disabled={sending} onClick={() => void submit(i)} />
+            ))}
+          </div>
+        </>
+      )}
+    </main>
+  );
+}
