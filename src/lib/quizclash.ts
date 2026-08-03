@@ -5,6 +5,8 @@ export type Quiz = {
   created_at: string;
 };
 
+export type QuestionType = "multi" | "boolean";
+
 export type Question = {
   id: string;
   quiz_id: string;
@@ -13,7 +15,11 @@ export type Question = {
   correct_index: number;
   time_limit_seconds: number;
   order_index: number;
+  image_url: string | null;
+  question_type: QuestionType;
 };
+
+export type CursorPhase = "question" | "reveal" | "board";
 
 export type Room = {
   id: string;
@@ -22,7 +28,13 @@ export type Room = {
   status: "lobby" | "active" | "ended";
   started_at: string | null;
   team_count: number;
+  advance_mode: "auto" | "manual";
+  team_mode: "auto" | "manual";
+  cursor_index: number;
+  cursor_phase: CursorPhase;
+  phase_started_at: string | null;
 };
+
 
 export type Player = {
   id: string;
