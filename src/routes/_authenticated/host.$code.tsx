@@ -12,6 +12,9 @@ import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { optionCount, standings, teamStandings, TEAM_COLORS, type CursorPhase } from "@/lib/quizclash";
+import { getSyncedNow } from "@/lib/server-time";
+import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
+import { DebugPanel } from "@/components/quiz/DebugPanel";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/host/$code")({
@@ -147,7 +150,7 @@ function HostRoom() {
 
   async function start() {
     if (!room) return;
-    const startsAt = new Date(Date.now() + 3000).toISOString();
+    const startsAt = new Date(getSyncedNow() + 3000).toISOString();
     await supabase
       .from("rooms")
       .update({
@@ -534,6 +537,8 @@ function HostRoom() {
           </div>
         </div>
       ) : null}
+      <ReconnectingBanner status={state.connectionStatus} />
+      <DebugPanel state={state} />
     </main>
   );
 }

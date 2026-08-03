@@ -14,6 +14,8 @@ import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
 
 import { cn } from "@/lib/utils";
 import { clearStoredPlayer, storedPlayerId } from "@/lib/session";
+import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
+import { DebugPanel } from "@/components/quiz/DebugPanel";
 
 export const Route = createFileRoute("/play/$code")({
   head: () => ({
@@ -370,6 +372,8 @@ function Play() {
           </div>
         </div>
       ) : null}
+      <ReconnectingBanner status={state.connectionStatus} />
+      <DebugPanel state={state} />
     </main>
   );
 }
