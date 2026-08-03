@@ -67,7 +67,8 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
     // Owners read the full question rows; players get a redacted list with no
     // correct answers, then only the answers already revealed by the clock.
     let rows = (ownerQuestionRes.data ?? []) as unknown as Question[];
-    if (rows.length === 0) {
+    const isOwner = rows.length > 0;
+    if (!isOwner) {
       const { data: publicRows } = await supabase.rpc("room_questions", { p_room_id: typedRoom.id });
       rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({ ...q, correct_index: -1 }));
       const { data: reveals } = await supabase.rpc("room_reveals", { p_room_id: typedRoom.id });
@@ -75,18 +76,38 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
       rows = rows.map((q) => (map.has(q.id) ? { ...q, correct_index: map.get(q.id)! } : q));
     }
 
+    let playerRows = (playerRes.data ?? []) as unknown as Player[];
+    let answerRows = (answerRes.data ?? []) as unknown as Answer[];
+    if (!isOwner && playerId) {
+      const [p, a] = await Promise.all([
+        supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
+        supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
+      ]);
+      playerRows = (p.data ?? []) as unknown as Player[];
+      answerRows = (a.data ?? []) as unknown as Answer[];
+    }
+
     setQuiz((quizRes.data as unknown as Quiz) ?? null);
     setQuestions(rows.map((q) => ({ ...q, options: q.options as unknown as string[] })));
-    setPlayers((playerRes.data ?? []) as unknown as Player[]);
-    setAnswers((answerRes.data ?? []) as unknown as Answer[]);
+    setPlayers(playerRows);
+    setAnswers(answerRows);
 
     setMissing(false);
     setLoading(false);
-  }, [code]);
+  }, [code, playerId]);
 
   useEffect(() => {
     void load();
   }, [load]);
+
+  // Participants can't subscribe to players/answers changes (no table access),
+  // so they keep the lobby and leaderboard fresh with a light poll instead.
+  useEffect(() => {
+    if (!playerId) return;
+    const id = window.setInterval(() => void load(), 2500);
+    return () => window.clearInterval(id);
+  }, [playerId, load]);
+
 
   useEffect(() => {
     const id = window.setInterval(() => setNow(Date.now()), 100);
