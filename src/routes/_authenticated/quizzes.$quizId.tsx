@@ -3,13 +3,16 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
+import { ImportFromText } from "@/components/quiz/ImportFromText";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
+import { type ParsedQuestion } from "@/lib/import-questions.shared";
 import { type Question, type Quiz } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/quizzes/$quizId")({
+  validateSearch: (search: Record<string, unknown>) => ({ import: search["import"] === true || search["import"] === "true" ? true : undefined }),
   head: () => ({
     meta: [
       { title: "Quiz Editor — QuizClash" },
@@ -23,10 +26,12 @@ export const Route = createFileRoute("/_authenticated/quizzes/$quizId")({
 
 function Editor() {
   const { quizId } = Route.useParams();
+  const search = Route.useSearch();
   const { t } = useI18n();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [saving, setSaving] = useState(false);
+  const [importOpen, setImportOpen] = useState(Boolean(search.import));
   const timers = useRef<Record<string, number>>({});
   const pending = useRef<Record<string, Partial<Question>>>({});
   const pendingTitle = useRef<string | null>(null);
@@ -125,6 +130,28 @@ function Editor() {
     }
     const row = data as unknown as Question;
     setQuestions((prev) => [...prev, { ...row, options: row.options as string[] }]);
+  }
+
+  async function addImported(parsed: ParsedQuestion[]) {
+    await flushPending();
+    const rows = parsed.map((q, i) => ({
+      quiz_id: quizId,
+      question_text: q.question_text,
+      options: [0, 1, 2, 3].map((k) => q.options[k] ?? ""),
+      correct_index: Math.max(0, Math.min(3, q.correct_index)),
+      time_limit_seconds: Math.max(5, Math.min(120, q.time_limit_seconds || 20)),
+      order_index: questions.length + i,
+    }));
+    const { data, error } = await supabase.from("questions").insert(rows).select();
+    if (error || !data) {
+      toast.error(t("editor.addError"));
+      return;
+    }
+    const inserted = (data as unknown as Question[])
+      .map((row) => ({ ...row, options: row.options as string[] }))
+      .sort((a, b) => a.order_index - b.order_index);
+    setQuestions((prev) => [...prev, ...inserted]);
+    toast.success(t("import.added", { n: inserted.length }));
   }
 
   async function removeQuestion(id: string) {
@@ -293,6 +320,13 @@ function Editor() {
           >
             {t("editor.add")}
           </button>
+          <button
+            type="button"
+            onClick={() => setImportOpen(true)}
+            className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
+          >
+            ✨ {t("import.open")}
+          </button>
           <Link
             to="/host"
             search={{ quiz: quizId }}
@@ -303,6 +337,8 @@ function Editor() {
           </Link>
         </div>
       </div>
+
+      <ImportFromText open={importOpen} onClose={() => setImportOpen(false)} onAdd={addImported} />
     </main>
   );
 }
