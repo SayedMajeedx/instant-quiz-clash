@@ -56,10 +56,17 @@ function Editor() {
 
   function patchQuestion(id: string, patch: Partial<Question>) {
     setQuestions((prev) => prev.map((q) => (q.id === id ? { ...q, ...patch } : q)));
+    // Merge with any patch still waiting on the debounce, otherwise a quick
+    // second edit would cancel the first one before it ever reached the server.
+    const merged = { ...(pending.current[id] ?? {}), ...patch };
+    pending.current[id] = merged;
     scheduleSave(id, async () => {
-      await supabase.from("questions").update(patch as never).eq("id", id);
+      const body = pending.current[id];
+      delete pending.current[id];
+      await supabase.from("questions").update(body as never).eq("id", id);
     });
   }
+
 
   async function addQuestion() {
     const { data, error } = await supabase
