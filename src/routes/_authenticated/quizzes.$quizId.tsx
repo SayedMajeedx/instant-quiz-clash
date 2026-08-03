@@ -114,6 +114,38 @@ function Editor() {
       await supabase.from("questions").update(body as never).eq("id", id);
     });
   }
+  function setType(question: Question, type: QuestionType) {
+    if (question.question_type === type) return;
+    const patch: Partial<Question> =
+      type === "boolean"
+        ? { question_type: type, options: ["True", "False", "", ""], correct_index: Math.min(1, question.correct_index) }
+        : { question_type: type, options: ["", "", "", ""], correct_index: 0 };
+    patchQuestion(question.id, patch);
+  }
+
+  async function applyTimeToAll(seconds: number) {
+    setQuestions((prev) => prev.map((q) => ({ ...q, time_limit_seconds: seconds })));
+    await supabase.from("questions").update({ time_limit_seconds: seconds } as never).eq("quiz_id", quizId);
+    toast.success(t("editor.applied"));
+  }
+
+  async function uploadImage(questionId: string, file: File) {
+    if (file.size > 5 * 1024 * 1024) {
+      toast.error(t("editor.imageTooBig"));
+      return;
+    }
+    setUploading(questionId);
+    const ext = file.name.split(".").pop()?.toLowerCase() ?? "jpg";
+    const path = `${quizId}/${questionId}-${Date.now()}.${ext}`;
+    const { error } = await supabase.storage.from("question-images").upload(path, file, { upsert: true });
+    setUploading(null);
+    if (error) {
+      toast.error(t("editor.imageFailed"));
+      return;
+    }
+    patchQuestion(questionId, { image_url: path });
+  }
+
 
   async function addQuestion() {
     const { data, error } = await supabase
