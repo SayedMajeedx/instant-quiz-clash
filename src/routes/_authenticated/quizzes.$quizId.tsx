@@ -254,8 +254,25 @@ function Editor() {
                 className="mt-4 w-full resize-none rounded-2xl border border-border bg-background/50 px-4 py-3 text-lg outline-none focus:ring-2 focus:ring-ring"
               />
 
+              <div className="mt-4 flex flex-wrap items-center gap-2">
+                <span className="text-sm text-muted-foreground">{t("editor.type")}</span>
+                {(["multi", "boolean"] as const).map((type) => (
+                  <button
+                    key={type}
+                    type="button"
+                    onClick={() => setType(question, type)}
+                    className={cn(
+                      "press rounded-full border px-4 py-1.5 text-sm font-semibold",
+                      question.question_type === type ? "border-primary ring-2 ring-primary" : "border-border",
+                    )}
+                  >
+                    {type === "multi" ? t("editor.typeMulti") : t("editor.typeBoolean")}
+                  </button>
+                ))}
+              </div>
+
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {[0, 1, 2, 3].map((i) => (
+                {Array.from({ length: optionCount(question) }, (_, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <span
                       className="grid size-10 shrink-0 place-items-center rounded-xl"
@@ -263,18 +280,24 @@ function Editor() {
                     >
                       <AnswerShape index={i} className="size-5" />
                     </span>
-                    <input
-                      value={question.options[i] ?? ""}
-                      onChange={(e) => {
-                        const options = [0, 1, 2, 3].map((k) =>
-                          k === i ? e.target.value : (question.options[k] ?? ""),
-                        );
-                        patchQuestion(question.id, { options });
-                      }}
-                      onBlur={() => void flushPending()}
-                      placeholder={t("editor.answerPlaceholder", { shape: t(SHAPE_KEYS[i]!) })}
-                      className="w-full rounded-xl border border-border bg-background/50 px-3 py-2 outline-none focus:ring-2 focus:ring-ring"
-                    />
+                    {question.question_type === "boolean" ? (
+                      <span className="w-full rounded-xl border border-border bg-background/30 px-3 py-2 font-semibold">
+                        {i === 0 ? t("play.true") : t("play.false")}
+                      </span>
+                    ) : (
+                      <input
+                        value={question.options[i] ?? ""}
+                        onChange={(e) => {
+                          const options = [0, 1, 2, 3].map((k) =>
+                            k === i ? e.target.value : (question.options[k] ?? ""),
+                          );
+                          patchQuestion(question.id, { options });
+                        }}
+                        onBlur={() => void flushPending()}
+                        placeholder={t("editor.answerPlaceholder", { shape: t(SHAPE_KEYS[i]!) })}
+                        className="w-full rounded-xl border border-border bg-background/50 px-3 py-2 outline-none focus:ring-2 focus:ring-ring"
+                      />
+                    )}
                     <button
                       type="button"
                       onClick={() => patchQuestion(question.id, { correct_index: i })}
@@ -292,22 +315,81 @@ function Editor() {
                 ))}
               </div>
 
-              <label className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
-                {t("editor.timeLimit")}
-                <input
-                  type="number"
-                  min={5}
-                  max={120}
-                  value={question.time_limit_seconds}
-                  onChange={(e) =>
-                    patchQuestion(question.id, {
-                      time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 20)),
-                    })
-                  }
-                  className="w-20 rounded-xl border border-border bg-background/50 px-3 py-2 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"
-                />
-                {t("editor.seconds")}
-              </label>
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <span className="text-sm text-muted-foreground">{t("editor.image")}</span>
+                <label className="press cursor-pointer rounded-xl border border-border bg-background/50 px-4 py-2 text-sm font-semibold">
+                  {uploading === question.id
+                    ? t("editor.uploading")
+                    : question.image_url
+                      ? t("editor.replaceImage")
+                      : t("editor.addImage")}
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      e.target.value = "";
+                      if (file) void uploadImage(question.id, file);
+                    }}
+                  />
+                </label>
+                {question.image_url ? (
+                  <>
+                    <QuestionImage
+                      path={question.image_url}
+                      className="size-16 rounded-xl border border-border object-cover"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => patchQuestion(question.id, { image_url: null })}
+                      className="press rounded-xl border border-border px-3 py-2 text-sm text-destructive"
+                    >
+                      {t("editor.removeImage")}
+                    </button>
+                  </>
+                ) : null}
+              </div>
+
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <label className="flex items-center gap-3 text-sm text-muted-foreground">
+                  {t("editor.timeLimit")}
+                  <input
+                    type="number"
+                    min={5}
+                    max={120}
+                    value={question.time_limit_seconds}
+                    onChange={(e) =>
+                      patchQuestion(question.id, {
+                        time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 20)),
+                      })
+                    }
+                    className="w-20 rounded-xl border border-border bg-background/50 px-3 py-2 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"
+                  />
+                  {t("editor.seconds")}
+                </label>
+                {TIME_PRESETS.map((sec) => (
+                  <button
+                    key={sec}
+                    type="button"
+                    onClick={() => patchQuestion(question.id, { time_limit_seconds: sec })}
+                    className={cn(
+                      "press rounded-full border px-3 py-1 text-sm font-semibold",
+                      question.time_limit_seconds === sec ? "border-primary ring-2 ring-primary" : "border-border",
+                    )}
+                  >
+                    {sec}s
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  onClick={() => void applyTimeToAll(question.time_limit_seconds)}
+                  className="press rounded-full border border-border px-3 py-1 text-sm font-semibold"
+                >
+                  {t("editor.applyAll")}
+                </button>
+              </div>
+
             </section>
           ))}
         </div>
