@@ -1,6 +1,5 @@
 import { z } from "zod";
-
-export const MAX_IMPORT_CHARS = 10000;
+import { MAX_IMPORT_CHARS } from "@/lib/import-questions.shared";
 
 export const parsedQuestionSchema = z.object({
   question_text: z.string().trim().min(1).max(400),

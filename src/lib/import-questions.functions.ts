@@ -1,6 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
+import type { ParsedQuestion } from "@/lib/import-questions.shared";
 
 export const importQuestionsFromText = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
