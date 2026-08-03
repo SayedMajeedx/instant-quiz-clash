@@ -75,6 +75,98 @@ export type Database = {
           },
         ]
       }
+      game_player_results: {
+        Row: {
+          answered_count: number
+          avatar_color: string
+          best_streak: number
+          correct_count: number
+          created_at: string
+          game_id: string
+          id: string
+          nickname: string
+          rank: number
+          score: number
+          team_index: number | null
+        }
+        Insert: {
+          answered_count?: number
+          avatar_color?: string
+          best_streak?: number
+          correct_count?: number
+          created_at?: string
+          game_id: string
+          id?: string
+          nickname: string
+          rank?: number
+          score?: number
+          team_index?: number | null
+        }
+        Update: {
+          answered_count?: number
+          avatar_color?: string
+          best_streak?: number
+          correct_count?: number
+          created_at?: string
+          game_id?: string
+          id?: string
+          nickname?: string
+          rank?: number
+          score?: number
+          team_index?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "game_player_results_game_id_fkey"
+            columns: ["game_id"]
+            isOneToOne: false
+            referencedRelation: "game_results"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      game_results: {
+        Row: {
+          created_at: string
+          host_id: string
+          id: string
+          played_at: string
+          player_count: number
+          question_count: number
+          quiz_id: string | null
+          quiz_title: string
+          room_code: string
+          room_id: string | null
+          team_count: number
+        }
+        Insert: {
+          created_at?: string
+          host_id: string
+          id?: string
+          played_at?: string
+          player_count?: number
+          question_count?: number
+          quiz_id?: string | null
+          quiz_title?: string
+          room_code?: string
+          room_id?: string | null
+          team_count?: number
+        }
+        Update: {
+          created_at?: string
+          host_id?: string
+          id?: string
+          played_at?: string
+          player_count?: number
+          question_count?: number
+          quiz_id?: string | null
+          quiz_title?: string
+          room_code?: string
+          room_id?: string | null
+          team_count?: number
+        }
+        Relationships: []
+      }
       players: {
         Row: {
           avatar_color: string
@@ -245,6 +337,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      archive_room: { Args: { p_room_id: string }; Returns: string }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
         Returns: {
