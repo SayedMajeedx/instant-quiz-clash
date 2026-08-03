@@ -4,9 +4,11 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
+import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { Podium } from "@/components/quiz/Podium";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
+import { useI18n } from "@/lib/i18n";
 import { standings } from "@/lib/quizclash";
 
 export const Route = createFileRoute("/host/$code")({
@@ -24,6 +26,7 @@ export const Route = createFileRoute("/host/$code")({
 function HostRoom() {
   const { code } = Route.useParams();
   const state = useRoomGame(code);
+  const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
 
@@ -55,7 +58,7 @@ function HostRoom() {
     return (
       <main className="grid min-h-screen place-items-center">
         <AnimatedBg />
-        <p className="text-muted-foreground">Loading room…</p>
+        <p className="text-muted-foreground">{t("host.loading")}</p>
       </main>
     );
   }
@@ -65,9 +68,9 @@ function HostRoom() {
       <main className="grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg />
         <div>
-          <h1 className="font-display text-4xl">Room not found</h1>
+          <h1 className="font-display text-4xl">{t("host.notFound")}</h1>
           <Link to="/host" className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky">
-            Create a new room
+            {t("host.createNew")}
           </Link>
         </div>
       </main>
@@ -90,19 +93,22 @@ function HostRoom() {
         <AnimatedBg dense />
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 lg:grid-cols-[1.1fr_1fr]">
           <section>
+            <div className="mb-4 flex justify-end">
+              <LanguageToggle />
+            </div>
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">{quiz?.title}</p>
-            <h1 className="mt-3 font-display text-3xl md:text-4xl">Join at</h1>
+            <h1 className="mt-3 font-display text-3xl md:text-4xl">{t("host.joinAt")}</h1>
             <p className="mt-1 break-all font-display text-xl text-muted-foreground">
               {joinUrl.replace(/^https?:\/\//, "")}
             </p>
             <div className="mt-6 rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-glow">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">Game code</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">{t("host.gameCode")}</p>
               <p className="mt-2 font-display text-6xl tracking-[0.15em] md:text-8xl text-gradient">{room.code}</p>
             </div>
             {joinUrl ? (
               <img
                 src={`https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=12&data=${encodeURIComponent(joinUrl)}`}
-                alt={`QR code to join QuizClash room ${room.code}`}
+                alt={t("host.qrAlt", { code: room.code })}
                 width={240}
                 height={240}
                 className="mt-6 rounded-3xl border border-border bg-background p-2"
@@ -112,14 +118,14 @@ function HostRoom() {
 
           <section className="rounded-3xl border border-border bg-surface-gradient p-6">
             <div className="flex items-center justify-between">
-              <h2 className="font-display text-2xl">Players</h2>
+              <h2 className="font-display text-2xl">{t("host.players")}</h2>
               <span className="rounded-full bg-primary px-4 py-1 font-display text-lg text-primary-foreground tabular-nums">
                 {players.length}
               </span>
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
               {players.length === 0 ? (
-                <p className="text-muted-foreground">Waiting for players to join…</p>
+                <p className="text-muted-foreground">{t("host.waiting")}</p>
               ) : null}
               {players.map((p) => (
                 <span
@@ -132,7 +138,7 @@ function HostRoom() {
               ))}
             </div>
             {startsIn !== null && startsIn > 0 ? (
-              <p className="mt-8 text-center font-display text-4xl text-sun">Starting in {startsIn}…</p>
+              <p className="mt-8 text-center font-display text-4xl text-sun">{t("host.startingIn", { n: startsIn })}</p>
             ) : (
               <button
                 type="button"
@@ -140,11 +146,11 @@ function HostRoom() {
                 onClick={() => void start()}
                 className="press mt-8 w-full rounded-3xl bg-gradient-hero px-6 py-5 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-40"
               >
-                Start game
+                {t("host.start")}
               </button>
             )}
             <p className="mt-3 text-center text-xs text-muted-foreground">
-              Questions advance automatically — you can close this tab and the game keeps going.
+              {t("host.autoNote")}
             </p>
           </section>
         </div>
@@ -162,15 +168,15 @@ function HostRoom() {
       <main className="relative min-h-screen">
         <AnimatedBg dense />
         <div className="mx-auto max-w-3xl px-5 py-12">
-          <p className="text-center text-sm font-bold uppercase tracking-[0.3em] text-sun">Scoreboard</p>
+          <p className="text-center text-sm font-bold uppercase tracking-[0.3em] text-sun">{t("host.scoreboard")}</p>
           <h1 className="mt-2 text-center font-display text-4xl md:text-6xl">
-            After question {phase.index + 1}
+            {t("host.afterQuestion", { n: phase.index + 1 })}
           </h1>
           <div className="mt-10">
             <Leaderboard rows={rows} />
           </div>
           <p className="mt-8 text-center text-muted-foreground">
-            Next question in {Math.ceil(phase.msLeft / 1000)}s
+            {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
           </p>
         </div>
       </main>
@@ -185,9 +191,9 @@ function HostRoom() {
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-5 py-6">
         <header className="flex items-center justify-between gap-4">
           <span className="rounded-full border border-border bg-surface-gradient px-4 py-2 font-display">
-            Q{phase.index + 1} / {questions.length}
+            {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
           </span>
-          <span className="font-display text-lg text-muted-foreground">Code {room.code}</span>
+          <span className="font-display text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
         </header>
 
         <div className="mt-6 flex flex-1 flex-col items-center justify-center text-center">
@@ -197,13 +203,13 @@ function HostRoom() {
 
           <div className="mt-8 flex w-full max-w-3xl items-center justify-between gap-6">
             {revealing ? (
-              <p className="flex-1 font-display text-3xl text-lime">Correct answer!</p>
+              <p className="flex-1 font-display text-3xl text-lime">{t("host.correctAnswer")}</p>
             ) : (
               <>
                 <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={132} />
                 <div className="flex-1">
                   <p className="font-display text-2xl tabular-nums">
-                    {questionAnswers.length} of {players.length} answered
+                    {t("host.answered", { answered: questionAnswers.length, total: players.length })}
                   </p>
                   <div className="mt-3">
                     <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />

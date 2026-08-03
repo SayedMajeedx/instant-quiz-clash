@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Confetti } from "@/components/quiz/Confetti";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
+import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
@@ -21,11 +22,12 @@ export function Podium({
   highlightPlayerId?: string | null | undefined;
   actions?: boolean;
 }) {
+  const { t } = useI18n();
   return (
     <div className="relative mx-auto w-full max-w-4xl px-4 py-10">
       <Confetti />
       <p className="text-center text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">
-        Final results
+        {t("podium.final")}
       </p>
       <h1 className="mt-2 text-center font-display text-4xl md:text-6xl text-gradient">{title}</h1>
 
@@ -63,7 +65,7 @@ export function Podium({
       </div>
 
       <div className="mt-12">
-        <h2 className="mb-4 font-display text-2xl">Full standings</h2>
+        <h2 className="mb-4 font-display text-2xl">{t("podium.standings")}</h2>
         <Leaderboard rows={rows} limit={rows.length} highlightPlayerId={highlightPlayerId} showDelta={false} />
       </div>
 
@@ -73,13 +75,13 @@ export function Podium({
             to="/host"
             className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky"
           >
-            Play again
+            {t("podium.playAgain")}
           </Link>
           <Link
             to="/"
             className="press rounded-2xl border border-border bg-surface-gradient px-6 py-3 font-display text-lg"
           >
-            Back home
+            {t("podium.home")}
           </Link>
         </div>
       ) : null}

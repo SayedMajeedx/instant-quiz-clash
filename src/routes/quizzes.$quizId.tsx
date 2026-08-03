@@ -3,8 +3,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
+import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
-import { ANSWER_STYLES, type Question, type Quiz } from "@/lib/quizclash";
+import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
+import { type Question, type Quiz } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/quizzes/$quizId")({
@@ -21,12 +23,13 @@ export const Route = createFileRoute("/quizzes/$quizId")({
 
 function Editor() {
   const { quizId } = Route.useParams();
+  const { t } = useI18n();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [saving, setSaving] = useState(false);
   const timers = useRef<Record<string, number>>({});
   const pending = useRef<Record<string, Partial<Question>>>({});
-
+  const pendingTitle = useRef<string | null>(null);
 
   useEffect(() => {
     void (async () => {
@@ -41,17 +44,51 @@ function Editor() {
     })();
   }, [quizId]);
 
+  // Write every debounced edit that hasn't landed yet. Without this, leaving the
+  // editor within the debounce window silently dropped the last keystrokes —
+  // which is why hosted questions could show up empty.
+  const flushPending = useCallback(async () => {
+    for (const id of Object.keys(timers.current)) window.clearTimeout(timers.current[id]);
+    timers.current = {};
+    const jobs: Promise<unknown>[] = [];
+    if (pendingTitle.current !== null) {
+      jobs.push(Promise.resolve(supabase.from("quizzes").update({ title: pendingTitle.current }).eq("id", quizId)));
+      pendingTitle.current = null;
+    }
+    for (const [id, body] of Object.entries(pending.current)) {
+      jobs.push(Promise.resolve(supabase.from("questions").update(body as never).eq("id", id)));
+    }
+    pending.current = {};
+    await Promise.all(jobs);
+    setSaving(false);
+  }, [quizId]);
+
+  useEffect(() => {
+    const onHide = () => {
+      if (document.visibilityState === "hidden") void flushPending();
+    };
+    window.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", () => void flushPending());
+    return () => {
+      window.removeEventListener("visibilitychange", onHide);
+      void flushPending();
+    };
+  }, [flushPending]);
+
   const scheduleSave = useCallback((key: string, fn: () => Promise<void>) => {
     setSaving(true);
     window.clearTimeout(timers.current[key]);
     timers.current[key] = window.setTimeout(() => {
+      delete timers.current[key];
       void fn().then(() => setSaving(false));
     }, 700);
   }, []);
 
   function updateTitle(title: string) {
     setQuiz((prev) => (prev ? { ...prev, title } : prev));
+    pendingTitle.current = title;
     scheduleSave("title", async () => {
+      pendingTitle.current = null;
       await supabase.from("quizzes").update({ title }).eq("id", quizId);
     });
   }
@@ -69,7 +106,6 @@ function Editor() {
     });
   }
 
-
   async function addQuestion() {
     const { data, error } = await supabase
       .from("questions")
@@ -84,7 +120,7 @@ function Editor() {
       .select()
       .single();
     if (error || !data) {
-      toast.error("Could not add question");
+      toast.error(t("editor.addError"));
       return;
     }
     const row = data as unknown as Question;
@@ -117,7 +153,7 @@ function Editor() {
     return (
       <main className="grid min-h-screen place-items-center">
         <AnimatedBg />
-        <p className="text-muted-foreground">Loading quiz…</p>
+        <p className="text-muted-foreground">{t("editor.loading")}</p>
       </main>
     );
   }
@@ -126,19 +162,27 @@ function Editor() {
     <main className="relative min-h-screen">
       <AnimatedBg />
       <div className="mx-auto max-w-3xl px-5 py-10">
-        <div className="flex items-center justify-between">
-          <Link to="/quizzes" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
-            ← My quizzes
+        <div className="flex items-center justify-between gap-3">
+          <Link
+            to="/quizzes"
+            onClick={() => void flushPending()}
+            className="text-sm font-semibold text-muted-foreground hover:text-foreground"
+          >
+            {t("editor.back")}
           </Link>
-          <span className={cn("text-sm", saving ? "text-sun" : "text-muted-foreground")}>
-            {saving ? "Saving…" : "All changes saved"}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className={cn("text-sm", saving ? "text-sun" : "text-muted-foreground")}>
+              {saving ? t("editor.saving") : t("editor.saved")}
+            </span>
+            <LanguageToggle />
+          </div>
         </div>
 
         <input
           value={quiz.title}
           onChange={(e) => updateTitle(e.target.value)}
-          placeholder="Quiz title"
+          onBlur={() => void flushPending()}
+          placeholder={t("editor.titlePlaceholder")}
           className="mt-6 w-full rounded-2xl border border-border bg-surface-gradient px-5 py-4 font-display text-3xl outline-none focus:ring-2 focus:ring-ring"
         />
 
@@ -146,13 +190,13 @@ function Editor() {
           {questions.map((question, index) => (
             <section key={question.id} className="rounded-3xl border border-border bg-surface-gradient p-5">
               <header className="flex items-center justify-between gap-2">
-                <h2 className="font-display text-xl">Question {index + 1}</h2>
+                <h2 className="font-display text-xl">{t("editor.question", { n: index + 1 })}</h2>
                 <div className="flex items-center gap-1">
                   <button
                     type="button"
                     onClick={() => void move(index, -1)}
                     className="press rounded-lg border border-border px-3 py-1 text-sm"
-                    aria-label="Move up"
+                    aria-label={t("editor.moveUp")}
                   >
                     ↑
                   </button>
@@ -160,7 +204,7 @@ function Editor() {
                     type="button"
                     onClick={() => void move(index, 1)}
                     className="press rounded-lg border border-border px-3 py-1 text-sm"
-                    aria-label="Move down"
+                    aria-label={t("editor.moveDown")}
                   >
                     ↓
                   </button>
@@ -169,7 +213,7 @@ function Editor() {
                     onClick={() => void removeQuestion(question.id)}
                     className="press rounded-lg border border-border px-3 py-1 text-sm text-destructive"
                   >
-                    Delete
+                    {t("editor.delete")}
                   </button>
                 </div>
               </header>
@@ -177,7 +221,8 @@ function Editor() {
               <textarea
                 value={question.question_text}
                 onChange={(e) => patchQuestion(question.id, { question_text: e.target.value })}
-                placeholder="What do you want to ask?"
+                onBlur={() => void flushPending()}
+                placeholder={t("editor.questionPlaceholder")}
                 rows={2}
                 className="mt-4 w-full resize-none rounded-2xl border border-border bg-background/50 px-4 py-3 text-lg outline-none focus:ring-2 focus:ring-ring"
               />
@@ -199,13 +244,14 @@ function Editor() {
                         );
                         patchQuestion(question.id, { options });
                       }}
-                      placeholder={`${ANSWER_STYLES[i]!.label} answer`}
+                      onBlur={() => void flushPending()}
+                      placeholder={t("editor.answerPlaceholder", { shape: t(SHAPE_KEYS[i]!) })}
                       className="w-full rounded-xl border border-border bg-background/50 px-3 py-2 outline-none focus:ring-2 focus:ring-ring"
                     />
                     <button
                       type="button"
                       onClick={() => patchQuestion(question.id, { correct_index: i })}
-                      aria-label="Mark as correct"
+                      aria-label={t("editor.markCorrect")}
                       className={cn(
                         "press grid size-9 shrink-0 place-items-center rounded-full border-2",
                         question.correct_index === i
@@ -220,7 +266,7 @@ function Editor() {
               </div>
 
               <label className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
-                Time limit
+                {t("editor.timeLimit")}
                 <input
                   type="number"
                   min={5}
@@ -233,7 +279,7 @@ function Editor() {
                   }
                   className="w-20 rounded-xl border border-border bg-background/50 px-3 py-2 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"
                 />
-                seconds
+                {t("editor.seconds")}
               </label>
             </section>
           ))}
@@ -245,14 +291,15 @@ function Editor() {
             onClick={() => void addQuestion()}
             className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
           >
-            + Add question
+            {t("editor.add")}
           </button>
           <Link
             to="/host"
             search={{ quiz: quizId }}
+            onClick={() => void flushPending()}
             className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky"
           >
-            Host this quiz
+            {t("editor.hostThis")}
           </Link>
         </div>
       </div>

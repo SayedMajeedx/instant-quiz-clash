@@ -2,7 +2,9 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
+import { useI18n } from "@/lib/i18n";
 import { ownerId } from "@/lib/session";
 import type { Quiz } from "@/lib/quizclash";
 
@@ -20,6 +22,7 @@ export const Route = createFileRoute("/quizzes/")({
 
 function MyQuizzes() {
   const navigate = useNavigate();
+  const { t } = useI18n();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
@@ -52,11 +55,11 @@ function MyQuizzes() {
   async function createQuiz() {
     const { data, error } = await supabase
       .from("quizzes")
-      .insert({ owner_id: ownerId(), title: "My new quiz" })
+      .insert({ owner_id: ownerId(), title: t("quizzes.newTitle") })
       .select()
       .single();
     if (error || !data) {
-      toast.error("Could not create the quiz");
+      toast.error(t("quizzes.createError"));
       return;
     }
     const quiz = data as unknown as Quiz;
@@ -74,33 +77,36 @@ function MyQuizzes() {
   async function remove(id: string) {
     await supabase.from("quizzes").delete().eq("id", id);
     setQuizzes((prev) => prev.filter((q) => q.id !== id));
-    toast.success("Quiz deleted");
+    toast.success(t("quizzes.deleted"));
   }
 
   return (
     <main className="relative min-h-screen">
       <AnimatedBg />
       <div className="mx-auto max-w-3xl px-5 py-10">
-        <Link to="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
-          ← QuizClash
-        </Link>
+        <div className="flex items-center justify-between gap-3">
+          <Link to="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
+            {t("nav.backHome")}
+          </Link>
+          <LanguageToggle />
+        </div>
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
-          <h1 className="font-display text-4xl md:text-5xl">My quizzes</h1>
+          <h1 className="font-display text-4xl md:text-5xl">{t("quizzes.title")}</h1>
           <button
             type="button"
             onClick={createQuiz}
             className="press rounded-2xl bg-gradient-hero px-5 py-3 font-display text-lg text-primary-foreground shadow-chunky"
           >
-            + New quiz
+            {t("quizzes.new")}
           </button>
         </div>
 
         <div className="mt-8 space-y-3">
-          {loading ? <p className="text-muted-foreground">Loading…</p> : null}
+          {loading ? <p className="text-muted-foreground">{t("quizzes.loading")}</p> : null}
           {!loading && quizzes.length === 0 ? (
             <div className="rounded-3xl border border-border bg-surface-gradient p-8 text-center">
-              <p className="font-display text-2xl">No quizzes yet</p>
-              <p className="mt-2 text-muted-foreground">Create your first quiz and host it in under a minute.</p>
+              <p className="font-display text-2xl">{t("quizzes.emptyTitle")}</p>
+              <p className="mt-2 text-muted-foreground">{t("quizzes.emptyBody")}</p>
             </div>
           ) : null}
           {quizzes.map((quiz) => (
@@ -110,28 +116,30 @@ function MyQuizzes() {
             >
               <div className="min-w-0 flex-1">
                 <p className="truncate font-display text-xl">{quiz.title}</p>
-                <p className="text-sm text-muted-foreground">{counts[quiz.id] ?? 0} questions</p>
+                <p className="text-sm text-muted-foreground">
+                  {t("quizzes.questionCount", { count: counts[quiz.id] ?? 0 })}
+                </p>
               </div>
               <Link
                 to="/quizzes/$quizId"
                 params={{ quizId: quiz.id }}
                 className="press rounded-xl border border-border px-4 py-2 text-sm font-semibold"
               >
-                Edit
+                {t("quizzes.edit")}
               </Link>
               <Link
                 to="/host"
                 search={{ quiz: quiz.id }}
                 className="press rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
               >
-                Host
+                {t("quizzes.host")}
               </Link>
               <button
                 type="button"
                 onClick={() => void remove(quiz.id)}
                 className="press rounded-xl border border-border px-4 py-2 text-sm font-semibold text-destructive"
               >
-                Delete
+                {t("quizzes.delete")}
               </button>
             </div>
           ))}

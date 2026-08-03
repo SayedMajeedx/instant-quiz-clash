@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
 import { ANSWER_STYLES } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
@@ -37,14 +38,15 @@ export function AnswerTile({
   count,
 }: TileProps) {
   const style = ANSWER_STYLES[index]!;
+  const { t } = useI18n();
   return (
     <button
       type="button"
       onClick={onClick}
       disabled={disabled}
-      aria-label={style.label}
+      aria-label={t(SHAPE_KEYS[index] ?? "shape.square")}
       className={cn(
-        "press relative flex w-full items-center gap-4 overflow-hidden rounded-2xl border-b-[6px] px-4 text-left font-display text-primary-foreground",
+        "press relative flex w-full items-center gap-4 overflow-hidden rounded-2xl border-b-[6px] px-4 text-start font-display text-primary-foreground",
         style.bg,
         size === "player" ? "min-h-[22vh] justify-center" : "min-h-24 py-4",
         state === "correct" && "animate-pulse-hard ring-4 ring-primary-foreground",

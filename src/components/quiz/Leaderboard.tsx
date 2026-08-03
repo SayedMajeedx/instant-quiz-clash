@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
@@ -13,6 +14,7 @@ export function Leaderboard({
   highlightPlayerId?: string | null | undefined;
   showDelta?: boolean;
 }) {
+  const { t } = useI18n();
   const max = Math.max(1, rows[0]?.total ?? 1);
   const visible = useMemo(() => rows.slice(0, limit), [rows, limit]);
 
@@ -46,20 +48,20 @@ export function Leaderboard({
                 />
               </div>
             </div>
-            <div className="text-right">
+            <div className="text-end">
               <div className="font-display text-2xl tabular-nums">{row.total}</div>
               {showDelta && row.lastPoints > 0 ? (
                 <div className="text-xs font-semibold text-lime">+{row.lastPoints}</div>
               ) : null}
               {row.streak > 1 ? (
-                <div className="text-xs font-semibold text-sun">🔥 {row.streak} streak</div>
+                <div className="text-xs font-semibold text-sun">{t("board.streak", { n: row.streak })}</div>
               ) : null}
             </div>
           </div>
         </div>
       ))}
       {visible.length === 0 ? (
-        <p className="text-center text-muted-foreground">No scores yet.</p>
+        <p className="text-center text-muted-foreground">{t("board.noScores")}</p>
       ) : null}
     </div>
   );
