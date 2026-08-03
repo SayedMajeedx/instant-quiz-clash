@@ -21,8 +21,15 @@ export type GameState = {
   refresh: () => Promise<void>;
 };
 
-/** Live room state: one realtime channel + a local clock. Phase is derived, never pushed. */
-export function useRoomGame(code: string): GameState {
+/**
+ * Live room state: one realtime channel + a local clock. Phase is derived, never pushed.
+ *
+ * Hosts read players/answers straight from the tables (RLS scopes them to rooms
+ * they own). Participants have no table access at all: they read through the
+ * guarded `room_players` / `room_answers` lookups, which require their own
+ * player id and hide everyone else's answer choices.
+ */
+export function useRoomGame(code: string, playerId?: string | null): GameState {
   const [room, setRoom] = useState<Room | null>(null);
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
