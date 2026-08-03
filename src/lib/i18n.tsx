@@ -493,7 +493,48 @@ const ar: Dict = {
   "dash.correct": "{n} إجابة صحيحة",
   "dash.bestStreak": "أفضل تتابع {n}",
   "dash.hostNew": "استضف لعبة",
+
+  "host.pacing": "الإيقاع",
+  "host.pacingAuto": "تلقائي",
+  "host.pacingManual": "أنا أتحكم",
+  "host.pacingAutoNote": "تنتقل الإجابات ولوحة النتائج تلقائياً.",
+  "host.pacingManualNote": "تنتظر اللعبة على هذه الشاشة حتى تضغط التالي.",
+  "host.skipNote": "بمجرد إجابة الجميع ينتهي السؤال مبكراً.",
+  "host.next": "التالي ←",
+  "host.nextQuestion": "السؤال التالي ←",
+  "host.showScores": "عرض النتائج ←",
+  "host.finish": "إنهاء اللعبة ←",
+  "host.waitingManual": "بانتظارك",
+  "host.teamAuto": "توزيع تلقائي",
+  "host.teamManual": "أوزّع بنفسي",
+  "host.teamAutoNote": "يتم توزيع اللاعبين على الفرق تلقائياً عند الانضمام.",
+  "host.teamManualNote": "اضغط على لاعب لنقله بين الفرق.",
+  "host.shuffleTeams": "خلط الفرق",
+  "host.unassigned": "بدون فريق",
+  "host.everyoneAnswered": "أجاب الجميع!",
+  "host.hostTabNote": "أبقِ هذه الشاشة مفتوحة — فهي التي تدير اللعبة.",
+
+  "play.timeUp": "انتهى الوقت!",
+  "play.waitingNext": "بانتظار المضيف…",
+  "play.true": "صح",
+  "play.false": "خطأ",
+  "play.fiftyUnavailable": "خاصية 50:50 لا تعمل مع أسئلة صح/خطأ",
+
+  "editor.type": "النوع",
+  "editor.typeMulti": "٤ خيارات",
+  "editor.typeBoolean": "صح / خطأ",
+  "editor.presets": "مدة سريعة",
+  "editor.applyAll": "تطبيق على كل الأسئلة",
+  "editor.applied": "تم التطبيق على كل الأسئلة",
+  "editor.image": "صورة",
+  "editor.addImage": "إضافة صورة",
+  "editor.replaceImage": "استبدال",
+  "editor.removeImage": "حذف",
+  "editor.imageTooBig": "يجب أن تكون الصورة أقل من ٥ ميغابايت",
+  "editor.imageFailed": "فشل الرفع، حاول مجدداً",
+  "editor.uploading": "جارٍ الرفع…",
 };
+
 
 
 const DICTS: Record<Lang, Dict> = { en, ar };
