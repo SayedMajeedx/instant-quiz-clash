@@ -22,8 +22,10 @@ export type Database = {
           is_correct: boolean
           player_id: string
           points_awarded: number
+          powerup: string | null
           question_id: string
           room_id: string
+          streak_bonus: number
         }
         Insert: {
           answered_at?: string
@@ -32,8 +34,10 @@ export type Database = {
           is_correct?: boolean
           player_id: string
           points_awarded?: number
+          powerup?: string | null
           question_id: string
           room_id: string
+          streak_bonus?: number
         }
         Update: {
           answered_at?: string
@@ -42,8 +46,10 @@ export type Database = {
           is_correct?: boolean
           player_id?: string
           points_awarded?: number
+          powerup?: string | null
           question_id?: string
           room_id?: string
+          streak_bonus?: number
         }
         Relationships: [
           {
@@ -72,24 +78,39 @@ export type Database = {
       players: {
         Row: {
           avatar_color: string
+          fifty_hidden: number[] | null
+          fifty_question_id: string | null
           id: string
           joined_at: string
           nickname: string
           room_id: string
+          team_index: number | null
+          used_double: boolean
+          used_fifty: boolean
         }
         Insert: {
           avatar_color?: string
+          fifty_hidden?: number[] | null
+          fifty_question_id?: string | null
           id?: string
           joined_at?: string
           nickname: string
           room_id: string
+          team_index?: number | null
+          used_double?: boolean
+          used_fifty?: boolean
         }
         Update: {
           avatar_color?: string
+          fifty_hidden?: number[] | null
+          fifty_question_id?: string | null
           id?: string
           joined_at?: string
           nickname?: string
           room_id?: string
+          team_index?: number | null
+          used_double?: boolean
+          used_fifty?: boolean
         }
         Relationships: [
           {
@@ -189,6 +210,7 @@ export type Database = {
           quiz_id: string
           started_at: string | null
           status: string
+          team_count: number
         }
         Insert: {
           code: string
@@ -197,6 +219,7 @@ export type Database = {
           quiz_id: string
           started_at?: string | null
           status?: string
+          team_count?: number
         }
         Update: {
           code?: string
@@ -205,6 +228,7 @@ export type Database = {
           quiz_id?: string
           started_at?: string | null
           status?: string
+          team_count?: number
         }
         Relationships: [
           {
@@ -221,15 +245,19 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      is_quiz_owner: { Args: { p_quiz_id: string }; Returns: boolean }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
         Returns: {
           avatar_color: string
+          fifty_hidden: number[] | null
+          fifty_question_id: string | null
           id: string
           joined_at: string
           nickname: string
           room_id: string
+          team_index: number | null
+          used_double: boolean
+          used_fifty: boolean
         }
         SetofOptions: {
           from: "*"
@@ -238,7 +266,6 @@ export type Database = {
           isSetofReturn: false
         }
       }
-      quiz_has_live_room: { Args: { p_quiz_id: string }; Returns: boolean }
       room_answers: {
         Args: { p_player_id: string; p_room_id: string }
         Returns: {
@@ -248,20 +275,25 @@ export type Database = {
           is_correct: boolean
           player_id: string
           points_awarded: number
+          powerup: string
           question_id: string
           room_id: string
+          streak_bonus: number
         }[]
       }
-      room_is_live: { Args: { p_room_id: string }; Returns: boolean }
-      room_owner: { Args: { p_room_id: string }; Returns: boolean }
       room_players: {
         Args: { p_player_id: string; p_room_id: string }
         Returns: {
           avatar_color: string
+          fifty_hidden: number[]
+          fifty_question_id: string
           id: string
           joined_at: string
           nickname: string
           room_id: string
+          team_index: number
+          used_double: boolean
+          used_fifty: boolean
         }[]
       }
       room_questions: {
@@ -283,7 +315,12 @@ export type Database = {
         }[]
       }
       submit_answer: {
-        Args: { p_choice: number; p_player_id: string; p_question_id: string }
+        Args: {
+          p_choice: number
+          p_player_id: string
+          p_powerup?: string
+          p_question_id: string
+        }
         Returns: {
           answered_at: string
           choice_index: number
@@ -291,8 +328,10 @@ export type Database = {
           is_correct: boolean
           player_id: string
           points_awarded: number
+          powerup: string | null
           question_id: string
           room_id: string
+          streak_bonus: number
         }
         SetofOptions: {
           from: "*"
@@ -300,6 +339,10 @@ export type Database = {
           isOneToOne: true
           isSetofReturn: false
         }
+      }
+      use_fifty_fifty: {
+        Args: { p_player_id: string; p_question_id: string }
+        Returns: number[]
       }
     }
     Enums: {
