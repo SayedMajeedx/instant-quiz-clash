@@ -19,3 +19,28 @@ export const importQuestionsFromText = createServerFn({ method: "POST" })
       return { questions: [], error: kind } satisfies Result;
     }
   });
+
+export const generateQuizFromTopicFn = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((input: { topic: string; count: number; difficulty: "easy" | "medium" | "hard" }) =>
+    z
+      .object({
+        topic: z.string().trim().min(2).max(400),
+        count: z.number().int().min(3).max(20),
+        difficulty: z.enum(["easy", "medium", "hard"]),
+      })
+      .parse(input),
+  )
+  .handler(async ({ data }) => {
+    const { generateQuizFromTopic } = await import("@/lib/import-questions.server");
+    type Result = { questions: ParsedQuestion[]; error: "rate_limited" | "payment_required" | "failed" | null };
+    try {
+      const parsed = await generateQuizFromTopic(data);
+      return { questions: parsed.questions, error: null } satisfies Result;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "";
+      const kind: Result["error"] =
+        message === "rate_limited" ? "rate_limited" : message === "payment_required" ? "payment_required" : "failed";
+      return { questions: [], error: kind } satisfies Result;
+    }
+  });
