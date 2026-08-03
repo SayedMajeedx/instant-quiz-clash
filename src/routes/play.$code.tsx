@@ -7,7 +7,7 @@ import { Podium } from "@/components/quiz/Podium";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { pointsFor, questionStartMs, standings } from "@/lib/quizclash";
+import { standings } from "@/lib/quizclash";
 import { storedPlayerId } from "@/lib/session";
 
 export const Route = createFileRoute("/play/$code")({
@@ -50,30 +50,27 @@ function Play() {
     ? (answers.find((a) => a.question_id === currentQuestion.id && a.player_id === playerId) ?? null)
     : null;
 
+  // Correct answers are revealed by the server once a question's clock runs out.
+  useEffect(() => {
+    if (phase.kind === "reveal") void state.refresh();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase.kind, phase.kind === "reveal" ? phase.index : -1]);
+
   async function submit(choice: number) {
     if (phase.kind !== "question" || !room?.started_at || !playerId || myAnswer || sending) return;
     setSending(true);
     const question = phase.question;
-    const startMs = questionStartMs(room.started_at, questions, phase.index);
-    const msUsed = Math.max(0, Date.now() - startMs);
-    const isCorrect = choice === question.correct_index;
-    const points = isCorrect ? pointsFor(question.time_limit_seconds, msUsed) : 0;
 
-    const { data } = await supabase
-      .from("answers")
-      .insert({
-        room_id: room.id,
-        question_id: question.id,
-        player_id: playerId,
-        choice_index: choice,
-        is_correct: isCorrect,
-        points_awarded: points,
-      })
-      .select()
-      .single();
-    if (data) await state.refresh();
+    // Grading happens server-side so scores can't be forged from the client.
+    const { error } = await supabase.rpc("submit_answer", {
+      p_player_id: playerId,
+      p_question_id: question.id,
+      p_choice: choice,
+    });
+    if (!error) await state.refresh();
     setSending(false);
   }
+
 
   if (state.loading) {
     return (
@@ -188,10 +185,13 @@ function Play() {
           {myRow && myRow.streak > 1 ? (
             <p className="mt-2 font-display text-lg text-lime">{t("play.inARow", { n: myRow.streak })}</p>
           ) : null}
-          <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
-            <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
-            <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
-          </div>
+          {question.correct_index >= 0 ? (
+            <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
+              <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
+              <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
+            </div>
+          ) : null}
+
           <p className="mt-6 text-sm text-muted-foreground">{t("play.total", { n: myRow?.total ?? 0 })}</p>
         </div>
       </main>

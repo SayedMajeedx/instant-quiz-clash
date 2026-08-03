@@ -221,7 +221,63 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_quiz_owner: { Args: { p_quiz_id: string }; Returns: boolean }
+      join_room: {
+        Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
+        Returns: {
+          avatar_color: string
+          id: string
+          joined_at: string
+          nickname: string
+          room_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "players"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      quiz_has_live_room: { Args: { p_quiz_id: string }; Returns: boolean }
+      room_is_live: { Args: { p_room_id: string }; Returns: boolean }
+      room_owner: { Args: { p_room_id: string }; Returns: boolean }
+      room_questions: {
+        Args: { p_room_id: string }
+        Returns: {
+          id: string
+          options: Json
+          order_index: number
+          question_text: string
+          quiz_id: string
+          time_limit_seconds: number
+        }[]
+      }
+      room_reveals: {
+        Args: { p_room_id: string }
+        Returns: {
+          correct_index: number
+          question_id: string
+        }[]
+      }
+      submit_answer: {
+        Args: { p_choice: number; p_player_id: string; p_question_id: string }
+        Returns: {
+          answered_at: string
+          choice_index: number
+          id: string
+          is_correct: boolean
+          player_id: string
+          points_awarded: number
+          question_id: string
+          room_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "answers"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
     }
     Enums: {
       [_ in never]: never
