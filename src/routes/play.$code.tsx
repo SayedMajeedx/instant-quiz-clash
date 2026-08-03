@@ -183,7 +183,12 @@ function Play() {
           ) : (
             <p className="mt-4 text-sun">{t("play.lead")}</p>
           )}
-          <p className="mt-8 text-sm text-muted-foreground">{t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}</p>
+          <p className="mt-8 text-sm text-muted-foreground">
+            {room.advance_mode === "manual"
+              ? t("play.waitingNext")
+              : t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
+          </p>
+
         </div>
       </main>
     );
