@@ -268,8 +268,14 @@ function Play() {
           <p className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
             {t("play.questionOf", { n: phase.index + 1, total: questions.length })}
           </p>
-          <div className="mt-3 grid flex-1 grid-cols-2 gap-3 pb-2">
-            {[0, 1, 2, 3].map((i) => {
+          {question.image_url ? (
+            <QuestionImage
+              path={question.image_url}
+              className="mx-auto mt-3 max-h-[18vh] rounded-2xl border border-border object-contain"
+            />
+          ) : null}
+          <div className={cn("mt-3 grid flex-1 gap-3 pb-2", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
+            {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
               return (
                 <AnswerTile
@@ -279,10 +285,13 @@ function Play() {
                   disabled={sending || hidden}
                   state={hidden ? "wrong" : "idle"}
                   onClick={() => void submit(i)}
-                />
+                >
+                  {isBoolean ? (i === 0 ? t("play.true") : t("play.false")) : undefined}
+                </AnswerTile>
               );
             })}
           </div>
+
 
           <div className="pb-2">
             <p className="mb-2 text-center text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground">
