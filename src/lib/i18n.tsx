@@ -33,7 +33,7 @@ const en: Dict = {
   "auth.signedOut": "Signed out",
   "nav.backHome": "← QuizClash",
 
-  "home.kicker": "Live trivia · no app · no login",
+  "home.kicker": "Live trivia · no app to install",
   "home.title1": "Turn any room into a",
   "home.title2": "game show.",
   "home.sub":
