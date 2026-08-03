@@ -5,11 +5,15 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
 import { ImportFromText } from "@/components/quiz/ImportFromText";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { supabase } from "@/integrations/supabase/client";
 import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
 import { type ParsedQuestion } from "@/lib/import-questions.shared";
-import { type Question, type Quiz } from "@/lib/quizclash";
+import { optionCount, type Question, type QuestionType, type Quiz } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
+
+const TIME_PRESETS = [10, 20, 30, 45, 60, 90] as const;
+
 
 export const Route = createFileRoute("/_authenticated/quizzes/$quizId")({
   validateSearch: (search: Record<string, unknown>) => ({ import: search["import"] === true || search["import"] === "true" ? true : undefined }),
