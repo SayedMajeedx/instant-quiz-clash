@@ -6,6 +6,7 @@ import { CountdownRing } from "@/components/quiz/CountdownRing";
 import { Podium } from "@/components/quiz/Podium";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
+import { useI18n } from "@/lib/i18n";
 import { pointsFor, questionStartMs, standings } from "@/lib/quizclash";
 import { storedPlayerId } from "@/lib/session";
 
@@ -24,6 +25,7 @@ export const Route = createFileRoute("/play/$code")({
 function Play() {
   const { code } = Route.useParams();
   const state = useRoomGame(code);
+  const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
   const [playerId, setPlayerId] = useState<string | null>(null);
@@ -77,7 +79,7 @@ function Play() {
     return (
       <main className="grid min-h-screen place-items-center">
         <AnimatedBg />
-        <p className="text-muted-foreground">Connecting…</p>
+        <p className="text-muted-foreground">{t("play.connecting")}</p>
       </main>
     );
   }
@@ -87,9 +89,9 @@ function Play() {
       <main className="grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg />
         <div>
-          <h1 className="font-display text-3xl">Game not found</h1>
+          <h1 className="font-display text-3xl">{t("play.notFound")}</h1>
           <Link to="/join" className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky">
-            Try another code
+            {t("play.tryAnother")}
           </Link>
         </div>
       </main>
@@ -101,13 +103,13 @@ function Play() {
       <main className="grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg />
         <div>
-          <h1 className="font-display text-3xl">You&apos;re not in this game yet</h1>
+          <h1 className="font-display text-3xl">{t("play.notInGame")}</h1>
           <Link
             to="/join"
             search={{ code: room.code }}
             className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
           >
-            Join room {room.code}
+            {t("play.joinRoom", { code: room.code })}
           </Link>
         </div>
       </main>
@@ -133,12 +135,12 @@ function Play() {
             className="mx-auto block size-24 animate-float rounded-full border-4 border-background shadow-glow"
             style={{ backgroundColor: me.avatar_color }}
           />
-          <h1 className="mt-6 font-display text-4xl text-gradient">You&apos;re in!</h1>
+          <h1 className="mt-6 font-display text-4xl text-gradient">{t("play.youreIn")}</h1>
           <p className="mt-2 font-display text-2xl">{me.nickname}</p>
           <p className="mt-6 text-muted-foreground">
-            {startsIn !== null && startsIn > 0 ? `Starting in ${startsIn}…` : "Look at the big screen. Waiting for the host…"}
+            {startsIn !== null && startsIn > 0 ? t("play.startingIn", { n: startsIn }) : t("play.waitingHost")}
           </p>
-          <p className="mt-10 text-sm text-muted-foreground">Room {room.code}</p>
+          <p className="mt-10 text-sm text-muted-foreground">{t("play.room", { code: room.code })}</p>
         </div>
       </main>
     );
@@ -149,17 +151,20 @@ function Play() {
       <main className="relative grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg dense />
         <div className="w-full max-w-sm animate-pop rounded-3xl border border-border bg-surface-gradient p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">Your rank</p>
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">{t("play.yourRank")}</p>
           <p className="mt-2 font-display text-7xl text-gradient tabular-nums">#{myRow?.rank ?? "-"}</p>
-          <p className="mt-2 font-display text-3xl tabular-nums">{myRow?.total ?? 0} pts</p>
+          <p className="mt-2 font-display text-3xl tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</p>
           {myRow && myRow.rank > 1 ? (
             <p className="mt-4 text-muted-foreground">
-              {(rows[myRow.rank - 2]?.total ?? 0) - myRow.total} points behind {rows[myRow.rank - 2]?.player.nickname}
+              {t("play.behind", {
+                n: (rows[myRow.rank - 2]?.total ?? 0) - myRow.total,
+                name: rows[myRow.rank - 2]?.player.nickname ?? "",
+              })}
             </p>
           ) : (
-            <p className="mt-4 text-sun">You&apos;re in the lead 🔥</p>
+            <p className="mt-4 text-sun">{t("play.lead")}</p>
           )}
-          <p className="mt-8 text-sm text-muted-foreground">Next question in {Math.ceil(phase.msLeft / 1000)}s</p>
+          <p className="mt-8 text-sm text-muted-foreground">{t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}</p>
         </div>
       </main>
     );
@@ -175,19 +180,19 @@ function Play() {
         <div className="w-full max-w-sm animate-pop">
           <p className="font-display text-7xl">{correct ? "✅" : myAnswer ? "❌" : "⏰"}</p>
           <h1 className="mt-4 font-display text-4xl">
-            {correct ? "Correct!" : myAnswer ? "Incorrect" : "Too slow"}
+            {correct ? t("play.correct") : myAnswer ? t("play.incorrect") : t("play.tooSlow")}
           </h1>
           <p className="mt-3 font-display text-3xl text-sun tabular-nums">
-            +{myAnswer?.points_awarded ?? 0} pts
+            {t("play.gained", { n: myAnswer?.points_awarded ?? 0 })}
           </p>
           {myRow && myRow.streak > 1 ? (
-            <p className="mt-2 font-display text-lg text-lime">🔥 {myRow.streak} in a row</p>
+            <p className="mt-2 font-display text-lg text-lime">{t("play.inARow", { n: myRow.streak })}</p>
           ) : null}
           <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
-            <p className="text-sm text-muted-foreground">Correct answer</p>
+            <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
             <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground">Total {myRow?.total ?? 0} pts</p>
+          <p className="mt-6 text-sm text-muted-foreground">{t("play.total", { n: myRow?.total ?? 0 })}</p>
         </div>
       </main>
     );
@@ -203,15 +208,15 @@ function Play() {
           <span className="size-5 rounded-full" style={{ backgroundColor: me.avatar_color }} />
           {me.nickname}
         </span>
-        <span className="font-display tabular-nums">{myRow?.total ?? 0} pts</span>
+        <span className="font-display tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</span>
       </header>
 
       {myAnswer ? (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
           <div className="animate-pop">
             <p className="font-display text-6xl">🔒</p>
-            <h1 className="mt-4 font-display text-3xl text-gradient">Answer locked in</h1>
-            <p className="mt-2 text-muted-foreground">Waiting for everyone else…</p>
+            <h1 className="mt-4 font-display text-3xl text-gradient">{t("play.locked")}</h1>
+            <p className="mt-2 text-muted-foreground">{t("play.waitingOthers")}</p>
           </div>
           <div className="mt-10">
             <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={110} />
@@ -223,7 +228,7 @@ function Play() {
             <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={96} />
           </div>
           <p className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-            Question {phase.index + 1} of {questions.length} — look up!
+            {t("play.questionOf", { n: phase.index + 1, total: questions.length })}
           </p>
           <div className="mt-3 grid flex-1 grid-cols-2 gap-3 pb-2">
             {[0, 1, 2, 3].map((i) => (
