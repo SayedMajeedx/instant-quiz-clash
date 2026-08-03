@@ -226,7 +226,10 @@ function Play() {
   }
 
   const totalMs = Math.max(1, question.time_limit_seconds) * 1000;
+  const choices = optionCount(question);
+  const isBoolean = question.question_type === "boolean";
   const fiftyHidden = me.fifty_question_id === question.id ? (me.fifty_hidden ?? []) : [];
+
 
   return (
     <main className="relative flex min-h-screen flex-col px-4 py-4">
