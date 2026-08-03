@@ -31,7 +31,6 @@ function HostRoom() {
   const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
-  const advancingRef = useRef<string | null>(null);
   const archivedRef = useRef(false);
   const [assigning, setAssigning] = useState<string | null>(null);
 
@@ -43,20 +42,26 @@ function HostRoom() {
 
   // Every stage transition is written by this screen. `advance_room` is guarded
   // on the stage it is leaving, so a second host tab can never double-advance.
+  const refresh = state.refresh;
+  const isAdvancingRef = useRef(false);
   const advance = useCallback(
     async (fromIndex: number, fromPhase: CursorPhase) => {
-      if (!roomId) return;
-      const key = `${roomId}:${fromIndex}:${fromPhase}`;
-      if (advancingRef.current === key) return;
-      advancingRef.current = key;
-      await supabase.rpc("advance_room", {
-        p_room_id: roomId,
-        p_expect_index: fromIndex,
-        p_expect_phase: fromPhase,
-      });
-      await state.refresh();
+      if (!roomId || isAdvancingRef.current) return;
+      isAdvancingRef.current = true;
+      try {
+        await supabase.rpc("advance_room", {
+          p_room_id: roomId,
+          p_expect_index: fromIndex,
+          p_expect_phase: fromPhase,
+        });
+        await refresh();
+      } catch (e) {
+        console.error("Failed to advance room:", e);
+      } finally {
+        isAdvancingRef.current = false;
+      }
     },
-    [roomId, state],
+    [roomId, refresh],
   );
 
   // Snapshot final standings once the room is over so they survive cleanup.
@@ -71,20 +76,30 @@ function HostRoom() {
   const everyoneAnswered =
     phase.kind === "question" && players.length > 0 && questionAnswerCount >= players.length;
 
+  const timeUp =
+    phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
+      ? phase.msLeft <= 0
+      : false;
+
+  const phaseKind = phase.kind;
+  const phaseIndex =
+    phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard" ? phase.index : -1;
+  const advanceMode = room?.advance_mode;
+  const roomStatus = room?.status;
+
   // Auto pacing: the question clock always ends the question (early when everyone
   // has answered); reveal and scoreboard only roll on when the host chose "auto".
   useEffect(() => {
-    if (!room || room.status !== "active") return;
-    if (phase.kind !== "question" && phase.kind !== "reveal" && phase.kind !== "leaderboard") return;
-    const auto = room.advance_mode !== "manual";
-    const timeUp = phase.msLeft <= 0;
-    const shouldAdvance = phase.kind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
+    if (!roomStatus || roomStatus !== "active") return;
+    if (phaseKind !== "question" && phaseKind !== "reveal" && phaseKind !== "leaderboard") return;
+    const auto = advanceMode !== "manual";
+    const shouldAdvance = phaseKind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
     if (!shouldAdvance) return;
-    const from: CursorPhase = phase.kind === "question" ? "question" : phase.kind === "reveal" ? "reveal" : "board";
-    const delay = phase.kind === "question" && everyoneAnswered && !timeUp ? 700 : 0;
-    const timer = window.setTimeout(() => void advance(phase.index, from), delay);
+    const from: CursorPhase = phaseKind === "question" ? "question" : phaseKind === "reveal" ? "reveal" : "board";
+    const delay = phaseKind === "question" && everyoneAnswered && !timeUp ? 700 : 0;
+    const timer = window.setTimeout(() => void advance(phaseIndex, from), delay);
     return () => window.clearTimeout(timer);
-  }, [room, phase, everyoneAnswered, advance]);
+  }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance]);
 
   const rows = useMemo(() => {
     const upTo =

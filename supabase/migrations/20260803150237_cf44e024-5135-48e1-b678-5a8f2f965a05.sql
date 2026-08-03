@@ -322,6 +322,10 @@ END;
 $$;
 
 -- 9. Storage policies for question images --------------------------------
+INSERT INTO storage.buckets (id, name, public)
+VALUES ('question-images', 'question-images', true)
+ON CONFLICT (id) DO UPDATE SET public = true;
+
 CREATE POLICY "question_images_public_read" ON storage.objects
   FOR SELECT TO anon, authenticated USING (bucket_id = 'question-images');
 CREATE POLICY "question_images_owner_insert" ON storage.objects
