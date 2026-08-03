@@ -239,8 +239,31 @@ export type Database = {
         }
       }
       quiz_has_live_room: { Args: { p_quiz_id: string }; Returns: boolean }
+      room_answers: {
+        Args: { p_player_id: string; p_room_id: string }
+        Returns: {
+          answered_at: string
+          choice_index: number
+          id: string
+          is_correct: boolean
+          player_id: string
+          points_awarded: number
+          question_id: string
+          room_id: string
+        }[]
+      }
       room_is_live: { Args: { p_room_id: string }; Returns: boolean }
       room_owner: { Args: { p_room_id: string }; Returns: boolean }
+      room_players: {
+        Args: { p_player_id: string; p_room_id: string }
+        Returns: {
+          avatar_color: string
+          id: string
+          joined_at: string
+          nickname: string
+          room_id: string
+        }[]
+      }
       room_questions: {
         Args: { p_room_id: string }
         Returns: {

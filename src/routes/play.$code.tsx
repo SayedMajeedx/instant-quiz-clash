@@ -24,15 +24,17 @@ export const Route = createFileRoute("/play/$code")({
 
 function Play() {
   const { code } = Route.useParams();
-  const state = useRoomGame(code);
+  const [playerId, setPlayerId] = useState<string | null>(null);
+  const [sessionResolved, setSessionResolved] = useState(false);
+  const state = useRoomGame(code, playerId);
   const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
-  const [playerId, setPlayerId] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
 
   useEffect(() => {
     setPlayerId(storedPlayerId(code));
+    setSessionResolved(true);
   }, [code]);
 
   const me = players.find((p) => p.id === playerId) ?? null;
@@ -72,7 +74,7 @@ function Play() {
   }
 
 
-  if (state.loading) {
+  if (!sessionResolved || state.loading) {
     return (
       <main className="grid min-h-screen place-items-center">
         <AnimatedBg />
