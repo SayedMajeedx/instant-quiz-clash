@@ -106,7 +106,7 @@ function HostRoom() {
     if (!room || room.team_count < 2) return;
     const next = current === null ? 0 : current + 1 >= room.team_count ? null : current + 1;
     setAssigning(playerId);
-    await supabase.rpc("set_player_team", { p_player_id: playerId, p_team_index: next });
+    await supabase.rpc("set_player_team", { p_player_id: playerId, p_team_index: next as unknown as number });
     await state.refresh();
     setAssigning(null);
   }
