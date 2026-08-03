@@ -7,12 +7,14 @@ export const importQuestionsFromText = createServerFn({ method: "POST" })
   .inputValidator((input: { text: string }) => z.object({ text: z.string().max(20000) }).parse(input))
   .handler(async ({ data }) => {
     const { parseQuizText } = await import("@/lib/import-questions.server");
+    type Result = { questions: ParsedQuestion[]; error: "rate_limited" | "payment_required" | "failed" | null };
     try {
-      return await parseQuizText(data.text);
+      const parsed = await parseQuizText(data.text);
+      return { questions: parsed.questions, error: null } satisfies Result;
     } catch (error) {
       const message = error instanceof Error ? error.message : "";
-      if (message === "rate_limited") return { questions: [], error: "rate_limited" as const };
-      if (message === "payment_required") return { questions: [], error: "payment_required" as const };
-      return { questions: [], error: "failed" as const };
+      const kind: Result["error"] =
+        message === "rate_limited" ? "rate_limited" : message === "payment_required" ? "payment_required" : "failed";
+      return { questions: [], error: kind } satisfies Result;
     }
   });
