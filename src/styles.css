@@ -251,3 +251,13 @@
     letter-spacing: -0.02em;
   }
 }
+
+/* Arabic glyphs are taller than the Latin display face; give RTL text room. */
+[dir="rtl"] .font-display,
+[dir="rtl"] h1,
+[dir="rtl"] h2 {
+  line-height: 1.35;
+}
+[dir="rtl"] {
+  letter-spacing: normal;
+}
