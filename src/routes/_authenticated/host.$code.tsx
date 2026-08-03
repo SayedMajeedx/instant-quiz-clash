@@ -5,6 +5,7 @@ import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
 import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
@@ -318,7 +319,7 @@ function HostRoom() {
                   ) : null;
                 const inner = (
                   <>
-                    <span className="size-4 rounded-full" style={{ backgroundColor: p.avatar_color }} />
+                    <PlayerAvatar player={p} size="sm" />
                     {p.nickname}
                     {badge}
                   </>

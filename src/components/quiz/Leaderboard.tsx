@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
@@ -36,10 +37,7 @@ export function Leaderboard({
             <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-background/50 font-display text-lg tabular-nums">
               {row.rank}
             </span>
-            <span
-              className="size-9 shrink-0 rounded-full border-2 border-background/40"
-              style={{ backgroundColor: row.player.avatar_color }}
-            />
+            <PlayerAvatar player={row.player} size="md" />
             <div className="min-w-0 flex-1">
               <div className="truncate font-display text-lg">{row.player.nickname}</div>
               <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-background/50">

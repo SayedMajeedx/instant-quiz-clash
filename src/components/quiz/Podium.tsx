@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Confetti } from "@/components/quiz/Confetti";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
+import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
@@ -38,10 +39,7 @@ export function Podium({
             <div key={slot.rank} className={cn("flex w-1/3 flex-col items-center", slot.order)}>
               {row ? (
                 <div className="mb-3 flex animate-pop flex-col items-center text-center">
-                  <span
-                    className="size-12 rounded-full border-4 border-background md:size-16"
-                    style={{ backgroundColor: row.player.avatar_color }}
-                  />
+                  <PlayerAvatar player={row.player} size={slot.rank === 1 ? "xl" : "lg"} crownRank={slot.rank} />
                   <span className="mt-2 max-w-full truncate font-display text-lg md:text-2xl">
                     {row.player.nickname}
                   </span>

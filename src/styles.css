@@ -252,12 +252,22 @@
   }
 }
 
-/* Arabic glyphs are taller than the Latin display face; give RTL text room. */
+/* Arabic glyphs & font rules: Prioritize Cairo and remove letter-spacing in RTL mode to prevent broken/disconnected characters */
+[dir="rtl"] {
+  --font-display: "Cairo", "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Cairo", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: normal !important;
+}
+
+[dir="rtl"] *,
+[dir="rtl"] input,
+[dir="rtl"] input::placeholder,
+input::placeholder {
+  letter-spacing: normal !important;
+}
+
 [dir="rtl"] .font-display,
 [dir="rtl"] h1,
 [dir="rtl"] h2 {
-  line-height: 1.6;
-}
-[dir="rtl"] {
-  letter-spacing: normal;
+  line-height: 1.5;
 }

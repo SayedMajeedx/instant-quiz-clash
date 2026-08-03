@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { AVATAR_COLORS, type Player } from "@/lib/quizclash";
 import { storePlayerId } from "@/lib/session";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/join")({
   validateSearch: (search: Record<string, unknown>): { code?: string } =>
@@ -98,7 +99,10 @@ function Join() {
               placeholder={t("join.codePlaceholder")}
               autoCapitalize="characters"
               inputMode="text"
-              className="w-full rounded-2xl border border-border bg-background/60 px-4 py-4 text-center font-display text-3xl tracking-[0.3em] outline-none focus:ring-2 focus:ring-ring"
+              className={cn(
+                "w-full rounded-2xl border border-border bg-background/60 px-4 py-4 text-center font-display text-3xl outline-none focus:ring-2 focus:ring-ring",
+                code ? "dir-ltr tracking-[0.25em]" : "",
+              )}
             />
             <input
               value={nickname}

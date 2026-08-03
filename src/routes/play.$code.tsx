@@ -4,6 +4,7 @@ import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownRing } from "@/components/quiz/CountdownRing";
+import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
 import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
@@ -161,11 +162,8 @@ function Play() {
     return (
       <main className="relative grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg dense />
-        <div className="animate-pop">
-          <span
-            className="mx-auto block size-24 animate-float rounded-full border-4 border-background shadow-glow"
-            style={{ backgroundColor: me.avatar_color }}
-          />
+        <div className="animate-pop flex flex-col items-center">
+          <PlayerAvatar player={me} size="xl" className="animate-float" />
           <h1 className="mt-6 font-display text-4xl text-gradient">{t("play.youreIn")}</h1>
           <p className="mt-2 font-display text-2xl">{me.nickname}</p>
           <p className="mt-6 text-muted-foreground">
@@ -248,7 +246,7 @@ function Play() {
       <AnimatedBg />
       <header className="flex items-center justify-between">
         <span className="flex items-center gap-2 font-semibold">
-          <span className="size-5 rounded-full" style={{ backgroundColor: me.avatar_color }} />
+          <PlayerAvatar player={me} size="sm" />
           {me.nickname}
         </span>
         <span className="flex items-center gap-3">
