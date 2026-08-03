@@ -64,7 +64,7 @@ export type Answer = {
 
 /** Inter-question segment durations (ms). Every screen derives phase from these. */
 export const REVEAL_MS = 2500;
-export const BOARD_MS = 2000;
+export const BOARD_MS = 3000;
 export const MAX_POINTS = 1000;
 export const MIN_POINTS = 300;
 
@@ -143,6 +143,8 @@ export type Standing = {
   player: Player;
   total: number;
   rank: number;
+  prevTotal: number;
+  prevRank: number;
   lastPoints: number;
   streak: number;
   correct: number;
@@ -151,6 +153,21 @@ export type Standing = {
 
 export function standings(players: Player[], answers: Answer[], questions: Question[], upToIndex: number): Standing[] {
   const orderedIds = questions.slice(0, upToIndex + 1).map((q) => q.id);
+
+  let prevStandingsMap: Record<string, { prevRank: number; prevTotal: number }> = {};
+  if (upToIndex > 0) {
+    const prevOrderedIds = questions.slice(0, upToIndex).map((q) => q.id);
+    const prevRows = players.map((player) => {
+      const mine = answers.filter((a) => a.player_id === player.id && prevOrderedIds.includes(a.question_id));
+      const total = mine.reduce((sum, a) => sum + a.points_awarded, 0);
+      return { id: player.id, nickname: player.nickname, total, rank: 0 };
+    });
+    prevRows.sort((a, b) => b.total - a.total || a.nickname.localeCompare(b.nickname));
+    prevRows.forEach((r, i) => {
+      prevStandingsMap[r.id] = { prevRank: i + 1, prevTotal: r.total };
+    });
+  }
+
   const rows = players.map((player) => {
     const mine = answers.filter((a) => a.player_id === player.id && orderedIds.includes(a.question_id));
     const total = mine.reduce((sum, a) => sum + a.points_awarded, 0);
@@ -161,19 +178,28 @@ export function standings(players: Player[], answers: Answer[], questions: Quest
       else break;
     }
     const last = mine.find((a) => a.question_id === orderedIds[orderedIds.length - 1]);
+    const lastPoints = last?.points_awarded ?? 0;
+    const prevInfo = prevStandingsMap[player.id];
+    const prevTotal = prevInfo ? prevInfo.prevTotal : Math.max(0, total - lastPoints);
+
     return {
       player,
       total,
       streak,
       correct: mine.filter((a) => a.is_correct).length,
       answered: mine.length,
-      lastPoints: last?.points_awarded ?? 0,
+      lastPoints,
       rank: 0,
+      prevTotal,
+      prevRank: prevInfo ? prevInfo.prevRank : 0,
     };
   });
   rows.sort((a, b) => b.total - a.total || a.player.nickname.localeCompare(b.player.nickname));
   rows.forEach((r, i) => {
     r.rank = i + 1;
+    if (r.prevRank === 0) {
+      r.prevRank = r.rank;
+    }
   });
   return rows;
 }
