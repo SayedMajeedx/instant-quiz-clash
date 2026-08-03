@@ -53,7 +53,7 @@ function MyQuizzes() {
     void load();
   }, [load]);
 
-  async function createQuiz() {
+  async function createQuiz(withImport = false) {
     const { data, error } = await supabase
       .from("quizzes")
       .insert({ user_id: user.id, title: t("quizzes.newTitle") })
@@ -72,7 +72,11 @@ function MyQuizzes() {
       time_limit_seconds: 20,
       order_index: 0,
     });
-    void navigate({ to: "/quizzes/$quizId", params: { quizId: quiz.id } });
+    void navigate({
+      to: "/quizzes/$quizId",
+      params: { quizId: quiz.id },
+      search: withImport ? { import: true } : {},
+    });
   }
 
   async function remove(id: string) {
@@ -93,13 +97,22 @@ function MyQuizzes() {
         </div>
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
           <h1 className="font-display text-4xl md:text-5xl">{t("quizzes.title")}</h1>
+          <div className="flex flex-wrap gap-3">
           <button
             type="button"
-            onClick={createQuiz}
+            onClick={() => void createQuiz(false)}
             className="press rounded-2xl bg-gradient-hero px-5 py-3 font-display text-lg text-primary-foreground shadow-chunky"
           >
             {t("quizzes.new")}
           </button>
+          <button
+            type="button"
+            onClick={() => void createQuiz(true)}
+            className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
+          >
+            ✨ {t("import.open")}
+          </button>
+          </div>
         </div>
 
         <div className="mt-8 space-y-3">
