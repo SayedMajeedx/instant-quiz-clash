@@ -237,9 +237,11 @@ export type Database = {
           correct_index: number
           created_at: string
           id: string
+          image_url: string | null
           options: Json
           order_index: number
           question_text: string
+          question_type: string
           quiz_id: string
           time_limit_seconds: number
         }
@@ -247,9 +249,11 @@ export type Database = {
           correct_index?: number
           created_at?: string
           id?: string
+          image_url?: string | null
           options?: Json
           order_index?: number
           question_text?: string
+          question_type?: string
           quiz_id: string
           time_limit_seconds?: number
         }
@@ -257,9 +261,11 @@ export type Database = {
           correct_index?: number
           created_at?: string
           id?: string
+          image_url?: string | null
           options?: Json
           order_index?: number
           question_text?: string
+          question_type?: string
           quiz_id?: string
           time_limit_seconds?: number
         }
@@ -296,31 +302,46 @@ export type Database = {
       }
       rooms: {
         Row: {
+          advance_mode: string
           code: string
           created_at: string
+          cursor_index: number
+          cursor_phase: string
           id: string
+          phase_started_at: string | null
           quiz_id: string
           started_at: string | null
           status: string
           team_count: number
+          team_mode: string
         }
         Insert: {
+          advance_mode?: string
           code: string
           created_at?: string
+          cursor_index?: number
+          cursor_phase?: string
           id?: string
+          phase_started_at?: string | null
           quiz_id: string
           started_at?: string | null
           status?: string
           team_count?: number
+          team_mode?: string
         }
         Update: {
+          advance_mode?: string
           code?: string
           created_at?: string
+          cursor_index?: number
+          cursor_phase?: string
           id?: string
+          phase_started_at?: string | null
           quiz_id?: string
           started_at?: string | null
           status?: string
           team_count?: number
+          team_mode?: string
         }
         Relationships: [
           {
@@ -337,6 +358,33 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      advance_room: {
+        Args: {
+          p_expect_index: number
+          p_expect_phase: string
+          p_room_id: string
+        }
+        Returns: {
+          advance_mode: string
+          code: string
+          created_at: string
+          cursor_index: number
+          cursor_phase: string
+          id: string
+          phase_started_at: string | null
+          quiz_id: string
+          started_at: string | null
+          status: string
+          team_count: number
+          team_mode: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "rooms"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
       archive_room: { Args: { p_room_id: string }; Returns: string }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
@@ -393,9 +441,11 @@ export type Database = {
         Args: { p_room_id: string }
         Returns: {
           id: string
+          image_url: string
           options: Json
           order_index: number
           question_text: string
+          question_type: string
           quiz_id: string
           time_limit_seconds: number
         }[]
@@ -406,6 +456,27 @@ export type Database = {
           correct_index: number
           question_id: string
         }[]
+      }
+      set_player_team: {
+        Args: { p_player_id: string; p_team_index: number }
+        Returns: {
+          avatar_color: string
+          fifty_hidden: number[] | null
+          fifty_question_id: string | null
+          id: string
+          joined_at: string
+          nickname: string
+          room_id: string
+          team_index: number | null
+          used_double: boolean
+          used_fifty: boolean
+        }
+        SetofOptions: {
+          from: "*"
+          to: "players"
+          isOneToOne: true
+          isSetofReturn: false
+        }
       }
       submit_answer: {
         Args: {
