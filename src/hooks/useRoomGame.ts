@@ -100,13 +100,12 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
     void load();
   }, [load]);
 
-  // Participants can't subscribe to players/answers changes (no table access),
-  // so they keep the lobby and leaderboard fresh with a light poll instead.
+  // Realtime isn't guaranteed for these tables (participants have no direct
+  // table access at all), so every client keeps state fresh with a light poll.
   useEffect(() => {
-    if (!playerId) return;
-    const id = window.setInterval(() => void load(), 2500);
+    const id = window.setInterval(() => void load(), 2000);
     return () => window.clearInterval(id);
-  }, [playerId, load]);
+  }, [load]);
 
 
   useEffect(() => {
