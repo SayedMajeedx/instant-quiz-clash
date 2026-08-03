@@ -186,7 +186,7 @@ const ar: Dict = {
   "auth.signedOut": "تم تسجيل الخروج",
   "nav.backHome": "→ كويزكلاش",
 
-  "home.kicker": "أسئلة مباشرة · بدون تطبيق · بدون تسجيل",
+  "home.kicker": "أسئلة مباشرة · بدون تثبيت تطبيق",
   "home.title1": "حوّل أي مكان إلى",
   "home.title2": "برنامج مسابقات.",
   "home.sub":
