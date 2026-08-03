@@ -11,7 +11,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { standings } from "@/lib/quizclash";
 
-export const Route = createFileRoute("/host/$code")({
+export const Route = createFileRoute("/_authenticated/host/$code")({
   head: () => ({
     meta: [
       { title: "Host Display — QuizClash" },

@@ -6,10 +6,9 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { randomCode, type Quiz } from "@/lib/quizclash";
-import { ownerId } from "@/lib/session";
 import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/host/")({
+export const Route = createFileRoute("/_authenticated/host/")({
   validateSearch: (search: Record<string, unknown>): { quiz?: string } =>
     typeof search["quiz"] === "string" ? { quiz: search["quiz"] } : {},
   head: () => ({
@@ -27,6 +26,7 @@ function HostCreate() {
   const navigate = useNavigate();
   const { t } = useI18n();
   const { quiz: preselected } = Route.useSearch();
+  const { user } = Route.useRouteContext();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [selected, setSelected] = useState<string | null>(preselected ?? null);
@@ -36,7 +36,7 @@ function HostCreate() {
     const { data } = await supabase
       .from("quizzes")
       .select("*")
-      .eq("owner_id", ownerId())
+      .eq("user_id", user.id)
       .order("created_at", { ascending: false });
     const rows = (data ?? []) as unknown as Quiz[];
     setQuizzes(rows);
@@ -51,7 +51,7 @@ function HostCreate() {
       if (!selected && rows[0]) setSelected(rows[0].id);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [user.id]);
 
   useEffect(() => {
     void load();

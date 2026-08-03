@@ -101,6 +101,24 @@ export type Database = {
           },
         ]
       }
+      profiles: {
+        Row: {
+          created_at: string
+          display_name: string
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          display_name?: string
+          id: string
+        }
+        Update: {
+          created_at?: string
+          display_name?: string
+          id?: string
+        }
+        Relationships: []
+      }
       questions: {
         Row: {
           correct_index: number
@@ -146,20 +164,20 @@ export type Database = {
         Row: {
           created_at: string
           id: string
-          owner_id: string
           title: string
+          user_id: string
         }
         Insert: {
           created_at?: string
           id?: string
-          owner_id: string
           title?: string
+          user_id: string
         }
         Update: {
           created_at?: string
           id?: string
-          owner_id?: string
           title?: string
+          user_id?: string
         }
         Relationships: []
       }

@@ -1,4 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { useQueryClient } from "@tanstack/react-query";
+import { toast } from "sonner";
+import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
@@ -25,6 +29,18 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const { t } = useI18n();
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
+
+  async function signOut() {
+    await queryClient.cancelQueries();
+    queryClient.clear();
+    await supabase.auth.signOut();
+    toast.success(t("auth.signedOut"));
+    void navigate({ to: "/", replace: true });
+  }
+
   const features = [
     { t: t("home.f1.t"), d: t("home.f1.d") },
     { t: t("home.f2.t"), d: t("home.f2.d") },
@@ -43,12 +59,30 @@ function Home() {
         </span>
         <div className="flex items-center gap-2">
           <LanguageToggle />
-          <Link
-            to="/quizzes"
-            className="press rounded-xl border border-border bg-surface-gradient px-4 py-2 text-sm font-semibold"
-          >
-            {t("nav.myQuizzes")}
-          </Link>
+          {user ? (
+            <>
+              <Link
+                to="/quizzes"
+                className="press rounded-xl border border-border bg-surface-gradient px-4 py-2 text-sm font-semibold"
+              >
+                {t("nav.myQuizzes")}
+              </Link>
+              <button
+                type="button"
+                onClick={() => void signOut()}
+                className="press rounded-xl px-3 py-2 text-sm font-semibold text-muted-foreground hover:text-foreground"
+              >
+                {t("nav.signOut")}
+              </button>
+            </>
+          ) : (
+            <Link
+              to="/auth"
+              className="press rounded-xl border border-border bg-surface-gradient px-4 py-2 text-sm font-semibold"
+            >
+              {t("nav.signIn")}
+            </Link>
+          )}
         </div>
       </header>
 
