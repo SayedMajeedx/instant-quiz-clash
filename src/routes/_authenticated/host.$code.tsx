@@ -111,11 +111,11 @@ function HostRoom() {
 
   const rows = useMemo(() => {
     const upTo =
-      phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
-        ? phase.index
+      phaseKind === "question" || phaseKind === "reveal" || phaseKind === "leaderboard"
+        ? phaseIndex
         : questions.length - 1;
     return standings(players, answers, questions, upTo);
-  }, [players, answers, questions, phase]);
+  }, [players, answers, questions, phaseKind, phaseIndex]);
 
   const teams = useMemo(() => teamStandings(rows), [rows]);
 

@@ -16,9 +16,20 @@ export function Leaderboard({
   showDelta?: boolean;
 }) {
   const { t } = useI18n();
-  const max = Math.max(1, ...rows.map((r) => r.total));
 
-  // Animation stage: 0 = initial (prev scores & prev ranks), 1 = count scores & extend bar, 2 = swap ranks, 3 = final lock
+  // Stable key so stage reset only triggers when row data or question actually changes
+  const rowsKey = useMemo(
+    () => rows.map((r) => `${r.player.id}:${r.total}:${r.prevTotal}:${r.rank}:${r.prevRank}`).join("|"),
+    [rows],
+  );
+
+  const max = Math.max(1, ...rows.map((r) => Math.max(r.total, r.prevTotal)));
+
+  // Animation stage:
+  // 0 = Initial (at prevRank, showing prevTotal)
+  // 1 = Count-Up & Bar Expansion (+lastPoints pill pops up)
+  // 2 = Rank Swap (rows glide vertically to new rank positions)
+  // 3 = Final Lock (streak badges & final badges show)
   const [stage, setStage] = useState<0 | 1 | 2 | 3>(showDelta ? 0 : 3);
 
   useEffect(() => {
@@ -28,14 +39,14 @@ export function Leaderboard({
     }
     setStage(0);
     const t1 = setTimeout(() => setStage(1), 300);
-    const t2 = setTimeout(() => setStage(2), 1100);
-    const t3 = setTimeout(() => setStage(3), 2000);
+    const t2 = setTimeout(() => setStage(2), 1200);
+    const t3 = setTimeout(() => setStage(3), 2200);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
       clearTimeout(t3);
     };
-  }, [rows, showDelta]);
+  }, [rowsKey, showDelta]);
 
   const activeRows = useMemo(() => {
     const list = [...rows];
@@ -56,7 +67,6 @@ export function Leaderboard({
         const isSwapped = stage >= 2;
 
         const currentRank = isSwapped ? row.rank : row.prevRank;
-        const displayScore = isPastInitial ? row.total : row.prevTotal;
         const barWidth = isPastInitial
           ? (row.total / max) * 100
           : (row.prevTotal / max) * 100;
@@ -66,14 +76,14 @@ export function Leaderboard({
         return (
           <div
             key={row.player.id}
-            className="absolute left-0 right-0 transition-all duration-700 ease-out"
+            className="absolute left-0 right-0 transition-all duration-700 cubic-bezier(0.34, 1.56, 0.64, 1)"
             style={{ transform: `translateY(${(currentRank - 1) * rowHeight}px)` }}
           >
             <div
               className={cn(
-                "flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3.5 shadow-sm transition-colors duration-500",
+                "flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3.5 shadow-sm transition-all duration-500",
                 row.player.id === highlightPlayerId && "ring-2 ring-sun",
-                isSwapped && rankDiff > 0 && "border-lime/50 bg-lime/10",
+                isSwapped && rankDiff > 0 && "border-lime/60 bg-lime/10 shadow-glow",
               )}
             >
               {/* Rank number badge */}
@@ -101,7 +111,7 @@ export function Leaderboard({
                 <div className="truncate font-display text-lg">{row.player.nickname}</div>
                 <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-background/50">
                   <div
-                    className="h-full rounded-full bg-gradient-hero transition-all duration-700 ease-out"
+                    className="h-full rounded-full bg-gradient-hero transition-all duration-800 ease-out"
                     style={{ width: `${Math.max(4, barWidth)}%` }}
                   />
                 </div>
@@ -110,7 +120,7 @@ export function Leaderboard({
               {/* Score & Delta */}
               <div className="text-end shrink-0">
                 <div className="font-display text-2xl tabular-nums leading-none">
-                  <CounterNumber target={displayScore} />
+                  <CounterNumber from={row.prevTotal} target={row.total} active={isPastInitial} />
                 </div>
 
                 {showDelta && row.lastPoints > 0 && isPastInitial ? (
@@ -137,21 +147,29 @@ export function Leaderboard({
   );
 }
 
-function CounterNumber({ target }: { target: number }) {
-  const [val, setVal] = useState(target);
+function CounterNumber({ from, target, active }: { from: number; target: number; active: boolean }) {
+  const [val, setVal] = useState(from);
 
   useEffect(() => {
-    if (val === target) return;
-    const start = val;
+    if (!active) {
+      setVal(from);
+      return;
+    }
+    const start = from;
     const diff = target - start;
-    const duration = 600;
+    if (diff === 0) {
+      setVal(target);
+      return;
+    }
+
+    const duration = 700;
     const startTime = performance.now();
 
     let frameId: number;
     const step = (now: number) => {
       const elapsed = now - startTime;
       const progress = Math.min(1, elapsed / duration);
-      const eased = 1 - (1 - progress) * (1 - progress);
+      const eased = 1 - Math.pow(1 - progress, 3);
       setVal(Math.round(start + diff * eased));
       if (progress < 1) {
         frameId = requestAnimationFrame(step);
@@ -159,7 +177,7 @@ function CounterNumber({ target }: { target: number }) {
     };
     frameId = requestAnimationFrame(step);
     return () => cancelAnimationFrame(frameId);
-  }, [target]);
+  }, [from, target, active]);
 
   return <>{val}</>;
 }

@@ -54,13 +54,12 @@ function Play() {
   }, [code]);
 
   const me = players.find((p) => p.id === playerId) ?? null;
+  const phaseKind = phase.kind;
+  const phaseIndex = phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard" ? phase.index : -1;
   const rows = useMemo(() => {
-    const upTo =
-      phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
-        ? phase.index
-        : questions.length - 1;
+    const upTo = phaseIndex >= 0 ? phaseIndex : questions.length - 1;
     return standings(players, answers, questions, upTo);
-  }, [players, answers, questions, phase]);
+  }, [players, answers, questions, phaseKind, phaseIndex]);
   const myRow = rows.find((r) => r.player.id === playerId) ?? null;
 
   const currentQuestion = phase.kind === "question" || phase.kind === "reveal" ? phase.question : null;
