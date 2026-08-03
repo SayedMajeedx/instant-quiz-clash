@@ -247,6 +247,11 @@ const en: Dict = {
   "host.unassigned": "No team",
   "host.everyoneAnswered": "Everyone answered!",
   "host.hostTabNote": "Keep this screen open — it drives the game.",
+  "host.exitGame": "Exit game",
+  "host.exitConfirm": "Are you sure you want to end this game?",
+
+  "play.exitGame": "Leave game",
+  "play.exitConfirm": "Are you sure you want to leave this game?",
 
   "play.timeUp": "Time's up!",
   "play.waitingNext": "Waiting for the host…",
@@ -513,6 +518,11 @@ const ar: Dict = {
   "host.unassigned": "بدون فريق",
   "host.everyoneAnswered": "أجاب الجميع!",
   "host.hostTabNote": "أبقِ هذه الشاشة مفتوحة — فهي التي تدير اللعبة.",
+  "host.exitGame": "خروج من اللعبة",
+  "host.exitConfirm": "هل أنت تأكد من الخروج وإغلاق اللعبة؟",
+
+  "play.exitGame": "مغادرة اللعبة",
+  "play.exitConfirm": "هل أنت تأكد من مغادرة هذه اللعبة؟",
 
   "play.timeUp": "انتهى الوقت!",
   "play.waitingNext": "بانتظار المضيف…",

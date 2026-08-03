@@ -63,8 +63,8 @@ export type Answer = {
 };
 
 /** Inter-question segment durations (ms). Every screen derives phase from these. */
-export const REVEAL_MS = 4500;
-export const BOARD_MS = 5500;
+export const REVEAL_MS = 2500;
+export const BOARD_MS = 2000;
 export const MAX_POINTS = 1000;
 export const MIN_POINTS = 300;
 

@@ -22,3 +22,9 @@ export function storedPlayerId(code: string): string | null {
 export function storePlayerId(code: string, id: string) {
   window.localStorage.setItem(playerKey(code), id);
 }
+
+export function clearStoredPlayer(code: string) {
+  if (typeof window !== "undefined") {
+    window.localStorage.removeItem(playerKey(code));
+  }
+}

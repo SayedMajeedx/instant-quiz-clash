@@ -17,18 +17,19 @@ export function Leaderboard({
   const { t } = useI18n();
   const max = Math.max(1, rows[0]?.total ?? 1);
   const visible = useMemo(() => rows.slice(0, limit), [rows, limit]);
+  const rowHeight = 88;
 
   return (
-    <div className="relative w-full" style={{ height: visible.length * 76 }}>
+    <div className="relative w-full" style={{ height: visible.length * rowHeight }}>
       {visible.map((row) => (
         <div
           key={row.player.id}
           className="absolute left-0 right-0 transition-all duration-700 ease-out"
-          style={{ transform: `translateY(${(row.rank - 1) * 76}px)` }}
+          style={{ transform: `translateY(${(row.rank - 1) * rowHeight}px)` }}
         >
           <div
             className={cn(
-              "flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3",
+              "flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3.5 shadow-sm",
               row.player.id === highlightPlayerId && "ring-2 ring-sun",
             )}
           >
@@ -41,20 +42,20 @@ export function Leaderboard({
             />
             <div className="min-w-0 flex-1">
               <div className="truncate font-display text-lg">{row.player.nickname}</div>
-              <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-background/50">
+              <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-background/50">
                 <div
                   className="h-full rounded-full bg-gradient-hero transition-all duration-700"
                   style={{ width: `${(row.total / max) * 100}%` }}
                 />
               </div>
             </div>
-            <div className="text-end">
-              <div className="font-display text-2xl tabular-nums">{row.total}</div>
+            <div className="text-end shrink-0">
+              <div className="font-display text-2xl tabular-nums leading-none">{row.total}</div>
               {showDelta && row.lastPoints > 0 ? (
-                <div className="text-xs font-semibold text-lime">+{row.lastPoints}</div>
+                <div className="mt-1 text-xs font-semibold text-lime leading-none">+{row.lastPoints}</div>
               ) : null}
               {row.streak > 1 ? (
-                <div className="text-xs font-semibold text-sun">{t("board.streak", { n: row.streak })}</div>
+                <div className="mt-1 text-xs font-semibold text-sun leading-none">{t("board.streak", { n: row.streak })}</div>
               ) : null}
             </div>
           </div>

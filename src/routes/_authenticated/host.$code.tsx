@@ -32,13 +32,20 @@ function HostRoom() {
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
   const archivedRef = useRef(false);
-  const [assigning, setAssigning] = useState<string | null>(null);
+  const [showExitModal, setShowExitConfirm] = useState(false);
+  const navigate = Route.useNavigate();
 
   const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join?code=${code.toUpperCase()}` : "";
 
   const roomId = room?.id ?? null;
   const cursorIndex = room?.cursor_index ?? 0;
   const cursorPhase = room?.cursor_phase ?? "question";
+
+  async function exitGame() {
+    if (!room) return;
+    await supabase.from("rooms").update({ status: "ended" } as never).eq("id", room.id);
+    void navigate({ to: "/quizzes" });
+  }
 
   // Every stage transition is written by this screen. `advance_room` is guarded
   // on the stage it is leaving, so a second host tab can never double-advance.
@@ -426,7 +433,16 @@ function HostRoom() {
           <span className="rounded-full border border-border bg-surface-gradient px-4 py-2 font-display">
             {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
           </span>
-          <span className="font-display text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+          <div className="flex items-center gap-3">
+            <span className="font-display text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+            <button
+              type="button"
+              onClick={() => setShowExitConfirm(true)}
+              className="press rounded-full border border-destructive/40 bg-destructive/10 px-4 py-1.5 text-xs font-semibold text-destructive hover:bg-destructive/20"
+            >
+              🚪 {t("host.exitGame")}
+            </button>
+          </div>
         </header>
 
         <div className="mt-6 flex flex-1 flex-col items-center justify-center text-center">
@@ -478,7 +494,7 @@ function HostRoom() {
           </div>
         </div>
 
-        <div className={cn("mt-8 grid gap-3 pb-6", choices > 2 ? "sm:grid-cols-2" : "sm:grid-cols-2")}>
+        <div dir="ltr" className={cn("mt-8 grid gap-3 pb-6", choices > 2 ? "grid-cols-2" : "grid-cols-2")}>
           {Array.from({ length: choices }, (_, i) => (
             <AnswerTile
               key={i}
@@ -492,6 +508,31 @@ function HostRoom() {
           ))}
         </div>
       </div>
+
+      {showExitModal ? (
+        <div className="fixed inset-0 z-50 grid place-items-center bg-background/80 p-5 backdrop-blur-sm">
+          <div className="w-full max-w-sm rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-xl animate-pop">
+            <h2 className="font-display text-2xl">{t("host.exitGame")}</h2>
+            <p className="mt-2 text-sm text-muted-foreground">{t("host.exitConfirm")}</p>
+            <div className="mt-6 flex gap-3">
+              <button
+                type="button"
+                onClick={() => setShowExitConfirm(false)}
+                className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 font-display text-lg"
+              >
+                {t("import.cancel")}
+              </button>
+              <button
+                type="button"
+                onClick={() => void exitGame()}
+                className="press flex-1 rounded-2xl bg-destructive py-3 font-display text-lg text-destructive-foreground shadow-chunky"
+              >
+                {t("host.exitGame")}
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </main>
   );
 }

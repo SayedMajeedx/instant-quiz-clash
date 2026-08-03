@@ -12,7 +12,7 @@ import { useI18n } from "@/lib/i18n";
 import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
 
 import { cn } from "@/lib/utils";
-import { storedPlayerId } from "@/lib/session";
+import { clearStoredPlayer, storedPlayerId } from "@/lib/session";
 
 export const Route = createFileRoute("/play/$code")({
   head: () => ({
@@ -28,14 +28,24 @@ export const Route = createFileRoute("/play/$code")({
 
 function Play() {
   const { code } = Route.useParams();
+  const navigate = Route.useNavigate();
   const [playerId, setPlayerId] = useState<string | null>(null);
   const [sessionResolved, setSessionResolved] = useState(false);
+  const [showLeaveModal, setShowLeaveConfirm] = useState(false);
   const state = useRoomGame(code, playerId);
   const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
   const [sending, setSending] = useState(false);
   const [armedDouble, setArmedDouble] = useState(false);
+
+  async function leaveGame() {
+    if (playerId) {
+      void supabase.from("players").delete().eq("id", playerId);
+    }
+    clearStoredPlayer(code);
+    void navigate({ to: "/join" });
+  }
 
   useEffect(() => {
     setPlayerId(storedPlayerId(code));
@@ -241,7 +251,7 @@ function Play() {
           <span className="size-5 rounded-full" style={{ backgroundColor: me.avatar_color }} />
           {me.nickname}
         </span>
-        <span className="flex items-center gap-2">
+        <span className="flex items-center gap-3">
           {me.team_index !== null ? (
             <span
               className="rounded-full px-3 py-1 text-xs font-bold text-background"
@@ -251,6 +261,13 @@ function Play() {
             </span>
           ) : null}
           <span className="font-display tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</span>
+          <button
+            type="button"
+            onClick={() => setShowLeaveConfirm(true)}
+            className="press rounded-full border border-destructive/40 bg-destructive/10 px-3 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
+          >
+            🚪 {t("play.exitGame")}
+          </button>
         </span>
       </header>
 
@@ -279,7 +296,7 @@ function Play() {
               className="mx-auto mt-3 max-h-[18vh] rounded-2xl border border-border object-contain"
             />
           ) : null}
-          <div className={cn("mt-3 grid flex-1 gap-3 pb-2", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
+          <div dir="ltr" className={cn("mt-3 grid flex-1 gap-3 pb-2", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
             {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
               return (
@@ -331,6 +348,31 @@ function Play() {
           </div>
         </>
       )}
+
+      {showLeaveModal ? (
+        <div className="fixed inset-0 z-50 grid place-items-center bg-background/80 p-5 backdrop-blur-sm">
+          <div className="w-full max-w-sm rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-xl animate-pop">
+            <h2 className="font-display text-2xl">{t("play.exitGame")}</h2>
+            <p className="mt-2 text-sm text-muted-foreground">{t("play.exitConfirm")}</p>
+            <div className="mt-6 flex gap-3">
+              <button
+                type="button"
+                onClick={() => setShowLeaveConfirm(false)}
+                className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 font-display text-lg"
+              >
+                {t("import.cancel")}
+              </button>
+              <button
+                type="button"
+                onClick={() => void leaveGame()}
+                className="press flex-1 rounded-2xl bg-destructive py-3 font-display text-lg text-destructive-foreground shadow-chunky"
+              >
+                {t("play.exitGame")}
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </main>
   );
 }
