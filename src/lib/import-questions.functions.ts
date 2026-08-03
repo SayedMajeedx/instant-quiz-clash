@@ -22,14 +22,16 @@ export const importQuestionsFromText = createServerFn({ method: "POST" })
 
 export const generateQuizFromTopicFn = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: { topic: string; count: number; difficulty: "easy" | "medium" | "hard" }) =>
-    z
-      .object({
-        topic: z.string().trim().min(2).max(400),
-        count: z.number().int().min(3).max(20),
-        difficulty: z.enum(["easy", "medium", "hard"]),
-      })
-      .parse(input),
+  .inputValidator(
+    (input: { topic: string; count: number; difficulty: "easy" | "medium" | "hard"; language?: "ar" | "en" }) =>
+      z
+        .object({
+          topic: z.string().trim().min(2).max(400),
+          count: z.number().int().min(3).max(20),
+          difficulty: z.enum(["easy", "medium", "hard"]),
+          language: z.enum(["ar", "en"]).optional(),
+        })
+        .parse(input),
   )
   .handler(async ({ data }) => {
     const { generateQuizFromTopic } = await import("@/lib/import-questions.server");

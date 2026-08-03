@@ -58,6 +58,12 @@ function Home() {
           <span className="text-gradient">{t("brand.clash")}</span>
         </span>
         <div className="flex items-center gap-2">
+          <Link
+            to="/browse"
+            className="press rounded-xl border border-primary/40 bg-primary/10 px-3.5 py-2 text-sm font-bold text-primary hover:bg-primary/20"
+          >
+            ✨ {t("browse.title")}
+          </Link>
           <LanguageToggle />
           {user ? (
             <>
@@ -102,10 +108,30 @@ function Home() {
             {t("home.createQuiz")}
           </Link>
           <Link
+            to="/browse"
+            className="press w-full max-w-xs rounded-3xl border-2 border-primary/60 bg-surface-gradient px-8 py-5 font-display text-2xl text-primary sm:w-auto shadow-glow"
+          >
+            ✨ {t("browse.ctaBtn")}
+          </Link>
+          <Link
             to="/join"
             className="press w-full max-w-xs rounded-3xl border-b-[6px] border-secondary bg-surface-gradient px-8 py-5 font-display text-2xl sm:w-auto"
           >
             {t("home.joinGame")}
+          </Link>
+        </div>
+
+        {/* Ready-to-play banner */}
+        <div className="mt-12 rounded-3xl border border-primary/30 bg-surface-gradient p-8 shadow-glow text-start flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <h2 className="font-display text-2xl sm:text-3xl text-gradient">{t("browse.ctaTitle")}</h2>
+            <p className="mt-2 text-muted-foreground max-w-xl">{t("browse.ctaSub")}</p>
+          </div>
+          <Link
+            to="/browse"
+            className="press shrink-0 rounded-2xl bg-gradient-hero px-6 py-4 font-display text-xl text-primary-foreground shadow-chunky"
+          >
+            🚀 {t("browse.ctaBtn")}
           </Link>
         </div>
 

@@ -98,29 +98,50 @@ function MyQuizzes() {
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
           <h1 className="font-display text-4xl md:text-5xl">{t("quizzes.title")}</h1>
           <div className="flex flex-wrap gap-3">
-          <button
-            type="button"
-            onClick={() => void createQuiz(false)}
-            className="press rounded-2xl bg-gradient-hero px-5 py-3 font-display text-lg text-primary-foreground shadow-chunky"
-          >
-            {t("quizzes.new")}
-          </button>
-          <button
-            type="button"
-            onClick={() => void createQuiz(true)}
-            className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
-          >
-            ✨ {t("import.open")}
-          </button>
+            <Link
+              to="/browse"
+              className="press rounded-2xl border border-primary/50 bg-primary/10 px-5 py-3 font-display text-lg text-primary hover:bg-primary/20"
+            >
+              ✨ {t("browse.title")}
+            </Link>
+            <button
+              type="button"
+              onClick={() => void createQuiz(false)}
+              className="press rounded-2xl bg-gradient-hero px-5 py-3 font-display text-lg text-primary-foreground shadow-chunky"
+            >
+              {t("quizzes.new")}
+            </button>
+            <button
+              type="button"
+              onClick={() => void createQuiz(true)}
+              className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
+            >
+              ✨ {t("import.open")}
+            </button>
           </div>
         </div>
 
         <div className="mt-8 space-y-3">
           {loading ? <p className="text-muted-foreground">{t("quizzes.loading")}</p> : null}
           {!loading && quizzes.length === 0 ? (
-            <div className="rounded-3xl border border-border bg-surface-gradient p-8 text-center">
-              <p className="font-display text-2xl">{t("quizzes.emptyTitle")}</p>
+            <div className="rounded-3xl border border-primary/30 bg-surface-gradient p-8 text-center shadow-glow">
+              <p className="font-display text-3xl text-gradient">{t("quizzes.emptyTitle")}</p>
               <p className="mt-2 text-muted-foreground">{t("quizzes.emptyBody")}</p>
+              <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <Link
+                  to="/browse"
+                  className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky"
+                >
+                  ✨ {t("browse.ctaBtn")}
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => void createQuiz(false)}
+                  className="press rounded-2xl border border-border bg-background/50 px-6 py-3 font-display text-lg"
+                >
+                  {t("quizzes.new")}
+                </button>
+              </div>
             </div>
           ) : null}
           {quizzes.map((quiz) => (

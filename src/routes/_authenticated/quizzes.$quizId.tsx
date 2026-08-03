@@ -36,6 +36,7 @@ function Editor() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [saving, setSaving] = useState(false);
   const [importOpen, setImportOpen] = useState(Boolean(search.import));
+  const [importMode, setImportMode] = useState<"topic" | "text">("topic");
   const [uploading, setUploading] = useState<string | null>(null);
 
   const timers = useRef<Record<string, number>>({});
@@ -438,14 +439,27 @@ function Editor() {
             onClick={() => void addQuestion()}
             className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
           >
-            {t("editor.add")}
+            + {t("editor.add")}
           </button>
           <button
             type="button"
-            onClick={() => setImportOpen(true)}
+            onClick={() => {
+              setImportMode("topic");
+              setImportOpen(true);
+            }}
+            className="press rounded-2xl border border-primary/50 bg-primary/10 px-5 py-3 font-display text-lg text-primary hover:bg-primary/20"
+          >
+            ✨ {t("aiGen.tabTopic")}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setImportMode("text");
+              setImportOpen(true);
+            }}
             className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
           >
-            ✨ {t("import.open")}
+            📄 {t("aiGen.tabText")}
           </button>
           <Link
             to="/host"
@@ -458,7 +472,12 @@ function Editor() {
         </div>
       </div>
 
-      <ImportFromText open={importOpen} onClose={() => setImportOpen(false)} onAdd={addImported} />
+      <ImportFromText
+        open={importOpen}
+        initialMode={importMode}
+        onClose={() => setImportOpen(false)}
+        onAdd={addImported}
+      />
     </main>
   );
 }

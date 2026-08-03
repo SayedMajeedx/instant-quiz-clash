@@ -3,6 +3,9 @@ export type Quiz = {
   user_id: string;
   title: string;
   created_at: string;
+  is_public?: boolean;
+  category?: string | null;
+  language?: string | null;
 };
 
 export type QuestionType = "multi" | "boolean";

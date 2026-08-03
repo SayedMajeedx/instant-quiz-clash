@@ -92,19 +92,19 @@ export async function parseQuizText(text: string): Promise<{ questions: ParsedQu
   }
 }
 
-const TOPIC_SYSTEM_PROMPT = `You are a trivia writer for a live, fast-paced quiz game.
+const TOPIC_SYSTEM_PROMPT = `You are a professional trivia writer for QuizClash, a live fast-paced trivia game.
 
-Write original multiple-choice questions on the topic the user gives you.
+Write ORIGINAL, engaging multiple-choice questions based on the topic and parameters provided.
 
-Rules:
-- Each question has EXACTLY 4 options, exactly one unambiguously correct.
-- Distractors must be plausible and the same "shape" as the answer (all years, all names, …).
-- Keep question text under 120 characters and options under 60 characters — they render on a phone.
-- No duplicated questions, no "all of the above", no trick wording.
-- Vary the position of the correct answer across questions.
-- "time_limit_seconds" is 20 by default, 30 for questions that need reading or reasoning.
-- Always set "padded_options", "inferred_correct" and "ambiguous_split" to false.
-- Write in the same language as the topic the user provides.
+Strict Rules:
+- Write ORIGINAL question text only. Do NOT reproduce copyrighted text verbatim (no book or article excerpts, no song lyrics). Use facts and trivia only, phrased in your own words.
+- Each question must have EXACTLY 4 options, with exactly one unambiguously correct answer.
+- Distractors must be plausible, well-matched, and non-trivial.
+- Keep question text under 140 characters and options under 60 characters so they fit nicely on mobile screens.
+- Vary the position of the correct answer (correct_index between 0 and 3).
+- "time_limit_seconds" should be 20 by default.
+- Set "padded_options", "inferred_correct", and "ambiguous_split" to false.
+- Write strictly in the specified target language (Arabic if language is "ar", English if language is "en").
 
 Respond with ONLY strict JSON matching:
 {"questions":[{"question_text":"string","options":["s","s","s","s"],"correct_index":0,"time_limit_seconds":20,"padded_options":false,"inferred_correct":false,"ambiguous_split":false}]}
@@ -119,6 +119,7 @@ export async function generateQuizFromTopic(input: {
   topic: string;
   count: number;
   difficulty: "easy" | "medium" | "hard";
+  language?: "ar" | "en";
 }): Promise<{ questions: ParsedQuestion[] }> {
   const apiKey = process.env["LOVABLE_API_KEY"];
   if (!apiKey) throw new Error("AI is not configured");
@@ -126,6 +127,7 @@ export async function generateQuizFromTopic(input: {
   const topic = input.topic.trim().slice(0, 400);
   if (!topic) return { questions: [] };
   const count = Math.max(3, Math.min(20, Math.round(input.count)));
+  const lang = input.language === "en" ? "en" : "ar";
 
   const response = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
     method: "POST",
@@ -142,7 +144,7 @@ export async function generateQuizFromTopic(input: {
         { role: "system", content: TOPIC_SYSTEM_PROMPT },
         {
           role: "user",
-          content: `Topic: ${topic}\nNumber of questions: ${count}\nDifficulty: ${input.difficulty}`,
+          content: `Topic: ${topic}\nNumber of questions: ${count}\nDifficulty: ${input.difficulty}\nTarget Language: ${lang === "ar" ? "Arabic" : "English"}`,
         },
       ],
     }),

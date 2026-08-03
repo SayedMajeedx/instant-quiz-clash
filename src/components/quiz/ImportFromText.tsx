@@ -12,17 +12,21 @@ export function ImportFromText({
   open,
   onClose,
   onAdd,
+  initialMode = "topic",
 }: {
   open: boolean;
   onClose: () => void;
   onAdd: (questions: ParsedQuestion[]) => Promise<void>;
+  initialMode?: "topic" | "text";
 }) {
   const { t } = useI18n();
-  const [mode, setMode] = useState<"text" | "topic">("topic");
+  const [mode, setMode] = useState<"text" | "topic">(initialMode);
   const [text, setText] = useState("");
   const [topic, setTopic] = useState("");
-  const [count, setCount] = useState(8);
+  const [count, setCount] = useState(10);
   const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard">("medium");
+  const [language, setLanguage] = useState<"ar" | "en">("ar");
+  const [userOverrodeLang, setUserOverrodeLang] = useState(false);
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [drafts, setDrafts] = useState<Draft[] | null>(null);
@@ -33,12 +37,22 @@ export function ImportFromText({
 
   if (!open) return null;
 
+  function handleTopicChange(val: string) {
+    const trimmed = val.slice(0, 400);
+    setTopic(trimmed);
+    if (!userOverrodeLang && trimmed.trim().length > 0) {
+      const isArabic = /[\u0600-\u06FF]/.test(trimmed);
+      setLanguage(isArabic ? "ar" : "en");
+    }
+  }
+
   function reset() {
     setText("");
     setTopic("");
     setDrafts(null);
     setLoading(false);
     setSaving(false);
+    setUserOverrodeLang(false);
   }
 
   function close() {
@@ -68,7 +82,9 @@ export function ImportFromText({
     if (topic.trim().length < 2) return;
     setLoading(true);
     try {
-      const result = await generateQuizFromTopicFn({ data: { topic: topic.trim(), count, difficulty } });
+      const result = await generateQuizFromTopicFn({
+        data: { topic: topic.trim(), count, difficulty, language },
+      });
       if (result.questions.length === 0) {
         toast.error(t(result.error === "rate_limited" ? "import.rateLimited" : "aiGen.failed"));
         return;
@@ -141,36 +157,45 @@ export function ImportFromText({
                 <input
                   id="ai-topic"
                   value={topic}
-                  onChange={(e) => setTopic(e.target.value.slice(0, 400))}
+                  onChange={(e) => handleTopicChange(e.target.value)}
                   onKeyDown={(e) => {
                     if (e.key === "Enter") void generate();
                   }}
                   placeholder={t("aiGen.topicPlaceholder")}
                   className="mt-2 w-full rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
                 />
-                <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                  <label className="text-sm font-semibold text-muted-foreground">
-                    {t("aiGen.count")}
+
+                <div className="mt-4 grid gap-4 sm:grid-cols-3">
+                  {/* Number of Questions Slider/Input */}
+                  <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
+                    <div className="flex justify-between items-center">
+                      <span>{t("aiGen.count")}</span>
+                      <span className="font-display text-primary text-base tabular-nums">{count}</span>
+                    </div>
                     <input
-                      type="number"
-                      min={3}
+                      type="range"
+                      min={5}
                       max={20}
                       value={count}
-                      onChange={(e) => setCount(Math.max(3, Math.min(20, Number(e.target.value) || 8)))}
-                      className="mt-2 w-full rounded-2xl border border-border bg-background/50 px-4 py-3 text-foreground outline-none focus:ring-2 focus:ring-ring"
+                      onChange={(e) => setCount(Number(e.target.value))}
+                      className="mt-3 w-full accent-primary h-2 rounded-lg cursor-pointer"
                     />
-                  </label>
-                  <div className="text-sm font-semibold text-muted-foreground">
+                  </div>
+
+                  {/* Difficulty */}
+                  <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
                     {t("aiGen.difficulty")}
-                    <div className="mt-2 flex gap-2">
+                    <div className="mt-2 flex gap-1">
                       {(["easy", "medium", "hard"] as const).map((d) => (
                         <button
                           key={d}
                           type="button"
                           onClick={() => setDifficulty(d)}
                           className={cn(
-                            "press flex-1 rounded-2xl border px-2 py-3 text-sm font-semibold",
-                            difficulty === d ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
+                            "press flex-1 rounded-xl border px-1.5 py-2 text-xs font-semibold",
+                            difficulty === d
+                              ? "border-primary bg-primary/20 text-foreground ring-1 ring-primary"
+                              : "border-border bg-background/30",
                           )}
                         >
                           {t(`aiGen.${d}`)}
@@ -178,15 +203,48 @@ export function ImportFromText({
                       ))}
                     </div>
                   </div>
+
+                  {/* Language */}
+                  <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
+                    {t("aiGen.language")}
+                    <div className="mt-2 flex gap-1">
+                      {(["ar", "en"] as const).map((l) => (
+                        <button
+                          key={l}
+                          type="button"
+                          onClick={() => {
+                            setLanguage(l);
+                            setUserOverrodeLang(true);
+                          }}
+                          className={cn(
+                            "press flex-1 rounded-xl border px-1.5 py-2 text-xs font-semibold",
+                            language === l
+                              ? "border-primary bg-primary/20 text-foreground ring-1 ring-primary"
+                              : "border-border bg-background/30",
+                          )}
+                        >
+                          {t(l === "ar" ? "aiGen.langAr" : "aiGen.langEn")}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-5 flex flex-wrap items-center gap-3">
+
+                <div className="mt-6 flex flex-wrap items-center gap-3">
                   <button
                     type="button"
                     disabled={loading || topic.trim().length < 2}
                     onClick={() => void generate()}
-                    className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
+                    className="press flex items-center gap-2 rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
                   >
-                    {loading ? t("aiGen.generating") : t("aiGen.generate")}
+                    {loading ? (
+                      <>
+                        <span className="inline-block size-5 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent" />
+                        {t("aiGen.generating")}
+                      </>
+                    ) : (
+                      <>✨ {t("aiGen.generate")}</>
+                    )}
                   </button>
                   <button type="button" onClick={close} className="press rounded-2xl border border-border px-5 py-3">
                     {t("import.cancel")}
