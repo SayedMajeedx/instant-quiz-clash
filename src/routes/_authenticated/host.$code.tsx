@@ -427,90 +427,110 @@ function HostRoom() {
     );
   }
 
+function getQuestionFontSize(text: string, hasImage: boolean): string {
+  const len = text ? text.length : 0;
+  if (hasImage) {
+    if (len > 120) return "text-base sm:text-lg md:text-xl lg:text-2xl";
+    if (len > 60) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
+    return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
+  }
+  if (len > 140) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
+  if (len > 80) return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
+  if (len > 40) return "text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
+  return "text-3xl sm:text-4xl md:text-5xl lg:text-6xl";
+}
+
   const revealing = phase.kind === "reveal";
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative h-screen max-h-screen overflow-hidden flex flex-col justify-between p-4 sm:p-6">
       <AnimatedBg />
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-5 py-6">
-        <header className="flex items-center justify-between gap-4">
-          <span className="rounded-full border border-border bg-surface-gradient px-4 py-2 font-display">
-            {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
-          </span>
-          <div className="flex items-center gap-3">
-            <span className="font-display text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
-            <button
-              type="button"
-              onClick={() => setShowExitConfirm(true)}
-              className="press rounded-full border border-destructive/40 bg-destructive/10 px-4 py-1.5 text-xs font-semibold text-destructive hover:bg-destructive/20"
-            >
-              🚪 {t("host.exitGame")}
-            </button>
-          </div>
-        </header>
+      <header className="flex shrink-0 items-center justify-between gap-4">
+        <span className="rounded-full border border-border bg-surface-gradient px-4 py-1.5 font-display text-sm">
+          {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
+        </span>
+        <div className="flex items-center gap-3">
+          <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+          <button
+            type="button"
+            onClick={() => setShowExitConfirm(true)}
+            className="press rounded-full border border-destructive/40 bg-destructive/10 px-3.5 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
+          >
+            🚪 {t("host.exitGame")}
+          </button>
+        </div>
+      </header>
 
-        <div className="mt-6 flex flex-1 flex-col items-center justify-center text-center">
-          <h1 className="max-w-4xl font-display text-3xl leading-tight sm:text-5xl lg:text-6xl">
-            {question.question_text || "…"}
-          </h1>
+      <div className="my-auto min-h-0 flex-1 flex flex-col items-center justify-center text-center overflow-hidden py-2">
+        <div className="flex flex-col items-center justify-center gap-3 w-full max-w-5xl">
+          {question.image_url ? (
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 w-full">
+              <QuestionImage
+                path={question.image_url}
+                className="max-h-[20vh] max-w-[80vw] md:max-w-[35vw] rounded-2xl border border-border object-contain shrink-0"
+              />
+              <h1 className={cn("font-display max-w-3xl leading-snug", getQuestionFontSize(question.question_text, true))}>
+                {question.question_text || "…"}
+              </h1>
+            </div>
+          ) : (
+            <h1 className={cn("font-display max-w-5xl leading-snug px-2", getQuestionFontSize(question.question_text, false))}>
+              {question.question_text || "…"}
+            </h1>
+          )}
+        </div>
 
-          <QuestionImage
-            path={question.image_url}
-            className="mt-6 max-h-[30vh] rounded-3xl border border-border object-contain"
-          />
-
-          <div className="mt-8 flex w-full max-w-3xl items-center justify-between gap-6">
-            {revealing ? (
-              <>
-                <p className="flex-1 font-display text-3xl text-lime">{t("host.correctAnswer")}</p>
-                {manual ? (
-                  <button
-                    type="button"
-                    onClick={() => void advance(phase.index, "reveal")}
-                    className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-xl text-primary-foreground shadow-chunky"
-                  >
-                    {isLast ? t("host.finish") : t("host.showScores")}
-                  </button>
-                ) : null}
-              </>
-            ) : (
-              <>
-                <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={132} />
-                <div className="flex-1">
-                  <p className="font-display text-2xl tabular-nums">
-                    {everyoneAnswered
-                      ? t("host.everyoneAnswered")
-                      : t("host.answered", { answered: questionAnswers.length, total: players.length })}
-                  </p>
-                  <div className="mt-3">
-                    <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />
-                  </div>
-                </div>
+        <div className="mt-3 sm:mt-4 flex w-full max-w-2xl items-center justify-between gap-4 shrink-0 px-2">
+          {revealing ? (
+            <>
+              <p className="flex-1 font-display text-2xl sm:text-3xl text-lime">{t("host.correctAnswer")}</p>
+              {manual ? (
                 <button
                   type="button"
-                  onClick={() => void advance(phase.index, "question")}
-                  className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
+                  onClick={() => void advance(phase.index, "reveal")}
+                  className="press rounded-2xl bg-gradient-hero px-6 py-2.5 font-display text-lg sm:text-xl text-primary-foreground shadow-chunky"
                 >
-                  {t("host.next")}
+                  {isLast ? t("host.finish") : t("host.showScores")}
                 </button>
-              </>
-            )}
-          </div>
+              ) : null}
+            </>
+          ) : (
+            <>
+              <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={96} />
+              <div className="flex-1">
+                <p className="font-display text-xl sm:text-2xl tabular-nums">
+                  {everyoneAnswered
+                    ? t("host.everyoneAnswered")
+                    : t("host.answered", { answered: questionAnswers.length, total: players.length })}
+                </p>
+                <div className="mt-2">
+                  <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => void advance(phase.index, "question")}
+                className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-base"
+              >
+                {t("host.next")}
+              </button>
+            </>
+          )}
         </div>
+      </div>
 
-        <div dir="ltr" className={cn("mt-8 grid gap-3 pb-6", choices > 2 ? "grid-cols-2" : "grid-cols-2")}>
-          {Array.from({ length: choices }, (_, i) => (
-            <AnswerTile
-              key={i}
-              index={i}
-              disabled
-              count={revealing ? counts[i] : undefined}
-              state={revealing ? (i === question.correct_index ? "correct" : "wrong") : "idle"}
-            >
-              {question.options[i] ?? ""}
-            </AnswerTile>
-          ))}
-        </div>
+      <div dir="ltr" className="shrink-0 w-full max-w-5xl mx-auto grid grid-cols-2 gap-2.5 sm:gap-3 pt-2 pb-1">
+        {Array.from({ length: choices }, (_, i) => (
+          <AnswerTile
+            key={i}
+            index={i}
+            disabled
+            count={revealing ? counts[i] : undefined}
+            state={revealing ? (i === question.correct_index ? "correct" : "wrong") : "idle"}
+          >
+            {question.options[i] ?? ""}
+          </AnswerTile>
+        ))}
       </div>
 
       {showExitModal ? (

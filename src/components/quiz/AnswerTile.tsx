@@ -46,9 +46,9 @@ export function AnswerTile({
       disabled={disabled}
       aria-label={t(SHAPE_KEYS[index] ?? "shape.square")}
       className={cn(
-        "press relative flex w-full items-center gap-4 overflow-hidden rounded-2xl border-b-[6px] px-4 text-start font-display text-primary-foreground",
+        "press relative flex w-full items-center gap-3 sm:gap-4 overflow-hidden rounded-2xl border-b-[5px] sm:border-b-[6px] px-3 sm:px-4 text-start font-display text-primary-foreground transition-all",
         style.bg,
-        size === "player" ? "min-h-[22vh] justify-center" : "min-h-24 py-4",
+        size === "player" ? "min-h-[20vh] justify-center" : "min-h-[60px] sm:min-h-[72px] lg:min-h-[84px] py-2 sm:py-3",
         state === "correct" && "animate-pulse-hard ring-4 ring-primary-foreground",
         state === "wrong" && "opacity-35 grayscale",
         state === "dimmed" && "opacity-30",
@@ -60,13 +60,13 @@ export function AnswerTile({
       <span
         className={cn(
           "grid shrink-0 place-items-center",
-          size === "player" ? "size-16" : "size-11",
+          size === "player" ? "size-14 sm:size-16" : "size-8 sm:size-10 lg:size-11",
         )}
       >
-        <AnswerShape index={index} className={size === "player" ? "size-14" : "size-9"} />
+        <AnswerShape index={index} className={size === "player" ? "size-12 sm:size-14" : "size-7 sm:size-8 lg:size-9"} />
       </span>
       {children ? (
-        <span className={cn("flex-1 leading-tight", size === "host" ? "text-2xl xl:text-3xl" : "text-xl")}>
+        <span className={cn("flex-1 leading-snug line-clamp-2", size === "host" ? "text-base sm:text-xl lg:text-2xl xl:text-3xl" : "text-lg sm:text-xl")}>
           {children}
         </span>
       ) : null}
