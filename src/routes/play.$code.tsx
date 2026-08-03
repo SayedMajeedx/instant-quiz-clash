@@ -316,11 +316,13 @@ function Play() {
               </button>
               <button
                 type="button"
-                disabled={me.used_fifty}
+                disabled={me.used_fifty || isBoolean}
                 onClick={() => void useFifty()}
+                title={isBoolean ? t("play.fiftyUnavailable") : undefined}
                 className="press flex-1 rounded-2xl border border-border bg-surface-gradient px-4 py-3 font-display text-lg disabled:opacity-40"
               >
                 {me.used_fifty ? t("play.fiftyUsed") : t("play.fifty")}
+
               </button>
             </div>
             {armedDouble && !me.used_double ? (
