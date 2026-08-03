@@ -7,7 +7,7 @@ import { Podium } from "@/components/quiz/Podium";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { pointsFor, questionStartMs, standings } from "@/lib/quizclash";
+import { standings } from "@/lib/quizclash";
 import { storedPlayerId } from "@/lib/session";
 
 export const Route = createFileRoute("/play/$code")({
