@@ -21,6 +21,7 @@ export type Room = {
   quiz_id: string;
   status: "lobby" | "active" | "ended";
   started_at: string | null;
+  team_count: number;
 };
 
 export type Player = {
@@ -29,6 +30,11 @@ export type Player = {
   nickname: string;
   avatar_color: string;
   joined_at: string;
+  team_index: number | null;
+  used_double: boolean;
+  used_fifty: boolean;
+  fifty_question_id: string | null;
+  fifty_hidden: number[] | null;
 };
 
 export type Answer = {
@@ -40,6 +46,8 @@ export type Answer = {
   answered_at: string;
   is_correct: boolean;
   points_awarded: number;
+  streak_bonus: number;
+  powerup: string | null;
 };
 
 /** Inter-question segment durations (ms). Every screen derives phase from these. */
@@ -133,6 +141,8 @@ export type Standing = {
   rank: number;
   lastPoints: number;
   streak: number;
+  correct: number;
+  answered: number;
 };
 
 export function standings(players: Player[], answers: Answer[], questions: Question[], upToIndex: number): Standing[] {
@@ -147,7 +157,15 @@ export function standings(players: Player[], answers: Answer[], questions: Quest
       else break;
     }
     const last = mine.find((a) => a.question_id === orderedIds[orderedIds.length - 1]);
-    return { player, total, streak, lastPoints: last?.points_awarded ?? 0, rank: 0 };
+    return {
+      player,
+      total,
+      streak,
+      correct: mine.filter((a) => a.is_correct).length,
+      answered: mine.length,
+      lastPoints: last?.points_awarded ?? 0,
+      rank: 0,
+    };
   });
   rows.sort((a, b) => b.total - a.total || a.player.nickname.localeCompare(b.player.nickname));
   rows.forEach((r, i) => {
@@ -155,3 +173,27 @@ export function standings(players: Player[], answers: Answer[], questions: Quest
   });
   return rows;
 }
+
+export type TeamStanding = { teamIndex: number; total: number; members: number; rank: number };
+
+/** Sums individual standings per team so the host screen can show a team race. */
+export function teamStandings(rows: Standing[]): TeamStanding[] {
+  const byTeam = new Map<number, TeamStanding>();
+  for (const row of rows) {
+    const idx = row.player.team_index;
+    if (idx === null || idx === undefined) continue;
+    const entry = byTeam.get(idx) ?? { teamIndex: idx, total: 0, members: 0, rank: 0 };
+    entry.total += row.total;
+    entry.members += 1;
+    byTeam.set(idx, entry);
+  }
+  const teams = [...byTeam.values()].sort((a, b) => b.total - a.total || a.teamIndex - b.teamIndex);
+  teams.forEach((teamRow, i) => {
+    teamRow.rank = i + 1;
+  });
+  return teams;
+}
+
+export const TEAM_COLORS = ["#a855f7", "#f59e0b", "#22c55e", "#3b82f6"];
+export const POWERUPS = ["double", "fifty"] as const;
+export type PowerUp = (typeof POWERUPS)[number];

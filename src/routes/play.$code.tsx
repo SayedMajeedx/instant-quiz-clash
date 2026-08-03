@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
+import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownRing } from "@/components/quiz/CountdownRing";
@@ -7,7 +8,8 @@ import { Podium } from "@/components/quiz/Podium";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { standings } from "@/lib/quizclash";
+import { standings, TEAM_COLORS } from "@/lib/quizclash";
+import { cn } from "@/lib/utils";
 import { storedPlayerId } from "@/lib/session";
 
 export const Route = createFileRoute("/play/$code")({
@@ -31,6 +33,7 @@ function Play() {
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
   const [sending, setSending] = useState(false);
+  const [armedDouble, setArmedDouble] = useState(false);
 
   useEffect(() => {
     setPlayerId(storedPlayerId(code));
@@ -68,9 +71,26 @@ function Play() {
       p_player_id: playerId,
       p_question_id: question.id,
       p_choice: choice,
+      ...(armedDouble ? { p_powerup: "double" } : {}),
     });
-    if (!error) await state.refresh();
+    if (!error) {
+      setArmedDouble(false);
+      await state.refresh();
+    }
     setSending(false);
+  }
+
+  async function useFifty() {
+    if (phase.kind !== "question" || !playerId || myAnswer || !me || me.used_fifty) return;
+    const { error } = await supabase.rpc("use_fifty_fifty", {
+      p_player_id: playerId,
+      p_question_id: phase.question.id,
+    });
+    if (error) {
+      toast.error(t("play.powerupFailed"));
+      return;
+    }
+    await state.refresh();
   }
 
 
@@ -201,6 +221,7 @@ function Play() {
   }
 
   const totalMs = Math.max(1, question.time_limit_seconds) * 1000;
+  const fiftyHidden = me.fifty_question_id === question.id ? (me.fifty_hidden ?? []) : [];
 
   return (
     <main className="relative flex min-h-screen flex-col px-4 py-4">
@@ -210,7 +231,17 @@ function Play() {
           <span className="size-5 rounded-full" style={{ backgroundColor: me.avatar_color }} />
           {me.nickname}
         </span>
-        <span className="font-display tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</span>
+        <span className="flex items-center gap-2">
+          {me.team_index !== null ? (
+            <span
+              className="rounded-full px-3 py-1 text-xs font-bold text-background"
+              style={{ backgroundColor: TEAM_COLORS[me.team_index % TEAM_COLORS.length] }}
+            >
+              {t("play.yourTeam", { n: me.team_index + 1 })}
+            </span>
+          ) : null}
+          <span className="font-display tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</span>
+        </span>
       </header>
 
       {myAnswer ? (
@@ -233,9 +264,49 @@ function Play() {
             {t("play.questionOf", { n: phase.index + 1, total: questions.length })}
           </p>
           <div className="mt-3 grid flex-1 grid-cols-2 gap-3 pb-2">
-            {[0, 1, 2, 3].map((i) => (
-              <AnswerTile key={i} index={i} size="player" disabled={sending} onClick={() => void submit(i)} />
-            ))}
+            {[0, 1, 2, 3].map((i) => {
+              const hidden = fiftyHidden.includes(i);
+              return (
+                <AnswerTile
+                  key={i}
+                  index={i}
+                  size="player"
+                  disabled={sending || hidden}
+                  state={hidden ? "wrong" : "idle"}
+                  onClick={() => void submit(i)}
+                />
+              );
+            })}
+          </div>
+
+          <div className="pb-2">
+            <p className="mb-2 text-center text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground">
+              {t("play.powerups")}
+            </p>
+            <div className="flex gap-3">
+              <button
+                type="button"
+                disabled={me.used_double}
+                onClick={() => setArmedDouble((v) => !v)}
+                className={cn(
+                  "press flex-1 rounded-2xl border px-4 py-3 font-display text-lg disabled:opacity-40",
+                  armedDouble ? "border-sun bg-sun/20 text-sun" : "border-border bg-surface-gradient",
+                )}
+              >
+                {me.used_double ? t("play.doubleUsed") : `2× ${t("play.double")}`}
+              </button>
+              <button
+                type="button"
+                disabled={me.used_fifty}
+                onClick={() => void useFifty()}
+                className="press flex-1 rounded-2xl border border-border bg-surface-gradient px-4 py-3 font-display text-lg disabled:opacity-40"
+              >
+                {me.used_fifty ? t("play.fiftyUsed") : t("play.fifty")}
+              </button>
+            </div>
+            {armedDouble && !me.used_double ? (
+              <p className="mt-2 text-center text-sm font-semibold text-sun">{t("play.doubleArmed")}</p>
+            ) : null}
           </div>
         </>
       )}

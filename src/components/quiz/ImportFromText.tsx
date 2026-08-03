@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { toast } from "sonner";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
-import { importQuestionsFromText } from "@/lib/import-questions.functions";
+import { generateQuizFromTopicFn, importQuestionsFromText } from "@/lib/import-questions.functions";
 import { MAX_IMPORT_CHARS, type ParsedQuestion } from "@/lib/import-questions.shared";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -18,7 +18,11 @@ export function ImportFromText({
   onAdd: (questions: ParsedQuestion[]) => Promise<void>;
 }) {
   const { t } = useI18n();
+  const [mode, setMode] = useState<"text" | "topic">("topic");
   const [text, setText] = useState("");
+  const [topic, setTopic] = useState("");
+  const [count, setCount] = useState(8);
+  const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard">("medium");
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [drafts, setDrafts] = useState<Draft[] | null>(null);
@@ -31,6 +35,7 @@ export function ImportFromText({
 
   function reset() {
     setText("");
+    setTopic("");
     setDrafts(null);
     setLoading(false);
     setSaving(false);
@@ -54,6 +59,23 @@ export function ImportFromText({
       setDrafts(result.questions.map((q) => ({ ...q, include: true })));
     } catch {
       toast.error(t("import.failed"));
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function generate() {
+    if (topic.trim().length < 2) return;
+    setLoading(true);
+    try {
+      const result = await generateQuizFromTopicFn({ data: { topic: topic.trim(), count, difficulty } });
+      if (result.questions.length === 0) {
+        toast.error(t(result.error === "rate_limited" ? "import.rateLimited" : "aiGen.failed"));
+        return;
+      }
+      setDrafts(result.questions.map((q) => ({ ...q, include: true })));
+    } catch {
+      toast.error(t("aiGen.failed"));
     } finally {
       setLoading(false);
     }
@@ -95,32 +117,112 @@ export function ImportFromText({
 
         {drafts === null ? (
           <>
-            <textarea
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-              rows={12}
-              placeholder={t("import.placeholder")}
-              className="mt-5 w-full resize-y rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
-            />
-            <div className="mt-2 flex items-center justify-between gap-3 text-sm">
-              <span className={cn(overLimit ? "text-destructive" : nearLimit ? "text-sun" : "text-muted-foreground")}>
-                {t("import.counter", { n: text.length, max: MAX_IMPORT_CHARS })}
-              </span>
-              {overLimit ? <span className="text-destructive">{t("import.tooLong")}</span> : null}
+            <div className="mt-5 flex gap-2 rounded-2xl border border-border bg-background/40 p-1">
+              {(["topic", "text"] as const).map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => setMode(m)}
+                  className={cn(
+                    "press flex-1 rounded-xl px-4 py-2 font-display text-sm",
+                    mode === m ? "bg-gradient-hero text-primary-foreground shadow-chunky" : "text-muted-foreground",
+                  )}
+                >
+                  {t(m === "topic" ? "aiGen.tabTopic" : "aiGen.tabText")}
+                </button>
+              ))}
             </div>
-            <div className="mt-5 flex flex-wrap items-center gap-3">
-              <button
-                type="button"
-                disabled={loading || overLimit || !text.trim()}
-                onClick={() => void parse()}
-                className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
-              >
-                {loading ? t("import.loading") : t("import.parse")}
-              </button>
-              <button type="button" onClick={close} className="press rounded-2xl border border-border px-5 py-3">
-                {t("import.cancel")}
-              </button>
-            </div>
+
+            {mode === "topic" ? (
+              <>
+                <label className="mt-5 block text-sm font-semibold text-muted-foreground" htmlFor="ai-topic">
+                  {t("aiGen.topicLabel")}
+                </label>
+                <input
+                  id="ai-topic"
+                  value={topic}
+                  onChange={(e) => setTopic(e.target.value.slice(0, 400))}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") void generate();
+                  }}
+                  placeholder={t("aiGen.topicPlaceholder")}
+                  className="mt-2 w-full rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
+                />
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  <label className="text-sm font-semibold text-muted-foreground">
+                    {t("aiGen.count")}
+                    <input
+                      type="number"
+                      min={3}
+                      max={20}
+                      value={count}
+                      onChange={(e) => setCount(Math.max(3, Math.min(20, Number(e.target.value) || 8)))}
+                      className="mt-2 w-full rounded-2xl border border-border bg-background/50 px-4 py-3 text-foreground outline-none focus:ring-2 focus:ring-ring"
+                    />
+                  </label>
+                  <div className="text-sm font-semibold text-muted-foreground">
+                    {t("aiGen.difficulty")}
+                    <div className="mt-2 flex gap-2">
+                      {(["easy", "medium", "hard"] as const).map((d) => (
+                        <button
+                          key={d}
+                          type="button"
+                          onClick={() => setDifficulty(d)}
+                          className={cn(
+                            "press flex-1 rounded-2xl border px-2 py-3 text-sm font-semibold",
+                            difficulty === d ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
+                          )}
+                        >
+                          {t(`aiGen.${d}`)}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    disabled={loading || topic.trim().length < 2}
+                    onClick={() => void generate()}
+                    className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
+                  >
+                    {loading ? t("aiGen.generating") : t("aiGen.generate")}
+                  </button>
+                  <button type="button" onClick={close} className="press rounded-2xl border border-border px-5 py-3">
+                    {t("import.cancel")}
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                <textarea
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                  rows={12}
+                  placeholder={t("import.placeholder")}
+                  className="mt-5 w-full resize-y rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
+                />
+                <div className="mt-2 flex items-center justify-between gap-3 text-sm">
+                  <span className={cn(overLimit ? "text-destructive" : nearLimit ? "text-sun" : "text-muted-foreground")}>
+                    {t("import.counter", { n: text.length, max: MAX_IMPORT_CHARS })}
+                  </span>
+                  {overLimit ? <span className="text-destructive">{t("import.tooLong")}</span> : null}
+                </div>
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    disabled={loading || overLimit || !text.trim()}
+                    onClick={() => void parse()}
+                    className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
+                  >
+                    {loading ? t("import.loading") : t("import.parse")}
+                  </button>
+                  <button type="button" onClick={close} className="press rounded-2xl border border-border px-5 py-3">
+                    {t("import.cancel")}
+                  </button>
+                </div>
+              </>
+            )}
           </>
         ) : drafts.length === 0 ? (
           <div className="mt-6 rounded-2xl border border-border bg-background/40 p-6 text-center">

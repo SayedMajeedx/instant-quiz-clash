@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { GameHistory } from "@/components/quiz/GameHistory";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
@@ -135,6 +136,8 @@ function HostCreate() {
             {busy ? t("hostPick.creating") : t("hostPick.create")}
           </button>
         ) : null}
+
+        <GameHistory userId={user.id} />
       </div>
     </main>
   );

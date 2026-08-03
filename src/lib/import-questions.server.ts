@@ -91,3 +91,92 @@ export async function parseQuizText(text: string): Promise<{ questions: ParsedQu
     return { questions: await callModel(trimmed, true) };
   }
 }
+
+const TOPIC_SYSTEM_PROMPT = `You are a trivia writer for a live, fast-paced quiz game.
+
+Write original multiple-choice questions on the topic the user gives you.
+
+Rules:
+- Each question has EXACTLY 4 options, exactly one unambiguously correct.
+- Distractors must be plausible and the same "shape" as the answer (all years, all names, …).
+- Keep question text under 120 characters and options under 60 characters — they render on a phone.
+- No duplicated questions, no "all of the above", no trick wording.
+- Vary the position of the correct answer across questions.
+- "time_limit_seconds" is 20 by default, 30 for questions that need reading or reasoning.
+- Always set "padded_options", "inferred_correct" and "ambiguous_split" to false.
+- Write in the same language as the topic the user provides.
+
+Respond with ONLY strict JSON matching:
+{"questions":[{"question_text":"string","options":["s","s","s","s"],"correct_index":0,"time_limit_seconds":20,"padded_options":false,"inferred_correct":false,"ambiguous_split":false}]}
+No markdown, no code fences, no commentary.`;
+
+/**
+ * Topic → quiz. Runs on the Responses API with streaming (reasoning models can
+ * take a while, and a buffered call would hit the platform request timeout);
+ * we only need the final text, so the deltas are accumulated server-side.
+ */
+export async function generateQuizFromTopic(input: {
+  topic: string;
+  count: number;
+  difficulty: "easy" | "medium" | "hard";
+}): Promise<{ questions: ParsedQuestion[] }> {
+  const apiKey = process.env["LOVABLE_API_KEY"];
+  if (!apiKey) throw new Error("AI is not configured");
+
+  const topic = input.topic.trim().slice(0, 400);
+  if (!topic) return { questions: [] };
+  const count = Math.max(3, Math.min(20, Math.round(input.count)));
+
+  const response = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Lovable-API-Key": apiKey,
+      "X-Lovable-AIG-SDK": "fetch",
+    },
+    body: JSON.stringify({
+      model: "openai/gpt-5.6-sol",
+      stream: true,
+      reasoning: { effort: "low", summary: "auto" },
+      input: [
+        { role: "system", content: TOPIC_SYSTEM_PROMPT },
+        {
+          role: "user",
+          content: `Topic: ${topic}\nNumber of questions: ${count}\nDifficulty: ${input.difficulty}`,
+        },
+      ],
+    }),
+  });
+
+  if (response.status === 429) throw new Error("rate_limited");
+  if (response.status === 402) throw new Error("payment_required");
+  if (!response.ok || !response.body) throw new Error(`ai_error_${response.status}`);
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  let text = "";
+  while (true) {
+    const chunk = await reader.read();
+    if (chunk.done) break;
+    buffer += decoder.decode(chunk.value, { stream: true });
+    const lines = buffer.split("\n");
+    buffer = lines.pop() ?? "";
+    for (const line of lines) {
+      if (!line.startsWith("data:")) continue;
+      const payload = line.slice(5).trim();
+      if (!payload || payload === "[DONE]") continue;
+      try {
+        const event = JSON.parse(payload) as { type?: string; delta?: string };
+        if (event.type === "response.output_text.delta" && typeof event.delta === "string") {
+          text += event.delta;
+        }
+      } catch {
+        // Ignore keep-alive / partial frames.
+      }
+    }
+  }
+
+  const parsed = parsedPayloadSchema.parse(extractJson(text));
+  return { questions: parsed.questions.slice(0, count) };
+}
