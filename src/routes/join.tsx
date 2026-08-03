@@ -5,7 +5,7 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { AVATAR_COLORS, type Player, type Room } from "@/lib/quizclash";
+import { AVATAR_COLORS, type Player } from "@/lib/quizclash";
 import { storePlayerId } from "@/lib/session";
 
 export const Route = createFileRoute("/join")({
