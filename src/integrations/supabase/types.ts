@@ -61,13 +61,6 @@ export type Database = {
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "answers_question_id_fkey"
-            columns: ["question_id"]
-            isOneToOne: false
-            referencedRelation: "questions_public"
-            referencedColumns: ["id"]
-          },
-          {
             foreignKeyName: "answers_room_id_fkey"
             columns: ["room_id"]
             isOneToOne: false
@@ -225,44 +218,7 @@ export type Database = {
       }
     }
     Views: {
-      questions_public: {
-        Row: {
-          created_at: string | null
-          id: string | null
-          options: Json | null
-          order_index: number | null
-          question_text: string | null
-          quiz_id: string | null
-          time_limit_seconds: number | null
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string | null
-          options?: Json | null
-          order_index?: number | null
-          question_text?: string | null
-          quiz_id?: string | null
-          time_limit_seconds?: number | null
-        }
-        Update: {
-          created_at?: string | null
-          id?: string | null
-          options?: Json | null
-          order_index?: number | null
-          question_text?: string | null
-          quiz_id?: string | null
-          time_limit_seconds?: number | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "questions_quiz_id_fkey"
-            columns: ["quiz_id"]
-            isOneToOne: false
-            referencedRelation: "quizzes"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
+      [_ in never]: never
     }
     Functions: {
       is_quiz_owner: { Args: { p_quiz_id: string }; Returns: boolean }
@@ -285,6 +241,17 @@ export type Database = {
       quiz_has_live_room: { Args: { p_quiz_id: string }; Returns: boolean }
       room_is_live: { Args: { p_room_id: string }; Returns: boolean }
       room_owner: { Args: { p_room_id: string }; Returns: boolean }
+      room_questions: {
+        Args: { p_room_id: string }
+        Returns: {
+          id: string
+          options: Json
+          order_index: number
+          question_text: string
+          quiz_id: string
+          time_limit_seconds: number
+        }[]
+      }
       room_reveals: {
         Args: { p_room_id: string }
         Returns: {
