@@ -155,8 +155,8 @@ function BrowsePage() {
         }
       }
 
-      // Insert cloned quiz for user
-      const { data: newQuiz, error: createError } = await supabase
+      // Insert cloned quiz for user (with fallback if extended columns don't exist yet)
+      let newQuizRes = await supabase
         .from("quizzes")
         .insert({
           title: quiz.title,
@@ -168,12 +168,23 @@ function BrowsePage() {
         .select()
         .single();
 
-      if (createError || !newQuiz) {
-        toast.error(t("browse.error") || "Failed to clone quiz");
+      if (newQuizRes.error) {
+        newQuizRes = await supabase
+          .from("quizzes")
+          .insert({
+            title: quiz.title,
+            user_id: user.id,
+          } as never)
+          .select()
+          .single();
+      }
+
+      if (newQuizRes.error || !newQuizRes.data) {
+        toast.error(t("browse.error"));
         return;
       }
 
-      const newQuizTyped = newQuiz as unknown as Quiz;
+      const newQuizTyped = newQuizRes.data as unknown as Quiz;
 
       // Copy questions to new quiz
       if (questionsToCopy.length > 0) {
@@ -305,7 +316,7 @@ function BrowsePage() {
 
                     <h2 className="mt-4 font-display text-2xl leading-snug">{quiz.title}</h2>
                     <p className="mt-2 text-sm text-muted-foreground">
-                      {quiz.question_count} {t("dash.questionsN", { n: quiz.question_count })}
+                      {t("quizzes.questionCount", { count: quiz.question_count })}
                     </p>
                   </div>
 
