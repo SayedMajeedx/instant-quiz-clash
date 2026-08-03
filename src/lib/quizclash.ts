@@ -1,6 +1,6 @@
 export type Quiz = {
   id: string;
-  owner_id: string;
+  user_id: string;
   title: string;
   created_at: string;
 };
