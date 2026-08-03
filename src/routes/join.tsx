@@ -48,41 +48,24 @@ function Join() {
     }
     setBusy(true);
 
-    const { data: roomRow } = await supabase.from("rooms").select("*").eq("code", cleanCode).maybeSingle();
-    const room = roomRow as unknown as Room | null;
-    if (!room) {
+    // Joining goes through a server routine: it validates the room, de-duplicates
+    // nicknames and creates the player row (clients can't write players directly).
+    const { data, error } = await supabase.rpc("join_room", {
+      p_code: cleanCode,
+      p_nickname: nick,
+      p_avatar_color: AVATAR_COLORS[Math.floor(Math.random() * AVATAR_COLORS.length)]!,
+    });
+    const player = (data as unknown as Player | null) ?? null;
+
+    if (error || !player) {
       setBusy(false);
-      toast.error(t("join.errNoGame"));
-      return;
-    }
-    if (room.status === "ended") {
-      setBusy(false);
-      toast.error(t("join.errFinished"));
+      const message = error?.message ?? "";
+      if (message.includes("room not found")) toast.error(t("join.errNoGame"));
+      else if (message.includes("room ended")) toast.error(t("join.errFinished"));
+      else toast.error(t("join.errJoin"));
       return;
     }
 
-    // Duplicate nicknames in the same room get an automatic suffix.
-    let attempt = nick;
-    let player: Player | null = null;
-    for (let i = 0; i < 8 && !player; i += 1) {
-      const { data, error } = await supabase
-        .from("players")
-        .insert({
-          room_id: room.id,
-          nickname: attempt,
-          avatar_color: AVATAR_COLORS[Math.floor(Math.random() * AVATAR_COLORS.length)]!,
-        })
-        .select()
-        .single();
-      if (!error && data) player = data as unknown as Player;
-      else attempt = `${nick}${i + 2}`;
-    }
-
-    if (!player) {
-      setBusy(false);
-      toast.error(t("join.errJoin"));
-      return;
-    }
 
     storePlayerId(cleanCode, player.id);
     setJoined(true);
