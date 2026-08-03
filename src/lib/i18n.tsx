@@ -12,6 +12,7 @@ const en: Dict = {
   "lang.label": "Change language",
 
   "nav.myQuizzes": "My quizzes",
+  "nav.quizzes": "My quizzes",
   "nav.signIn": "Sign in",
   "nav.signOut": "Sign out",
   "auth.signInTitle": "Welcome back",
@@ -307,6 +308,7 @@ const ar: Dict = {
   "lang.label": "تغيير اللغة",
 
   "nav.myQuizzes": "اختباراتي",
+  "nav.quizzes": "اختباراتي",
   "nav.signIn": "تسجيل الدخول",
   "nav.signOut": "تسجيل الخروج",
   "auth.signInTitle": "مرحباً بعودتك",

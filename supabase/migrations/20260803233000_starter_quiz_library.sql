@@ -6,44 +6,54 @@ ALTER TABLE public.quizzes ADD COLUMN IF NOT EXISTS is_public BOOLEAN NOT NULL D
 ALTER TABLE public.quizzes ADD COLUMN IF NOT EXISTS category TEXT NULL;
 ALTER TABLE public.quizzes ADD COLUMN IF NOT EXISTS language TEXT NULL DEFAULT 'ar';
 
--- Ensure RLS allows reading is_public = true quizzes and their questions
+-- Make user_id nullable for system public quizzes
+ALTER TABLE public.quizzes ALTER COLUMN user_id DROP NOT NULL;
+
+-- Ensure RLS policies allow reading is_public = true quizzes and their questions
 DROP POLICY IF EXISTS "Public quizzes are viewable by everyone" ON public.quizzes;
-CREATE POLICY "Public quizzes are viewable by everyone" ON public.quizzes
-  FOR SELECT USING (is_public = true OR (auth.uid() IS NOT NULL AND owner_id = auth.uid()));
+DROP POLICY IF EXISTS "Quizzes are viewable by owner or if public" ON public.quizzes;
+
+CREATE POLICY "Quizzes are viewable by owner or if public" ON public.quizzes
+  FOR SELECT USING (is_public = true OR (auth.uid() IS NOT NULL AND user_id = auth.uid()));
 
 DROP POLICY IF EXISTS "Public questions are viewable by everyone" ON public.questions;
-CREATE POLICY "Public questions are viewable by everyone" ON public.questions
+DROP POLICY IF EXISTS "Questions are viewable if quiz is public or owned" ON public.questions;
+
+CREATE POLICY "Questions are viewable if quiz is public or owned" ON public.questions
   FOR SELECT USING (
     EXISTS (
       SELECT 1 FROM public.quizzes q
-      WHERE q.id = questions.quiz_id AND (q.is_public = true OR (auth.uid() IS NOT NULL AND q.owner_id = auth.uid()))
+      WHERE q.id = questions.quiz_id AND (q.is_public = true OR (auth.uid() IS NOT NULL AND q.user_id = auth.uid()))
     )
   );
 
 -- Seed 8 Public Quizzes and Questions
 DO $$
 DECLARE
-  q1_id UUID := gen_random_uuid();
-  q2_id UUID := gen_random_uuid();
-  q3_id UUID := gen_random_uuid();
-  q4_id UUID := gen_random_uuid();
-  q5_id UUID := gen_random_uuid();
-  q6_id UUID := gen_random_uuid();
-  q7_id UUID := gen_random_uuid();
-  q8_id UUID := gen_random_uuid();
+  q1_id UUID := '00000000-0000-0000-0000-000000000001'::uuid;
+  q2_id UUID := '00000000-0000-0000-0000-000000000002'::uuid;
+  q3_id UUID := '00000000-0000-0000-0000-000000000003'::uuid;
+  q4_id UUID := '00000000-0000-0000-0000-000000000004'::uuid;
+  q5_id UUID := '00000000-0000-0000-0000-000000000005'::uuid;
+  q6_id UUID := '00000000-0000-0000-0000-000000000006'::uuid;
+  q7_id UUID := '00000000-0000-0000-0000-000000000007'::uuid;
+  q8_id UUID := '00000000-0000-0000-0000-000000000008'::uuid;
 BEGIN
   -- Insert Quizzes
-  INSERT INTO public.quizzes (id, title, is_public, category, language, created_at)
+  INSERT INTO public.quizzes (id, title, is_public, category, language, created_at, user_id)
   VALUES
-    (q1_id, 'تاريخ عام', true, 'history', 'ar', NOW()),
-    (q2_id, 'جغرافيا عالمية', true, 'geography', 'ar', NOW()),
-    (q3_id, 'علوم وفضاء', true, 'science', 'ar', NOW()),
-    (q4_id, 'أدب وفنون', true, 'arts', 'ar', NOW()),
-    (q5_id, 'رياضة عالمية', true, 'sports', 'ar', NOW()),
-    (q6_id, 'تاريخ وحضارة عربية وإسلامية', true, 'islamic_history', 'ar', NOW()),
-    (q7_id, 'اختراعات واكتشافات', true, 'inventions', 'ar', NOW()),
-    (q8_id, 'لغة وثقافة عامة', true, 'language_culture', 'ar', NOW())
-  ON CONFLICT (id) DO NOTHING;
+    (q1_id, 'تاريخ عام', true, 'history', 'ar', NOW(), NULL),
+    (q2_id, 'جغرافيا عالمية', true, 'geography', 'ar', NOW(), NULL),
+    (q3_id, 'علوم وفضاء', true, 'science', 'ar', NOW(), NULL),
+    (q4_id, 'أدب وفنون', true, 'arts', 'ar', NOW(), NULL),
+    (q5_id, 'رياضة عالمية', true, 'sports', 'ar', NOW(), NULL),
+    (q6_id, 'تاريخ وحضارة عربية وإسلامية', true, 'islamic_history', 'ar', NOW(), NULL),
+    (q7_id, 'اختراعات واكتشافات', true, 'inventions', 'ar', NOW(), NULL),
+    (q8_id, 'لغة وثقافة عامة', true, 'language_culture', 'ar', NOW(), NULL)
+  ON CONFLICT (id) DO UPDATE SET is_public = true, category = EXCLUDED.category, language = EXCLUDED.language;
+
+  -- Delete previous questions for these deterministic IDs to allow clean re-runs
+  DELETE FROM public.questions WHERE quiz_id IN (q1_id, q2_id, q3_id, q4_id, q5_id, q6_id, q7_id, q8_id);
 
   -- 1. تاريخ عام (category: history)
   INSERT INTO public.questions (quiz_id, question_text, options, correct_index, time_limit_seconds, order_index)
@@ -55,7 +65,7 @@ BEGIN
     (q1_id, 'متى انتهت الحرب العالمية الثانية؟', '["١٩٤٢", "١٩٤٤", "١٩٤٥", "١٩٤٨"]'::jsonb, 2, 20, 4),
     (q1_id, 'في أي عام سقط جدار برلين؟', '["١٩٨٧", "١٩٨٩", "١٩٩١", "١٩٩٣"]'::jsonb, 1, 20, 5),
     (q1_id, 'ما اسم الحرب التي استمرت أكثر من قرن بين إنجلترا وفرنسا؟', '["حرب الورود", "حرب المئة عام", "الحرب الأهلية الإنجليزية", "حرب الخلافة الإسبانية"]'::jsonb, 1, 20, 6),
-    (q1_id, 'من هو القائد الذي "اكتشف" القارة الأمريكية عام ١٤٩٢ بحسب السرد التقليدي؟', '["فاسكو دا جاما", "فرديناند ماجلان", "كريستوفر كولومبوس", "أميريغو فسبوتشي"]'::jsonb, 2, 20, 7);
+    (q1_id, 'من هو القائد الذي اكتشف القارة الأمريكية عام ١٤٩٢ بحسب السرد التقليدي؟', '["فاسكو دا جاما", "فرديناند ماجلان", "كريستوفر كولومبوس", "أميريغو فسبوتشي"]'::jsonb, 2, 20, 7);
 
   -- 2. جغرافيا عالمية (category: geography)
   INSERT INTO public.questions (quiz_id, question_text, options, correct_index, time_limit_seconds, order_index)

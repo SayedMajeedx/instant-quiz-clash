@@ -6,6 +6,7 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import type { Quiz } from "@/lib/quizclash";
+import { STARTER_QUIZZES, type StarterQuiz } from "@/lib/starter-quizzes";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/browse")({
@@ -50,26 +51,54 @@ function BrowsePage() {
   useEffect(() => {
     void (async () => {
       setLoading(true);
-      const { data, error } = await supabase
-        .from("quizzes")
-        .select("*, questions(id)")
-        .eq("is_public", true)
-        .order("created_at", { ascending: false });
+      try {
+        const { data, error } = await supabase
+          .from("quizzes")
+          .select("*, questions(id)")
+          .eq("is_public", true)
+          .order("created_at", { ascending: false });
 
-      if (!error && data) {
-        const formatted = data.map((q) => ({
-          id: q.id,
-          title: q.title,
-          user_id: q.user_id,
-          created_at: q.created_at,
-          is_public: q.is_public,
-          category: q.category,
-          language: q.language,
-          question_count: Array.isArray(q.questions) ? q.questions.length : 0,
+        if (!error && data && data.length > 0) {
+          const formatted = data.map((q) => ({
+            id: q.id,
+            title: q.title,
+            user_id: q.user_id || "system",
+            created_at: q.created_at,
+            is_public: q.is_public,
+            category: q.category,
+            language: q.language,
+            question_count: Array.isArray(q.questions) ? q.questions.length : 0,
+          }));
+          setQuizzes(formatted);
+        } else {
+          // Fallback to static starter quizzes if DB is not seeded yet
+          const fallback = STARTER_QUIZZES.map((sq) => ({
+            id: sq.id,
+            title: sq.title,
+            user_id: sq.user_id,
+            created_at: sq.created_at,
+            is_public: true,
+            category: sq.category,
+            language: sq.language,
+            question_count: sq.questions.length,
+          }));
+          setQuizzes(fallback);
+        }
+      } catch {
+        const fallback = STARTER_QUIZZES.map((sq) => ({
+          id: sq.id,
+          title: sq.title,
+          user_id: sq.user_id,
+          created_at: sq.created_at,
+          is_public: true,
+          category: sq.category,
+          language: sq.language,
+          question_count: sq.questions.length,
         }));
-        setQuizzes(formatted);
+        setQuizzes(fallback);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     })();
   }, []);
 
@@ -85,12 +114,46 @@ function BrowsePage() {
         return;
       }
 
-      // Fetch questions for this public quiz
-      const { data: qData } = await supabase
-        .from("questions")
-        .select("*")
-        .eq("quiz_id", quiz.id)
-        .order("order_index");
+      // Check if this quiz exists in static STARTER_QUIZZES
+      const starterMatch = STARTER_QUIZZES.find((sq) => sq.id === quiz.id);
+
+      let questionsToCopy: {
+        question_text: string;
+        options: string[];
+        correct_index: number;
+        time_limit_seconds: number;
+        order_index: number;
+        question_type?: string;
+      }[] = [];
+
+      if (starterMatch) {
+        questionsToCopy = starterMatch.questions.map((q) => ({
+          question_text: q.question_text,
+          options: q.options,
+          correct_index: q.correct_index,
+          time_limit_seconds: q.time_limit_seconds,
+          order_index: q.order_index,
+          question_type: q.question_type || "multi",
+        }));
+      } else {
+        // Fetch questions from Supabase DB
+        const { data: qData } = await supabase
+          .from("questions")
+          .select("*")
+          .eq("quiz_id", quiz.id)
+          .order("order_index");
+
+        if (qData) {
+          questionsToCopy = qData.map((q) => ({
+            question_text: q.question_text,
+            options: q.options as unknown as string[],
+            correct_index: q.correct_index,
+            time_limit_seconds: q.time_limit_seconds,
+            order_index: q.order_index,
+            question_type: q.question_type || "multi",
+          }));
+        }
+      }
 
       // Insert cloned quiz for user
       const { data: newQuiz, error: createError } = await supabase
@@ -112,9 +175,9 @@ function BrowsePage() {
 
       const newQuizTyped = newQuiz as unknown as Quiz;
 
-      // Copy all questions to new quiz
-      if (qData && qData.length > 0) {
-        const questionsToInsert = qData.map((q) => ({
+      // Copy questions to new quiz
+      if (questionsToCopy.length > 0) {
+        const questionsToInsert = questionsToCopy.map((q) => ({
           quiz_id: newQuizTyped.id,
           question_text: q.question_text,
           options: q.options,
