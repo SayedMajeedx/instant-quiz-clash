@@ -185,10 +185,13 @@ function Play() {
           {myRow && myRow.streak > 1 ? (
             <p className="mt-2 font-display text-lg text-lime">{t("play.inARow", { n: myRow.streak })}</p>
           ) : null}
-          <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
-            <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
-            <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
-          </div>
+          {question.correct_index >= 0 ? (
+            <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
+              <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
+              <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
+            </div>
+          ) : null}
+
           <p className="mt-6 text-sm text-muted-foreground">{t("play.total", { n: myRow?.total ?? 0 })}</p>
         </div>
       </main>
