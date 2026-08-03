@@ -50,17 +50,29 @@ export function useRoomGame(code: string): GameState {
     roomIdRef.current = typedRoom.id;
     setRoom(typedRoom);
 
-    const [quizRes, questionRes, playerRes, answerRes] = await Promise.all([
+    const [quizRes, ownerQuestionRes, playerRes, answerRes] = await Promise.all([
       supabase.from("quizzes").select("*").eq("id", typedRoom.quiz_id).maybeSingle(),
       supabase.from("questions").select("*").eq("quiz_id", typedRoom.quiz_id).order("order_index"),
       supabase.from("players").select("*").eq("room_id", typedRoom.id).order("joined_at"),
       supabase.from("answers").select("*").eq("room_id", typedRoom.id),
     ]);
 
+    // Owners read the full question rows; players get a redacted list with no
+    // correct answers, then only the answers already revealed by the clock.
+    let rows = (ownerQuestionRes.data ?? []) as unknown as Question[];
+    if (rows.length === 0) {
+      const { data: publicRows } = await supabase.rpc("room_questions", { p_room_id: typedRoom.id });
+      rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({ ...q, correct_index: -1 }));
+      const { data: reveals } = await supabase.rpc("room_reveals", { p_room_id: typedRoom.id });
+      const map = new Map((reveals ?? []).map((r) => [r.question_id, r.correct_index]));
+      rows = rows.map((q) => (map.has(q.id) ? { ...q, correct_index: map.get(q.id)! } : q));
+    }
+
     setQuiz((quizRes.data as unknown as Quiz) ?? null);
-    setQuestions(((questionRes.data ?? []) as unknown as Question[]).map((q) => ({ ...q, options: q.options as string[] })));
+    setQuestions(rows.map((q) => ({ ...q, options: q.options as unknown as string[] })));
     setPlayers((playerRes.data ?? []) as unknown as Player[]);
     setAnswers((answerRes.data ?? []) as unknown as Answer[]);
+
     setMissing(false);
     setLoading(false);
   }, [code]);
