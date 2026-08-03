@@ -227,7 +227,48 @@ const en: Dict = {
   "dash.correct": "{n} correct",
   "dash.bestStreak": "best streak {n}",
   "dash.hostNew": "Host a game",
+
+  "host.pacing": "Pacing",
+  "host.pacingAuto": "Auto",
+  "host.pacingManual": "I tap next",
+  "host.pacingAutoNote": "Reveals and scoreboards roll on automatically.",
+  "host.pacingManualNote": "The game waits on this screen until you tap Next.",
+  "host.skipNote": "As soon as everyone has answered, the question ends early.",
+  "host.next": "Next →",
+  "host.nextQuestion": "Next question →",
+  "host.showScores": "Show scores →",
+  "host.finish": "Finish game →",
+  "host.waitingManual": "Waiting for you",
+  "host.teamAuto": "Auto-assign",
+  "host.teamManual": "Assign myself",
+  "host.teamAutoNote": "Players are auto-balanced into teams as they join.",
+  "host.teamManualNote": "Tap a player to move them between teams.",
+  "host.shuffleTeams": "Shuffle teams",
+  "host.unassigned": "No team",
+  "host.everyoneAnswered": "Everyone answered!",
+  "host.hostTabNote": "Keep this screen open — it drives the game.",
+
+  "play.timeUp": "Time's up!",
+  "play.waitingNext": "Waiting for the host…",
+  "play.true": "True",
+  "play.false": "False",
+  "play.fiftyUnavailable": "50:50 doesn't work on true/false",
+
+  "editor.type": "Type",
+  "editor.typeMulti": "4 options",
+  "editor.typeBoolean": "True / false",
+  "editor.presets": "Quick length",
+  "editor.applyAll": "Apply to all questions",
+  "editor.applied": "Applied to every question",
+  "editor.image": "Image",
+  "editor.addImage": "Add image",
+  "editor.replaceImage": "Replace",
+  "editor.removeImage": "Remove",
+  "editor.imageTooBig": "Image must be under 5 MB",
+  "editor.imageFailed": "Upload failed, try again",
+  "editor.uploading": "Uploading…",
 };
+
 
 
 const ar: Dict = {
