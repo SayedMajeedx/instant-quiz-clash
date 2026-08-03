@@ -8,7 +8,7 @@ import { useI18n } from "@/lib/i18n";
 import { ownerId } from "@/lib/session";
 import type { Quiz } from "@/lib/quizclash";
 
-export const Route = createFileRoute("/quizzes/")({
+export const Route = createFileRoute("/_authenticated/quizzes/")({
   head: () => ({
     meta: [
       { title: "My Quizzes — QuizClash" },

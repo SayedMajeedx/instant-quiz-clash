@@ -9,7 +9,7 @@ import { randomCode, type Quiz } from "@/lib/quizclash";
 import { ownerId } from "@/lib/session";
 import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/host/")({
+export const Route = createFileRoute("/_authenticated/host/")({
   validateSearch: (search: Record<string, unknown>): { quiz?: string } =>
     typeof search["quiz"] === "string" ? { quiz: search["quiz"] } : {},
   head: () => ({

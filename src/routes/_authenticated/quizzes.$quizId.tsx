@@ -9,7 +9,7 @@ import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
 import { type Question, type Quiz } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/quizzes/$quizId")({
+export const Route = createFileRoute("/_authenticated/quizzes/$quizId")({
   head: () => ({
     meta: [
       { title: "Quiz Editor — QuizClash" },
