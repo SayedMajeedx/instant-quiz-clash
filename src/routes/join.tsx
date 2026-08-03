@@ -2,7 +2,9 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
+import { useI18n } from "@/lib/i18n";
 import { AVATAR_COLORS, type Player, type Room } from "@/lib/quizclash";
 import { storePlayerId } from "@/lib/session";
 
@@ -22,6 +24,7 @@ export const Route = createFileRoute("/join")({
 
 function Join() {
   const navigate = useNavigate();
+  const { t } = useI18n();
   const search = Route.useSearch();
   const [code, setCode] = useState((search.code ?? "").toUpperCase());
   const [nickname, setNickname] = useState("");
@@ -36,11 +39,11 @@ function Join() {
     const cleanCode = code.trim().toUpperCase();
     const nick = nickname.trim().slice(0, 18);
     if (cleanCode.length !== 6) {
-      toast.error("Room codes are 6 characters");
+      toast.error(t("join.errCodeLength"));
       return;
     }
     if (nick.length < 2) {
-      toast.error("Pick a nickname with at least 2 characters");
+      toast.error(t("join.errNickLength"));
       return;
     }
     setBusy(true);
@@ -49,12 +52,12 @@ function Join() {
     const room = roomRow as unknown as Room | null;
     if (!room) {
       setBusy(false);
-      toast.error("No game with that code");
+      toast.error(t("join.errNoGame"));
       return;
     }
     if (room.status === "ended") {
       setBusy(false);
-      toast.error("That game has already finished");
+      toast.error(t("join.errFinished"));
       return;
     }
 
@@ -77,7 +80,7 @@ function Join() {
 
     if (!player) {
       setBusy(false);
-      toast.error("Could not join, try another nickname");
+      toast.error(t("join.errJoin"));
       return;
     }
 
@@ -92,21 +95,24 @@ function Join() {
     <main className="relative grid min-h-screen place-items-center px-5">
       <AnimatedBg dense />
       <div className="w-full max-w-sm">
-        <Link to="/" className="mb-6 block text-center font-display text-3xl">
-          Quiz<span className="text-gradient">Clash</span>
-        </Link>
+        <div className="mb-6 flex items-center justify-between gap-3">
+          <Link to="/" className="font-display text-3xl">
+            {t("brand.quiz")}<span className="text-gradient">{t("brand.clash")}</span>
+          </Link>
+          <LanguageToggle />
+        </div>
 
         {joined ? (
           <div className="animate-pop rounded-3xl border border-border bg-surface-gradient p-10 text-center shadow-glow">
             <p className="font-display text-5xl">🎉</p>
-            <p className="mt-3 font-display text-3xl text-gradient">You&apos;re in!</p>
+            <p className="mt-3 font-display text-3xl text-gradient">{t("join.youreIn")}</p>
           </div>
         ) : (
           <div className="rounded-3xl border border-border bg-surface-gradient p-6 shadow-glow">
             <input
               value={code}
               onChange={(e) => setCode(e.target.value.toUpperCase().slice(0, 6))}
-              placeholder="CODE"
+              placeholder={t("join.codePlaceholder")}
               autoCapitalize="characters"
               inputMode="text"
               className="w-full rounded-2xl border border-border bg-background/60 px-4 py-4 text-center font-display text-3xl tracking-[0.3em] outline-none focus:ring-2 focus:ring-ring"
@@ -117,7 +123,7 @@ function Join() {
               onKeyDown={(e) => {
                 if (e.key === "Enter") void join();
               }}
-              placeholder="Nickname"
+              placeholder={t("join.nickPlaceholder")}
               className="mt-3 w-full rounded-2xl border border-border bg-background/60 px-4 py-4 text-center text-xl outline-none focus:ring-2 focus:ring-ring"
             />
             <button
@@ -126,7 +132,7 @@ function Join() {
               onClick={() => void join()}
               className="press mt-4 w-full rounded-2xl bg-gradient-hero px-6 py-4 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
             >
-              {busy ? "Joining…" : "Enter"}
+              {busy ? t("join.joining") : t("join.enter")}
             </button>
           </div>
         )}

@@ -56,8 +56,8 @@
   --color-silver: var(--silver);
   --color-bronze: var(--bronze);
 
-  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Outfit", "Cairo", ui-sans-serif, system-ui, sans-serif;
 
   --animate-float: float 14s ease-in-out infinite;
   --animate-blob: blob 22s ease-in-out infinite;
