@@ -1,15 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { Podium } from "@/components/quiz/Podium";
+import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { standings, teamStandings, TEAM_COLORS } from "@/lib/quizclash";
+import { optionCount, standings, teamStandings, TEAM_COLORS, type CursorPhase } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/host/$code")({
@@ -30,39 +31,109 @@ function HostRoom() {
   const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
+  const advancingRef = useRef<string | null>(null);
+  const archivedRef = useRef(false);
+  const [assigning, setAssigning] = useState<string | null>(null);
 
   const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join?code=${code.toUpperCase()}` : "";
 
-  // The host screen is the one that flips the room to "ended" so late refreshes
-  // land on the podium. Gameplay itself never depends on this device.
+  const roomId = room?.id ?? null;
+  const cursorIndex = room?.cursor_index ?? 0;
+  const cursorPhase = room?.cursor_phase ?? "question";
+
+  // Every stage transition is written by this screen. `advance_room` is guarded
+  // on the stage it is leaving, so a second host tab can never double-advance.
+  const advance = useCallback(
+    async (fromIndex: number, fromPhase: CursorPhase) => {
+      if (!roomId) return;
+      const key = `${roomId}:${fromIndex}:${fromPhase}`;
+      if (advancingRef.current === key) return;
+      advancingRef.current = key;
+      await supabase.rpc("advance_room", {
+        p_room_id: roomId,
+        p_expect_index: fromIndex,
+        p_expect_phase: fromPhase,
+      });
+      await state.refresh();
+    },
+    [roomId, state],
+  );
+
+  // Snapshot final standings once the room is over so they survive cleanup.
   useEffect(() => {
-    if (room && room.status === "active" && phase.kind === "ended") {
-      void (async () => {
-        await supabase.from("rooms").update({ status: "ended" }).eq("id", room.id);
-        // Snapshot the final standings so they survive room cleanup.
-        await supabase.rpc("archive_room", { p_room_id: room.id });
-      })();
-    }
-  }, [phase.kind, room]);
+    if (!room || room.status !== "ended" || archivedRef.current) return;
+    archivedRef.current = true;
+    void supabase.rpc("archive_room", { p_room_id: room.id });
+  }, [room]);
+
+  const questionAnswerCount =
+    phase.kind === "question" ? answers.filter((a) => a.question_id === phase.question.id).length : 0;
+  const everyoneAnswered =
+    phase.kind === "question" && players.length > 0 && questionAnswerCount >= players.length;
+
+  // Auto pacing: the question clock always ends the question (early when everyone
+  // has answered); reveal and scoreboard only roll on when the host chose "auto".
+  useEffect(() => {
+    if (!room || room.status !== "active") return;
+    if (phase.kind !== "question" && phase.kind !== "reveal" && phase.kind !== "leaderboard") return;
+    const auto = room.advance_mode !== "manual";
+    const timeUp = phase.msLeft <= 0;
+    const shouldAdvance = phase.kind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
+    if (!shouldAdvance) return;
+    const from: CursorPhase = phase.kind === "question" ? "question" : phase.kind === "reveal" ? "reveal" : "board";
+    const delay = phase.kind === "question" && everyoneAnswered && !timeUp ? 700 : 0;
+    const timer = window.setTimeout(() => void advance(phase.index, from), delay);
+    return () => window.clearTimeout(timer);
+  }, [room, phase, everyoneAnswered, advance]);
 
   const rows = useMemo(() => {
-    const upTo = phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard" ? phase.index : questions.length - 1;
+    const upTo =
+      phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
+        ? phase.index
+        : questions.length - 1;
     return standings(players, answers, questions, upTo);
   }, [players, answers, questions, phase]);
 
   const teams = useMemo(() => teamStandings(rows), [rows]);
 
-  async function setTeamCount(next: number) {
+  async function patchRoom(patch: Record<string, unknown>) {
     if (!room) return;
-    await supabase.from("rooms").update({ team_count: next }).eq("id", room.id);
+    await supabase.from("rooms").update(patch as never).eq("id", room.id);
+    await state.refresh();
+  }
+
+  async function cycleTeam(playerId: string, current: number | null) {
+    if (!room || room.team_count < 2) return;
+    const next = current === null ? 0 : current + 1 >= room.team_count ? null : current + 1;
+    setAssigning(playerId);
+    await supabase.rpc("set_player_team", { p_player_id: playerId, p_team_index: next as unknown as number });
+    await state.refresh();
+    setAssigning(null);
+  }
+
+  async function shuffleTeams() {
+    if (!room || room.team_count < 2) return;
+    const shuffled = [...players].sort(() => Math.random() - 0.5);
+    await Promise.all(
+      shuffled.map((p, i) =>
+        supabase.rpc("set_player_team", { p_player_id: p.id, p_team_index: i % room.team_count }),
+      ),
+    );
     await state.refresh();
   }
 
   async function start() {
     if (!room) return;
+    const startsAt = new Date(Date.now() + 3000).toISOString();
     await supabase
       .from("rooms")
-      .update({ status: "active", started_at: new Date(Date.now() + 3000).toISOString() })
+      .update({
+        status: "active",
+        started_at: startsAt,
+        cursor_index: 0,
+        cursor_phase: "question",
+        phase_started_at: startsAt,
+      } as never)
       .eq("id", room.id);
     await state.refresh();
   }
@@ -101,6 +172,7 @@ function HostRoom() {
 
   if (phase.kind === "lobby") {
     const startsIn = room.started_at ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000) : null;
+    const manualTeams = room.team_count > 1 && room.team_mode === "manual";
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
@@ -136,13 +208,34 @@ function HostRoom() {
                 {players.length}
               </span>
             </div>
+
+            <div className="mt-5 flex flex-wrap items-center gap-2">
+              <span className="text-sm font-semibold text-muted-foreground">{t("host.pacing")}</span>
+              {(["auto", "manual"] as const).map((mode) => (
+                <button
+                  key={mode}
+                  type="button"
+                  onClick={() => void patchRoom({ advance_mode: mode })}
+                  className={cn(
+                    "press rounded-full border px-4 py-1.5 text-sm font-semibold",
+                    room.advance_mode === mode ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
+                  )}
+                >
+                  {mode === "auto" ? t("host.pacingAuto") : t("host.pacingManual")}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-xs text-muted-foreground">
+              {room.advance_mode === "manual" ? t("host.pacingManualNote") : t("host.pacingAutoNote")} {t("host.skipNote")}
+            </p>
+
             <div className="mt-5 flex flex-wrap items-center gap-2">
               <span className="text-sm font-semibold text-muted-foreground">{t("host.teamMode")}</span>
               {[0, 2, 3, 4].map((n) => (
                 <button
                   key={n}
                   type="button"
-                  onClick={() => void setTeamCount(n)}
+                  onClick={() => void patchRoom({ team_count: n })}
                   className={cn(
                     "press rounded-full border px-4 py-1.5 text-sm font-semibold",
                     (room.team_count ?? 0) === n ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
@@ -152,31 +245,84 @@ function HostRoom() {
                 </button>
               ))}
             </div>
-            <p className="mt-2 text-xs text-muted-foreground">{t("host.teamNote")}</p>
+
+            {room.team_count > 1 ? (
+              <>
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  {(["auto", "manual"] as const).map((mode) => (
+                    <button
+                      key={mode}
+                      type="button"
+                      onClick={() => void patchRoom({ team_mode: mode })}
+                      className={cn(
+                        "press rounded-full border px-4 py-1.5 text-sm font-semibold",
+                        room.team_mode === mode ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
+                      )}
+                    >
+                      {mode === "auto" ? t("host.teamAuto") : t("host.teamManual")}
+                    </button>
+                  ))}
+                  {manualTeams && players.length > 0 ? (
+                    <button
+                      type="button"
+                      onClick={() => void shuffleTeams()}
+                      className="press rounded-full border border-border px-4 py-1.5 text-sm font-semibold"
+                    >
+                      🎲 {t("host.shuffleTeams")}
+                    </button>
+                  ) : null}
+                </div>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  {manualTeams ? t("host.teamManualNote") : t("host.teamAutoNote")}
+                </p>
+              </>
+            ) : null}
 
             <div className="mt-5 flex flex-wrap gap-2">
-              {players.length === 0 ? (
-                <p className="text-muted-foreground">{t("host.waiting")}</p>
-              ) : null}
-              {players.map((p) => (
-                <span
-                  key={p.id}
-                  className="flex animate-pop items-center gap-2 rounded-full border border-border bg-background/50 px-3 py-2 font-semibold"
-                >
-                  <span className="size-4 rounded-full" style={{ backgroundColor: p.avatar_color }} />
-                  {p.nickname}
-                  {p.team_index !== null ? (
+              {players.length === 0 ? <p className="text-muted-foreground">{t("host.waiting")}</p> : null}
+              {players.map((p) => {
+                const badge =
+                  p.team_index !== null ? (
                     <span
                       className="rounded-full px-2 py-0.5 text-[10px] font-bold text-background"
                       style={{ backgroundColor: TEAM_COLORS[p.team_index % TEAM_COLORS.length] }}
                     >
                       {p.team_index + 1}
                     </span>
-                  ) : null}
-                </span>
-              ))}
+                  ) : manualTeams ? (
+                    <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
+                      {t("host.unassigned")}
+                    </span>
+                  ) : null;
+                const inner = (
+                  <>
+                    <span className="size-4 rounded-full" style={{ backgroundColor: p.avatar_color }} />
+                    {p.nickname}
+                    {badge}
+                  </>
+                );
+                return manualTeams ? (
+                  <button
+                    key={p.id}
+                    type="button"
+                    disabled={assigning === p.id}
+                    onClick={() => void cycleTeam(p.id, p.team_index)}
+                    className="press flex animate-pop items-center gap-2 rounded-full border border-border bg-background/50 px-3 py-2 font-semibold disabled:opacity-50"
+                  >
+                    {inner}
+                  </button>
+                ) : (
+                  <span
+                    key={p.id}
+                    className="flex animate-pop items-center gap-2 rounded-full border border-border bg-background/50 px-3 py-2 font-semibold"
+                  >
+                    {inner}
+                  </span>
+                );
+              })}
             </div>
-            {startsIn !== null && startsIn > 0 ? (
+
+            {startsIn !== null && startsIn > 0 && room.status === "active" ? (
               <p className="mt-8 text-center font-display text-4xl text-sun">{t("host.startingIn", { n: startsIn })}</p>
             ) : (
               <button
@@ -188,9 +334,7 @@ function HostRoom() {
                 {t("host.start")}
               </button>
             )}
-            <p className="mt-3 text-center text-xs text-muted-foreground">
-              {t("host.autoNote")}
-            </p>
+            <p className="mt-3 text-center text-xs text-muted-foreground">{t("host.hostTabNote")}</p>
           </section>
         </div>
       </main>
@@ -198,9 +342,12 @@ function HostRoom() {
   }
 
   const question = phase.question;
+  const choices = optionCount(question);
   const totalMs = Math.max(1, question.time_limit_seconds) * 1000;
   const questionAnswers = answers.filter((a) => a.question_id === question.id);
-  const counts = [0, 1, 2, 3].map((i) => questionAnswers.filter((a) => a.choice_index === i).length);
+  const counts = Array.from({ length: choices }, (_, i) => questionAnswers.filter((a) => a.choice_index === i).length);
+  const manual = room.advance_mode === "manual";
+  const isLast = phase.index >= questions.length - 1;
 
   if (phase.kind === "leaderboard") {
     return (
@@ -236,9 +383,19 @@ function HostRoom() {
               </div>
             </div>
           ) : null}
-          <p className="mt-8 text-center text-muted-foreground">
-            {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
-          </p>
+          {manual ? (
+            <button
+              type="button"
+              onClick={() => void advance(phase.index, "board")}
+              className="press mx-auto mt-8 block rounded-3xl bg-gradient-hero px-8 py-4 font-display text-2xl text-primary-foreground shadow-chunky"
+            >
+              {t("host.nextQuestion")}
+            </button>
+          ) : (
+            <p className="mt-8 text-center text-muted-foreground">
+              {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
+            </p>
+          )}
         </div>
       </main>
     );
@@ -262,27 +419,52 @@ function HostRoom() {
             {question.question_text || "…"}
           </h1>
 
+          <QuestionImage
+            path={question.image_url}
+            className="mt-6 max-h-[30vh] rounded-3xl border border-border object-contain"
+          />
+
           <div className="mt-8 flex w-full max-w-3xl items-center justify-between gap-6">
             {revealing ? (
-              <p className="flex-1 font-display text-3xl text-lime">{t("host.correctAnswer")}</p>
+              <>
+                <p className="flex-1 font-display text-3xl text-lime">{t("host.correctAnswer")}</p>
+                {manual ? (
+                  <button
+                    type="button"
+                    onClick={() => void advance(phase.index, "reveal")}
+                    className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-xl text-primary-foreground shadow-chunky"
+                  >
+                    {isLast ? t("host.finish") : t("host.showScores")}
+                  </button>
+                ) : null}
+              </>
             ) : (
               <>
                 <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={132} />
                 <div className="flex-1">
                   <p className="font-display text-2xl tabular-nums">
-                    {t("host.answered", { answered: questionAnswers.length, total: players.length })}
+                    {everyoneAnswered
+                      ? t("host.everyoneAnswered")
+                      : t("host.answered", { answered: questionAnswers.length, total: players.length })}
                   </p>
                   <div className="mt-3">
                     <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />
                   </div>
                 </div>
+                <button
+                  type="button"
+                  onClick={() => void advance(phase.index, "question")}
+                  className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
+                >
+                  {t("host.next")}
+                </button>
               </>
             )}
           </div>
         </div>
 
-        <div className="mt-8 grid gap-3 pb-6 sm:grid-cols-2">
-          {[0, 1, 2, 3].map((i) => (
+        <div className={cn("mt-8 grid gap-3 pb-6", choices > 2 ? "sm:grid-cols-2" : "sm:grid-cols-2")}>
+          {Array.from({ length: choices }, (_, i) => (
             <AnswerTile
               key={i}
               index={i}

@@ -5,11 +5,15 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
 import { ImportFromText } from "@/components/quiz/ImportFromText";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { supabase } from "@/integrations/supabase/client";
 import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
 import { type ParsedQuestion } from "@/lib/import-questions.shared";
-import { type Question, type Quiz } from "@/lib/quizclash";
+import { optionCount, type Question, type QuestionType, type Quiz } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
+
+const TIME_PRESETS = [10, 20, 30, 45, 60, 90] as const;
+
 
 export const Route = createFileRoute("/_authenticated/quizzes/$quizId")({
   validateSearch: (search: Record<string, unknown>) => ({ import: search["import"] === true || search["import"] === "true" ? true : undefined }),
@@ -32,6 +36,8 @@ function Editor() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [saving, setSaving] = useState(false);
   const [importOpen, setImportOpen] = useState(Boolean(search.import));
+  const [uploading, setUploading] = useState<string | null>(null);
+
   const timers = useRef<Record<string, number>>({});
   const pending = useRef<Record<string, Partial<Question>>>({});
   const pendingTitle = useRef<string | null>(null);
@@ -110,6 +116,38 @@ function Editor() {
       await supabase.from("questions").update(body as never).eq("id", id);
     });
   }
+  function setType(question: Question, type: QuestionType) {
+    if (question.question_type === type) return;
+    const patch: Partial<Question> =
+      type === "boolean"
+        ? { question_type: type, options: ["True", "False", "", ""], correct_index: Math.min(1, question.correct_index) }
+        : { question_type: type, options: ["", "", "", ""], correct_index: 0 };
+    patchQuestion(question.id, patch);
+  }
+
+  async function applyTimeToAll(seconds: number) {
+    setQuestions((prev) => prev.map((q) => ({ ...q, time_limit_seconds: seconds })));
+    await supabase.from("questions").update({ time_limit_seconds: seconds } as never).eq("quiz_id", quizId);
+    toast.success(t("editor.applied"));
+  }
+
+  async function uploadImage(questionId: string, file: File) {
+    if (file.size > 5 * 1024 * 1024) {
+      toast.error(t("editor.imageTooBig"));
+      return;
+    }
+    setUploading(questionId);
+    const ext = file.name.split(".").pop()?.toLowerCase() ?? "jpg";
+    const path = `${quizId}/${questionId}-${Date.now()}.${ext}`;
+    const { error } = await supabase.storage.from("question-images").upload(path, file, { upsert: true });
+    setUploading(null);
+    if (error) {
+      toast.error(t("editor.imageFailed"));
+      return;
+    }
+    patchQuestion(questionId, { image_url: path });
+  }
+
 
   async function addQuestion() {
     const { data, error } = await supabase
@@ -254,8 +292,25 @@ function Editor() {
                 className="mt-4 w-full resize-none rounded-2xl border border-border bg-background/50 px-4 py-3 text-lg outline-none focus:ring-2 focus:ring-ring"
               />
 
+              <div className="mt-4 flex flex-wrap items-center gap-2">
+                <span className="text-sm text-muted-foreground">{t("editor.type")}</span>
+                {(["multi", "boolean"] as const).map((type) => (
+                  <button
+                    key={type}
+                    type="button"
+                    onClick={() => setType(question, type)}
+                    className={cn(
+                      "press rounded-full border px-4 py-1.5 text-sm font-semibold",
+                      question.question_type === type ? "border-primary ring-2 ring-primary" : "border-border",
+                    )}
+                  >
+                    {type === "multi" ? t("editor.typeMulti") : t("editor.typeBoolean")}
+                  </button>
+                ))}
+              </div>
+
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {[0, 1, 2, 3].map((i) => (
+                {Array.from({ length: optionCount(question) }, (_, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <span
                       className="grid size-10 shrink-0 place-items-center rounded-xl"
@@ -263,18 +318,24 @@ function Editor() {
                     >
                       <AnswerShape index={i} className="size-5" />
                     </span>
-                    <input
-                      value={question.options[i] ?? ""}
-                      onChange={(e) => {
-                        const options = [0, 1, 2, 3].map((k) =>
-                          k === i ? e.target.value : (question.options[k] ?? ""),
-                        );
-                        patchQuestion(question.id, { options });
-                      }}
-                      onBlur={() => void flushPending()}
-                      placeholder={t("editor.answerPlaceholder", { shape: t(SHAPE_KEYS[i]!) })}
-                      className="w-full rounded-xl border border-border bg-background/50 px-3 py-2 outline-none focus:ring-2 focus:ring-ring"
-                    />
+                    {question.question_type === "boolean" ? (
+                      <span className="w-full rounded-xl border border-border bg-background/30 px-3 py-2 font-semibold">
+                        {i === 0 ? t("play.true") : t("play.false")}
+                      </span>
+                    ) : (
+                      <input
+                        value={question.options[i] ?? ""}
+                        onChange={(e) => {
+                          const options = [0, 1, 2, 3].map((k) =>
+                            k === i ? e.target.value : (question.options[k] ?? ""),
+                          );
+                          patchQuestion(question.id, { options });
+                        }}
+                        onBlur={() => void flushPending()}
+                        placeholder={t("editor.answerPlaceholder", { shape: t(SHAPE_KEYS[i]!) })}
+                        className="w-full rounded-xl border border-border bg-background/50 px-3 py-2 outline-none focus:ring-2 focus:ring-ring"
+                      />
+                    )}
                     <button
                       type="button"
                       onClick={() => patchQuestion(question.id, { correct_index: i })}
@@ -292,22 +353,81 @@ function Editor() {
                 ))}
               </div>
 
-              <label className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
-                {t("editor.timeLimit")}
-                <input
-                  type="number"
-                  min={5}
-                  max={120}
-                  value={question.time_limit_seconds}
-                  onChange={(e) =>
-                    patchQuestion(question.id, {
-                      time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 20)),
-                    })
-                  }
-                  className="w-20 rounded-xl border border-border bg-background/50 px-3 py-2 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"
-                />
-                {t("editor.seconds")}
-              </label>
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <span className="text-sm text-muted-foreground">{t("editor.image")}</span>
+                <label className="press cursor-pointer rounded-xl border border-border bg-background/50 px-4 py-2 text-sm font-semibold">
+                  {uploading === question.id
+                    ? t("editor.uploading")
+                    : question.image_url
+                      ? t("editor.replaceImage")
+                      : t("editor.addImage")}
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      e.target.value = "";
+                      if (file) void uploadImage(question.id, file);
+                    }}
+                  />
+                </label>
+                {question.image_url ? (
+                  <>
+                    <QuestionImage
+                      path={question.image_url}
+                      className="size-16 rounded-xl border border-border object-cover"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => patchQuestion(question.id, { image_url: null })}
+                      className="press rounded-xl border border-border px-3 py-2 text-sm text-destructive"
+                    >
+                      {t("editor.removeImage")}
+                    </button>
+                  </>
+                ) : null}
+              </div>
+
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <label className="flex items-center gap-3 text-sm text-muted-foreground">
+                  {t("editor.timeLimit")}
+                  <input
+                    type="number"
+                    min={5}
+                    max={120}
+                    value={question.time_limit_seconds}
+                    onChange={(e) =>
+                      patchQuestion(question.id, {
+                        time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 20)),
+                      })
+                    }
+                    className="w-20 rounded-xl border border-border bg-background/50 px-3 py-2 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"
+                  />
+                  {t("editor.seconds")}
+                </label>
+                {TIME_PRESETS.map((sec) => (
+                  <button
+                    key={sec}
+                    type="button"
+                    onClick={() => patchQuestion(question.id, { time_limit_seconds: sec })}
+                    className={cn(
+                      "press rounded-full border px-3 py-1 text-sm font-semibold",
+                      question.time_limit_seconds === sec ? "border-primary ring-2 ring-primary" : "border-border",
+                    )}
+                  >
+                    {sec}s
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  onClick={() => void applyTimeToAll(question.time_limit_seconds)}
+                  className="press rounded-full border border-border px-3 py-1 text-sm font-semibold"
+                >
+                  {t("editor.applyAll")}
+                </button>
+              </div>
+
             </section>
           ))}
         </div>

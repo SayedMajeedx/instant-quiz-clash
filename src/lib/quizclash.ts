@@ -5,6 +5,8 @@ export type Quiz = {
   created_at: string;
 };
 
+export type QuestionType = "multi" | "boolean";
+
 export type Question = {
   id: string;
   quiz_id: string;
@@ -13,7 +15,11 @@ export type Question = {
   correct_index: number;
   time_limit_seconds: number;
   order_index: number;
+  image_url: string | null;
+  question_type: QuestionType;
 };
+
+export type CursorPhase = "question" | "reveal" | "board";
 
 export type Room = {
   id: string;
@@ -22,7 +28,13 @@ export type Room = {
   status: "lobby" | "active" | "ended";
   started_at: string | null;
   team_count: number;
+  advance_mode: "auto" | "manual";
+  team_mode: "auto" | "manual";
+  cursor_index: number;
+  cursor_phase: CursorPhase;
+  phase_started_at: string | null;
 };
+
 
 export type Player = {
   id: string;
@@ -94,46 +106,38 @@ export type Phase =
   | { kind: "leaderboard"; index: number; msLeft: number; question: Question }
   | { kind: "ended" };
 
+/** True/false questions only ever render two tiles. */
+export function optionCount(question: Pick<Question, "question_type">): number {
+  return question.question_type === "boolean" ? 2 : 4;
+}
+
 /**
- * Pure function: the current phase is fully determined by the shared
- * `started_at` timestamp plus each question's duration. No client needs to
- * "advance" anything, so refreshes and late joins land on the right screen.
+ * The room carries an explicit cursor (`cursor_index` + `cursor_phase`) and the
+ * wall-clock time that stage began. Countdowns are derived from that timestamp,
+ * so refreshes and late joins land on the right screen, while the host can skip
+ * ahead the moment everyone has answered — or hold a stage in manual mode.
  */
-export function phaseAt(
-  startedAt: string | null,
-  questions: Question[],
-  now: number,
-  status: Room["status"] = "active",
-): Phase {
-  if (status === "ended") return { kind: "ended" };
-  if (!startedAt || questions.length === 0) return { kind: "lobby" };
-  let cursor = now - new Date(startedAt).getTime();
-  if (cursor < 0) return { kind: "lobby" };
+export function phaseAt(room: Room | null, questions: Question[], now: number): Phase {
+  if (!room) return { kind: "lobby" };
+  if (room.status === "ended") return { kind: "ended" };
+  if (!room.started_at || questions.length === 0) return { kind: "lobby" };
+  if (now < new Date(room.started_at).getTime()) return { kind: "lobby" };
 
-  for (let i = 0; i < questions.length; i += 1) {
-    const q = questions[i]!;
-    const qMs = Math.max(1, q.time_limit_seconds) * 1000;
-    if (cursor < qMs) return { kind: "question", index: i, msLeft: qMs - cursor, question: q };
-    cursor -= qMs;
-    if (cursor < REVEAL_MS) return { kind: "reveal", index: i, msLeft: REVEAL_MS - cursor, question: q };
-    cursor -= REVEAL_MS;
-    const isLast = i === questions.length - 1;
-    if (!isLast) {
-      if (cursor < BOARD_MS) return { kind: "leaderboard", index: i, msLeft: BOARD_MS - cursor, question: q };
-      cursor -= BOARD_MS;
-    }
+  const index = Math.min(Math.max(0, room.cursor_index), questions.length - 1);
+  const question = questions[index]!;
+  const startedAt = new Date(room.phase_started_at ?? room.started_at).getTime();
+  const elapsed = Math.max(0, now - startedAt);
+
+  if (room.cursor_phase === "reveal") {
+    return { kind: "reveal", index, msLeft: Math.max(0, REVEAL_MS - elapsed), question };
   }
-  return { kind: "ended" };
+  if (room.cursor_phase === "board") {
+    return { kind: "leaderboard", index, msLeft: Math.max(0, BOARD_MS - elapsed), question };
+  }
+  const qMs = Math.max(1, question.time_limit_seconds) * 1000;
+  return { kind: "question", index, msLeft: Math.max(0, qMs - elapsed), question };
 }
 
-export function questionStartMs(startedAt: string, questions: Question[], index: number): number {
-  let ms = new Date(startedAt).getTime();
-  for (let i = 0; i < index; i += 1) {
-    const q = questions[i]!;
-    ms += Math.max(1, q.time_limit_seconds) * 1000 + REVEAL_MS + BOARD_MS;
-  }
-  return ms;
-}
 
 export type Standing = {
   player: Player;

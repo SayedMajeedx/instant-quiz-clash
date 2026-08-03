@@ -5,10 +5,12 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownRing } from "@/components/quiz/CountdownRing";
 import { Podium } from "@/components/quiz/Podium";
+import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { standings, TEAM_COLORS } from "@/lib/quizclash";
+import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
+
 import { cn } from "@/lib/utils";
 import { storedPlayerId } from "@/lib/session";
 
@@ -183,7 +185,12 @@ function Play() {
           ) : (
             <p className="mt-4 text-sun">{t("play.lead")}</p>
           )}
-          <p className="mt-8 text-sm text-muted-foreground">{t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}</p>
+          <p className="mt-8 text-sm text-muted-foreground">
+            {room.advance_mode === "manual"
+              ? t("play.waitingNext")
+              : t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
+          </p>
+
         </div>
       </main>
     );
@@ -221,7 +228,10 @@ function Play() {
   }
 
   const totalMs = Math.max(1, question.time_limit_seconds) * 1000;
+  const choices = optionCount(question);
+  const isBoolean = question.question_type === "boolean";
   const fiftyHidden = me.fifty_question_id === question.id ? (me.fifty_hidden ?? []) : [];
+
 
   return (
     <main className="relative flex min-h-screen flex-col px-4 py-4">
@@ -263,8 +273,14 @@ function Play() {
           <p className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
             {t("play.questionOf", { n: phase.index + 1, total: questions.length })}
           </p>
-          <div className="mt-3 grid flex-1 grid-cols-2 gap-3 pb-2">
-            {[0, 1, 2, 3].map((i) => {
+          {question.image_url ? (
+            <QuestionImage
+              path={question.image_url}
+              className="mx-auto mt-3 max-h-[18vh] rounded-2xl border border-border object-contain"
+            />
+          ) : null}
+          <div className={cn("mt-3 grid flex-1 gap-3 pb-2", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
+            {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
               return (
                 <AnswerTile
@@ -274,10 +290,13 @@ function Play() {
                   disabled={sending || hidden}
                   state={hidden ? "wrong" : "idle"}
                   onClick={() => void submit(i)}
-                />
+                >
+                  {isBoolean ? (i === 0 ? t("play.true") : t("play.false")) : undefined}
+                </AnswerTile>
               );
             })}
           </div>
+
 
           <div className="pb-2">
             <p className="mb-2 text-center text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground">
@@ -297,11 +316,13 @@ function Play() {
               </button>
               <button
                 type="button"
-                disabled={me.used_fifty}
+                disabled={me.used_fifty || isBoolean}
                 onClick={() => void useFifty()}
+                title={isBoolean ? t("play.fiftyUnavailable") : undefined}
                 className="press flex-1 rounded-2xl border border-border bg-surface-gradient px-4 py-3 font-display text-lg disabled:opacity-40"
               >
                 {me.used_fifty ? t("play.fiftyUsed") : t("play.fifty")}
+
               </button>
             </div>
             {armedDouble && !me.used_double ? (

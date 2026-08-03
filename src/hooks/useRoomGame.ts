@@ -157,7 +157,8 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
 
 export function usePhase(state: GameState) {
   return useMemo(
-    () => phaseAt(state.room?.started_at ?? null, state.questions, state.now, state.room?.status ?? "lobby"),
-    [state.room?.started_at, state.room?.status, state.questions, state.now],
+    () => phaseAt(state.room, state.questions, state.now),
+    [state.room, state.questions, state.now],
   );
 }
+
