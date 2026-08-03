@@ -21,6 +21,7 @@ export type Room = {
   quiz_id: string;
   status: "lobby" | "active" | "ended";
   started_at: string | null;
+  team_count: number;
 };
 
 export type Player = {
