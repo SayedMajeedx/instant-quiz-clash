@@ -43,7 +43,7 @@ type PreviewQuizMeta = {
 function QuizPreviewPage() {
   const { quizId } = Route.useParams();
   const navigate = useNavigate();
-  const { t } = useI18n();
+  const { lang, t } = useI18n();
 
   const [quizMeta, setQuizMeta] = useState<PreviewQuizMeta | null>(null);
   const [questions, setQuestions] = useState<PreviewQuestion[]>([]);
@@ -143,12 +143,12 @@ function QuizPreviewPage() {
         }
       } catch (err) {
         console.error("Failed to load preview:", err);
-        toast.error("Failed to load quiz preview");
+        toast.error(t("browse.error") || "Failed to load quiz preview");
       } finally {
         setLoading(false);
       }
     })();
-  }, [quizId]);
+  }, [quizId, t]);
 
   async function handleCloneAndHost() {
     if (!quizMeta) return;
@@ -174,13 +174,13 @@ function QuizPreviewPage() {
       // Navigate directly to Host / Lobby creation screen — NEVER to quiz editor
       void navigate({ to: "/host", search: { quiz: res.newQuizId } });
     } catch {
-      toast.error("Failed to clone quiz");
+      toast.error(t("browse.error") || "Failed to clone quiz");
     } finally {
       setCloning(false);
     }
   }
 
-  const optionLabels = ["أ", "ب", "ج", "د"];
+  const optionLabels = lang === "ar" ? ["أ", "ب", "ج", "د"] : ["A", "B", "C", "D"];
 
   return (
     <main className="relative min-h-screen px-5 py-8 pb-28">
@@ -192,8 +192,8 @@ function QuizPreviewPage() {
             to="/browse"
             className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm flex items-center gap-2 hover:border-primary/50"
           >
-            <span>←</span>
-            <span>{t("nav.browse") || "العودة للمكتبة"}</span>
+            <span>{lang === "ar" ? "←" : "←"}</span>
+            <span>{t("nav.browse")}</span>
           </Link>
           <LanguageToggle />
         </header>
@@ -202,12 +202,12 @@ function QuizPreviewPage() {
           <div className="mt-16 text-center text-muted-foreground">{t("editor.loading")}</div>
         ) : !quizMeta ? (
           <div className="mt-16 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
-            <p className="font-display text-2xl">لم يتم العثور على الكويز المطلوب</p>
+            <p className="font-display text-2xl">{t("preview.notFound")}</p>
             <Link
               to="/browse"
               className="press mt-4 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
             >
-              العودة للمكتبة
+              {t("nav.browse")}
             </Link>
           </div>
         ) : (
@@ -230,7 +230,7 @@ function QuizPreviewPage() {
 
               <h1 className="mt-4 font-display text-3xl md:text-5xl leading-tight">{quizMeta.title}</h1>
               <p className="mt-2 text-sm text-muted-foreground">
-                معاينة آمنة بدون إظهار الإجابات الصحيحة — يمكنك مراجعة نص الأسئلة والخيارات قبل البدء باستضافة اللعبة.
+                {t("preview.sub")}
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -241,7 +241,7 @@ function QuizPreviewPage() {
                   className="press rounded-2xl bg-gradient-hero px-8 py-4 font-display text-xl text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center gap-2"
                 >
                   <span>✨</span>
-                  <span>{cloning ? t("browse.cloning") : "نسخ واستضافة هذا الكويز"}</span>
+                  <span>{cloning ? t("browse.cloning") : t("preview.cloneAndHost")}</span>
                 </button>
               </div>
             </div>
@@ -249,7 +249,7 @@ function QuizPreviewPage() {
             {/* Questions List (Neutral Preview) */}
             <div className="mt-8 space-y-6">
               <h2 className="font-display text-2xl text-gradient">
-                أسئلة الكويز ({questions.length})
+                {t("preview.questionsHeader", { n: questions.length })}
               </h2>
 
               {questions.map((q, idx) => (
@@ -259,16 +259,16 @@ function QuizPreviewPage() {
                 >
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/40 pb-3">
                     <span className="font-display text-lg text-primary">
-                      سؤال {idx + 1} من {questions.length}
+                      {t("preview.questionN", { n: idx + 1, total: questions.length })}
                     </span>
                     <div className="flex items-center gap-2 text-xs">
                       {q.difficulty && (
                         <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
-                          {q.difficulty === "easy" ? "سهل" : q.difficulty === "hard" ? "صعب" : "متوسط"}
+                          {q.difficulty === "easy" ? t("aiGen.easy") : q.difficulty === "hard" ? t("aiGen.hard") : t("aiGen.medium")}
                         </span>
                       )}
                       <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
-                        ⏱️ {q.time_limit_seconds}ث
+                        ⏱️ {q.time_limit_seconds}{lang === "ar" ? "ث" : "s"}
                       </span>
                     </div>
                   </div>
@@ -301,7 +301,7 @@ function QuizPreviewPage() {
             <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-xl rounded-3xl border border-primary/30 bg-background/80 backdrop-blur-xl p-4 shadow-2xl flex items-center justify-between gap-4">
               <div>
                 <p className="font-display text-lg truncate max-w-[200px] sm:max-w-xs">{quizMeta.title}</p>
-                <p className="text-xs text-muted-foreground">{quizMeta.question_count} سؤال جاهز</p>
+                <p className="text-xs text-muted-foreground">{t("quizzes.questionCount", { count: quizMeta.question_count })}</p>
               </div>
               <button
                 type="button"
@@ -309,7 +309,7 @@ function QuizPreviewPage() {
                 onClick={() => void handleCloneAndHost()}
                 className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 shrink-0"
               >
-                {cloning ? t("browse.cloning") : "✨ نسخ واستضافة"}
+                {cloning ? t("browse.cloning") : t("preview.cloneShort")}
               </button>
             </div>
           </>
