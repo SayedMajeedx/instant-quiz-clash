@@ -23,12 +23,12 @@ export const importQuestionsFromText = createServerFn({ method: "POST" })
 export const generateQuizFromTopicFn = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator(
-    (input: { topic: string; count: number; difficulty: "easy" | "medium" | "hard"; language?: "ar" | "en" }) =>
+    (input: { topic: string; count: number; difficulty: string; language?: "ar" | "en" }) =>
       z
         .object({
           topic: z.string().trim().min(2).max(400),
           count: z.number().int().min(3).max(20),
-          difficulty: z.enum(["easy", "medium", "hard"]),
+          difficulty: z.enum(["standard", "challenge", "easy", "medium", "hard"]).default("standard"),
           language: z.enum(["ar", "en"]).optional(),
         })
         .parse(input),

@@ -128,7 +128,7 @@ No markdown, no code fences, no commentary.`;
 export async function generateQuizFromTopic(input: {
   topic: string;
   count: number;
-  difficulty: "easy" | "medium" | "hard";
+  difficulty: string;
   language?: "ar" | "en" | undefined;
 }): Promise<{ questions: ParsedQuestion[] }> {
   const apiKey = process.env["LOVABLE_API_KEY"];
@@ -139,18 +139,15 @@ export async function generateQuizFromTopic(input: {
   const count = Math.max(3, Math.min(20, Math.round(input.count)));
   const lang = input.language === "en" ? "en" : "ar";
 
-  const response = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
+  const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
     method: "POST",
     headers: {
+      Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
-      "Lovable-API-Key": apiKey,
-      "X-Lovable-AIG-SDK": "fetch",
     },
     body: JSON.stringify({
-      model: "openai/gpt-5.6-sol",
-      stream: true,
-      reasoning: { effort: "low", summary: "auto" },
-      input: [
+      model: "google/gemini-2.5-flash",
+      messages: [
         { role: "system", content: TOPIC_SYSTEM_PROMPT },
         {
           role: "user",
@@ -162,33 +159,10 @@ export async function generateQuizFromTopic(input: {
 
   if (response.status === 429) throw new Error("rate_limited");
   if (response.status === 402) throw new Error("payment_required");
-  if (!response.ok || !response.body) throw new Error(`ai_error_${response.status}`);
+  if (!response.ok) throw new Error(`ai_error_${response.status}`);
 
-  const reader = response.body.getReader();
-  const decoder = new TextDecoder();
-  let buffer = "";
-  let text = "";
-  while (true) {
-    const chunk = await reader.read();
-    if (chunk.done) break;
-    buffer += decoder.decode(chunk.value, { stream: true });
-    const lines = buffer.split("\n");
-    buffer = lines.pop() ?? "";
-    for (const line of lines) {
-      if (!line.startsWith("data:")) continue;
-      const payload = line.slice(5).trim();
-      if (!payload || payload === "[DONE]") continue;
-      try {
-        const event = JSON.parse(payload) as { type?: string; delta?: string };
-        if (event.type === "response.output_text.delta" && typeof event.delta === "string") {
-          text += event.delta;
-        }
-      } catch {
-        // Ignore keep-alive / partial frames.
-      }
-    }
-  }
-
-  const parsed = parsedPayloadSchema.parse(extractJson(text));
+  const json = (await response.json()) as { choices?: { message?: { content?: string } }[] };
+  const content = json.choices?.[0]?.message?.content ?? "";
+  const parsed = parsedPayloadSchema.parse(extractJson(content));
   return { questions: parsed.questions.slice(0, count) };
 }
