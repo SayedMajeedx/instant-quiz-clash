@@ -3,10 +3,7 @@ import path from "path";
 import crypto from "crypto";
 
 // Check if merged_questions.json exists in imported_quiz_library or D:/quiz-library
-let rawPath = "./imported_quiz_library/merged_questions.json";
-if (!fs.existsSync(rawPath)) {
-  rawPath = "D:/quiz-library/merged_questions.json";
-}
+let rawPath = "./merged_questions_launch_ready.json";
 
 if (!fs.existsSync(rawPath)) {
   console.error("Merged questions file not found");
