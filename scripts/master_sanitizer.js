@@ -37,7 +37,7 @@ function sanitizeQuestionPrompt(qText, correctOpt) {
   let q = qText;
 
   // 1. Fix Lewis Hamilton / Sir F1 question specifically
-  if (q.includes("103") || q.includes("سير") || correctOpt.includes("هاميلتون")) {
+  if ((q.includes("103") || q.includes("سير") || correctOpt.includes("هاميلتون")) && !correctOpt.includes("مارغريت") && q.category === "رياضة") {
     if (correctOpt.includes("هاميلتون") || correctOpt.includes("هاملتون")) {
       q = "ما اسم السائق البريطاني الذي فاز بـ 7 ألقاب عالمية وحقق أرقاماً قياسية تاريخية في فورمولا 1؟";
       keywordSpoilersFixed++;
