@@ -18,6 +18,8 @@ import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
 import { cn } from "@/lib/utils";
 
+import { useWakeLock } from "@/hooks/useWakeLock";
+
 export const Route = createFileRoute("/_authenticated/host/$code")({
   head: () => ({
     meta: [
@@ -36,6 +38,9 @@ function HostRoom() {
   const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
+
+  // Prevent tablet / PC / phone screen from sleeping during live game
+  useWakeLock(true);
   const archivedRef = useRef(false);
   const [showExitModal, setShowExitConfirm] = useState(false);
   const [assigning, setAssigning] = useState<string | null>(null);

@@ -17,6 +17,8 @@ import { clearStoredPlayer, storedPlayerId } from "@/lib/session";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
 
+import { useWakeLock } from "@/hooks/useWakeLock";
+
 export const Route = createFileRoute("/play/$code")({
   head: () => ({
     meta: [
@@ -32,6 +34,9 @@ export const Route = createFileRoute("/play/$code")({
 function Play() {
   const { code } = Route.useParams();
   const navigate = Route.useNavigate();
+
+  // Keep player phone screen awake during active game session
+  useWakeLock(true);
   const [playerId, setPlayerId] = useState<string | null>(null);
   const [sessionResolved, setSessionResolved] = useState(false);
   const [showLeaveModal, setShowLeaveConfirm] = useState(false);
