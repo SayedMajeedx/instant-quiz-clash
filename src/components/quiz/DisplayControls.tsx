@@ -1,5 +1,6 @@
 import { Cast, ExternalLink, Maximize, Minimize, Monitor, MonitorSmartphone, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -89,7 +90,7 @@ function isAppleBrowser(): boolean {
 }
 
 function useCast() {
-  const [supported, setSupported] = useState(true); // Always enable cast button for universal projector/window/cast support
+  const [supported, setSupported] = useState(true);
   const [apple, setApple] = useState(false);
   const [casting, setCasting] = useState(false);
   const [deviceName, setDeviceName] = useState<string | null>(null);
@@ -97,6 +98,55 @@ function useCast() {
 
   useEffect(() => {
     setApple(isAppleBrowser());
+
+    // Initialize Google Cast Sender SDK callback if on browser
+    if (typeof window !== "undefined") {
+      const win = window as unknown as {
+        __onGCastApiAvailable?: (isAvailable: boolean) => void;
+        cast?: {
+          framework?: {
+            CastContext?: {
+              getInstance: () => {
+                setOptions: (opts: unknown) => void;
+              };
+            };
+          };
+        };
+        chrome?: {
+          cast?: {
+            media?: {
+              DEFAULT_MEDIA_RECEIVER_APP_ID?: string;
+            };
+            AutoJoinPolicy?: {
+              ORIGIN_SCOPED?: string;
+            };
+          };
+        };
+      };
+
+      win.__onGCastApiAvailable = (isAvailable: boolean) => {
+        if (isAvailable && win.cast?.framework && win.chrome?.cast) {
+          try {
+            const context = win.cast.framework.CastContext.getInstance();
+            context.setOptions({
+              receiverApplicationId: win.chrome.cast.media?.DEFAULT_MEDIA_RECEIVER_APP_ID || "CC1AD845",
+              autoJoinPolicy: win.chrome.cast.AutoJoinPolicy?.ORIGIN_SCOPED,
+            });
+          } catch (err) {
+            console.warn("Cast SDK setup error:", err);
+          }
+        }
+      };
+
+      // Load Google Cast Sender SDK if missing
+      if (!document.getElementById("google-cast-sdk")) {
+        const script = document.createElement("script");
+        script.id = "google-cast-sdk";
+        script.src = "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }
   }, []);
 
   const startCast = useCallback(async () => {
@@ -141,18 +191,14 @@ const btn =
   "press grid size-9 place-items-center rounded-full border border-border bg-surface-gradient text-muted-foreground hover:text-foreground transition-colors";
 
 export function DisplayControls({ className }: { className?: string }) {
-  const { t } = useI18n();
+  const { lang, t } = useI18n();
   const cast = useCast();
   const fs = useFullscreen();
   const [modalOpen, setModalOpen] = useState(false);
 
   async function handleCastButtonClick() {
-    // Try native presentation request first if supported
-    const success = await cast.startCast();
-    if (!success) {
-      // Show Cast & Big Screen Display Control modal if native presentation isn't immediate
-      setModalOpen(true);
-    }
+    // Open Cast & Big Screen Display Control modal directly
+    setModalOpen(true);
   }
 
   function handleOpenBigScreenWindow() {
@@ -160,11 +206,62 @@ export function DisplayControls({ className }: { className?: string }) {
     const height = 720;
     const left = window.screen.width ? (window.screen.width - width) / 2 : 100;
     const top = window.screen.height ? (window.screen.height - height) / 2 : 100;
-    
+
     window.open(
       window.location.href,
       "quizclash_display_window",
       `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes,status=no,location=no,toolbar=no,menubar=no`,
+    );
+    setModalOpen(false);
+  }
+
+  async function handleTriggerChromecast() {
+    const win = window as unknown as {
+      cast?: {
+        framework?: {
+          CastContext?: {
+            getInstance: () => {
+              requestSession: () => Promise<unknown>;
+            };
+          };
+        };
+      };
+      PresentationRequest?: PresentationRequestCtor;
+    };
+
+    // 1. Try Google Cast Framework SDK session
+    if (win.cast?.framework?.CastContext) {
+      try {
+        const context = win.cast.framework.CastContext.getInstance();
+        await context.requestSession();
+        toast.success(t("cast.castingTo", { name: "Chromecast / Google TV" }));
+        setModalOpen(false);
+        return;
+      } catch (err) {
+        console.warn("Cast SDK session request failed or cancelled:", err);
+      }
+    }
+
+    // 2. Try Web Presentation Request API
+    const ctor = win.PresentationRequest;
+    if (typeof ctor === "function") {
+      try {
+        const request = new ctor([window.location.href]);
+        await request.start();
+        toast.success(t("cast.castingTo", { name: "TV" }));
+        setModalOpen(false);
+        return;
+      } catch (err) {
+        console.warn("Presentation request failed or cancelled:", err);
+      }
+    }
+
+    // 3. Fallback guidance toast if browser requires right-click -> Cast
+    toast.info(
+      lang === "ar"
+        ? "للبث المباشر عبر Google Chrome: انقر بزر الماوس الأيمن في أي مكان بالشاشة واختر «بث... / Cast...» للاتصال بـ Chromecast أو التلفزيون."
+        : "To Cast: Right-click anywhere in Chrome and select 'Cast...' to connect your TV or Chromecast.",
+      { duration: 7000 },
     );
     setModalOpen(false);
   }
@@ -244,10 +341,7 @@ export function DisplayControls({ className }: { className?: string }) {
               {/* Option 2: Native Chromecast / Web Presentation */}
               <button
                 type="button"
-                onClick={async () => {
-                  const started = await cast.startCast();
-                  if (started) setModalOpen(false);
-                }}
+                onClick={() => void handleTriggerChromecast()}
                 className="press w-full rounded-2xl border border-border/80 bg-background/40 p-4 text-start transition-all hover:bg-background/80 hover:border-border group flex items-start gap-3.5"
               >
                 <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-surface-gradient border border-border text-muted-foreground group-hover:text-foreground">
@@ -319,10 +413,7 @@ export function ExitFullscreenButton() {
       onClick={() => exit()}
       aria-label={t("display.exitFullscreen")}
       title={t("display.exitFullscreen")}
-      className={cn(
-        "fixed end-3 top-3 z-50 flex items-center gap-1.5 rounded-full border border-border bg-background/70 px-3 py-1.5 text-xs font-semibold text-muted-foreground backdrop-blur transition-opacity duration-300 hover:text-foreground",
-        visible ? "opacity-100" : "opacity-0",
-      )}
+      className="fixed end-3 top-3 z-50 flex items-center gap-1.5 rounded-full border border-border bg-background/70 px-3 py-1.5 text-xs font-semibold text-muted-foreground backdrop-blur transition-opacity duration-300 hover:text-foreground opacity-100"
     >
       <Minimize size={14} />
       {t("display.exitFullscreen")}
