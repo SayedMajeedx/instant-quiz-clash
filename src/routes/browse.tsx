@@ -78,7 +78,7 @@ function BrowsePage() {
             title: q.title,
             user_id: q.user_id ?? "system",
             created_at: q.created_at,
-            is_public: q.is_public,
+            is_public: q.is_public ?? true,
             category: q.category,
             language: q.language,
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
