@@ -675,36 +675,23 @@ function interpolate(template: string, vars?: Record<string, string | number>) {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // Start on "en" so SSR and the first client render agree, then adopt the
-  // stored preference after hydration.
-  const [lang, setLangState] = useState<Lang>("en");
+  const [lang] = useState<Lang>("ar");
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (stored === "ar" || stored === "en") setLangState(stored);
-    else if (navigator.language?.toLowerCase().startsWith("ar")) setLangState("ar");
-  }, []);
-
-  useEffect(() => {
-    const dir = lang === "ar" ? "rtl" : "ltr";
-    document.documentElement.lang = lang;
-    document.documentElement.dir = dir;
-  }, [lang]);
-
-  const setLang = useCallback((next: Lang) => {
-    setLangState(next);
-    window.localStorage.setItem(STORAGE_KEY, next);
+    document.documentElement.lang = "ar";
+    document.documentElement.dir = "rtl";
+    window.localStorage.setItem(STORAGE_KEY, "ar");
   }, []);
 
   const value = useMemo<Ctx>(
     () => ({
-      lang,
-      dir: lang === "ar" ? "rtl" : "ltr",
-      setLang,
-      toggle: () => setLang(lang === "ar" ? "en" : "ar"),
-      t: (key, vars) => interpolate(DICTS[lang][key as string] ?? en[key as string] ?? (key as string), vars),
+      lang: "ar",
+      dir: "rtl",
+      setLang: () => {},
+      toggle: () => {},
+      t: (key, vars) => interpolate(ar[key as string] ?? en[key as string] ?? (key as string), vars),
     }),
-    [lang, setLang],
+    [],
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
@@ -714,11 +701,11 @@ export function useI18n(): Ctx {
   const ctx = useContext(LanguageContext);
   if (!ctx) {
     return {
-      lang: "en",
-      dir: "ltr",
+      lang: "ar",
+      dir: "rtl",
       setLang: () => {},
       toggle: () => {},
-      t: (key, vars) => interpolate(en[key as string] ?? (key as string), vars),
+      t: (key, vars) => interpolate(ar[key as string] ?? en[key as string] ?? (key as string), vars),
     };
   }
   return ctx;
