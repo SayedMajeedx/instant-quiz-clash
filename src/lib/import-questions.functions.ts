@@ -11,12 +11,12 @@ export const importQuestionsFromText = createServerFn({ method: "POST" })
     type Result = { questions: ParsedQuestion[]; error: "rate_limited" | "payment_required" | "failed" | null };
     try {
       const parsed = await parseQuizText(data.text);
-      return { questions: parsed.questions, error: null } satisfies Result;
+      return { questions: parsed.questions as ParsedQuestion[], error: null };
     } catch (error) {
       const message = error instanceof Error ? error.message : "";
       const kind: Result["error"] =
         message === "rate_limited" ? "rate_limited" : message === "payment_required" ? "payment_required" : "failed";
-      return { questions: [], error: kind } satisfies Result;
+      return { questions: [], error: kind };
     }
   });
 
@@ -38,7 +38,7 @@ export const generateQuizFromTopicFn = createServerFn({ method: "POST" })
     type Result = { questions: ParsedQuestion[]; error: "rate_limited" | "payment_required" | "failed" | null };
     try {
       const parsed = await generateQuizFromTopic(data);
-      return { questions: parsed.questions, error: null } satisfies Result;
+      return { questions: parsed.questions as ParsedQuestion[], error: null };
     } catch (error) {
       const message = error instanceof Error ? error.message : "";
       const kind: Result["error"] =

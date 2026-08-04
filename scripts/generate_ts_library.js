@@ -31,6 +31,9 @@ raw.forEach((q) => {
       is_public: true,
       category: q.category || "عام",
       language: "ar",
+      quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
+      archived: q.archived === true,
+      launch_enabled: q.launch_enabled !== false,
       questions: [],
     });
   }
@@ -65,6 +68,9 @@ const tsContent = `import type { Question, Quiz } from "@/lib/quizclash";
 export type LibraryQuiz = Quiz & {
   category: string;
   language: string;
+  quiz_difficulty?: "standard" | "challenge" | "medium" | "beginner" | "expert" | null;
+  archived?: boolean;
+  launch_enabled?: boolean;
   questions: Omit<Question, "id" | "quiz_id">[];
 };
 

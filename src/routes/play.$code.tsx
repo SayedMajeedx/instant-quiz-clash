@@ -227,7 +227,13 @@ function Play() {
           ) : (
             <p className="mt-4 text-sun">{t("play.lead")}</p>
           )}
-          <p className="mt-8 text-sm text-muted-foreground">
+          {questions[phase.index]?.explanation ? (
+            <div className="mt-5 rounded-2xl border border-sun/40 bg-sun/10 p-3.5 text-start text-xs sm:text-sm text-sun shadow-sm animate-pop">
+              <span className="font-bold">💡 هل تعلم؟ </span>
+              {questions[phase.index]?.explanation}
+            </div>
+          ) : null}
+          <p className="mt-6 text-sm text-muted-foreground">
             {room.advance_mode === "manual"
               ? t("play.waitingNext")
               : t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}

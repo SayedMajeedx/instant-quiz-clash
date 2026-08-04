@@ -77,7 +77,7 @@ function MyQuizzes() {
     void navigate({
       to: "/quizzes/$quizId",
       params: { quizId: quiz.id },
-      search: withImport ? { import: true } : {},
+      search: { import: withImport ? true : undefined },
     });
   }
 
@@ -160,6 +160,7 @@ function MyQuizzes() {
               <Link
                 to="/quizzes/$quizId"
                 params={{ quizId: quiz.id }}
+                search={{ import: undefined }}
                 className="press rounded-xl border border-border px-4 py-2 text-sm font-semibold"
               >
                 {t("quizzes.edit")}

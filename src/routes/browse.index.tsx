@@ -88,7 +88,7 @@ function BrowsePage() {
             is_public: q.is_public ?? true,
             category: q.category,
             language: q.language,
-            quiz_difficulty: (q.quiz_difficulty as "beginner" | "medium" | "expert") || "medium",
+            quiz_difficulty: (q.quiz_difficulty === "challenge" ? "challenge" : "standard") as "standard" | "challenge",
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
           }));
 

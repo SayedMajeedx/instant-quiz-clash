@@ -460,18 +460,45 @@ function HostRoom() {
   const isLast = phase.index >= questions.length - 1;
 
   if (phase.kind === "leaderboard") {
+    const currentQ = questions[phase.index];
+    const explanation = currentQ?.explanation;
+
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
-        <div className="mx-auto max-w-3xl px-5 py-12">
+        <div className="mx-auto max-w-4xl px-5 py-12">
           <div className="mb-4 flex justify-end">
             <DisplayControls />
           </div>
-          <p className="text-center text-sm font-bold uppercase tracking-[0.3em] text-sun">{t("host.scoreboard")}</p>
-          <h1 className="mt-2 text-center font-display text-4xl md:text-6xl">
+          <p className="text-center text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-sun">{t("host.scoreboard")}</p>
+          <h1 className="mt-2 text-center font-display text-3xl sm:text-5xl md:text-6xl">
             {t("host.afterQuestion", { n: phase.index + 1 })}
           </h1>
-          <div className="mt-10">
+
+          {/* Premium Animated Explanation Showcase Card */}
+          {explanation ? (
+            <div className="mt-6 overflow-hidden rounded-3xl border border-sun/50 bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-primary/10 p-6 md:p-8 text-center shadow-glow backdrop-blur-xl animate-pop relative">
+              <div className="absolute -right-12 -top-12 size-36 rounded-full bg-sun/10 blur-2xl pointer-events-none" />
+              <div className="absolute -left-12 -bottom-12 size-36 rounded-full bg-primary/10 blur-2xl pointer-events-none" />
+
+              <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-sun/40 bg-sun/20 px-4 py-1.5 text-xs sm:text-sm font-bold text-sun shadow-sm">
+                <span className="animate-pulse text-base">💡</span>
+                <span>هل تعلم؟ / توضيح الإجابة</span>
+              </div>
+
+              {currentQ.question_text ? (
+                <p className="mt-3 text-xs sm:text-sm font-medium text-muted-foreground line-clamp-1">
+                  سؤال: «{currentQ.question_text}»
+                </p>
+              ) : null}
+
+              <p className="mt-3 font-display text-lg sm:text-2xl md:text-3xl leading-relaxed text-foreground/95 tracking-wide">
+                {explanation}
+              </p>
+            </div>
+          ) : null}
+
+          <div className="mt-8">
             <Leaderboard rows={rows} />
           </div>
           {teams.length > 1 ? (
@@ -586,9 +613,14 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
             <div className="flex-1 flex flex-col items-center">
               <p className="font-display text-2xl sm:text-3xl text-lime">{t("host.correctAnswer")}</p>
               {question.explanation ? (
-                <div className="mt-2 w-full max-w-xl rounded-2xl border border-sun/40 bg-sun/10 p-3 text-sm sm:text-base text-sun shadow-glow backdrop-blur-md animate-pop">
-                  <span className="font-bold">💡 الشرح: </span>
-                  {question.explanation}
+                <div className="mt-3 w-full max-w-2xl overflow-hidden rounded-3xl border border-sun/50 bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-primary/10 p-4 sm:p-5 text-center shadow-glow backdrop-blur-xl animate-pop relative">
+                  <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-sun/40 bg-sun/20 px-3.5 py-1 text-xs sm:text-sm font-bold text-sun shadow-sm">
+                    <span className="animate-pulse">💡</span>
+                    <span>هل تعلم؟ / توضيح الإجابة</span>
+                  </div>
+                  <p className="mt-2.5 font-display text-base sm:text-xl md:text-2xl leading-relaxed text-foreground/95">
+                    {question.explanation}
+                  </p>
                 </div>
               ) : null}
               {manual ? (

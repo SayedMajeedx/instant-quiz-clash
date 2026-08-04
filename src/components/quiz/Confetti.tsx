@@ -39,7 +39,7 @@ export function Confetti({ active = true, duration = 3000 }: { active?: boolean;
         vx: (Math.random() - 0.5) * 18,
         vy: (Math.random() - 0.8) * 16,
         size: Math.random() * 8 + 6,
-        color: colors[Math.floor(Math.random() * colors.length)],
+        color: colors[Math.floor(Math.random() * colors.length)] ?? "#FFD700",
         rotation: Math.random() * Math.PI * 2,
         vRotation: (Math.random() - 0.5) * 0.2,
         alpha: 1,

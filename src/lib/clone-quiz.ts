@@ -67,7 +67,7 @@ export async function cloneQuiz(
         return { success: false, error: "Failed to fetch source quiz questions" };
       }
 
-      questionsToCopy = qData.map((q) => ({
+      questionsToCopy = qData.map((q: any) => ({
         question_text: q.question_text,
         options: Array.isArray(q.options) ? (q.options as string[]) : ["", "", "", ""],
         correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
@@ -148,7 +148,7 @@ export async function cloneQuiz(
 
       // Attempt to trigger PostgREST schema reload
       try {
-        await supabase.rpc("reload_schema_cache");
+        await (supabase.rpc as any)("reload_schema_cache");
       } catch {
         // Ignore if RPC does not exist
       }

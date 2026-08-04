@@ -27,9 +27,9 @@ type PreviewQuestion = {
   options: string[];
   time_limit_seconds: number;
   question_type?: string;
-  difficulty?: string | null;
-  subcategory?: string | null;
-  tags?: string[];
+  difficulty?: string | null | undefined;
+  subcategory?: string | null | undefined;
+  tags?: string[] | undefined;
 };
 
 type PreviewQuizMeta = {
@@ -105,16 +105,14 @@ function QuizPreviewPage() {
         }
 
         // 2. Fetch quiz meta from Supabase
-        const { data: qData } = await supabase
-          .from("quizzes")
+        const { data: qData } = await (supabase.from("quizzes") as any)
           .select("id, title, category, language")
           .eq("id", quizId)
           .single();
 
         if (qData) {
           // Dedicated answer-free query selecting non-answer columns only
-          const { data: pQuestions } = await supabase
-            .from("questions")
+          const { data: pQuestions } = await (supabase.from("questions") as any)
             .select("id, quiz_id, question_text, options, time_limit_seconds, order_index, question_type, difficulty, subcategory, tags")
             .eq("quiz_id", quizId)
             .order("order_index");
@@ -129,7 +127,7 @@ function QuizPreviewPage() {
           });
 
           setQuestions(
-            fetchedRows.map((q) => ({
+            fetchedRows.map((q: any) => ({
               id: q.id,
               question_text: q.question_text,
               options: (q.options as unknown as string[]) || [],

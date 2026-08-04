@@ -194,7 +194,7 @@ function Editor() {
       difficulty: q.difficulty === "challenge" || q.difficulty === "hard" ? "challenge" : "standard",
     }));
 
-    let { data, error } = await supabase.from("questions").insert(rows).select();
+    let { data, error } = await supabase.from("questions").insert(rows as any).select();
 
     if (error || !data) {
       console.warn("Retrying simple question insert fallback...", error);
@@ -207,7 +207,7 @@ function Editor() {
         time_limit_seconds: r.time_limit_seconds,
         order_index: r.order_index,
       }));
-      const fallbackRes = await supabase.from("questions").insert(simpleRows).select();
+      const fallbackRes = await supabase.from("questions").insert(simpleRows as any).select();
       data = fallbackRes.data;
       error = fallbackRes.error;
     }

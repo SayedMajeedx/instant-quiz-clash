@@ -128,7 +128,7 @@ function useCast() {
       win.__onGCastApiAvailable = (isAvailable: boolean) => {
         if (isAvailable && win.cast?.framework && win.chrome?.cast) {
           try {
-            const context = win.cast.framework.CastContext.getInstance();
+            const context = (win.cast.framework as any).CastContext.getInstance();
             context.setOptions({
               receiverApplicationId: win.chrome.cast.media?.DEFAULT_MEDIA_RECEIVER_APP_ID || "CC1AD845",
               autoJoinPolicy: win.chrome.cast.AutoJoinPolicy?.ORIGIN_SCOPED,
