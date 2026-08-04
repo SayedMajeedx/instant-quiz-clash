@@ -281,29 +281,20 @@ export type Database = {
       }
       quizzes: {
         Row: {
-          category: string | null
           created_at: string
           id: string
-          is_public: boolean
-          language: string | null
           title: string
           user_id: string
         }
         Insert: {
-          category?: string | null
           created_at?: string
           id?: string
-          is_public?: boolean
-          language?: string | null
           title?: string
           user_id: string
         }
         Update: {
-          category?: string | null
           created_at?: string
           id?: string
-          is_public?: boolean
-          language?: string | null
           title?: string
           user_id?: string
         }
