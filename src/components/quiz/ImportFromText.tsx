@@ -24,7 +24,7 @@ export function ImportFromText({
   const [text, setText] = useState("");
   const [topic, setTopic] = useState("");
   const [count, setCount] = useState(10);
-  const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard">("medium");
+  const [difficulty, setDifficulty] = useState<"standard" | "challenge">("standard");
   const [language, setLanguage] = useState<"ar" | "en">("ar");
   const [userOverrodeLang, setUserOverrodeLang] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -186,19 +186,20 @@ export function ImportFromText({
                   <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
                     {t("aiGen.difficulty")}
                     <div className="mt-2 flex gap-1">
-                      {(["easy", "medium", "hard"] as const).map((d) => (
+                      {(["standard", "challenge"] as const).map((d) => (
                         <button
                           key={d}
                           type="button"
                           onClick={() => setDifficulty(d)}
                           className={cn(
-                            "press flex-1 rounded-xl border px-1.5 py-2 text-xs font-semibold",
+                            "press flex-1 rounded-xl border px-1.5 py-2 text-xs font-semibold flex items-center justify-center gap-1",
                             difficulty === d
                               ? "border-primary bg-primary/20 text-foreground ring-1 ring-primary"
                               : "border-border bg-background/30",
                           )}
                         >
-                          {t(`aiGen.${d}`)}
+                          <span>{d === "standard" ? "🟡" : "🔴"}</span>
+                          <span>{t(`aiGen.${d}`)}</span>
                         </button>
                       ))}
                     </div>

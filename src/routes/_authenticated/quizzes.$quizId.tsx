@@ -181,19 +181,33 @@ function Editor() {
       time_limit_seconds: Math.max(5, Math.min(120, q.time_limit_seconds || 20)),
       order_index: questions.length + i,
       explanation: q.explanation ?? null,
-      difficulty: q.difficulty ?? "medium",
-      subcategory: q.subcategory ?? null,
-      tags: q.tags ?? [],
-      source: q.source ?? null,
-      external_id: q.external_id ?? q.id ?? null,
-      is_verified: q.is_verified ?? q.verified ?? true,
-      version: q.version ?? 1,
+      difficulty: q.difficulty === "challenge" || q.difficulty === "hard" ? "challenge" : "standard",
     }));
-    const { data, error } = await supabase.from("questions").insert(rows).select();
+
+    let { data, error } = await supabase.from("questions").insert(rows).select();
+
     if (error || !data) {
+      console.warn("Retrying simple question insert fallback...", error);
+      // Fallback: insert core guaranteed columns
+      const simpleRows = rows.map((r) => ({
+        quiz_id: r.quiz_id,
+        question_text: r.question_text,
+        options: r.options,
+        correct_index: r.correct_index,
+        time_limit_seconds: r.time_limit_seconds,
+        order_index: r.order_index,
+      }));
+      const fallbackRes = await supabase.from("questions").insert(simpleRows).select();
+      data = fallbackRes.data;
+      error = fallbackRes.error;
+    }
+
+    if (error || !data) {
+      console.error("Failed to insert imported questions:", error);
       toast.error(t("editor.addError"));
       return;
     }
+
     const inserted = (data as unknown as Question[])
       .map((row) => ({ ...row, options: row.options as string[] }))
       .sort((a, b) => a.order_index - b.order_index);
