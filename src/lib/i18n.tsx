@@ -515,12 +515,12 @@ const ar: Dict = {
   "host.teamsN": "{n} فرق",
   "host.teamNote": "يتم توزيع اللاعبين على الفرق تلقائياً عند الانضمام.",
 
-  "play.powerups": "القدرات",
-  "play.double": "نقاط مضاعفة",
-  "play.fifty": "٥٠:٥٠",
-  "play.doubleArmed": "المضاعفة مفعّلة — إجابتك القادمة بنقاط مضاعفة",
-  "play.doubleUsed": "تم استخدام المضاعفة",
-  "play.fiftyUsed": "تم استخدام ٥٠:٥٠",
+  "play.powerups": "الوسائل المساعدة",
+  "play.double": "دبل نقاط",
+  "play.fifty": "حذف إجابتين",
+  "play.doubleArmed": "⚡ مفعلة — إجابتك القادمة بنقاط مضاعفة",
+  "play.doubleUsed": "تم الاستخدام",
+  "play.fiftyUsed": "تم الاستخدام",
   "play.powerupFailed": "هذه القدرة غير متاحة الآن",
   "play.yourTeam": "الفريق {n}",
 

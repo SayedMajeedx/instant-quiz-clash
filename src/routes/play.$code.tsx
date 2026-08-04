@@ -282,9 +282,9 @@ function Play() {
 
 
   return (
-    <main className="relative flex min-h-screen flex-col px-4 py-4">
+    <main className="relative flex h-[100dvh] max-h-[100dvh] flex-col justify-between overflow-hidden px-3.5 py-2.5">
       <AnimatedBg />
-      <header className="flex items-center justify-between">
+      <header className="flex shrink-0 items-center justify-between">
         <span className="flex items-center gap-2 font-semibold">
           <PlayerAvatar player={me} size="sm" />
           {me.nickname}
@@ -333,19 +333,19 @@ function Play() {
         </div>
       ) : (
         <>
-          <div className="flex items-center justify-center py-3">
-            <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={96} />
+          <div className="flex shrink-0 items-center justify-center py-1.5">
+            <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={76} />
           </div>
-          <p className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground shrink-0">
             {t("play.questionOf", { n: phase.index + 1, total: questions.length })}
           </p>
           {question.image_url ? (
             <QuestionImage
               path={question.image_url}
-              className="mx-auto mt-3 max-h-[18vh] rounded-2xl border border-border object-contain"
+              className="mx-auto mt-2 max-h-[16vh] rounded-2xl border border-border object-contain shrink-0"
             />
           ) : null}
-          <div dir="ltr" className={cn("mt-3 grid flex-1 gap-3 pb-2", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
+          <div dir="ltr" className={cn("my-2 grid flex-1 min-h-0 gap-2.5", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
             {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
               return (
@@ -364,27 +364,27 @@ function Play() {
           </div>
 
           {/* Power-ups Section - High-Visibility Glowing Liquid Glass */}
-          <div className="pb-3 pt-1">
-            <div className="flex items-center justify-between px-1 mb-2">
+          <div className="pb-1 pt-1 shrink-0">
+            <div className="flex items-center justify-between px-1 mb-1.5">
               <span className="flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-sun">
                 <span className="size-2 rounded-full bg-sun animate-ping" />
                 ✨ {t("play.powerups")}
               </span>
               {armedDouble && !me.used_double ? (
-                <span className="rounded-full border border-sun bg-sun/20 px-2.5 py-0.5 text-[11px] font-extrabold text-sun animate-pulse">
+                <span className="rounded-full border border-sun bg-sun/20 px-2 py-0.5 text-[10px] font-extrabold text-sun animate-pulse">
                   ⚡ {t("play.doubleArmed")}
                 </span>
               ) : null}
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2.5">
               {/* Double Points Button */}
               <button
                 type="button"
                 disabled={me.used_double}
                 onClick={() => setArmedDouble((v) => !v)}
                 className={cn(
-                  "press relative flex flex-col items-center justify-center gap-1 overflow-hidden rounded-2xl border p-3.5 transition-all shadow-lg",
+                  "press relative flex flex-col items-center justify-center gap-0.5 overflow-hidden rounded-2xl border p-2.5 transition-all shadow-lg",
                   armedDouble
                     ? "border-sun bg-gradient-to-b from-sun/30 via-sun/15 to-background text-sun ring-2 ring-sun/80 shadow-glow animate-pulse-hard"
                     : me.used_double
@@ -394,12 +394,12 @@ function Play() {
               >
                 {/* Glossy Reflection */}
                 <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
-                <div className="flex items-center gap-1.5 font-display text-base font-extrabold sm:text-lg">
-                  <span className="text-xl">⚡</span>
-                  <span>{me.used_double ? t("play.doubleUsed") : `2× ${t("play.double")}`}</span>
+                <div className="flex items-center gap-1 font-display text-sm font-extrabold sm:text-base">
+                  <span className="text-lg">⚡</span>
+                  <span>{me.used_double ? "تم الاستخدام" : "دبل نقاط"}</span>
                 </div>
-                <span className="text-[10px] font-semibold text-muted-foreground">
-                  {me.used_double ? "تم الاستخدام" : "مضاعفة نقاط هذا السؤال"}
+                <span className="text-[9px] font-semibold text-muted-foreground">
+                  {me.used_double ? "مستعملة" : "مضاعفة نقاط السؤال"}
                 </span>
               </button>
 
@@ -410,7 +410,7 @@ function Play() {
                 onClick={() => void useFifty()}
                 title={isBoolean ? t("play.fiftyUnavailable") : undefined}
                 className={cn(
-                  "press relative flex flex-col items-center justify-center gap-1 overflow-hidden rounded-2xl border p-3.5 transition-all shadow-lg",
+                  "press relative flex flex-col items-center justify-center gap-0.5 overflow-hidden rounded-2xl border p-2.5 transition-all shadow-lg",
                   me.used_fifty
                     ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
                     : isBoolean
@@ -420,12 +420,12 @@ function Play() {
               >
                 {/* Glossy Reflection */}
                 <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
-                <div className="flex items-center gap-1.5 font-display text-base font-extrabold sm:text-lg">
-                  <span className="text-xl">🎯</span>
-                  <span>{me.used_fifty ? t("play.fiftyUsed") : t("play.fifty")}</span>
+                <div className="flex items-center gap-1 font-display text-sm font-extrabold sm:text-base">
+                  <span className="text-lg">🎯</span>
+                  <span>{me.used_fifty ? "تم الاستخدام" : "حذف إجابتين"}</span>
                 </div>
-                <span className="text-[10px] font-semibold text-muted-foreground">
-                  {me.used_fifty ? "تم الاستخدام" : "حذف إجابتين خاطئتين"}
+                <span className="text-[9px] font-semibold text-muted-foreground">
+                  {me.used_fifty ? "مستعملة" : "إزالة خيارين خاطئين"}
                 </span>
               </button>
             </div>
