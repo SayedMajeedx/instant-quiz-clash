@@ -148,8 +148,8 @@ function RootComponent() {
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
         <Toaster position="top-center" theme="dark" />
-        <div className="fixed bottom-2 z-40 flex items-center pointer-events-none end-3 sm:end-32">
-          <span className="pointer-events-auto rounded-full border border-white/15 bg-background/85 px-3 py-1 text-[11px] font-semibold text-muted-foreground backdrop-blur-md shadow-lg transition-all hover:text-foreground hover:border-primary/40">
+        <div className="fixed bottom-0 right-0 z-[999999] flex items-center pointer-events-auto p-1.5">
+          <span className="flex items-center gap-1.5 rounded-tl-2xl rounded-br-none border border-white/20 bg-background px-4 py-1.5 text-xs font-semibold text-foreground shadow-2xl backdrop-blur-2xl transition-all hover:text-primary">
             ✨ Designed by Sayed
           </span>
         </div>
