@@ -228,7 +228,8 @@ function HostRoom() {
         <AnimatedBg dense />
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 lg:grid-cols-[1.1fr_1fr]">
           <section>
-            <div className="mb-4 flex justify-end">
+            <div className="mb-4 flex items-center justify-end gap-2">
+              <DisplayControls />
               <LanguageToggle />
             </div>
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">{quiz?.title}</p>
