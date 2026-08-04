@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 
-const rawPath = "./imported_quiz_library/merged_questions.json";
+const rawPath = "./merged_questions_launch_ready.json";
 if (!fs.existsSync(rawPath)) {
   console.error("raw file not found");
   process.exit(1);
