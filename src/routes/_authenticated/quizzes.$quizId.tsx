@@ -184,6 +184,8 @@ function Editor() {
       difficulty: q.difficulty ?? "medium",
       subcategory: q.subcategory ?? null,
       tags: q.tags ?? [],
+      source: q.source ?? null,
+      external_id: q.external_id ?? q.id ?? null,
     }));
     const { data, error } = await supabase.from("questions").insert(rows).select();
     if (error || !data) {

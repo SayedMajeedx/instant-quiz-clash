@@ -24,6 +24,8 @@ export type Question = {
   difficulty?: "easy" | "medium" | "hard" | string;
   subcategory?: string | null;
   tags?: string[];
+  source?: string | null;
+  external_id?: string | null;
 };
 
 export type CursorPhase = "question" | "reveal" | "board";

@@ -13,6 +13,9 @@ export const parsedQuestionSchema = z.object({
   difficulty: z.string().trim().optional(),
   subcategory: z.string().trim().optional(),
   tags: z.array(z.string().trim()).optional(),
+  source: z.string().trim().optional(),
+  id: z.string().trim().optional(),
+  external_id: z.string().trim().optional(),
 });
 
 export const parsedPayloadSchema = z.object({

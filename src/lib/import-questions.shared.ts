@@ -12,4 +12,7 @@ export type ParsedQuestion = {
   difficulty?: string;
   subcategory?: string;
   tags?: string[];
+  source?: string;
+  id?: string;
+  external_id?: string;
 };
