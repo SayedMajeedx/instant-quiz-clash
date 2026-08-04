@@ -275,6 +275,13 @@ const en: Dict = {
   "host.hostTabNote": "Keep this screen open — it drives the game.",
   "host.exitGame": "Exit game",
   "host.exitConfirm": "Are you sure you want to end this game?",
+  "cast.start": "Cast to a TV",
+  "cast.stop": "Stop casting",
+  "cast.castingTo": "Casting to {name}",
+  "cast.device": "your TV",
+  "cast.airplayHint": "iPhone/Mac? Swipe down → Screen Mirroring",
+  "display.fullscreen": "Go fullscreen",
+  "display.exitFullscreen": "Exit fullscreen",
 
   "play.exitGame": "Leave game",
   "play.exitConfirm": "Are you sure you want to leave this game?",

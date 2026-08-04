@@ -390,6 +390,7 @@ function HostRoom() {
             )}
             <p className="mt-3 text-center text-xs text-muted-foreground">{t("host.hostTabNote")}</p>
           </section>
+          <ExitFullscreenButton />
         </div>
       </main>
     );
@@ -453,6 +454,7 @@ function HostRoom() {
               {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
             </p>
           )}
+          <ExitFullscreenButton />
         </div>
       </main>
     );
