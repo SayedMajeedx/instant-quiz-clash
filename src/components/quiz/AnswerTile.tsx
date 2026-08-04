@@ -1,6 +1,7 @@
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
 import { ANSWER_STYLES } from "@/lib/quizclash";
+import { sounds } from "@/lib/audio";
 import { cn } from "@/lib/utils";
 
 export function AnswerShape({ index, className }: { index: number; className?: string }) {
@@ -39,10 +40,23 @@ export function AnswerTile({
 }: TileProps) {
   const style = ANSWER_STYLES[index]!;
   const { t } = useI18n();
+
+  useEffect(() => {
+    if (state === "correct") {
+      sounds.playCorrect();
+    } else if (state === "wrong") {
+      sounds.playWrong();
+    }
+  }, [state]);
+
+  function handleClick() {
+    sounds.playTap();
+    if (onClick) onClick();
+  }
   return (
     <button
       type="button"
-      onClick={onClick}
+      onClick={handleClick}
       disabled={disabled}
       aria-label={t(SHAPE_KEYS[index] ?? "shape.square")}
       className={cn(

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
+import { sounds } from "@/lib/audio";
 import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
@@ -38,7 +39,10 @@ export function Leaderboard({
       return;
     }
     setStage(0);
-    const t1 = setTimeout(() => setStage(1), 300);
+    const t1 = setTimeout(() => {
+      setStage(1);
+      sounds.playScoreUp();
+    }, 300);
     const t2 = setTimeout(() => setStage(2), 1200);
     const t3 = setTimeout(() => setStage(3), 2200);
     return () => {

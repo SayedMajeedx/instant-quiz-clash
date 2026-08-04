@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { sounds } from "@/lib/audio";
 import { cn } from "@/lib/utils";
 
 export function CountdownRing({
@@ -15,6 +17,14 @@ export function CountdownRing({
   const stroke = size * 0.09;
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
+  const lastSecRef = useRef(secs);
+
+  useEffect(() => {
+    if (secs > 0 && secs <= 5 && secs !== lastSecRef.current) {
+      lastSecRef.current = secs;
+      sounds.playTick();
+    }
+  }, [secs]);
 
   return (
     <div

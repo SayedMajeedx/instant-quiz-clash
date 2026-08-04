@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { Confetti } from "@/components/quiz/Confetti";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
+import { sounds } from "@/lib/audio";
 import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
 import { cn } from "@/lib/utils";
@@ -24,6 +26,10 @@ export function Podium({
   actions?: boolean;
 }) {
   const { t } = useI18n();
+
+  useEffect(() => {
+    sounds.playFanfare();
+  }, []);
   return (
     <div className="relative mx-auto w-full max-w-4xl px-4 py-10">
       <Confetti />

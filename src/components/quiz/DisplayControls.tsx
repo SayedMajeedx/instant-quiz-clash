@@ -1,6 +1,7 @@
-import { Cast, ExternalLink, Maximize, Minimize, Monitor, MonitorSmartphone, X } from "lucide-react";
+import { Cast, ExternalLink, Maximize, Minimize, Monitor, MonitorSmartphone, Volume2, VolumeX, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
+import { sounds } from "@/lib/audio";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -195,6 +196,15 @@ export function DisplayControls({ className }: { className?: string }) {
   const cast = useCast();
   const fs = useFullscreen();
   const [modalOpen, setModalOpen] = useState(false);
+  const [muted, setMuted] = useState(() => sounds.getMuted());
+
+  function toggleMute() {
+    const isNowMuted = sounds.toggleMute();
+    setMuted(isNowMuted);
+    if (!isNowMuted) {
+      sounds.playTap();
+    }
+  }
 
   async function handleCastButtonClick() {
     // Open Cast & Big Screen Display Control modal directly
@@ -275,6 +285,16 @@ export function DisplayControls({ className }: { className?: string }) {
             {t("cast.castingTo", { name: cast.deviceName ?? t("cast.device") })}
           </span>
         ) : null}
+
+        <button
+          type="button"
+          aria-label={muted ? "Unmute sounds" : "Mute sounds"}
+          title={muted ? "تفعيل الأصوات" : "كتم الأصوات"}
+          onClick={toggleMute}
+          className={cn(btn, muted && "text-muted-foreground/50")}
+        >
+          {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+        </button>
 
         <button
           type="button"
