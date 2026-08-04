@@ -14,6 +14,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as JoinRouteImport } from './routes/join'
 import { Route as BrowseIndexRouteImport } from './routes/browse.index'
+import { Route as BrowseCategoryRouteImport } from './routes/browse.$category'
 import { Route as PlayCodeRouteImport } from './routes/play.$code'
 import { Route as AuthenticatedHostIndexRouteImport } from './routes/_authenticated/host.index'
 import { Route as AuthenticatedHostCodeRouteImport } from './routes/_authenticated/host.$code'
@@ -43,6 +44,11 @@ const JoinRoute = JoinRouteImport.update({
 const BrowseIndexRoute = BrowseIndexRouteImport.update({
   id: '/browse/',
   path: '/browse/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrowseCategoryRoute = BrowseCategoryRouteImport.update({
+  id: '/browse/$category',
+  path: '/browse/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlayCodeRoute = PlayCodeRouteImport.update({
@@ -84,6 +90,7 @@ export interface FileRoutesByFullPath {
   '/join': typeof JoinRoute
   '/play/$code': typeof PlayCodeRoute
   '/browse/': typeof BrowseIndexRoute
+  '/browse/$category': typeof BrowseCategoryRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
@@ -96,6 +103,7 @@ export interface FileRoutesByTo {
   '/join': typeof JoinRoute
   '/play/$code': typeof PlayCodeRoute
   '/browse': typeof BrowseIndexRoute
+  '/browse/$category': typeof BrowseCategoryRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
@@ -110,6 +118,7 @@ export interface FileRoutesById {
   '/join': typeof JoinRoute
   '/play/$code': typeof PlayCodeRoute
   '/browse/': typeof BrowseIndexRoute
+  '/browse/$category': typeof BrowseCategoryRoute
   '/_authenticated/host/$code': typeof AuthenticatedHostCodeRoute
   '/_authenticated/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
@@ -124,6 +133,7 @@ export interface FileRouteTypes {
     | '/join'
     | '/play/$code'
     | '/browse/'
+    | '/browse/$category'
     | '/host/$code'
     | '/quizzes/$quizId'
     | '/browse/$quizId/preview'
@@ -136,6 +146,7 @@ export interface FileRouteTypes {
     | '/join'
     | '/play/$code'
     | '/browse'
+    | '/browse/$category'
     | '/host/$code'
     | '/quizzes/$quizId'
     | '/browse/$quizId/preview'
@@ -149,6 +160,7 @@ export interface FileRouteTypes {
     | '/join'
     | '/play/$code'
     | '/browse/'
+    | '/browse/$category'
     | '/_authenticated/host/$code'
     | '/_authenticated/quizzes/$quizId'
     | '/browse/$quizId/preview'
@@ -163,6 +175,7 @@ export interface RootRouteChildren {
   JoinRoute: typeof JoinRoute
   PlayCodeRoute: typeof PlayCodeRoute
   BrowseIndexRoute: typeof BrowseIndexRoute
+  BrowseCategoryRoute: typeof BrowseCategoryRoute
   BrowseQuizIdPreviewRoute: typeof BrowseQuizIdPreviewRoute
 }
 
@@ -201,6 +214,13 @@ declare module '@tanstack/react-router' {
       path: '/browse'
       fullPath: '/browse/'
       preLoaderRoute: typeof BrowseIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/browse/$category': {
+      id: '/browse/$category'
+      path: '/browse/$category'
+      fullPath: '/browse/$category'
+      preLoaderRoute: typeof BrowseCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/play/$code': {
@@ -272,6 +292,7 @@ const rootRouteChildren: RootRouteChildren = {
   JoinRoute: JoinRoute,
   PlayCodeRoute: PlayCodeRoute,
   BrowseIndexRoute: BrowseIndexRoute,
+  BrowseCategoryRoute: BrowseCategoryRoute,
   BrowseQuizIdPreviewRoute: BrowseQuizIdPreviewRoute,
 }
 export const routeTree = rootRouteImport

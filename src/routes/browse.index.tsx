@@ -1,37 +1,34 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { QuizCard, type PublicQuiz } from "@/components/quiz/QuizCard";
 import { supabase } from "@/integrations/supabase/client";
-import { cloneQuiz } from "@/lib/clone-quiz";
 import { useI18n } from "@/lib/i18n";
-import type { Quiz } from "@/lib/quizclash";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
-import { cn } from "@/lib/utils";
+import {
+  cleanQuizTitle,
+  getCategoryIcon,
+  type CategoryInfo,
+} from "@/lib/browse-helpers";
 
 export const Route = createFileRoute("/browse/")({
   head: () => ({
     meta: [
-      { title: "Browse Ready-Made Quizzes — QuizClash" },
-      { name: "description", content: "Explore 230+ pre-seeded trivia quizzes in history, science, anime, sports, and geography ready to host immediately." },
-      { property: "og:title", content: "Browse Ready-Made Quizzes — QuizClash" },
-      { property: "og:description", content: "Play or clone ready-made trivia quizzes in seconds." },
+      { title: "تصفح مكتبة الكويزات — QuizClash" },
+      { name: "description", content: "تصفح مئات الكويزات الجاهزة للإطلاق المباشر حسب الأقسام والتصنيفات." },
+      { property: "og:title", content: "تصفح مكتبة الكويزات — QuizClash" },
+      { property: "og:description", content: "اختر قسمك المفضل واستضف لعبة مسابقات حية في ثوانٍ." },
     ],
   }),
-  component: BrowsePage,
+  component: BrowseLandingPage,
 });
 
-type PublicQuiz = Quiz & {
-  category: string | null;
-  language: string | null;
-  quiz_difficulty?: "standard" | "challenge" | null;
-  archived?: boolean;
-  launch_enabled?: boolean;
-  question_count: number;
-};
+const BATCH_SIZE = 12;
 
-const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter((q) => !q.archived && q.launch_enabled !== false).map((q) => ({
+const STATIC_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter(
+  (q) => !q.archived && q.launch_enabled !== false
+).map((q) => ({
   id: q.id,
   title: q.title,
   user_id: q.user_id,
@@ -40,47 +37,30 @@ const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter((q) => !q.archived && 
   category: q.category,
   language: q.language,
   quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
-  archived: false,
-  launch_enabled: true,
   question_count: q.questions.length,
 }));
 
-function BrowsePage() {
-  const navigate = useNavigate();
+function BrowseLandingPage() {
   const { t } = useI18n();
-  const [quizzes, setQuizzes] = useState<PublicQuiz[]>(LIBRARY_QUIZZES);
-  const [loading, setLoading] = useState(false);
-  const [selectedCat, setSelectedCat] = useState("all");
-  const [selectedLang, setSelectedLang] = useState("all");
-  const [selectedDiff, setSelectedDiff] = useState("all");
-  const [cloningId, setCloningId] = useState<string | null>(null);
+
+  const [quizzes, setQuizzes] = useState<PublicQuiz[]>(STATIC_QUIZZES);
+  const [loading, setLoading] = useState(true);
+
+  // Search state
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchVisibleCount, setSearchVisibleCount] = useState(BATCH_SIZE);
 
   useEffect(() => {
     void (async () => {
+      setLoading(true);
       try {
-        type LooseQuizRow = {
-          id: string;
-          title: string;
-          user_id: string | null;
-          created_at: string;
-          is_public: boolean | null;
-          category: string | null;
-          language: string | null;
-          quiz_difficulty?: string | null;
-          questions?: { id: string }[];
-        };
-        const query = supabase.from("quizzes").select("*, questions(id)") as unknown as {
-          eq: (column: string, value: unknown) => {
-            order: (
-              column: string,
-              options: { ascending: boolean },
-            ) => PromiseLike<{ data: LooseQuizRow[] | null; error: unknown }>;
-          };
-        };
-        const { data, error } = await query.eq("is_public", true).order("created_at", { ascending: false });
+        const { data, error } = await (supabase.from("quizzes") as any)
+          .select("*, questions(id)")
+          .eq("is_public", true)
+          .order("created_at", { ascending: false });
 
         if (!error && data && data.length > 0) {
-          const dbFormatted = data.map((q) => ({
+          const dbFormatted: PublicQuiz[] = data.map((q: any) => ({
             id: q.id,
             title: q.title,
             user_id: q.user_id ?? "system",
@@ -88,97 +68,88 @@ function BrowsePage() {
             is_public: q.is_public ?? true,
             category: q.category,
             language: q.language,
-            quiz_difficulty: (q.quiz_difficulty === "challenge" ? "challenge" : "standard") as "standard" | "challenge",
+            quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
           }));
 
-          // Merge DB quizzes with local library (avoiding duplicate IDs)
           const dbIds = new Set(dbFormatted.map((q) => q.id));
-          const restLocal = LIBRARY_QUIZZES.filter((q) => !dbIds.has(q.id));
-          setQuizzes([...dbFormatted, ...restLocal]);
+          const restStatic = STATIC_QUIZZES.filter((q) => !dbIds.has(q.id));
+          setQuizzes([...dbFormatted, ...restStatic]);
         }
       } catch {
-        // Keep static QUIZ_LIBRARY on network error
+        // Static QUIZ_LIBRARY fallback
+      } finally {
+        setLoading(false);
       }
     })();
   }, []);
 
-  const categories = useMemo(() => {
-    const map = new Map<string, { id: string; label: string; icon: string }>();
-    map.set("all", { id: "all", label: t("browse.allCategories"), icon: "🌐" });
+  // Derive unique categories with live quiz counts
+  const categories = useMemo<CategoryInfo[]>(() => {
+    const map = new Map<string, number>();
 
     quizzes.forEach((q) => {
-      if (q.category && !map.has(q.category)) {
-        let icon = "📚";
-        if (q.category.includes("أنمي") || q.category.includes("Anime")) icon = "⚔️";
-        else if (q.category.includes("إسلام") || q.category.includes("دين")) icon = "🕌";
-        else if (q.category.includes("تاريخ") || q.category.includes("History") || q.category === "history") icon = "📜";
-        else if (q.category.includes("جغراف") || q.category.includes("Geo") || q.category === "geography") icon = "🌍";
-        else if (q.category.includes("علوم") || q.category.includes("Science") || q.category === "science") icon = "🔬";
-        else if (q.category.includes("رياضة") || q.category.includes("Sport") || q.category === "sports") icon = "⚽";
-        else if (q.category.includes("فن") || q.category.includes("أدب") || q.category === "arts") icon = "🎨";
-        else if (q.category.includes("لغة") || q.category.includes("عرب") || q.category === "language_culture") icon = "✍️";
-        else if (q.category.includes("ثقاف") || q.category.includes("عام") || q.category === "inventions") icon = "💡";
-
-        map.set(q.category, { id: q.category, label: q.category, icon });
+      const cat = (q.category || "عام").trim();
+      if (cat) {
+        map.set(cat, (map.get(cat) ?? 0) + 1);
       }
     });
 
-    return Array.from(map.values());
-  }, [quizzes, t]);
+    // Sort categories by popularity / quiz count
+    const sorted = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
 
-  async function handleClone(quiz: PublicQuiz) {
-    setCloningId(quiz.id);
-    try {
-      const { data: userRes } = await supabase.auth.getUser();
-      const user = userRes.user;
+    return sorted.map(([name, count]) => ({
+      id: name,
+      name,
+      icon: getCategoryIcon(name),
+      count,
+    }));
+  }, [quizzes]);
 
-      if (!user) {
-        toast.error(t("auth.required") || "Please sign in to clone quizzes to your collection");
-        void navigate({ to: "/auth" });
-        return;
-      }
+  // Featured / Popular row (6-8 quizzes)
+  const popularQuizzes = useMemo(() => {
+    return quizzes.slice(0, 6);
+  }, [quizzes]);
 
-      const res = await cloneQuiz(quiz.id, quiz, user.id);
+  // Search filtered results
+  const searchResults = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    if (!query) return [];
 
-      if (!res.success || !res.newQuizId) {
-        toast.error(res.error || t("browse.error"));
-        return;
-      }
+    return quizzes.filter((q) => {
+      const titleMatch = cleanQuizTitle(q.title).toLowerCase().includes(query) || q.title.toLowerCase().includes(query);
+      const catMatch = (q.category || "").toLowerCase().includes(query);
+      return titleMatch || catMatch;
+    });
+  }, [quizzes, searchQuery]);
 
-      toast.success(t("browse.cloned") || "Quiz cloned successfully!");
-      // Navigate directly to Host Room Creation / Lobby with the NEW quiz preselected
-      void navigate({ to: "/host", search: { quiz: res.newQuizId } });
-    } catch {
-      toast.error("Failed to clone quiz");
-    } finally {
-      setCloningId(null);
-    }
-  }
+  // Reset pagination on search query change
+  useEffect(() => {
+    setSearchVisibleCount(BATCH_SIZE);
+  }, [searchQuery]);
 
-  const filteredQuizzes = quizzes.filter((q) => {
-    const matchCat = selectedCat === "all" || q.category === selectedCat;
-    const matchLang = selectedLang === "all" || q.language === selectedLang;
-    const matchDiff = selectedDiff === "all" || q.quiz_difficulty === selectedDiff;
-    return matchCat && matchLang && matchDiff;
-  });
+  const visibleSearchResults = searchResults.slice(0, searchVisibleCount);
+  const hasMoreSearch = searchVisibleCount < searchResults.length;
 
   return (
-    <main className="relative min-h-screen px-5 py-8">
+    <main className="relative min-h-screen px-5 py-8 pb-24">
       <AnimatedBg />
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-6xl">
+        {/* Header */}
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <Link to="/" className="font-display text-3xl">
               {t("brand.quiz")}<span className="text-gradient">{t("brand.clash")}</span>
             </Link>
-            <h1 className="mt-2 font-display text-3xl sm:text-5xl text-gradient">{t("browse.title")}</h1>
-            <p className="mt-1 text-sm text-muted-foreground">{t("browse.sub")}</p>
+            <h1 className="mt-2 font-display text-3xl sm:text-5xl text-gradient">تصفح مكتبة الاختبارات</h1>
+            <p className="mt-1 text-sm text-muted-foreground">
+              اختر قسمك المفضل أو ابحث مباشرة للوصول لأفضل الكويزات
+            </p>
           </div>
           <div className="flex items-center gap-3">
             <Link
               to="/quizzes"
-              className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm"
+              className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm hover:border-primary/50"
             >
               {t("nav.quizzes")}
             </Link>
@@ -186,143 +157,149 @@ function BrowsePage() {
           </div>
         </header>
 
-        {/* Category, Difficulty & Language Filters */}
-        <div className="mt-8 space-y-4">
-          <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
+        {/* Global Search Bar */}
+        <div className="mt-8">
+          <div className="relative mx-auto max-w-3xl">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="🔍 ابحث عن كويز أو موضوع (مثال: ون بيس، جغرافيا، تاريخ، الدوري الإنجليزي...)"
+              className="w-full rounded-3xl border border-primary/40 bg-background/80 px-6 py-4 pe-12 font-display text-base text-foreground placeholder:text-muted-foreground shadow-glow backdrop-blur-xl transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
+            />
+            {searchQuery ? (
               <button
-                key={cat.id}
                 type="button"
-                onClick={() => setSelectedCat(cat.id)}
-                className={cn(
-                  "press rounded-2xl border px-4 py-2 font-display text-sm flex items-center gap-2",
-                  selectedCat === cat.id
-                    ? "border-primary bg-gradient-hero text-primary-foreground shadow-chunky"
-                    : "border-border bg-surface-gradient text-muted-foreground hover:text-foreground",
-                )}
+                onClick={() => setSearchQuery("")}
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-muted-foreground hover:text-foreground"
               >
-                <span>{cat.icon}</span>
-                <span>{cat.label}</span>
+                ✕ مسح
               </button>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            {/* Difficulty Filter Tabs */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground me-1">
-                🎯 {t("aiGen.difficulty")}:
-              </span>
-              {[
-                { id: "all", label: "جميع المستويات" },
-                { id: "standard", label: "🟡 " + t("aiGen.standard") },
-                { id: "challenge", label: "🔴 " + t("aiGen.challenge") },
-              ].map((diff) => (
-                <button
-                  key={diff.id}
-                  type="button"
-                  onClick={() => setSelectedDiff(diff.id)}
-                  className={cn(
-                    "press rounded-full border px-3 py-1 text-xs font-semibold",
-                    selectedDiff === diff.id
-                      ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
-                      : "border-border bg-background/40 text-muted-foreground hover:text-foreground",
-                  )}
-                >
-                  {diff.label}
-                </button>
-              ))}
-            </div>
-
-            {/* Language Filter */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground me-1">
-                🌐 {t("aiGen.language")}:
-              </span>
-              {[
-                { id: "all", labelKey: "browse.allLanguages" },
-                { id: "ar", labelKey: "aiGen.langAr" },
-                { id: "en", labelKey: "aiGen.langEn" },
-              ].map((lang) => (
-                <button
-                  key={lang.id}
-                  type="button"
-                  onClick={() => setSelectedLang(lang.id)}
-                  className={cn(
-                    "press rounded-full border px-3 py-1 text-xs font-semibold",
-                    selectedLang === lang.id
-                      ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
-                      : "border-border bg-background/40 text-muted-foreground hover:text-foreground",
-                  )}
-                >
-                  {t(lang.labelKey)}
-                </button>
-              ))}
-            </div>
+            ) : null}
           </div>
         </div>
 
-        {/* Quiz Grid */}
-        {loading ? (
-          <div className="mt-12 text-center text-muted-foreground">{t("editor.loading")}</div>
-        ) : filteredQuizzes.length === 0 ? (
-          <div className="mt-12 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
-            <p className="font-display text-2xl">{t("browse.empty")}</p>
-          </div>
-        ) : (
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredQuizzes.map((quiz) => {
-              const isCloning = cloningId === quiz.id;
+        {/* SEARCH RESULTS VIEW (When query is active) */}
+        {searchQuery.trim() ? (
+          <div className="mt-10">
+            <div className="flex items-center justify-between border-b border-border/40 pb-4">
+              <h2 className="font-display text-2xl">
+                نتائج البحث عن «{searchQuery}»{" "}
+                <span className="text-sm font-normal text-muted-foreground">({searchResults.length} اختبار)</span>
+              </h2>
+              <button
+                type="button"
+                onClick={() => setSearchQuery("")}
+                className="press text-sm text-primary hover:underline font-semibold"
+              >
+                العودة للتصفح حسب الأقسام
+              </button>
+            </div>
 
-              return (
-                <div
-                  key={quiz.id}
-                  className="flex flex-col justify-between rounded-3xl border border-border bg-surface-gradient p-6 shadow-md transition-all hover:border-primary/50 hover:shadow-glow"
-                >
-                  <div>
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-                          {quiz.category || "عام"}
-                        </span>
-                        <span className="rounded-full border border-border bg-background/50 px-2.5 py-0.5 text-xs font-semibold text-muted-foreground">
-                          {quiz.quiz_difficulty === "challenge" ? "🔴 " + t("aiGen.challenge") : "🟡 " + t("aiGen.standard")}
-                        </span>
-                      </div>
-                      <span className="text-sm font-semibold">
-                        {quiz.language === "en" ? "🇬🇧" : "🇸🇦"}
-                      </span>
-                    </div>
+            {searchResults.length === 0 ? (
+              <div className="mt-10 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
+                <p className="font-display text-2xl">لم نجد كويزات تطابق «{searchQuery}»</p>
+                <p className="mt-2 text-sm text-muted-foreground">جرب البحث بكلمات أخرى أو تصفح الأقسام الرئيسية</p>
+              </div>
+            ) : (
+              <>
+                <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {visibleSearchResults.map((quiz) => (
+                    <QuizCard key={quiz.id} quiz={quiz} />
+                  ))}
+                </div>
 
-                    <h2 className="mt-4 font-display text-2xl leading-snug">{quiz.title}</h2>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      {t("quizzes.questionCount", { count: quiz.question_count })}
-                    </p>
-                  </div>
-
-                  <div className="mt-6 flex items-center gap-2">
-                    <Link
-                      to="/browse/$quizId/preview"
-                      params={{ quizId: quiz.id }}
-                      className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 text-center font-display text-sm hover:border-primary/50 flex items-center justify-center gap-1.5"
-                    >
-                      <span>👁️</span>
-                      <span>معاينة</span>
-                    </Link>
+                {/* Pagination */}
+                <div className="mt-10 flex flex-col items-center justify-center gap-3">
+                  <p className="text-xs font-semibold text-muted-foreground">
+                    عرض {visibleSearchResults.length} من أصل {searchResults.length} اختبار
+                  </p>
+                  {hasMoreSearch ? (
                     <button
                       type="button"
-                      disabled={isCloning}
-                      onClick={() => void handleClone(quiz)}
-                      className="press flex-[2] rounded-2xl bg-gradient-hero py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center justify-center gap-1.5"
+                      onClick={() => setSearchVisibleCount((v) => v + BATCH_SIZE)}
+                      className="press rounded-2xl bg-gradient-hero px-8 py-3.5 font-display text-lg text-primary-foreground shadow-chunky hover:scale-[1.02]"
                     >
-                      <span>✨</span>
-                      <span>{isCloning ? t("browse.cloning") : t("browse.cloneAndPlay")}</span>
+                      عرض المزيد (+12) ⬇️
                     </button>
-                  </div>
+                  ) : null}
                 </div>
-              );
-            })}
+              </>
+            )}
           </div>
+        ) : (
+          /* STANDARD TWO-STAGE LANDING VIEW */
+          <>
+            {/* ROW 1: Most Popular / Featured Row */}
+            <section className="mt-10">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="font-display text-2xl text-gradient flex items-center gap-2">
+                  <span>🔥</span>
+                  <span>الأحدث والأكثر شهرة</span>
+                </h2>
+                <span className="text-xs font-bold text-sun border border-sun/40 bg-sun/10 px-3 py-1 rounded-full">
+                  جاهزة للإطلاق فوراً
+                </span>
+              </div>
+
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {popularQuizzes.map((quiz) => (
+                  <QuizCard key={quiz.id} quiz={quiz} />
+                ))}
+              </div>
+            </section>
+
+            {/* ROW 2: Category Grid (Part 1 - Item 1) */}
+            <section className="mt-14">
+              <div className="flex items-center justify-between mb-6 border-b border-border/40 pb-4">
+                <div>
+                  <h2 className="font-display text-2xl sm:text-3xl text-gradient flex items-center gap-2">
+                    <span>📚</span>
+                    <span>الأقسام الرئيسية</span>
+                  </h2>
+                  <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
+                    اختر القسم للوصول لكافة كويزاته المفلترة بسهولة
+                  </p>
+                </div>
+                <span className="text-xs font-bold text-muted-foreground border border-border bg-background/50 px-3 py-1.5 rounded-full">
+                  إجمالي الأقسام: {categories.length}
+                </span>
+              </div>
+
+              {loading ? (
+                <div className="mt-12 text-center text-muted-foreground">{t("editor.loading")}</div>
+              ) : (
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {categories.map((cat) => (
+                    <Link
+                      key={cat.id}
+                      to="/browse/$category"
+                      params={{ category: encodeURIComponent(cat.name) }}
+                      className="press group flex items-center justify-between rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/60 hover:bg-background/90 hover:shadow-glow hover:-translate-y-1"
+                    >
+                      <div className="flex items-center gap-4">
+                        <span className="grid size-14 place-items-center rounded-2xl border border-primary/30 bg-primary/10 text-3xl shadow-sm transition-transform group-hover:scale-110">
+                          {cat.icon}
+                        </span>
+                        <div>
+                          <h3 className="font-display text-xl sm:text-2xl text-foreground group-hover:text-primary transition-colors">
+                            {cat.name}
+                          </h3>
+                          <p className="mt-1 text-xs font-bold text-sun">
+                            {cat.count} {cat.count === 1 ? "اختبار" : "اختباراً"}
+                          </p>
+                        </div>
+                      </div>
+
+                      <span className="font-display text-2xl text-muted-foreground transition-transform group-hover:translate-x-[-4px] group-hover:text-primary">
+                        ←
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </section>
+          </>
         )}
       </div>
     </main>
