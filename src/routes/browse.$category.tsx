@@ -7,7 +7,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import {
-  cleanQuizTitle,
   getCategoryIcon,
   getDifficultyDetails,
 } from "@/lib/browse-helpers";
@@ -51,9 +50,8 @@ function CategoryDetailPage() {
   const [quizzes, setQuizzes] = useState<PublicQuiz[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Filters scoped to this category
+  // Filters scoped to this category (Language & Difficulty level)
   const [selectedLang, setSelectedLang] = useState("all");
-  const [selectedMode, setSelectedMode] = useState("all");
   const [selectedDiff, setSelectedDiff] = useState("all");
   const [filterExpanded, setFilterExpanded] = useState(false);
 
@@ -113,7 +111,6 @@ function CategoryDetailPage() {
   const filteredQuizzes = useMemo(() => {
     return quizzes.filter((q) => {
       const matchLang = selectedLang === "all" || q.language === selectedLang;
-      const matchMode = selectedMode === "all" || q.quiz_difficulty === selectedMode;
 
       let matchDiff = true;
       if (selectedDiff !== "all") {
@@ -123,14 +120,14 @@ function CategoryDetailPage() {
         if (selectedDiff === "hard" && diffInfo.label !== "صعب") matchDiff = false;
       }
 
-      return matchLang && matchMode && matchDiff;
+      return matchLang && matchDiff;
     });
-  }, [quizzes, selectedLang, selectedMode, selectedDiff]);
+  }, [quizzes, selectedLang, selectedDiff]);
 
   // Reset pagination when filters change
   useEffect(() => {
     setVisibleCount(BATCH_SIZE);
-  }, [selectedLang, selectedMode, selectedDiff]);
+  }, [selectedLang, selectedDiff]);
 
   const visibleQuizzes = filteredQuizzes.slice(0, visibleCount);
   const hasMore = visibleCount < filteredQuizzes.length;
@@ -182,7 +179,7 @@ function CategoryDetailPage() {
               <span>⚙️</span>
               <span>الفلاتر والفرز</span>
               <span className="text-xs text-muted-foreground">
-                ({selectedLang === "all" && selectedMode === "all" && selectedDiff === "all" ? "الكل" : "فلتر مخصص"})
+                ({selectedLang === "all" && selectedDiff === "all" ? "الكل" : "فلتر مخصص"})
               </span>
             </button>
 
@@ -219,32 +216,6 @@ function CategoryDetailPage() {
                     )}
                   >
                     {lang.label}
-                  </button>
-                ))}
-              </div>
-
-              {/* Game Mode Filter */}
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                  ⚡ النمط:
-                </span>
-                {[
-                  { id: "all", label: "الكل" },
-                  { id: "standard", label: "🎮 قياسي" },
-                  { id: "challenge", label: "⚡ تحدي" },
-                ].map((mode) => (
-                  <button
-                    key={mode.id}
-                    type="button"
-                    onClick={() => setSelectedMode(mode.id)}
-                    className={cn(
-                      "press rounded-full border px-3 py-1 text-xs font-semibold",
-                      selectedMode === mode.id
-                        ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
-                        : "border-border bg-background/40 text-muted-foreground hover:text-foreground"
-                    )}
-                  >
-                    {mode.label}
                   </button>
                 ))}
               </div>

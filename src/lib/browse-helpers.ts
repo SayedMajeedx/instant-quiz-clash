@@ -1,5 +1,3 @@
-import type { LibraryQuiz } from "@/lib/quiz-library";
-
 export type CategoryInfo = {
   id: string;
   name: string;
@@ -83,23 +81,5 @@ export function getDifficultyDetails(q: { difficulty?: string | null; quiz_diffi
     label: "متوسط",
     icon: "🟡",
     badgeClass: "bg-amber-500/15 text-amber-400 border-amber-500/40",
-  };
-}
-
-/**
- * Game Mode Details
- */
-export function getGameModeDetails(mode?: string | null) {
-  if (mode === "challenge" || mode === "تحدي") {
-    return {
-      label: "نمط: تحدي",
-      icon: "⚡",
-      badgeClass: "bg-purple-500/15 text-purple-300 border-purple-500/40",
-    };
-  }
-  return {
-    label: "نمط: قياسي",
-    icon: "🎮",
-    badgeClass: "bg-blue-500/15 text-blue-300 border-blue-500/40",
   };
 }

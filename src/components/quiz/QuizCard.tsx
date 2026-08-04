@@ -7,7 +7,6 @@ import { useI18n } from "@/lib/i18n";
 import {
   cleanQuizTitle,
   getDifficultyDetails,
-  getGameModeDetails,
 } from "@/lib/browse-helpers";
 
 export type PublicQuiz = {
@@ -32,7 +31,6 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
 
   const cleanedTitle = cleanQuizTitle(quiz.title);
   const diffInfo = getDifficultyDetails(quiz);
-  const modeInfo = getGameModeDetails(quiz.quiz_difficulty);
 
   async function handleClone() {
     setIsCloning(true);
@@ -67,23 +65,13 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
       <div>
         {/* Top Badges Row */}
         <div className="flex items-center justify-between gap-2 flex-wrap">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            {/* Primary Difficulty Badge */}
-            <span
-              className={`rounded-full border px-2.5 py-0.5 text-xs font-bold flex items-center gap-1 ${diffInfo.badgeClass}`}
-            >
-              <span>{diffInfo.icon}</span>
-              <span>{diffInfo.label}</span>
-            </span>
-
-            {/* Distinct Game Mode Badge */}
-            <span
-              className={`rounded-full border px-2 py-0.5 text-[11px] font-semibold flex items-center gap-1 ${modeInfo.badgeClass}`}
-            >
-              <span>{modeInfo.icon}</span>
-              <span>{modeInfo.label}</span>
-            </span>
-          </div>
+          {/* Primary Difficulty Badge */}
+          <span
+            className={`rounded-full border px-2.5 py-0.5 text-xs font-bold flex items-center gap-1 ${diffInfo.badgeClass}`}
+          >
+            <span>{diffInfo.icon}</span>
+            <span>{diffInfo.label}</span>
+          </span>
 
           <span className="text-base font-semibold">
             {quiz.language === "en" ? "🇬🇧" : "🇸🇦"}
