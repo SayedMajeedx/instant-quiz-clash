@@ -72,10 +72,6 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
             <span>{diffInfo.icon}</span>
             <span>{diffInfo.label}</span>
           </span>
-
-          <span className="text-base font-semibold">
-            {quiz.language === "en" ? "🇬🇧" : "🇸🇦"}
-          </span>
         </div>
 
         {/* Cleaned Title */}

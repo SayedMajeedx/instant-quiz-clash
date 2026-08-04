@@ -50,8 +50,7 @@ function CategoryDetailPage() {
   const [quizzes, setQuizzes] = useState<PublicQuiz[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Filters scoped to this category (Language & Difficulty level)
-  const [selectedLang, setSelectedLang] = useState("all");
+  // Filters scoped to this category (Difficulty level)
   const [selectedDiff, setSelectedDiff] = useState("all");
   const [filterExpanded, setFilterExpanded] = useState(false);
 
@@ -110,8 +109,6 @@ function CategoryDetailPage() {
   // Filter logic
   const filteredQuizzes = useMemo(() => {
     return quizzes.filter((q) => {
-      const matchLang = selectedLang === "all" || q.language === selectedLang;
-
       let matchDiff = true;
       if (selectedDiff !== "all") {
         const diffInfo = getDifficultyDetails(q);
@@ -120,14 +117,14 @@ function CategoryDetailPage() {
         if (selectedDiff === "hard" && diffInfo.label !== "صعب") matchDiff = false;
       }
 
-      return matchLang && matchDiff;
+      return matchDiff;
     });
-  }, [quizzes, selectedLang, selectedDiff]);
+  }, [quizzes, selectedDiff]);
 
   // Reset pagination when filters change
   useEffect(() => {
     setVisibleCount(BATCH_SIZE);
-  }, [selectedLang, selectedDiff]);
+  }, [selectedDiff]);
 
   const visibleQuizzes = filteredQuizzes.slice(0, visibleCount);
   const hasMore = visibleCount < filteredQuizzes.length;
@@ -179,7 +176,7 @@ function CategoryDetailPage() {
               <span>⚙️</span>
               <span>الفلاتر والفرز</span>
               <span className="text-xs text-muted-foreground">
-                ({selectedLang === "all" && selectedDiff === "all" ? "الكل" : "فلتر مخصص"})
+                ({selectedDiff === "all" ? "عرض الكل" : "فلتر مخصص"})
               </span>
             </button>
 
@@ -194,32 +191,6 @@ function CategoryDetailPage() {
 
           <div className={cn("mt-4 space-y-4 pt-3 border-t border-border/40", !filterExpanded && "hidden md:block")}>
             <div className="flex flex-wrap items-center gap-6">
-              {/* Language Filter */}
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                  🌐 اللغة:
-                </span>
-                {[
-                  { id: "all", label: "الكل" },
-                  { id: "ar", label: "🇸🇦 العربية" },
-                  { id: "en", label: "🇬🇧 English" },
-                ].map((lang) => (
-                  <button
-                    key={lang.id}
-                    type="button"
-                    onClick={() => setSelectedLang(lang.id)}
-                    className={cn(
-                      "press rounded-full border px-3 py-1 text-xs font-semibold",
-                      selectedLang === lang.id
-                        ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
-                        : "border-border bg-background/40 text-muted-foreground hover:text-foreground"
-                    )}
-                  >
-                    {lang.label}
-                  </button>
-                ))}
-              </div>
-
               {/* Difficulty Level Filter */}
               <div className="flex items-center gap-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">

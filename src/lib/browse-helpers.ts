@@ -45,12 +45,15 @@ export function getCategoryIcon(catName: string): string {
 }
 
 /**
- * Clean redundant difficulty suffix from titles like "ون بيس - متوسط (1)" -> "ون بيس (1)"
+ * Clean redundant difficulty suffix from titles like "متنوع - خبير" -> "متنوع"
+ * or "عجائب وغرائب - خبير 1" -> "عجائب وغرائب 1"
  */
 export function cleanQuizTitle(title: string): string {
   if (!title) return "";
   return title
-    .replace(/\s*-\s*(متوسط|خبير|مبتدئ|قياسي|سهل|صعب|تحدي|متنوع)\b/gi, "")
+    .replace(/\s*-\s*(خبير|متوسط|مبتدئ|قياسي|سهل|صعب|تحدي|متنوع)\s*(\d+|\(\d+\))?/gi, (_, __, num) => {
+      return num ? ` ${num}` : "";
+    })
     .trim();
 }
 
