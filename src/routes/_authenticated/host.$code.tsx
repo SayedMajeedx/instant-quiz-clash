@@ -36,8 +36,35 @@ function HostRoom() {
   const { code } = Route.useParams();
   const state = useRoomGame(code);
   const { t } = useI18n();
-  const phase = usePhase(state);
+
+  const [interQuestionSec, setInterQuestionSecState] = useState<number>(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem(`quizclash_delay_${code}`);
+      if (saved) return Number(saved) || 3;
+    }
+    return 3;
+  });
+
+  const setInterQuestionSec = useCallback((sec: number) => {
+    setInterQuestionSecState(sec);
+    if (typeof window !== "undefined") {
+      localStorage.setItem(`quizclash_delay_${code}`, String(sec));
+    }
+  }, [code]);
+
+  const rawPhase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
+
+  const phase = useMemo(() => {
+    if (!room) return rawPhase;
+    const ms = interQuestionSec * 1000;
+    if (rawPhase.kind === "reveal" || rawPhase.kind === "leaderboard") {
+      const startedAt = new Date(room.phase_started_at ?? room.started_at ?? 0).getTime();
+      const elapsed = Math.max(0, state.now - startedAt);
+      return { ...rawPhase, msLeft: Math.max(0, ms - elapsed) };
+    }
+    return rawPhase;
+  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, state.now]);
 
   // Prevent tablet / PC / phone screen from sleeping during live game
   useWakeLock(true);
@@ -292,13 +319,12 @@ function HostRoom() {
             <div className="mt-5 flex flex-wrap items-center gap-2">
               <span className="text-sm font-semibold text-muted-foreground">⏱️ الوقت بين الأسئلة:</span>
               {[1, 2, 3, 5, 8, 10].map((sec) => {
-                const currentMs = room.board_ms ?? 3000;
-                const selected = currentMs === sec * 1000;
+                const selected = interQuestionSec === sec;
                 return (
                   <button
                     key={sec}
                     type="button"
-                    onClick={() => void patchRoom({ board_ms: sec * 1000, reveal_ms: sec * 1000 })}
+                    onClick={() => setInterQuestionSec(sec)}
                     className={cn(
                       "press rounded-full border px-3 py-1.5 text-xs font-semibold transition-all",
                       selected
