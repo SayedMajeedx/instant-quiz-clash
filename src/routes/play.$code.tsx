@@ -288,7 +288,7 @@ function Play() {
 
 
   return (
-    <main className="relative flex h-[100dvh] max-h-[100dvh] flex-col justify-between overflow-hidden px-3.5 py-2.5">
+    <main className="relative flex h-[100dvh] max-h-[100dvh] flex-col justify-between overflow-hidden px-3.5 pt-2.5 pb-12 sm:pb-14">
       <AnimatedBg />
       <header className="flex shrink-0 items-center justify-between">
         <span className="flex items-center gap-2 font-semibold">

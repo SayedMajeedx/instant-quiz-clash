@@ -9,6 +9,7 @@ import {
   type Room,
 } from "@/lib/quizclash";
 import { getSyncedNow, getServerOffset, syncServerTime } from "@/lib/server-time";
+import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 
 export type ConnectionStatus = "connecting" | "connected" | "reconnecting" | "offline";
 
@@ -107,7 +108,23 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
         }
 
         const loadedQuiz = (quizRes.data as unknown as Quiz) ?? null;
-        const loadedQuestions = rows.map((q) => ({ ...q, options: q.options as unknown as string[] }));
+        let loadedQuestions = rows.map((q) => ({ ...q, options: q.options as unknown as string[] }));
+
+        // Enrich questions with QUIZ_LIBRARY static data if explanation or other fields are missing
+        const libMatch = QUIZ_LIBRARY.find(
+          (lq) => lq.id === typedRoom.quiz_id || (loadedQuiz?.title && lq.title === loadedQuiz.title)
+        );
+        if (libMatch && libMatch.questions.length > 0) {
+          loadedQuestions = loadedQuestions.map((q, idx) => {
+            const libQ =
+              libMatch.questions[idx] ||
+              libMatch.questions.find((item) => item.question_text === q.question_text);
+            return {
+              ...q,
+              explanation: q.explanation || libQ?.explanation || null,
+            };
+          });
+        }
 
         quizRef.current = loadedQuiz;
         questionsRef.current = loadedQuestions;
