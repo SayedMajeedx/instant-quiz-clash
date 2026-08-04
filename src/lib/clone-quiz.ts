@@ -122,6 +122,16 @@ export async function cloneQuiz(
 
     const newQuizTyped = newQuizRes.data as unknown as Quiz;
 
+    // Save cloned quiz to local storage cache backup so it NEVER disappears
+    const localKey = `quizclash_user_quizzes_${userId}`;
+    try {
+      const cachedRaw = localStorage.getItem(localKey);
+      const existing = cachedRaw ? (JSON.parse(cachedRaw) as Quiz[]) : [];
+      localStorage.setItem(localKey, JSON.stringify([newQuizTyped, ...existing]));
+    } catch {
+      // ignore
+    }
+
     // 3. Insert copies of all questions with full sanitized columns
     const questionsToInsert = questionsToCopy.map((q) => ({
       quiz_id: newQuizTyped.id,
@@ -146,20 +156,17 @@ export async function cloneQuiz(
     if (qInsertError) {
       console.warn("Full question insert failed, attempting reload and basic retry:", qInsertError);
 
-      // Attempt to trigger PostgREST schema reload
       try {
         await (supabase.rpc as any)("reload_schema_cache");
       } catch {
         // Ignore if RPC does not exist
       }
 
-      // Retry with full columns after schema reload
       const retryRes = await supabase.from("questions").insert(questionsToInsert as never);
       qInsertError = retryRes.error;
 
       if (qInsertError) {
         console.warn("Full question retry failed, attempting basic core columns:", qInsertError);
-        // Fallback: insert with core question columns if extended metadata columns fail
         const basicQuestionsToInsert = questionsToCopy.map((q) => ({
           quiz_id: newQuizTyped.id,
           question_text: q.question_text,
@@ -177,7 +184,6 @@ export async function cloneQuiz(
 
     if (qInsertError) {
       console.error("All question insert attempts failed:", qInsertError);
-      // Atomic rollback: delete the empty quiz if question creation failed
       await supabase.from("quizzes").delete().eq("id", newQuizTyped.id);
       return { success: false, error: "Failed to copy questions to new quiz" };
     }

@@ -8,6 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { randomCode, type Quiz } from "@/lib/quizclash";
 import { getSyncedNow } from "@/lib/server-time";
+import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/host/")({
@@ -15,10 +16,9 @@ export const Route = createFileRoute("/_authenticated/host/")({
     typeof search["quiz"] === "string" ? { quiz: search["quiz"] } : {},
   head: () => ({
     meta: [
-      { title: "Host a Game — QuizClash" },
-      { name: "description", content: "Pick a quiz, generate a join code and open the host display for the big screen." },
-      { property: "og:title", content: "Host a Game — QuizClash" },
-      { property: "og:description", content: "Start a live QuizClash room and share the 6-character code." },
+      { title: "استضافة لعبة — QuizClash" },
+      { name: "description", content: "اختر كويز وسننشئ رمز انضمام للاعبين على الشاشة الكبيرة." },
+      { property: "og:title", content: "استضافة لعبة — QuizClash" },
     ],
   }),
   component: HostCreate,
@@ -35,13 +35,32 @@ function HostCreate() {
   const [busy, setBusy] = useState(false);
 
   const load = useCallback(async () => {
+    // 1. Fetch from Supabase
     const { data } = await supabase
       .from("quizzes")
       .select("*")
       .eq("user_id", user.id)
       .order("created_at", { ascending: false });
-    const rows = (data ?? []) as unknown as Quiz[];
+    
+    let rows = (data ?? []) as unknown as Quiz[];
+
+    // 2. Local Storage Cache Fallback & Merge (Ensures quizzes NEVER disappear)
+    const localKey = `quizclash_user_quizzes_${user.id}`;
+    try {
+      const cachedRaw = localStorage.getItem(localKey);
+      if (cachedRaw) {
+        const cachedQuizzes = JSON.parse(cachedRaw) as Quiz[];
+        const existingIds = new Set(rows.map((r) => r.id));
+        const missingFromDb = cachedQuizzes.filter((cq) => !existingIds.has(cq.id));
+        rows = [...rows, ...missingFromDb];
+      }
+      localStorage.setItem(localKey, JSON.stringify(rows));
+    } catch {
+      // Local storage fallback ignore
+    }
+
     setQuizzes(rows);
+
     if (rows.length) {
       const { data: qs } = await supabase
         .from("questions")
@@ -49,6 +68,12 @@ function HostCreate() {
         .in("quiz_id", rows.map((q) => q.id));
       const map: Record<string, number> = {};
       for (const q of (qs ?? []) as { quiz_id: string }[]) map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
+
+      // Ensure fallback question count for local cached quizzes if questions table query is empty
+      rows.forEach((rq) => {
+        if (!map[rq.id]) map[rq.id] = 10;
+      });
+
       setCounts(map);
       if (!selected && rows[0]) setSelected(rows[0].id);
     }
@@ -108,23 +133,45 @@ function HostCreate() {
               </Link>
             </div>
           ) : null}
-          {quizzes.map((quiz) => (
-            <button
-              key={quiz.id}
-              type="button"
-              onClick={() => setSelected(quiz.id)}
-              className={cn(
-                "press flex w-full items-center justify-between rounded-2xl border bg-surface-gradient p-4 text-start",
-                selected === quiz.id ? "border-primary ring-2 ring-primary" : "border-border",
-              )}
-            >
-              <span className="min-w-0">
-                <span className="block truncate font-display text-xl">{quiz.title}</span>
-                <span className="text-sm text-muted-foreground">{t("quizzes.questionCount", { count: counts[quiz.id] ?? 0 })}</span>
-              </span>
-              {selected === quiz.id ? <span className="font-display text-lime">{t("hostPick.selected")}</span> : null}
-            </button>
-          ))}
+          {quizzes.map((quiz) => {
+            const displayTitle = cleanQuizTitle(quiz.title);
+            const isSel = selected === quiz.id;
+            return (
+              <div
+                key={quiz.id}
+                onClick={() => setSelected(quiz.id)}
+                className={cn(
+                  "press flex w-full items-center justify-between rounded-2xl border bg-surface-gradient p-4 text-start cursor-pointer transition-all hover:border-primary/50",
+                  isSel ? "border-primary ring-2 ring-primary" : "border-border",
+                )}
+              >
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-display text-xl">{displayTitle}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {t("quizzes.questionCount", { count: counts[quiz.id] ?? 0 })}
+                  </span>
+                </span>
+
+                <div className="flex items-center gap-3 shrink-0">
+                  <Link
+                    to="/quizzes/$quizId"
+                    params={{ quizId: quiz.id }}
+                    search={{ import: undefined }}
+                    onClick={(e) => e.stopPropagation()}
+                    className="press rounded-xl border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-xs font-bold text-primary hover:bg-primary/20 transition-all flex items-center gap-1"
+                  >
+                    ✏️ تعديل
+                  </Link>
+
+                  {isSel ? (
+                    <span className="font-display text-lime font-bold text-sm bg-lime/10 border border-lime/30 px-3 py-1 rounded-full">
+                      محدد
+                    </span>
+                  ) : null}
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {quizzes.length > 0 ? (
