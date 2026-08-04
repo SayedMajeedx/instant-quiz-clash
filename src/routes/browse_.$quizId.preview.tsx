@@ -1,0 +1,321 @@
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
+import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { supabase } from "@/integrations/supabase/client";
+import { cloneQuiz } from "@/lib/clone-quiz";
+import { useI18n } from "@/lib/i18n";
+import { QUIZ_LIBRARY } from "@/lib/quiz-library";
+import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
+import { cn } from "@/lib/utils";
+
+export const Route = createFileRoute("/browse_/$quizId/preview")({
+  head: () => ({
+    meta: [
+      { title: "Preview Quiz — QuizClash" },
+      { name: "description", content: "Review quiz questions and options safely before hosting." },
+      { property: "og:title", content: "Preview Quiz — QuizClash" },
+      { property: "og:description", content: "Review questions and options neutrally with zero answer exposure." },
+    ],
+  }),
+  component: QuizPreviewPage,
+});
+
+type PreviewQuestion = {
+  id?: string;
+  question_text: string;
+  options: string[];
+  time_limit_seconds: number;
+  question_type?: string;
+  difficulty?: string | null;
+  subcategory?: string | null;
+  tags?: string[];
+};
+
+type PreviewQuizMeta = {
+  id: string;
+  title: string;
+  category: string | null;
+  language: string | null;
+  question_count: number;
+};
+
+function QuizPreviewPage() {
+  const { quizId } = Route.useParams();
+  const navigate = useNavigate();
+  const { t } = useI18n();
+
+  const [quizMeta, setQuizMeta] = useState<PreviewQuizMeta | null>(null);
+  const [questions, setQuestions] = useState<PreviewQuestion[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [cloning, setCloning] = useState(false);
+
+  useEffect(() => {
+    void (async () => {
+      setLoading(true);
+      try {
+        // 1. Check local QUIZ_LIBRARY first
+        const libraryMatch = QUIZ_LIBRARY.find((q) => q.id === quizId);
+        const starterMatch = STARTER_QUIZZES.find((sq) => sq.id === quizId);
+
+        if (libraryMatch) {
+          setQuizMeta({
+            id: libraryMatch.id,
+            title: libraryMatch.title,
+            category: libraryMatch.category,
+            language: libraryMatch.language,
+            question_count: libraryMatch.questions.length,
+          });
+          // Explicitly omit correct_index and explanation from preview state
+          setQuestions(
+            libraryMatch.questions.map((q, idx) => ({
+              id: `q-${idx}`,
+              question_text: q.question_text,
+              options: q.options,
+              time_limit_seconds: q.time_limit_seconds,
+              question_type: q.question_type,
+              difficulty: q.difficulty,
+              subcategory: q.subcategory,
+              tags: q.tags,
+            })),
+          );
+          setLoading(false);
+          return;
+        }
+
+        if (starterMatch) {
+          setQuizMeta({
+            id: starterMatch.id,
+            title: starterMatch.title,
+            category: starterMatch.category,
+            language: starterMatch.language,
+            question_count: starterMatch.questions.length,
+          });
+          setQuestions(
+            starterMatch.questions.map((q, idx) => ({
+              id: `sq-${idx}`,
+              question_text: q.question_text,
+              options: q.options,
+              time_limit_seconds: q.time_limit_seconds,
+              question_type: q.question_type,
+            })),
+          );
+          setLoading(false);
+          return;
+        }
+
+        // 2. Fetch quiz meta from Supabase
+        const { data: qData } = await supabase
+          .from("quizzes")
+          .select("id, title, category, language")
+          .eq("id", quizId)
+          .single();
+
+        if (qData) {
+          // Dedicated answer-free query using questions_preview view or RPC
+          const { data: pQuestions } = await supabase
+            .from("questions_preview")
+            .select("id, quiz_id, question_text, options, time_limit_seconds, order_index, question_type, difficulty, subcategory, tags")
+            .eq("quiz_id", quizId)
+            .order("order_index");
+
+          const fetchedRows = pQuestions || [];
+          setQuizMeta({
+            id: qData.id,
+            title: qData.title,
+            category: qData.category,
+            language: qData.language,
+            question_count: fetchedRows.length,
+          });
+
+          setQuestions(
+            fetchedRows.map((q) => ({
+              id: q.id,
+              question_text: q.question_text,
+              options: (q.options as unknown as string[]) || [],
+              time_limit_seconds: q.time_limit_seconds,
+              question_type: q.question_type,
+              difficulty: q.difficulty,
+              subcategory: q.subcategory,
+              tags: q.tags || [],
+            })),
+          );
+        }
+      } catch (err) {
+        console.error("Failed to load preview:", err);
+        toast.error("Failed to load quiz preview");
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, [quizId]);
+
+  async function handleCloneAndHost() {
+    if (!quizMeta) return;
+    setCloning(true);
+    try {
+      const { data: userRes } = await supabase.auth.getUser();
+      const user = userRes.user;
+
+      if (!user) {
+        toast.error(t("auth.required") || "Please sign in to clone quizzes");
+        void navigate({ to: "/auth" });
+        return;
+      }
+
+      const res = await cloneQuiz(quizMeta.id, quizMeta, user.id);
+
+      if (!res.success || !res.newQuizId) {
+        toast.error(res.error || t("browse.error"));
+        return;
+      }
+
+      toast.success(t("browse.cloned") || "Quiz cloned successfully!");
+      // Navigate directly to Host / Lobby creation screen — NEVER to quiz editor
+      void navigate({ to: "/host", search: { quiz: res.newQuizId } });
+    } catch {
+      toast.error("Failed to clone quiz");
+    } finally {
+      setCloning(false);
+    }
+  }
+
+  const optionLabels = ["أ", "ب", "ج", "د"];
+
+  return (
+    <main className="relative min-h-screen px-5 py-8 pb-28">
+      <AnimatedBg />
+      <div className="mx-auto max-w-4xl">
+        {/* Top Header */}
+        <header className="flex items-center justify-between gap-4">
+          <Link
+            to="/browse"
+            className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm flex items-center gap-2 hover:border-primary/50"
+          >
+            <span>←</span>
+            <span>{t("nav.browse") || "العودة للمكتبة"}</span>
+          </Link>
+          <LanguageToggle />
+        </header>
+
+        {loading ? (
+          <div className="mt-16 text-center text-muted-foreground">{t("editor.loading")}</div>
+        ) : !quizMeta ? (
+          <div className="mt-16 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
+            <p className="font-display text-2xl">لم يتم العثور على الكويز المطلوب</p>
+            <Link
+              to="/browse"
+              className="press mt-4 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
+            >
+              العودة للمكتبة
+            </Link>
+          </div>
+        ) : (
+          <>
+            {/* Quiz Info Card */}
+            <div className="mt-8 rounded-3xl border border-border bg-surface-gradient p-6 md:p-8 shadow-xl">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-sm font-bold text-primary">
+                    {quizMeta.category || "عام"}
+                  </span>
+                  <span className="rounded-full border border-border bg-background/50 px-3 py-1 text-xs font-semibold text-muted-foreground">
+                    {quizMeta.language === "en" ? "🇬🇧 English" : "🇸🇦 العربية"}
+                  </span>
+                </div>
+                <span className="text-sm font-bold text-muted-foreground">
+                  {t("quizzes.questionCount", { count: quizMeta.question_count })}
+                </span>
+              </div>
+
+              <h1 className="mt-4 font-display text-3xl md:text-5xl leading-tight">{quizMeta.title}</h1>
+              <p className="mt-2 text-sm text-muted-foreground">
+                معاينة آمنة بدون إظهار الإجابات الصحيحة — يمكنك مراجعة نص الأسئلة والخيارات قبل البدء باستضافة اللعبة.
+              </p>
+
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <button
+                  type="button"
+                  disabled={cloning}
+                  onClick={() => void handleCloneAndHost()}
+                  className="press rounded-2xl bg-gradient-hero px-8 py-4 font-display text-xl text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center gap-2"
+                >
+                  <span>✨</span>
+                  <span>{cloning ? t("browse.cloning") : "نسخ واستضافة هذا الكويز"}</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Questions List (Neutral Preview) */}
+            <div className="mt-8 space-y-6">
+              <h2 className="font-display text-2xl text-gradient">
+                أسئلة الكويز ({questions.length})
+              </h2>
+
+              {questions.map((q, idx) => (
+                <div
+                  key={q.id || idx}
+                  className="rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/30"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/40 pb-3">
+                    <span className="font-display text-lg text-primary">
+                      سؤال {idx + 1} من {questions.length}
+                    </span>
+                    <div className="flex items-center gap-2 text-xs">
+                      {q.difficulty && (
+                        <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
+                          {q.difficulty === "easy" ? "سهل" : q.difficulty === "hard" ? "صعب" : "متوسط"}
+                        </span>
+                      )}
+                      <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
+                        ⏱️ {q.time_limit_seconds}ث
+                      </span>
+                    </div>
+                  </div>
+
+                  <h3 className="mt-4 font-display text-xl md:text-2xl leading-relaxed text-foreground">
+                    {q.question_text}
+                  </h3>
+
+                  {/* Neutral Options Display — Zero Correct Answer Indication */}
+                  <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                    {q.options.map((opt, optIdx) => (
+                      <div
+                        key={optIdx}
+                        className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/30 p-3.5 text-start transition-all hover:bg-background/50"
+                      >
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-border/80 bg-surface-gradient font-display text-sm text-muted-foreground">
+                          {optionLabels[optIdx] || optIdx + 1}
+                        </span>
+                        <span className="font-display text-base text-foreground/90 leading-snug">
+                          {opt}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Floating Action Bar */}
+            <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-xl rounded-3xl border border-primary/30 bg-background/80 backdrop-blur-xl p-4 shadow-2xl flex items-center justify-between gap-4">
+              <div>
+                <p className="font-display text-lg truncate max-w-[200px] sm:max-w-xs">{quizMeta.title}</p>
+                <p className="text-xs text-muted-foreground">{quizMeta.question_count} سؤال جاهز</p>
+              </div>
+              <button
+                type="button"
+                disabled={cloning}
+                onClick={() => void handleCloneAndHost()}
+                className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 shrink-0"
+              >
+                {cloning ? t("browse.cloning") : "✨ نسخ واستضافة"}
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    </main>
+  );
+}

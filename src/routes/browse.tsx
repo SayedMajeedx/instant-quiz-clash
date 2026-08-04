@@ -4,10 +4,10 @@ import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
+import { cloneQuiz } from "@/lib/clone-quiz";
 import { useI18n } from "@/lib/i18n";
-import type { Question, Quiz } from "@/lib/quizclash";
-import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
-import { QUIZ_LIBRARY, type LibraryQuiz } from "@/lib/quiz-library";
+import type { Quiz } from "@/lib/quizclash";
+import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/browse")({
@@ -130,122 +130,16 @@ function BrowsePage() {
         return;
       }
 
-      // Check library first, then starter quizzes
-      const libraryMatch = QUIZ_LIBRARY.find((q) => q.id === quiz.id);
-      const starterMatch = STARTER_QUIZZES.find((sq) => sq.id === quiz.id);
+      const res = await cloneQuiz(quiz.id, quiz, user.id);
 
-      let questionsToCopy: Partial<Question>[] = [];
-
-      if (libraryMatch) {
-        questionsToCopy = libraryMatch.questions.map((q, idx) => ({
-          question_text: q.question_text,
-          options: q.options,
-          correct_index: q.correct_index,
-          time_limit_seconds: q.time_limit_seconds,
-          order_index: idx,
-          question_type: q.question_type || "multi",
-          explanation: q.explanation || null,
-          difficulty: q.difficulty || "medium",
-          subcategory: q.subcategory || null,
-          tags: q.tags || [],
-          source: q.source || null,
-          external_id: q.external_id || null,
-          is_verified: q.is_verified !== false,
-          version: q.version || 1,
-        }));
-      } else if (starterMatch) {
-        questionsToCopy = starterMatch.questions.map((q, idx) => ({
-          question_text: q.question_text,
-          options: q.options,
-          correct_index: q.correct_index,
-          time_limit_seconds: q.time_limit_seconds,
-          order_index: idx,
-          question_type: q.question_type || "multi",
-        }));
-      } else {
-        // Fetch questions from Supabase DB
-        const { data: qData } = await supabase
-          .from("questions")
-          .select("*")
-          .eq("quiz_id", quiz.id)
-          .order("order_index");
-
-        if (qData) {
-          questionsToCopy = qData.map((q) => ({
-            question_text: q.question_text,
-            options: q.options as unknown as string[],
-            correct_index: q.correct_index,
-            time_limit_seconds: q.time_limit_seconds,
-            order_index: q.order_index,
-            question_type: q.question_type || "multi",
-            explanation: q.explanation || null,
-            difficulty: q.difficulty || "medium",
-            subcategory: q.subcategory || null,
-            tags: q.tags || [],
-            source: q.source || null,
-            external_id: q.external_id || null,
-            is_verified: q.is_verified !== false,
-            version: q.version || 1,
-          }));
-        }
-      }
-
-      // Insert cloned quiz for user
-      let newQuizRes = await supabase
-        .from("quizzes")
-        .insert({
-          title: quiz.title,
-          user_id: user.id,
-          is_public: false,
-          category: quiz.category,
-          language: quiz.language,
-        } as never)
-        .select()
-        .single();
-
-      if (newQuizRes.error) {
-        newQuizRes = await supabase
-          .from("quizzes")
-          .insert({
-            title: quiz.title,
-            user_id: user.id,
-          } as never)
-          .select()
-          .single();
-      }
-
-      if (newQuizRes.error || !newQuizRes.data) {
-        toast.error(t("browse.error"));
+      if (!res.success || !res.newQuizId) {
+        toast.error(res.error || t("browse.error"));
         return;
       }
 
-      const newQuizTyped = newQuizRes.data as unknown as Quiz;
-
-      // Copy questions to new quiz
-      if (questionsToCopy.length > 0) {
-        const questionsToInsert = questionsToCopy.map((q) => ({
-          quiz_id: newQuizTyped.id,
-          question_text: q.question_text,
-          options: q.options,
-          correct_index: q.correct_index,
-          time_limit_seconds: q.time_limit_seconds,
-          order_index: q.order_index,
-          question_type: q.question_type || "multi",
-          explanation: q.explanation || null,
-          difficulty: q.difficulty || "medium",
-          subcategory: q.subcategory || null,
-          tags: q.tags || [],
-          source: q.source || null,
-          external_id: q.external_id || null,
-          is_verified: q.is_verified !== false,
-          version: q.version || 1,
-        }));
-
-        await supabase.from("questions").insert(questionsToInsert as never);
-      }
-
-      toast.success(t("browse.cloned"));
-      void navigate({ to: "/quizzes/$quizId", params: { quizId: newQuizTyped.id } });
+      toast.success(t("browse.cloned") || "Quiz cloned successfully!");
+      // Navigate directly to Host Room Creation / Lobby with the NEW quiz preselected
+      void navigate({ to: "/host", search: { quiz: res.newQuizId } });
     } catch {
       toast.error("Failed to clone quiz");
     } finally {
@@ -362,14 +256,25 @@ function BrowsePage() {
                     </p>
                   </div>
 
-                  <button
-                    type="button"
-                    disabled={isCloning}
-                    onClick={() => void handleClone(quiz)}
-                    className="press mt-6 w-full rounded-2xl bg-gradient-hero py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
-                  >
-                    {isCloning ? t("browse.cloning") : `✨ ${t("browse.cloneAndPlay")}`}
-                  </button>
+                  <div className="mt-6 flex items-center gap-2">
+                    <Link
+                      to="/browse_/$quizId/preview"
+                      params={{ quizId: quiz.id }}
+                      className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 text-center font-display text-sm hover:border-primary/50 flex items-center justify-center gap-1.5"
+                    >
+                      <span>👁️</span>
+                      <span>معاينة</span>
+                    </Link>
+                    <button
+                      type="button"
+                      disabled={isCloning}
+                      onClick={() => void handleClone(quiz)}
+                      className="press flex-[2] rounded-2xl bg-gradient-hero py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center justify-center gap-1.5"
+                    >
+                      <span>✨</span>
+                      <span>{isCloning ? t("browse.cloning") : t("browse.cloneAndPlay")}</span>
+                    </button>
+                  </div>
                 </div>
               );
             })}
@@ -379,3 +284,4 @@ function BrowsePage() {
     </main>
   );
 }
+
