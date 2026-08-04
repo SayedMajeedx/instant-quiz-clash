@@ -46,14 +46,17 @@ export function getCategoryIcon(catName: string): string {
 
 /**
  * Clean redundant difficulty suffix from titles like "متنوع - خبير" -> "متنوع"
- * or "عجائب وغرائب - خبير 1" -> "عجائب وغرائب 1"
+ * or "علوم القرآن والتفسير · خبير" -> "علوم القرآن والتفسير"
  */
 export function cleanQuizTitle(title: string): string {
   if (!title) return "";
   return title
-    .replace(/\s*-\s*(خبير|متوسط|مبتدئ|قياسي|سهل|صعب|تحدي|متنوع)\s*(\d+|\(\d+\))?/gi, (_, __, num) => {
+    .replace(/\s*[-·•]\s*(خبير|متوسط|مبتدئ|قياسي|سهل|صعب|تحدي|متنوع)\s*(\d+|\(\d+\))?/gi, (_, __, num) => {
       return num ? ` ${num}` : "";
     })
+    .replace(/\s*[-·•]\s*(خبير|متوسط|مبتدئ|قياسي|سهل|صعب|تحدي|متنوع)/gi, "")
+    .replace(/\s*(خبير|متوسط|مبتدئ|قياسي|سهل|صعب|تحدي)\b/gi, "")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
