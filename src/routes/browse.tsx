@@ -1,19 +1,20 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import type { Quiz } from "@/lib/quizclash";
-import { STARTER_QUIZZES, type StarterQuiz } from "@/lib/starter-quizzes";
+import type { Question, Quiz } from "@/lib/quizclash";
+import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
+import { QUIZ_LIBRARY, type LibraryQuiz } from "@/lib/quiz-library";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/browse")({
   head: () => ({
     meta: [
       { title: "Browse Ready-Made Quizzes — QuizClash" },
-      { name: "description", content: "Explore pre-seeded trivia quizzes in history, science, sports, and geography ready to host immediately." },
+      { name: "description", content: "Explore 230+ pre-seeded trivia quizzes in history, science, anime, sports, and geography ready to host immediately." },
       { property: "og:title", content: "Browse Ready-Made Quizzes — QuizClash" },
       { property: "og:description", content: "Play or clone ready-made trivia quizzes in seconds." },
     ],
@@ -27,30 +28,28 @@ type PublicQuiz = Quiz & {
   question_count: number;
 };
 
-const CATEGORIES = [
-  { id: "all", labelKey: "browse.allCategories", icon: "🌐" },
-  { id: "history", labelKey: "cat.history", icon: "📜" },
-  { id: "geography", labelKey: "cat.geography", icon: "🌍" },
-  { id: "science", labelKey: "cat.science", icon: "🔬" },
-  { id: "arts", labelKey: "cat.arts", icon: "🎨" },
-  { id: "sports", labelKey: "cat.sports", icon: "⚽" },
-  { id: "islamic_history", labelKey: "cat.islamic_history", icon: "🕌" },
-  { id: "inventions", labelKey: "cat.inventions", icon: "💡" },
-  { id: "language_culture", labelKey: "cat.language_culture", icon: "📚" },
-];
+const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.map((q) => ({
+  id: q.id,
+  title: q.title,
+  user_id: q.user_id,
+  created_at: q.created_at,
+  is_public: true,
+  category: q.category,
+  language: q.language,
+  question_count: q.questions.length,
+}));
 
 function BrowsePage() {
   const navigate = useNavigate();
   const { t } = useI18n();
-  const [quizzes, setQuizzes] = useState<PublicQuiz[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [quizzes, setQuizzes] = useState<PublicQuiz[]>(LIBRARY_QUIZZES);
+  const [loading, setLoading] = useState(false);
   const [selectedCat, setSelectedCat] = useState("all");
   const [selectedLang, setSelectedLang] = useState("all");
   const [cloningId, setCloningId] = useState<string | null>(null);
 
   useEffect(() => {
     void (async () => {
-      setLoading(true);
       try {
         type LooseQuizRow = {
           id: string;
@@ -73,7 +72,7 @@ function BrowsePage() {
         const { data, error } = await query.eq("is_public", true).order("created_at", { ascending: false });
 
         if (!error && data && data.length > 0) {
-          const formatted = data.map((q) => ({
+          const dbFormatted = data.map((q) => ({
             id: q.id,
             title: q.title,
             user_id: q.user_id ?? "system",
@@ -83,38 +82,41 @@ function BrowsePage() {
             language: q.language,
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
           }));
-          setQuizzes(formatted);
-        } else {
-          // Fallback to static starter quizzes if DB is not seeded yet
-          const fallback = STARTER_QUIZZES.map((sq) => ({
-            id: sq.id,
-            title: sq.title,
-            user_id: sq.user_id,
-            created_at: sq.created_at,
-            is_public: true,
-            category: sq.category,
-            language: sq.language,
-            question_count: sq.questions.length,
-          }));
-          setQuizzes(fallback);
+
+          // Merge DB quizzes with local library (avoiding duplicate IDs)
+          const dbIds = new Set(dbFormatted.map((q) => q.id));
+          const restLocal = LIBRARY_QUIZZES.filter((q) => !dbIds.has(q.id));
+          setQuizzes([...dbFormatted, ...restLocal]);
         }
       } catch {
-        const fallback = STARTER_QUIZZES.map((sq) => ({
-          id: sq.id,
-          title: sq.title,
-          user_id: sq.user_id,
-          created_at: sq.created_at,
-          is_public: true,
-          category: sq.category,
-          language: sq.language,
-          question_count: sq.questions.length,
-        }));
-        setQuizzes(fallback);
-      } finally {
-        setLoading(false);
+        // Keep static QUIZ_LIBRARY on network error
       }
     })();
   }, []);
+
+  const categories = useMemo(() => {
+    const map = new Map<string, { id: string; label: string; icon: string }>();
+    map.set("all", { id: "all", label: t("browse.allCategories"), icon: "🌐" });
+
+    quizzes.forEach((q) => {
+      if (q.category && !map.has(q.category)) {
+        let icon = "📚";
+        if (q.category.includes("أنمي") || q.category.includes("Anime")) icon = "⚔️";
+        else if (q.category.includes("إسلام") || q.category.includes("دين")) icon = "🕌";
+        else if (q.category.includes("تاريخ") || q.category.includes("History") || q.category === "history") icon = "📜";
+        else if (q.category.includes("جغراف") || q.category.includes("Geo") || q.category === "geography") icon = "🌍";
+        else if (q.category.includes("علوم") || q.category.includes("Science") || q.category === "science") icon = "🔬";
+        else if (q.category.includes("رياضة") || q.category.includes("Sport") || q.category === "sports") icon = "⚽";
+        else if (q.category.includes("فن") || q.category.includes("أدب") || q.category === "arts") icon = "🎨";
+        else if (q.category.includes("لغة") || q.category.includes("عرب") || q.category === "language_culture") icon = "✍️";
+        else if (q.category.includes("ثقاف") || q.category.includes("عام") || q.category === "inventions") icon = "💡";
+
+        map.set(q.category, { id: q.category, label: q.category, icon });
+      }
+    });
+
+    return Array.from(map.values());
+  }, [quizzes, t]);
 
   async function handleClone(quiz: PublicQuiz) {
     setCloningId(quiz.id);
@@ -128,25 +130,36 @@ function BrowsePage() {
         return;
       }
 
-      // Check if this quiz exists in static STARTER_QUIZZES
+      // Check library first, then starter quizzes
+      const libraryMatch = QUIZ_LIBRARY.find((q) => q.id === quiz.id);
       const starterMatch = STARTER_QUIZZES.find((sq) => sq.id === quiz.id);
 
-      let questionsToCopy: {
-        question_text: string;
-        options: string[];
-        correct_index: number;
-        time_limit_seconds: number;
-        order_index: number;
-        question_type?: string;
-      }[] = [];
+      let questionsToCopy: Partial<Question>[] = [];
 
-      if (starterMatch) {
-        questionsToCopy = starterMatch.questions.map((q) => ({
+      if (libraryMatch) {
+        questionsToCopy = libraryMatch.questions.map((q, idx) => ({
           question_text: q.question_text,
           options: q.options,
           correct_index: q.correct_index,
           time_limit_seconds: q.time_limit_seconds,
-          order_index: q.order_index,
+          order_index: idx,
+          question_type: q.question_type || "multi",
+          explanation: q.explanation || null,
+          difficulty: q.difficulty || "medium",
+          subcategory: q.subcategory || null,
+          tags: q.tags || [],
+          source: q.source || null,
+          external_id: q.external_id || null,
+          is_verified: q.is_verified !== false,
+          version: q.version || 1,
+        }));
+      } else if (starterMatch) {
+        questionsToCopy = starterMatch.questions.map((q, idx) => ({
+          question_text: q.question_text,
+          options: q.options,
+          correct_index: q.correct_index,
+          time_limit_seconds: q.time_limit_seconds,
+          order_index: idx,
           question_type: q.question_type || "multi",
         }));
       } else {
@@ -165,11 +178,19 @@ function BrowsePage() {
             time_limit_seconds: q.time_limit_seconds,
             order_index: q.order_index,
             question_type: q.question_type || "multi",
+            explanation: q.explanation || null,
+            difficulty: q.difficulty || "medium",
+            subcategory: q.subcategory || null,
+            tags: q.tags || [],
+            source: q.source || null,
+            external_id: q.external_id || null,
+            is_verified: q.is_verified !== false,
+            version: q.version || 1,
           }));
         }
       }
 
-      // Insert cloned quiz for user (with fallback if extended columns don't exist yet)
+      // Insert cloned quiz for user
       let newQuizRes = await supabase
         .from("quizzes")
         .insert({
@@ -210,6 +231,14 @@ function BrowsePage() {
           time_limit_seconds: q.time_limit_seconds,
           order_index: q.order_index,
           question_type: q.question_type || "multi",
+          explanation: q.explanation || null,
+          difficulty: q.difficulty || "medium",
+          subcategory: q.subcategory || null,
+          tags: q.tags || [],
+          source: q.source || null,
+          external_id: q.external_id || null,
+          is_verified: q.is_verified !== false,
+          version: q.version || 1,
         }));
 
         await supabase.from("questions").insert(questionsToInsert as never);
@@ -256,7 +285,7 @@ function BrowsePage() {
         {/* Category & Language Filters */}
         <div className="mt-8 space-y-4">
           <div className="flex flex-wrap gap-2">
-            {CATEGORIES.map((cat) => (
+            {categories.map((cat) => (
               <button
                 key={cat.id}
                 type="button"
@@ -269,7 +298,7 @@ function BrowsePage() {
                 )}
               >
                 <span>{cat.icon}</span>
-                <span>{t(cat.labelKey)}</span>
+                <span>{cat.label}</span>
               </button>
             ))}
           </div>
@@ -310,7 +339,6 @@ function BrowsePage() {
         ) : (
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {filteredQuizzes.map((quiz) => {
-              const catObj = CATEGORIES.find((c) => c.id === quiz.category);
               const isCloning = cloningId === quiz.id;
 
               return (
@@ -321,7 +349,7 @@ function BrowsePage() {
                   <div>
                     <div className="flex items-center justify-between gap-2">
                       <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-                        {catObj ? `${catObj.icon} ${t(catObj.labelKey)}` : "Trivia"}
+                        {quiz.category || "عام"}
                       </span>
                       <span className="text-sm font-semibold">
                         {quiz.language === "en" ? "🇬🇧" : "🇸🇦"}
