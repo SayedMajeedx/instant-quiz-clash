@@ -24,28 +24,36 @@ export async function cloneQuiz(
     if (libraryMatch) {
       questionsToCopy = libraryMatch.questions.map((q, idx) => ({
         question_text: q.question_text,
-        options: q.options,
-        correct_index: q.correct_index,
-        time_limit_seconds: q.time_limit_seconds,
+        options: Array.isArray(q.options) ? q.options : ["", "", "", ""],
+        correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
+        time_limit_seconds: typeof q.time_limit_seconds === "number" ? Math.max(5, Math.min(120, q.time_limit_seconds)) : 20,
         order_index: idx,
         question_type: q.question_type || "multi",
         explanation: q.explanation || null,
         difficulty: q.difficulty || "medium",
         subcategory: q.subcategory || null,
-        tags: q.tags || [],
+        tags: Array.isArray(q.tags) ? q.tags : [],
         source: q.source || null,
         external_id: q.external_id || null,
         is_verified: q.is_verified !== false,
-        version: q.version || 1,
+        version: typeof q.version === "number" ? q.version : 1,
       }));
     } else if (starterMatch) {
       questionsToCopy = starterMatch.questions.map((q, idx) => ({
         question_text: q.question_text,
-        options: q.options,
-        correct_index: q.correct_index,
-        time_limit_seconds: q.time_limit_seconds,
+        options: Array.isArray(q.options) ? q.options : ["", "", "", ""],
+        correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
+        time_limit_seconds: typeof q.time_limit_seconds === "number" ? Math.max(5, Math.min(120, q.time_limit_seconds)) : 20,
         order_index: idx,
         question_type: q.question_type || "multi",
+        explanation: null,
+        difficulty: "medium",
+        subcategory: null,
+        tags: [],
+        source: null,
+        external_id: null,
+        is_verified: true,
+        version: 1,
       }));
     } else {
       // Fetch full questions from Supabase DB
@@ -61,19 +69,19 @@ export async function cloneQuiz(
 
       questionsToCopy = qData.map((q) => ({
         question_text: q.question_text,
-        options: q.options as unknown as string[],
-        correct_index: q.correct_index,
-        time_limit_seconds: q.time_limit_seconds,
+        options: Array.isArray(q.options) ? (q.options as string[]) : ["", "", "", ""],
+        correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
+        time_limit_seconds: typeof q.time_limit_seconds === "number" ? Math.max(5, Math.min(120, q.time_limit_seconds)) : 20,
         order_index: q.order_index,
         question_type: q.question_type || "multi",
         explanation: q.explanation || null,
         difficulty: q.difficulty || "medium",
         subcategory: q.subcategory || null,
-        tags: q.tags || [],
+        tags: Array.isArray(q.tags) ? (q.tags as string[]) : [],
         source: q.source || null,
         external_id: q.external_id || null,
         is_verified: q.is_verified !== false,
-        version: q.version || 1,
+        version: typeof q.version === "number" ? q.version : 1,
       }));
     }
 
@@ -81,21 +89,22 @@ export async function cloneQuiz(
       return { success: false, error: "No questions found in this quiz" };
     }
 
-    // 2. Insert new quiz row owned by current user
+    // 2. Insert new quiz row with full columns
     let newQuizRes = await supabase
       .from("quizzes")
       .insert({
         title: quizMeta.title,
         user_id: userId,
         is_public: false,
-        category: quizMeta.category,
-        language: quizMeta.language,
+        category: quizMeta.category || null,
+        language: quizMeta.language || "ar",
       } as never)
       .select()
       .single();
 
     if (newQuizRes.error) {
-      // Fallback insert if extended columns do not exist
+      console.warn("Full quiz insert warning:", newQuizRes.error);
+      // Fallback insert if extended columns fail
       newQuizRes = await supabase
         .from("quizzes")
         .insert({
@@ -107,12 +116,13 @@ export async function cloneQuiz(
     }
 
     if (newQuizRes.error || !newQuizRes.data) {
+      console.error("Quiz creation failed completely:", newQuizRes.error);
       return { success: false, error: "Failed to create new quiz" };
     }
 
     const newQuizTyped = newQuizRes.data as unknown as Quiz;
 
-    // 3. Insert copies of all questions pointing to the new quiz ID
+    // 3. Insert copies of all questions with full sanitized columns
     const questionsToInsert = questionsToCopy.map((q) => ({
       quiz_id: newQuizTyped.id,
       question_text: q.question_text,
@@ -134,22 +144,39 @@ export async function cloneQuiz(
     let { error: qInsertError } = await supabase.from("questions").insert(questionsToInsert as never);
 
     if (qInsertError) {
-      // Fallback: insert with core question columns if extended metadata columns fail
-      const basicQuestionsToInsert = questionsToCopy.map((q) => ({
-        quiz_id: newQuizTyped.id,
-        question_text: q.question_text,
-        options: q.options,
-        correct_index: q.correct_index,
-        time_limit_seconds: q.time_limit_seconds,
-        order_index: q.order_index,
-        question_type: q.question_type || "multi",
-      }));
+      console.warn("Full question insert failed, attempting reload and basic retry:", qInsertError);
 
-      const fallbackRes = await supabase.from("questions").insert(basicQuestionsToInsert as never);
-      qInsertError = fallbackRes.error;
+      // Attempt to trigger PostgREST schema reload
+      try {
+        await supabase.rpc("reload_schema_cache");
+      } catch {
+        // Ignore if RPC does not exist
+      }
+
+      // Retry with full columns after schema reload
+      const retryRes = await supabase.from("questions").insert(questionsToInsert as never);
+      qInsertError = retryRes.error;
+
+      if (qInsertError) {
+        console.warn("Full question retry failed, attempting basic core columns:", qInsertError);
+        // Fallback: insert with core question columns if extended metadata columns fail
+        const basicQuestionsToInsert = questionsToCopy.map((q) => ({
+          quiz_id: newQuizTyped.id,
+          question_text: q.question_text,
+          options: q.options,
+          correct_index: q.correct_index,
+          time_limit_seconds: q.time_limit_seconds,
+          order_index: q.order_index,
+          question_type: q.question_type || "multi",
+        }));
+
+        const fallbackRes = await supabase.from("questions").insert(basicQuestionsToInsert as never);
+        qInsertError = fallbackRes.error;
+      }
     }
 
     if (qInsertError) {
+      console.error("All question insert attempts failed:", qInsertError);
       // Atomic rollback: delete the empty quiz if question creation failed
       await supabase.from("quizzes").delete().eq("id", newQuizTyped.id);
       return { success: false, error: "Failed to copy questions to new quiz" };
@@ -158,6 +185,7 @@ export async function cloneQuiz(
     return { success: true, newQuizId: newQuizTyped.id };
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Unknown error during clone";
+    console.error("cloneQuiz exception:", err);
     return { success: false, error: msg };
   }
 }
