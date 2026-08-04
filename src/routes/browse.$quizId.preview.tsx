@@ -8,14 +8,14 @@ import { cloneQuiz } from "@/lib/clone-quiz";
 import { useI18n } from "@/lib/i18n";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
+import { cleanQuizTitle } from "@/lib/browse-helpers";
 
 export const Route = createFileRoute("/browse/$quizId/preview")({
   head: () => ({
     meta: [
-      { title: "Preview Quiz — QuizClash" },
-      { name: "description", content: "Review quiz questions and options safely before hosting." },
-      { property: "og:title", content: "Preview Quiz — QuizClash" },
-      { property: "og:description", content: "Review questions and options neutrally with zero answer exposure." },
+      { title: "معاينة الكويز — QuizClash" },
+      { name: "description", content: "معاينة آمنة بدون إظهار الإجابات الصحيحة قبل الاستضافة." },
+      { property: "og:title", content: "معاينة الكويز — QuizClash" },
     ],
   }),
   component: QuizPreviewPage,
@@ -178,7 +178,8 @@ function QuizPreviewPage() {
     }
   }
 
-  const optionLabels = lang === "ar" ? ["أ", "ب", "ج", "د"] : ["A", "B", "C", "D"];
+  const optionLabels = ["أ", "ب", "ج", "د"];
+  const displayTitle = quizMeta ? cleanQuizTitle(quizMeta.title) : "";
 
   return (
     <main className="relative min-h-screen px-5 py-8 pb-28">
@@ -190,8 +191,8 @@ function QuizPreviewPage() {
             to="/browse"
             className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm flex items-center gap-2 hover:border-primary/50"
           >
-            <span>{lang === "ar" ? "←" : "←"}</span>
-            <span>{t("nav.browse")}</span>
+            <span>←</span>
+            <span>مكتبة الكويزات</span>
           </Link>
           <LanguageToggle />
         </header>
@@ -217,18 +218,15 @@ function QuizPreviewPage() {
                   <span className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-sm font-bold text-primary">
                     {quizMeta.category || "عام"}
                   </span>
-                  <span className="rounded-full border border-border bg-background/50 px-3 py-1 text-xs font-semibold text-muted-foreground">
-                    {quizMeta.language === "en" ? "🇬🇧 English" : "🇸🇦 العربية"}
-                  </span>
                 </div>
                 <span className="text-sm font-bold text-muted-foreground">
                   {t("quizzes.questionCount", { count: quizMeta.question_count })}
                 </span>
               </div>
 
-              <h1 className="mt-4 font-display text-3xl md:text-5xl leading-tight">{quizMeta.title}</h1>
+              <h1 className="mt-4 font-display text-3xl md:text-5xl leading-tight">{displayTitle}</h1>
               <p className="mt-2 text-sm text-muted-foreground">
-                {t("preview.sub")}
+                معاينة آمنة بدون إظهار الإجابات الصحيحة — يمكنك مراجعة نص الأسئلة والخيارات قبل البدء باستضافة اللعبة.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -239,7 +237,7 @@ function QuizPreviewPage() {
                   className="press rounded-2xl bg-gradient-hero px-8 py-4 font-display text-xl text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center gap-2"
                 >
                   <span>✨</span>
-                  <span>{cloning ? t("browse.cloning") : t("preview.cloneAndHost")}</span>
+                  <span>{cloning ? "جارٍ التنسيق والبدء..." : "نسخ واستضافة هذا الكويز"}</span>
                 </button>
               </div>
             </div>
@@ -247,7 +245,7 @@ function QuizPreviewPage() {
             {/* Questions List (Neutral Preview) */}
             <div className="mt-8 space-y-6">
               <h2 className="font-display text-2xl text-gradient">
-                {t("preview.questionsHeader", { n: questions.length })}
+                أسئلة الكويز ({questions.length})
               </h2>
 
               {questions.map((q, idx) => (
@@ -257,16 +255,11 @@ function QuizPreviewPage() {
                 >
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/40 pb-3">
                     <span className="font-display text-lg text-primary">
-                      {t("preview.questionN", { n: idx + 1, total: questions.length })}
+                      سؤال {idx + 1} من {questions.length}
                     </span>
                     <div className="flex items-center gap-2 text-xs">
-                      {q.difficulty && (
-                        <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
-                          {q.difficulty === "challenge" || q.difficulty === "expert" || q.difficulty === "hard" ? t("aiGen.challenge") : t("aiGen.standard")}
-                        </span>
-                      )}
                       <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
-                        ⏱️ {q.time_limit_seconds}{lang === "ar" ? "ث" : "s"}
+                        ⏱️ {q.time_limit_seconds}ث
                       </span>
                     </div>
                   </div>
@@ -298,7 +291,7 @@ function QuizPreviewPage() {
             {/* Bottom Floating Action Bar */}
             <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-xl rounded-3xl border border-primary/30 bg-background/80 backdrop-blur-xl p-4 shadow-2xl flex items-center justify-between gap-4">
               <div>
-                <p className="font-display text-lg truncate max-w-[200px] sm:max-w-xs">{quizMeta.title}</p>
+                <p className="font-display text-lg truncate max-w-[200px] sm:max-w-xs">{displayTitle}</p>
                 <p className="text-xs text-muted-foreground">{t("quizzes.questionCount", { count: quizMeta.question_count })}</p>
               </div>
               <button
@@ -307,7 +300,7 @@ function QuizPreviewPage() {
                 onClick={() => void handleCloneAndHost()}
                 className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 shrink-0"
               >
-                {cloning ? t("browse.cloning") : t("preview.cloneShort")}
+                {cloning ? "جارٍ البدء..." : "نسخ واستضافة"}
               </button>
             </div>
           </>
