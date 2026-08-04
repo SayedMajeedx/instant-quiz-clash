@@ -394,7 +394,7 @@ export const STARTER_QUIZZES: StarterQuiz[] = [
         question_type: "multi",
       },
       {
-        question_text: "من هو لاعب كرة السلة الذي فاز بست بطولات NBA مع فريق شيكاغو بولز؟",
+        question_text: "من هو لاعب كرة السلة الذي فاز بست بطولات إن بي إيه مع فريق شيكاغو بولز؟",
         options: ["ليبرون جيمس", "كوبي براينت", "مايكل جوردان", "ماجيك جونسون"],
         correct_index: 2,
         time_limit_seconds: 20,
