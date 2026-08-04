@@ -5,6 +5,7 @@ import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { DisplayControls, ExitFullscreenButton, requestFullscreen } from "@/components/quiz/DisplayControls";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
 import { QuestionImage } from "@/components/quiz/QuestionImage";
@@ -37,6 +38,7 @@ function HostRoom() {
   const { room, quiz, questions, players, answers } = state;
   const archivedRef = useRef(false);
   const [showExitModal, setShowExitConfirm] = useState(false);
+  const [assigning, setAssigning] = useState<string | null>(null);
   const navigate = Route.useNavigate();
 
   const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join?code=${code.toUpperCase()}` : "";
@@ -173,6 +175,8 @@ function HostRoom() {
 
   async function start() {
     if (!room) return;
+    // Must fire synchronously from the click gesture, before any await.
+    requestFullscreen();
     const startsAt = new Date(getSyncedNow() + 3000).toISOString();
     await supabase
       .from("rooms")
@@ -227,7 +231,8 @@ function HostRoom() {
         <AnimatedBg dense />
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 lg:grid-cols-[1.1fr_1fr]">
           <section>
-            <div className="mb-4 flex justify-end">
+            <div className="mb-4 flex items-center justify-end gap-2">
+              <DisplayControls />
               <LanguageToggle />
             </div>
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">{quiz?.title}</p>
@@ -385,6 +390,7 @@ function HostRoom() {
             )}
             <p className="mt-3 text-center text-xs text-muted-foreground">{t("host.hostTabNote")}</p>
           </section>
+          <ExitFullscreenButton />
         </div>
       </main>
     );
@@ -403,6 +409,9 @@ function HostRoom() {
       <main className="relative min-h-screen">
         <AnimatedBg dense />
         <div className="mx-auto max-w-3xl px-5 py-12">
+          <div className="mb-4 flex justify-end">
+            <DisplayControls />
+          </div>
           <p className="text-center text-sm font-bold uppercase tracking-[0.3em] text-sun">{t("host.scoreboard")}</p>
           <h1 className="mt-2 text-center font-display text-4xl md:text-6xl">
             {t("host.afterQuestion", { n: phase.index + 1 })}
@@ -445,6 +454,7 @@ function HostRoom() {
               {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
             </p>
           )}
+          <ExitFullscreenButton />
         </div>
       </main>
     );
@@ -474,6 +484,7 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
         </span>
         <div className="flex items-center gap-3">
           <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+          <DisplayControls />
           <button
             type="button"
             onClick={() => setShowExitConfirm(true)}
@@ -581,6 +592,7 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
         </div>
       ) : null}
       <ReconnectingBanner status={state.connectionStatus} />
+      <ExitFullscreenButton />
       <DebugPanel state={state} />
     </main>
   );

@@ -119,7 +119,7 @@ export async function generateQuizFromTopic(input: {
   topic: string;
   count: number;
   difficulty: "easy" | "medium" | "hard";
-  language?: "ar" | "en";
+  language?: "ar" | "en" | undefined;
 }): Promise<{ questions: ParsedQuestion[] }> {
   const apiKey = process.env["LOVABLE_API_KEY"];
   if (!apiKey) throw new Error("AI is not configured");

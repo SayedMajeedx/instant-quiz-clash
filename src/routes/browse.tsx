@@ -52,19 +52,33 @@ function BrowsePage() {
     void (async () => {
       setLoading(true);
       try {
-        const { data, error } = await supabase
-          .from("quizzes")
-          .select("*, questions(id)")
-          .eq("is_public", true)
-          .order("created_at", { ascending: false });
+        type LooseQuizRow = {
+          id: string;
+          title: string;
+          user_id: string | null;
+          created_at: string;
+          is_public: boolean | null;
+          category: string | null;
+          language: string | null;
+          questions?: { id: string }[];
+        };
+        const query = supabase.from("quizzes").select("*, questions(id)") as unknown as {
+          eq: (column: string, value: unknown) => {
+            order: (
+              column: string,
+              options: { ascending: boolean },
+            ) => PromiseLike<{ data: LooseQuizRow[] | null; error: unknown }>;
+          };
+        };
+        const { data, error } = await query.eq("is_public", true).order("created_at", { ascending: false });
 
         if (!error && data && data.length > 0) {
           const formatted = data.map((q) => ({
             id: q.id,
             title: q.title,
-            user_id: q.user_id || "system",
+            user_id: q.user_id ?? "system",
             created_at: q.created_at,
-            is_public: q.is_public,
+            is_public: q.is_public ?? true,
             category: q.category,
             language: q.language,
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
