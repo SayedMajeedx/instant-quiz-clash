@@ -17,7 +17,7 @@ async function syncToSupabase() {
 
   for (let i = 0; i < questions.length; i += batchSize) {
     const chunk = questions.slice(i, i + batchSize);
-    
+
     // Upsert chunk with exact Supabase table columns
     const rows = chunk.map((q) => ({
       id: q.id,
@@ -27,7 +27,6 @@ async function syncToSupabase() {
       correct_index: q.correct_index,
       time_limit_seconds: q.time_limit_seconds || 20,
       order_index: q.order_index ?? 0,
-      explanation: q.explanation || null,
     }));
 
     const { error } = await supabase.from("questions").upsert(rows, { onConflict: "id" });
