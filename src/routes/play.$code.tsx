@@ -57,6 +57,7 @@ function Play() {
   const { room, quiz, questions, players, answers } = state;
   const [sending, setSending] = useState(false);
   const [armedDouble, setArmedDouble] = useState(false);
+  const [optimisticChoice, setOptimisticChoice] = useState<number | null>(null);
 
   async function leaveGame() {
     if (playerId) {
@@ -85,6 +86,11 @@ function Play() {
     ? (answers.find((a) => a.question_id === currentQuestion.id && a.player_id === playerId) ?? null)
     : null;
 
+  // Clear optimistic choice when moving to next question or when real myAnswer arrives
+  useEffect(() => {
+    setOptimisticChoice(null);
+  }, [currentQuestion?.id, Boolean(myAnswer)]);
+
   // Correct answers are revealed by the server once a question's clock runs out.
   useEffect(() => {
     if (phase.kind === "reveal") void state.refresh();
@@ -92,22 +98,33 @@ function Play() {
   }, [phase.kind, phase.kind === "reveal" ? phase.index : -1]);
 
   async function submit(choice: number) {
-    if (phase.kind !== "question" || !room?.started_at || !playerId || myAnswer || sending) return;
+    if (phase.kind !== "question" || !room?.started_at || !playerId || myAnswer || sending || optimisticChoice !== null) return;
+    
+    // 0ms INSTANT OPTIMISTIC FEEDBACK
+    setOptimisticChoice(choice);
+    sounds.playTap();
     setSending(true);
+
     const question = phase.question;
 
-    // Grading happens server-side so scores can't be forged from the client.
-    const { error } = await supabase.rpc("submit_answer", {
-      p_player_id: playerId,
-      p_question_id: question.id,
-      p_choice: choice,
-      ...(armedDouble ? { p_powerup: "double" } : {}),
-    });
-    if (!error) {
-      setArmedDouble(false);
-      await state.refresh();
+    try {
+      const { error } = await supabase.rpc("submit_answer", {
+        p_player_id: playerId,
+        p_question_id: question.id,
+        p_choice: choice,
+        ...(armedDouble ? { p_powerup: "double" } : {}),
+      });
+      if (!error) {
+        setArmedDouble(false);
+        void state.refresh();
+      } else {
+        setOptimisticChoice(null);
+      }
+    } catch {
+      setOptimisticChoice(null);
+    } finally {
+      setSending(false);
     }
-    setSending(false);
   }
 
   async function useFifty() {
@@ -301,14 +318,16 @@ function Play() {
         </span>
       </header>
 
-      {myAnswer ? (
+      {myAnswer || optimisticChoice !== null ? (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="animate-pop">
-            <p className="font-display text-6xl">🔒</p>
+          <div className="animate-pop flex flex-col items-center">
+            <div className="flex size-20 items-center justify-center rounded-3xl border border-lime/50 bg-lime/10 text-4xl shadow-glow animate-bounce">
+              🔒
+            </div>
             <h1 className="mt-4 font-display text-3xl text-gradient">{t("play.locked")}</h1>
-            <p className="mt-2 text-muted-foreground">{t("play.waitingOthers")}</p>
+            <p className="mt-2 text-sm text-muted-foreground">{t("play.waitingOthers")}</p>
           </div>
-          <div className="mt-10">
+          <div className="mt-8">
             <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={110} />
           </div>
         </div>
@@ -334,8 +353,8 @@ function Play() {
                   key={i}
                   index={i}
                   size="player"
-                  disabled={sending || hidden}
-                  state={hidden ? "wrong" : "idle"}
+                  disabled={sending || hidden || optimisticChoice !== null}
+                  state={hidden ? "wrong" : optimisticChoice === i ? "chosen" : "idle"}
                   onClick={() => void submit(i)}
                 >
                   {isBoolean ? (i === 0 ? t("play.true") : t("play.false")) : undefined}
@@ -344,37 +363,72 @@ function Play() {
             })}
           </div>
 
+          {/* Power-ups Section - High-Visibility Glowing Liquid Glass */}
+          <div className="pb-3 pt-1">
+            <div className="flex items-center justify-between px-1 mb-2">
+              <span className="flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-sun">
+                <span className="size-2 rounded-full bg-sun animate-ping" />
+                ✨ {t("play.powerups")}
+              </span>
+              {armedDouble && !me.used_double ? (
+                <span className="rounded-full border border-sun bg-sun/20 px-2.5 py-0.5 text-[11px] font-extrabold text-sun animate-pulse">
+                  ⚡ {t("play.doubleArmed")}
+                </span>
+              ) : null}
+            </div>
 
-          <div className="pb-2">
-            <p className="mb-2 text-center text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground">
-              {t("play.powerups")}
-            </p>
-            <div className="flex gap-3">
+            <div className="grid grid-cols-2 gap-3">
+              {/* Double Points Button */}
               <button
                 type="button"
                 disabled={me.used_double}
                 onClick={() => setArmedDouble((v) => !v)}
                 className={cn(
-                  "press flex-1 rounded-2xl border px-4 py-3 font-display text-lg disabled:opacity-40",
-                  armedDouble ? "border-sun bg-sun/20 text-sun" : "border-border bg-surface-gradient",
+                  "press relative flex flex-col items-center justify-center gap-1 overflow-hidden rounded-2xl border p-3.5 transition-all shadow-lg",
+                  armedDouble
+                    ? "border-sun bg-gradient-to-b from-sun/30 via-sun/15 to-background text-sun ring-2 ring-sun/80 shadow-glow animate-pulse-hard"
+                    : me.used_double
+                    ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
+                    : "liquid-glass border-sun/60 bg-gradient-to-b from-sun/10 to-background text-foreground hover:border-sun hover:shadow-glow",
                 )}
               >
-                {me.used_double ? t("play.doubleUsed") : `2× ${t("play.double")}`}
+                {/* Glossy Reflection */}
+                <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
+                <div className="flex items-center gap-1.5 font-display text-base font-extrabold sm:text-lg">
+                  <span className="text-xl">⚡</span>
+                  <span>{me.used_double ? t("play.doubleUsed") : `2× ${t("play.double")}`}</span>
+                </div>
+                <span className="text-[10px] font-semibold text-muted-foreground">
+                  {me.used_double ? "تم الاستخدام" : "مضاعفة نقاط هذا السؤال"}
+                </span>
               </button>
+
+              {/* 50:50 Button */}
               <button
                 type="button"
                 disabled={me.used_fifty || isBoolean}
                 onClick={() => void useFifty()}
                 title={isBoolean ? t("play.fiftyUnavailable") : undefined}
-                className="press flex-1 rounded-2xl border border-border bg-surface-gradient px-4 py-3 font-display text-lg disabled:opacity-40"
+                className={cn(
+                  "press relative flex flex-col items-center justify-center gap-1 overflow-hidden rounded-2xl border p-3.5 transition-all shadow-lg",
+                  me.used_fifty
+                    ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
+                    : isBoolean
+                    ? "border-border/30 bg-background/20 opacity-30 text-muted-foreground"
+                    : "liquid-glass border-electric/60 bg-gradient-to-b from-electric/10 to-background text-foreground hover:border-electric hover:shadow-glow",
+                )}
               >
-                {me.used_fifty ? t("play.fiftyUsed") : t("play.fifty")}
-
+                {/* Glossy Reflection */}
+                <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
+                <div className="flex items-center gap-1.5 font-display text-base font-extrabold sm:text-lg">
+                  <span className="text-xl">🎯</span>
+                  <span>{me.used_fifty ? t("play.fiftyUsed") : t("play.fifty")}</span>
+                </div>
+                <span className="text-[10px] font-semibold text-muted-foreground">
+                  {me.used_fifty ? "تم الاستخدام" : "حذف إجابتين خاطئتين"}
+                </span>
               </button>
             </div>
-            {armedDouble && !me.used_double ? (
-              <p className="mt-2 text-center text-sm font-semibold text-sun">{t("play.doubleArmed")}</p>
-            ) : null}
           </div>
         </>
       )}
