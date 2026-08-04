@@ -25,11 +25,13 @@ export const Route = createFileRoute("/browse/")({
 type PublicQuiz = Quiz & {
   category: string | null;
   language: string | null;
-  quiz_difficulty?: "beginner" | "medium" | "expert" | null;
+  quiz_difficulty?: "standard" | "challenge" | null;
+  archived?: boolean;
+  launch_enabled?: boolean;
   question_count: number;
 };
 
-const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.map((q) => ({
+const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter((q) => !q.archived && q.launch_enabled !== false).map((q) => ({
   id: q.id,
   title: q.title,
   user_id: q.user_id,
@@ -37,7 +39,9 @@ const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.map((q) => ({
   is_public: true,
   category: q.category,
   language: q.language,
-  quiz_difficulty: q.quiz_difficulty || "medium",
+  quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
+  archived: false,
+  launch_enabled: true,
   question_count: q.questions.length,
 }));
 
@@ -211,9 +215,8 @@ function BrowsePage() {
               </span>
               {[
                 { id: "all", label: "جميع المستويات" },
-                { id: "beginner", label: "🟢 " + t("aiGen.easy") },
-                { id: "medium", label: "🟡 " + t("aiGen.medium") },
-                { id: "expert", label: "🔴 " + t("aiGen.hard") },
+                { id: "standard", label: "🟡 " + t("aiGen.standard") },
+                { id: "challenge", label: "🔴 " + t("aiGen.challenge") },
               ].map((diff) => (
                 <button
                   key={diff.id}
@@ -283,7 +286,7 @@ function BrowsePage() {
                           {quiz.category || "عام"}
                         </span>
                         <span className="rounded-full border border-border bg-background/50 px-2.5 py-0.5 text-xs font-semibold text-muted-foreground">
-                          {quiz.quiz_difficulty === "beginner" ? "🟢 مبتدئ" : quiz.quiz_difficulty === "expert" ? "🔴 خبير" : "🟡 متوسط"}
+                          {quiz.quiz_difficulty === "challenge" ? "🔴 " + t("aiGen.challenge") : "🟡 " + t("aiGen.standard")}
                         </span>
                       </div>
                       <span className="text-sm font-semibold">

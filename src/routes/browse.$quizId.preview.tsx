@@ -264,7 +264,7 @@ function QuizPreviewPage() {
                     <div className="flex items-center gap-2 text-xs">
                       {q.difficulty && (
                         <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
-                          {q.difficulty === "easy" ? t("aiGen.easy") : q.difficulty === "hard" ? t("aiGen.hard") : t("aiGen.medium")}
+                          {q.difficulty === "challenge" || q.difficulty === "expert" || q.difficulty === "hard" ? t("aiGen.challenge") : t("aiGen.standard")}
                         </span>
                       )}
                       <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">

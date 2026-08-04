@@ -1,0 +1,32 @@
+{
+  "title": "Production Cleanup Launch Readiness Report",
+  "timestamp": "2026-08-04T14:24:46.026Z",
+  "total_questions_in_db": 5000,
+  "archived_question_count": 1229,
+  "active_launch_enabled_questions": 3771,
+  "archived_quiz_count": 62,
+  "active_standard_quizzes": 114,
+  "active_challenge_quizzes": 76,
+  "total_active_quizzes": 190,
+  "removed_ui_components": [
+    "Beginner Filter Tabs from Browse Page",
+    "Beginner Difficulty Badges from Quiz Cards",
+    "Beginner Option Selectors from AI Generator",
+    "Beginner Translation Keys from i18n Dictionaries"
+  ],
+  "updated_routes": [
+    "src/routes/browse.index.tsx",
+    "src/routes/browse.$quizId.preview.tsx"
+  ],
+  "updated_translations": [
+    "Medium -> Standard (متوسط -> قياسي)",
+    "Expert / Hard -> Challenge (خبير / صعب -> التحدي)",
+    "Beginner / Easy / مبتدئ -> Removed from active player UI"
+  ],
+  "validation": {
+    "status": "PASSED",
+    "no_beginner_in_active_ui": true,
+    "archived_questions_preserved": true,
+    "no_active_quiz_contains_archived_questions": true
+  }
+}
