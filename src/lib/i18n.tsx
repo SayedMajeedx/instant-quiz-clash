@@ -579,6 +579,13 @@ const ar: Dict = {
   "host.hostTabNote": "أبقِ هذه الشاشة مفتوحة — فهي التي تدير اللعبة.",
   "host.exitGame": "خروج من اللعبة",
   "host.exitConfirm": "هل أنت تأكد من الخروج وإغلاق اللعبة؟",
+  "cast.start": "بث إلى التلفاز",
+  "cast.stop": "إيقاف البث",
+  "cast.castingTo": "يتم البث إلى {name}",
+  "cast.device": "التلفاز",
+  "cast.airplayHint": "آيفون/ماك؟ اسحب للأسفل ← نسخ الشاشة",
+  "display.fullscreen": "ملء الشاشة",
+  "display.exitFullscreen": "إنهاء ملء الشاشة",
 
   "play.exitGame": "مغادرة اللعبة",
   "play.exitConfirm": "هل أنت تأكد من مغادرة هذه اللعبة؟",
