@@ -139,8 +139,13 @@ export function phaseAt(room: Room | null, questions: Question[], now: number): 
 
   const index = Math.min(Math.max(0, room.cursor_index), questions.length - 1);
   const question = questions[index]!;
-  const startedAt = new Date(room.phase_started_at ?? room.started_at).getTime();
-  const elapsed = Math.max(0, now - startedAt);
+
+  const startedAt = new Date(room.started_at).getTime();
+  const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : startedAt;
+
+  // If paused, freeze clock at phaseStartedAt timestamp so elapsed time stops advancing
+  const effectiveNow = room.is_paused ? phaseStartedAt : now;
+  const elapsed = Math.max(0, effectiveNow - startedAt);
 
   const revealMs = room.reveal_ms ?? REVEAL_MS;
   const boardMs = room.board_ms ?? BOARD_MS;
@@ -154,7 +159,6 @@ export function phaseAt(room: Room | null, questions: Question[], now: number): 
   const qMs = Math.max(1, question.time_limit_seconds) * 1000;
   return { kind: "question", index, msLeft: Math.max(0, qMs - elapsed), question };
 }
-
 
 export type Standing = {
   player: Player;

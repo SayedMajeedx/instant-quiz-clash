@@ -5,14 +5,14 @@ import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
-import { DisplayControls, ExitFullscreenButton, requestFullscreen } from "@/components/quiz/DisplayControls";
+import { DisplayControls, ExitFullscreenButton } from "@/components/quiz/DisplayControls";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
 import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { optionCount, standings, teamStandings, TEAM_COLORS, type CursorPhase } from "@/lib/quizclash";
+import { optionCount, standings, teamStandings, TEAM_COLORS, type CursorPhase, type Room } from "@/lib/quizclash";
 import { getSyncedNow } from "@/lib/server-time";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
@@ -76,8 +76,42 @@ function HostRoom() {
   const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join?code=${code.toUpperCase()}` : "";
 
   const roomId = room?.id ?? null;
-  const cursorIndex = room?.cursor_index ?? 0;
-  const cursorPhase = room?.cursor_phase ?? "question";
+
+  async function patchRoom(patch: Partial<Room>) {
+    if (!room) return;
+    await supabase.from("rooms").update(patch as never).eq("id", room.id);
+    await state.refresh();
+  }
+
+  async function handleTogglePause() {
+    if (!room) return;
+    const now = getSyncedNow();
+    const isCurrentlyPaused = !!room.is_paused;
+
+    const startedAt = new Date(room.started_at ?? now).getTime();
+    const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : startedAt;
+    const elapsed = isCurrentlyPaused
+      ? Math.max(0, phaseStartedAt - startedAt)
+      : Math.max(0, now - startedAt);
+
+    if (isCurrentlyPaused) {
+      const newStartedAt = new Date(now - elapsed).toISOString();
+      const newPhaseStartedAt = new Date(now).toISOString();
+      await patchRoom({
+        is_paused: false,
+        started_at: newStartedAt,
+        phase_started_at: newPhaseStartedAt,
+      });
+    } else {
+      const newStartedAt = new Date(now - elapsed).toISOString();
+      const newPhaseStartedAt = new Date(now).toISOString();
+      await patchRoom({
+        is_paused: true,
+        started_at: newStartedAt,
+        phase_started_at: newPhaseStartedAt,
+      });
+    }
+  }
 
   async function exitGame() {
     if (!room) return;
@@ -139,7 +173,7 @@ function HostRoom() {
   // Auto pacing: the question clock always ends the question (early when everyone
   // has answered); reveal and scoreboard only roll on when the host chose "auto".
   useEffect(() => {
-    if (!roomStatus || roomStatus !== "active") return;
+    if (!roomStatus || roomStatus !== "active" || room?.is_paused) return;
     if (phaseKind !== "question" && phaseKind !== "reveal" && phaseKind !== "leaderboard") return;
     const auto = advanceMode !== "manual";
     const shouldAdvance = phaseKind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
@@ -167,7 +201,7 @@ function HostRoom() {
         void advance(phaseIndex, from);
       }, delay);
     }
-  }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance]);
+  }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance, room?.is_paused]);
 
   const rows = useMemo(() => {
     const upTo =
@@ -179,64 +213,38 @@ function HostRoom() {
 
   const teams = useMemo(() => teamStandings(rows), [rows]);
 
-  async function patchRoom(patch: Record<string, unknown>) {
-    if (!room) return;
-    await supabase.from("rooms").update(patch as never).eq("id", room.id);
-    await state.refresh();
-  }
-
-  async function cycleTeam(playerId: string, current: number | null) {
-    if (!room || room.team_count < 2) return;
-    const next = current === null ? 0 : current + 1 >= room.team_count ? null : current + 1;
-    setAssigning(playerId);
-    await supabase.rpc("set_player_team", { p_player_id: playerId, p_team_index: next as unknown as number });
-    await state.refresh();
+  async function cycleTeam(pid: string, current: number | null) {
+    if (!room || room.team_count <= 1) return;
+    setAssigning(pid);
+    const next = current === null ? 0 : (current + 1) % room.team_count;
+    await supabase.from("players").update({ team_index: next }).eq("id", pid);
+    await refresh();
     setAssigning(null);
   }
 
   async function shuffleTeams() {
-    if (!room || room.team_count < 2) return;
-    const shuffled = [...players].sort(() => Math.random() - 0.5);
+    if (!room || room.team_count <= 1 || players.length === 0) return;
+    const list = [...players].sort(() => Math.random() - 0.5);
     await Promise.all(
-      shuffled.map((p, i) =>
-        supabase.rpc("set_player_team", { p_player_id: p.id, p_team_index: i % room.team_count }),
-      ),
+      list.map((p, i) => supabase.from("players").update({ team_index: i % room.team_count }).eq("id", p.id)),
     );
-    await state.refresh();
-  }
-
-  async function start() {
-    if (!room) return;
-    // Must fire synchronously from the click gesture, before any await.
-    requestFullscreen();
-    const startsAt = new Date(getSyncedNow() + 3000).toISOString();
-    await supabase
-      .from("rooms")
-      .update({
-        status: "active",
-        started_at: startsAt,
-        cursor_index: 0,
-        cursor_phase: "question",
-        phase_started_at: startsAt,
-      } as never)
-      .eq("id", room.id);
-    await state.refresh();
+    await refresh();
   }
 
   if (state.loading) {
     return (
-      <main className="grid min-h-screen place-items-center">
+      <main className="relative grid min-h-screen place-items-center">
         <AnimatedBg />
-        <p className="text-muted-foreground">{t("host.loading")}</p>
+        <p className="font-display text-2xl animate-pulse">{t("host.loadingRoom")}</p>
       </main>
     );
   }
 
   if (state.missing || !room) {
     return (
-      <main className="grid min-h-screen place-items-center px-5 text-center">
+      <main className="relative grid min-h-screen place-items-center">
         <AnimatedBg />
-        <div>
+        <div className="text-center">
           <h1 className="font-display text-4xl">{t("host.notFound")}</h1>
           <Link to="/host" className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky">
             {t("host.createNew")}
@@ -311,35 +319,29 @@ function HostRoom() {
                 </button>
               ))}
             </div>
-            <p className="mt-2 text-xs text-muted-foreground">
-              {room.advance_mode === "manual" ? t("host.pacingManualNote") : t("host.pacingAutoNote")} {t("host.skipNote")}
-            </p>
 
-            {/* Customizable Delay Between Questions */}
-            <div className="mt-5 flex flex-wrap items-center gap-2">
-              <span className="text-sm font-semibold text-muted-foreground">⏱️ الوقت بين الأسئلة:</span>
-              {[1, 2, 3, 5, 8, 10].map((sec) => {
-                const selected = interQuestionSec === sec;
-                return (
-                  <button
-                    key={sec}
-                    type="button"
-                    onClick={() => setInterQuestionSec(sec)}
-                    className={cn(
-                      "press rounded-full border px-3 py-1.5 text-xs font-semibold transition-all",
-                      selected
-                        ? "border-primary bg-primary/20 text-foreground ring-2 ring-primary font-bold shadow-md"
-                        : "border-border bg-background/30 text-muted-foreground hover:text-foreground",
-                    )}
-                  >
-                    {sec === 3 ? "3 ثوانٍ (افتراضي)" : `${sec} ثوانٍ`}
-                  </button>
-                );
-              })}
+            {/* Inter-question screen delay timer setting */}
+            <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-border/40 pt-3">
+              <span className="text-sm font-semibold text-muted-foreground">⏱️ مدة شاشة النتيجة بين الأسئلة:</span>
+              {[3, 5, 8, 12].map((sec) => (
+                <button
+                  key={sec}
+                  type="button"
+                  onClick={() => setInterQuestionSec(sec)}
+                  className={cn(
+                    "press rounded-full border px-3 py-1 text-xs font-semibold transition-all",
+                    interQuestionSec === sec
+                      ? "border-primary bg-primary/20 text-primary ring-2 ring-primary"
+                      : "border-border text-muted-foreground hover:border-primary/50",
+                  )}
+                >
+                  {sec}ث
+                </button>
+              ))}
             </div>
 
-            <div className="mt-5 flex flex-wrap items-center gap-2">
-              <span className="text-sm font-semibold text-muted-foreground">{t("host.teamMode")}</span>
+            <div className="mt-4 flex flex-wrap items-center gap-2">
+              <span className="text-sm font-semibold text-muted-foreground">{t("host.teams")}</span>
               {[0, 2, 3, 4].map((n) => (
                 <button
                   key={n}
@@ -431,51 +433,64 @@ function HostRoom() {
               })}
             </div>
 
-            {startsIn !== null && startsIn > 0 && room.status === "active" ? (
-              <p className="mt-8 text-center font-display text-4xl text-sun">{t("host.startingIn", { n: startsIn })}</p>
-            ) : (
-              <button
-                type="button"
-                disabled={players.length === 0 || questions.length === 0}
-                onClick={() => void start()}
-                className="press mt-8 w-full rounded-3xl bg-gradient-hero px-6 py-5 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-40"
-              >
-                {t("host.start")}
-              </button>
-            )}
-            <p className="mt-3 text-center text-xs text-muted-foreground">{t("host.hostTabNote")}</p>
+            <button
+              type="button"
+              disabled={players.length === 0 || startsIn !== null}
+              onClick={() => void advance(-1, "board")}
+              className="press mt-6 w-full rounded-3xl bg-gradient-hero px-6 py-4 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
+            >
+              {startsIn !== null ? t("host.startsIn", { n: startsIn }) : t("host.start")}
+            </button>
           </section>
-          <ExitFullscreenButton />
         </div>
       </main>
     );
   }
 
-  const question = phase.question;
-  const choices = optionCount(question);
-  const totalMs = Math.max(1, question.time_limit_seconds) * 1000;
-  const questionAnswers = answers.filter((a) => a.question_id === question.id);
-  const counts = Array.from({ length: choices }, (_, i) => questionAnswers.filter((a) => a.choice_index === i).length);
-  const manual = room.advance_mode === "manual";
-  const isLast = phase.index >= questions.length - 1;
-
   if (phase.kind === "leaderboard") {
+    const manual = room.advance_mode === "manual";
     const currentQ = questions[phase.index];
     const explanation = currentQ?.explanation;
-
     return (
-      <main className="relative min-h-screen">
+      <main className="relative min-h-screen px-5 py-8 pb-20">
         <AnimatedBg dense />
-        <div className="mx-auto max-w-4xl px-5 py-12">
-          <div className="mb-4 flex justify-end">
-            <DisplayControls />
+        <ReconnectingBanner status={state.connectionStatus} />
+        <DebugPanel state={state} />
+
+        <div className="mx-auto max-w-4xl">
+          <div className="flex items-center justify-between gap-3">
+            <span className="rounded-full border border-border bg-surface-gradient px-4 py-1.5 font-display text-sm">
+              {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
+            </span>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => void handleTogglePause()}
+                className={cn(
+                  "press rounded-full border px-3.5 py-1.5 text-xs font-bold transition-all shadow-md flex items-center gap-1",
+                  room.is_paused
+                    ? "border-sun bg-sun/20 text-sun ring-2 ring-sun animate-pulse"
+                    : "border-border bg-background/50 text-foreground hover:bg-background/80",
+                )}
+              >
+                {room.is_paused ? "▶️ استئناف" : "⏸️ توقف مؤقت"}
+              </button>
+              <DisplayControls />
+              <button
+                type="button"
+                onClick={() => setShowExitConfirm(true)}
+                className="press rounded-full border border-destructive/40 bg-destructive/10 px-3.5 py-1.5 text-xs font-semibold text-destructive hover:bg-destructive/20"
+              >
+                🚪 {t("host.exitGame")}
+              </button>
+            </div>
           </div>
-          <p className="text-center text-xs sm:text-sm font-bold uppercase tracking-[0.3em] text-sun">{t("host.scoreboard")}</p>
-          <h1 className="mt-2 text-center font-display text-3xl sm:text-5xl md:text-6xl">
+
+          <h1 className="mt-4 text-center font-display text-3xl md:text-5xl">
             {t("host.afterQuestion", { n: phase.index + 1 })}
           </h1>
 
-          {/* Premium Animated Explanation Showcase Card */}
+          {/* Premium Animated Explanation Showcase Card — Displayed Exclusively Here between questions */}
           {explanation ? (
             <div className="mt-6 overflow-hidden rounded-3xl border border-sun/50 bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-primary/10 p-6 md:p-8 text-center shadow-glow backdrop-blur-xl animate-pop relative">
               <div className="absolute -right-12 -top-12 size-36 rounded-full bg-sun/10 blur-2xl pointer-events-none" />
@@ -486,7 +501,7 @@ function HostRoom() {
                 <span>هل تعلم؟ / توضيح الإجابة</span>
               </div>
 
-              {currentQ.question_text ? (
+              {currentQ?.question_text ? (
                 <p className="mt-3 text-xs sm:text-sm font-medium text-muted-foreground line-clamp-1">
                   سؤال: «{currentQ.question_text}»
                 </p>
@@ -542,18 +557,33 @@ function HostRoom() {
     );
   }
 
-function getQuestionFontSize(text: string, hasImage: boolean): string {
-  const len = text ? text.length : 0;
-  if (hasImage) {
-    if (len > 120) return "text-base sm:text-lg md:text-xl lg:text-2xl";
-    if (len > 60) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
-    return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
+  function getQuestionFontSize(text: string, hasImage: boolean): string {
+    const len = text ? text.length : 0;
+    if (hasImage) {
+      if (len > 120) return "text-base sm:text-lg md:text-xl lg:text-2xl";
+      if (len > 60) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
+      return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
+    }
+    if (len > 140) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
+    if (len > 80) return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
+    if (len > 40) return "text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
+    return "text-3xl sm:text-4xl md:text-5xl lg:text-6xl";
   }
-  if (len > 140) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
-  if (len > 80) return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
-  if (len > 40) return "text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
-  return "text-3xl sm:text-4xl md:text-5xl lg:text-6xl";
-}
+
+  const question = phase.question;
+  if (!question) return null;
+  const questionAnswers = answers.filter((a) => a.question_id === question.id);
+  const choices = optionCount(question);
+  const isLast = phase.index === questions.length - 1;
+  const manual = room.advance_mode === "manual";
+  const totalMs = (question.time_limit_seconds || 20) * 1000;
+
+  const counts = [0, 0, 0, 0];
+  for (const a of questionAnswers) {
+    if (a.choice_index >= 0 && a.choice_index < choices) {
+      counts[a.choice_index] = (counts[a.choice_index] ?? 0) + 1;
+    }
+  }
 
   const revealing = phase.kind === "reveal";
 
@@ -568,7 +598,7 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
           <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
           <button
             type="button"
-            onClick={() => void patchRoom({ is_paused: !room.is_paused })}
+            onClick={() => void handleTogglePause()}
             className={cn(
               "press rounded-full border px-3 py-1 text-xs font-bold transition-all shadow-md flex items-center gap-1",
               room.is_paused
@@ -612,17 +642,6 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
           {revealing ? (
             <div className="flex-1 flex flex-col items-center">
               <p className="font-display text-2xl sm:text-3xl text-lime">{t("host.correctAnswer")}</p>
-              {question.explanation ? (
-                <div className="mt-3 w-full max-w-2xl overflow-hidden rounded-3xl border border-sun/50 bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-primary/10 p-4 sm:p-5 text-center shadow-glow backdrop-blur-xl animate-pop relative">
-                  <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-sun/40 bg-sun/20 px-3.5 py-1 text-xs sm:text-sm font-bold text-sun shadow-sm">
-                    <span className="animate-pulse">💡</span>
-                    <span>هل تعلم؟ / توضيح الإجابة</span>
-                  </div>
-                  <p className="mt-2.5 font-display text-base sm:text-xl md:text-2xl leading-relaxed text-foreground/95">
-                    {question.explanation}
-                  </p>
-                </div>
-              ) : null}
               {manual ? (
                 <button
                   type="button"
@@ -680,42 +699,22 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
             <div className="mt-6 flex gap-3">
               <button
                 type="button"
-                onClick={() => setShowExitConfirm(false)}
-                className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 font-display text-lg"
+                onClick={() => void exitGame()}
+                className="press flex-1 rounded-2xl bg-destructive py-3 font-display text-destructive-foreground shadow-md"
               >
-                {t("import.cancel")}
+                {t("host.exitBtn")}
               </button>
               <button
                 type="button"
-                onClick={() => void exitGame()}
-                className="press flex-1 rounded-2xl bg-destructive py-3 font-display text-lg text-destructive-foreground shadow-chunky"
+                onClick={() => setShowExitConfirm(false)}
+                className="press flex-1 rounded-2xl border border-border bg-background py-3 font-display"
               >
-                {t("host.exitGame")}
+                {t("host.cancel")}
               </button>
             </div>
           </div>
         </div>
       ) : null}
-      {room.is_paused ? (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/90 p-6 backdrop-blur-md animate-fade-in text-center">
-          <div className="flex size-24 items-center justify-center rounded-3xl border border-sun/50 bg-sun/10 text-5xl shadow-glow animate-pulse">
-            ⏸️
-          </div>
-          <h2 className="mt-6 font-display text-4xl text-gradient">اللعبة متوقفة مؤقتاً</h2>
-          <p className="mt-2 text-center text-muted-foreground max-w-md">تم إيقاف اللعبة مؤقتاً بواسطة المضيف. انقر على «استئناف» للعودة لمواصلة اللعب.</p>
-          <button
-            type="button"
-            onClick={() => void patchRoom({ is_paused: false })}
-            className="press mt-6 rounded-2xl bg-gradient-hero px-8 py-3.5 font-display text-xl text-primary-foreground shadow-chunky"
-          >
-            ▶️ استئناف اللعبة الآن
-          </button>
-        </div>
-      ) : null}
-
-      <ReconnectingBanner status={state.connectionStatus} />
-      <ExitFullscreenButton />
-      <DebugPanel state={state} />
     </main>
   );
 }
