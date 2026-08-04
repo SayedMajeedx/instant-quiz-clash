@@ -18,7 +18,7 @@ export const Route = createFileRoute("/browse/$category")({
     return {
       meta: [
         { title: `${categoryName} — QuizClash` },
-        { name: "description", content: `تصفح كويزات واختبارات ${categoryName} الجاهزة للإطلاق المباشر.` },
+        { name: "description", content: `استكشف أفضل كويزات وقسم ${categoryName} المجهزة للعب المباشر.` },
         { property: "og:title", content: `${categoryName} — QuizClash` },
       ],
     };
@@ -140,7 +140,7 @@ function CategoryDetailPage() {
             className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm flex items-center gap-2 hover:border-primary/50"
           >
             <span>←</span>
-            <span>العودة للأقسام</span>
+            <span>العودة إلى قائمة الأقسام</span>
           </Link>
           <LanguageToggle />
         </header>
@@ -153,14 +153,14 @@ function CategoryDetailPage() {
               <div>
                 <h1 className="font-display text-3xl sm:text-5xl text-gradient">{category}</h1>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  استكشف كويزات قسم {category} المعالجة والمراجعة للإطلاق
+                  استكشف أفضل الكويزات والأسئلة المتنوعة في قسم {category} والعبها مباشرة مع أصدقائك!
                 </p>
               </div>
             </div>
 
             {/* Total Count Badge */}
             <div className="rounded-2xl border border-sun/40 bg-sun/10 px-4 py-2 font-display text-sm sm:text-base text-sun shadow-sm">
-              عدد الاختبارات في هذا القسم: <span className="font-extrabold text-lg tabular-nums">{quizzes.length}</span>
+              إجمالي الكويزات: <span className="font-extrabold text-lg tabular-nums">{quizzes.length} كويز</span>
             </div>
           </div>
         </div>
@@ -174,9 +174,9 @@ function CategoryDetailPage() {
               className="press font-display text-base flex items-center gap-2 text-foreground"
             >
               <span>⚙️</span>
-              <span>الفلاتر والفرز</span>
+              <span>تصفية حسب المستوى</span>
               <span className="text-xs text-muted-foreground">
-                ({selectedDiff === "all" ? "عرض الكل" : "فلتر مخصص"})
+                ({selectedDiff === "all" ? "جميع المستويات" : "تحديد مخصص"})
               </span>
             </button>
 
@@ -226,7 +226,7 @@ function CategoryDetailPage() {
           <div className="mt-12 text-center text-muted-foreground">{t("editor.loading")}</div>
         ) : filteredQuizzes.length === 0 ? (
           <div className="mt-12 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
-            <p className="font-display text-2xl">لا توجد اختبارات تطابق الفلاتر المحددة</p>
+            <p className="font-display text-2xl">لا توجد كويزات تطابق هذا المستوى حالياً</p>
           </div>
         ) : (
           <>
@@ -239,7 +239,7 @@ function CategoryDetailPage() {
             {/* Pagination / Load More */}
             <div className="mt-10 flex flex-col items-center justify-center gap-3">
               <p className="text-xs font-semibold text-muted-foreground">
-                عرض {visibleQuizzes.length} من أصل {filteredQuizzes.length} اختبار
+                عرض {visibleQuizzes.length} من أصل {filteredQuizzes.length} كويز
               </p>
               {hasMore ? (
                 <button
@@ -247,7 +247,7 @@ function CategoryDetailPage() {
                   onClick={() => setVisibleCount((v) => v + BATCH_SIZE)}
                   className="press rounded-2xl bg-gradient-hero px-8 py-3.5 font-display text-lg text-primary-foreground shadow-chunky hover:scale-[1.02]"
                 >
-                  عرض المزيد (+12) ⬇️
+                  عرض المزيد (+12 كويز) ⬇️
                 </button>
               ) : null}
             </div>

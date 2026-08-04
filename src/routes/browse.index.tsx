@@ -15,9 +15,9 @@ import {
 export const Route = createFileRoute("/browse/")({
   head: () => ({
     meta: [
-      { title: "تصفح مكتبة الكويزات — QuizClash" },
-      { name: "description", content: "تصفح مئات الكويزات الجاهزة للإطلاق المباشر حسب الأقسام والتصنيفات." },
-      { property: "og:title", content: "تصفح مكتبة الكويزات — QuizClash" },
+      { title: "مكتبة الكويزات الجاهزة — QuizClash" },
+      { name: "description", content: "تصفح مئات الكويزات الجاهزة للعب المباشر حسب الأقسام والتصنيفات." },
+      { property: "og:title", content: "مكتبة الكويزات الجاهزة — QuizClash" },
       { property: "og:description", content: "اختر قسمك المفضل واستضف لعبة مسابقات حية في ثوانٍ." },
     ],
   }),
@@ -141,9 +141,9 @@ function BrowseLandingPage() {
             <Link to="/" className="font-display text-3xl">
               {t("brand.quiz")}<span className="text-gradient">{t("brand.clash")}</span>
             </Link>
-            <h1 className="mt-2 font-display text-3xl sm:text-5xl text-gradient">تصفح مكتبة الاختبارات</h1>
+            <h1 className="mt-2 font-display text-3xl sm:text-5xl text-gradient">مكتبة الكويزات الجاهزة</h1>
             <p className="mt-1 text-sm text-muted-foreground">
-              اختر قسمك المفضل أو ابحث مباشرة للوصول لأفضل الكويزات
+              استكشف مئات الكويزات الممتعة والمجهزة للعب المباشر مع أصدقائك وعائلتك!
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -185,14 +185,14 @@ function BrowseLandingPage() {
             <div className="flex items-center justify-between border-b border-border/40 pb-4">
               <h2 className="font-display text-2xl">
                 نتائج البحث عن «{searchQuery}»{" "}
-                <span className="text-sm font-normal text-muted-foreground">({searchResults.length} اختبار)</span>
+                <span className="text-sm font-normal text-muted-foreground">({searchResults.length} كويز)</span>
               </h2>
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
                 className="press text-sm text-primary hover:underline font-semibold"
               >
-                العودة للتصفح حسب الأقسام
+                العودة إلى الأقسام
               </button>
             </div>
 
@@ -212,7 +212,7 @@ function BrowseLandingPage() {
                 {/* Pagination */}
                 <div className="mt-10 flex flex-col items-center justify-center gap-3">
                   <p className="text-xs font-semibold text-muted-foreground">
-                    عرض {visibleSearchResults.length} من أصل {searchResults.length} اختبار
+                    عرض {visibleSearchResults.length} من أصل {searchResults.length} كويز
                   </p>
                   {hasMoreSearch ? (
                     <button
@@ -220,7 +220,7 @@ function BrowseLandingPage() {
                       onClick={() => setSearchVisibleCount((v) => v + BATCH_SIZE)}
                       className="press rounded-2xl bg-gradient-hero px-8 py-3.5 font-display text-lg text-primary-foreground shadow-chunky hover:scale-[1.02]"
                     >
-                      عرض المزيد (+12) ⬇️
+                      عرض المزيد (+12 كويز) ⬇️
                     </button>
                   ) : null}
                 </div>
@@ -238,7 +238,7 @@ function BrowseLandingPage() {
                   <span>الأحدث والأكثر شهرة</span>
                 </h2>
                 <span className="text-xs font-bold text-sun border border-sun/40 bg-sun/10 px-3 py-1 rounded-full">
-                  جاهزة للإطلاق فوراً
+                  جاهزة للعب فوراً
                 </span>
               </div>
 
@@ -249,7 +249,7 @@ function BrowseLandingPage() {
               </div>
             </section>
 
-            {/* ROW 2: Category Grid (Part 1 - Item 1) */}
+            {/* ROW 2: Category Grid */}
             <section className="mt-14">
               <div className="flex items-center justify-between mb-6 border-b border-border/40 pb-4">
                 <div>
@@ -258,7 +258,7 @@ function BrowseLandingPage() {
                     <span>الأقسام الرئيسية</span>
                   </h2>
                   <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
-                    اختر القسم للوصول لكافة كويزاته المفلترة بسهولة
+                    اختر القسم المناسب للوصول إلى كافة الكويزات التابعة له
                   </p>
                 </div>
                 <span className="text-xs font-bold text-muted-foreground border border-border bg-background/50 px-3 py-1.5 rounded-full">
@@ -286,7 +286,7 @@ function BrowseLandingPage() {
                             {cat.name}
                           </h3>
                           <p className="mt-1 text-xs font-bold text-sun">
-                            {cat.count} {cat.count === 1 ? "اختبار" : "اختباراً"}
+                            {cat.count} {cat.count === 1 ? "كويز" : "كويزات"}
                           </p>
                         </div>
                       </div>
