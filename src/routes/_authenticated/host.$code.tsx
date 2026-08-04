@@ -83,7 +83,9 @@ function HostRoom() {
   }, [room]);
 
   const questionAnswerCount =
-    phase.kind === "question" ? answers.filter((a) => a.question_id === phase.question.id).length : 0;
+    phase.kind === "question"
+      ? new Set(answers.filter((a) => a.question_id === phase.question.id).map((a) => a.player_id)).size
+      : 0;
   const everyoneAnswered =
     phase.kind === "question" && players.length > 0 && questionAnswerCount >= players.length;
 
@@ -98,6 +100,8 @@ function HostRoom() {
   const advanceMode = room?.advance_mode;
   const roomStatus = room?.status;
 
+  const advanceTimerRef = useRef<number | null>(null);
+
   // Auto pacing: the question clock always ends the question (early when everyone
   // has answered); reveal and scoreboard only roll on when the host chose "auto".
   useEffect(() => {
@@ -105,11 +109,30 @@ function HostRoom() {
     if (phaseKind !== "question" && phaseKind !== "reveal" && phaseKind !== "leaderboard") return;
     const auto = advanceMode !== "manual";
     const shouldAdvance = phaseKind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
-    if (!shouldAdvance) return;
+
+    if (!shouldAdvance) {
+      if (advanceTimerRef.current !== null) {
+        window.clearTimeout(advanceTimerRef.current);
+        advanceTimerRef.current = null;
+      }
+      return;
+    }
+
     const from: CursorPhase = phaseKind === "question" ? "question" : phaseKind === "reveal" ? "reveal" : "board";
     const delay = phaseKind === "question" && everyoneAnswered && !timeUp ? 700 : 0;
-    const timer = window.setTimeout(() => void advance(phaseIndex, from), delay);
-    return () => window.clearTimeout(timer);
+
+    if (delay === 0) {
+      if (advanceTimerRef.current !== null) {
+        window.clearTimeout(advanceTimerRef.current);
+        advanceTimerRef.current = null;
+      }
+      void advance(phaseIndex, from);
+    } else if (advanceTimerRef.current === null) {
+      advanceTimerRef.current = window.setTimeout(() => {
+        advanceTimerRef.current = null;
+        void advance(phaseIndex, from);
+      }, delay);
+    }
   }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance]);
 
   const rows = useMemo(() => {

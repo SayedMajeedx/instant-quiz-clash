@@ -1,7 +1,7 @@
 import type { ConnectionStatus } from "@/hooks/useRoomGame";
 
 export function ReconnectingBanner({ status }: { status: ConnectionStatus }) {
-  if (status === "connected") return null;
+  if (status === "connected" || status === "connecting") return null;
 
   const isOffline = status === "offline";
 

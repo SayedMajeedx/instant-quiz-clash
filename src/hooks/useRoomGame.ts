@@ -196,30 +196,35 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
 
       const channel = supabase.channel(`room-${room.id}`);
 
+      // Host monitors player joins and answers in real-time
+      if (!playerId) {
+        channel
+          .on(
+            "postgres_changes",
+            { event: "*", schema: "public", table: "players", filter: `room_id=eq.${room.id}` },
+            (payload) => {
+              setPlayers((prev) => {
+                if (payload.eventType === "DELETE") {
+                  return prev.filter((p) => p.id !== (payload.old as Player).id);
+                }
+                const next = payload.new as unknown as Player;
+                const rest = prev.filter((p) => p.id !== next.id);
+                return [...rest, next].sort((a, b) => a.joined_at.localeCompare(b.joined_at));
+              });
+            },
+          )
+          .on(
+            "postgres_changes",
+            { event: "*", schema: "public", table: "answers", filter: `room_id=eq.${room.id}` },
+            (payload) => {
+              if (payload.eventType === "DELETE") return;
+              const next = payload.new as unknown as Answer;
+              setAnswers((prev) => [...prev.filter((a) => a.id !== next.id), next]);
+            },
+          );
+      }
+
       channel
-        .on(
-          "postgres_changes",
-          { event: "*", schema: "public", table: "players", filter: `room_id=eq.${room.id}` },
-          (payload) => {
-            setPlayers((prev) => {
-              if (payload.eventType === "DELETE") {
-                return prev.filter((p) => p.id !== (payload.old as Player).id);
-              }
-              const next = payload.new as unknown as Player;
-              const rest = prev.filter((p) => p.id !== next.id);
-              return [...rest, next].sort((a, b) => a.joined_at.localeCompare(b.joined_at));
-            });
-          },
-        )
-        .on(
-          "postgres_changes",
-          { event: "*", schema: "public", table: "answers", filter: `room_id=eq.${room.id}` },
-          (payload) => {
-            if (payload.eventType === "DELETE") return;
-            const next = payload.new as unknown as Answer;
-            setAnswers((prev) => [...prev.filter((a) => a.id !== next.id), next]);
-          },
-        )
         .on(
           "postgres_changes",
           { event: "UPDATE", schema: "public", table: "rooms", filter: `id=eq.${room.id}` },
@@ -264,7 +269,9 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
       }
       void supabase.removeChannel(currentChannel);
     };
-  }, [room?.id, load]);
+  }, [room?.id, playerId, load]);
+
+  const refresh = useCallback(() => load(true), [load]);
 
   return {
     loading,
@@ -277,7 +284,7 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
     now,
     connectionStatus,
     serverOffsetMs: getServerOffset(),
-    refresh: () => load(true),
+    refresh,
   };
 }
 
