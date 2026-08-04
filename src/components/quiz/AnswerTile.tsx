@@ -71,6 +71,8 @@ export function AnswerTile({
       )}
       style={{ borderBottomColor: `var(--answer-${index + 1}-shade)` }}
     >
+      {/* iOS Liquid Glass Specular Reflection Overlay */}
+      <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/25 via-white/10 to-transparent rounded-t-2xl" />
       <span
         className={cn(
           "grid shrink-0 place-items-center",

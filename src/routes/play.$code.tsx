@@ -12,7 +12,9 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
 
+import { Volume2, VolumeX } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { sounds } from "@/lib/audio";
 import { clearStoredPlayer, storedPlayerId } from "@/lib/session";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
@@ -40,6 +42,15 @@ function Play() {
   const [playerId, setPlayerId] = useState<string | null>(null);
   const [sessionResolved, setSessionResolved] = useState(false);
   const [showLeaveModal, setShowLeaveConfirm] = useState(false);
+  const [muted, setMuted] = useState(() => sounds.getMuted());
+
+  function toggleMute() {
+    const isNowMuted = sounds.toggleMute();
+    setMuted(isNowMuted);
+    if (!isNowMuted) {
+      sounds.playTap();
+    }
+  }
   const state = useRoomGame(code, playerId);
   const { t } = useI18n();
   const phase = usePhase(state);
@@ -273,8 +284,17 @@ function Play() {
           <span className="font-display tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</span>
           <button
             type="button"
+            onClick={toggleMute}
+            aria-label={muted ? "Unmute sound" : "Mute sound"}
+            title={muted ? "تفعيل الأصوات" : "كتم الأصوات"}
+            className="press liquid-glass flex h-8 w-8 items-center justify-center rounded-full text-foreground shadow-md transition-all"
+          >
+            {muted ? <VolumeX size={15} /> : <Volume2 size={15} />}
+          </button>
+          <button
+            type="button"
             onClick={() => setShowLeaveConfirm(true)}
-            className="press rounded-full border border-destructive/40 bg-destructive/10 px-3 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
+            className="press liquid-glass rounded-full border border-destructive/40 bg-destructive/10 px-3 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
           >
             🚪 {t("play.exitGame")}
           </button>

@@ -189,7 +189,7 @@ function useCast() {
 /* ---------------------------------- controls --------------------------------- */
 
 const btn =
-  "press grid size-9 place-items-center rounded-full border border-border bg-surface-gradient text-muted-foreground hover:text-foreground transition-colors";
+  "press liquid-glass grid size-10 place-items-center rounded-full text-foreground shadow-lg transition-all";
 
 export function DisplayControls({ className }: { className?: string }) {
   const { lang, t } = useI18n();
