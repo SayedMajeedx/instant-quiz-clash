@@ -10,7 +10,7 @@ import type { Quiz } from "@/lib/quizclash";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/browse")({
+export const Route = createFileRoute("/browse/")({
   head: () => ({
     meta: [
       { title: "Browse Ready-Made Quizzes — QuizClash" },
@@ -284,4 +284,3 @@ function BrowsePage() {
     </main>
   );
 }
-
