@@ -9,6 +9,10 @@ export const parsedQuestionSchema = z.object({
   padded_options: z.boolean().default(false),
   inferred_correct: z.boolean().default(false),
   ambiguous_split: z.boolean().default(false),
+  explanation: z.string().trim().optional(),
+  difficulty: z.string().trim().optional(),
+  subcategory: z.string().trim().optional(),
+  tags: z.array(z.string().trim()).optional(),
 });
 
 export const parsedPayloadSchema = z.object({

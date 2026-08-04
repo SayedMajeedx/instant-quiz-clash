@@ -180,6 +180,10 @@ function Editor() {
       correct_index: Math.max(0, Math.min(3, q.correct_index)),
       time_limit_seconds: Math.max(5, Math.min(120, q.time_limit_seconds || 20)),
       order_index: questions.length + i,
+      explanation: q.explanation ?? null,
+      difficulty: q.difficulty ?? "medium",
+      subcategory: q.subcategory ?? null,
+      tags: q.tags ?? [],
     }));
     const { data, error } = await supabase.from("questions").insert(rows).select();
     if (error || !data) {

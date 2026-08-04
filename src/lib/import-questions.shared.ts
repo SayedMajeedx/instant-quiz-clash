@@ -8,4 +8,8 @@ export type ParsedQuestion = {
   padded_options: boolean;
   inferred_correct: boolean;
   ambiguous_split: boolean;
+  explanation?: string;
+  difficulty?: string;
+  subcategory?: string;
+  tags?: string[];
 };

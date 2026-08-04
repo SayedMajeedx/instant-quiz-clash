@@ -224,9 +224,15 @@ function Play() {
             <p className="mt-2 font-display text-lg text-lime">{t("play.inARow", { n: myRow.streak })}</p>
           ) : null}
           {question.correct_index >= 0 ? (
-            <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4">
-              <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
-              <p className="mt-1 font-display text-xl">{question.options[question.correct_index]}</p>
+            <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4 text-start">
+              <p className="text-sm text-muted-foreground text-center">{t("play.correctAnswer")}</p>
+              <p className="mt-1 font-display text-xl text-center">{question.options[question.correct_index]}</p>
+              {question.explanation ? (
+                <div className="mt-3 border-t border-border/50 pt-3 text-sm text-sun animate-pop">
+                  <span className="font-bold">💡 الشرح: </span>
+                  {question.explanation}
+                </div>
+              ) : null}
             </div>
           ) : null}
 

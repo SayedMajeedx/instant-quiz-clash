@@ -516,18 +516,24 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
 
         <div className="mt-3 sm:mt-4 flex w-full max-w-2xl items-center justify-between gap-4 shrink-0 px-2">
           {revealing ? (
-            <>
-              <p className="flex-1 font-display text-2xl sm:text-3xl text-lime">{t("host.correctAnswer")}</p>
+            <div className="flex-1 flex flex-col items-center">
+              <p className="font-display text-2xl sm:text-3xl text-lime">{t("host.correctAnswer")}</p>
+              {question.explanation ? (
+                <div className="mt-2 w-full max-w-xl rounded-2xl border border-sun/40 bg-sun/10 p-3 text-sm sm:text-base text-sun shadow-glow backdrop-blur-md animate-pop">
+                  <span className="font-bold">💡 الشرح: </span>
+                  {question.explanation}
+                </div>
+              ) : null}
               {manual ? (
                 <button
                   type="button"
                   onClick={() => void advance(phase.index, "reveal")}
-                  className="press rounded-2xl bg-gradient-hero px-6 py-2.5 font-display text-lg sm:text-xl text-primary-foreground shadow-chunky"
+                  className="press mt-3 rounded-2xl bg-gradient-hero px-6 py-2.5 font-display text-lg sm:text-xl text-primary-foreground shadow-chunky"
                 >
                   {isLast ? t("host.finish") : t("host.showScores")}
                 </button>
               ) : null}
-            </>
+            </div>
           ) : (
             <>
               <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={96} />

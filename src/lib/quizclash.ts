@@ -20,6 +20,10 @@ export type Question = {
   order_index: number;
   image_url: string | null;
   question_type: QuestionType;
+  explanation?: string | null;
+  difficulty?: "easy" | "medium" | "hard" | string;
+  subcategory?: string | null;
+  tags?: string[];
 };
 
 export type CursorPhase = "question" | "reveal" | "board";
