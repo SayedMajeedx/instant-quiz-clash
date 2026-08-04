@@ -64,14 +64,16 @@ function MyQuizzes() {
       return;
     }
     const quiz = data as unknown as Quiz;
-    await supabase.from("questions").insert({
-      quiz_id: quiz.id,
-      question_text: "",
-      options: ["", "", "", ""],
-      correct_index: 0,
-      time_limit_seconds: 20,
-      order_index: 0,
-    });
+    if (!withImport) {
+      await supabase.from("questions").insert({
+        quiz_id: quiz.id,
+        question_text: "",
+        options: ["", "", "", ""],
+        correct_index: 0,
+        time_limit_seconds: 20,
+        order_index: 0,
+      });
+    }
     void navigate({
       to: "/quizzes/$quizId",
       params: { quizId: quiz.id },

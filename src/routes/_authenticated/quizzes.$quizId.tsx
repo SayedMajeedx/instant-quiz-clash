@@ -173,13 +173,23 @@ function Editor() {
 
   async function addImported(parsed: ParsedQuestion[]) {
     await flushPending();
+
+    // Automatically remove any empty placeholder questions (e.g. from new quiz creation)
+    const emptyPlaceholders = questions.filter((q) => !q.question_text.trim() && !q.image_url);
+    if (emptyPlaceholders.length > 0) {
+      for (const emptyQ of emptyPlaceholders) {
+        await supabase.from("questions").delete().eq("id", emptyQ.id);
+      }
+    }
+    const existingQuestions = questions.filter((q) => q.question_text.trim() || q.image_url);
+
     const rows = parsed.map((q, i) => ({
       quiz_id: quizId,
       question_text: q.question_text,
       options: [0, 1, 2, 3].map((k) => q.options[k] ?? ""),
       correct_index: Math.max(0, Math.min(3, q.correct_index)),
       time_limit_seconds: Math.max(5, Math.min(120, q.time_limit_seconds || 20)),
-      order_index: questions.length + i,
+      order_index: existingQuestions.length + i,
       explanation: q.explanation ?? null,
       difficulty: q.difficulty === "challenge" || q.difficulty === "hard" ? "challenge" : "standard",
     }));
@@ -211,7 +221,7 @@ function Editor() {
     const inserted = (data as unknown as Question[])
       .map((row) => ({ ...row, options: row.options as string[] }))
       .sort((a, b) => a.order_index - b.order_index);
-    setQuestions((prev) => [...prev, ...inserted]);
+    setQuestions([...existingQuestions, ...inserted]);
     toast.success(t("import.added", { n: inserted.length }));
   }
 
