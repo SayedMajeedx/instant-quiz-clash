@@ -14,6 +14,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { optionCount, standings, teamStandings, TEAM_COLORS, type CursorPhase, type Room } from "@/lib/quizclash";
 import { getSyncedNow } from "@/lib/server-time";
+import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
 import { cn } from "@/lib/utils";
@@ -80,6 +81,23 @@ function HostRoom() {
   async function patchRoom(patch: Partial<Room>) {
     if (!room) return;
     await supabase.from("rooms").update(patch as never).eq("id", room.id);
+    await state.refresh();
+  }
+
+  async function handleStartGame() {
+    if (!room) return;
+    const nowIso = new Date(getSyncedNow()).toISOString();
+    await supabase
+      .from("rooms")
+      .update({
+        status: "active",
+        cursor_index: 0,
+        cursor_phase: "question",
+        started_at: nowIso,
+        phase_started_at: nowIso,
+        is_paused: false,
+      } as never)
+      .eq("id", room.id);
     await state.refresh();
   }
 
@@ -258,13 +276,15 @@ function HostRoom() {
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
-        <Podium rows={rows} title={quiz?.title ?? "QuizClash"} actions />
+        <Podium rows={rows} title={cleanQuizTitle(quiz?.title ?? "QuizClash")} actions />
       </main>
     );
   }
 
   if (phase.kind === "lobby") {
-    const startsIn = room.started_at ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000) : null;
+    const startsIn = room.started_at && new Date(room.started_at).getTime() > state.now
+      ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000)
+      : null;
     const manualTeams = room.team_count > 1 && room.team_mode === "manual";
     return (
       <main className="relative min-h-screen">
@@ -275,7 +295,7 @@ function HostRoom() {
               <DisplayControls />
               <LanguageToggle />
             </div>
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">{quiz?.title}</p>
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">{cleanQuizTitle(quiz?.title || "")}</p>
             <h1 className="mt-3 font-display text-3xl md:text-4xl">{t("host.joinAt")}</h1>
             <p className="mt-1 break-all font-display text-xl text-muted-foreground">
               {joinUrl.replace(/^https?:\/\//, "")}
@@ -436,7 +456,7 @@ function HostRoom() {
             <button
               type="button"
               disabled={players.length === 0 || startsIn !== null}
-              onClick={() => void advance(-1, "board")}
+              onClick={() => void handleStartGame()}
               className="press mt-6 w-full rounded-3xl bg-gradient-hero px-6 py-4 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
             >
               {startsIn !== null ? t("host.startsIn", { n: startsIn }) : t("host.start")}

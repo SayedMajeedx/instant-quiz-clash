@@ -187,6 +187,7 @@ const en: Dict = {
   "host.teamMode": "Team mode",
   "host.solo": "Solo",
   "host.teamsN": "{n} teams",
+  "host.teams": "Teams",
   "host.teamNote": "Players are auto-balanced into teams as they join.",
 
   "play.powerups": "Power-ups",
@@ -513,6 +514,7 @@ const ar: Dict = {
   "host.teamMode": "وضع الفرق",
   "host.solo": "فردي",
   "host.teamsN": "{n} فرق",
+  "host.teams": "الفرق",
   "host.teamNote": "يتم توزيع اللاعبين على الفرق تلقائياً عند الانضمام.",
 
   "play.powerups": "الوسائل المساعدة",
@@ -654,8 +656,6 @@ const ar: Dict = {
   "editor.imageFailed": "فشل الرفع، حاول مجدداً",
   "editor.uploading": "جارٍ الرفع…",
 };
-
-
 
 const DICTS: Record<Lang, Dict> = { en, ar };
 
