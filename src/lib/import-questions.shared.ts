@@ -15,4 +15,7 @@ export type ParsedQuestion = {
   source?: string;
   id?: string;
   external_id?: string;
+  verified?: boolean;
+  is_verified?: boolean;
+  version?: number;
 };

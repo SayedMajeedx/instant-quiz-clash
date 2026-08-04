@@ -26,6 +26,8 @@ export type Question = {
   tags?: string[];
   source?: string | null;
   external_id?: string | null;
+  is_verified?: boolean;
+  version?: number;
 };
 
 export type CursorPhase = "question" | "reveal" | "board";

@@ -16,6 +16,9 @@ export const parsedQuestionSchema = z.object({
   source: z.string().trim().optional(),
   id: z.string().trim().optional(),
   external_id: z.string().trim().optional(),
+  verified: z.boolean().optional(),
+  is_verified: z.boolean().optional(),
+  version: z.number().int().optional(),
 });
 
 export const parsedPayloadSchema = z.object({

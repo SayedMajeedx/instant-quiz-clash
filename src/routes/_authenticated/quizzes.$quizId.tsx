@@ -186,6 +186,8 @@ function Editor() {
       tags: q.tags ?? [],
       source: q.source ?? null,
       external_id: q.external_id ?? q.id ?? null,
+      is_verified: q.is_verified ?? q.verified ?? true,
+      version: q.version ?? 1,
     }));
     const { data, error } = await supabase.from("questions").insert(rows).select();
     if (error || !data) {
