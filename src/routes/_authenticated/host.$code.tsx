@@ -288,6 +288,30 @@ function HostRoom() {
               {room.advance_mode === "manual" ? t("host.pacingManualNote") : t("host.pacingAutoNote")} {t("host.skipNote")}
             </p>
 
+            {/* Customizable Delay Between Questions */}
+            <div className="mt-5 flex flex-wrap items-center gap-2">
+              <span className="text-sm font-semibold text-muted-foreground">⏱️ الوقت بين الأسئلة:</span>
+              {[1, 2, 3, 5, 8, 10].map((sec) => {
+                const currentMs = room.board_ms ?? 3000;
+                const selected = currentMs === sec * 1000;
+                return (
+                  <button
+                    key={sec}
+                    type="button"
+                    onClick={() => void patchRoom({ board_ms: sec * 1000, reveal_ms: sec * 1000 })}
+                    className={cn(
+                      "press rounded-full border px-3 py-1.5 text-xs font-semibold transition-all",
+                      selected
+                        ? "border-primary bg-primary/20 text-foreground ring-2 ring-primary font-bold shadow-md"
+                        : "border-border bg-background/30 text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    {sec === 3 ? "3 ثوانٍ (افتراضي)" : `${sec} ثوانٍ`}
+                  </button>
+                );
+              })}
+            </div>
+
             <div className="mt-5 flex flex-wrap items-center gap-2">
               <span className="text-sm font-semibold text-muted-foreground">{t("host.teamMode")}</span>
               {[0, 2, 3, 4].map((n) => (
@@ -487,13 +511,25 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
         <span className="rounded-full border border-border bg-surface-gradient px-4 py-1.5 font-display text-sm">
           {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
         </span>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+          <button
+            type="button"
+            onClick={() => void patchRoom({ is_paused: !room.is_paused })}
+            className={cn(
+              "press rounded-full border px-3 py-1 text-xs font-bold transition-all shadow-md flex items-center gap-1",
+              room.is_paused
+                ? "border-sun bg-sun/20 text-sun ring-2 ring-sun animate-pulse"
+                : "border-border bg-background/50 text-foreground hover:bg-background/80",
+            )}
+          >
+            {room.is_paused ? "▶️ استئناف" : "⏸️ توقف مؤقت"}
+          </button>
           <DisplayControls />
           <button
             type="button"
             onClick={() => setShowExitConfirm(true)}
-            className="press rounded-full border border-destructive/40 bg-destructive/10 px-3.5 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
+            className="press rounded-full border border-destructive/40 bg-destructive/10 px-3 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
           >
             🚪 {t("host.exitGame")}
           </button>
@@ -602,6 +638,23 @@ function getQuestionFontSize(text: string, hasImage: boolean): string {
           </div>
         </div>
       ) : null}
+      {room.is_paused ? (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/90 p-6 backdrop-blur-md animate-fade-in text-center">
+          <div className="flex size-24 items-center justify-center rounded-3xl border border-sun/50 bg-sun/10 text-5xl shadow-glow animate-pulse">
+            ⏸️
+          </div>
+          <h2 className="mt-6 font-display text-4xl text-gradient">اللعبة متوقفة مؤقتاً</h2>
+          <p className="mt-2 text-center text-muted-foreground max-w-md">تم إيقاف اللعبة مؤقتاً بواسطة المضيف. انقر على «استئناف» للعودة لمواصلة اللعب.</p>
+          <button
+            type="button"
+            onClick={() => void patchRoom({ is_paused: false })}
+            className="press mt-6 rounded-2xl bg-gradient-hero px-8 py-3.5 font-display text-xl text-primary-foreground shadow-chunky"
+          >
+            ▶️ استئناف اللعبة الآن
+          </button>
+        </div>
+      ) : null}
+
       <ReconnectingBanner status={state.connectionStatus} />
       <ExitFullscreenButton />
       <DebugPanel state={state} />

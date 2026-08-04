@@ -457,6 +457,16 @@ function Play() {
           </div>
         </div>
       ) : null}
+      {room?.is_paused ? (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/90 p-6 backdrop-blur-md animate-fade-in text-center">
+          <div className="flex size-24 items-center justify-center rounded-3xl border border-sun/50 bg-sun/10 text-5xl shadow-glow animate-pulse">
+            ⏸️
+          </div>
+          <h2 className="mt-6 font-display text-4xl text-gradient">اللعبة متوقفة مؤقتاً</h2>
+          <p className="mt-2 text-center text-muted-foreground max-w-xs">أوقف المضيف اللعبة لبرهة. سنستأنف فوراً بمجرد الضغط على استئناف...</p>
+        </div>
+      ) : null}
+
       <ReconnectingBanner status={state.connectionStatus} />
       <DebugPanel state={state} />
     </main>

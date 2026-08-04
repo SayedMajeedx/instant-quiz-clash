@@ -44,6 +44,9 @@ export type Room = {
   cursor_index: number;
   cursor_phase: CursorPhase;
   phase_started_at: string | null;
+  reveal_ms?: number;
+  board_ms?: number;
+  is_paused?: boolean;
 };
 
 
@@ -139,11 +142,14 @@ export function phaseAt(room: Room | null, questions: Question[], now: number): 
   const startedAt = new Date(room.phase_started_at ?? room.started_at).getTime();
   const elapsed = Math.max(0, now - startedAt);
 
+  const revealMs = room.reveal_ms ?? REVEAL_MS;
+  const boardMs = room.board_ms ?? BOARD_MS;
+
   if (room.cursor_phase === "reveal") {
-    return { kind: "reveal", index, msLeft: Math.max(0, REVEAL_MS - elapsed), question };
+    return { kind: "reveal", index, msLeft: Math.max(0, revealMs - elapsed), question };
   }
   if (room.cursor_phase === "board") {
-    return { kind: "leaderboard", index, msLeft: Math.max(0, BOARD_MS - elapsed), question };
+    return { kind: "leaderboard", index, msLeft: Math.max(0, boardMs - elapsed), question };
   }
   const qMs = Math.max(1, question.time_limit_seconds) * 1000;
   return { kind: "question", index, msLeft: Math.max(0, qMs - elapsed), question };
