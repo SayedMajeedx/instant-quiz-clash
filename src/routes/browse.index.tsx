@@ -25,6 +25,7 @@ export const Route = createFileRoute("/browse/")({
 type PublicQuiz = Quiz & {
   category: string | null;
   language: string | null;
+  quiz_difficulty?: "beginner" | "medium" | "expert" | null;
   question_count: number;
 };
 
@@ -36,6 +37,7 @@ const LIBRARY_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.map((q) => ({
   is_public: true,
   category: q.category,
   language: q.language,
+  quiz_difficulty: q.quiz_difficulty || "medium",
   question_count: q.questions.length,
 }));
 
@@ -153,7 +155,7 @@ function BrowsePage() {
   const filteredQuizzes = quizzes.filter((q) => {
     const matchCat = selectedCat === "all" || q.category === selectedCat;
     const matchLang = selectedLang === "all" || q.language === selectedLang;
-    const matchDiff = selectedDiff === "all" || (q as unknown as { quiz_difficulty?: string }).quiz_difficulty === selectedDiff;
+    const matchDiff = selectedDiff === "all" || q.quiz_difficulty === selectedDiff;
     return matchCat && matchLang && matchDiff;
   });
 
@@ -276,9 +278,14 @@ function BrowsePage() {
                 >
                   <div>
                     <div className="flex items-center justify-between gap-2">
-                      <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-                        {quiz.category || "عام"}
-                      </span>
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
+                          {quiz.category || "عام"}
+                        </span>
+                        <span className="rounded-full border border-border bg-background/50 px-2.5 py-0.5 text-xs font-semibold text-muted-foreground">
+                          {quiz.quiz_difficulty === "beginner" ? "🟢 مبتدئ" : quiz.quiz_difficulty === "expert" ? "🔴 خبير" : "🟡 متوسط"}
+                        </span>
+                      </div>
                       <span className="text-sm font-semibold">
                         {quiz.language === "en" ? "🇬🇧" : "🇸🇦"}
                       </span>
