@@ -37,6 +37,7 @@ function HostRoom() {
   const { room, quiz, questions, players, answers } = state;
   const archivedRef = useRef(false);
   const [showExitModal, setShowExitConfirm] = useState(false);
+  const [assigning, setAssigning] = useState<string | null>(null);
   const navigate = Route.useNavigate();
 
   const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join?code=${code.toUpperCase()}` : "";
