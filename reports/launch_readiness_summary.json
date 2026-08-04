@@ -1,0 +1,31 @@
+{
+  "title": "QuizClash 5000 Questions Launch Readiness Summary",
+  "status": "PASSED",
+  "total_questions": 5000,
+  "total_quizzes": 252,
+  "replaced_trivial_questions": 0,
+  "rewritten_questions": 0,
+  "difficulty_distribution": {
+    "total": 5000,
+    "beginner": {
+      "count": 1229,
+      "percentage": "24.6%"
+    },
+    "medium": {
+      "count": 2267,
+      "percentage": "45.3%"
+    },
+    "expert": {
+      "count": 1504,
+      "percentage": "30.1%"
+    }
+  },
+  "quiz_difficulty_distribution": {
+    "total_quizzes": 252,
+    "beginner_quizzes": 62,
+    "medium_quizzes": 114,
+    "expert_quizzes": 76
+  },
+  "validation_errors_count": 0,
+  "generated_at": "2026-08-04T13:51:20.705Z"
+}

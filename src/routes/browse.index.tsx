@@ -46,6 +46,7 @@ function BrowsePage() {
   const [loading, setLoading] = useState(false);
   const [selectedCat, setSelectedCat] = useState("all");
   const [selectedLang, setSelectedLang] = useState("all");
+  const [selectedDiff, setSelectedDiff] = useState("all");
   const [cloningId, setCloningId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -59,6 +60,7 @@ function BrowsePage() {
           is_public: boolean | null;
           category: string | null;
           language: string | null;
+          quiz_difficulty?: string | null;
           questions?: { id: string }[];
         };
         const query = supabase.from("quizzes").select("*, questions(id)") as unknown as {
@@ -80,6 +82,7 @@ function BrowsePage() {
             is_public: q.is_public ?? true,
             category: q.category,
             language: q.language,
+            quiz_difficulty: (q.quiz_difficulty as "beginner" | "medium" | "expert") || "medium",
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
           }));
 
@@ -150,7 +153,8 @@ function BrowsePage() {
   const filteredQuizzes = quizzes.filter((q) => {
     const matchCat = selectedCat === "all" || q.category === selectedCat;
     const matchLang = selectedLang === "all" || q.language === selectedLang;
-    return matchCat && matchLang;
+    const matchDiff = selectedDiff === "all" || (q as unknown as { quiz_difficulty?: string }).quiz_difficulty === selectedDiff;
+    return matchCat && matchLang && matchDiff;
   });
 
   return (
@@ -176,7 +180,7 @@ function BrowsePage() {
           </div>
         </header>
 
-        {/* Category & Language Filters */}
+        {/* Category, Difficulty & Language Filters */}
         <div className="mt-8 space-y-4">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
@@ -197,29 +201,59 @@ function BrowsePage() {
             ))}
           </div>
 
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground me-2">
-              {t("aiGen.language")}:
-            </span>
-            {[
-              { id: "all", labelKey: "browse.allLanguages" },
-              { id: "ar", labelKey: "aiGen.langAr" },
-              { id: "en", labelKey: "aiGen.langEn" },
-            ].map((lang) => (
-              <button
-                key={lang.id}
-                type="button"
-                onClick={() => setSelectedLang(lang.id)}
-                className={cn(
-                  "press rounded-full border px-3 py-1 text-xs font-semibold",
-                  selectedLang === lang.id
-                    ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
-                    : "border-border bg-background/40 text-muted-foreground",
-                )}
-              >
-                {t(lang.labelKey)}
-              </button>
-            ))}
+          <div className="flex flex-wrap items-center gap-4 pt-2">
+            {/* Difficulty Filter Tabs */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground me-1">
+                🎯 {t("aiGen.difficulty")}:
+              </span>
+              {[
+                { id: "all", label: "جميع المستويات" },
+                { id: "beginner", label: "🟢 " + t("aiGen.easy") },
+                { id: "medium", label: "🟡 " + t("aiGen.medium") },
+                { id: "expert", label: "🔴 " + t("aiGen.hard") },
+              ].map((diff) => (
+                <button
+                  key={diff.id}
+                  type="button"
+                  onClick={() => setSelectedDiff(diff.id)}
+                  className={cn(
+                    "press rounded-full border px-3 py-1 text-xs font-semibold",
+                    selectedDiff === diff.id
+                      ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
+                      : "border-border bg-background/40 text-muted-foreground hover:text-foreground",
+                  )}
+                >
+                  {diff.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Language Filter */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground me-1">
+                🌐 {t("aiGen.language")}:
+              </span>
+              {[
+                { id: "all", labelKey: "browse.allLanguages" },
+                { id: "ar", labelKey: "aiGen.langAr" },
+                { id: "en", labelKey: "aiGen.langEn" },
+              ].map((lang) => (
+                <button
+                  key={lang.id}
+                  type="button"
+                  onClick={() => setSelectedLang(lang.id)}
+                  className={cn(
+                    "press rounded-full border px-3 py-1 text-xs font-semibold",
+                    selectedLang === lang.id
+                      ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
+                      : "border-border bg-background/40 text-muted-foreground hover:text-foreground",
+                  )}
+                >
+                  {t(lang.labelKey)}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 

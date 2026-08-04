@@ -1,0 +1,15 @@
+{
+  "total": 5000,
+  "beginner": {
+    "count": 1229,
+    "percentage": "24.6%"
+  },
+  "medium": {
+    "count": 2267,
+    "percentage": "45.3%"
+  },
+  "expert": {
+    "count": 1504,
+    "percentage": "30.1%"
+  }
+}
