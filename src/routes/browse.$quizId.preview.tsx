@@ -8,9 +8,8 @@ import { cloneQuiz } from "@/lib/clone-quiz";
 import { useI18n } from "@/lib/i18n";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
-import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/browse_/$quizId/preview")({
+export const Route = createFileRoute("/browse/$quizId/preview")({
   head: () => ({
     meta: [
       { title: "Preview Quiz — QuizClash" },
@@ -113,9 +112,9 @@ function QuizPreviewPage() {
           .single();
 
         if (qData) {
-          // Dedicated answer-free query using questions_preview view or RPC
+          // Dedicated answer-free query selecting non-answer columns only
           const { data: pQuestions } = await supabase
-            .from("questions_preview")
+            .from("questions")
             .select("id, quiz_id, question_text, options, time_limit_seconds, order_index, question_type, difficulty, subcategory, tags")
             .eq("quiz_id", quizId)
             .order("order_index");

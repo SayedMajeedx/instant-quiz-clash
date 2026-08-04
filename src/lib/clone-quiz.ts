@@ -131,7 +131,23 @@ export async function cloneQuiz(
       version: q.version || 1,
     }));
 
-    const { error: qInsertError } = await supabase.from("questions").insert(questionsToInsert as never);
+    let { error: qInsertError } = await supabase.from("questions").insert(questionsToInsert as never);
+
+    if (qInsertError) {
+      // Fallback: insert with core question columns if extended metadata columns fail
+      const basicQuestionsToInsert = questionsToCopy.map((q) => ({
+        quiz_id: newQuizTyped.id,
+        question_text: q.question_text,
+        options: q.options,
+        correct_index: q.correct_index,
+        time_limit_seconds: q.time_limit_seconds,
+        order_index: q.order_index,
+        question_type: q.question_type || "multi",
+      }));
+
+      const fallbackRes = await supabase.from("questions").insert(basicQuestionsToInsert as never);
+      qInsertError = fallbackRes.error;
+    }
 
     if (qInsertError) {
       // Atomic rollback: delete the empty quiz if question creation failed

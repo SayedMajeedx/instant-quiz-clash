@@ -258,7 +258,7 @@ function BrowsePage() {
 
                   <div className="mt-6 flex items-center gap-2">
                     <Link
-                      to="/browse_/$quizId/preview"
+                      to="/browse/$quizId/preview"
                       params={{ quizId: quiz.id }}
                       className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 text-center font-display text-sm hover:border-primary/50 flex items-center justify-center gap-1.5"
                     >
