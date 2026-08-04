@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
@@ -32,6 +33,7 @@ function Home() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
+  const [creating, setCreating] = useState(false);
 
   async function signOut() {
     await queryClient.cancelQueries();
@@ -39,6 +41,49 @@ function Home() {
     await supabase.auth.signOut();
     toast.success(t("auth.signedOut"));
     void navigate({ to: "/", replace: true });
+  }
+
+  async function handleCreateQuiz() {
+    if (!user) {
+      void navigate({ to: "/quizzes" });
+      return;
+    }
+
+    setCreating(true);
+    try {
+      const { data, error } = await supabase
+        .from("quizzes")
+        .insert({ user_id: user.id, title: t("quizzes.newTitle") })
+        .select()
+        .single();
+
+      if (error || !data) {
+        toast.error(t("quizzes.createError"));
+        void navigate({ to: "/quizzes" });
+        return;
+      }
+
+      const quiz = data as unknown as { id: string };
+      await supabase.from("questions").insert({
+        quiz_id: quiz.id,
+        question_text: "",
+        options: ["", "", "", ""],
+        correct_index: 0,
+        time_limit_seconds: 20,
+        order_index: 0,
+      });
+
+      void navigate({
+        to: "/quizzes/$quizId",
+        params: { quizId: quiz.id },
+        search: { import: undefined },
+      });
+    } catch {
+      toast.error(t("quizzes.createError"));
+      void navigate({ to: "/quizzes" });
+    } finally {
+      setCreating(false);
+    }
   }
 
   const features = [
@@ -116,13 +161,15 @@ function Home() {
 
         {/* Clear Action Hierarchy: Single Primary CTA + Clean Secondary Outlines */}
         <div className="mt-10 flex flex-col items-center justify-center gap-3.5 sm:flex-row">
-          {/* PRIMARY DOMINANT CTA */}
-          <Link
-            to="/host"
-            className="press w-full max-w-xs sm:max-w-none rounded-3xl bg-gradient-hero px-9 py-5 font-display text-2xl text-primary-foreground shadow-chunky transition-transform hover:scale-[1.02]"
+          {/* PRIMARY DOMINANT CTA - CREATE QUIZ -> BLANK QUIZ EDITOR */}
+          <button
+            type="button"
+            disabled={creating}
+            onClick={() => void handleCreateQuiz()}
+            className="press w-full max-w-xs sm:max-w-none rounded-3xl bg-gradient-hero px-9 py-5 font-display text-2xl text-primary-foreground shadow-chunky transition-transform hover:scale-[1.02] disabled:opacity-50"
           >
-            ✨ {t("home.createQuiz")}
-          </Link>
+            ✨ {creating ? t("quizzes.loading") : t("home.createQuiz")}
+          </button>
 
           {/* SECONDARY OUTLINE CTAs */}
           <Link
