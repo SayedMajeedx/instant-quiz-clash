@@ -1,25 +1,31 @@
 /**
- * QuizClash High-Quality Web Audio Sound Manager
- * Modern, warm, Nintendo/iOS-style game audio synthesizers & background music player.
+ * QuizClash Studio-Quality Web Audio & BGM Sound Manager
+ * Independent dual audio channels (BGM & SFX) with mastering dynamics compressor.
  */
 
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 
 class SoundManager {
   private ctx: AudioContext | null = null;
-  private isMuted: boolean = false;
+  private compressor: DynamicsCompressorNode | null = null;
+  private sfxGain: GainNode | null = null;
+
   private bgmAudio: HTMLAudioElement | null = null;
   private currentBgmUrl: string | null = null;
-  private bgmVolume: number = 0.35; // Warm background music level
+
+  private isBgmMuted: boolean = false;
+  private isSfxMuted: boolean = false;
+  private bgmVolume: number = 0.30; // Ambient background music level
+  private sfxVolume: number = 0.80; // Crisp sound effects level
 
   constructor() {
     if (typeof window !== "undefined") {
-      const storedMute = localStorage.getItem("quizclash:muted");
-      this.isMuted = storedMute === "true";
+      this.isBgmMuted = localStorage.getItem("quizclash:bgmMuted") === "true";
+      this.isSfxMuted = localStorage.getItem("quizclash:sfxMuted") === "true";
     }
   }
 
-  private initCtx(): AudioContext | null {
+  private initCtx(): { ctx: AudioContext; gain: GainNode } | null {
     if (typeof window === "undefined") return null;
     if (!this.ctx) {
       const AudioCtx =
@@ -27,36 +33,107 @@ class SoundManager {
         (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
       if (AudioCtx) {
         this.ctx = new AudioCtx();
+
+        // Studio Mastering Compressor: Prevents distortion, clipping, and crackling
+        this.compressor = this.ctx.createDynamicsCompressor();
+        this.compressor.threshold.setValueAtTime(-24, this.ctx.currentTime);
+        this.compressor.knee.setValueAtTime(30, this.ctx.currentTime);
+        this.compressor.ratio.setValueAtTime(12, this.ctx.currentTime);
+        this.compressor.attack.setValueAtTime(0.003, this.ctx.currentTime);
+        this.compressor.release.setValueAtTime(0.25, this.ctx.currentTime);
+
+        this.sfxGain = this.ctx.createGain();
+        this.sfxGain.gain.setValueAtTime(this.isSfxMuted ? 0 : this.sfxVolume, this.ctx.currentTime);
+
+        this.sfxGain.connect(this.compressor);
+        this.compressor.connect(this.ctx.destination);
       }
     }
     if (this.ctx && this.ctx.state === "suspended") {
       void this.ctx.resume();
     }
-    return this.ctx;
+    if (this.ctx && this.sfxGain) {
+      return { ctx: this.ctx, gain: this.sfxGain };
+    }
+    return null;
   }
 
-  public toggleMute(): boolean {
-    this.isMuted = !this.isMuted;
+  // --- Background Music (BGM) Channel Controls ---
+  public toggleBgmMute(): boolean {
+    this.isBgmMuted = !this.isBgmMuted;
     if (typeof window !== "undefined") {
-      localStorage.setItem("quizclash:muted", String(this.isMuted));
+      localStorage.setItem("quizclash:bgmMuted", String(this.isBgmMuted));
     }
     if (this.bgmAudio) {
-      this.bgmAudio.volume = this.isMuted ? 0 : this.bgmVolume;
-      if (!this.isMuted && this.bgmAudio.paused) {
+      this.bgmAudio.volume = this.isBgmMuted ? 0 : this.bgmVolume;
+      if (!this.isBgmMuted && this.bgmAudio.paused) {
         void this.bgmAudio.play().catch(() => {});
       }
     }
-    return this.isMuted;
+    return this.isBgmMuted;
+  }
+
+  public getBgmMuted(): boolean {
+    return this.isBgmMuted;
+  }
+
+  public setBgmMuted(muted: boolean) {
+    this.isBgmMuted = muted;
+    if (typeof window !== "undefined") {
+      localStorage.setItem("quizclash:bgmMuted", String(muted));
+    }
+    if (this.bgmAudio) {
+      this.bgmAudio.volume = muted ? 0 : this.bgmVolume;
+      if (!muted && this.bgmAudio.paused) {
+        void this.bgmAudio.play().catch(() => {});
+      }
+    }
+  }
+
+  // --- Sound Effects (SFX) Channel Controls ---
+  public toggleSfxMute(): boolean {
+    this.isSfxMuted = !this.isSfxMuted;
+    if (typeof window !== "undefined") {
+      localStorage.setItem("quizclash:sfxMuted", String(this.isSfxMuted));
+    }
+    if (this.sfxGain && this.ctx) {
+      this.sfxGain.gain.setValueAtTime(this.isSfxMuted ? 0 : this.sfxVolume, this.ctx.currentTime);
+    }
+    return this.isSfxMuted;
+  }
+
+  public getSfxMuted(): boolean {
+    return this.isSfxMuted;
+  }
+
+  public setSfxMuted(muted: boolean) {
+    this.isSfxMuted = muted;
+    if (typeof window !== "undefined") {
+      localStorage.setItem("quizclash:sfxMuted", String(muted));
+    }
+    if (this.sfxGain && this.ctx) {
+      this.sfxGain.gain.setValueAtTime(muted ? 0 : this.sfxVolume, this.ctx.currentTime);
+    }
+  }
+
+  // Global Mute Toggle (for single button control)
+  public toggleMute(): boolean {
+    const next = !this.getMuted();
+    this.setBgmMuted(next);
+    this.setSfxMuted(next);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("quizclash:muted", String(next));
+    }
+    return next;
   }
 
   public getMuted(): boolean {
-    return this.isMuted;
+    return this.isBgmMuted && this.isSfxMuted;
   }
 
   public playBgm(url: string) {
     if (typeof window === "undefined") return;
     if (this.currentBgmUrl === url && this.bgmAudio && !this.bgmAudio.paused) {
-      // Audio is already playing this track
       return;
     }
 
@@ -68,7 +145,7 @@ class SoundManager {
     this.currentBgmUrl = url;
     const audio = new Audio(url);
     audio.loop = true;
-    audio.volume = this.isMuted ? 0 : this.bgmVolume;
+    audio.volume = this.isBgmMuted ? 0 : this.bgmVolume;
     this.bgmAudio = audio;
 
     const attemptPlay = () => {
@@ -76,15 +153,15 @@ class SoundManager {
       audio.play().then(() => {
         console.log("BGM playing successfully:", url);
       }).catch((err) => {
-        console.warn("BGM autoplay blocked, waiting for user click/tap:", err);
+        console.warn("BGM autoplay waiting for user interaction:", err);
       });
     };
 
     attemptPlay();
 
-    // Listen for any user gesture on host display to unlock browser audio restrictions
+    // Listen for any user gesture on host screen to unlock browser audio restrictions
     const unlock = () => {
-      if (this.bgmAudio === audio && audio.paused && !this.isMuted) {
+      if (this.bgmAudio === audio && audio.paused && !this.isBgmMuted) {
         attemptPlay();
       }
     };
@@ -103,9 +180,10 @@ class SoundManager {
 
   // 🍏 iOS Soft Haptic Tap (Warm popping click)
   public playTap() {
-    if (this.isMuted) return;
-    const ctx = this.initCtx();
-    if (!ctx) return;
+    if (this.isSfxMuted) return;
+    const sys = this.initCtx();
+    if (!sys) return;
+    const { ctx, gain: masterGain } = sys;
 
     try {
       const osc = ctx.createOscillator();
@@ -119,7 +197,7 @@ class SoundManager {
       gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
 
       osc.connect(gain);
-      gain.connect(ctx.destination);
+      gain.connect(masterGain);
 
       osc.start();
       osc.stop(ctx.currentTime + 0.04);
@@ -128,11 +206,12 @@ class SoundManager {
     }
   }
 
-  // ✨ Apple Pay / Nintendo Success Chime (Warm C5 Major 9th Chord: C5 -> G5 -> C6 -> E6)
+  // ✨ Apple Pay / Nintendo Success Chime (Warm C5 Major 9th Chord)
   public playCorrect() {
-    if (this.isMuted) return;
-    const ctx = this.initCtx();
-    if (!ctx) return;
+    if (this.isSfxMuted) return;
+    const sys = this.initCtx();
+    if (!sys) return;
+    const { ctx, gain: masterGain } = sys;
 
     try {
       const frequencies = [523.25, 783.99, 1046.5, 1318.51]; // C5, G5, C6, E6
@@ -145,11 +224,11 @@ class SoundManager {
         osc.frequency.setValueAtTime(freq, startTime);
 
         gain.gain.setValueAtTime(0, startTime);
-        gain.gain.linearRampToValueAtTime(0.18 - i * 0.02, startTime + 0.03);
+        gain.gain.linearRampToValueAtTime(0.15 - i * 0.02, startTime + 0.03);
         gain.gain.exponentialRampToValueAtTime(0.0001, startTime + 0.5);
 
         osc.connect(gain);
-        gain.connect(ctx.destination);
+        gain.connect(masterGain);
 
         osc.start(startTime);
         osc.stop(startTime + 0.5);
@@ -161,9 +240,10 @@ class SoundManager {
 
   // 🔇 Soft Double Thud for Incorrect Answer
   public playWrong() {
-    if (this.isMuted) return;
-    const ctx = this.initCtx();
-    if (!ctx) return;
+    if (this.isSfxMuted) return;
+    const sys = this.initCtx();
+    if (!sys) return;
+    const { ctx, gain: masterGain } = sys;
 
     try {
       [0, 0.1].forEach((delay) => {
@@ -179,7 +259,7 @@ class SoundManager {
         gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.08);
 
         osc.connect(gain);
-        gain.connect(ctx.destination);
+        gain.connect(masterGain);
 
         osc.start(startTime);
         osc.stop(startTime + 0.08);
@@ -191,9 +271,10 @@ class SoundManager {
 
   // 🌟 Smooth Ascending Pentatonic Score Roll
   public playScoreUp() {
-    if (this.isMuted) return;
-    const ctx = this.initCtx();
-    if (!ctx) return;
+    if (this.isSfxMuted) return;
+    const sys = this.initCtx();
+    if (!sys) return;
+    const { ctx, gain: masterGain } = sys;
 
     try {
       const notes = [523.25, 659.25, 783.99, 1046.5, 1318.51]; // C5, E5, G5, C6, E6
@@ -209,7 +290,7 @@ class SoundManager {
         gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.12);
 
         osc.connect(gain);
-        gain.connect(ctx.destination);
+        gain.connect(masterGain);
 
         osc.start(startTime);
         osc.stop(startTime + 0.12);
@@ -221,9 +302,10 @@ class SoundManager {
 
   // ⏱️ Soft Woodblock Metronome Tick
   public playTick() {
-    if (this.isMuted) return;
-    const ctx = this.initCtx();
-    if (!ctx) return;
+    if (this.isSfxMuted) return;
+    const sys = this.initCtx();
+    if (!sys) return;
+    const { ctx, gain: masterGain } = sys;
 
     try {
       const osc = ctx.createOscillator();
@@ -237,7 +319,7 @@ class SoundManager {
       gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.02);
 
       osc.connect(gain);
-      gain.connect(ctx.destination);
+      gain.connect(masterGain);
 
       osc.start();
       osc.stop(ctx.currentTime + 0.02);
@@ -248,9 +330,10 @@ class SoundManager {
 
   // 🎉 Triumphant Multi-Tone Game Show Fanfare
   public playFanfare() {
-    if (this.isMuted) return;
-    const ctx = this.initCtx();
-    if (!ctx) return;
+    if (this.isSfxMuted) return;
+    const sys = this.initCtx();
+    if (!sys) return;
+    const { ctx, gain: masterGain } = sys;
 
     try {
       const chordSequence = [
@@ -274,7 +357,7 @@ class SoundManager {
           gain.gain.exponentialRampToValueAtTime(0.0001, time + chord.dur);
 
           osc.connect(gain);
-          gain.connect(ctx.destination);
+          gain.connect(masterGain);
 
           osc.start(time);
           osc.stop(time + chord.dur);

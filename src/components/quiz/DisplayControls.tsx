@@ -196,14 +196,19 @@ export function DisplayControls({ className }: { className?: string }) {
   const cast = useCast();
   const fs = useFullscreen();
   const [modalOpen, setModalOpen] = useState(false);
-  const [muted, setMuted] = useState(() => sounds.getMuted());
+  const [audioMenuOpen, setAudioMenuOpen] = useState(false);
+  const [bgmMuted, setBgmMuted] = useState(() => sounds.getBgmMuted());
+  const [sfxMuted, setSfxMuted] = useState(() => sounds.getSfxMuted());
 
-  function toggleMute() {
-    const isNowMuted = sounds.toggleMute();
-    setMuted(isNowMuted);
-    if (!isNowMuted) {
-      sounds.playTap();
-    }
+  function toggleBgm() {
+    const next = sounds.toggleBgmMute();
+    setBgmMuted(next);
+  }
+
+  function toggleSfx() {
+    const next = sounds.toggleSfxMute();
+    setSfxMuted(next);
+    if (!next) sounds.playTap();
   }
 
   async function handleCastButtonClick() {
@@ -276,9 +281,11 @@ export function DisplayControls({ className }: { className?: string }) {
     setModalOpen(false);
   }
 
+  const allMuted = bgmMuted && sfxMuted;
+
   return (
     <>
-      <div className={cn("flex items-center gap-2", className)}>
+      <div className={cn("relative flex items-center gap-2", className)}>
         {cast.casting ? (
           <span className="flex items-center gap-1.5 rounded-full border border-lime/50 bg-lime/10 px-3 py-1 text-xs font-semibold text-lime">
             <span className="size-1.5 animate-pulse rounded-full bg-lime" />
@@ -286,15 +293,60 @@ export function DisplayControls({ className }: { className?: string }) {
           </span>
         ) : null}
 
-        <button
-          type="button"
-          aria-label={muted ? "Unmute sounds" : "Mute sounds"}
-          title={muted ? "تفعيل الأصوات" : "كتم الأصوات"}
-          onClick={toggleMute}
-          className={cn(btn, muted && "text-muted-foreground/50")}
-        >
-          {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}
-        </button>
+        {/* Audio Layer Menu Toggle */}
+        <div className="relative">
+          <button
+            type="button"
+            aria-label="إعدادات الصوت"
+            title="إعدادات الصوت والموسيقى"
+            onClick={() => setAudioMenuOpen((prev) => !prev)}
+            className={cn(btn, allMuted && "text-muted-foreground/50")}
+          >
+            {allMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+          </button>
+
+          {/* Dual Audio Channel Control Popover */}
+          {audioMenuOpen && (
+            <div className="absolute end-0 top-12 z-50 w-56 animate-pop rounded-2xl border border-border bg-surface-gradient p-3 shadow-2xl backdrop-blur-xl">
+              <p className="mb-2.5 text-center text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                🔊 إعدادات طبقات الصوت
+              </p>
+              <div className="space-y-2">
+                <button
+                  type="button"
+                  onClick={toggleBgm}
+                  className={cn(
+                    "flex w-full items-center justify-between rounded-xl border px-3 py-2 text-xs font-bold transition-all",
+                    !bgmMuted
+                      ? "border-primary/50 bg-primary/15 text-primary shadow-sm"
+                      : "border-border bg-background/40 text-muted-foreground hover:bg-background/80",
+                  )}
+                >
+                  <span>🎵 موسيقى الخلفية</span>
+                  <span className="rounded-md px-2 py-0.5 text-[10px] font-bold border border-current">
+                    {!bgmMuted ? "تشغيل" : "كتم"}
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={toggleSfx}
+                  className={cn(
+                    "flex w-full items-center justify-between rounded-xl border px-3 py-2 text-xs font-bold transition-all",
+                    !sfxMuted
+                      ? "border-lime/50 bg-lime/15 text-lime shadow-sm"
+                      : "border-border bg-background/40 text-muted-foreground hover:bg-background/80",
+                  )}
+                >
+                  <span>🔔 مؤثرات اللعب</span>
+                  <span className="rounded-md px-2 py-0.5 text-[10px] font-bold border border-current">
+                    {!sfxMuted ? "تشغيل" : "كتم"}
+                  </span>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
 
         <button
           type="button"
