@@ -145,7 +145,7 @@ export function phaseAt(room: Room | null, questions: Question[], now: number): 
 
   // If paused, freeze clock at phaseStartedAt timestamp so elapsed time stops advancing
   const effectiveNow = room.is_paused ? phaseStartedAt : now;
-  const elapsed = Math.max(0, effectiveNow - startedAt);
+  const elapsed = Math.max(0, effectiveNow - phaseStartedAt);
 
   const revealMs = room.reveal_ms ?? REVEAL_MS;
   const boardMs = room.board_ms ?? BOARD_MS;

@@ -78,12 +78,14 @@ function HostRoom() {
     if (!room) return rawPhase;
     const ms = interQuestionSec * 1000;
     if (rawPhase.kind === "reveal" || rawPhase.kind === "leaderboard") {
-      const startedAt = new Date(room.phase_started_at ?? room.started_at ?? 0).getTime();
-      const elapsed = Math.max(0, state.now - startedAt);
-      return { ...rawPhase, msLeft: Math.max(0, ms - elapsed) };
+      const phaseStartedAt = new Date(room.phase_started_at ?? room.started_at ?? 0).getTime();
+      const effectiveNow = room.is_paused ? phaseStartedAt : state.now;
+      const elapsed = Math.max(0, effectiveNow - phaseStartedAt);
+      const limit = rawPhase.kind === "reveal" ? 2500 : ms;
+      return { ...rawPhase, msLeft: Math.max(0, limit - elapsed) };
     }
     return rawPhase;
-  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, state.now]);
+  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, room?.is_paused, state.now]);
 
   // Prevent tablet / PC / phone screen from sleeping during live game
   useWakeLock(true);
