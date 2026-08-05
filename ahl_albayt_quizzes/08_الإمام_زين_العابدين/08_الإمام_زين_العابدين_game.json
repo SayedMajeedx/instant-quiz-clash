@@ -6,27 +6,588 @@
   "archived": false,
   "launch_enabled": true,
   "questions": [
-    {"id":"sajjad-001","question_text":"من هو والد الإمام علي زين العابدين (ع)؟","options":["الإمام الحسين (ع)","الإمام الحسن (ع)","الإمام علي (ع)","الإمام محمد الباقر (ع)"],"correct_index":0,"time_limit_seconds":15,"order_index":0,"image_url":null,"question_type":"multi","explanation":"الإمام السجاد هو علي بن الحسين بن علي بن أبي طالب (ع).","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الإمام السجاد","النسب"],"source":"الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص136","external_id":"sajjad-001","is_verified":true,"version":1},
-    {"id":"sajjad-002","question_text":"أين وُلد الإمام علي بن الحسين (ع) بحسب الشيخ المفيد؟","options":["المدينة","مكة","الكوفة","دمشق"],"correct_index":0,"time_limit_seconds":15,"order_index":1,"image_url":null,"question_type":"multi","explanation":"نص الشيخ المفيد في ترجمته على أن مولده كان بالمدينة.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الإمام السجاد","المدينة"],"source":"الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص137","external_id":"sajjad-002","is_verified":true,"version":1},
-    {"id":"sajjad-003","question_text":"في أي سنة وُلد الإمام السجاد (ع) وفق اختيار الشيخ المفيد؟","options":["38 هـ","35 هـ","40 هـ","44 هـ"],"correct_index":0,"time_limit_seconds":20,"order_index":2,"image_url":null,"question_type":"multi","explanation":"اختار المفيد أن مولده كان سنة ثمان وثلاثين للهجرة، مع وجود أقوال أخرى.","difficulty":"medium","subcategory":"الولادة والنشأة","tags":["الإمام السجاد","المولد"],"source":"الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص137","external_id":"sajjad-003","is_verified":true,"version":1},
-    {"id":"sajjad-004","question_text":"ما الكنية التي يذكرها الشيخ المفيد للإمام علي بن الحسين (ع)؟","options":["أبو محمد","أبو عبد الله","أبو جعفر","أبو الحسن الثالث"],"correct_index":0,"time_limit_seconds":20,"order_index":3,"image_url":null,"question_type":"multi","explanation":"يذكر المفيد أن كنيته أبو محمد، ويذكر له أيضًا أبا الحسن.","difficulty":"medium","subcategory":"الولادة والنشأة","tags":["الإمام السجاد","الكنية"],"source":"الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص137","external_id":"sajjad-004","is_verified":true,"version":1},
-    {"id":"sajjad-005","question_text":"ما الذي حال دون قتل الإمام السجاد (ع) يوم عاشوراء؟","options":["كان مريضًا لا يقدر على القتال","كان خارج كربلاء","كان رسولًا إلى الكوفة","كان في المدينة"],"correct_index":0,"time_limit_seconds":20,"order_index":4,"image_url":null,"question_type":"multi","explanation":"كان مريضًا على فراشه، فبقي بعد استشهاد أبيه الحسين (ع).","difficulty":"easy","subcategory":"كربلاء وما بعدها","tags":["الإمام السجاد","عاشوراء"],"source":"الإرشاد، ج2، أحداث عاشوراء، ص112-113","external_id":"sajjad-005","is_verified":true,"version":1},
-    {"id":"sajjad-006","question_text":"من دافع عن الإمام السجاد (ع) حين أمر ابن زياد بقتله؟","options":["السيدة زينب (ع)","أم كلثوم","الرباب","فاطمة بنت الحسين"],"correct_index":0,"time_limit_seconds":20,"order_index":5,"image_url":null,"question_type":"multi","explanation":"تعلقت زينب بابن أخيها وقالت إن قُتل تُقتل معه، فكف ابن زياد عنه.","difficulty":"easy","subcategory":"كربلاء وما بعدها","tags":["الإمام السجاد","السيدة زينب","الكوفة"],"source":"الإرشاد، ج2، دخول السبايا على ابن زياد، ص116","external_id":"sajjad-006","is_verified":true,"version":1},
-    {"id":"sajjad-007","question_text":"إلى أي مدينة أُرسل الإمام السجاد (ع) بعد مجلس ابن زياد؟","options":["دمشق","المدينة","مكة","البصرة"],"correct_index":0,"time_limit_seconds":15,"order_index":6,"image_url":null,"question_type":"multi","explanation":"أرسل ابن زياد علي بن الحسين والنساء إلى يزيد في الشام.","difficulty":"easy","subcategory":"كربلاء وما بعدها","tags":["الإمام السجاد","الشام"],"source":"الإرشاد، ج2، مسير السبايا إلى الشام، ص119","external_id":"sajjad-007","is_verified":true,"version":1},
-    {"id":"sajjad-008","question_text":"ماذا طلب الإمام السجاد (ع) عند تهيئة عودة أهل البيت؟","options":["أمينًا يصحبهم إلى المدينة","الإقامة الدائمة في دمشق","إرسالهم إلى الكوفة","تفريق الركب بين البلدان"],"correct_index":0,"time_limit_seconds":20,"order_index":7,"image_url":null,"question_type":"multi","explanation":"اختار الرجوع إلى المدينة، وطلب رجلًا أمينًا يصحبهم في الطريق.","difficulty":"medium","subcategory":"كربلاء وما بعدها","tags":["الإمام السجاد","العودة للمدينة"],"source":"الإرشاد، ج2، خروج أهل البيت من الشام، ص121-122","external_id":"sajjad-008","is_verified":true,"version":1},
-    {"id":"sajjad-009","question_text":"من بشّر أهل المدينة بوصول ركب الإمام ونعا إليهم الحسين؟","options":["بشير بن حذلم","جابر بن عبد الله","أبو حمزة الثمالي","سعيد بن المسيب"],"correct_index":0,"time_limit_seconds":20,"order_index":8,"image_url":null,"question_type":"multi","explanation":"أمره الإمام أن يدخل المدينة فينعي الحسين ويخبر الناس بوصول الركب.","difficulty":"medium","subcategory":"كربلاء وما بعدها","tags":["الإمام السجاد","المدينة","بشير بن حذلم"],"source":"بحار الأنوار، ج45، باب ورود حرم الحسين المدينة، ص147-148","external_id":"sajjad-009","is_verified":true,"version":1},
-    {"id":"sajjad-010","question_text":"إلى من انتقلت الإمامة بعد استشهاد الإمام الحسين (ع)؟","options":["علي بن الحسين (ع)","محمد بن الحنفية","زيد بن علي","عبد الله بن جعفر"],"correct_index":0,"time_limit_seconds":15,"order_index":9,"image_url":null,"question_type":"multi","explanation":"دلت النصوص التي أوردها المفيد على إمامة علي بن الحسين بعد أبيه.","difficulty":"easy","subcategory":"الإمامة والعلم","tags":["الإمام السجاد","الإمامة"],"source":"الإرشاد، ج2، النص على إمامة علي بن الحسين، ص136-140","external_id":"sajjad-010","is_verified":true,"version":1},
-    {"id":"sajjad-011","question_text":"ما الذي أودعه الحسين (ع) عند أم سلمة علامةً لطالب الإمامة؟","options":["ودائع الإمامة","راية المختار","خاتم ابن عباس","كتاب والي المدينة"],"correct_index":0,"time_limit_seconds":20,"order_index":10,"image_url":null,"question_type":"multi","explanation":"أودع الحسين أم سلمة ما قبضه علي بن الحسين من بعده، وجعل طلبه علامة.","difficulty":"hard","subcategory":"الإمامة والعلم","tags":["الإمام السجاد","أم سلمة","الإمامة"],"source":"الإرشاد، ج2، النص على إمامة علي بن الحسين، ص139","external_id":"sajjad-011","is_verified":true,"version":1},
-    {"id":"sajjad-012","question_text":"ماذا كان يجني جليس الإمام السجاد (ع) بحسب رواية ابن أخته؟","options":["خشية أو علمًا مستفادًا","علم الأنساب فقط","مالًا في كل مجلس","تكليفًا بكتابة الرسائل"],"correct_index":0,"time_limit_seconds":20,"order_index":11,"image_url":null,"question_type":"multi","explanation":"قال الراوي إنه كان يقوم بخير: خشية تحدث في قلبه أو علم يستفيده.","difficulty":"medium","subcategory":"الإمامة والعلم","tags":["الإمام السجاد","العلم","الخشية"],"source":"الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص140","external_id":"sajjad-012","is_verified":true,"version":1},
-    {"id":"sajjad-013","question_text":"أي معنى أرشد إليه الإمام بقوله: «أحبونا حب الإسلام»؟","options":["المحبة بلا غلو","ترك الفرائض للمحبة","كتمان الانتساب لأهل البيت","حصر المحبة في القرابة"],"correct_index":0,"time_limit_seconds":20,"order_index":12,"image_url":null,"question_type":"multi","explanation":"نهى عن تجاوز المحبة التي يقتضيها الإسلام حتى تصير غلوًا وشينًا.","difficulty":"medium","subcategory":"الفضائل والمواقف","tags":["الإمام السجاد","المحبة","الغلو"],"source":"الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص141","external_id":"sajjad-013","is_verified":true,"version":1},
-    {"id":"sajjad-014","question_text":"ما الأثر الذي ظهر على مواضع سجود الإمام السجاد (ع)؟","options":["ثفنات كركب البعير","أثر حناء دائم","جرح من سيف","وشم على الجبهة"],"correct_index":0,"time_limit_seconds":20,"order_index":13,"image_url":null,"question_type":"multi","explanation":"أحدثت كثرة سجوده ثفنات، ولذلك اشتهر بلقب السجاد.","difficulty":"medium","subcategory":"الفضائل والمواقف","tags":["الإمام السجاد","السجود","العبادة"],"source":"بحار الأنوار، ج46، باب أحواله وعبادته، ص6-7","external_id":"sajjad-014","is_verified":true,"version":1},
-    {"id":"sajjad-015","question_text":"كيف كان الإمام السجاد (ع) يعين فقراء المدينة ليلًا؟","options":["يحمل إليهم الطعام سرًا","يرسلهم إلى بيت المال","يعلن أسماءهم في المسجد","يطلب منهم خدمة مزرعته"],"correct_index":0,"time_limit_seconds":15,"order_index":14,"image_url":null,"question_type":"multi","explanation":"كان يحمل جراب الخبز على ظهره ليلًا إلى بيوت الفقراء من غير أن يعرفوه.","difficulty":"easy","subcategory":"الفضائل والمواقف","tags":["الإمام السجاد","الصدقة","الفقراء"],"source":"الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص143-144","external_id":"sajjad-015","is_verified":true,"version":1},
-    {"id":"sajjad-016","question_text":"متى عرف فقراء المدينة صاحب عطاياهم السرية؟","options":["بعد وفاة الإمام","يوم عاشوراء","عند الرجوع من الشام","عند ولادة الإمام الباقر"],"correct_index":0,"time_limit_seconds":20,"order_index":15,"image_url":null,"question_type":"multi","explanation":"لما فقدوا الصدقات الخفية بعد وفاته عرفوا أنها كانت تأتيهم منه.","difficulty":"medium","subcategory":"الفضائل والمواقف","tags":["الإمام السجاد","الصدقة السرية"],"source":"الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص143-144","external_id":"sajjad-016","is_verified":true,"version":1},
-    {"id":"sajjad-017","question_text":"كيف قابل الإمام السجاد (ع) رجلًا شتمه ثم انصرف؟","options":["عرض عليه المعونة والصفح","أمر بحبسه","هجره عامًا","أخذ منه غرامة"],"correct_index":0,"time_limit_seconds":20,"order_index":16,"image_url":null,"question_type":"multi","explanation":"خاطبه بلين وسأله عن حاجته فأعانه، فتحول الرجل إلى الثناء عليه.","difficulty":"medium","subcategory":"الفضائل والمواقف","tags":["الإمام السجاد","الحلم","العفو"],"source":"الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص145","external_id":"sajjad-017","is_verified":true,"version":1},
-    {"id":"sajjad-018","question_text":"من أنشد قصيدته المشهورة في الإمام عند البيت الحرام؟","options":["الفرزدق","الكميت","دعبل الخزاعي","السيد الحميري"],"correct_index":0,"time_limit_seconds":15,"order_index":17,"image_url":null,"question_type":"multi","explanation":"أنشد الفرزدق قصيدته في مكانة الإمام حين تجاهله هشام بن عبد الملك.","difficulty":"easy","subcategory":"الفضائل والمواقف","tags":["الإمام السجاد","الفرزدق","مكة"],"source":"مناقب آل أبي طالب، ج4، فصل مناقب زين العابدين، ص169-170","external_id":"sajjad-018","is_verified":true,"version":1},
-    {"id":"sajjad-019","question_text":"من الابن الذي نص الإمام السجاد (ع) على إمامته من بعده؟","options":["محمد الباقر (ع)","زيد الشهيد","عبد الله الباهر","عمر الأشرف"],"correct_index":0,"time_limit_seconds":15,"order_index":18,"image_url":null,"question_type":"multi","explanation":"انتقلت الإمامة بعده إلى ابنه أبي جعفر محمد الباقر (ع).","difficulty":"easy","subcategory":"الإمامة والعلم","tags":["الإمام السجاد","الإمام الباقر","الإمامة"],"source":"الإرشاد، ج2، تاريخ الإمام الباقر والنص عليه، ص157-160","external_id":"sajjad-019","is_verified":true,"version":1},
-    {"id":"sajjad-020","question_text":"في أي سنة توفي الإمام السجاد (ع) وفق قول الشيخ المفيد؟","options":["95 هـ","92 هـ","99 هـ","101 هـ"],"correct_index":0,"time_limit_seconds":20,"order_index":19,"image_url":null,"question_type":"multi","explanation":"يذكر المفيد وفاته بالمدينة سنة خمس وتسعين للهجرة.","difficulty":"medium","subcategory":"الاستشهاد والدفن","tags":["الإمام السجاد","الوفاة"],"source":"الإرشاد، ج2، تاريخ الإمام علي بن الحسين، ص137","external_id":"sajjad-020","is_verified":true,"version":1},
-    {"id":"sajjad-021","question_text":"كم كان عمر الإمام السجاد (ع) عند وفاته بحسب الشيخ المفيد؟","options":["57 سنة","50 سنة","63 سنة","70 سنة"],"correct_index":0,"time_limit_seconds":20,"order_index":20,"image_url":null,"question_type":"multi","explanation":"صرح المفيد بأن عمره عند وفاته كان سبعًا وخمسين سنة.","difficulty":"medium","subcategory":"الاستشهاد والدفن","tags":["الإمام السجاد","العمر"],"source":"الإرشاد، ج2، تاريخ الإمام علي بن الحسين، ص137","external_id":"sajjad-021","is_verified":true,"version":1},
-    {"id":"sajjad-022","question_text":"أين دُفن الإمام علي بن الحسين (ع)؟","options":["البقيع","كربلاء","النجف","الكاظمية"],"correct_index":0,"time_limit_seconds":15,"order_index":21,"image_url":null,"question_type":"multi","explanation":"دُفن في بقيع المدينة مع عمه الإمام الحسن بن علي (ع).","difficulty":"easy","subcategory":"الاستشهاد والدفن","tags":["الإمام السجاد","البقيع","الدفن"],"source":"الإرشاد، ج2، تاريخ الإمام علي بن الحسين، ص137","external_id":"sajjad-022","is_verified":true,"version":1}
+    {
+      "id": "sajjad-001",
+      "question_text": "من هو والد الإمام علي زين العابدين (ع)؟",
+      "options": [
+        "الإمام الحسين (ع)",
+        "الإمام الحسن (ع)",
+        "الإمام علي (ع)",
+        "الإمام محمد الباقر (ع)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "الإمام السجاد هو علي بن الحسين بن علي بن أبي طالب (ع).",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام السجاد",
+        "النسب"
+      ],
+      "source": "الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص136",
+      "external_id": "sajjad-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-002",
+      "question_text": "أين وُلد الإمام علي بن الحسين (ع) بحسب الشيخ المفيد؟",
+      "options": [
+        "الكوفة",
+        "مكة",
+        "المدينة",
+        "دمشق"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 15,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نص الشيخ المفيد في ترجمته على أن مولده كان بالمدينة.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام السجاد",
+        "المدينة"
+      ],
+      "source": "الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص137",
+      "external_id": "sajjad-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-003",
+      "question_text": "في أي سنة وُلد الإمام السجاد (ع) وفق اختيار الشيخ المفيد؟",
+      "options": [
+        "38 هـ",
+        "35 هـ",
+        "40 هـ",
+        "44 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اختار المفيد أن مولده كان سنة ثمان وثلاثين للهجرة، مع وجود أقوال أخرى.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام السجاد",
+        "المولد"
+      ],
+      "source": "الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص137",
+      "external_id": "sajjad-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-004",
+      "question_text": "ما الكنية التي يذكرها الشيخ المفيد للإمام علي بن الحسين (ع)؟",
+      "options": [
+        "أبو الحسن الثالث",
+        "أبو عبد الله",
+        "أبو جعفر",
+        "أبو محمد"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يذكر المفيد أن كنيته أبو محمد، ويذكر له أيضًا أبا الحسن.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام السجاد",
+        "الكنية"
+      ],
+      "source": "الإرشاد، ج2، باب تاريخ الإمام علي بن الحسين (ع)، ص137",
+      "external_id": "sajjad-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-005",
+      "question_text": "ما الذي حال دون قتل الإمام السجاد (ع) يوم عاشوراء؟",
+      "options": [
+        "كان في المدينة",
+        "كان خارج كربلاء",
+        "كان رسولًا إلى الكوفة",
+        "كان مريضًا لا يقدر على القتال"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان مريضًا على فراشه، فبقي بعد استشهاد أبيه الحسين (ع).",
+      "difficulty": "easy",
+      "subcategory": "كربلاء وما بعدها",
+      "tags": [
+        "الإمام السجاد",
+        "عاشوراء"
+      ],
+      "source": "الإرشاد، ج2، أحداث عاشوراء، ص112-113",
+      "external_id": "sajjad-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-006",
+      "question_text": "من دافع عن الإمام السجاد (ع) حين أمر ابن زياد بقتله؟",
+      "options": [
+        "السيدة زينب (ع)",
+        "أم كلثوم",
+        "الرباب",
+        "فاطمة بنت الحسين"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تعلقت زينب بابن أخيها وقالت إن قُتل تُقتل معه، فكف ابن زياد عنه.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء وما بعدها",
+      "tags": [
+        "الإمام السجاد",
+        "السيدة زينب",
+        "الكوفة"
+      ],
+      "source": "الإرشاد، ج2، دخول السبايا على ابن زياد، ص116",
+      "external_id": "sajjad-006",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-007",
+      "question_text": "إلى أي مدينة أُرسل الإمام السجاد (ع) بعد مجلس ابن زياد؟",
+      "options": [
+        "دمشق",
+        "المدينة",
+        "مكة",
+        "البصرة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أرسل ابن زياد علي بن الحسين والنساء إلى يزيد في الشام.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء وما بعدها",
+      "tags": [
+        "الإمام السجاد",
+        "الشام"
+      ],
+      "source": "الإرشاد، ج2، مسير السبايا إلى الشام، ص119",
+      "external_id": "sajjad-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-008",
+      "question_text": "ماذا طلب الإمام السجاد (ع) عند تهيئة عودة أهل البيت؟",
+      "options": [
+        "إرسالهم إلى الكوفة",
+        "الإقامة الدائمة في دمشق",
+        "أمينًا يصحبهم إلى المدينة",
+        "تفريق الركب بين البلدان"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اختار الرجوع إلى المدينة، وطلب رجلًا أمينًا يصحبهم في الطريق.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء وما بعدها",
+      "tags": [
+        "الإمام السجاد",
+        "العودة للمدينة"
+      ],
+      "source": "الإرشاد، ج2، خروج أهل البيت من الشام، ص121-122",
+      "external_id": "sajjad-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-009",
+      "question_text": "من بشّر أهل المدينة بوصول ركب الإمام ونعا إليهم الحسين؟",
+      "options": [
+        "أبو حمزة الثمالي",
+        "جابر بن عبد الله",
+        "بشير بن حذلم",
+        "سعيد بن المسيب"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أمره الإمام أن يدخل المدينة فينعي الحسين ويخبر الناس بوصول الركب.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء وما بعدها",
+      "tags": [
+        "الإمام السجاد",
+        "المدينة",
+        "بشير بن حذلم"
+      ],
+      "source": "بحار الأنوار، ج45، باب ورود حرم الحسين المدينة، ص147-148",
+      "external_id": "sajjad-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-010",
+      "question_text": "إلى من انتقلت الإمامة بعد استشهاد الإمام الحسين (ع)؟",
+      "options": [
+        "محمد بن الحنفية",
+        "علي بن الحسين (ع)",
+        "زيد بن علي",
+        "عبد الله بن جعفر"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 15,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دلت النصوص التي أوردها المفيد على إمامة علي بن الحسين بعد أبيه.",
+      "difficulty": "easy",
+      "subcategory": "الإمامة والعلم",
+      "tags": [
+        "الإمام السجاد",
+        "الإمامة"
+      ],
+      "source": "الإرشاد، ج2، النص على إمامة علي بن الحسين، ص136-140",
+      "external_id": "sajjad-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-011",
+      "question_text": "ما الذي أودعه الحسين (ع) عند أم سلمة علامةً لطالب الإمامة؟",
+      "options": [
+        "كتاب والي المدينة",
+        "راية المختار",
+        "خاتم ابن عباس",
+        "ودائع الإمامة"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أودع الحسين أم سلمة ما قبضه علي بن الحسين من بعده، وجعل طلبه علامة.",
+      "difficulty": "hard",
+      "subcategory": "الإمامة والعلم",
+      "tags": [
+        "الإمام السجاد",
+        "أم سلمة",
+        "الإمامة"
+      ],
+      "source": "الإرشاد، ج2، النص على إمامة علي بن الحسين، ص139",
+      "external_id": "sajjad-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-012",
+      "question_text": "ماذا كان يجني جليس الإمام السجاد (ع) بحسب رواية ابن أخته؟",
+      "options": [
+        "علم الأنساب فقط",
+        "خشية أو علمًا مستفادًا",
+        "مالًا في كل مجلس",
+        "تكليفًا بكتابة الرسائل"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قال الراوي إنه كان يقوم بخير: خشية تحدث في قلبه أو علم يستفيده.",
+      "difficulty": "medium",
+      "subcategory": "الإمامة والعلم",
+      "tags": [
+        "الإمام السجاد",
+        "العلم",
+        "الخشية"
+      ],
+      "source": "الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص140",
+      "external_id": "sajjad-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-013",
+      "question_text": "أي معنى أرشد إليه الإمام بقوله: «أحبونا حب الإسلام»؟",
+      "options": [
+        "كتمان الانتساب لأهل البيت",
+        "ترك الفرائض للمحبة",
+        "المحبة بلا غلو",
+        "حصر المحبة في القرابة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نهى عن تجاوز المحبة التي يقتضيها الإسلام حتى تصير غلوًا وشينًا.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "الإمام السجاد",
+        "المحبة",
+        "الغلو"
+      ],
+      "source": "الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص141",
+      "external_id": "sajjad-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-014",
+      "question_text": "ما الأثر الذي ظهر على مواضع سجود الإمام السجاد (ع)؟",
+      "options": [
+        "أثر حناء دائم",
+        "ثفنات كركب البعير",
+        "جرح من سيف",
+        "وشم على الجبهة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أحدثت كثرة سجوده ثفنات، ولذلك اشتهر بلقب السجاد.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "الإمام السجاد",
+        "السجود",
+        "العبادة"
+      ],
+      "source": "بحار الأنوار، ج46، باب أحواله وعبادته، ص6-7",
+      "external_id": "sajjad-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-015",
+      "question_text": "كيف كان الإمام السجاد (ع) يعين فقراء المدينة ليلًا؟",
+      "options": [
+        "يطلب منهم خدمة مزرعته",
+        "يرسلهم إلى بيت المال",
+        "يعلن أسماءهم في المسجد",
+        "يحمل إليهم الطعام سرًا"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان يحمل جراب الخبز على ظهره ليلًا إلى بيوت الفقراء من غير أن يعرفوه.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "الإمام السجاد",
+        "الصدقة",
+        "الفقراء"
+      ],
+      "source": "الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص143-144",
+      "external_id": "sajjad-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-016",
+      "question_text": "متى عرف فقراء المدينة صاحب عطاياهم السرية؟",
+      "options": [
+        "عند ولادة الإمام الباقر",
+        "يوم عاشوراء",
+        "عند الرجوع من الشام",
+        "بعد وفاة الإمام"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "لما فقدوا الصدقات الخفية بعد وفاته عرفوا أنها كانت تأتيهم منه.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "الإمام السجاد",
+        "الصدقة السرية"
+      ],
+      "source": "الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص143-144",
+      "external_id": "sajjad-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-017",
+      "question_text": "كيف قابل الإمام السجاد (ع) رجلًا شتمه ثم انصرف؟",
+      "options": [
+        "أمر بحبسه",
+        "عرض عليه المعونة والصفح",
+        "هجره عامًا",
+        "أخذ منه غرامة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "خاطبه بلين وسأله عن حاجته فأعانه، فتحول الرجل إلى الثناء عليه.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "الإمام السجاد",
+        "الحلم",
+        "العفو"
+      ],
+      "source": "الإرشاد، ج2، فضائل الإمام علي بن الحسين، ص145",
+      "external_id": "sajjad-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-018",
+      "question_text": "من أنشد قصيدته المشهورة في الإمام عند البيت الحرام؟",
+      "options": [
+        "السيد الحميري",
+        "الكميت",
+        "دعبل الخزاعي",
+        "الفرزدق"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أنشد الفرزدق قصيدته في مكانة الإمام حين تجاهله هشام بن عبد الملك.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "الإمام السجاد",
+        "الفرزدق",
+        "مكة"
+      ],
+      "source": "مناقب آل أبي طالب، ج4، فصل مناقب زين العابدين، ص169-170",
+      "external_id": "sajjad-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-019",
+      "question_text": "من الابن الذي نص الإمام السجاد (ع) على إمامته من بعده؟",
+      "options": [
+        "زيد الشهيد",
+        "محمد الباقر (ع)",
+        "عبد الله الباهر",
+        "عمر الأشرف"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 15,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتقلت الإمامة بعده إلى ابنه أبي جعفر محمد الباقر (ع).",
+      "difficulty": "easy",
+      "subcategory": "الإمامة والعلم",
+      "tags": [
+        "الإمام السجاد",
+        "الإمام الباقر",
+        "الإمامة"
+      ],
+      "source": "الإرشاد، ج2، تاريخ الإمام الباقر والنص عليه، ص157-160",
+      "external_id": "sajjad-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-020",
+      "question_text": "في أي سنة توفي الإمام السجاد (ع) وفق قول الشيخ المفيد؟",
+      "options": [
+        "95 هـ",
+        "92 هـ",
+        "99 هـ",
+        "101 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يذكر المفيد وفاته بالمدينة سنة خمس وتسعين للهجرة.",
+      "difficulty": "medium",
+      "subcategory": "الاستشهاد والدفن",
+      "tags": [
+        "الإمام السجاد",
+        "الوفاة"
+      ],
+      "source": "الإرشاد، ج2، تاريخ الإمام علي بن الحسين، ص137",
+      "external_id": "sajjad-020",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-021",
+      "question_text": "كم كان عمر الإمام السجاد (ع) عند وفاته بحسب الشيخ المفيد؟",
+      "options": [
+        "57 سنة",
+        "50 سنة",
+        "63 سنة",
+        "70 سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "صرح المفيد بأن عمره عند وفاته كان سبعًا وخمسين سنة.",
+      "difficulty": "medium",
+      "subcategory": "الاستشهاد والدفن",
+      "tags": [
+        "الإمام السجاد",
+        "العمر"
+      ],
+      "source": "الإرشاد، ج2، تاريخ الإمام علي بن الحسين، ص137",
+      "external_id": "sajjad-021",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "sajjad-022",
+      "question_text": "أين دُفن الإمام علي بن الحسين (ع)؟",
+      "options": [
+        "النجف",
+        "كربلاء",
+        "البقيع",
+        "الكاظمية"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 15,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دُفن في بقيع المدينة مع عمه الإمام الحسن بن علي (ع).",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد والدفن",
+      "tags": [
+        "الإمام السجاد",
+        "البقيع",
+        "الدفن"
+      ],
+      "source": "الإرشاد، ج2، تاريخ الإمام علي بن الحسين، ص137",
+      "external_id": "sajjad-022",
+      "is_verified": true,
+      "version": 1
+    }
   ]
 }

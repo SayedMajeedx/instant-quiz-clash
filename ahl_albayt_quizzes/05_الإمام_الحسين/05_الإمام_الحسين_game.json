@@ -9,12 +9,12 @@
     {
       "question_text": "من هي والدة الإمام الحسين (ع)؟",
       "options": [
-        "فاطمة الزهراء (ع)",
-        "أم البنين",
         "أسماء بنت عميس",
+        "أم البنين",
+        "فاطمة الزهراء (ع)",
         "أم سلمة"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 20,
       "order_index": 0,
       "image_url": null,
@@ -34,12 +34,12 @@
     {
       "question_text": "ما التاريخ المشهور لولادة الإمام الحسين (ع)؟",
       "options": [
-        "3 شعبان سنة 4 هـ",
+        "17 ربيع الأول سنة 4 هـ",
         "15 رمضان سنة 3 هـ",
         "10 محرم سنة 5 هـ",
-        "17 ربيع الأول سنة 4 هـ"
+        "3 شعبان سنة 4 هـ"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 25,
       "order_index": 1,
       "image_url": null,
@@ -84,12 +84,12 @@
     {
       "question_text": "أي كنية اشتهر بها الإمام الحسين (ع)؟",
       "options": [
-        "أبو عبد الله",
+        "أبو جعفر",
         "أبو محمد",
         "أبو الحسن",
-        "أبو جعفر"
+        "أبو عبد الله"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 3,
       "image_url": null,
@@ -109,12 +109,12 @@
     {
       "question_text": "أي عبارة نبوية مشهورة تصف مكانة الحسن والحسين (ع)؟",
       "options": [
-        "سيدا شباب أهل الجنة",
+        "كاتبا الوحي",
         "أمينا وحي السماء",
         "صاحبا الهجرتين",
-        "كاتبا الوحي"
+        "سيدا شباب أهل الجنة"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 4,
       "image_url": null,
@@ -134,12 +134,12 @@
     {
       "question_text": "أي آية ارتبطت بالنبي وعلي وفاطمة والحسن والحسين (ع)؟",
       "options": [
-        "آية التطهير",
         "آية الدين",
+        "آية التطهير",
         "آية النجوى",
         "آية الكلالة"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 5,
       "image_url": null,
@@ -159,12 +159,12 @@
     {
       "question_text": "من الإمام الذي سبق الحسين (ع) مباشرة في الإمامة؟",
       "options": [
-        "الإمام الحسن (ع)",
-        "الإمام علي (ع)",
         "الإمام السجاد (ع)",
+        "الإمام علي (ع)",
+        "الإمام الحسن (ع)",
         "الإمام الباقر (ع)"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 20,
       "order_index": 6,
       "image_url": null,
@@ -184,12 +184,12 @@
     {
       "question_text": "كم دامت إمامة الحسين (ع) بحسب ما يذكره الشيخ المفيد؟",
       "options": [
-        "نحو عشر سنين",
         "نحو خمس سنين",
+        "نحو عشر سنين",
         "نحو عشرين سنة",
         "أقل من سنة"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 25,
       "order_index": 7,
       "image_url": null,
@@ -209,12 +209,12 @@
     {
       "question_text": "لماذا غادر الإمام الحسين (ع) المدينة بعد موت معاوية؟",
       "options": [
-        "لرفضه البيعة ليزيد",
+        "لزيارة اليمن",
         "لطلب ولاية مكة",
         "للتجارة في الشام",
-        "لزيارة اليمن"
+        "لرفضه البيعة ليزيد"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 8,
       "image_url": null,
@@ -234,12 +234,12 @@
     {
       "question_text": "إلى أي مدينة توجه الحسين (ع) عند خروجه من المدينة؟",
       "options": [
-        "مكة المكرمة",
         "الكوفة",
+        "مكة المكرمة",
         "البصرة",
         "دمشق"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 9,
       "image_url": null,
@@ -284,12 +284,12 @@
     {
       "question_text": "من كان والي الكوفة الذي واجه حركة مسلم بن عقيل؟",
       "options": [
-        "عبيد الله بن زياد",
         "النعمان بن بشير",
+        "عبيد الله بن زياد",
         "عمر بن سعد",
         "الوليد بن عتبة"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 11,
       "image_url": null,
@@ -309,12 +309,12 @@
     {
       "question_text": "في أي يوم غادر الحسين (ع) مكة متوجهًا إلى العراق؟",
       "options": [
-        "8 ذي الحجة سنة 60 هـ",
-        "10 ذي الحجة سنة 60 هـ",
         "1 محرم سنة 61 هـ",
+        "10 ذي الحجة سنة 60 هـ",
+        "8 ذي الحجة سنة 60 هـ",
         "15 شعبان سنة 60 هـ"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 25,
       "order_index": 12,
       "image_url": null,
@@ -334,12 +334,12 @@
     {
       "question_text": "من قائد القوة التي التقت ركب الحسين (ع) في الطريق؟",
       "options": [
-        "الحر بن يزيد الرياحي",
         "عمر بن سعد",
+        "الحر بن يزيد الرياحي",
         "شمر بن ذي الجوشن",
         "حصين بن نمير"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 13,
       "image_url": null,
@@ -359,12 +359,12 @@
     {
       "question_text": "كيف عامل الحسين (ع) جيش الحر عند وصوله عطشانًا؟",
       "options": [
-        "أمر بسقيهم وخيلهم",
+        "أخذ سلاحهم",
         "منع عنهم الماء",
         "أعادهم إلى الكوفة",
-        "أخذ سلاحهم"
+        "أمر بسقيهم وخيلهم"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 14,
       "image_url": null,
@@ -384,12 +384,12 @@
     {
       "question_text": "في أي أرض انتهى مسير ركب الحسين (ع)؟",
       "options": [
-        "كربلاء",
+        "البصرة",
         "النجف",
         "المدائن",
-        "البصرة"
+        "كربلاء"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 15,
       "image_url": null,
@@ -409,12 +409,12 @@
     {
       "question_text": "في أي تاريخ نزل الإمام الحسين (ع) كربلاء؟",
       "options": [
-        "2 محرم سنة 61 هـ",
-        "1 محرم سنة 60 هـ",
         "8 ذي الحجة سنة 61 هـ",
+        "1 محرم سنة 60 هـ",
+        "2 محرم سنة 61 هـ",
         "10 صفر سنة 61 هـ"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 25,
       "order_index": 16,
       "image_url": null,
@@ -459,12 +459,12 @@
     {
       "question_text": "ماذا طلب الحسين (ع) ليلة عاشوراء من القوم؟",
       "options": [
-        "إمهاله ليلة للصلاة والدعاء",
-        "السماح له بدخول الكوفة",
         "تأجيل القتال شهرًا",
+        "السماح له بدخول الكوفة",
+        "إمهاله ليلة للصلاة والدعاء",
         "إرسال وفد إلى المدينة"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 25,
       "order_index": 18,
       "image_url": null,
@@ -534,12 +534,12 @@
     {
       "question_text": "من حمل لواء الحسين (ع) في كربلاء؟",
       "options": [
-        "أبو الفضل العباس (ع)",
-        "علي الأكبر (ع)",
         "القاسم بن الحسن",
+        "علي الأكبر (ع)",
+        "أبو الفضل العباس (ع)",
         "حبيب بن مظاهر"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 20,
       "order_index": 21,
       "image_url": null,
@@ -584,12 +584,12 @@
     {
       "question_text": "في أي يوم استشهد الإمام الحسين (ع)؟",
       "options": [
-        "10 محرم سنة 61 هـ",
         "9 محرم سنة 60 هـ",
+        "10 محرم سنة 61 هـ",
         "20 صفر سنة 61 هـ",
         "21 رمضان سنة 61 هـ"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 23,
       "image_url": null,
@@ -609,12 +609,12 @@
     {
       "question_text": "كم كان عمر الإمام الحسين (ع) عند استشهاده؟",
       "options": [
-        "نحو 57 سنة",
         "نحو 47 سنة",
+        "نحو 57 سنة",
         "نحو 67 سنة",
         "نحو 37 سنة"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "time_limit_seconds": 25,
       "order_index": 24,
       "image_url": null,

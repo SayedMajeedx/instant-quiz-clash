@@ -6,25 +6,513 @@
   "archived": false,
   "launch_enabled": true,
   "questions": [
-    {"question_text":"من هو والد أبي الفضل العباس (ع)؟","options":["الإمام علي (ع)","الإمام الحسن (ع)","عقيل بن أبي طالب","جعفر بن أبي طالب"],"correct_index":0,"time_limit_seconds":20,"order_index":0,"image_url":null,"question_type":"multi","explanation":"أبو الفضل العباس هو ابن أمير المؤمنين الإمام علي بن أبي طالب (ع).","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["العباس","النسب"],"source":"بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39","external_id":"ABB-001","is_verified":true,"version":1},
-    {"question_text":"من هي والدة أبي الفضل العباس (ع)؟","options":["فاطمة الكلابية أم البنين","فاطمة الزهراء (ع)","أسماء بنت عميس","ليلى بنت مسعود"],"correct_index":0,"time_limit_seconds":20,"order_index":1,"image_url":null,"question_type":"multi","explanation":"والدته فاطمة بنت حزام الكلابية، المشهورة بكنية أم البنين.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["العباس","أم البنين"],"source":"بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39","external_id":"ABB-002","is_verified":true,"version":1},
-    {"question_text":"ما صلة العباس (ع) بالإمام الحسين (ع)؟","options":["أخوه لأبيه","ابن أخيه","ابن عمه","خاله"],"correct_index":0,"time_limit_seconds":20,"order_index":2,"image_url":null,"question_type":"multi","explanation":"العباس والحسين ابنا الإمام علي (ع)، وأمهما مختلفة، فهو أخوه لأبيه.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["العباس","الحسين","النسب"],"source":"بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39","external_id":"ABB-003","is_verified":true,"version":1},
-    {"question_text":"أي مجموعة تضم إخوة العباس (ع) من أمه الذين حضروا كربلاء؟","options":["عبد الله وجعفر وعثمان","محمد وعون وعبد الله","علي والقاسم وأبو بكر","مسلم وجعفر وعقيل"],"correct_index":0,"time_limit_seconds":25,"order_index":3,"image_url":null,"question_type":"multi","explanation":"كان عبد الله وجعفر وعثمان بنو علي إخوة العباس من أم البنين، وشهدوا كربلاء.","difficulty":"medium","subcategory":"الولادة والنشأة","tags":["العباس","الإخوة"],"source":"بحار الأنوار، المجلسي، ج45، باب مقتل إخوة العباس، ص37-39","external_id":"ABB-004","is_verified":true,"version":1},
-    {"question_text":"كم كان عمر العباس (ع) عند استشهاده بحسب الخبر المنقول في البحار؟","options":["34 سنة","25 سنة","40 سنة","48 سنة"],"correct_index":0,"time_limit_seconds":25,"order_index":4,"image_url":null,"question_type":"multi","explanation":"ينقل المجلسي أن العباس بن علي قُتل وله أربع وثلاثون سنة.","difficulty":"medium","subcategory":"الولادة والنشأة","tags":["العباس","العمر"],"source":"بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39","external_id":"ABB-005","is_verified":true,"version":1},
-    {"question_text":"ما المهمة العسكرية الأبرز للعباس (ع) في معسكر الحسين؟","options":["حمل اللواء","كتابة الرسائل","قيادة ميمنة الجيش","إدارة المفاوضات"],"correct_index":0,"time_limit_seconds":20,"order_index":5,"image_url":null,"question_type":"multi","explanation":"جعل الإمام الحسين (ع) لواءه مع أخيه العباس يوم عاشوراء.","difficulty":"easy","subcategory":"كربلاء والمواقف","tags":["العباس","اللواء"],"source":"نفس المهموم، الشيخ عباس القمي، وقائع يوم عاشوراء، فصل ترتيب أصحاب الحسين","external_id":"ABB-006","is_verified":true,"version":1},
-    {"question_text":"إلى أين أرسل الحسين (ع) العباس مع جماعة قبل عاشوراء؟","options":["إلى الفرات لجلب الماء","إلى الكوفة لطلب الأنصار","إلى مكة لإبلاغ بني هاشم","إلى المدينة لإحضار السلاح"],"correct_index":0,"time_limit_seconds":20,"order_index":6,"image_url":null,"question_type":"multi","explanation":"بعث الحسين أخاه العباس مع رجال نحو الفرات ليأتوا المخيم بالماء.","difficulty":"easy","subcategory":"كربلاء والمواقف","tags":["العباس","الماء"],"source":"الإرشاد، الشيخ المفيد، ج2، فصل ورود كتاب ابن زياد بمنع الماء","external_id":"ABB-007","is_verified":true,"version":1},
-    {"question_text":"كم فارسًا رافق العباس (ع) في بعثة جلب الماء المذكورة في الإرشاد؟","options":["ثلاثون فارسًا","عشرة فرسان","خمسون فارسًا","سبعون فارسًا"],"correct_index":0,"time_limit_seconds":25,"order_index":7,"image_url":null,"question_type":"multi","explanation":"يذكر الإرشاد أن الحسين بعث العباس في ثلاثين فارسًا ومعهم عشرون راجلًا.","difficulty":"hard","subcategory":"كربلاء والمواقف","tags":["العباس","الماء","الفرات"],"source":"الإرشاد، الشيخ المفيد، ج2، فصل منع الماء عن الحسين وأصحابه","external_id":"ABB-008","is_verified":true,"version":1},
-    {"question_text":"كم راجلًا كان مع فرسان العباس (ع) في بعثة الماء؟","options":["عشرون راجلًا","أربعون راجلًا","خمسة رجال","ستون راجلًا"],"correct_index":0,"time_limit_seconds":25,"order_index":8,"image_url":null,"question_type":"multi","explanation":"رافق الفرسانَ العشرين راجلًا، فتمكنوا من ملء القرب والعودة بها.","difficulty":"hard","subcategory":"كربلاء والمواقف","tags":["العباس","الماء"],"source":"الإرشاد، الشيخ المفيد، ج2، فصل منع الماء عن الحسين وأصحابه","external_id":"ABB-009","is_verified":true,"version":1},
-    {"question_text":"من كلّف بحماية جماعة العباس (ع) أثناء ملء القرب؟","options":["نافع بن هلال","حبيب بن مظاهر","زهير بن القين","الحر الرياحي"],"correct_index":0,"time_limit_seconds":25,"order_index":9,"image_url":null,"question_type":"multi","explanation":"تقدم نافع بن هلال نحو الفرات، وحمى الرجال حتى ملؤوا القرب وعادوا.","difficulty":"hard","subcategory":"كربلاء والمواقف","tags":["العباس","نافع بن هلال","الماء"],"source":"الإرشاد، الشيخ المفيد، ج2، فصل منع الماء عن الحسين وأصحابه","external_id":"ABB-010","is_verified":true,"version":1},
-    {"question_text":"متى جاء شمر يعرض الأمان على العباس وإخوته؟","options":["عشية التاسع من المحرم","صباح الثاني من المحرم","ليلة السابع من المحرم","بعد انتهاء القتال"],"correct_index":0,"time_limit_seconds":25,"order_index":10,"image_url":null,"question_type":"multi","explanation":"جاء شمر عشية الخميس لتسع مضين من المحرم، قبيل زحف الجيش على المخيم.","difficulty":"medium","subcategory":"كربلاء والمواقف","tags":["العباس","تاسوعاء","الأمان"],"source":"إعلام الورى، الطبرسي، باب مقتل الحسين، خبر عشية التاسع من المحرم","external_id":"ABB-011","is_verified":true,"version":1},
-    {"question_text":"كيف واجه العباس وإخوته عرض الأمان من شمر؟","options":["رفضوه ولعنوا أمانه","قبلوه ثم عادوا","طلبوا مهلة للتفكير","اشترطوا خروج العيال"],"correct_index":0,"time_limit_seconds":20,"order_index":11,"image_url":null,"question_type":"multi","explanation":"رفضوا العرض وقالوا لشمر إن أمانه لا قيمة له والحسين ابن رسول الله لا أمان له.","difficulty":"easy","subcategory":"الفضائل والمواقف","tags":["العباس","الوفاء","الأمان"],"source":"إعلام الورى، الطبرسي، باب مقتل الحسين، خبر أمان شمر لبني أم البنين","external_id":"ABB-012","is_verified":true,"version":1},
-    {"question_text":"ماذا أمر الحسين (ع) العباس حين اقترب جيش عمر بن سعد مساء تاسوعاء؟","options":["استقبال القوم وسؤالهم عما جاء بهم","بدء القتال فورًا","العودة إلى المدينة","إحراق الخيام"],"correct_index":0,"time_limit_seconds":25,"order_index":12,"image_url":null,"question_type":"multi","explanation":"طلب الحسين من العباس أن يركب ويلقى القوم ويسألهم عن سبب زحفهم.","difficulty":"medium","subcategory":"كربلاء والمواقف","tags":["العباس","تاسوعاء"],"source":"الإرشاد، الشيخ المفيد، ج2، أحداث عشية تاسوعاء","external_id":"ABB-013","is_verified":true,"version":1},
-    {"question_text":"بماذا عاد العباس (ع) إلى الحسين بعد سؤال الجيش عن سبب زحفه؟","options":["أنهم يريدون النزول على حكم ابن زياد أو القتال","أنهم قرروا الانسحاب","أنهم طلبوا الماء","أنهم بايعوا الحسين"],"correct_index":0,"time_limit_seconds":25,"order_index":13,"image_url":null,"question_type":"multi","explanation":"أبلغه أن القوم خُيّروا بين إنزال الحسين على حكم ابن زياد وبين المناجزة.","difficulty":"hard","subcategory":"كربلاء والمواقف","tags":["العباس","المفاوضة","تاسوعاء"],"source":"الإرشاد، الشيخ المفيد، ج2، أحداث عشية تاسوعاء","external_id":"ABB-014","is_verified":true,"version":1},
-    {"question_text":"ما الطلب الذي بلغه العباس (ع) إلى القوم ليلة عاشوراء؟","options":["تأخير القتال إلى الغد","فتح طريق إلى الكوفة","تسليم السلاح","إرسال وفد إلى يزيد"],"correct_index":0,"time_limit_seconds":20,"order_index":14,"image_url":null,"question_type":"multi","explanation":"عاد العباس فطلب من القوم إمهال الحسين وأصحابه تلك الليلة للصلاة والدعاء.","difficulty":"easy","subcategory":"كربلاء والمواقف","tags":["العباس","ليلة عاشوراء"],"source":"الإرشاد، الشيخ المفيد، ج2، أحداث ليلة عاشوراء","external_id":"ABB-015","is_verified":true,"version":1},
-    {"question_text":"أي أخ للعباس (ع) طلب منه أن يتقدم قبله لأنه لا ولد له؟","options":["عبد الله بن علي","عثمان بن علي","جعفر بن علي","محمد بن علي"],"correct_index":0,"time_limit_seconds":25,"order_index":15,"image_url":null,"question_type":"multi","explanation":"طلب العباس من أخيه لأبيه وأمه عبد الله أن يتقدم، وذكر أنه لا ولد له.","difficulty":"hard","subcategory":"عاشوراء والاستشهاد","tags":["العباس","عبد الله بن علي"],"source":"بحار الأنوار، المجلسي، ج45، باب مقتل إخوة العباس، ص38","external_id":"ABB-016","is_verified":true,"version":1},
-    {"question_text":"أي عضوين فقدهما العباس (ع) وهو يدافع عن اللواء والقربة؟","options":["يداه","قدماه","عيناه","كتفاه"],"correct_index":0,"time_limit_seconds":20,"order_index":16,"image_url":null,"question_type":"multi","explanation":"تذكر رواية الإمام السجاد أن العباس آثر أخاه حتى قُطعت يداه.","difficulty":"easy","subcategory":"عاشوراء والاستشهاد","tags":["العباس","الاستشهاد"],"source":"أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس","external_id":"ABB-017","is_verified":true,"version":1},
-    {"question_text":"بماذا عوّض الله العباس (ع) عن يديه وفق حديث الإمام السجاد؟","options":["جناحين يطير بهما في الجنة","قصرين في المدينة","رايتين يوم القيامة","عينين من الجنة"],"correct_index":0,"time_limit_seconds":20,"order_index":17,"image_url":null,"question_type":"multi","explanation":"قال الإمام السجاد إن الله أبدله بيديه جناحين يطير بهما مع الملائكة في الجنة.","difficulty":"medium","subcategory":"الفضائل","tags":["العباس","الإمام السجاد","الجنة"],"source":"أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس","external_id":"ABB-018","is_verified":true,"version":1},
-    {"question_text":"بمن شبّه حديث الإمام السجاد تعويض العباس (ع) بجناحين؟","options":["جعفر بن أبي طالب","حمزة بن عبد المطلب","عقيل بن أبي طالب","مسلم بن عقيل"],"correct_index":0,"time_limit_seconds":25,"order_index":18,"image_url":null,"question_type":"multi","explanation":"شبّه الإمام السجاد ذلك بما جعله الله لجعفر بن أبي طالب من جناحين في الجنة.","difficulty":"medium","subcategory":"الفضائل","tags":["العباس","جعفر الطيار"],"source":"أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس","external_id":"ABB-019","is_verified":true,"version":1},
-    {"question_text":"أي وصف لخّص به الإمام السجاد (ع) موقف عمه العباس؟","options":["آثر وأبلى وفدى أخاه بنفسه","عاد إلى المدينة بعد المعركة","تولى كتابة رسائل الكوفة","قاد ركب السبايا إلى الشام"],"correct_index":0,"time_limit_seconds":20,"order_index":19,"image_url":null,"question_type":"multi","explanation":"دعا له الإمام السجاد وذكر إيثاره وبلاءه وفداءه أخاه الحسين بنفسه.","difficulty":"easy","subcategory":"الفضائل","tags":["العباس","الإيثار","الوفاء"],"source":"أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس","external_id":"ABB-020","is_verified":true,"version":1}
+    {
+      "question_text": "من هو والد أبي الفضل العباس (ع)؟",
+      "options": [
+        "جعفر بن أبي طالب",
+        "الإمام الحسن (ع)",
+        "عقيل بن أبي طالب",
+        "الإمام علي (ع)"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أبو الفضل العباس هو ابن أمير المؤمنين الإمام علي بن أبي طالب (ع).",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "العباس",
+        "النسب"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39",
+      "external_id": "ABB-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من هي والدة أبي الفضل العباس (ع)؟",
+      "options": [
+        "فاطمة الكلابية أم البنين",
+        "فاطمة الزهراء (ع)",
+        "أسماء بنت عميس",
+        "ليلى بنت مسعود"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "والدته فاطمة بنت حزام الكلابية، المشهورة بكنية أم البنين.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "العباس",
+        "أم البنين"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39",
+      "external_id": "ABB-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما صلة العباس (ع) بالإمام الحسين (ع)؟",
+      "options": [
+        "خاله",
+        "ابن أخيه",
+        "ابن عمه",
+        "أخوه لأبيه"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "العباس والحسين ابنا الإمام علي (ع)، وأمهما مختلفة، فهو أخوه لأبيه.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "العباس",
+        "الحسين",
+        "النسب"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39",
+      "external_id": "ABB-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي مجموعة تضم إخوة العباس (ع) من أمه الذين حضروا كربلاء؟",
+      "options": [
+        "محمد وعون وعبد الله",
+        "عبد الله وجعفر وعثمان",
+        "علي والقاسم وأبو بكر",
+        "مسلم وجعفر وعقيل"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان عبد الله وجعفر وعثمان بنو علي إخوة العباس من أم البنين، وشهدوا كربلاء.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "العباس",
+        "الإخوة"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب مقتل إخوة العباس، ص37-39",
+      "external_id": "ABB-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم كان عمر العباس (ع) عند استشهاده بحسب الخبر المنقول في البحار؟",
+      "options": [
+        "25 سنة",
+        "34 سنة",
+        "40 سنة",
+        "48 سنة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ينقل المجلسي أن العباس بن علي قُتل وله أربع وثلاثون سنة.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "العباس",
+        "العمر"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب العباس بن أمير المؤمنين، ص39",
+      "external_id": "ABB-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما المهمة العسكرية الأبرز للعباس (ع) في معسكر الحسين؟",
+      "options": [
+        "إدارة المفاوضات",
+        "كتابة الرسائل",
+        "قيادة ميمنة الجيش",
+        "حمل اللواء"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جعل الإمام الحسين (ع) لواءه مع أخيه العباس يوم عاشوراء.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "اللواء"
+      ],
+      "source": "نفس المهموم، الشيخ عباس القمي، وقائع يوم عاشوراء، فصل ترتيب أصحاب الحسين",
+      "external_id": "ABB-006",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "إلى أين أرسل الحسين (ع) العباس مع جماعة قبل عاشوراء؟",
+      "options": [
+        "إلى الفرات لجلب الماء",
+        "إلى الكوفة لطلب الأنصار",
+        "إلى مكة لإبلاغ بني هاشم",
+        "إلى المدينة لإحضار السلاح"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بعث الحسين أخاه العباس مع رجال نحو الفرات ليأتوا المخيم بالماء.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "الماء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل ورود كتاب ابن زياد بمنع الماء",
+      "external_id": "ABB-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم فارسًا رافق العباس (ع) في بعثة جلب الماء المذكورة في الإرشاد؟",
+      "options": [
+        "سبعون فارسًا",
+        "عشرة فرسان",
+        "خمسون فارسًا",
+        "ثلاثون فارسًا"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 25,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يذكر الإرشاد أن الحسين بعث العباس في ثلاثين فارسًا ومعهم عشرون راجلًا.",
+      "difficulty": "hard",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "الماء",
+        "الفرات"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل منع الماء عن الحسين وأصحابه",
+      "external_id": "ABB-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم راجلًا كان مع فرسان العباس (ع) في بعثة الماء؟",
+      "options": [
+        "خمسة رجال",
+        "أربعون راجلًا",
+        "عشرون راجلًا",
+        "ستون راجلًا"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "رافق الفرسانَ العشرين راجلًا، فتمكنوا من ملء القرب والعودة بها.",
+      "difficulty": "hard",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "الماء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل منع الماء عن الحسين وأصحابه",
+      "external_id": "ABB-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من كلّف بحماية جماعة العباس (ع) أثناء ملء القرب؟",
+      "options": [
+        "زهير بن القين",
+        "حبيب بن مظاهر",
+        "نافع بن هلال",
+        "الحر الرياحي"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تقدم نافع بن هلال نحو الفرات، وحمى الرجال حتى ملؤوا القرب وعادوا.",
+      "difficulty": "hard",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "نافع بن هلال",
+        "الماء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل منع الماء عن الحسين وأصحابه",
+      "external_id": "ABB-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "متى جاء شمر يعرض الأمان على العباس وإخوته؟",
+      "options": [
+        "بعد انتهاء القتال",
+        "صباح الثاني من المحرم",
+        "ليلة السابع من المحرم",
+        "عشية التاسع من المحرم"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جاء شمر عشية الخميس لتسع مضين من المحرم، قبيل زحف الجيش على المخيم.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "تاسوعاء",
+        "الأمان"
+      ],
+      "source": "إعلام الورى، الطبرسي، باب مقتل الحسين، خبر عشية التاسع من المحرم",
+      "external_id": "ABB-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كيف واجه العباس وإخوته عرض الأمان من شمر؟",
+      "options": [
+        "قبلوه ثم عادوا",
+        "رفضوه ولعنوا أمانه",
+        "طلبوا مهلة للتفكير",
+        "اشترطوا خروج العيال"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "رفضوا العرض وقالوا لشمر إن أمانه لا قيمة له والحسين ابن رسول الله لا أمان له.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل والمواقف",
+      "tags": [
+        "العباس",
+        "الوفاء",
+        "الأمان"
+      ],
+      "source": "إعلام الورى، الطبرسي، باب مقتل الحسين، خبر أمان شمر لبني أم البنين",
+      "external_id": "ABB-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ماذا أمر الحسين (ع) العباس حين اقترب جيش عمر بن سعد مساء تاسوعاء؟",
+      "options": [
+        "العودة إلى المدينة",
+        "بدء القتال فورًا",
+        "استقبال القوم وسؤالهم عما جاء بهم",
+        "إحراق الخيام"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "طلب الحسين من العباس أن يركب ويلقى القوم ويسألهم عن سبب زحفهم.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "تاسوعاء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، أحداث عشية تاسوعاء",
+      "external_id": "ABB-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "بماذا عاد العباس (ع) إلى الحسين بعد سؤال الجيش عن سبب زحفه؟",
+      "options": [
+        "أنهم قرروا الانسحاب",
+        "أنهم يريدون النزول على حكم ابن زياد أو القتال",
+        "أنهم طلبوا الماء",
+        "أنهم بايعوا الحسين"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أبلغه أن القوم خُيّروا بين إنزال الحسين على حكم ابن زياد وبين المناجزة.",
+      "difficulty": "hard",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "المفاوضة",
+        "تاسوعاء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، أحداث عشية تاسوعاء",
+      "external_id": "ABB-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما الطلب الذي بلغه العباس (ع) إلى القوم ليلة عاشوراء؟",
+      "options": [
+        "تسليم السلاح",
+        "فتح طريق إلى الكوفة",
+        "تأخير القتال إلى الغد",
+        "إرسال وفد إلى يزيد"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عاد العباس فطلب من القوم إمهال الحسين وأصحابه تلك الليلة للصلاة والدعاء.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء والمواقف",
+      "tags": [
+        "العباس",
+        "ليلة عاشوراء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، أحداث ليلة عاشوراء",
+      "external_id": "ABB-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي أخ للعباس (ع) طلب منه أن يتقدم قبله لأنه لا ولد له؟",
+      "options": [
+        "عبد الله بن علي",
+        "عثمان بن علي",
+        "جعفر بن علي",
+        "محمد بن علي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "طلب العباس من أخيه لأبيه وأمه عبد الله أن يتقدم، وذكر أنه لا ولد له.",
+      "difficulty": "hard",
+      "subcategory": "عاشوراء والاستشهاد",
+      "tags": [
+        "العباس",
+        "عبد الله بن علي"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب مقتل إخوة العباس، ص38",
+      "external_id": "ABB-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي عضوين فقدهما العباس (ع) وهو يدافع عن اللواء والقربة؟",
+      "options": [
+        "يداه",
+        "قدماه",
+        "عيناه",
+        "كتفاه"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر رواية الإمام السجاد أن العباس آثر أخاه حتى قُطعت يداه.",
+      "difficulty": "easy",
+      "subcategory": "عاشوراء والاستشهاد",
+      "tags": [
+        "العباس",
+        "الاستشهاد"
+      ],
+      "source": "أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس",
+      "external_id": "ABB-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "بماذا عوّض الله العباس (ع) عن يديه وفق حديث الإمام السجاد؟",
+      "options": [
+        "رايتين يوم القيامة",
+        "قصرين في المدينة",
+        "جناحين يطير بهما في الجنة",
+        "عينين من الجنة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قال الإمام السجاد إن الله أبدله بيديه جناحين يطير بهما مع الملائكة في الجنة.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل",
+      "tags": [
+        "العباس",
+        "الإمام السجاد",
+        "الجنة"
+      ],
+      "source": "أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس",
+      "external_id": "ABB-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "بمن شبّه حديث الإمام السجاد تعويض العباس (ع) بجناحين؟",
+      "options": [
+        "جعفر بن أبي طالب",
+        "حمزة بن عبد المطلب",
+        "عقيل بن أبي طالب",
+        "مسلم بن عقيل"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "شبّه الإمام السجاد ذلك بما جعله الله لجعفر بن أبي طالب من جناحين في الجنة.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل",
+      "tags": [
+        "العباس",
+        "جعفر الطيار"
+      ],
+      "source": "أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس",
+      "external_id": "ABB-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي وصف لخّص به الإمام السجاد (ع) موقف عمه العباس؟",
+      "options": [
+        "عاد إلى المدينة بعد المعركة",
+        "آثر وأبلى وفدى أخاه بنفسه",
+        "تولى كتابة رسائل الكوفة",
+        "قاد ركب السبايا إلى الشام"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دعا له الإمام السجاد وذكر إيثاره وبلاءه وفداءه أخاه الحسين بنفسه.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل",
+      "tags": [
+        "العباس",
+        "الإيثار",
+        "الوفاء"
+      ],
+      "source": "أمالي الصدوق، المجلس السبعون، حديث الإمام زين العابدين في العباس",
+      "external_id": "ABB-020",
+      "is_verified": true,
+      "version": 1
+    }
   ]
 }

@@ -30,24 +30,24 @@
   "questions": [
     {
       "question_text": "في قول امرئ القيس «وجيدٍ كجيدِ الرئمِ ليس بفاحشٍ»، ما الرئم؟",
-      "options": ["الظبي الأبيض الخالص البياض", "صغير النعام", "الثور الوحشي", "الوعل طويل القرنين"],
-      "correct_index": 0, "time_limit_seconds": 35, "order_index": 0, "image_url": null, "question_type": "multi",
+      "options": ["صغير النعام", "الثور الوحشي", "الوعل طويل القرنين", "الظبي الأبيض الخالص البياض"],
+      "correct_index": 3, "time_limit_seconds": 35, "order_index": 0, "image_url": null, "question_type": "multi",
       "explanation": "الرِّئم في المعاجم الظبي الأبيض الخالص البياض؛ ومن ثم شبّه امرؤ القيس جيد محبوبته بجيد الظبي، لا بالنعام أو الوعل.",
       "source": "ابن منظور، لسان العرب، مادة «رأم»؛ ديوان امرئ القيس، شرح الأعلم الشنتمري، القصيدة اللامية",
       "difficulty": "medium", "subcategory": "غريب الشعر الجاهلي", "tags": ["امرؤ القيس", "الرئم", "المعجم"], "external_id": "ara-rare-001", "is_verified": true, "version": 1
     },
     {
       "question_text": "ما معنى «السُّرى» في قولهم: سَرَوا من آخر الليل؟",
-      "options": ["السير ليلًا", "الراحة عند الظهيرة", "السير أول النهار", "الإقامة في المنزل"],
-      "correct_index": 0, "time_limit_seconds": 30, "order_index": 1, "image_url": null, "question_type": "multi",
+      "options": ["الراحة عند الظهيرة", "السير ليلًا", "السير أول النهار", "الإقامة في المنزل"],
+      "correct_index": 1, "time_limit_seconds": 30, "order_index": 1, "image_url": null, "question_type": "multi",
       "explanation": "السُّرى هو سير عامة الليل أو بعضه، والفعل سَرَى وأسرى يدل على السير ليلًا؛ فلا يعني القيلولة أو البكور.",
       "source": "مجمع اللغة العربية بالقاهرة، المعجم الوسيط، مادة «سرى»، الطبعة الرابعة",
       "difficulty": "medium", "subcategory": "غريب الألفاظ", "tags": ["السُّرى", "دلالة", "معجم"], "external_id": "ara-rare-002", "is_verified": true, "version": 1
     },
     {
       "question_text": "إذا وُصف الرجل في العربية القديمة بأنه «أشمط»، فأي صفة غلبت على شعره؟",
-      "options": ["اختلاط البياض بالسواد", "شدة الجعودة", "الطول حتى المنكبين", "الحمرة الخالصة"],
-      "correct_index": 0, "time_limit_seconds": 30, "order_index": 2, "image_url": null, "question_type": "multi",
+      "options": ["شدة الجعودة", "اختلاط البياض بالسواد", "الطول حتى المنكبين", "الحمرة الخالصة"],
+      "correct_index": 1, "time_limit_seconds": 30, "order_index": 2, "image_url": null, "question_type": "multi",
       "explanation": "الشَّمَط بياض شعر الرأس يخالط سواده؛ ولذلك فالأشمط ليس من ابيض شعره كله، بل من اختلط بياضه بسواده.",
       "source": "الفيروزآبادي، القاموس المحيط، مادة «شمط»، مؤسسة الرسالة، الطبعة الثامنة",
       "difficulty": "medium", "subcategory": "صفات عربية قديمة", "tags": ["أشمط", "الشعر", "القاموس المحيط"], "external_id": "ara-rare-003", "is_verified": true, "version": 1
@@ -70,16 +70,16 @@
     },
     {
       "question_text": "ما المبدأ الذي يدل عليه شعار البرناسية «الفن للفن» في صورته الأساسية؟",
-      "options": ["استقلال القيمة الجمالية عن الوعظ والمنفعة المباشرة", "إخضاع القصيدة للدعاية السياسية", "تسجيل اللاوعي بالكتابة الآلية", "محاكاة الوثيقة العلمية بلا عناية بالشكل"],
-      "correct_index": 0, "time_limit_seconds": 35, "order_index": 5, "image_url": null, "question_type": "multi",
+      "options": ["إخضاع القصيدة للدعاية السياسية", "تسجيل اللاوعي بالكتابة الآلية", "محاكاة الوثيقة العلمية بلا عناية بالشكل", "استقلال القيمة الجمالية عن الوعظ والمنفعة المباشرة"],
+      "correct_index": 3, "time_limit_seconds": 35, "order_index": 5, "image_url": null, "question_type": "multi",
       "explanation": "أكد البرناسيون الصنعة والانضباط الشكلي واستقلال الفن، فرفضوا قياس القصيدة بمنفعتها الأخلاقية أو السياسية المباشرة.",
       "source": "Encyclopaedia Britannica, “Parnassian”: https://www.britannica.com/art/Parnassian",
       "difficulty": "medium", "subcategory": "المذاهب الأدبية", "tags": ["البرناسية", "الفن للفن", "الجماليات"], "external_id": "ara-rare-006", "is_verified": true, "version": 1
     },
     {
       "question_text": "أي اقتران يصف جماعة «الديوان» في النقد العربي الحديث؟",
-      "options": ["العقاد والمازني وشكري، مع الدعوة إلى الوحدة العضوية والصدق النفسي", "شوقي وحافظ ومطران، مع الالتزام بالمحاكاة الكلاسيكية", "نعيمة وجبران وأبو ماضي، بوصفهم جماعة مصرية", "السياب ونازك والبياتي، بوصفهم مدرسة نثرية"],
-      "correct_index": 0, "time_limit_seconds": 40, "order_index": 6, "image_url": null, "question_type": "multi",
+      "options": ["شوقي وحافظ ومطران، مع الالتزام بالمحاكاة الكلاسيكية", "نعيمة وجبران وأبو ماضي، بوصفهم جماعة مصرية", "العقاد والمازني وشكري، مع الدعوة إلى الوحدة العضوية والصدق النفسي", "السياب ونازك والبياتي، بوصفهم مدرسة نثرية"],
+      "correct_index": 2, "time_limit_seconds": 40, "order_index": 6, "image_url": null, "question_type": "multi",
       "explanation": "تُنسَب جماعة الديوان إلى عباس محمود العقاد وإبراهيم المازني وعبد الرحمن شكري، ودعت إلى صدق التجربة ووحدة القصيدة العضوية في مواجهة التقليد.",
       "source": "شوقي ضيف، الأدب العربي المعاصر في مصر، دار المعارف، فصل «مدرسة الديوان»",
       "difficulty": "medium", "subcategory": "مدارس الأدب العربي الحديث", "tags": ["الديوان", "العقاد", "المازني", "شكري"], "external_id": "ara-rare-007", "is_verified": true, "version": 1
@@ -102,8 +102,8 @@
     },
     {
       "question_text": "ما الفارق المعجمي الأدق بين «الحَمْل» و«الحِمْل» كما قرره الخليل؟",
-      "options": ["الحَمْل لما في البطن أو على الشجر، والحِمْل لما حُمل على الظهر", "الحَمْل للخفيف والحِمْل للثقيل", "الحَمْل للإنسان والحِمْل للحيوان", "هما لغتان بلا فرق دلالي"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 9, "image_url": null, "question_type": "multi",
+      "options": ["الحَمْل للخفيف والحِمْل للثقيل", "الحَمْل للإنسان والحِمْل للحيوان", "الحَمْل لما في البطن أو على الشجر، والحِمْل لما حُمل على الظهر", "هما لغتان بلا فرق دلالي"],
+      "correct_index": 2, "time_limit_seconds": 45, "order_index": 9, "image_url": null, "question_type": "multi",
       "explanation": "يفرّق كتاب العين بين الحَمْل، ومنه ما في البطن أو على الشجر، والحِمْل الذي يُحمل على ظهر أو رأس؛ وهو فرق بالحركة والدلالة.",
       "source": "الخليل بن أحمد الفراهيدي، كتاب العين، تحقيق مهدي المخزومي وإبراهيم السامرائي، مادة «حمل»",
       "difficulty": "high", "subcategory": "فروق لغوية", "tags": ["الحَمْل", "الحِمْل", "كتاب العين"], "external_id": "ara-rare-010", "is_verified": true, "version": 1
@@ -118,72 +118,72 @@
     },
     {
       "question_text": "إذا قالت العرب «ثَكِلَتْه أمه»، فما الأصل الدلالي للفعل «ثَكِل»؟",
-      "options": ["فقدت ولدها", "مرض ولدها", "هجرها زوجها", "افتقرت بعد غنى"],
-      "correct_index": 0, "time_limit_seconds": 40, "order_index": 11, "image_url": null, "question_type": "multi",
+      "options": ["مرض ولدها", "هجرها زوجها", "افتقرت بعد غنى", "فقدت ولدها"],
+      "correct_index": 3, "time_limit_seconds": 40, "order_index": 11, "image_url": null, "question_type": "multi",
       "explanation": "الثُّكل فقدان المرأة ولدها، فهي ثاكل وثكلى؛ وقد ترد العبارة دعاءً أو على مجرى كلام العرب من غير إرادة ظاهرها، لكن أصلها المعجمي هو فقد الولد.",
       "source": "ابن الأثير، النهاية في غريب الحديث والأثر، مادة «ثكل»؛ ابن منظور، لسان العرب، مادة «ثكل»",
       "difficulty": "high", "subcategory": "غريب الحديث", "tags": ["ثكل", "غريب الحديث", "دلالة"], "external_id": "ara-rare-012", "is_verified": true, "version": 1
     },
     {
       "question_text": "ما المقصود بـ«الأوابد» في قول امرئ القيس «وقد أغتدي والطير في وكناتها بمنجرد قيد الأوابد هيكل»؟",
-      "options": ["الوحوش النافرة", "الطيور في أعشاشها", "الإبل المعلَّمة", "الخيول المربوطة"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 12, "image_url": null, "question_type": "multi",
+      "options": ["الطيور في أعشاشها", "الوحوش النافرة", "الإبل المعلَّمة", "الخيول المربوطة"],
+      "correct_index": 1, "time_limit_seconds": 45, "order_index": 12, "image_url": null, "question_type": "multi",
       "explanation": "الأوابد الوحوش التي توحشت ونفرت؛ و«قيد الأوابد» وصف للفرس كأنه يقيد الوحوش بسرعة إدراكه لها، لا أنه يقيد خيلًا مربوطة.",
       "source": "الزوزني، شرح المعلقات السبع، شرح معلقة امرئ القيس؛ ابن منظور، لسان العرب، مادة «أبد»",
       "difficulty": "high", "subcategory": "غريب الشعر الجاهلي", "tags": ["الأوابد", "امرؤ القيس", "الخيل"], "external_id": "ara-rare-013", "is_verified": true, "version": 1
     },
     {
       "question_text": "أي عبارة تميز «الطَّلْح» في أشهر تفسير لغوي لآية «وطلح منضود»؟",
-      "options": ["شجر الموز المتراكب الثمر", "نخل باسق قليل الثمر", "سدر منزوع الشوك", "عنب مجفف في عناقيد"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 13, "image_url": null, "question_type": "multi",
+      "options": ["نخل باسق قليل الثمر", "سدر منزوع الشوك", "شجر الموز المتراكب الثمر", "عنب مجفف في عناقيد"],
+      "correct_index": 2, "time_limit_seconds": 45, "order_index": 13, "image_url": null, "question_type": "multi",
       "explanation": "نقل أهل اللغة والتفسير أن الطلح في الآية هو الموز، والمنضود المتراكب بعضه فوق بعض. أما السدر فقد ذُكر مستقلًا قبلها في «سدر مخضود».",
       "source": "الراغب الأصفهاني، المفردات في غريب القرآن، مادة «طلح»؛ الطبري، جامع البيان، تفسير سورة الواقعة: 29",
       "difficulty": "high", "subcategory": "غريب القرآن", "tags": ["الطلح", "المنضود", "الواقعة"], "external_id": "ara-rare-014", "is_verified": true, "version": 1
     },
     {
       "question_text": "بماذا تختلف الطبيعية الأدبية عند إميل زولا عن الواقعية العامة؟",
-      "options": ["تؤكد أثر الوراثة والبيئة وتستلهم المنهج التجريبي", "تنفي أثر المجتمع وترد السلوك إلى المصادفة", "تجعل الرمز الغامض غاية العمل الوحيدة", "تلتزم بوحدة الوزن والقافية في كل الأجناس"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 14, "image_url": null, "question_type": "multi",
+      "options": ["تنفي أثر المجتمع وترد السلوك إلى المصادفة", "تؤكد أثر الوراثة والبيئة وتستلهم المنهج التجريبي", "تجعل الرمز الغامض غاية العمل الوحيدة", "تلتزم بوحدة الوزن والقافية في كل الأجناس"],
+      "correct_index": 1, "time_limit_seconds": 45, "order_index": 14, "image_url": null, "question_type": "multi",
       "explanation": "دفعت الطبيعية مبادئ الواقعية نحو تصور حتمي متأثر بالعلم الوضعي: الشخصيات نتاج الوراثة والوسط والظروف، وزولا أبرز منظّري «الرواية التجريبية».",
       "source": "Encyclopaedia Britannica, “Naturalism — literature”: https://www.britannica.com/art/naturalism-literature",
       "difficulty": "high", "subcategory": "المذاهب الأدبية", "tags": ["الطبيعية", "زولا", "الواقعية"], "external_id": "ara-rare-015", "is_verified": true, "version": 1
     },
     {
       "question_text": "أي ممارسة ترتبط بالسريالية تاريخيًا أكثر من غيرها؟",
-      "options": ["الكتابة الآلية لاستكشاف تداعيات اللاوعي", "الوصف الاجتماعي المحايد وفق وثائق الإحصاء", "تقليد نماذج القدماء مع وحدة الأجناس", "تنقية القصيدة من الصورة والمجاز"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 15, "image_url": null, "question_type": "multi",
+      "options": ["الوصف الاجتماعي المحايد وفق وثائق الإحصاء", "تقليد نماذج القدماء مع وحدة الأجناس", "تنقية القصيدة من الصورة والمجاز", "الكتابة الآلية لاستكشاف تداعيات اللاوعي"],
+      "correct_index": 3, "time_limit_seconds": 45, "order_index": 15, "image_url": null, "question_type": "multi",
       "explanation": "استلهم السرياليون التحليل النفسي وسعوا إلى تحرير عمل اللاوعي؛ وكانت الكتابة الآلية إحدى وسائل تجاوز الرقابة العقلية الواعية.",
       "source": "André Breton, Manifesto of Surrealism (1924)؛ Encyclopaedia Britannica, “Surrealism”: https://www.britannica.com/art/Surrealism",
       "difficulty": "high", "subcategory": "المذاهب الأدبية", "tags": ["السريالية", "الكتابة الآلية", "اللاوعي"], "external_id": "ara-rare-016", "is_verified": true, "version": 1
     },
     {
       "question_text": "في الرمزية الفرنسية، ما الوظيفة الأبرز لـ«المراسلات» بين الحواس والأشياء؟",
-      "options": ["الإيحاء بعلاقات باطنية عبر الرمز والتشابك الحسي", "إثبات الوقائع بتقرير علمي مباشر", "إلغاء الموسيقى اللفظية من القصيدة", "قصر الدلالة على المعنى المعجمي الحرفي"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 16, "image_url": null, "question_type": "multi",
+      "options": ["إثبات الوقائع بتقرير علمي مباشر", "إلغاء الموسيقى اللفظية من القصيدة", "الإيحاء بعلاقات باطنية عبر الرمز والتشابك الحسي", "قصر الدلالة على المعنى المعجمي الحرفي"],
+      "correct_index": 2, "time_limit_seconds": 45, "order_index": 16, "image_url": null, "question_type": "multi",
       "explanation": "ترى الرمزية أن الظاهر يومئ إلى حقائق خفية، فتستعمل الرمز والموسيقى وتراسل الحواس لاقتراح المعنى بدل تقريره المباشر.",
       "source": "Encyclopaedia Britannica, “Symbolism — literary and artistic movement”: https://www.britannica.com/art/Symbolism-literary-and-artistic-movement",
       "difficulty": "high", "subcategory": "المذاهب الأدبية", "tags": ["الرمزية", "تراسل الحواس", "الإيحاء"], "external_id": "ara-rare-017", "is_verified": true, "version": 1
     },
     {
       "question_text": "أي قضية نقدية كانت مركزية عند جماعة أبولو المصرية مقارنة بالإحيائيين؟",
-      "options": ["التجربة الوجدانية والصورة العضوية المتصلة بالطبيعة", "المحافظة الصارمة على معجم المدائح العباسية", "رفض التعبير الذاتي تمامًا", "تحويل الشعر إلى توثيق تاريخي محض"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 17, "image_url": null, "question_type": "multi",
+      "options": ["المحافظة الصارمة على معجم المدائح العباسية", "رفض التعبير الذاتي تمامًا", "التجربة الوجدانية والصورة العضوية المتصلة بالطبيعة", "تحويل الشعر إلى توثيق تاريخي محض"],
+      "correct_index": 2, "time_limit_seconds": 45, "order_index": 17, "image_url": null, "question_type": "multi",
       "explanation": "مثلت أبولو اتجاهًا رومانسيًا أبرز الوجدان والطبيعة والخيال ووحدة التجربة، في مقابل عناية الإحيائيين الأكبر بمحاكاة النموذج التراثي.",
       "source": "شوقي ضيف، الأدب العربي المعاصر في مصر، دار المعارف، فصل «جماعة أبولو»؛ أحمد زكي أبو شادي، مجلة أبولو، العدد الأول (1932)",
       "difficulty": "high", "subcategory": "مدارس الأدب العربي الحديث", "tags": ["أبولو", "الرومانسية", "أبو شادي"], "external_id": "ara-rare-018", "is_verified": true, "version": 1
     },
     {
       "question_text": "ما الذي يفصل «المونولوج الداخلي المباشر» عن السرد النفسي غير المباشر في التصنيف الشائع؟",
-      "options": ["يعرض كلام الشخصية الباطني دون تدخل شارح ظاهر من الراوي", "لا ينقل أي فكرة للشخصية", "يشترط راويا عليمًا يفسر كل إحساس", "لا يمكن أن يرد إلا في المسرح المنظوم"],
-      "correct_index": 0, "time_limit_seconds": 45, "order_index": 18, "image_url": null, "question_type": "multi",
+      "options": ["لا ينقل أي فكرة للشخصية", "يشترط راويا عليمًا يفسر كل إحساس", "لا يمكن أن يرد إلا في المسرح المنظوم", "يعرض كلام الشخصية الباطني دون تدخل شارح ظاهر من الراوي"],
+      "correct_index": 3, "time_limit_seconds": 45, "order_index": 18, "image_url": null, "question_type": "multi",
       "explanation": "المونولوج الداخلي المباشر يقدم المحتوى الذهني كما لو أنه يجري في وعي الشخصية مع تقليل الوساطة السردية؛ أما التحليل النفسي غير المباشر فيصوغه الراوي ويشرحه.",
       "source": "Robert Humphrey, Stream of Consciousness in the Modern Novel, University of California Press, 1954, chapter 2",
       "difficulty": "high", "subcategory": "تقنيات السرد", "tags": ["المونولوج الداخلي", "الراوي", "تيار الوعي"], "external_id": "ara-rare-019", "is_verified": true, "version": 1
     },
     {
       "question_text": "أي تعريف يطابق «التناص» عند جوليا كريستيفا في أصله النظري؟",
-      "options": ["تشكل النص بوصفه تقاطعًا وتحويلًا لنصوص وخطابات سابقة", "نقل عبارة من مصدر مع توثيقها فقط", "مطابقة وزن قصيدة لوزن قصيدة أخرى", "ترجمة النص إلى لغتين في صفحة واحدة"],
-      "correct_index": 0, "time_limit_seconds": 50, "order_index": 19, "image_url": null, "question_type": "multi",
+      "options": ["نقل عبارة من مصدر مع توثيقها فقط", "تشكل النص بوصفه تقاطعًا وتحويلًا لنصوص وخطابات سابقة", "مطابقة وزن قصيدة لوزن قصيدة أخرى", "ترجمة النص إلى لغتين في صفحة واحدة"],
+      "correct_index": 1, "time_limit_seconds": 50, "order_index": 19, "image_url": null, "question_type": "multi",
       "explanation": "التناص أوسع من الاقتباس المعلن؛ فالنص يتكون داخل شبكة من نصوص وخطابات يمتصها ويحوّلها، وهو تصور طورته كريستيفا انطلاقًا من حوارية باختين.",
       "source": "Julia Kristeva, Desire in Language, Columbia University Press, 1980, “Word, Dialogue and Novel”",
       "difficulty": "high", "subcategory": "النظرية الأدبية", "tags": ["التناص", "كريستيفا", "باختين"], "external_id": "ara-rare-020", "is_verified": true, "version": 1

@@ -10,11 +10,11 @@
       "question_text": "ما التاريخ المشهور عند الإمامية لولادة النبي محمد (ص)؟",
       "options": [
         "12 ربيع الأول",
-        "17 ربيع الأول",
+        "15 شعبان",
         "27 رجب",
-        "15 شعبان"
+        "17 ربيع الأول"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 0,
       "image_url": null,
@@ -37,10 +37,10 @@
       "options": [
         "المدينة",
         "الطائف",
-        "مكة",
-        "القدس"
+        "القدس",
+        "مكة"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "time_limit_seconds": 15,
       "order_index": 1,
       "image_url": null,
@@ -62,11 +62,11 @@
       "question_text": "من هو والد النبي محمد (ص)؟",
       "options": [
         "أبو طالب",
-        "عبد المطلب",
+        "عبد الله بن عبد المطلب",
         "حمزة",
-        "عبد الله بن عبد المطلب"
+        "عبد المطلب"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "time_limit_seconds": 15,
       "order_index": 2,
       "image_url": null,
@@ -113,11 +113,11 @@
       "question_text": "كم كان عمر النبي (ص) حين تزوج السيدة خديجة (ع)؟",
       "options": [
         "عشرون سنة",
-        "خمس وعشرون سنة",
+        "خمس وثلاثون سنة",
         "ثلاثون سنة",
-        "خمس وثلاثون سنة"
+        "خمس وعشرون سنة"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 4,
       "image_url": null,
@@ -139,11 +139,11 @@
       "question_text": "من ألقى خطبة زواج النبي (ص) من السيدة خديجة (ع)؟",
       "options": [
         "عبد المطلب",
-        "حمزة",
+        "أبو طالب",
         "العباس",
-        "أبو طالب"
+        "حمزة"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 5,
       "image_url": null,
@@ -166,10 +166,10 @@
       "options": [
         "ثلاثون سنة",
         "خمس وثلاثون سنة",
-        "أربعون سنة",
-        "خمس وأربعون سنة"
+        "خمس وأربعون سنة",
+        "أربعون سنة"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "time_limit_seconds": 15,
       "order_index": 6,
       "image_url": null,
@@ -190,11 +190,11 @@
       "question_text": "ما التاريخ المشهور عند الإمامية لبعثة النبي (ص)؟",
       "options": [
         "17 ربيع الأول",
-        "13 رجب",
+        "27 رجب",
         "15 شعبان",
-        "27 رجب"
+        "13 رجب"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 7,
       "image_url": null,
@@ -215,12 +215,12 @@
     {
       "question_text": "من كانت أول امرأة آمنت برسالة النبي (ص)؟",
       "options": [
-        "فاطمة بنت أسد",
-        "أم سلمة",
         "خديجة بنت خويلد",
+        "أم سلمة",
+        "فاطمة بنت أسد",
         "أسماء بنت عميس"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "time_limit_seconds": 15,
       "order_index": 8,
       "image_url": null,
@@ -242,11 +242,11 @@
       "question_text": "من كان أول الرجال إيمانًا بالنبي (ص)؟",
       "options": [
         "حمزة بن عبد المطلب",
-        "جعفر بن أبي طالب",
+        "علي بن أبي طالب",
         "زيد بن حارثة",
-        "علي بن أبي طالب"
+        "جعفر بن أبي طالب"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "time_limit_seconds": 15,
       "order_index": 9,
       "image_url": null,
@@ -268,11 +268,11 @@
       "question_text": "أين جمع النبي (ص) بني عبد المطلب عند إنذار عشيرته الأقربين؟",
       "options": [
         "دار الأرقم",
-        "جبل الصفا",
+        "دار أبي طالب",
         "المسجد الحرام",
-        "دار أبي طالب"
+        "جبل الصفا"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "time_limit_seconds": 25,
       "order_index": 10,
       "image_url": null,
@@ -293,12 +293,12 @@
     {
       "question_text": "ما المقاطعة التي فرضتها قريش على بني هاشم؟",
       "options": [
-        "منع الحج وحده",
-        "منع السفر إلى الشام",
         "منع البيع والزواج والمخالطة",
+        "منع السفر إلى الشام",
+        "منع الحج وحده",
         "منع دخول المسجد فقط"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "time_limit_seconds": 25,
       "order_index": 11,
       "image_url": null,
@@ -321,10 +321,10 @@
       "options": [
         "العباس",
         "حمزة",
-        "أبو سلمة",
-        "السيدة خديجة"
+        "السيدة خديجة",
+        "أبو سلمة"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "time_limit_seconds": 20,
       "order_index": 12,
       "image_url": null,
@@ -347,10 +347,10 @@
       "options": [
         "حمزة",
         "جعفر",
-        "سلمان",
-        "علي بن أبي طالب"
+        "علي بن أبي طالب",
+        "سلمان"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "time_limit_seconds": 15,
       "order_index": 13,
       "image_url": null,
@@ -371,12 +371,12 @@
     {
       "question_text": "ما أول عمل عمراني قام به النبي (ص) عند وصوله إلى قباء؟",
       "options": [
-        "بناء السوق",
+        "بناء مسجد قباء",
         "حفر خندق",
         "بناء دار الإمارة",
-        "بناء مسجد قباء"
+        "بناء السوق"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "time_limit_seconds": 20,
       "order_index": 14,
       "image_url": null,
@@ -425,10 +425,10 @@
       "options": [
         "أحد",
         "الخندق",
-        "خيبر",
-        "بدر"
+        "بدر",
+        "خيبر"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "time_limit_seconds": 15,
       "order_index": 16,
       "image_url": null,
@@ -449,12 +449,12 @@
     {
       "question_text": "ما الوسيلة الدفاعية التي استُخدمت حول المدينة في غزوة الأحزاب؟",
       "options": [
-        "سور حجري",
+        "حفر الخندق",
         "أبراج خشبية",
         "متاريس بحرية",
-        "حفر الخندق"
+        "سور حجري"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "time_limit_seconds": 15,
       "order_index": 17,
       "image_url": null,
@@ -475,12 +475,12 @@
     {
       "question_text": "لمن أعطى النبي (ص) الراية يوم خيبر بعد قوله إنه يحب الله ورسوله؟",
       "options": [
-        "الزبير بن العوام",
+        "علي بن أبي طالب",
         "سعد بن أبي وقاص",
         "خالد بن الوليد",
-        "علي بن أبي طالب"
+        "الزبير بن العوام"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "time_limit_seconds": 20,
       "order_index": 18,
       "image_url": null,
@@ -502,11 +502,11 @@
       "question_text": "من الذين خرج بهم النبي (ص) لمباهلة نصارى نجران؟",
       "options": [
         "العباس وحمزة وجعفر وعقيل",
-        "أبو ذر وسلمان والمقداد وعمار",
+        "علي وفاطمة والحسن والحسين",
         "زوجاته وبناته جميعًا",
-        "علي وفاطمة والحسن والحسين"
+        "أبو ذر وسلمان والمقداد وعمار"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "time_limit_seconds": 25,
       "order_index": 19,
       "image_url": null,
@@ -529,10 +529,10 @@
       "options": [
         "تعيينه قائدًا على اليمن فقط",
         "تكليفه بجمع الصدقات",
-        "إرساله إلى خيبر",
-        "أنه مولى من كان النبي مولاه"
+        "أنه مولى من كان النبي مولاه",
+        "إرساله إلى خيبر"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "time_limit_seconds": 25,
       "order_index": 20,
       "image_url": null,
@@ -553,12 +553,12 @@
     {
       "question_text": "من تولى غسل النبي (ص) وتجهيزه بعد وفاته؟",
       "options": [
-        "العباس وحده",
+        "علي بن أبي طالب",
         "أبو ذر",
         "سلمان",
-        "علي بن أبي طالب"
+        "العباس وحده"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "time_limit_seconds": 20,
       "order_index": 21,
       "image_url": null,

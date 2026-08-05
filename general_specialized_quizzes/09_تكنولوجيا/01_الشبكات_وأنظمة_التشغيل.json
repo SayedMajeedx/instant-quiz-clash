@@ -1,0 +1,179 @@
+{
+  "id": "lib-tech-networks-os-01",
+  "user_id": "system",
+  "title": "الشبكات وأنظمة التشغيل",
+  "created_at": "2026-08-05T00:00:00.000Z",
+  "is_public": true,
+  "category": "تكنولوجيا",
+  "language": "ar",
+  "quiz_difficulty": "high",
+  "archived": false,
+  "launch_enabled": true,
+  "self_qa_summary": {
+    "accepted_questions": 20,
+    "discarded_drafts": 4,
+    "difficulty_distribution": { "medium": 8, "high": 12 },
+    "discard_reasons": [
+      "استبعاد سؤال حفظ مباشر عن عدد طبقات OSI لأنه لا يقيس فهمًا تشغيليًا",
+      "استبعاد سؤال عن المنفذ الافتراضي لـHTTP لأنه سهل جدًا ولا يحقق مستوى الكويز",
+      "استبعاد مسودة تزعم أن UDP غير موثوق دائمًا؛ فالموثوقية قد توفرها طبقة التطبيق",
+      "استبعاد سؤال عن أفضل نظام تشغيل لأنه تفضيلي ولا يملك جوابًا تقنيًا وحيدًا"
+    ],
+    "checklist": {
+      "knowledge_depth": "passed_all",
+      "plausible_distractors": "passed_all",
+      "answer_explanation_alignment": "passed_all",
+      "reliable_source": "passed_all",
+      "arabic_language_review": "passed_all",
+      "single_correct_answer": "passed_all"
+    }
+  },
+  "rejected_drafts": [
+    { "draft": "كم عدد طبقات نموذج OSI؟", "reason": "حفظ مباشر وشائع لا يتطلب تحليلًا أو فهمًا متوسطًا" },
+    { "draft": "ما رقم منفذ HTTP الافتراضي؟", "reason": "معلومة أولية سهلة لا تلائم مستوى الصعوبة المحدد" },
+    { "draft": "لماذا UDP غير موثوق دائمًا؟", "reason": "صياغة مطلقة مضللة؛ يمكن لبروتوكول التطبيق بناء آليات موثوقية فوق UDP" },
+    { "draft": "ما أفضل نظام تشغيل للخوادم؟", "reason": "الجواب يعتمد على عبء العمل والقيود ولا يوجد خيار صحيح وحيد" }
+  ],
+  "questions": [
+    {
+      "question_text": "يرسل مضيف رزمة IPv4 أكبر من MTU للوصلة التالية، وكانت راية DF مفعّلة. ما السلوك المعياري للموجّه؟",
+      "options": ["يجزّئ الرزمة رغم راية DF", "يحوّلها إلى IPv6 تلقائيًا", "يسقط الرزمة ويرسل ICMP Destination Unreachable برمز Fragmentation Needed", "يخفض نافذة TCP ثم يعيد إرسالها"],
+      "correct_index": 2, "time_limit_seconds": 35, "order_index": 0, "image_url": null, "question_type": "multi",
+      "explanation": "تمنع راية Don't Fragment تجزئة رزمة IPv4. إذا تجاوز حجمها MTU، يسقطها الموجّه ويرسل رسالة ICMP من النوع Destination Unreachable والرمز Fragmentation Needed لتمكين اكتشاف MTU للمسار.",
+      "source": "IETF RFC 1191 — Path MTU Discovery: https://www.rfc-editor.org/rfc/rfc1191", "difficulty": "medium", "subcategory": "IPv4 وMTU", "tags": ["IPv4", "PMTUD", "ICMP"], "external_id": "tech-netos-001", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "بعد أن يرسل عميل TCP مقطع SYN، يتلقى SYN-ACK صالحًا. ما المقطع الذي يكمل المصافحة الثلاثية؟",
+      "options": ["ACK", "FIN-ACK", "RST", "SYN جديد"],
+      "correct_index": 0, "time_limit_seconds": 30, "order_index": 1, "image_url": null, "question_type": "multi",
+      "explanation": "تبدأ المصافحة بـSYN ثم يرد الخادم بـSYN-ACK، ويؤكد العميل رقم تسلسل الخادم بمقطع ACK؛ عندها يصبح الاتصال مؤسسًا.",
+      "source": "IETF RFC 9293 — Transmission Control Protocol, Establishing a Connection: https://www.rfc-editor.org/rfc/rfc9293", "difficulty": "medium", "subcategory": "TCP", "tags": ["TCP", "مصافحة ثلاثية"], "external_id": "tech-netos-002", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "يريد محلّل DNS معرفة خوادم البريد المسؤولة عن نطاق وترتيب أفضليتها. أي نوع سجل يطلب؟",
+      "options": ["MX", "NS", "PTR", "TXT"],
+      "correct_index": 0, "time_limit_seconds": 30, "order_index": 2, "image_url": null, "question_type": "multi",
+      "explanation": "يحمل سجل MX اسم مضيف مبادل البريد وقيمة preference؛ تُفضّل القيمة العددية الأقل. أما NS فيحدد خادم أسماء وPTR للبحث العكسي.",
+      "source": "IETF RFC 1035 — Domain Names: Implementation and Specification, section 3.3.9: https://www.rfc-editor.org/rfc/rfc1035", "difficulty": "medium", "subcategory": "DNS", "tags": ["DNS", "MX"], "external_id": "tech-netos-003", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في شبكة Ethernet محلية، يعرف المضيف عنوان IPv4 للبوابة لكنه لا يعرف عنوانها الفيزيائي. ما البروتوكول الذي يستخدمه للحصول على عنوان MAC؟",
+      "options": ["ICMP", "DHCP", "NDP", "ARP"],
+      "correct_index": 3, "time_limit_seconds": 30, "order_index": 3, "image_url": null, "question_type": "multi",
+      "explanation": "يربط ARP عنوان بروتوكول IPv4 بعنوان Ethernet داخل الشبكة المحلية. NDP يؤدي وظيفة مقابلة ضمن IPv6، وليس IPv4.",
+      "source": "IETF RFC 826 — An Ethernet Address Resolution Protocol: https://www.rfc-editor.org/rfc/rfc826", "difficulty": "medium", "subcategory": "شبكات محلية", "tags": ["ARP", "Ethernet", "MAC"], "external_id": "tech-netos-004", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في نظام بذاكرة افتراضية، حاولت عملية الوصول إلى صفحة صالحة منطقيًا لكنها غير موجودة حاليًا في الذاكرة الفعلية. ما الحدث المتوقع؟",
+      "options": ["تقسيم فوري للعملية إلى خيطين", "خطأ صفحة يعالجه النظام بجلب الصفحة", "تجاوز تلقائي لذاكرة التخزين المؤقت للمعالج", "إرسال إشارة إنهاء حتمًا"],
+      "correct_index": 1, "time_limit_seconds": 35, "order_index": 4, "image_url": null, "question_type": "multi",
+      "explanation": "يولد الوصول إلى صفحة غير مقيمة page fault. إذا كان العنوان جزءًا صالحًا من فضاء العملية، يستطيع النواة جلب الصفحة إلى الذاكرة وتحديث جدول الصفحات ثم استئناف التنفيذ؛ ليس الخطأ قاتلًا بالضرورة.",
+      "source": "Linux kernel documentation — Page Tables: https://docs.kernel.org/mm/page_tables.html", "difficulty": "medium", "subcategory": "الذاكرة الافتراضية", "tags": ["page fault", "ذاكرة افتراضية"], "external_id": "tech-netos-005", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "أي آلية تتيح لبرنامج Unix إنشاء عملية جديدة تبدأ كنسخة من العملية المستدعية قبل تنفيذ برنامج آخر عادةً؟",
+      "options": ["execve()", "fork()", "wait()", "mmap()"],
+      "correct_index": 1, "time_limit_seconds": 30, "order_index": 5, "image_url": null, "question_type": "multi",
+      "explanation": "تنشئ fork() عملية ابنًا بفضاء عناوين منطقي منسوخ من الأب، وغالبًا تُتبع في الابن بـexecve() لاستبدال صورة العملية ببرنامج جديد؛ execve() وحدها لا تنشئ عملية جديدة.",
+      "source": "The Open Group Base Specifications Issue 7 — fork(): https://pubs.opengroup.org/onlinepubs/9699919799/functions/fork.html", "difficulty": "medium", "subcategory": "العمليات", "tags": ["POSIX", "fork", "exec"], "external_id": "tech-netos-006", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "ما الخاصية التي تميز الرابط الصلب hard link في نظام ملفات POSIX عن الرابط الرمزي؟",
+      "options": ["يخزن دائمًا مسارًا نصيًا إلى الهدف", "يمكنه عبور أنظمة الملفات بلا قيود", "له inode الهدف نفسه فقط عندما يكون الهدف مجلدًا", "يشير إلى inode نفسه ويظل صالحًا بعد حذف الاسم الأصلي ما دام رابط صلب آخر موجودًا"],
+      "correct_index": 3, "time_limit_seconds": 35, "order_index": 6, "image_url": null, "question_type": "multi",
+      "explanation": "الرابط الصلب اسم دليل إضافي للكائن نفسه، لذلك يزيد عدّاد الروابط ولا يعتمد على بقاء الاسم الأصلي. الرابط الرمزي كائن مستقل يحتوي مسارًا وقد يصبح معلقًا.",
+      "source": "The Open Group Base Specifications Issue 7 — link(): https://pubs.opengroup.org/onlinepubs/9699919799/functions/link.html", "difficulty": "medium", "subcategory": "أنظمة الملفات", "tags": ["inode", "hard link", "POSIX"], "external_id": "tech-netos-007", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في IPv6، ما الآلية القياسية التي تحل محل ARP لاكتشاف عنوان طبقة الوصلة لجار على الشبكة المحلية؟",
+      "options": ["DHCPv6 فقط", "IGMP", "Neighbor Discovery باستخدام ICMPv6", "OSPFv3"],
+      "correct_index": 2, "time_limit_seconds": 30, "order_index": 7, "image_url": null, "question_type": "multi",
+      "explanation": "يستخدم IPv6 بروتوكول Neighbor Discovery ورسائل Neighbor Solicitation وNeighbor Advertisement ضمن ICMPv6 لحل عناوين طبقة الوصلة، بدل ARP المستخدم في IPv4.",
+      "source": "IETF RFC 4861 — Neighbor Discovery for IP version 6: https://www.rfc-editor.org/rfc/rfc4861", "difficulty": "medium", "subcategory": "IPv6", "tags": ["IPv6", "NDP", "ICMPv6"], "external_id": "tech-netos-008", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "يعلن موجّه مسارين في جدول IPv4: ‎10.0.0.0/8 عبر A و‎10.1.2.0/24 عبر B. إلى أي قفزة تُرسل رزمة وجهتها ‎10.1.2.77؟",
+      "options": ["A لأن /8 أُضيف أولًا", "B لأن /24 هو التطابق الأطول", "كلاهما بالتناوب حتمًا", "تُسقط بسبب وجود مسارين متداخلين"],
+      "correct_index": 1, "time_limit_seconds": 40, "order_index": 8, "image_url": null, "question_type": "multi",
+      "explanation": "تطابق الوجهة كلا البادئتين، لكن قرار التوجيه يختار أطول بادئة مطابقة؛ /24 أكثر تحديدًا من /8، لذلك تُستخدم القفزة B.",
+      "source": "IETF RFC 1812 — Requirements for IP Version 4 Routers, section 5.2.4.3: https://www.rfc-editor.org/rfc/rfc1812", "difficulty": "high", "subcategory": "التوجيه", "tags": ["CIDR", "longest prefix match"], "external_id": "tech-netos-009", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "اتصال TCP لديه نافذة ازدحام cwnd=12 MSS ونافذة استقبال rwnd=8 MSS، ولا توجد بيانات غير مؤكدة. ما الحد الأقصى المبدئي للبيانات التي يمكن أن تكون قيد الإرسال؟",
+      "options": ["12 MSS", "8 MSS", "20 MSS", "96 MSS"],
+      "correct_index": 1, "time_limit_seconds": 45, "order_index": 9, "image_url": null, "question_type": "multi",
+      "explanation": "يحد الإرسال كل من التحكم في الازدحام والتحكم في التدفق، لذا نافذة الإرسال الفعلية لا تتجاوز min(cwnd,rwnd)=min(12,8)=8 MSS.",
+      "source": "IETF RFC 5681 — TCP Congestion Control, section 2: https://www.rfc-editor.org/rfc/rfc5681", "difficulty": "high", "subcategory": "TCP المتقدم", "tags": ["cwnd", "rwnd", "تدفق"], "external_id": "tech-netos-010", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "خلال استعلام DNS تكراري، أعاد الخادم سجلًا بقيمة TTL تساوي 300. بعد 120 ثانية، ما أكبر TTL ينبغي أن تعرضه نسخة مخبأة لذلك السجل، بافتراض عدم تحديثه؟",
+      "options": ["300 ثانية", "420 ثانية", "صفر دائمًا", "180 ثانية"],
+      "correct_index": 3, "time_limit_seconds": 40, "order_index": 10, "image_url": null, "question_type": "multi",
+      "explanation": "TTL يحدد الزمن الذي يجوز خلاله تخزين السجل مؤقتًا، وتُنقصه المدة المنقضية في المخبأ. بعد 120 ثانية من 300 يبقى بحد أقصى 180 ثانية.",
+      "source": "IETF RFC 1035 — Domain Names: Implementation and Specification, section 3.2.1: https://www.rfc-editor.org/rfc/rfc1035", "difficulty": "high", "subcategory": "DNS", "tags": ["DNS cache", "TTL"], "external_id": "tech-netos-011", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "أي وصف دقيق لما تفعله ترجمة PAT/NAPT عند مشاركة عدة مضيفين عنوان IPv4 عامًا واحدًا؟",
+      "options": ["تستبدل عناوين MAC فقط ولا تلمس ترويسة IP", "تشفّر حمولة كل رزمة تلقائيًا", "تضيف مسارًا ثابتًا منفصلًا لكل مضيف بلا تعديل للرزم", "تميز التدفقات بتعديل عناوين وأرقام منافذ النقل مع حفظ حالة الربط"],
+      "correct_index": 3, "time_limit_seconds": 45, "order_index": 11, "image_url": null, "question_type": "multi",
+      "explanation": "يسمح NAPT بتعدد المضيفين خلف عنوان خارجي واحد عبر ترجمة عنوان IP ومعرّف النقل، مثل منفذ TCP أو UDP، والاحتفاظ بربط يعيد الرزم الواردة إلى التدفق الداخلي الصحيح.",
+      "source": "IETF RFC 3022 — Traditional IP Network Address Translator: https://www.rfc-editor.org/rfc/rfc3022", "difficulty": "high", "subcategory": "NAT", "tags": ["NAPT", "PAT", "منافذ"], "external_id": "tech-netos-012", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في OSPF، لماذا لا يكفي عدد القفزات وحده لاختيار المسار الأفضل؟",
+      "options": ["لأنه بروتوكول path-vector يعتمد AS_PATH", "لأن OSPF يحسب أقصر مسار وفق كلفة الروابط المعلنة لا عدد الموجّهات فقط", "لأنه لا يحتفظ بقاعدة حالة وصلات", "لأنه يختار دائمًا المسار ذي أعلى MTU"],
+      "correct_index": 1, "time_limit_seconds": 45, "order_index": 12, "image_url": null, "question_type": "multi",
+      "explanation": "OSPF بروتوكول حالة وصلات، ويبني شجرة أقصر المسارات باستخدام metric هي مجموع كلف الواجهات. قد يتفوق مسار أكثر قفزات إذا كان مجموع كلفته أقل.",
+      "source": "IETF RFC 2328 — OSPF Version 2, sections 2.1 and 16: https://www.rfc-editor.org/rfc/rfc2328", "difficulty": "high", "subcategory": "بروتوكولات التوجيه", "tags": ["OSPF", "link-state", "metric"], "external_id": "tech-netos-013", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "شبكة IPv4 هي ‎192.0.2.0/26. بعد استبعاد عنواني الشبكة والبث، كم عنوانًا يمكن إسناده عادةً إلى مضيفين؟",
+      "options": ["62", "64", "60", "126"],
+      "correct_index": 0, "time_limit_seconds": 40, "order_index": 13, "image_url": null, "question_type": "multi",
+      "explanation": "تترك بادئة /26 ست بتات للمضيف، أي 2^6=64 عنوانًا. في شبكة البث التقليدية يُحجز أول عنوان للشبكة وآخر عنوان للبث، فيبقى 62.",
+      "source": "IETF RFC 4632 — Classless Inter-domain Routing (CIDR): https://www.rfc-editor.org/rfc/rfc4632", "difficulty": "high", "subcategory": "العنونة والتقسيم", "tags": ["CIDR", "subnetting", "IPv4"], "external_id": "tech-netos-014", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "تحت خوارزمية الاستبدال LRU، الذاكرة تحوي الصفحات [1،2،3] وكانت 1 الأقل استخدامًا حديثًا. بعد الوصول إلى 2 ثم حدوث خطأ صفحة للصفحة 4، أي صفحة تُستبدل؟",
+      "options": ["2", "3", "1", "4"],
+      "correct_index": 2, "time_limit_seconds": 40, "order_index": 14, "image_url": null, "question_type": "multi",
+      "explanation": "الوصول إلى 2 يجعلها حديثة الاستخدام، بينما تبقى 1 أقدم صفحة استعمالًا من بين الصفحات المقيمة؛ لذلك تختار LRU الصفحة 1 ضحية للاستبدال.",
+      "source": "Silberschatz, Galvin & Gagne, Operating System Concepts, 10th ed., chapter 10 — Virtual Memory", "difficulty": "high", "subcategory": "إدارة الذاكرة", "tags": ["LRU", "page replacement"], "external_id": "tech-netos-015", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "أي مجموعة تمثل الشروط الأربعة اللازمة معًا لحدوث الاختناق المتبادل وفق نموذج كوفمان؟",
+      "options": ["الاستبعاد المتبادل، الإمساك والانتظار، عدم نزع المورد، الانتظار الدائري", "التزامن، الإنصاف، الأولوية، المقاطعة", "الترحيل، التجزئة، التخزين المؤقت، الاستبدال", "الانتظار المشغول، التبديل السياقي، الجوع، الانقلاب الأولوي"],
+      "correct_index": 0, "time_limit_seconds": 45, "order_index": 15, "image_url": null, "question_type": "multi",
+      "explanation": "لا يمكن أن يقع deadlock إلا مع اجتماع mutual exclusion وhold-and-wait وno preemption وcircular wait. كسر أي شرط منها يمنع الاختناق ضمن هذا النموذج.",
+      "source": "Silberschatz, Galvin & Gagne, Operating System Concepts, 10th ed., chapter 8 — Deadlocks", "difficulty": "high", "subcategory": "التزامن", "tags": ["deadlock", "Coffman conditions"], "external_id": "tech-netos-016", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في نظام يستخدم copy-on-write بعد fork()، متى تُنسخ صفحة ذاكرة فعلية عادةً إلى صفحة مستقلة للابن أو الأب؟",
+      "options": ["فور استدعاء fork() لكل الصفحات", "عند أول قراءة من الصفحة", "فقط عند انتهاء العملية الأب", "عندما يحاول أحدهما الكتابة إلى الصفحة المشتركة"],
+      "correct_index": 3, "time_limit_seconds": 40, "order_index": 16, "image_url": null, "question_type": "multi",
+      "explanation": "يسمح copy-on-write للأب والابن بمشاركة الصفحات مبدئيًا على أنها للقراءة. تُنشأ نسخة خاصة عند محاولة الكتابة، مما يؤجل النسخ ويتجنب نسخ صفحات لن تتغير.",
+      "source": "Linux man-pages — fork(2): https://man7.org/linux/man-pages/man2/fork.2.html", "difficulty": "high", "subcategory": "العمليات والذاكرة", "tags": ["copy-on-write", "fork"], "external_id": "tech-netos-017", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "عملية ذات ثلاثة خيوط مستخدم تنتقل من النمط المستخدم إلى النواة لتنفيذ system call حاجب. في نموذج one-to-one، ما النتيجة الأصح؟",
+      "options": ["تُحجب العملية كلها بالضرورة لأن الخيوط تشترك في فضاء العناوين", "يتحول الاستدعاء الحاجب تلقائيًا إلى غير حاجب", "يمكن للنواة حجب ذلك الخيط وحده مع استمرار خيوط العملية الأخرى القابلة للتشغيل", "تنشئ النواة عملية جديدة لكل استدعاء"],
+      "correct_index": 2, "time_limit_seconds": 45, "order_index": 17, "image_url": null, "question_type": "multi",
+      "explanation": "في نموذج one-to-one يقابل كل خيط مستخدم خيطًا قابلًا للجدولة في النواة، ولذلك يمكن أن ينام الخيط الذي نفذ الاستدعاء الحاجب بينما تستمر خيوط أخرى من العملية نفسها.",
+      "source": "Silberschatz, Galvin & Gagne, Operating System Concepts, 10th ed., chapter 4 — Threads & Concurrency", "difficulty": "high", "subcategory": "الخيوط", "tags": ["threads", "system call", "one-to-one"], "external_id": "tech-netos-018", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في نظام ملفات يستخدم journaling للبيانات الوصفية فقط، ما الضمان الأساسي المقصود بعد انقطاع مفاجئ للطاقة؟",
+      "options": ["إعادة بنية نظام الملفات إلى حالة متسقة، دون ضمان أن أحدث محتوى للملفات كُتب كاملًا", "استعادة كل بايت من آخر عملية كتابة تطبيقية حتمًا", "منع تلف القرص الفيزيائي", "الاستغناء عن التخزين المؤقت للكتابة"],
+      "correct_index": 0, "time_limit_seconds": 45, "order_index": 18, "image_url": null, "question_type": "multi",
+      "explanation": "تسجيل تغييرات البيانات الوصفية في journal يسمح بإعادة تشغيل المعاملات واستعادة اتساق البنية بعد الانهيار. لكنه لا يساوي تسجيل بيانات الملفات نفسها، لذا قد لا تكون أحدث البيانات التطبيقية محفوظة.",
+      "source": "Linux kernel documentation — ext4 Journal (jbd2): https://docs.kernel.org/filesystems/ext4/journal.html", "difficulty": "high", "subcategory": "أنظمة الملفات", "tags": ["journaling", "ext4", "metadata"], "external_id": "tech-netos-019", "is_verified": true, "version": 1
+    },
+    {
+      "question_text": "في جدولة Round Robin، ماذا يحدث عادةً إذا صُغّرت الشريحة الزمنية كثيرًا جدًا مقارنة بزمن التبديل السياقي؟",
+      "options": ["تتحول الخوارزمية إلى FCFS تمامًا", "يختفي زمن الاستجابة من دون أي كلفة", "ترتفع كلفة التبديل السياقي وتنخفض كفاءة المعالج", "تُمنع العمليات ذات الدفعات الطويلة من التنفيذ كليًا"],
+      "correct_index": 2, "time_limit_seconds": 40, "order_index": 19, "image_url": null, "question_type": "multi",
+      "explanation": "الشريحة الصغيرة تحسن سرعة التناوب حتى حد ما، لكن إذا قاربت كلفة تبديل السياق يُستهلك جزء كبير من وقت المعالج في الحفظ والاستعادة بدل تنفيذ العمل الفعلي.",
+      "source": "Silberschatz, Galvin & Gagne, Operating System Concepts, 10th ed., chapter 5 — CPU Scheduling", "difficulty": "high", "subcategory": "جدولة المعالج", "tags": ["Round Robin", "context switch", "quantum"], "external_id": "tech-netos-020", "is_verified": true, "version": 1
+    }
+  ]
+}
