@@ -222,9 +222,9 @@ function HostRoom() {
     void supabase.rpc("archive_room", { p_room_id: room.id });
   }, [room]);
 
-  // Play category-specific background music during gameplay
+  // Play category-specific background music continuously during gameplay
   useEffect(() => {
-    if (!quiz) {
+    if (!quiz || room?.status === "ended") {
       sounds.stopBgm();
       return;
     }
@@ -235,11 +235,14 @@ function HostRoom() {
     } else {
       sounds.stopBgm();
     }
+  }, [quiz?.id, room?.status]);
 
+  // Stop BGM only when host screen unmounts completely
+  useEffect(() => {
     return () => {
       sounds.stopBgm();
     };
-  }, [quiz, room?.status]);
+  }, []);
 
   const questionAnswerCount =
     phase.kind === "question"
@@ -673,14 +676,14 @@ function HostRoom() {
   function getQuestionFontSize(text: string, hasImage: boolean): string {
     const len = text ? text.length : 0;
     if (hasImage) {
-      if (len > 120) return "text-base sm:text-lg md:text-xl lg:text-2xl";
-      if (len > 60) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
-      return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
+      if (len > 120) return "text-base sm:text-lg md:text-xl";
+      if (len > 60) return "text-lg sm:text-xl md:text-2xl";
+      return "text-xl sm:text-2xl md:text-3xl";
     }
-    if (len > 140) return "text-lg sm:text-xl md:text-2xl lg:text-3xl";
-    if (len > 80) return "text-xl sm:text-2xl md:text-3xl lg:text-4xl";
-    if (len > 40) return "text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
-    return "text-3xl sm:text-4xl md:text-5xl lg:text-6xl";
+    if (len > 140) return "text-lg sm:text-xl md:text-2xl";
+    if (len > 80) return "text-xl sm:text-2xl md:text-3xl";
+    if (len > 40) return "text-2xl sm:text-3xl md:text-4xl";
+    return "text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
   }
 
   const question = phase.question;
@@ -701,7 +704,7 @@ function HostRoom() {
   const revealing = phase.kind === "reveal";
 
   return (
-    <main className="relative h-screen max-h-screen overflow-hidden flex flex-col justify-between p-4 sm:p-6">
+    <main className="relative h-screen max-h-screen w-full overflow-hidden flex flex-col justify-between p-3 sm:p-4 md:p-5">
       <AnimatedBg />
       <header className="flex shrink-0 items-center justify-between gap-4">
         <span className="rounded-full border border-border bg-surface-gradient px-4 py-1.5 font-display text-sm">
@@ -732,13 +735,13 @@ function HostRoom() {
         </div>
       </header>
 
-      <div className="my-auto min-h-0 flex-1 flex flex-col items-center justify-center text-center overflow-hidden py-2">
-        <div className="flex flex-col items-center justify-center gap-3 w-full max-w-5xl">
+      <div className="my-auto min-h-0 flex-1 flex flex-col items-center justify-center text-center overflow-hidden py-1 sm:py-2">
+        <div className="flex flex-col items-center justify-center gap-2 w-full max-w-5xl">
           {question.image_url ? (
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 w-full">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-3 sm:gap-5 w-full">
               <QuestionImage
                 path={question.image_url}
-                className="max-h-[20vh] max-w-[80vw] md:max-w-[35vw] rounded-2xl border border-border object-contain shrink-0"
+                className="max-h-[18vh] max-w-[80vw] md:max-w-[30vw] rounded-2xl border border-border object-contain shrink-0"
               />
               <h1 className={cn("font-display max-w-3xl leading-snug", getQuestionFontSize(question.question_text, true))}>
                 {question.question_text || "…"}
@@ -751,15 +754,15 @@ function HostRoom() {
           )}
         </div>
 
-        <div className="mt-3 sm:mt-4 flex w-full max-w-2xl items-center justify-between gap-4 shrink-0 px-2">
+        <div className="mt-2 sm:mt-3 flex w-full max-w-xl items-center justify-between gap-3 shrink-0 px-2">
           {revealing ? (
             <div className="flex-1 flex flex-col items-center">
-              <p className="font-display text-2xl sm:text-3xl text-lime">{t("host.correctAnswer")}</p>
+              <p className="font-display text-xl sm:text-2xl text-lime">{t("host.correctAnswer")}</p>
               {manual ? (
                 <button
                   type="button"
                   onClick={() => void advance(phase.index, "reveal")}
-                  className="press mt-3 rounded-2xl bg-gradient-hero px-6 py-2.5 font-display text-lg sm:text-xl text-primary-foreground shadow-chunky"
+                  className="press mt-2 rounded-2xl bg-gradient-hero px-5 py-2 font-display text-base sm:text-lg text-primary-foreground shadow-chunky"
                 >
                   {isLast ? t("host.finish") : t("host.showScores")}
                 </button>
@@ -767,21 +770,21 @@ function HostRoom() {
             </div>
           ) : (
             <>
-              <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={96} />
+              <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={76} />
               <div className="flex-1">
-                <p className="font-display text-xl sm:text-2xl tabular-nums">
+                <p className="font-display text-lg sm:text-xl tabular-nums">
                   {everyoneAnswered
                     ? t("host.everyoneAnswered")
                     : t("host.answered", { answered: questionAnswers.length, total: players.length })}
                 </p>
-                <div className="mt-2">
+                <div className="mt-1.5">
                   <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />
                 </div>
               </div>
               <button
                 type="button"
                 onClick={() => void advance(phase.index, "question")}
-                className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-base"
+                className="press rounded-2xl border border-border bg-surface-gradient px-3.5 py-1.5 font-display text-sm"
               >
                 {t("host.next")}
               </button>
@@ -790,7 +793,7 @@ function HostRoom() {
         </div>
       </div>
 
-      <div dir="ltr" className="shrink-0 w-full max-w-5xl mx-auto grid grid-cols-2 gap-2.5 sm:gap-3 pt-2 pb-1">
+      <div dir="ltr" className="shrink-0 w-full max-w-5xl mx-auto grid grid-cols-2 gap-2 sm:gap-3 pt-1 pb-2 sm:pb-3">
         {Array.from({ length: choices }, (_, i) => (
           <AnswerTile
             key={i}

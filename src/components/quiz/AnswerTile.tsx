@@ -62,7 +62,7 @@ export function AnswerTile({
       className={cn(
         "press relative flex w-full items-center gap-3 sm:gap-4 overflow-hidden rounded-2xl border-b-[5px] sm:border-b-[6px] px-3 sm:px-4 text-start font-display text-primary-foreground transition-all",
         style.bg,
-        size === "player" ? "min-h-[20vh] justify-center" : "min-h-[60px] sm:min-h-[72px] lg:min-h-[84px] py-2 sm:py-3",
+        size === "player" ? "min-h-[20vh] justify-center" : "min-h-[48px] sm:min-h-[58px] lg:min-h-[68px] py-1.5 sm:py-2.5",
         state === "correct" && "animate-pulse-hard ring-4 ring-primary-foreground",
         state === "wrong" && "opacity-35 grayscale",
         state === "dimmed" && "opacity-30",
@@ -76,13 +76,13 @@ export function AnswerTile({
       <span
         className={cn(
           "grid shrink-0 place-items-center",
-          size === "player" ? "size-14 sm:size-16" : "size-8 sm:size-10 lg:size-11",
+          size === "player" ? "size-14 sm:size-16" : "size-7 sm:size-9 lg:size-10",
         )}
       >
-        <AnswerShape index={index} className={size === "player" ? "size-12 sm:size-14" : "size-7 sm:size-8 lg:size-9"} />
+        <AnswerShape index={index} className={size === "player" ? "size-12 sm:size-14" : "size-6 sm:size-7 lg:size-8"} />
       </span>
       {children ? (
-        <span className={cn("flex-1 leading-snug line-clamp-2", size === "host" ? "text-base sm:text-xl lg:text-2xl xl:text-3xl" : "text-lg sm:text-xl")}>
+        <span className={cn("flex-1 leading-snug line-clamp-2", size === "host" ? "text-sm sm:text-lg lg:text-xl xl:text-2xl" : "text-lg sm:text-xl")}>
           {children}
         </span>
       ) : null}
