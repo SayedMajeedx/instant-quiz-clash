@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-05T08:12:26.532Z",
+  "source_file": "merged_questions_launch_ready.json",
+  "scope": [
+    "لغة عربية وأدب",
+    "إسلاميات عامة",
+    "إسلاميات - شيعي اثنا عشري"
+  ],
+  "methodology": "مراجعة محافظة بقواعد رفض للبتر والغموض والأخطاء اللغوية والتحيز الإنشائي وضعف البنية والمصدر، ثم ترتيب جودة وتوزيع متوازن على التصنيفات الفرعية. الأسئلة خارج أفضل 260 استبعدت لصالح بدائل أقوى.",
+  "totals": {
+    "reviewed": 1350,
+    "accepted": 260,
+    "rejected": 1090,
+    "repaired": 1
+  },
+  "by_category": {
+    "لغة عربية وأدب": {
+      "reviewed": 250,
+      "accepted": 80,
+      "rejected": 170
+    },
+    "إسلاميات عامة": {
+      "reviewed": 500,
+      "accepted": 80,
+      "rejected": 420
+    },
+    "إسلاميات - شيعي اثنا عشري": {
+      "reviewed": 600,
+      "accepted": 100,
+      "rejected": 500
+    }
+  },
+  "rejection_reasons": {
+    "استبعاد انتقائي: سؤال أقل جودة من البدائل": 868,
+    "شرح ضعيف أو مفقود": 15,
+    "لغة إنشائية أو متحيزة": 192,
+    "أخطاء لغوية ظاهرة": 8,
+    "صياغة قصيرة أو ناقصة": 2,
+    "خيارات مكررة": 1,
+    "تفصيل خلافي أو غير منضبط": 4
+  },
+  "repaired_questions": [
+    {
+      "id": "B001-QUR-008",
+      "before": "في أي سورة وردت قصة أصحاب؟",
+      "after": "في أي سورة وردت قصة أصحاب الكهف؟",
+      "basis": "الإجابة والشرح والمصدر تحدد جميعها أصحاب الكهف بلا التباس"
+    }
+  ],
+  "validation": {
+    "json_valid": true,
+    "selected_count": 260,
+    "unique_ids": true,
+    "duplicate_ids": [],
+    "unique_question_text": true,
+    "duplicate_question_ids": [],
+    "schema_consistent": true,
+    "schema_error_ids": [],
+    "correct_indices_valid": true
+  }
+}

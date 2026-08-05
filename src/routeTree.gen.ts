@@ -88,9 +88,9 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/browse/$category': typeof BrowseCategoryRoute
   '/play/$code': typeof PlayCodeRoute
   '/browse/': typeof BrowseIndexRoute
-  '/browse/$category': typeof BrowseCategoryRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
@@ -101,9 +101,9 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/browse/$category': typeof BrowseCategoryRoute
   '/play/$code': typeof PlayCodeRoute
   '/browse': typeof BrowseIndexRoute
-  '/browse/$category': typeof BrowseCategoryRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
@@ -116,9 +116,9 @@ export interface FileRoutesById {
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/browse/$category': typeof BrowseCategoryRoute
   '/play/$code': typeof PlayCodeRoute
   '/browse/': typeof BrowseIndexRoute
-  '/browse/$category': typeof BrowseCategoryRoute
   '/_authenticated/host/$code': typeof AuthenticatedHostCodeRoute
   '/_authenticated/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
@@ -131,9 +131,9 @@ export interface FileRouteTypes {
     | '/'
     | '/auth'
     | '/join'
+    | '/browse/$category'
     | '/play/$code'
     | '/browse/'
-    | '/browse/$category'
     | '/host/$code'
     | '/quizzes/$quizId'
     | '/browse/$quizId/preview'
@@ -144,9 +144,9 @@ export interface FileRouteTypes {
     | '/'
     | '/auth'
     | '/join'
+    | '/browse/$category'
     | '/play/$code'
     | '/browse'
-    | '/browse/$category'
     | '/host/$code'
     | '/quizzes/$quizId'
     | '/browse/$quizId/preview'
@@ -158,9 +158,9 @@ export interface FileRouteTypes {
     | '/_authenticated'
     | '/auth'
     | '/join'
+    | '/browse/$category'
     | '/play/$code'
     | '/browse/'
-    | '/browse/$category'
     | '/_authenticated/host/$code'
     | '/_authenticated/quizzes/$quizId'
     | '/browse/$quizId/preview'
@@ -173,9 +173,9 @@ export interface RootRouteChildren {
   AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AuthRoute: typeof AuthRoute
   JoinRoute: typeof JoinRoute
+  BrowseCategoryRoute: typeof BrowseCategoryRoute
   PlayCodeRoute: typeof PlayCodeRoute
   BrowseIndexRoute: typeof BrowseIndexRoute
-  BrowseCategoryRoute: typeof BrowseCategoryRoute
   BrowseQuizIdPreviewRoute: typeof BrowseQuizIdPreviewRoute
 }
 
@@ -290,9 +290,9 @@ const rootRouteChildren: RootRouteChildren = {
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AuthRoute: AuthRoute,
   JoinRoute: JoinRoute,
+  BrowseCategoryRoute: BrowseCategoryRoute,
   PlayCodeRoute: PlayCodeRoute,
   BrowseIndexRoute: BrowseIndexRoute,
-  BrowseCategoryRoute: BrowseCategoryRoute,
   BrowseQuizIdPreviewRoute: BrowseQuizIdPreviewRoute,
 }
 export const routeTree = rootRouteImport
