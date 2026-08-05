@@ -57,7 +57,6 @@ function HostRoom() {
   // Optimistic local state for 0ms instant UI responses
   const [localRoomPatch, setLocalRoomPatch] = useState<Partial<Room>>({});
   const [localPlayerTeams, setLocalPlayerTeams] = useState<Record<string, number | null>>({});
-  const [pausedElapsedMs, setPausedElapsedMs] = useState<number | null>(null);
 
   const room = useMemo(() => {
     if (!state.room) return null;
@@ -81,15 +80,12 @@ function HostRoom() {
     const ms = interQuestionSec * 1000;
     if (rawPhase.kind === "reveal" || rawPhase.kind === "leaderboard") {
       const phaseStartedAt = new Date(room.phase_started_at ?? room.started_at ?? 0).getTime();
-      const effectiveNow = room.is_paused ? phaseStartedAt : state.now;
-      const elapsed = room.is_paused && pausedElapsedMs !== null
-        ? pausedElapsedMs
-        : Math.max(0, effectiveNow - phaseStartedAt);
+      const elapsed = Math.max(0, state.now - phaseStartedAt);
       const limit = rawPhase.kind === "reveal" ? 2500 : ms;
       return { ...rawPhase, msLeft: Math.max(0, limit - elapsed) };
     }
     return rawPhase;
-  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, room?.is_paused, pausedElapsedMs, state.now]);
+  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, state.now]);
 
   // Prevent tablet / PC / phone screen from sleeping during live game
   useWakeLock(true);
@@ -105,49 +101,20 @@ function HostRoom() {
   async function patchRoom(patch: Partial<Room>) {
     if (!room) return;
     setLocalRoomPatch((prev) => ({ ...prev, ...patch }));
-    const dbPatch: Record<string, unknown> = { ...patch };
-    delete dbPatch["is_paused"];
-    if (Object.keys(dbPatch).length > 0) {
-      await supabase.from("rooms").update(dbPatch as never).eq("id", room.id);
-    }
+    await supabase.from("rooms").update(patch as never).eq("id", room.id);
     void state.refresh();
   }
 
   async function handleStartGame() {
     if (!room) return;
     const nowIso = new Date(getSyncedNow()).toISOString();
-    setPausedElapsedMs(null);
     await patchRoom({
       status: "active",
       cursor_index: 0,
       cursor_phase: "question",
       started_at: nowIso,
       phase_started_at: nowIso,
-      is_paused: false,
     });
-  }
-
-  async function handleTogglePause() {
-    if (!room) return;
-    const now = getSyncedNow();
-    const isCurrentlyPaused = !!room.is_paused;
-    const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : now;
-
-    if (!isCurrentlyPaused) {
-      // PAUSING NOW: Freeze current elapsed time
-      const elapsed = Math.max(0, now - phaseStartedAt);
-      setPausedElapsedMs(elapsed);
-      await patchRoom({ is_paused: true });
-    } else {
-      // UNPAUSING NOW: Resume seamlessly from frozen elapsed time
-      const elapsed = pausedElapsedMs ?? Math.max(0, now - phaseStartedAt);
-      const newPhaseStartedAt = new Date(now - elapsed).toISOString();
-      setPausedElapsedMs(null);
-      await patchRoom({
-        is_paused: false,
-        phase_started_at: newPhaseStartedAt,
-      });
-    }
   }
 
   async function exitGame() {
@@ -201,10 +168,7 @@ function HostRoom() {
           await supabase.from("rooms").update(directPayload as never).eq("id", roomId);
         }
 
-        // Unpause if previously paused when advancing
-        setLocalRoomPatch((prev) => ({ ...prev, is_paused: false, ...directPayload }));
-        setPausedElapsedMs(null);
-
+        setLocalRoomPatch((prev) => ({ ...prev, ...directPayload }));
         await refresh();
       } catch (e) {
         console.error("Failed to advance room:", e);
@@ -267,7 +231,7 @@ function HostRoom() {
   // Auto pacing: the question clock always ends the question (early when everyone
   // has answered); reveal and scoreboard only roll on when the host chose "auto".
   useEffect(() => {
-    if (!roomStatus || roomStatus !== "active" || room?.is_paused) return;
+    if (!roomStatus || roomStatus !== "active") return;
     if (phaseKind !== "question" && phaseKind !== "reveal" && phaseKind !== "leaderboard") return;
     const auto = advanceMode !== "manual";
     const shouldAdvance = phaseKind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
@@ -295,7 +259,7 @@ function HostRoom() {
         void advance(phaseIndex, from);
       }, delay);
     }
-  }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance, room?.is_paused]);
+  }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance]);
 
   const rows = useMemo(() => {
     const upTo =
@@ -579,18 +543,6 @@ function HostRoom() {
               {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
             </span>
             <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => void handleTogglePause()}
-                className={cn(
-                  "press rounded-full border px-3.5 py-1.5 text-xs font-bold transition-all shadow-md flex items-center gap-1",
-                  room.is_paused
-                    ? "border-sun bg-sun/20 text-sun ring-2 ring-sun animate-pulse"
-                    : "border-border bg-background/50 text-foreground hover:bg-background/80",
-                )}
-              >
-                {room.is_paused ? "▶️ استئناف" : "⏸️ توقف مؤقت"}
-              </button>
               <DisplayControls />
               <button
                 type="button"
@@ -712,18 +664,6 @@ function HostRoom() {
         </span>
         <div className="flex items-center gap-2 sm:gap-3">
           <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
-          <button
-            type="button"
-            onClick={() => void handleTogglePause()}
-            className={cn(
-              "press rounded-full border px-3 py-1 text-xs font-bold transition-all shadow-md flex items-center gap-1",
-              room.is_paused
-                ? "border-sun bg-sun/20 text-sun ring-2 ring-sun animate-pulse"
-                : "border-border bg-background/50 text-foreground hover:bg-background/80",
-            )}
-          >
-            {room.is_paused ? "▶️ استئناف" : "⏸️ توقف مؤقت"}
-          </button>
           <DisplayControls />
           <button
             type="button"
