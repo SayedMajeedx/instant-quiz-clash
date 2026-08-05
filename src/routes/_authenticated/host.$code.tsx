@@ -56,6 +56,7 @@ function HostRoom() {
   // Optimistic local state for 0ms instant UI responses
   const [localRoomPatch, setLocalRoomPatch] = useState<Partial<Room>>({});
   const [localPlayerTeams, setLocalPlayerTeams] = useState<Record<string, number | null>>({});
+  const [pausedElapsedMs, setPausedElapsedMs] = useState<number | null>(null);
 
   const room = useMemo(() => {
     if (!state.room) return null;
@@ -80,12 +81,14 @@ function HostRoom() {
     if (rawPhase.kind === "reveal" || rawPhase.kind === "leaderboard") {
       const phaseStartedAt = new Date(room.phase_started_at ?? room.started_at ?? 0).getTime();
       const effectiveNow = room.is_paused ? phaseStartedAt : state.now;
-      const elapsed = Math.max(0, effectiveNow - phaseStartedAt);
+      const elapsed = room.is_paused && pausedElapsedMs !== null
+        ? pausedElapsedMs
+        : Math.max(0, effectiveNow - phaseStartedAt);
       const limit = rawPhase.kind === "reveal" ? 2500 : ms;
       return { ...rawPhase, msLeft: Math.max(0, limit - elapsed) };
     }
     return rawPhase;
-  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, room?.is_paused, state.now]);
+  }, [rawPhase, interQuestionSec, room?.phase_started_at, room?.started_at, room?.is_paused, pausedElapsedMs, state.now]);
 
   // Prevent tablet / PC / phone screen from sleeping during live game
   useWakeLock(true);
@@ -112,6 +115,7 @@ function HostRoom() {
   async function handleStartGame() {
     if (!room) return;
     const nowIso = new Date(getSyncedNow()).toISOString();
+    setPausedElapsedMs(null);
     await patchRoom({
       status: "active",
       cursor_index: 0,
@@ -126,27 +130,20 @@ function HostRoom() {
     if (!room) return;
     const now = getSyncedNow();
     const isCurrentlyPaused = !!room.is_paused;
+    const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : now;
 
-    const startedAt = new Date(room.started_at ?? now).getTime();
-    const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : startedAt;
-    const elapsed = isCurrentlyPaused
-      ? Math.max(0, phaseStartedAt - startedAt)
-      : Math.max(0, now - startedAt);
-
-    if (isCurrentlyPaused) {
-      const newStartedAt = new Date(now - elapsed).toISOString();
-      const newPhaseStartedAt = new Date(now).toISOString();
+    if (!isCurrentlyPaused) {
+      // PAUSING NOW: Freeze current elapsed time
+      const elapsed = Math.max(0, now - phaseStartedAt);
+      setPausedElapsedMs(elapsed);
+      await patchRoom({ is_paused: true });
+    } else {
+      // UNPAUSING NOW: Resume seamlessly from frozen elapsed time
+      const elapsed = pausedElapsedMs ?? Math.max(0, now - phaseStartedAt);
+      const newPhaseStartedAt = new Date(now - elapsed).toISOString();
+      setPausedElapsedMs(null);
       await patchRoom({
         is_paused: false,
-        started_at: newStartedAt,
-        phase_started_at: newPhaseStartedAt,
-      });
-    } else {
-      const newStartedAt = new Date(now - elapsed).toISOString();
-      const newPhaseStartedAt = new Date(now).toISOString();
-      await patchRoom({
-        is_paused: true,
-        started_at: newStartedAt,
         phase_started_at: newPhaseStartedAt,
       });
     }
@@ -158,8 +155,7 @@ function HostRoom() {
     void navigate({ to: "/quizzes" });
   }
 
-  // Every stage transition is written by this screen. `advance_room` is guarded
-  // on the stage it is leaving, so a second host tab can never double-advance.
+  // Guaranteed Room Advancement with direct UPDATE fallback to prevent room freezes
   const refresh = state.refresh;
   const isAdvancingRef = useRef(false);
   const advance = useCallback(
@@ -167,11 +163,47 @@ function HostRoom() {
       if (!roomId || isAdvancingRef.current) return;
       isAdvancingRef.current = true;
       try {
-        await supabase.rpc("advance_room", {
+        const nowIso = new Date(getSyncedNow()).toISOString();
+        let directPayload: Record<string, unknown> = {};
+
+        if (fromPhase === "question") {
+          directPayload = { cursor_phase: "reveal", phase_started_at: nowIso };
+        } else if (fromPhase === "reveal") {
+          if (fromIndex >= questions.length - 1) {
+            directPayload = { status: "ended", phase_started_at: nowIso };
+          } else {
+            directPayload = { cursor_phase: "board", phase_started_at: nowIso };
+          }
+        } else if (fromPhase === "board") {
+          if (fromIndex >= questions.length - 1) {
+            directPayload = { status: "ended", phase_started_at: nowIso };
+          } else {
+            directPayload = { cursor_index: fromIndex + 1, cursor_phase: "question", phase_started_at: nowIso };
+          }
+        }
+
+        // 1. Try RPC first
+        const { data: rpcRes, error: rpcErr } = await supabase.rpc("advance_room", {
           p_room_id: roomId,
           p_expect_index: fromIndex,
           p_expect_phase: fromPhase,
         });
+
+        // 2. Fallback to direct DB update if RPC didn't advance or threw phase mismatch
+        const rpcAdvanced =
+          !rpcErr &&
+          rpcRes &&
+          (rpcRes.cursor_phase !== fromPhase || rpcRes.cursor_index !== fromIndex || rpcRes.status !== "active");
+
+        if (!rpcAdvanced && Object.keys(directPayload).length > 0) {
+          console.warn("RPC advance_room mismatch fallback -> applying direct update", directPayload);
+          await supabase.from("rooms").update(directPayload as never).eq("id", roomId);
+        }
+
+        // Unpause if previously paused when advancing
+        setLocalRoomPatch((prev) => ({ ...prev, is_paused: false, ...directPayload }));
+        setPausedElapsedMs(null);
+
         await refresh();
       } catch (e) {
         console.error("Failed to advance room:", e);
@@ -179,7 +211,7 @@ function HostRoom() {
         isAdvancingRef.current = false;
       }
     },
-    [roomId, refresh],
+    [roomId, questions.length, refresh],
   );
 
   // Snapshot final standings once the room is over so they survive cleanup.

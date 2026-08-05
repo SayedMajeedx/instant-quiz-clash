@@ -1,11 +1,27 @@
+export type Room = {
+  id: string;
+  code: string;
+  quiz_id: string;
+  status: "lobby" | "active" | "ended";
+  cursor_index: number;
+  cursor_phase: "question" | "reveal" | "board";
+  phase_started_at: string | null;
+  started_at: string | null;
+  advance_mode: "auto" | "manual";
+  team_count: number;
+  team_mode: "auto" | "manual";
+  created_at: string;
+  reveal_ms?: number;
+  board_ms?: number;
+  is_paused?: boolean;
+};
+
 export type Quiz = {
   id: string;
   user_id: string;
   title: string;
   created_at: string;
   is_public?: boolean;
-  category?: string | null;
-  language?: string | null;
 };
 
 export type QuestionType = "multi" | "boolean";
@@ -18,37 +34,18 @@ export type Question = {
   correct_index: number;
   time_limit_seconds: number;
   order_index: number;
-  image_url: string | null;
-  question_type: QuestionType;
+  created_at?: string;
+  image_url?: string | null;
+  question_type?: QuestionType;
   explanation?: string | null;
-  difficulty?: "easy" | "medium" | "hard" | string;
+  difficulty?: string | null;
   subcategory?: string | null;
-  tags?: string[];
+  tags?: string[] | null;
   source?: string | null;
   external_id?: string | null;
   is_verified?: boolean;
   version?: number;
 };
-
-export type CursorPhase = "question" | "reveal" | "board";
-
-export type Room = {
-  id: string;
-  code: string;
-  quiz_id: string;
-  status: "lobby" | "active" | "ended";
-  started_at: string | null;
-  team_count: number;
-  advance_mode: "auto" | "manual";
-  team_mode: "auto" | "manual";
-  cursor_index: number;
-  cursor_phase: CursorPhase;
-  phase_started_at: string | null;
-  reveal_ms?: number;
-  board_ms?: number;
-  is_paused?: boolean;
-};
-
 
 export type Player = {
   id: string;
@@ -56,11 +53,11 @@ export type Player = {
   nickname: string;
   avatar_color: string;
   joined_at: string;
-  team_index: number | null;
-  used_double: boolean;
-  used_fifty: boolean;
-  fifty_question_id: string | null;
-  fifty_hidden: number[] | null;
+  used_double?: boolean;
+  used_fifty?: boolean;
+  fifty_question_id?: string | null;
+  fifty_hidden?: number[] | null;
+  team_index?: number | null;
 };
 
 export type Answer = {
@@ -69,35 +66,45 @@ export type Answer = {
   question_id: string;
   player_id: string;
   choice_index: number;
-  answered_at: string;
   is_correct: boolean;
   points_awarded: number;
   streak_bonus: number;
   powerup: string | null;
+  created_at: string;
 };
 
-/** Inter-question segment durations (ms). Every screen derives phase from these. */
-export const REVEAL_MS = 2500;
-export const BOARD_MS = 4500;
+export type CursorPhase = "question" | "reveal" | "board";
+
 export const MAX_POINTS = 1000;
 export const MIN_POINTS = 300;
-
-export const ANSWER_STYLES = [
-  { shape: "triangle", label: "Triangle", bg: "bg-answer-1", shade: "bg-answer-1-shade", text: "text-answer-1" },
-  { shape: "diamond", label: "Diamond", bg: "bg-answer-2", shade: "bg-answer-2-shade", text: "text-answer-2" },
-  { shape: "circle", label: "Circle", bg: "bg-answer-3", shade: "bg-answer-3-shade", text: "text-answer-3" },
-  { shape: "square", label: "Square", bg: "bg-answer-4", shade: "bg-answer-4-shade", text: "text-answer-4" },
-] as const;
+export const REVEAL_MS = 2500;
+export const BOARD_MS = 3000;
 
 export const AVATAR_COLORS = [
   "#a855f7",
   "#ec4899",
-  "#f59e0b",
-  "#22c55e",
-  "#3b82f6",
-  "#ef4444",
-  "#14b8a6",
+  "#f43f5e",
+  "#f97316",
   "#eab308",
+  "#10b981",
+  "#06b6d4",
+  "#3b82f6",
+  "#6366f1",
+  "#8b5cf6",
+];
+
+export const OPTION_COLORS = [
+  "#ef4444",
+  "#3b82f6",
+  "#eab308",
+  "#22c55e",
+];
+
+export const ANSWER_STYLES = [
+  { bg: "bg-rose-600 hover:bg-rose-500 text-white", label: "مثلث", icon: "▲", shape: "triangle" as const },
+  { bg: "bg-blue-600 hover:bg-blue-500 text-white", label: "معيّن", icon: "◆", shape: "diamond" as const },
+  { bg: "bg-amber-500 hover:bg-amber-400 text-white", label: "دائرة", icon: "●", shape: "circle" as const },
+  { bg: "bg-emerald-600 hover:bg-emerald-500 text-white", label: "مربع", icon: "■", shape: "square" as const },
 ];
 
 export function randomCode(): string {
@@ -127,23 +134,22 @@ export function optionCount(question: Pick<Question, "question_type">): number {
 
 /**
  * The room carries an explicit cursor (`cursor_index` + `cursor_phase`) and the
- * wall-clock time that stage began. Countdowns are derived from that timestamp,
- * so refreshes and late joins land on the right screen, while the host can skip
- * ahead the moment everyone has answered — or hold a stage in manual mode.
+ * wall-clock time that stage began (`phase_started_at`). Countdowns are derived
+ * from that timestamp so refreshes and late joins land on the right screen.
  */
 export function phaseAt(room: Room | null, questions: Question[], now: number): Phase {
   if (!room) return { kind: "lobby" };
   if (room.status === "ended") return { kind: "ended" };
-  if (!room.started_at || questions.length === 0) return { kind: "lobby" };
-  if (now < new Date(room.started_at).getTime()) return { kind: "lobby" };
+  if (room.status === "lobby" || !room.started_at || questions.length === 0) return { kind: "lobby" };
 
   const index = Math.min(Math.max(0, room.cursor_index), questions.length - 1);
   const question = questions[index]!;
 
-  const startedAt = new Date(room.started_at).getTime();
-  const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : startedAt;
+  const phaseStartedAt = room.phase_started_at
+    ? new Date(room.phase_started_at).getTime()
+    : new Date(room.started_at).getTime();
 
-  // If paused, freeze clock at phaseStartedAt timestamp so elapsed time stops advancing
+  // If paused, elapsed time is frozen at phaseStartedAt
   const effectiveNow = room.is_paused ? phaseStartedAt : now;
   const elapsed = Math.max(0, effectiveNow - phaseStartedAt);
 

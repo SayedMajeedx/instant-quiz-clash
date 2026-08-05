@@ -40,6 +40,8 @@ raw.forEach((q) => {
 
   const quiz = quizMap.get(title);
   quiz.questions.push({
+    id: uuidFromString("q_" + title + "_" + quiz.questions.length),
+    quiz_id: quiz.id,
     question_text: q.question_text,
     options: q.options || ["", "", "", ""],
     correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
@@ -68,10 +70,11 @@ const tsContent = `import type { Question, Quiz } from "@/lib/quizclash";
 export type LibraryQuiz = Quiz & {
   category: string;
   language: string;
+  is_public?: boolean;
   quiz_difficulty?: "standard" | "challenge" | "medium" | "beginner" | "expert" | null;
   archived?: boolean;
   launch_enabled?: boolean;
-  questions: Omit<Question, "id" | "quiz_id">[];
+  questions: Question[];
 };
 
 export const QUIZ_LIBRARY: LibraryQuiz[] = ${JSON.stringify(quizList, null, 2)};

@@ -26,10 +26,10 @@ type PreviewQuestion = {
   question_text: string;
   options: string[];
   time_limit_seconds: number;
-  question_type?: string;
+  question_type?: "multi" | "boolean" | string;
   difficulty?: string | null | undefined;
   subcategory?: string | null | undefined;
-  tags?: string[] | undefined;
+  tags?: string[] | null | undefined;
 };
 
 type PreviewQuizMeta = {
@@ -73,7 +73,7 @@ function QuizPreviewPage() {
               question_text: q.question_text,
               options: q.options,
               time_limit_seconds: q.time_limit_seconds,
-              question_type: q.question_type,
+              question_type: q.question_type || "multi",
               difficulty: q.difficulty,
               subcategory: q.subcategory,
               tags: q.tags,
@@ -97,7 +97,7 @@ function QuizPreviewPage() {
               question_text: q.question_text,
               options: q.options,
               time_limit_seconds: q.time_limit_seconds,
-              question_type: q.question_type,
+              question_type: q.question_type || "multi",
             })),
           );
           setLoading(false);

@@ -296,7 +296,7 @@ function Play() {
           {me.nickname}
         </span>
         <span className="flex items-center gap-3">
-          {me.team_index !== null ? (
+          {me.team_index !== null && me.team_index !== undefined ? (
             <span
               className="rounded-full px-3 py-1 text-xs font-bold text-background"
               style={{ backgroundColor: TEAM_COLORS[me.team_index % TEAM_COLORS.length] }}

@@ -6,7 +6,7 @@ export type LibraryQuiz = Quiz & {
   quiz_difficulty?: "standard" | "challenge" | "medium" | "beginner" | "expert" | null;
   archived?: boolean;
   launch_enabled?: boolean;
-  questions: Omit<Question, "id" | "quiz_id">[];
+  questions: (Omit<Question, "id" | "quiz_id"> & { id?: string; quiz_id?: string; [key: string]: any })[];
 };
 
 // Hand-authored Arabic quiz library. Generated from content/quizzes/*.json
