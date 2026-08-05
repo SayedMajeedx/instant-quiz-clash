@@ -90,6 +90,59 @@ if (fs.existsSync(AHL_DIR)) {
   }
 }
 
+// Reviewed general and specialized quizzes. Each file already uses the
+// LibraryQuiz shape and is grouped in a numbered category directory.
+const SPECIALIZED_DIR = "general_specialized_quizzes";
+if (fs.existsSync(SPECIALIZED_DIR)) {
+  const categoryDirs = fs.readdirSync(SPECIALIZED_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort();
+
+  for (const categoryDir of categoryDirs) {
+    const fullDir = path.join(SPECIALIZED_DIR, categoryDir);
+    const quizFiles = fs.readdirSync(fullDir)
+      .filter((file) => file.endsWith(".json"))
+      .sort();
+
+    for (const quizFile of quizFiles) {
+      const quiz = JSON.parse(fs.readFileSync(path.join(fullDir, quizFile), "utf8"));
+      const fallbackId = `lib-specialized-${categoryDir.slice(0, 2)}-${path.basename(quizFile, ".json").slice(0, 2)}`;
+      if (!Array.isArray(quiz.questions) || quiz.questions.length === 0) {
+        throw new Error(`missing questions in ${quizFile}`);
+      }
+
+      quizzes.push({
+        id: quiz.id ?? fallbackId,
+        user_id: quiz.user_id ?? "system",
+        title: quiz.title,
+        created_at: quiz.created_at ?? "2026-08-05T00:00:00.000Z",
+        is_public: quiz.is_public !== false,
+        category: quiz.category,
+        language: quiz.language ?? "ar",
+        quiz_difficulty: quiz.quiz_difficulty ?? "standard",
+        archived: quiz.archived === true,
+        launch_enabled: quiz.launch_enabled !== false,
+        questions: quiz.questions.map((q, i) => {
+          if (!Array.isArray(q.options) || q.options.length !== 4) {
+            throw new Error(`bad options in ${quizFile} #${i}`);
+          }
+          if (typeof q.correct_index !== "number" || q.correct_index < 0 || q.correct_index > 3) {
+            throw new Error(`bad correct index in ${quizFile} #${i}`);
+          }
+          return {
+            ...q,
+            order_index: i,
+            time_limit_seconds: q.time_limit_seconds ?? 25,
+            image_url: q.image_url ?? null,
+            question_type: "multi",
+          };
+        }),
+      });
+    }
+  }
+}
+
 const out = `import type { Question, Quiz } from "@/lib/quizclash";
 
 export type LibraryQuiz = Quiz & {
@@ -102,7 +155,8 @@ export type LibraryQuiz = Quiz & {
 };
 
 // Hand-authored Arabic quiz library. Generated from content/quizzes/*.json
-// and the reviewed ahl_albayt_quizzes/*/*_game.json files.
+// the reviewed ahl_albayt_quizzes/*/*_game.json files, and
+// general_specialized_quizzes/*/*.json.
 // by scripts/build_quiz_library.mjs — edit the JSON sources, not this file.
 export const QUIZ_LIBRARY: LibraryQuiz[] = ${JSON.stringify(quizzes, null, 2)};
 `;
