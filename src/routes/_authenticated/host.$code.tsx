@@ -53,8 +53,26 @@ function HostRoom() {
     }
   }, [code]);
 
+  // Optimistic local state for 0ms instant UI responses
+  const [localRoomPatch, setLocalRoomPatch] = useState<Partial<Room>>({});
+  const [localPlayerTeams, setLocalPlayerTeams] = useState<Record<string, number | null>>({});
+
+  const room = useMemo(() => {
+    if (!state.room) return null;
+    return { ...state.room, ...localRoomPatch };
+  }, [state.room, localRoomPatch]);
+
   const rawPhase = usePhase(state);
-  const { room, quiz, questions, players, answers } = state;
+  const { quiz, questions, players: rawPlayers, answers } = state;
+
+  const players = useMemo(() => {
+    return rawPlayers.map((p) => {
+      if (p.id in localPlayerTeams) {
+        return { ...p, team_index: localPlayerTeams[p.id] ?? null };
+      }
+      return p;
+    });
+  }, [rawPlayers, localPlayerTeams]);
 
   const phase = useMemo(() => {
     if (!room) return rawPhase;
@@ -80,8 +98,9 @@ function HostRoom() {
 
   async function patchRoom(patch: Partial<Room>) {
     if (!room) return;
+    setLocalRoomPatch((prev) => ({ ...prev, ...patch }));
     await supabase.from("rooms").update(patch as never).eq("id", room.id);
-    await state.refresh();
+    void state.refresh();
   }
 
   async function handleStartGame() {
@@ -235,6 +254,7 @@ function HostRoom() {
     if (!room || room.team_count <= 1) return;
     setAssigning(pid);
     const next = current === null ? 0 : (current + 1) % room.team_count;
+    setLocalPlayerTeams((prev) => ({ ...prev, [pid]: next }));
     await supabase.from("players").update({ team_index: next }).eq("id", pid);
     await refresh();
     setAssigning(null);
@@ -243,6 +263,12 @@ function HostRoom() {
   async function shuffleTeams() {
     if (!room || room.team_count <= 1 || players.length === 0) return;
     const list = [...players].sort(() => Math.random() - 0.5);
+    const newTeamMap: Record<string, number> = {};
+    list.forEach((p, i) => {
+      newTeamMap[p.id] = i % room.team_count;
+    });
+    setLocalPlayerTeams(newTeamMap);
+
     await Promise.all(
       list.map((p, i) => supabase.from("players").update({ team_index: i % room.team_count }).eq("id", p.id)),
     );
@@ -323,58 +349,70 @@ function HostRoom() {
               </span>
             </div>
 
-            <div className="mt-5 flex flex-wrap items-center gap-2">
-              <span className="text-sm font-semibold text-muted-foreground">{t("host.pacing")}</span>
-              {(["auto", "manual"] as const).map((mode) => (
-                <button
-                  key={mode}
-                  type="button"
-                  onClick={() => void patchRoom({ advance_mode: mode })}
-                  className={cn(
-                    "press rounded-full border px-4 py-1.5 text-sm font-semibold",
-                    room.advance_mode === mode ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
-                  )}
-                >
-                  {mode === "auto" ? t("host.pacingAuto") : t("host.pacingManual")}
-                </button>
-              ))}
+            {/* Progression Mode Control */}
+            <div className="mt-5 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
+              <span className="text-xs sm:text-sm font-bold text-foreground">⏱️ {t("host.pacing")}</span>
+              <div className="flex items-center gap-1.5">
+                {(["auto", "manual"] as const).map((mode) => (
+                  <button
+                    key={mode}
+                    type="button"
+                    onClick={() => void patchRoom({ advance_mode: mode })}
+                    className={cn(
+                      "press rounded-xl border px-3 py-1.5 text-xs font-bold transition-all",
+                      room.advance_mode === mode
+                        ? "border-primary bg-primary/20 text-primary ring-2 ring-primary/40 shadow-sm"
+                        : "border-border text-muted-foreground hover:bg-background/80",
+                    )}
+                  >
+                    {mode === "auto" ? t("host.pacingAuto") : t("host.pacingManual")}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Inter-question screen delay timer setting */}
-            <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-border/40 pt-3">
-              <span className="text-sm font-semibold text-muted-foreground">⏱️ مدة شاشة النتيجة بين الأسئلة:</span>
-              {[3, 5, 8, 12].map((sec) => (
-                <button
-                  key={sec}
-                  type="button"
-                  onClick={() => setInterQuestionSec(sec)}
-                  className={cn(
-                    "press rounded-full border px-3 py-1 text-xs font-semibold transition-all",
-                    interQuestionSec === sec
-                      ? "border-primary bg-primary/20 text-primary ring-2 ring-primary"
-                      : "border-border text-muted-foreground hover:border-primary/50",
-                  )}
-                >
-                  {sec}ث
-                </button>
-              ))}
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
+              <span className="text-xs sm:text-sm font-bold text-foreground">⏳ مدة شاشة النتيجة بين الأسئلة:</span>
+              <div className="flex items-center gap-1.5">
+                {[3, 5, 8, 12].map((sec) => (
+                  <button
+                    key={sec}
+                    type="button"
+                    onClick={() => setInterQuestionSec(sec)}
+                    className={cn(
+                      "press rounded-xl border px-2.5 py-1.5 text-xs font-bold transition-all",
+                      interQuestionSec === sec
+                        ? "border-primary bg-primary/20 text-primary ring-2 ring-primary/40 shadow-sm"
+                        : "border-border text-muted-foreground hover:bg-background/80",
+                    )}
+                  >
+                    {sec}ث
+                  </button>
+                ))}
+              </div>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center gap-2">
-              <span className="text-sm font-semibold text-muted-foreground">{t("host.teams")}</span>
-              {[0, 2, 3, 4].map((n) => (
-                <button
-                  key={n}
-                  type="button"
-                  onClick={() => void patchRoom({ team_count: n })}
-                  className={cn(
-                    "press rounded-full border px-4 py-1.5 text-sm font-semibold",
-                    (room.team_count ?? 0) === n ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
-                  )}
-                >
-                  {n === 0 ? t("host.solo") : t("host.teamsN", { n })}
-                </button>
-              ))}
+            {/* Game Mode / Team Count Control */}
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
+              <span className="text-xs sm:text-sm font-bold text-foreground">🎮 {t("host.teams")}:</span>
+              <div className="flex items-center gap-1.5">
+                {[0, 2, 3, 4].map((n) => (
+                  <button
+                    key={n}
+                    type="button"
+                    onClick={() => void patchRoom({ team_count: n })}
+                    className={cn(
+                      "press rounded-xl border px-3 py-1.5 text-xs font-bold transition-all",
+                      (room.team_count ?? 0) === n
+                        ? "border-primary bg-primary/20 text-primary ring-2 ring-primary/40 shadow-sm"
+                        : "border-border text-muted-foreground hover:bg-background/80",
+                    )}
+                  >
+                    {n === 0 ? t("host.solo") : t("host.teamsN", { n })}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {room.team_count > 1 ? (
@@ -412,13 +450,14 @@ function HostRoom() {
             <div className="mt-5 flex flex-wrap gap-2">
               {players.length === 0 ? <p className="text-muted-foreground">{t("host.waiting")}</p> : null}
               {players.map((p) => {
+                const teamIdx = p.team_index ?? null;
                 const badge =
-                  p.team_index !== null ? (
+                  teamIdx !== null ? (
                     <span
                       className="rounded-full px-2 py-0.5 text-[10px] font-bold text-background"
-                      style={{ backgroundColor: TEAM_COLORS[p.team_index % TEAM_COLORS.length] }}
+                      style={{ backgroundColor: TEAM_COLORS[teamIdx % TEAM_COLORS.length] }}
                     >
-                      {p.team_index + 1}
+                      {teamIdx + 1}
                     </span>
                   ) : manualTeams ? (
                     <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
@@ -437,7 +476,7 @@ function HostRoom() {
                     key={p.id}
                     type="button"
                     disabled={assigning === p.id}
-                    onClick={() => void cycleTeam(p.id, p.team_index)}
+                    onClick={() => void cycleTeam(p.id, teamIdx)}
                     className="press flex animate-pop items-center gap-2 rounded-full border border-border bg-background/50 px-3 py-2 font-semibold disabled:opacity-50"
                   >
                     {inner}
