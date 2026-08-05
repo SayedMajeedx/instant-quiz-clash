@@ -396,27 +396,15 @@ export function getBgmForQuiz(
   const fullTitle = title || libMatch?.title || "";
   const testStr = `${fullCategory} ${fullTitle}`.toLowerCase();
 
-  // Match Islamic / Ahl al-Bayt quizzes
-  const isIslamic =
-    testStr.includes("إسلام") ||
-    testStr.includes("دين") ||
+  // Strictly match ONLY Ahl al-Bayt quiz series ("سلسلة مسابقات أهل البيت")
+  const isAhlAlBaytSeries =
     testStr.includes("أهل البيت") ||
-    testStr.includes("الإمام") ||
-    testStr.includes("القرآن") ||
-    testStr.includes("عاشوراء") ||
-    testStr.includes("السيرة") ||
-    testStr.includes("علي بن أبي طالب") ||
-    testStr.includes("الحسين") ||
-    testStr.includes("الحسن") ||
-    testStr.includes("فاطمة") ||
-    testStr.includes("محمد") ||
-    testStr.includes("الأئمة") ||
     testStr.includes("أهل بيت") ||
+    testStr.includes("أهل‌البيت") ||
     testStr.includes("ahl_albayt") ||
-    testStr.includes("ahlalbayt") ||
-    testStr.includes("اسلام");
+    testStr.includes("ahlalbayt");
 
-  if (isIslamic) {
+  if (isAhlAlBaytSeries) {
     return "/audio/islamic.mp3";
   }
 
