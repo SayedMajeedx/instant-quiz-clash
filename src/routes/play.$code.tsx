@@ -351,6 +351,12 @@ function Play() {
               className="mx-auto mt-2 max-h-[16vh] rounded-2xl border border-border object-contain shrink-0"
             />
           ) : null}
+          {room.is_paused ? (
+            <div className="mx-auto my-1 flex w-full max-w-xs items-center justify-center gap-2 rounded-2xl border border-sun/50 bg-sun/20 px-3 py-1.5 text-xs font-bold text-sun shadow-lg backdrop-blur-md animate-pulse">
+              <span>⏸️</span>
+              <span>التوقف المؤقت من قِبل المضيف</span>
+            </div>
+          ) : null}
           <div dir="ltr" className={cn("my-2 grid flex-1 min-h-0 gap-2.5", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
             {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
@@ -359,7 +365,7 @@ function Play() {
                   key={i}
                   index={i}
                   size="player"
-                  disabled={sending || hidden || optimisticChoice !== null}
+                  disabled={sending || hidden || optimisticChoice !== null || !!room.is_paused}
                   state={hidden ? "wrong" : optimisticChoice === i ? "chosen" : "idle"}
                   onClick={() => void submit(i)}
                 >

@@ -170,6 +170,18 @@ class SoundManager {
     window.addEventListener("keydown", unlock, { passive: true });
   }
 
+  public pauseBgm() {
+    if (this.bgmAudio && !this.bgmAudio.paused) {
+      this.bgmAudio.pause();
+    }
+  }
+
+  public resumeBgm() {
+    if (this.bgmAudio && this.bgmAudio.paused && !this.isBgmMuted) {
+      void this.bgmAudio.play().catch(() => {});
+    }
+  }
+
   public stopBgm() {
     if (this.bgmAudio) {
       this.bgmAudio.pause();

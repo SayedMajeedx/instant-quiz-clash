@@ -117,6 +117,33 @@ function HostRoom() {
     });
   }
 
+  async function handleTogglePause() {
+    if (!room) return;
+    const now = getSyncedNow();
+    const isCurrentlyPaused = !!room.is_paused;
+    const phaseStartedAt = room.phase_started_at ? new Date(room.phase_started_at).getTime() : now;
+
+    if (!isCurrentlyPaused) {
+      // PAUSING NOW: Freeze current elapsed time & pause music
+      const elapsed = Math.max(0, now - phaseStartedAt);
+      sounds.pauseBgm();
+      await patchRoom({
+        is_paused: true,
+        paused_elapsed_ms: elapsed,
+      });
+    } else {
+      // UNPAUSING NOW: Resume seamlessly from frozen elapsed time & resume music
+      const elapsed = room.paused_elapsed_ms ?? Math.max(0, now - phaseStartedAt);
+      const newPhaseStartedAt = new Date(now - elapsed).toISOString();
+      sounds.resumeBgm();
+      await patchRoom({
+        is_paused: false,
+        phase_started_at: newPhaseStartedAt,
+        paused_elapsed_ms: 0,
+      });
+    }
+  }
+
   async function exitGame() {
     if (!room) return;
     await supabase.from("rooms").update({ status: "ended" } as never).eq("id", room.id);
@@ -193,13 +220,18 @@ function HostRoom() {
       return;
     }
 
+    if (room?.is_paused) {
+      sounds.pauseBgm();
+      return;
+    }
+
     const bgmUrl = getBgmForQuiz(quiz);
     if (bgmUrl && (room?.status === "active" || room?.status === "lobby")) {
       sounds.playBgm(bgmUrl);
     } else {
       sounds.stopBgm();
     }
-  }, [quiz?.id, room?.status]);
+  }, [quiz?.id, room?.status, room?.is_paused]);
 
   // Stop BGM only when host screen unmounts completely
   useEffect(() => {
@@ -231,7 +263,7 @@ function HostRoom() {
   // Auto pacing: the question clock always ends the question (early when everyone
   // has answered); reveal and scoreboard only roll on when the host chose "auto".
   useEffect(() => {
-    if (!roomStatus || roomStatus !== "active") return;
+    if (!roomStatus || roomStatus !== "active" || room?.is_paused) return;
     if (phaseKind !== "question" && phaseKind !== "reveal" && phaseKind !== "leaderboard") return;
     const auto = advanceMode !== "manual";
     const shouldAdvance = phaseKind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
@@ -543,6 +575,18 @@ function HostRoom() {
               {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
             </span>
             <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => void handleTogglePause()}
+                className={cn(
+                  "press rounded-full border px-3.5 py-1.5 text-xs font-bold transition-all shadow-md flex items-center gap-1",
+                  room.is_paused
+                    ? "border-sun bg-sun/20 text-sun ring-2 ring-sun animate-pulse"
+                    : "border-border bg-background/50 text-foreground hover:bg-background/80",
+                )}
+              >
+                {room.is_paused ? "▶️ استئناف" : "⏸️ توقف مؤقت"}
+              </button>
               <DisplayControls />
               <button
                 type="button"
@@ -664,6 +708,18 @@ function HostRoom() {
         </span>
         <div className="flex items-center gap-2 sm:gap-3">
           <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+          <button
+            type="button"
+            onClick={() => void handleTogglePause()}
+            className={cn(
+              "press rounded-full border px-3 py-1 text-xs font-bold transition-all shadow-md flex items-center gap-1",
+              room.is_paused
+                ? "border-sun bg-sun/20 text-sun ring-2 ring-sun animate-pulse"
+                : "border-border bg-background/50 text-foreground hover:bg-background/80",
+            )}
+          >
+            {room.is_paused ? "▶️ استئناف" : "⏸️ توقف مؤقت"}
+          </button>
           <DisplayControls />
           <button
             type="button"

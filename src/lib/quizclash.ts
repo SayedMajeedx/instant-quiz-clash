@@ -14,6 +14,7 @@ export type Room = {
   reveal_ms?: number;
   board_ms?: number;
   is_paused?: boolean;
+  paused_elapsed_ms?: number;
 };
 
 export type Quiz = {
@@ -149,9 +150,10 @@ export function phaseAt(room: Room | null, questions: Question[], now: number): 
     ? new Date(room.phase_started_at).getTime()
     : new Date(room.started_at).getTime();
 
-  // If paused, elapsed time is frozen at phaseStartedAt
-  const effectiveNow = room.is_paused ? phaseStartedAt : now;
-  const elapsed = Math.max(0, effectiveNow - phaseStartedAt);
+  // If paused, freeze elapsed time accurately at paused_elapsed_ms
+  const elapsed = room.is_paused
+    ? Math.max(0, room.paused_elapsed_ms ?? Math.max(0, now - phaseStartedAt))
+    : Math.max(0, now - phaseStartedAt);
 
   const revealMs = room.reveal_ms ?? REVEAL_MS;
   const boardMs = room.board_ms ?? BOARD_MS;
