@@ -6,6 +6,9 @@
 class SoundManager {
   private ctx: AudioContext | null = null;
   private isMuted: boolean = false;
+  private bgmAudio: HTMLAudioElement | null = null;
+  private currentBgmUrl: string | null = null;
+  private bgmVolume: number = 0.35; // Warm background music level
 
   constructor() {
     if (typeof window !== "undefined") {
@@ -35,11 +38,54 @@ class SoundManager {
     if (typeof window !== "undefined") {
       localStorage.setItem("quizclash:muted", String(this.isMuted));
     }
+    if (this.bgmAudio) {
+      this.bgmAudio.volume = this.isMuted ? 0 : this.bgmVolume;
+    }
     return this.isMuted;
   }
 
   public getMuted(): boolean {
     return this.isMuted;
+  }
+
+  public playBgm(url: string) {
+    if (typeof window === "undefined") return;
+    if (this.currentBgmUrl === url && this.bgmAudio && !this.bgmAudio.paused) {
+      // Audio is already playing this track
+      return;
+    }
+
+    if (this.bgmAudio) {
+      this.bgmAudio.pause();
+      this.bgmAudio = null;
+    }
+
+    this.currentBgmUrl = url;
+    const audio = new Audio(url);
+    audio.loop = true;
+    audio.volume = this.isMuted ? 0 : this.bgmVolume;
+    this.bgmAudio = audio;
+
+    audio.play().catch(() => {
+      // Handle browser autoplay restriction: play on first user interaction
+      const handleUserGesture = () => {
+        if (this.bgmAudio === audio && audio.paused && !this.isMuted) {
+          void audio.play().catch(() => {});
+        }
+        window.removeEventListener("pointerdown", handleUserGesture);
+        window.removeEventListener("keydown", handleUserGesture);
+      };
+      window.addEventListener("pointerdown", handleUserGesture, { once: true });
+      window.addEventListener("keydown", handleUserGesture, { once: true });
+    });
+  }
+
+  public stopBgm() {
+    if (this.bgmAudio) {
+      this.bgmAudio.pause();
+      this.bgmAudio = null;
+    }
+    this.currentBgmUrl = null;
   }
 
   // 🍏 iOS Soft Haptic Tap (Warm popping click)
@@ -229,3 +275,35 @@ class SoundManager {
 }
 
 export const sounds = new SoundManager();
+
+/**
+ * Returns custom background music URL based on quiz category or title,
+ * defaulting to /audio/islamic.mp3 for Islamic & Ahl al-Bayt quizzes.
+ */
+export function getBgmForQuiz(
+  quiz: { category?: string | null; title?: string | null } | null | undefined
+): string | null {
+  if (!quiz) return null;
+  const category = (quiz.category ?? "").trim();
+  const title = (quiz.title ?? "").trim();
+
+  // Match Islamic / Ahl al-Bayt quizzes
+  const isIslamic =
+    category.includes("إسلام") ||
+    category.includes("دين") ||
+    title.includes("أهل البيت") ||
+    title.includes("الإمام") ||
+    title.includes("القرآن") ||
+    title.includes("عاشوراء") ||
+    title.includes("السيرة") ||
+    title.includes("إسلام") ||
+    title.includes("الأئمة") ||
+    title.includes("أهل بيت") ||
+    title.includes("أهل‌البيت");
+
+  if (isIslamic) {
+    return "/audio/islamic.mp3";
+  }
+
+  return null;
+}

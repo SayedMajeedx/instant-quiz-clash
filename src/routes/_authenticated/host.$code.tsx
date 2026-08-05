@@ -17,6 +17,7 @@ import { getSyncedNow } from "@/lib/server-time";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
+import { getBgmForQuiz, sounds } from "@/lib/audio";
 import { cn } from "@/lib/utils";
 
 import { useWakeLock } from "@/hooks/useWakeLock";
@@ -220,6 +221,25 @@ function HostRoom() {
     archivedRef.current = true;
     void supabase.rpc("archive_room", { p_room_id: room.id });
   }, [room]);
+
+  // Play category-specific background music during gameplay
+  useEffect(() => {
+    if (!quiz) {
+      sounds.stopBgm();
+      return;
+    }
+
+    const bgmUrl = getBgmForQuiz(quiz);
+    if (bgmUrl && (room?.status === "active" || room?.status === "lobby")) {
+      sounds.playBgm(bgmUrl);
+    } else {
+      sounds.stopBgm();
+    }
+
+    return () => {
+      sounds.stopBgm();
+    };
+  }, [quiz, room?.status]);
 
   const questionAnswerCount =
     phase.kind === "question"
