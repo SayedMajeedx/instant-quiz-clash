@@ -99,25 +99,25 @@ function HostRoom() {
   async function patchRoom(patch: Partial<Room>) {
     if (!room) return;
     setLocalRoomPatch((prev) => ({ ...prev, ...patch }));
-    await supabase.from("rooms").update(patch as never).eq("id", room.id);
+    const dbPatch: Record<string, unknown> = { ...patch };
+    delete dbPatch["is_paused"];
+    if (Object.keys(dbPatch).length > 0) {
+      await supabase.from("rooms").update(dbPatch as never).eq("id", room.id);
+    }
     void state.refresh();
   }
 
   async function handleStartGame() {
     if (!room) return;
     const nowIso = new Date(getSyncedNow()).toISOString();
-    await supabase
-      .from("rooms")
-      .update({
-        status: "active",
-        cursor_index: 0,
-        cursor_phase: "question",
-        started_at: nowIso,
-        phase_started_at: nowIso,
-        is_paused: false,
-      } as never)
-      .eq("id", room.id);
-    await state.refresh();
+    await patchRoom({
+      status: "active",
+      cursor_index: 0,
+      cursor_phase: "question",
+      started_at: nowIso,
+      phase_started_at: nowIso,
+      is_paused: false,
+    });
   }
 
   async function handleTogglePause() {
