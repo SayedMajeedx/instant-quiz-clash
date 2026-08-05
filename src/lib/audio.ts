@@ -420,5 +420,6 @@ export function getBgmForQuiz(
     return "/audio/islamic.mp3";
   }
 
-  return null;
+  // All other quizzes and categories use the default background music /audio/quiz.mp3
+  return "/audio/quiz.mp3";
 }
