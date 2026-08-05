@@ -1,0 +1,540 @@
+{
+  "title": "سيرة الإمام الحسن المجتبى (ع)",
+  "category": "سلسلة مسابقات أهل البيت (ع)",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "id": "HASAN-001",
+      "category": "أهل البيت",
+      "subcategory": "الولادة والنشأة",
+      "difficulty": "easy",
+      "question_text": "في أي مدينة وُلد الإمام الحسن المجتبى (ع)؟",
+      "options": [
+        "المدينة المنورة",
+        "مكة المكرمة",
+        "الكوفة",
+        "البصرة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "question_type": "multi",
+      "explanation": "وُلد الإمام الحسن (ع) في المدينة المنورة في شهر رمضان سنة 3 هـ.",
+      "tags": [
+        "الإمام الحسن",
+        "الولادة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي (ع)، ص5",
+      "external_id": "HASAN-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-002",
+      "category": "أهل البيت",
+      "subcategory": "الولادة والنشأة",
+      "difficulty": "medium",
+      "question_text": "ما الشهر الهجري الذي شهد ولادة الإمام الحسن (ع)؟",
+      "options": [
+        "رمضان",
+        "شعبان",
+        "رجب",
+        "محرم"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 1,
+      "question_type": "multi",
+      "explanation": "يذكر الشيخ المفيد أن ولادته (ع) كانت في النصف من شهر رمضان سنة 3 هـ.",
+      "tags": [
+        "الإمام الحسن",
+        "الولادة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي (ع)، ص5",
+      "external_id": "HASAN-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-003",
+      "category": "أهل البيت",
+      "subcategory": "الولادة والنشأة",
+      "difficulty": "easy",
+      "question_text": "ما كنية الإمام الحسن المجتبى (ع)؟",
+      "options": [
+        "أبو محمد",
+        "أبو عبد الله",
+        "أبو الحسن",
+        "أبو جعفر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "question_type": "multi",
+      "explanation": "كنية الإمام الحسن بن علي (ع) هي أبو محمد.",
+      "tags": [
+        "الإمام الحسن",
+        "الكنية"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي (ع)، ص5",
+      "external_id": "HASAN-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-004",
+      "category": "أهل البيت",
+      "subcategory": "النسب",
+      "difficulty": "easy",
+      "question_text": "من أم الإمام الحسن المجتبى (ع)؟",
+      "options": [
+        "فاطمة الزهراء (ع)",
+        "أم البنين (ع)",
+        "خديجة الكبرى (ع)",
+        "فاطمة بنت أسد (ع)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "question_type": "multi",
+      "explanation": "الإمام الحسن (ع) هو الابن الأكبر للإمام علي (ع) والسيدة فاطمة الزهراء (ع).",
+      "tags": [
+        "الإمام الحسن",
+        "النسب"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي (ع)، ص5",
+      "external_id": "HASAN-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-005",
+      "category": "أهل البيت",
+      "subcategory": "الإمامة",
+      "difficulty": "easy",
+      "question_text": "من تولى الإمامة بعد استشهاد الإمام علي (ع)؟",
+      "options": [
+        "الإمام الحسن (ع)",
+        "الإمام الحسين (ع)",
+        "محمد بن الحنفية",
+        "عبد الله بن عباس"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "question_type": "multi",
+      "explanation": "انتقلت الإمامة بعد أمير المؤمنين (ع) إلى ابنه الإمام الحسن المجتبى (ع).",
+      "tags": [
+        "الإمام الحسن",
+        "الإمامة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب النص على إمامة الحسن (ع)، ص6–10",
+      "external_id": "HASAN-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-006",
+      "category": "أهل البيت",
+      "subcategory": "البيعة",
+      "difficulty": "hard",
+      "question_text": "في أي يوم بايع أهل العراق الإمام الحسن (ع) بعد استشهاد أبيه؟",
+      "options": [
+        "الجمعة 21 رمضان سنة 40 هـ",
+        "الجمعة 11 رمضان سنة 40 هـ",
+        "الاثنين 21 رمضان سنة 41 هـ",
+        "الجمعة 10 محرم سنة 40 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 30,
+      "order_index": 5,
+      "question_type": "multi",
+      "explanation": "تمت البيعة للإمام الحسن (ع) يوم الجمعة الحادي والعشرين من رمضان سنة 40 هـ.",
+      "tags": [
+        "الإمام الحسن",
+        "البيعة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب خلافة الحسن (ع)، ص11؛ طبعة Howard ص279",
+      "external_id": "HASAN-006",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-007",
+      "category": "أهل البيت",
+      "subcategory": "البيعة",
+      "difficulty": "medium",
+      "question_text": "من دعا الناس إلى بيعة الإمام الحسن (ع) عقب خطبته في الكوفة؟",
+      "options": [
+        "عبد الله بن العباس",
+        "قيس بن سعد",
+        "حجر بن عدي",
+        "سليمان بن صرد"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 6,
+      "question_type": "multi",
+      "explanation": "قام عبد الله بن العباس بعد خطبة الإمام ودعا الناس إلى بيعته، فأجابوه.",
+      "tags": [
+        "الإمام الحسن",
+        "البيعة",
+        "الكوفة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب خلافة الحسن (ع)، ص11؛ طبعة Howard ص279",
+      "external_id": "HASAN-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-008",
+      "category": "أهل البيت",
+      "subcategory": "إدارة الدولة",
+      "difficulty": "medium",
+      "question_text": "إلى أي مدينة أرسل الإمام الحسن (ع) عبد الله بن العباس بعد البيعة؟",
+      "options": [
+        "البصرة",
+        "المدائن",
+        "واسط",
+        "المدينة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "question_type": "multi",
+      "explanation": "بعد تثبيت الولاة والعمال أرسل الإمام عبد الله بن العباس إلى البصرة.",
+      "tags": [
+        "الإمام الحسن",
+        "الإدارة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب خلافة الحسن (ع)، ص11؛ طبعة Howard ص279",
+      "external_id": "HASAN-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-009",
+      "category": "أهل البيت",
+      "subcategory": "مواجهة معاوية",
+      "difficulty": "medium",
+      "question_text": "إلى أي منطقتين أرسل معاوية جاسوسين بعد بيعة الإمام الحسن (ع)؟",
+      "options": [
+        "الكوفة والبصرة",
+        "المدينة ومكة",
+        "المدائن وواسط",
+        "اليمن والحجاز"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 8,
+      "question_type": "multi",
+      "explanation": "أرسل معاوية رجلًا إلى الكوفة وآخر من بني القين إلى البصرة لجمع الأخبار والإفساد.",
+      "tags": [
+        "الإمام الحسن",
+        "معاوية",
+        "الجواسيس"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب خلافة الحسن (ع)، ص12؛ طبعة Howard ص279–280",
+      "external_id": "HASAN-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-010",
+      "category": "أهل البيت",
+      "subcategory": "التحرك العسكري",
+      "difficulty": "hard",
+      "question_text": "من قائد مقدمة جيش الإمام الحسن (ع) التي وُجهت إلى مسكن؟",
+      "options": [
+        "عبيد الله بن العباس",
+        "قيس بن سعد",
+        "عدي بن حاتم",
+        "حجر بن عدي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "question_type": "multi",
+      "explanation": "قدّم الإمام عبيد الله بن العباس على اثني عشر ألفًا، وجعل قيس بن سعد وسعيد بن قيس من بعده.",
+      "tags": [
+        "الإمام الحسن",
+        "الجيش",
+        "مسكن"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب مسير الحسن (ع) إلى معاوية، ص13–14؛ طبعة Howard ص281",
+      "external_id": "HASAN-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-011",
+      "category": "أهل البيت",
+      "subcategory": "التحرك العسكري",
+      "difficulty": "hard",
+      "question_text": "كم كان عدد جنود مقدمة الإمام الحسن (ع) بقيادة عبيد الله بن العباس؟",
+      "options": [
+        "اثنا عشر ألفًا",
+        "ثمانية آلاف",
+        "عشرون ألفًا",
+        "أربعون ألفًا"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "question_type": "multi",
+      "explanation": "جهز الإمام الحسن (ع) مقدمة قوامها اثنا عشر ألف مقاتل وأمرها بالتوجه إلى مسكن.",
+      "tags": [
+        "الإمام الحسن",
+        "الجيش"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب مسير الحسن (ع) إلى معاوية، ص13–14؛ طبعة Howard ص281",
+      "external_id": "HASAN-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-012",
+      "category": "أهل البيت",
+      "subcategory": "التحرك العسكري",
+      "difficulty": "medium",
+      "question_text": "في أي موضع نزل الإمام الحسن (ع) حين خرج لمواجهة جيش الشام؟",
+      "options": [
+        "ساباط المدائن",
+        "النخيلة",
+        "صفين",
+        "النهروان"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "question_type": "multi",
+      "explanation": "تحرك الإمام من الكوفة حتى نزل ساباط المدائن، وهناك اختبر استعداد الناس.",
+      "tags": [
+        "الإمام الحسن",
+        "المدائن"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب مسير الحسن (ع) إلى معاوية، ص14؛ طبعة Howard ص282",
+      "external_id": "HASAN-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-013",
+      "category": "أهل البيت",
+      "subcategory": "المحنة",
+      "difficulty": "hard",
+      "question_text": "من الذي طعن الإمام الحسن (ع) في ساباط؟",
+      "options": [
+        "الجراح بن سنان",
+        "بسر بن أرطاة",
+        "الضحاك بن قيس",
+        "عمرو بن العاص"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "question_type": "multi",
+      "explanation": "اعترض الجراح بن سنان الأسدي الإمام في مظلم ساباط وطعنه في فخذه بمعول.",
+      "tags": [
+        "الإمام الحسن",
+        "ساباط",
+        "الطعن"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب مسير الحسن (ع) إلى معاوية، ص15؛ طبعة Howard ص283",
+      "external_id": "HASAN-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-014",
+      "category": "أهل البيت",
+      "subcategory": "المحنة",
+      "difficulty": "medium",
+      "question_text": "إلى بيت أي والي نُقل الإمام الحسن (ع) للعلاج بعد طعنه؟",
+      "options": [
+        "سعد بن مسعود الثقفي",
+        "المغيرة بن شعبة",
+        "زياد بن أبيه",
+        "النعمان بن بشير"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 13,
+      "question_type": "multi",
+      "explanation": "حُمل الإمام إلى المدائن ونزل على سعد بن مسعود الثقفي، والي أمير المؤمنين عليها.",
+      "tags": [
+        "الإمام الحسن",
+        "المدائن",
+        "العلاج"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب مسير الحسن (ع) إلى معاوية، ص15؛ طبعة Howard ص283",
+      "external_id": "HASAN-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-015",
+      "category": "أهل البيت",
+      "subcategory": "الصلح",
+      "difficulty": "medium",
+      "question_text": "ما الغاية التي صرّح بها الإمام الحسن (ع) لقبول الصلح؟",
+      "options": [
+        "حقن دماء المسلمين",
+        "زيادة خراج العراق",
+        "توسيع حدود الدولة",
+        "نقل العاصمة إلى المدينة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "question_type": "multi",
+      "explanation": "بيّن الإمام أن رأيه في الصلح يقوم على حقن الدماء ودفع الفتنة بعد خذلان أصحابه.",
+      "tags": [
+        "الإمام الحسن",
+        "الصلح",
+        "حقن الدماء"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب الصلح، ص16–18؛ طبعة Howard ص284–286",
+      "external_id": "HASAN-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-016",
+      "category": "أهل البيت",
+      "subcategory": "الصلح",
+      "difficulty": "hard",
+      "question_text": "أي شرط سياسي ورد في عهد الصلح بشأن ما بعد معاوية؟",
+      "options": [
+        "ألا يعهد بالخلافة إلى أحد",
+        "أن يعهد بها ليزيد",
+        "أن يجعلها شورى أموية",
+        "أن يسلمها لعمرو بن العاص"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 15,
+      "question_type": "multi",
+      "explanation": "تضمن العهد ألا يعهد معاوية بالأمر إلى أحد من بعده، وفق رواية الشيخ المفيد.",
+      "tags": [
+        "الإمام الحسن",
+        "الصلح",
+        "الشروط"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب الصلح، ص16؛ طبعة Howard ص284–285",
+      "external_id": "HASAN-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-017",
+      "category": "أهل البيت",
+      "subcategory": "ما بعد الصلح",
+      "difficulty": "easy",
+      "question_text": "أين أقام الإمام الحسن (ع) بعد إتمام الصلح؟",
+      "options": [
+        "المدينة المنورة",
+        "الكوفة",
+        "دمشق",
+        "البصرة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "question_type": "multi",
+      "explanation": "غادر الإمام الحسن (ع) الكوفة بعد الصلح وعاد إلى المدينة، فأقام فيها بقية حياته.",
+      "tags": [
+        "الإمام الحسن",
+        "المدينة",
+        "الصلح"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب الصلح ووفاته (ع)، ص18؛ طبعة Howard ص286",
+      "external_id": "HASAN-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-018",
+      "category": "أهل البيت",
+      "subcategory": "الاستشهاد",
+      "difficulty": "medium",
+      "question_text": "من التي سمّت الإمام الحسن (ع) بحسب رواية الشيخ المفيد؟",
+      "options": [
+        "جعدة بنت الأشعث",
+        "هند بنت عتبة",
+        "ميسون بنت بحدل",
+        "أم الحكم بنت أبي سفيان"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 17,
+      "question_type": "multi",
+      "explanation": "يروي المفيد أن معاوية راسل جعدة بنت الأشعث، زوج الإمام، وحملها على سمه.",
+      "tags": [
+        "الإمام الحسن",
+        "الاستشهاد",
+        "جعدة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب سبب وفاة الحسن (ع)، ص18–19؛ طبعة Howard ص287",
+      "external_id": "HASAN-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-019",
+      "category": "أهل البيت",
+      "subcategory": "الاستشهاد",
+      "difficulty": "hard",
+      "question_text": "كم يومًا بقي الإمام الحسن (ع) مريضًا بعد السم بحسب الإرشاد؟",
+      "options": [
+        "أربعين يومًا",
+        "عشرة أيام",
+        "عشرين يومًا",
+        "سبعين يومًا"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 18,
+      "question_type": "multi",
+      "explanation": "ذكر الشيخ المفيد أن الإمام (ع) بقي مريضًا من أثر السم أربعين يومًا.",
+      "tags": [
+        "الإمام الحسن",
+        "الاستشهاد"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب سبب وفاة الحسن (ع)، ص19؛ طبعة Howard ص287",
+      "external_id": "HASAN-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "HASAN-020",
+      "category": "أهل البيت",
+      "subcategory": "الدفن",
+      "difficulty": "easy",
+      "question_text": "أين دُفن الإمام الحسن المجتبى (ع)؟",
+      "options": [
+        "مقبرة البقيع",
+        "المسجد النبوي",
+        "النجف الأشرف",
+        "كربلاء المقدسة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "question_type": "multi",
+      "explanation": "دُفن الإمام الحسن (ع) في البقيع إلى جوار جدته فاطمة بنت أسد.",
+      "tags": [
+        "الإمام الحسن",
+        "البقيع",
+        "الدفن"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، ج2، باب سبب وفاة الحسن (ع) ودفنه، ص19–21؛ طبعة Howard ص287–289",
+      "external_id": "HASAN-020",
+      "is_verified": true,
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "title": "سيرة النبي محمد (ص)",
+  "category": "سلسلة مسابقات أهل البيت (ع)",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "question_text": "ما التاريخ المشهور عند الإمامية لولادة النبي محمد (ص)؟",
+      "options": [
+        "12 ربيع الأول",
+        "17 ربيع الأول",
+        "27 رجب",
+        "15 شعبان"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ينقل المجلسي اتفاق علماء الإمامية على السابع عشر من ربيع الأول.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "المولد",
+        "التاريخ"
+      ],
+      "source": "بحار الأنوار، ج15، باب تاريخ ولادته (ص)",
+      "external_id": "prophet-muhammad-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "في أي مدينة وُلد النبي محمد (ص)؟",
+      "options": [
+        "المدينة",
+        "الطائف",
+        "مكة",
+        "القدس"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 15,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تورد روايات مولده أنه وُلد في مكة.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "المولد",
+        "مكة"
+      ],
+      "source": "بحار الأنوار، ج15، باب تاريخ ولادته (ص)",
+      "external_id": "prophet-muhammad-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من هو والد النبي محمد (ص)؟",
+      "options": [
+        "أبو طالب",
+        "عبد المطلب",
+        "حمزة",
+        "عبد الله بن عبد المطلب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نسبه هو محمد بن عبد الله بن عبد المطلب.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "النسب"
+      ],
+      "source": "إعلام الورى، ج1، الباب الأول في نسب رسول الله ومولده",
+      "external_id": "prophet-muhammad-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من كفل النبي (ص) بعد وفاة جده عبد المطلب؟",
+      "options": [
+        "العباس",
+        "حمزة",
+        "أبو طالب",
+        "أبو لهب"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 15,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتقلت كفالته بعد وفاة عبد المطلب إلى عمه أبي طالب.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "أبو طالب",
+        "الكفالة"
+      ],
+      "source": "بحار الأنوار، ج15، باب نشوئه (ص)",
+      "external_id": "prophet-muhammad-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم كان عمر النبي (ص) حين تزوج السيدة خديجة (ع)؟",
+      "options": [
+        "عشرون سنة",
+        "خمس وعشرون سنة",
+        "ثلاثون سنة",
+        "خمس وثلاثون سنة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تزوج النبي خديجة وهو ابن خمس وعشرين سنة.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "الزواج"
+      ],
+      "source": "بحار الأنوار، ج16، ص12–22",
+      "external_id": "prophet-muhammad-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من ألقى خطبة زواج النبي (ص) من السيدة خديجة (ع)؟",
+      "options": [
+        "عبد المطلب",
+        "حمزة",
+        "العباس",
+        "أبو طالب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "حفظت الرواية خطبة أبي طالب في طلب خديجة لابن أخيه.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "أبو طالب"
+      ],
+      "source": "بحار الأنوار، ج16، ص17",
+      "external_id": "prophet-muhammad-006",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم كان عمر النبي (ص) عند بعثته بالرسالة؟",
+      "options": [
+        "ثلاثون سنة",
+        "خمس وثلاثون سنة",
+        "أربعون سنة",
+        "خمس وأربعون سنة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 15,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كانت بعثته بعد مضي أربعين سنة من عمره الشريف.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "البعثة"
+      ],
+      "source": "إعلام الورى، ج1، فصل مبعثه (ص)",
+      "external_id": "prophet-muhammad-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما التاريخ المشهور عند الإمامية لبعثة النبي (ص)؟",
+      "options": [
+        "17 ربيع الأول",
+        "13 رجب",
+        "15 شعبان",
+        "27 رجب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "المشهور الإمامي أن المبعث وقع في السابع والعشرين من رجب.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "المبعث",
+        "رجب"
+      ],
+      "source": "بحار الأنوار، ج18، باب المبعث وإظهار الدعوة",
+      "external_id": "prophet-muhammad-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من كانت أول امرأة آمنت برسالة النبي (ص)؟",
+      "options": [
+        "فاطمة بنت أسد",
+        "أم سلمة",
+        "خديجة بنت خويلد",
+        "أسماء بنت عميس"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 15,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كانت خديجة أول من صدّق النبي وآمن به من النساء.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "الإيمان"
+      ],
+      "source": "بحار الأنوار، ج38، ص260",
+      "external_id": "prophet-muhammad-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من كان أول الرجال إيمانًا بالنبي (ص)؟",
+      "options": [
+        "حمزة بن عبد المطلب",
+        "جعفر بن أبي طالب",
+        "زيد بن حارثة",
+        "علي بن أبي طالب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "علي أول من آمن من الرجال، بعد خديجة.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "الإمام علي",
+        "الإيمان"
+      ],
+      "source": "بحار الأنوار، ج38، ص260",
+      "external_id": "prophet-muhammad-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أين جمع النبي (ص) بني عبد المطلب عند إنذار عشيرته الأقربين؟",
+      "options": [
+        "دار الأرقم",
+        "جبل الصفا",
+        "المسجد الحرام",
+        "دار أبي طالب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جمع بني عبد المطلب في دار أبي طالب في واقعة حديث الدار.",
+      "difficulty": "hard",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "حديث الدار",
+        "العشيرة"
+      ],
+      "source": "بحار الأنوار، ج18، باب إظهار الدعوة وإنذار العشيرة",
+      "external_id": "prophet-muhammad-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما المقاطعة التي فرضتها قريش على بني هاشم؟",
+      "options": [
+        "منع الحج وحده",
+        "منع السفر إلى الشام",
+        "منع البيع والزواج والمخالطة",
+        "منع دخول المسجد فقط"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تضمنت الصحيفة منع البيع والزواج والمخالطة حتى يسلموا النبي.",
+      "difficulty": "medium",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "شعب أبي طالب",
+        "المقاطعة"
+      ],
+      "source": "بحار الأنوار، ج19، ص346",
+      "external_id": "prophet-muhammad-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من أنفق ماله في نصرة النبي (ص) زمن حصار الشعب؟",
+      "options": [
+        "العباس",
+        "حمزة",
+        "أبو سلمة",
+        "السيدة خديجة"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أنفقت خديجة من مالها في شدة الحصار على المحاصرين.",
+      "difficulty": "medium",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "شعب أبي طالب"
+      ],
+      "source": "بحار الأنوار، ج19، ص346–350",
+      "external_id": "prophet-muhammad-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من نام في فراش النبي (ص) ليلة خروجه للهجرة؟",
+      "options": [
+        "حمزة",
+        "جعفر",
+        "سلمان",
+        "علي بن أبي طالب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بات علي في فراش النبي تمويهًا على المتآمرين.",
+      "difficulty": "easy",
+      "subcategory": "الهجرة",
+      "tags": [
+        "النبي محمد",
+        "الإمام علي",
+        "ليلة المبيت"
+      ],
+      "source": "بحار الأنوار، ج19، باب الهجرة ومبيت أمير المؤمنين",
+      "external_id": "prophet-muhammad-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما أول عمل عمراني قام به النبي (ص) عند وصوله إلى قباء؟",
+      "options": [
+        "بناء السوق",
+        "حفر خندق",
+        "بناء دار الإمارة",
+        "بناء مسجد قباء"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أقام النبي في قباء وبنى مسجدها قبل دخوله المدينة.",
+      "difficulty": "medium",
+      "subcategory": "الهجرة",
+      "tags": [
+        "النبي محمد",
+        "قباء",
+        "المسجد"
+      ],
+      "source": "بحار الأنوار، ج19، باب نزوله قباء",
+      "external_id": "prophet-muhammad-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "بين أي جماعتين عقد النبي (ص) المؤاخاة بعد الهجرة؟",
+      "options": [
+        "قريش وثقيف",
+        "الأوس والخزرج فقط",
+        "أهل مكة واليهود",
+        "المهاجرين والأنصار"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "آخى النبي بين المهاجرين والأنصار، واتخذ عليًا أخًا له.",
+      "difficulty": "easy",
+      "subcategory": "بناء المجتمع",
+      "tags": [
+        "النبي محمد",
+        "المؤاخاة",
+        "المدينة"
+      ],
+      "source": "بحار الأنوار، ج38، باب المؤاخاة",
+      "external_id": "prophet-muhammad-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما أول معركة كبرى انتصر فيها المسلمون بقيادة النبي (ص)؟",
+      "options": [
+        "أحد",
+        "الخندق",
+        "خيبر",
+        "بدر"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كانت بدر أول مواجهة كبرى وانتهت بنصر المسلمين.",
+      "difficulty": "easy",
+      "subcategory": "الغزوات",
+      "tags": [
+        "النبي محمد",
+        "بدر",
+        "الغزوات"
+      ],
+      "source": "بحار الأنوار، ج19، أبواب غزوة بدر",
+      "external_id": "prophet-muhammad-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما الوسيلة الدفاعية التي استُخدمت حول المدينة في غزوة الأحزاب؟",
+      "options": [
+        "سور حجري",
+        "أبراج خشبية",
+        "متاريس بحرية",
+        "حفر الخندق"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 15,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "حُفر الخندق في الجهة المكشوفة من المدينة فعاق الأحزاب.",
+      "difficulty": "easy",
+      "subcategory": "الغزوات",
+      "tags": [
+        "النبي محمد",
+        "الخندق",
+        "الأحزاب"
+      ],
+      "source": "بحار الأنوار، ج20، أبواب غزوة الخندق",
+      "external_id": "prophet-muhammad-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "لمن أعطى النبي (ص) الراية يوم خيبر بعد قوله إنه يحب الله ورسوله؟",
+      "options": [
+        "الزبير بن العوام",
+        "سعد بن أبي وقاص",
+        "خالد بن الوليد",
+        "علي بن أبي طالب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دعا النبي عليًا ودفع إليه الراية، وكان الفتح على يديه.",
+      "difficulty": "medium",
+      "subcategory": "الغزوات",
+      "tags": [
+        "النبي محمد",
+        "الإمام علي",
+        "خيبر"
+      ],
+      "source": "الإرشاد، ج1، فصل مناقب أمير المؤمنين في خيبر",
+      "external_id": "prophet-muhammad-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من الذين خرج بهم النبي (ص) لمباهلة نصارى نجران؟",
+      "options": [
+        "العباس وحمزة وجعفر وعقيل",
+        "أبو ذر وسلمان والمقداد وعمار",
+        "زوجاته وبناته جميعًا",
+        "علي وفاطمة والحسن والحسين"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 25,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "خرج النبي للمباهلة بعلي وفاطمة والحسن والحسين.",
+      "difficulty": "medium",
+      "subcategory": "المواقف المفصلية",
+      "tags": [
+        "النبي محمد",
+        "المباهلة",
+        "أهل البيت"
+      ],
+      "source": "الإرشاد، ج1، فصل آية المباهلة",
+      "external_id": "prophet-muhammad-020",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ماذا أعلن النبي (ص) في غدير خم بشأن الإمام علي (ع)؟",
+      "options": [
+        "تعيينه قائدًا على اليمن فقط",
+        "تكليفه بجمع الصدقات",
+        "إرساله إلى خيبر",
+        "أنه مولى من كان النبي مولاه"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 25,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أعلن النبي في غدير خم: من كنت مولاه فعلي مولاه.",
+      "difficulty": "medium",
+      "subcategory": "المواقف المفصلية",
+      "tags": [
+        "النبي محمد",
+        "الغدير",
+        "الإمام علي"
+      ],
+      "source": "الإرشاد، ج1، باب النص على أمير المؤمنين، خبر الغدير",
+      "external_id": "prophet-muhammad-021",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من تولى غسل النبي (ص) وتجهيزه بعد وفاته؟",
+      "options": [
+        "العباس وحده",
+        "أبو ذر",
+        "سلمان",
+        "علي بن أبي طالب"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أوصى النبي أن يتولى علي غسله، فغسله وكفنه.",
+      "difficulty": "medium",
+      "subcategory": "الرحيل",
+      "tags": [
+        "النبي محمد",
+        "الوفاة",
+        "الإمام علي"
+      ],
+      "source": "بحار الأنوار، ج22، ص516",
+      "external_id": "prophet-muhammad-022",
+      "is_verified": true,
+      "version": 1
+    }
+  ]
+}

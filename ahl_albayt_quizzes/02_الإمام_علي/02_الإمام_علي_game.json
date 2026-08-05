@@ -1,0 +1,674 @@
+{
+  "title": "سيرة الإمام علي بن أبي طالب (ع)",
+  "category": "سلسلة مسابقات أهل البيت (ع)",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "id": "ali-001",
+      "question_text": "أين كانت ولادة الإمام علي (ع)؟",
+      "options": [
+        "في البيت الحرام بمكة",
+        "في دار أبي طالب بمكة",
+        "في المسجد النبوي بالمدينة",
+        "في شعب أبي طالب"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يذكر الشيخ المفيد أن الإمام عليًا (ع) وُلد في البيت الحرام بمكة.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام علي",
+        "الولادة",
+        "مكة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص1 (الترجمة المحققة المنشورة على Al-Islam.org)",
+      "external_id": "ali-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-002",
+      "question_text": "في أي يوم من رجب وُلد الإمام علي (ع) بحسب الإرشاد؟",
+      "options": [
+        "الثالث عشر",
+        "العاشر",
+        "الخامس عشر",
+        "السابع والعشرون"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "حدد الإرشاد ولادته يوم الجمعة، الثالث عشر من شهر رجب.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام علي",
+        "رجب"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص1",
+      "external_id": "ali-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-003",
+      "question_text": "من هي والدة الإمام علي (ع)؟",
+      "options": [
+        "فاطمة بنت أسد",
+        "فاطمة الزهراء",
+        "أم البنين",
+        "صفية بنت عبد المطلب"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أمه فاطمة بنت أسد بن هاشم بن عبد مناف.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام علي",
+        "فاطمة بنت أسد"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص1",
+      "external_id": "ali-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-004",
+      "question_text": "ما كنية الإمام علي (ع) التي يذكرها الشيخ المفيد؟",
+      "options": [
+        "أبو الحسن",
+        "أبو محمد",
+        "أبو جعفر",
+        "أبو القاسم"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نص الشيخ المفيد على أن كنيته أبو الحسن.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الإمام علي",
+        "الكنية"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص1",
+      "external_id": "ali-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-005",
+      "question_text": "كيف وصف الإرشاد صلة فاطمة بنت أسد بالنبي (ص)؟",
+      "options": [
+        "كانت له بمنزلة الأم",
+        "كانت أخته من الرضاعة",
+        "كانت عمته",
+        "كانت مرضعته الوحيدة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الإرشاد أنها كانت للنبي (ص) بمنزلة الأم، وقد نشأ في رعايتها.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "فاطمة بنت أسد",
+        "النبي"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص1",
+      "external_id": "ali-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-006",
+      "question_text": "ما منزلة الإمام علي (ع) في السبق إلى الإسلام بحسب الإرشاد؟",
+      "options": [
+        "أول ذكر دعاه النبي فأجاب",
+        "أول مهاجر إلى الحبشة",
+        "أول خطيب في المدينة",
+        "أول مؤذن في الإسلام"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يقرر الإرشاد أنه أول ذكر دعاه النبي (ص) إلى الإسلام فأجابه.",
+      "difficulty": "medium",
+      "subcategory": "بدايات الإسلام",
+      "tags": [
+        "الإمام علي",
+        "السبق إلى الإسلام"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص1-2",
+      "external_id": "ali-006",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-007",
+      "question_text": "كم سنة صحب الإمام علي (ع) النبي بعد البعثة في مكة؟",
+      "options": [
+        "ثلاث عشرة سنة",
+        "عشر سنوات",
+        "خمس عشرة سنة",
+        "ثلاث وعشرون سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قسم الإرشاد صحبته بعد البعثة إلى ثلاث عشرة سنة في مكة وعشر في المدينة.",
+      "difficulty": "medium",
+      "subcategory": "بدايات الإسلام",
+      "tags": [
+        "الإمام علي",
+        "مكة",
+        "البعثة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص2",
+      "external_id": "ali-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-008",
+      "question_text": "كم سنة صحب الإمام علي (ع) النبي بعد الهجرة في المدينة؟",
+      "options": [
+        "عشر سنوات",
+        "ثماني سنوات",
+        "ثلاث عشرة سنة",
+        "خمس سنوات"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الإرشاد عشر سنوات في المدينة بعد الهجرة دافع فيها عن النبي (ص).",
+      "difficulty": "medium",
+      "subcategory": "العهد المدني",
+      "tags": [
+        "الإمام علي",
+        "المدينة",
+        "الهجرة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص2",
+      "external_id": "ali-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-009",
+      "question_text": "كم كان عمر الإمام علي (ع) يوم رحيل النبي (ص) بحسب الإرشاد؟",
+      "options": [
+        "ثلاثًا وثلاثين سنة",
+        "ثلاثين سنة",
+        "أربعين سنة",
+        "ثلاثًا وستين سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ينص الإرشاد على أن عمره يوم رحيل النبي (ص) كان ثلاثًا وثلاثين سنة.",
+      "difficulty": "medium",
+      "subcategory": "العهد النبوي",
+      "tags": [
+        "الإمام علي",
+        "رحيل النبي"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص2",
+      "external_id": "ali-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-010",
+      "question_text": "ما العمل الذي ربطه الإرشاد بآية الولاية (المائدة: 55)؟",
+      "options": [
+        "إيتاء الزكاة حال الركوع",
+        "إطعام المسكين عند الإفطار",
+        "المبيت في فراش النبي",
+        "فتح باب خيبر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استدل الإرشاد بالآية وذكر أن الإمام عليًا (ع) تصدق وهو راكع.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل والدلالات",
+      "tags": [
+        "الإمام علي",
+        "آية الولاية",
+        "الزكاة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص2-3",
+      "external_id": "ali-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-011",
+      "question_text": "من لبّى دعوة النبي (ص) إلى نصرته في اجتماع بني عبد المطلب؟",
+      "options": [
+        "الإمام علي (ع)",
+        "حمزة بن عبد المطلب",
+        "جعفر بن أبي طالب",
+        "العباس بن عبد المطلب"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قام الإمام علي (ع)، وكان أصغر القوم، وقال للنبي (ص): أنا أنصرك.",
+      "difficulty": "medium",
+      "subcategory": "الفضائل والدلالات",
+      "tags": [
+        "الإمام علي",
+        "حديث الدار"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص3",
+      "external_id": "ali-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-012",
+      "question_text": "أي عبارة قالها النبي (ص) في غدير خم بحسب الإرشاد؟",
+      "options": [
+        "من كنت مولاه فعلي مولاه",
+        "علي مني وأنا من علي",
+        "أنا مدينة العلم وعلي بابها",
+        "لا فتى إلا علي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أورد الإرشاد قول النبي (ص): من كنت مولاه فعلي مولاه، في خطبة غدير خم.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل والدلالات",
+      "tags": [
+        "الإمام علي",
+        "الغدير"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص3",
+      "external_id": "ali-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-013",
+      "question_text": "بمن شبّه النبي (ص) منزلة علي (ع) منه عند الخروج إلى تبوك؟",
+      "options": [
+        "هارون من موسى",
+        "يوشع من موسى",
+        "إسماعيل من إبراهيم",
+        "يحيى من زكريا"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قال له: أنت مني بمنزلة هارون من موسى إلا أنه لا نبي بعدي.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل والدلالات",
+      "tags": [
+        "الإمام علي",
+        "حديث المنزلة",
+        "تبوك"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص3-4",
+      "external_id": "ali-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-014",
+      "question_text": "كم دامت إمامة الإمام علي (ع) بعد النبي بحسب الإرشاد؟",
+      "options": [
+        "ثلاثين سنة",
+        "خمسًا وعشرين سنة",
+        "خمس سنوات وستة أشهر",
+        "ثلاثًا وثلاثين سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الشيخ المفيد أن مدة إمامته بعد النبي (ص) كانت ثلاثين سنة.",
+      "difficulty": "medium",
+      "subcategory": "الإمامة والخلافة",
+      "tags": [
+        "الإمام علي",
+        "الإمامة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص5",
+      "external_id": "ali-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-015",
+      "question_text": "كم استمرت مدة حكم الإمام علي (ع) الفعلي المضطربة بالحروب؟",
+      "options": [
+        "خمس سنوات وستة أشهر",
+        "أربع سنوات",
+        "عشر سنوات",
+        "أربع وعشرون سنة وستة أشهر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يفصل الإرشاد ثلاثين سنة إلى 24 سنة و6 أشهر منع فيها من التصرف، و5 سنوات و6 أشهر واجه فيها الحروب.",
+      "difficulty": "hard",
+      "subcategory": "الإمامة والخلافة",
+      "tags": [
+        "الإمام علي",
+        "الخلافة",
+        "الحروب"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر أمير المؤمنين (ع)، ص5",
+      "external_id": "ali-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-016",
+      "question_text": "في أي مسجد ضُرب الإمام علي (ع) الضربة التي استشهد بسببها؟",
+      "options": [
+        "مسجد الكوفة",
+        "المسجد الحرام",
+        "المسجد النبوي",
+        "مسجد قباء"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الإرشاد أن ابن ملجم ضربه في مسجد الكوفة.",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الإمام علي",
+        "مسجد الكوفة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص5-6",
+      "external_id": "ali-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-017",
+      "question_text": "من نفّذ ضربة اغتيال الإمام علي (ع)؟",
+      "options": [
+        "عبد الرحمن بن ملجم المرادي",
+        "عمرو بن العاص",
+        "معاوية بن أبي سفيان",
+        "الأشعث بن قيس"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ينسب الإرشاد الضربة القاتلة إلى عبد الرحمن بن ملجم المرادي.",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الإمام علي",
+        "ابن ملجم"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص5-6",
+      "external_id": "ali-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-018",
+      "question_text": "متى وقعت ضربة الإمام علي (ع) في مسجد الكوفة؟",
+      "options": [
+        "ليلة التاسع عشر من رمضان",
+        "ليلة السابع عشر من رمضان",
+        "ليلة الحادي والعشرين من رمضان",
+        "ليلة الثالث والعشرين من رمضان"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "خرج لإيقاظ الناس لصلاة الفجر ليلة التاسع عشر من رمضان فضربه ابن ملجم.",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الإمام علي",
+        "رمضان",
+        "الضربة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص5-6",
+      "external_id": "ali-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-019",
+      "question_text": "ما الوصف الذي يذكره الإرشاد لسيف ابن ملجم؟",
+      "options": [
+        "كان مسمومًا",
+        "كان مكسورًا",
+        "كان ذا نصلين",
+        "كان من غنائم بدر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نص الإرشاد على أن ابن ملجم ضرب أعلى رأس الإمام بسيف مسموم.",
+      "difficulty": "medium",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الإمام علي",
+        "ابن ملجم",
+        "السيف"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص6",
+      "external_id": "ali-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-020",
+      "question_text": "في أي تاريخ كانت شهادة الإمام علي (ع) بحسب الإرشاد؟",
+      "options": [
+        "21 رمضان سنة 40هـ",
+        "19 رمضان سنة 40هـ",
+        "21 رمضان سنة 41هـ",
+        "19 رمضان سنة 39هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كانت وفاته شهيدًا قبل فجر الجمعة، الحادي والعشرين من رمضان سنة 40هـ.",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الإمام علي",
+        "الشهادة",
+        "رمضان"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص5-6",
+      "external_id": "ali-020",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-021",
+      "question_text": "من تولّى غسل الإمام علي (ع) وتكفينه تنفيذًا لوصيته؟",
+      "options": [
+        "الحسن والحسين (ع)",
+        "محمد بن الحنفية وعبد الله بن جعفر",
+        "عمار بن ياسر والمقداد",
+        "قنبر والأصبغ بن نباتة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تولى الإمامان الحسن والحسين (ع) غسله وتكفينه وفق وصيته.",
+      "difficulty": "medium",
+      "subcategory": "الدفن والمزار",
+      "tags": [
+        "الإمام علي",
+        "الحسن",
+        "الحسين"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص6",
+      "external_id": "ali-021",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-022",
+      "question_text": "إلى أي موضع حُمل الإمام علي (ع) لدفنه؟",
+      "options": [
+        "الغري في النجف",
+        "البقيع في المدينة",
+        "مقبرة المعلاة في مكة",
+        "وادي السلام في البصرة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "حمله الحسنان (ع) إلى الغري في النجف من أرض الكوفة ودفناه هناك.",
+      "difficulty": "easy",
+      "subcategory": "الدفن والمزار",
+      "tags": [
+        "الإمام علي",
+        "النجف",
+        "الغري"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص6",
+      "external_id": "ali-022",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-023",
+      "question_text": "لماذا أُخفي أثر قبر الإمام علي (ع) أول الأمر؟",
+      "options": [
+        "خشية اعتداء الأمويين عليه",
+        "لمنع السيول من الوصول إليه",
+        "انتظار بناء مدينة النجف",
+        "لوقوع خلاف على موضع الدفن"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 22,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أوصى بإخفاء أثر قبره لما علمه من عداوة الحكم الأموي وخشية العبث به.",
+      "difficulty": "medium",
+      "subcategory": "الدفن والمزار",
+      "tags": [
+        "الإمام علي",
+        "القبر",
+        "الأمويون"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص6",
+      "external_id": "ali-023",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-024",
+      "question_text": "من دلّ الشيعة على قبر الإمام علي (ع) في العصر العباسي؟",
+      "options": [
+        "الإمام جعفر الصادق (ع)",
+        "الإمام محمد الباقر (ع)",
+        "الإمام موسى الكاظم (ع)",
+        "زيد بن علي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 23,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الإرشاد أن الإمام جعفر الصادق (ع) عرّف القبر في العصر العباسي، فعرفته الشيعة وزارته.",
+      "difficulty": "medium",
+      "subcategory": "الدفن والمزار",
+      "tags": [
+        "الإمام علي",
+        "الإمام الصادق",
+        "القبر"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص6",
+      "external_id": "ali-024",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "ali-025",
+      "question_text": "كم كان عمر الإمام علي (ع) عند استشهاده بحسب الإرشاد؟",
+      "options": [
+        "ثلاثًا وستين سنة",
+        "ستين سنة",
+        "خمسًا وستين سنة",
+        "ثمانٍ وخمسين سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 24,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ختم الشيخ المفيد ترجمته المختصرة بذكر أن عمر الإمام عند وفاته كان 63 سنة.",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الإمام علي",
+        "العمر",
+        "الشهادة"
+      ],
+      "source": "الإرشاد — الشيخ المفيد، باب ذكر وفاة أمير المؤمنين (ع)، ص6",
+      "external_id": "ali-025",
+      "is_verified": true,
+      "version": 1
+    }
+  ]
+}

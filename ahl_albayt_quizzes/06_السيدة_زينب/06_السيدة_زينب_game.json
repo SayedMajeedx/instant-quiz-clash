@@ -1,0 +1,682 @@
+{
+  "title": "سيرة السيدة زينب (ع)",
+  "category": "سلسلة مسابقات أهل البيت (ع)",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "id": "zaynab-001",
+      "question_text": "إلى أي بيت تنتسب السيدة زينب (ع) من جهة والديها؟",
+      "options": [
+        "بيت الإمام علي وفاطمة (ع)",
+        "بيت جعفر وأسماء بنت عميس",
+        "بيت العباس وأم الفضل",
+        "بيت عقيل وفاطمة بنت عتبة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "زينب الكبرى هي ابنة الإمام علي والسيدة فاطمة الزهراء (ع).",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "السيدة زينب",
+        "النسب",
+        "أهل البيت"
+      ],
+      "source": "بحار الأنوار، ج42، أبواب أحوال أولاد أمير المؤمنين (ع)",
+      "external_id": "zaynab-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-002",
+      "question_text": "من هما أخوا السيدة زينب (ع) الشقيقان؟",
+      "options": [
+        "الحسن والحسين (ع)",
+        "محمد بن الحنفية والعباس",
+        "جعفر وعقيل",
+        "القاسم وعبد الله"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "زينب والحسن والحسين من أولاد الإمام علي وفاطمة الزهراء (ع).",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "السيدة زينب",
+        "الحسن",
+        "الحسين"
+      ],
+      "source": "الإرشاد، ج1، باب ذكر أولاد أمير المؤمنين (ع)",
+      "external_id": "zaynab-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-003",
+      "question_text": "بمن تزوجت السيدة زينب (ع)؟",
+      "options": [
+        "عبد الله بن جعفر",
+        "عبد الله بن عباس",
+        "محمد بن الحنفية",
+        "مسلم بن عقيل"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تزوجت زينب الكبرى ابن عمها عبد الله بن جعفر بن أبي طالب.",
+      "difficulty": "easy",
+      "subcategory": "الأسرة",
+      "tags": [
+        "السيدة زينب",
+        "الزواج",
+        "عبد الله بن جعفر"
+      ],
+      "source": "بحار الأنوار، ج42، أبواب أحوال أولاد أمير المؤمنين (ع)",
+      "external_id": "zaynab-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-004",
+      "question_text": "ما صلة زوج السيدة زينب (ع) بجعفر الطيار؟",
+      "options": [
+        "ابنه",
+        "أخوه",
+        "حفيده",
+        "ابن أخيه"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عبد الله زوج زينب هو ابن جعفر بن أبي طالب المعروف بالطيار.",
+      "difficulty": "easy",
+      "subcategory": "الأسرة",
+      "tags": [
+        "عبد الله بن جعفر",
+        "جعفر الطيار"
+      ],
+      "source": "الإرشاد، ج1، باب ذكر أولاد أمير المؤمنين (ع) وأنسابهم",
+      "external_id": "zaynab-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-005",
+      "question_text": "أي إمام كان ابن أخي زينب (ع) ورافق ركب كربلاء؟",
+      "options": [
+        "علي بن الحسين (ع)",
+        "محمد الباقر (ع)",
+        "جعفر الصادق (ع)",
+        "موسى الكاظم (ع)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "الإمام السجاد ابن الإمام الحسين، وكان في ركب كربلاء ثم مسير السبايا.",
+      "difficulty": "easy",
+      "subcategory": "الأسرة",
+      "tags": [
+        "السيدة زينب",
+        "الإمام السجاد",
+        "كربلاء"
+      ],
+      "source": "الإرشاد، ج2، باب ذكر الإمام علي بن الحسين (ع)",
+      "external_id": "zaynab-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-006",
+      "question_text": "مع أي إمام خرجت زينب (ع) في الرحلة التي انتهت بكربلاء؟",
+      "options": [
+        "الإمام الحسين (ع)",
+        "الإمام الحسن (ع)",
+        "الإمام السجاد (ع)",
+        "الإمام الباقر (ع)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "حضرت زينب مع أخيها الإمام الحسين في الركب حتى كربلاء.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء",
+      "tags": [
+        "السيدة زينب",
+        "الإمام الحسين",
+        "كربلاء"
+      ],
+      "source": "اللهوف، المسلك الثاني في وصف حال القتال والقتل",
+      "external_id": "zaynab-006",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-007",
+      "question_text": "من أخبر زينب (ع) ليلة عاشوراء بقرب الأجل؟",
+      "options": [
+        "الإمام الحسين (ع)",
+        "الإمام السجاد (ع)",
+        "أبو الفضل العباس (ع)",
+        "حبيب بن مظاهر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أنشد الحسين أبياتًا في تقلّب الدهر، فعلمت زينب بدنو المصاب.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء",
+      "tags": [
+        "السيدة زينب",
+        "ليلة عاشوراء"
+      ],
+      "source": "اللهوف، المسلك الثاني، أحداث ليلة عاشوراء",
+      "external_id": "zaynab-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-008",
+      "question_text": "بماذا وجّه الحسين (ع) أخته زينب ليلة عاشوراء؟",
+      "options": [
+        "الصبر والتقوى",
+        "مغادرة المخيم",
+        "طلب الأمان",
+        "الرجوع إلى المدينة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "وعظها الحسين بالصبر والتقوى والتعزي بعزاء الله.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء",
+      "tags": [
+        "السيدة زينب",
+        "الصبر",
+        "عاشوراء"
+      ],
+      "source": "اللهوف، المسلك الثاني، أحداث ليلة عاشوراء",
+      "external_id": "zaynab-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-009",
+      "question_text": "من كان حاضرًا مريضًا في حديث الحسين وزينب ليلة عاشوراء؟",
+      "options": [
+        "الإمام السجاد (ع)",
+        "عبد الله بن جعفر",
+        "محمد بن الحنفية",
+        "مسلم بن عقيل"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نقل الإمام السجاد الواقعة وذكر أنه كان مريضًا.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء",
+      "tags": [
+        "السيدة زينب",
+        "الإمام السجاد",
+        "المرض"
+      ],
+      "source": "اللهوف، المسلك الثاني، أحداث ليلة عاشوراء",
+      "external_id": "zaynab-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-010",
+      "question_text": "ما الدور الذي ذكره السجاد (ع) لعمته زينب ليلة عاشوراء؟",
+      "options": [
+        "كانت تمرّضه",
+        "كانت تفاوض الجيش",
+        "كانت تحمل الراية",
+        "كانت تكتب للكوفة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الإمام السجاد أن عمته زينب كانت تمرّضه بسبب مرضه.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء",
+      "tags": [
+        "السيدة زينب",
+        "الرعاية",
+        "الإمام السجاد"
+      ],
+      "source": "اللهوف، المسلك الثاني، أحداث ليلة عاشوراء",
+      "external_id": "zaynab-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-011",
+      "question_text": "من تولّى دورًا بارزًا في رعاية العيال بعد مقتل الحسين (ع)؟",
+      "options": [
+        "السيدة زينب (ع)",
+        "أم البنين",
+        "أسماء بنت عميس",
+        "أم سلمة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "برزت زينب في رعاية النساء والأطفال وحماية الركب بعد الطف.",
+      "difficulty": "easy",
+      "subcategory": "ما بعد الطف",
+      "tags": [
+        "السيدة زينب",
+        "العيال",
+        "الرعاية"
+      ],
+      "source": "اللهوف، المسلك الثالث فيما جرى بعد قتل الحسين (ع)",
+      "external_id": "zaynab-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-012",
+      "question_text": "كيف حمت زينب (ع) الإمام السجاد حين هدده ابن زياد؟",
+      "options": [
+        "اعتنقته وطلبت أن تُقتل معه",
+        "طلبت إعادته للمدينة",
+        "لاذت بالصمت بعيدًا",
+        "طلبت إخراجه سرًا"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تعلقت به وقالت إنها إن قُتل تُقتل معه، فكف ابن زياد.",
+      "difficulty": "medium",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "الإمام السجاد",
+        "ابن زياد"
+      ],
+      "source": "اللهوف، المسلك الثالث، مجلس ابن زياد",
+      "external_id": "zaynab-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-013",
+      "question_text": "أين وبّخت زينب (ع) الناس بعد واقعة الطف؟",
+      "options": [
+        "الكوفة",
+        "مكة",
+        "البصرة",
+        "المدينة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أورد الاحتجاج خطبتها في أهل الكوفة عند مرور السبايا.",
+      "difficulty": "easy",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "الخطبة",
+        "الكوفة"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على أهل الكوفة",
+      "external_id": "zaynab-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-014",
+      "question_text": "بأي صفة خاطبت زينب (ع) أهل الكوفة في خطبتها؟",
+      "options": [
+        "أهل الختل والغدر",
+        "أهل الوفاء والنصرة",
+        "حماة العهد",
+        "أنصار الحق"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "وصفتهم بالختل والغدر ونقض العهد بسبب خذلان الحسين.",
+      "difficulty": "medium",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "أهل الكوفة",
+        "الغدر"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على أهل الكوفة",
+      "external_id": "zaynab-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-015",
+      "question_text": "بماذا شبّهت زينب (ع) نقض أهل الكوفة لعهدهم؟",
+      "options": [
+        "ناقضة غزلها بعد قوة",
+        "أصحاب الكهف",
+        "أصحاب السفينة",
+        "أصحاب الجنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استشهدت بمضمون آية النحل في نقض الغزل بعد توكيده.",
+      "difficulty": "hard",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "القرآن",
+        "نقض العهد"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على أهل الكوفة؛ النحل: 92",
+      "external_id": "zaynab-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-016",
+      "question_text": "كيف استجاب أهل الكوفة لخطبة زينب (ع)؟",
+      "options": [
+        "ردّوا أيديهم لأفواههم وبكوا",
+        "غادروا بلا تأثر",
+        "احتفلوا بالنصر",
+        "قاطعوا الخطبة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يصف الاحتجاج بكاء الجمع بعد أن كشفت الخطبة فداحة فعلهم.",
+      "difficulty": "medium",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "الخطبة",
+        "البكاء"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على أهل الكوفة",
+      "external_id": "zaynab-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-017",
+      "question_text": "بأي منطق ردّت زينب (ع) على شماتة ابن زياد؟",
+      "options": [
+        "كرامة الشهداء والابتلاء",
+        "منع النسب للمصائب",
+        "براءة أهل الكوفة",
+        "إنكار الرحلة للعراق"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أكدت منزلة الشهداء ورفضت اعتبار المصاب نصرًا أخلاقيًا للقاتل.",
+      "difficulty": "hard",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "الشهادة",
+        "ابن زياد"
+      ],
+      "source": "اللهوف، المسلك الثالث، مجلس عبيد الله بن زياد",
+      "external_id": "zaynab-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-018",
+      "question_text": "بأي عبارة لخّصت زينب (ع) رؤيتها للمصاب أمام ابن زياد؟",
+      "options": [
+        "ما رأيت إلا جميلًا",
+        "إن مع العسر يسرًا",
+        "حسبنا الله",
+        "الصبر مفتاح الفرج"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قالت: ما رأيت إلا جميلًا، وبيّنت أن الشهداء برزوا إلى مضاجعهم.",
+      "difficulty": "easy",
+      "subcategory": "الكوفة",
+      "tags": [
+        "السيدة زينب",
+        "ما رأيت إلا جميلا"
+      ],
+      "source": "اللهوف، المسلك الثالث، مجلس عبيد الله بن زياد",
+      "external_id": "zaynab-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-019",
+      "question_text": "أين واجهت زينب (ع) يزيد بخطبتها المشهورة؟",
+      "options": [
+        "في مجلسه بالشام",
+        "في مسجد الكوفة",
+        "في المدينة",
+        "في موسم الحج"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ألقت خطابها في مجلس يزيد بعد إدخال أهل البيت إلى الشام.",
+      "difficulty": "easy",
+      "subcategory": "الشام",
+      "tags": [
+        "السيدة زينب",
+        "يزيد",
+        "الشام"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على يزيد بالشام",
+      "external_id": "zaynab-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-020",
+      "question_text": "بأي آية ردّت زينب (ع) على اغترار يزيد بالإمهال؟",
+      "options": [
+        "ولا يحسبن الذين كفروا أنما نملي لهم",
+        "إن مع العسر يسرًا",
+        "لا إكراه في الدين",
+        "والعصر إن الإنسان لفي خسر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استشهدت بآل عمران 178 لتبيّن أن الإمهال قد يكون زيادة في الإثم.",
+      "difficulty": "hard",
+      "subcategory": "الشام",
+      "tags": [
+        "السيدة زينب",
+        "القرآن",
+        "يزيد"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على يزيد؛ آل عمران: 178",
+      "external_id": "zaynab-020",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-021",
+      "question_text": "ماذا تحدّت زينب (ع) يزيد أن يفعل بذكر أهل البيت؟",
+      "options": [
+        "أن يمحو ذكرهم ولن يقدر",
+        "أن ينقله لبلد آخر",
+        "أن يحصره في المدينة",
+        "أن يكتبه في السجلات"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قالت له: فوالله لا تمحو ذكرنا، مثبتة بقاء الرسالة رغم القمع.",
+      "difficulty": "medium",
+      "subcategory": "الشام",
+      "tags": [
+        "السيدة زينب",
+        "أهل البيت",
+        "يزيد"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على يزيد بالشام",
+      "external_id": "zaynab-021",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-022",
+      "question_text": "ماذا أنكرت زينب (ع) على يزيد في شأن النساء؟",
+      "options": [
+        "ستر حرائره وسوق بنات النبي سبايا",
+        "منع نساء الشام من السفر",
+        "تأخير زواج نساء بني أمية",
+        "تخصيص عطايا لنساء المدينة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أنكرت صونه نساءه مع كشفه وسوقه بنات رسول الله من بلد إلى بلد.",
+      "difficulty": "medium",
+      "subcategory": "الشام",
+      "tags": [
+        "السيدة زينب",
+        "السبايا",
+        "يزيد"
+      ],
+      "source": "الاحتجاج، ج2، احتجاج زينب (ع) على يزيد بالشام",
+      "external_id": "zaynab-022",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-023",
+      "question_text": "ما أبرز هدف لخطاب زينب (ع) في الكوفة والشام؟",
+      "options": [
+        "كشف الجريمة والدفاع عن الرسالة",
+        "طلب منصب إداري",
+        "التفاوض التجاري",
+        "اعتزال الشأن العام"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 22,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "واجهت خطاب السلطة وذكّرت بمكانة أهل البيت ومسؤولية المعتدين والخاذلين.",
+      "difficulty": "medium",
+      "subcategory": "المواقف والفضائل",
+      "tags": [
+        "السيدة زينب",
+        "الخطابة",
+        "الرسالة"
+      ],
+      "source": "الاحتجاج، ج2، احتجاجا زينب (ع) في الكوفة والشام",
+      "external_id": "zaynab-023",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-024",
+      "question_text": "إلى أي مدينة طلب أهل البيت التوجه بعد خروجهم من الشام؟",
+      "options": [
+        "المدينة المنورة",
+        "الكوفة",
+        "البصرة",
+        "مكة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 15,
+      "order_index": 23,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اختار أهل البيت العودة إلى المدينة، موطن جدهم رسول الله (ص).",
+      "difficulty": "easy",
+      "subcategory": "العودة",
+      "tags": [
+        "السيدة زينب",
+        "المدينة",
+        "العودة"
+      ],
+      "source": "اللهوف، المسلك الثالث، خروج أهل البيت من الشام",
+      "external_id": "zaynab-024",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "id": "zaynab-025",
+      "question_text": "ماذا اختار نساء أهل البيت بعد عرض الإقامة أو الرحيل؟",
+      "options": [
+        "الرجوع إلى المدينة",
+        "الإقامة في دمشق",
+        "التوجه إلى مصر",
+        "الرجوع إلى الكوفة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 24,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نقل اللهوف اختيارهن العودة إلى المدينة بعد ما جرى في الشام.",
+      "difficulty": "easy",
+      "subcategory": "العودة",
+      "tags": [
+        "السيدة زينب",
+        "نساء أهل البيت",
+        "المدينة"
+      ],
+      "source": "اللهوف، المسلك الثالث، خروج أهل البيت من الشام",
+      "external_id": "zaynab-025",
+      "is_verified": true,
+      "version": 1
+    }
+  ]
+}

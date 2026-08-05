@@ -1,0 +1,660 @@
+{
+  "title": "سيرة الإمام الحسين (ع)",
+  "category": "سلسلة مسابقات أهل البيت (ع)",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "question_text": "من هي والدة الإمام الحسين (ع)؟",
+      "options": [
+        "فاطمة الزهراء (ع)",
+        "أم البنين",
+        "أسماء بنت عميس",
+        "أم سلمة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "الإمام الحسين (ع) هو ابن الإمام علي وفاطمة الزهراء (ع).",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الحسين",
+        "النشأة"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، باب ذكر الإمام بعد الحسن",
+      "external_id": "HUS-001",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ما التاريخ المشهور لولادة الإمام الحسين (ع)؟",
+      "options": [
+        "3 شعبان سنة 4 هـ",
+        "15 رمضان سنة 3 هـ",
+        "10 محرم سنة 5 هـ",
+        "17 ربيع الأول سنة 4 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "المشهور في المصادر الإمامية أن ولادته كانت في الثالث من شعبان سنة أربع للهجرة.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الحسين",
+        "الولادة"
+      ],
+      "source": "إعلام الورى، الطبرسي، ج1، باب الإمام الحسين بن علي",
+      "external_id": "HUS-002",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من سمّى سبط النبي الأصغر «الحسين»؟",
+      "options": [
+        "النبي محمد (ص)",
+        "الإمام علي (ع)",
+        "فاطمة الزهراء (ع)",
+        "الإمام الحسن (ع)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر الروايات أن رسول الله (ص) سمّاه حسينًا بعد ولادته.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الحسين",
+        "التسمية"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج43، باب ولادتهما وتسميتهما",
+      "external_id": "HUS-003",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي كنية اشتهر بها الإمام الحسين (ع)؟",
+      "options": [
+        "أبو عبد الله",
+        "أبو محمد",
+        "أبو الحسن",
+        "أبو جعفر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر كتب السيرة أن كنية الإمام الحسين (ع) هي أبو عبد الله.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "الحسين",
+        "الكنية"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، باب ذكر الإمام الحسين",
+      "external_id": "HUS-004",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي عبارة نبوية مشهورة تصف مكانة الحسن والحسين (ع)؟",
+      "options": [
+        "سيدا شباب أهل الجنة",
+        "أمينا وحي السماء",
+        "صاحبا الهجرتين",
+        "كاتبا الوحي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ورد عن النبي (ص) أن الحسن والحسين سيدا شباب أهل الجنة.",
+      "difficulty": "easy",
+      "subcategory": "الفضائل",
+      "tags": [
+        "الحسين",
+        "الفضائل"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فضائل الحسن والحسين",
+      "external_id": "HUS-005",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي آية ارتبطت بالنبي وعلي وفاطمة والحسن والحسين (ع)؟",
+      "options": [
+        "آية التطهير",
+        "آية الدين",
+        "آية النجوى",
+        "آية الكلالة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تربط الروايات الإمامية آية التطهير بأصحاب الكساء الخمسة ومنهم الحسين (ع).",
+      "difficulty": "easy",
+      "subcategory": "الفضائل",
+      "tags": [
+        "الحسين",
+        "آية التطهير"
+      ],
+      "source": "تفسير القمي، ج2، تفسير سورة الأحزاب، الآية 33",
+      "external_id": "HUS-007",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من الإمام الذي سبق الحسين (ع) مباشرة في الإمامة؟",
+      "options": [
+        "الإمام الحسن (ع)",
+        "الإمام علي (ع)",
+        "الإمام السجاد (ع)",
+        "الإمام الباقر (ع)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تولى الحسين (ع) الإمامة بعد أخيه الإمام الحسن المجتبى (ع).",
+      "difficulty": "easy",
+      "subcategory": "الإمامة",
+      "tags": [
+        "الحسين",
+        "الإمامة"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، باب إمامة الحسين بعد أخيه",
+      "external_id": "HUS-008",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم دامت إمامة الحسين (ع) بحسب ما يذكره الشيخ المفيد؟",
+      "options": [
+        "نحو عشر سنين",
+        "نحو خمس سنين",
+        "نحو عشرين سنة",
+        "أقل من سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "امتدت إمامته من وفاة أخيه سنة 50 هـ إلى استشهاده سنة 61 هـ، أي نحو عشر سنين.",
+      "difficulty": "medium",
+      "subcategory": "الإمامة",
+      "tags": [
+        "الحسين",
+        "مدة الإمامة"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، باب مدة إمامة الحسين",
+      "external_id": "HUS-009",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "لماذا غادر الإمام الحسين (ع) المدينة بعد موت معاوية؟",
+      "options": [
+        "لرفضه البيعة ليزيد",
+        "لطلب ولاية مكة",
+        "للتجارة في الشام",
+        "لزيارة اليمن"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "خرج من المدينة بعدما طُلبت منه البيعة ليزيد فامتنع عنها.",
+      "difficulty": "easy",
+      "subcategory": "الخروج والنهضة",
+      "tags": [
+        "الحسين",
+        "رفض البيعة"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل خروج الحسين من المدينة",
+      "external_id": "HUS-010",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "إلى أي مدينة توجه الحسين (ع) عند خروجه من المدينة؟",
+      "options": [
+        "مكة المكرمة",
+        "الكوفة",
+        "البصرة",
+        "دمشق"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "غادر المدينة متوجهًا إلى مكة، وأقام فيها قبل مسيره نحو العراق.",
+      "difficulty": "easy",
+      "subcategory": "الخروج والنهضة",
+      "tags": [
+        "الحسين",
+        "مكة"
+      ],
+      "source": "اللهوف، ابن طاووس، المسلك الأول: خروج الحسين إلى مكة",
+      "external_id": "HUS-011",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من أرسله الحسين (ع) إلى الكوفة ليتحقق من موقف أهلها؟",
+      "options": [
+        "مسلم بن عقيل",
+        "قيس بن مسهر",
+        "هاني بن عروة",
+        "حبيب بن مظاهر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بعث الحسين (ع) ابن عمه مسلم بن عقيل إلى الكوفة ليستطلع اجتماع الناس وبيعتهم.",
+      "difficulty": "easy",
+      "subcategory": "الخروج والنهضة",
+      "tags": [
+        "الحسين",
+        "مسلم بن عقيل"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل إرسال مسلم بن عقيل",
+      "external_id": "HUS-012",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من كان والي الكوفة الذي واجه حركة مسلم بن عقيل؟",
+      "options": [
+        "عبيد الله بن زياد",
+        "النعمان بن بشير",
+        "عمر بن سعد",
+        "الوليد بن عتبة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ولى يزيد عبيد الله بن زياد الكوفة، فتولى قمع حركة مسلم بن عقيل.",
+      "difficulty": "medium",
+      "subcategory": "الخروج والنهضة",
+      "tags": [
+        "الحسين",
+        "الكوفة"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، خبر مسلم بن عقيل بالكوفة",
+      "external_id": "HUS-013",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "في أي يوم غادر الحسين (ع) مكة متوجهًا إلى العراق؟",
+      "options": [
+        "8 ذي الحجة سنة 60 هـ",
+        "10 ذي الحجة سنة 60 هـ",
+        "1 محرم سنة 61 هـ",
+        "15 شعبان سنة 60 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "خرج من مكة يوم التروية، الثامن من ذي الحجة سنة 60 هـ.",
+      "difficulty": "medium",
+      "subcategory": "الطريق إلى كربلاء",
+      "tags": [
+        "الحسين",
+        "يوم التروية"
+      ],
+      "source": "اللهوف، ابن طاووس، المسلك الأول: خروج الحسين من مكة",
+      "external_id": "HUS-014",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من قائد القوة التي التقت ركب الحسين (ع) في الطريق؟",
+      "options": [
+        "الحر بن يزيد الرياحي",
+        "عمر بن سعد",
+        "شمر بن ذي الجوشن",
+        "حصين بن نمير"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "التقى الركب قوة يقودها الحر بن يزيد الرياحي، ثم لازمته حتى النزول بكربلاء.",
+      "difficulty": "easy",
+      "subcategory": "الطريق إلى كربلاء",
+      "tags": [
+        "الحسين",
+        "الحر الرياحي"
+      ],
+      "source": "نفس المهموم، الشيخ عباس القمي، باب مسير الحسين إلى العراق",
+      "external_id": "HUS-015",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كيف عامل الحسين (ع) جيش الحر عند وصوله عطشانًا؟",
+      "options": [
+        "أمر بسقيهم وخيلهم",
+        "منع عنهم الماء",
+        "أعادهم إلى الكوفة",
+        "أخذ سلاحهم"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أمر الحسين (ع) أصحابه أن يسقوا القوم ويرشفوا الخيل، في موقف رحمة واضح.",
+      "difficulty": "medium",
+      "subcategory": "المواقف",
+      "tags": [
+        "الحسين",
+        "الرحمة"
+      ],
+      "source": "نفس المهموم، الشيخ عباس القمي، باب لقاء الحر",
+      "external_id": "HUS-016",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "في أي أرض انتهى مسير ركب الحسين (ع)؟",
+      "options": [
+        "كربلاء",
+        "النجف",
+        "المدائن",
+        "البصرة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتهى المسير بنزول الحسين وأهل بيته وأصحابه بأرض كربلاء.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء",
+      "tags": [
+        "الحسين",
+        "كربلاء"
+      ],
+      "source": "اللهوف، ابن طاووس، المسلك الثاني: النزول بكربلاء",
+      "external_id": "HUS-017",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "في أي تاريخ نزل الإمام الحسين (ع) كربلاء؟",
+      "options": [
+        "2 محرم سنة 61 هـ",
+        "1 محرم سنة 60 هـ",
+        "8 ذي الحجة سنة 61 هـ",
+        "10 صفر سنة 61 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر روايات المقتل نزوله كربلاء في اليوم الثاني من المحرم سنة 61 هـ.",
+      "difficulty": "medium",
+      "subcategory": "كربلاء",
+      "tags": [
+        "الحسين",
+        "النزول بكربلاء"
+      ],
+      "source": "نفس المهموم، الشيخ عباس القمي، باب ورود كربلاء",
+      "external_id": "HUS-018",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من قاد الجيش المقابل للحسين (ع) في كربلاء؟",
+      "options": [
+        "عمر بن سعد",
+        "عبيد الله بن زياد",
+        "الحر بن يزيد",
+        "الوليد بن عتبة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تولى عمر بن سعد قيادة الجيش الذي حاصر الحسين (ع) في كربلاء.",
+      "difficulty": "easy",
+      "subcategory": "كربلاء",
+      "tags": [
+        "الحسين",
+        "عمر بن سعد"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل مقتل الحسين",
+      "external_id": "HUS-019",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ماذا طلب الحسين (ع) ليلة عاشوراء من القوم؟",
+      "options": [
+        "إمهاله ليلة للصلاة والدعاء",
+        "السماح له بدخول الكوفة",
+        "تأجيل القتال شهرًا",
+        "إرسال وفد إلى المدينة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "طلب إمهاله تلك الليلة لما كان يحبه من الصلاة وتلاوة القرآن والدعاء.",
+      "difficulty": "medium",
+      "subcategory": "المواقف",
+      "tags": [
+        "الحسين",
+        "ليلة عاشوراء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، أحداث ليلة عاشوراء",
+      "external_id": "HUS-020",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "ماذا أذن الحسين (ع) لأصحابه أن يفعلوا ليلة عاشوراء؟",
+      "options": [
+        "الانصراف واتخاذ الليل سترًا",
+        "بدء القتال ليلًا",
+        "مبايعة عمر بن سعد",
+        "العودة جميعًا إلى مكة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "رفع عن أصحابه الحرج وأذن لهم بالانصراف، فاختاروا الوفاء والبقاء معه.",
+      "difficulty": "medium",
+      "subcategory": "المواقف",
+      "tags": [
+        "الحسين",
+        "وفاء الأصحاب"
+      ],
+      "source": "اللهوف، ابن طاووس، المسلك الثاني: خطبة ليلة عاشوراء",
+      "external_id": "HUS-021",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من عاد إلى نصرة الحسين (ع) صباح عاشوراء بعد أن كان في الجيش المقابل؟",
+      "options": [
+        "الحر بن يزيد الرياحي",
+        "عمر بن سعد",
+        "شمر بن ذي الجوشن",
+        "عبيد الله بن زياد"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تاب الحر بن يزيد، وانتقل إلى معسكر الحسين (ع) وقاتل بين يديه.",
+      "difficulty": "easy",
+      "subcategory": "المواقف",
+      "tags": [
+        "الحسين",
+        "التوبة"
+      ],
+      "source": "نفس المهموم، الشيخ عباس القمي، باب توبة الحر",
+      "external_id": "HUS-022",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من حمل لواء الحسين (ع) في كربلاء؟",
+      "options": [
+        "أبو الفضل العباس (ع)",
+        "علي الأكبر (ع)",
+        "القاسم بن الحسن",
+        "حبيب بن مظاهر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان لواء الحسين (ع) مع أخيه أبي الفضل العباس (ع).",
+      "difficulty": "easy",
+      "subcategory": "كربلاء",
+      "tags": [
+        "الحسين",
+        "العباس"
+      ],
+      "source": "نفس المهموم، الشيخ عباس القمي، باب وقائع يوم عاشوراء",
+      "external_id": "HUS-023",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "أي ابن للإمام الحسين (ع) بقي بعد كربلاء وصار الإمام من بعده؟",
+      "options": [
+        "علي زين العابدين (ع)",
+        "علي الأكبر (ع)",
+        "عبد الله الرضيع",
+        "جعفر بن الحسين"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 22,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بقي الإمام علي بن الحسين زين العابدين (ع)، وانتقلت إليه الإمامة بعد أبيه.",
+      "difficulty": "easy",
+      "subcategory": "ما بعد كربلاء",
+      "tags": [
+        "الحسين",
+        "الإمامة"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، باب ذكر الإمام علي بن الحسين",
+      "external_id": "HUS-024",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "في أي يوم استشهد الإمام الحسين (ع)؟",
+      "options": [
+        "10 محرم سنة 61 هـ",
+        "9 محرم سنة 60 هـ",
+        "20 صفر سنة 61 هـ",
+        "21 رمضان سنة 61 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 23,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استشهد الإمام الحسين (ع) يوم عاشوراء، العاشر من المحرم سنة 61 هـ.",
+      "difficulty": "easy",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الحسين",
+        "عاشوراء"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، فصل مقتل الحسين وتاريخ شهادته",
+      "external_id": "HUS-025",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "كم كان عمر الإمام الحسين (ع) عند استشهاده؟",
+      "options": [
+        "نحو 57 سنة",
+        "نحو 47 سنة",
+        "نحو 67 سنة",
+        "نحو 37 سنة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 24,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ولد سنة 4 هـ واستشهد سنة 61 هـ، وتذكر المصادر أن عمره كان نحو سبع وخمسين سنة.",
+      "difficulty": "medium",
+      "subcategory": "الاستشهاد",
+      "tags": [
+        "الحسين",
+        "العمر"
+      ],
+      "source": "الإرشاد، الشيخ المفيد، ج2، باب عمر الحسين ومدة إمامته",
+      "external_id": "HUS-026",
+      "is_verified": true,
+      "version": 1
+    },
+    {
+      "question_text": "من تولى دفن الإمام الحسين (ع) بحسب الرواية الإمامية؟",
+      "options": [
+        "الإمام زين العابدين (ع)",
+        "محمد بن الحنفية",
+        "عمر بن سعد",
+        "الحر بن يزيد"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 25,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تنص الرواية الإمامية على أن الإمام زين العابدين (ع) تولى دفن أبيه الحسين (ع).",
+      "difficulty": "medium",
+      "subcategory": "ما بعد كربلاء",
+      "tags": [
+        "الحسين",
+        "الدفن"
+      ],
+      "source": "بحار الأنوار، المجلسي، ج45، باب دفن الحسين وأصحابه",
+      "external_id": "HUS-027",
+      "is_verified": true,
+      "version": 1
+    }
+  ]
+}
