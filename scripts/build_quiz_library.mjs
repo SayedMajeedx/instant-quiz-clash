@@ -44,6 +44,52 @@ for (const file of files) {
   });
 }
 
+// Reviewed Ahl al-Bayt series. Each file already uses the LibraryQuiz shape.
+const AHL_DIR = "ahl_albayt_quizzes";
+if (fs.existsSync(AHL_DIR)) {
+  const characterDirs = fs.readdirSync(AHL_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort();
+
+  for (const characterDir of characterDirs) {
+    const fullDir = path.join(AHL_DIR, characterDir);
+    const gameFile = fs.readdirSync(fullDir).find((file) => file.endsWith("_game.json"));
+    if (!gameFile) continue;
+
+    const quiz = JSON.parse(fs.readFileSync(path.join(fullDir, gameFile), "utf8"));
+    if (!Array.isArray(quiz.questions) || quiz.questions.length === 0) {
+      throw new Error(`missing questions in ${gameFile}`);
+    }
+
+    quizzes.push({
+      id: `lib-ahl-${characterDir.slice(0, 2)}`,
+      user_id: "system",
+      title: quiz.title,
+      created_at: "2026-08-05T00:00:00.000Z",
+      is_public: true,
+      category: quiz.category || "سلسلة مسابقات أهل البيت (ع)",
+      language: "ar",
+      quiz_difficulty: quiz.quiz_difficulty === "challenge" ? "challenge" : "standard",
+      archived: quiz.archived === true,
+      launch_enabled: quiz.launch_enabled !== false,
+      questions: quiz.questions.map((q, i) => {
+        if (!Array.isArray(q.options) || q.options.length !== 4) throw new Error(`bad options in ${gameFile} #${i}`);
+        if (typeof q.correct_index !== "number" || q.correct_index < 0 || q.correct_index > 3) {
+          throw new Error(`bad correct index in ${gameFile} #${i}`);
+        }
+        return {
+          ...q,
+          order_index: i,
+          time_limit_seconds: q.time_limit_seconds ?? 20,
+          image_url: q.image_url ?? null,
+          question_type: "multi",
+        };
+      }),
+    });
+  }
+}
+
 const out = `import type { Question, Quiz } from "@/lib/quizclash";
 
 export type LibraryQuiz = Quiz & {
@@ -56,6 +102,7 @@ export type LibraryQuiz = Quiz & {
 };
 
 // Hand-authored Arabic quiz library. Generated from content/quizzes/*.json
+// and the reviewed ahl_albayt_quizzes/*/*_game.json files.
 // by scripts/build_quiz_library.mjs — edit the JSON sources, not this file.
 export const QUIZ_LIBRARY: LibraryQuiz[] = ${JSON.stringify(quizzes, null, 2)};
 `;

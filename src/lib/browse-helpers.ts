@@ -6,6 +6,7 @@ export type CategoryInfo = {
 };
 
 export const CATEGORY_ICONS: Record<string, string> = {
+  "سلسلة مسابقات أهل البيت (ع)": "🕌",
   "أنمي": "⚔️",
   "ألعاب فيديو": "🎮",
   "تاريخ": "📜",
