@@ -1,7 +1,9 @@
 /**
  * QuizClash High-Quality Web Audio Sound Manager
- * Modern, warm, Nintendo/iOS-style game audio synthesizers.
+ * Modern, warm, Nintendo/iOS-style game audio synthesizers & background music player.
  */
+
+import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 
 class SoundManager {
   private ctx: AudioContext | null = null;
@@ -40,6 +42,9 @@ class SoundManager {
     }
     if (this.bgmAudio) {
       this.bgmAudio.volume = this.isMuted ? 0 : this.bgmVolume;
+      if (!this.isMuted && this.bgmAudio.paused) {
+        void this.bgmAudio.play().catch(() => {});
+      }
     }
     return this.isMuted;
   }
@@ -66,18 +71,26 @@ class SoundManager {
     audio.volume = this.isMuted ? 0 : this.bgmVolume;
     this.bgmAudio = audio;
 
-    audio.play().catch(() => {
-      // Handle browser autoplay restriction: play on first user interaction
-      const handleUserGesture = () => {
-        if (this.bgmAudio === audio && audio.paused && !this.isMuted) {
-          void audio.play().catch(() => {});
-        }
-        window.removeEventListener("pointerdown", handleUserGesture);
-        window.removeEventListener("keydown", handleUserGesture);
-      };
-      window.addEventListener("pointerdown", handleUserGesture, { once: true });
-      window.addEventListener("keydown", handleUserGesture, { once: true });
-    });
+    const attemptPlay = () => {
+      if (!this.bgmAudio || this.bgmAudio !== audio) return;
+      audio.play().then(() => {
+        console.log("BGM playing successfully:", url);
+      }).catch((err) => {
+        console.warn("BGM autoplay blocked, waiting for user click/tap:", err);
+      });
+    };
+
+    attemptPlay();
+
+    // Listen for any user gesture on host display to unlock browser audio restrictions
+    const unlock = () => {
+      if (this.bgmAudio === audio && audio.paused && !this.isMuted) {
+        attemptPlay();
+      }
+    };
+    window.addEventListener("pointerdown", unlock, { passive: true });
+    window.addEventListener("click", unlock, { passive: true });
+    window.addEventListener("keydown", unlock, { passive: true });
   }
 
   public stopBgm() {
@@ -281,25 +294,44 @@ export const sounds = new SoundManager();
  * defaulting to /audio/islamic.mp3 for Islamic & Ahl al-Bayt quizzes.
  */
 export function getBgmForQuiz(
-  quiz: { category?: string | null; title?: string | null } | null | undefined
+  quiz: { id?: string; quiz_id?: string; category?: string | null; title?: string | null } | null | undefined
 ): string | null {
   if (!quiz) return null;
-  const category = (quiz.category ?? "").trim();
   const title = (quiz.title ?? "").trim();
+  const category = (quiz.category ?? "").trim();
+
+  // Search QUIZ_LIBRARY to match metadata if category is missing on DB object
+  const libMatch = QUIZ_LIBRARY.find(
+    (lq) =>
+      lq.id === quiz.id ||
+      lq.id === quiz.quiz_id ||
+      (title && lq.title.includes(title)) ||
+      (lq.title && title.includes(lq.title))
+  );
+
+  const fullCategory = category || libMatch?.category || "";
+  const fullTitle = title || libMatch?.title || "";
+  const testStr = `${fullCategory} ${fullTitle}`.toLowerCase();
 
   // Match Islamic / Ahl al-Bayt quizzes
   const isIslamic =
-    category.includes("إسلام") ||
-    category.includes("دين") ||
-    title.includes("أهل البيت") ||
-    title.includes("الإمام") ||
-    title.includes("القرآن") ||
-    title.includes("عاشوراء") ||
-    title.includes("السيرة") ||
-    title.includes("إسلام") ||
-    title.includes("الأئمة") ||
-    title.includes("أهل بيت") ||
-    title.includes("أهل‌البيت");
+    testStr.includes("إسلام") ||
+    testStr.includes("دين") ||
+    testStr.includes("أهل البيت") ||
+    testStr.includes("الإمام") ||
+    testStr.includes("القرآن") ||
+    testStr.includes("عاشوراء") ||
+    testStr.includes("السيرة") ||
+    testStr.includes("علي بن أبي طالب") ||
+    testStr.includes("الحسين") ||
+    testStr.includes("الحسن") ||
+    testStr.includes("فاطمة") ||
+    testStr.includes("محمد") ||
+    testStr.includes("الأئمة") ||
+    testStr.includes("أهل بيت") ||
+    testStr.includes("ahl_albayt") ||
+    testStr.includes("ahlalbayt") ||
+    testStr.includes("اسلام");
 
   if (isIslamic) {
     return "/audio/islamic.mp3";
