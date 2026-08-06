@@ -87,26 +87,26 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
         </div>
       </div>
 
-      {/* Action Buttons */}
-      <div className="mt-5 flex items-center gap-2 pt-2 border-t border-border/40">
+      <div className="mt-5 grid grid-cols-[1fr_1.4fr] items-stretch gap-2 pt-3 border-t border-border/40">
         <Link
           to="/browse/$quizId/preview"
           params={{ quizId: quiz.id }}
-          className="press flex-1 rounded-2xl border border-border/80 bg-background/50 py-2.5 text-center font-display text-xs sm:text-sm hover:border-primary/50 flex items-center justify-center gap-1.5"
+          className="press flex h-11 min-w-0 items-center justify-center gap-1.5 rounded-2xl border border-border/80 bg-background/50 px-2 text-center font-display text-xs sm:text-sm leading-none hover:border-primary/50"
         >
-          <span>👁️</span>
-          <span>{t("browse.preview")}</span>
+          <span className="shrink-0 text-sm leading-none">👁️</span>
+          <span className="truncate">{t("browse.preview")}</span>
         </Link>
         <button
           type="button"
           disabled={isCloning}
           onClick={() => void handleClone()}
-          className="press flex-[1.5] rounded-2xl bg-gradient-hero py-2.5 font-display text-xs sm:text-sm text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center justify-center gap-1.5"
+          className="press flex h-11 min-w-0 items-center justify-center gap-1.5 rounded-2xl bg-gradient-hero px-2 font-display text-xs sm:text-sm leading-none text-primary-foreground shadow-chunky disabled:opacity-50"
         >
-          <span>✨</span>
-          <span>{isCloning ? t("browse.cloning") : t("browse.cloneAndPlay")}</span>
+          <span className="shrink-0 text-sm leading-none">✨</span>
+          <span className="truncate">{isCloning ? t("browse.cloning") : t("browse.cloneAndPlay")}</span>
         </button>
       </div>
+
     </div>
   );
 }
