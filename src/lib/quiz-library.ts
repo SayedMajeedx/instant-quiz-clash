@@ -10,8 +10,8 @@ export type LibraryQuiz = Quiz & {
 };
 
 // Hand-authored Arabic quiz library. Generated from content/quizzes/*.json
-// the reviewed ahl_albayt_quizzes/*/*_game.json files, and
-// general_specialized_quizzes/*/*.json.
+// the reviewed ahl_albayt_quizzes/*/*_game.json files,
+// general_specialized_quizzes/*/*.json, and TrQuizes/split_quizzes/*.json.
 // by scripts/build_quiz_library.mjs — edit the JSON sources, not this file.
 export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
@@ -26109,6 +26109,31432 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "external_id": "sports-rare-rules-025",
         "is_verified": true,
         "version": 1
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-animals_quiz_1",
+    "user_id": "system",
+    "title": "عالم الحيوانات والتنوع الحيوي — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من هذه الحيوانات ليس حقيقياً؟",
+        "options": [
+          "أسد نيميا",
+          "تنين البحر",
+          "شيطان تسمانيا",
+          "الحبار العملاق"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك اليرقة عضلات أكثر مما يمتلكه الإنسان.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "سُمي متصفح الإنترنت فايرفوكس تيمناً بالباندا الأحمر.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يُعتبر الحوت القاتل (الأوركا) نوعاً من أنواع الدلافين.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد أرجل الفراشة؟",
+        "options": [
+          "6",
+          "2",
+          "4",
+          "0"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو نوع الكائن الحي الذي ينتمي إليه البونوبو؟",
+        "options": [
+          "أسد",
+          "قرد",
+          "ببغات",
+          "قط بري"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للشمبانزي الشائع؟",
+        "options": [
+          "⁦Gorilla gorilla⁩",
+          "⁦Pan paniscus⁩",
+          "⁦Pan troglodytes⁩",
+          "⁦Panthera leo⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُعرف ديناصور السيراتوصور (⁦Ceratosaurus⁩) بوجود قرن على أنفه، ويُعتقد أيضاً أنه من سلالة التيرانوصور ركس (⁦T-Rex⁩).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي فصيلة علمية ينتمي حيوان ذئب الأرض (الآردولف)‏؟",
+        "options": [
+          "الضبعيات (⁦Hyaenidae⁩)",
+          "الكلبيات (⁦Canidae⁩)",
+          "السنوريات (⁦Felidae⁩)",
+          "السموريات المدغشقرية (⁦Eupleridae⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2016، أعاد الاتحاد الدولي لحفظ الطبيعة (⁦IUCN⁩) تصنيف الباندا العملاق من كائن مهدد بالانقراض إلى كائن معرض للتهديد (ضعيف).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر \"عشريات الأرجل\" رتبة من القشريات تمتلك عشر أرجل. أي مما يلي ليس من عشريات الأرجل؟",
+        "options": [
+          "الكركند (جراد البحر)",
+          "الروبيان (الجمبري)",
+          "الكريل",
+          "السرطان (الكابوريا)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي سلالة الكلاب التي ترتبط تقليدياً برجال الإطفاء؟",
+        "options": [
+          "الراعي الألماني (جيرمن شيبرد)",
+          "الدانماركي العظيم (جريت دين)",
+          "الماستيف",
+          "الدالميشن (المرقش)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي رتيبة علمية تنتمي فصيلة الضبعيات (⁦Hyaenidae⁩)‏؟",
+        "options": [
+          "سنوريات الشكل (⁦Feliformia⁩)",
+          "بسيطات الأنف (⁦Haplorhini⁩)",
+          "كلبيات الشكل (⁦Caniformia⁩)",
+          "لقلقيات الشكل (⁦Ciconiiformes⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الكائن البحري الذي يحمل الاسم اللاتيني \"هيبوكامبوس\" (⁦Hippocampus⁩)‏؟",
+        "options": [
+          "الدلفين",
+          "حصان البحر",
+          "الحوت",
+          "الأخطبوط"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "صوف الكشمير يؤخذ من أي نوع من الحيوانات؟",
+        "options": [
+          "الأغنام",
+          "الجمال",
+          "الماعز",
+          "اللاما"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي سلالة الكلاب التي تعد واحدة من أقدم السلالات وازدهرت منذ ما قبل عام 400 قبل الميلاد؟",
+        "options": [
+          "البولدوج (⁦Bulldog⁩)",
+          "البوكسر (⁦Boxer⁩)",
+          "الشيواوا (⁦Chihuahua⁩)",
+          "الباج (⁦Pug⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي صحيح عندما تدافع التماسيح الأمريكية (⁦Alligators⁩) عن منطقتها؟",
+        "options": [
+          "تُصدر زئيراً صاخباً (خواراً) مع إظهار ذيلها ورقبتها",
+          "تفتح فكّيها مع إصدار صوت طقطقة",
+          "تركض بكل قوتها باتجاه مصدر التهديد",
+          "تضرب ذيلها بالأرض"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الحيوان آكل اللحوم (⁦Carnivorous⁩) يتغذى على اللحم، فماذا يأكل الحيوان آكل الجوزيات (⁦Nucivorous⁩)‏؟",
+        "options": [
+          "لا شيء",
+          "المكسرات (الجوزيات)",
+          "الفواكه",
+          "الأعشاب البحرية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من النسور في اللغة الإنجليزية؟",
+        "options": [
+          "⁦Ambush⁩",
+          "⁦Building⁩",
+          "⁦Wake⁩",
+          "⁦Gaze⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت كلاب لابهوند الفنلندية (⁦Finnish Lapphund⁩) تُستخدم لرعي حيوانات الرنة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-animals_quiz_2",
+    "user_id": "system",
+    "title": "عالم الحيوانات والتنوع الحيوي — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "يُعتبر حيوان آكل النمل الشوكي (الأكيدنا) من الثدييات البيوضة (أحاديات المسلك).",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الشائع لمرض \"اعتلال الدماغ الإسفنجي البقري\" (⁦BSE⁩)‏؟",
+        "options": [
+          "داء ويل",
+          "مرض جنون البقر",
+          "حمى الحليب",
+          "الحمى القلاعية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الآخر لعنكبوت الرتيلاء الأزرق المعدني (⁦Poecilotheria Metallica⁩)‏؟",
+        "options": [
+          "هوبر (⁦Hopper⁩)",
+          "سيلفر سترايب (⁦Silver Stripe⁩)",
+          "غوتي (⁦Gooty⁩)",
+          "ويبجون (⁦Woebegone⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مما تتكون الحراشف الموجودة على جميع الثعابين ومعظم السحالي؟",
+        "options": [
+          "الانسلاخ (⁦Ecdysis⁩)",
+          "البشرة (⁦Epidermis⁩)",
+          "التصاق اللسان (⁦Ankyloglossia⁩)",
+          "الكيراتين (⁦Keratin⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يستطيع الأرنب رؤية ما يدور خلفه دون الحاجة إلى لف رأسه.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو متوسط عدد صغار الشنشيلة (⁦Chinchilla⁩) الذين يولدون في البطن الواحد؟",
+        "options": [
+          "10-15",
+          "2-3",
+          "5-8",
+          "15-18"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل كلمة \"كاميا\" (⁦Kamea⁩) التي تعني كلباً بلغة سكان جزر كيريباتي مشتقة من العبارة الإنجليزية \"⁦Come here⁩!\" (تعال إلى هنا)‏؟",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الطائر الذي يولد بمخالب على أطراف أجنحته؟",
+        "options": [
+          "الغاق",
+          "الشبنم",
+          "الطائر الكاتب (السكرتير)",
+          "الهواتسين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي لـ \"الدب القطبي\"؟",
+        "options": [
+          "⁦Ursus Maritimus⁩",
+          "⁦Polar Bear⁩",
+          "⁦Ursus Spelaeus⁩",
+          "⁦Ursus Arctos⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يُطلق على ذكر النحل الذي ينتج من بيضة غير مخصبة؟",
+        "options": [
+          "الجندي",
+          "اليعسوب (ذكر النحل)",
+          "العاملة",
+          "الذكر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُطلق على سرب الغربان في اللغة الإنجليزية اسم \"هوميسايد\" (⁦Homicide⁩).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الفصيلة العلمية التي تنتمي إليها القطط الأليفة؟",
+        "options": [
+          "القطية (⁦Felinae⁩)",
+          "جنس القطط (⁦Felis⁩)",
+          "القط (⁦Cat⁩)",
+          "السنوريات (⁦Felidae⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر الأرانب من الحيوانات آكلة اللحوم.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من الغربان في اللغة الإنجليزية؟",
+        "options": [
+          "⁦Pack⁩ (باك)",
+          "⁦Murder⁩ (ميردر)",
+          "⁦Gaggle⁩ (غاغل)",
+          "⁦Herd⁩ (هيرد)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين كان الموطن الأصلي لحيوان \"الثايلاسين\" (ببر تسمانيا) المنقرض حالياً؟",
+        "options": [
+          "بلوشستان، باكستان",
+          "والاشيا، رومانيا",
+          "تسمانيا، أستراليا",
+          "أوريغون، الولايات المتحدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للنسر الأصلع (⁦Bald Eagle⁩)‏؟",
+        "options": [
+          "⁦Tyto Alba⁩",
+          "⁦Cyanocitta Cristata⁩",
+          "⁦Aquila Chrysaetos⁩",
+          "⁦Haliaeetus Leucocephalus⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من الدببة في اللغة الإنجليزية؟",
+        "options": [
+          "⁦Sloth⁩ (سلوث)",
+          "⁦Drove⁩ (دروف)",
+          "⁦Tribe⁩ (ترايب)",
+          "⁦Husk⁩ (هاسك)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحيوان الوطني لجمهورية الهند؟",
+        "options": [
+          "الأسد",
+          "النمر",
+          "الحصان",
+          "الجمل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "طبق \"الفوغو\" الياباني الشهير يتم تحضيره من أي فصيلة من الأسماك؟",
+        "options": [
+          "القاروص",
+          "السلمون",
+          "السمكة المنتفخة (الفهقة)",
+          "الماكريل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الطائر الوطني لمملكة البحرين؟",
+        "options": [
+          "الطائر الطنان",
+          "الصقر",
+          "العصفور الدوري",
+          "البلبل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-animals_quiz_3",
+    "user_id": "system",
+    "title": "عالم الحيوانات والتنوع الحيوي — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "مما تتكون قرون وحيد القرن (الخرتيت)‏؟",
+        "options": [
+          "الكيراتين",
+          "العظام",
+          "العاج",
+          "الجلد"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أسرع حيوان بري على الأرض؟",
+        "options": [
+          "الأسد",
+          "الفهد (الشيتا)",
+          "غزال تومسون",
+          "الظبي شائك القرن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الثعابين التالية ليس ثعباناً ساماً؟",
+        "options": [
+          "كرايت مالايوي (⁦Malayan Krait⁩)",
+          "ثعبان البحر أصفر البطن",
+          "الأصلة الشبكية (⁦Reticulated python⁩)",
+          "المامبا السوداء"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا كان يُسمى الذئب الإثيوبي قبل أن يُعرف أنه ينتمي إلى فصيلة الذئاب؟",
+        "options": [
+          "القيوط الإثيوبي",
+          "الثعلب الأمهري",
+          "كانيس سيمينسيس (⁦Canis Simiensis⁩)",
+          "ابن آوى سيمين (⁦Simien Jackal⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تشتهر الثعابين والسحالي بإخراج لسانها وإدخاله بسرعة (التذوق باللسان). ما سبب هذا السلوك؟",
+        "options": [
+          "التقاط جزيئات الرائحة",
+          "تذوق الهواء العذب",
+          "تهديد الكائنات الأخرى",
+          "جذب الإناث للتزاوج"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لون طائر \"قيق ستيلر\" (⁦Steller's Jay⁩)‏؟",
+        "options": [
+          "أزرق ورمادي",
+          "أزرق وأسود",
+          "أزرق وأبيض",
+          "رمادي وأسود"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو نوع الحيوان الذي ينتمي إليه الـ \"ناتيرجاك\" (⁦Natterjack⁩)‏؟",
+        "options": [
+          "طائر",
+          "سمكة",
+          "علجوم (ضفدع طين)",
+          "حشرة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من الفئران في اللغة الإنجليزية؟",
+        "options": [
+          "⁦Pack⁩ (باك)",
+          "⁦Race⁩ (ريس)",
+          "⁦Drift⁩ (دريفت)",
+          "⁦Mischief⁩ (ميسشيف)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي شعبة حيوية تنتمي جميع الثدييات والطيور والزواحف؟",
+        "options": [
+          "الحبليات (⁦Chordata⁩)",
+          "شوكيات الجلد (⁦Echinodermata⁩)",
+          "الحلقيات (⁦Annelida⁩)",
+          "الصفيحيات (⁦Placozoa⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لا يتبرز الدب أثناء فترة البيات الشتوي.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لون أنثى طائر الشحرور؟",
+        "options": [
+          "أسود",
+          "أبيض",
+          "بني",
+          "أصفر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يسمى مسكن الأرنب؟",
+        "options": [
+          "عش",
+          "عرين",
+          "عش سنجاب (⁦Dray⁩)",
+          "جحر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تحتفظ حيوانات الكنغر بالطعام في جيبها (الجراب) بجانب صغارها.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يستطيع حيوان سمندل الماء العذب (الأكسولوتل) إعادة نمو أطرافه المفقودة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الموطن الأصلي لحيوان الوُمْبَات (⁦Wombat⁩)‏؟",
+        "options": [
+          "نيوزيلندا",
+          "بابوا غينيا الجديدة",
+          "أستراليا",
+          "بالاو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الأرانب لا يمكنها التقيؤ.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكنك معرفة عمر الدعسوقة (خنفساء أبو العيد) عن طريق عد النقاط الموجودة على ظهرها.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك حيوانات القضاعة (ثعلب الماء) جيوباً تحت أذرعها لحمل صخورها ووجباتها الخفيفة المفضلة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الحيوانات لا يُعتبر من السحالي؟",
+        "options": [
+          "تنين كومودو",
+          "وحش غيلا",
+          "التواتارا (⁦Tuatara⁩)",
+          "الإغوانا الخضراء"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأسنان لدى الأرنب البالغ؟",
+        "options": [
+          "30",
+          "26",
+          "24",
+          "28"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-animals_quiz_4",
+    "user_id": "system",
+    "title": "عالم الحيوانات والتنوع الحيوي — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من هذه الفصائل ليست منقرضة؟",
+        "options": [
+          "تنين كومودو",
+          "أسد البحر الياباني",
+          "نمر تسمانيا",
+          "الغزال السعودي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي لطائر البادجي (الببغاء الأسترالي)‏؟",
+        "options": [
+          "⁦Nymphicus hollandicus⁩",
+          "⁦Melopsittacus undulatus⁩",
+          "⁦Pyrrhura molinae⁩",
+          "⁦Ara macao⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي حيوان كان جزءاً من تجربة استئناس روسية عام 1959‏؟",
+        "options": [
+          "الحمام",
+          "الدببة",
+          "الثعالب",
+          "التمساح الأمريكي (الأليغيتور)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو متوسط عمر الأرنب الأليف؟",
+        "options": [
+          "1-2 سنوات",
+          "4-7 سنوات",
+          "14-20 سنة",
+          "8-12 سنوات"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الضباع أقرب صلة بالقطط منها بالكلاب.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أطول أفعى سامة في العالم؟",
+        "options": [
+          "الأناكوندا الخضراء",
+          "الكوبرا الملك",
+          "تايبان البراري",
+          "ثعبان البحر أصفر البطن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للذئب الرمادي؟",
+        "options": [
+          "⁦Canis Aureus⁩",
+          "⁦Canis Latrans⁩",
+          "⁦Canis Lupus⁩",
+          "⁦Canis Lupus Lycaon⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يعيش الحيوان الذي ينتمي لمنطقة الأعماق السحيقة (⁦Abyssopelagic⁩)‏؟",
+        "options": [
+          "في الصحراء",
+          "على قمة جبل",
+          "داخل شجرة",
+          "في قاع المحيط"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك النمور لون جلد واحد بالرغم من فرائها المخطط.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو سبب \"ضحك\" الضبع المرقط؟",
+        "options": [
+          "الحماس",
+          "التوتر",
+          "العدوانية",
+          "الإرهاق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لون جلد الدب القطبي؟",
+        "options": [
+          "أبيض",
+          "وردي",
+          "أسود",
+          "أخضر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للفهد (الشيتا)‏؟",
+        "options": [
+          "⁦Panthera onca⁩",
+          "⁦Lynx rufus⁩",
+          "⁦Felis catus⁩",
+          "⁦Acinonyx jubatus⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم البروتين الغني بالنحاس الذي يجعل دم أخطبوط القطب الجنوبي أزرق اللون؟",
+        "options": [
+          "هيموسيانين",
+          "سيتوكروم",
+          "الحديد",
+          "ميثيونين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي الفصائل التالية يطلق عليها اسم \"دجاج الجبل\"؟",
+        "options": [
+          "دجاجة",
+          "ضفدع",
+          "حصان",
+          "ذبابة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا تعني كلمة \"فرس النهر\" (⁦Hippopotamus⁩) وبأي لغة؟",
+        "options": [
+          "حصان النهر (اللاتينية)",
+          "خنزير سمين (اليونانية)",
+          "حصان النهر (اليونانية)",
+          "خنزير سمين (اللاتينية)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من سلالات الكلاب سميت على اسم منطقة في كرواتيا؟",
+        "options": [
+          "بكينيز",
+          "تشيواوا",
+          "بوميرانيان",
+          "دالميشن (الكلب المرقّط)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي طائفة من الحيوانات ينتمي سمندل الماء (⁦Newt⁩)‏؟",
+        "options": [
+          "البرمائيات",
+          "الأسماك",
+          "الزواحف",
+          "الثدييات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من يصيب مرض الهزال المزمن (⁦CWD⁩) حصرياً من فصائل الحيوانات؟",
+        "options": [
+          "أشباه البشر (البشريات)",
+          "الأيليات (الغزلان)",
+          "السنوريات (القططيات)",
+          "الكلبيات"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يُسمى صغير الخفاش؟",
+        "options": [
+          "شبل",
+          "فرخ",
+          "جرو",
+          "جدي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الأرانب من القوارض.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-animals_quiz_5",
+    "user_id": "system",
+    "title": "عالم الحيوانات والتنوع الحيوي — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "على عكس معظم السلمندرات، أي جزء من سمندل الماء (⁦Newt⁩) يكون مسطحاً؟",
+        "options": [
+          "الذيل",
+          "الرأس",
+          "الأسنان",
+          "الأقدام"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الحقيقي للقط الغاضب (⁦Grumpy Cat⁩)‏؟",
+        "options": [
+          "سوس",
+          "تاردار سوس (⁦Tardar Sauce⁩)",
+          "ميني",
+          "بروكلي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سمندل المكسيك (الأكسولوتل) هو حيوان برمائي يمكنه قضاء حياته بأكملها في طور اليرقة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك القطط شوارب (شعيرات حسية) خلف أرجلها.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الفيلة غير قادرة جسدياً على القفز.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد فصائل الضباع الحية المعروفة؟",
+        "options": [
+          "8",
+          "4",
+          "2",
+          "6"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي عبارة عن مستعمرة من الكائنات المجهرية (⁦Polyps⁩) وليس قنديل بحر حقيقي؟",
+        "options": [
+          "دبور البحر",
+          "إيروكاندجي",
+          "رجل الحرب البرتغالي (⁦Portuguese Man-of-War⁩)",
+          "قرصع البحر (⁦Sea Nettle⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الحمر الوحشية بيضاء اللون ولديها خطوط سوداء.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي فصيلة من الدببة البنية ليست منقرضة؟",
+        "options": [
+          "الدب البني السوري",
+          "دب كاليفورنيا الرمادي",
+          "دب الأطلس",
+          "الدب الرمادي المكسيكي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "دم البزّاقة (البزّاق) أخضر اللون.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "خلد الماء (البلاتيبوس) من الثدييات.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متوسط عمر القط البري يتراوح بين 5 إلى 6 سنوات فقط.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن للأخطبوط المرور عبر أي فتحة تكون أكبر من منقاره.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للإنسان المعاصر؟",
+        "options": [
+          "⁦Homo Ergaster⁩ (إنسان العمل)",
+          "⁦Homo Sapiens⁩ (الإنسان العاقل)",
+          "⁦Homo Erectus⁩ (الإنسان المنتصب)",
+          "⁦Homo Neanderthalensis⁩ (إنسان نياندرتال)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حيوان \"دجاج الجبل\" هو في الواقع دجاجة.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ تقريباً كمية الطعام التي يتناولها قضاعة البحر (ثعلب الماء) يومياً مقارنة بوزن جسمه؟",
+        "options": [
+          "10%",
+          "80%",
+          "45%",
+          "25%"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن لحيوان إسفنج البحر أن يمتلك قلباً.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "طائر الكاكابو هو ببغاء كبير الحجم، غير قادر على الطيران، ونشاطه ليلي. ما هو موطنه الأصلي؟",
+        "options": [
+          "جنوب أفريقيا",
+          "نيوزيلندا",
+          "أستراليا",
+          "مدغشقر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أسرع حيوان في العالم؟",
+        "options": [
+          "العقاب الذهبي",
+          "الفهد (الشيتا)",
+          "صقر الشاهين",
+          "ذبابة الخيل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-gadgets_quiz_1",
+    "user_id": "system",
+    "title": "الأجهزة والتقنيات الحديثة — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "متى تم اختراع قرص الـ ⁦DVD⁩‏؟",
+        "options": [
+          "1995",
+          "2000",
+          "1990",
+          "1980"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم الكشف عن نظارة 'أوكولوس ريفت' للجمهور عبر حملة على منصة كيك ستارتر؟",
+        "options": [
+          "2010",
+          "2012",
+          "2011",
+          "2013"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يرمز الاختصار ⁦SSD⁩ في وحدات تخزين الكمبيوتر؟",
+        "options": [
+          "جهاز تخزين البرمجيات",
+          "بيانات فائقة السرعة",
+          "قرص الحالة الصلبة",
+          "قرص النظام الآمن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم إصدار أول هاتف آيفون؟",
+        "options": [
+          "2005",
+          "2006",
+          "2004",
+          "2007"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة قياس المقاومة الكهربائية في النظام الدولي للوحدات؟",
+        "options": [
+          "الأوم",
+          "الأمبير",
+          "السيمنز",
+          "الفولت"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يعتبر هاتف آيفون ⁦3G⁩ الجيل الثاني من هواتف الآيفون.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المساعد الصوتي الافتراضي الذي طورته شركة أمازون؟",
+        "options": [
+          "مساعد جوجل",
+          "سيري",
+          "أليكسا",
+          "كورتانا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم الآلة البسيطة التي تتكون من ذراع صلبة تتحرك بحرية حول نقطة ارتكاز ثابتة؟",
+        "options": [
+          "الأسفين",
+          "البرغي",
+          "البكرة",
+          "الرافعة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من بين جميع مكاكيك الفضاء التابعة لوكالة ناسا، ما هما المكوكان اللذان دُمِّرا في كوارث؟",
+        "options": [
+          "تشالنجر وكولومبيا",
+          "إنتربرايز وأتلانتس",
+          "ديسكفري وإنديفور",
+          "لاشيء مما سبق"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الشهيرة التي استخدمتها شركة آبل لوصف إزالتها لمنفذ سماعة الرأس؟",
+        "options": [
+          "الابتكار",
+          "الشجاعة",
+          "الثورة",
+          "الجرأة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مهندس القوات الجوية ووكالة ناسا السابق الذي اخترع مسدس الماء الشهير 'سوبر سوكر' (⁦Super Soaker⁩)‏؟",
+        "options": [
+          "بروس داندراد",
+          "فرانسيس نورثكوت",
+          "لوني جونسون",
+          "أشيتي تريبي-أولينو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة تأسست شركة 'بلاك بيري المحدودة' (⁦BlackBerry Limited⁩) لبرمجيات وأجهزة الهواتف المحمولة؟",
+        "options": [
+          "النرويج",
+          "الولايات المتحدة الأمريكية",
+          "المملكة المتحدة",
+          "كندا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم إصدار أول مشغل أقراص مضغوطة (⁦CD player⁩) في الأسواق؟",
+        "options": [
+          "1982",
+          "1983",
+          "1981",
+          "1980"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "على أي هاتف آيفون ظهر المساعد الصوتي 'سيري' (⁦Siri⁩) من آبل لأول مرة؟",
+        "options": [
+          "آيفون ⁦6S⁩",
+          "آيفون ⁦4S⁩",
+          "آيفون ⁦3GS⁩",
+          "آيفون ⁦5S⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أول أفعوانية من نوع 'إنفينيتي كوستر' (⁦Infinity Coaster⁩) في العالم وأين تقع؟",
+        "options": [
+          "مدغشقر ماد بيرسوت، موشنجيت دبي، الإمارات",
+          "غولد راش، سلاغهارين، هولندا",
+          "ذا سمايلر، ألتون تاورز، المملكة المتحدة",
+          "مونستر، أدفنتشرلاند ألتونا، الولايات المتحدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال المراحل الأولى من حرب فيتنام، كان لبندقية ⁦M16⁩ سمعة سيئة فيما يتعلق بقلة موثوقيتها وأعطالها المتكررة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أبرز مشروع جانبي دخلت فيه شركة ريمنغتون (⁦Remington⁩) الشهيرة للأسلحة النارية؟",
+        "options": [
+          "الآلات الكاتبة",
+          "الخلاطات الكهربائية",
+          "مراوح السقف",
+          "مقابض الأبواب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من شركات الهواتف المحمولة التالية لا يقع مقرها الرئيسي في قارة آسيا؟",
+        "options": [
+          "إل جي للإلكترونيات",
+          "نوكيا",
+          "سامسونج",
+          "إتش تي سي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة التي صنعت آلة الطبول الإلكترونية الشهيرة ⁦TR-808⁩‏؟",
+        "options": [
+          "تيكنيكس",
+          "كورج",
+          "رولاند",
+          "كاسيو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى بدأت الأقراص المضغوطة (⁦CD⁩) بالظهور في الأسواق الاستهلاكية؟",
+        "options": [
+          "1992",
+          "1972",
+          "1962",
+          "1982"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-gadgets_quiz_2",
+    "user_id": "system",
+    "title": "الأجهزة والتقنيات الحديثة — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي الذخيرة (العيار) التي تطلقها بندقية ⁦M1 Garand⁩ التي استخدمت في الحرب العالمية الثانية؟",
+        "options": [
+          ".30-06",
+          ".308",
+          "⁦7.62⁩",
+          "⁦7.62x51mm⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا تسمى أجهزة التتبع (المحطات القاعدية) المستخدمة مع نظارة الواقع الافتراضي ⁦HTC Vive⁩‏؟",
+        "options": [
+          "الحركة",
+          "المنارة",
+          "الكوكبة",
+          "أجهزة التتبع"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يرمز الاختصار ⁦GPS⁩‏؟",
+        "options": [
+          "النظام الشخصي العالمي",
+          "نظام تحديد المواقع العام",
+          "نظام تحديد المواقع العالمي",
+          "القمر الصناعي الشخصي العام"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يستخدم هاتف 'ويسترن إليكتريك موديل 500' (⁦Western Electric Model 500⁩) الاتصال بالنغمة لطلب الأرقام الهاتفيّة.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كيف يقوم جهاز الطرد المركزي بفصل الجسيمات الثقيلة عن الخفيفة؟",
+        "options": [
+          "الدوران",
+          "الاهتزاز",
+          "الغربلة",
+          "التأيين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو جهاز 'ميتسوبيشي واكامارو' (⁦Mitsubishi Wakamaru⁩)‏؟",
+        "options": [
+          "شاحنة بيك آب",
+          "روبوت",
+          "دراجة نارية",
+          "قارب بمحرك"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من صنع أول جهاز ليزر في العالم؟",
+        "options": [
+          "نيكولا تسلا",
+          "جاك كيلبي",
+          "ثيودور هارولد ميمان",
+          "إيديث كلارك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يرمز بروتوكول الاتصال ⁦NFC⁩ إلى '⁦Near-Field Control⁩' (التحكم في المجال القريب).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي رصاصة العيار الأساسي التي تستخدمها بندقية كلاشينكوف ⁦AK-47⁩ الكلاسيكية؟",
+        "options": [
+          "⁦7.62x39⁩ ملم",
+          "⁦7.62x51⁩ ملم",
+          "⁦5.56x45⁩ ملم",
+          "⁦5.45x39⁩ ملم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو التردد القياسي لقطع مضخم الصوت (⁦Subwoofer Crossover Frequency⁩) المعتمد من ⁦THX⁩‏؟",
+        "options": [
+          "70 هرتز",
+          "80 هرتز",
+          "90 هرتز",
+          "100 هرتز"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اخترعت شركة ⁦iRobot⁩ مكنستها الكهربائية الثورية لتنظيف الأرضيات 'رومبا' (⁦Roomba⁩) لأول مرة في عام 2002.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأجهزة التالية يُستخدم لقياس ضغط الدم؟",
+        "options": [
+          "البارومتر (مقياس الضغط الجوي)",
+          "المسطرة",
+          "مقياس هيموإريثرومتر",
+          "مقياس ضغط الدم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم إصدار الحيوان الأليف الرقمي 'تاماجوتشي' (⁦Tamagotchi⁩) لأول مرة؟",
+        "options": [
+          "1996",
+          "1989",
+          "1992",
+          "1990"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس نوعاً من أنواع فئران الكمبيوتر (الماوس)‏؟",
+        "options": [
+          "فأرة الأسطوانة",
+          "فأرة السموذي",
+          "فأرة كرة التتبع",
+          "الفأرة الضوئية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي منصة ألعاب الفيديو (الكونسول) التي طورتها شركة سوني؟",
+        "options": [
+          "إكس بوكس",
+          "أتاري",
+          "بلايستيشن",
+          "نينتندو سويتش"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة التي صممت صيغة أشرطة الفيديو 'بيتاماكس' (⁦Betamax⁩)‏؟",
+        "options": [
+          "باناسونيك",
+          "إل جي",
+          "فوجيتسو",
+          "سوني"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول من صاغ مصطلح 'البطارية' (⁦Battery⁩) لوصف جهاز تخزين الكهرباء؟",
+        "options": [
+          "بنجامين فرانكلين",
+          "نيكولا تسلا",
+          "لويجي جلفاني",
+          "أليساندرو فولتا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة التي طورت نظارة الواقع المختلط 'هولولينز' (⁦HoloLens⁩)‏؟",
+        "options": [
+          "إتش تي سي",
+          "مايكروسوفت",
+          "أوكولوس",
+          "توبي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لا يقتصر استخدام الميكروفونات على التقاط الصوت فحسب، بل يمكن استخدامها أيضاً لإخراج الصوت وإصداره بشكل مشابه لمكبر الصوت.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي نال براءة اختراع لمحرك بخاري ينتج حركة دورانية مستمرة؟",
+        "options": [
+          "نيكولا تسلا",
+          "ألبرت أينشتاين",
+          "أليساندرو فولتا",
+          "جيمس واط"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_1",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من الدول التالية لم تكن طرفاً محارباً في الحرب العالمية الأولى؟",
+        "options": [
+          "الدنمارك",
+          "البرتغال",
+          "اليونان",
+          "رومانيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يحتوي منتج \"تشيز ويز\" من كرافت على مستنبتات الجبن، ولكنه لا يحتوي على جبن حقيقي في الواقع.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة المالكة لخدمة أوتلوك؟",
+        "options": [
+          "جوجل",
+          "أبل",
+          "مايكروسوفت",
+          "ياهو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "منتجعات وفيلات العطلات \"دي إيمهوف\" و\"بورت زيلاند\" و\"هيت هايدربوس\" مملوكة لأي شركة؟",
+        "options": [
+          "يلو فيليج",
+          "كيكامب",
+          "فيلا بلس",
+          "سنتر باركس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما معنى كلمة \"أستازيا\" (⁦Astasia⁩) من بين الخيارات التالية؟",
+        "options": [
+          "عدم القدرة على الوقوف",
+          "عدم القدرة على اتخاذ القرارات",
+          "عدم القدرة على التركيز في أي شيء",
+          "رغبة حمى شديدة في تمزيق الملابس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الذي يطلق في لعبة البوكر على اليد التي تحتوي على ثلاث بطاقات من نفس النوع وبطاقتين متطابقتين (زوج)‏؟",
+        "options": [
+          "فلاش",
+          "فول هاوس",
+          "ستريت",
+          "هايت كارد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الرئيس الأمريكي الذي لا توجد صورته على جبل راشمور؟",
+        "options": [
+          "ثيودور روزفلت",
+          "أبراهام لينكولن",
+          "جون كينيدي",
+          "توماس جيفرسون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللعبة الأكثر مبيعاً لعام 1983 والتي سببت هوساً كبيراً أدى إلى اندلاع أعمال شغب في المتاجر؟",
+        "options": [
+          "المتحولون",
+          "كير بيرز",
+          "مكعب روبيك",
+          "دمى كابج باتش كيدز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من اللغات التالية ليست لغة هندوأوروبية؟",
+        "options": [
+          "المجرية",
+          "الروسية",
+          "اليونانية",
+          "اللاتفية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسس موقع \"يوتيوب\"؟",
+        "options": [
+          "22 مايو 2004",
+          "14 فبراير 2005",
+          "12 سبتمبر 2005",
+          "19 يوليو 2009"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سلسلتا مطاعم الوجبات السريعة \"كارلز جونيور\" و\"هارديز\" مملوكتان للشركة نفسها.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من ماذا تُصنع قبعات بنما الشهيرة؟",
+        "options": [
+          "الحرير",
+          "القنب",
+          "الكتان",
+          "القش"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي بلد يأتي السوشي والكاريوكي؟",
+        "options": [
+          "اليابان",
+          "الصين",
+          "كوريا الجنوبية",
+          "فيتنام"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الدواسة الإضافية في السيارات ذات ناقل الحركة اليدوي (القير العادي)‏؟",
+        "options": [
+          "مغير السرعة",
+          "القابض (الكلتش)",
+          "المعزز",
+          "فرامل اليد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة التي ينتهي بها شعار صحيفة نيويورك تايمز: \"كل الأخبار الصالحة لـ...\"؟",
+        "options": [
+          "الاستيعاب",
+          "الرؤية",
+          "النشر",
+          "القراءة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي العبارة اللاتينية التي تُترجم تقريباً إلى \"اغتنم اليوم\"؟",
+        "options": [
+          "مومينتو موري",
+          "بلس ألترا",
+          "سيك سيمبر تيرانبس",
+          "كاربي ديم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المواد الكيميائية التالية توجد في بذور الباذنجان؟",
+        "options": [
+          "النيكوتين",
+          "الميسكالين",
+          "السيانيد",
+          "السيبلوسيبين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي تسمانيا？",
+        "options": [
+          "نكهة آيس كريم من بين آند جيريز",
+          "ولاية أسترالية",
+          "اضطراب نفسي",
+          "اسم شخصية كرتونية من وارنر برذرز"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسس موقع ريديت الشهير؟",
+        "options": [
+          "2008",
+          "2004",
+          "2005",
+          "2006"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم طرح جهاز آيبود الأول من شركة أبل؟",
+        "options": [
+          "2000",
+          "1999",
+          "1998",
+          "2001"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_10",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 10",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الاسم الحقيقي لقطة الإنترنت الشهيرة 'جرامبي كات'؟",
+        "options": [
+          "تاردار سوس",
+          "ليل باب",
+          "مارو",
+          "كولونيل مياو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللقب الرسمي الكامل لرئيس وزراء المملكة المتحدة؟",
+        "options": [
+          "دوق كامبريدج",
+          "اللورد الأول للخزانة",
+          "المعارضة الوفية لجلالة الملكة",
+          "مدير عقارات التاج الملكي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو رمز برج الجوزاء الفلكي؟",
+        "options": [
+          "السمك",
+          "الميزان",
+          "التوأم",
+          "العذراء"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سلوفاكيا عضو في الاتحاد الأوروبي.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في المتوسط، يُقتل شخص واحد على الأقل كل ساعة في الولايات المتحدة بسبب سائق مخمور.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كان ألبرت أينشتاين يواجه صعوبة في الرياضيات عندما كان في المدرسة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الجبل الذي يملك أعلى قمة في أمريكا الشمالية؟",
+        "options": [
+          "جبل سانت إلياس، الحدود الأمريكية الكندية",
+          "جبل لوغان، كندا",
+          "دينالي، الولايات المتحدة الأمريكية",
+          "بيكو دي أوريزابا، المكسيك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الماء ملون باللون الأزرق بشكل طبيعي.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الشعار الترويجي الأصلي لمشروب ماونتن ديو؟",
+        "options": [
+          "ياهو! ماونتن ديو... سوف يداعب أحشاءك!",
+          "أعطني ديو",
+          "افعل الديو",
+          "احصل على شعور السير حافي القدمين عند شرب ماونتن ديو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اللغة الفرنسية هي لغة رسمية في كندا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو متوسط عمر نملة الحدائق؟",
+        "options": [
+          "24 ساعة",
+          "أسبوع واحد",
+          "15 عاماً",
+          "3 أعوام"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم لوحة شفيق السيئة في حلقة سبونج بوب 'فنان مجهول'؟",
+        "options": [
+          "استراحة شفيق",
+          "قطع ممزقة",
+          "منظور مائل",
+          "جريء ومتهور"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بلوتو كوكب.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الأكثر تحدثاً في نصف الكرة الأرضية الجنوبي؟",
+        "options": [
+          "الإنجليزية",
+          "البرتغالية",
+          "الإسبانية",
+          "الفرنسية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الرسمية في البرازيل؟",
+        "options": [
+          "البرازيلية",
+          "الإسبانية",
+          "البرتغالية",
+          "الإنجليزية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الذي أُطلق على الديكتاتوريين العسكريين اليابانيين الذين حكموا البلاد بين القرنين الثاني عشر والتاسع عشر؟",
+        "options": [
+          "نينجا",
+          "ساموراي",
+          "شينوبي",
+          "شوغون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تم شراء موقع مشاركة الفيديوهات يوتيوب بالكامل من قِبل فيسبوك مقابل ⁦1.65⁩ مليار دولار أمريكي على شكل أسهم.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الجبل الذي يملك أعلى قمة في أمريكا الجنوبية؟",
+        "options": [
+          "أوخوس ديل سالادو، الحدود الأرجنتينية التشيلية",
+          "أكونكاغوا، الأرجنتين",
+          "مونتي بيسيس، الأرجنتين",
+          "هواسكاران، بيرو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الباسودوبل (⁦Pasodoble⁩) هو نوع من صلصة المعكرونة الإيطالية.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كان لون كوكاكولا الأصلي أخضر.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_11",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 11",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من نجوم السينما لديه تمثال في ساحة ليستر (⁦Leicester Square⁩)‏؟",
+        "options": [
+          "تشارلي تشابلن",
+          "بول نيومان",
+          "روان أتكينسون",
+          "ألفريد هيتشكوك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المعالم التالية لا يقع في مدينة نيويورك؟",
+        "options": [
+          "مبنى إمباير ستيت",
+          "نصب لينكون التذكاري",
+          "تايمز سكوير",
+          "سنترال بارك"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تضع علم الاتحاد البريطاني (⁦Union Jack⁩) في علمها؟",
+        "options": [
+          "جنوب أفريقيا",
+          "كندا",
+          "نيوزيلندا",
+          "هونغ كونغ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الجبل الذي يملك أعلى قمة في أستراليا؟",
+        "options": [
+          "جبل أوسا، تسمانيا",
+          "جبل بارتل فرير، كوينزلاند",
+          "جبل زيل، الإقليم الشمالي",
+          "جبل كوسيوسكو، نيوساوث ويلز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الرسمية والأكثر انتشاراً في كوبا؟",
+        "options": [
+          "الإسبانية",
+          "البرتغالية",
+          "الفرنسية",
+          "الإيطالية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+        "options": [
+          "28",
+          "26",
+          "23",
+          "24"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم سعرة حرارية توجد في علبة بيبسي كولا سعة 355 مل؟",
+        "options": [
+          "200",
+          "100",
+          "150",
+          "155"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع 1,776 قدماً (⁦541.3⁩ متراً)‏؟",
+        "options": [
+          "تايبيه 101، تايوان",
+          "برج ويليس، الولايات المتحدة",
+          "برج جين ماو، الصين",
+          "مركز التجارة العالمي الواحد، الولايات المتحدة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تُستخدم كلمة 'أناناس' (⁦Ananas⁩) في معظم اللغات الأخرى للإشارة إلى فاكهة الأناناس.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو رمز اتحاد النقل الجوي الدولي (⁦IATA⁩) لمطار مانشستر؟",
+        "options": [
+          "⁦EGLL⁩",
+          "⁦MAN⁩",
+          "⁦LHR⁩",
+          "⁦EGCC⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2013، كم من الأموال خُسرت بسبب عمليات الاحتيال النيجيرية؟",
+        "options": [
+          "95 مليون دولار",
+          "956 مليون دولار",
+          "⁦12.7⁩ مليار دولار",
+          "⁦2.7⁩ مليار دولار"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خمسة دولارات تعادل كم قطعة من فئة النيكل؟",
+        "options": [
+          "50",
+          "25",
+          "69",
+          "100"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "رهاب الـ 'زانثوفوبيا' (⁦Xanthophobia⁩) هو الخوف من أي لون؟",
+        "options": [
+          "الأصفر",
+          "الأزرق",
+          "الأحمر",
+          "الأخضر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من من المغنين وكتاب الأغاني الأمريكيين التاليين فاز بجائزة نوبل في الأدب؟",
+        "options": [
+          "بادي هولي",
+          "بوب ديلن",
+          "جوني كاش",
+          "أليس كوبر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي عائلة لغوية تنتمي اللغة الكازاخية؟",
+        "options": [
+          "المغولية",
+          "الهندية الأوروبية",
+          "التركية",
+          "الأورالية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المنتج الذي كانت تبيعه شركة الاتصالات 'نوكيا' في الأصل؟",
+        "options": [
+          "الهواتف",
+          "الحواسيب",
+          "المعالجات",
+          "الورق"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أدوات المائدة هي الأنسب لتناول الحساء (الشوربة)‏؟",
+        "options": [
+          "الملعقة",
+          "الشوكة",
+          "السكين",
+          "عيدان تناول الطعام"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في مقابلة مع قناة ⁦CBS⁩ عام 1994، ما هي الحركة الغريبة التي قام بها بيل غيتس، المؤسس المشارك لشركة مايكروسوفت، أمام الكاميرا؟",
+        "options": [
+          "القفز للخلف فوق مكتب",
+          "القفز فوق كرسي مكتب",
+          "الوقوف على رأسه",
+          "الكتابة على لوحة المفاتيح أثناء الوقوف على اليدين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو وزن سبائك الذهب في لعبة 'فول آوت: نيو فيغاس' (⁦Fallout⁩: ⁦New Vegas⁩)‏؟",
+        "options": [
+          "30 رطلاً",
+          "40 رطلاً",
+          "35 رطلاً",
+          "⁦32.50⁩ رطلاً"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عندما يقال عن شخص إنه 'حسود'، فبأي لون يوصف عادةً؟",
+        "options": [
+          "الأحمر",
+          "الأزرق",
+          "الأصفر",
+          "الأخضر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_12",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 12",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من هذه البنوك غير مخول بإصدار الأوراق النقدية في هونغ كونغ؟",
+        "options": [
+          "⁦OCBC⁩",
+          "⁦HSBC⁩",
+          "ستاندرد تشارترد",
+          "بنك الصين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مشروب الويسكي الإسكتلندي والدامبوي (⁦Drambuie⁩) يكونان أي كوكتيل؟",
+        "options": [
+          "سكرودرايفر",
+          "رستي نيل",
+          "سكس أون ذا بيتش",
+          "مانهاتن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تأسست شركة آبل؟",
+        "options": [
+          "1978",
+          "1980",
+          "1976",
+          "1974"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "القرآن هو الكتاب المقدس لأي من الديانات الإبراهيمية؟",
+        "options": [
+          "المسيحية",
+          "اليهودية",
+          "الراستافارية",
+          "الإسلام"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام توقفت كندا عن إنتاج قطعة السنت الواحد (البنس) المعدنية؟",
+        "options": [
+          "2012",
+          "2013",
+          "2011",
+          "2010"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان ⁦SCP-173⁩ هو أول مقال عن ⁦SCP⁩ يُكتب لمشروع الخيال التعاوني القائم على الويب والمعروف باسم 'مؤسسة ⁦SCP⁩' (⁦SCP Foundation⁩).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كان المعماري المعروف باسم 'لو كوربوزييه' شخصية بارزة في أي طراز معماري؟",
+        "options": [
+          "الكلاسيكية الجديدة",
+          "الباروك",
+          "الحداثة",
+          "النيوغوطية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم طرح علكة هوبا بوبا (⁦Hubba Bubba⁩) لأول مرة؟",
+        "options": [
+          "1984",
+          "1972",
+          "1980",
+          "1979"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "'نادي الـ 27' (⁦27 Club⁩) هو مصطلح يُستخدم للإشارة إلى قائمة من الممثلين والموسيقيين والفنانين المشهورين الذين توفوا في سن السابعة والعشرين.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي نهر يتدفق عبر مدينة غلاسكو الإسكتلندية؟",
+        "options": [
+          "تاي",
+          "كلايد",
+          "دي",
+          "تويد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا وُصف شعر شخص ما بأنه 'تيتيان' (⁦Titian⁩)، فما هو لونه؟",
+        "options": [
+          "الأشقر",
+          "البني",
+          "الأحمر",
+          "الأسود"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأصابع (بدون الإبهام) في يد الإنسان الواحدة؟",
+        "options": [
+          "خمسة",
+          "عشرة",
+          "ثمانية",
+          "أربعة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بعد كم عاماً يتم الاحتفال باليوبيل الكريستالي (ذكرى الزواج الكريستالية)‏؟",
+        "options": [
+          "15",
+          "20",
+          "10",
+          "25"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الألوان غير موجود في شعار جوجل؟",
+        "options": [
+          "الأصفر",
+          "الوردي",
+          "الأزرق",
+          "الأخضر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المفاتيح (النوتات) في البيانو الكبير القياسي (⁦Grand Piano⁩)‏؟",
+        "options": [
+          "98",
+          "108",
+          "88",
+          "78"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العضو في الجسم الذي ينتج العصارة الصفراوية؟",
+        "options": [
+          "المرارة",
+          "البنكرياس",
+          "المعدة",
+          "الكبد"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الوصف الأنسب لـ 'كوادرانجولاريس ريفيرسوم' (⁦Quadrangularis Reversum⁩)‏؟",
+        "options": [
+          "آلة إيقاعية موسيقية",
+          "مبنى في جامعة أكسفورد",
+          "نقلة في الشطرنج",
+          "نظرية هندسية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مما تتكون أكلة الهاجيس (⁦Haggis⁩) الحقيقية؟",
+        "options": [
+          "قلب وكليتي ورئتي الخروف",
+          "قلب وكبد ورئتي الخروف",
+          "كبد وكليتي وعيني الخروف",
+          "الخروف بأكمله"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع 2,717 قدماً (828 متراً)‏؟",
+        "options": [
+          "برج شانغهاي، الصين",
+          "برج لوته العالمي، كوريا الجنوبية",
+          "برج خليفة، الإمارات العربية المتحدة",
+          "مركز بينغ آن المالي، الصين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_13",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 13",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي دولة قامت بتطوير البندقية الهجومية كلاشينكوف (⁦AK-47⁩)‏؟",
+        "options": [
+          "الاتحاد السوفيتي",
+          "إيران",
+          "إسرائيل",
+          "بولندا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لأغنية الأطفال، ما هي الفاكهة التي أخرجها ليتل جاك هورنر من فطيرة عيد الميلاد الخاصة به؟",
+        "options": [
+          "التفاح",
+          "البرقوق",
+          "الخوخ",
+          "الكمثرى"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في لعبة \"كاتاماري داماسي\"، تتحكم بشخصية تُعرف باسم:",
+        "options": [
+          "فوجيو",
+          "إيتشيغو",
+          "الأمير",
+          "فومين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "البخار الناتج عن السجائر الإلكترونية هو عبارة عن ماء في الواقع.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يُعرف يوم 10 مارس أيضاً باسم يوم ماريو (⁦Mar10⁩).",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من مكونات الدم التالية يُشكل سدادة لإغلاق الجروح عند موضع الإصابة؟",
+        "options": [
+          "خلايا الدم الحمراء",
+          "الصفائح الدموية",
+          "خلايا الدم البيضاء",
+          "بلازما الدم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مؤلف رواية \"جوراسيك بارك\" (حديقة الديناصورات)‏؟",
+        "options": [
+          "بيتر بينشلي",
+          "تشاك بالاهنيوك",
+          "مايكل كرايتون",
+          "إيرفين ويلش"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي البوكيمونات الثلاثة المتاحة للبدء في لعبتي \"بوكيمون بلاك آند وايت\"؟",
+        "options": [
+          "سنايفي، فينيكين، فروكي",
+          "تشيسبين، تيبيغ، فروكي",
+          "تشيسبين، فينيكين، أوشاووت",
+          "سنايفي، تيبيغ، أوشاووت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في التعبيرات الإنجليزية، عندما يوصف شخص بالجبن، يُقال إن لديه بطناً من أي لون؟",
+        "options": [
+          "أصفر",
+          "أخضر",
+          "أحمر",
+          "أزرق"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام اقترب مذنب هالي (الذي لن يظهر مجدداً حتى عام 2061) من الأرض في آخر ظهور له؟",
+        "options": [
+          "2001",
+          "1986",
+          "1942",
+          "1909"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أنظمة الطيران، إلى ماذا يرمز الاختصار \"⁦TCAS⁩\"؟",
+        "options": [
+          "نظام التنبيه للاتصالات المرورية",
+          "نظام محاذاة تكوين المرور",
+          "نظام تجنب التصادم الجوي",
+          "نظام اختصار إشارة نداء المرور"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المباني التالية يُعد مثالاً بارزاً على نمط العمارة الفنية \"آرت ديكو\" (⁦Art Deco⁩)‏؟",
+        "options": [
+          "تايبيه 101",
+          "ون ديترويت سنتر",
+          "ويستيندشتراسه 1",
+          "مبنى نياجرا موهوك"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني المصطلح الطبي \"أبروسيكسيا\" (⁦Aprosexia⁩)‏؟",
+        "options": [
+          "عدم القدرة على التركيز على أي شيء",
+          "عدم القدرة على اتخاذ القرارات",
+          "رغبة هوسية في تمزيق ملابس المرء",
+          "عدم القدرة على الوقوف"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الكلمة الفرنسية التي تعني \"يسافر\" هي \"⁦Travail⁩\".",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لسِفر التكوين في العهد القديم، كم يوماً استغرق خلق العالم؟",
+        "options": [
+          "سبعة",
+          "واحد",
+          "ستة",
+          "اثنا عشر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأبراج الفلكية يُمثله السرطان؟",
+        "options": [
+          "برج الميزان",
+          "برج العذراء",
+          "برج القوس",
+          "برج السرطان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في تحديد فصائل الدم، تُسمى الإشارة (+) أو (-) بعد فصيلة الدم (مثل ⁦A⁩ أو ⁦B⁩) بعامل ⁦Rh⁩ (الرايزيسي). ما هو مصدر تسميته واكتشافه؟",
+        "options": [
+          "قرود الريسوس",
+          "مرضى الروماتيزم",
+          "ذوو الشعر الأحمر",
+          "الجذامير النباتية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اللون الـ \"شارتريز\" (⁦Chartreuse⁩) هو درجة لونية تقع بين الأصفر وأي لون آخر؟",
+        "options": [
+          "الأحمر",
+          "الأخضر",
+          "الأسود",
+          "الأرجواني"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو عنوان أول مقطع فيديو تم رفعه على موقع يوتيوب على الإطلاق؟",
+        "options": [
+          "تحية (⁦tribute⁩)",
+          "كاري تركب شاحنة (⁦carrie rides a truck⁩)",
+          "أنا في حديقة الحيوان (⁦Me at the zoo⁩)",
+          "جروها الجديد من الجد الأكبر فيرن (⁦Her new puppy⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_14",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 14",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو اسم المشروب المصنوع من البطاطس أو الحبوب والذي يعود أصله إلى بولندا وروسيا؟",
+        "options": [
+          "الفودكا",
+          "الأفسنتين",
+          "الرم",
+          "الساكي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الديناميكا الهوائية، ما هي القوة التي تدفع الجسم إلى الأعلى؟",
+        "options": [
+          "قوة السحب",
+          "قوة الرفع",
+          "الوزن",
+          "قوة الدفع"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "محطة أمستردام المركزية للقطارات توأمت مع أي محطة？",
+        "options": [
+          "فرانكفورت الرئيسية",
+          "باريس غار دو نورد",
+          "لندن ليفربول ستريت",
+          "بروكسل ميدي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "توفي ستيف جوبز، الشريك المؤسس لشركة آبل، بسبب مضاعفات أي نوع من أنواع السرطان؟",
+        "options": [
+          "سرطان العظام",
+          "سرطان الكبد",
+          "سرطان المعدة",
+          "سرطان البنكرياس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يرمز حرف الـ \"⁦S⁩\" في اختصار \"⁦SIM⁩\" الخاص ببطاقة الهاتف (⁦SIM card⁩)‏؟",
+        "options": [
+          "المشترك (⁦Subscriber⁩)",
+          "فردي (⁦Single⁩)",
+          "آمن (⁦Secure⁩)",
+          "صلب (⁦Solid⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت شركة \"ستيج كوتش\" (⁦Stagecoach⁩) تمتلك شركة \"ساوث ويست ترينز\" للقطارات قبل أن تفقد حقوق تشغيلها لصالح شركتي \"فيرست جروب\" و\"⁦MTR⁩\" في مارس 2017.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأبراج الفلكية يقع بين برجي العذراء والعقرب؟",
+        "options": [
+          "برج الجوزاء",
+          "برج الثور",
+          "برج الميزان",
+          "برج الجدي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي جيل من ألعاب سلسلة بوكيمون الرئيسية ظهر النوع \"الخرافي\" (⁦Fairy⁩) لأول مرة؟",
+        "options": [
+          "الجيل الثاني",
+          "الجيل السابع",
+          "الجيل الرابع",
+          "الجيل السادس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مدينة بأمريكا الجنوبية نشأت عصابة (كارتيل) المخدرات التي كان يديرها بابلو إسكوبار؟",
+        "options": [
+          "ميديلين",
+          "بوغوتا",
+          "كيتو",
+          "كالي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي سرعة طيران طائر السنونو (بدون حمولة) بالسرعة الجوية؟",
+        "options": [
+          "15 ميل في الساعة",
+          "24 ميل في الساعة",
+          "20 ميل في الساعة",
+          "200 ميل في الساعة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا تعني ممارسة الـ \"نيفيلوكوكيجيا\" (⁦Nephelococcygia⁩)‏؟",
+        "options": [
+          "النوم بأعين مفتوحة",
+          "تحطيم الزجاج بنبرة الصوت",
+          "رؤية وتخيل أشكال وصور في السحب",
+          "السباحة في مياه متجمدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم إطلاق جهاز بلايستيشن 3 (⁦PlayStation 3⁩) لأول مرة؟",
+        "options": [
+          "8 يناير 2007",
+          "25 ديسمبر 2007",
+          "16 يوليو 2006",
+          "11 نوفمبر 2006"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العنصر الكيميائي الذي يحمل الرقم الذري 11 في الجدول الدوري ورمزه (⁦Na⁩)‏؟",
+        "options": [
+          "الصوديوم",
+          "الكربون",
+          "الرصاص",
+          "النيتروجين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الماضي، ماذا كان يحتفظ الرجل الأنيق عادةً في جيبه الصغير المخصص لذلك (⁦fob pocket⁩)‏؟",
+        "options": [
+          "نقود",
+          "ساعة",
+          "مفاتيح",
+          "دفتر ملاحظات"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو نوع المشروب المكسيكي الشهير \"كورونا\" (⁦Corona⁩)‏؟",
+        "options": [
+          "إنديا بايل آيل (⁦IPA⁩)",
+          "بيلسنر (⁦Pilsner⁩)",
+          "لاجر خفيف (⁦Pale Lager⁩)",
+          "بالتيك بورتر (⁦Baltic Porter⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم تأسيس سلسلة مطاعم ماكدونالدز؟",
+        "options": [
+          "1964",
+          "1951",
+          "1947",
+          "1955"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الذي يمثل حرف \"⁦M⁩\" في أبجدية الناتو الصوتية؟",
+        "options": [
+          "مايك (⁦Mike⁩)",
+          "ماثيو (⁦Matthew⁩)",
+          "مارك (⁦Mark⁩)",
+          "ماكس (⁦Max⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الشخص الذي يظهر وجهه باللونين الأبيض والأسود في رمز \"كابا\" (⁦Kappa⁩) التعبيري الشهير على منصة تويتش؟",
+        "options": [
+          "جاستن ديسينو",
+          "جوش ديسينو",
+          "جون ديسينو",
+          "جيمي ديسينو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الصفة المميزة للشخص الذي يوصف بـ \"⁦hirsute⁩\" باللغة الإنجليزية؟",
+        "options": [
+          "فظ أو وقح",
+          "مرح أو مضحك",
+          "كثير الشعر",
+          "طويل القامة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_15",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 15",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الخوف المعروف بـ \"التريبوفوبيا\" (⁦Trypophobia⁩)？",
+        "options": [
+          "الخوف من الثقوب الصغيرة المتجمعة",
+          "الخوف من السباحة في المياه العميقة",
+          "الخوف من التحدث أمام الجمهور",
+          "الخوف من تناول الطعام بكثرة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المكسرات المستخدمة بشكل أساسي في صناعة حلوى \"المرزبان\" (⁦Marzipan⁩)‏؟",
+        "options": [
+          "الفول السوداني",
+          "اللوز",
+          "عين الجمل (الجوز)",
+          "الفستق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أنواع المشروبات التالية يحتوي عادةً على نسبة أعلى من المتوسط من نبات الجنجل (⁦Hops⁩)‏؟",
+        "options": [
+          "ستوت (⁦Stout⁩)",
+          "إكسترا سبيشال بيتر (⁦ESB⁩)",
+          "إنديا بايل آيل (⁦India Pale Ale⁩)",
+          "سكوتش آيل (⁦Scotch Ale⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي سلالة كلاب يأتي \"هاندسوم دان\" (⁦Handsome Dan⁩)، وهو جالب الحظ الرسمي لجامعة ييل؟",
+        "options": [
+          "يوركشاير تيرير",
+          "بوكسر",
+          "باغ (⁦Pug⁩)",
+          "بولدوغ (⁦Bulldog⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تم بيع مشروب \"كريستال بيبسي\" (⁦Crystal Pepsi⁩) لأول مرة في الأسواق الأمريكية في عام 1993.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "لأي معدن يُعد منجم \"إل تينيينتي\" (⁦El Teniente⁩) الواقع في تشيلي أكبر منجم تحت الأرض في العالم؟",
+        "options": [
+          "الحديد",
+          "النحاس",
+          "النيكل",
+          "الفضة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي يصف ترتيب الكلمات الصحيح في الجملة اليابانية؟",
+        "options": [
+          "فاعل - فعل - مفعول به (⁦Subject Verb Object⁩)",
+          "فعل - فاعل - مفعول به (⁦Verb Subject Object⁩)",
+          "فاعل - مفعول به - فعل (⁦Subject Object Verb⁩)",
+          "فعل - مفعول به - فاعل (⁦Verb Object Subject⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الصينية المكتوبة بالحروف اللاتينية والتي تعني \"طائرة\"؟",
+        "options": [
+          "كيتشي (⁦Qiche⁩)",
+          "زونغشيان (⁦Zongxian⁩)",
+          "هواجايين (⁦Huojian⁩)",
+          "فيجي (⁦Feiji⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "صوّتت اسكتلندا لتصبح دولة مستقلة خلال الاستفتاء الذي أُجري في سبتمبر 2014.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الإيطالية التي تعني \"طماطم\"؟",
+        "options": [
+          "آليو (⁦Aglio⁩)",
+          "بومودورو (⁦Pomodoro⁩)",
+          "تشيبولا (⁦Cipolla⁩)",
+          "بيبيرونشينو (⁦Peperoncino⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سُمي لباس البحر \"البيكيني\" بهذا الاسم نسبةً إلى \"جزيرة بيكيني الحلقية\" (⁦Bikini Atoll⁩)، حيث أجرت الولايات المتحدة تجارب للقنابل الذرية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لهيئة العمل العادل الأسترالية (⁦Fair Work⁩)، كم سنة يجب أن تعمل في نفس الوظيفة لتستحق إجازة الخدمة الطويلة (⁦Long Service Leave⁩)‏؟",
+        "options": [
+          "سنتان",
+          "8 سنوات",
+          "6 أشهر",
+          "7 سنوات"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العامي الذي تُعرف به عملة الدولار الكندي المعدنية؟",
+        "options": [
+          "لوني (⁦Loonie⁩)",
+          "بولي (⁦Boolie⁩)",
+          "فولي (⁦Foolie⁩)",
+          "مودي (⁦Moodie⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حساء \"الغامبو\" (⁦Gumbo⁩) هو يخنة نشأت في الأصل في ولاية لويزيانا الأمريكية.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "\"⁦A3⁩\" و\"⁦B1⁩\" و\"⁦Legal⁩\" هي تسميات قياسية شائعة لمقاسات أي من الأشياء التالية؟",
+        "options": [
+          "الطائرات",
+          "كتب القانون",
+          "الورق",
+          "شاشات الهواتف"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الشركات السويدية تأسست في عام 1943‏؟",
+        "options": [
+          "إتش آند إم (⁦H⁩&⁦M⁩)",
+          "ليندكس (⁦Lindex⁩)",
+          "كلاس أولسون (⁦Clas Ohlson⁩)",
+          "إيكيا (⁦IKEA⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أُطلقت لعبة الأطفال الشهيرة \"فيربي\" (⁦Furby⁩) لأول مرة في عام 1998.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من جامعات رابطة اللبلاب (⁦Ivy League⁩) التالية كُتب شعارها الرسمي باللغة العبرية واللاتينية معاً؟",
+        "options": [
+          "جامعة برينستون",
+          "جامعة ييل",
+          "جامعة هارفارد",
+          "جامعة كولومبيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الرموز التالية كان يُعتبر في الماضي الحرف السابع والعشرين في الأبجدية الإنجليزية؟",
+        "options": [
+          "علامة الاستفهام والتعجب المدمجة (⁦Interrobang⁩)",
+          "علامة المدة (⁦Tilde⁩)",
+          "علامة العطف & (⁦Ampersand⁩)",
+          "علامة الفقرة (⁦Pilcrow⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_16",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 16",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في أي عام تم إطلاق موقع \"فيسبوك\" (⁦Facebook⁩)‏؟",
+        "options": [
+          "2004",
+          "2005",
+          "2003",
+          "2006"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تأسس تطبيق التواصل الشهير \"واتساب\" (⁦WhatsApp⁩)‏؟",
+        "options": [
+          "2007",
+          "2009",
+          "2012",
+          "2010"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الثالثة في العالم التي افتتحت مطعماً لسلسلة \"ماكدونالدز\"؟",
+        "options": [
+          "اليابان",
+          "فرنسا",
+          "كوستاريكا",
+          "أستراليا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مرض السرطان في حد ذاته ليس مرضاً معدياً.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة -باستثناء اليابان- التي تضم أكبر عدد من الأشخاص من أصول يابانية؟",
+        "options": [
+          "البرازيل",
+          "الصين",
+          "كوريا الجنوبية",
+          "الولايات المتحدة الأمريكية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم جماعة الأشرار في لعبة \"دانغانرونبا أنوذر إبيسود: أولترا ديسبير غيرلز\" (⁦Danganronpa Another Episode⁩: ⁦Ultra Despair Girls⁩)‏؟",
+        "options": [
+          "مونوكوبس",
+          "محاربو الأمل",
+          "محاربو اليأس",
+          "اليأس المطلق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة التي طورت برنامج الفوكالويد الشهير \"هاتسوني ميكو\"؟",
+        "options": [
+          "سيجا",
+          "سوني",
+          "كريبتون فيوثر ميديا",
+          "مؤسسة ياماها"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس من تصميمات السيوف الأوروبية التقليدية؟",
+        "options": [
+          "فالشيوني",
+          "أولفبرت",
+          "فلامبيرج",
+          "السيف المقوس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي دولة أوروبية نشأت سلطة الكولسلو؟",
+        "options": [
+          "هولندا",
+          "المملكة المتحدة",
+          "الدنمارك",
+          "ألمانيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من ألعاب مارفل التالية تم إصدارها على جهاز بلايستيشن 2‏؟",
+        "options": [
+          "سيلفر سيرفر",
+          "سبايدرمان 2",
+          "هوارد ذا داك",
+          "ولفرين: أدامانتيوم ريج"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا قال لك شخص ما بالإنجليزية \"أنت أوليد\" (⁦you are olid⁩)، فماذا يعني ذلك؟",
+        "options": [
+          "بنيتك ضعيفة أو لست في حالة بدنية جيدة.",
+          "مظهرك منفر.",
+          "رائحتك كريهة للغاية.",
+          "أنت شخص غير مفهوم أو أحمق."
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي العملة الرسمية لدولة لاوس؟",
+        "options": [
+          "الروبل",
+          "الكونرا",
+          "الدولار",
+          "الكيب"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الخطوة في عملية التنفس الخلوي التي تنتج جزيئات الـ ⁦ATP⁩‏؟",
+        "options": [
+          "الفسفرة التأكسدية",
+          "التحلل السكري",
+          "أكسدة البيروفات",
+          "دورة كالفن"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "شركات فيرجن للقطارات، وفيرجن أتلانتيك، وفيرجن ريسينغ، هي جميعها شركات مملوكة لأي رجل أعمال شهير؟",
+        "options": [
+          "ألان شوجر",
+          "ريتشارد برانسون",
+          "دونالد ترامب",
+          "بيل غيتس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مؤسس الباستافاريانية (ديانة وحش السباغيتي الطائر)‏؟",
+        "options": [
+          "إريك تيغنور",
+          "بيل ناي",
+          "بوبي هندرسون",
+          "زاك سولدي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تأتي كلمة \"⁦news⁩\" (أخبار) من الحروف الأولى للاتجاهات الأربعة الرئيسية على البوصلة (الشمال، الشرق، الغرب، الجنوب).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت فوانيس الهالوين الأصلية (⁦Jack-o-Lanterns⁩) تُصنع في الأصل من اللفت المجوف.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ارتفعت شهرة منتج الموسيقى الإلكترونية \"كايغو\" (⁦Kygo⁩) بشكل كبير بعد ريمكس معين، ما هي الأغنية التي قام بإعادة توزيعها؟",
+        "options": [
+          "مارفين غي - سيكشوال هيلينغ",
+          "إيد شيران - آي سي فاير",
+          "كولدبلاي - ميدنايت",
+          "آ-ها - تيك أون مي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المقاطع اللفظية التي تتكون منها قصيدة الهايكو؟",
+        "options": [
+          "15",
+          "10",
+          "17",
+          "21"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_17",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 17",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي الكلمة الإسبانية التي تعني \"حمار\"؟",
+        "options": [
+          "بورو",
+          "كابايو",
+          "تورو",
+          "بيرو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تستخدم الإكوادور البيزو المكسيكي كعملة رسمية لها.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الكلمات الإنجليزية تعني \"متفرج كسول أو فضولي\"؟",
+        "options": [
+          "⁦Gossypiboma⁩",
+          "⁦Jentacular⁩",
+          "⁦Gongoozler⁩",
+          "⁦Meupareunia⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو نوع الألعاب أو الوسائط التي يراجعها موقع \"شات أب آند سيت داون\" (⁦Shut Up⁩ & ⁦Sit Down⁩)‏؟",
+        "options": [
+          "البرامج التلفزيونية",
+          "ألعاب الفيديو",
+          "الأفلام",
+          "الألعاب اللوحية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مغالطة منطقية تعني مهاجمة شخصية الخصم بدلاً من مناقشة حججه؟",
+        "options": [
+          "مغالطة الشخصنة (⁦Ad hominem⁩)",
+          "مغالطة التزامن (⁦Post hoc ergo propter hoc⁩)",
+          "مغالطة \"وأنت كذلك\" (⁦Tu quoque⁩)",
+          "مغالطة التوسل بالأغلبية (⁦Argumentum ad populum⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أقصر شهر في السنة؟",
+        "options": [
+          "ديسمبر",
+          "فبراير",
+          "أبريل",
+          "سبتمبر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي حظرته منطقة كتالونيا ذاتية الحكم في إسبانيا عام 2010، ودخل حيز التنفيذ في عام 2012‏؟",
+        "options": [
+          "المهرجانات الشعبية",
+          "رقص الفلامنكو",
+          "مصارعة الثيران",
+          "موسيقى المارياتشي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي شركة تصنيع سيارات إيطالية حصلت على حصة الأغلبية في شركة كرايسلر الأمريكية لصناعة السيارات في عام 2011‏؟",
+        "options": [
+          "مازيراتي",
+          "ألفا روميو",
+          "فيراري",
+          "فيات"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يعتبر حوض بادواتر في وادي الموت أخفض نقطة في أمريكا الشمالية، فكم قدماً يبلغ انخفاضه تحت مستوى سطح البحر؟",
+        "options": [
+          "282 قدماً",
+          "79 قدماً",
+          "1,640 قدماً",
+          "12,092 قدماً"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الذي يطلق على رأس السنة اليهودية؟",
+        "options": [
+          "إيلول",
+          "روش هاشانا",
+          "رأس السنة الجديدة",
+          "سوكوت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللقب الشهير لولاية كاليفورنيا الأمريكية؟",
+        "options": [
+          "ولاية أشعة الشمس",
+          "ولاية الخليج",
+          "الولاية الذهبية",
+          "ولاية الكنز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يرمز حرف الـ ⁦F⁩ في مكتب التحقيقات الفيدرالي (⁦FBI⁩)‏؟",
+        "options": [
+          "أجنبي",
+          "رسمي",
+          "أول",
+          "فيدرالي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المصطلح الأكثر شيوعاً للتعبير عن محيط الدائرة؟",
+        "options": [
+          "المحيط",
+          "القطر",
+          "نصف القطر",
+          "القوس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في اللغات الاسكندنافية، يعني حرف ⁦Å⁩ \"نهر\".",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "هذه هي الطريقة الصحيحة لكتابة الكلمة الإنجليزية الشهيرة \"⁦Supercalifragilisticexpialidocious⁩\".",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأشهر التالية يحتوي على أكبر عدد من الأيام؟",
+        "options": [
+          "أبريل",
+          "سبتمبر",
+          "نوفمبر",
+          "ديسمبر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللون الذي يعتبر اللون الموف (الخبازي) درجة من درجاته، والمسمى نسبة إلى زهرة الخبازى؟",
+        "options": [
+          "البنفسجي",
+          "الأحمر",
+          "البني",
+          "الوردي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الفرنسية التي تعني \"سمكة\"؟",
+        "options": [
+          "⁦fiche⁩",
+          "⁦poisson⁩",
+          "⁦escargot⁩",
+          "⁦mer⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما كان اسم فريق المصارعة الثنائي الشهير في اتحاد ⁦WWF⁩ والمكون من المصارعين \"أكس\" و\"سماش\"؟",
+        "options": [
+          "ذا دريم تيم",
+          "ذا بوشواكرز",
+          "ديموليشن",
+          "ذا بريتيش بولدوغز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_18",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 18",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من المؤسسين المشاركين لشركة الواقع الافتراضي \"أوكولوس في آر\" (⁦Oculus VR⁩) توفي في حادث سيارة مأساوي عام 2013‏؟",
+        "options": [
+          "أندرو سكوت ريس",
+          "نيت ميتشل",
+          "جاك مكاولي",
+          "بالمر لوكي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي سلسلة مطاعم الوجبات السريعة التي تمتلك أكبر عدد من الفروع عالمياً؟",
+        "options": [
+          "ستاربكس",
+          "صَب واي",
+          "ماكدونالدز",
+          "كي إف سي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في اليونان القديمة، إذا كانت وظيفتك هي \"هيبوس\" (⁦hippeus⁩)، فماذا كنت لتمتلك؟",
+        "options": [
+          "نول حياكة",
+          "قيثارة",
+          "حصان",
+          "قارب"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الروسية المكتوبة بالأحرف اللاتينية والتي تعني \"الشتاء\"؟",
+        "options": [
+          "⁦Leto⁩",
+          "⁦Vesna⁩",
+          "⁦Osen⁩",
+          "⁦Zima⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الموقع الإلكتروني الأكثر زيارة من بين هذه الخيارات؟",
+        "options": [
+          "جوجل",
+          "يوتيوب",
+          "فيسبوك",
+          "ويكيبيديا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الشخصيات التالية ليس مقدماً لبرنامج على إذاعة ⁦NPR⁩ الأمريكية؟",
+        "options": [
+          "تيري غروس",
+          "بين شابيرو",
+          "إيرا غلاس",
+          "بيتر ساغال"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُصنع \"رصاص\" قلم الرصاص عادة من الجرافيت وليس من معدن الرصاص.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الفرنسية التي تعني \"قبعة\"؟",
+        "options": [
+          "⁦Bonnet⁩",
+          "⁦Écharpe⁩",
+          "⁦Casque⁩",
+          "⁦Chapeau⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مؤسس أكاديمية خان التعليمية؟",
+        "options": [
+          "سال خان",
+          "بين خان",
+          "كيت خان",
+          "أديل خان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يرمز حرف الـ \"⁦G⁩\" في مصطلح \"جي-مان\" (⁦G-Man⁩)‏؟",
+        "options": [
+          "مستمر",
+          "حكومة",
+          "شبح",
+          "جيرونيمو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الشيء الذي يمثل الخوف المرضي غير العقلاني منه ما يعرف بـ \"فوبيا البرق والرعد\" (⁦Astraphobia⁩)‏؟",
+        "options": [
+          "المطر",
+          "الرياح",
+          "الرعد",
+          "الثلج"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الأصلي الذي أطلق في البداية على محرك البحث \"جوجل\"؟",
+        "options": [
+          "كات مساج",
+          "سيرش برو",
+          "نتسكيب نافيجيتور",
+          "باك رب"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الفيرلونغ (وحدة قياس مسافة) في الميل الواحد؟",
+        "options": [
+          "ثمانية",
+          "اثنان",
+          "أربعة",
+          "ستة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ينجذب الثيران إلى اللون الأحمر.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "صورة أي رئيس أمريكي مطبوعة على ورقة النقد النادرة من فئة الدولارين؟",
+        "options": [
+          "مارتن فان بيورين",
+          "أوليسيس غرانت",
+          "توماس جيفرسون",
+          "جون كوينسي آدامز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما ترجمة العبارة اللاتينية الشهيرة \"⁦Veni⁩, ⁦vidi⁩, ⁦vici⁩\" باللغة العربية؟",
+        "options": [
+          "لا أرى شراً، لا أسمع شراً، لا أتكلم شراً",
+          "الحياة والحرية والسعادة",
+          "الماضي والحاضر والمستقبل",
+          "أتيت، ورأيت، وانتصرت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وسادة \"داكيماكورا\" (⁦dakimakura⁩)‏؟",
+        "options": [
+          "وسادة الجسم",
+          "وجبة صينية تتكون بشكل أساسي من السمك",
+          "وضعية من وضعيات اليوجا",
+          "كلمة تُستخدم لوصف شخصين يحبان بعضهما بصدق"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر \"نظرية الملاعق\" (⁦Spoon theory⁩) نموذجاً تعبيرياً يستعين بـ \"الملاعق\" كرمز لمقدار الطاقة اليومية المتاحة للشخص.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كل كم سنة يتم منح ميدالية فيلدز، التي تعد واحدة من أرفع الجوائز في مجال الرياضيات؟",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "6"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_19",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 19",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "يرمز اسم القناة التلفزيونية البريطانية التجارية ⁦ITV⁩ إلى \"⁦International Television⁩\" (التلفزيون الدولي).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم صياغة مصطلح \"عالم\" (⁦scientist⁩) لأول مرة؟",
+        "options": [
+          "1933",
+          "1833",
+          "1942",
+          "1796"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأبراج الفلكية يمثله الميزان؟",
+        "options": [
+          "برج الحمل",
+          "برج الجدي",
+          "برج الميزان",
+          "برج القوس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل الكلب من الثدييات؟",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "على لوحة الهدف في لعبة السهام المريشة (الدارتس)، ما الرقم المقابل مباشرة للرقم 1‏؟",
+        "options": [
+          "19",
+          "20",
+          "12",
+          "15"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد النجوم الموجودة على علم الاتحاد الأوروبي؟",
+        "options": [
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المناسبات التالية لا يُحتفل بها عادة في شهر ديسمبر؟",
+        "options": [
+          "عيد الميلاد",
+          "عيد الكوانزا",
+          "عيد الشكر",
+          "عيد الأنوار"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي شهر يُحتفل بشهر تاريخ السود في الولايات المتحدة الأمريكية؟",
+        "options": [
+          "مايو",
+          "نوفمبر",
+          "أغسطس",
+          "فبراير"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو صاحب مقولة \"ما لا يقتلك يجعلك أقوى\"؟",
+        "options": [
+          "فريدريش نيتشه",
+          "جي جوردون ليدي",
+          "كيلي كلاركسون",
+          "كريستوفر هيتشنز"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي كوكب لم يُسمَّ تيمناً بإله يوناني أو روماني؟",
+        "options": [
+          "المشتري",
+          "الأرض",
+          "المريخ",
+          "عطارد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تضم أكبر عدد من مصانع جعة التراپيست؟",
+        "options": [
+          "هولندا",
+          "فرنسا",
+          "بلجيكا",
+          "الولايات المتحدة الأمريكية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أين تأتي مياه زجاجات مياه \"بولاند سبرينغ\"؟",
+        "options": [
+          "هسن، ألمانيا",
+          "مازوفيا، بولندا",
+          "بافاريا، بولندا",
+          "مين، الولايات المتحدة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لمراكز السيطرة على الأمراض والوقاية منها (⁦CDC⁩) في الولايات المتحدة، يموت شخص واحد من بين كل كم أمريكي سنوياً بسبب التدخين؟",
+        "options": [
+          "خمسة",
+          "عشرين",
+          "عشرة",
+          "مئة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في لغة مورس، ما هو الحرف الذي يرمز إليه بثلاث نقاط؟",
+        "options": [
+          "⁦O⁩",
+          "⁦S⁩",
+          "⁦A⁩",
+          "⁦C⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو مركب ⁦H2O⁩‏؟",
+        "options": [
+          "الأكسجين",
+          "الهيدروجين",
+          "الماء",
+          "لا شيء مما سبق"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم إصدار لعبة بونغ (⁦Pong⁩)‏؟",
+        "options": [
+          "29 مارس 2017",
+          "29 نوفمبر 1970",
+          "14 ديسمبر 1974",
+          "29 نوفمبر 1972"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يطلق البحارة على الجانب الأيسر من القارب أو السفينة؟",
+        "options": [
+          "بورت (⁦Port⁩)",
+          "ستاربورد (⁦Starboard⁩)",
+          "المقدمة (⁦Bow⁩)",
+          "المؤخرة (⁦Stern⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليست من خرافات إيسوب؟",
+        "options": [
+          "الثعلب والعنب (⁦The Fox and the Grapes⁩)",
+          "الثعلب وكلب الصيد (⁦The Fox and the Hound⁩)",
+          "السلحفاة والأرنب (⁦The Tortoise and the Hare⁩)",
+          "الضفدع والثور (⁦The Frog and the Ox⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول رئيس للمكسيك؟",
+        "options": [
+          "بينيتو خواريز",
+          "ميغيل هيدالغو إي كوستيا",
+          "غوادالوبي فيكتوريا",
+          "فيسنتي غيريرو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_2",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي الكلمة التي تمثل حرف '⁦T⁩' في أبجدية الناتو الصوتية؟",
+        "options": [
+          "تانغو",
+          "تارجت",
+          "تاكسي",
+          "تركي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المصطلحات التشريحية التالية يشير إلى الطرف الذي يحتوي على الذيل لدى الكائن الحي؟",
+        "options": [
+          "بطني (⁦Ventral⁩)",
+          "ذيلي (⁦Caudal⁩)",
+          "قريب (⁦Proximal⁩)",
+          "إكليلي (⁦Coronal⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الشعار الذي استخدمته شركة الوجبات السريعة ماكدونالدز قبل شعارها الحالي \"أنا أحبه\"؟",
+        "options": [
+          "لماذا تدفع أكثر؟!",
+          "احصل عليها بطريقتك",
+          "نحب أن نرى ابتسامتك",
+          "إسعاد الناس من خلال الطعام"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في التقويم الميلادي القياسي، كم شهراً يبدأ اسمه بالحرف الإنجليزي '⁦J⁩'؟",
+        "options": [
+          "أربعة",
+          "خمسة",
+          "اثنان",
+          "ثلاثة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المشروبات الغازية التالية تم طرحه في الأسواق أولاً؟",
+        "options": [
+          "دكتور بيبر",
+          "كوكاكولا",
+          "سبرايت",
+          "ماونتن ديو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تُنتج نوتيلا بواسطة شركة فيريرو الألمانية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأوراق في ورق اللعب (الكوتشينة) القياسي؟",
+        "options": [
+          "32",
+          "40",
+          "52",
+          "64"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "توفي الفيلسوف فرانسيس بيكون بسبب حالة التهاب رئوي حادة أثناء محاولته حفظ اللحم عن طريق حشو دجاجة بالثلج.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الميتوكوندريا هي مركز توليد الطاقة في الخلية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي بلد أوروبي تأتي جبنة جودا الشهيرة؟",
+        "options": [
+          "بلجيكا",
+          "هولندا",
+          "ألمانيا",
+          "فرنسا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هي أصغر شخصية حصلت على جائزة نوبل في التاريخ؟",
+        "options": [
+          "لورنس براغ",
+          "فيرنر هايزنبرغ",
+          "ملالا يوسفزاي",
+          "ياسر عرفات"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا ترمز الحروف الثلاثة لسلسلة مطاعم \"⁦KFC⁩\"؟",
+        "options": [
+          "كنتاكي فريش تشيز",
+          "كيبلد فريكي كاو",
+          "كيوي فود كت",
+          "كنتاكي فرايد تشيكن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو المهندس المعماري الذي صمم برج التجارة العالمي الجديد (⁦One World Trade Center⁩) في مانهاتن بنيويورك؟",
+        "options": [
+          "ديفيد تشايلدز",
+          "بياركي إنجلز",
+          "مايكل أراد",
+          "فوميهيكو ماكي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الموسيقي الذي تعاون مع المنتج الأمريكي بورتر روبنسون لإصدار أغنية \"شيلتر\" عام 2016‏؟",
+        "options": [
+          "مات زو",
+          "ماديون",
+          "ديد ماوس",
+          "زيد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المجالات التالية يُعرف أحياناً باسم \"العلم الكئيب\"؟",
+        "options": [
+          "الفلسفة",
+          "السياسة",
+          "علم الاقتصاد",
+          "الفيزياء"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الرسمية في مدينة برشلونة بجانب اللغة الإسبانية؟",
+        "options": [
+          "الغاليسية",
+          "الفرنسية",
+          "الباسكية",
+          "الكتالونية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام وُلد والت ديزني؟",
+        "options": [
+          "1901",
+          "1902",
+          "1903",
+          "1900"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في لعبة هالف لايف (⁦Half-Life⁩)، ما هو اسم المخلوق الفضائي الذي يلتصق بالرؤوس؟",
+        "options": [
+          "بولسكويد",
+          "هيدكراب",
+          "فورتيغاونت",
+          "فيس هجر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من بين هذه المباني الأربعة، أيهم الأطول بارتفاع يبلغ 1,483 قدماً (⁦451.9⁩ متراً)‏؟",
+        "options": [
+          "برج زيفينج، الصين",
+          "فندق وبرج ترامب الدولي، الولايات المتحدة",
+          "أبراج بتروناس التوأم، ماليزيا",
+          "برج الحمراء، الكويت"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يُقصد بمصطلح \"المجمع التجاري الميت\" (⁦Dead Mall⁩)‏؟",
+        "options": [
+          "مجمع تجاري لا يحتوي على أي متاجر",
+          "مجمع تجاري صدر قرار بإغلاقه وإدانته",
+          "مجمع تجاري بعد ساعات العمل الرسمية",
+          "مجمع تجاري يعاني من معدلات خلو مرتفعة أو حركة إقبال منخفضة جداً من المستهلكين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_20",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 20",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "يُسمح قانوناً بتناول الكحول أثناء القيادة في ولاية مسيسيبي الأمريكية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الجلوس لأكثر من ثلاث ساعات في اليوم يمكن أن يقلل من عمر الإنسان المتوقع بمقدار عامين.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تشير الدراسات إلى أن ما يقارب 40% من سكان العالم يستخدمون اليد اليسرى (عُسر).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي عنصر كيميائي يحمل الرمز ⁦Kr⁩‏؟",
+        "options": [
+          "الكيروسين",
+          "الكينيتيكيوم",
+          "الكوريوم",
+          "الكريبتون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول تقود السيارات على الجانب الأيسر من الطريق؟",
+        "options": [
+          "اليابان",
+          "ألمانيا",
+          "روسيا",
+          "الصين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة إسبانيا؟",
+        "options": [
+          "باريس",
+          "مدريد",
+          "برشلونة",
+          "لشبونة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي اتجاه جغرافي تشرق الشمس؟",
+        "options": [
+          "الغرب",
+          "الشمال",
+          "الشرق",
+          "الجنوب"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يطلق الهولنديون على لغتهم؟",
+        "options": [
+          "دانسك (⁦Dansk⁩)",
+          "دويتش (⁦Deutsch⁩)",
+          "هولاندر (⁦Hollander⁩)",
+          "نيدرلاندس (⁦Nederlands⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تُؤكل وجبة الهاجيس تقليدياً في ليلة بيرنز (⁦Burns Night⁩).",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يعد قصر ديزني المسكون (⁦Haunted Mansion⁩) موطناً لثلاثي من أشباح الأوتوستوب (الهيتشهايكر). أي من هؤلاء ليس واحداً منهم؟",
+        "options": [
+          "غاس",
+          "هاري",
+          "فينياس",
+          "إيزرا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من حبوب الإفطار المرعبة لشركة \"جنرال ميلز\" كانت الأخيرة التي تم إصدارها في السبعينيات؟",
+        "options": [
+          "كونت شوكولا (⁦Count Chocula⁩)",
+          "فرانكن بيري (⁦Franken Berry⁩)",
+          "فروت بروت (⁦Fruit Brute⁩)",
+          "بو بيري (⁦Boo-Berry⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يرمز الاختصار ⁦VR⁩‏؟",
+        "options": [
+          "حقيقي جداً (⁦Very Real⁩)",
+          "التعرف البصري (⁦Visual Recognition⁩)",
+          "التعرف على الصوت (⁦Voice Recognition⁩)",
+          "الواقع الافتراضي (⁦Virtual Reality⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تنتمي اللغة الرومانية إلى عائلة اللغات الرومانسية، والتي تشترك فيها مع الفرنسية والإسبانية والبرتغالية والإيطالية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن تشغيل ألبوم فرقة \"كينغ غيزارد آند ذا ليزرد ويزارد\" بعنوان \"نونغون إنفينيتي\" (⁦Nonagon Infinity⁩) بشكل متكرر دون انقطاع مسموع.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في لعبة \"ريزيدنت إيفل 3\"، كم عدد خانات المخزن (الحقيبة) التي تمتلكها جيل في بداية اللعبة؟",
+        "options": [
+          "6",
+          "10",
+          "8",
+          "12"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس اسماً آخر للباذنجان؟",
+        "options": [
+          "برينجال (⁦Brinjal⁩)",
+          "قرع غينيا (⁦Guinea Squash⁩)",
+          "ميلونجين (⁦Melongene⁩)",
+          "بوتيمارون (⁦Potimarron⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد بذور التفاح التقريبي التي يجب ابتلاعها للحصول على جرعة قاتلة من السيانيد؟",
+        "options": [
+          "200",
+          "20",
+          "2,000",
+          "20,000"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اشتهر الشقيقان بوب ومايك براين في أي رياضة؟",
+        "options": [
+          "كرة السلة",
+          "التنس (كرة المضرب)",
+          "كرة القدم",
+          "البيسبول (كرة القاعدة)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تقبيل شخص ما لمدة دقيقة واحدة يحرق حوالي سعرتين حراريتين.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_21",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 21",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الجزء الميكانيكي الموجود في مركز ألعاب سبينر (⁦Fidget Spinners⁩)‏؟",
+        "options": [
+          "المحامل (رولمان بلي)",
+          "المحاور",
+          "التروس",
+          "الأحزمة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من برامج نيكتونز (⁦Nicktoons⁩) هذه لم تكن في الأصل فقرة قصيرة في برنامج \"أوه ييه! كارتونز\" قبل أن تصبح مسلسلاً خاصاً بها؟",
+        "options": [
+          "منطقة الطباشير (⁦ChalkZone⁩)",
+          "داني المراهق (⁦Danny Phantom⁩)",
+          "جيني المراهقة الآلية (⁦My Life as a Teenage Robot⁩)",
+          "الوالدان السحريان (⁦The Fairly OddParents⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أكبر نظام نقل سريع (مترو) في العالم من حيث عدد المحطات، بوجود 472 محطة قيد التشغيل؟",
+        "options": [
+          "مترو شانغهاي",
+          "مترو أنفاق لندن",
+          "مترو أنفاق مدينة نيويورك",
+          "مترو أنفاق برلين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الفاكهة التي تعد مكوناً تقليدياً في كعكة الغابة السوداء (بلاك فورست)‏؟",
+        "options": [
+          "المشمش",
+          "الزبيب",
+          "التفاح",
+          "الكرز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "السكيوفوبيا (⁦Sciophobia⁩) هي الخوف من ماذا؟",
+        "options": [
+          "الظلال",
+          "الأكل",
+          "الأضواء الساطعة",
+          "وسائل النقل"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "فرانك لويد رايت كان المهندس المعماري وراء تصميم أي مبنى شهير؟",
+        "options": [
+          "فيلا سافوي",
+          "متحف غوغنهايم",
+          "دار أوبرا سيدني",
+          "إبرة الفضاء (ذا سبيس نيدل)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يقع المقر الرئيسي لشركة أبل (⁦Apple Inc⁩.)‏؟",
+        "options": [
+          "ريدوود سيتي، كاليفورنيا",
+          "ريدموند، واشنطن",
+          "كوبيرتينو، كاليفورنيا",
+          "سانتا مونيكا، كاليفورنيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عالم ⁦SCP⁩ الخيالي، ما هي \"فئة الكائن\" (⁦Object Class⁩) التي تُمنح لكيانات ⁦SCP⁩ التي لا يمكن احتواؤها على الإطلاق؟",
+        "options": [
+          "ثوميل (⁦Thaumiel⁩)",
+          "كيتير-ثوميل (⁦Keter-Thaumiel⁩)",
+          "الفئات الباطنية/السردية (⁦Esoteric/Narrative Classes⁩)",
+          "أبوليون (⁦Apollyon⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تنتج ما يقارب 40% من الفانيليا في العالم؟",
+        "options": [
+          "مدغشقر",
+          "إندونيسيا",
+          "الصين",
+          "المكسيك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مؤسس مجموعة ليغو (⁦The Lego Group⁩)‏؟",
+        "options": [
+          "ينس نيلز كريستيانسن",
+          "أولي كيرك كريستيانسن",
+          "كيرستين كريستيانسن",
+          "جيرهارد كيرك كريستيانسن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة اليابانية المكتوبة بالأحرف اللاتينية (روماجي) والتي تعني \"جامعة\"؟",
+        "options": [
+          "توشوكان (⁦Toshokan⁩)",
+          "جيموشو (⁦Jimusho⁩)",
+          "دايغاكو (⁦Daigaku⁩)",
+          "شوكودو (⁦Shokudou⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة التي تعاونت معها شركة فالف (⁦Valve⁩) لصناعة نظارة الواقع الافتراضي فايف (⁦Vive⁩)‏؟",
+        "options": [
+          "أوكولوس (⁦Oculus⁩)",
+          "جوجل (⁦Google⁩)",
+          "رايزر (⁦Razer⁩)",
+          "⁦HTC⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مهندس معماري شهير، توفي عام 2019 عن عمر يناهز 102 عاماً، صمم الهرم الزجاجي في متحف اللوفر بباريس؟",
+        "options": [
+          "آي إم بي (⁦I⁩. ⁦M⁩. ⁦Pei⁩)",
+          "بسكال غيدو (⁦Pascale Guédot⁩)",
+          "فرانك جيري",
+          "وانغ شو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل مايكل جاكسون هو من اخترع رقصة مشية القمر (⁦Moonwalk⁩)‏؟",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت أغنية \"جينغل بيلز\" (⁦Jingle Bells⁩) مخصصة في الأصل لعيد الشكر.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من يُعتبر \"أبو الفلسفة الحديثة\"؟",
+        "options": [
+          "أفلاطون",
+          "ألبرت أينشتاين",
+          "أنطوان لافوازييه",
+          "رينيه ديكارت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هي الشخصية المرسومة على ورقة المئة دولار الأمريكية؟",
+        "options": [
+          "بنجامين فرانكلين",
+          "جورج واشنطن",
+          "أبراهام لينكون",
+          "توماس جيفرسون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام حصلت غانا على استقلالها؟",
+        "options": [
+          "1947",
+          "1957",
+          "1960",
+          "1958"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة أقيمت الألعاب الأولمبية الصيفية لعام 1992‏؟",
+        "options": [
+          "روسيا",
+          "كوريا",
+          "إسبانيا",
+          "الولايات المتحدة الأمريكية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_22",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 22",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي الكلمة البرتغالية المقابلة لـ \"البرازيل\"؟",
+        "options": [
+          "⁦Brasil⁩",
+          "⁦Brazil⁩",
+          "⁦Brasilia⁩",
+          "⁦Brasíl⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كليتا \"أول سولز\" (⁦All Souls⁩) و\"ميرتون\" (⁦Merton⁩) هما كليتان تتبعان لأي جامعة؟",
+        "options": [
+          "كامبريدج",
+          "أكسفورد",
+          "مانشستر",
+          "ليدز"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ولد أدولف هتلر في أستراليا.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تم ابتكار الوجه السعيد (⁦The Happy Face⁩) بواسطة الرسام التجاري هارفي بال.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم الشركة في لعبة ليزال كومباني (⁦Lethal Company⁩)‏؟",
+        "options": [
+          "الشركة (⁦The Company⁩)",
+          "شركة خردة الكواكب (⁦Planet Scrap Co⁩.)",
+          "ليزال للروبوتات (⁦Lethal Robotics⁩)",
+          "شركة غورديان للشحن (⁦Gordian Shipping Co⁩.)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي بلد نشأت قصة روبن هود؟",
+        "options": [
+          "فرنسا",
+          "إنجلترا",
+          "البرتغال",
+          "إسكتلندا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تولى فيها رئاسة الوزراء شخصيات بالأسماء التالية: إيدن، وميجور، وبيل، ولو، وبراون، وهيث؟",
+        "options": [
+          "أستراليا",
+          "نيوزيلندا",
+          "المملكة المتحدة",
+          "كندا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم يبلغ ارتفاع برج خليفة؟",
+        "options": [
+          "2,717 قدم",
+          "2,546 قدم",
+          "3,024 قدم",
+          "2,722 قدم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم تم إطلاق خدمة استضافة الملفات \"جوجل درايف\" (⁦Google Drive⁩)‏؟",
+        "options": [
+          "24 أبريل 2012",
+          "12 يناير 2014",
+          "14 نوفمبر 2008",
+          "20 يناير 2010"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بين نصب واشنطن والبركة العاكسة (⁦Reflecting Pool⁩) مباشرة، يوجد نصب تذكاري لأي حرب؟",
+        "options": [
+          "حرب فيتنام",
+          "الحرب العالمية الثانية",
+          "الحرب الأهلية الأمريكية",
+          "حرب الاستقلال الأمريكية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من التوابل الأساسية التالية يُعرف أيضاً بالفجل الياباني الحار؟",
+        "options": [
+          "مينتسويو",
+          "كاراشي",
+          "الواسابي",
+          "بونزو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي القناة التي تربط بين البحر الأبيض المتوسط والبحر الأحمر؟",
+        "options": [
+          "قناة بنما",
+          "قناة سيناء",
+          "قناة قره قوم",
+          "قناة السويس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الرئيس التنفيذي لشركة التكنولوجيا آبل الذي خلف ستيف جوبز يُدعى تيم آبل.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي رشاش أمريكي الصنع كان معروفاً بشكل غير رسمي بين الجنود الأمريكيين الذين استخدموه باسم \"مسدس الشحم\" (⁦Grease Gun⁩)‏؟",
+        "options": [
+          "كولت 9 ملم",
+          "⁦M3⁩",
+          "تومبسون",
+          "ماك-10"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بأي منتج غذائي تشتهر الشركة الأمريكية \"كامبلز\" (⁦Campbell's⁩) بشكل أكبر؟",
+        "options": [
+          "الشوكولاتة",
+          "المشروبات الغازية",
+          "الحساء المعلب",
+          "السجق"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "التكملة الأقل شهرة للمثل القائل \"الفضول قتل القط...\" هي:",
+        "options": [
+          "\"...والفأر الصامت بقي مكانه.\"",
+          "\"...مما علمه ألا يفعل ذلك مجدداً.\"",
+          "\"...لكن الموت بالمعرفة أفضل من الجهل.\"",
+          "\"...لكن الرضا أعاده للحياة.\""
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم من الوقت استغرق منظفو النوافذ الآليون في مركز التجارة العالمي الأصلي لتنظيف واجهة المبنى الخارجية بأكملها؟",
+        "options": [
+          "شهر واحد",
+          "3 أسابيع",
+          "أسبوع واحد",
+          "شهران"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المشروب الكحولي الذي يُصنع بشكل أساسي من عرعر الشرب (ثمار الجونيبير)‏؟",
+        "options": [
+          "الفودكا",
+          "الجين",
+          "الرم",
+          "التيكيلا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "رقم خط الطوارئ الساخن في الولايات المتحدة هو 911 بسبب هجمات 11 سبتمبر الإرهابية.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_23",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 23",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو البيرجي (⁦Burgee⁩)‏؟",
+        "options": [
+          "علم",
+          "حبل",
+          "نافذة",
+          "نوع من الطعام"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الألوان التالية لا يُعتبر من ألوان قوس قزح؟",
+        "options": [
+          "الأزرق",
+          "الوردي",
+          "البنفسجي",
+          "البرتقالي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الولايات المتحدة، يُعتبر الأمر تلقائياً إيقاعاً غير قانوني في الشرك (⁦Entrapment⁩) إذا باعتك الشرطة مواد غير قانونية دون الكشف عن هويتها.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الأكثر انتشاراً وتحدثاً في سويسرا؟",
+        "options": [
+          "الفرنسية",
+          "الإيطالية",
+          "السويسرية",
+          "الألمانية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في علم اللغويات، أي مما يلي لا يُعد من قواعد غرايس (⁦Gricean Maxims⁩) تحت مبدأ التعاون؟",
+        "options": [
+          "الطول",
+          "الجودة",
+          "الصلة",
+          "الأسلوب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم بولندا باللغة البولندية؟",
+        "options": [
+          "بوبشيا (⁦Pupcia⁩)",
+          "بولسكا (⁦Polska⁩)",
+          "بولشكا (⁦Polszka⁩)",
+          "بولاند (⁦Poland⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كيف تقول \"وداعاً\" باللغة الإسبانية؟",
+        "options": [
+          "هولا (⁦Hola⁩)",
+          "أو ريفوار (⁦Au Revoir⁩)",
+          "أديوس (⁦Adiós⁩)",
+          "سالير (⁦Salir⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحرف الأكثر استخداماً في الأبجدية الإنجليزية؟",
+        "options": [
+          "⁦A⁩",
+          "⁦I⁩",
+          "⁦O⁩",
+          "⁦E⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي سلسلة مطاعم للوجبات السريعة يمكنك طلب مخفوق الحليب \"جاموكا\" (⁦Jamocha Shake⁩)‏؟",
+        "options": [
+          "آربيز (⁦Arby's⁩)",
+          "ماكدونالدز",
+          "برجر كنج",
+          "وينديز"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ريد فاينز (⁦Red Vines⁩) هي علامة تجارية لأي نوع من الحلوى؟",
+        "options": [
+          "المصاصات",
+          "العرقسوس الأحمر (⁦Licorice⁩)",
+          "الشوكولاتة",
+          "العلكة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الألوان في قوس قزح؟",
+        "options": [
+          "8",
+          "9",
+          "7",
+          "10"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هي سيدة الأعمال الغانية التي تُعتبر من رواد الإقراض متناهي الصغر؟",
+        "options": [
+          "فريدة بدوي",
+          "أما آتا آيدو",
+          "سيون نيلي",
+          "إستير أفوا أوكلو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أطول جسر في العالم؟",
+        "options": [
+          "جسر دانيانغ-كونشان الكبير، الصين",
+          "جسر بحيرة بونتشارترين، الولايات المتحدة",
+          "جسر الملك فهد الأول، المملكة العربية السعودية",
+          "جسر السلطان عبد الحليم معظم شاه، ماليزيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لـ شيرلوك هولمز: \"إذا استبعدت المستحيل، فإن ما يتبقى، مهما بدا مستبعداً، لا بد أن يكون هو...\"",
+        "options": [
+          "الجواب",
+          "الحقيقة",
+          "السبب",
+          "المصدر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الكلمات تشير إلى شيء تم صنعه أو توزيعه أو بيعه بطريقة غير قانونية ومهرّبة؟",
+        "options": [
+          "بوتبلاك (⁦Bootblack⁩)",
+          "بوتليس (⁦Bootlace⁩)",
+          "بوتليغ (⁦Bootleg⁩)",
+          "بوتستراب (⁦Bootstrap⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللعبة التي ظهر فيها والويجي لأول مرة؟",
+        "options": [
+          "واريو لاند: سوبر ماريو لاند 3",
+          "ماريو بارتي (على جهاز نينتندو 64)",
+          "سوبر سماش برذرز ألتيميت",
+          "ماريو تينس 64 (على جهاز نينتندو 64)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المطاعم جالب حظه (التميمة) هو مهرج؟",
+        "options": [
+          "ماكدونالدز",
+          "واتابورجر",
+          "برجر كنج",
+          "سونيك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الكوكب الأقرب إلى شمس مجموعتنا الشمسية؟",
+        "options": [
+          "المريخ",
+          "عطارد",
+          "المشتري",
+          "الأرض"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام كانت نسبة الأسر التي تمتلك جهاز تلفاز في الولايات المتحدة 9% فقط؟",
+        "options": [
+          "1965",
+          "1913",
+          "1950",
+          "1969"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_24",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 24",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في المتوسط، كم يستهلك الأمريكيون من أي من المواد التالية بمعدل 100 رطل (حوالي 45 كجم) في الثانية الواحدة؟",
+        "options": [
+          "الشوكولاتة",
+          "البطاطس",
+          "الدونات",
+          "الكوكايين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "\"سانتا كلوز\" (⁦Santa Claus⁩) هو نوع من أنواع الشمام.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يقع المقر الرئيسي لمجموعة \"إنديتكس\" (⁦Inditex⁩)، أكبر مجموعة أزياء في العالم، في مقاطعة لا كورونيا الإسبانية؟",
+        "options": [
+          "سانخينخو (⁦Sanjenjo⁩)",
+          "موخيا (⁦Muxía⁩)",
+          "أرتيخو (⁦Arteijo⁩)",
+          "أوردينس (⁦Órdenes⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي ثاني أكبر لغة محلية يتحدث بها السكان في إسبانيا من حيث عدد المتحدثين؟",
+        "options": [
+          "البرتغالية",
+          "الإسبانية",
+          "الفرنسية",
+          "الكتالونية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي قطعة الملابس التي يرتديها الرجل الإسكتلندي عادةً في حفلات الزفاف؟",
+        "options": [
+          "التنورة الإسكتلندية (⁦Kilt⁩)",
+          "تنورة عادية",
+          "فستان",
+          "أردية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما المعروض في متحف \"مدام توسو\" في لندن؟",
+        "options": [
+          "ملابس المصممين",
+          "تماثيل الشمع",
+          "بكرات أفلام لم تُعرض بعد",
+          "سيارات كلاسيكية قديمة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي نوع من الحيوانات كان \"هارامبي\"، الذي تم إطلاق النار عليه بعد سقوط طفل في حظيرته في حديقة حيوان سينسيناتي؟",
+        "options": [
+          "نمر",
+          "باندا",
+          "غوريلا",
+          "تمساح"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الألمانية التي تعني \"ملعقة\"؟",
+        "options": [
+          "غابل (⁦Gabel⁩)",
+          "ميسر (⁦Messer⁩)",
+          "إسشتيبشن (⁦Essstäbchen⁩)",
+          "لوفل (⁦Löffel⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من لغات أي دولة تنحدر الكلمتان \"بنغالو\" (منزل من طابق واحد) و\"شامبو\"؟",
+        "options": [
+          "الهند",
+          "بابوا غينيا الجديدة",
+          "إثيوبيا",
+          "الصين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي العملة الرسمية لبولندا؟",
+        "options": [
+          "الروبل",
+          "الزلوتي",
+          "اليورو",
+          "الكرونة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة تأسست شركة إطارات \"ميشلان\" عام 1889‏؟",
+        "options": [
+          "المملكة المتحدة",
+          "إيطاليا",
+          "فرنسا",
+          "ألمانيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو البرج الفلكي لشخص ولد في عيد الحب (14 فبراير)‏؟",
+        "options": [
+          "الحوت",
+          "الجدي",
+          "العقرب",
+          "الدلو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو السفر الأول من العهد القديم؟",
+        "options": [
+          "سفر التكوين",
+          "سفر الخروج",
+          "سفر اللاويين",
+          "سفر العدد"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أطلق شركة ماكنتوش أسماء فصائل السنوريات الكبيرة على ستة من أنظمة التشغيل الخاصة بها. فما هو السنور الكبير الذي أطلقت ماكنتوش اسمه على إصدارها لعام 2007‏؟",
+        "options": [
+          "تايجر (النمر)",
+          "ليوبارد (الفهد)",
+          "بانثر (النمر الأسود)",
+          "بوما"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ظهر مصطلح \"بريد عشوائي\" (⁦Spam⁩) قبل ظهور المنتج الغذائي المعلب الشهير \"سبام\" (⁦Spam⁩).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع محطة القطار ذات الاسم الطويل جداً \"⁦Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch⁩\"؟",
+        "options": [
+          "مولدوفا",
+          "جمهورية التشيك",
+          "الدنمارك",
+          "ويلز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المنظمة البريطانية \"كامرا\" (⁦CAMRA⁩) هي اختصار لـ \"الحملة من أجل البيرة الحقيقية\" (⁦The Campaign for Real Ale⁩).",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من مصانع البيرة المملوكة لأمريكيين تصدرت المبيعات في البلاد من حيث الحجم في عام 2015‏؟",
+        "options": [
+          "أنهاوزر بوش (⁦Anheuser Busch⁩)",
+          "دي جي يونغلينغ آند سون (⁦D⁩. ⁦G⁩. ⁦Yuengling and Son⁩, ⁦Inc⁩)",
+          "شركة بوسطن للبيرة (⁦Boston Beer Company⁩)",
+          "ميلر كورس (⁦Miller Coors⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو شكل اللعبة الشهيرة التي اخترعها البروفيسور المجري إرنو روبيك؟",
+        "options": [
+          "كرة",
+          "أسطوانة",
+          "مكعب",
+          "هرم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_3",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "مترو أنفاق نيويورك هو أقدم مترو أنفاق تحت الأرض في العالم.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في مجموعة أوراق اللعب القياسية، من هو ملك الرمز (النقش) الوحيد الذي يظهر بدون شارب؟",
+        "options": [
+          "البستوني",
+          "القلوب",
+          "الديناري",
+          "السباتي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الوجهة التي كانت تقصدها الطائرة المفقودة في الرحلة (⁦MH370⁩)‏؟",
+        "options": [
+          "كوالالمبور",
+          "سنغافورة",
+          "بكين",
+          "طوكيو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو اسم نظام ياباني للطب البديل، ويعني حرفياً \"الضغط بالأصابع\"؟",
+        "options": [
+          "أوكيو",
+          "ماجيمي",
+          "إيكيغاي",
+          "شياتسو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مع أي فرقة كوميدية بريطانية عمل رسام الرسوم المتحركة تيري غيليام؟",
+        "options": [
+          "مونتي بايثون",
+          "ذا غوديز",
+          "ذا ليغ أوف جينتلمن",
+          "ذا بيني دريدفولس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سُمّي اللون البرتقالي نسبةً إلى فاكهة البرتقال.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أغلى توابل العالم من حيث الوزن؟",
+        "options": [
+          "القرفة",
+          "الهيل",
+          "الزعفران",
+          "الفانيليا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جبل يضم أعلى قمة جبلية في إفريقيا؟",
+        "options": [
+          "جبل كينيا، كينيا",
+          "جبل ستانلي، جمهورية الكونغو الديمقراطية/أوغندا",
+          "جبل بيك، أوغندا",
+          "جبل كليمنجارو، تنزانيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا قمت بزراعة بذور نبات \"⁦Quercus robur⁩\" (السنديان القوي)، فما الذي سينمو؟",
+        "options": [
+          "أشجار",
+          "حبوب",
+          "خضروات",
+          "زهور"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم العملة المستخدمة في إثيوبيا؟",
+        "options": [
+          "الدرهم",
+          "البير",
+          "الدولار الأمريكي",
+          "الراند"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مادة \"أكسيد ثنائي الهيدروجين\" هي مادة كيميائية خطيرة.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يقل طول المرأة المتوسطة بمقدار 5 بوصات / 13 سنتيمتراً عن طول الرجل المتوسط.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً للجمعية البريطانية للبيرة والحانات (⁦BBPA⁩)، ما هو الاسم الأكثر شيوعاً للحانات في المملكة المتحدة؟",
+        "options": [
+          "الأسد الأحمر (⁦Red Lion⁩)",
+          "البلوط الملكي (⁦Royal Oak⁩)",
+          "الأيل الأبيض (⁦White Hart⁩)",
+          "رأس الملك (⁦King's Head⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الجامعات التالية ليست من جامعات رابطة اللبلاب (⁦Ivy League⁩) المرموقة؟",
+        "options": [
+          "جامعة بنسلفانيا",
+          "ستانفورد",
+          "هارفارد",
+          "برينستون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم تلسكوب الفضاء الأكثر شهرة التابع لوكالة ناسا؟",
+        "options": [
+          "العين الكبيرة",
+          "نجم الموت",
+          "تلسكوب هابل الفضائي",
+          "ميلينيوم فالكون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أكبر عضو في جسم الإنسان؟",
+        "options": [
+          "القلب",
+          "الأمعاء الغليظة",
+          "الكبد",
+          "الجلد"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كلمة \"⁦Typewriter⁩\" هي أطول كلمة يمكن كتابتها باستخدام الصف الأول فقط من لوحة مفاتيح كويرتي (⁦QWERTY⁩).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى كم عدد من الأشياء تشير كلمة \"درزن\" أو \"دزينة\" عادةً؟",
+        "options": [
+          "6",
+          "12",
+          "20",
+          "10"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل اللغة اللوكسمبورغية هي لغة حقيقية؟",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا كنت تسير بسرعة 80 ميلاً في الساعة، فكم من الوقت ستحتاج لقطع مسافة 80 ميلاً؟",
+        "options": [
+          "90 دقيقة",
+          "30 دقيقة",
+          "50 دقيقة",
+          "60 دقيقة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_4",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "الاسم العلمي للأضواء الجنوبية (الشفق القطبي الجنوبي) هو أورورا أوستراليس؟",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من ألعاب الورق التالية تعتمد على الأرقام والعمليات الحسابية البسيطة؟",
+        "options": [
+          "جو فيش",
+          "أونو",
+          "تويستر",
+          "منشكين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هي عائلة موجودة في لعبة \"ذا سيمز\"؟",
+        "options": [
+          "العائلة",
+          "عائلة سيموليون",
+          "عائلة غوث",
+          "عائلة براود"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في اللغة الإنجليزية، ما هو اسم الرمز \"&\"؟",
+        "options": [
+          "إيت سلاش",
+          "علامة و",
+          "أوبيلوس",
+          "أمبرساند"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الذي طُرح به المشروب الغازي بيبسي في الأصل؟",
+        "options": [
+          "شراب براد",
+          "ببسين بوب",
+          "كارولينا كولا",
+          "شراب الببسين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي التقنية التي سُميت على اسم حاكم الدنمارك والنرويج في القرن العاشر؟",
+        "options": [
+          "واي فاي",
+          "بلوتوث",
+          "جي بي إس",
+          "الإنترنت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كل ثمار الفراولة حمراء اللون.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تأسست مجموعة ليغو في عام 1932.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الماء النقي يوصل الكهرباء بشكل فعال.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2010، عقدت منصة تويتر ومكتبة الكونغرس الأمريكي شراكة لأرشفة كل تغريدة يكتبها المواطنون الأمريكيون.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الذي يطلق على الطعام الهندي المطبوخ على الفحم في فرن طيني؟",
+        "options": [
+          "برياني",
+          "باني بوري",
+          "تندوري",
+          "تيكي ماسالا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام ولدت الملكة إليزابيث الثانية؟",
+        "options": [
+          "1923",
+          "1929",
+          "1930",
+          "1926"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي حركة الـ \"دابينغ\" (⁦Dabbing⁩)‏؟",
+        "options": [
+          "رقصة",
+          "إجراء طبي",
+          "رياضة",
+          "لغة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الحيوان الوطني لاسكتلندا هو أحادي القرن (اليونيكورن).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يسمي البحارة مقدمة القارب؟",
+        "options": [
+          "المؤخرة",
+          "الجانب الأيسر",
+          "المقدمة",
+          "الجانب الأيمن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الأخير لـ \"بابا جون\" الشهير؟",
+        "options": [
+          "تشاودر",
+          "ويليامز",
+          "أندرسون",
+          "شنيتر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الممثل الكوميدي الذي أدى صوت شخصية \"الحمار\" في فيلم \"شريك\"؟",
+        "options": [
+          "إيدي ميرفي",
+          "كريس روك",
+          "ريتشارد بريور",
+          "بيرني ماك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما معنى الكلمة السويدية \"غرونكا\" (⁦Grunka⁩) باللغة الإنجليزية؟",
+        "options": [
+          "أشخاص",
+          "شيء",
+          "مكان",
+          "أناناس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُسمح لك ببيع روحك على موقع إيباي (⁦eBay⁩).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة التي استحوذت على شركة تصنيع الكمبيوتر \"كومباك\" (⁦Compaq⁩) مقابل 25 مليار دولار في عام 2002‏؟",
+        "options": [
+          "توشيبا",
+          "أسوس",
+          "ديل",
+          "هيوليت-باكارد (⁦HP⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_5",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من هذه اللغات الهندية لا تنتمي إلى عائلة اللغات الهندو أوروبية؟",
+        "options": [
+          "التاميلية",
+          "الهندية",
+          "البنجابية",
+          "الأردية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أقصى عدد من نجوم ميشلان يمكن للمطعم الحصول عليه؟",
+        "options": [
+          "أربعة",
+          "ثلاثة",
+          "خمسة",
+          "ستة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اسم \"موقف الحافلات رقم 16\" (⁦Number 16 Bus Shelter⁩) كان اسماً لطفل وافقت عليه حكومة نيوزيلندا.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في يناير 2019، تم العثور في لندن على الرفات المدفون لأي مستكشف إنجليزي لأستراليا؟",
+        "options": [
+          "ويليام بورك",
+          "أبل تاسمان",
+          "ديرك هارتوغ",
+          "ماثيو فليندرز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+        "options": [
+          "26",
+          "30",
+          "17",
+          "5"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في لعبة الأدوار متعددة اللاعبين على الإنترنت \"ريلم أوف ذا ماد غود\" (⁦Realm of the Mad God⁩)، ما هو الدهليز الذي يُعتبر الأكثر صعوبة على نطاق واسع؟",
+        "options": [
+          "عرين الثعبان",
+          "ذا شاترز",
+          "مقبرة القدماء",
+          "مسرح صانع الدمى"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اليوم الواحد يحتوي على 86400 ثانية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من ألعاب الإيقاع الموسيقي التالية من إنتاج شركة هارمونيكس (⁦Harmonix⁩)‏؟",
+        "options": [
+          "ميت بيت مانيا",
+          "غيتار هيرو لايف",
+          "دانس دانس ريفولوشن",
+          "روك باند"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة السويدية التي تعني \"نافذة\"؟",
+        "options": [
+          "⁦Fönster⁩",
+          "⁦Hål⁩",
+          "⁦Skärm⁩",
+          "⁦Ruta⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اخترع فريدريك رويكهايم الفشار في عام 1871 في الولايات المتحدة الأمريكية، حيث كان يبيع هذه الوجبة الخفيفة في شوارع شيكاغو.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يتكون الخيار عادةً من ماء بنسبة تزيد عن 90%.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم مجسم السمكة المغنية المتحركة الشهير، الذي يغني أغانٍ معروفة مثل \"لا تقلق، كن سعيداً\"؟",
+        "options": [
+          "بيغ بيلي باس",
+          "السمكة المغنية",
+          "سردين",
+          "بيغ ماوث بيلي باس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "طبق \"فوا جرا\" (⁦Foie gras⁩) الشهير في المطبخ الفرنسي يُصنع عادةً من أي جزء من البط أو الإوز؟",
+        "options": [
+          "الكبد",
+          "القلب",
+          "المعدة",
+          "الأمعاء"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي كلمة إنجليزية تعني \"التفكير بعمق\"؟",
+        "options": [
+          "⁦Confiscate⁩",
+          "⁦Contemplate⁩",
+          "⁦Constipate⁩",
+          "⁦Condensate⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما نوع الطائرات التي طورها إيغور سيكورسكي في الولايات المتحدة عام 1942‏؟",
+        "options": [
+          "منطاد التخفي",
+          "الطائرة النفاثة",
+          "المروحية (الهليكوبتر)",
+          "كبسولة الفضاء"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن رؤية سور الصين العظيم من القمر.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر فصيلة حية من البطاريق؟",
+        "options": [
+          "البطريق الإمبراطور",
+          "البطريق الملك",
+          "بطريق جنتو",
+          "بطريق أديلي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المشروب الكحولي الذي يُصنع من الدبس (عسل قصب السكر)‏؟",
+        "options": [
+          "الجين",
+          "الرم",
+          "الفودكا",
+          "الويسكي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي رئيس أمريكي تظهر صورته على ورقة الدولار الواحد؟",
+        "options": [
+          "توماس جيفرسون",
+          "أبراهام لينكون",
+          "جورج واشنطن",
+          "بنجامين فرانكلين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي ولاية أمريكية تقع المنطقة 51 (⁦Area 51⁩)‏؟",
+        "options": [
+          "أريزونا",
+          "نيومكسيكو",
+          "يوتا",
+          "نيفادا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_6",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 6",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "يرمز الاختصار \"⁦NCIS⁩\" إلى \"⁦Navy Corps Investigative Service⁩\".",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الشركات لا تصنع السيارات؟",
+        "options": [
+          "نيسان",
+          "دوكاتي",
+          "جي إم سي",
+          "فيات"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا تعني ممارسة الـ \"نيفيلوكوكيميديا\" (⁦Nephelococcygia⁩)‏؟",
+        "options": [
+          "النوم والعينان مفتوحتان",
+          "كسر الزجاج بالصوت",
+          "رؤية أو تخيل أشكال في السحب",
+          "السباحة في مياه متجمدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في سلسلة ألعاب الفيديو \"كينغدوم هارتس\" (⁦Kingdom Hearts⁩)، ما شكل السلاح الذي يحمله البطل الرئيسي؟",
+        "options": [
+          "سيف",
+          "قلم",
+          "هاتف محمول",
+          "مفتاح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يصنع ويبيع صانع القبعات (⁦Milliner⁩)‏؟",
+        "options": [
+          "القبعات",
+          "الأحذية",
+          "الأحزمة",
+          "القمصان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما المعنى الكامل للاختصار \"⁦RAM⁩\" في الكمبيوتر؟",
+        "options": [
+          "ذاكرة المساعدة العشوائية",
+          "ذاكرة الوصول العشوائي",
+          "تفويض المساعدة العشوائية",
+          "رام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يسمي البحارة مؤخرة القارب؟",
+        "options": [
+          "المقدمة",
+          "الجانب الأيمن",
+          "المؤخرة",
+          "الجانب الأيسر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً للمكتب الأسترالي للإحصاء لعامي 2014-2015، ما هي نسبة الأستراليين الذين ولدوا خارج البلاد؟",
+        "options": [
+          "13%",
+          "20%",
+          "7%",
+          "28%"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي اتجاه يتجه تمثال الحرية؟",
+        "options": [
+          "الجنوب الشرقي",
+          "الجنوب الغربي",
+          "الشمال الغربي",
+          "الشمال الشرقي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الباذنجان هو نوع من الخضار.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "حامل شهادة الدكتوراه (⁦PhD⁩) هو دكتور في ماذا؟",
+        "options": [
+          "علم النفس",
+          "علم فراسة الدماغ",
+          "الفلسفة",
+          "العلاج الطبيعي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو المؤسس المشارك لخدمة بث الموسيقى \"سبوتيفاي\" (⁦Spotify⁩)‏؟",
+        "options": [
+          "شون باركر",
+          "فيليكس ميلر",
+          "مايكل بريدنبروكير",
+          "دانيال إيك"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو نوع المنتجات التي تتخصص فيها شركة رولكس (⁦Rolex⁩)‏؟",
+        "options": [
+          "الساعات",
+          "السيارات",
+          "أجهزة الكمبيوتر",
+          "المعدات الرياضية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تم اختراع البطاطس المهروسة الفورية من قِبل الكندي إدوارد أسيلبرغز في عام 1962.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "قبل القرن التاسع عشر، كانت \"غرفة المعيشة\" تُسمى في الأصل...",
+        "options": [
+          "الغرفة المفتوحة",
+          "غرفة الجلوس",
+          "غرفة الاستقبال",
+          "السقيفة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مجموع كل الأرقام الموجودة على عجلة الروليت هو 666.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من أين نشأ نبات الأناناس في الأصل؟",
+        "options": [
+          "أمريكا الجنوبية",
+          "هاواي",
+          "أوروبا",
+          "آسيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي متحف بلندن يقع تمثال تشارلز داروين؟",
+        "options": [
+          "متحف تيت",
+          "متحف التاريخ الطبيعي",
+          "المتحف البريطاني",
+          "متحف العلوم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "العلم الوطني لفيتنام يتكون من نجمة حمراء على خلفية صفراء.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جبل يضم أعلى قمة في أوروبا؟",
+        "options": [
+          "جبل شخارا، جورجيا",
+          "جبل أرارات، تركيا",
+          "جبل مون بلان، فرنسا",
+          "جبل إلبروس، روسيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_7",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 7",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي الكلمة الكورية المكتوبة بالأحرف اللاتينية والتي تعني \"قلب\"؟",
+        "options": [
+          "سيمجانغ (⁦Simjang⁩)",
+          "آيجونغ (⁦Aejeong⁩)",
+          "جيونغسين (⁦Jeongsin⁩)",
+          "سيغسو (⁦Segseu⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لماذا تبدو السماء مظلمة في الليل؟",
+        "options": [
+          "سحب الغبار تمتص الضوء",
+          "الكون محدود العمر والحجم",
+          "الانزياح نحو الأحمر يمنعنا من رؤية النجوم البعيدة",
+          "ميكانيكا الكم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي تؤخذ المضادات الحيوية عادةً لمحاربته؟",
+        "options": [
+          "الفيروسات",
+          "الصداع النصفي",
+          "الالتهابات البكتيرية",
+          "آلام العضلات"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عبارة \"حادث على وشك الوقوع\" (⁦accident waiting to happen⁩) هي مثال على أي نوع من الأساليب التعبيرية؟",
+        "options": [
+          "تشبيه (⁦Simile⁩)",
+          "استعارة (⁦Metaphor⁩)",
+          "تناظر (⁦Analogy⁩)",
+          "تعبير اصطلاحي (⁦Idiom⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اللقب الذي أُطلق على طائرة النقل الثقيل المائية \"هوز إتش-4 هيركوليز\" التي طارت لأول مرة عام 1947‏؟",
+        "options": [
+          "إوزة التنوب (⁦Spruce Goose⁩)",
+          "سفينة نوح (⁦Noah's Ark⁩)",
+          "الرجل البدين (⁦Fat Man⁩)",
+          "حصان طروادة (⁦Trojan Horse⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو رائد الفضاء الوحيد من بين طاقم رحلة \"أبولو 11\" الذي لم يمشِ على سطح القمر؟",
+        "options": [
+          "باز ألدرين",
+          "مايكل كولينز",
+          "نيل آرمسترونغ",
+          "لا أحد منهم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أدى دور الجنرال علاء الدين في فيلم \"الديكتاتور\" (⁦The Dictator⁩)‏؟",
+        "options": [
+          "جوني ديب",
+          "جيمس فرانكو",
+          "ساشا بارون كوهين",
+          "ليوناردو دي كابريو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مجرة يقع كوكب الأرض؟",
+        "options": [
+          "مجرة المريخ",
+          "مجرة نوت (⁦Galaxy Note⁩)",
+          "الثقب الأسود",
+          "مجرة درب التبانة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "نشأت لعبة تنس الطاولة (بينغ بونغ) في إنجلترا.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا تم ضبطك متلبساً بـ \"التهرب من العمل\" (⁦Goldbricking⁩)، فما الخطأ الذي ترتكبه؟",
+        "options": [
+          "التدخين",
+          "التكاسل والتهرب",
+          "السرقة",
+          "الغش"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة العربية المكتوبة بالأحرف اللاتينية والتي تعني \"قمر\"؟",
+        "options": [
+          "⁦Najma⁩",
+          "⁦Kawkab⁩",
+          "⁦Qamar⁩",
+          "⁦Shams⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الملوك البريطانيين التاليين لم تظهر صورته قط على عملة الجنيه الإسترليني المتداولة؟",
+        "options": [
+          "الملكة فيكتوريا",
+          "جورج السادس",
+          "تشارلز الثاني",
+          "إدوارد الثامن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم (⁦Noun⁩) الأكثر استخداماً في اللغة الإنجليزية؟",
+        "options": [
+          "⁦Time⁩ (الوقت)",
+          "⁦Home⁩ (المنزل)",
+          "⁦Water⁩ (الماء)",
+          "⁦Man⁩ (الرجل)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي مهنة \"ماي ماسك\"، والدة الملياردير إيلون ماسك؟",
+        "options": [
+          "أستاذة جامعية",
+          "عارضة أزياء",
+          "عالمة أحياء",
+          "موسيقية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم إصدار لعبة الروبوت الشهيرة \"روبوسابيان\" (⁦RoboSapien⁩)‏؟",
+        "options": [
+          "2000",
+          "2001",
+          "2004",
+          "2006"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "فاز لاينوس باولينغ بجائزتي نوبل؛ الأولى كانت في الكيمياء، ففي أي مجال كانت الجائزة الثانية؟",
+        "options": [
+          "الفيزياء",
+          "الاقتصاد",
+          "علم وظائف الأعضاء أو الطب",
+          "السلام"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أُضيف مخلل الخيار لأول مرة إلى الهامبرغر لأن قانون الصحة الأمريكي كان يفرض على جميع مطاعم الوجبات السريعة تضمين مصدر لفيتامين سي (⁦C⁩).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متى وافق الكونغرس القاري الثاني على إعلان الاستقلال الأمريكي؟",
+        "options": [
+          "4 مايو 1776",
+          "4 يوليو 1776",
+          "4 يونيو 1776",
+          "2 يوليو 1776"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عند البكاء في الفضاء، تلتصق الدموع بوجهك ولا تسقط.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عملة الهند وباكستان بالإضافة إلى بعض الدول الآسيوية الأخرى؟",
+        "options": [
+          "الريال",
+          "البيزو",
+          "الدينار",
+          "الروبية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_8",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 8",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "نسبة صغيرة فقط من سكان العالم تعاني من عدم تحمل اللاكتوز (حساسية الحليب).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "وجدت دراسة علمية أجريت على الفول السوداني المتوفر في الحانات آثاراً لأكثر من 100 عينة بول مختلفة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "على ماذا يمشي السيرك البهلواني المعروف بـ (⁦Funambulist⁩)‏؟",
+        "options": [
+          "زجاج مكسور",
+          "كرات",
+          "حبل مشدود",
+          "سطح القمر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر جملة \"⁦Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo⁩\" صحيحة من الناحية النحوية في اللغة الإنجليزية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو ارتفاع قطار الموت \"كينغدا كا\" (⁦Kingda Ka⁩)، الذي كان أطول قطار ملاهي ترفيهي في العالم من عام 2005 إلى عام 2024‏؟",
+        "options": [
+          "456 قدماً",
+          "500 قدم",
+          "429 قدماً",
+          "396 قدماً"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا ترمز الحروف في التوقيت العالمي (⁦GMT⁩)‏؟",
+        "options": [
+          "التوقيت الزوالي العالمي (⁦Global Meridian Time⁩)",
+          "توقيت جرينتش المتوسط (⁦Greenwich Mean Time⁩)",
+          "التوقيت المتوسط العام (⁦General Median Time⁩)",
+          "توقيت غلاسكو للرجال (⁦Glasgow Man Time⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من معالم ديزني لاند الشهيرة تم إغلاقه في عام 2017 ليعاد تصميمه ليصبح مستوحى من فيلم \"حراس المجرة\" (⁦Guardians of the Galaxy⁩)‏؟",
+        "options": [
+          "القصر المسكون (⁦The Haunted Mansion⁩)",
+          "قراصنة الكاريبي (⁦Pirates of the Caribbean⁩)",
+          "برج الرعب لمنطقة الغسق (⁦Twilight Zone Tower of Terror⁩)",
+          "رحلة بيتر بان (⁦Peter Pan's Flight⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني المصطلح الطبي \"أبوليا\" (⁦abulia⁩)‏؟",
+        "options": [
+          "العجز عن الوقوف",
+          "العجز عن التركيز على أي شيء",
+          "رغبة حمّى لتمزيق ملابس الشخص",
+          "العجز عن اتخاذ القرارات"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في بداية أي عقد بدأت ثقافة \"القوط\" (⁦Goth Subculture⁩) الفرعية بالظهور؟",
+        "options": [
+          "الثمانينيات",
+          "التسعينيات",
+          "الألفينيات",
+          "السبعينيات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من اللغات التالية لا تستخدم التذكير والتأنيث (الجنس النحوي) في قواعدها؟",
+        "options": [
+          "الألمانية",
+          "التركية",
+          "الدانماركية",
+          "البولندية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الشخصية الرئيسية في سلسلة ألعاب الرعب \"ديد سبيس\" (⁦Dead Space⁩)‏؟",
+        "options": [
+          "إلين ريبلي",
+          "القائد شيبارد",
+          "آيزاك كلارك",
+          "الكابتن كيرك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يتكون \"الصمغ العربي\" من العصارة المتصلبة لأي نوع من الأشجار؟",
+        "options": [
+          "أشجار النخيل",
+          "أشجار الفيكس",
+          "أشجار الكافور",
+          "أشجار السنط (الأكاسيا)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي كاتدرائية في مدينة الفاتيكان صمم جزأها الداخلي عام 1503 فنانون من عصر النهضة مثل برامانتي وميكيلانجيلو وبرنيني؟",
+        "options": [
+          "كاتدرائية القديس بطرس",
+          "كاتدرائية كاتانيا",
+          "كاتدرائية القديس مرقص",
+          "كاتدرائية فلورنسا (الدوومو)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللون الذي تمثل كلمة \"كوكليكوت\" (⁦Coquelicot⁩) إحدى درجاته، والتي كانت تعني في الأصل زهرة الخشخاش؟",
+        "options": [
+          "الأخضر",
+          "الأحمر",
+          "الأزرق",
+          "الوردي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع يصل إلى 1250 قدماً (381 متراً)‏؟",
+        "options": [
+          "برج بنك الصين، هونغ كونغ",
+          "برج الاتحاد، روسيا",
+          "مبنى إمباير ستيت، الولايات المتحدة",
+          "فندق جيفورا، الإمارات العربية المتحدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يؤدي شخصية \"دون شيتو\" دور المذيع في محطة الراديو \"⁦East Los FM⁩\" في لعبة ⁦GTA V⁩.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من سلاسل مطاعم الوجبات السريعة التالية غير معروفة ببيع البيتزا بشكل أساسي؟",
+        "options": [
+          "وينديز (⁦Wendy's⁩)",
+          "دومينوز (⁦Domino's⁩)",
+          "ليتل سيزرز (⁦Little Caesars⁩)",
+          "بابا جونز (⁦Papa John's⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يعيش البطل الخارق \"السهم الأخضر\" (أوليفر كوين) في قصص دي سي (⁦DC⁩) المصورة؟",
+        "options": [
+          "سنترال سيتي (المدينة المركزية)",
+          "ستار سيتي (مدينة النجوم)",
+          "غوثام سيتي (مدينة غوثام)",
+          "متروبوليس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في لعبة \"معركة القطط\" (⁦Battle Cats⁩)، ما هي النسبة المئوية للضربة القاضية (⁦Critical Rate⁩) للشخصية مونيكو (⁦Moneko⁩)‏؟",
+        "options": [
+          "20%",
+          "10%",
+          "15%",
+          "25%"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُطلق مصطلح \"سامهينوفوبيا\" (⁦Samhainophobia⁩) على الخوف المرضي والمستمر من الهالوين.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-general_quiz_9",
+    "user_id": "system",
+    "title": "شامل المعلومات العامة — الجزء 9",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "معلومات عامة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "الكلمة الفرنسية التي تعني \"زجاج\" هي \"⁦glace⁩\".",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد تأسست شركة \"هيونداي\" للسيارات؟",
+        "options": [
+          "روسيا",
+          "كوريا الجنوبية",
+          "اليابان",
+          "الصين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من قطع الحلوى التالية ليست من إنتاج شركة \"مارس\" (⁦Mars⁩)‏؟",
+        "options": [
+          "إم آند إمز (⁦M⁩&⁦M's⁩)",
+          "تويكس (⁦Twix⁩)",
+          "ألموند جوي (⁦Almond Joy⁩)",
+          "سنيكرز (⁦Snickers⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي شركة طيران كانت مالكة للطائرة التي تحطمت قبالة سواحل نوفا سكوشا في عام 1998‏؟",
+        "options": [
+          "الخطوط الجوية الفرنسية (⁦Air France⁩)",
+          "الخطوط الجوية البريطانية (⁦British Airways⁩)",
+          "تي دبليو إيه (⁦TWA⁩)",
+          "السويسرية للطيران (⁦Swiss Air⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الرئيس الأمريكي الذي افتتح قناة بنما رسمياً؟",
+        "options": [
+          "وودرو ويلسون",
+          "كالفين كوليدج",
+          "هربرت هوفر",
+          "ثيودور روزفلت"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "شاي \"إيرل غري\" (⁦Earl Grey⁩) هو شاي أسود يتميز بنكهة ماذا؟",
+        "options": [
+          "الخزامى (اللافندر)",
+          "زيت البرغموت",
+          "الفانيليا",
+          "العسل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لمدونة الإشارات الدولية، أي علم فردي يعني \"أحتاج إلى المساعدة (وليس استغاثة)\"؟",
+        "options": [
+          "كيلو (⁦Kilo⁩)",
+          "بابا (⁦Papa⁩)",
+          "فيكتور (⁦Victor⁩)",
+          "ديلتا (⁦Delta⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يسمي البحارة الجانب الأيمن من السفينة؟",
+        "options": [
+          "ميسرة السفينة (⁦Port⁩)",
+          "مؤخرة السفينة (⁦Stern⁩)",
+          "مقدمة السفينة (⁦Bow⁩)",
+          "ميمنة السفينة (⁦Starboard⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحرف الأخير في الأبجدية اليونانية؟",
+        "options": [
+          "أوميغا",
+          "ميّو",
+          "إبسيلون",
+          "كابا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الهندسة المعمارية، يعبر مصطلح \"بيكلستاينر\" (⁦pecklesteiner⁩) عن مجموعة أبواب تتداخل مع بعضها البعض عند إغلاقها، ويمكن قفلها من خلال ثقب مفتاح واحد.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول خط تم بناؤه في مترو أنفاق لندن؟",
+        "options": [
+          "الخط الدائري (⁦Circle Line⁩)",
+          "خط بيكرلو (⁦Bakerloo Line⁩)",
+          "خط متروبوليتان (⁦Metropolitan Line⁩)",
+          "خط فيكتوريا (⁦Victoria Line⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في التعبيرات المجازية، عندما يقال إن شخصاً ما يفتقر إلى الخبرة، يُوصف بأنه يمثل أي لون؟",
+        "options": [
+          "الأحمر",
+          "الأزرق",
+          "الأصفر",
+          "الأخضر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرهاب المعروف بـ \"سينوفوبيا\" (⁦Cynophobia⁩)‏؟",
+        "options": [
+          "الخوف من الكلاب",
+          "الخوف من الطيور",
+          "الخوف من الطيران",
+          "الخوف من الجراثيم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست شركة نينتندو (⁦Nintendo⁩)‏؟",
+        "options": [
+          "19 أكتوبر 1891",
+          "23 سبتمبر 1889",
+          "4 مارس 1887",
+          "27 ديسمبر 1894"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تشرق الشمس من جهة الشمال.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مخترع أول قالب شوكولاتة صلبة في التاريخ عام 1847‏؟",
+        "options": [
+          "أندرو جونسون",
+          "جون كادبوري",
+          "جون تايلر",
+          "جوزيف فراي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الشكل الهندسي المستخدم عادةً في لافتات التوقف في الشوارع؟",
+        "options": [
+          "ثُماني الأضلاع",
+          "سُداسي الأضلاع",
+          "دائرة",
+          "مثلث"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المدن الأمريكية لا توجد بها دار لسك العملات المعدنية تابعة للولايات المتحدة؟",
+        "options": [
+          "سان فرانسيسكو، كاليفورنيا",
+          "سانت لويس، ميزوري",
+          "فيلادلفيا، بنسيلفانيا",
+          "ويست بوينت، نيويورك"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المجرم الذي يقوم بـ \"تزييف الحسابات والكتب المالية\" (⁦Cook the books⁩) قد ارتكب أي نوع من السلوكيات غير القانونية؟",
+        "options": [
+          "غسيل الأموال",
+          "الابتزاز المالي",
+          "الاحتيال المحاسبي",
+          "الابتزاز والتهديد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الأصلي الذي تأسس به بنك أمريكا (⁦Bank of America⁩) في البداية؟",
+        "options": [
+          "بنك لونغ آيلاند (⁦Bank of Long Island⁩)",
+          "بنك بنسيلفانيا (⁦Bank of Pennsylvania⁩)",
+          "بنك شارلوت (⁦Bank of Charlotte⁩)",
+          "بنك إيطاليا (⁦Bank of Italy⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_1",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الاسم الذي كان يُطلق تاريخياً على المدينة التركية المعروفة حالياً بإسطنبول؟",
+        "options": [
+          "القسطنطينية",
+          "هودافينديغار",
+          "سوغوت",
+          "أدريانوبل"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول هي الأصغر من حيث عدد السكان؟",
+        "options": [
+          "سلوفاكيا",
+          "النرويج",
+          "فنلندا",
+          "هونغ كونغ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المدينة البولندية التي يعرفها الألمان باسم دانزيغ؟",
+        "options": [
+          "وارسو",
+          "زاكوباني",
+          "غدانسك",
+          "بوزنان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تسبق إسرائيل نيويورك بـ 7 ساعات زمنية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "سان مارينو هي الدولة الوحيدة المحاطة بالكامل بدولة أخرى.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تورونتو هي عاصمة دولة كندا الواقعة في أمريكا الشمالية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول التي تفوق أستراليا مساحةً؟",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "6"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من لغات الإنويت التالية كانت الأولى في استخدام نظام كتابة فريد لا يعتمد على الأبجدية اللاتينية؟",
+        "options": [
+          "الإنوينّاكتونية",
+          "الغرينلاندية",
+          "الإنوبياتية",
+          "الإنوكتيتوتية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم النشيد الوطني الكندي؟",
+        "options": [
+          "يا كندا",
+          "يا أيتها القيقب الحمراء",
+          "الراية المزينة بأوراق الشجر",
+          "مارش إسقاط القرص"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حركة المرور في اليابان تكون على الجانب الأيسر من الطريق.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تقع بلدة لانفايربولغوينغيلغوغيريتشويرندروبولانتيسيليوغوغوغوتش (⁦Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch⁩) في أي جزيرة ويلزية؟",
+        "options": [
+          "باري",
+          "باردسي",
+          "أنجلسي",
+          "كالدي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الرسمية في ليختنشتاين؟",
+        "options": [
+          "الفرنسية",
+          "الإنجليزية",
+          "الإيطالية",
+          "الألمانية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كل اللغات التالية تُصنف ضمن اللغات الفنلندية الأوغرية ما عدا:",
+        "options": [
+          "السامودية",
+          "المجرية",
+          "الفنلندية",
+          "الإستونية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع المنطقة المعروفة باسم مثلث برمودا؟",
+        "options": [
+          "شمال المحيط الهادئ، بين اليابان والولايات المتحدة",
+          "شمال المحيط الأطلسي، بين فلوريدا وبورتوريكو",
+          "في البحر الكاريبي",
+          "جنوب المحيط الهادئ، بعيداً عن تشيلي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأوبلاستات (المحافظات) الروسية التالية تشترك في الحدود مع بولندا؟",
+        "options": [
+          "سامارا",
+          "نيجني نوفغورود",
+          "كالينينغراد",
+          "أومسك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكنك السير مشياً على الأقدام من النرويج إلى كوريا الشمالية عبر المرور بروسيا فقط.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة في ولاية تكساس تُلقب بـ \"الوردة الصفراء لتكساس\"؟",
+        "options": [
+          "أماريلو",
+          "كوربوس كريستي",
+          "فريسكو",
+          "هيوستن"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المدن تقع على خط طول 4 درجات شرقاً؟",
+        "options": [
+          "ريو دي جانيرو",
+          "أمستردام",
+          "تورونتو",
+          "هونغ كونغ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مدينة تقع جامعة هارفارد؟",
+        "options": [
+          "بروفيدنس",
+          "نيويورك",
+          "كامبريدج",
+          "واشنطن العاصمة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع سلسلة جبال هونوا (⁦Hunua Ranges⁩)‏؟",
+        "options": [
+          "نيبال",
+          "الصين",
+          "المكسيك",
+          "نيوزيلندا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_10",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 10",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي قارة تُعتبر الأكبر والأكثر اكتظاظاً بالسكان في العالم؟",
+        "options": [
+          "آسيا",
+          "أفريقيا",
+          "أوروبا",
+          "أمريكا الشمالية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الأصلي لمدينة هو تشي منه؟",
+        "options": [
+          "هانوي",
+          "سايغون",
+          "دار السلام",
+          "أنغكور وات"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي لاوس؟",
+        "options": [
+          "منطقة",
+          "نهر",
+          "دولة",
+          "مدينة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تقع صحراء سونوران في شرق أفريقيا.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة الولايات المتحدة؟",
+        "options": [
+          "واشنطن العاصمة",
+          "لوس أنجلوس، كاليفورنيا",
+          "مدينة نيويورك، نيويورك",
+          "هيوستن، تكساس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المتحف الوطني الذي ستجده في كوبرستاون، نيويورك؟",
+        "options": [
+          "متحف المتروبوليتان للفنون",
+          "القاعة الوطنية لمشاهير البيسبول",
+          "القاعة الوطنية لمشاهير الألعاب",
+          "متحف الفن الحديث"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية داكوتا الجنوبية؟",
+        "options": [
+          "سيوكس فالز",
+          "رابيد سيتي",
+          "بيير",
+          "واترتاون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس مدينة في المملكة العربية السعودية؟",
+        "options": [
+          "الرياض",
+          "مكة",
+          "المدينة",
+          "دبي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ليست في أفريقيا؟",
+        "options": [
+          "غيانا",
+          "السنغال",
+          "ليبيريا",
+          "الصومال"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الأولى عالمياً من حيث عدد البراكين النشطة تاريخياً؟",
+        "options": [
+          "اليابان",
+          "إندونيسيا",
+          "الولايات المتحدة الأمريكية",
+          "الهند"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم منطقة زمنية توجد في الصين؟",
+        "options": [
+          "3",
+          "4",
+          "1",
+          "2"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة أوروبية تشتهر بلقب \"مدينة النور\"؟",
+        "options": [
+          "روما",
+          "لندن",
+          "مدريد",
+          "باريس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم إحدى اللغات الآرامية الحديثة التي يتحدث بها السكان اليهود من شمال غرب العراق؟",
+        "options": [
+          "ليشانا ديني",
+          "هولاولا",
+          "ليشان ديدان",
+          "الآرامية الكلدانية الحديثة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة بنغلاديش؟",
+        "options": [
+          "خولنا",
+          "دكا",
+          "لندن",
+          "لاهور"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الجزر الأربع هي الأكبر مساحة؟",
+        "options": [
+          "بريطانيا العظمى",
+          "كوبا",
+          "بورنيو",
+          "مدغشقر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة بيرو؟",
+        "options": [
+          "سانتياغو",
+          "مونتيفيديو",
+          "بوينس آيرس",
+          "ليما"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كل الدول التالية لديها مطالبات رسمية بأراضٍ في القارة القطبية الجنوبية (أنتاركتيكا) باستثناء:",
+        "options": [
+          "الولايات المتحدة",
+          "أستراليا",
+          "تشيلي",
+          "النرويج"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية لا تعترف بأرمينيا كدولة مستقلة؟",
+        "options": [
+          "إيران",
+          "باكستان",
+          "تركيا",
+          "أذربيجان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المجر (⁦Hungary⁩) هي الدولة الوحيدة في العالم التي يبدأ اسمها باللغة الإنجليزية بحرف ⁦H⁩.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_11",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 11",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في أي قارة تقع دولة غيانا؟",
+        "options": [
+          "أمريكا الجنوبية",
+          "أفريقيا",
+          "أمريكا الشمالية",
+          "آسيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي محيط يحد الساحل الغربي للولايات المتحدة؟",
+        "options": [
+          "المحيط الأطلسي",
+          "المحيط الهادئ",
+          "المحيط الهندي",
+          "المحيط المتجمد الشمالي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الحدث الذي أدى إلى إضافة تاج إلى علم ليختنشتاين؟",
+        "options": [
+          "تتويج الأمير يوهان الأول جوزيف عام 1805",
+          "مرسوم تشارلز السادس عام 1719",
+          "الألعاب الأولمبية لعام 1936",
+          "توقيع دستور ليختنشتاين لعام 1862"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي السنة المكتوبة على علم ولاية ويسكونسن الأمريكية؟",
+        "options": [
+          "1634",
+          "1783",
+          "1901",
+          "1848"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تحد دولة بليز؟",
+        "options": [
+          "غواتيمالا",
+          "لاوس",
+          "بيرو",
+          "كينيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لا توجد صحاري في أوروبا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المحطات في خط سنترال (الخط المركزي) في مترو أنفاق لندن؟",
+        "options": [
+          "51",
+          "43",
+          "49",
+          "47"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول الجزرية تقع في منطقة الكاريبي؟",
+        "options": [
+          "فيجي",
+          "جزر المالديف",
+          "سيشل",
+          "باربادوس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول التي تحد قرغيزستان؟",
+        "options": [
+          "4",
+          "3",
+          "1",
+          "6"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية ويسكونسن الأمريكية؟",
+        "options": [
+          "ميلووكي",
+          "ماديسون",
+          "ويسكونسن ديلز",
+          "غرين باي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الجزر الواقعة في البحر الأبيض المتوسط تخضع للسيادة الفرنسية؟",
+        "options": [
+          "مايوركا",
+          "سردينيا",
+          "كورسيكا",
+          "مالطا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المدينة الأكثر اكتظاظاً بالسكان في الأمريكتين في عام 2015‏؟",
+        "options": [
+          "نيويورك",
+          "مكسيكو سيتي",
+          "لوس أنجلوس",
+          "ساو باولو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي جزء من ويلز تقع قرية لانفايربولغوينغيلغوغيريتشويرندروبوليلانتيسيليوغوغوغوتش؟",
+        "options": [
+          "أنغلزي",
+          "بيمبروكشاير",
+          "ريكسهام",
+          "بريدجند"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد تقع تالين؟",
+        "options": [
+          "فنلندا",
+          "إستونيا",
+          "السويد",
+          "بولندا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية يتميز علمها بوجود أسد أصفر يحمل سيفاً على خلفية حمراء داكنة؟",
+        "options": [
+          "كيريباتي",
+          "إسكتلندا",
+          "سريلانكا",
+          "بوتان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الطريقة الصحيحة لكتابة اسم عاصمة المجر باللغة الإنجليزية؟",
+        "options": [
+          "⁦Boodapest⁩",
+          "⁦Bhudapest⁩",
+          "⁦Budapast⁩",
+          "⁦Budapest⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سانتوريني هي جزيرة تابعة لأي دولة أوروبية؟",
+        "options": [
+          "اليونان",
+          "إيطاليا",
+          "إسبانيا",
+          "تركيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الولايات الاتحادية في ألمانيا؟",
+        "options": [
+          "13",
+          "16",
+          "32",
+          "25"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يقع نهر الفولغا؟",
+        "options": [
+          "بلغاريا",
+          "الهند",
+          "روسيا",
+          "السويد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_12",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 12",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي جزيرة في جزر الكناري كانت مسرحاً لواحدة من أسوأ كوارث الطيران في التاريخ بعد تصادم طائرتي جامبو؟",
+        "options": [
+          "تينيريفي",
+          "فورتيفنتورا",
+          "غران كناريا",
+          "ماوي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لا توجد مطارات في ليختنشتاين.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول العربية التالية لا يحتوي علمها على ألوان الوحدة العربية فقط؟",
+        "options": [
+          "الكويت",
+          "الإمارات العربية المتحدة",
+          "قطر",
+          "الأردن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر دولة في العالم؟",
+        "options": [
+          "الصين",
+          "كندا",
+          "البرازيل",
+          "الاتحاد الروسي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في استطلاع مؤشر السلام العالمي لعام 2016، من بين 163 دولة، ما كان ترتيب الولايات المتحدة الأمريكية؟",
+        "options": [
+          "103",
+          "10",
+          "59",
+          "79"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم السابق لدولة زيمبابوي الأفريقية؟",
+        "options": [
+          "زامبيا",
+          "روديسيا",
+          "موزمبيق",
+          "بولاوايو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يقع سور هادريان؟",
+        "options": [
+          "روما، إيطاليا",
+          "الإسكندرية، مصر",
+          "كارلايل، إنجلترا",
+          "دبلن، أيرلندا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مدينة يقع جيش التراكوتا (جيش الطين)‏؟",
+        "options": [
+          "بكين",
+          "شنغهاي",
+          "هونغ كونغ",
+          "شيان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر مدينة والعاصمة التجارية لسريلانكا؟",
+        "options": [
+          "كولومبو",
+          "موراتوا",
+          "نيغومبو",
+          "كاندي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يتميز الشعار الموجود على علم جمهورية طاجيكستان بشروق الشمس فوق الجبال تحت أي رمز؟",
+        "options": [
+          "طائر",
+          "تاج",
+          "منجل",
+          "شجرة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد النجوم الموجودة على علم نيوزيلندا؟",
+        "options": [
+          "5",
+          "2",
+          "4",
+          "0"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو مسار التسلق الأكثر شيوعاً لثاني أعلى جبل في العالم (جبل ⁦K2⁩)‏؟",
+        "options": [
+          "ماجيك لاين",
+          "مسار سيسين",
+          "المسار البولندي",
+          "حافة أبروتسي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر جزيرة غير قارية في العالم؟",
+        "options": [
+          "جرينلاند",
+          "غينيا الجديدة",
+          "بورنيو",
+          "مدغشقر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية نيفادا الأمريكية؟",
+        "options": [
+          "لاس فيغاس",
+          "كارسن سيتي",
+          "هندرسون",
+          "رينو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كل ما يلي عبارة عن بلدات/قرى في دولة كيريباتي الواقعة في المحيط الهادئ باستثناء:",
+        "options": [
+          "رونغاتا",
+          "لندن",
+          "أوروتورا",
+          "واشنطن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية حظرت استخدام فحوصات السلالة الجينية الشخصية؟",
+        "options": [
+          "النمسا",
+          "كندا",
+          "السويد",
+          "ألمانيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المدن ليست في إنجلترا؟",
+        "options": [
+          "إدنبرة",
+          "أكسفورد",
+          "مانشستر",
+          "ساوثهامبتون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة سورينام؟",
+        "options": [
+          "أنتاناناريفو",
+          "باراماريبو",
+          "تيغوسيغالبا",
+          "سوكري"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من اللغات الأوروبية التالية تُصنف كـ \"لغة معزولة\"؟",
+        "options": [
+          "الغاليسية",
+          "المالطية",
+          "الباسكية",
+          "المجرية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_13",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 13",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي عاصمة إسبانيا؟",
+        "options": [
+          "مدريد",
+          "برشلونة",
+          "إشبيلية",
+          "طليطلة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مدينة سانت لويس هي عاصمة ولاية ميزوري الأمريكية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "سُميت كولومبيا نسبةً إلى كريستوفر كولومبوس.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية أريزونا الأمريكية؟",
+        "options": [
+          "مونتغومري",
+          "تالاهاسي",
+          "رالي",
+          "فينيكس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مدينة يقع برج \"سبيس نيدل\"؟",
+        "options": [
+          "سياتل",
+          "لوس أنجلوس",
+          "تورونتو",
+          "فانكوفر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول تقع في أبعد نقطة عن بحر الصين الجنوبي؟",
+        "options": [
+          "ماليزيا",
+          "بنغلاديش",
+          "فيتنام",
+          "الفلبين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الجزر اليابانية التالية هي الأكبر مساحة؟",
+        "options": [
+          "هوكايدو",
+          "شيكوكو",
+          "هونشو",
+          "كيوشو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إمارة سيلاند هي دولة مجهرية غير معترف بها تقع قبالة سواحل أي دولة؟",
+        "options": [
+          "اليابان",
+          "أستراليا",
+          "الأرجنتين",
+          "المملكة المتحدة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة فنلندا؟",
+        "options": [
+          "هلسنكي",
+          "جبل طارق",
+          "مقدونيا",
+          "أوسلو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول التي تشترك مع إسبانيا في حدود برية؟",
+        "options": [
+          "2",
+          "5",
+          "3",
+          "4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم دولة تشترك في الحدود مع المكسيك؟",
+        "options": [
+          "2",
+          "4",
+          "3",
+          "1"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي منطقة في شرق أوروبا تشتهر بارتباطها بمصاصي الدماء؟",
+        "options": [
+          "سيليزيا",
+          "مقدونيا",
+          "سلوفاكيا",
+          "ترانسيلفانيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر مدينة الفاتيكان دولة مستقلة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي قارة (أو قارات) تقع إسبانيا عند أخذ جميع أراضيها بعين الاعتبار؟",
+        "options": [
+          "أوروبا وإفريقيا وآسيا",
+          "أوروبا وإفريقيا",
+          "أوروبا",
+          "أوروبا وآسيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لون 'خط سيركل' (الخط الدائري) على خريطة مترو أنفاق لندن؟",
+        "options": [
+          "الأحمر",
+          "الأزرق",
+          "الأصفر",
+          "الأخضر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة تقع بلدية أرتيخو؟",
+        "options": [
+          "المغرب",
+          "فرنسا",
+          "بلجيكا",
+          "إسبانيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع خطوط نازكا الشهيرة؟",
+        "options": [
+          "بيرو",
+          "البرازيل",
+          "كولومبيا",
+          "الإكوادور"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع مدينة تمبكتو؟",
+        "options": [
+          "أذربيجان، آسيا",
+          "مالي، إفريقيا",
+          "بنجلاديش، آسيا",
+          "موريتانيا، إفريقيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولتان المعاصرتان اللتان كانتا تعرفان باسم منطقة 'روديسيا' بين تسعينيات القرن التاسع عشر وعام 1980‏؟",
+        "options": [
+          "توجو وبنين",
+          "ليسوتو وسوازيلاند",
+          "زامبيا وزيمبابوي",
+          "رواندا وبوروندي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_14",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 14",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي أصغر دولة في العالم من حيث عدد السكان؟",
+        "options": [
+          "مدينة الفاتيكان",
+          "ناورو",
+          "جزر مارشال",
+          "ليختنشتاين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم المنطقة الصخرية الكبيرة التي تغطي معظم شرق كندا؟",
+        "options": [
+          "جبال روكي",
+          "الدرع الكندي",
+          "جبال الأبالاش",
+          "جبال الهيمالايا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يربط ممر خيبر الجبلي بين أي من الدولتين التاليتين؟",
+        "options": [
+          "الهند ونيبال",
+          "باكستان والهند",
+          "أفغانستان وباكستان",
+          "طاجيكستان وقيرغيزستان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تقع دولة البوسنة والهرسك في منطقة بحر البلطيق في أوروبا.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة رومانيا؟",
+        "options": [
+          "بوخارست",
+          "براتيسلافا",
+          "بلجراد",
+          "بودابست"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المدن الأمريكية يقل عدد سكانها عن مليون نسمة？",
+        "options": [
+          "فينيكس، أريزونا",
+          "سان فرانسيسكو، كاليفورنيا",
+          "سان أنطونيو، تكساس",
+          "فيلادلفيا، بنسيلفانيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية ميشيغان الأمريكية؟",
+        "options": [
+          "كالامازو",
+          "آن أربور",
+          "لانسينغ",
+          "ديترويت"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أبعد مستوطنة بشرية في أقصى الشمال يقطنها سكان على مدار العام؟",
+        "options": [
+          "ناغورسكوي، روسيا",
+          "محطة ماكموردو، القارة القطبية الجنوبية",
+          "هونينغسفاغ، النرويج",
+          "أليرت، كندا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الولايات الأمريكية الأربع التي تلتقي حدودها في نقطة واحدة (الولايات الزوايا الأربع)‏؟",
+        "options": [
+          "يوتا، كولورادو، أريزونا، نيومكسيكو",
+          "أوريغون، أيداهو، نيفادا، يوتا",
+          "كانساس، أوكلاهوما، أركنساس، لويزيانا",
+          "داكوتا الجنوبية، مينيسوتا، نبراسكا، آيوا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الوطنية الرسمية في باكستان؟",
+        "options": [
+          "الهندية",
+          "الأوردية",
+          "البنجابية",
+          "البشتوية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة يقع نهر تايدونغ؟",
+        "options": [
+          "كوريا الجنوبية",
+          "اليابان",
+          "كوريا الشمالية",
+          "الصين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ليست الدولة الوحيدة التي يبدأ اسمها بذلك الحرف في الأبجدية الإنجليزية؟",
+        "options": [
+          "قطر",
+          "اليمن",
+          "عُمان",
+          "زامبيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع منطقة 'بير طويل'، وهي أرض غير مأهولة بالسكان لا تطالب بها أي دولة، على الحدود بين أي دولتين؟",
+        "options": [
+          "مصر والسودان",
+          "إسرائيل والأردن",
+          "تشاد وليبيا",
+          "العراق والمملكة العربية السعودية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم شبه الجزيرة التي تضم إسبانيا والبرتغال؟",
+        "options": [
+          "شبه الجزيرة الأوروبية",
+          "شبه الجزيرة الإيبيرية",
+          "شبه جزيرة بيلوبونيز",
+          "شبه الجزيرة الإسكندنافية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تقع المقاطعات الإسبانية التالية في شمال إسبانيا باستثناء مقاطعة واحدة، فما هي؟",
+        "options": [
+          "أستورياس",
+          "نافارا",
+          "مرسية",
+          "ليون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مع أي دولة تتشارك فرنسا أطول حدود برية لها؟",
+        "options": [
+          "ألمانيا",
+          "إسبانيا",
+          "كندا",
+          "البرازيل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس مقاطعة صينية؟",
+        "options": [
+          "يانغتسي",
+          "فوجيان",
+          "سيتشوان",
+          "غوانغدونغ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أوتاوا هي عاصمة كندا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأسماء التالية يعود لقلعة حقيقية؟",
+        "options": [
+          "فرانك كاسل",
+          "ريتشارد كاسل",
+          "قلعة إليزابيث",
+          "أوليفيا كاسل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_15",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 15",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أين تقع أقدم قاعدة إطلاق فضاء ما زالت تعمل في العالم؟",
+        "options": [
+          "كازاخستان",
+          "روسيا",
+          "إيران",
+          "الولايات المتحدة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المناطق الزمنية في روسيا؟",
+        "options": [
+          "6",
+          "11",
+          "24",
+          "16"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الجزر التي تطالب بها كل من اليابان وروسيا؟",
+        "options": [
+          "جزر باراسيل",
+          "جزر تشاغوس",
+          "جزر كوريل",
+          "جزر سبراتلي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ليست جزءاً من قارة آسيا؟",
+        "options": [
+          "جورجيا",
+          "روسيا",
+          "سنغافورة",
+          "سورينام"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تسمى مجموعة الجزر المتقاربة 'أرخبيل'.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تحتفل فنلندا بيوم استقلالها؟",
+        "options": [
+          "2 يناير",
+          "6 ديسمبر",
+          "12 نوفمبر",
+          "8 فبراير"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي ثاني أكبر مدينة في ليتوانيا؟",
+        "options": [
+          "بانيفيزيس",
+          "فيلنيوس",
+          "كاوناس",
+          "كلايبيدا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تشترك روسيا في حدود برية مع كوريا الشمالية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر بحيرة مياه عذبة في العالم؟",
+        "options": [
+          "بحيرة سوبيريور",
+          "بحر قزوين",
+          "بحيرة ميشيغان",
+          "بحيرة هورون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة موريشيوس؟",
+        "options": [
+          "بورت مورسبي",
+          "بورت لويس",
+          "بورت فيلا",
+          "بورت أو برانس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي قارة تقع دولة غامبيا؟",
+        "options": [
+          "آسيا",
+          "أمريكا الجنوبية",
+          "إفريقيا",
+          "أوروبا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت الأراضي الحديثة للبرتغال جزءاً من الإمبراطورية الرومانية في الماضي.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لا تشترك في حدود مع النمسا؟",
+        "options": [
+          "فرنسا",
+          "سلوفينيا",
+          "سويسرا",
+          "سلوفاكيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تبلغ مساحة غرينلاند تقريباً نفس مساحة قارة إفريقيا.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كوالالمبور هي عاصمة أي دولة؟",
+        "options": [
+          "إندونيسيا",
+          "سنغافورة",
+          "ماليزيا",
+          "تايلاند"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سيول هي عاصمة كوريا الشمالية.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة السنغال؟",
+        "options": [
+          "داكار",
+          "نواكشوط",
+          "كوناكري",
+          "مونروفيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم دولة تشترك في حدود برية مع لوكسمبورغ؟",
+        "options": [
+          "4",
+          "3",
+          "2",
+          "5"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المجموعتان العرقيتان الأكبر في بلجيكا هما الفلمنك والوالون.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_16",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 16",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "عاصمة البرازيل هي ريو دي جانيرو.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول التي تشترك في حدود برية مع روسيا؟ (دون احتساب المناطق المتنازع عليها)",
+        "options": [
+          "12",
+          "14",
+          "10",
+          "8"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول الأوروبية ليست عضواً في الاتحاد الأوروبي؟",
+        "options": [
+          "ليتوانيا",
+          "أيرلندا",
+          "النرويج",
+          "التشيك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر دولة في العالم من حيث المساحة؟",
+        "options": [
+          "كندا",
+          "الصين",
+          "الولايات المتحدة",
+          "روسيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يعود أصل اسم الأرجنتين إلى الكلمة اللاتينية التي تعني الفضة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة قبرص؟",
+        "options": [
+          "بافوس",
+          "نيقوسيا",
+          "ليماسول",
+          "لارنكا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول تبدأ عاصمتها بحرف الباء؟",
+        "options": [
+          "الأردن",
+          "الكويت",
+          "لبنان",
+          "قطر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المدن التالية ليست عاصمة دولة؟",
+        "options": [
+          "القاهرة",
+          "موسكو",
+          "بكين",
+          "سيدني"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الوحيدة في العالم التي لا يحتوي علمها على أربع زوايا قائمة؟",
+        "options": [
+          "نيبال",
+          "بنما",
+          "أنغولا",
+          "مصر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم المحيط الذي تقع فيه جزر هاواي؟",
+        "options": [
+          "المحيط الأطلسي",
+          "المحيط الهادئ",
+          "المحيط الهندي",
+          "المحيط المتجمد الشمالي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مقاطعة إنجليزية تقع مدينة بورتسموث؟",
+        "options": [
+          "أكسفوردشاير",
+          "باكنغهامشاير",
+          "هامبشاير",
+          "سري"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مقاطعة كندية عاصمتها هي تشارلوت تاون؟",
+        "options": [
+          "ساسكاتشوان",
+          "الأقاليم الشمالية الغربية",
+          "أونتاريو",
+          "جزيرة الأمير إدوارد"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لا توجد طرق برية تؤدي إلى مدينة جونو بآلاسكا أو تخرج منها.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الرسمية في بوتان؟",
+        "options": [
+          "اللاداخية",
+          "الدزونكا",
+          "الكارين",
+          "الغروما"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم السكان الأصليين لنيوزيلندا؟",
+        "options": [
+          "الفايكنج",
+          "البولينيزيون",
+          "الماوري",
+          "السامويون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أطول اسم مكان في الولايات المتحدة هو بحيرة 'تشارغوغوغوغمانشوغوغوغشوبوناغونغاماغ'، الواقعة بالقرب من ويبستر بولاية ماساتشوستس.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لم تكن جزءاً من الاتحاد السوفيتي؟",
+        "options": [
+          "رومانيا",
+          "تركمانستان",
+          "بيلاروسيا",
+          "طاجيكستان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يظهر أسد يحمل سيفاً على العلم الوطني لأي دولة؟",
+        "options": [
+          "ألبانيا",
+          "سريلانكا",
+          "زامبيا",
+          "مولدوفا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة تشيلي؟",
+        "options": [
+          "فالبارايسو",
+          "كوبيابو",
+          "سانتياغو",
+          "أنتوفاغاستا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_17",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 17",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "تقع مقاطعة نوفا سكوشا على الساحل الشرقي لكندا.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تنقسم جزيرة بورنيو في جنوب شرق آسيا سياسياً بين 3 دول.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية تكساس الأمريكية؟",
+        "options": [
+          "دالاس",
+          "هيوستن",
+          "أوستن",
+          "سان أنطونيو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو مقر مقاطعة كينغ في ولاية واشنطن؟",
+        "options": [
+          "بيلفيو",
+          "إينومكلاو",
+          "سكايكوميش",
+          "سياتل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ليس مكتوباً بلغتها الأصلية？",
+        "options": [
+          "سلوفاشكو",
+          "سومي",
+          "شوايتس",
+          "إيلادا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تمتلك علماً بلونين أفقيين أحمر وأبيض؟",
+        "options": [
+          "البحرين",
+          "موناكو",
+          "مالطا",
+          "ليختنشتاين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول الأفريقية يظهر سلاح ناري (بندقية) على علمها؟",
+        "options": [
+          "أوغندا",
+          "إثيوبيا",
+          "موزمبيق",
+          "نيجيريا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من اللغات التالية لا تستخدم الأبجدية اللاتينية؟",
+        "options": [
+          "التركية",
+          "السواحيلية",
+          "الفيتنامية",
+          "الجورجية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يحتوي علم بيلاروسيا على نمط تطريز باللونين الأحمر والأبيض على جانب السارية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة إستونيا؟",
+        "options": [
+          "هلسنكي",
+          "تالين",
+          "تارتو",
+          "ريغا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر جزيرة في كندا؟",
+        "options": [
+          "جزيرة الأمير إدوارد",
+          "جزيرة فانكوفر",
+          "جزيرة بافن",
+          "نيوفاوندلاند"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي ولاية أمريكية تقع في أقصى الشمال الشرقي؟",
+        "options": [
+          "نيويورك",
+          "جورجيا",
+          "فلوريدا",
+          "مين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الولايات في أستراليا؟",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "5"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا كانت كرة القدم تُسمى 'فوتبول' في إنجلترا، فماذا تُسمى كرة القدم الأمريكية هناك؟",
+        "options": [
+          "كومبول",
+          "كرة القدم الأمريكية",
+          "كرة اليد",
+          "تاتشداون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "جبل طارق، الواقع جنوب شبه الجزيرة الأيبيرية مباشرة، هو إقليم تابع لأي دولة في غرب أوروبا؟",
+        "options": [
+          "إسبانيا",
+          "البرتغال",
+          "المملكة المتحدة",
+          "فرنسا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع مدينة بومبي الأثرية؟",
+        "options": [
+          "شرق أفريقيا",
+          "أمريكا الجنوبية",
+          "بومبيلانوس",
+          "إيطاليا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة تقع منحدرات دوفر البيضاء؟",
+        "options": [
+          "المملكة المتحدة",
+          "الولايات المتحدة",
+          "هولندا",
+          "السويد"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة فيتنام؟",
+        "options": [
+          "دا نانغ",
+          "هانوي",
+          "هاي فونغ",
+          "مدينة هو تشي منه"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة إسكتلندا؟",
+        "options": [
+          "غلاسكو",
+          "دندي",
+          "إدنبرة",
+          "لندن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_18",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 18",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من دول يوغوسلافيا السابقة التالية هي دولة حبيسة (لا تطل على بحار)‏؟",
+        "options": [
+          "صربيا",
+          "البوسنة والهرسك",
+          "الجبل الأسود",
+          "كرواتيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي دولة تنتمي جزر ملوك (المعروفة بشكل غير رسمي باسم جزر التوابل)‏؟",
+        "options": [
+          "تشيلي",
+          "إندونيسيا",
+          "نيوزيلندا",
+          "فيجي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "دولة واحدة فقط في العالم يبدأ اسمها باللغة الإنجليزية بحرف '⁦Q⁩'.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مدينة هندية يقع تاج محل？",
+        "options": [
+          "مومباي",
+          "فريد آباد",
+          "ثين",
+          "أغرا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "غرينلاند هي جزء من أي مملكة؟",
+        "options": [
+          "الدنمارك",
+          "السويد",
+          "النرويج",
+          "المملكة المتحدة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تحت سيادة أي دولة تقع جزر أندمان ونيكوبار في جنوب شرق آسيا؟",
+        "options": [
+          "فيتنام",
+          "الهند",
+          "تايلاند",
+          "إندونيسيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة أستراليا؟",
+        "options": [
+          "سيدني",
+          "ملبورن",
+          "كانبرا",
+          "بريزبان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هي العملة الرسمية لجزر كوك؟",
+        "options": [
+          "الدولار الأمريكي",
+          "الجنيه الإسترليني",
+          "الدولار الأسترالي",
+          "الدولار النيوزيلندي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة بوركينا فاسو؟",
+        "options": [
+          "واغادوغو",
+          "ياوندي",
+          "ياموسوكرو",
+          "أبيدجان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الميناء الأكثر نشاطاً في أوروبا؟",
+        "options": [
+          "ميناء أنتويرب",
+          "ميناء روتردام",
+          "ميناء هامبورغ",
+          "ميناء أمستردام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "طوكيو هي عاصمة اليابان.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الولاية الوحيدة في الولايات المتحدة التي لا يملك علمها شكلاً رباعي الأضلاع؟",
+        "options": [
+          "فلوريدا",
+          "أيداهو",
+          "نيومكسيكو",
+          "أوهايو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مدينة الفاتيكان، أصغر دولة في العالم، محاطة بالكامل بأي دولة؟",
+        "options": [
+          "إيطاليا",
+          "فرنسا",
+          "إسبانيا",
+          "ألمانيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ولاية كاليفورنيا أكبر مساحةً من اليابان.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "القارة القطبية الجنوبية (أنتاركتيكا) هي أكبر صحراء في العالم.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الجزر اليابانية التالية هي الأكبر مساحة؟",
+        "options": [
+          "إكي",
+          "أودايبا",
+          "أوكيناوا",
+          "شيكوكو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة داخل المملكة المتحدة لا يمثلها علمها الوطني (علم الاتحاد)‏؟",
+        "options": [
+          "ويلز",
+          "إسكتلندا",
+          "أيرلندا",
+          "جزيرة وايت"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تطالب بالسيادة على إقليم كوسوفو المتنازع عليه؟",
+        "options": [
+          "كرواتيا",
+          "صربيا",
+          "ألبانيا",
+          "مقدونيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر صحراء حارة في العالم؟",
+        "options": [
+          "صحراء غوبي",
+          "صحراء موهافي",
+          "الصحراء الكبرى",
+          "صحراء كالاهاري"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_19",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 19",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أفريقيا هي عبارة عن دولة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة أفريقية تقع قناة السويس؟",
+        "options": [
+          "ليبيا",
+          "مصر",
+          "غانا",
+          "نيجيريا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم أكبر مدينة في ولاية تينيسي الأمريكية؟",
+        "options": [
+          "طيبة",
+          "الإسكندرية",
+          "ممفيس",
+          "الأقصر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بأي لقب تُعرف منطقة أكيهابارا اليابانية أيضاً؟",
+        "options": [
+          "نهر مشية القمر",
+          "مركز الأوتاكو",
+          "العيون الكبيرة",
+          "مدينة الكهرباء"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت دولة 'منغوليا' جزءاً من الاتحاد السوفيتي السابق.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الأرخبيلات (مجموعات الجزر) ليست جزءاً من المملكة المتحدة؟",
+        "options": [
+          "جزر أوركني",
+          "جزر القنال الإنجليزي",
+          "جزر سيلي",
+          "جزر شتلاند"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة سلوفينيا؟",
+        "options": [
+          "ماريبور",
+          "فيلينيه",
+          "ليوبليانا",
+          "تربوفلي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تقع ولاية رود آيلاند في الواقع على اليابسة الرئيسية للولايات المتحدة، على الرغم من اسمها (الذي يعني جزيرة رود).",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر بحيرة في القارة الأفريقية؟",
+        "options": [
+          "بحيرة فيكتوريا",
+          "بحيرة تنجانيقا",
+          "بحيرة ملاوي",
+          "بحيرة توركانا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لا تقع في أفريقيا؟",
+        "options": [
+          "بوركينا فاسو",
+          "سورينام",
+          "موزمبيق",
+          "الجزائر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة أوروبية يقع مقر منظمة الصحة العالمية؟",
+        "options": [
+          "المملكة المتحدة",
+          "فرنسا",
+          "سويسرا",
+          "بلجيكا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هناك جزيرة في اليابان تُدعى 'أوكونوشيما'، وتُعرف أيضاً باسم 'جزيرة الأرانب' نظراً لعدد الأرانب الهائل فيها.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الممر المائي الذي يربط المحيط الأطلسي بالبحر الأبيض المتوسط؟",
+        "options": [
+          "مضيق جبل طارق",
+          "ممر جبل طارق",
+          "المضائق الإسبانية",
+          "قناة طنجة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأنهار في المملكة العربية السعودية؟",
+        "options": [
+          "1",
+          "0",
+          "2",
+          "3"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مقاطعة كندية تقع مدينة مونتريال؟",
+        "options": [
+          "أونتاريو",
+          "نوفا سكوشا",
+          "كيبيك",
+          "ألبرتا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ألاسكا وهاواي هما الولايتان الأمريكيتان الوحيدتان اللتان تمتلكان منطقتين زمنيتين خاصتين بهما.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إيطاليا وأيرلندا هما الدولتان الوحيدتان في أوروبا اللتان تبدآن بحرف ⁦I⁩.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "عدد سكان ولاية نيويورك الأمريكية يعادل تقريباً عدد سكان دولة:",
+        "options": [
+          "بولندا",
+          "رومانيا",
+          "ألمانيا",
+          "المجر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي خامس أكبر دولة في العالم من حيث المساحة؟",
+        "options": [
+          "الولايات المتحدة",
+          "أستراليا",
+          "البرازيل",
+          "الهند"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_2",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في مقاطعة ألبرتا الكندية، تقع مدينة كالغاري في أقصى الشمال أكثر من مدينة إدمونتون.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أعلى جبل في العالم؟",
+        "options": [
+          "جبل غودوين أوستن",
+          "جبل إيفرست",
+          "كانغشينجونغا",
+          "أنابورا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "توجد مدينة تسمى روما في كل قارة على وجه الأرض.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر مدينة في كندا؟",
+        "options": [
+          "مونتريال",
+          "فانكوفر",
+          "أوتاوا",
+          "تورونتو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليست صفيحة تكتونية حقيقية؟",
+        "options": [
+          "صفيحة المحيط الأطلسي",
+          "صفيحة أمريكا الشمالية",
+          "الصفيحة الأوراسية",
+          "صفيحة نازكا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع قلعة مارلبورو (⁦Fort Marlborough⁩)‏؟",
+        "options": [
+          "سنغافورة",
+          "بنغكولو",
+          "لندن",
+          "دوفر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول في العالم تقريباً؟",
+        "options": [
+          "100",
+          "300",
+          "200",
+          "500"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة تمتلك المطار الأكثر ازدحاماً في العالم؟",
+        "options": [
+          "لندن، إنجلترا",
+          "شيكاغو، إلينوي، الولايات المتحدة الأمريكية",
+          "طوكيو، اليابان",
+          "أتلانتا، جورجيا، الولايات المتحدة الأمريكية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي حوض يصب نهر الأردن؟",
+        "options": [
+          "البحر الميت",
+          "بحر آرال",
+          "بحر قزوين",
+          "بحر سالتون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عاصمة إندونيسيا هي بالي.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2012، كم كان عدد سكان دولة \"ليختنشتاين\" الصغيرة المتحدثة بالألمانية في وسط أوروبا؟",
+        "options": [
+          "2,400",
+          "90,000",
+          "36,600",
+          "323,400"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر بحيرة مياه عذبة في العالم من حيث الحجم؟",
+        "options": [
+          "بحيرة سوبيريور",
+          "بحيرة هورون",
+          "بحيرة ميشيغان",
+          "بحيرة بايكال"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة أوروبية تمتلك أطول شبكة قنوات مائية في العالم؟",
+        "options": [
+          "برمنغهام",
+          "البندقية (فينيسيا)",
+          "أمستردام",
+          "برلين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو أطول نهر في أوروبا؟",
+        "options": [
+          "نهر الدانوب",
+          "نهر الفولغا",
+          "نهر الأورال",
+          "نهر الدنيبر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ليست جزءاً من إقليم إسكندنافيا؟",
+        "options": [
+          "النرويج",
+          "السويد",
+          "فنلندا",
+          "الدنمارك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الأفريقية التي تعد اللغة البرتغالية لغتها الرسمية؟",
+        "options": [
+          "بوتسوانا",
+          "الغابون",
+          "توغو",
+          "موزمبيق"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ميامي هي أكبر مدينة في ولاية فلوريدا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الإمارة الصغيرة التي تقع بين إسبانيا وفرنسا؟",
+        "options": [
+          "ليختنشتاين",
+          "أندورا",
+          "موناكو",
+          "سان مارينو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة صغيرة تقع بين حدود فرنسا وإسبانيا؟",
+        "options": [
+          "سان مارينو",
+          "الفاتيكان",
+          "أندورا",
+          "ليختنشتاين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي ثاني أكبر دولة في العالم من حيث المساحة؟",
+        "options": [
+          "روسيا",
+          "الصين",
+          "الولايات المتحدة الأمريكية",
+          "كندا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_20",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 20",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي أكبر دولة في العالم مساحةً وتعتمد منطقة زمنية واحدة فقط؟",
+        "options": [
+          "الصين",
+          "كندا",
+          "الهند",
+          "روسيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللغة الرسمية في كوستاريكا؟",
+        "options": [
+          "الإنجليزية",
+          "الإسبانية",
+          "البرتغالية",
+          "الكريولية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة نيوزيلندا؟",
+        "options": [
+          "أوكلاند",
+          "كرايستشرش",
+          "ويلينغتون",
+          "ملبورن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي مساحة مدينة الفاتيكان؟",
+        "options": [
+          "⁦0.10⁩ كم²",
+          "⁦0.86⁩ كم²",
+          "⁦12.00⁩ كم²",
+          "⁦0.44⁩ كم²"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي دولة يتبع أرخبيل سفالبارد؟",
+        "options": [
+          "النرويج",
+          "الدنمارك",
+          "آيسلندا",
+          "روسيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لم تكن جزءاً من يوغوسلافيا السابقة؟",
+        "options": [
+          "كرواتيا",
+          "ألبانيا",
+          "صربيا",
+          "مقدونيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل مدينة تارتو هي عاصمة إستونيا؟",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول الحبيسة التالية تقع بالكامل داخل دولة أخرى؟",
+        "options": [
+          "بوركينا فاسو",
+          "منغوليا",
+          "لوكسمبورغ",
+          "ليسوتو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يقع ممر كولشستر العلوي، المعروف باسم \"جسر رجل الأرنب\"؟",
+        "options": [
+          "مقاطعة فيرفاكس، فيرجينيا",
+          "ميدفورد، أوريغون",
+          "مقاطعة براكستون، فيرجينيا",
+          "ليمون غروف، كاليفورنيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة لاوس؟",
+        "options": [
+          "تاراوا",
+          "فيينتيان",
+          "فادوز",
+          "تيغوسيغالبا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أصغر ولاية في الولايات المتحدة؟",
+        "options": [
+          "مين",
+          "فيرمونت",
+          "رود آيلاند",
+          "ماساتشوستس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي سلسلة الجبال التي تمتد على طول الحدود بين إسبانيا وفرنسا؟",
+        "options": [
+          "جبال الألب",
+          "جبال الكاربات",
+          "جبال الأورال",
+          "جبال البرانس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "جمهورية مالطا هي أصغر دولة مجهرية في العالم.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الرسمي بالألمانية للسكك الحديدية الفيدرالية السويسرية؟",
+        "options": [
+          "⁦Schweizerische Nationalbahnen⁩",
+          "⁦Schweizerische Bundesbahnen⁩",
+          "⁦Bundesbahnen der Schweiz⁩",
+          "⁦Schweizerische Staatsbahnen⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة تركيا؟",
+        "options": [
+          "إسطنبول",
+          "إزمير",
+          "أنقرة",
+          "بورصة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة سويسرا؟",
+        "options": [
+          "زيورخ",
+          "فرانكفورت",
+          "فيينا",
+          "بيرن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية لا تُعتبر من الدول \"شديدة التنوع\" (التي تأوي عدداً كبيراً من الأنواع المستوطنة في العالم)‏؟",
+        "options": [
+          "تايلاند",
+          "بيرو",
+          "المكسيك",
+          "جنوب أفريقيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من دول المملكة المتحدة يظهر تنين على علمها؟",
+        "options": [
+          "إنجلترا",
+          "ويلز",
+          "أيرلندا الشمالية",
+          "اسكتلندا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع \"صحراء سونوران\"؟",
+        "options": [
+          "أمريكا الجنوبية",
+          "آسيا",
+          "أمريكا الشمالية",
+          "أفريقيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_3",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي عاصمة الولايات المتحدة الأمريكية؟",
+        "options": [
+          "واشنطن العاصمة",
+          "سياتل",
+          "ألباني",
+          "لوس أنجلوس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أحياء مدينة نيويورك يقع في أقصى الشمال؟",
+        "options": [
+          "كوينز",
+          "برونكس",
+          "بروكلين",
+          "مانهاتن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يرمز الحرف \"⁦C⁩\" في اسم العاصمة الأمريكية واشنطن (⁦Washington⁩, ⁦D.C⁩)‏؟",
+        "options": [
+          "كاليدونيا",
+          "كورنثيا",
+          "كولومبيا",
+          "سيتي (مدينة)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم يبلغ ارتفاع مبنى مركز التجارة العالمي الواحد (⁦One World Trade Center⁩) في مدينة نيويورك؟",
+        "options": [
+          "1,888 قدم",
+          "1,225 قدم",
+          "1,960 قدم",
+          "1,776 قدم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المعالم الجغرافية التالية عبارة عن شعاب مرجانية دائرية الشكل أو جزيرة أو سلسلة من الجزر الصغيرة؟",
+        "options": [
+          "جزيرة شعب مرجانية (أطول)",
+          "شبه جزيرة",
+          "برزخ",
+          "دلتا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بين أي دولتين تقع أطول حدود مشتركة في العالم؟",
+        "options": [
+          "تشيلي والأرجنتين",
+          "كندا والولايات المتحدة",
+          "روسيا والصين",
+          "الهند وباكستان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول متنزه وطني تم إنشاؤه في الولايات المتحدة؟",
+        "options": [
+          "سيكويا",
+          "يوسيميتي",
+          "يلوستون",
+          "روكي ماونتن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي معلم سياحي في أمريكا الشمالية تخدمه شركة الرحلات \"⁦Maid of the Mist⁩\" (خادمة الضباب)‏؟",
+        "options": [
+          "ويسلر، كولومبيا البريطانية",
+          "عالم ديزني",
+          "متنزه يوسيميتي الوطني",
+          "شلالات نياجرا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مدينة كندية يقع نُصب \"النيكل الكبير\" (⁦Big Nickel⁩)‏؟",
+        "options": [
+          "سودبوري، أونتاريو",
+          "كالغاري، ألبرتا",
+          "هاليفاكس، نوفا سكوشا",
+          "فيكتوريا، كولومبيا البريطانية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي قارة تقع دولة أنغولا؟",
+        "options": [
+          "أمريكا الجنوبية",
+          "أفريقيا",
+          "أوروبا",
+          "آسيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أصغر دولة في العالم؟",
+        "options": [
+          "ليسوتو",
+          "مدينة موناكو",
+          "الفاتيكان",
+          "تيتانيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة ألمانية تقع على نهر إيسار؟",
+        "options": [
+          "برلين",
+          "هامبورغ",
+          "دورتموند",
+          "ميونخ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عاصمة ولاية أوهايو الأمريكية هي مدينة تشيليكوث.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يُطلق على الكتلة الأرضية لتركيا الحديثة؟",
+        "options": [
+          "برزخ أوتوما",
+          "الأناضول",
+          "أوتوما",
+          "برزخ الأناضول"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تتميز بوجود ورقة قيقب على علمها؟",
+        "options": [
+          "المكسيك",
+          "البرازيل",
+          "كندا",
+          "الهند"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية تعتبر جزيرة؟",
+        "options": [
+          "أذربيجان",
+          "السلفادور",
+          "جيبوتي",
+          "قبرص"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مقاطعة إنجليزية يقع نصب ستونهنج (⁦Stonehenge⁩)‏؟",
+        "options": [
+          "ويلتشر",
+          "سومرست",
+          "كامبريا",
+          "هيرفوردشير"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المقاطعات في هولندا؟",
+        "options": [
+          "14",
+          "12",
+          "10",
+          "13"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المركز الإداري وأكبر مستوطنة في أرخبيل سفالبارد النرويجي؟",
+        "options": [
+          "سفيغروفا",
+          "ني آليسوند",
+          "لونغياربين",
+          "بارنتسبورغ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_4",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي عاصمة الهند؟",
+        "options": [
+          "نيودلهي",
+          "بكين",
+          "مونتريال",
+          "تيثي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم الدولة السابقة التي خلفتها دول مثل صربيا وكرواتيا وسلوفينيا؟",
+        "options": [
+          "تشيكوسلوفاكيا",
+          "يوغوسلافيا",
+          "أبخازيا",
+          "أوسيتيا الجنوبية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة البرازيل؟",
+        "options": [
+          "ريو دي جانيرو",
+          "ساو باولو",
+          "برازيليا",
+          "كوريتيبا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليست جزيرة تابعة للفلبين؟",
+        "options": [
+          "لوزون",
+          "مينداناو",
+          "بالاوان",
+          "جاوة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك سويسرا أربع لغات وطنية، والإنجليزية واحدة منها.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية تكساس الأمريكية؟",
+        "options": [
+          "دالاس",
+          "أوستن",
+          "سانتا في",
+          "هيوستن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "غرينلاند مغطاة بالعشب وآيسلندا مغطاة بالجليد.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "غوتنبرغ هي عاصمة السويد.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول الأفريقية تدرج اللغة الإسبانية كلغة رسمية لها؟",
+        "options": [
+          "غينيا الاستوائية",
+          "غينيا",
+          "الكاميرون",
+          "أنغولا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مقاطعة إنجليزية تقع جامعة شرق أنجليا؟",
+        "options": [
+          "سوفولك",
+          "نورفولك",
+          "إسكس",
+          "كامبريدجشاير"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي قارة تقع سلسلة جبال الأنديز؟",
+        "options": [
+          "أوروبا",
+          "آسيا",
+          "أمريكا الجنوبية",
+          "أفريقيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية واشنطن في الولايات المتحدة؟",
+        "options": [
+          "واشنطن العاصمة",
+          "سياتل",
+          "يوكون",
+          "أولمبيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تحمل الرمز الاختصاري \"⁦CH⁩\"؟",
+        "options": [
+          "سويسرا",
+          "الصين",
+          "كندا",
+          "لا توجد دولة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة سلوفاكيا؟",
+        "options": [
+          "صوفيا",
+          "براتيسلافا",
+          "ليوبليانا",
+          "سراييفو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم المنطقة التي تربط بين باكستان والهند والصين وتخضع لسيادة متنازع عليها؟",
+        "options": [
+          "أندورا",
+          "جبل طارق",
+          "كشمير",
+          "كوين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "واغادوغو هي عاصمة أي دولة أفريقية؟",
+        "options": [
+          "جمهورية أفريقيا الوسطى",
+          "السنغال",
+          "زامبيا",
+          "بوركينا فاسو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية تقع ضمن منطقة اليورو ولكنها خارج منطقة شنغن؟",
+        "options": [
+          "قبرص",
+          "مالطا",
+          "اليونان",
+          "البرتغال"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لون الدائرة الموجودة على علم اليابان؟",
+        "options": [
+          "أبيض",
+          "أحمر",
+          "أصفر",
+          "أسود"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الأماكن يقع في كورنوال؟",
+        "options": [
+          "مدريد",
+          "أليكانتي",
+          "برشلونة",
+          "لشبونة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_5",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "يمتد الطريق 66 في الولايات المتحدة عبر البر الرئيسي لأمريكا بالكامل، من كاليفورنيا إلى نيويورك.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة أوروبية تقع جزيرة غوتلاند؟",
+        "options": [
+          "الدانمرك",
+          "السويد",
+          "النرويج",
+          "ألمانيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حتى عام 1939، كانت لاوس تسمى سيام.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المناطق الزمنية في روسيا؟",
+        "options": [
+          "8",
+          "5",
+          "2",
+          "11"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة مقاطعة كولومبيا البريطانية في كندا؟",
+        "options": [
+          "فيكتوريا",
+          "فانكوفر",
+          "هوب",
+          "كيلونا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يقع المقر الرئيسي لسلسلة مطاعم الوجبات السريعة \"باندا إكسبريس\"؟",
+        "options": [
+          "ساكرامنتو، كاليفورنيا",
+          "روزميد، كاليفورنيا",
+          "فريزنو، كاليفورنيا",
+          "سان دييغو، كاليفورنيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المدن التالية هي عاصمة لاتفيا؟",
+        "options": [
+          "مينسك",
+          "تالين",
+          "ريغا",
+          "فيلنيوس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر دولة إسلامية في العالم؟",
+        "options": [
+          "باكستان",
+          "المملكة العربية السعودية",
+          "إيران",
+          "إندونيسيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك النرويج مساحة برية أكبر من السويد.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تسمانيا هي ولاية جزيرية تابعة لأستراليا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة تقع جزيرة بيكيني الحلقية؟",
+        "options": [
+          "فيجي",
+          "جزر الكريسماس",
+          "جزر مارشال",
+          "جزر البهاما"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي محيط تقع جزيرة ريونيون؟",
+        "options": [
+          "المحيط الأطلسي",
+          "جنوب المحيط الهادئ",
+          "شمال المحيط الهادئ",
+          "المحيط الهندي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "توجد جزيرة تسمى \"جاوة\".",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "توجد 47 محافظة في اليابان.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الوحيدة التي تحد كلاً من الأوروغواي وفنزويلا؟",
+        "options": [
+          "المكسيك",
+          "تشيلي",
+          "البرازيل",
+          "بنما"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الولاية الأمريكية الوحيدة التي تقع بالكامل ضمن منطقة جبال الأبالاش؟",
+        "options": [
+          "بنسلفانيا",
+          "ألاباما",
+          "كنتاكي",
+          "فرجينيا الغربية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي تمتلك ثلاث عواصم؟",
+        "options": [
+          "جنوب أفريقيا",
+          "الصومال",
+          "الصين",
+          "المملكة المتحدة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أعلى جبل في كندا؟",
+        "options": [
+          "جبل تريمبلانت",
+          "جبل لوغان",
+          "جبل ويسلر",
+          "الجبل الأزرق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المدينة الروسية المعروفة اليوم باسم كونيغسبرغ (عاصمة بروسيا الشرقية سابقاً)‏؟",
+        "options": [
+          "قازان",
+          "كورسك",
+          "كالينينغراد",
+          "كراسنودار"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_6",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 6",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي أكبر مدينة في المغرب؟",
+        "options": [
+          "الدار البيضاء",
+          "الرباط",
+          "فاس",
+          "سلا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة جزر برمودا؟",
+        "options": [
+          "سانتو دومينغو",
+          "هاميلتون",
+          "سان خوان",
+          "هافانا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحرف الخامس عشر في الأبجدية اليونانية؟",
+        "options": [
+          "سيغما (Σ)",
+          "باي (Π)",
+          "أوميكرون (Ο)",
+          "نيو (Ν)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع مدينة هارلم؟",
+        "options": [
+          "ألمانيا",
+          "الولايات المتحدة",
+          "سويسرا",
+          "هولندا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ألاسكا هي أكبر ولاية في الولايات المتحدة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الشيء المميز في بحيرة تيتيكاكا؟",
+        "options": [
+          "أطول بحيرة في العالم",
+          "أعلى بحيرة قابلة للملاحة في العالم",
+          "أعمق بحيرة في العالم",
+          "تظل متجمدة طوال العام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مع كم دولة تشترك الولايات المتحدة في حدود برية؟",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "فيتنام هي الدولة الوحيدة في العالم التي يبدأ اسمها بحرف الـ ⁦V⁩.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة تقع مدينة ريو دي جانيرو؟",
+        "options": [
+          "البرازيل",
+          "بيرو",
+          "تشيلي",
+          "فنزويلا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللقب المميز لولاية ديلاوير الأمريكية؟",
+        "options": [
+          "الولاية الخمسون",
+          "الولاية الأولى",
+          "الولاية الثانية",
+          "الولاية السادسة عشرة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع مدينة البتراء الأثرية؟",
+        "options": [
+          "مصر",
+          "إسرائيل",
+          "الأردن",
+          "إيطاليا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أستراليا أكبر من غرينلاند في المساحة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكلمة الفنلندية لاسم \"فنلندا\"؟",
+        "options": [
+          "سومي",
+          "إيستي",
+          "ماجيارورسزاغ",
+          "سويري"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي ولاية أمريكية تقع مدينة فرانكنموث الملقبة بـ \"بافاريا الصغيرة\"؟",
+        "options": [
+          "بنسلفانيا",
+          "ميشيغان",
+          "كنتاكي",
+          "فرجينيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يحتوي علم جنوب أفريقيا على 7 ألوان.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد تقع بلدات بروجيليت وأرلون وأث؟",
+        "options": [
+          "أندورا",
+          "فرنسا",
+          "لوكسمبورغ",
+          "بلجيكا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي نهر تم بناء سد عليه لإنشاء بحيرة غاتون وقناة بنما؟",
+        "options": [
+          "نهر تشاغريس",
+          "نهر تويرا",
+          "نهر تشوكوناكي",
+          "نهر تشيبو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "على حدود أي دولتين تقع جبال البرانس؟",
+        "options": [
+          "إيطاليا وسويسرا",
+          "فرنسا وإسبانيا",
+          "النرويج والسويد",
+          "روسيا وأوكرانيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بريدجتاون هي عاصمة أي دولة جزيرية في البحر الكاريبي؟",
+        "options": [
+          "كوبا",
+          "جامايكا",
+          "باربادوس",
+          "دومينيكا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_7",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 7",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "بروم هي بلدة تقع في أي ولاية أسترالية؟",
+        "options": [
+          "أستراليا الغربية",
+          "الإقليم الشمالي",
+          "أستراليا الجنوبية",
+          "تسمانيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول التي تشكل المملكة المتحدة؟",
+        "options": [
+          "اثنتان",
+          "أربعة",
+          "ثلاثة",
+          "واحدة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة إندونيسيا؟",
+        "options": [
+          "باندونغ",
+          "ميدان",
+          "جاكرتا",
+          "بالمبانغ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أكبر ولاية في الولايات المتحدة الأمريكية؟",
+        "options": [
+          "كاليفورنيا",
+          "تكساس",
+          "واشنطن",
+          "ألاسكا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي جنسية تشير البادئة (⁦Sino⁩-) (كما في ⁦Sino-American⁩)‏؟",
+        "options": [
+          "الصينية",
+          "اليابانية",
+          "الروسية",
+          "الهندية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم الدوقية الكبرى الوحيدة المتبقية في العالم؟",
+        "options": [
+          "الجبل الأسود",
+          "لوكسمبورغ",
+          "ليختنشتاين",
+          "أندورا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي تضم أكبر عدد من السكان اليابانيين خارج اليابان؟",
+        "options": [
+          "الصين",
+          "روسيا",
+          "البرازيل",
+          "الولايات المتحدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم مناطق الصيد الغنية سابقاً قبالة جزيرة نيوفاوندلاند الكندية؟",
+        "options": [
+          "الحاجز المرجاني العظيم",
+          "خندق ماريانا",
+          "خليج هدسون",
+          "الضفاف الكبرى"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة المحاطة بالكامل بجنوب أفريقيا؟",
+        "options": [
+          "ليسوتو",
+          "سوازيلاند",
+          "بوتسوانا",
+          "زيمبابوي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "جسد تمثال أبي الهول المصري مستوحى من أي حيوان؟",
+        "options": [
+          "الثور",
+          "الأسد",
+          "الحصان",
+          "الكلب"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة بيلاروسيا؟",
+        "options": [
+          "وارسو",
+          "كييف",
+          "مينسك",
+          "فيلنيوس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ليتوانيا؟",
+        "options": [
+          "تالين",
+          "هلسنكي",
+          "ريغا",
+          "فيلنيوس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة تُعرف باسم \"عاصمة الورد في العالم\"؟",
+        "options": [
+          "تايلر، تكساس",
+          "سان دييجو، كاليفورنيا",
+          "ميامي، فلوريدا",
+          "أناهيم، كاليفورنيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الولاية الأمريكية التي تُلقب بـ \"الولاية الذهبية\"؟",
+        "options": [
+          "فلوريدا",
+          "كاليفورنيا",
+          "نيومكسيكو",
+          "ألاسكا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة جرينلاند؟",
+        "options": [
+          "سيسيميوت",
+          "نارساك",
+          "نوك",
+          "مانيتسوك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة كوريا الجنوبية؟",
+        "options": [
+          "بيونغ يانغ",
+          "دايغو",
+          "كيتاكيوشو",
+          "سول"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الولايات الأمريكية التي تبدأ بحرف الـ ⁦K⁩‏؟",
+        "options": [
+          "ولايتان",
+          "ولاية واحدة",
+          "لا يوجد",
+          "ثلاث ولايات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس ولاية أو إقليماً أسترالياً؟",
+        "options": [
+          "نيو ساوث ويلز",
+          "ألبرتا",
+          "فيكتوريا",
+          "كوينزلاند"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي قارة تقع سلسلة جبال الألب؟",
+        "options": [
+          "أمريكا الشمالية",
+          "آسيا",
+          "أوروبا",
+          "أفريقيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_8",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 8",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "كولومبيا هي ثالث أكبر دولة (من حيث المساحة بالكيلومتر المربع) في أمريكا الجنوبية.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة جامايكا؟",
+        "options": [
+          "سان خوان",
+          "كينغستون",
+          "بورت أو برانس",
+          "بريدج تاون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة سيشل؟",
+        "options": [
+          "لواندا",
+          "نجامينا",
+          "فيكتوريا",
+          "طرابلس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الولاية الأمريكية المعروفة أيضاً باسم \"ولاية النجمة الوحيدة\"؟",
+        "options": [
+          "ألاباما",
+          "تينيسي",
+          "كنتاكي",
+          "تكساس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المقاطعات في جمهورية أيرلندا؟",
+        "options": [
+          "26",
+          "32",
+          "28",
+          "30"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين توجد \"السلالم الإسبانية\"؟",
+        "options": [
+          "برشلونة، إسبانيا",
+          "روما، إيطاليا",
+          "برلين، ألمانيا",
+          "لندن، إنجلترا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مساحة سطح روسيا أكبر بقليل من مساحة سطح كوكب بلوتو القزم.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الجزر التي تمتلكها الكويت؟",
+        "options": [
+          "3",
+          "6",
+          "2",
+          "9"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة الدنمارك؟",
+        "options": [
+          "كوبنهاجن",
+          "آرهوس",
+          "أودنسه",
+          "ألبورغ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة الإكوادور؟",
+        "options": [
+          "بوغوتا",
+          "كيتو",
+          "سانتياغو",
+          "سانتا في"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تُعتبر واشنطن العاصمة ولاية أمريكية.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أصغر دولة في أمريكا الجنوبية من حيث المساحة؟",
+        "options": [
+          "البرازيل",
+          "أوروغواي",
+          "شيلي",
+          "سورينام"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول المستقلة في قارة أمريكا الجنوبية؟",
+        "options": [
+          "12",
+          "8",
+          "9",
+          "10"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أصغر مقاطعة في كندا؟",
+        "options": [
+          "نيو برونزويك",
+          "جزيرة الأمير إدوارد",
+          "نوفا سكوشا",
+          "يوكون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمتلك جنوب أفريقيا أكثر من عاصمة واحدة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المناطق الأفريقية لا تحد جمهورية الكونغو الديمقراطية مباشرة؟",
+        "options": [
+          "جمهورية أفريقيا الوسطى",
+          "تنزانيا",
+          "زامبيا",
+          "السودان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة بغرب أفريقيا تقع مدينة تمبكتو التاريخية؟",
+        "options": [
+          "مالي",
+          "السنغال",
+          "النيجر",
+          "بوركينا فاسو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أطول نهر في العالم؟",
+        "options": [
+          "نهر ميزوري",
+          "نهر النيل",
+          "نهر الأمازون",
+          "نهر يانغتسي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من عائلات اللغات التالية هي الأكثر جدلاً بين علماء اللغة الحديثين؟",
+        "options": [
+          "الصينية التبتية",
+          "الدرافيدية",
+          "الألطية",
+          "الهندية الأوروبية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-geography_quiz_9",
+    "user_id": "system",
+    "title": "جغرافيا العالم والمعالم — الجزء 9",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "جغرافيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي دولة في أوقيانوسيا تُعرف بلغة الماوري باسم \"أوتياروا\"؟",
+        "options": [
+          "نيوزيلندا",
+          "أستراليا",
+          "جزر سليمان",
+          "كاليدونيا الجديدة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أصغر دولة في العالم؟",
+        "options": [
+          "جزر المالديف",
+          "الفاتيكان",
+          "موناكو",
+          "مالطا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بين أي دولتين تقع بحيرة تيتيكاكا؟",
+        "options": [
+          "كينيا وأوغندا",
+          "المكسيك والولايات المتحدة",
+          "بيرو وبوليفيا",
+          "الهند وبنغلاديش"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول تعتبر \"حبيسة مرتين\" (محاطة بالكامل بدول حبيسة أخرى)‏؟",
+        "options": [
+          "سويسرا",
+          "بوليفيا",
+          "إثيوبيا",
+          "أوزبكستان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول تشترك في الحدود مع بولندا؟",
+        "options": [
+          "ليتوانيا",
+          "فرنسا",
+          "النرويج",
+          "هولندا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الولاية الأمريكية الأكثر اكتظاظاً بالسكان؟",
+        "options": [
+          "نيويورك",
+          "كاليفورنيا",
+          "تكساس",
+          "فلوريدا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يشير الاختصار الساخر \"⁦PIIGS⁩\" إلى أي من الدول الأوروبية التالية وأوضاعها الاقتصادية؟",
+        "options": [
+          "بولندا، أيسلندا، إيطاليا، اليونان، صربيا",
+          "بولندا، أيسلندا، إيطاليا، جرينلاند، إسبانيا",
+          "البرتغال، أيرلندا، إيطاليا، اليونان، إسبانيا",
+          "البرتغال، أيسلندا، أيرلندا، اليونان، صربيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أطول نهر في أوروبا؟",
+        "options": [
+          "نهر الدانوب",
+          "نهر الراين",
+          "نهر التايمز",
+          "نهر الفولغا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة تطالب بملكية القارة القطبية الجنوبية (أنتاركتيكا)‏؟",
+        "options": [
+          "لا أحد، ولكن هناك مطالبات.",
+          "الولايات المتحدة الأمريكية",
+          "الأمم المتحدة",
+          "أستراليا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عنوان فيلم عام 1969 \"كراكاتوا، شرق جاوة\" غير صحيح، لأن كراكاتوا تقع في الواقع غرب جاوة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي قارة تقع إريتريا، التي أصبحت العضو رقم 182 في الأمم المتحدة عام 1993‏؟",
+        "options": [
+          "أوروبا",
+          "آسيا",
+          "أفريقيا",
+          "أمريكا الجنوبية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو البر (البرزخ) الذي يربط بين أمريكا الشمالية وأمريكا الجنوبية؟",
+        "options": [
+          "برزخ السويس",
+          "جبال الأورال",
+          "أسترالاسيا",
+          "برزخ بنما"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مدينة نيو هيفن هي عاصمة ولاية كونيتيكت في الولايات المتحدة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي ثاني أكبر مدينة في روسيا؟",
+        "options": [
+          "مينسك",
+          "سانت بطرسبرغ",
+          "نيجني نوفغورود",
+          "فلاديفوستوك"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ليست دولة عضواً في الأمم المتحدة؟",
+        "options": [
+          "توفالو",
+          "جنوب السودان",
+          "نييوي",
+          "الجبل الأسود"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الدول المستقلة الأعضاء في الأمم المتحدة؟",
+        "options": [
+          "201",
+          "153",
+          "178",
+          "195"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة ولاية نيويورك الأمريكية؟",
+        "options": [
+          "ألباني",
+          "بافالو",
+          "نيويورك",
+          "روتشستر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس مدينة في الهند؟",
+        "options": [
+          "حيدر آباد",
+          "إسلام آباد",
+          "أحمد آباد",
+          "غازي آباد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة ذات الأغلبية المسلمة الأكثر اكتظاظاً بالسكان في عام 2010‏؟",
+        "options": [
+          "المملكة العربية السعودية",
+          "إيران",
+          "إندونيسيا",
+          "السودان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_1",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "متى استقلت كندا عن الاتحاد الكونفدرالي لتصبح دولة مستقلة؟",
+        "options": [
+          "1 يوليو 1867",
+          "1 يوليو 1763",
+          "1 يوليو 1832",
+          "1 يوليو 1902"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من من علماء الفيزياء التاليين لم يعمل في مشروع مانهاتن؟",
+        "options": [
+          "ريتشارد فاينمان",
+          "موراي جيل مان",
+          "جيه. روبرت أوبنهايمر",
+          "جون فون نيومان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم كان الطول الإجمالي لسفينة تايتانيك؟",
+        "options": [
+          "759 قدمًا | ⁦231.3⁩ مترًا",
+          "1042 قدمًا | ⁦317.6⁩ مترًا",
+          "882 قدمًا | ⁦268.8⁩ مترًا",
+          "825 قدمًا | ⁦251.5⁩ مترًا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام حدث انهيار سوق ألعاب الفيديو في أمريكا الشمالية؟",
+        "options": [
+          "1982",
+          "1993",
+          "1970",
+          "1983"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أصبح أول قيصر لروسيا عام 1547‏؟",
+        "options": [
+          "إيفان الرهيب",
+          "أليكسيس الروسي",
+          "ميخائيل رومانوف",
+          "بطرس الأكبر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1720، كانت إنجلترا غارقة في ديون طائلة وتورطت في كارثة 'فقاعة بحر الجنوب'. من كان العقل المدبر وراءها؟",
+        "options": [
+          "دانيال ديفو",
+          "جون بلانت",
+          "روبرت هارلي",
+          "جون تشرشل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلدة بولاية فرجينيا هاجم المناهض للعبودية جون براون مستودع الأسلحة؟",
+        "options": [
+          "ريتشموند",
+          "هاريسونبرغ",
+          "هاربرز فيري",
+          "مارتينسبورغ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لم تكن جزءاً من الاتحاد السوفيتي؟",
+        "options": [
+          "تركمانستان",
+          "كازاخستان",
+          "أوزبكستان",
+          "أفغانستان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست جمهورية الصين الشعبية؟",
+        "options": [
+          "1 أكتوبر 1949",
+          "3 أبريل 1947",
+          "7 مايو 1945",
+          "6 ديسمبر 1950"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ضد أي دولة تشكل تحالف 'الوفاق الصغير'؟",
+        "options": [
+          "ألمانيا",
+          "المجر",
+          "فرنسا",
+          "بروسيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام حدث انهيار بورصة وول ستريت؟",
+        "options": [
+          "1932",
+          "1930",
+          "1929",
+          "1925"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي عاصمة فيتنام الجنوبية قبل حرب فيتنام؟",
+        "options": [
+          "مدينة هو تشي منه",
+          "هانوي",
+          "هوي",
+          "سايغون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تأسست شركة ألعاب الفيديو إلكترونيك آرتس (⁦EA⁩)‏؟",
+        "options": [
+          "1982",
+          "1999",
+          "1981",
+          "2005"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بدأت احتجاجات وثورات الربيع العربي في أي من هذه الدول العربية؟",
+        "options": [
+          "المغرب",
+          "تونس",
+          "سوريا",
+          "مصر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "استمرت الحملة الصليبية الرابعة من عام 1095 إلى عام 1099 ميلادي.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا كان هدف 'ثورة المظلات' في هونغ كونغ عام 2014‏؟",
+        "options": [
+          "نيل الاستقلال",
+          "العودة إلى الحكم البريطاني",
+          "تخفيض الضرائب",
+          "حق الاقتراع العام الحقيقي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر 'الفيداس' (وهي مجموعة من الترانيم والقصائد السنسكريتية) نصوصاً مقدسة في أي ديانة؟",
+        "options": [
+          "الهندوسية",
+          "اليهودية",
+          "الإسلام",
+          "البوذية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تُعرف الصراعات التي دارت في القرن الخامس عشر بين عائلتي يورك ولانكستر بحرب الـ...",
+        "options": [
+          "حرب الزنابق",
+          "حرب الوردتين",
+          "حرب النرجس",
+          "حرب التوليب"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم السفينة التي كانت على بعد أميال قليلة من تايتانيك عندما اصطدمت بجبل جليدي في 14 أبريل 1912‏؟",
+        "options": [
+          "كارباثيا",
+          "كريستول",
+          "كاليفورنيان",
+          "كوميرس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت البرازيل إمبراطورية في السابق.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_10",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 10",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "على أي قطاع صناعي أُطلق في الأصل مصطلح 'اللوديون' (⁦Luddite⁩) للإشارة إلى العمال الساخطين؟",
+        "options": [
+          "صناعة النسيج",
+          "الزراعة",
+          "التعدين",
+          "صناعة الخزف"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أُقيمت احتجاجات ساحة تيانانمن عام 1989 في هونغ كونغ.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انتهت الحرب العالمية الأولى؟",
+        "options": [
+          "1914",
+          "1916",
+          "1918",
+          "1912"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم كان عمر الملك الشهير توت عنخ آمون (توت) عندما توفي؟",
+        "options": [
+          "21",
+          "15",
+          "30",
+          "19"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي ديانة كان ينتمي جون موسى براونينغ، مصمم بندقية ⁦M1918 BAR⁩ (بندقية براونينغ الآلية)‏؟",
+        "options": [
+          "المورمونية",
+          "الكاثوليكية",
+          "اليهودية",
+          "الإلحاد"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من عام 1940 إلى عام 1942، ما هي عاصمة فرنسا الحرة في المنفى؟",
+        "options": [
+          "الجزائر",
+          "برازافيل",
+          "باريس",
+          "تونس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المعركة الأكثر دموية في يوم واحد خلال الحرب الأهلية الأمريكية؟",
+        "options": [
+          "حصار فيكسبورغ",
+          "معركة غيتيسبيرغ",
+          "معركة أنتيتام",
+          "معارك تشانسلورسفيل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت الولايات المتحدة عضواً في عصبة الأمم.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كان فرانز جوزيف الأول آخر إمبراطور للنمسا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أطول معركة في الحرب العالمية الأولى، والتي استمرت حوالي 303 أيام؟",
+        "options": [
+          "معركة باشنديل",
+          "معركة فردان",
+          "معركة أميان",
+          "معركة ستالينغراد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي ركب الحصان لتحذير 'رجال الدقيقة' (⁦Minutemen⁩) من أن البريطانيين قادمون خلال حرب الاستقلال الأمريكية؟",
+        "options": [
+          "توماس بين",
+          "هنري لونغفيلو",
+          "بول ريفير",
+          "ناثان هيل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بماذا تحتفل الولايات المتحدة الأمريكية في الرابع من يوليو؟",
+        "options": [
+          "الذكرى السنوية لمعركة غيتيسبيرغ",
+          "عبور نهر ديلاوير",
+          "المصادقة على الدستور",
+          "التوقيع على إعلان الاستقلال"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول رجل يسافر إلى الفضاء الخارجي مرتين؟",
+        "options": [
+          "غاس غريسوم",
+          "فلاديمير كوماروف",
+          "تشارلز كونراد",
+          "يوري غاغارين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان الفايكنج أول أوروبيين يكتشفون أمريكا الشمالية.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم سنة استمرت حرب المئة عام؟",
+        "options": [
+          "100",
+          "90",
+          "116",
+          "101"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من قاد فرنسا خلال \"عهد الإرهاب\"؟",
+        "options": [
+          "نابليون بونابرت",
+          "جان بول مارا",
+          "لويس السادس عشر",
+          "ماكسيميليان روبسبير"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من علماء الفيزياء التاليين ساعد ألمانيا النازية في إنتاج سلاح نووي؟",
+        "options": [
+          "فيرنر هايزنبرغ",
+          "جون فون نيومان",
+          "ألبيرت أينشتاين",
+          "ماكس بلانك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي قائد عالمي مشهور اشتهر بمقولة \"فليأكلوا الكعك\"، ومع ذلك يُشاع أنه لم يقلها على الإطلاق؟",
+        "options": [
+          "القيصر نيكولاس الثاني",
+          "ماري أنطوانيت",
+          "إليزابيث الأولى",
+          "هنري الثامن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى نالت جامايكا استقلالها عن إنجلترا؟",
+        "options": [
+          "1492",
+          "1963",
+          "1962",
+          "1987"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_11",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 11",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من هذه المرافق لم يكن موجوداً على متن سفينة تايتانيك؟",
+        "options": [
+          "غرفة الإغماء",
+          "الحمام التركي",
+          "مكان إيواء الكلاب",
+          "ملعب الإسكواش"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان سرجون الثاني، ملك الإمبراطورية الآشورية الحديثة، سليلًا مباشرًا لسرجون الأكدي.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام وقعت معركة أجينكور؟",
+        "options": [
+          "1463",
+          "1401",
+          "1415",
+          "1422"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1939، أعلنت بريطانيا وفرنسا الحرب على ألمانيا بعد غزوها لأي دولة؟",
+        "options": [
+          "تشيكوسلوفاكيا",
+          "النمسا",
+          "المجر",
+          "بولندا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من بين عجائب الدنيا السبع، ما هي الأعجوبة الوحيدة التي نجت حتى يومنا هذا؟",
+        "options": [
+          "الهرم الأكبر بالجيزة",
+          "عملاق رودس",
+          "منارة الإسكندرية",
+          "تمثال زيوس في أوليمبيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحدث الذي مثل بداية الحرب العالمية الثانية؟",
+        "options": [
+          "غزو روسيا (1942)",
+          "غزو بولندا (1939)",
+          "معركة بريطانيا (1940)",
+          "غزو نورماندي (1944)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "انتهت الحرب الكورية في عام 1953 دون أي وقف لإطلاق النار.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال الغزوات المغولية لليابان, ما الذي أوقف السفن المغولية في الغالب؟",
+        "options": [
+          "الأعاصير القمعية",
+          "الكساد الاقتصادي",
+          "الساموراي",
+          "الأعاصير"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم المادة الكيميائية التي أُلقيت على فيتنام خلال حرب فيتنام؟",
+        "options": [
+          "العامل البرتقالي",
+          "الفوسجين",
+          "غاز الخردل",
+          "سيانيد الهيدروجين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت مؤامرة البارود محاولة اغتيال فاشلة معروفة ضد من من ملوك إنجلترا الحاكمين آنذاك؟",
+        "options": [
+          "إليزابيث الأولى",
+          "جيمس الأول",
+          "تشارلز الثاني",
+          "تشارلز الأول"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "انتهت الحرب الباردة بوفاة جوزيف ستالين.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المعالم ليس مدرجاً في قائمة 'عجائب الدنيا السبع القديمة' الأصلية؟",
+        "options": [
+          "الهرم الأكبر بالجيزة",
+          "عملاق رودس",
+          "حدائق بابل المعلقة",
+          "سور الصين العظيم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد وقعت معركة السوم في الحرب العالمية الأولى؟",
+        "options": [
+          "فرنسا",
+          "ألمانيا",
+          "إيطاليا",
+          "النمسا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الديانة التي أسسها جوزيف سميث؟",
+        "options": [
+          "البوذية",
+          "المورمونية",
+          "المسيحية",
+          "الهندوسية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى بدأت معركة السوم؟",
+        "options": [
+          "1 أغسطس 1916",
+          "2 يوليو 1916",
+          "1 يوليو 1916",
+          "30 يونيو 1916"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اُعتبر تدمير الملك الآشوري سنحاريب لبابل عام 689 قبل الميلاد انتصاراً من قبل المواطنين الآشوريين الآخرين.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد زُرعت البطاطس لأول مرة؟",
+        "options": [
+          "بيرو",
+          "الولايات المتحدة",
+          "أيرلندا",
+          "نيوزيلندا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحدث الأكثر دموية في تاريخ الولايات المتحدة من حيث عدد الضحايا؟",
+        "options": [
+          "بيرل هاربور",
+          "معركة أنتيتام",
+          "أحداث 11 سبتمبر",
+          "إنزال نورماندي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم سنة استمرت الحرب العالمية الثانية؟",
+        "options": [
+          "4 سنوات",
+          "5 سنوات",
+          "6 سنوات",
+          "7 سنوات"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_12",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 12",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "خُيضت حرب المئة عام لأكثر من مئة عام.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي خائن أوروبي سيئ السمعة كان يُعرف بـ \"آخر شخص دخل البرلمان بنوايا صادقة\"؟",
+        "options": [
+          "روبرت كاتسبي",
+          "غاي فوكس",
+          "فرانسيس تريشام",
+          "إيفرارد ديغبي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام هبط نيل آرمسترونغ وبوز ألدرين على سطح القمر؟",
+        "options": [
+          "1965",
+          "1966",
+          "1969",
+          "1973"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال أي حملة في الحرب الأهلية الأمريكية حفرت قوات الاتحاد نفقاً تحت قوات الكونفدرالية لتفجير المتفجرات تحتهم؟",
+        "options": [
+          "حصار فيكسبورغ",
+          "حملة أنتيتام",
+          "حملة غيتيسبيرغ",
+          "حصار بيترسبرغ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو المهندس المعماري الذي صمم منزل شلالات المياه (⁦Fallingwater⁩) الواقع في بنسلفانيا؟",
+        "options": [
+          "فرانك لويد رايت",
+          "أنطوني غاودي",
+          "فرانك جيري",
+          "لو كوربوزييه"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تأسست أول منظمة معروفة لحقوق المثليات في الولايات المتحدة، والمعروفة باسم 'بنات بيليتيس' (⁦Daughters of Bilitis⁩)‏؟",
+        "options": [
+          "نيويورك",
+          "سان فرانسيسكو",
+          "شيكاغو",
+          "لوس أنجلوس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام أُطلق سراح نيلسون مانديلا من السجن؟",
+        "options": [
+          "1994",
+          "1992",
+          "1990",
+          "1980"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "دخلت شوكة الطعام إلى إيطاليا قبل أي دولة أوروبية أخرى.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا كان الهدف الرئيسي للعملية الألمانية \"الحالة الزرقاء\" (⁦Case Blue⁩) في الأصل خلال الحرب العالمية الثانية؟",
+        "options": [
+          "القوقاز",
+          "ستالينغراد",
+          "شبه جزيرة القرم",
+          "فارونيش"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الحرب العالمية الثانية، استخدمت بريطانيا دبابات قابلة للنفخ في الموانئ لتشتيت هتلر بعيداً عن إنزال نورماندي.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هؤلاء الحكام لم يكن ينتمي إلى سلالة هابسبورغ؟",
+        "options": [
+          "تشارلز الخامس",
+          "فيليب الثاني",
+          "فيليب الخامس",
+          "فرانز جوزيف"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي قاد الثورة الشيوعية في روسيا؟",
+        "options": [
+          "جوزيف ستالين",
+          "فلاديمير بوتين",
+          "ميخائيل غورباتشوف",
+          "فلاديمير لينين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1900، ما هي الأسماء الأكثر شعبية التي أُطلقت على المواليد الذكور والإناث في الولايات المتحدة؟",
+        "options": [
+          "جون وماري",
+          "جوزيف وكاثرين",
+          "ويليام وإليزابيث",
+          "جورج وآن"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت الأبجدية الرومانية الأصلية تفتقر إلى الحروف التالية باستثناء:",
+        "options": [
+          "⁦W⁩",
+          "⁦X⁩",
+          "⁦U⁩",
+          "⁦J⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي حرب حدث الهجوم بالقنابل الذرية على هيروشيما وناغاساكي؟",
+        "options": [
+          "الحرب العالمية الأولى",
+          "الحرب الروسية اليابانية",
+          "الحرب العالمية الثانية",
+          "الحرب الصينية اليابانية الأولى"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم زعيم قبيلة الأباتشي الشهير الذي توفي عام 1909 عن عمر يناهز 70 عاماً؟",
+        "options": [
+          "سيتينغ بول (الثور الجالس)",
+          "ريد كلاود (السحابة الحمراء)",
+          "كريزي هورس (الحصان الجامح)",
+          "جيرونيمو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بلغت قوة قنبلة القيصر، وهي أقوى قنبلة نووية تم اختبارها على الإطلاق، 50 ميغاطن، ولكن من الناحية النظرية، كم كانت قوتها القصوى؟",
+        "options": [
+          "100 ميغاطن",
+          "200 ميغاطن",
+          "75 ميغاطن",
+          "150 ميغاطن"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم العملية الهجومية الألمانية في أكتوبر 1941 للسيطرة على موسكو قبل الشتاء؟",
+        "options": [
+          "عملية عباد الشمس (⁦Operation Sunflower⁩)",
+          "عملية الإعصار (⁦Operation Typhoon⁩)",
+          "عملية بارباروسا (⁦Operation Barbarossa⁩)",
+          "الحالة الزرقاء (⁦Case Blue⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد النساء اللواتي انضممن إلى القوات المسلحة الأمريكية خلال الحرب العالمية الثانية؟",
+        "options": [
+          "225,000",
+          "100,000",
+          "350,000",
+          "500,000"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_13",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 13",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الاسم الرمزي لغزو الحلفاء لجنوب فرنسا في 15 أغسطس 1944‏؟",
+        "options": [
+          "عملية دراغون",
+          "عملية أوفرلورد",
+          "عملية ماركت غاردن",
+          "عملية الشعلة (⁦Torch⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول رئيس ولد في الولايات المتحدة المستقلة؟",
+        "options": [
+          "جون آدامز",
+          "مارتن فان بيورين",
+          "جورج واشنطن",
+          "جيمس مونرو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد وقع تمرد يوريكا، وهي معركة دارت عام 1856 ضد الحكم الاستعماري؟",
+        "options": [
+          "الهند",
+          "كندا",
+          "أستراليا",
+          "البرازيل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المرض الذي تسبب في شلل الرئيس فرانكلين روزفلت ودفعه لمساعدة البلاد في العثور على علاج له؟",
+        "options": [
+          "السرطان",
+          "التهاب السحايا",
+          "فيروس نقص المناعة البشرية (الإيدز)",
+          "شلل الأطفال"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول الاستعمارية التالية ارتكبت إبادة هيريرو الجماعية في أفريقيا؟",
+        "options": [
+          "ألمانيا",
+          "بريطانيا",
+          "بلجيكا",
+          "فرنسا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدول التي شاركت في حرب جراد البحر؟",
+        "options": [
+          "كندا والنرويج",
+          "فرنسا والبرازيل",
+          "أستراليا ونيوزيلندا",
+          "الولايات المتحدة وإنجلترا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أطلق غالبية سكان الإمبراطورية البيزنطية على أنفسهم اسم الرومان.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الرئيس الأمريكي الذي قيل إنه كان صادقاً جداً لدرجة تمنعه من الكذب على والده بشأن قطعه لشجرة كرز؟",
+        "options": [
+          "أبراهام لينكون",
+          "توماس جيفرسون",
+          "جيمس مونرو",
+          "جورج واشنطن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الديكتاتور الذي قتل أكبر عدد من الناس؟",
+        "options": [
+          "ماو تسي تونغ",
+          "جوزيف ستالين",
+          "أدولف هتلر",
+          "كيم إيل سونغ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة أهدت تمثال الحرية إلى الولايات المتحدة الأمريكية؟",
+        "options": [
+          "إسبانيا",
+          "فرنسا",
+          "إنجلترا",
+          "ألمانيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اغتيل الرئيس الأمريكي جون كينيدي أثناء موكبه الرئاسي في مدينة أتلانتا بولاية جورجيا في 22 نوفمبر 1963.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدبابات من القرن العشرين صُممت وصُنعت قبل بقية الدبابات؟",
+        "options": [
+          "إم 4 شيرمان",
+          "بانزر 4",
+          "كرومويل",
+          "رينو إف تي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام سيطر ويليام الفاتح على إنجلترا؟",
+        "options": [
+          "1066",
+          "1123",
+          "1205",
+          "901"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت الولايات المتحدة الأمريكية أول دولة تطلق إنساناً إلى الفضاء.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "مع دفع الفقر والتوترات العرقية بالأمريكيين من أصل أفريقي إلى خارج جنوب الولايات المتحدة، انتقل العديد منهم إلى الشمال في حدث يُعرف باسم ماذا؟",
+        "options": [
+          "الصحوة الكبرى",
+          "نهضة هارلم",
+          "الهجرة الكبرى",
+          "إعادة التوطين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المعارك التالية تُعتبر غالباً علامة على بداية سقوط الإمبراطورية الرومانية الغربية؟",
+        "options": [
+          "معركة تسالونيكي",
+          "معركة بولينتيا",
+          "معركة القسطنطينية",
+          "معركة أدريانوبل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من اخترع \"المكوك الطائر\" عام 1738، وهو أحد التطورات الرئيسية في تطوير صناعة النسيج؟",
+        "options": [
+          "جون كاي",
+          "جيمس هاريغريفز",
+          "ريتشارد آركرايت",
+          "جون دير"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال أي حرب حدثت \"أزمة الصواريخ الكوبية\"؟",
+        "options": [
+          "الحرب العالمية الأولى",
+          "الحرب الباردة",
+          "الحرب العالمية الثانية",
+          "الحرب الثورية الأمريكية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام أصبحت أستراليا اتحاداً فيدرالياً؟",
+        "options": [
+          "1910",
+          "1899",
+          "1901",
+          "1911"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_14",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 14",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الاسم الأصلي لمدينة نيويورك؟",
+        "options": [
+          "نيو أمستردام",
+          "نيو لندن",
+          "نيو باريس",
+          "نيو روما"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان \"درب الدموع\" نتيجة لسياسة ترحيل السكان الأصليين التي اتبعها أي رئيس للولايات المتحدة؟",
+        "options": [
+          "هاري ترومان",
+          "أندرو جاكسون",
+          "مارتن فان بيورين",
+          "جون كوينسي آدامز"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى انتهت الحرب الوطنية العظمى في الاتحاد السوفيتي؟",
+        "options": [
+          "2 سبتمبر 1945",
+          "9 أغسطس 1945",
+          "9 مايو 1945",
+          "11 ديسمبر 1945"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم تصميم مسدس ⁦M1911⁩‏؟",
+        "options": [
+          "1907",
+          "1899",
+          "1917",
+          "1911"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو صاحب المقولة الشهيرة \"أنا أفكر، إذن أنا موجود\"؟",
+        "options": [
+          "ديكارت",
+          "أفلاطون",
+          "أرسطو",
+          "شكسبير"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان عصر التنوير حقبة مليئة بالفلسفات والتقدم والنظريات العلمية لتحسين المجتمع.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللقب الشهير لمانفريد فون ريشتهوفن؟",
+        "options": [
+          "الطيار الماهر المحلق عالياً",
+          "الثعبان الأزرق",
+          "البارون الأحمر",
+          "المدفعي الألماني"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "قبل أن تتحول المستعمرات الأمريكية إلى التقويم الغريغوري عام 1752، في أي تاريخ كانت تبدأ سنتهم الجديدة؟",
+        "options": [
+          "1 يونيو",
+          "25 سبتمبر",
+          "1 ديسمبر",
+          "25 مارس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي لا يُصنف كأحد اللغات السامية؟",
+        "options": [
+          "السومرية",
+          "المالطية",
+          "الأكادية",
+          "المندائية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا كان اسم نابليون بونابرت قبل أن يغيره؟",
+        "options": [
+          "ناابوليون فان بونيبارت",
+          "نابليوني دي بونابرت",
+          "نابوليون دو بوابارت",
+          "نابليونا دي بوينوبارتي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول أمريكي يصعد إلى الفضاء؟",
+        "options": [
+          "نيل آرمسترونغ",
+          "جون غلين",
+          "ألان شيبارد",
+          "جيم لوفيل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي بندقية الهجوم الروسية الآلية التي تعمل بالغاز وتم تطويرها في الاتحاد السوفيتي عام 1947، ولا تزال تستخدم بشكل شائع حتى اليوم؟",
+        "options": [
+          "⁦RPK⁩",
+          "⁦M16⁩",
+          "⁦MG 42⁩",
+          "⁦AK-47⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ابن أي بابا يُزعم أنه أقام حفلاً ماجناً شاركت فيه 50 محظية في القصر البابوي؟",
+        "options": [
+          "ألكسندر السادس",
+          "إينوسنت الخامس",
+          "أوربان الثاني",
+          "بيوس الثالث"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم كان عمر الملك هنري الخامس عندما توفي؟",
+        "options": [
+          "62",
+          "35",
+          "87",
+          "73"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا أمسكت بالنصل الحاد للسيف الطويل بطريقة معينة، فلن تجرح نفسك.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي العملة الرسمية لألمانيا حتى عام 2002‏؟",
+        "options": [
+          "فرنك",
+          "جنيه إسترليني",
+          "رايخ توكن",
+          "مارك"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام غرقت سفينة تايتانيك؟",
+        "options": [
+          "1912",
+          "1930",
+          "1917",
+          "1941"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى انهارت الإمبراطورية البيزنطية؟",
+        "options": [
+          "1299",
+          "1453",
+          "1353",
+          "1498"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت اليابان جزءاً من قوات الحلفاء خلال الحرب العالمية الأولى.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_15",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 15",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "تم التنازل عن كندا لبريطانيا بموجب شروط معاهدة باريس عام 1763.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان الجنرال الكونفدرالي في الحرب الأهلية الأمريكية؟",
+        "options": [
+          "جورج كاستر",
+          "روبرت إي لي",
+          "يوليسيس غرانت",
+          "جورج ماكليلان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الرجل الذي أطلق النار على ألكسندر هاميلتون كان يُدعى آرون بور.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم سفينة التجسس التابعة للبحرية الأمريكية التي هاجمتها القوات الكورية الشمالية واستولت عليها عام 1968‏؟",
+        "options": [
+          "يو إس إس نورث كارولاينا",
+          "يو إس إس كونستيتيوشن",
+          "يو إس إس إنديانابوليس",
+          "يو إس إس بويبلو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي من هذه المدن افتُتح أول متنزه \"ليغولاند\" عام 1968‏؟",
+        "options": [
+          "بيلوند، الدنمارك",
+          "كارلسباد، كاليفورنيا",
+          "وينتر هافن، فلوريدا",
+          "ناغويا، اليابان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "شغل السير إسحاق نيوتن منصب عضو في البرلمان، ولكن المرة الوحيدة المسجلة التي تحدث فيها كانت للشكوى من تيار هواء بارد في القاعة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متى انتهى بناء قناة السويس؟",
+        "options": [
+          "1859",
+          "1860",
+          "1869",
+          "1850"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي العبارة التذكيرية المستخدمة لتذكر مصائر زوجات الملك هنري الثامن؟",
+        "options": [
+          "مقطوعة الرأس، متوفاة، مطلقة، مطلقة، مقطوعة الرأس, ناجية",
+          "متوفاة، مقطوعة الرأس، مطلقة، مقطوعة الرأس، ناجية، مطلقة",
+          "ناجية، مقطوعة الرأس، متوفاة، مطلقة، مطلقة، مقطوعة الرأس",
+          "مطلقة، مقطوعة الرأس، متوفاة، مطلقة، مقطوعة الرأس، ناجية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هؤلاء الفيزيائيين النظريين تنبأ أولاً بوجود المادة المضادة؟",
+        "options": [
+          "بول ديراك",
+          "نيلز بور",
+          "ألبيرت أينشتاين",
+          "فيرنر هايزنبرغ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو إمبراطور الإمبراطورية البيزنطية الذي أمر ببناء آيا صوفيا؟",
+        "options": [
+          "قسطنطين الرابع",
+          "جستنيان الأول",
+          "أركاديوس",
+          "ثيودوسيوس العظيم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول ثديي تم إطلاقه بنجاح إلى مدار الأرض؟",
+        "options": [
+          "الشمبانزي هام",
+          "القردة بيكر",
+          "الكلبة لايكا",
+          "الكلبة بيلكا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مع أي فيلسوف يوناني تربط مقولة \"أنا أعلم أنني لا أعلم شيئاً\"؟",
+        "options": [
+          "أرسطو",
+          "أفلاطون",
+          "فيثاغورس",
+          "سقراط"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول رئيس للولايات المتحدة؟",
+        "options": [
+          "جورج واشنطن",
+          "جيمس ماديسون",
+          "توماس جيفرسون",
+          "جيمس بولك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي تاريخ ولد أدولف هتلر؟",
+        "options": [
+          "12 يونيو 1889",
+          "20 أبريل 1889",
+          "6 فبراير 1889",
+          "16 أبريل 1889"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان من بين الذين لقوا حتفهم في مأساة تحطم طائرة سمولينسك في روسيا عام 2010‏؟",
+        "options": [
+          "البابا يوحنا بولس الثاني",
+          "بانغ-دينغ أو",
+          "الرئيس البولندي",
+          "ألبرت بوتين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي قرية أيرلندية في مقاطعة مايو أنشأت قطاعاً سياحياً بناءً على ظهور مزعوم للعذراء مريم عام 1879‏؟",
+        "options": [
+          "باليكاسل",
+          "سوينفورد",
+          "تورلو",
+          "نوك"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى سلمت بريطانيا سيادة هونغ كونغ مجدداً إلى الصين؟",
+        "options": [
+          "1997",
+          "1999",
+          "1841",
+          "1900"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم كان عمر ليندون جونسون عندما تولى رئاسة الولايات المتحدة؟",
+        "options": [
+          "50",
+          "55",
+          "60",
+          "54"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين قُتل المستكشف البرتغالي فرديناند ماجلان في عام 1521‏؟",
+        "options": [
+          "جزر الكناري",
+          "غوام",
+          "الفلبين",
+          "الأرجنتين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_16",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 16",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "عن أي إنجاز فاز ألبرت أينشتاين بجائزة نوبل عام 1921‏؟",
+        "options": [
+          "التأثير الكهروضوئي",
+          "النسبية",
+          "ثنائية الموجة والجسيم",
+          "طاقة نقطة الصفر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول مستشار لألمانيا الموحدة عام 1871‏؟",
+        "options": [
+          "القيصر فيلهلم",
+          "أوتو فون بسمارك",
+          "فريدريك الثاني",
+          "روبرت كوخ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان الاستراتيجي العسكري في فترة زو الشرقية؟",
+        "options": [
+          "لو بو",
+          "جنكيز خان",
+          "سون تزو",
+          "فلاد المخوزق"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من خلف جوزيف ستالين في قيادة الاتحاد السوفيتي؟",
+        "options": [
+          "لافرينتي بيريا",
+          "فياتشيسلاف مولوتوف",
+          "جيورجي مالينكوف",
+          "نيكيتا خروتشوف"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة صغيرة جداً يُعتبر دستورها الأقدم ولا يزال سارياً حتى اليوم؟",
+        "options": [
+          "سان مارينو",
+          "أندورا",
+          "موناكو",
+          "سانت كيتس ونيفيس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ولد مارتن لوثر كينغ الابن وآن فرانك في نفس العام.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني الاختصار \"⁦RMS⁩\" في سفينة \"⁦RMS Titanic⁩\" عام 1912‏؟",
+        "options": [
+          "خدمة الجلالة الملكية",
+          "الجدول البحري المنتظم",
+          "سفينة البريد الملكي",
+          "مستشعر الدوامات المنظم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من اغتال الرئيس الأمريكي جيمس غارفيلد؟",
+        "options": [
+          "سرحان سرحان",
+          "ليون تشولغوش",
+          "جون ويلكس بوث",
+          "تشارلز غيتو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة من هذه الدول كانت من قوات الحلفاء في الحرب العالمية الثانية؟",
+        "options": [
+          "الاتحاد السوفيتي",
+          "إيطاليا",
+          "ألمانيا",
+          "اليابان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول تم رسم خريطتها البحرية في عام 1500 من قبل الاستكشافات البحرية البرتغالية؟",
+        "options": [
+          "الهند",
+          "البرازيل",
+          "موزمبيق",
+          "مدغشقر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1967، نشرت إحدى المجلات قصة حول استخراج مواد كيميائية مهلوسة من الموز لإثارة تساؤلات أخلاقية حول حظر المخدرات.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا كانت تبيع أولى آلات البيع الذاتي في أوائل ثمانينيات القرن التاسع عشر؟",
+        "options": [
+          "الكحول",
+          "السجائر",
+          "المشروبات الغازية",
+          "بطاقات بريدية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان قائد السويد في حرب الشمال العظمى؟",
+        "options": [
+          "كارل الثاني عشر",
+          "بير ألبين هانسون",
+          "بطرس الأكبر",
+          "غوستافوس أدولفوس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو رئيس الولايات المتحدة الوحيد الذي انتخب أربع مرات؟",
+        "options": [
+          "ثيودور روزفلت",
+          "فرانكلين روزفلت",
+          "جورج واشنطن",
+          "أبراهام لينكون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تأسست إسبانيا عام 1469 بزواج إيزابيلا الأولى ملكة قشتالة وفرديناند الثاني ملك أي مملكة أيبيرية أخرى؟",
+        "options": [
+          "غاليسيا",
+          "ليون",
+          "أراغون",
+          "نافارا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الحرب العالمية الثانية، خدمت طائرات 'هوكر تيفون' في مسرح عمليات المحيط الهادئ.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "بماذا كان يشتهر ويليام فريدريك كودي؟",
+        "options": [
+          "بوفالو بيل",
+          "بيلي ذا كيد",
+          "وايلد بيل هيكوك",
+          "بوني بيل"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لا تزال دبابة 'إم 41 ووكر بولدوغ' في الخدمة في بعض الدول حتى يومنا هذا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "بأي معاهدة انتهت حرب الثلاثين عاماً؟",
+        "options": [
+          "معاهدة فرساي",
+          "معاهدة باريس",
+          "صلح وستفاليا",
+          "صلح براغ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_17",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 17",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي إله يوناني كان إله الشمس؟",
+        "options": [
+          "هيليوس",
+          "زيوس",
+          "هاديس",
+          "بوسيدون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي صاغ فكرة الاشتراكية وطورها？",
+        "options": [
+          "فلاديمير لينين",
+          "كارل ماركس",
+          "جوزيف ستالين",
+          "فلاديمير بوتين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا حدث في 6 يونيو 1944‏؟",
+        "options": [
+          "القصف الذري على هيروشيما وناجازاكي",
+          "الهجوم على بيرل هاربر",
+          "يوم الإنزال",
+          "تحرير باريس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي معركة بحرية كانت تعتبر نقطة التحول في مسرح عمليات المحيط الهادئ خلال الحرب العالمية الثانية؟",
+        "options": [
+          "الهجوم على جزيرة تروك",
+          "الهجوم على بيرل هاربر",
+          "معركة بحر المرجان",
+          "معركة ميدواي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عهد أي رئيس أمريكي تم الانتهاء من حفر قناة بنما؟",
+        "options": [
+          "وودرو ويلسون",
+          "فرانكلين ديلانو روزفلت",
+          "هربرت هوفر",
+          "ثيودور روزفلت"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أعلنت الولايات المتحدة الأمريكية استقلالها عن الإمبراطورية البريطانية في 4 يوليو 1776.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرقم الذي يرمز إليه الحرف الروماني '⁦D⁩'؟",
+        "options": [
+          "100",
+          "1000",
+          "500",
+          "50"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان رئيس الولايات المتحدة عندما بدأت حرب الخليج؟",
+        "options": [
+          "ريتشارد نيكسون",
+          "جورج بوش الابن",
+          "رونالد ريجان",
+          "جورج بوش الأب"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول جسم مسجل يصل إلى الفضاء الخارجي على الإطلاق؟",
+        "options": [
+          "بامبر-واك (⁦Bumper-WAC⁩)",
+          "غطاء بالوعة أمريكي",
+          "سبوتنيك 1",
+          "سبوتنيك 2"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى أعلنت الولايات المتحدة الحرب رسمياً على اليابان، لتدخل بذلك الحرب العالمية الثانية؟",
+        "options": [
+          "6 يونيو 1944",
+          "8 ديسمبر 1941",
+          "22 يونيو 1941",
+          "1 سبتمبر 1939"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدبابات صممتها وشغلتها المملكة المتحدة؟",
+        "options": [
+          "إم 4 شيرمان",
+          "تايجر إتش 1",
+          "توج 2 (⁦Tog II⁩)",
+          "تي-34"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تحت أي اسم نُصِّب رودريغو بورجيا بابا للفاتيكان؟",
+        "options": [
+          "رودريغو الأول",
+          "يوحنا بولس الثاني",
+          "بيوس السابع",
+          "ألكسندر السادس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي انضمت إلى الاتحاد الأوروبي في عام 2013‏؟",
+        "options": [
+          "كرواتيا",
+          "بلغاريا",
+          "سلوفينيا",
+          "تركيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المناصب لم يشغلها عالم الفلك والفيزياء إسحاق نيوتن؟",
+        "options": [
+          "أستاذ رياضيات",
+          "مساح مدينة لندن",
+          "حارس دار السك الملكية",
+          "عضو في البرلمان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة الواقعة في جنوب شرق آسيا والتي كانت تُعرف سابقاً باسم 'لان تسانغ'؟",
+        "options": [
+          "كمبوديا",
+          "فيتنام",
+          "لاوس",
+          "تايلاند"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان أدولف هتلر جندياً ألمانياً في الحرب العالمية الأولى.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الإمبراطور الروماني الذي وصلت الإمبراطورية الرومانية في عهده إلى أقصى اتساع جغرافي لها؟",
+        "options": [
+          "ترايان",
+          "يوليوس قيصر",
+          "كلوديوس",
+          "قسطنطين العظيم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "البرازيل كانت مستعمرة سابقة لأي من الدول التالية؟",
+        "options": [
+          "إسبانيا",
+          "البرتغال",
+          "هولندا",
+          "فرنسا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت هونغ كونغ جزءاً من أراضي أي دولة قبل أن تستعيدها بريطانيا في عام 1945？",
+        "options": [
+          "الصين",
+          "الفلبين",
+          "اليابان",
+          "إندونيسيا الفرنسية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_18",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 18",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "متى بدأت أزمة القرن الثالث؟",
+        "options": [
+          "235 ميلادي",
+          "235 قبل الميلاد",
+          "242 ميلادي",
+          "210 ميلادي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المحرك الذي كانت تستخدمه طائرة 'سبتفاير إل إف إم كيه 9' (⁦Spitfire L.F⁩. ⁦Mk IX⁩)‏؟",
+        "options": [
+          "غريفون 65",
+          "ميرلين 66",
+          "ميرلين 50",
+          "ميرلين ⁦X⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خاضت جمهورية هولندا حرب الثمانين عاماً ضد أي دولة؟",
+        "options": [
+          "فرنسا",
+          "إنجلترا",
+          "إسبانيا",
+          "البرتغال"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الاسم الحقيقي لجوزيف ستالين هو 'يوسف بيساريونيس دزه جوغاشفيلي'.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام أصبحت كنتاكي الولاية رقم 15 التي تنضم إلى الاتحاد الأمريكي؟",
+        "options": [
+          "1792",
+          "1782",
+          "1798",
+          "1788"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول إنسان يسافر إلى الفضاء الخارجي؟",
+        "options": [
+          "فيرجيل إيفان \"غاس\" غريسوم",
+          "يوري غاغارين",
+          "نيل آرمسترونغ",
+          "بز ألدرين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي جنسية مخترع آلة التشفير الشهيرة 'إنجما'؟",
+        "options": [
+          "أمريكي",
+          "بريطاني",
+          "ألماني",
+          "بولندي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو المخترع البريطاني الذي اخترع آلة بذار البذور (السطارة)‏؟",
+        "options": [
+          "تشارلز بابيج",
+          "إسحاق نيوتن",
+          "جوزيف جون طومسون",
+          "جيثرو تال"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم شبكة التجسس التي ساعدت الولايات المتحدة على الفوز بحرب الاستقلال؟",
+        "options": [
+          "شبكة كولبر",
+          "شبكة تجسس نيويورك",
+          "جواسيس واشنطن",
+          "غير مسماة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان آخر إمبراطور روماني في عام الأباطرة الأربعة (69 ميلادي)‏؟",
+        "options": [
+          "فيتيليوس",
+          "فيسباسيان",
+          "أوتو",
+          "غالبا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم طائرة بوينغ ⁦B-29⁩ التي ألقت القنبلة الذرية 'الولد الصغير' (⁦Little Boy⁩) على هيروشيما؟",
+        "options": [
+          "الشر الضروري",
+          "الفنان العظيم",
+          "إينولا غي",
+          "البيت الممتلئ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم غير الرسمي لألمانيا بين عامي 1919 و1933‏؟",
+        "options": [
+          "جمهورية ألمانيا الديمقراطية",
+          "جمهورية ألمانيا الاتحادية",
+          "النمسا",
+          "جمهورية فايمار"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "اغتيال أي شخصية ملكية أدى إلى اندلاع الحرب العالمية الأولى؟",
+        "options": [
+          "الأرشيدوق فرانز فرديناند",
+          "لويس مونتباتن",
+          "الملك تشارلز الأول",
+          "نيقولا الثاني"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الرئيس الأمريكي رونالد ريجان هو أول رئيس يعين امرأة في المحكمة العليا.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم بدأ بناء مبنى البنتاغون، وهو مقر وزارة دفاع الولايات المتحدة؟",
+        "options": [
+          "15 يونيو 1947",
+          "15 يناير 1943",
+          "11 سبتمبر 1941",
+          "2 سبتمبر 1962"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لم تكن ضمن قوات دول المحور (دول الوسط) خلال الحرب العالمية الأولى؟",
+        "options": [
+          "النمسا-المجر",
+          "تركيا",
+          "ألمانيا",
+          "إسبانيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو النشاط الإجرامي الذي تضمنه الماضي الإجرامي لجوزيف ستالين؟",
+        "options": [
+          "سرقة القطارات",
+          "القتل المأجور",
+          "التهرب الضريبي",
+          "تزوير الهوية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم يوماً استمرت انتفاضة وارسو خلال الحرب العالمية الثانية؟",
+        "options": [
+          "20 يوماً",
+          "63 يوماً",
+          "55 يوماً",
+          "224 يوماً"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد عمليات هبوط البشر على سطح القمر التي تمت بالفعل؟",
+        "options": [
+          "1",
+          "3",
+          "6",
+          "7"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_19",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 19",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في أي عام بدأت الحرب العالمية الأولى؟",
+        "options": [
+          "1914",
+          "1905",
+          "1919",
+          "1925"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم مرة تزوج ألبرت أينشتاين في حياته؟",
+        "options": [
+          "خمس مرات",
+          "مرتين",
+          "ثلاث مرات",
+          "مرة واحدة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي لم يكن من مواقع الإنزال على الشواطئ خلال غزو نورماندي؟",
+        "options": [
+          "غولد",
+          "جونو",
+          "سيلفر",
+          "سورد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام حدث زلزال وتسونامي يوم عيد الصناديق (بوسكينغ داي) في المحيط الهندي؟",
+        "options": [
+          "2006",
+          "2008",
+          "2002",
+          "2004"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كل ما يلي أسماء للولايات المتحاربة السبع في الصين القديمة ما عدا:",
+        "options": [
+          "جاي (翟)",
+          "جاو (趙)",
+          "تشين (秦)",
+          "تشي (齊)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وقعت معركة طرف الغار (ترافالغار) في 23 أكتوبر 1805.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان بوهدان خميلنيتسكي من بين الخيارات التالية؟",
+        "options": [
+          "الأمين العام للحزب الشيوعي في الاتحاد السوفيتي",
+          "أمير الأفلاق",
+          "قائد القوزاق الأوكرانيين",
+          "أمير نوفغورود الأكبر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "جامعة أكسفورد أقدم من إمبراطورية الأزتيك.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الحرب التي تطوع فيها الكاتب جورج أورويل وكاد أن يلقى حتفه فيها؟",
+        "options": [
+          "الحرب الأهلية الإسبانية",
+          "الحرب العالمية الأولى",
+          "الحرب العالمية الثانية",
+          "الحرب الأهلية الروسية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي اكتشف البنسلين؟",
+        "options": [
+          "ماري كوري",
+          "ألكسندر فليمنغ",
+          "ألفرد نوبل",
+          "لويس باستور"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الرمزي للغزو الألماني للاتحاد السوفيتي في الحرب العالمية الثانية؟",
+        "options": [
+          "عملية القيصر (كايسرشلاخت)",
+          "عملية غير معقولة (أنثينكابل)",
+          "عملية بارباروسا",
+          "عملية مولوتوف"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من من الثوار السوفييت التاليين تم نفيُه من الاتحاد السوفيتي واغتيل لاحقاً في عام 1940 بسبب انتقاده للستالينية؟",
+        "options": [
+          "ليف كامينيف",
+          "ميخائيل كالينين",
+          "فلاديمير لينين",
+          "ليون تروتسكي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1961، تحطمت طائرة أمريكية من طراز ⁦B-52⁩ وكادت أن تفجر قنبلتين نوويتين بقوة 4 ميغاطن فوق أي مدينة أمريكية؟",
+        "options": [
+          "غولدسبورو، كارولاينا الشمالية",
+          "هيكسفيل، نيويورك",
+          "جاكسونفيل، فلوريدا",
+          "كونواي، أركنساس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الشعوب القديمة التالية لم يُصنف ضمن الشعوب الهيلينية (اليونانية)‏؟",
+        "options": [
+          "الدوريون",
+          "الإيليريون",
+          "الآخيون",
+          "الأيونيون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تفككت الدولة العثمانية بعد خسارتها في أي حرب؟",
+        "options": [
+          "حرب القرم",
+          "الثورة الصربية",
+          "الحرب العالمية الأولى",
+          "حرب البلقان الثانية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم بدأت محاولة الانقلاب عام 1991 في الاتحاد السوفيتي؟",
+        "options": [
+          "21 أغسطس",
+          "26 ديسمبر",
+          "24 ديسمبر",
+          "19 أغسطس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام افتُتح أول مطعم بيتزا هت؟",
+        "options": [
+          "1958",
+          "1976",
+          "1965",
+          "1942"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من يُعتقد أنه أول أوروبي 'اكتشف' نيوزيلندا؟",
+        "options": [
+          "كريستوفر كولومبوس",
+          "أبل تاسمان",
+          "جين باريه",
+          "جون كابوت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست مدينة روما في إيطاليا؟",
+        "options": [
+          "902 قبل الميلاد",
+          "524 قبل الميلاد",
+          "753 قبل الميلاد",
+          "697 قبل الميلاد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_2",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "كيف أُعدم الفيلسوف سقراط؟",
+        "options": [
+          "بالسم",
+          "بقطع الرأس",
+          "رمياً بالرصاص",
+          "بالصلب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى أعلنت ليتوانيا استقلالها عن الاتحاد السوفيتي؟",
+        "options": [
+          "25 ديسمبر 1991",
+          "11 مارس 1990",
+          "5 ديسمبر 1991",
+          "20 أبريل 1989"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تُوّج نابليون بونابرت إمبراطوراً لفرنسا؟",
+        "options": [
+          "3 يوليو 1802",
+          "8 مارس 1803",
+          "2 ديسمبر 1804",
+          "15 أكتوبر 1804"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من ينسب إليه كتابة الملحمة الشعرية 'الأوديسة'؟",
+        "options": [
+          "أرسطو",
+          "أوديسيوس",
+          "سقراط",
+          "هوميروس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من اللغات التالية لا تنتمي إلى عائلة اللغات الهندوأوروبية؟",
+        "options": [
+          "الفنلندية",
+          "الإنجليزية",
+          "الهندية",
+          "الروسية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل قوبلاي خان هو حفيد جنكيز خان؟",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متى بدأت حرب شبه الجزيرة الإيبيرية (حرب الاستقلال الإسبانية)‏؟",
+        "options": [
+          "1806",
+          "1810",
+          "1808",
+          "1809"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "فيما يتعلق بالاحتلال البريطاني لأيرلندا، إلى ماذا يرمز الاختصار (⁦IRA⁩)‏؟",
+        "options": [
+          "تحالف المتمردين الأيرلنديين",
+          "جيش الإصلاح الأيرلندي",
+          "التحالف الملكي الأيرلندي",
+          "الجيش الجمهوري الأيرلندي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت آخر خدمة للمركبة الحربية الأمريكية 'يو إس إس ميسوري' (⁦BB-63⁩) في الحرب الكورية.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من من رؤساء الولايات المتحدة التاليين تعرض للاغتيال؟",
+        "options": [
+          "ليندون جونسون",
+          "ويليام ماكينلي",
+          "تشيستر آرثر",
+          "فرانكلين روزفلت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى بدأت الثورة الفرنسية؟",
+        "options": [
+          "1823",
+          "1756",
+          "1789",
+          "1799"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل صُممت طائرة 'سبتفاير' الحربية في الأصل بناءً على طائرة سباق؟",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو التاريخ الدقيق لبدء الثورة الفرنسية؟",
+        "options": [
+          "5 مايو 1789",
+          "12 أبريل 1789",
+          "5 أبريل 1789",
+          "6 مايو 1799"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين كان أبراهام لينكولن عندما اغتاله جون ويلكس بوث عام 1865‏؟",
+        "options": [
+          "على متن قارب",
+          "في المسرح",
+          "على ظهر حصانه",
+          "في السرير"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لأي غرض بُني قمة (تاج) مبنى إمباير ستيت في الأصل؟",
+        "options": [
+          "مانعة صواعق",
+          "هوائي إرسال",
+          "مرسى للمناطيد",
+          "سارية علم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي سنوات وقعت معركة جاليبولي؟",
+        "options": [
+          "1914 - 1918",
+          "1914 - 1915",
+          "1915 - 1918",
+          "1915 - 1916"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تأسست الدولة العثمانية في عام 1299.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم بلغت نسبة سكان العالم الذين توفوا بسبب 'الإنفلونزا الإسبانية' التي تعتبر من أكثر الأوبئة فتكاً بالبشر؟",
+        "options": [
+          "6 إلى 10 بالمئة",
+          "3 إلى 6 بالمئة",
+          "1 إلى 3 بالمئة",
+          "أقل من 1 بالمئة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت المدخنة الرابعة لسفينة تايتانيك وهمية (غير حقيقية)، وصُممت لجعل السفينة تبدو أكثر قوة وتناسقاً.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انتهت الحرب العالمية الثانية؟",
+        "options": [
+          "1943",
+          "1947",
+          "1950",
+          "1945"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_20",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 20",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "بدأت الثورة البوهيمية (1618-1620) بعد أن فعل البروتستانت في براغ ماذا بالحكام الكاثوليك؟",
+        "options": [
+          "ألقوهم من النافذة",
+          "أهانوهم وأمهاتهم",
+          "حبسوهم في القيود الخشبية",
+          "شنقوهم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام سقط جدار برلين؟",
+        "options": [
+          "1987",
+          "1989",
+          "1991",
+          "1993"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ساعدت المملكة الفرنسية الولايات المتحدة في الحصول على استقلالها من بريطانيا العظمى خلال الحرب الثورية الأمريكية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "وقع الحادث النووي الكارثي في أوكرانيا عام 1986 في أي محطة طاقة؟",
+        "options": [
+          "إيغنالينا",
+          "ماياك",
+          "كورسك",
+          "تشيرنوبيل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "رتب الإمبراطوريات الإيرانية (الفارسية) التالية ترتيباً زمنياً:",
+        "options": [
+          "الميدية، الأخمينية، الفرثية، الساسانية",
+          "الميدية، الأخمينية، الساسانية، الفرثية",
+          "الأخمينية، الميدية، الفرثية، الساسانية",
+          "الأخمينية، الميدية، الساسانية، الفرثية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي توّج شارلمان إمبراطوراً رومانياً مقدساً في يوم عيد الميلاد عام 800‏؟",
+        "options": [
+          "البابا أوربان الرابع",
+          "البابا ليون الثالث",
+          "البابا ستيفين الخامس",
+          "البابا فالنتين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "افتُتحت قناة بنما أمام حركة الملاحة خلال 30 يوماً من بدء الحرب العالمية الأولى.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت أول مناظرة رئاسية متلفزة بين جيمي كارتر وجيرالد فورد.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انصهر المفاعل النووي في محطة تشيرنوبيل؟",
+        "options": [
+          "1986",
+          "1991",
+          "1975",
+          "1998"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مارشال ألماني كان يُلقب بـ 'ثعلب الصحراء'؟",
+        "options": [
+          "إرنست بوش",
+          "إرفين رومل",
+          "فولفرام فريهر فون ريختهوفن",
+          "فيلهلم ليست"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي آخر مستعمرة تنازلت عنها المملكة المتحدة، معلنة بذلك نهاية الإمبراطورية البريطانية؟",
+        "options": [
+          "الهند",
+          "أستراليا",
+          "هونغ كونغ",
+          "أيرلندا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الحرب العالمية الأولى، ما اسم التحالف الذي ضم ألمانيا، والنمسا-المجر، والدولة العثمانية، وبلغاريا؟",
+        "options": [
+          "دول المحور",
+          "اتحاد الإمبراطوريات",
+          "التحالف السلطوي",
+          "دول المركز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أول عاصمة لكندا؟",
+        "options": [
+          "كينغستون",
+          "تورونتو",
+          "أوتاوا",
+          "مونتريال"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم غزت ألمانيا بولندا؟",
+        "options": [
+          "7 ديسمبر 1941",
+          "1 سبتمبر 1939",
+          "22 يونيو 1941",
+          "7 يوليو 1937"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1845، بدأت سلسلة من الحروب في نيوزيلندا سُميت باسم أي من السكان الأصليين؟",
+        "options": [
+          "البابوانيون",
+          "السكان الأصليون (الأبوريجين)",
+          "الماوري",
+          "البولينيزيون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو تاريخ الرحلة الأولى لطائرة بي-40 وارهوك؟",
+        "options": [
+          "21 أغسطس 1939",
+          "12 يناير 1940",
+          "1 يونيو 1939",
+          "14 أكتوبر 1938"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي حضارة قامت ببناء مدينة تشيتشن إيتزا القديمة؟",
+        "options": [
+          "المايا",
+          "الأزتك",
+          "الإنكا",
+          "التولتك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بول بوت كان الديكتاتور السابق لأي دولة؟",
+        "options": [
+          "لاوس",
+          "كمبوديا",
+          "كوريا الشمالية",
+          "فيتنام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم اختبار \"ذا غادجيت\"، أول جهاز نووي تم تفجيره في التاريخ؟",
+        "options": [
+          "22 يونيو 1945",
+          "6 أغسطس 1945",
+          "16 يوليو 1945",
+          "5 أبريل 1945"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_21",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 21",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "خلال الحرب العالمية الأولى، ملوك أي دول كانت تربطهم صلة قرابة دموية؟",
+        "options": [
+          "إنجلترا، ألمانيا، روسيا",
+          "فرنسا، روسيا، ألمانيا",
+          "صربيا، روسيا، كرواتيا",
+          "ألمانيا، إسبانيا، النمسا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انتهت حرب الشمال العظمى بين روسيا والسويد؟",
+        "options": [
+          "1726",
+          "1721",
+          "1727",
+          "1724"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي رئيس أمريكي شارك في مؤتمر بوتسدام، حيث توصل الحلفاء إلى تسوية سلام مع ألمانيا؟",
+        "options": [
+          "دوايت أيزنهاور",
+          "فرانكلين روزفلت",
+          "هاري ترومان",
+          "هربرت هوفر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي سجن احتُجز أدولف هتلر عام 1924‏؟",
+        "options": [
+          "سجن سبانداو",
+          "دير إبراخ",
+          "هوهناشبرغ",
+          "سجن لاندسبرغ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى انتهت معركة الثغرة (معركة البولج)‏؟",
+        "options": [
+          "25 يناير 1945",
+          "6 أغسطس 1945",
+          "7 ديسمبر 1941",
+          "16 ديسمبر 1944"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بعد خسارته في معركة واترلو، إلى أي جزيرة نُفي نابليون بونابرت؟",
+        "options": [
+          "ألبا",
+          "سانت هيلين",
+          "كورسيكا",
+          "جزر الكناري"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو رقم هيكل المدمرة فليتشر من فئة فليتشر؟",
+        "options": [
+          "⁦DD-992⁩",
+          "⁦DD-444⁩",
+          "⁦DD-445⁩",
+          "⁦DD-446⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "انتصرت طيور الإيمو في حرب الإيمو العظمى عام 1932.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم التاريخي لسيريلانكا؟",
+        "options": [
+          "سيلان",
+          "ميانمار",
+          "كولومبو",
+          "بادولا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمت محاكمة أدولف هتلر في محاكمات نورمبرغ.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم النهضة الثقافية للأمريكيين من أصل أفريقي التي تركزت في شمال مانهاتن خلال عشرينيات وثلاثينيات القرن العشرين؟",
+        "options": [
+          "نهضة إنوود",
+          "نهضة بيد-ستاي",
+          "نهضة هارلم",
+          "نهضة أبير إيست"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى دمر بركان فيزوف مدينة بومبي؟",
+        "options": [
+          "62 ميلادية",
+          "31 قبل الميلاد",
+          "54 قبل الميلاد",
+          "79 ميلادية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان آخر إمبراطور للمكسيك؟",
+        "options": [
+          "فرديناند ماكسيميليان",
+          "أندريس مانويل لوبيز أوبرادور",
+          "نابليون الثالث",
+          "أغوستين دي إيتوربيدي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان رئيس وزراء المملكة المتحدة خلال معظم فترة الحرب العالمية الثانية؟",
+        "options": [
+          "نيفيل تشامبرلين",
+          "وينستون تشرشل",
+          "هارولد ماكميلان",
+          "إدوارد هيث"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم توقيع إعلان استقلال الولايات المتحدة؟",
+        "options": [
+          "1775",
+          "1774",
+          "1776",
+          "1777"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تأسست شركة بيريتا الإيطالية لتصنيع الأسلحة النارية؟",
+        "options": [
+          "1776",
+          "1923",
+          "1998",
+          "1526"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من السنوات التالية يُشار إليها عادةً باسم \"عام بلا صيف\"؟",
+        "options": [
+          "1816",
+          "1823",
+          "1813",
+          "1808"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية لم تكن من دول المحور خلال الحرب العالمية الثانية؟",
+        "options": [
+          "إيطاليا",
+          "الاتحاد السوفيتي",
+          "ألمانيا",
+          "اليابان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الحقيقي للقائد الوطني الألباني إسكندر بك؟",
+        "options": [
+          "ديتوراك جولاتي",
+          "إسكندر بيكو",
+          "جرج كاستريوتي",
+          "ميراش كراسنيكي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_3",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "من هو أول رئيس وزراء لكندا؟",
+        "options": [
+          "جون ماكدونالد",
+          "جون أبوت",
+          "ألكسندر ماكينزي",
+          "روبرت بوردن"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو القائد العسكري الشهير الذي عبر جبال الألب بجيش يضم فيلة حربية خلال الحرب البونيقية الثانية؟",
+        "options": [
+          "جيرمانيكوس",
+          "حنبعل",
+          "الإسكندر الأكبر",
+          "تيبيريوس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الفيلم الشهير الذي أُطلق اسمه كلقب على نظام الدفاع الاستراتيجي الأمريكي خلال الحرب الباردة؟",
+        "options": [
+          "الفك المفترس",
+          "بليد رانر",
+          "حرب النجوم",
+          "الفضائي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان أبراهام لينكولن أول رئيس أمريكي يُولد خارج حدود الولايات الثلاث عشرة الأصلية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يحتوي شعار نبالة ملك إسبانيا على شعارات ممالك قشتالة، وليون، وأراغون، وأي مملكة إيبيرية سابقة أخرى؟",
+        "options": [
+          "نافارا",
+          "جاليسيا",
+          "غرناطة",
+          "كتالونيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من ملوك إنجلترا واجه ثورة الفلاحين عام 1381‏؟",
+        "options": [
+          "إدوارد الثالث",
+          "ريتشارد الثاني",
+          "إدوارد الثاني",
+          "هنري الرابع"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مقولة 'قد أختلف معك في الرأي، ولكني مستعد للموت دفاعاً عن حقك في التعبير عنه' منسوبة للفيلسوف الفرنسي فولتير.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كان الملك هنري الثامن ثاني ملوك أي عائلة مالكة أوروبية؟",
+        "options": [
+          "يورك",
+          "ستيوارت",
+          "لانكستر",
+          "تيودور"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى نشر لودفيغ زامنهوف لأول مرة كتاب 'الكتاب الأول' (⁦Unua Libro⁩) الذي يصف فيه لغته العالمية المقترحة 'الإسبرانتو'؟",
+        "options": [
+          "1887",
+          "1897",
+          "1905",
+          "1915"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي حدث تاريخي كانت تشير افتتاحية 1812 للملحن تشايكوفسكي؟",
+        "options": [
+          "حرب عام 1812 الأمريكية",
+          "الحروب النابليونية",
+          "الثورة الروسية",
+          "هجوم اللواء الخفيف (حرب القرم)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "غرقت سفينة تايتانيك خلال رحلتها الأولى من ساوثهامبتون بإنجلترا إلى أي مدينة أمريكية؟",
+        "options": [
+          "بوسطن",
+          "فيلادلفيا",
+          "نيويورك",
+          "واشنطن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً للأسطورة، أي حيوان بنى الإغريق مجسماً خشبياً ضخماً له للتسلل إلى داخل طروادة؟",
+        "options": [
+          "ماعز",
+          "فيل",
+          "ذئب",
+          "حصان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان حنبعل؟",
+        "options": [
+          "قائد عسكري قرطاجي",
+          "قاتل متسلسل بريطاني",
+          "مستكشف فرنسي",
+          "فيلسوف يوناني"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو أول إمبراطور لروما؟",
+        "options": [
+          "يوليوس قيصر",
+          "أغسطس",
+          "بومبيوس الكبير",
+          "كلوديوس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الحضارة التي تُعتبر على نطاق واسع أقدم حضارة معروفة للبشرية؟",
+        "options": [
+          "بابل",
+          "آشور",
+          "الحضارة السومرية",
+          "فينيقيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان ثيودور روزفلت الابن الجنرال الوحيد الذي شارك في الهجوم الأول بيوم الإنزال في نورماندي (⁦D-Day⁩).",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الشائع لطرق التجارة القديمة التي ربطت بين شرق وغرب أوراسيا؟",
+        "options": [
+          "طريق الحرير",
+          "طريق التوابل",
+          "طريق الطين",
+          "طريق الملح"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام احتفلت فنلندا بمرور 100 عام على استقلالها؟",
+        "options": [
+          "2016",
+          "2017",
+          "2018",
+          "2015"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول لم تؤسس مستعمرة في أمريكا الشمالية الحالية؟",
+        "options": [
+          "إسبانيا",
+          "السويد",
+          "البرتغال",
+          "هولندا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي حضارة أمريكية قديمة كانت مصدر الاعتقاد بأن العالم سينتهي أو يتغير بشكل جذري في 21 ديسمبر 2012‏؟",
+        "options": [
+          "الإنكا",
+          "الأزتيك",
+          "النافاهو",
+          "المايا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_4",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الكازينو في لاس فيغاس الذي بناه وشغله في الأصل رجل العصابات باغسي سيغل؟",
+        "options": [
+          "ذا فلامينغو",
+          "ذا إم جي إم غراند",
+          "ذا ساندز",
+          "ذا صحارى"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انتهت حرب فيتنام？",
+        "options": [
+          "1978",
+          "1975",
+          "1967",
+          "1969"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان رئيس وزراء اليابان عندما أعلنت الحرب على الولايات المتحدة؟",
+        "options": [
+          "ميتشينوميا هيروهيتو",
+          "إيسوروكو ياماموتو",
+          "هيديكي توجو",
+          "فوميمارو كونويه"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال الحرب العالمية الثانية عام 1945، ألقت الولايات المتحدة قنبلتين ذريتين على مدينتين يابانيتين، الأولى هيروشيما فما هي المدينة الأخرى؟",
+        "options": [
+          "كاواساكي",
+          "طوكيو",
+          "كاغوشيما",
+          "ناغاساكي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الذي أُطلق على سلسلة المواجهات بين المملكة المتحدة وآيسلندا حول حقوق الصيد في شمال الأطلسي؟",
+        "options": [
+          "حروب القد",
+          "حروب جراد البحر",
+          "حروب الهلبوت",
+          "حروب الماكريل"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي شارع بدأ حريق لندن الكبير عام 1666‏؟",
+        "options": [
+          "شارع بيكر",
+          "شارع بودينغ",
+          "مبنى البرلمان",
+          "كاتدرائية القديس بولس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انهار الاتحاد السوفيتي؟",
+        "options": [
+          "1992",
+          "1891",
+          "1991",
+          "1990"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد السوناتات التي كتبها لودفيج فان بيتهوفن؟",
+        "options": [
+          "50",
+          "31",
+          "21",
+          "32"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام أصدرت شركة التبغ غير المدخن \"سكوال\" خط إنتاجها الأول من أكياس التبغ المعروفة باسم \"سكوال بانديتس\"؟",
+        "options": [
+          "1983",
+          "1934",
+          "1984",
+          "1822"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي قومية السلطان صلاح الدين الأيوبي؟",
+        "options": [
+          "عربي",
+          "كردي",
+          "مصري",
+          "سوري"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هي أطول زوجات هنري الثامن زواجاً منه من بين زوجاته الست؟",
+        "options": [
+          "آن بولين",
+          "جين سيمور",
+          "كاثرين الأراغونية",
+          "كاثرين بار"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام بدأت الحرب الكورية؟",
+        "options": [
+          "1945",
+          "1960",
+          "1912",
+          "1950"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم تعرضت شبكة أربانت (⁦ARPANET⁩) لعطل كامل استمر لمدة 4 ساعات؟",
+        "options": [
+          "27 أكتوبر 1980",
+          "21 نوفمبر 1969",
+          "29 أكتوبر 1969",
+          "9 ديسمبر 1991"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مبنى أُضرمت فيه النيران في 24 أغسطس 1812‏؟",
+        "options": [
+          "مبنى البرلمان",
+          "البيت الأبيض",
+          "مبنى الجمعية الوطنية الكبرى",
+          "قصر الأمة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان توماس كرابر سباكاً وهو من اخترع المرحاض ذو السيفون.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم نصب لوحة هوليوود الشهيرة التي يبلغ ارتفاعها 45 قدماً لأول مرة؟",
+        "options": [
+          "1903",
+          "1913",
+          "1933",
+          "1923"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي بلد شهد \"الثورة البرتقالية\" بين عامي 2004 و2005‏؟",
+        "options": [
+          "أوكرانيا",
+          "بيلاروسيا",
+          "لاتفيا",
+          "ليتوانيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الجنرال النازي الذي عُرف بلقب \"ثعلب الصحراء\"؟",
+        "options": [
+          "جيرد فون رونتشتيت",
+          "إرفين رومل",
+          "فيلهلم كايتل",
+          "هاينز غوديريان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام فُتِحت القسطنطينية على يد الأتراك؟",
+        "options": [
+          "1435",
+          "1454",
+          "1453",
+          "1440"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الصراع التاريخي الذي تسبب في مقتل أكبر عدد من الناس؟",
+        "options": [
+          "تمرد تايبينغ",
+          "حرب الممالك الثلاث",
+          "الغزو المغولي",
+          "الحرب العالمية الثانية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_5",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "متى تم تأسيس وكالة الأمن القومي للولايات المتحدة؟",
+        "options": [
+          "4 نوفمبر 1952",
+          "26 يوليو 1908",
+          "1 يوليو 1973",
+          "25 نوفمبر 2002"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي حزب سياسي كان ينتمي أبراهام لينكولن عندما انتُخب رئيساً للولايات المتحدة؟",
+        "options": [
+          "الحزب الديمقراطي",
+          "الحزب الجمهوري",
+          "مستقل",
+          "حزب الويغ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1453، أي مدينة مهمة سقطت؟",
+        "options": [
+          "روما",
+          "هامبورغ",
+          "القسطنطينية",
+          "أثينا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى يصادف تاريخ \"منتصف مارس\" (⁦Ides of March⁩)‏؟",
+        "options": [
+          "14 مارس",
+          "31 مارس",
+          "1 مارس",
+          "15 مارس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان زعيم الحزب الشيوعي اليوغوسلافي؟",
+        "options": [
+          "جوزيف بروز تيتو",
+          "كاراجورجي بيتروفيتش",
+          "ميلوش أوبيليتش",
+          "ألكسندر بيتروفيتش"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم إدخال الإصلاحات الماريانية في الجمهورية الرومانية؟",
+        "options": [
+          "42 قبل الميلاد",
+          "107 قبل الميلاد",
+          "264 قبل الميلاد",
+          "102 ميلادي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول رئيس لجمهورية الصين الشعبية؟",
+        "options": [
+          "ليو شاوكي",
+          "دونغ بيوو",
+          "ماو تسي تونغ",
+          "لي شيانيان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم أول مستوطنة إنجليزية دائمة في أمريكا؟",
+        "options": [
+          "نيويورك",
+          "سانت جونز",
+          "بليموث",
+          "جيمستاون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الملوك الآشوريين التاليين لم يحكم خلال الإمبراطورية الآشورية الحديثة؟",
+        "options": [
+          "شمشي أداد الثالث",
+          "شلمنصر الخامس",
+          "آسرحدون",
+          "آشور ناصربال الثاني"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال حرب الوردتين (1455 - 1487)، من هو الرجل الإنجليزي الذي لُقب بـ \"صانع الملوك\"؟",
+        "options": [
+          "ريتشارد الثالث",
+          "ريتشارد نيفيل",
+          "هنري الخامس",
+          "توماس وارويك"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة ولد جوزيف ستالين؟",
+        "options": [
+          "روسيا",
+          "ألمانيا",
+          "جورجيا",
+          "بولندا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين ومتى صُنع أول صندوق كرتوني للاستخدام الصناعي？",
+        "options": [
+          "الولايات المتحدة، 1817",
+          "إنجلترا، 1917",
+          "الولايات المتحدة، 1917",
+          "إنجلترا، 1817"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تم توثيق آخر حالة طبيعية لمرض الجدري؟",
+        "options": [
+          "1977",
+          "1982",
+          "1980",
+          "1990"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست شركة جوجل؟",
+        "options": [
+          "9 أكتوبر 1997",
+          "4 سبتمبر 1998",
+          "12 ديسمبر 1989",
+          "7 فبراير 2000"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية كانت الأولى في إرسال جسم ما إلى الفضاء؟",
+        "options": [
+          "الولايات المتحدة الأمريكية",
+          "روسيا",
+          "ألمانيا",
+          "الصين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي لم يكن من ضمن ضربات جوزيف ستالين العشر خلال الحرب العالمية الثانية؟",
+        "options": [
+          "هجوم شبه جزيرة القرم",
+          "هجوم لينينغراد - نوفغورود",
+          "عملية باجراتيون",
+          "هجوم فيستولا - الأودر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول مستكشف يبحر إلى أمريكا الشمالية؟",
+        "options": [
+          "ليف إريكسون",
+          "كريستوفر كولومبوس",
+          "أميريغو فيسبوتشي",
+          "فرديناند ماجلان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا أطلق الفايكنج على مستعمرتهم قصيرة العمر في كندا الحالية؟",
+        "options": [
+          "جزر فارو",
+          "فينلاند",
+          "هالوغالاند",
+          "سكونه"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة هاجمت سفينة يو إس إس ليبرتي في 8 يونيو 1967‏؟",
+        "options": [
+          "سوريا",
+          "المملكة العربية السعودية",
+          "إسرائيل",
+          "إيران"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام وقعت معركة فردان؟",
+        "options": [
+          "1917",
+          "1915",
+          "1918",
+          "1916"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_6",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 6",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في أي عام حدث الغزو العراقي للكويت؟",
+        "options": [
+          "1990",
+          "1992",
+          "1988",
+          "1986"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أقامت هاتان الدولتان اتحاداً فيدرالياً (كومنولث) من القرن السادس عشر إلى القرن الثامن عشر.",
+        "options": [
+          "الهوتو ورواندا",
+          "بولندا وليتوانيا",
+          "كوريا الشمالية وكوريا الجنوبية",
+          "بنغلاديش وبوتان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الغزو المخطط له لليابان قرب نهاية الحرب العالمية الثانية؟",
+        "options": [
+          "عملية الصعود على متن السفينة",
+          "عملية درع الحديد",
+          "عملية السقوط",
+          "عملية الاشتعال"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان بريجنيف الزعيم الخامس للاتحاد السوفيتي.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "هناك 13 شهراً في التقويم الإثيوبي.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كان أغسطس ابن عم يوليوس قيصر.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "سيطرت مملكة بروسيا لفترة وجيزة على أراضٍ في إستونيا.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تأسست كندا؟",
+        "options": [
+          "1798",
+          "1859",
+          "1668",
+          "1867"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الحقيقي لجنكيز خان؟",
+        "options": [
+          "تيموجين",
+          "مونكو",
+          "أوقطاي",
+          "تيمور"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "توفي الرئيسان الأمريكيان السابقان جون آدامز وتوماس جيفرسون بفارق ساعات قليلة عن بعضهما البعض.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم كان عمر أدولف هتلر عندما توفي؟",
+        "options": [
+          "43",
+          "65",
+          "56",
+          "47"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بعد معركة مرج دابق عام 1516، بسطت الدولة العثمانية سيطرتها على القدس بعد انتزاعها من أي سلطنة؟",
+        "options": [
+          "الأيوبيون",
+          "الأمويون",
+          "السلاجقة",
+          "المماليك"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يُطلق على حركة انتقال الأمراض والمحاصيل والناس عبر المحيط الأطلسي بعد وقت قصير من اكتشاف الأمريكتين؟",
+        "options": [
+          "التبادل الكولومبي",
+          "التجارة المثلثية",
+          "تجارة الرقيق عبر الأطلسي",
+          "طريق الحرير"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين دارت حرب البوير الثانية عام 1899‏؟",
+        "options": [
+          "الأرجنتين",
+          "جنوب أفريقيا",
+          "نيبال",
+          "بلغاريا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى أصبحت أغنية \"يا كندا\" النشيد الوطني الرسمي للبلاد؟",
+        "options": [
+          "1950",
+          "1920",
+          "1980",
+          "1880"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة حديثة تقع في المنطقة التي كانت تُعرف بـ \"فريجيا\" في العصور القديمة؟",
+        "options": [
+          "سوريا",
+          "اليونان",
+          "مصر",
+          "تركيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام دارت معركة هاستنغز؟",
+        "options": [
+          "1066",
+          "911",
+          "1204",
+          "1420"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم اعتماد التقويم الغريغوري لأول مرة؟",
+        "options": [
+          "1623",
+          "1582",
+          "1501",
+          "1555"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي ملك بريطاني كان يُعرف أيضاً باسم \"ويليام أورانج\"؟",
+        "options": [
+          "ويليام الأول",
+          "ويليام الثاني",
+          "ويليام الثالث",
+          "ويليام الرابع"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في حرب المحيط الهادئ (1879 - 1883)، خسرت بوليفيا منفذها إلى المحيط الهادئ بعد هزيمتها من قبل أي دولة في أمريكا الجنوبية؟",
+        "options": [
+          "بيرو",
+          "البرازيل",
+          "الأرجنتين",
+          "تشيلي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_7",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 7",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من الدول الأفريقية التالية كانت الأكثر نجاحاً في مقاومة الاستعمار؟",
+        "options": [
+          "إثيوبيا",
+          "ساحل العاج",
+          "الكونغو",
+          "ناميبيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الملك الإنجليزي الذي تزوج من إليانور آكيتيان؟",
+        "options": [
+          "ريتشارد الأول",
+          "هنري الثاني",
+          "هنري الأول",
+          "هنري الخامس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال الحرب الأهلية الإسبانية (1936)، قاتل فرانسيسكو فرانكو لصالح أي فصيل سياسي؟",
+        "options": [
+          "إسبانيا الجمهورية",
+          "الجبهة الشعبية",
+          "إسبانيا القومية",
+          "الدولة البابوية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى من يُنسب أول دليل وجودي (الدليل الأنطولوجي) لإثبات وجود الله؟",
+        "options": [
+          "رينيه ديكارت",
+          "إيمانويل كانت",
+          "أرسطو",
+          "أنزلم من كانتربري"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عصر موسيقي كان عازف البيانو والمؤلف فريدريك شوبان؟",
+        "options": [
+          "العصر الرومانسي",
+          "العصر الكلاسيكي",
+          "عصر الباروك",
+          "عصر النهضة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من شعوب الشرق الأدنى القديم التالية لا تزال قائمة كمجموعة عرقية معاصرة؟",
+        "options": [
+          "البابليون",
+          "الآشوريون",
+          "الحثيون",
+          "العيلاميون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست قوات الـ (⁦SS⁩) أو شوتزشتافل؟",
+        "options": [
+          "1 سبتمبر 1941",
+          "8 مارس 1935",
+          "4 أبريل 1925",
+          "21 فبراير 1926"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان رئيس الولايات المتحدة أثناء توقيع صفقة شراء غادسدن؟",
+        "options": [
+          "أندرو جونسون",
+          "أبراهام لينكون",
+          "جيمس بولك",
+          "فرانكلين بيرس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هي الشركة التي صممت رشاش المينيغون (⁦Minigun⁩) في عام 1960‏؟",
+        "options": [
+          "جنرال إلكتريك",
+          "كولت لصناعة الأسلحة",
+          "هيكلير آند كوخ",
+          "سيغ ساور"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد السفن الشقيقة لسفينة تايتنيك؟",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "1"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي عثر عليه راعيان شابان عام 1946 بالقرب من أحد الكهوف؟",
+        "options": [
+          "صندوق اللحية السوداء",
+          "خراف",
+          "مخطوطات البحر الميت",
+          "أول نائم في كهف واهاكا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي ملك قُتل في معركة بوسورث عام 1485‏؟",
+        "options": [
+          "إدوارد الخامس",
+          "هنري السابع",
+          "جيمس الأول",
+          "ريتشارد الثالث"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول رئيس لكينيا؟",
+        "options": [
+          "جومو كينياتا",
+          "دانيال موي",
+          "توم مبويا",
+          "أوجينجا أودينجا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم بدأت الحرب العالمية الأولى؟",
+        "options": [
+          "28 يناير",
+          "28 يوليو",
+          "28 يونيو",
+          "28 أبريل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة في أمريكا الجنوبية حاربت بريطانيا العظمى على جزر فالكلاند عام 1982‏؟",
+        "options": [
+          "البرازيل",
+          "تشيلي",
+          "الأرجنتين",
+          "فنزويلا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان المطور والمخطط الرئيسي لقناة السويس؟",
+        "options": [
+          "لويس أوجين كافينياك",
+          "جون ميلتون",
+          "يوهان لوكاس فون هيلدبراندت",
+          "فرديناند دي لسبس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم البطل القومي للفلبين الذي ألهم وقاد الثورة الفلبينية ضد الاستعمار الإسباني؟",
+        "options": [
+          "خوسيه ريزال",
+          "سيمون بوليفار",
+          "بينيتو خواريز",
+          "خوسيه دي سان مارتين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال الثلاثية الرومانية عام 42 قبل الميلاد، ما هي المنطقة التي مُنحت لليبيدوس؟",
+        "options": [
+          "إيطاليا",
+          "هسبانيا",
+          "غاليا",
+          "آسيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مبتكر المشروب الغازي دكتور بيبر (⁦Dr⁩. ⁦Pepper⁩)‏؟",
+        "options": [
+          "جيمس ويلينغتون",
+          "جونسون هينسين",
+          "تشارلز ألديرتون",
+          "بوريس هيفيلتيك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_8",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 8",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي أولى الدول التي انفصلت عن يوغوسلافيا؟",
+        "options": [
+          "سلوفينيا وكرواتيا",
+          "مقدونيا والجبل الأسود",
+          "سلوفينيا ومقدونيا",
+          "الجبل الأسود وسلوفينيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي يوم بدأت معركة غيتيسبرغ؟",
+        "options": [
+          "17 سبتمبر 1862",
+          "1 يوليو 1863",
+          "21 يوليو 1861",
+          "30 أبريل 1863"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان رئيس وزراء بريطانيا عند اندلاع الحرب العالمية الثانية عام 1939‏؟",
+        "options": [
+          "ستانلي بالدوين",
+          "وينستون تشرشل",
+          "نيفيل تشامبرلين",
+          "رامزي ماكدونالد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "قاد توسان لوفرتور ثورة ناجحة للعبيد في أي بلد؟",
+        "options": [
+          "فرنسا",
+          "كوبا",
+          "الولايات المتحدة",
+          "هايتي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام بدأت الحرب العالمية الأولى؟",
+        "options": [
+          "1914",
+          "1930",
+          "1917",
+          "1939"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عندما أبحر كريستوفر كولومبوس إلى أمريكا، ما هي أول منطقة وصل إليها؟",
+        "options": [
+          "فلوريدا",
+          "أرخبيل جزر البهاما",
+          "برزخ بنما",
+          "نيكاراغوا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أول رياضة لُعبت على سطح القمر؟",
+        "options": [
+          "كرة القدم الأمريكية",
+          "التنس",
+          "الغولف",
+          "كرة القدم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي اغتال الأرشيدوق فرانز فرديناند؟",
+        "options": [
+          "نيديلكو تشابرينوفيتش",
+          "أوسكار بوتيوريك",
+          "فرديناند كوهين بليند",
+          "غافريلو برينسيب"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الدول ظلت محايدة خلال الحرب العالمية الثانية؟",
+        "options": [
+          "سويسرا",
+          "المملكة المتحدة",
+          "فرنسا",
+          "إيطاليا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى حصلت النرويج على دستورها؟",
+        "options": [
+          "1932",
+          "1814",
+          "1905",
+          "1854"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أقدم ولاية أمريكية؟",
+        "options": [
+          "رود آيلاند",
+          "مين",
+          "ديلاوير",
+          "فرجينيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي رئيس وزراء أسترالي اختفى في عام 1967 ولم يُعثر عليه أبداً؟",
+        "options": [
+          "بول كيتنغ",
+          "إدموند بارتون",
+          "سكوت موريسون",
+          "هارولد هولت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي تاريخ تحول سلاح الجو التابع للجيش الأمريكي إلى القوات الجوية الأمريكية؟",
+        "options": [
+          "18 سبتمبر 1947",
+          "14 ديسمبر 1946",
+          "27 أكتوبر 1945",
+          "8 نوفمبر 1944"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "القنبلتان الذريتان اللتان ألقتهما الولايات المتحدة على اليابان في أغسطس 1945 كانتا باسم '⁦Little Man⁩' (الرجل الصغير) و'⁦Fat Boy⁩' (الولد السمين).",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام وقع هجوم غاز السارين في مترو طوكيو؟",
+        "options": [
+          "2001",
+          "2011",
+          "1995",
+          "1991"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي رئيس أمريكي تعرض لهجوم شهير من قبل أرنب يسبح؟",
+        "options": [
+          "رونالد ريجان",
+          "ليندون جونسون",
+          "جيرالد فورد",
+          "جيمي كارتر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم تعيين أدولف هتلر مستشاراً لألمانيا؟",
+        "options": [
+          "30 يناير 1933",
+          "1 سبتمبر 1939",
+          "27 فبراير 1933",
+          "6 أكتوبر 1939"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي حوار دافع سقراط عن نفسه أمام محكمة أثينا؟",
+        "options": [
+          "إيثيفرو",
+          "الدفاع",
+          "القوانين",
+          "الجمهورية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تأسست وزارة الأمن الداخلي الأمريكية كاستجابة لهجمات 11 سبتمبر.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-history_quiz_9",
+    "user_id": "system",
+    "title": "التاريخ والتراث العالمي — الجزء 9",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تاريخ",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من بعثات أبولو كانت الأخيرة في برنامج أبولو التابع لوكالة ناسا؟",
+        "options": [
+          "أبولو 17",
+          "أبولو 13",
+          "أبولو 11",
+          "أبولو 15"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي حاملة طائرات انطلقت غارة دوليتل في 18 أبريل 1942 خلال الحرب العالمية الثانية؟",
+        "options": [
+          "يو إس إس إنتربرايز",
+          "يو إس إس هورنت",
+          "يو إس إس ليكسينغتون",
+          "يو إس إس ساراتوغا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الخدمة التي قدمها الطبيب المزيف جون آر برينكلي في أوائل القرن العشرين ليجني من ورائها شهرة وثروة طائلتين؟",
+        "options": [
+          "نقل دم الخنزير",
+          "زراعة كبد البقر",
+          "زراعة خصية الماعز",
+          "زراعة صدر الديك الرومي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي اللعبة التي فازت بجائزة لعبة العام في 2018‏؟",
+        "options": [
+          "ديترويت: بيكام هومان",
+          "ريد ديد ريدمبشن 2",
+          "إيه واي آوت",
+          "جود أوف وار"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لعبادة أي إله استُخدم معبد البانثيون في روما؟",
+        "options": [
+          "أي إله يريدونه",
+          "أثينا",
+          "زيوس",
+          "كل من أثينا وزيوس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين ولد نابليون بونابرت؟",
+        "options": [
+          "نورماندي",
+          "كورسيكا",
+          "بريتاني",
+          "باريس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي بلد بُني تمثال الحرية وصُدِّر إلى الولايات المتحدة الأمريكية؟",
+        "options": [
+          "ألمانيا",
+          "إسبانيا",
+          "فرنسا",
+          "إنجلترا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من من الآباء المؤسسين للولايات المتحدة الأمريكية أصبح رئيساً لاحقاً؟",
+        "options": [
+          "ألكسندر هاملتون",
+          "سامويل آدامز",
+          "روجر شيرمان",
+          "جيمس مونرو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تم قبول أدولف هتلر في أكاديمية فيينا للفنون الجميلة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام انفصلت تكساس عن المكسيك؟",
+        "options": [
+          "1838",
+          "1836",
+          "1845",
+          "1844"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بالإضافة إلى مسيرته المهنية كمنجم و\"متنبئ\"، نشر نوستراداموس أطروحة عام 1555 تضمنت قسماً عن ماذا؟",
+        "options": [
+          "تعليم الببغاوات الكلام",
+          "الغش في ألعاب الورق",
+          "صنع المربى والجيليه",
+          "حفر القبور"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول حاكم لهايتي بعد نيلها استقلالها؟",
+        "options": [
+          "توسان لوفرتور",
+          "هنري كريستوف",
+          "ألكسندر بيتيون",
+          "جان جاك ديسالين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال حرب الشتاء، كان عدد جنود الاتحاد السوفيتي الذين لقوا حتفهم أو فُقدوا يعادل خمسة أضعاف خسائر فنلندا.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم رفع \"حصار لينينغراد\" خلال الحرب العالمية الثانية؟",
+        "options": [
+          "سبتمبر 1943",
+          "يناير 1944",
+          "نوفمبر 1943",
+          "مارس 1944"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان معلم الإسكندر الأكبر؟",
+        "options": [
+          "سقراط",
+          "أفلاطون",
+          "أرسطو",
+          "الملك فيليب"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة حديثة تُعرف باسم \"مقبرة الإمبراطوريات\"؟",
+        "options": [
+          "الصين",
+          "العراق",
+          "روسيا",
+          "أفغانستان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي ملك من ملوك فرنسا باسم لويس عُرف بلقب 'ملك الشمس'؟",
+        "options": [
+          "لويس الرابع عشر",
+          "لويس الثالث عشر",
+          "لويس الخامس عشر",
+          "لويس السادس عشر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي عام يُعتبر تاريخ نهاية الإمبراطورية البريطانية؟",
+        "options": [
+          "1986",
+          "1997",
+          "1981",
+          "1971"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لتقديرات العلماء، ما هي النسبة المئوية لسكان العالم الذين لقوا حتفهم في ذلك الوقت بسبب فتوحات تيمورلنك؟",
+        "options": [
+          "1%",
+          "3%",
+          "5%",
+          "<1%"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-mathematics_quiz_1",
+    "user_id": "system",
+    "title": "الرياضيات والأرقام — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضيات",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "التكامل هو عكس أي عملية رياضية؟",
+        "options": [
+          "الاشتقاق",
+          "القسمة",
+          "الانحراف المعياري",
+          "الضرب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي مساحة دائرة قطرها 20 بوصة إذا كانت قيمة باي (⁦π⁩) تساوي ⁦3.1415⁩‏؟",
+        "options": [
+          "⁦380.1215⁩ بوصة",
+          "⁦314.15⁩ بوصة",
+          "⁦3141.5⁩ بوصة",
+          "⁦1256.6⁩ بوصة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي مشتقة ⁦sin⁩(⁦x⁩)‏؟",
+        "options": [
+          "⁦csc⁩(⁦x⁩)",
+          "-⁦cos⁩(⁦x⁩)",
+          "⁦cos⁩(⁦x⁩)",
+          "-⁦sin⁩(⁦x⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو عالم الرياضيات اليوناني الذي جرى في شوارع سرقوسة عارياً وهو يصرخ \"وجدتها\" بعد اكتشافه لمبدأ الإزاحة؟",
+        "options": [
+          "إقليدس",
+          "هوميروس",
+          "إراتوستينس",
+          "أرخميدس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل معادلة تكافؤ المادة والطاقة لأينشتاين هي ⁦E⁩ = ⁦MC3⁩‏؟",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم ضلعاً للشكل السباعي؟",
+        "options": [
+          "5",
+          "7",
+          "4",
+          "9"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الأرقام الرومانية، ماذا يعادل الرمز ⁦XL⁩‏؟",
+        "options": [
+          "60",
+          "15",
+          "40",
+          "90"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المقابل الست عشري (⁦Hexadecimal⁩) للعدد العشري 31‏؟",
+        "options": [
+          "⁦3D⁩",
+          "⁦2E⁩",
+          "⁦1B⁩",
+          "⁦1F⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو رمز الإزاحة؟",
+        "options": [
+          "Δ⁦r⁩",
+          "⁦dr⁩",
+          "⁦Dp⁩",
+          "⁦r⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المثلث متساوي الأضلاع تكون دائماً جميع زواياه قياسها 60 درجة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "العدد الثنائي \"101001101\" يعادل العدد العشري \"334\".",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "المثلث مختلف الأضلاع (⁦Scalene⁩) يحتوي على ضلعين متساويين في الطول.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أقل عدد من الأضلاع يمكن أن يتكون منه المضلع?؟",
+        "options": [
+          "3",
+          "1",
+          "2",
+          "7"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي معادلة مساحة الكرة؟",
+        "options": [
+          "4⁦π⁩⁦r⁩^2",
+          "(4/3)⁦π⁩⁦r⁩^3",
+          "(1/3)⁦π⁩⁦hr⁩^2",
+          "⁦π⁩⁦r⁩^4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا تمكنت من طي ورقة من المنتصف 50 مرة، فسيصل سمكها إلى ثلاثة أرباع المسافة بين الأرض والشمس.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "مضروب الصفر (⁦Zero factorial⁩) يساوي صفراً.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأجزاء (الكتب) في كتاب \"العناصر\" لإقليدس في الهندسة؟",
+        "options": [
+          "13",
+          "8",
+          "10",
+          "17"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي القيمة التقريبية للثابت الرياضي ⁦e⁩‏؟",
+        "options": [
+          "⁦3.14⁩",
+          "⁦2.72⁩",
+          "⁦1.62⁩",
+          "⁦1.41⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مجموعة جميع الأعداد الجبرية هي مجموعة قابلة للعد.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "بأي حرف يوناني يُرمز عادةً للثابت الرياضي المعروف باسم \"النسبة الذهبية\"؟",
+        "options": [
+          "⁦π⁩ (باي)",
+          "Ψ (بساي)",
+          "Τ (تاو)",
+          "Φ (فاي)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-mathematics_quiz_2",
+    "user_id": "system",
+    "title": "الرياضيات والأرقام — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضيات",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "من من علماء الرياضيات التاليين قدم مساهمات كبرى في نظرية الألعاب؟",
+        "options": [
+          "جون فون نيومان",
+          "كارل فريدريش غاوس",
+          "ليونهارت أويلر",
+          "ستيفان باناخ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من نرد الألعاب التالي لا يمثل مجسماً أفلاطونياً؟",
+        "options": [
+          "نرد ذو 12 وجهاً",
+          "نرد ذو 10 أوجه",
+          "نرد ذو 20 وجهاً",
+          "نرد ذو 8 أوجه"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم زيبتومتر يوجد في الفيمتومتر الواحد؟",
+        "options": [
+          "10",
+          "1,000,000,000",
+          "1,000,000",
+          "1000"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مفهوم \"المجموعة التي تحتوي على كل المجموعات التي لا تحتوي على نفسها\" هو فكرة مفارقة تنسب إلى أي فيلسوف إنجليزي؟",
+        "options": [
+          "فرانسيس بيكون",
+          "جون لوك",
+          "ألفريد نورث وايتهيد",
+          "برتراند راسل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي أثبت مبرهنة فيرما الأخيرة؟",
+        "options": [
+          "أندرو وايلز",
+          "ليونهارت أويلر",
+          "كارل فريدريش غاوس",
+          "سرينيفاسا رامانوجان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرمز الأبجدي الرقمي المستخدم لتمثيل العدد التخيلي؟",
+        "options": [
+          "⁦e⁩",
+          "⁦i⁩",
+          "⁦n⁩",
+          "⁦x⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عدد \"الميلينيليون\" (⁦Millinillion⁩) هو عدد حقيقي.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم ضلعاً لشبه المنحرف (⁦Trapezium⁩)‏؟",
+        "options": [
+          "3",
+          "5",
+          "6",
+          "4"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يسمى المضلع المكون من ثمانية أضلاع؟",
+        "options": [
+          "الشكل الثماني",
+          "الشكل السداسي",
+          "الشكل التساعي",
+          "الشكل السباعي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي حرف يوناني يُستخدم للدلالة على المجموع (⁦Summation⁩)‏؟",
+        "options": [
+          "ديلتا (⁦Delta⁩)",
+          "سيغما (⁦Sigma⁩)",
+          "ألفا (⁦Alpha⁩)",
+          "أوميغا (⁦Omega⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي لم يقم بتطويره عالم الرياضيات ليونهارت أويلر؟",
+        "options": [
+          "طريقة لحل المعادلات التفاضلية من الدرجة الأولى",
+          "متطابقة تربط بين الأعداد ⁦e⁩ و ⁦pi⁩ و ⁦i⁩",
+          "تطوير على تحويل فوريه السريع",
+          "صيغة تربط بين الرؤوس والحواف والأوجه في المخطط (الرسم البياني)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في التوزيع الطبيعي، تقع 95% من البيانات ضمن كم انحراف معياري من المتوسط الحسابي؟",
+        "options": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هما الرجلان اللذان ينسب إليهما الفضل في اكتشاف حساب التفاضل والتكامل بشكل مستقل؟",
+        "options": [
+          "نيوتن ولايبنتز",
+          "أفلاطون وأرسطو",
+          "أسيموف ورذرفورد",
+          "ديفوراك وسميث"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرقم الرابع لـ باي (⁦π⁩)‏؟",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في المستوى المركب، ضرب دالة معينة في الحرف ⁦i⁩ يديرها عكس عقارب الساعة بمقدار كم درجة؟",
+        "options": [
+          "180",
+          "270",
+          "90",
+          "0"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرقم الروماني الذي يمثل العدد 500‏؟",
+        "options": [
+          "⁦L⁩",
+          "⁦C⁩",
+          "⁦X⁩",
+          "⁦D⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس من مسائل جائزة الألفية السبع؟",
+        "options": [
+          "حدسية نافييه",
+          "حدسية بيرش وسوينرتون-داير",
+          "فرضية ريمان",
+          "حدسية بوانكاريه"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المجموعة الشاملة، أو المجموعة التي تحتوي على جميع المجموعات، موجودة بالفعل.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم ضلعاً للشكل الخماسي؟",
+        "options": [
+          "9",
+          "6",
+          "5",
+          "4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الأول لعالم الرياضيات الشهير أويلر؟",
+        "options": [
+          "ليونيل",
+          "أدريين",
+          "أجان",
+          "ليونهارت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-mathematics_quiz_3",
+    "user_id": "system",
+    "title": "الرياضيات والأرقام — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضيات",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو نوع الزاوية التي يكون قياسها أكبر من 90 درجة؟",
+        "options": [
+          "زاوية منفرجة",
+          "زاوية حادة",
+          "زاوية قائمة",
+          "زاوية مستقيمة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول أس لعدد ميرسين الأولي (⁦Mersenne prime exponent⁩) يتجاوز 1000‏؟",
+        "options": [
+          "2203",
+          "1279",
+          "1009",
+          "1069"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي مسألة جائزة الألفية الوحيدة التي تم حلها حتى الآن؟",
+        "options": [
+          "مسألة ⁦P⁩ مقابل ⁦NP⁩",
+          "فرضية ريمان",
+          "حدسية بوانكاريه",
+          "حدسية فيرما"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الأرقام هو الأقرب إلى العدد الإجمالي للحالات المحتملة لآلة التشفير \"إنيجما\" القياسية للجيش؟",
+        "options": [
+          "⁦1.58 × 10⁩^22",
+          "⁦1.58 × 10⁩^18",
+          "⁦1.58 × 10⁩^24",
+          "⁦1.58 × 10⁩^20"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم مليبار (⁦mbar⁩) يعادل بوصة زئبقية واحدة (⁦inHg⁩)‏؟",
+        "options": [
+          "⁦33.9⁩",
+          "⁦30.0⁩",
+          "⁦27.4⁩",
+          "⁦10.6⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بماذا يُعرف عالم الرياضيات الفرنسي إيفاريست غالوا في المقام الأول في أعماله؟",
+        "options": [
+          "الكسور المستمرة لغالوا",
+          "نظرية غالوا",
+          "طريقة غالوا للمعادلات التفاضلية الجزئية",
+          "التكامل الأبيلي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو مشتق التسارع بالنسبة للزمن؟",
+        "options": [
+          "الإزاحة (⁦Shift⁩)",
+          "الارتطام (⁦Bump⁩)",
+          "الرعشة (⁦Jerk⁩)",
+          "الانزلاق (⁦Slide⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الذي يطلق على المضلع ذي التسعة أضلاع؟",
+        "options": [
+          "الشكل السداسي",
+          "الشكل الثماني",
+          "الشكل السباعي",
+          "الشكل التساعي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عند أي درجة حرارة تتساوى القيمة بالدرجة المئوية (⁦°C⁩) مع القيمة بالفهرنهايت (⁦°F⁩)‏؟",
+        "options": [
+          "-40",
+          "+40",
+          "0",
+          "+100"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الشكل الذي تمثله الدالتان ⁦sin⁩(⁦x⁩) أو ⁦cos⁩(⁦x⁩) على الرسم البياني؟",
+        "options": [
+          "قطع مكافئ",
+          "أمواج",
+          "خط مستقيم",
+          "خطوط متعرجة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لوبيتال (⁦L'Hôpital⁩) هو عالم الرياضيات الذي ابتكر القاعدة الشهيرة التي تحمل اسمه وتستخدم المشتقات لإيجاد الغايات (النهايات) غير المعينة.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إن إثبات مبرهنة الباقي الصينية المستخدمة في نظرية الأعداد لم يتم تطويره بواسطة أول من نشرها، وهو سون تزو.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "هل ناتج ضرب العدد 111,111,111 في نفسه يساوي 12,345,678,987,654,321‏؟",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكنك إيجاد الجذر التربيعي لعدد سالب باستخدام العدد التخيلي \"⁦i⁩\".",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في نظام العد الست عشري، ما الذي يأتي بعد الرقم 9‏؟",
+        "options": [
+          "10",
+          "الرقم 0",
+          "الحرف ⁦A⁩",
+          "16"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يأتي بعد المليون، المليار، والتريليون؟",
+        "options": [
+          "سيكستيليون (⁦Sextillion⁩)",
+          "كوينتيليون (⁦Quintillion⁩)",
+          "سيبتيليون (⁦Septillion⁩)",
+          "كوادريليون (⁦Quadrillion⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مسألة \"تربيع الدائرة\" (⁦Squaring the Circle⁩) قابلة للحل.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الأرقام الستة الأولى للعدد \"باي\" (⁦Pi⁩)‏؟",
+        "options": [
+          "⁦3.14169⁩",
+          "⁦3.14159⁩",
+          "⁦3.12423⁩",
+          "⁦3.25812⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "البادئة المتريّة \"أتو-\" (⁦atto⁩-) تجعل القياس أصغر بمقدار كم مرة مقارنة بالوحدة الأساسية؟",
+        "options": [
+          "جزء من مليار",
+          "جزء من كوادريليون",
+          "جزء من كوينتيليون",
+          "جزء من سيبتيليون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الأعداد التي تقع في الصف الخامس من مثلث باسكال؟",
+        "options": [
+          "1 3 3 1",
+          "1 5 10 10 5 1",
+          "1 6 15 20 15 6 1",
+          "1 4 6 4 1"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-mathematics_quiz_4",
+    "user_id": "system",
+    "title": "الرياضيات والأرقام — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضيات",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "كم عدد أضلاع الشكل السباعي؟",
+        "options": [
+          "7",
+          "8",
+          "6",
+          "5"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في علم الطوبولوجيا، مكملة المجموعة المفتوحة هي مجموعة مغلقة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "المثلث متساوي الساقين له ضلعان متساويان في الطول وليس ثلاثة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم صفراً يوجد في عدد الـ \"جوجل\" (⁦Googol⁩)‏؟",
+        "options": [
+          "10",
+          "1,000",
+          "1,000,000",
+          "100"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ألف-صفر (⁦Aleph-nought⁩) هو عدد عناصر (كاردينالية) مجموعة الأعداد الطبيعية.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم درجة في الدائرة الكاملة؟",
+        "options": [
+          "180",
+          "360",
+          "90",
+          "720"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من علماء الرياضيات المشهورين التاليين توفي في مبارزة وهو في العشرين من عمره؟",
+        "options": [
+          "أبيل",
+          "أويلر",
+          "غالوا",
+          "غاووس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تنص نظرية فيثاغورس على أن مربع الوتر يساوي حاصل ضرب مربعي الضلعين الآخرين.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العدد الأولي الذي يأتي مباشرة بعد العدد 19‏؟",
+        "options": [
+          "23",
+          "25",
+          "21",
+          "27"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الترتيب الصحيح للعمليات الحسابية لحل المعادلات؟",
+        "options": [
+          "الجمع، الضرب، القسمة، الطرح، الجمع، الأقواس",
+          "الأقواس، الأسس، الضرب، القسمة، الجمع، الطرح",
+          "الأقواس، الأسس، الجمع، الطرح، الضرب، القسمة",
+          "الترتيب الذي كُتبت به العمليات الحسابية."
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مجموع أي عددين فرديين هو عدد فردي.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو عالم الرياضيات الذي رفض الحصول على وسام فيلدز؟",
+        "options": [
+          "أندرو وايلز",
+          "تيرينس تاو",
+          "إدوارد ويتن",
+          "غريغوري بيريلمان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أصغر عدد يمكن التعبير عنه كمجموع مكعبين موجبين بطريقتين مختلفتين؟",
+        "options": [
+          "1729",
+          "91",
+          "561",
+          "4104"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الجذر التربيعي للعدد 49‏؟",
+        "options": [
+          "4",
+          "7",
+          "12",
+          "9"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما نوع الدالة ⁦x⁩²+⁦2x⁩+1‏؟",
+        "options": [
+          "نسبية",
+          "خطية",
+          "تربيعية",
+          "أسية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأوجه المربعة للمكعب؟",
+        "options": [
+          "4",
+          "8",
+          "10",
+          "6"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم وجهاً لشريط موبيوس؟",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من التوزيعات الاحتمالية التالية ليس توزيعاً منفصلاً؟",
+        "options": [
+          "ذو الحدين",
+          "الطبيعي",
+          "بواسون",
+          "الهندسي الفائق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لأقرب عدد صحيح، كم راديان يوجد في الدورة الكاملة للدائرة؟",
+        "options": [
+          "3",
+          "4",
+          "6",
+          "5"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_1",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "كم عدد الكواكب في نظامنا الشمسي؟",
+        "options": [
+          "8",
+          "7",
+          "9",
+          "6"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للأحفورة البشرية المنقرضة المعروفة باسم \"لوسي\"؟",
+        "options": [
+          "أسترالوبيثكس الأفريقي (⁦Australopithecus Africanus⁩)",
+          "أسترالوبيثكس العفاري (⁦Australopithecus Afarensis⁩)",
+          "أسترالوبيثكس أرشيتوثيس (⁦Australopithecus Architeuthis⁩)",
+          "أسترالوبيثكس أنتاريس (⁦Australopithecus Antaris⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي عنصر كيميائي يرمز له بالرمز '⁦Fe⁩'؟",
+        "options": [
+          "الذهب",
+          "الفضة",
+          "الحديد",
+          "القصدير"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "التفاعل الطارد للحرارة هو تفاعل كيميائي يطلق طاقة عن طريق إشعاع الكهرباء.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أقمار لاندسات (⁦Landsat⁩) الاصطناعية فشل في الوصول إلى المدار؟",
+        "options": [
+          "لاندسات 6",
+          "لاندسات 5",
+          "لاندسات 4",
+          "لاندسات 3"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "النبات الذي تستمر دورة حياته لأكثر من عام يُعرف بالنبات الحولي.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هي عضلة رئيسية في الظهر؟",
+        "options": [
+          "العظم شبه المنحرف (⁦Trapezium⁩)",
+          "العظم المربعي (⁦Trapezoid⁩)",
+          "العضلة شبه المنحرفة (⁦Trapezius⁩)",
+          "العظم المثلثي (⁦Triquetrum⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "النشاط اللاواعي الأكثر تكراراً في جسم الإنسان هو الرمش (غمض العين).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الخيارات ليس مرحلة من مراحل الانقسام المتساوي (الانقسام الميتوزي)‏؟",
+        "options": [
+          "الطور الثنائي (⁦Diplophase⁩)",
+          "الطور الاستوائي (⁦Metaphase⁩)",
+          "الطور الانفصالي (⁦Anaphase⁩)",
+          "الطور النهائي (⁦Telophase⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تنص بديهية الطب الوقائي على أنه يجب فحص الأشخاص ذوي الخطورة ___ للإصابة بمرض ما، وعلينا علاج ___ هؤلاء الأشخاص.",
+        "options": [
+          "المنخفضة، بعض",
+          "المنخفضة، جميع",
+          "العالية، جميع",
+          "العالية، بعض"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الطبقة الخارجية الرقيقة للأرض؟",
+        "options": [
+          "الإكسوسفير (الغلاف الخارجي)",
+          "الوشاح (الستار)",
+          "القشرة الأرضية",
+          "النواة الخارجية (اللب الخارجي)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الـ \"ستينوما\" (⁦Stenoma⁩)‏؟",
+        "options": [
+          "منشط قتالي من الحرب العالمية الثانية",
+          "نوع من التوابل",
+          "مدينة ساحلية في الكاريبي",
+          "جنس من الفراشات (العث)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أصغر الأوعية الدموية في جسم الإنسان؟",
+        "options": [
+          "الشعيرات الدموية",
+          "الشريينات",
+          "الوريدات",
+          "الأوعية اللمفاوية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الجليد الجاف هو الحالة الصلبة لأي مادة؟",
+        "options": [
+          "النيتروجين",
+          "ثاني أكسيد الكربون",
+          "الأمونيا",
+          "الأكسجين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي يُستخدم لإثبات دوران الأرض حول محورها؟",
+        "options": [
+          "نجم الشمال (الجدي)",
+          "المزولة الشمسية",
+          "بندول فوكو",
+          "الصفائح التكتونية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يتكون 71% من سطح الأرض من:",
+        "options": [
+          "الصحاري",
+          "القارات",
+          "الغابات",
+          "الماء"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الشائع للمركب الكيميائي \"أكسيد ثنائي الهيدروجين\"؟",
+        "options": [
+          "الماء",
+          "الميثان",
+          "الأمونيا",
+          "غاز الضحك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "غانيميد هو أكبر قمر لأي كوكب؟",
+        "options": [
+          "أورانوس",
+          "المشتري",
+          "نبتون",
+          "المريخ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الصيغة الرياضية لقانون أوم؟",
+        "options": [
+          "⁦I⁩ = ⁦V⁩*⁦R⁩",
+          "⁦R⁩ = ⁦V⁩*⁦I⁩",
+          "⁦V⁩ = ⁦I⁩*⁦R⁩",
+          "⁦V⁩ = ⁦I⁩ / ⁦R⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس عظماً موجوداً في ذراع الإنسان؟",
+        "options": [
+          "عظم العضد",
+          "عظم الزند",
+          "عظم الكعبرة",
+          "عظم الظنبوب (قصبة الساق)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_10",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 10",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "إذا زرعت بذور شجرة البلوط الإنجليزي (⁦Quercus robur⁩)، فماذا سينمو؟",
+        "options": [
+          "أشجار",
+          "زهور",
+          "خضروات",
+          "حبوب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من العناصر التالية يساهم في جعل دم الإنسان أحمر اللون؟",
+        "options": [
+          "النحاس",
+          "الحديد",
+          "الإريديوم",
+          "الكوبالت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد البروتونات في ذرة الأكسجين؟",
+        "options": [
+          "أربعة",
+          "اثنان",
+          "ثمانية",
+          "ستة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المرض الوراثي الذي ينتج عن وجود كروموسوم ⁦Y⁩ إضافي (⁦XYY⁩)‏؟",
+        "options": [
+          "متلازمة كلينفلتر",
+          "متلازمة تورنر",
+          "متلازمة داون",
+          "متلازمة جاكوب"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي قارة تأتي البطاطا الحلوة في الأصل؟",
+        "options": [
+          "أمريكا الجنوبية",
+          "آسيا",
+          "أفريقيا",
+          "أوروبا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الكتلة الذرية للكربون؟",
+        "options": [
+          "14",
+          "12",
+          "16",
+          "10"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عند أي درجة حرارة يغلي الماء؟",
+        "options": [
+          "200 درجة فهرنهايت",
+          "181 درجة فهرنهايت",
+          "212 درجة فهرنهايت",
+          "178 درجة فهرنهايت"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من من هؤلاء العلماء أجرى تجربة رقاقة الذهب التي استنتجت أن الذرات تتكون في الغالب من فراغ؟",
+        "options": [
+          "جوزيف جون طومسون",
+          "أرخميدس",
+          "نيلز بور",
+          "إرنست رذرفورد"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بين أي كوكبين يقع حزام الكويكبات؟",
+        "options": [
+          "المريخ والمشتري",
+          "المشتري وزحل",
+          "عطارد والزهرة",
+          "الأرض والمريخ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي عنصر يحمل العدد الذري 7‏؟",
+        "options": [
+          "الأكسجين",
+          "النيتروجين",
+          "الهيدروجين",
+          "النيون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو المصطلح الطبي لـ \"المضاعفات الجراحية الناتجة عن نسيان الإسفنج الجراحي داخل جسم المريض\"؟",
+        "options": [
+          "غونغوزلر",
+          "جينتاكيولار",
+          "ورم قطني (جوسيبوبوما)",
+          "ميوباريونيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي عنصر كيميائي كان يُعرف في الأصل باسم \"ألابامين\"؟",
+        "options": [
+          "السيلينيوم",
+          "الأنتيمون",
+          "الموليبدينوم",
+          "الأستاتين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عندما تم إطلاق صاروخ \"فالكون هيفي\" في رحلته التجريبية، ما هو الجزء الوحيد الذي فشل في العملية؟",
+        "options": [
+          "هبوط القلب المركزي (الصاروخ الأوسط)",
+          "هبوط المعززات الجانبية",
+          "إطلاق ستارمان",
+          "التشغيل والإقلاع"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الكواكب في النظام الشمسي؟",
+        "options": [
+          "9",
+          "8",
+          "11",
+          "10"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الكيميائي للماء (⁦H2O⁩)‏؟",
+        "options": [
+          "كلوريد الأمونيوم",
+          "كربونات الصوديوم اللامائية",
+          "أكسيد ثنائي الهيدروجين",
+          "ثاني أكسيد المنجنيز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُعتبر مصطلح \"⁦Pneumonoultramicroscopicsilicovolcanoconiosis⁩\" مرادفاً لمرض السحار السيليسي (السحار البركاني).",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "المحتوى الحراري (الإنثالبي) هو مقياس للطاقة غير المتاحة للشغل خلال عملية ديناميكية حرارية.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "دون احتساب الأسنان الاصطناعية، يمتلك الإنسان مجموعتين من الأسنان طوال حياته.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "على مقياس بوفورت لقوة الرياح، ما الاسم الذي يُطلق على الرياح رقم 8‏؟",
+        "options": [
+          "عاصفة",
+          "إعصار",
+          "عاصفة شديدة",
+          "نسيم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_11",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 11",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "يشير مصطلح \"تسارع ضربات القلب\" إلى معدل ضربات قلب أثناء الراحة يقارب أو يتجاوز 100 نبضة في الدقيقة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن أن يصاب الشخص بحروق الشمس في اليوم الغائم.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأسنان في فم الشخص البالغ كمتوسط (باستثناء أسنان العقل)‏؟",
+        "options": [
+          "36",
+          "20",
+          "32",
+          "28"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأسنان اللبنية لدى طفل الإنسان إجمالاً؟",
+        "options": [
+          "10",
+          "15",
+          "25",
+          "20"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حرق أي من هذه المعادن ينتج لهباً أبيض ساطعاً؟",
+        "options": [
+          "المغنيسيوم",
+          "النحاس",
+          "الليثيوم",
+          "الرصاص"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من العضيات التالية يساعد في تصنيع الحمض النووي (⁦DNA⁩) في الخلايا؟",
+        "options": [
+          "النواة",
+          "الريبوسومات",
+          "الليزوسومات",
+          "الميتوكوندريا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تمت تسمية عنصر الليثيوم الكيميائي نسبةً إلى دولة ليتوانيا.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الشائع للحالة الطبية المعروفة باسم متلازمة الإجهاد الظنبوبي الإنسي (⁦MTSS⁩)‏؟",
+        "options": [
+          "مرفق التنس",
+          "النفق الرسغي",
+          "ركبة خادمة المنزل",
+          "ألم قصبة الساق"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من السوائل التالية هو الأقل لزوجة؟ (بافتراض أن درجة الحرارة 25 مئوية)",
+        "options": [
+          "الأسيتون",
+          "الماء",
+          "عطارد",
+          "البنزين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني اختصار كلمة \"ليزر\" (⁦LASER⁩) باللغة الإنجليزية؟",
+        "options": [
+          "تحليل الضوء بواسطة الإيكوريزر المجسم",
+          "تضخيم الضوء بانبعاث الإشعاع المحفز",
+          "مضخم الضوء بواسطة طاقة الراديو الاحتياطية",
+          "المادة المضادة للحياة عن طريق الدخول الدائم للنطاق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "شكل الأرض عبارة عن كرة مثالية.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المثال على مسبب أمراض بكتيري؟",
+        "options": [
+          "الحصبة",
+          "الإيدز",
+          "القوباء الحلقية",
+          "الكوليرا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يمثل حرف \"⁦S⁩\" في اختصار وكالة الفضاء الأمريكية \"⁦NASA⁩\"؟",
+        "options": [
+          "الفضاء",
+          "العلوم",
+          "المجتمع",
+          "النجم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "البوزيترون هو الجسيم المضاد لأي مما يلي؟",
+        "options": [
+          "النيوترون",
+          "الإلكترون",
+          "البروتون",
+          "الفوتون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الذي يُطلق على صغار الحيوانات الجرابية؟",
+        "options": [
+          "عجل",
+          "جرو",
+          "جوي",
+          "شبل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الحيوانات ينتمي إلى طائفة الأسماك الغضروفية (⁦Chondrichthyes⁩)‏؟",
+        "options": [
+          "الأخطبوط",
+          "الحوت القاتل",
+          "سمك السلور",
+          "القرش الأبيض الكبير"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة المحاثة الكهربائية (الحث المغناطيسي)‏؟",
+        "options": [
+          "الهنري",
+          "الويبر",
+          "الكولوم",
+          "المو (وحدة موصلية)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو جهاز تضخيم من أشباه الموصلات؟",
+        "options": [
+          "الأنبوب المفرغ",
+          "الترانزستور",
+          "الديود (الوصلة الثنائية)",
+          "وصلة ⁦P-N⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرمز الكيميائي للرصاص؟",
+        "options": [
+          "⁦Ld⁩",
+          "⁦Le⁩",
+          "⁦Pb⁩",
+          "⁦Pm⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_12",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 12",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "فاز فريدريك بانتينغ وجون ماكلويد بجائزة نوبل لمساهماتهما في المجالات العلمية لميكانيكا الكم.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تيمناً بأي مدينة دنماركية تمت تسمية العنصر رقم 72 في الجدول الدوري؟",
+        "options": [
+          "أودنسه",
+          "كوبنهاجن",
+          "هيرنينغ",
+          "سكاجن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مثلما حدث مع إنسان نياندرتال، تزاوج الإنسان العاقل (⁦Homo sapiens sapiens⁩) أيضاً مع إنسان دينيسوفان.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "جميع كواكب النظام الشمسي تدور حول الشمس.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء من الجسم تؤثر عليه المياه الزرقاء (الجلوكوما)‏؟",
+        "options": [
+          "العينين",
+          "الحلق",
+          "المعدة",
+          "الدم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تدفع ظاهرة \"النينيو\" المياه الدافئة إلى سواحل غرب المحيط الهادئ خلال فصل الشتاء.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في الجدول الدوري، الرمز الكيميائي للبوتاسيوم هو حرف ⁦K⁩.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المصطلح الطبي لسرة البطن من بين الخيارات التالية؟",
+        "options": [
+          "الشامة",
+          "المنخرين",
+          "باكسيلوس",
+          "السرة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من العظام التالية ليست موجودة في الساق؟",
+        "options": [
+          "الكعبرة",
+          "الرضفة",
+          "الظنبوب",
+          "الشظية"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ مسافة السنة الضوئية؟",
+        "options": [
+          "1 وحدة فلكية",
+          "⁦9.461⁩ تريليون كيلومتر",
+          "⁦105.40⁩ سنة أرضية",
+          "⁦501.2⁩ مليون ميل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الكوكب الأكثر حرارة في النظام الشمسي؟",
+        "options": [
+          "المريخ",
+          "عطارد",
+          "الزهرة",
+          "المشتري"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العنصر الأكثر وفرة في الكون؟",
+        "options": [
+          "الهيليوم",
+          "الليثيوم",
+          "الأكسجين",
+          "الهيدروجين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن للإنسان العادي أن يعيش لمدة أسبوعين بدون ماء.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الوحدة الفلكية هي المسافة بين الأرض والقمر.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العدد الذري لليورانيوم؟",
+        "options": [
+          "235",
+          "17",
+          "92",
+          "167"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرمز الكيميائي للزئبق؟",
+        "options": [
+          "⁦Me⁩",
+          "⁦Mc⁩",
+          "⁦Hy⁩",
+          "⁦Hg⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي حدث انقراض رئيسي نتج عن اصطدام كويكب وأدى إلى القضاء على غالبية الديناصورات غير الطائرة؟",
+        "options": [
+          "العصر الطباشيري-الباليوجيني",
+          "العصر الثلاثي-الجراسي",
+          "العصر البرمي-الثلاثي",
+          "العصر الأوردوفيشي-السيلوري"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في مجال الطيران، تُستخدم القلابات والجنيحات المساعدة (⁦flaps and slats⁩) للتحكم في ماذا على الطائرة؟",
+        "options": [
+          "الدفع",
+          "الرفع",
+          "السحب",
+          "الوزن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني اختصار ⁦CPR⁩، وهو الإجراء الطارئ لمساعدة شخص يعاني من توقف القلب؟",
+        "options": [
+          "تخفيف الآلام المزمنة",
+          "تخفيف آلام السرطان",
+          "الإنعاش القلبي الرئوي",
+          "معدل انتشار وسائل منع الحمل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_13",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 13",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي وحدة علمية سميت تيمناً بنبيل إيطالي؟",
+        "options": [
+          "الفولت",
+          "الباسكال",
+          "الأوم",
+          "الهيرتز"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو عمر النصف لليورانيوم-235‏؟",
+        "options": [
+          "4,300,400,000 سنة",
+          "703,800,000 سنة",
+          "1,260,900,000 سنة",
+          "اليورانيوم-235 نظير مستقر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تساوي 100 درجة مئوية بالفهرنهايت؟",
+        "options": [
+          "326",
+          "100",
+          "212",
+          "451"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الكروموسوم الذي تتسبب نسخة إضافية منه عادة في الإصابة بمتلازمة داون؟",
+        "options": [
+          "23",
+          "15",
+          "24",
+          "21"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في فيزياء الكم، أي من هذه الجسيمات دون الذرية الافتراضية لم يتم رصدها بعد؟",
+        "options": [
+          "غرافيتون",
+          "بوزون ⁦Z⁩",
+          "نيوترينو تاو",
+          "غلوون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى جانب الأكسجين، ما هو العنصر المسؤول بشكل أساسي عن ظهور السماء باللون الأزرق؟",
+        "options": [
+          "الهيليوم",
+          "النيتروجين",
+          "الكربون",
+          "الهيدروجين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الجسيمات التي تعادل مولاً واحداً؟",
+        "options": [
+          "⁦6.002 × 10⁩^22",
+          "⁦6.022 × 10⁩^22",
+          "⁦6.022 × 10⁩^23",
+          "⁦6.002 × 10⁩^23"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الجدول الدوري للعناصر، ما هو الرمز الكيميائي للقصدير؟",
+        "options": [
+          "⁦Ti⁩",
+          "⁦Ni⁩",
+          "⁦Na⁩",
+          "⁦Sn⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تحتوي الذرة على نواة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الغضروف الهلالي الإنسي يشكل جزءاً من أي مفصل في جسم الإنسان؟",
+        "options": [
+          "المرفق",
+          "الركبة",
+          "الكاحل",
+          "الكتف"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم قلباً يمتلك الأخطبوط؟",
+        "options": [
+          "واحد",
+          "اثنان",
+          "ثلاثة",
+          "أربعة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من العناصر التالية يُستخدم عادة في تطعيم شبه الموصل (السيليكون)‏؟",
+        "options": [
+          "الأكسجين",
+          "الكربون",
+          "الحديد",
+          "البورون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي كوكب أرسلت له المركبة الفضائية 'فايكنغ 1' صوراً لسطحه بدءاً من عام 1976‏؟",
+        "options": [
+          "المريخ",
+          "زحل",
+          "المشتري",
+          "الزهرة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي نظير يتكون اليورانيوم الطبيعي بشكل أساسي؟",
+        "options": [
+          "235",
+          "238",
+          "239",
+          "233"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تدور الأقمار ميراندا، وأرييل، وأومبريل، وتيتانيا، وأوبيرون حول أي كوكب؟",
+        "options": [
+          "المشتري",
+          "الزهرة",
+          "أورانوس",
+          "نبتون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الفئة التي صُنّف بها إعصار كاترينا عام 2005 وفقاً لمقياس سفير-سمبسون لرياح الأعاصير؟",
+        "options": [
+          "الفئة الأولى",
+          "الفئة الرابعة",
+          "الفئة الثانية",
+          "الفئة الخامسة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين توجد عظمة 'الظنبوب' (قصبة الساق) في جسم الإنسان؟",
+        "options": [
+          "الساق",
+          "الذراع",
+          "اليد",
+          "الرأس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الصيغة الجزيئية للمكون النشط في الفلفل الحار (الكابسيسين)‏؟",
+        "options": [
+          "⁦C21H23NO3⁩",
+          "⁦C18H27NO3⁩",
+          "⁦C6H4Cl2⁩",
+          "⁦C13H25NO4⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متلازمة العطس الضوئي المنعكس (الخلل البصري الشمسي القهري السائد) هي الحاجة إلى القيام بماذا عند رؤية الشمس؟",
+        "options": [
+          "السعال",
+          "التثاؤب",
+          "العطس",
+          "الفواق"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_14",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 14",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للمسافة؟",
+        "options": [
+          "المتر",
+          "الأنغستروم",
+          "القدم",
+          "القامة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الكائن الحي الموصوف بأنه 'منتحٍ ضوئي' يميل إلى التحرك نحو أي من هذه الأشياء؟",
+        "options": [
+          "الماء",
+          "الضوء",
+          "الأشجار",
+          "حبوب اللقاح"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الذي يطلق على الوهم السمعي لنغمة يبدو أنها ترتفع في حدتها إلى ما لا نهاية؟",
+        "options": [
+          "وهم غليساندو",
+          "تأثير فرانتسن",
+          "نغمة شيبارد",
+          "تأثير ماكغورك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مكتشف قانون الجاذبية؟",
+        "options": [
+          "غاليليو غاليلي",
+          "تشارلز داروين",
+          "ألبيرت أينشتاين",
+          "سير إسحاق نيوتن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المبدأ الفيزيائي الذي يربط بين صافي التدفق الكهربائي الخارج من سطح مغلق والشحنة الموجودة داخل هذا السطح؟",
+        "options": [
+          "قانون غاوس",
+          "قانون فاراداي",
+          "قانون أمبير",
+          "قانون بيو-سافارت"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بأي وحدة يُقاس الإشعاع؟",
+        "options": [
+          "واط",
+          "غراي",
+          "ديسيبل",
+          "كلفن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يدور حول كوكب المريخ قمران.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي النسبة المئوية التقريبية للأكسجين في الغلاف الجوي للأرض؟",
+        "options": [
+          "54%",
+          "78%",
+          "7%",
+          "21%"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه العظام هو الأصعب كسرًا؟",
+        "options": [
+          "عظم الفخذ",
+          "الجمجمة",
+          "عظم العضد",
+          "قصبة الساق"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تتشارك مجموعات هابلوغروب الجينية البشرية التالية نفس الأسماء بين كروموسوم ⁦Y⁩ والحمض النووي للميتوكوندريا باستثناء:",
+        "options": [
+          "هابلوغروب ⁦L⁩",
+          "هابلوغروب ⁦U⁩",
+          "هابلوغروب ⁦T⁩",
+          "هابلوغروب ⁦J⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع العضلة الألوية الكبرى في الجسم؟",
+        "options": [
+          "الذراع",
+          "الرأس",
+          "الأرداف",
+          "الجذع"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحيوان الذي شارك في أشهر تجربة فكرية للعالم شرودنغر؟",
+        "options": [
+          "الكلب",
+          "الخفاش",
+          "الفراشة",
+          "القط"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عملية تجميل الأنف (⁦Rhinoplasty⁩) هي إجراء جراحي يُجرى على أي جزء من جسم الإنسان؟",
+        "options": [
+          "الأنف",
+          "الأذنان",
+          "الذقن",
+          "الرقبة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من العناصر الكيميائية لديه أدنى درجة غليان؟",
+        "options": [
+          "الهيدروجين",
+          "الهيليوم",
+          "النيون",
+          "النيتروجين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المركبات الكيميائية التالية لا يوجد في حمض المعدة؟",
+        "options": [
+          "حمض الهيدروكلوريك",
+          "كلوريد البوتاسيوم",
+          "حمض الكبريتيك",
+          "كلوريد الصوديوم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تدور الأرض حول الشمس في سنة واحدة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تقوم ذكور الباندا بالوقوف على أيديها أثناء التبول على الأشجار.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الفرق الأكبر بين الخلايا حقيقية النواة والخلايا بدائية النواة هو:",
+        "options": [
+          "الحجم الإجمالي",
+          "وجود النواة أو غيابها",
+          "وجود أو غياب بعض العضيات",
+          "طريقة التكاثر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الكيمياء، كم عدد المتصاوغات التي يمتلكها البيوتانول (⁦C4H9OH⁩)‏؟",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "6"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_15",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 15",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي مما يلي يُعتبر مثالاً على الإشراط الكلاسيكي؟",
+        "options": [
+          "تجارب كلاب بافلوف",
+          "تجربة صندوق سكينر",
+          "تجربة قطة شرودنغر",
+          "تجارب قرود هارلو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الكواكب القزمة المعترف بها رسمياً في النظام الشمسي والتي سميت تيمناً بآلهة بولينيزية؟",
+        "options": [
+          "0",
+          "2",
+          "1",
+          "5"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يتكون ملح الطعام بنسبة 100% من الصوديوم.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كتلة الأرض والقمر متساوية تقريباً.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المعدن الذي يمتلك أقل درجة على مقياس موهس لصلابة المعادن؟",
+        "options": [
+          "التلك",
+          "الكوارتز",
+          "الألماس",
+          "الجبس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) لدرجة الحرارة؟",
+        "options": [
+          "فهرنهايت",
+          "كلفن",
+          "سيلسيوس",
+          "رانكين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أكبر حيوان يعيش حالياً على وجه الأرض؟",
+        "options": [
+          "الأوركا",
+          "الحبار الضخم",
+          "الحوت الأزرق",
+          "الزرافة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد قوانين الديناميكا الحرارية؟",
+        "options": [
+          "ثلاثة",
+          "اثنان",
+          "خمسة",
+          "أربعة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد العظام في جسم الإنسان؟",
+        "options": [
+          "206",
+          "203",
+          "209",
+          "200"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "قوة الجذب المركزي هي قوة ظاهرة تؤثر إلى الخارج على جسم يتحرك حول مركز، وتنشأ عن قصور الجسم الذاتي.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الكواكب في نظامنا الشمسي؟",
+        "options": [
+          "تسعة",
+          "سبعة",
+          "ثمانية",
+          "عشرة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين ضربت العاصفة العظيمة عام 1987 اليابسة أولاً؟",
+        "options": [
+          "ساري",
+          "ويلز",
+          "الميدلاندز",
+          "كورنوال"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الثقب الأسود الفائق الكتلة الموجود في مركز مجرة درب التبانة؟",
+        "options": [
+          "ساجيتاريوس ⁦A⁩*",
+          "مسييه 87",
+          "ألفا قنطورس",
+          "أندروميدا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأقمار التي يمتلكها كوكب بلوتو؟",
+        "options": [
+          "اثنان",
+          "خمسة",
+          "ثلاثة",
+          "واحد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يدرس علم التشريح أشكال البنى العيانية مثل الأعضاء والأجهزة العضوية.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "يحدث مرض السكري من النوع الأول نتيجة لخلل في عمل الكبد.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء من الجسم تؤثر عليه حالة هشاشة العظام المرضية؟",
+        "options": [
+          "العظام",
+          "الجلد",
+          "الدماغ",
+          "القلب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يحتوي السكر على الدهون.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "رهاب الكلمات الطويلة (هيبوبوتومونستروسيسكيبيداليوفوبيا) هو الخوف غير العقلاني من الكلمات الطويلة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_2",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي مكوك فضاء تابع لناسا تحطم أثناء دخوله الغلاف الجوي في 1 فبراير 2003‏؟",
+        "options": [
+          "كولومبيا",
+          "تشالنجر",
+          "ديكفري",
+          "أنديفور"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للكتلة؟",
+        "options": [
+          "الطن",
+          "الكيلوغرام",
+          "الرطل",
+          "الغرام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول كائن حي صعد إلى الفضاء؟",
+        "options": [
+          "القرد",
+          "الكلب",
+          "ذباب الفاكهة",
+          "الفأر"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "فاز ألبرت أينشتاين بجائزة نوبل عن نظريته النسبية.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي عنصر يشير الرمز \"⁦Au⁩\" في الجدول الدوري؟",
+        "options": [
+          "الذهب",
+          "الفضة",
+          "الأكسجين",
+          "النيكل"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للتيار الكهربائي؟",
+        "options": [
+          "الفولت",
+          "الأمبير",
+          "الأوم",
+          "الواط"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي درجة الحرارة المتساوية في مقياسي السيلسيوس والفهرنهايت؟",
+        "options": [
+          "32",
+          "-39",
+          "-40",
+          "-42"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو فرط صوديوم الدم (⁦Hypernatremia⁩)‏؟",
+        "options": [
+          "انخفاض نسبة البوتاسيوم في الدم",
+          "ارتفاع نسبة الجلوكوز في الدم",
+          "انخفاض نسبة الحديد في الدم",
+          "ارتفاع نسبة الصوديوم في الدم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس جزءاً من بنية العصبون (الخلية العصبية) النموذجي؟",
+        "options": [
+          "جزر لانجرهانز",
+          "عقدة رانفييه",
+          "خلية شوان",
+          "غمد المايلين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي مهمة تحطم مكوك الفضاء كولومبيا أثناء دخوله الغلاف الجوي؟",
+        "options": [
+          "⁦STS-51-L⁩",
+          "⁦STS-107⁩",
+          "⁦STS-61-C⁩",
+          "⁦STS-109⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي يسبب صوت نبضات القلب؟",
+        "options": [
+          "انقباض حجرات القلب",
+          "خروج الدم من القلب",
+          "انغلاق صمامات القلب",
+          "ارتخاء حجرات القلب"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد النسخ التي تمتلكها الخلايا البشرية عادة من كل جين؟",
+        "options": [
+          "1",
+          "4",
+          "3",
+          "2"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد حجرات قلب الإنسان؟",
+        "options": [
+          "4",
+          "2",
+          "6",
+          "3"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اللون الذي لا يمكن إنتاجه في الورود، حتى من خلال التعديل الوراثي؟",
+        "options": [
+          "الأسود",
+          "الأزرق",
+          "البرتقالي",
+          "البني"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "نجم الشمال (⁦Polaris⁩) هو ألمع نجم في سماء الليل في نصف الكرة الشمالي.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي غاز نبيل لديه أقل عدد ذري؟",
+        "options": [
+          "النيون",
+          "الأرجون",
+          "الكريبتون",
+          "الهيليوم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من مهمات أبولو كانت الأولى التي هبطت على سطح القمر؟",
+        "options": [
+          "أبولو 11",
+          "أبولو 10",
+          "أبولو 9",
+          "أبولو 13"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو \"مصنع الطاقة\" في الخلية الحيوانية حقيقية النواة؟",
+        "options": [
+          "النواة",
+          "الميتوكوندريا (المتقدرات)",
+          "البلاستيدات الخضراء",
+          "الشبكة الإندوبلازمية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أين تنحدر سلالة الكلاب \"تشيواوا\" (⁦Chihuahua⁩)‏؟",
+        "options": [
+          "فرنسا",
+          "إسبانيا",
+          "المكسيك",
+          "روسيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تتشكل الصخور النارية بفعل الحرارة والضغط الشديدين.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_3",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "الماء منزوع الأيونات هو ماء تمت إزالة أي مما يلي منه؟",
+        "options": [
+          "الحديد",
+          "الأكسجين",
+          "الهيدروجين",
+          "الذرات غير المشحونة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العنصر الأول في الجدول الدوري؟",
+        "options": [
+          "الهيليوم",
+          "الهيدروجين",
+          "الأكسجين",
+          "الليثيوم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من صاغ نظرية \"الانفجار العظيم\" لأول مرة كان كاهناً ينتمي لأي طائفة دينية؟",
+        "options": [
+          "المسيحية العامة",
+          "اليهودية",
+          "الكاثوليكية",
+          "الإسلامية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما مقدار الإشعاع الذي تصدره موزة واحدة؟",
+        "options": [
+          "⁦0.3⁩ ميكروسيفيرت",
+          "⁦0.5⁩ ميكروسيفيرت",
+          "⁦0.7⁩ ميكروسيفيرت",
+          "⁦0.1⁩ ميكروسيفيرت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي قمر اصطناعي من سلسلة لاندسات (⁦Landsat⁩) لديه أطول فترة تشغيلية حتى الآن؟",
+        "options": [
+          "لاندسات 5",
+          "لاندسات 8",
+          "لاندسات 7",
+          "لاندسات 6"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يسمى الغلاف الغازي للمذنب (الذي يشكّل الذيل)‏؟",
+        "options": [
+          "المجرى الخلفي (⁦The wake⁩)",
+          "الذؤابة (⁦Coma⁩)",
+          "الارتداد الموجي (⁦The backwash⁩)",
+          "الطبقة المذابة (⁦The ablative⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الديوتيريوم هو نظير لأي عنصر؟",
+        "options": [
+          "النيتروجين",
+          "الهيليوم",
+          "الهيدروجين",
+          "النيون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تتكون الألياف العضلية من حزم من العضيات الطويلة والصغيرة تسمى ماذا؟",
+        "options": [
+          "غلاف العضلة (⁦Epimysium⁩)",
+          "الخيوط العضلية (⁦Myofilaments⁩)",
+          "عضلة القلب (⁦Myocardium⁩)",
+          "اللييفات العضلية (⁦Myofibrils⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للوقت؟",
+        "options": [
+          "الثانية",
+          "الدقيقة",
+          "الساعة",
+          "اليوم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي مرحلة النمو التي تقضي فيها معظم الخلايا حقيقية النواة غالبية دورة حياتها؟",
+        "options": [
+          "الطور التمهيدي (⁦Prophase⁩)",
+          "الطور البيني (⁦Interphase⁩)",
+          "الطور الساكن (⁦Stasis⁩)",
+          "الطور النهائي (⁦Telophase⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مكتشف الأشعة السينية (أشعة إكس)‏؟",
+        "options": [
+          "توماس ألفا إديسون",
+          "جيمس واط",
+          "فيلهلم كونراد رونتغن (⁦Wilhelm Conrad Röntgen⁩)",
+          "ألبرت أينشتاين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ مدة السنة الواحدة تقريباً على كوكب أورانوس؟",
+        "options": [
+          "47 سنة أرضية",
+          "62 سنة أرضية",
+          "109 سنة أرضية",
+          "84 سنة أرضية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي صيغة كيميائية للأمونيا (النشادر)‏؟",
+        "options": [
+          "⁦NH3⁩",
+          "⁦CO2⁩",
+          "⁦NO3⁩",
+          "⁦CH4⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أقوى سم معروف على الإطلاق؟",
+        "options": [
+          "الريسين",
+          "سم البوتولينوم (⁦Botulinum toxin⁩)",
+          "السيانيد",
+          "الأسبستوس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو نوع من منعكسات التمدد/منعكسات الوتر العميق؟",
+        "options": [
+          "منعكس القيء (⁦Gag reflex⁩)",
+          "المنعكس الحدقي الضوئي (⁦Pupillary light reflex⁩)",
+          "منعكس نفضة الكاحل (⁦Ankle jerk reflex⁩)",
+          "منعكس الحك (⁦Scratch reflex⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ينطبق تأثير دوبلر على الضوء.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ نسبة الماء تقريباً من مساحة سطح الأرض؟",
+        "options": [
+          "70%",
+          "30%",
+          "50%",
+          "90%"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو البوليمر المستخدم في صناعة الأقراص المدمجة (⁦CDs⁩)، ونظارات السلامة، ودروع مكافحة الشغب؟",
+        "options": [
+          "المطاط",
+          "البولي كربونيت (⁦Polycarbonate⁩)",
+          "النايلون",
+          "الباكليت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم يبلغ عمر كوكب الأرض تقريباً؟",
+        "options": [
+          "⁦3.5⁩ مليار سنة",
+          "⁦2.5⁩ مليار سنة",
+          "⁦4.5⁩ مليار سنة",
+          "⁦5.5⁩ مليار سنة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الدواء الذي كان يُستخدم سابقاً بشكل شائع كسم للفئران؟",
+        "options": [
+          "أسبرين",
+          "إليكويس",
+          "تايلينول",
+          "كومادين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_4",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو العنصر في الجدول الدوري الذي يحتوي على 92 إلكتروناً؟",
+        "options": [
+          "اليورانيوم",
+          "الكبريت",
+          "الهيدروجين",
+          "الحديد"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يغلي الماء دائماً عند 100 درجة مئوية، أو 212 درجة فهرنهايت، أو ⁦373.15⁩ كلفن، بغض النظر عن مكان وجودك.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي (اللينيني) لشجرة التفاح المستأنسة؟",
+        "options": [
+          "مالوس أميريكانا (⁦Malus americana⁩)",
+          "بوموس دوميستيكا (⁦Pomus domestica⁩)",
+          "مالوس بوميلا (⁦Malus pumila⁩)",
+          "أبيلوس ديليكتيكا (⁦Appelus delectica⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "توفر ظاهرة صعود مياه القاع في المحيط مياهاً أكثر برودة وغنية بالمواد المغذية للنباتات والمحللات.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "وفقاً لمقياس سكوفيل، ما هي المادة الكيميائية الأكثر حرارة؟",
+        "options": [
+          "ريزينيفراتوكسين (⁦Resiniferatoxin⁩)",
+          "كابسيسين (⁦Capsaicin⁩)",
+          "ثنائي هيدروكابسيسين (⁦Dihydrocapsaicin⁩)",
+          "تنياتوكسين (⁦Tinyatoxin⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس نوعاً من الخلايا العصبية؟",
+        "options": [
+          "الخلية العصبية الحسية",
+          "الخلية العصبية الإدراكية",
+          "الخلية العصبية الحركية",
+          "الخلية العصبية الموصلة (البينية)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني الاختصار العلمي (⁦DNA⁩)‏؟",
+        "options": [
+          "حمض ديوكسي ريبوجينيتيك",
+          "ذرات ديوكسي ريبوجينيتيك",
+          "الحمض النووي الريبوزي منقوص الأكسجين",
+          "حمض إزالة السموم"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر الشمس نجماً.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس من المجموعات التصنيفية في الجدول الدوري؟",
+        "options": [
+          "الفلورينات",
+          "الفلزات القلوية",
+          "الهالوجينات",
+          "الغازات الخاملة (النبيلة)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الناحية النباتية، أي من هذه الفواكه لا تُعتبر من التوتيات؟",
+        "options": [
+          "التوت الأزرق",
+          "الفراولة",
+          "الموز",
+          "عنب كونكورد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي ينتج اللون الأخضر لمعظم أوراق النباتات؟",
+        "options": [
+          "انكسار الضوء",
+          "الأصباغ الطبيعية",
+          "الكلوروفيل",
+          "الأشعة فوق البنفسجية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عند أي عمق يجب عليك التوقف لتخفيف الضغط (وقفة الأمان) أثناء الغوص العادي؟",
+        "options": [
+          "25 قدماً / ⁦7.5⁩ أمتار",
+          "50 قدماً / 15 متراً",
+          "75 قدماً / 23 متراً",
+          "15 قدماً / 5 أمتار"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو اسم الطبقة الدنيا (الأقرب للأرض) من الغلاف الجوي؟",
+        "options": [
+          "التروبوسفير",
+          "الستراتوسفير",
+          "الميزوسفير",
+          "الثرموسفير"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي يُعد كودون وقف (⁦Stop Codon⁩) في الحمض النووي (⁦DNA⁩)‏؟",
+        "options": [
+          "⁦ACT⁩",
+          "⁦TAA⁩",
+          "⁦ACA⁩",
+          "⁦GTA⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عضو من أعضاء جسم الإنسان توجد 'جزر لانغرهانز'؟",
+        "options": [
+          "الكلية",
+          "الكبد",
+          "البنكرياس",
+          "الدماغ"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من من العلماء التاليين ليس لديه عنصر كيميائي مسمى باسمه؟",
+        "options": [
+          "ألبرت أينشتاين",
+          "نيلز بور",
+          "إنريكو فيرمي",
+          "سير إسحاق نيوتن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الفصوص في الرئة اليمنى للإنسان؟",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "1"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يستطيع الجمبري (الروبيان) السباحة إلى الخلف.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الوزن الذري القياسي لنواة البلوتونيوم؟",
+        "options": [
+          "94",
+          "481",
+          "244",
+          "128"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي يسبب داء لايم؟",
+        "options": [
+          "فيروس",
+          "ديدان طفيلية",
+          "أميبا",
+          "بكتيريا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_5",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الاسم العلمي لرضفة الركبة (صابونة الركبة)‏؟",
+        "options": [
+          "الرضفة (⁦Patella⁩)",
+          "عظم الفخذ (⁦Femur⁩)",
+          "الثقبة العظمى (⁦Foramen Magnum⁩)",
+          "لوح الكتف (⁦Scapula⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تلتقي عظام العضد والكعبرة والزند معاً لتشكل أي مفصل؟",
+        "options": [
+          "الركبة",
+          "المرفق (الكوع)",
+          "الكتف",
+          "الكاحل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا تدرس إذا كنت تدرس علم الحشرات (⁦Entomology⁩)‏؟",
+        "options": [
+          "البشر",
+          "الدماغ",
+          "الحشرات",
+          "الأسماك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الانحياز المعرفي الذي يخطئ فيه الشخص ذو القدرة المنخفضة في مهارة معينة فيظن نفسه متفوقاً؟",
+        "options": [
+          "تأثير مايرز بريغز (⁦Meyers-Briggs effect⁩)",
+          "تأثير مولر-لاير (⁦Müller-Lyer effect⁩)",
+          "تأثير فرويد-هال (⁦Freud-Hall effect⁩)",
+          "تأثير دانينغ-كروجر (⁦Dunning-Kruger effect⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس مصطلحاً يُستخدم لوصف الزلازل؟",
+        "options": [
+          "الانهيار الانزلاقي (⁦Drop-slide⁩)",
+          "الهزة الارتدادية المسبقة (⁦Foreshock⁩)",
+          "صدع الانزلاق المضربي (⁦Strike-slip⁩)",
+          "الهزة الأرضية (⁦Temblor⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تتكون النجوم بشكل أساسي من الهيدروجين وأي غاز آخر؟",
+        "options": [
+          "الأكسجين",
+          "الهيليوم",
+          "الأرغون",
+          "النيتروجين"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي نجحت لأول مرة في تفريخ وتربية تونة ذات زعانف زرقاء في المزارع عام 1979‏؟",
+        "options": [
+          "فرنسا",
+          "الولايات المتحدة الأمريكية",
+          "اليابان",
+          "الفلبين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم البديل لاضطراب تعدد الشخصيات؟",
+        "options": [
+          "اضطراب سلامة الهوية الجسدية (⁦Body integrity identity disorder⁩)",
+          "أزمة الهوية",
+          "الفصام (⁦Schizophrenia⁩)",
+          "اضطراب الهوية الانفصامي (⁦Dissociative identity disorder⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يمكن للصوت أن ينتقل عبر الفراغ.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر نبتة \"جيمبي ستينجر\" النبتة الأكثر فتكاً في العالم.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الرسمي للنجم الأقرب إلى القطب السماوي الشمالي؟",
+        "options": [
+          "النهر (⁦Eridanus⁩)",
+          "جاما الملتهب (⁦Gamma Cephei⁩)",
+          "نجم الشمال (⁦Polaris⁩)",
+          "إيوتا الملتهب (⁦Iota Cephei⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العدد الذري لعنصر الاسترونشيوم؟",
+        "options": [
+          "73",
+          "47",
+          "11",
+          "38"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي نوع من الصخور يتكون بفعل الحرارة والضغط الشديدين؟",
+        "options": [
+          "الصخور المتحولة",
+          "الصخور الرسوبية",
+          "الصخور النارية",
+          "الألماس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هي خلايا تابعة لجهاز المناعة التكيفي؟",
+        "options": [
+          "الخلايا التغصنية",
+          "الخلايا التائية القاتلة",
+          "الخلايا القاتلة الطبيعية",
+          "خلايا الدم البيضاء"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو الجزء التناسلي الذكري المنتج لحبوب اللقاح في الزهرة؟",
+        "options": [
+          "السبلة",
+          "المدقة",
+          "السداة",
+          "البتلة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء من نبات الماريجوانا ينتج المادة المؤثرة عقلياً المعروفة باسم ⁦THC⁩‏؟",
+        "options": [
+          "الأوراق",
+          "الزهرة الذكرية",
+          "كتلة الجذور",
+          "الزهرة الأنثوية"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "طور العالمان الفرنسيان لويس باستور وإيميل رو أول لقاح لداء الكلب في عام 1885.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "قتل العلماء بالخطأ أقدم مخلوق حي معروف في العالم، وهو حيوان رخوي، تبين أن عمره يبلغ 507 سنوات.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرمز الكيميائي لعنصر الهيليوم؟",
+        "options": [
+          "⁦H⁩",
+          "⁦Hg⁩",
+          "⁦He⁩",
+          "⁦Hs⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تنبع كلمة \"⁦Science⁩\" (علم) من الكلمة اللاتينية \"⁦Scire⁩\" والتي تعني ماذا؟",
+        "options": [
+          "أن تقيس",
+          "أن تعيش",
+          "أن تعد",
+          "أن تعرف (المعرفة)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_6",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 6",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي وحدة السعة الكهربائية؟",
+        "options": [
+          "الفاراد",
+          "الغاوس",
+          "الهنري",
+          "الواط"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم قمراً للأرض؟",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المصطلح العلمي لـ 'حاسة التذوق'؟",
+        "options": [
+          "حاسة الشم",
+          "الحس الجسدي",
+          "الإدراك الذوقي",
+          "الإدراك السمعي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي عنصر لديه أعلى درجة انصهار؟",
+        "options": [
+          "التنجستن",
+          "البلاتين",
+          "الأوزميوم",
+          "الكربون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا استخدم غريغور مندل لاختبار العبور الجيني وعلم الوراثة؟",
+        "options": [
+          "البازلاء",
+          "القطط",
+          "الزهور",
+          "الببّغاوات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أكبر كوكب في النظام الشمسي؟",
+        "options": [
+          "زحل",
+          "المشتري",
+          "الأرض",
+          "المريخ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم يبلغ عمر الكون؟",
+        "options": [
+          "⁦4.5⁩ مليار سنة",
+          "⁦7.9⁩ مليار سنة",
+          "⁦13.8⁩ مليار سنة",
+          "⁦16.2⁩ مليار سنة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين تقع الغدة الصنوبرية في جسم الإنسان؟",
+        "options": [
+          "المنطقة الأربية (أعلى الفخذ)",
+          "الصدر",
+          "الحلق",
+          "الدماغ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المصطلح الأكثر ارتباطاً بسيغموند فرويد؟",
+        "options": [
+          "التحليل النفسي",
+          "العلاج المعرفي السلوكي",
+          "نظرية الجاذبية",
+          "العلاج السلوكي الجدلي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الصيغة الجزيئية للجلوكوز؟",
+        "options": [
+          "⁦C2H4O2⁩",
+          "⁦C6H12O6⁩",
+          "⁦K⁩+",
+          "⁦CH4⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العلم الذي يدرس خلايا وأنسجة النباتات والحيوانات؟",
+        "options": [
+          "علم الأحياء الدقيقة",
+          "علم التشريح",
+          "علم الأنسجة (⁦Histology⁩)",
+          "الكيمياء الحيوية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المادة الأساسية المسببة للإدمان والموجودة في التبغ؟",
+        "options": [
+          "الكاثينون",
+          "الإيفيدرين",
+          "الغلاوسين",
+          "النيكوتين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الأرجل التي يستحيل بيولوجياً أن تكون لدى أم أربعة وأربعين (حريش)‏؟",
+        "options": [
+          "100",
+          "26",
+          "50",
+          "74"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو التركيب الكيميائي للماء؟",
+        "options": [
+          "⁦C12H6O2⁩",
+          "⁦H20⁩",
+          "⁦CO2⁩",
+          "⁦H⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في علم النفس، أي من الاحتياجات التالية تقع في أعلى هرم \"ماسلو للاحتياجات الإنسانية\"؟",
+        "options": [
+          "الحب والانتماء",
+          "الأمان",
+          "تقدير الذات (الاحترام)",
+          "الاحتياجات الفسيولوجية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الأوعية الدموية التالية يحمل دماً غير مؤكسج (خالٍ من الأكسجين)‏؟",
+        "options": [
+          "الوريد الرئوي",
+          "الشريان الأورطي (الأبهر)",
+          "الشريان التاجي",
+          "الشريان الرئوي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أول مركب عضوي تم تحضيره (تخليقه) من مركبات غير عضوية؟",
+        "options": [
+          "اليوريا (البولينا)",
+          "البروبان",
+          "الإيثانول",
+          "الفورمالديهايد"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان إنسان النياندرتال سلفاً مباشراً للإنسان الحديث.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي للثعلب الأحمر؟",
+        "options": [
+          "فولبيس ريدوس (⁦Vulpes Redus⁩)",
+          "الثعلب الأحمر (⁦Red Fox⁩)",
+          "فولبيس فولبيس (⁦Vulpes Vulpes⁩)",
+          "فولبيس فولبي (⁦Vulpes Vulpie⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي هو المصطلح العلمي لـ \"تجمد الدماغ\"؟",
+        "options": [
+          "هايسنثويدس إيتاليكا",
+          "أمارانثوس ريتروفليكسوس",
+          "أمبليوما أمريكانوم",
+          "سفينوبالاتين غانغليونورالجيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_7",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 7",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو نوع عمى الألوان الأكثر ندرة على الإطلاق؟",
+        "options": [
+          "الأزرق",
+          "الأحمر",
+          "الأخضر",
+          "البنفسجي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كل العناصر الفلزية التالية تكون سائلة عند درجة حرارة الغرفة أو قريباً منها ما عدا:",
+        "options": [
+          "الغاليوم",
+          "البيريليوم",
+          "السيزيوم",
+          "الزئبق"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم العلمي لغوريلا السهول الغربية؟",
+        "options": [
+          "غوريلا غوريلا ديهلي",
+          "غوريلا بيرنغي غراويري",
+          "غوريلا غوريلا غوريلا",
+          "غوريلا بيرنغي بيرنغي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العنصر الذي يتحول إلى ألماس عند تعرضه لحرارة وضغط شديدين؟",
+        "options": [
+          "النيتروجين",
+          "الأكسجين",
+          "الهيدروجين",
+          "الكربون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء من جسم الإنسان يصيبه مرض ألزهايمر بشكل أساسي؟",
+        "options": [
+          "الدماغ",
+          "الرئتان",
+          "الجلد",
+          "القلب"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حمض الفوليك هو الشكل الاصطناعي لأي من الفيتامينات التالية؟",
+        "options": [
+          "فيتامين أ",
+          "فيتامين ب",
+          "فيتامين ج",
+          "فيتامين د"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء من الدماغ يأخذ اسمه من الكلمة اليونانية التي تعني \"حصان البحر\"؟",
+        "options": [
+          "المخيخ",
+          "المهاد",
+          "الحصين",
+          "اللوزة الدماغية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي وحدة قياس المقاومة الكهربائية؟",
+        "options": [
+          "المهو",
+          "التسلا",
+          "الجول",
+          "الأوم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد أنواع الكواركات في النموذج القياسي للفيزياء؟",
+        "options": [
+          "6",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو عالم النفس السويسري الذي يرتبط اسمه بمفهومي الشخصية الانطوائية والانبساطية؟",
+        "options": [
+          "جان بياجيه",
+          "كارل يونغ",
+          "أليس ميلر",
+          "هيرمان رورشاخ"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يقوم القرش الأبيض الكبير أحياناً بهجوم \"الضربة والعضة\" (عضة اختبارية) على ضحاياه.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الوحدة القياسية الدولية لشدة الإضاءة؟",
+        "options": [
+          "اللومن",
+          "الفاراداي",
+          "الكولوم",
+          "الكانديلا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي غاز يشكل حوالي 78% من الغلاف الجوي للأرض؟",
+        "options": [
+          "النيتروجين",
+          "الأكسجين",
+          "الأرغون",
+          "ثاني أكسيد الكربون"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لأقرب دقيقة، كم من الوقت يستغرق ضوء الشمس للوصول إلى الأرض؟",
+        "options": [
+          "6 دقائق",
+          "8 دقائق",
+          "دقيقتان",
+          "12 دقيقة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تيمناً بمن تم تسمية العنصر الكيميائي الكوريوم؟",
+        "options": [
+          "مسبار كوريوسيتي",
+          "جورج الفضولي",
+          "ماري وبيير كوري",
+          "ستيفن كوري"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أكبر كائن حي معروف للإنسان حالياً؟",
+        "options": [
+          "الحوت الأزرق",
+          "شجرة الخشب الأحمر",
+          "الشعاب المرجانية",
+          "فطر العسل"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العضيو الذي يعتبر \"محطة طاقة الخلية\"؟",
+        "options": [
+          "الميتوكوندريا",
+          "الريبوسوم",
+          "ريد بول",
+          "النواة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يُعتبر المركب العضوي كحولاً إذا كان يحتوي على أي من المجموعات الوظيفية التالية؟",
+        "options": [
+          "الكربونيل",
+          "الهيدروكسيل",
+          "الألكيل",
+          "الألدهيد"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى ماذا يشير مصطلح \"العزل\" في علم الأحياء الدقيقة؟",
+        "options": [
+          "نقص التغذية في البيئات الدقيقة",
+          "مستوى النيتروجين في التربة",
+          "فصل سلالة معينة من تجمع طبيعي ومختلط للميكروبات الحية",
+          "اختبار تأثيرات كائنات دقيقة معينة في بيئات معزولة مثل الكهوف"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مصطلح نفسي يشير إلى التوتر الناتج عن حمل معتقدات متناقضة؟",
+        "options": [
+          "متلازمة التقلب",
+          "انقسام الدماغ",
+          "الرؤية العمياء",
+          "التنافر المعرفي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_8",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 8",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو الكوكب الأكثر سخونة في المجموعة الشمسية؟",
+        "options": [
+          "الزهرة",
+          "المشتري",
+          "عطارد",
+          "المريخ"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الصيغة الجزيئية لغاز الأوزون؟",
+        "options": [
+          "⁦C6H2O6⁩",
+          "⁦O3⁩",
+          "⁦N2O⁩",
+          "⁦SO4⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي طور أول لقاح ناجح لشلل الأطفال في خمسينيات القرن الماضي؟",
+        "options": [
+          "جون إندرز",
+          "توماس ويلر",
+          "جوناس سالك",
+          "فريدريك روبنز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يعني الاسم العلمي للمخلوق البحري \"أنومالوكاريس\" الذي عاش في العصر الكامبري؟",
+        "options": [
+          "السمكة المشوهة",
+          "السرطان الغريب",
+          "المحار الشاذ",
+          "الروبيان غير الطبيعي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو النوكليوتيد الذي يرتبط مع الغوانين؟",
+        "options": [
+          "السيتوزين",
+          "الثايمين",
+          "الأدينين",
+          "اليوراسيل"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي كواكب المجموعة الشمسية هو الأقرب إلى الشمس؟",
+        "options": [
+          "الأرض",
+          "عطارد",
+          "المريخ",
+          "الزهرة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "علم النفس هو علم دراسة السلوك والعقل.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الاسم الشائع لحمض إيزوبوتيل فينيل بروبيونيك؟",
+        "options": [
+          "المورفين",
+          "الكيتامين",
+          "الأسبرين",
+          "الإيبوبروفين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مما تتكون أظافر الإنسان؟",
+        "options": [
+          "الكيراتين",
+          "العظام",
+          "الكيتين",
+          "الكالسيوم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يتكون معظم الشمس من أي عنصرين؟",
+        "options": [
+          "الهيدروجين والنيتروجين",
+          "الهيدروجين والهيليوم",
+          "الكربون والنيتروجين",
+          "الكربون والهيليوم"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي قمر هو التابع الوحيد في مجموعتنا الشمسية الذي يمتلك غلافاً جوياً كثيفاً؟",
+        "options": [
+          "أوروبا",
+          "ميراندا",
+          "تيتان",
+          "كاليستو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما الذي يقع في مركز مجرتنا؟",
+        "options": [
+          "ثقب دودي",
+          "مستعر أعظم",
+          "شبه نجم (كوازار)",
+          "ثقب أسود"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أطول عظمة في جسم الإنسان؟",
+        "options": [
+          "عظمة الفخذ",
+          "لوح الكتف",
+          "الشظية",
+          "الزند"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الصفائح هي الأكثر شهرة بالتسبب في حدوث الزلازل والتسونامي؟",
+        "options": [
+          "حدود الصفائح المتباعدة/المتقاربة/القشرة المحيطية",
+          "حدود الصفائح المتقاربة/القشرة المحيطية",
+          "حدود الصفائح التحويلية/حدود الصفائح المتباعدة",
+          "القشرة المحيطية والقارية/حدود الصفائح التحويلية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من البلاستيك التالي يُسخدم عادةً في إطارات النوافذ والمزاريب وأنابيب الصرف؟",
+        "options": [
+          "بولي إيثيلين (⁦PE⁩)",
+          "بولي بروبيلين (⁦PP⁩)",
+          "بولي فينيل كلورايد (⁦PVC⁩)",
+          "بولي ستيرين (⁦PS⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس عنصراً حقيقياً في الجدول الدوري؟",
+        "options": [
+          "براسيديوميوم",
+          "هاسيوم",
+          "لوتيتيوم",
+          "فيترينيوم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تم استنساخ أول ثديي بنجاح؟",
+        "options": [
+          "1996",
+          "2009",
+          "1999",
+          "1985"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "المرض الجوفي (السيلياك) هو مرض يصيب القلب، مما يجعل المصابين به غير قادرين على تناول اللحوم.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الفولاذ هو سبيكة من الحديد والكربون.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد الكروموسومات في خلايا جسمك؟",
+        "options": [
+          "21",
+          "22",
+          "24",
+          "23"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 19,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-science_nature_quiz_9",
+    "user_id": "system",
+    "title": "العلوم والطبيعة — الجزء 9",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "علوم وطب",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "كان يُعتقد في الماضي أن حقن غضروف القرش في البشر يمنعهم من الإصابة بالسرطان.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي كوكبة تحتوي على مركز مجرة درب التبانة؟",
+        "options": [
+          "العقرب",
+          "الرامي (القوس)",
+          "الحواء",
+          "الجدي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تيتسويا فوجيتا كان عالماً طور مقياساً لأي من الكوارث الطبيعية التالية؟",
+        "options": [
+          "الأعاصير الاستوائية (الهوريكان)",
+          "الزلازل",
+          "الأعاصير القمعية (التورنادو)",
+          "البراكين"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كولروفوبيا (⁦Coulrophobia⁩) هي الخوف غير العقلاني من ماذا؟",
+        "options": [
+          "المقابر",
+          "الإبر",
+          "الأنفاق",
+          "المهرجين"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه النجوم هو الأكبر حجماً؟",
+        "options": [
+          "يو واي سكوتي (⁦UY Scuti⁩)",
+          "في واي الكلب الأكبر (⁦VY Canis Majoris⁩)",
+          "منكب الجوزاء (⁦Betelgeuse⁩)",
+          "آر دبليو الملتهب (⁦RW Cephei⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الفيزياء، يعتبر حفظ الطاقة وحفظ الزخم كلاهما نتيجة لأي مما يلي؟",
+        "options": [
+          "مبرهنة بيل",
+          "مبرهنة نويثر",
+          "مبرهنة ويك",
+          "مبرهنة كارنو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم أول قمر صناعي للأرض أطلقه الاتحاد السوفيتي عام 1957‏؟",
+        "options": [
+          "سويوز ⁦7K-OK⁩",
+          "زينيت-2",
+          "سبوتنيك 1",
+          "فوسخود ⁦3KV⁩"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "الميوبيا (⁦Myopia⁩) هو المصطلح العلمي لأي حالة؟",
+        "options": [
+          "طول النظر",
+          "الرؤية المزدوجة",
+          "الرؤية الضبابية",
+          "قصر النظر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه العناصر يعتبر من أشباه الفلزات؟",
+        "options": [
+          "الأنتيمون",
+          "القصدير",
+          "البروم",
+          "الروبيديوم"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي سرعة الضوء في الفراغ؟",
+        "options": [
+          "50,461 م/ث",
+          "299,792,458 م/ث",
+          "308,215,043 م/ث",
+          "751,665,014,151 م/ث"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس مكوناً كهربائياً خاملاً؟",
+        "options": [
+          "المقاوم",
+          "المكثف",
+          "الترانزستور",
+          "المحث"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المصطلح الطبي لانخفاض نسبة السكر في الدم؟",
+        "options": [
+          "قصور الغدة الدرقية",
+          "انخفاض حرارة الجسم",
+          "نقص الأكسجين",
+          "نقص سكر الدم"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لون الدم غير المؤكسج؟",
+        "options": [
+          "الأحمر",
+          "الأزرق",
+          "البنفسجي",
+          "الأخضر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه العناصر في الجدول الدوري يعتبر غازاً نبيلاً؟",
+        "options": [
+          "البوتاسيوم",
+          "النيون",
+          "اليود",
+          "الكوبالت"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو العضيو الخلوي المعروف بـ \"محطة طاقة الخلية\"؟",
+        "options": [
+          "النواة",
+          "جهاز جولجي",
+          "الميتوكوندريا",
+          "الشبكة الإندوبلازمية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إذا غمست منشفة جافة في حوض مليء بالماء، سيرتفع الماء إلى أعلى المنشفة بفعل ظاهرة تسمى \"الخاصية الكارتيلرية\" (⁦Cartillary Action⁩).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا يمثل المعين الأصفر في معين الحرائق (⁦NFPA 704⁩)‏؟",
+        "options": [
+          "التفاعلية",
+          "المخاطر الصحية",
+          "القابلية للاشتعال",
+          "النشاط الإشعاعي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المركبات الفضائية التالية لم تلمس القمر مطلقاً؟",
+        "options": [
+          "أبولو 11",
+          "مارينر 4",
+          "لونا 2",
+          "سمارت-1"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء من الجسم يفرز الأنسولين؟",
+        "options": [
+          "الكلية",
+          "الكبد",
+          "البنكرياس",
+          "المعدة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_1",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "من هو سائق الفورمولا 1 الذي لُقِّب بـ 'البروفيسور'؟",
+        "options": [
+          "ألان بروست",
+          "أيرتون سينا",
+          "نيكي لاودا",
+          "إيمرسون فيتيبالدي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في الفورمولا 1، تم إدخال سيارة الأمان الافتراضية بعد الحادث المميت لأي سائق؟",
+        "options": [
+          "أيرتون سينا",
+          "جول بيانكي",
+          "رونالد راتزنبرجر",
+          "جيل فيلنوف"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ملعب 'ستاديوم أوف لايت' (ملعب النور) هو الملعب الرئيسي لأي فريق كرة قدم؟",
+        "options": [
+          "نادي برشلونة",
+          "باريس سان جيرمان",
+          "نادي سندرلاند",
+          "مانشستر يونايتد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو اللاعب الذي شارك في أكبر عدد من البطولات مع منتخب ألمانيا لكرة القدم؟",
+        "options": [
+          "ميروسلاف كلوزه",
+          "فيليب لام",
+          "أوليفر كان",
+          "لوثار ماتيوس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عند أي جسر يبدأ سباق القوارب السنوي بين أكسفورد وكامبريدج؟",
+        "options": [
+          "باتني",
+          "هامرسميث",
+          "فوكسهول",
+          "باترسي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "بأي حدث مأساوي يُذكر موسم 1994 للفورمولا 1‏؟",
+        "options": [
+          "المواجهة الحاسمة (أستراليا)",
+          "وفاة أيرتون سينا (سان مارينو)",
+          "احتراق سيارة فيرستابين (ألمانيا)",
+          "إيقاف شوماخر (بريطانيا)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه المدن الروسية لم تحتوي على ملعب استُخدم في كأس العالم لكرة القدم 2018‏؟",
+        "options": [
+          "روستوف على نهر الدون",
+          "يكاترينبورغ",
+          "فلاديفوستوك",
+          "كالينينغراد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون? (⁦Wait⁩, ⁦English question⁩: ⁦Which is Kenesisa Bekele's personal best at marathon⁩? ⁦No question mark needed as it wasn't in original⁩, ⁦or let's use standard question mark⁩) ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
+        "options": [
+          "2:01:12",
+          "2:01:45",
+          "2:01:51",
+          "2:01:41"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "عُرضت الحلقة الأولى من برنامج '⁦WWF Monday Night RAW⁩' في 11 يناير 1990.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أُدرجت رياضة التزلج على الألواح (⁦Skateboarding⁩) في دورة الألعاب الأولمبية الصيفية لعام 2020 في طوكيو.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو لاعب دوري السلة الأمريكي (⁦NBA⁩) الذي فاز بجائزة اللاعب الأكثر قيمة (⁦MVP⁩) لموسم 1999-2000‏؟",
+        "options": [
+          "ألين إيفرسون",
+          "كوبي براينت",
+          "شاكيل أونيل",
+          "بول بيرس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى أُقيمت أول مباراة دولية رسمية في تاريخ كرة القدم؟",
+        "options": [
+          "1880",
+          "1863",
+          "1865",
+          "1872"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "افتتح لاعب كرة القدم كريستيانو رونالدو متحفاً مخصصاً لنفسه.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة أُقيمت دورة الألعاب الأولمبية الشتوية لعام 2014 في مدينة سوتشي؟",
+        "options": [
+          "كوريا الجنوبية",
+          "روسيا",
+          "النرويج",
+          "كندا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المنتخب الوطني الذي فاز بأول نسخة من دوري الأمم الأوروبية؟",
+        "options": [
+          "هولندا",
+          "إنجلترا",
+          "البرتغال",
+          "سويسرا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من يُعتبر أفضل لاعب كرة قدم روماني على مر العصور؟",
+        "options": [
+          "كريستيان كيفو",
+          "نيكولاي دوبرين",
+          "جورجي بوبيسكو",
+          "جورجي هاجي"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو لاعب السهام المريشة (⁦Darts⁩) الذي فاز بأكبر عدد من ألقاب بطولة العالم؟",
+        "options": [
+          "فيل تايلور",
+          "مايكل فان جيروين",
+          "ريموند فان بارنيفيلد",
+          "إيريك بريستو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي النتيجة النهائية لمباراة ألمانيا ضد البرازيل في كأس العالم 2014‏؟",
+        "options": [
+          "0 - 1",
+          "7 - 1",
+          "3 - 4",
+          "16 - 0"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد النقاط التي سجلها ليبرون جيمس في أول مباراة له في دوري السلة الأمريكي (⁦NBA⁩)‏؟",
+        "options": [
+          "19",
+          "69",
+          "25",
+          "41"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_2",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في أي عام فاز جينسون باتون بأول بطولة عالم لسائقي الفورمولا 1 في مسيرته؟",
+        "options": [
+          "2009",
+          "2010",
+          "2007",
+          "2006"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو سائق الفورمولا 1 الذي انتقل إلى فريق آخر في منتصف موسم 2017‏؟",
+        "options": [
+          "دانييل كفيات",
+          "كارلوس ساينز الابن",
+          "جوليون بالمر",
+          "ريو هاريانتو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو اللاعب الأكثر مشاركة في المباريات تاريخياً مع نادي مانشستر يونايتد؟",
+        "options": [
+          "ديفيد بيكهام",
+          "واين روني",
+          "رايان غيغز",
+          "إيريك كانتونا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز بدوري أبطال أوروبا في عام 2016‏؟",
+        "options": [
+          "بايرن ميونخ",
+          "أتلتيكو مدريد",
+          "مانشستر سيتي",
+          "ريال مدريد"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2008، حقق يوسين بولت الرقم القياسي العالمي لسباق 100 متر برباط حذاء واحد غير مربوط.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في كأس العالم 2014، ما هي النتيجة النهائية لمباراة البرازيل ضد ألمانيا؟",
+        "options": [
+          "1-5",
+          "1-7",
+          "1-6",
+          "2-6"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم ملعب نادي مانشستر يونايتد الرئيسي؟",
+        "options": [
+          "أنفيلد",
+          "ملعب مدينة مانشستر",
+          "أولد ترافورد",
+          "سانت جيمس بارك"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في موسم 1988 للفورمولا 1، فاز فريق ماكلارين بجميع السباقات باستثناء سباق واحد فقط، ما هو هذا السباق؟",
+        "options": [
+          "سباق جائزة اليابان الكبرى",
+          "سباق جائزة موناكو الكبرى",
+          "سباق جائزة البرازيل الكبرى",
+          "سباق جائزة إيطاليا الكبرى"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الفرق لم يلعب لصالحها اللاعب يارومير ياغر؟",
+        "options": [
+          "نيويورك آيلاندرز",
+          "كالغاري فليمز",
+          "نيوجيرسي ديفلز",
+          "دالاس ستارز"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد لاعبي كرة القدم الذين يجب أن يتواجدوا في الملعب في نفس الوقت (لكلا الفريقين)‏؟",
+        "options": [
+          "20",
+          "22",
+          "24",
+          "26"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي شركة تصنيع سيارات فازت بسباق لو مان 24 ساعة لعام 2017‏؟",
+        "options": [
+          "تويوتا",
+          "أودي",
+          "بورشه",
+          "شيفروليه"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2016، من فاز ببطولة العالم لـ 'الصانعين' في الفورمولا 1 للمرة الثالثة على التوالي؟",
+        "options": [
+          "سكوديريا فيراري",
+          "ماكلارين هوندا",
+          "ريد بول ريسينغ رينو",
+          "مرسيدس إيه إم جي بتروناس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد ألقاب الدوري الإنجليزي الممتاز التي حققها السير أليكس فيرغسون خلال فترة تدريبه لمانشستر يونايتد؟",
+        "options": [
+          "13",
+          "11",
+          "20",
+          "22"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ملعب الاتحاد هو الملعب الرئيسي لأي فريق؟",
+        "options": [
+          "مانشستر يونايتد",
+          "مانشستر سيتي",
+          "أرسنال",
+          "بلاكبول"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام فاز نادي ستيوا بوخارست بكأس أوروبا (المعروف حالياً بدوري أبطال أوروبا) ضد نادي برشلونة؟",
+        "options": [
+          "1990",
+          "1982",
+          "1986",
+          "1989"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز بسباق دايتونا 500 (⁦Daytona 500⁩) لعام 1998‏؟",
+        "options": [
+          "جون أندرسون",
+          "جيف غوردون",
+          "مايكل والتريب",
+          "ديل إيرنهاردت"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي شركة ملابس رياضية ألمانية تستخدم شعار 'فورم سترايب' (الخط المقوس المميز)‏؟",
+        "options": [
+          "بوما",
+          "نايكي",
+          "أديداس",
+          "ريبوك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الهداف التاريخي لنادي مانشستر يونايتد في الدوري الإنجليزي الممتاز؟",
+        "options": [
+          "السير بوبي تشارلتون",
+          "واين روني",
+          "رايان غيغز",
+          "ديفيد بيكهام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز ببطولة العالم للفورمولا 1 لعام 2015‏؟",
+        "options": [
+          "نيكو روزبرغ",
+          "سيباستيان فيتيل",
+          "لويس هاملتون",
+          "جينسون باتون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_3",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "دوري أبطال أوروبا هو بطولة سنوية لأندية كرة القدم تضم أندية من أي قارة؟",
+        "options": [
+          "أوروبا",
+          "أمريكا الجنوبية",
+          "أفريقيا",
+          "آسيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة استضافت دورة الألعاب الأولمبية الشتوية لعام 2014‏؟",
+        "options": [
+          "كندا",
+          "روسيا",
+          "الولايات المتحدة",
+          "ألمانيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز بكأس ستانلي (⁦Stanley Cup⁩) لعام 2011‏؟",
+        "options": [
+          "مونتريال كاناديانز",
+          "نيويورك رينجرز",
+          "بوسطن بروينز",
+          "تورونتو ميبل ليفز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "روجيه فيدرر هو لاعب كرة قدم مشهور.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الأداة التي يُطلق اسمها على ميزة الرمية الأخيرة (الحجر الأخير) في جولة لعبة الكيرلنج؟",
+        "options": [
+          "المطرقة",
+          "مفتاح الربط",
+          "المثقاب",
+          "مفك البراغي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سجل ويلت تشامبرلين 100 نقطة في مباراته الشهيرة ضد نيويورك نيكس عام 1962.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي فريق فاز بالدوري الإنجليزي الممتاز لموسم 2015-2016‏؟",
+        "options": [
+          "ليفربول",
+          "تشيلسي",
+          "ليستر سيتي",
+          "مانشستر يونايتد"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "استضافت رابطة محترفي التنس (⁦ATP⁩) عدة بطولات على ملاعب مفروشة بالسجاد (⁦carpet court⁩) قبل أن يتم استبدالها لتقليل الإصابات.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هي اللاعبّة التي فازت بالميدالية الذهبية لفردي تنس الطاولة في الألعاب الأولمبية لعام 2016‏؟",
+        "options": [
+          "دينغ نينغ (الصين)",
+          "لي شياو شيا (الصين)",
+          "آي فوكوهارا (اليابان)",
+          "سونغ كيم (كوريا الشمالية)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من اللاعبين التاليين سجل هاتريك (ثلاثة أهداف) في أول ظهور له مع مانشستر يونايتد؟",
+        "options": [
+          "كريستيانو رونالدو",
+          "واين روني",
+          "روبين فان بيرسي",
+          "ديفيد بيكهام"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "قبل عام 2018، ما هي شركة السيارات اليابانية الوحيدة التي فازت بسباق لو مان 24 ساعة؟",
+        "options": [
+          "تويوتا",
+          "سوبارو",
+          "مازدا",
+          "نيسان"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو مصطلح الكريكت الذي يشير إلى خروج الضارب دون تسجيل أي نقطة (صفر)‏؟",
+        "options": [
+          "باي (⁦Bye⁩)",
+          "بيمر (⁦Beamer⁩)",
+          "كاري (⁦Carry⁩)",
+          "داك (⁦Duck⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في رياضة الغولف، ما الاسم الذي يُطلق على تسجيل ضربتين تحت المعدل في حفرة واحدة؟",
+        "options": [
+          "إيغل",
+          "بيردي",
+          "بوغي",
+          "ألباتروس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي سباق حُسم لقب بطولة العالم لسائقي الفورمولا 1 لعام 2018‏؟",
+        "options": [
+          "الولايات المتحدة",
+          "المكسيك",
+          "بلجيكا",
+          "أبو ظبي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من بطولات التنس الكبرى التالية (الجراند سلام) تقام في نهاية العام؟",
+        "options": [
+          "بطولة فرنسا المفتوحة",
+          "بطولة ويمبلدون",
+          "بطولة أمريكا المفتوحة",
+          "بطولة أستراليا المفتوحة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين أقيمت دورة الألعاب الأولمبية الصيفية الثانية والعشرون؟",
+        "options": [
+          "برشلونة",
+          "طوكيو",
+          "لوس أنجلوس",
+          "موسكو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم مرة فازت مارتينا نافراتيلوفا ببطولة ويمبلدون لفردي السيدات؟",
+        "options": [
+          "تسع مرات",
+          "عشر مرات",
+          "سبع مرات",
+          "ثماني مرات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في كرة القدم، يتم استئناف اللعب بركلة ركنية بعد أن يسجل أحد الفريقين هدفاً.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي رياضة تُستخدم المصطلحات: لوف (⁦love⁩)، ديوس (⁦deuce⁩)، ماتش (⁦match⁩)، وفولي (⁦volley⁩)‏؟",
+        "options": [
+          "الكريكت",
+          "كرة السلة",
+          "التنس",
+          "الكيرلنج"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 18,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_4",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "من هو شريك الزوجي الذي حقق معه لاعب التنس جون ماكنرو أكبر نجاحاته؟",
+        "options": [
+          "بيتر فليمنغ",
+          "مارك وودفورد",
+          "مايكل ستيتش",
+          "ماري كاريلو"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من منتخبات الدول التالية تأهل إلى كأس العالم لكرة القدم 2018 في روسيا؟",
+        "options": [
+          "الولايات المتحدة الأمريكية",
+          "تونس",
+          "إيطاليا",
+          "هولندا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو اللاعب الذي فاز بالميدالية الذهبية في فردي كرة الطاولة للرجال في أولمبياد 2016‏؟",
+        "options": [
+          "تشانغ جيكي (الصين)",
+          "جون ميزوتاني (اليابان)",
+          "ما لونغ (الصين)",
+          "فلاديمير سامسونوف (بيلاروسيا)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المدن الأوروبية التالية كانت الأولى التي تستضيف الألعاب الأولمبية الصيفية الحديثة ثلاث مرات؟",
+        "options": [
+          "باريس",
+          "أثينا",
+          "روما",
+          "لندن"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي استضافت كأس العالم لكرة القدم عام 2022‏؟",
+        "options": [
+          "قطر",
+          "أوغندا",
+          "فيتنام",
+          "بوليفيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي نادٍ إنجليزي لكرة القدم يُلقب بـ 'الثعالب'؟",
+        "options": [
+          "نورثهامبتون تاون",
+          "ليستر سيتي",
+          "برادفورد سيتي",
+          "وست بروميتش ألبيون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كان هناك ما مجموعه 20 سباقاً في موسم فورمولا 1 لعام 2016.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز بسباق جائزة موناكو الكبرى لعام 2018‏؟",
+        "options": [
+          "سباستيان فيتيل",
+          "كيمي رايكونن",
+          "لويس هاملتون",
+          "دانيال ريكاردو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو أعلى حزام يمكن الحصول عليه في رياضة التايكوندو؟",
+        "options": [
+          "الأسود",
+          "الأبيض",
+          "الأحمر",
+          "الأخضر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز ببطولة العالم لسائقي الفورمولا 1 لعام 2016‏؟",
+        "options": [
+          "لويس هاملتون",
+          "نيكو روزبرغ",
+          "ماكس فيرستابن",
+          "كيمي رايكونن"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة فازت بكأس العالم لكرة القدم 2018 التي استضافتها روسيا؟",
+        "options": [
+          "كرواتيا",
+          "بلجيكا",
+          "فرنسا",
+          "إنجلترا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لماذا تم بناء جدار 'الوحش الأخضر' في ملعب فينواي بارك في الأصل؟",
+        "options": [
+          "لجعل تسجيل الضربات الساحقة أكثر صعوبة.",
+          "لعرض الإعلانات التجارية.",
+          "لتوفير مقاعد إضافية للجمهور.",
+          "لمنع مشاهدة المباريات من خارج الملعب."
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الرياضة التي تُعرف بـ 'رياضة الملوك'؟",
+        "options": [
+          "سباق الخيل",
+          "الشطرنج",
+          "المبارزة بالرماح",
+          "المبارزة بالسيف"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي مدينة أمريكية جاء فريق لوس أنجلوس دودجرز في الأصل؟",
+        "options": [
+          "لاس فيغاس",
+          "بروكلين",
+          "بوسطن",
+          "سياتل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "جوش منصور هو لاعب في أي فريق من فرق دوري الرغبي الوطني (⁦NRL⁩)‏؟",
+        "options": [
+          "ملبورن ستورم",
+          "سيدني روسترز",
+          "بينريث بانثرز",
+          "نورث كوينزلاند كاوبويز"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من منافسات ألعاب القوى التالية غير مدرجة في مسابقة العشاري للرجال في الأولمبياد؟",
+        "options": [
+          "القفز بالزانة",
+          "الوثب الطويل",
+          "دفع الجلة",
+          "رمي المطرقة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسس نادي شالكه 04 الألماني لكرة القدم؟",
+        "options": [
+          "1904",
+          "1909",
+          "2008",
+          "1999"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي أنجبت لاعبي كرة قدم مثل كافو، وروبيرتو كارلوس، وبيليه؟",
+        "options": [
+          "الأرجنتين",
+          "البرازيل",
+          "البرتغال",
+          "إسبانيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_5",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي مصارع فاز ببطولة رويال رامبل للرجال لعام 2019‏؟",
+        "options": [
+          "سيث رولينز",
+          "برون سترومان",
+          "إيه جيه ستايلز",
+          "أندرادي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد ألقاب بطولة فرنسا المفتوحة للتنس التي فاز بها بيورن بورغ؟",
+        "options": [
+          "4",
+          "6",
+          "9",
+          "2"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز بدوري أبطال أوروبا في عام 2017‏؟",
+        "options": [
+          "أتلتيكو مدريد",
+          "موناكو",
+          "ريال مدريد",
+          "يوفنتوس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو لقب نادي رغبي يونيون لبلدة نورثهامبتون؟",
+        "options": [
+          "هارليكوينز",
+          "ساراسينز",
+          "واسبس",
+          "السينتس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الطول الدقيق للجزء المستقيم في الحارة الأولى من مضمار أولمبي؟",
+        "options": [
+          "⁦84.39⁩ متر",
+          "100 متر",
+          "100 ياردة",
+          "⁦109.36⁩ ياردة"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام تأسس نادي باري الإيطالي لكرة القدم؟",
+        "options": [
+          "1945",
+          "1908",
+          "2014",
+          "1895"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان هداف بطولة كأس العالم لكرة القدم لعام 2014‏؟",
+        "options": [
+          "توماس مولر",
+          "ليونيل ميسي",
+          "خاميس رودريغيز",
+          "نيمار"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي فريق فاز ببطولة دوري كرة السلة الأمريكي للمحترفين (⁦NBA⁩) لموسم 2014-2015‏؟",
+        "options": [
+          "كليفلاند كافالييرز",
+          "هوستون روكتس",
+          "أتلانتا هوكس",
+          "غولدن ستيت واريورز"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو السائق الذي توج بلقب بطولة العالم للفورمولا 1 برقم قياسي بلغ 7 مرات؟",
+        "options": [
+          "مايكل شوماخر",
+          "آيرتون سينا",
+          "فرناندو ألونسو",
+          "جيم كلارك"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مع أي فريق فاز ستيفن جيرارد بلقب دوري أبطال أوروبا؟",
+        "options": [
+          "ريال مدريد",
+          "ليفربول",
+          "تشيلسي",
+          "مانشستر سيتي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم الأداة المستخدمة لضرب الكرة البيضاء في السنوكر أو البلياردو؟",
+        "options": [
+          "المضرب",
+          "المضرب الخشبي",
+          "العصا",
+          "المطرقة"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الدولة التي استضافت كأس العالم لكرة القدم عام 2022‏؟",
+        "options": [
+          "الولايات المتحدة الأمريكية",
+          "اليابان",
+          "سويسرا",
+          "قطر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم كان معدل ضربات السير دونالد برادمان في مباريات الاختبار في الكريكت؟",
+        "options": [
+          "⁦99.94⁩",
+          "100",
+          "⁦69.51⁩",
+          "⁦44.78⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي منتخب هزمه المنتخب الإنجليزي في دور نصف النهائي قبل أن يفوز بنهائي كأس العالم عام 1966‏؟",
+        "options": [
+          "ألمانيا الغربية",
+          "البرتغال",
+          "الاتحاد السوفيتي",
+          "البرازيل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إدسون أرانتيس دو ناسيمنتو هو الاسم الكامل لأي لاعب كرة قدم أسطوري؟",
+        "options": [
+          "روماريو",
+          "زيكو",
+          "بيليه",
+          "رونالدينيو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي جزيرة برتغالية ينحدر لاعب كرة القدم كريستيانو رونالدو؟",
+        "options": [
+          "تيرسيرا",
+          "سانتا ماريا",
+          "بورتو سانتو",
+          "ماديرا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو فريق كرة السلة الذي خاض أكبر عدد من نهائيات دوري كرة السلة الأمريكي للمحترفين (⁦NBA⁩)‏؟",
+        "options": [
+          "لوس أنجلوس ليكرز",
+          "بوسطن سلتكس",
+          "فيلادلفيا سفنتي سيكسرز",
+          "غولدن ستيت واريورز"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي شركة مصنعة للسيارات فازت بسباق لومان 24 ساعة لعام 2016‏؟",
+        "options": [
+          "تويوتا",
+          "بورشه",
+          "أودي",
+          "فيراري"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_6",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 6",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هو اللقب الشهير الذي عُرف به المصارع المحترف البريطاني شيرلي كرابتري؟",
+        "options": [
+          "بيغ دادي",
+          "جاينت هاستاكس",
+          "كيندو ناغاساكي",
+          "ماسامبولا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي فريق توج بلقب بطولة دوري كرة السلة الأمريكي للمحترفين (⁦NBA⁩) لموسم 2015-2016‏؟",
+        "options": [
+          "غولدن ستيت واريورز",
+          "كليفلاند كافالييرز",
+          "تورونتو رابتورز",
+          "أوكلاهوما سيتي ثاندر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ملعب التنس في الأولمبياد هو عبارة عن شاشة خضراء عملاقة.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الاسم الكامل للاعب كرة القدم 'كريستيانو رونالدو'؟",
+        "options": [
+          "كريستيانو رونالدو لوس سانتوس دييغو",
+          "كريستيانو أرماندو دييغو رونالدو",
+          "كريستيانو لويس أرماندو رونالدو",
+          "كريستيانو رونالدو دوس سانتوس أفيرو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال بطولة ويمبلدون، يمكن للمتفرجين في الملعب شراء كرات التنس التي تم استخدامها في المباريات.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو مدرب كرة القدم الذي فاز بأكبر عدد من الألقاب خلال فترة تدريبه لنادي مانشستر يونايتد الإنجليزي؟",
+        "options": [
+          "ديفيد مويس",
+          "السير أليكس فيرجسون",
+          "لويس فان غال",
+          "جوزيه ميرنيو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في البولينج، ما هو المصطلح المستخدم للإشارة إلى تسجيل ثلاث ضربات ساحقة متتالية؟",
+        "options": [
+          "فلامينغو",
+          "بيردي",
+          "تيركي",
+          "إيغل"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي رياضة تنافس اللاعبة فاني شميلار لصالح ألمانيا؟",
+        "options": [
+          "السباحة",
+          "قفز الحواجز",
+          "الجمباز",
+          "التزلج"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المنتخب الوطني الذي فاز بنسخة عام 2016 من بطولة أمم أوروبا (اليورو)‏؟",
+        "options": [
+          "البرتغال",
+          "فرنسا",
+          "ألمانيا",
+          "إنجلترا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة تتميز جميع فرقها الرياضية المحترفة بقمصان ذات نفس الألوان؟",
+        "options": [
+          "نيويورك",
+          "بيتسبرغ",
+          "سياتل",
+          "تامبا باي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "مع أي فريق سجل مايكل شوماخر ظهوره الأول في الفورمولا 1 في سباق جائزة بلجيكا الكبرى عام 1991‏؟",
+        "options": [
+          "بينيتون",
+          "فيراري",
+          "جوردان",
+          "مرسيدس"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي يُطلق عليه غالباً لقب \"المايسترو\" في ملاعب التنس للرجال؟",
+        "options": [
+          "بيل تيلدن",
+          "بوريس بيكر",
+          "بيت سامبراس",
+          "روجر فيدرر"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة استضافت بطولة كأس العالم لكرة القدم في عام 2006‏؟",
+        "options": [
+          "ألمانيا",
+          "المملكة المتحدة",
+          "البرازيل",
+          "جنوب أفريقيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سجل شاكيل أونيل رمية ثلاثية واحدة فقط طوال مسيرته الرياضية.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي عام فازت سيارة مازدا ⁦787B⁩ بسباق لومان 24 ساعة؟",
+        "options": [
+          "1990",
+          "2000",
+          "1991",
+          "1987"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي منتخب فاز ببطولة كأس العالم لكرة القدم لعام 2014 في البرازيل؟",
+        "options": [
+          "الأرجنتين",
+          "البرازيل",
+          "هولندا",
+          "ألمانيا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في لعبة السنوكر، ما هو لون الكرة التي تساوي 3 نقاط؟",
+        "options": [
+          "الأخضر",
+          "الأصفر",
+          "البني",
+          "الأزرق"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المنتخب الذي هزمه منتخب إنجلترا ليفوز بنهائي كأس العالم عام 1966‏؟",
+        "options": [
+          "الاتحاد السوفيتي",
+          "ألمانيا الغربية",
+          "البرتغال",
+          "البرازيل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_7",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 7",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "كم عدد اللاعبين في فريق كرة القدم الواحد داخل الملعب؟",
+        "options": [
+          "11",
+          "10",
+          "9",
+          "8"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي فاز بلقب الدوري الإنجليزي الممتاز في موسم 2015-2016 بعد مسيرة تاريخية أشبه بالمعجزة؟",
+        "options": [
+          "توتنهام هوتسبير",
+          "ليستر سيتي",
+          "واتفورد",
+          "ستوك سيتي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أحرز هدف الفوز القاتل في الوقت بدل الضائع في نهائي دوري أبطال أوروبا عام 1999 بين مانشستر يونايتد وبايرن ميونخ؟",
+        "options": [
+          "دوايت يورك",
+          "أندي كول",
+          "أولي غونار سولشاير",
+          "ديفيد بيكهام"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في دوري الرغبي، يُعاقب على ركلة \"40-20\" بركلة حرة للفريق المنافس.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "لأي حدث كروي كبير في عام 1996 أُنتجت أغنية \"الأسود الثلاثة\" (⁦Three Lions⁩) لفرقة \"لايتنينج سيدز\"؟",
+        "options": [
+          "بطولة أمم أوروبا",
+          "كأس العالم",
+          "دوري أبطال أوروبا",
+          "كأس القارات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أرقام القمصان التالية لم يرتدها شاكيل أونيل قط؟",
+        "options": [
+          "36",
+          "35",
+          "33",
+          "32"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان أول لاعب كرة قدم يسجل 200 هدف في الدوري الإنجليزي الممتاز؟",
+        "options": [
+          "واين روني",
+          "روبي فاولر",
+          "آلان شيرر",
+          "تييري هنري"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أندية كرة القدم الإنجليزية التالية يقع مقره في مدينة ليفربول؟",
+        "options": [
+          "وست هام يونايتد",
+          "كريستال بالاس",
+          "أرسنال",
+          "إيفرتون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو اللاعب الذي قام بـ \"ركلة كونغ فو\" ضد مشجع لفريق كريستال بالاس في يناير 1995‏؟",
+        "options": [
+          "إيريك كانتونا",
+          "ديفيد سيمان",
+          "أشلي كول",
+          "مارك هيوز"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد مناطق تسجيل النقاط في لوحة السهام (الدارتس) التقليدية؟",
+        "options": [
+          "62",
+          "82",
+          "42",
+          "102"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عدد المباريات التي خاضها نادي أرسنال دون هزيمة خلال موسم 2003-2004 في الدوري الإنجليزي الممتاز؟",
+        "options": [
+          "51",
+          "49",
+          "38",
+          "22"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو لاعب كرة القدم الإيطالي الذي أشار للحارس نوير إلى الزاوية التي سيسدد فيها ثم أضاع الركلة خارج المرمى، أثناء مباراة إيطاليا وألمانيا في بطولة أمم أوروبا 2016‏؟",
+        "options": [
+          "إنسيني",
+          "بارزالي",
+          "جياكيريني",
+          "بيليه"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في تاريخ الدوري الإنجليزي الممتاز (⁦EPL⁩)‏؟",
+        "options": [
+          "آلان شيرر",
+          "واين روني",
+          "ليونيل ميسي",
+          "ديدييه دروغبا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة استضافت بطولة كأس العالم لكرة القدم لعام 2018‏؟",
+        "options": [
+          "ألمانيا",
+          "روسيا",
+          "الولايات المتحدة",
+          "المملكة العربية السعودية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو المصارع المحترف الذي سقط من دعامات السقف ليلقى حتفه أثناء عرض مباشر مدفوع الثمن (⁦Pay-Per-View⁩) في عام 1999‏؟",
+        "options": [
+          "كريس بنوا",
+          "ليكس لوجر",
+          "أوين هارت",
+          "آل سنو"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو اللاعب الذي شارك في أكبر عدد من المباريات مع منتخب البرازيل لكرة القدم؟",
+        "options": [
+          "رونالدو",
+          "كاكا",
+          "روبيرتو كارلوس",
+          "كافو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو الملاكم الذي تم إيقافه بسبب قضم جزء من أذن إيفاندر هوليفيلد في عام 1997‏؟",
+        "options": [
+          "مايك تايسون",
+          "روي جونز جونيور",
+          "إيفاندر هوليفيلد",
+          "لينوكس لويس"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي المدينة التي كان يمثلها فريق ليكرز (⁦Lakers⁩) قبل انتقاله إلى لوس أنجلوس؟",
+        "options": [
+          "فيلادلفيا",
+          "منيابوليس",
+          "شيكاغو",
+          "سان فرانسيسكو"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-sports_quiz_8",
+    "user_id": "system",
+    "title": "الرياضة والألعاب العالمية — الجزء 8",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "رياضة",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من الرماة (⁦pitchers⁩) التاليين فاز بجائزة أفضل لاعب مبتدئ (⁦Rookie of the Year⁩) في الدوري الوطني لموسم 2013‏؟",
+        "options": [
+          "خوسيه فرنانديز",
+          "جاكوب ديغروم",
+          "شيلبي ميلر",
+          "مات هارفي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي تاريخ أقيم الحفل الختامي لدورة الألعاب الأولمبية الصيفية في ريو 2016‏؟",
+        "options": [
+          "23 أغسطس",
+          "21 أغسطس",
+          "19 أغسطس",
+          "17 أغسطس"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة استضافت دورة الألعاب الأولمبية الصيفية لعام 2020‏؟",
+        "options": [
+          "الصين",
+          "أستراليا",
+          "اليابان",
+          "ألمانيا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي فاز ببطولة العالم لسباقات الفورمولا 1 للسائقين لعام 2017‏؟",
+        "options": [
+          "سباستيان فيتل",
+          "نيكو روزبرغ",
+          "ماكس فيرستابن",
+          "لويس هاملتون"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي منتخب فاز ببطولة كوبا أمريكا المئوية عام 2016‏؟",
+        "options": [
+          "تشيلي",
+          "الأرجنتين",
+          "البرازيل",
+          "كولومبيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من أي دولة نشأت رياضة \"الكابادي\"، وهي رياضة تلاحمية تعتمد على الدفاع والالتحام؟",
+        "options": [
+          "أستراليا",
+          "الهند",
+          "تركيا",
+          "كمبوديا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الرياضات التالية ليست جزءاً من السباق الثلاثي (الترياتلون)‏؟",
+        "options": [
+          "ركوب الدراجات",
+          "السباحة",
+          "ركوب الخيل",
+          "الجري"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أفضل نتيجة (معدل ضربات) حققها تايجر وودز في مسيرته الاحترافية في رياضة الغولف؟",
+        "options": [
+          "65",
+          "63",
+          "67",
+          "61"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من الذي فاز بسباق جائزة سان مارينو الكبرى عام 1994، وهو السباق الذي لقي فيه آيرتون سينا حتفه؟",
+        "options": [
+          "مايكل شوماخر",
+          "نيكولا لاريني",
+          "جيرهارد بيرجر",
+          "ميكا هاكينين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في كرة القدم الكندية، كم عدد النقاط التي يمنحها تسجيل الـ \"روج\" (⁦rouge⁩)‏؟",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي فريق كرة قدم إنجليزي يُلقب بـ \"النمور\" (⁦The Tigers⁩)‏؟",
+        "options": [
+          "كارديف سيتي",
+          "بريستول سيتي",
+          "هال سيتي",
+          "مانشستر سيتي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من هو لاعب كرة السلة (⁦NBA⁩) الذي خاض أكبر عدد من المباريات طوال مسيرته الرياضية؟",
+        "options": [
+          "كريم عبد الجبار",
+          "كيفن غارنيت",
+          "كوبي براينت",
+          "روبرت باريش"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "من كان الهداف التاريخي للمنتخب الإنجليزي لكرة القدم؟",
+        "options": [
+          "واين روني",
+          "ديفيد بيكهام",
+          "ستيفن جيرارد",
+          "مايكل أوين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "سباقات الفورمولا إي (⁦Formula E⁩) هي سلسلة سباقات سيارات تستخدم سيارات سباق كهربائية هجينة.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "من فاز بلقب \"دوري أبطال أوروبا\" في عام 1999‏؟",
+        "options": [
+          "برشلونة",
+          "بايرن ميونخ",
+          "مانشستر يونايتد",
+          "ليفربول"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يقيس جهاز الـ \"ستيمبميتر\" (⁦stimpmeter⁩) سرعة الكرة على أي سطح؟",
+        "options": [
+          "ملعب كرة القدم",
+          "المنطقة الخارجية لملعب الكريكت",
+          "طاولة البينبول",
+          "المنطقة الخضراء لملعب الغولف"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت رياضة التنس تُعرف في السابق باسم راكيت بول (كرة المضرب).",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي منتخب فاز ببطولة كوبا أمريكا لعام 2015‏؟",
+        "options": [
+          "الأرجنتين",
+          "تشيلي",
+          "البرازيل",
+          "باراغواي"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-vehicles_quiz_1",
+    "user_id": "system",
+    "title": "عالم السيارات والمركبات — الجزء 1",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "ما هي شركة إطارات السيارات الشهيرة بإنتاج سلسلة \"⁦P Zero⁩\"؟",
+        "options": [
+          "بيريللي",
+          "جودير",
+          "بريدجستون",
+          "ميشلان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ماذا تمثل الحلقات الأربع في شعار سيارات أودي؟",
+        "options": [
+          "الولايات التي تحقق فيها أودي أعلى مبيعات",
+          "شركات تصنيع سيارات كانت مستقلة سابقاً",
+          "المدن الرئيسية الحيوية لشركة أودي",
+          "الدول التي تحقق فيها أودي أعلى مبيعات"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1991، أصبحت مازدا أول شركة سيارات يابانية تفوز بسباق لومان (⁦Le Mans⁩).",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي زاوية ميل الأسطوانات في محرك ⁦VR6⁩ الأسطوري من فولكس واجن؟",
+        "options": [
+          "30 درجة",
+          "45 درجة",
+          "90 درجة",
+          "15 درجة"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي شركة السيارات الخارقة التي تنتمي إلى السويد؟",
+        "options": [
+          "كوينيجسيج",
+          "بوغاتي",
+          "لامبورغيني",
+          "ماكلارين"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي دولة ترمز إليها لوحات تسجيل المركبات الدولية بالحرف '⁦A⁩'؟",
+        "options": [
+          "أفغانستان",
+          "النمسا",
+          "أستراليا",
+          "أرمينيا"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ سعة محرك ⁦LS7⁩ بالبوصة المكعبة؟",
+        "options": [
+          "346",
+          "364",
+          "427",
+          "376"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أكمل التناظر التالي: أودي بالنسبة لفولكس واجن مثل إنفينيتي بالنسبة لـ...؟",
+        "options": [
+          "هوندا",
+          "هيونداي",
+          "سوبارو",
+          "نيسان"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "شركة النقل \"أريفا\" (⁦Arriva⁩) مملوكة لشركة السكك الحديدية الألمانية \"دويتشه بان\".",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من ماركات السيارات التالية نشأت في السويد؟",
+        "options": [
+          "مرسيدس",
+          "فولفو",
+          "أكورا",
+          "لينكون"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر سيارة \"بنز باتنت موتورواجن\" لعام 1886 أول سيارة حقيقية صُنعت في التاريخ.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من السيارات التالية ليست من إنتاج شركة فورد؟",
+        "options": [
+          "فيوجن",
+          "موديل إيه (⁦Model A⁩)",
+          "إف-150 (⁦F-150⁩)",
+          "كامري"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "حطم قطار الطلقة الياباني \"شينكانسن\" الرقم القياسي لسرعة أسرع قطار كهربائي المسجل باسم قطار ⁦TGV⁩ الفرنسي.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "تأسست شركة هوندا للمحركات في اليابان.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "اخترع الكندي جوزيف-أرماند بومباردييه عربة الجليد الآلية (السنوموبيل) في عام 1937.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي شركة السيارات التي كان إنزو فيراري يتسابق لصالحها قبل تأسيس شركته الخاصة؟",
+        "options": [
+          "أوتو يونيون",
+          "مرسيدس بنز",
+          "بنتلي",
+          "ألفا روميو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تُصنع غالبية سيارات سوبارو في الصين.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو المحرك المستخدم في سيارة لكزس ⁦SC400⁩‏؟",
+        "options": [
+          "⁦2JZ-GTE⁩",
+          "⁦1UZ-FE⁩",
+          "⁦7M-GTE⁩",
+          "⁦5M-GE⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 17,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-vehicles_quiz_2",
+    "user_id": "system",
+    "title": "عالم السيارات والمركبات — الجزء 2",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "في أي عام ظهرت الشاحنة الصغيرة \"شيفروليه لوف\" (⁦LUV⁩) لأول مرة؟",
+        "options": [
+          "1972",
+          "1982",
+          "1975",
+          "1973"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "طوال تاريخها، صُنعت سيارة شيفروليه كورفيت حصرياً بمحركات ⁦V8⁩ فقط.",
+        "options": [
+          "صحيح",
+          "خطأ",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من موديلات السيارات التالية تنتجها شركة لامبورغيني؟",
+        "options": [
+          "هوايرا",
+          "918",
+          "أفنتادور",
+          "شيرون"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "إلى أي عائلة قطارات تنتمي الفئات البريطانية ⁦Class 700⁩ و ⁦Class 707⁩ و ⁦Class 717⁩‏؟",
+        "options": [
+          "نتوركر (⁦Networker⁩)",
+          "أفنترا (⁦Aventra⁩)",
+          "إلكتروستار (⁦Electrostar⁩)",
+          "ديسيرو سيتي (⁦Desiro City⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ سعة محرك ⁦LS3⁩ بالبوصة المكعبة؟",
+        "options": [
+          "376",
+          "346",
+          "364",
+          "427"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "فرق الطول بين طائرتي بوينغ ⁦777-300ER⁩ وإيرباص ⁦A350-1000⁩ أقرب إلى:",
+        "options": [
+          "1 متر",
+          "⁦0.1⁩ متر",
+          "10 أمتار",
+          "100 متر"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من شركات السيارات التالية سُميت حرب باسمها؟",
+        "options": [
+          "هوندا",
+          "فورد",
+          "تويوتا",
+          "فولكس واجن"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ سعة محرك ⁦LS2⁩ بالبوصة المكعبة؟",
+        "options": [
+          "346",
+          "376",
+          "402",
+          "364"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست شركة كاديلاك للسيارات؟",
+        "options": [
+          "1902",
+          "1964",
+          "1898",
+          "1985"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه الشركات لا تصنع الدراجات النارية؟",
+        "options": [
+          "هوندا",
+          "تويوتا",
+          "كاواساكي",
+          "ياماها"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الدول التالية حظرت رسمياً استخدام كاميرات لوحة القيادة (داش كام) في السيارات للمدنيين؟",
+        "options": [
+          "الولايات المتحدة",
+          "التشيك",
+          "النمسا",
+          "كوريا الجنوبية"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي جزء في محرك السيارة يستخدم فصوصاً لفتح وإغلاق صمامات السحب والعادم للسماح بدخول خليط الهواء والوقود؟",
+        "options": [
+          "المكبس (بستون)",
+          "عمود القيادة",
+          "عمود المرفق (كرنك)",
+          "عمود الحدبات"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت سيارة ⁦GM EV1⁩ من جنرال موتورز أول سيارة كهربائية إنتاجية مسموح بقيادتها قانونياً في الطرقات العامة.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 2014، تم استدعاء أكثر من 6 ملايين سيارة من جنرال موتورز بسبب أي عيب مصنعي خطير؟",
+        "options": [
+          "خلل في دواسة الوقود",
+          "خلل في مفتاح التشغيل",
+          "تلف خراطيم الوقود",
+          "خلل في مكابح السيارة"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "يوجد طراز لسيارات رولز رويس يُطلق عليه اسم \"سبيكتر\" (⁦Spectre⁩).",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خطأ",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "كم عجلة للدراجة أحادية العجلة؟",
+        "options": [
+          "4",
+          "3",
+          "6",
+          "1"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة صُنعت سيارة ترابانت 601 (⁦Trabant 601⁩)‏؟",
+        "options": [
+          "ألمانيا الشرقية",
+          "الاتحاد السوفيتي",
+          "المجر",
+          "فرنسا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-vehicles_quiz_3",
+    "user_id": "system",
+    "title": "عالم السيارات والمركبات — الجزء 3",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي شركة سيارات صممت طراز \"أفنتادور\"؟",
+        "options": [
+          "لامبورغيني",
+          "فيراري",
+          "باغاني",
+          "بوغاتي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "على أي نوع من أنواع الطاقة تعمل سيارات تسلا؟",
+        "options": [
+          "البنزين",
+          "الكهرباء",
+          "الديزل",
+          "الطاقة النووية"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ القوة الحصانية التي تنتجها قاطرة ⁦SD40-2⁩‏؟",
+        "options": [
+          "3,200",
+          "2,578",
+          "3,000",
+          "2,190"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من سيارات أودي التالية لا تستخدم نظام الدفع الرباعي القائم على هالدكس (⁦Haldex⁩)‏؟",
+        "options": [
+          "أودي ⁦TT⁩",
+          "أودي ⁦S3⁩",
+          "أودي ⁦A3⁩",
+          "أودي ⁦A8⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحيوان المرسوم على شعار شركة \"أبارث\" (⁦Abarth⁩)، القسم الرياضي لشركة فيات؟",
+        "options": [
+          "العقرب",
+          "الأفعى",
+          "الثور",
+          "الحصان"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم أشهر سيارة كهربائية تنتجها شركة نيسان؟",
+        "options": [
+          "تري (⁦Tree⁩)",
+          "ليف (⁦Leaf⁩)",
+          "دير (⁦Deer⁩)",
+          "روتس (⁦Roots⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الشركات التالية ليست تابعة لمجموعة فولكس واجن؟",
+        "options": [
+          "بورش",
+          "بوغاتي",
+          "أوبل",
+          "بنتلي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في عام 1993، أجرت شركة تصنيع السيارات السويدية \"ساب\" (⁦Saab⁩) تجربة لاستبدال عجلة القيادة بعصا تحكم في سيارة ⁦Saab 9000⁩.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مدينة إيطالية تُعد موطناً لشركة تصنيع السيارات \"فيات\"؟",
+        "options": [
+          "تورينو",
+          "مارانيلو",
+          "مودينا",
+          "روما"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أسرع سيارة إنتاجية مسموح قانونياً بقيادتها على الطرقات في العالم؟",
+        "options": [
+          "هينيسي فينوم جي تي (⁦Hennessey Venom GT⁩)",
+          "كوينيجسيج أجيرا آر إس (⁦Koenigsegg Agera RS⁩)",
+          "بوغاتي فيرون سوبر سبورت (⁦Bugatti Veyron Super Sport⁩)",
+          "باغاني هوايرا بي سي (⁦Pagani Huayra BC⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من الموديلات التالية ليس سيارة من إنتاج شركة بروتون (⁦Proton⁩) الماليزية؟",
+        "options": [
+          "ساجا (⁦Saga⁩)",
+          "بيردانا (⁦Perdana⁩)",
+          "كيليسا (⁦Kelisa⁩)",
+          "إنسبيرّا (⁦Inspira⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اسم أول سيارة تعمل بالدفع الأمامي أنتجتها شركة داتسون (نيسان حالياً)‏؟",
+        "options": [
+          "ساني (⁦Sunny⁩)",
+          "بلوبيرد (⁦Bluebird⁩)",
+          "سكايلاين (⁦Skyline⁩)",
+          "تشيري (⁦Cherry⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أكواد الهيكل (الشاسيه) التالية تُستخدم لسيارات بي إم دبليو الفئة الثالثة؟",
+        "options": [
+          "⁦E46⁩",
+          "⁦E39⁩",
+          "⁦E85⁩",
+          "⁦F10⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي شركة إطارات السيارات الشهيرة بإنتاج إطارات \"إيغل\" (⁦Eagle⁩)، والمزود الرسمي لإطارات سباقات ناسكار؟",
+        "options": [
+          "بيريللي",
+          "جودير",
+          "بريدجستون",
+          "ميشلان"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من القطارات البريطانية التالية لا تتجاوز سرعته 125 ميلاً في الساعة؟",
+        "options": [
+          "كلاس 43 (⁦Class 43⁩)",
+          "جافلين (⁦Javelin⁩)",
+          "سبرينتر (⁦Sprinter⁩)",
+          "بندولينو (⁦Pendolino⁩)"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تعتبر ⁦BMW M GmbH⁩ شركة تابعة لـ ⁦BMW AG⁩ وتركز على إنتاج السيارات ذات الأداء الرياضي العالي.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "متى تأسست شركة تسلا؟",
+        "options": [
+          "2003",
+          "2008",
+          "2005",
+          "2007"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-vehicles_quiz_4",
+    "user_id": "system",
+    "title": "عالم السيارات والمركبات — الجزء 4",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "أي من موديلات السيارات التالية تم تسويقه وتغيير علامته التجارية (⁦Rebadged⁩) تحت أكبر عدد من الأسماء التجارية الأخرى؟",
+        "options": [
+          "إيسوزو تروبر (⁦Isuzu Trooper⁩)",
+          "هولدن مونارو (⁦Holden Monaro⁩)",
+          "سوزوكي سويفت (⁦Suzuki Swift⁩)",
+          "شيفروليه كامارو (⁦Chevy Camaro⁩)"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما اللقب الذي أُطلق على طائرة رحلة طيران كندا رقم 143 بعد نفاد وقودها وهبوطها الشراعي بسلام في عام 1983‏؟",
+        "options": [
+          "غيملي مايكرولايت (⁦Gimli Microlight⁩)",
+          "طائرة غيملي الشراعية (⁦Gimli Glider⁩)",
+          "غيملي تشيسر (⁦Gimli Chaser⁩)",
+          "غيملي سوبيرب (⁦Gimli Superb⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من علامات السيارات التالية لا تنتمي إلى شركة جنرال موتورز؟",
+        "options": [
+          "بويك",
+          "كاديلاك",
+          "فورد",
+          "شيفروليه"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "لم تصنع فيراري مطلقاً محرك ⁦V10⁩ لأي من سياراتها المخصصة للطرقات.",
+        "options": [
+          "صحيح",
+          "خيار 2",
+          "خيار 3",
+          "خطأ"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة اليابانية التي تعد أكبر مصنع للدراجات النارية في العالم؟",
+        "options": [
+          "هوندا",
+          "ياماها",
+          "سوزوكي",
+          "كاواساكي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليست شركة تصنيع سيارات روسية؟",
+        "options": [
+          "سيلانت (⁦Silant⁩)",
+          "بي واي دي (⁦BYD⁩)",
+          "دراغون (⁦Dragon⁩)",
+          "جاز (⁦GAZ⁩)"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من سيارات رالي الاتحاد الدولي للسيارات (⁦FIA⁩) التالية تم اعتمادها للاستخدام في فئة المجموعة ب (⁦Group B⁩) أولاً؟",
+        "options": [
+          "أودي كواترو ⁦A2⁩",
+          "بي إم دبليو ⁦M1⁩",
+          "بورش 911 توربو",
+          "لانشيا رالي 037"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي الشركة المصنعة للسيارة المستخدمة في فيلم العودة إلى المستقبل (⁦Back to the Future⁩)‏؟",
+        "options": [
+          "فورد",
+          "تويوتا",
+          "ديهاتسو",
+          "ديلوريان (⁦DeLorean⁩)"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من أنظمة تجنب التصادم التالية يساعد الطائرات على تجنب الاصطدام ببعضها البعض؟",
+        "options": [
+          "⁦TCAS⁩",
+          "⁦GPWS⁩",
+          "⁦OCAS⁩",
+          "⁦TAWS⁩"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو الحيوان الذي تتخذه شركة صناعة السيارات الإيطالية لامبورغيني شعاراً لها؟",
+        "options": [
+          "الخفاش",
+          "الثور",
+          "الحصان",
+          "الأفعى"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من المركبات التالية تميزت بوجود سقف زجاجي بالكامل في طرازها الأساسي؟",
+        "options": [
+          "شيفروليه فولت",
+          "مرسيدس-بنز الفئة ⁦A⁩",
+          "رينو أفانتايم",
+          "هوندا أوديسي"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي شركة تصنيع السيارات التي تنازلت عن براءة اختراع حزام الأمان بهدف إنقاذ الأرواح؟",
+        "options": [
+          "فيراري",
+          "فورد",
+          "رينو",
+          "فولفو"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من سيارات فورد التالية سميت على اسم طائرة مقاتلة من الحرب العالمية الثانية؟",
+        "options": [
+          "موستانج",
+          "إكسبلورر",
+          "رينجر",
+          "جالاكسي"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي مما يلي ليس من وظائف زيت المحرك في محركات السيارات؟",
+        "options": [
+          "التزييت",
+          "الاحتراق",
+          "التبريد",
+          "تقليل التآكل"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو طراز السيارة الرياضية التي أهدتها الحكومة الفرنسية ليوري غاغارين في عام 1965‏؟",
+        "options": [
+          "بورش 911",
+          "ألبين ⁦A110⁩",
+          "ماترا دجيت",
+          "إيه سي كوبرا"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من هذه السيارات لا تعتبر واحدة من السيارات الخارقة الخمس الحديثة من فيراري؟",
+        "options": [
+          "إنزو فيراري",
+          "إف 40",
+          "288 جي تي أو",
+          "تستاروسا"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كانت شركة بوغاتي مصنعاً إيطالياً للسيارات.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      }
+    ]
+  },
+  {
+    "id": "lib-tr-vehicles_quiz_5",
+    "user_id": "system",
+    "title": "عالم السيارات والمركبات — الجزء 5",
+    "created_at": "2026-08-06T00:00:00.000Z",
+    "is_public": true,
+    "category": "تكنولوجيا",
+    "language": "ar",
+    "quiz_difficulty": "standard",
+    "archived": false,
+    "launch_enabled": true,
+    "questions": [
+      {
+        "question_text": "عندما تأسست شركة بي إم دبليو في عام 1916، كانت تنتج السيارات.",
+        "options": [
+          "خطأ",
+          "صحيح",
+          "خيار 3",
+          "خيار 4"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 0,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي تقنية توقيت الصمامات المتغير التي تستخدمها شركة بي إم دبليو؟",
+        "options": [
+          "⁦VVT-iw⁩",
+          "⁦VANOS⁩",
+          "⁦VVEL⁩",
+          "⁦MultiAir⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 1,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من قاطرات يونيون باسيفيك من طراز 'بيغ بوي' التالية تمت إعادتها إلى الخدمة والعمل في عام 2019‏؟",
+        "options": [
+          "4012",
+          "4004",
+          "4014",
+          "4000"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 2,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو نوع القطار 'ستيبني' على سكة حديد بلوبيل والمعروف بظهوره في 'سلسلة السكك الحديدية' (⁦The Railway Series⁩)‏؟",
+        "options": [
+          "⁦LB⁩&⁦SCR E2⁩",
+          "⁦LB⁩&⁦SCR J1⁩",
+          "⁦LB⁩&⁦SCR D1⁩",
+          "⁦LB⁩&⁦SCR A1X⁩"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 3,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "في أي دولة يتم تجميع السيارة الخارقة 'هوساريا' التي تنتجها شركة 'أرينيرا' لصناعة السيارات؟",
+        "options": [
+          "بولندا",
+          "الصين",
+          "السويد",
+          "إيطاليا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 4,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هو رقم تسجيل آخر طائرة كونكورد تم تصنيعها؟",
+        "options": [
+          "⁦F-BTSC⁩",
+          "⁦G-BOAF⁩",
+          "⁦G-BOAC⁩",
+          "⁦F-BVFF⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 5,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "تتمتع شركة ميتسوبيشي موتورز بشراكة دامت 30 عاماً مع جاكي شان، حيث ظهرت سياراتهم بشكل بارز في أفلامه.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 6,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أول سيارة هجينة تم إنتاجها بكميات تجارية؟",
+        "options": [
+          "شيفروليه فولت",
+          "هوندا فيت",
+          "بيجو 308 آر هايبرد",
+          "تويوتا بريوس"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 7,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "خلال الحرب العالمية الثانية، ما هي الدبابة التي كان الحلفاء يخشونها أكثر من غيرها؟",
+        "options": [
+          "بانزر-كامبف-واجن 5 بانثر",
+          "ماردر 3",
+          "ماتيلدا 2",
+          "بانزر-كامبف-واجن 6 تايجر"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 8,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي القطع الشبيهة بالأسطوانات التي تتحرك صعوداً وهبوطاً داخل المحرك؟",
+        "options": [
+          "النوابض الصفائحية",
+          "المكابس",
+          "المبردات",
+          "نظام ⁦ABS⁩"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 9,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "كم تبلغ سعة محرك ⁦LS1⁩ بالبوصة المكعبة؟",
+        "options": [
+          "350",
+          "355",
+          "346",
+          "360"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 10,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي أول سيارة تم تزويدها بنظام تكييف الهواء كميزة قياسية من المصنع؟",
+        "options": [
+          "تاكر",
+          "فورد",
+          "هادسن",
+          "باكارد"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 11,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أين يتم تصنيع سيارات العلامة التجارية 'فيراري'؟",
+        "options": [
+          "إيطاليا",
+          "رومانيا",
+          "ألمانيا",
+          "روسيا"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 12,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "أي من طائرات الركاب النفاثة التالية هي الأطول؟",
+        "options": [
+          "إيرباص ⁦A350-1000⁩",
+          "بوينغ 747-8",
+          "إيرباص ⁦A330-200⁩",
+          "بوينغ 787-10"
+        ],
+        "correct_index": 1,
+        "time_limit_seconds": 20,
+        "order_index": 13,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
+      },
+      {
+        "question_text": "هل مصطلح '⁦GTO⁩' نشأ في الأصل من شركة فيراري؟",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "صحيح",
+          "خيار 4"
+        ],
+        "correct_index": 2,
+        "time_limit_seconds": 20,
+        "order_index": 14,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "الاسم الإنجليزي الكامل لشركة تصنيع السيارات بي إم دبليو (⁦BMW⁩) هو '⁦Bavarian Motor Works⁩'.",
+        "options": [
+          "خطأ",
+          "خيار 2",
+          "خيار 3",
+          "صحيح"
+        ],
+        "correct_index": 3,
+        "time_limit_seconds": 20,
+        "order_index": 15,
+        "image_url": null,
+        "question_type": "boolean",
+        "explanation": null
+      },
+      {
+        "question_text": "ما هي شركة السيارات التي كانت تملك شركة جاغوار سابقاً؟",
+        "options": [
+          "فورد",
+          "كرايسلر",
+          "جنرال موتورز",
+          "فيات"
+        ],
+        "correct_index": 0,
+        "time_limit_seconds": 20,
+        "order_index": 16,
+        "image_url": null,
+        "question_type": "multi",
+        "explanation": null
       }
     ]
   }

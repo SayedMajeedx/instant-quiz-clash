@@ -143,20 +143,110 @@ if (fs.existsSync(SPECIALIZED_DIR)) {
   }
 }
 
+// Processed TrQuizes split files (104 files).
+const TR_QUIZES_DIR = "TrQuizes/split_quizzes";
+if (fs.existsSync(TR_QUIZES_DIR)) {
+  const trFiles = fs.readdirSync(TR_QUIZES_DIR)
+    .filter((file) => file.endsWith(".json"))
+    .sort();
+
+  const TITLE_MAP = {
+    animals: "عالم الحيوانات والتنوع الحيوي",
+    general: "شامل المعلومات العامة",
+    geography: "جغرافيا العالم والمعالم",
+    history: "التاريخ والتراث العالمي",
+    science_nature: "العلوم والطبيعة",
+    gadgets: "الأجهزة والتقنيات الحديثة",
+    mathematics: "الرياضيات والأرقام",
+    sports: "الرياضة والألعاب العالمية",
+    vehicles: "عالم السيارات والمركبات"
+  };
+
+  const CATEGORY_UI_MAP = {
+    "الحيوانات": "علوم وطب",
+    "معلومات عامة": "معلومات عامة",
+    "جغرافيا": "جغرافيا",
+    "تاريخ": "تاريخ",
+    "علوم وطبيعة": "علوم وطب",
+    "الأجهزة والتقنيات": "تكنولوجيا",
+    "رياضيات": "رياضيات",
+    "رياضة": "رياضة",
+    "مركبات وسيارات": "تكنولوجيا"
+  };
+
+  for (const trFile of trFiles) {
+    const rawQuestions = JSON.parse(fs.readFileSync(path.join(TR_QUIZES_DIR, trFile), "utf8"));
+    if (!Array.isArray(rawQuestions) || rawQuestions.length === 0) continue;
+
+    const slug = path.basename(trFile, ".json");
+    const match = slug.match(/^([a-z_]+)_quiz_(\d+)$/);
+    const prefix = match ? match[1] : "tr";
+    const partNum = match ? match[2] : "1";
+
+    const rawCat = rawQuestions[0].category || "عام";
+    const mappedCat = CATEGORY_UI_MAP[rawCat] || rawCat;
+    const baseTitle = TITLE_MAP[prefix] || rawCat;
+
+    const quizId = `lib-tr-${slug}`;
+    const quizTitle = `${baseTitle} — الجزء ${partNum}`;
+
+    quizzes.push({
+      id: quizId,
+      user_id: "system",
+      title: quizTitle,
+      created_at: "2026-08-06T00:00:00.000Z",
+      is_public: true,
+      category: mappedCat,
+      language: "ar",
+      quiz_difficulty: "standard",
+      archived: false,
+      launch_enabled: true,
+      questions: rawQuestions.map((q, i) => {
+        const correct = q.correct_answer;
+        const incorrect = Array.isArray(q.incorrect_answers) ? q.incorrect_answers : [];
+
+        const correctIdx = i % 4;
+        const opts = [];
+        let incIdx = 0;
+
+        for (let optI = 0; optI < 4; optI++) {
+          if (optI === correctIdx) {
+            opts.push(correct);
+          } else {
+            opts.push(incorrect[incIdx] || `خيار ${optI + 1}`);
+            incIdx++;
+          }
+        }
+
+        return {
+          question_text: q.question,
+          options: opts,
+          correct_index: correctIdx,
+          time_limit_seconds: 20,
+          order_index: i,
+          image_url: null,
+          question_type: q.type === "boolean" ? "boolean" : "multi",
+          explanation: null,
+        };
+      }),
+    });
+  }
+}
+
 const out = `import type { Question, Quiz } from "@/lib/quizclash";
 
 export type LibraryQuiz = Quiz & {
   category: string;
   language: string;
-  quiz_difficulty?: "standard" | "challenge" | "medium" | "beginner" | "expert" | null;
+  quiz_difficulty?: string | null;
   archived?: boolean;
   launch_enabled?: boolean;
-  questions: Omit<Question, "id" | "quiz_id">[];
+  questions: (Omit<Question, "id" | "quiz_id"> & { id?: string; quiz_id?: string; [key: string]: any })[];
 };
 
 // Hand-authored Arabic quiz library. Generated from content/quizzes/*.json
-// the reviewed ahl_albayt_quizzes/*/*_game.json files, and
-// general_specialized_quizzes/*/*.json.
+// the reviewed ahl_albayt_quizzes/*/*_game.json files,
+// general_specialized_quizzes/*/*.json, and TrQuizes/split_quizzes/*.json.
 // by scripts/build_quiz_library.mjs — edit the JSON sources, not this file.
 export const QUIZ_LIBRARY: LibraryQuiz[] = ${JSON.stringify(quizzes, null, 2)};
 `;
