@@ -202,6 +202,23 @@ if (fs.existsSync(TR_QUIZES_DIR)) {
       archived: false,
       launch_enabled: true,
       questions: rawQuestions.map((q, i) => {
+        if (q.type === "boolean") {
+          const isTrue =
+            q.correct_answer === "صحيح" ||
+            q.correct_answer === "True" ||
+            q.correct_answer === "true";
+          return {
+            question_text: q.question,
+            options: ["صحيح", "خطأ"],
+            correct_index: isTrue ? 0 : 1,
+            time_limit_seconds: 20,
+            order_index: i,
+            image_url: null,
+            question_type: "boolean",
+            explanation: null,
+          };
+        }
+
         const correct = q.correct_answer;
         const incorrect = Array.isArray(q.incorrect_answers) ? q.incorrect_answers : [];
 
@@ -225,7 +242,7 @@ if (fs.existsSync(TR_QUIZES_DIR)) {
           time_limit_seconds: 20,
           order_index: i,
           image_url: null,
-          question_type: q.type === "boolean" ? "boolean" : "multi",
+          question_type: "multi",
           explanation: null,
         };
       }),

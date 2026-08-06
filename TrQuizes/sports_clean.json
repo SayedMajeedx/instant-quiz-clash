@@ -87,7 +87,7 @@
         "type": "multiple",
         "difficulty": "hard",
         "category": "رياضة",
-        "question": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون? (Wait, English question: Which is Kenesisa Bekele's personal best at marathon? No question mark needed as it wasn't in original, or let's use standard question mark) ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
+        "question": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
         "correct_answer": "2:01:41",
         "incorrect_answers": [
             "2:01:12",
@@ -849,7 +849,7 @@
         "type": "multiple",
         "difficulty": "medium",
         "category": "رياضة",
-        "question": "أي من منافسات ألعاب القوى التالية غير مدرجة في مسابقة العشاري للرجال في الأولمبياد? ",
+        "question": "أي من منافسات ألعاب القوى التالية غير مدرجة في مسابقة العشاري للرجال في الأولمبياد?",
         "correct_answer": "رمي المطرقة",
         "incorrect_answers": [
             "القفز بالزانة",

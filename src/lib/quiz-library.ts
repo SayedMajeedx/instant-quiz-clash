@@ -26142,12 +26142,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك اليرقة عضلات أكثر مما يمتلكه الإنسان.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -26157,12 +26155,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سُمي متصفح الإنترنت فايرفوكس تيمناً بالباندا الأحمر.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -26172,12 +26168,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يُعتبر الحوت القاتل (الأوركا) نوعاً من أنواع الدلافين.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -26233,11 +26227,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يُعرف ديناصور السيراتوصور (⁦Ceratosaurus⁩) بوجود قرن على أنفه، ويُعتقد أيضاً أنه من سلالة التيرانوصور ركس (⁦T-Rex⁩).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -26262,12 +26254,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في عام 2016، أعاد الاتحاد الدولي لحفظ الطبيعة (⁦IUCN⁩) تصنيف الباندا العملاق من كائن مهدد بالانقراض إلى كائن معرض للتهديد (ضعيف).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -26412,12 +26402,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت كلاب لابهوند الفنلندية (⁦Finnish Lapphund⁩) تُستخدم لرعي حيوانات الرنة.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 19,
         "image_url": null,
@@ -26442,9 +26430,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يُعتبر حيوان آكل النمل الشوكي (الأكيدنا) من الثدييات البيوضة (أحاديات المسلك).",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -26502,9 +26488,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يستطيع الأرنب رؤية ما يدور خلفه دون الحاجة إلى لف رأسه.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -26531,12 +26515,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل كلمة \"كاميا\" (⁦Kamea⁩) التي تعني كلباً بلغة سكان جزر كيريباتي مشتقة من العبارة الإنجليزية \"⁦Come here⁩!\" (تعال إلى هنا)‏؟",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -26592,11 +26574,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يُطلق على سرب الغربان في اللغة الإنجليزية اسم \"هوميسايد\" (⁦Homicide⁩).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -26621,12 +26601,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تعتبر الأرانب من الحيوانات آكلة اللحوم.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -26890,12 +26868,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "لا يتبرز الدب أثناء فترة البيات الشتوي.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -26935,12 +26911,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تحتفظ حيوانات الكنغر بالطعام في جيبها (الجراب) بجانب صغارها.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -26950,12 +26924,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يستطيع حيوان سمندل الماء العذب (الأكسولوتل) إعادة نمو أطرافه المفقودة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -26980,12 +26952,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الأرانب لا يمكنها التقيؤ.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -26995,12 +26965,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكنك معرفة عمر الدعسوقة (خنفساء أبو العيد) عن طريق عد النقاط الموجودة على ظهرها.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -27010,12 +26978,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك حيوانات القضاعة (ثعلب الماء) جيوباً تحت أذرعها لحمل صخورها ووجباتها الخفيفة المفضلة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -27130,9 +27096,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الضباع أقرب صلة بالقطط منها بالكلاب.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -27189,12 +27153,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك النمور لون جلد واحد بالرغم من فرائها المخطط.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -27355,11 +27317,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الأرانب من القوارض.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 19,
         "image_url": null,
@@ -27413,12 +27373,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سمندل المكسيك (الأكسولوتل) هو حيوان برمائي يمكنه قضاء حياته بأكملها في طور اليرقة.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -27428,12 +27386,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك القطط شوارب (شعيرات حسية) خلف أرجلها.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -27444,9 +27400,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الفيلة غير قادرة جسدياً على القفز.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -27489,11 +27443,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الحمر الوحشية بيضاء اللون ولديها خطوط سوداء.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -27518,12 +27470,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "دم البزّاقة (البزّاق) أخضر اللون.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -27533,12 +27483,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "خلد الماء (البلاتيبوس) من الثدييات.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -27549,11 +27497,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "متوسط عمر القط البري يتراوح بين 5 إلى 6 سنوات فقط.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -27564,9 +27510,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يمكن للأخطبوط المرور عبر أي فتحة تكون أكبر من منقاره.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -27594,11 +27538,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "حيوان \"دجاج الجبل\" هو في الواقع دجاجة.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -27623,12 +27565,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكن لحيوان إسفنج البحر أن يمتلك قلباً.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -27757,12 +27697,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يعتبر هاتف آيفون ⁦3G⁩ الجيل الثاني من هواتف الآيفون.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -27907,12 +27845,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "خلال المراحل الأولى من حرب فيتنام، كان لبندقية ⁦M16⁩ سمعة سيئة فيما يتعلق بقلة موثوقيتها وأعطالها المتكررة.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -28042,11 +27978,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يستخدم هاتف 'ويسترن إليكتريك موديل 500' (⁦Western Electric Model 500⁩) الاتصال بالنغمة لطلب الأرقام الهاتفيّة.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -28102,11 +28036,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يرمز بروتوكول الاتصال ⁦NFC⁩ إلى '⁦Near-Field Control⁩' (التحكم في المجال القريب).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -28146,12 +28078,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "اخترعت شركة ⁦iRobot⁩ مكنستها الكهربائية الثورية لتنظيف الأرضيات 'رومبا' (⁦Roomba⁩) لأول مرة في عام 2002.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -28266,12 +28196,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "لا يقتصر استخدام الميكروفونات على التقاط الصوت فحسب، بل يمكن استخدامها أيضاً لإخراج الصوت وإصداره بشكل مشابه لمكبر الصوت.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -28325,12 +28253,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يحتوي منتج \"تشيز ويز\" من كرافت على مستنبتات الجبن، ولكنه لا يحتوي على جبن حقيقي في الواقع.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -28460,12 +28386,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سلسلتا مطاعم الوجبات السريعة \"كارلز جونيور\" و\"هارديز\" مملوكتان للشركة نفسها.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -28669,12 +28593,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سلوفاكيا عضو في الاتحاد الأوروبي.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -28685,9 +28607,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في المتوسط، يُقتل شخص واحد على الأقل كل ساعة في الولايات المتحدة بسبب سائق مخمور.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -28700,9 +28620,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان ألبرت أينشتاين يواجه صعوبة في الرياضيات عندما كان في المدرسة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -28730,11 +28648,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الماء ملون باللون الأزرق بشكل طبيعي.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -28759,12 +28675,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "اللغة الفرنسية هي لغة رسمية في كندا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -28804,12 +28718,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "بلوتو كوكب.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -28864,12 +28776,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تم شراء موقع مشاركة الفيديوهات يوتيوب بالكامل من قِبل فيسبوك مقابل ⁦1.65⁩ مليار دولار أمريكي على شكل أسهم.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -28895,11 +28805,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الباسودوبل (⁦Pasodoble⁩) هو نوع من صلصة المعكرونة الإيطالية.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -28910,11 +28818,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان لون كوكاكولا الأصلي أخضر.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 19,
         "image_url": null,
@@ -29059,9 +28965,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تُستخدم كلمة 'أناناس' (⁦Ananas⁩) في معظم اللغات الأخرى للإشارة إلى فاكهة الأناناس.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -29327,12 +29231,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان ⁦SCP-173⁩ هو أول مقال عن ⁦SCP⁩ يُكتب لمشروع الخيال التعاوني القائم على الويب والمعروف باسم 'مؤسسة ⁦SCP⁩' (⁦SCP Foundation⁩).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -29373,9 +29275,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "'نادي الـ 27' (⁦27 Club⁩) هو مصطلح يُستخدم للإشارة إلى قائمة من الممثلين والموسيقيين والفنانين المشهورين الذين توفوا في سن السابعة والعشرين.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -29597,11 +29497,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "البخار الناتج عن السجائر الإلكترونية هو عبارة عن ماء في الواقع.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -29612,9 +29510,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يُعرف يوم 10 مارس أيضاً باسم يوم ماريو (⁦Mar10⁩).",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -29747,9 +29643,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الكلمة الفرنسية التي تعني \"يسافر\" هي \"⁦Travail⁩\".",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -29925,12 +29819,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت شركة \"ستيج كوتش\" (⁦Stagecoach⁩) تمتلك شركة \"ساوث ويست ترينز\" للقطارات قبل أن تفقد حقوق تشغيلها لصالح شركتي \"فيرست جروب\" و\"⁦MTR⁩\" في مارس 2017.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -30209,12 +30101,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تم بيع مشروب \"كريستال بيبسي\" (⁦Crystal Pepsi⁩) لأول مرة في الأسواق الأمريكية في عام 1993.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 4,
         "image_url": null,
@@ -30269,12 +30159,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "صوّتت اسكتلندا لتصبح دولة مستقلة خلال الاستفتاء الذي أُجري في سبتمبر 2014.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -30299,12 +30187,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سُمي لباس البحر \"البيكيني\" بهذا الاسم نسبةً إلى \"جزيرة بيكيني الحلقية\" (⁦Bikini Atoll⁩)، حيث أجرت الولايات المتحدة تجارب للقنابل الذرية.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -30344,12 +30230,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "حساء \"الغامبو\" (⁦Gumbo⁩) هو يخنة نشأت في الأصل في ولاية لويزيانا الأمريكية.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -30390,9 +30274,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "أُطلقت لعبة الأطفال الشهيرة \"فيربي\" (⁦Furby⁩) لأول مرة في عام 1998.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -30493,12 +30375,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مرض السرطان في حد ذاته ليس مرضاً معدياً.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -30674,11 +30554,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تأتي كلمة \"⁦news⁩\" (أخبار) من الحروف الأولى للاتجاهات الأربعة الرئيسية على البوصلة (الشمال، الشرق، الغرب، الجنوب).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -30689,9 +30567,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كانت فوانيس الهالوين الأصلية (⁦Jack-o-Lanterns⁩) تُصنع في الأصل من اللفت المجوف.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -30763,9 +30639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تستخدم الإكوادور البيزو المكسيكي كعملة رسمية لها.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -30942,12 +30816,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في اللغات الاسكندنافية، يعني حرف ⁦Å⁩ \"نهر\".",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -30957,12 +30829,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هذه هي الطريقة الصحيحة لكتابة الكلمة الإنجليزية الشهيرة \"⁦Supercalifragilisticexpialidocious⁩\".",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -31136,12 +31006,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يُصنع \"رصاص\" قلم الرصاص عادة من الجرافيت وليس من معدن الرصاص.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -31242,9 +31110,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "ينجذب الثيران إلى اللون الأحمر.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -31301,12 +31167,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تعتبر \"نظرية الملاعق\" (⁦Spoon theory⁩) نموذجاً تعبيرياً يستعين بـ \"الملاعق\" كرمز لمقدار الطاقة اليومية المتاحة للشخص.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -31345,12 +31209,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يرمز اسم القناة التلفزيونية البريطانية التجارية ⁦ITV⁩ إلى \"⁦International Television⁩\" (التلفزيون الدولي).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -31390,12 +31252,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل الكلب من الثدييات؟",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -31720,9 +31580,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تُنتج نوتيلا بواسطة شركة فيريرو الألمانية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -31749,12 +31607,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "توفي الفيلسوف فرانسيس بيكون بسبب حالة التهاب رئوي حادة أثناء محاولته حفظ اللحم عن طريق حشو دجاجة بالثلج.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -31765,9 +31621,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الميتوكوندريا هي مركز توليد الطاقة في الخلية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -31959,9 +31813,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يُسمح قانوناً بتناول الكحول أثناء القيادة في ولاية مسيسيبي الأمريكية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -31973,12 +31825,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الجلوس لأكثر من ثلاث ساعات في اليوم يمكن أن يقلل من عمر الإنسان المتوقع بمقدار عامين.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -31989,11 +31839,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تشير الدراسات إلى أن ما يقارب 40% من سكان العالم يستخدمون اليد اليسرى (عُسر).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -32079,9 +31927,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تُؤكل وجبة الهاجيس تقليدياً في ليلة بيرنز (⁦Burns Night⁩).",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -32139,9 +31985,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تنتمي اللغة الرومانية إلى عائلة اللغات الرومانسية، والتي تشترك فيها مع الفرنسية والإسبانية والبرتغالية والإيطالية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -32153,12 +31997,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكن تشغيل ألبوم فرقة \"كينغ غيزارد آند ذا ليزرد ويزارد\" بعنوان \"نونغون إنفينيتي\" (⁦Nonagon Infinity⁩) بشكل متكرر دون انقطاع مسموع.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -32228,12 +32070,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تقبيل شخص ما لمدة دقيقة واحدة يحرق حوالي سعرتين حراريتين.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -32453,9 +32293,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "هل مايكل جاكسون هو من اخترع رقصة مشية القمر (⁦Moonwalk⁩)‏؟",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -32467,12 +32305,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت أغنية \"جينغل بيلز\" (⁦Jingle Bells⁩) مخصصة في الأصل لعيد الشكر.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -32587,11 +32423,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "ولد أدولف هتلر في أستراليا.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -32601,12 +32435,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تم ابتكار الوجه السعيد (⁦The Happy Face⁩) بواسطة الرسام التجاري هارفي بال.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -32736,12 +32568,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الرئيس التنفيذي لشركة التكنولوجيا آبل الذي خلف ستيف جوبز يُدعى تيم آبل.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -32827,11 +32657,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "رقم خط الطوارئ الساخن في الولايات المتحدة هو 911 بسبب هجمات 11 سبتمبر الإرهابية.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -32886,11 +32714,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في الولايات المتحدة، يُعتبر الأمر تلقائياً إيقاعاً غير قانوني في الشرك (⁦Entrapment⁩) إذا باعتك الشرطة مواد غير قانونية دون الكشف عن هويتها.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -33169,12 +32995,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "\"سانتا كلوز\" (⁦Santa Claus⁩) هو نوع من أنواع الشمام.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -33365,11 +33189,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "ظهر مصطلح \"بريد عشوائي\" (⁦Spam⁩) قبل ظهور المنتج الغذائي المعلب الشهير \"سبام\" (⁦Spam⁩).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -33395,9 +33217,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "المنظمة البريطانية \"كامرا\" (⁦CAMRA⁩) هي اختصار لـ \"الحملة من أجل البيرة الحقيقية\" (⁦The Campaign for Real Ale⁩).",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -33453,12 +33273,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مترو أنفاق نيويورك هو أقدم مترو أنفاق تحت الأرض في العالم.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -33528,12 +33346,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سُمّي اللون البرتقالي نسبةً إلى فاكهة البرتقال.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -33604,11 +33420,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "مادة \"أكسيد ثنائي الهيدروجين\" هي مادة كيميائية خطيرة.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -33618,12 +33432,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يقل طول المرأة المتوسطة بمقدار 5 بوصات / 13 سنتيمتراً عن طول الرجل المتوسط.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -33693,12 +33505,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كلمة \"⁦Typewriter⁩\" هي أطول كلمة يمكن كتابتها باستخدام الصف الأول فقط من لوحة مفاتيح كويرتي (⁦QWERTY⁩).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -33723,12 +33533,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل اللغة اللوكسمبورغية هي لغة حقيقية؟",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -33768,9 +33576,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الاسم العلمي للأضواء الجنوبية (الشفق القطبي الجنوبي) هو أورورا أوستراليس؟",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -33858,11 +33664,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كل ثمار الفراولة حمراء اللون.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -33872,12 +33676,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تأسست مجموعة ليغو في عام 1932.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -33887,12 +33689,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الماء النقي يوصل الكهرباء بشكل فعال.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -33902,12 +33702,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في عام 2010، عقدت منصة تويتر ومكتبة الكونغرس الأمريكي شراكة لأرشفة كل تغريدة يكتبها المواطنون الأمريكيون.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -33962,12 +33760,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الحيوان الوطني لاسكتلندا هو أحادي القرن (اليونيكورن).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -34038,11 +33834,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يُسمح لك ببيع روحك على موقع إيباي (⁦eBay⁩).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -34111,12 +33905,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "اسم \"موقف الحافلات رقم 16\" (⁦Number 16 Bus Shelter⁩) كان اسماً لطفل وافقت عليه حكومة نيوزيلندا.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -34171,12 +33963,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "اليوم الواحد يحتوي على 86400 ثانية.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -34217,9 +34007,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "اخترع فريدريك رويكهايم الفشار في عام 1871 في الولايات المتحدة الأمريكية، حيث كان يبيع هذه الوجبة الخفيفة في شوارع شيكاغو.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -34231,12 +34019,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يتكون الخيار عادةً من ماء بنسبة تزيد عن 90%.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -34307,11 +34093,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يمكن رؤية سور الصين العظيم من القمر.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -34395,12 +34179,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يرمز الاختصار \"⁦NCIS⁩\" إلى \"⁦Navy Corps Investigative Service⁩\".",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -34531,9 +34313,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الباذنجان هو نوع من الخضار.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -34590,12 +34370,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تم اختراع البطاطس المهروسة الفورية من قِبل الكندي إدوارد أسيلبرغز في عام 1962.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -34620,12 +34398,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مجموع كل الأرقام الموجودة على عجلة الروليت هو 666.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -34666,11 +34442,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "العلم الوطني لفيتنام يتكون من نجمة حمراء على خلفية صفراء.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -34830,9 +34604,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "نشأت لعبة تنس الطاولة (بينغ بونغ) في إنجلترا.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -34949,12 +34721,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أُضيف مخلل الخيار لأول مرة إلى الهامبرغر لأن قانون الصحة الأمريكي كان يفرض على جميع مطاعم الوجبات السريعة تضمين مصدر لفيتامين سي (⁦C⁩).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -34979,12 +34749,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عند البكاء في الفضاء، تلتصق الدموع بوجهك ولا تسقط.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -35023,12 +34791,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "نسبة صغيرة فقط من سكان العالم تعاني من عدم تحمل اللاكتوز (حساسية الحليب).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -35039,9 +34805,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "وجدت دراسة علمية أجريت على الفول السوداني المتوفر في الحانات آثاراً لأكثر من 100 عينة بول مختلفة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -35068,12 +34832,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تعتبر جملة \"⁦Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo⁩\" صحيحة من الناحية النحوية في اللغة الإنجليزية.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -35248,12 +35010,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يؤدي شخصية \"دون شيتو\" دور المذيع في محطة الراديو \"⁦East Los FM⁩\" في لعبة ⁦GTA V⁩.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -35308,12 +35068,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يُطلق مصطلح \"سامهينوفوبيا\" (⁦Samhainophobia⁩) على الخوف المرضي والمستمر من الهالوين.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 19,
         "image_url": null,
@@ -35337,12 +35095,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الكلمة الفرنسية التي تعني \"زجاج\" هي \"⁦glace⁩\".",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -35473,9 +35229,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في الهندسة المعمارية، يعبر مصطلح \"بيكلستاينر\" (⁦pecklesteiner⁩) عن مجموعة أبواب تتداخل مع بعضها البعض عند إغلاقها، ويمكن قفلها من خلال ثقب مفتاح واحد.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -35548,11 +35302,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تشرق الشمس من جهة الشمال.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -35696,12 +35448,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تسبق إسرائيل نيويورك بـ 7 ساعات زمنية.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -35711,12 +35461,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سان مارينو هي الدولة الوحيدة المحاطة بالكامل بدولة أخرى.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 4,
         "image_url": null,
@@ -35727,9 +35475,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تورونتو هي عاصمة دولة كندا الواقعة في أمريكا الشمالية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -35786,12 +35532,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "حركة المرور في اليابان تكون على الجانب الأيسر من الطريق.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -35876,12 +35620,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكنك السير مشياً على الأقدام من النرويج إلى كوريا الشمالية عبر المرور بروسيا فقط.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -36011,11 +35753,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تقع صحراء سونوران في شرق أفريقيا.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -36236,11 +35976,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "المجر (⁦Hungary⁩) هي الدولة الوحيدة في العالم التي يبدأ اسمها باللغة الإنجليزية بحرف ⁦H⁩.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -36339,12 +36077,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "لا توجد صحاري في أوروبا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -36578,12 +36314,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "لا توجد مطارات في ليختنشتاين.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -36878,9 +36612,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "مدينة سانت لويس هي عاصمة ولاية ميزوري الأمريكية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -36892,12 +36624,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سُميت كولومبيا نسبةً إلى كريستوفر كولومبوس.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -37043,9 +36773,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تعتبر مدينة الفاتيكان دولة مستقلة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -37207,11 +36935,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تقع دولة البوسنة والهرسك في منطقة بحر البلطيق في أوروبا.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -37416,12 +37142,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أوتاوا هي عاصمة كندا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -37521,9 +37245,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تسمى مجموعة الجزر المتقاربة 'أرخبيل'.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -37565,12 +37287,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تشترك روسيا في حدود برية مع كوريا الشمالية.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -37625,12 +37345,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت الأراضي الحديثة للبرتغال جزءاً من الإمبراطورية الرومانية في الماضي.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -37656,9 +37374,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تبلغ مساحة غرينلاند تقريباً نفس مساحة قارة إفريقيا.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -37686,11 +37402,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "سيول هي عاصمة كوريا الشمالية.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -37730,12 +37444,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "المجموعتان العرقيتان الأكبر في بلجيكا هما الفلمنك والوالون.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -37759,12 +37471,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عاصمة البرازيل هي ريو دي جانيرو.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -37820,9 +37530,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يعود أصل اسم الأرجنتين إلى الكلمة اللاتينية التي تعني الفضة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -37940,9 +37648,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "لا توجد طرق برية تؤدي إلى مدينة جونو بآلاسكا أو تخرج منها.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -37984,12 +37690,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أطول اسم مكان في الولايات المتحدة هو بحيرة 'تشارغوغوغوغمانشوغوغوغشوبوناغونغاماغ'، الواقعة بالقرب من ويبستر بولاية ماساتشوستس.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -38059,9 +37763,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تقع مقاطعة نوفا سكوشا على الساحل الشرقي لكندا.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -38073,12 +37775,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تنقسم جزيرة بورنيو في جنوب شرق آسيا سياسياً بين 3 دول.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -38179,9 +37879,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يحتوي علم بيلاروسيا على نمط تطريز باللونين الأحمر والأبيض على جانب السارية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -38387,12 +38085,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "دولة واحدة فقط في العالم يبدأ اسمها باللغة الإنجليزية بحرف '⁦Q⁩'.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -38507,12 +38203,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "طوكيو هي عاصمة اليابان.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -38552,12 +38246,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ولاية كاليفورنيا أكبر مساحةً من اليابان.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -38567,12 +38259,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "القارة القطبية الجنوبية (أنتاركتيكا) هي أكبر صحراء في العالم.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -38656,12 +38346,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أفريقيا هي عبارة عن دولة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -38716,12 +38404,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت دولة 'منغوليا' جزءاً من الاتحاد السوفيتي السابق.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 4,
         "image_url": null,
@@ -38761,12 +38447,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تقع ولاية رود آيلاند في الواقع على اليابسة الرئيسية للولايات المتحدة، على الرغم من اسمها (الذي يعني جزيرة رود).",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -38821,12 +38505,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هناك جزيرة في اليابان تُدعى 'أوكونوشيما'، وتُعرف أيضاً باسم 'جزيرة الأرانب' نظراً لعدد الأرانب الهائل فيها.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -38881,12 +38563,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ألاسكا وهاواي هما الولايتان الأمريكيتان الوحيدتان اللتان تمتلكان منطقتين زمنيتين خاصتين بهما.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -38896,12 +38576,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "إيطاليا وأيرلندا هما الدولتان الوحيدتان في أوروبا اللتان تبدآن بحرف ⁦I⁩.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -38955,12 +38633,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في مقاطعة ألبرتا الكندية، تقع مدينة كالغاري في أقصى الشمال أكثر من مدينة إدمونتون.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -38986,11 +38662,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "توجد مدينة تسمى روما في كل قارة على وجه الأرض.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -39091,9 +38765,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "عاصمة إندونيسيا هي بالي.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -39195,12 +38867,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ميامي هي أكبر مدينة في ولاية فلوريدا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -39360,11 +39030,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "هل مدينة تارتو هي عاصمة إستونيا؟",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -39449,12 +39117,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "جمهورية مالطا هي أصغر دولة مجهرية في العالم.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -39748,12 +39414,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عاصمة ولاية أوهايو الأمريكية هي مدينة تشيليكوث.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -39927,12 +39591,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك سويسرا أربع لغات وطنية، والإنجليزية واحدة منها.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 4,
         "image_url": null,
@@ -39958,11 +39620,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "غرينلاند مغطاة بالعشب وآيسلندا مغطاة بالجليد.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -39973,11 +39633,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "غوتنبرغ هي عاصمة السويد.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -40166,12 +39824,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمتد الطريق 66 في الولايات المتحدة عبر البر الرئيسي لأمريكا بالكامل، من كاليفورنيا إلى نيويورك.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -40197,11 +39853,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "حتى عام 1939، كانت لاوس تسمى سيام.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -40286,12 +39940,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك النرويج مساحة برية أكبر من السويد.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -40301,12 +39953,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تسمانيا هي ولاية جزيرية تابعة لأستراليا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -40347,9 +39997,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "توجد جزيرة تسمى \"جاوة\".",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -40361,12 +40009,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "توجد 47 محافظة في اليابان.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -40526,9 +40172,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "ألاسكا هي أكبر ولاية في الولايات المتحدة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -40571,11 +40215,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "فيتنام هي الدولة الوحيدة في العالم التي يبدأ اسمها بحرف الـ ⁦V⁩.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -40630,12 +40272,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أستراليا أكبر من غرينلاند في المساحة.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -40676,11 +40316,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يحتوي علم جنوب أفريقيا على 7 ألوان.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -41063,12 +40701,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كولومبيا هي ثالث أكبر دولة (من حيث المساحة بالكيلومتر المربع) في أمريكا الجنوبية.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -41153,12 +40789,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مساحة سطح روسيا أكبر بقليل من مساحة سطح كوكب بلوتو القزم.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -41214,11 +40848,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تُعتبر واشنطن العاصمة ولاية أمريكية.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -41273,12 +40905,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تمتلك جنوب أفريقيا أكثر من عاصمة واحدة.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -41497,12 +41127,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عنوان فيلم عام 1969 \"كراكاتوا، شرق جاوة\" غير صحيح، لأن كراكاتوا تقع في الواقع غرب جاوة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -41542,12 +41170,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مدينة نيو هيفن هي عاصمة ولاية كونيتيكت في الولايات المتحدة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -41872,11 +41498,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "استمرت الحملة الصليبية الرابعة من عام 1095 إلى عام 1099 ميلادي.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -41946,12 +41570,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت البرازيل إمبراطورية في السابق.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 19,
         "image_url": null,
@@ -41991,9 +41613,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "أُقيمت احتجاجات ساحة تيانانمن عام 1989 في هونغ كونغ.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -42081,11 +41701,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كانت الولايات المتحدة عضواً في عصبة الأمم.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -42095,12 +41713,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان فرانز جوزيف الأول آخر إمبراطور للنمسا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -42170,12 +41786,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان الفايكنج أول أوروبيين يكتشفون أمريكا الشمالية.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -42290,9 +41904,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان سرجون الثاني، ملك الإمبراطورية الآشورية الحديثة، سليلًا مباشرًا لسرجون الأكدي.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -42365,11 +41977,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "انتهت الحرب الكورية في عام 1953 دون أي وقف لإطلاق النار.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -42425,11 +42035,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "انتهت الحرب الباردة بوفاة جوزيف ستالين.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -42500,11 +42108,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "اُعتبر تدمير الملك الآشوري سنحاريب لبابل عام 689 قبل الميلاد انتصاراً من قبل المواطنين الآشوريين الآخرين.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -42574,9 +42180,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "خُيضت حرب المئة عام لأكثر من مئة عام.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -42678,12 +42282,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "دخلت شوكة الطعام إلى إيطاليا قبل أي دولة أوروبية أخرى.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -42708,12 +42310,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في الحرب العالمية الثانية، استخدمت بريطانيا دبابات قابلة للنفخ في الموانئ لتشتيت هتلر بعيداً عن إنزال نورماندي.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -42962,12 +42562,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أطلق غالبية سكان الإمبراطورية البيزنطية على أنفسهم اسم الرومان.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -43023,11 +42621,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "اغتيل الرئيس الأمريكي جون كينيدي أثناء موكبه الرئاسي في مدينة أتلانتا بولاية جورجيا في 22 نوفمبر 1963.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -43068,9 +42664,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كانت الولايات المتحدة الأمريكية أول دولة تطلق إنساناً إلى الفضاء.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -43246,12 +42840,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان عصر التنوير حقبة مليئة بالفلسفات والتقدم والنظريات العلمية لتحسين المجتمع.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -43381,12 +42973,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "إذا أمسكت بالنصل الحاد للسيف الطويل بطريقة معينة، فلن تجرح نفسك.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -43441,12 +43031,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت اليابان جزءاً من قوات الحلفاء خلال الحرب العالمية الأولى.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -43471,9 +43059,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تم التنازل عن كندا لبريطانيا بموجب شروط معاهدة باريس عام 1763.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -43500,12 +43086,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الرجل الذي أطلق النار على ألكسندر هاميلتون كان يُدعى آرون بور.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -43545,12 +43129,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "شغل السير إسحاق نيوتن منصب عضو في البرلمان، ولكن المرة الوحيدة المسجلة التي تحدث فيها كانت للشكوى من تيار هواء بارد في القاعة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -43844,12 +43426,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ولد مارتن لوثر كينغ الابن وآن فرانك في نفس العام.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -43919,12 +43499,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في عام 1967، نشرت إحدى المجلات قصة حول استخراج مواد كيميائية مهلوسة من الموز لإثارة تساؤلات أخلاقية حول حظر المخدرات.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -43995,11 +43573,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في الحرب العالمية الثانية، خدمت طائرات 'هوكر تيفون' في مسرح عمليات المحيط الهادئ.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -44024,12 +43600,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "لا تزال دبابة 'إم 41 ووكر بولدوغ' في الخدمة في بعض الدول حتى يومنا هذا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -44143,12 +43717,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أعلنت الولايات المتحدة الأمريكية استقلالها عن الإمبراطورية البريطانية في 4 يوليو 1776.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -44293,12 +43865,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان أدولف هتلر جندياً ألمانياً في الحرب العالمية الأولى.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -44412,12 +43982,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الاسم الحقيقي لجوزيف ستالين هو 'يوسف بيساريونيس دزه جوغاشفيلي'.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -44562,12 +44130,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الرئيس الأمريكي رونالد ريجان هو أول رئيس يعين امرأة في المحكمة العليا.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -44742,9 +44308,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "وقعت معركة طرف الغار (ترافالغار) في 23 أكتوبر 1805.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -44771,12 +44335,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "جامعة أكسفورد أقدم من إمبراطورية الأزتيك.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -45040,12 +44602,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل قوبلاي خان هو حفيد جنكيز خان؟",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -45085,12 +44645,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت آخر خدمة للمركبة الحربية الأمريكية 'يو إس إس ميسوري' (⁦BB-63⁩) في الحرب الكورية.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -45130,12 +44688,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل صُممت طائرة 'سبتفاير' الحربية في الأصل بناءً على طائرة سباق؟",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -45206,9 +44762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تأسست الدولة العثمانية في عام 1299.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -45235,12 +44789,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت المدخنة الرابعة لسفينة تايتانيك وهمية (غير حقيقية)، وصُممت لجعل السفينة تبدو أكثر قوة وتناسقاً.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -45309,12 +44861,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ساعدت المملكة الفرنسية الولايات المتحدة في الحصول على استقلالها من بريطانيا العظمى خلال الحرب الثورية الأمريكية.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -45369,12 +44919,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "افتُتحت قناة بنما أمام حركة الملاحة خلال 30 يوماً من بدء الحرب العالمية الأولى.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -45385,11 +44933,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كانت أول مناظرة رئاسية متلفزة بين جيمي كارتر وجيرالد فورد.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -45683,12 +45229,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "انتصرت طيور الإيمو في حرب الإيمو العظمى عام 1932.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -45714,9 +45258,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تمت محاكمة أدولف هتلر في محاكمات نورمبرغ.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -45922,12 +45464,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان أبراهام لينكولن أول رئيس أمريكي يُولد خارج حدود الولايات الثلاث عشرة الأصلية.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -45968,11 +45508,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "مقولة 'قد أختلف معك في الرأي، ولكني مستعد للموت دفاعاً عن حقك في التعبير عنه' منسوبة للفيلسوف الفرنسي فولتير.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -46102,12 +45640,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان ثيودور روزفلت الابن الجنرال الوحيد الذي شارك في الهجوم الأول بيوم الإنزال في نورماندي (⁦D-Day⁩).",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -46402,11 +45938,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان توماس كرابر سباكاً وهو من اخترع المرحاض ذو السيفون.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -46864,12 +46398,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كان بريجنيف الزعيم الخامس للاتحاد السوفيتي.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -46880,9 +46412,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "هناك 13 شهراً في التقويم الإثيوبي.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -46895,9 +46425,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان أغسطس ابن عم يوليوس قيصر.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -46910,11 +46438,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "سيطرت مملكة بروسيا لفترة وجيزة على أراضٍ في إستونيا.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -46954,12 +46480,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "توفي الرئيسان الأمريكيان السابقان جون آدامز وتوماس جيفرسون بفارق ساعات قليلة عن بعضهما البعض.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -47628,9 +47152,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "القنبلتان الذريتان اللتان ألقتهما الولايات المتحدة على اليابان في أغسطس 1945 كانتا باسم '⁦Little Man⁩' (الرجل الصغير) و'⁦Fat Boy⁩' (الولد السمين).",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -47702,12 +47224,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تأسست وزارة الأمن الداخلي الأمريكية كاستجابة لهجمات 11 سبتمبر.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -47851,12 +47371,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تم قبول أدولف هتلر في أكاديمية فيينا للفنون الجميلة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -47912,9 +47430,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "خلال حرب الشتاء، كان عدد جنود الاتحاد السوفيتي الذين لقوا حتفهم أو فُقدوا يعادل خمسة أضعاف خسائر فنلندا.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -48090,12 +47606,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل معادلة تكافؤ المادة والطاقة لأينشتاين هي ⁦E⁩ = ⁦MC3⁩‏؟",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 4,
         "image_url": null,
@@ -48165,12 +47679,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "المثلث متساوي الأضلاع تكون دائماً جميع زواياه قياسها 60 درجة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -48181,11 +47693,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "العدد الثنائي \"101001101\" يعادل العدد العشري \"334\".",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -48196,11 +47706,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "المثلث مختلف الأضلاع (⁦Scalene⁩) يحتوي على ضلعين متساويين في الطول.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -48240,12 +47748,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "إذا تمكنت من طي ورقة من المنتصف 50 مرة، فسيصل سمكها إلى ثلاثة أرباع المسافة بين الأرض والشمس.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -48256,11 +47762,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "مضروب الصفر (⁦Zero factorial⁩) يساوي صفراً.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -48300,12 +47804,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مجموعة جميع الأعداد الجبرية هي مجموعة قابلة للعد.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -48434,12 +47936,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عدد \"الميلينيليون\" (⁦Millinillion⁩) هو عدد حقيقي.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -48600,9 +48100,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "المجموعة الشاملة، أو المجموعة التي تحتوي على جميع المجموعات، موجودة بالفعل.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -48809,11 +48307,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "لوبيتال (⁦L'Hôpital⁩) هو عالم الرياضيات الذي ابتكر القاعدة الشهيرة التي تحمل اسمه وتستخدم المشتقات لإيجاد الغايات (النهايات) غير المعينة.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -48823,12 +48319,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "إن إثبات مبرهنة الباقي الصينية المستخدمة في نظرية الأعداد لم يتم تطويره بواسطة أول من نشرها، وهو سون تزو.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 11,
         "image_url": null,
@@ -48839,9 +48333,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "هل ناتج ضرب العدد 111,111,111 في نفسه يساوي 12,345,678,987,654,321‏؟",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -48853,12 +48345,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكنك إيجاد الجذر التربيعي لعدد سالب باستخدام العدد التخيلي \"⁦i⁩\".",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -48898,12 +48388,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مسألة \"تربيع الدائرة\" (⁦Squaring the Circle⁩) قابلة للحل.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -48987,12 +48475,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في علم الطوبولوجيا، مكملة المجموعة المفتوحة هي مجموعة مغلقة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -49002,12 +48488,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "المثلث متساوي الساقين له ضلعان متساويان في الطول وليس ثلاثة.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -49033,9 +48517,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "ألف-صفر (⁦Aleph-nought⁩) هو عدد عناصر (كاردينالية) مجموعة الأعداد الطبيعية.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -49078,11 +48560,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تنص نظرية فيثاغورس على أن مربع الوتر يساوي حاصل ضرب مربعي الضلعين الآخرين.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -49123,11 +48603,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "مجموع أي عددين فرديين هو عدد فردي.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -49317,11 +48795,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "التفاعل الطارد للحرارة هو تفاعل كيميائي يطلق طاقة عن طريق إشعاع الكهرباء.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -49347,9 +48823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "النبات الذي تستمر دورة حياته لأكثر من عام يُعرف بالنبات الحولي.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -49377,11 +48851,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "النشاط اللاواعي الأكثر تكراراً في جسم الإنسان هو الرمش (غمض العين).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -49810,12 +49282,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يُعتبر مصطلح \"⁦Pneumonoultramicroscopicsilicovolcanoconiosis⁩\" مرادفاً لمرض السحار السيليسي (السحار البركاني).",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -49825,12 +49295,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "المحتوى الحراري (الإنثالبي) هو مقياس للطاقة غير المتاحة للشغل خلال عملية ديناميكية حرارية.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -49840,12 +49308,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "دون احتساب الأسنان الاصطناعية، يمتلك الإنسان مجموعتين من الأسنان طوال حياته.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -49885,9 +49351,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يشير مصطلح \"تسارع ضربات القلب\" إلى معدل ضربات قلب أثناء الراحة يقارب أو يتجاوز 100 نبضة في الدقيقة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -49899,12 +49363,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكن أن يصاب الشخص بحروق الشمس في اليوم الغائم.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 1,
         "image_url": null,
@@ -49975,11 +49437,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تمت تسمية عنصر الليثيوم الكيميائي نسبةً إلى دولة ليتوانيا.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -50035,11 +49495,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "شكل الأرض عبارة عن كرة مثالية.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -50183,12 +49641,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "فاز فريدريك بانتينغ وجون ماكلويد بجائزة نوبل لمساهماتهما في المجالات العلمية لميكانيكا الكم.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -50213,12 +49669,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "مثلما حدث مع إنسان نياندرتال، تزاوج الإنسان العاقل (⁦Homo sapiens sapiens⁩) أيضاً مع إنسان دينيسوفان.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -50228,12 +49682,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "جميع كواكب النظام الشمسي تدور حول الشمس.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -50258,12 +49710,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تدفع ظاهرة \"النينيو\" المياه الدافئة إلى سواحل غرب المحيط الهادئ خلال فصل الشتاء.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -50273,12 +49723,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في الجدول الدوري، الرمز الكيميائي للبوتاسيوم هو حرف ⁦K⁩.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -50363,12 +49811,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكن للإنسان العادي أن يعيش لمدة أسبوعين بدون ماء.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -50379,9 +49825,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "الوحدة الفلكية هي المسافة بين الأرض والقمر.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -50603,9 +50047,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تحتوي الذرة على نواة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -50871,12 +50313,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يدور حول كوكب المريخ قمران.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -51006,12 +50446,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تدور الأرض حول الشمس في سنة واحدة.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -51022,9 +50460,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تقوم ذكور الباندا بالوقوف على أيديها أثناء التبول على الأشجار.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -51111,11 +50547,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يتكون ملح الطعام بنسبة 100% من الصوديوم.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -51126,11 +50560,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كتلة الأرض والقمر متساوية تقريباً.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -51216,9 +50648,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "قوة الجذب المركزي هي قوة ظاهرة تؤثر إلى الخارج على جسم يتحرك حول مركز، وتنشأ عن قصور الجسم الذاتي.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -51290,12 +50720,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يدرس علم التشريح أشكال البنى العيانية مثل الأعضاء والأجهزة العضوية.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -51306,11 +50734,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يحدث مرض السكري من النوع الأول نتيجة لخلل في عمل الكبد.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -51336,9 +50762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يحتوي السكر على الدهون.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -51350,12 +50774,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "رهاب الكلمات الطويلة (هيبوبوتومونستروسيسكيبيداليوفوبيا) هو الخوف غير العقلاني من الكلمات الطويلة.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -51425,11 +50847,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "فاز ألبرت أينشتاين بجائزة نوبل عن نظريته النسبية.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -51590,11 +51010,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "نجم الشمال (⁦Polaris⁩) هو ألمع نجم في سماء الليل في نصف الكرة الشمالي.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -51665,11 +51083,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تتشكل الصخور النارية بفعل الحرارة والضغط الشديدين.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 19,
         "image_url": null,
@@ -51918,12 +51334,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ينطبق تأثير دوبلر على الضوء.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -52023,9 +51437,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يغلي الماء دائماً عند 100 درجة مئوية، أو 212 درجة فهرنهايت، أو ⁦373.15⁩ كلفن، بغض النظر عن مكان وجودك.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -52052,12 +51464,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "توفر ظاهرة صعود مياه القاع في المحيط مياهاً أكثر برودة وغنية بالمواد المغذية للنباتات والمحللات.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -52112,12 +51522,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تعتبر الشمس نجماً.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -52262,12 +51670,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يستطيع الجمبري (الروبيان) السباحة إلى الخلف.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -52441,12 +51847,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يمكن للصوت أن ينتقل عبر الفراغ.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -52457,9 +51861,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "تعتبر نبتة \"جيمبي ستينجر\" النبتة الأكثر فتكاً في العالم.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -52562,9 +51964,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "طور العالمان الفرنسيان لويس باستور وإيميل رو أول لقاح لداء الكلب في عام 1885.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -52576,12 +51976,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "قتل العلماء بالخطأ أقدم مخلوق حي معروف في العالم، وهو حيوان رخوي، تبين أن عمره يبلغ 507 سنوات.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 17,
         "image_url": null,
@@ -52891,9 +52289,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان إنسان النياندرتال سلفاً مباشراً للإنسان الحديث.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -53099,12 +52495,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "يقوم القرش الأبيض الكبير أحياناً بهجوم \"الضربة والعضة\" (عضة اختبارية) على ضحاياه.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -53353,12 +52747,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "علم النفس هو علم دراسة السلوك والعقل.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -53519,9 +52911,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "المرض الجوفي (السيلياك) هو مرض يصيب القلب، مما يجعل المصابين به غير قادرين على تناول اللحوم.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -53533,12 +52923,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الفولاذ هو سبيكة من الحديد والكربون.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 18,
         "image_url": null,
@@ -53578,9 +52966,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان يُعتقد في الماضي أن حقن غضروف القرش في البشر يمنعهم من الإصابة بالسرطان.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -53803,11 +53189,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "إذا غمست منشفة جافة في حوض مليء بالماء، سيرتفع الماء إلى أعلى المنشفة بفعل ظاهرة تسمى \"الخاصية الكارتيلرية\" (⁦Cartillary Action⁩).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -53979,7 +53363,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "explanation": null
       },
       {
-        "question_text": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون? (⁦Wait⁩, ⁦English question⁩: ⁦Which is Kenesisa Bekele's personal best at marathon⁩? ⁦No question mark needed as it wasn't in original⁩, ⁦or let's use standard question mark⁩) ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
+        "question_text": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
         "options": [
           "2:01:12",
           "2:01:45",
@@ -53996,12 +53380,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عُرضت الحلقة الأولى من برنامج '⁦WWF Monday Night RAW⁩' في 11 يناير 1990.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 8,
         "image_url": null,
@@ -54011,12 +53393,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "أُدرجت رياضة التزلج على الألواح (⁦Skateboarding⁩) في دورة الألعاب الأولمبية الصيفية لعام 2020 في طوكيو.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 9,
         "image_url": null,
@@ -54057,9 +53437,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "افتتح لاعب كرة القدم كريستيانو رونالدو متحفاً مخصصاً لنفسه.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -54236,9 +53614,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في عام 2008، حقق يوسين بولت الرقم القياسي العالمي لسباق 100 متر برباط حذاء واحد غير مربوط.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -54520,11 +53896,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "روجيه فيدرر هو لاعب كرة قدم مشهور.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -54549,12 +53923,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سجل ويلت تشامبرلين 100 نقطة في مباراته الشهيرة ضد نيويورك نيكس عام 1962.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 5,
         "image_url": null,
@@ -54579,12 +53951,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "استضافت رابطة محترفي التنس (⁦ATP⁩) عدة بطولات على ملاعب مفروشة بالسجاد (⁦carpet court⁩) قبل أن يتم استبدالها لتقليل الإصابات.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -54730,9 +54100,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في كرة القدم، يتم استئناف اللعب بركلة ركنية بعد أن يسجل أحد الفريقين هدفاً.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -54864,11 +54232,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "كان هناك ما مجموعه 20 سباقاً في موسم فورمولا 1 لعام 2016.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -55371,12 +54737,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "ملعب التنس في الأولمبياد هو عبارة عن شاشة خضراء عملاقة.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -55402,9 +54766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "خلال بطولة ويمبلدون، يمكن للمتفرجين في الملعب شراء كرات التنس التي تم استخدامها في المباريات.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -55536,12 +54898,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "سجل شاكيل أونيل رمية ثلاثية واحدة فقط طوال مسيرته الرياضية.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -55671,11 +55031,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "في دوري الرغبي، يُعاقب على ركلة \"40-20\" بركلة حرة للفريق المنافس.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -56105,9 +55463,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "سباقات الفورمولا إي (⁦Formula E⁩) هي سلسلة سباقات سيارات تستخدم سيارات سباق كهربائية هجينة.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -56149,12 +55505,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت رياضة التنس تُعرف في السابق باسم راكيت بول (كرة المضرب).",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -56223,12 +55577,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في عام 1991، أصبحت مازدا أول شركة سيارات يابانية تفوز بسباق لومان (⁦Le Mans⁩).",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 2,
         "image_url": null,
@@ -56314,9 +55666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "شركة النقل \"أريفا\" (⁦Arriva⁩) مملوكة لشركة السكك الحديدية الألمانية \"دويتشه بان\".",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 0,
         "time_limit_seconds": 20,
@@ -56343,12 +55693,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تعتبر سيارة \"بنز باتنت موتورواجن\" لعام 1886 أول سيارة حقيقية صُنعت في التاريخ.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 10,
         "image_url": null,
@@ -56373,12 +55721,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "حطم قطار الطلقة الياباني \"شينكانسن\" الرقم القياسي لسرعة أسرع قطار كهربائي المسجل باسم قطار ⁦TGV⁩ الفرنسي.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -56388,12 +55734,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تأسست شركة هوندا للمحركات في اليابان.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 13,
         "image_url": null,
@@ -56403,12 +55747,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "اخترع الكندي جوزيف-أرماند بومباردييه عربة الجليد الآلية (السنوموبيل) في عام 1937.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -56433,12 +55775,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تُصنع غالبية سيارات سوبارو في الصين.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -56493,9 +55833,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "طوال تاريخها، صُنعت سيارة شيفروليه كورفيت حصرياً بمحركات ⁦V8⁩ فقط.",
         "options": [
           "صحيح",
-          "خطأ",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
         "correct_index": 1,
         "time_limit_seconds": 20,
@@ -56657,12 +55995,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت سيارة ⁦GM EV1⁩ من جنرال موتورز أول سيارة كهربائية إنتاجية مسموح بقيادتها قانونياً في الطرقات العامة.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 12,
         "image_url": null,
@@ -56688,11 +56024,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "يوجد طراز لسيارات رولز رويس يُطلق عليه اسم \"سبيكتر\" (⁦Spectre⁩).",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خطأ",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -56851,12 +56185,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "في عام 1993، أجرت شركة تصنيع السيارات السويدية \"ساب\" (⁦Saab⁩) تجربة لاستبدال عجلة القيادة بعصا تحكم في سيارة ⁦Saab 9000⁩.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 7,
         "image_url": null,
@@ -56971,12 +56303,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تعتبر ⁦BMW M GmbH⁩ شركة تابعة لـ ⁦BMW AG⁩ وتركز على إنتاج السيارات ذات الأداء الرياضي العالي.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
@@ -57061,11 +56391,9 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
         "question_text": "لم تصنع فيراري مطلقاً محرك ⁦V10⁩ لأي من سياراتها المخصصة للطرقات.",
         "options": [
           "صحيح",
-          "خيار 2",
-          "خيار 3",
           "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 3,
         "image_url": null,
@@ -57255,12 +56583,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "كانت شركة بوغاتي مصنعاً إيطالياً للسيارات.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 16,
         "image_url": null,
@@ -57284,12 +56610,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "عندما تأسست شركة بي إم دبليو في عام 1916، كانت تنتج السيارات.",
         "options": [
-          "خطأ",
           "صحيح",
-          "خيار 3",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "time_limit_seconds": 20,
         "order_index": 0,
         "image_url": null,
@@ -57374,12 +56698,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "تتمتع شركة ميتسوبيشي موتورز بشراكة دامت 30 عاماً مع جاكي شان، حيث ظهرت سياراتهم بشكل بارز في أفلامه.",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 6,
         "image_url": null,
@@ -57494,12 +56816,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "هل مصطلح '⁦GTO⁩' نشأ في الأصل من شركة فيراري؟",
         "options": [
-          "خطأ",
-          "خيار 2",
           "صحيح",
-          "خيار 4"
+          "خطأ"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 14,
         "image_url": null,
@@ -57509,12 +56829,10 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
       {
         "question_text": "الاسم الإنجليزي الكامل لشركة تصنيع السيارات بي إم دبليو (⁦BMW⁩) هو '⁦Bavarian Motor Works⁩'.",
         "options": [
-          "خطأ",
-          "خيار 2",
-          "خيار 3",
-          "صحيح"
+          "صحيح",
+          "خطأ"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "time_limit_seconds": 20,
         "order_index": 15,
         "image_url": null,
