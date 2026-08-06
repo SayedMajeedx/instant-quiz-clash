@@ -7,6 +7,8 @@ const CATEGORY_MAP = {
   "تقنية": "تكنولوجيا",
   "منطق وذكاء": "ألغاز ومنطق",
   "أدب": "لغة عربية وأدب",
+  "أدلة وألغاز ومنطق": "ألغاز ومنطق",
+  "أدب ولغة عربية": "لغة عربية وأدب",
 };
 
 const files = fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort();
@@ -118,7 +120,7 @@ if (fs.existsSync(SPECIALIZED_DIR)) {
         title: quiz.title,
         created_at: quiz.created_at ?? "2026-08-05T00:00:00.000Z",
         is_public: quiz.is_public !== false,
-        category: quiz.category,
+        category: CATEGORY_MAP[quiz.category] ?? quiz.category,
         language: quiz.language ?? "ar",
         quiz_difficulty: quiz.quiz_difficulty ?? "standard",
         archived: quiz.archived === true,
