@@ -435,7 +435,7 @@ const ar: Dict = {
   "import.added": "تمت إضافة {n} سؤال",
 
   "hostPick.title": "ابدأ لعبة جديدة",
-  "hostPick.sub": "اختر كويزاً وسننشئ رمز انضمام للاعبين.",
+  "hostPick.sub": "اختر كويزاً وسنعطيك رمزاً يدخل به اللاعبون.",
   "hostPick.needQuiz": "تحتاج إلى كويز أولًا",
   "hostPick.buildQuiz": "أنشئ كويزاً",
   "hostPick.selected": "محدد",
@@ -563,7 +563,7 @@ const ar: Dict = {
 
   "preview.back": "← رجوع للكويزات",
   "preview.title": "نظرة على الأسئلة",
-  "preview.sub": "معاينة آمنة بدون إظهار الإجابات الصحيحة — يمكنك مراجعة نص الأسئلة والخيارات قبل البدء باستضافة اللعبة.",
+  "preview.sub": "اطّلع على الأسئلة والخيارات قبل البدء — الإجابات الصحيحة مخفية حتى لا تُفسد اللعبة.",
   "preview.notFound": "لم نجد هذا الكويز",
   "preview.questionsHeader": "أسئلة الكويز ({n})",
   "preview.questionN": "سؤال {n} من {total}",
