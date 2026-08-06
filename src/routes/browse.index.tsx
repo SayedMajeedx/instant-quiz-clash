@@ -106,9 +106,61 @@ function BrowseLandingPage() {
     }));
   }, [quizzes]);
 
-  // Featured / Popular row (6-8 quizzes)
+  // Dynamic & Hybrid Selection for "الأحدث والأكثر شهرة" (Latest + Most Popular)
   const popularQuizzes = useMemo(() => {
-    return quizzes.slice(0, 6);
+    if (!quizzes || quizzes.length === 0) return [];
+
+    // 1. Sort all quizzes by created_at descending (newest first)
+    const sortedByDate = [...quizzes].sort((a, b) => {
+      const dateA = new Date(a.created_at || "2026-01-01").getTime();
+      const dateB = new Date(b.created_at || "2026-01-01").getTime();
+      return dateB - dateA;
+    });
+
+    // 2. Pick top 3 Latest quizzes
+    const latest3 = sortedByDate.slice(0, 3);
+    const usedIds = new Set(latest3.map((q) => q.id));
+
+    // 3. Pick top 3 Popular/Featured quizzes across diverse categories
+    const remaining = quizzes.filter((q) => !usedIds.has(q.id));
+
+    const popular3: PublicQuiz[] = [];
+    const featuredCats = [
+      "سلسلة مسابقات أهل البيت (ع)",
+      "أنمي",
+      "معلومات عامة",
+      "تاريخ",
+      "جغرافيا",
+      "علوم وطب",
+      "تكنولوجيا",
+      "رياضة",
+    ];
+
+    for (const cat of featuredCats) {
+      if (popular3.length >= 3) break;
+      const match = remaining.find(
+        (q) => q.category === cat && !popular3.some((p) => p.id === q.id)
+      );
+      if (match) popular3.push(match);
+    }
+
+    // Fallback if needed
+    while (popular3.length < 3 && remaining.length > popular3.length) {
+      const next = remaining.find((q) => !popular3.some((p) => p.id === q.id));
+      if (next) popular3.push(next);
+      else break;
+    }
+
+    // Interleave Latest and Popular
+    const hybrid: PublicQuiz[] = [];
+    for (let i = 0; i < 3; i++) {
+      const itemL = latest3[i];
+      if (itemL) hybrid.push(itemL);
+      const itemP = popular3[i];
+      if (itemP) hybrid.push(itemP);
+    }
+
+    return hybrid;
   }, [quizzes]);
 
   // Search filtered results
