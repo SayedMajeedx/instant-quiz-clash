@@ -1,0 +1,220 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الخوف المعروف بـ \"التريبوفوبيا\" (⁦Trypophobia⁩)？",
+        "correct_answer": "الخوف من الثقوب الصغيرة المتجمعة",
+        "incorrect_answers": [
+            "الخوف من السباحة في المياه العميقة",
+            "الخوف من التحدث أمام الجمهور",
+            "الخوف من تناول الطعام بكثرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي المكسرات المستخدمة بشكل أساسي في صناعة حلوى \"المرزبان\" (⁦Marzipan⁩)‏؟",
+        "correct_answer": "اللوز",
+        "incorrect_answers": [
+            "الفول السوداني",
+            "عين الجمل (الجوز)",
+            "الفستق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من أنواع المشروبات التالية يحتوي عادةً على نسبة أعلى من المتوسط من نبات الجنجل (⁦Hops⁩)‏؟",
+        "correct_answer": "إنديا بايل آيل (⁦India Pale Ale⁩)",
+        "incorrect_answers": [
+            "ستوت (⁦Stout⁩)",
+            "إكسترا سبيشال بيتر (⁦ESB⁩)",
+            "سكوتش آيل (⁦Scotch Ale⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من أي سلالة كلاب يأتي \"هاندسوم دان\" (⁦Handsome Dan⁩)، وهو جالب الحظ الرسمي لجامعة ييل؟",
+        "correct_answer": "بولدوغ (⁦Bulldog⁩)",
+        "incorrect_answers": [
+            "يوركشاير تيرير",
+            "بوكسر",
+            "باغ (⁦Pug⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تم بيع مشروب \"كريستال بيبسي\" (⁦Crystal Pepsi⁩) لأول مرة في الأسواق الأمريكية في عام 1993.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "لأي معدن يُعد منجم \"إل تينيينتي\" (⁦El Teniente⁩) الواقع في تشيلي أكبر منجم تحت الأرض في العالم؟",
+        "correct_answer": "النحاس",
+        "incorrect_answers": [
+            "الحديد",
+            "النيكل",
+            "الفضة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي يصف ترتيب الكلمات الصحيح في الجملة اليابانية؟",
+        "correct_answer": "فاعل - مفعول به - فعل (⁦Subject Object Verb⁩)",
+        "incorrect_answers": [
+            "فاعل - فعل - مفعول به (⁦Subject Verb Object⁩)",
+            "فعل - فاعل - مفعول به (⁦Verb Subject Object⁩)",
+            "فعل - مفعول به - فاعل (⁦Verb Object Subject⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الصينية المكتوبة بالحروف اللاتينية والتي تعني \"طائرة\"؟",
+        "correct_answer": "فيجي (⁦Feiji⁩)",
+        "incorrect_answers": [
+            "كيتشي (⁦Qiche⁩)",
+            "زونغشيان (⁦Zongxian⁩)",
+            "هواجايين (⁦Huojian⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "صوّتت اسكتلندا لتصبح دولة مستقلة خلال الاستفتاء الذي أُجري في سبتمبر 2014.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الإيطالية التي تعني \"طماطم\"؟",
+        "correct_answer": "بومودورو (⁦Pomodoro⁩)",
+        "incorrect_answers": [
+            "آليو (⁦Aglio⁩)",
+            "تشيبولا (⁦Cipolla⁩)",
+            "بيبيرونشينو (⁦Peperoncino⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "سُمي لباس البحر \"البيكيني\" بهذا الاسم نسبةً إلى \"جزيرة بيكيني الحلقية\" (⁦Bikini Atoll⁩)، حيث أجرت الولايات المتحدة تجارب للقنابل الذرية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "وفقاً لهيئة العمل العادل الأسترالية (⁦Fair Work⁩)، كم سنة يجب أن تعمل في نفس الوظيفة لتستحق إجازة الخدمة الطويلة (⁦Long Service Leave⁩)‏؟",
+        "correct_answer": "7 سنوات",
+        "incorrect_answers": [
+            "سنتان",
+            "8 سنوات",
+            "6 أشهر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم العامي الذي تُعرف به عملة الدولار الكندي المعدنية؟",
+        "correct_answer": "لوني (⁦Loonie⁩)",
+        "incorrect_answers": [
+            "بولي (⁦Boolie⁩)",
+            "فولي (⁦Foolie⁩)",
+            "مودي (⁦Moodie⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "حساء \"الغامبو\" (⁦Gumbo⁩) هو يخنة نشأت في الأصل في ولاية لويزيانا الأمريكية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "\"⁦A3⁩\" و\"⁦B1⁩\" و\"⁦Legal⁩\" هي تسميات قياسية شائعة لمقاسات أي من الأشياء التالية؟",
+        "correct_answer": "الورق",
+        "incorrect_answers": [
+            "الطائرات",
+            "كتب القانون",
+            "شاشات الهواتف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الشركات السويدية تأسست في عام 1943‏؟",
+        "correct_answer": "إيكيا (⁦IKEA⁩)",
+        "incorrect_answers": [
+            "إتش آند إم (⁦H⁩&⁦M⁩)",
+            "ليندكس (⁦Lindex⁩)",
+            "كلاس أولسون (⁦Clas Ohlson⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أُطلقت لعبة الأطفال الشهيرة \"فيربي\" (⁦Furby⁩) لأول مرة في عام 1998.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من جامعات رابطة اللبلاب (⁦Ivy League⁩) التالية كُتب شعارها الرسمي باللغة العبرية واللاتينية معاً؟",
+        "correct_answer": "جامعة ييل",
+        "incorrect_answers": [
+            "جامعة برينستون",
+            "جامعة هارفارد",
+            "جامعة كولومبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من الرموز التالية كان يُعتبر في الماضي الحرف السابع والعشرين في الأبجدية الإنجليزية؟",
+        "correct_answer": "علامة العطف & (⁦Ampersand⁩)",
+        "incorrect_answers": [
+            "علامة الاستفهام والتعجب المدمجة (⁦Interrobang⁩)",
+            "علامة المدة (⁦Tilde⁩)",
+            "علامة الفقرة (⁦Pilcrow⁩)"
+        ]
+    }
+]

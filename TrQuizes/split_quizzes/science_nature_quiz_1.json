@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب في نظامنا الشمسي؟",
+        "correct_answer": "8",
+        "incorrect_answers": [
+            "7",
+            "9",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي للأحفورة البشرية المنقرضة المعروفة باسم \"لوسي\"؟",
+        "correct_answer": "أسترالوبيثكس العفاري (⁦Australopithecus Afarensis⁩)",
+        "incorrect_answers": [
+            "أسترالوبيثكس الأفريقي (⁦Australopithecus Africanus⁩)",
+            "أسترالوبيثكس أرشيتوثيس (⁦Australopithecus Architeuthis⁩)",
+            "أسترالوبيثكس أنتاريس (⁦Australopithecus Antaris⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر كيميائي يرمز له بالرمز '⁦Fe⁩'؟",
+        "correct_answer": "الحديد",
+        "incorrect_answers": [
+            "الذهب",
+            "الفضة",
+            "القصدير"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "التفاعل الطارد للحرارة هو تفاعل كيميائي يطلق طاقة عن طريق إشعاع الكهرباء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من أقمار لاندسات (⁦Landsat⁩) الاصطناعية فشل في الوصول إلى المدار؟",
+        "correct_answer": "لاندسات 6",
+        "incorrect_answers": [
+            "لاندسات 5",
+            "لاندسات 4",
+            "لاندسات 3"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "النبات الذي تستمر دورة حياته لأكثر من عام يُعرف بالنبات الحولي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هي عضلة رئيسية في الظهر؟",
+        "correct_answer": "العضلة شبه المنحرفة (⁦Trapezius⁩)",
+        "incorrect_answers": [
+            "العظم شبه المنحرف (⁦Trapezium⁩)",
+            "العظم المربعي (⁦Trapezoid⁩)",
+            "العظم المثلثي (⁦Triquetrum⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "النشاط اللاواعي الأكثر تكراراً في جسم الإنسان هو الرمش (غمض العين).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه الخيارات ليس مرحلة من مراحل الانقسام المتساوي (الانقسام الميتوزي)‏؟",
+        "correct_answer": "الطور الثنائي (⁦Diplophase⁩)",
+        "incorrect_answers": [
+            "الطور الاستوائي (⁦Metaphase⁩)",
+            "الطور الانفصالي (⁦Anaphase⁩)",
+            "الطور النهائي (⁦Telophase⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تنص بديهية الطب الوقائي على أنه يجب فحص الأشخاص ذوي الخطورة ___ للإصابة بمرض ما، وعلينا علاج ___ هؤلاء الأشخاص.",
+        "correct_answer": "المنخفضة، جميع",
+        "incorrect_answers": [
+            "المنخفضة، بعض",
+            "العالية، جميع",
+            "العالية، بعض"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الطبقة الخارجية الرقيقة للأرض؟",
+        "correct_answer": "القشرة الأرضية",
+        "incorrect_answers": [
+            "الإكسوسفير (الغلاف الخارجي)",
+            "الوشاح (الستار)",
+            "النواة الخارجية (اللب الخارجي)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الـ \"ستينوما\" (⁦Stenoma⁩)‏؟",
+        "correct_answer": "جنس من الفراشات (العث)",
+        "incorrect_answers": [
+            "منشط قتالي من الحرب العالمية الثانية",
+            "نوع من التوابل",
+            "مدينة ساحلية في الكاريبي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي أصغر الأوعية الدموية في جسم الإنسان؟",
+        "correct_answer": "الشعيرات الدموية",
+        "incorrect_answers": [
+            "الشريينات",
+            "الوريدات",
+            "الأوعية اللمفاوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "الجليد الجاف هو الحالة الصلبة لأي مادة؟",
+        "correct_answer": "ثاني أكسيد الكربون",
+        "incorrect_answers": [
+            "النيتروجين",
+            "الأمونيا",
+            "الأكسجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي يُستخدم لإثبات دوران الأرض حول محورها؟",
+        "correct_answer": "بندول فوكو",
+        "incorrect_answers": [
+            "نجم الشمال (الجدي)",
+            "المزولة الشمسية",
+            "الصفائح التكتونية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يتكون 71% من سطح الأرض من:",
+        "correct_answer": "الماء",
+        "incorrect_answers": [
+            "الصحاري",
+            "القارات",
+            "الغابات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الشائع للمركب الكيميائي \"أكسيد ثنائي الهيدروجين\"؟",
+        "correct_answer": "الماء",
+        "incorrect_answers": [
+            "الميثان",
+            "الأمونيا",
+            "غاز الضحك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "غانيميد هو أكبر قمر لأي كوكب؟",
+        "correct_answer": "المشتري",
+        "incorrect_answers": [
+            "أورانوس",
+            "نبتون",
+            "المريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الرياضية لقانون أوم؟",
+        "correct_answer": "⁦V⁩ = ⁦I⁩*⁦R⁩",
+        "incorrect_answers": [
+            "⁦I⁩ = ⁦V⁩*⁦R⁩",
+            "⁦R⁩ = ⁦V⁩*⁦I⁩",
+            "⁦V⁩ = ⁦I⁩ / ⁦R⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس عظماً موجوداً في ذراع الإنسان؟",
+        "correct_answer": "عظم الظنبوب (قصبة الساق)",
+        "incorrect_answers": [
+            "عظم العضد",
+            "عظم الزند",
+            "عظم الكعبرة"
+        ]
+    }
+]

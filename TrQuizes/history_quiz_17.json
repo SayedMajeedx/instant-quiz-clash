@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي إله يوناني كان إله الشمس؟",
+        "correct_answer": "هيليوس",
+        "incorrect_answers": [
+            "زيوس",
+            "هاديس",
+            "بوسيدون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من الذي صاغ فكرة الاشتراكية وطورها？",
+        "correct_answer": "كارل ماركس",
+        "incorrect_answers": [
+            "فلاديمير لينين",
+            "جوزيف ستالين",
+            "فلاديمير بوتين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ماذا حدث في 6 يونيو 1944‏؟",
+        "correct_answer": "يوم الإنزال",
+        "incorrect_answers": [
+            "القصف الذري على هيروشيما وناجازاكي",
+            "الهجوم على بيرل هاربر",
+            "تحرير باريس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي معركة بحرية كانت تعتبر نقطة التحول في مسرح عمليات المحيط الهادئ خلال الحرب العالمية الثانية؟",
+        "correct_answer": "معركة ميدواي",
+        "incorrect_answers": [
+            "الهجوم على جزيرة تروك",
+            "الهجوم على بيرل هاربر",
+            "معركة بحر المرجان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في عهد أي رئيس أمريكي تم الانتهاء من حفر قناة بنما؟",
+        "correct_answer": "وودرو ويلسون",
+        "incorrect_answers": [
+            "فرانكلين ديلانو روزفلت",
+            "هربرت هوفر",
+            "ثيودور روزفلت"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أعلنت الولايات المتحدة الأمريكية استقلالها عن الإمبراطورية البريطانية في 4 يوليو 1776.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الرقم الذي يرمز إليه الحرف الروماني '⁦D⁩'؟",
+        "correct_answer": "500",
+        "incorrect_answers": [
+            "100",
+            "1000",
+            "50"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان رئيس الولايات المتحدة عندما بدأت حرب الخليج؟",
+        "correct_answer": "جورج بوش الأب",
+        "incorrect_answers": [
+            "ريتشارد نيكسون",
+            "جورج بوش الابن",
+            "رونالد ريجان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هو أول جسم مسجل يصل إلى الفضاء الخارجي على الإطلاق؟",
+        "correct_answer": "بامبر-واك (⁦Bumper-WAC⁩)",
+        "incorrect_answers": [
+            "غطاء بالوعة أمريكي",
+            "سبوتنيك 1",
+            "سبوتنيك 2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى أعلنت الولايات المتحدة الحرب رسمياً على اليابان، لتدخل بذلك الحرب العالمية الثانية؟",
+        "correct_answer": "8 ديسمبر 1941",
+        "incorrect_answers": [
+            "6 يونيو 1944",
+            "22 يونيو 1941",
+            "1 سبتمبر 1939"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من هذه الدبابات صممتها وشغلتها المملكة المتحدة؟",
+        "correct_answer": "توج 2 (⁦Tog II⁩)",
+        "incorrect_answers": [
+            "إم 4 شيرمان",
+            "تايجر إتش 1",
+            "تي-34"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "تحت أي اسم نُصِّب رودريغو بورجيا بابا للفاتيكان؟",
+        "correct_answer": "ألكسندر السادس",
+        "incorrect_answers": [
+            "رودريغو الأول",
+            "يوحنا بولس الثاني",
+            "بيوس السابع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي الدولة التي انضمت إلى الاتحاد الأوروبي في عام 2013‏؟",
+        "correct_answer": "كرواتيا",
+        "incorrect_answers": [
+            "بلغاريا",
+            "سلوفينيا",
+            "تركيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي من هذه المناصب لم يشغلها عالم الفلك والفيزياء إسحاق نيوتن؟",
+        "correct_answer": "مساح مدينة لندن",
+        "incorrect_answers": [
+            "أستاذ رياضيات",
+            "حارس دار السك الملكية",
+            "عضو في البرلمان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هي الدولة الواقعة في جنوب شرق آسيا والتي كانت تُعرف سابقاً باسم 'لان تسانغ'؟",
+        "correct_answer": "لاوس",
+        "incorrect_answers": [
+            "كمبوديا",
+            "فيتنام",
+            "تايلاند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كان أدولف هتلر جندياً ألمانياً في الحرب العالمية الأولى.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو الإمبراطور الروماني الذي وصلت الإمبراطورية الرومانية في عهده إلى أقصى اتساع جغرافي لها؟",
+        "correct_answer": "ترايان",
+        "incorrect_answers": [
+            "يوليوس قيصر",
+            "كلوديوس",
+            "قسطنطين العظيم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "البرازيل كانت مستعمرة سابقة لأي من الدول التالية؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "إسبانيا",
+            "هولندا",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كانت هونغ كونغ جزءاً من أراضي أي دولة قبل أن تستعيدها بريطانيا في عام 1945？",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "الصين",
+            "الفلبين",
+            "إندونيسيا الفرنسية"
+        ]
+    }
+]

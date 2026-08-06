@@ -1,0 +1,222 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كولومبيا هي ثالث أكبر دولة (من حيث المساحة بالكيلومتر المربع) في أمريكا الجنوبية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة جامايكا؟",
+        "correct_answer": "كينغستون",
+        "incorrect_answers": [
+            "سان خوان",
+            "بورت أو برانس",
+            "بريدج تاون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سيشل؟",
+        "correct_answer": "فيكتوريا",
+        "incorrect_answers": [
+            "لواندا",
+            "نجامينا",
+            "طرابلس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية المعروفة أيضاً باسم \"ولاية النجمة الوحيدة\"؟",
+        "correct_answer": "تكساس",
+        "incorrect_answers": [
+            "ألاباما",
+            "تينيسي",
+            "كنتاكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المقاطعات في جمهورية أيرلندا؟",
+        "correct_answer": "26",
+        "incorrect_answers": [
+            "32",
+            "28",
+            "30"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أين توجد \"السلالم الإسبانية\"؟",
+        "correct_answer": "روما، إيطاليا",
+        "incorrect_answers": [
+            "برشلونة، إسبانيا",
+            "برلين، ألمانيا",
+            "لندن، إنجلترا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "مساحة سطح روسيا أكبر بقليل من مساحة سطح كوكب بلوتو القزم.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد الجزر التي تمتلكها الكويت؟",
+        "correct_answer": "9",
+        "incorrect_answers": [
+            "3",
+            "6",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الدنمارك؟",
+        "correct_answer": "كوبنهاجن",
+        "incorrect_answers": [
+            "آرهوس",
+            "أودنسه",
+            "ألبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الإكوادور؟",
+        "correct_answer": "كيتو",
+        "incorrect_answers": [
+            "بوغوتا",
+            "سانتياغو",
+            "سانتا في"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تُعتبر واشنطن العاصمة ولاية أمريكية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في أمريكا الجنوبية من حيث المساحة؟",
+        "correct_answer": "سورينام",
+        "incorrect_answers": [
+            "البرازيل",
+            "أوروغواي",
+            "شيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول المستقلة في قارة أمريكا الجنوبية؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "8",
+            "9",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر مقاطعة في كندا؟",
+        "correct_answer": "جزيرة الأمير إدوارد",
+        "incorrect_answers": [
+            "نيو برونزويك",
+            "نوفا سكوشا",
+            "يوكون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تمتلك جنوب أفريقيا أكثر من عاصمة واحدة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه المناطق الأفريقية لا تحد جمهورية الكونغو الديمقراطية مباشرة؟",
+        "correct_answer": "السودان",
+        "incorrect_answers": [
+            "جمهورية أفريقيا الوسطى",
+            "تنزانيا",
+            "زامبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة بغرب أفريقيا تقع مدينة تمبكتو التاريخية؟",
+        "correct_answer": "مالي",
+        "incorrect_answers": [
+            "السنغال",
+            "النيجر",
+            "بوركينا فاسو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أطول نهر في العالم؟",
+        "correct_answer": "نهر النيل",
+        "incorrect_answers": [
+            "نهر ميزوري",
+            "نهر الأمازون",
+            "نهر يانغتسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من عائلات اللغات التالية هي الأكثر جدلاً بين علماء اللغة الحديثين؟",
+        "correct_answer": "الألطية",
+        "incorrect_answers": [
+            "الصينية التبتية",
+            "الدرافيدية",
+            "الهندية الأوروبية"
+        ]
+    }
+]

@@ -1,0 +1,234 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في مقاطعة ألبرتا الكندية، تقع مدينة كالغاري في أقصى الشمال أكثر من مدينة إدمونتون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أعلى جبل في العالم؟",
+        "correct_answer": "جبل إيفرست",
+        "incorrect_answers": [
+            "جبل غودوين أوستن",
+            "كانغشينجونغا",
+            "أنابورا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "توجد مدينة تسمى روما في كل قارة على وجه الأرض.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر مدينة في كندا؟",
+        "correct_answer": "تورونتو",
+        "incorrect_answers": [
+            "مونتريال",
+            "فانكوفر",
+            "أوتاوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليست صفيحة تكتونية حقيقية؟",
+        "correct_answer": "صفيحة المحيط الأطلسي",
+        "incorrect_answers": [
+            "صفيحة أمريكا الشمالية",
+            "الصفيحة الأوراسية",
+            "صفيحة نازكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع قلعة مارلبورو (⁦Fort Marlborough⁩)‏؟",
+        "correct_answer": "بنغكولو",
+        "incorrect_answers": [
+            "سنغافورة",
+            "لندن",
+            "دوفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول في العالم تقريباً؟",
+        "correct_answer": "200",
+        "incorrect_answers": [
+            "100",
+            "300",
+            "500"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة تمتلك المطار الأكثر ازدحاماً في العالم؟",
+        "correct_answer": "أتلانتا، جورجيا، الولايات المتحدة الأمريكية",
+        "incorrect_answers": [
+            "لندن، إنجلترا",
+            "شيكاغو، إلينوي، الولايات المتحدة الأمريكية",
+            "طوكيو، اليابان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي حوض يصب نهر الأردن؟",
+        "correct_answer": "البحر الميت",
+        "incorrect_answers": [
+            "بحر آرال",
+            "بحر قزوين",
+            "بحر سالتون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "عاصمة إندونيسيا هي بالي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في عام 2012، كم كان عدد سكان دولة \"ليختنشتاين\" الصغيرة المتحدثة بالألمانية في وسط أوروبا؟",
+        "correct_answer": "36,600",
+        "incorrect_answers": [
+            "2,400",
+            "90,000",
+            "323,400"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر بحيرة مياه عذبة في العالم من حيث الحجم؟",
+        "correct_answer": "بحيرة بايكال",
+        "incorrect_answers": [
+            "بحيرة سوبيريور",
+            "بحيرة هورون",
+            "بحيرة ميشيغان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة أوروبية تمتلك أطول شبكة قنوات مائية في العالم؟",
+        "correct_answer": "برمنغهام",
+        "incorrect_answers": [
+            "البندقية (فينيسيا)",
+            "أمستردام",
+            "برلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مما يلي هو أطول نهر في أوروبا؟",
+        "correct_answer": "نهر الفولغا",
+        "incorrect_answers": [
+            "نهر الدانوب",
+            "نهر الأورال",
+            "نهر الدنيبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست جزءاً من إقليم إسكندنافيا؟",
+        "correct_answer": "فنلندا",
+        "incorrect_answers": [
+            "النرويج",
+            "السويد",
+            "الدنمارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الأفريقية التي تعد اللغة البرتغالية لغتها الرسمية؟",
+        "correct_answer": "موزمبيق",
+        "incorrect_answers": [
+            "بوتسوانا",
+            "الغابون",
+            "توغو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ميامي هي أكبر مدينة في ولاية فلوريدا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الإمارة الصغيرة التي تقع بين إسبانيا وفرنسا؟",
+        "correct_answer": "أندورا",
+        "incorrect_answers": [
+            "ليختنشتاين",
+            "موناكو",
+            "سان مارينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة صغيرة تقع بين حدود فرنسا وإسبانيا؟",
+        "correct_answer": "أندورا",
+        "incorrect_answers": [
+            "سان مارينو",
+            "الفاتيكان",
+            "ليختنشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي ثاني أكبر دولة في العالم من حيث المساحة؟",
+        "correct_answer": "كندا",
+        "incorrect_answers": [
+            "روسيا",
+            "الصين",
+            "الولايات المتحدة الأمريكية"
+        ]
+    }
+]

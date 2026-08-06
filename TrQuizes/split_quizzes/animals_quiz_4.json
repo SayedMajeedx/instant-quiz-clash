@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "أي من هذه الفصائل ليست منقرضة؟",
+        "correct_answer": "تنين كومودو",
+        "incorrect_answers": [
+            "أسد البحر الياباني",
+            "نمر تسمانيا",
+            "الغزال السعودي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي لطائر البادجي (الببغاء الأسترالي)‏؟",
+        "correct_answer": "⁦Melopsittacus undulatus⁩",
+        "incorrect_answers": [
+            "⁦Nymphicus hollandicus⁩",
+            "⁦Pyrrhura molinae⁩",
+            "⁦Ara macao⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "أي حيوان كان جزءاً من تجربة استئناس روسية عام 1959‏؟",
+        "correct_answer": "الثعالب",
+        "incorrect_answers": [
+            "الحمام",
+            "الدببة",
+            "التمساح الأمريكي (الأليغيتور)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو متوسط عمر الأرنب الأليف؟",
+        "correct_answer": "8-12 سنوات",
+        "incorrect_answers": [
+            "1-2 سنوات",
+            "4-7 سنوات",
+            "14-20 سنة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "الضباع أقرب صلة بالقطط منها بالكلاب.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هي أطول أفعى سامة في العالم؟",
+        "correct_answer": "الكوبرا الملك",
+        "incorrect_answers": [
+            "الأناكوندا الخضراء",
+            "تايبان البراري",
+            "ثعبان البحر أصفر البطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي للذئب الرمادي؟",
+        "correct_answer": "⁦Canis Lupus⁩",
+        "incorrect_answers": [
+            "⁦Canis Aureus⁩",
+            "⁦Canis Latrans⁩",
+            "⁦Canis Lupus Lycaon⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "أين يعيش الحيوان الذي ينتمي لمنطقة الأعماق السحيقة (⁦Abyssopelagic⁩)‏؟",
+        "correct_answer": "في قاع المحيط",
+        "incorrect_answers": [
+            "في الصحراء",
+            "على قمة جبل",
+            "داخل شجرة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "تمتلك النمور لون جلد واحد بالرغم من فرائها المخطط.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو سبب \"ضحك\" الضبع المرقط؟",
+        "correct_answer": "التوتر",
+        "incorrect_answers": [
+            "الحماس",
+            "العدوانية",
+            "الإرهاق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو لون جلد الدب القطبي؟",
+        "correct_answer": "أسود",
+        "incorrect_answers": [
+            "أبيض",
+            "وردي",
+            "أخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي للفهد (الشيتا)‏؟",
+        "correct_answer": "⁦Acinonyx jubatus⁩",
+        "incorrect_answers": [
+            "⁦Panthera onca⁩",
+            "⁦Lynx rufus⁩",
+            "⁦Felis catus⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما اسم البروتين الغني بالنحاس الذي يجعل دم أخطبوط القطب الجنوبي أزرق اللون؟",
+        "correct_answer": "هيموسيانين",
+        "incorrect_answers": [
+            "سيتوكروم",
+            "الحديد",
+            "ميثيونين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "أي الفصائل التالية يطلق عليها اسم \"دجاج الجبل\"؟",
+        "correct_answer": "ضفدع",
+        "incorrect_answers": [
+            "دجاجة",
+            "حصان",
+            "ذبابة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ماذا تعني كلمة \"فرس النهر\" (⁦Hippopotamus⁩) وبأي لغة؟",
+        "correct_answer": "حصان النهر (اليونانية)",
+        "incorrect_answers": [
+            "حصان النهر (اللاتينية)",
+            "خنزير سمين (اليونانية)",
+            "خنزير سمين (اللاتينية)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "أي من سلالات الكلاب سميت على اسم منطقة في كرواتيا؟",
+        "correct_answer": "دالميشن (الكلب المرقّط)",
+        "incorrect_answers": [
+            "بكينيز",
+            "تشيواوا",
+            "بوميرانيان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "إلى أي طائفة من الحيوانات ينتمي سمندل الماء (⁦Newt⁩)‏؟",
+        "correct_answer": "البرمائيات",
+        "incorrect_answers": [
+            "الأسماك",
+            "الزواحف",
+            "الثدييات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "من يصيب مرض الهزال المزمن (⁦CWD⁩) حصرياً من فصائل الحيوانات؟",
+        "correct_answer": "الأيليات (الغزلان)",
+        "incorrect_answers": [
+            "أشباه البشر (البشريات)",
+            "السنوريات (القططيات)",
+            "الكلبيات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ماذا يُسمى صغير الخفاش؟",
+        "correct_answer": "جرو",
+        "incorrect_answers": [
+            "شبل",
+            "فرخ",
+            "جدي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "الأرانب من القوارض.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    }
+]

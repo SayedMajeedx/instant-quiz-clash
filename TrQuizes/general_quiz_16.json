@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم إطلاق موقع \"فيسبوك\" (⁦Facebook⁩)‏؟",
+        "correct_answer": "2004",
+        "incorrect_answers": [
+            "2005",
+            "2003",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تأسس تطبيق التواصل الشهير \"واتساب\" (⁦WhatsApp⁩)‏؟",
+        "correct_answer": "2009",
+        "incorrect_answers": [
+            "2007",
+            "2012",
+            "2010"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الدولة الثالثة في العالم التي افتتحت مطعماً لسلسلة \"ماكدونالدز\"؟",
+        "correct_answer": "كوستاريكا",
+        "incorrect_answers": [
+            "اليابان",
+            "فرنسا",
+            "أستراليا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مرض السرطان في حد ذاته ليس مرضاً معدياً.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الدولة -باستثناء اليابان- التي تضم أكبر عدد من الأشخاص من أصول يابانية؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الصين",
+            "كوريا الجنوبية",
+            "الولايات المتحدة الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم جماعة الأشرار في لعبة \"دانغانرونبا أنوذر إبيسود: أولترا ديسبير غيرلز\" (⁦Danganronpa Another Episode⁩: ⁦Ultra Despair Girls⁩)‏؟",
+        "correct_answer": "محاربو الأمل",
+        "incorrect_answers": [
+            "مونوكوبس",
+            "محاربو اليأس",
+            "اليأس المطلق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة التي طورت برنامج الفوكالويد الشهير \"هاتسوني ميكو\"؟",
+        "correct_answer": "كريبتون فيوثر ميديا",
+        "incorrect_answers": [
+            "سيجا",
+            "سوني",
+            "مؤسسة ياماها"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي ليس من تصميمات السيوف الأوروبية التقليدية؟",
+        "correct_answer": "السيف المقوس",
+        "incorrect_answers": [
+            "فالشيوني",
+            "أولفبرت",
+            "فلامبيرج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من أي دولة أوروبية نشأت سلطة الكولسلو؟",
+        "correct_answer": "هولندا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "الدنمارك",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من ألعاب مارفل التالية تم إصدارها على جهاز بلايستيشن 2‏؟",
+        "correct_answer": "سبايدرمان 2",
+        "incorrect_answers": [
+            "سيلفر سيرفر",
+            "هوارد ذا داك",
+            "ولفرين: أدامانتيوم ريج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "إذا قال لك شخص ما بالإنجليزية \"أنت أوليد\" (⁦you are olid⁩)، فماذا يعني ذلك؟",
+        "correct_answer": "رائحتك كريهة للغاية.",
+        "incorrect_answers": [
+            "بنيتك ضعيفة أو لست في حالة بدنية جيدة.",
+            "مظهرك منفر.",
+            "أنت شخص غير مفهوم أو أحمق."
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي العملة الرسمية لدولة لاوس؟",
+        "correct_answer": "الكيب",
+        "incorrect_answers": [
+            "الروبل",
+            "الكونرا",
+            "الدولار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الخطوة في عملية التنفس الخلوي التي تنتج جزيئات الـ ⁦ATP⁩‏؟",
+        "correct_answer": "الفسفرة التأكسدية",
+        "incorrect_answers": [
+            "التحلل السكري",
+            "أكسدة البيروفات",
+            "دورة كالفن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "شركات فيرجن للقطارات، وفيرجن أتلانتيك، وفيرجن ريسينغ، هي جميعها شركات مملوكة لأي رجل أعمال شهير؟",
+        "correct_answer": "ريتشارد برانسون",
+        "incorrect_answers": [
+            "ألان شوجر",
+            "دونالد ترامب",
+            "بيل غيتس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو مؤسس الباستافاريانية (ديانة وحش السباغيتي الطائر)‏؟",
+        "correct_answer": "بوبي هندرسون",
+        "incorrect_answers": [
+            "إريك تيغنور",
+            "بيل ناي",
+            "زاك سولدي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تأتي كلمة \"⁦news⁩\" (أخبار) من الحروف الأولى للاتجاهات الأربعة الرئيسية على البوصلة (الشمال، الشرق، الغرب، الجنوب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كانت فوانيس الهالوين الأصلية (⁦Jack-o-Lanterns⁩) تُصنع في الأصل من اللفت المجوف.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ارتفعت شهرة منتج الموسيقى الإلكترونية \"كايغو\" (⁦Kygo⁩) بشكل كبير بعد ريمكس معين، ما هي الأغنية التي قام بإعادة توزيعها؟",
+        "correct_answer": "إيد شيران - آي سي فاير",
+        "incorrect_answers": [
+            "مارفين غي - سيكشوال هيلينغ",
+            "كولدبلاي - ميدنايت",
+            "آ-ها - تيك أون مي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد المقاطع اللفظية التي تتكون منها قصيدة الهايكو؟",
+        "correct_answer": "17",
+        "incorrect_answers": [
+            "15",
+            "10",
+            "21"
+        ]
+    }
+]

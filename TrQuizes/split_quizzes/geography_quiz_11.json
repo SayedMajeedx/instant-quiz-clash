@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع دولة غيانا؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "أفريقيا",
+            "أمريكا الشمالية",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي محيط يحد الساحل الغربي للولايات المتحدة؟",
+        "correct_answer": "المحيط الهادئ",
+        "incorrect_answers": [
+            "المحيط الأطلسي",
+            "المحيط الهندي",
+            "المحيط المتجمد الشمالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما الحدث الذي أدى إلى إضافة تاج إلى علم ليختنشتاين؟",
+        "correct_answer": "الألعاب الأولمبية لعام 1936",
+        "incorrect_answers": [
+            "تتويج الأمير يوهان الأول جوزيف عام 1805",
+            "مرسوم تشارلز السادس عام 1719",
+            "توقيع دستور ليختنشتاين لعام 1862"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي السنة المكتوبة على علم ولاية ويسكونسن الأمريكية؟",
+        "correct_answer": "1848",
+        "incorrect_answers": [
+            "1634",
+            "1783",
+            "1901"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تحد دولة بليز؟",
+        "correct_answer": "غواتيمالا",
+        "incorrect_answers": [
+            "لاوس",
+            "بيرو",
+            "كينيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "لا توجد صحاري في أوروبا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد المحطات في خط سنترال (الخط المركزي) في مترو أنفاق لندن؟",
+        "correct_answer": "49",
+        "incorrect_answers": [
+            "51",
+            "43",
+            "47"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الجزرية تقع في منطقة الكاريبي؟",
+        "correct_answer": "باربادوس",
+        "incorrect_answers": [
+            "فيجي",
+            "جزر المالديف",
+            "سيشل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تحد قرغيزستان؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية ويسكونسن الأمريكية؟",
+        "correct_answer": "ماديسون",
+        "incorrect_answers": [
+            "ميلووكي",
+            "ويسكونسن ديلز",
+            "غرين باي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الجزر الواقعة في البحر الأبيض المتوسط تخضع للسيادة الفرنسية؟",
+        "correct_answer": "كورسيكا",
+        "incorrect_answers": [
+            "مايوركا",
+            "سردينيا",
+            "مالطا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي المدينة الأكثر اكتظاظاً بالسكان في الأمريكتين في عام 2015‏؟",
+        "correct_answer": "ساو باولو",
+        "incorrect_answers": [
+            "نيويورك",
+            "مكسيكو سيتي",
+            "لوس أنجلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي جزء من ويلز تقع قرية لانفايربولغوينغيلغوغيريتشويرندروبوليلانتيسيليوغوغوغوتش؟",
+        "correct_answer": "أنغلزي",
+        "incorrect_answers": [
+            "بيمبروكشاير",
+            "ريكسهام",
+            "بريدجند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي بلد تقع تالين؟",
+        "correct_answer": "إستونيا",
+        "incorrect_answers": [
+            "فنلندا",
+            "السويد",
+            "بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية يتميز علمها بوجود أسد أصفر يحمل سيفاً على خلفية حمراء داكنة؟",
+        "correct_answer": "سريلانكا",
+        "incorrect_answers": [
+            "كيريباتي",
+            "إسكتلندا",
+            "بوتان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الطريقة الصحيحة لكتابة اسم عاصمة المجر باللغة الإنجليزية؟",
+        "correct_answer": "⁦Budapest⁩",
+        "incorrect_answers": [
+            "⁦Boodapest⁩",
+            "⁦Bhudapest⁩",
+            "⁦Budapast⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "سانتوريني هي جزيرة تابعة لأي دولة أوروبية؟",
+        "correct_answer": "اليونان",
+        "incorrect_answers": [
+            "إيطاليا",
+            "إسبانيا",
+            "تركيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد الولايات الاتحادية في ألمانيا؟",
+        "correct_answer": "16",
+        "incorrect_answers": [
+            "13",
+            "32",
+            "25"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين يقع نهر الفولغا؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "بلغاريا",
+            "الهند",
+            "السويد"
+        ]
+    }
+]

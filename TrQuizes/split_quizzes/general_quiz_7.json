@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الكورية المكتوبة بالأحرف اللاتينية والتي تعني \"قلب\"؟",
+        "correct_answer": "سيمجانغ (⁦Simjang⁩)",
+        "incorrect_answers": [
+            "آيجونغ (⁦Aejeong⁩)",
+            "جيونغسين (⁦Jeongsin⁩)",
+            "سيغسو (⁦Segseu⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "لماذا تبدو السماء مظلمة في الليل؟",
+        "correct_answer": "الكون محدود العمر والحجم",
+        "incorrect_answers": [
+            "سحب الغبار تمتص الضوء",
+            "الانزياح نحو الأحمر يمنعنا من رؤية النجوم البعيدة",
+            "ميكانيكا الكم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما الذي تؤخذ المضادات الحيوية عادةً لمحاربته؟",
+        "correct_answer": "الالتهابات البكتيرية",
+        "incorrect_answers": [
+            "الفيروسات",
+            "الصداع النصفي",
+            "آلام العضلات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "عبارة \"حادث على وشك الوقوع\" (⁦accident waiting to happen⁩) هي مثال على أي نوع من الأساليب التعبيرية؟",
+        "correct_answer": "تعبير اصطلاحي (⁦Idiom⁩)",
+        "incorrect_answers": [
+            "تشبيه (⁦Simile⁩)",
+            "استعارة (⁦Metaphor⁩)",
+            "تناظر (⁦Analogy⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اللقب الذي أُطلق على طائرة النقل الثقيل المائية \"هوز إتش-4 هيركوليز\" التي طارت لأول مرة عام 1947‏؟",
+        "correct_answer": "إوزة التنوب (⁦Spruce Goose⁩)",
+        "incorrect_answers": [
+            "سفينة نوح (⁦Noah's Ark⁩)",
+            "الرجل البدين (⁦Fat Man⁩)",
+            "حصان طروادة (⁦Trojan Horse⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو رائد الفضاء الوحيد من بين طاقم رحلة \"أبولو 11\" الذي لم يمشِ على سطح القمر؟",
+        "correct_answer": "مايكل كولينز",
+        "incorrect_answers": [
+            "باز ألدرين",
+            "نيل آرمسترونغ",
+            "لا أحد منهم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أدى دور الجنرال علاء الدين في فيلم \"الديكتاتور\" (⁦The Dictator⁩)‏؟",
+        "correct_answer": "ساشا بارون كوهين",
+        "incorrect_answers": [
+            "جوني ديب",
+            "جيمس فرانكو",
+            "ليوناردو دي كابريو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي مجرة يقع كوكب الأرض؟",
+        "correct_answer": "مجرة درب التبانة",
+        "incorrect_answers": [
+            "مجرة المريخ",
+            "مجرة نوت (⁦Galaxy Note⁩)",
+            "الثقب الأسود"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "نشأت لعبة تنس الطاولة (بينغ بونغ) في إنجلترا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إذا تم ضبطك متلبساً بـ \"التهرب من العمل\" (⁦Goldbricking⁩)، فما الخطأ الذي ترتكبه؟",
+        "correct_answer": "التكاسل والتهرب",
+        "incorrect_answers": [
+            "التدخين",
+            "السرقة",
+            "الغش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة العربية المكتوبة بالأحرف اللاتينية والتي تعني \"قمر\"؟",
+        "correct_answer": "⁦Qamar⁩",
+        "incorrect_answers": [
+            "⁦Najma⁩",
+            "⁦Kawkab⁩",
+            "⁦Shams⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من الملوك البريطانيين التاليين لم تظهر صورته قط على عملة الجنيه الإسترليني المتداولة؟",
+        "correct_answer": "إدوارد الثامن",
+        "incorrect_answers": [
+            "الملكة فيكتوريا",
+            "جورج السادس",
+            "تشارلز الثاني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم (⁦Noun⁩) الأكثر استخداماً في اللغة الإنجليزية؟",
+        "correct_answer": "⁦Time⁩ (الوقت)",
+        "incorrect_answers": [
+            "⁦Home⁩ (المنزل)",
+            "⁦Water⁩ (الماء)",
+            "⁦Man⁩ (الرجل)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي مهنة \"ماي ماسك\"، والدة الملياردير إيلون ماسك؟",
+        "correct_answer": "عارضة أزياء",
+        "incorrect_answers": [
+            "أستاذة جامعية",
+            "عالمة أحياء",
+            "موسيقية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم إصدار لعبة الروبوت الشهيرة \"روبوسابيان\" (⁦RoboSapien⁩)‏؟",
+        "correct_answer": "2004",
+        "incorrect_answers": [
+            "2000",
+            "2001",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "فاز لاينوس باولينغ بجائزتي نوبل؛ الأولى كانت في الكيمياء، ففي أي مجال كانت الجائزة الثانية؟",
+        "correct_answer": "السلام",
+        "incorrect_answers": [
+            "الفيزياء",
+            "الاقتصاد",
+            "علم وظائف الأعضاء أو الطب"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أُضيف مخلل الخيار لأول مرة إلى الهامبرغر لأن قانون الصحة الأمريكي كان يفرض على جميع مطاعم الوجبات السريعة تضمين مصدر لفيتامين سي (⁦C⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "متى وافق الكونغرس القاري الثاني على إعلان الاستقلال الأمريكي؟",
+        "correct_answer": "4 يوليو 1776",
+        "incorrect_answers": [
+            "4 مايو 1776",
+            "4 يونيو 1776",
+            "2 يوليو 1776"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "عند البكاء في الفضاء، تلتصق الدموع بوجهك ولا تسقط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي عملة الهند وباكستان بالإضافة إلى بعض الدول الآسيوية الأخرى؟",
+        "correct_answer": "الروبية",
+        "incorrect_answers": [
+            "الريال",
+            "البيزو",
+            "الدينار"
+        ]
+    }
+]

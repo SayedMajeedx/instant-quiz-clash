@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الهند؟",
+        "correct_answer": "نيودلهي",
+        "incorrect_answers": [
+            "بكين",
+            "مونتريال",
+            "تيثي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو اسم الدولة السابقة التي خلفتها دول مثل صربيا وكرواتيا وسلوفينيا؟",
+        "correct_answer": "يوغوسلافيا",
+        "incorrect_answers": [
+            "تشيكوسلوفاكيا",
+            "أبخازيا",
+            "أوسيتيا الجنوبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة البرازيل؟",
+        "correct_answer": "برازيليا",
+        "incorrect_answers": [
+            "ريو دي جانيرو",
+            "ساو باولو",
+            "كوريتيبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليست جزيرة تابعة للفلبين؟",
+        "correct_answer": "جاوة",
+        "incorrect_answers": [
+            "لوزون",
+            "مينداناو",
+            "بالاوان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "تمتلك سويسرا أربع لغات وطنية، والإنجليزية واحدة منها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية تكساس الأمريكية؟",
+        "correct_answer": "أوستن",
+        "incorrect_answers": [
+            "دالاس",
+            "سانتا في",
+            "هيوستن"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "غرينلاند مغطاة بالعشب وآيسلندا مغطاة بالجليد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "غوتنبرغ هي عاصمة السويد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الأفريقية تدرج اللغة الإسبانية كلغة رسمية لها؟",
+        "correct_answer": "غينيا الاستوائية",
+        "incorrect_answers": [
+            "غينيا",
+            "الكاميرون",
+            "أنغولا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة إنجليزية تقع جامعة شرق أنجليا؟",
+        "correct_answer": "نورفولك",
+        "incorrect_answers": [
+            "سوفولك",
+            "إسكس",
+            "كامبريدجشاير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع سلسلة جبال الأنديز؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "أوروبا",
+            "آسيا",
+            "أفريقيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية واشنطن في الولايات المتحدة؟",
+        "correct_answer": "أولمبيا",
+        "incorrect_answers": [
+            "واشنطن العاصمة",
+            "سياتل",
+            "يوكون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة تحمل الرمز الاختصاري \"⁦CH⁩\"؟",
+        "correct_answer": "سويسرا",
+        "incorrect_answers": [
+            "الصين",
+            "كندا",
+            "لا توجد دولة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سلوفاكيا؟",
+        "correct_answer": "براتيسلافا",
+        "incorrect_answers": [
+            "صوفيا",
+            "ليوبليانا",
+            "سراييفو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو اسم المنطقة التي تربط بين باكستان والهند والصين وتخضع لسيادة متنازع عليها؟",
+        "correct_answer": "كشمير",
+        "incorrect_answers": [
+            "أندورا",
+            "جبل طارق",
+            "كوين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "واغادوغو هي عاصمة أي دولة أفريقية؟",
+        "correct_answer": "بوركينا فاسو",
+        "incorrect_answers": [
+            "جمهورية أفريقيا الوسطى",
+            "السنغال",
+            "زامبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية تقع ضمن منطقة اليورو ولكنها خارج منطقة شنغن؟",
+        "correct_answer": "قبرص",
+        "incorrect_answers": [
+            "مالطا",
+            "اليونان",
+            "البرتغال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو لون الدائرة الموجودة على علم اليابان؟",
+        "correct_answer": "أحمر",
+        "incorrect_answers": [
+            "أبيض",
+            "أصفر",
+            "أسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الأماكن يقع في كورنوال؟",
+        "correct_answer": "برشلونة",
+        "incorrect_answers": [
+            "مدريد",
+            "أليكانتي",
+            "لشبونة"
+        ]
+    }
+]

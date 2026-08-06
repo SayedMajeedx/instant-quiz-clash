@@ -1,0 +1,222 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عاصمة البرازيل هي ريو دي جانيرو.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تشترك في حدود برية مع روسيا؟ (دون احتساب المناطق المتنازع عليها)",
+        "correct_answer": "14",
+        "incorrect_answers": [
+            "12",
+            "10",
+            "8"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الأوروبية ليست عضواً في الاتحاد الأوروبي؟",
+        "correct_answer": "النرويج",
+        "incorrect_answers": [
+            "ليتوانيا",
+            "أيرلندا",
+            "التشيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة في العالم من حيث المساحة؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "كندا",
+            "الصين",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "يعود أصل اسم الأرجنتين إلى الكلمة اللاتينية التي تعني الفضة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة قبرص؟",
+        "correct_answer": "نيقوسيا",
+        "incorrect_answers": [
+            "بافوس",
+            "ليماسول",
+            "لارنكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تبدأ عاصمتها بحرف الباء؟",
+        "correct_answer": "لبنان",
+        "incorrect_answers": [
+            "الأردن",
+            "الكويت",
+            "قطر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من المدن التالية ليست عاصمة دولة؟",
+        "correct_answer": "سيدني",
+        "incorrect_answers": [
+            "القاهرة",
+            "موسكو",
+            "بكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الوحيدة في العالم التي لا يحتوي علمها على أربع زوايا قائمة؟",
+        "correct_answer": "نيبال",
+        "incorrect_answers": [
+            "بنما",
+            "أنغولا",
+            "مصر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما اسم المحيط الذي تقع فيه جزر هاواي؟",
+        "correct_answer": "المحيط الهادئ",
+        "incorrect_answers": [
+            "المحيط الأطلسي",
+            "المحيط الهندي",
+            "المحيط المتجمد الشمالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة إنجليزية تقع مدينة بورتسموث؟",
+        "correct_answer": "هامبشاير",
+        "incorrect_answers": [
+            "أكسفوردشاير",
+            "باكنغهامشاير",
+            "سري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مقاطعة كندية عاصمتها هي تشارلوت تاون؟",
+        "correct_answer": "جزيرة الأمير إدوارد",
+        "incorrect_answers": [
+            "ساسكاتشوان",
+            "الأقاليم الشمالية الغربية",
+            "أونتاريو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "لا توجد طرق برية تؤدي إلى مدينة جونو بآلاسكا أو تخرج منها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الرسمية في بوتان؟",
+        "correct_answer": "الدزونكا",
+        "incorrect_answers": [
+            "اللاداخية",
+            "الكارين",
+            "الغروما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو اسم السكان الأصليين لنيوزيلندا؟",
+        "correct_answer": "الماوري",
+        "incorrect_answers": [
+            "الفايكنج",
+            "البولينيزيون",
+            "السامويون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أطول اسم مكان في الولايات المتحدة هو بحيرة 'تشارغوغوغوغمانشوغوغوغشوبوناغونغاماغ'، الواقعة بالقرب من ويبستر بولاية ماساتشوستس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لم تكن جزءاً من الاتحاد السوفيتي؟",
+        "correct_answer": "رومانيا",
+        "incorrect_answers": [
+            "تركمانستان",
+            "بيلاروسيا",
+            "طاجيكستان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يظهر أسد يحمل سيفاً على العلم الوطني لأي دولة؟",
+        "correct_answer": "سريلانكا",
+        "incorrect_answers": [
+            "ألبانيا",
+            "زامبيا",
+            "مولدوفا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة تشيلي؟",
+        "correct_answer": "سانتياغو",
+        "incorrect_answers": [
+            "فالبارايسو",
+            "كوبيابو",
+            "أنتوفاغاستا"
+        ]
+    }
+]

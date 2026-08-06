@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للمسافة؟",
+        "correct_answer": "المتر",
+        "incorrect_answers": [
+            "الأنغستروم",
+            "القدم",
+            "القامة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الكائن الحي الموصوف بأنه 'منتحٍ ضوئي' يميل إلى التحرك نحو أي من هذه الأشياء؟",
+        "correct_answer": "الضوء",
+        "incorrect_answers": [
+            "الماء",
+            "الأشجار",
+            "حبوب اللقاح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما الاسم الذي يطلق على الوهم السمعي لنغمة يبدو أنها ترتفع في حدتها إلى ما لا نهاية؟",
+        "correct_answer": "نغمة شيبارد",
+        "incorrect_answers": [
+            "وهم غليساندو",
+            "تأثير فرانتسن",
+            "تأثير ماكغورك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "من هو مكتشف قانون الجاذبية؟",
+        "correct_answer": "سير إسحاق نيوتن",
+        "incorrect_answers": [
+            "غاليليو غاليلي",
+            "تشارلز داروين",
+            "ألبيرت أينشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المبدأ الفيزيائي الذي يربط بين صافي التدفق الكهربائي الخارج من سطح مغلق والشحنة الموجودة داخل هذا السطح؟",
+        "correct_answer": "قانون غاوس",
+        "incorrect_answers": [
+            "قانون فاراداي",
+            "قانون أمبير",
+            "قانون بيو-سافارت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "بأي وحدة يُقاس الإشعاع؟",
+        "correct_answer": "غراي",
+        "incorrect_answers": [
+            "واط",
+            "ديسيبل",
+            "كلفن"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يدور حول كوكب المريخ قمران.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي النسبة المئوية التقريبية للأكسجين في الغلاف الجوي للأرض؟",
+        "correct_answer": "21%",
+        "incorrect_answers": [
+            "54%",
+            "78%",
+            "7%"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه العظام هو الأصعب كسرًا؟",
+        "correct_answer": "عظم الفخذ",
+        "incorrect_answers": [
+            "الجمجمة",
+            "عظم العضد",
+            "قصبة الساق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تتشارك مجموعات هابلوغروب الجينية البشرية التالية نفس الأسماء بين كروموسوم ⁦Y⁩ والحمض النووي للميتوكوندريا باستثناء:",
+        "correct_answer": "هابلوغروب ⁦U⁩",
+        "incorrect_answers": [
+            "هابلوغروب ⁦L⁩",
+            "هابلوغروب ⁦T⁩",
+            "هابلوغروب ⁦J⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أين تقع العضلة الألوية الكبرى في الجسم؟",
+        "correct_answer": "الأرداف",
+        "incorrect_answers": [
+            "الذراع",
+            "الرأس",
+            "الجذع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الحيوان الذي شارك في أشهر تجربة فكرية للعالم شرودنغر؟",
+        "correct_answer": "القط",
+        "incorrect_answers": [
+            "الكلب",
+            "الخفاش",
+            "الفراشة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "عملية تجميل الأنف (⁦Rhinoplasty⁩) هي إجراء جراحي يُجرى على أي جزء من جسم الإنسان؟",
+        "correct_answer": "الأنف",
+        "incorrect_answers": [
+            "الأذنان",
+            "الذقن",
+            "الرقبة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من العناصر الكيميائية لديه أدنى درجة غليان؟",
+        "correct_answer": "الهيليوم",
+        "incorrect_answers": [
+            "الهيدروجين",
+            "النيون",
+            "النيتروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من المركبات الكيميائية التالية لا يوجد في حمض المعدة؟",
+        "correct_answer": "حمض الكبريتيك",
+        "incorrect_answers": [
+            "حمض الهيدروكلوريك",
+            "كلوريد البوتاسيوم",
+            "كلوريد الصوديوم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تدور الأرض حول الشمس في سنة واحدة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تقوم ذكور الباندا بالوقوف على أيديها أثناء التبول على الأشجار.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "الفرق الأكبر بين الخلايا حقيقية النواة والخلايا بدائية النواة هو:",
+        "correct_answer": "وجود النواة أو غيابها",
+        "incorrect_answers": [
+            "الحجم الإجمالي",
+            "وجود أو غياب بعض العضيات",
+            "طريقة التكاثر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في الكيمياء، كم عدد المتصاوغات التي يمتلكها البيوتانول (⁦C4H9OH⁩)‏؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    }
+]

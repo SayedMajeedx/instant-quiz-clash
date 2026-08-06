@@ -1,0 +1,220 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم عدد أضلاع الشكل السباعي؟",
+        "correct_answer": "7",
+        "incorrect_answers": [
+            "8",
+            "6",
+            "5"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "في علم الطوبولوجيا، مكملة المجموعة المفتوحة هي مجموعة مغلقة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "المثلث متساوي الساقين له ضلعان متساويان في الطول وليس ثلاثة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "كم صفراً يوجد في عدد الـ \"جوجل\" (⁦Googol⁩)‏؟",
+        "correct_answer": "100",
+        "incorrect_answers": [
+            "10",
+            "1,000",
+            "1,000,000"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ألف-صفر (⁦Aleph-nought⁩) هو عدد عناصر (كاردينالية) مجموعة الأعداد الطبيعية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم درجة في الدائرة الكاملة؟",
+        "correct_answer": "360",
+        "incorrect_answers": [
+            "180",
+            "90",
+            "720"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "أي من علماء الرياضيات المشهورين التاليين توفي في مبارزة وهو في العشرين من عمره؟",
+        "correct_answer": "غالوا",
+        "incorrect_answers": [
+            "أبيل",
+            "أويلر",
+            "غاووس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "تنص نظرية فيثاغورس على أن مربع الوتر يساوي حاصل ضرب مربعي الضلعين الآخرين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو العدد الأولي الذي يأتي مباشرة بعد العدد 19‏؟",
+        "correct_answer": "23",
+        "incorrect_answers": [
+            "25",
+            "21",
+            "27"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو الترتيب الصحيح للعمليات الحسابية لحل المعادلات؟",
+        "correct_answer": "الأقواس، الأسس، الضرب، القسمة، الجمع، الطرح",
+        "incorrect_answers": [
+            "الجمع، الضرب، القسمة، الطرح، الجمع، الأقواس",
+            "الأقواس، الأسس، الجمع، الطرح، الضرب، القسمة",
+            "الترتيب الذي كُتبت به العمليات الحسابية."
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "مجموع أي عددين فرديين هو عدد فردي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "من هو عالم الرياضيات الذي رفض الحصول على وسام فيلدز؟",
+        "correct_answer": "غريغوري بيريلمان",
+        "incorrect_answers": [
+            "أندرو وايلز",
+            "تيرينس تاو",
+            "إدوارد ويتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "ما هو أصغر عدد يمكن التعبير عنه كمجموع مكعبين موجبين بطريقتين مختلفتين؟",
+        "correct_answer": "1729",
+        "incorrect_answers": [
+            "91",
+            "561",
+            "4104"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو الجذر التربيعي للعدد 49‏؟",
+        "correct_answer": "7",
+        "incorrect_answers": [
+            "4",
+            "12",
+            "9"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما نوع الدالة ⁦x⁩²+⁦2x⁩+1‏؟",
+        "correct_answer": "تربيعية",
+        "incorrect_answers": [
+            "نسبية",
+            "خطية",
+            "أسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم عدد الأوجه المربعة للمكعب؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "4",
+            "8",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم وجهاً لشريط موبيوس؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "أي من التوزيعات الاحتمالية التالية ليس توزيعاً منفصلاً؟",
+        "correct_answer": "الطبيعي",
+        "incorrect_answers": [
+            "ذو الحدين",
+            "بواسون",
+            "الهندسي الفائق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "لأقرب عدد صحيح، كم راديان يوجد في الدورة الكاملة للدائرة؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "3",
+            "4",
+            "5"
+        ]
+    }
+]

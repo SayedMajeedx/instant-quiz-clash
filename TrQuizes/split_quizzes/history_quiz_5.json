@@ -1,0 +1,242 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى تم تأسيس وكالة الأمن القومي للولايات المتحدة؟",
+        "correct_answer": "4 نوفمبر 1952",
+        "incorrect_answers": [
+            "26 يوليو 1908",
+            "1 يوليو 1973",
+            "25 نوفمبر 2002"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "إلى أي حزب سياسي كان ينتمي أبراهام لينكولن عندما انتُخب رئيساً للولايات المتحدة؟",
+        "correct_answer": "الحزب الجمهوري",
+        "incorrect_answers": [
+            "الحزب الديمقراطي",
+            "مستقل",
+            "حزب الويغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في عام 1453، أي مدينة مهمة سقطت؟",
+        "correct_answer": "القسطنطينية",
+        "incorrect_answers": [
+            "روما",
+            "هامبورغ",
+            "أثينا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "متى يصادف تاريخ \"منتصف مارس\" (⁦Ides of March⁩)‏؟",
+        "correct_answer": "15 مارس",
+        "incorrect_answers": [
+            "14 مارس",
+            "31 مارس",
+            "1 مارس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان زعيم الحزب الشيوعي اليوغوسلافي؟",
+        "correct_answer": "جوزيف بروز تيتو",
+        "incorrect_answers": [
+            "كاراجورجي بيتروفيتش",
+            "ميلوش أوبيليتش",
+            "ألكسندر بيتروفيتش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام تم إدخال الإصلاحات الماريانية في الجمهورية الرومانية؟",
+        "correct_answer": "107 قبل الميلاد",
+        "incorrect_answers": [
+            "42 قبل الميلاد",
+            "264 قبل الميلاد",
+            "102 ميلادي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان أول رئيس لجمهورية الصين الشعبية؟",
+        "correct_answer": "ماو تسي تونغ",
+        "incorrect_answers": [
+            "ليو شاوكي",
+            "دونغ بيوو",
+            "لي شيانيان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو اسم أول مستوطنة إنجليزية دائمة في أمريكا؟",
+        "correct_answer": "جيمستاون",
+        "incorrect_answers": [
+            "نيويورك",
+            "سانت جونز",
+            "بليموث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من الملوك الآشوريين التاليين لم يحكم خلال الإمبراطورية الآشورية الحديثة؟",
+        "correct_answer": "شمشي أداد الثالث",
+        "incorrect_answers": [
+            "شلمنصر الخامس",
+            "آسرحدون",
+            "آشور ناصربال الثاني"
+        ]
+    },
+    {
+        "type": "hard",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "خلال حرب الوردتين (1455 - 1487)، من هو الرجل الإنجليزي الذي لُقب بـ \"صانع الملوك\"؟",
+        "correct_answer": "ريتشارد نيفيل",
+        "incorrect_answers": [
+            "ريتشارد الثالث",
+            "هنري الخامس",
+            "توماس وارويك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي دولة ولد جوزيف ستالين؟",
+        "correct_answer": "جورجيا",
+        "incorrect_answers": [
+            "روسيا",
+            "ألمانيا",
+            "بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أين ومتى صُنع أول صندوق كرتوني للاستخدام الصناعي？",
+        "correct_answer": "إنجلترا، 1817",
+        "incorrect_answers": [
+            "الولايات المتحدة، 1817",
+            "إنجلترا، 1917",
+            "الولايات المتحدة، 1917"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام تم توثيق آخر حالة طبيعية لمرض الجدري؟",
+        "correct_answer": "1977",
+        "incorrect_answers": [
+            "1982",
+            "1980",
+            "1990"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "متى تأسست شركة جوجل؟",
+        "correct_answer": "4 سبتمبر 1998",
+        "incorrect_answers": [
+            "9 أكتوبر 1997",
+            "12 ديسمبر 1989",
+            "7 فبراير 2000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من الدول التالية كانت الأولى في إرسال جسم ما إلى الفضاء؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "روسيا",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي مما يلي لم يكن من ضمن ضربات جوزيف ستالين العشر خلال الحرب العالمية الثانية؟",
+        "correct_answer": "هجوم فيستولا - الأودر",
+        "incorrect_answers": [
+            "هجوم شبه جزيرة القرم",
+            "هجوم لينينغراد - نوفغورود",
+            "عملية باجراتيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان أول مستكشف يبحر إلى أمريكا الشمالية؟",
+        "correct_answer": "ليف إريكسون",
+        "incorrect_answers": [
+            "كريستوفر كولومبوس",
+            "أميريغو فيسبوتشي",
+            "فرديناند ماجلان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ماذا أطلق الفايكنج على مستعمرتهم قصيرة العمر في كندا الحالية؟",
+        "correct_answer": "فينلاند",
+        "incorrect_answers": [
+            "جزر فارو",
+            "هالوغالاند",
+            "سكونه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي دولة هاجمت سفينة يو إس إس ليبرتي في 8 يونيو 1967‏؟",
+        "correct_answer": "إسرائيل",
+        "incorrect_answers": [
+            "سوريا",
+            "المملكة العربية السعودية",
+            "إيران"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام وقعت معركة فردان؟",
+        "correct_answer": "1916",
+        "incorrect_answers": [
+            "1917",
+            "1915",
+            "1918"
+        ]
+    }
+]

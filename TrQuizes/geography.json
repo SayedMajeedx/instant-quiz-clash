@@ -1,0 +1,4460 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو الاسم الذي كان يُطلق تاريخياً على المدينة التركية المعروفة حالياً بإسطنبول؟",
+        "correct_answer": "القسطنطينية",
+        "incorrect_answers": [
+            "هودافينديغار",
+            "سوغوت",
+            "أدريانوبل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول هي الأصغر من حيث عدد السكان؟",
+        "correct_answer": "النرويج",
+        "incorrect_answers": [
+            "سلوفاكيا",
+            "فنلندا",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي المدينة البولندية التي يعرفها الألمان باسم دانزيغ؟",
+        "correct_answer": "غدانسك",
+        "incorrect_answers": [
+            "وارسو",
+            "زاكوباني",
+            "بوزنان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تسبق إسرائيل نيويورك بـ 7 ساعات زمنية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "سان مارينو هي الدولة الوحيدة المحاطة بالكامل بدولة أخرى.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تورونتو هي عاصمة دولة كندا الواقعة في أمريكا الشمالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تفوق أستراليا مساحةً؟",
+        "correct_answer": "5",
+        "incorrect_answers": [
+            "4",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من لغات الإنويت التالية كانت الأولى في استخدام نظام كتابة فريد لا يعتمد على الأبجدية اللاتينية؟",
+        "correct_answer": "الإنوكتيتوتية",
+        "incorrect_answers": [
+            "الإنوينّاكتونية",
+            "الغرينلاندية",
+            "الإنوبياتية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو اسم النشيد الوطني الكندي؟",
+        "correct_answer": "يا كندا",
+        "incorrect_answers": [
+            "يا أيتها القيقب الحمراء",
+            "الراية المزينة بأوراق الشجر",
+            "مارش إسقاط القرص"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "حركة المرور في اليابان تكون على الجانب الأيسر من الطريق.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "تقع بلدة لانفايربولغوينغيلغوغيريتشويرندروبولانتيسيليوغوغوغوتش (Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch) في أي جزيرة ويلزية؟",
+        "correct_answer": "أنجلسي",
+        "incorrect_answers": [
+            "باري",
+            "باردسي",
+            "كالدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الرسمية في ليختنشتاين؟",
+        "correct_answer": "الألمانية",
+        "incorrect_answers": [
+            "الفرنسية",
+            "الإنجليزية",
+            "الإيطالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كل اللغات التالية تُصنف ضمن اللغات الفنلندية الأوغرية ما عدا:",
+        "correct_answer": "السامودية",
+        "incorrect_answers": [
+            "المجرية",
+            "الفنلندية",
+            "الإستونية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع المنطقة المعروفة باسم مثلث برمودا؟",
+        "correct_answer": "شمال المحيط الأطلسي، بين فلوريدا وبورتوريكو",
+        "incorrect_answers": [
+            "شمال المحيط الهادئ، بين اليابان والولايات المتحدة",
+            "في البحر الكاريبي",
+            "جنوب المحيط الهادئ، بعيداً عن تشيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الأوبلاستات (المحافظات) الروسية التالية تشترك في الحدود مع بولندا؟",
+        "correct_answer": "كالينينغراد",
+        "incorrect_answers": [
+            "سامارا",
+            "نيجني نوفغورود",
+            "أومسك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يمكنك السير مشياً على الأقدام من النرويج إلى كوريا الشمالية عبر المرور بروسيا فقط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة في ولاية تكساس تُلقب بـ \"الوردة الصفراء لتكساس\"؟",
+        "correct_answer": "أماريلو",
+        "incorrect_answers": [
+            "كوربوس كريستي",
+            "فريسكو",
+            "هيوستن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه المدن تقع على خط طول 4 درجات شرقاً؟",
+        "correct_answer": "أمستردام",
+        "incorrect_answers": [
+            "ريو دي جانيرو",
+            "تورونتو",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي مدينة تقع جامعة هارفارد؟",
+        "correct_answer": "كامبريدج",
+        "incorrect_answers": [
+            "بروفيدنس",
+            "نيويورك",
+            "واشنطن العاصمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع سلسلة جبال هونوا (Hunua Ranges)؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "نيبال",
+            "الصين",
+            "المكسيك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في مقاطعة ألبرتا الكندية، تقع مدينة كالغاري في أقصى الشمال أكثر من مدينة إدمونتون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أعلى جبل في العالم؟",
+        "correct_answer": "جبل إيفرست",
+        "incorrect_answers": [
+            "جبل غودوين أوستن",
+            "كانغشينجونغا",
+            "أنابورا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "توجد مدينة تسمى روما في كل قارة على وجه الأرض.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر مدينة في كندا؟",
+        "correct_answer": "تورونتو",
+        "incorrect_answers": [
+            "مونتريال",
+            "فانكوفر",
+            "أوتاوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليست صفيحة تكتونية حقيقية؟",
+        "correct_answer": "صفيحة المحيط الأطلسي",
+        "incorrect_answers": [
+            "صفيحة أمريكا الشمالية",
+            "الصفيحة الأوراسية",
+            "صفيحة نازكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع قلعة مارلبورو (Fort Marlborough)؟",
+        "correct_answer": "بنغكولو",
+        "incorrect_answers": [
+            "سنغافورة",
+            "لندن",
+            "دوفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول في العالم تقريباً؟",
+        "correct_answer": "200",
+        "incorrect_answers": [
+            "100",
+            "300",
+            "500"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة تمتلك المطار الأكثر ازدحاماً في العالم؟",
+        "correct_answer": "أتلانتا، جورجيا، الولايات المتحدة الأمريكية",
+        "incorrect_answers": [
+            "لندن، إنجلترا",
+            "شيكاغو، إلينوي، الولايات المتحدة الأمريكية",
+            "طوكيو، اليابان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي حوض يصب نهر الأردن؟",
+        "correct_answer": "البحر الميت",
+        "incorrect_answers": [
+            "بحر آرال",
+            "بحر قزوين",
+            "بحر سالتون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "عاصمة إندونيسيا هي بالي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في عام 2012، كم كان عدد سكان دولة \"ليختنشتاين\" الصغيرة المتحدثة بالألمانية في وسط أوروبا؟",
+        "correct_answer": "36,600",
+        "incorrect_answers": [
+            "2,400",
+            "90,000",
+            "323,400"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر بحيرة مياه عذبة في العالم من حيث الحجم؟",
+        "correct_answer": "بحيرة بايكال",
+        "incorrect_answers": [
+            "بحيرة سوبيريور",
+            "بحيرة هورون",
+            "بحيرة ميشيغان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة أوروبية تمتلك أطول شبكة قنوات مائية في العالم؟",
+        "correct_answer": "برمنغهام",
+        "incorrect_answers": [
+            "البندقية (فينيسيا)",
+            "أمستردام",
+            "برلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مما يلي هو أطول نهر في أوروبا؟",
+        "correct_answer": "نهر الفولغا",
+        "incorrect_answers": [
+            "نهر الدانوب",
+            "نهر الأورال",
+            "نهر الدنيبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست جزءاً من إقليم إسكندنافيا؟",
+        "correct_answer": "فنلندا",
+        "incorrect_answers": [
+            "النرويج",
+            "السويد",
+            "الدنمارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الأفريقية التي تعد اللغة البرتغالية لغتها الرسمية؟",
+        "correct_answer": "موزمبيق",
+        "incorrect_answers": [
+            "بوتسوانا",
+            "الغابون",
+            "توغو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ميامي هي أكبر مدينة في ولاية فلوريدا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الإمارة الصغيرة التي تقع بين إسبانيا وفرنسا؟",
+        "correct_answer": "أندورا",
+        "incorrect_answers": [
+            "ليختنشتاين",
+            "موناكو",
+            "سان مارينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة صغيرة تقع بين حدود فرنسا وإسبانيا؟",
+        "correct_answer": "أندورا",
+        "incorrect_answers": [
+            "سان مارينو",
+            "الفاتيكان",
+            "ليختنشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي ثاني أكبر دولة في العالم من حيث المساحة؟",
+        "correct_answer": "كندا",
+        "incorrect_answers": [
+            "روسيا",
+            "الصين",
+            "الولايات المتحدة الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الولايات المتحدة الأمريكية؟",
+        "correct_answer": "واشنطن العاصمة",
+        "incorrect_answers": [
+            "سياتل",
+            "ألباني",
+            "لوس أنجلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من أحياء مدينة نيويورك يقع في أقصى الشمال؟",
+        "correct_answer": "برونكس",
+        "incorrect_answers": [
+            "كوينز",
+            "بروكلين",
+            "مانهاتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "إلى ماذا يرمز الحرف \"C\" في اسم العاصمة الأمريكية واشنطن (Washington, D.C)؟",
+        "correct_answer": "كولومبيا",
+        "incorrect_answers": [
+            "كاليدونيا",
+            "كورنثيا",
+            "سيتي (مدينة)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم يبلغ ارتفاع مبنى مركز التجارة العالمي الواحد (One World Trade Center) في مدينة نيويورك؟",
+        "correct_answer": "1,776 قدم",
+        "incorrect_answers": [
+            "1,888 قدم",
+            "1,225 قدم",
+            "1,960 قدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من المعالم الجغرافية التالية عبارة عن شعاب مرجانية دائرية الشكل أو جزيرة أو سلسلة من الجزر الصغيرة؟",
+        "correct_answer": "جزيرة شعب مرجانية (أطول)",
+        "incorrect_answers": [
+            "شبه جزيرة",
+            "برزخ",
+            "دلتا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "بين أي دولتين تقع أطول حدود مشتركة في العالم؟",
+        "correct_answer": "كندا والولايات المتحدة",
+        "incorrect_answers": [
+            "تشيلي والأرجنتين",
+            "روسيا والصين",
+            "الهند وباكستان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أول متنزه وطني تم إنشاؤه في الولايات المتحدة؟",
+        "correct_answer": "يلوستون",
+        "incorrect_answers": [
+            "سيكويا",
+            "يوسيميتي",
+            "روكي ماونتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي معلم سياحي في أمريكا الشمالية تخدمه شركة الرحلات \"Maid of the Mist\" (خادمة الضباب)؟",
+        "correct_answer": "شلالات نياجرا",
+        "incorrect_answers": [
+            "ويسلر، كولومبيا البريطانية",
+            "عالم ديزني",
+            "متنزه يوسيميتي الوطني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي مدينة كندية يقع نُصب \"النيكل الكبير\" (Big Nickel)؟",
+        "correct_answer": "سودبوري، أونتاريو",
+        "incorrect_answers": [
+            "كالغاري، ألبرتا",
+            "هاليفاكس، نوفا سكوشا",
+            "فيكتوريا، كولومبيا البريطانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع دولة أنغولا؟",
+        "correct_answer": "أفريقيا",
+        "incorrect_answers": [
+            "أمريكا الجنوبية",
+            "أوروبا",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في العالم؟",
+        "correct_answer": "الفاتيكان",
+        "incorrect_answers": [
+            "ليسوتو",
+            "مدينة موناكو",
+            "تيتانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة ألمانية تقع على نهر إيسار؟",
+        "correct_answer": "ميونخ",
+        "incorrect_answers": [
+            "برلين",
+            "هامبورغ",
+            "دورتموند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عاصمة ولاية أوهايو الأمريكية هي مدينة تشيليكوث.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ماذا يُطلق على الكتلة الأرضية لتركيا الحديثة؟",
+        "correct_answer": "الأناضول",
+        "incorrect_answers": [
+            "برزخ أوتوما",
+            "أوتوما",
+            "برزخ الأناضول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تتميز بوجود ورقة قيقب على علمها؟",
+        "correct_answer": "كندا",
+        "incorrect_answers": [
+            "المكسيك",
+            "البرازيل",
+            "الهند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية تعتبر جزيرة؟",
+        "correct_answer": "قبرص",
+        "incorrect_answers": [
+            "أذربيجان",
+            "السلفادور",
+            "جيبوتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة إنجليزية يقع نصب ستونهنج (Stonehenge)؟",
+        "correct_answer": "ويلتشر",
+        "incorrect_answers": [
+            "سومرست",
+            "كامبريا",
+            "هيرفوردشير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المقاطعات في هولندا؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "14",
+            "10",
+            "13"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو المركز الإداري وأكبر مستوطنة في أرخبيل سفالبارد النرويجي؟",
+        "correct_answer": "لونغياربين",
+        "incorrect_answers": [
+            "سفيغروفا",
+            "ني آليسوند",
+            "بارنتسبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الهند؟",
+        "correct_answer": "نيودلهي",
+        "incorrect_answers": [
+            "بكين",
+            "مونتريال",
+            "تيثي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو اسم الدولة السابقة التي خلفتها دول مثل صربيا وكرواتيا وسلوفينيا؟",
+        "correct_answer": "يوغوسلافيا",
+        "incorrect_answers": [
+            "تشيكوسلوفاكيا",
+            "أبخازيا",
+            "أوسيتيا الجنوبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة البرازيل؟",
+        "correct_answer": "برازيليا",
+        "incorrect_answers": [
+            "ريو دي جانيرو",
+            "ساو باولو",
+            "كوريتيبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليست جزيرة تابعة للفلبين؟",
+        "correct_answer": "جاوة",
+        "incorrect_answers": [
+            "لوزون",
+            "مينداناو",
+            "بالاوان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "تمتلك سويسرا أربع لغات وطنية، والإنجليزية واحدة منها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية تكساس الأمريكية؟",
+        "correct_answer": "أوستن",
+        "incorrect_answers": [
+            "دالاس",
+            "سانتا في",
+            "هيوستن"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "غرينلاند مغطاة بالعشب وآيسلندا مغطاة بالجليد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "غوتنبرغ هي عاصمة السويد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الأفريقية تدرج اللغة الإسبانية كلغة رسمية لها؟",
+        "correct_answer": "غينيا الاستوائية",
+        "incorrect_answers": [
+            "غينيا",
+            "الكاميرون",
+            "أنغولا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة إنجليزية تقع جامعة شرق أنجليا؟",
+        "correct_answer": "نورفولك",
+        "incorrect_answers": [
+            "سوفولك",
+            "إسكس",
+            "كامبريدجشاير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع سلسلة جبال الأنديز؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "أوروبا",
+            "آسيا",
+            "أفريقيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية واشنطن في الولايات المتحدة؟",
+        "correct_answer": "أولمبيا",
+        "incorrect_answers": [
+            "واشنطن العاصمة",
+            "سياتل",
+            "يوكون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة تحمل الرمز الاختصاري \"CH\"؟",
+        "correct_answer": "سويسرا",
+        "incorrect_answers": [
+            "الصين",
+            "كندا",
+            "لا توجد دولة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سلوفاكيا؟",
+        "correct_answer": "براتيسلافا",
+        "incorrect_answers": [
+            "صوفيا",
+            "ليوبليانا",
+            "سراييفو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو اسم المنطقة التي تربط بين باكستان والهند والصين وتخضع لسيادة متنازع عليها؟",
+        "correct_answer": "كشمير",
+        "incorrect_answers": [
+            "أندورا",
+            "جبل طارق",
+            "كوين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "واغادوغو هي عاصمة أي دولة أفريقية؟",
+        "correct_answer": "بوركينا فاسو",
+        "incorrect_answers": [
+            "جمهورية أفريقيا الوسطى",
+            "السنغال",
+            "زامبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية تقع ضمن منطقة اليورو ولكنها خارج منطقة شنغن؟",
+        "correct_answer": "قبرص",
+        "incorrect_answers": [
+            "مالطا",
+            "اليونان",
+            "البرتغال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو لون الدائرة الموجودة على علم اليابان؟",
+        "correct_answer": "أحمر",
+        "incorrect_answers": [
+            "أبيض",
+            "أصفر",
+            "أسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الأماكن يقع في كورنوال؟",
+        "correct_answer": "برشلونة",
+        "incorrect_answers": [
+            "مدريد",
+            "أليكانتي",
+            "لشبونة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يمتد الطريق 66 في الولايات المتحدة عبر البر الرئيسي لأمريكا بالكامل، من كاليفورنيا إلى نيويورك.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة أوروبية تقع جزيرة غوتلاند؟",
+        "correct_answer": "السويد",
+        "incorrect_answers": [
+            "الدانمرك",
+            "النرويج",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "حتى عام 1939، كانت لاوس تسمى سيام.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المناطق الزمنية في روسيا؟",
+        "correct_answer": "11",
+        "incorrect_answers": [
+            "8",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة مقاطعة كولومبيا البريطانية في كندا؟",
+        "correct_answer": "فيكتوريا",
+        "incorrect_answers": [
+            "فانكوفر",
+            "هوب",
+            "كيلونا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين يقع المقر الرئيسي لسلسلة مطاعم الوجبات السريعة \"باندا إكسبريس\"؟",
+        "correct_answer": "روزميد، كاليفورنيا",
+        "incorrect_answers": [
+            "ساكرامنتو، كاليفورنيا",
+            "فريزنو، كاليفورنيا",
+            "سان دييغو، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من المدن التالية هي عاصمة لاتفيا؟",
+        "correct_answer": "ريغا",
+        "incorrect_answers": [
+            "مينسك",
+            "تالين",
+            "فيلنيوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة إسلامية في العالم؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "باكستان",
+            "المملكة العربية السعودية",
+            "إيران"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تمتلك النرويج مساحة برية أكبر من السويد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تسمانيا هي ولاية جزيرية تابعة لأستراليا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع جزيرة بيكيني الحلقية؟",
+        "correct_answer": "جزر مارشال",
+        "incorrect_answers": [
+            "فيجي",
+            "جزر الكريسماس",
+            "جزر البهاما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي محيط تقع جزيرة ريونيون؟",
+        "correct_answer": "المحيط الهندي",
+        "incorrect_answers": [
+            "المحيط الأطلسي",
+            "جنوب المحيط الهادئ",
+            "شمال المحيط الهادئ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "توجد جزيرة تسمى \"جاوة\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "توجد 47 محافظة في اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": " ما هي الدولة الوحيدة التي تحد كلاً من الأوروغواي وفنزويلا؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "المكسيك",
+            "تشيلي",
+            "بنما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية الوحيدة التي تقع بالكامل ضمن منطقة جبال الأبالاش؟",
+        "correct_answer": "فرجينيا الغربية",
+        "incorrect_answers": [
+            "بنسلفانيا",
+            "ألاباما",
+            "كنتاكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة التي تمتلك ثلاث عواصم؟",
+        "correct_answer": "جنوب أفريقيا",
+        "incorrect_answers": [
+            "الصومال",
+            "الصين",
+            "المملكة المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو أعلى جبل في كندا؟",
+        "correct_answer": "جبل لوغان",
+        "incorrect_answers": [
+            "جبل تريمبلانت",
+            "جبل ويسلر",
+            "الجبل الأزرق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي المدينة الروسية المعروفة اليوم باسم كونيغسبرغ (عاصمة بروسيا الشرقية سابقاً)؟",
+        "correct_answer": "كالينينغراد",
+        "incorrect_answers": [
+            "قازان",
+            "كورسك",
+            "كراسنودار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر مدينة في المغرب؟",
+        "correct_answer": "الدار البيضاء",
+        "incorrect_answers": [
+            "الرباط",
+            "فاس",
+            "سلا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة جزر برمودا؟",
+        "correct_answer": "هاميلتون",
+        "incorrect_answers": [
+            "سانتو دومينغو",
+            "سان خوان",
+            "هافانا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو الحرف الخامس عشر في الأبجدية اليونانية؟",
+        "correct_answer": "أوميكرون (Ο)",
+        "incorrect_answers": [
+            "سيغما (Σ)",
+            "باي (Π)",
+            "نيو (Ν)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة هارلم؟",
+        "correct_answer": "هولندا",
+        "incorrect_answers": [
+            "ألمانيا",
+            "الولايات المتحدة",
+            "سويسرا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ألاسكا هي أكبر ولاية في الولايات المتحدة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو الشيء المميز في بحيرة تيتيكاكا؟",
+        "correct_answer": "أعلى بحيرة قابلة للملاحة في العالم",
+        "incorrect_answers": [
+            "أطول بحيرة في العالم",
+            "أعمق بحيرة في العالم",
+            "تظل متجمدة طوال العام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مع كم دولة تشترك الولايات المتحدة في حدود برية؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "فيتنام هي الدولة الوحيدة في العالم التي يبدأ اسمها بحرف الـ V.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع مدينة ريو دي جانيرو؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "بيرو",
+            "تشيلي",
+            "فنزويلا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو اللقب المميز لولاية ديلاوير الأمريكية؟",
+        "correct_answer": "الولاية الأولى",
+        "incorrect_answers": [
+            "الولاية الخمسون",
+            "الولاية الثانية",
+            "الولاية السادسة عشرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة البتراء الأثرية؟",
+        "correct_answer": "الأردن",
+        "incorrect_answers": [
+            "مصر",
+            "إسرائيل",
+            "إيطاليا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أستراليا أكبر من غرينلاند في المساحة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي الكلمة الفنلندية لاسم \"فنلندا\"؟",
+        "correct_answer": "سومي",
+        "incorrect_answers": [
+            "إيستي",
+            "ماجيارورسزاغ",
+            "سويري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي ولاية أمريكية تقع مدينة فرانكنموث الملقبة بـ \"بافاريا الصغيرة\"؟",
+        "correct_answer": "ميشيغان",
+        "incorrect_answers": [
+            "بنسلفانيا",
+            "كنتاكي",
+            "فرجينيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يحتوي علم جنوب أفريقيا على 7 ألوان.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي بلد تقع بلدات بروجيليت وأرلون وأث؟",
+        "correct_answer": "بلجيكا",
+        "incorrect_answers": [
+            "أندورا",
+            "فرنسا",
+            "لوكسمبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي نهر تم بناء سد عليه لإنشاء بحيرة غاتون وقناة بنما؟",
+        "correct_answer": "نهر تشاغريس",
+        "incorrect_answers": [
+            "نهر تويرا",
+            "نهر تشوكوناكي",
+            "نهر تشيبو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "على حدود أي دولتين تقع جبال البرانس؟",
+        "correct_answer": "فرنسا وإسبانيا",
+        "incorrect_answers": [
+            "إيطاليا وسويسرا",
+            "النرويج والسويد",
+            "روسيا وأوكرانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بريدجتاون هي عاصمة أي دولة جزيرية في البحر الكاريبي؟",
+        "correct_answer": "باربادوس",
+        "incorrect_answers": [
+            "كوبا",
+            "جامايكا",
+            "دومينيكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بروم هي بلدة تقع في أي ولاية أسترالية؟",
+        "correct_answer": "أستراليا الغربية",
+        "incorrect_answers": [
+            "الإقليم الشمالي",
+            "أستراليا الجنوبية",
+            "تسمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تشكل المملكة المتحدة؟",
+        "correct_answer": "أربعة",
+        "incorrect_answers": [
+            "اثنتان",
+            "ثلاثة",
+            "واحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إندونيسيا؟",
+        "correct_answer": "جاكرتا",
+        "incorrect_answers": [
+            "باندونغ",
+            "ميدان",
+            "بالمبانغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر ولاية في الولايات المتحدة الأمريكية؟",
+        "correct_answer": "ألاسكا",
+        "incorrect_answers": [
+            "كاليفورنيا",
+            "تكساس",
+            "واشنطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "إلى أي جنسية تشير البادئة (Sino-) (كما في Sino-American)؟",
+        "correct_answer": "الصينية",
+        "incorrect_answers": [
+            "اليابانية",
+            "الروسية",
+            "الهندية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو اسم الدوقية الكبرى الوحيدة المتبقية في العالم؟",
+        "correct_answer": "لوكسمبورغ",
+        "incorrect_answers": [
+            "الجبل الأسود",
+            "ليختنشتاين",
+            "أندورا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة التي تضم أكبر عدد من السكان اليابانيين خارج اليابان؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الصين",
+            "روسيا",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما اسم مناطق الصيد الغنية سابقاً قبالة جزيرة نيوفاوندلاند الكندية؟",
+        "correct_answer": "الضفاف الكبرى",
+        "incorrect_answers": [
+            "الحاجز المرجاني العظيم",
+            "خندق ماريانا",
+            "خليج هدسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة المحاطة بالكامل بجنوب أفريقيا؟",
+        "correct_answer": "ليسوتو",
+        "incorrect_answers": [
+            "سوازيلاند",
+            "بوتسوانا",
+            "زيمبابوي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "جسد تمثال أبي الهول المصري مستوحى من أي حيوان؟",
+        "correct_answer": "الأسد",
+        "incorrect_answers": [
+            "الثور",
+            "الحصان",
+            "الكلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بيلاروسيا؟",
+        "correct_answer": "مينسك",
+        "incorrect_answers": [
+            "وارسو",
+            "كييف",
+            "فيلنيوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ليتوانيا؟",
+        "correct_answer": "فيلنيوس",
+        "incorrect_answers": [
+            "تالين",
+            "هلسنكي",
+            "ريغا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مدينة تُعرف باسم \"عاصمة الورد في العالم\"؟",
+        "correct_answer": "تايلر، تكساس",
+        "incorrect_answers": [
+            "سان دييجو، كاليفورنيا",
+            "ميامي، فلوريدا",
+            "أناهيم، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية التي تُلقب بـ \"الولاية الذهبية\"؟",
+        "correct_answer": "كاليفورنيا",
+        "incorrect_answers": [
+            "فلوريدا",
+            "نيومكسيكو",
+            "ألاسكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة جرينلاند؟",
+        "correct_answer": "نوك",
+        "incorrect_answers": [
+            "سيسيميوت",
+            "نارساك",
+            "مانيتسوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة كوريا الجنوبية؟",
+        "correct_answer": "سول",
+        "incorrect_answers": [
+            "بيونغ يانغ",
+            "دايغو",
+            "كيتاكيوشو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد الولايات الأمريكية التي تبدأ بحرف الـ K؟",
+        "correct_answer": "ولايتان",
+        "incorrect_answers": [
+            "ولاية واحدة",
+            "لا يوجد",
+            "ثلاث ولايات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس ولاية أو إقليماً أسترالياً؟",
+        "correct_answer": "ألبرتا",
+        "incorrect_answers": [
+            "نيو ساوث ويلز",
+            "فيكتوريا",
+            "كوينزلاند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع سلسلة جبال الألب؟",
+        "correct_answer": "أوروبا",
+        "incorrect_answers": [
+            "أمريكا الشمالية",
+            "آسيا",
+            "أفريقيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كولومبيا هي ثالث أكبر دولة (من حيث المساحة بالكيلومتر المربع) في أمريكا الجنوبية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة جامايكا؟",
+        "correct_answer": "كينغستون",
+        "incorrect_answers": [
+            "سان خوان",
+            "بورت أو برانس",
+            "بريدج تاون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سيشل؟",
+        "correct_answer": "فيكتوريا",
+        "incorrect_answers": [
+            "لواندا",
+            "نجامينا",
+            "طرابلس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية المعروفة أيضاً باسم \"ولاية النجمة الوحيدة\"؟",
+        "correct_answer": "تكساس",
+        "incorrect_answers": [
+            "ألاباما",
+            "تينيسي",
+            "كنتاكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المقاطعات في جمهورية أيرلندا؟",
+        "correct_answer": "26",
+        "incorrect_answers": [
+            "32",
+            "28",
+            "30"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أين توجد \"السلالم الإسبانية\"؟",
+        "correct_answer": "روما، إيطاليا",
+        "incorrect_answers": [
+            "برشلونة، إسبانيا",
+            "برلين، ألمانيا",
+            "لندن، إنجلترا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "مساحة سطح روسيا أكبر بقليل من مساحة سطح كوكب بلوتو القزم.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد الجزر التي تمتلكها الكويت؟",
+        "correct_answer": "9",
+        "incorrect_answers": [
+            "3",
+            "6",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الدنمارك؟",
+        "correct_answer": "كوبنهاجن",
+        "incorrect_answers": [
+            "آرهوس",
+            "أودنسه",
+            "ألبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الإكوادور؟",
+        "correct_answer": "كيتو",
+        "incorrect_answers": [
+            "بوغوتا",
+            "سانتياغو",
+            "سانتا في"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تُعتبر واشنطن العاصمة ولاية أمريكية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في أمريكا الجنوبية من حيث المساحة؟",
+        "correct_answer": "سورينام",
+        "incorrect_answers": [
+            "البرازيل",
+            "أوروغواي",
+            "شيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول المستقلة في قارة أمريكا الجنوبية؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "8",
+            "9",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر مقاطعة في كندا؟",
+        "correct_answer": "جزيرة الأمير إدوارد",
+        "incorrect_answers": [
+            "نيو برونزويك",
+            "نوفا سكوشا",
+            "يوكون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تمتلك جنوب أفريقيا أكثر من عاصمة واحدة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه المناطق الأفريقية لا تحد جمهورية الكونغو الديمقراطية مباشرة؟",
+        "correct_answer": "السودان",
+        "incorrect_answers": [
+            "جمهورية أفريقيا الوسطى",
+            "تنزانيا",
+            "زامبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة بغرب أفريقيا تقع مدينة تمبكتو التاريخية؟",
+        "correct_answer": "مالي",
+        "incorrect_answers": [
+            "السنغال",
+            "النيجر",
+            "بوركينا فاسو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أطول نهر في العالم؟",
+        "correct_answer": "نهر النيل",
+        "incorrect_answers": [
+            "نهر ميزوري",
+            "نهر الأمازون",
+            "نهر يانغتسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من عائلات اللغات التالية هي الأكثر جدلاً بين علماء اللغة الحديثين؟",
+        "correct_answer": "الألطية",
+        "incorrect_answers": [
+            "الصينية التبتية",
+            "الدرافيدية",
+            "الهندية الأوروبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة في أوقيانوسيا تُعرف بلغة الماوري باسم \"أوتياروا\"؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "أستراليا",
+            "جزر سليمان",
+            "كاليدونيا الجديدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في العالم؟",
+        "correct_answer": "الفاتيكان",
+        "incorrect_answers": [
+            "جزر المالديف",
+            "موناكو",
+            "مالطا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بين أي دولتين تقع بحيرة تيتيكاكا؟",
+        "correct_answer": "بيرو وبوليفيا",
+        "incorrect_answers": [
+            "كينيا وأوغندا",
+            "المكسيك والولايات المتحدة",
+            "الهند وبنغلاديش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تعتبر \"حبيسة مرتين\" (محاطة بالكامل بدول حبيسة أخرى)؟",
+        "correct_answer": "أوزبكستان",
+        "incorrect_answers": [
+            "سويسرا",
+            "بوليفيا",
+            "إثيوبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تشترك في الحدود مع بولندا؟",
+        "correct_answer": "ليتوانيا",
+        "incorrect_answers": [
+            "فرنسا",
+            "النرويج",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية الأكثر اكتظاظاً بالسكان؟",
+        "correct_answer": "كاليفورنيا",
+        "incorrect_answers": [
+            "نيويورك",
+            "تكساس",
+            "فلوريدا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "يشير الاختصار الساخر \"PIIGS\" إلى أي من الدول الأوروبية التالية وأوضاعها الاقتصادية؟",
+        "correct_answer": "البرتغال، أيرلندا، إيطاليا، اليونان، إسبانيا",
+        "incorrect_answers": [
+            "بولندا، أيسلندا، إيطاليا، اليونان، صربيا",
+            "بولندا، أيسلندا، إيطاليا، جرينلاند، إسبانيا",
+            "البرتغال، أيسلندا، أيرلندا، اليونان، صربيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أطول نهر في أوروبا؟",
+        "correct_answer": "نهر الفولغا",
+        "incorrect_answers": [
+            "نهر الدانوب",
+            "نهر الراين",
+            "نهر التايمز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تطالب بملكية القارة القطبية الجنوبية (أنتاركتيكا)؟",
+        "correct_answer": "لا أحد، ولكن هناك مطالبات.",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "الأمم المتحدة",
+            "أستراليا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عنوان فيلم عام 1969 \"كراكاتوا، شرق جاوة\" غير صحيح، لأن كراكاتوا تقع في الواقع غرب جاوة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع إريتريا، التي أصبحت العضو رقم 182 في الأمم المتحدة عام 1993؟",
+        "correct_answer": "أفريقيا",
+        "incorrect_answers": [
+            "أوروبا",
+            "آسيا",
+            "أمريكا الجنوبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو البر (البرزخ) الذي يربط بين أمريكا الشمالية وأمريكا الجنوبية؟",
+        "correct_answer": "برزخ بنما",
+        "incorrect_answers": [
+            "برزخ السويس",
+            "جبال الأورال",
+            "أسترالاسيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مدينة نيو هيفن هي عاصمة ولاية كونيتيكت في الولايات المتحدة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي ثاني أكبر مدينة في روسيا؟",
+        "correct_answer": "سانت بطرسبرغ",
+        "incorrect_answers": [
+            "مينسك",
+            "نيجني نوفغورود",
+            "فلاديفوستوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست دولة عضواً في الأمم المتحدة؟",
+        "correct_answer": "نييوي",
+        "incorrect_answers": [
+            "توفالو",
+            "جنوب السودان",
+            "الجبل الأسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول المستقلة الأعضاء في الأمم المتحدة؟",
+        "correct_answer": "195",
+        "incorrect_answers": [
+            "201",
+            "153",
+            "178"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية نيويورك الأمريكية؟",
+        "correct_answer": "ألباني",
+        "incorrect_answers": [
+            "بافالو",
+            "نيويورك",
+            "روتشستر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس مدينة في الهند؟",
+        "correct_answer": "إسلام آباد",
+        "incorrect_answers": [
+            "حيدر آباد",
+            "أحمد آباد",
+            "غازي آباد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة ذات الأغلبية المسلمة الأكثر اكتظاظاً بالسكان في عام 2010؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "المملكة العربية السعودية",
+            "إيران",
+            "السودان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي قارة تُعتبر الأكبر والأكثر اكتظاظاً بالسكان في العالم؟",
+        "correct_answer": "آسيا",
+        "incorrect_answers": [
+            "أفريقيا",
+            "أوروبا",
+            "أمريكا الشمالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو الاسم الأصلي لمدينة هو تشي منه؟",
+        "correct_answer": "سايغون",
+        "incorrect_answers": [
+            "هانوي",
+            "دار السلام",
+            "أنغكور وات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي لاوس؟",
+        "correct_answer": "دولة",
+        "incorrect_answers": [
+            "منطقة",
+            "نهر",
+            "مدينة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تقع صحراء سونوران في شرق أفريقيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الولايات المتحدة؟",
+        "correct_answer": "واشنطن العاصمة",
+        "incorrect_answers": [
+            "لوس أنجلوس، كاليفورنيا",
+            "مدينة نيويورك، نيويورك",
+            "هيوستن، تكساس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو المتحف الوطني الذي ستجده في كوبرستاون، نيويورك؟",
+        "correct_answer": "القاعة الوطنية لمشاهير البيسبول",
+        "incorrect_answers": [
+            "متحف المتروبوليتان للفنون",
+            "القاعة الوطنية لمشاهير الألعاب",
+            "متحف الفن الحديث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية داكوتا الجنوبية؟",
+        "correct_answer": "بيير",
+        "incorrect_answers": [
+            "سيوكس فالز",
+            "رابيد سيتي",
+            "واترتاون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس مدينة في المملكة العربية السعودية؟",
+        "correct_answer": "دبي",
+        "incorrect_answers": [
+            "الرياض",
+            "مكة",
+            "المدينة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست في أفريقيا؟",
+        "correct_answer": "غيانا",
+        "incorrect_answers": [
+            "السنغال",
+            "ليبيريا",
+            "الصومال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الأولى عالمياً من حيث عدد البراكين النشطة تاريخياً؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "اليابان",
+            "الولايات المتحدة الأمريكية",
+            "الهند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم منطقة زمنية توجد في الصين؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "3",
+            "4",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي مدينة أوروبية تشتهر بلقب \"مدينة النور\"؟",
+        "correct_answer": "باريس",
+        "incorrect_answers": [
+            "روما",
+            "لندن",
+            "مدريد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما اسم إحدى اللغات الآرامية الحديثة التي يتحدث بها السكان اليهود من شمال غرب العراق؟",
+        "correct_answer": "ليشانا ديني",
+        "incorrect_answers": [
+            "هولاولا",
+            "ليشان ديدان",
+            "الآرامية الكلدانية الحديثة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بنغلاديش؟",
+        "correct_answer": "دكا",
+        "incorrect_answers": [
+            "خولنا",
+            "لندن",
+            "لاهور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الجزر الأربع هي الأكبر مساحة؟",
+        "correct_answer": "بورنيو",
+        "incorrect_answers": [
+            "بريطانيا العظمى",
+            "كوبا",
+            "مدغشقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بيرو؟",
+        "correct_answer": "ليما",
+        "incorrect_answers": [
+            "سانتياغو",
+            "مونتيفيديو",
+            "بوينس آيرس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كل الدول التالية لديها مطالبات رسمية بأراضٍ في القارة القطبية الجنوبية (أنتاركتيكا) باستثناء:",
+        "correct_answer": "الولايات المتحدة",
+        "incorrect_answers": [
+            "أستراليا",
+            "تشيلي",
+            "النرويج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية لا تعترف بأرمينيا كدولة مستقلة؟",
+        "correct_answer": "باكستان",
+        "incorrect_answers": [
+            "إيران",
+            "تركيا",
+            "أذربيجان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "المجر (Hungary) هي الدولة الوحيدة في العالم التي يبدأ اسمها باللغة الإنجليزية بحرف H.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع دولة غيانا؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "أفريقيا",
+            "أمريكا الشمالية",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي محيط يحد الساحل الغربي للولايات المتحدة؟",
+        "correct_answer": "المحيط الهادئ",
+        "incorrect_answers": [
+            "المحيط الأطلسي",
+            "المحيط الهندي",
+            "المحيط المتجمد الشمالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما الحدث الذي أدى إلى إضافة تاج إلى علم ليختنشتاين؟",
+        "correct_answer": "الألعاب الأولمبية لعام 1936",
+        "incorrect_answers": [
+            "تتويج الأمير يوهان الأول جوزيف عام 1805",
+            "مرسوم تشارلز السادس عام 1719",
+            "توقيع دستور ليختنشتاين لعام 1862"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي السنة المكتوبة على علم ولاية ويسكونسن الأمريكية؟",
+        "correct_answer": "1848",
+        "incorrect_answers": [
+            "1634",
+            "1783",
+            "1901"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تحد دولة بليز؟",
+        "correct_answer": "غواتيمالا",
+        "incorrect_answers": [
+            "لاوس",
+            "بيرو",
+            "كينيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "لا توجد صحاري في أوروبا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد المحطات في خط سنترال (الخط المركزي) في مترو أنفاق لندن؟",
+        "correct_answer": "49",
+        "incorrect_answers": [
+            "51",
+            "43",
+            "47"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الجزرية تقع في منطقة الكاريبي؟",
+        "correct_answer": "باربادوس",
+        "incorrect_answers": [
+            "فيجي",
+            "جزر المالديف",
+            "سيشل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تحد قرغيزستان؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية ويسكونسن الأمريكية؟",
+        "correct_answer": "ماديسون",
+        "incorrect_answers": [
+            "ميلووكي",
+            "ويسكونسن ديلز",
+            "غرين باي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الجزر الواقعة في البحر الأبيض المتوسط تخضع للسيادة الفرنسية؟",
+        "correct_answer": "كورسيكا",
+        "incorrect_answers": [
+            "مايوركا",
+            "سردينيا",
+            "مالطا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي المدينة الأكثر اكتظاظاً بالسكان في الأمريكتين في عام 2015؟",
+        "correct_answer": "ساو باولو",
+        "incorrect_answers": [
+            "نيويورك",
+            "مكسيكو سيتي",
+            "لوس أنجلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي جزء من ويلز تقع قرية لانفايربولغوينغيلغوغيريتشويرندروبوليلانتيسيليوغوغوغوتش؟",
+        "correct_answer": "أنغلزي",
+        "incorrect_answers": [
+            "بيمبروكشاير",
+            "ريكسهام",
+            "بريدجند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي بلد تقع تالين؟",
+        "correct_answer": "إستونيا",
+        "incorrect_answers": [
+            "فنلندا",
+            "السويد",
+            "بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية يتميز علمها بوجود أسد أصفر يحمل سيفاً على خلفية حمراء داكنة؟",
+        "correct_answer": "سريلانكا",
+        "incorrect_answers": [
+            "كيريباتي",
+            "إسكتلندا",
+            "بوتان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الطريقة الصحيحة لكتابة اسم عاصمة المجر باللغة الإنجليزية؟",
+        "correct_answer": "Budapest",
+        "incorrect_answers": [
+            "Boodapest",
+            "Bhudapest",
+            "Budapast"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "سانتوريني هي جزيرة تابعة لأي دولة أوروبية؟",
+        "correct_answer": "اليونان",
+        "incorrect_answers": [
+            "إيطاليا",
+            "إسبانيا",
+            "تركيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد الولايات الاتحادية في ألمانيا؟",
+        "correct_answer": "16",
+        "incorrect_answers": [
+            "13",
+            "32",
+            "25"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين يقع نهر الفولغا؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "بلغاريا",
+            "الهند",
+            "السويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي جزيرة في جزر الكناري كانت مسرحاً لواحدة من أسوأ كوارث الطيران في التاريخ بعد تصادم طائرتي جامبو؟",
+        "correct_answer": "تينيريفي",
+        "incorrect_answers": [
+            "فورتيفنتورا",
+            "غران كناريا",
+            "ماوي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "لا توجد مطارات في ليختنشتاين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الدول العربية التالية لا يحتوي علمها على ألوان الوحدة العربية فقط؟",
+        "correct_answer": "قطر",
+        "incorrect_answers": [
+            "الكويت",
+            "الإمارات العربية المتحدة",
+            "الأردن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة في العالم؟",
+        "correct_answer": "الاتحاد الروسي",
+        "incorrect_answers": [
+            "الصين",
+            "كندا",
+            "البرازيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في استطلاع مؤشر السلام العالمي لعام 2016، من بين 163 دولة، ما كان ترتيب الولايات المتحدة الأمريكية؟",
+        "correct_answer": "103",
+        "incorrect_answers": [
+            "10",
+            "59",
+            "79"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما الاسم السابق لدولة زيمبابوي الأفريقية؟",
+        "correct_answer": "روديسيا",
+        "incorrect_answers": [
+            "زامبيا",
+            "موزمبيق",
+            "بولاوايو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين يقع سور هادريان؟",
+        "correct_answer": "كارلايل، إنجلترا",
+        "incorrect_answers": [
+            "روما، إيطاليا",
+            "الإسكندرية، مصر",
+            "دبلن، أيرلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مدينة يقع جيش التراكوتا (جيش الطين)؟",
+        "correct_answer": "شيان",
+        "incorrect_answers": [
+            "بكين",
+            "شنغهاي",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر مدينة والعاصمة التجارية لسريلانكا؟",
+        "correct_answer": "كولومبو",
+        "incorrect_answers": [
+            "موراتوا",
+            "نيغومبو",
+            "كاندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "يتميز الشعار الموجود على علم جمهورية طاجيكستان بشروق الشمس فوق الجبال تحت أي رمز؟",
+        "correct_answer": "تاج",
+        "incorrect_answers": [
+            "طائر",
+            "منجل",
+            "شجرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد النجوم الموجودة على علم نيوزيلندا؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "5",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو مسار التسلق الأكثر شيوعاً لثاني أعلى جبل في العالم (جبل K2)؟",
+        "correct_answer": "حافة أبروتسي",
+        "incorrect_answers": [
+            "ماجيك لاين",
+            "مسار سيسين",
+            "المسار البولندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر جزيرة غير قارية في العالم؟",
+        "correct_answer": "جرينلاند",
+        "incorrect_answers": [
+            "غينيا الجديدة",
+            "بورنيو",
+            "مدغشقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية نيفادا الأمريكية؟",
+        "correct_answer": "كارسن سيتي",
+        "incorrect_answers": [
+            "لاس فيغاس",
+            "هندرسون",
+            "رينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كل ما يلي عبارة عن بلدات/قرى في دولة كيريباتي الواقعة في المحيط الهادئ باستثناء:",
+        "correct_answer": "أوروتورا",
+        "incorrect_answers": [
+            "رونغاتا",
+            "لندن",
+            "واشنطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية حظرت استخدام فحوصات السلالة الجينية الشخصية؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "النمسا",
+            "كندا",
+            "السويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه المدن ليست في إنجلترا؟",
+        "correct_answer": "إدنبرة",
+        "incorrect_answers": [
+            "أكسفورد",
+            "مانشستر",
+            "ساوثهامبتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سورينام؟",
+        "correct_answer": "باراماريبو",
+        "incorrect_answers": [
+            "أنتاناناريفو",
+            "تيغوسيغالبا",
+            "سوكري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من اللغات الأوروبية التالية تُصنف كـ \"لغة معزولة\"؟",
+        "correct_answer": "الباسكية",
+        "incorrect_answers": [
+            "الغاليسية",
+            "المالطية",
+            "المجرية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إسبانيا؟",
+        "correct_answer": "مدريد",
+        "incorrect_answers": [
+            "برشلونة",
+            "إشبيلية",
+            "طليطلة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مدينة سانت لويس هي عاصمة ولاية ميزوري الأمريكية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "سُميت كولومبيا نسبةً إلى كريستوفر كولومبوس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية أريزونا الأمريكية؟",
+        "correct_answer": "فينيكس",
+        "incorrect_answers": [
+            "مونتغومري",
+            "تالاهاسي",
+            "رالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي مدينة يقع برج \"سبيس نيدل\"؟",
+        "correct_answer": "سياتل",
+        "incorrect_answers": [
+            "لوس أنجلوس",
+            "تورونتو",
+            "فانكوفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تقع في أبعد نقطة عن بحر الصين الجنوبي؟",
+        "correct_answer": "بنغلاديش",
+        "incorrect_answers": [
+            "ماليزيا",
+            "فيتنام",
+            "الفلبين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الجزر اليابانية التالية هي الأكبر مساحة؟",
+        "correct_answer": "هونشو",
+        "incorrect_answers": [
+            "هوكايدو",
+            "شيكوكو",
+            "كيوشو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "إمارة سيلاند هي دولة مجهرية غير معترف بها تقع قبالة سواحل أي دولة؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "اليابان",
+            "أستراليا",
+            "الأرجنتين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة فنلندا؟",
+        "correct_answer": "هلسنكي",
+        "incorrect_answers": [
+            "جبل طارق",
+            "مقدونيا",
+            "أوسلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تشترك مع إسبانيا في حدود برية؟",
+        "correct_answer": "5",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم دولة تشترك في الحدود مع المكسيك؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي منطقة في شرق أوروبا تشتهر بارتباطها بمصاصي الدماء؟",
+        "correct_answer": "ترانسيلفانيا",
+        "incorrect_answers": [
+            "سيليزيا",
+            "مقدونيا",
+            "سلوفاكيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تعتبر مدينة الفاتيكان دولة مستقلة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة (أو قارات) تقع إسبانيا عند أخذ جميع أراضيها بعين الاعتبار؟",
+        "correct_answer": "أوروبا وإفريقيا",
+        "incorrect_answers": [
+            "أوروبا وإفريقيا وآسيا",
+            "أوروبا",
+            "أوروبا وآسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو لون 'خط سيركل' (الخط الدائري) على خريطة مترو أنفاق لندن؟",
+        "correct_answer": "الأصفر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأزرق",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع بلدية أرتيخو؟",
+        "correct_answer": "إسبانيا",
+        "incorrect_answers": [
+            "المغرب",
+            "فرنسا",
+            "بلجيكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع خطوط نازكا الشهيرة؟",
+        "correct_answer": "بيرو",
+        "incorrect_answers": [
+            "البرازيل",
+            "كولومبيا",
+            "الإكوادور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة تمبكتو؟",
+        "correct_answer": "مالي، إفريقيا",
+        "incorrect_answers": [
+            "أذربيجان، آسيا",
+            "بنجلاديش، آسيا",
+            "موريتانيا، إفريقيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولتان المعاصرتان اللتان كانتا تعرفان باسم منطقة 'روديسيا' بين تسعينيات القرن التاسع عشر وعام 1980؟",
+        "correct_answer": "زامبيا وزيمبابوي",
+        "incorrect_answers": [
+            "توجو وبنين",
+            "ليسوتو وسوازيلاند",
+            "رواندا وبوروندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في العالم من حيث عدد السكان؟",
+        "correct_answer": "مدينة الفاتيكان",
+        "incorrect_answers": [
+            "ناورو",
+            "جزر مارشال",
+            "ليختنشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما اسم المنطقة الصخرية الكبيرة التي تغطي معظم شرق كندا؟",
+        "correct_answer": "الدرع الكندي",
+        "incorrect_answers": [
+            "جبال روكي",
+            "جبال الأبالاش",
+            "جبال الهيمالايا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "يربط ممر خيبر الجبلي بين أي من الدولتين التاليتين؟",
+        "correct_answer": "أفغانستان وباكستان",
+        "incorrect_answers": [
+            "الهند ونيبال",
+            "باكستان والهند",
+            "طاجيكستان وقيرغيزستان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تقع دولة البوسنة والهرسك في منطقة بحر البلطيق في أوروبا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة رومانيا؟",
+        "correct_answer": "بوخارست",
+        "incorrect_answers": [
+            "براتيسلافا",
+            "بلجراد",
+            "بودابست"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه المدن الأمريكية يقل عدد سكانها عن مليون نسمة？",
+        "correct_answer": "سان فرانسيسكو، كاليفورنيا",
+        "incorrect_answers": [
+            "فينيكس، أريزونا",
+            "سان أنطونيو، تكساس",
+            "فيلادلفيا، بنسيلفانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية ميشيغان الأمريكية؟",
+        "correct_answer": "لانسينغ",
+        "incorrect_answers": [
+            "كالامازو",
+            "آن أربور",
+            "ديترويت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أبعد مستوطنة بشرية في أقصى الشمال يقطنها سكان على مدار العام؟",
+        "correct_answer": "أليرت، كندا",
+        "incorrect_answers": [
+            "ناغورسكوي، روسيا",
+            "محطة ماكموردو، القارة القطبية الجنوبية",
+            "هونينغسفاغ، النرويج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الولايات الأمريكية الأربع التي تلتقي حدودها في نقطة واحدة (الولايات الزوايا الأربع)؟",
+        "correct_answer": "يوتا، كولورادو، أريزونا، نيومكسيكو",
+        "incorrect_answers": [
+            "أوريغون، أيداهو، نيفادا، يوتا",
+            "كانساس، أوكلاهوما، أركنساس، لويزيانا",
+            "داكوتا الجنوبية، مينيسوتا، نبراسكا، آيوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الوطنية الرسمية في باكستان؟",
+        "correct_answer": "الأوردية",
+        "incorrect_answers": [
+            "الهندية",
+            "البنجابية",
+            "البشتوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي دولة يقع نهر تايدونغ؟",
+        "correct_answer": "كوريا الشمالية",
+        "incorrect_answers": [
+            "كوريا الجنوبية",
+            "اليابان",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست الدولة الوحيدة التي يبدأ اسمها بذلك الحرف في الأبجدية الإنجليزية؟",
+        "correct_answer": "زامبيا",
+        "incorrect_answers": [
+            "قطر",
+            "اليمن",
+            "عُمان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع منطقة 'بير طويل'، وهي أرض غير مأهولة بالسكان لا تطالب بها أي دولة، على الحدود بين أي دولتين؟",
+        "correct_answer": "مصر والسودان",
+        "incorrect_answers": [
+            "إسرائيل والأردن",
+            "تشاد وليبيا",
+            "العراق والمملكة العربية السعودية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما اسم شبه الجزيرة التي تضم إسبانيا والبرتغال؟",
+        "correct_answer": "شبه الجزيرة الإيبيرية",
+        "incorrect_answers": [
+            "شبه الجزيرة الأوروبية",
+            "شبه جزيرة بيلوبونيز",
+            "شبه الجزيرة الإسكندنافية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تقع المقاطعات الإسبانية التالية في شمال إسبانيا باستثناء مقاطعة واحدة، فما هي؟",
+        "correct_answer": "مرسية",
+        "incorrect_answers": [
+            "أستورياس",
+            "نافارا",
+            "ليون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "مع أي دولة تتشارك فرنسا أطول حدود برية لها؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "ألمانيا",
+            "إسبانيا",
+            "كندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس مقاطعة صينية؟",
+        "correct_answer": "يانغتسي",
+        "incorrect_answers": [
+            "فوجيان",
+            "سيتشوان",
+            "غوانغدونغ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أوتاوا هي عاصمة كندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من الأسماء التالية يعود لقلعة حقيقية؟",
+        "correct_answer": "قلعة إليزابيث",
+        "incorrect_answers": [
+            "فرانك كاسل",
+            "ريتشارد كاسل",
+            "أوليفيا كاسل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع أقدم قاعدة إطلاق فضاء ما زالت تعمل في العالم؟",
+        "correct_answer": "كازاخستان",
+        "incorrect_answers": [
+            "روسيا",
+            "إيران",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المناطق الزمنية في روسيا؟",
+        "correct_answer": "11",
+        "incorrect_answers": [
+            "6",
+            "24",
+            "16"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الجزر التي تطالب بها كل من اليابان وروسيا؟",
+        "correct_answer": "جزر كوريل",
+        "incorrect_answers": [
+            "جزر باراسيل",
+            "جزر تشاغوس",
+            "جزر سبراتلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست جزءاً من قارة آسيا؟",
+        "correct_answer": "سورينام",
+        "incorrect_answers": [
+            "جورجيا",
+            "روسيا",
+            "سنغافورة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تسمى مجموعة الجزر المتقاربة 'أرخبيل'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "متى تحتفل فنلندا بيوم استقلالها؟",
+        "correct_answer": "6 ديسمبر",
+        "incorrect_answers": [
+            "2 يناير",
+            "12 نوفمبر",
+            "8 فبراير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي ثاني أكبر مدينة في ليتوانيا؟",
+        "correct_answer": "كاوناس",
+        "incorrect_answers": [
+            "بانيفيزيس",
+            "فيلنيوس",
+            "كلايبيدا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تشترك روسيا في حدود برية مع كوريا الشمالية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر بحيرة مياه عذبة في العالم؟",
+        "correct_answer": "بحيرة سوبيريور",
+        "incorrect_answers": [
+            "بحر قزوين",
+            "بحيرة ميشيغان",
+            "بحيرة هورون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة موريشيوس؟",
+        "correct_answer": "بورت لويس",
+        "incorrect_answers": [
+            "بورت مورسبي",
+            "بورت فيلا",
+            "بورت أو برانس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع دولة غامبيا؟",
+        "correct_answer": "إفريقيا",
+        "incorrect_answers": [
+            "آسيا",
+            "أمريكا الجنوبية",
+            "أوروبا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كانت الأراضي الحديثة للبرتغال جزءاً من الإمبراطورية الرومانية في الماضي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لا تشترك في حدود مع النمسا؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "سلوفينيا",
+            "سويسرا",
+            "سلوفاكيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تبلغ مساحة غرينلاند تقريباً نفس مساحة قارة إفريقيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كوالالمبور هي عاصمة أي دولة؟",
+        "correct_answer": "ماليزيا",
+        "incorrect_answers": [
+            "إندونيسيا",
+            "سنغافورة",
+            "تايلاند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "سيول هي عاصمة كوريا الشمالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة السنغال؟",
+        "correct_answer": "داكار",
+        "incorrect_answers": [
+            "نواكشوط",
+            "كوناكري",
+            "مونروفيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم دولة تشترك في حدود برية مع لوكسمبورغ؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "4",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "المجموعتان العرقيتان الأكبر في بلجيكا هما الفلمنك والوالون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عاصمة البرازيل هي ريو دي جانيرو.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تشترك في حدود برية مع روسيا؟ (دون احتساب المناطق المتنازع عليها)",
+        "correct_answer": "14",
+        "incorrect_answers": [
+            "12",
+            "10",
+            "8"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الأوروبية ليست عضواً في الاتحاد الأوروبي؟",
+        "correct_answer": "النرويج",
+        "incorrect_answers": [
+            "ليتوانيا",
+            "أيرلندا",
+            "التشيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة في العالم من حيث المساحة؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "كندا",
+            "الصين",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "يعود أصل اسم الأرجنتين إلى الكلمة اللاتينية التي تعني الفضة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة قبرص؟",
+        "correct_answer": "نيقوسيا",
+        "incorrect_answers": [
+            "بافوس",
+            "ليماسول",
+            "لارنكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تبدأ عاصمتها بحرف الباء؟",
+        "correct_answer": "لبنان",
+        "incorrect_answers": [
+            "الأردن",
+            "الكويت",
+            "قطر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من المدن التالية ليست عاصمة دولة؟",
+        "correct_answer": "سيدني",
+        "incorrect_answers": [
+            "القاهرة",
+            "موسكو",
+            "بكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الوحيدة في العالم التي لا يحتوي علمها على أربع زوايا قائمة؟",
+        "correct_answer": "نيبال",
+        "incorrect_answers": [
+            "بنما",
+            "أنغولا",
+            "مصر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما اسم المحيط الذي تقع فيه جزر هاواي؟",
+        "correct_answer": "المحيط الهادئ",
+        "incorrect_answers": [
+            "المحيط الأطلسي",
+            "المحيط الهندي",
+            "المحيط المتجمد الشمالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة إنجليزية تقع مدينة بورتسموث؟",
+        "correct_answer": "هامبشاير",
+        "incorrect_answers": [
+            "أكسفوردشاير",
+            "باكنغهامشاير",
+            "سري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مقاطعة كندية عاصمتها هي تشارلوت تاون؟",
+        "correct_answer": "جزيرة الأمير إدوارد",
+        "incorrect_answers": [
+            "ساسكاتشوان",
+            "الأقاليم الشمالية الغربية",
+            "أونتاريو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "لا توجد طرق برية تؤدي إلى مدينة جونو بآلاسكا أو تخرج منها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الرسمية في بوتان؟",
+        "correct_answer": "الدزونكا",
+        "incorrect_answers": [
+            "اللاداخية",
+            "الكارين",
+            "الغروما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو اسم السكان الأصليين لنيوزيلندا؟",
+        "correct_answer": "الماوري",
+        "incorrect_answers": [
+            "الفايكنج",
+            "البولينيزيون",
+            "السامويون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أطول اسم مكان في الولايات المتحدة هو بحيرة 'تشارغوغوغوغمانشوغوغوغشوبوناغونغاماغ'، الواقعة بالقرب من ويبستر بولاية ماساتشوستس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لم تكن جزءاً من الاتحاد السوفيتي؟",
+        "correct_answer": "رومانيا",
+        "incorrect_answers": [
+            "تركمانستان",
+            "بيلاروسيا",
+            "طاجيكستان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يظهر أسد يحمل سيفاً على العلم الوطني لأي دولة؟",
+        "correct_answer": "سريلانكا",
+        "incorrect_answers": [
+            "ألبانيا",
+            "زامبيا",
+            "مولدوفا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة تشيلي؟",
+        "correct_answer": "سانتياغو",
+        "incorrect_answers": [
+            "فالبارايسو",
+            "كوبيابو",
+            "أنتوفاغاستا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تقع مقاطعة نوفا سكوشا على الساحل الشرقي لكندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تنقسم جزيرة بورنيو في جنوب شرق آسيا سياسياً بين 3 دول.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية تكساس الأمريكية؟",
+        "correct_answer": "أوستن",
+        "incorrect_answers": [
+            "دالاس",
+            "هيوستن",
+            "سان أنطونيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو مقر مقاطعة كينغ في ولاية واشنطن؟",
+        "correct_answer": "سياتل",
+        "incorrect_answers": [
+            "بيلفيو",
+            "إينومكلاو",
+            "سكايكوميش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليس مكتوباً بلغتها الأصلية？",
+        "correct_answer": "سلوفاشكو",
+        "incorrect_answers": [
+            "سومي",
+            "شوايتس",
+            "إيلادا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تمتلك علماً بلونين أفقيين أحمر وأبيض؟",
+        "correct_answer": "موناكو",
+        "incorrect_answers": [
+            "البحرين",
+            "مالطا",
+            "ليختنشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الأفريقية يظهر سلاح ناري (بندقية) على علمها؟",
+        "correct_answer": "موزمبيق",
+        "incorrect_answers": [
+            "أوغندا",
+            "إثيوبيا",
+            "نيجيريا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من اللغات التالية لا تستخدم الأبجدية اللاتينية؟",
+        "correct_answer": "الجورجية",
+        "incorrect_answers": [
+            "التركية",
+            "السواحيلية",
+            "الفيتنامية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "يحتوي علم بيلاروسيا على نمط تطريز باللونين الأحمر والأبيض على جانب السارية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إستونيا؟",
+        "correct_answer": "تالين",
+        "incorrect_answers": [
+            "هلسنكي",
+            "تارتو",
+            "ريغا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر جزيرة في كندا؟",
+        "correct_answer": "جزيرة بافن",
+        "incorrect_answers": [
+            "جزيرة الأمير إدوارد",
+            "جزيرة فانكوفر",
+            "نيوفاوندلاند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي ولاية أمريكية تقع في أقصى الشمال الشرقي؟",
+        "correct_answer": "مين",
+        "incorrect_answers": [
+            "نيويورك",
+            "جورجيا",
+            "فلوريدا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الولايات في أستراليا؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "7",
+            "8",
+            "5"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "إذا كانت كرة القدم تُسمى 'فوتبول' في إنجلترا، فماذا تُسمى كرة القدم الأمريكية هناك؟",
+        "correct_answer": "كرة القدم الأمريكية",
+        "incorrect_answers": [
+            "كومبول",
+            "كرة اليد",
+            "تاتشداون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "جبل طارق، الواقع جنوب شبه الجزيرة الأيبيرية مباشرة، هو إقليم تابع لأي دولة في غرب أوروبا؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "إسبانيا",
+            "البرتغال",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة بومبي الأثرية؟",
+        "correct_answer": "إيطاليا",
+        "incorrect_answers": [
+            "شرق أفريقيا",
+            "أمريكا الجنوبية",
+            "بومبيلانوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع منحدرات دوفر البيضاء؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "هولندا",
+            "السويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة فيتنام؟",
+        "correct_answer": "هانوي",
+        "incorrect_answers": [
+            "دا نانغ",
+            "هاي فونغ",
+            "مدينة هو تشي منه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إسكتلندا؟",
+        "correct_answer": "إدنبرة",
+        "incorrect_answers": [
+            "غلاسكو",
+            "دندي",
+            "لندن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من دول يوغوسلافيا السابقة التالية هي دولة حبيسة (لا تطل على بحار)؟",
+        "correct_answer": "صربيا",
+        "incorrect_answers": [
+            "البوسنة والهرسك",
+            "الجبل الأسود",
+            "كرواتيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "إلى أي دولة تنتمي جزر ملوك (المعروفة بشكل غير رسمي باسم جزر التوابل)؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "تشيلي",
+            "نيوزيلندا",
+            "فيجي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "دولة واحدة فقط في العالم يبدأ اسمها باللغة الإنجليزية بحرف 'Q'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي مدينة هندية يقع تاج محل？",
+        "correct_answer": "أغرا",
+        "incorrect_answers": [
+            "مومباي",
+            "فريد آباد",
+            "ثين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "غرينلاند هي جزء من أي مملكة؟",
+        "correct_answer": "الدنمارك",
+        "incorrect_answers": [
+            "السويد",
+            "النرويج",
+            "المملكة المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "تحت سيادة أي دولة تقع جزر أندمان ونيكوبار في جنوب شرق آسيا؟",
+        "correct_answer": "الهند",
+        "incorrect_answers": [
+            "فيتنام",
+            "تايلاند",
+            "إندونيسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة أستراليا؟",
+        "correct_answer": "كانبرا",
+        "incorrect_answers": [
+            "سيدني",
+            "ملبورن",
+            "بريزبان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي هي العملة الرسمية لجزر كوك؟",
+        "correct_answer": "الدولار النيوزيلندي",
+        "incorrect_answers": [
+            "الدولار الأمريكي",
+            "الجنيه الإسترليني",
+            "الدولار الأسترالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بوركينا فاسو؟",
+        "correct_answer": "واغادوغو",
+        "incorrect_answers": [
+            "ياوندي",
+            "ياموسوكرو",
+            "أبيدجان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو الميناء الأكثر نشاطاً في أوروبا؟",
+        "correct_answer": "ميناء روتردام",
+        "incorrect_answers": [
+            "ميناء أنتويرب",
+            "ميناء هامبورغ",
+            "ميناء أمستردام"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "طوكيو هي عاصمة اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الوحيدة في الولايات المتحدة التي لا يملك علمها شكلاً رباعي الأضلاع؟",
+        "correct_answer": "أوهايو",
+        "incorrect_answers": [
+            "فلوريدا",
+            "أيداهو",
+            "نيومكسيكو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مدينة الفاتيكان، أصغر دولة في العالم، محاطة بالكامل بأي دولة؟",
+        "correct_answer": "إيطاليا",
+        "incorrect_answers": [
+            "فرنسا",
+            "إسبانيا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ولاية كاليفورنيا أكبر مساحةً من اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "القارة القطبية الجنوبية (أنتاركتيكا) هي أكبر صحراء في العالم.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الجزر اليابانية التالية هي الأكبر مساحة؟",
+        "correct_answer": "شيكوكو",
+        "incorrect_answers": [
+            "إكي",
+            "أودايبا",
+            "أوكيناوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة داخل المملكة المتحدة لا يمثلها علمها الوطني (علم الاتحاد)؟",
+        "correct_answer": "ويلز",
+        "incorrect_answers": [
+            "إسكتلندا",
+            "أيرلندا",
+            "جزيرة وايت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة تطالب بالسيادة على إقليم كوسوفو المتنازع عليه؟",
+        "correct_answer": "صربيا",
+        "incorrect_answers": [
+            "كرواتيا",
+            "ألبانيا",
+            "مقدونيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر صحراء حارة في العالم؟",
+        "correct_answer": "الصحراء الكبرى",
+        "incorrect_answers": [
+            "صحراء غوبي",
+            "صحراء موهافي",
+            "صحراء كالاهاري"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أفريقيا هي عبارة عن دولة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي دولة أفريقية تقع قناة السويس؟",
+        "correct_answer": "مصر",
+        "incorrect_answers": [
+            "ليبيا",
+            "غانا",
+            "نيجيريا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو اسم أكبر مدينة في ولاية تينيسي الأمريكية؟",
+        "correct_answer": "ممفيس",
+        "incorrect_answers": [
+            "طيبة",
+            "الإسكندرية",
+            "الأقصر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بأي لقب تُعرف منطقة أكيهابارا اليابانية أيضاً؟",
+        "correct_answer": "مدينة الكهرباء",
+        "incorrect_answers": [
+            "نهر مشية القمر",
+            "مركز الأوتاكو",
+            "العيون الكبيرة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كانت دولة 'منغوليا' جزءاً من الاتحاد السوفيتي السابق.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الأرخبيلات (مجموعات الجزر) ليست جزءاً من المملكة المتحدة؟",
+        "correct_answer": "جزر القنال الإنجليزي",
+        "incorrect_answers": [
+            "جزر أوركني",
+            "جزر سيلي",
+            "جزر شتلاند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سلوفينيا؟",
+        "correct_answer": "ليوبليانا",
+        "incorrect_answers": [
+            "ماريبور",
+            "فيلينيه",
+            "تربوفلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تقع ولاية رود آيلاند في الواقع على اليابسة الرئيسية للولايات المتحدة، على الرغم من اسمها (الذي يعني جزيرة رود).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر بحيرة في القارة الأفريقية؟",
+        "correct_answer": "بحيرة فيكتوريا",
+        "incorrect_answers": [
+            "بحيرة تنجانيقا",
+            "بحيرة ملاوي",
+            "بحيرة توركانا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لا تقع في أفريقيا؟",
+        "correct_answer": "سورينام",
+        "incorrect_answers": [
+            "بوركينا فاسو",
+            "موزمبيق",
+            "الجزائر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة أوروبية يقع مقر منظمة الصحة العالمية؟",
+        "correct_answer": "سويسرا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "فرنسا",
+            "بلجيكا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "هناك جزيرة في اليابان تُدعى 'أوكونوشيما'، وتُعرف أيضاً باسم 'جزيرة الأرانب' نظراً لعدد الأرانب الهائل فيها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو الممر المائي الذي يربط المحيط الأطلسي بالبحر الأبيض المتوسط؟",
+        "correct_answer": "مضيق جبل طارق",
+        "incorrect_answers": [
+            "ممر جبل طارق",
+            "المضائق الإسبانية",
+            "قناة طنجة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الأنهار في المملكة العربية السعودية؟",
+        "correct_answer": "0",
+        "incorrect_answers": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة كندية تقع مدينة مونتريال؟",
+        "correct_answer": "كيبيك",
+        "incorrect_answers": [
+            "أونتاريو",
+            "نوفا سكوشا",
+            "ألبرتا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ألاسكا وهاواي هما الولايتان الأمريكيتان الوحيدتان اللتان تمتلكان منطقتين زمنيتين خاصتين بهما.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "إيطاليا وأيرلندا هما الدولتان الوحيدتان في أوروبا اللتان تبدآن بحرف I.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عدد سكان ولاية نيويورك الأمريكية يعادل تقريباً عدد سكان دولة:",
+        "correct_answer": "رومانيا",
+        "incorrect_answers": [
+            "بولندا",
+            "ألمانيا",
+            "المجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي خامس أكبر دولة في العالم من حيث المساحة؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "أستراليا",
+            "الهند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة في العالم مساحةً وتعتمد منطقة زمنية واحدة فقط؟",
+        "correct_answer": "الصين",
+        "incorrect_answers": [
+            "كندا",
+            "الهند",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الرسمية في كوستاريكا؟",
+        "correct_answer": "الإسبانية",
+        "incorrect_answers": [
+            "الإنجليزية",
+            "البرتغالية",
+            "الكريولية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة نيوزيلندا؟",
+        "correct_answer": "ويلينغتون",
+        "incorrect_answers": [
+            "أوكلاند",
+            "كرايستشرش",
+            "ملبورن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي مساحة مدينة الفاتيكان؟",
+        "correct_answer": "0.44 كم²",
+        "incorrect_answers": [
+            "0.10 كم²",
+            "0.86 كم²",
+            "12.00 كم²"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "إلى أي دولة يتبع أرخبيل سفالبارد؟",
+        "correct_answer": "النرويج",
+        "incorrect_answers": [
+            "الدنمارك",
+            "آيسلندا",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لم تكن جزءاً من يوغوسلافيا السابقة؟",
+        "correct_answer": "ألبانيا",
+        "incorrect_answers": [
+            "كرواتيا",
+            "صربيا",
+            "مقدونيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "هل مدينة تارتو هي عاصمة إستونيا؟",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من الدول الحبيسة التالية تقع بالكامل داخل دولة أخرى؟",
+        "correct_answer": "ليسوتو",
+        "incorrect_answers": [
+            "بوركينا فاسو",
+            "منغوليا",
+            "لوكسمبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين يقع ممر كولشستر العلوي، المعروف باسم \"جسر رجل الأرنب\"؟",
+        "correct_answer": "مقاطعة فيرفاكس، فيرجينيا",
+        "incorrect_answers": [
+            "ميدفورد، أوريغون",
+            "مقاطعة براكستون، فيرجينيا",
+            "ليمون غروف، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة لاوس؟",
+        "correct_answer": "فيينتيان",
+        "incorrect_answers": [
+            "تاراوا",
+            "فادوز",
+            "تيغوسيغالبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر ولاية في الولايات المتحدة؟",
+        "correct_answer": "رود آيلاند",
+        "incorrect_answers": [
+            "مين",
+            "فيرمونت",
+            "ماساتشوستس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي سلسلة الجبال التي تمتد على طول الحدود بين إسبانيا وفرنسا؟",
+        "correct_answer": "جبال البرانس",
+        "incorrect_answers": [
+            "جبال الألب",
+            "جبال الكاربات",
+            "جبال الأورال"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "جمهورية مالطا هي أصغر دولة مجهرية في العالم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو الاسم الرسمي بالألمانية للسكك الحديدية الفيدرالية السويسرية؟",
+        "correct_answer": "Schweizerische Bundesbahnen",
+        "incorrect_answers": [
+            "Schweizerische Nationalbahnen",
+            "Bundesbahnen der Schweiz",
+            "Schweizerische Staatsbahnen"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة تركيا؟",
+        "correct_answer": "أنقرة",
+        "incorrect_answers": [
+            "إسطنبول",
+            "إزمير",
+            "بورصة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سويسرا؟",
+        "correct_answer": "بيرن",
+        "incorrect_answers": [
+            "زيورخ",
+            "فرانكفورت",
+            "فيينا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية لا تُعتبر من الدول \"شديدة التنوع\" (التي تأوي عدداً كبيراً من الأنواع المستوطنة في العالم)؟",
+        "correct_answer": "تايلاند",
+        "incorrect_answers": [
+            "بيرو",
+            "المكسيك",
+            "جنوب أفريقيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من دول المملكة المتحدة يظهر تنين على علمها؟",
+        "correct_answer": "ويلز",
+        "incorrect_answers": [
+            "إنجلترا",
+            "أيرلندا الشمالية",
+            "اسكتلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع \"صحراء سونوران\"؟",
+        "correct_answer": "أمريكا الشمالية",
+        "incorrect_answers": [
+            "أمريكا الجنوبية",
+            "آسيا",
+            "أفريقيا"
+        ]
+    }
+]

@@ -1,0 +1,216 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يُسمح قانوناً بتناول الكحول أثناء القيادة في ولاية مسيسيبي الأمريكية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الجلوس لأكثر من ثلاث ساعات في اليوم يمكن أن يقلل من عمر الإنسان المتوقع بمقدار عامين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تشير الدراسات إلى أن ما يقارب 40% من سكان العالم يستخدمون اليد اليسرى (عُسر).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي عنصر كيميائي يحمل الرمز ⁦Kr⁩‏؟",
+        "correct_answer": "الكريبتون",
+        "incorrect_answers": [
+            "الكيروسين",
+            "الكينيتيكيوم",
+            "الكوريوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الدول تقود السيارات على الجانب الأيسر من الطريق؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "ألمانيا",
+            "روسيا",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي عاصمة إسبانيا؟",
+        "correct_answer": "مدريد",
+        "incorrect_answers": [
+            "باريس",
+            "برشلونة",
+            "لشبونة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي اتجاه جغرافي تشرق الشمس؟",
+        "correct_answer": "الشرق",
+        "incorrect_answers": [
+            "الغرب",
+            "الشمال",
+            "الجنوب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يطلق الهولنديون على لغتهم؟",
+        "correct_answer": "نيدرلاندس (⁦Nederlands⁩)",
+        "incorrect_answers": [
+            "دانسك (⁦Dansk⁩)",
+            "دويتش (⁦Deutsch⁩)",
+            "هولاندر (⁦Hollander⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تُؤكل وجبة الهاجيس تقليدياً في ليلة بيرنز (⁦Burns Night⁩).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "يعد قصر ديزني المسكون (⁦Haunted Mansion⁩) موطناً لثلاثي من أشباح الأوتوستوب (الهيتشهايكر). أي من هؤلاء ليس واحداً منهم؟",
+        "correct_answer": "هاري",
+        "incorrect_answers": [
+            "غاس",
+            "فينياس",
+            "إيزرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من حبوب الإفطار المرعبة لشركة \"جنرال ميلز\" كانت الأخيرة التي تم إصدارها في السبعينيات؟",
+        "correct_answer": "فروت بروت (⁦Fruit Brute⁩)",
+        "incorrect_answers": [
+            "كونت شوكولا (⁦Count Chocula⁩)",
+            "فرانكن بيري (⁦Franken Berry⁩)",
+            "بو بيري (⁦Boo-Berry⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا يرمز الاختصار ⁦VR⁩‏؟",
+        "correct_answer": "الواقع الافتراضي (⁦Virtual Reality⁩)",
+        "incorrect_answers": [
+            "حقيقي جداً (⁦Very Real⁩)",
+            "التعرف البصري (⁦Visual Recognition⁩)",
+            "التعرف على الصوت (⁦Voice Recognition⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تنتمي اللغة الرومانية إلى عائلة اللغات الرومانسية، والتي تشترك فيها مع الفرنسية والإسبانية والبرتغالية والإيطالية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يمكن تشغيل ألبوم فرقة \"كينغ غيزارد آند ذا ليزرد ويزارد\" بعنوان \"نونغون إنفينيتي\" (⁦Nonagon Infinity⁩) بشكل متكرر دون انقطاع مسموع.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في لعبة \"ريزيدنت إيفل 3\"، كم عدد خانات المخزن (الحقيبة) التي تمتلكها جيل في بداية اللعبة؟",
+        "correct_answer": "8",
+        "incorrect_answers": [
+            "6",
+            "10",
+            "12"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي ليس اسماً آخر للباذنجان؟",
+        "correct_answer": "بوتيمارون (⁦Potimarron⁩)",
+        "incorrect_answers": [
+            "برينجال (⁦Brinjal⁩)",
+            "قرع غينيا (⁦Guinea Squash⁩)",
+            "ميلونجين (⁦Melongene⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم عدد بذور التفاح التقريبي التي يجب ابتلاعها للحصول على جرعة قاتلة من السيانيد؟",
+        "correct_answer": "200",
+        "incorrect_answers": [
+            "20",
+            "2,000",
+            "20,000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "اشتهر الشقيقان بوب ومايك براين في أي رياضة؟",
+        "correct_answer": "التنس (كرة المضرب)",
+        "incorrect_answers": [
+            "كرة السلة",
+            "كرة القدم",
+            "البيسبول (كرة القاعدة)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تقبيل شخص ما لمدة دقيقة واحدة يحرق حوالي سعرتين حراريتين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

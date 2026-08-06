@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الإسبانية التي تعني \"حمار\"؟",
+        "correct_answer": "بورو",
+        "incorrect_answers": [
+            "كابايو",
+            "تورو",
+            "بيرو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تستخدم الإكوادور البيزو المكسيكي كعملة رسمية لها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الكلمات الإنجليزية تعني \"متفرج كسول أو فضولي\"؟",
+        "correct_answer": "⁦Gongoozler⁩",
+        "incorrect_answers": [
+            "⁦Gossypiboma⁩",
+            "⁦Jentacular⁩",
+            "⁦Meupareunia⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو نوع الألعاب أو الوسائط التي يراجعها موقع \"شات أب آند سيت داون\" (⁦Shut Up⁩ & ⁦Sit Down⁩)‏؟",
+        "correct_answer": "الألعاب اللوحية",
+        "incorrect_answers": [
+            "البرامج التلفزيونية",
+            "ألعاب الفيديو",
+            "الأفلام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مغالطة منطقية تعني مهاجمة شخصية الخصم بدلاً من مناقشة حججه؟",
+        "correct_answer": "مغالطة الشخصنة (⁦Ad hominem⁩)",
+        "incorrect_answers": [
+            "مغالطة التزامن (⁦Post hoc ergo propter hoc⁩)",
+            "مغالطة \"وأنت كذلك\" (⁦Tu quoque⁩)",
+            "مغالطة التوسل بالأغلبية (⁦Argumentum ad populum⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو أقصر شهر في السنة؟",
+        "correct_answer": "فبراير",
+        "incorrect_answers": [
+            "ديسمبر",
+            "أبريل",
+            "سبتمبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الذي حظرته منطقة كتالونيا ذاتية الحكم في إسبانيا عام 2010، ودخل حيز التنفيذ في عام 2012‏؟",
+        "correct_answer": "مصارعة الثيران",
+        "incorrect_answers": [
+            "المهرجانات الشعبية",
+            "رقص الفلامنكو",
+            "موسيقى المارياتشي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي شركة تصنيع سيارات إيطالية حصلت على حصة الأغلبية في شركة كرايسلر الأمريكية لصناعة السيارات في عام 2011‏؟",
+        "correct_answer": "فيات",
+        "incorrect_answers": [
+            "مازيراتي",
+            "ألفا روميو",
+            "فيراري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يعتبر حوض بادواتر في وادي الموت أخفض نقطة في أمريكا الشمالية، فكم قدماً يبلغ انخفاضه تحت مستوى سطح البحر؟",
+        "correct_answer": "282 قدماً",
+        "incorrect_answers": [
+            "79 قدماً",
+            "1,640 قدماً",
+            "12,092 قدماً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الذي يطلق على رأس السنة اليهودية؟",
+        "correct_answer": "روش هاشانا",
+        "incorrect_answers": [
+            "إيلول",
+            "رأس السنة الجديدة",
+            "سوكوت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اللقب الشهير لولاية كاليفورنيا الأمريكية؟",
+        "correct_answer": "الولاية الذهبية",
+        "incorrect_answers": [
+            "ولاية أشعة الشمس",
+            "ولاية الخليج",
+            "ولاية الكنز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا يرمز حرف الـ ⁦F⁩ في مكتب التحقيقات الفيدرالي (⁦FBI⁩)‏؟",
+        "correct_answer": "فيدرالي",
+        "incorrect_answers": [
+            "أجنبي",
+            "رسمي",
+            "أول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو المصطلح الأكثر شيوعاً للتعبير عن محيط الدائرة؟",
+        "correct_answer": "المحيط",
+        "incorrect_answers": [
+            "القطر",
+            "نصف القطر",
+            "القوس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في اللغات الاسكندنافية، يعني حرف ⁦Å⁩ \"نهر\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "هذه هي الطريقة الصحيحة لكتابة الكلمة الإنجليزية الشهيرة \"⁦Supercalifragilisticexpialidocious⁩\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأشهر التالية يحتوي على أكبر عدد من الأيام؟",
+        "correct_answer": "ديسمبر",
+        "incorrect_answers": [
+            "أبريل",
+            "سبتمبر",
+            "نوفمبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو اللون الذي يعتبر اللون الموف (الخبازي) درجة من درجاته، والمسمى نسبة إلى زهرة الخبازى؟",
+        "correct_answer": "البنفسجي",
+        "incorrect_answers": [
+            "الأحمر",
+            "البني",
+            "الوردي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الفرنسية التي تعني \"سمكة\"؟",
+        "correct_answer": "⁦poisson⁩",
+        "incorrect_answers": [
+            "⁦fiche⁩",
+            "⁦escargot⁩",
+            "⁦mer⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما كان اسم فريق المصارعة الثنائي الشهير في اتحاد ⁦WWF⁩ والمكون من المصارعين \"أكس\" و\"سماش\"؟",
+        "correct_answer": "ديموليشن",
+        "incorrect_answers": [
+            "ذا دريم تيم",
+            "ذا بوشواكرز",
+            "ذا بريتيش بولدوغز"
+        ]
+    }
+]

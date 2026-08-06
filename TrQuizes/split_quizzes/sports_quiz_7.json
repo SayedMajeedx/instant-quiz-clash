@@ -1,0 +1,216 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كم عدد اللاعبين في فريق كرة القدم الواحد داخل الملعب؟",
+        "correct_answer": "11",
+        "incorrect_answers": [
+            "10",
+            "9",
+            "8"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من الذي فاز بلقب الدوري الإنجليزي الممتاز في موسم 2015-2016 بعد مسيرة تاريخية أشبه بالمعجزة؟",
+        "correct_answer": "ليستر سيتي",
+        "incorrect_answers": [
+            "توتنهام هوتسبير",
+            "واتفورد",
+            "ستوك سيتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من أحرز هدف الفوز القاتل في الوقت بدل الضائع في نهائي دوري أبطال أوروبا عام 1999 بين مانشستر يونايتد وبايرن ميونخ؟",
+        "correct_answer": "أولي غونار سولشاير",
+        "incorrect_answers": [
+            "دوايت يورك",
+            "أندي كول",
+            "ديفيد بيكهام"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في دوري الرغبي، يُعاقب على ركلة \"40-20\" بركلة حرة للفريق المنافس.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "لأي حدث كروي كبير في عام 1996 أُنتجت أغنية \"الأسود الثلاثة\" (⁦Three Lions⁩) لفرقة \"لايتنينج سيدز\"؟",
+        "correct_answer": "بطولة أمم أوروبا",
+        "incorrect_answers": [
+            "كأس العالم",
+            "دوري أبطال أوروبا",
+            "كأس القارات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من أرقام القمصان التالية لم يرتدها شاكيل أونيل قط؟",
+        "correct_answer": "35",
+        "incorrect_answers": [
+            "36",
+            "33",
+            "32"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من كان أول لاعب كرة قدم يسجل 200 هدف في الدوري الإنجليزي الممتاز؟",
+        "correct_answer": "آلان شيرر",
+        "incorrect_answers": [
+            "واين روني",
+            "روبي فاولر",
+            "تييري هنري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من أندية كرة القدم الإنجليزية التالية يقع مقره في مدينة ليفربول؟",
+        "correct_answer": "إيفرتون",
+        "incorrect_answers": [
+            "وست هام يونايتد",
+            "كريستال بالاس",
+            "أرسنال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي قام بـ \"ركلة كونغ فو\" ضد مشجع لفريق كريستال بالاس في يناير 1995‏؟",
+        "correct_answer": "إيريك كانتونا",
+        "incorrect_answers": [
+            "ديفيد سيمان",
+            "أشلي كول",
+            "مارك هيوز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد مناطق تسجيل النقاط في لوحة السهام (الدارتس) التقليدية؟",
+        "correct_answer": "82",
+        "incorrect_answers": [
+            "62",
+            "42",
+            "102"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد المباريات التي خاضها نادي أرسنال دون هزيمة خلال موسم 2003-2004 في الدوري الإنجليزي الممتاز؟",
+        "correct_answer": "38",
+        "incorrect_answers": [
+            "51",
+            "49",
+            "22"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو لاعب كرة القدم الإيطالي الذي أشار للحارس نوير إلى الزاوية التي سيسدد فيها ثم أضاع الركلة خارج المرمى، أثناء مباراة إيطاليا وألمانيا في بطولة أمم أوروبا 2016‏؟",
+        "correct_answer": "بيليه",
+        "incorrect_answers": [
+            "إنسيني",
+            "بارزالي",
+            "جياكيريني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في تاريخ الدوري الإنجليزي الممتاز (⁦EPL⁩)‏؟",
+        "correct_answer": "آلان شيرر",
+        "incorrect_answers": [
+            "واين روني",
+            "ليونيل ميسي",
+            "ديدييه دروغبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي دولة استضافت بطولة كأس العالم لكرة القدم لعام 2018‏؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "ألمانيا",
+            "الولايات المتحدة",
+            "المملكة العربية السعودية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو المصارع المحترف الذي سقط من دعامات السقف ليلقى حتفه أثناء عرض مباشر مدفوع الثمن (⁦Pay-Per-View⁩) في عام 1999‏؟",
+        "correct_answer": "أوين هارت",
+        "incorrect_answers": [
+            "كريس بنوا",
+            "ليكس لوجر",
+            "آل سنو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي شارك في أكبر عدد من المباريات مع منتخب البرازيل لكرة القدم؟",
+        "correct_answer": "كافو",
+        "incorrect_answers": [
+            "رونالدو",
+            "كاكا",
+            "روبيرتو كارلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من هو الملاكم الذي تم إيقافه بسبب قضم جزء من أذن إيفاندر هوليفيلد في عام 1997‏؟",
+        "correct_answer": "مايك تايسون",
+        "incorrect_answers": [
+            "روي جونز جونيور",
+            "إيفاندر هوليفيلد",
+            "لينوكس لويس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هي المدينة التي كان يمثلها فريق ليكرز (⁦Lakers⁩) قبل انتقاله إلى لوس أنجلوس؟",
+        "correct_answer": "منيابوليس",
+        "incorrect_answers": [
+            "فيلادلفيا",
+            "شيكاغو",
+            "سان فرانسيسكو"
+        ]
+    }
+]

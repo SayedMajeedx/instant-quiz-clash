@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الولايات المتحدة الأمريكية؟",
+        "correct_answer": "واشنطن العاصمة",
+        "incorrect_answers": [
+            "سياتل",
+            "ألباني",
+            "لوس أنجلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من أحياء مدينة نيويورك يقع في أقصى الشمال؟",
+        "correct_answer": "برونكس",
+        "incorrect_answers": [
+            "كوينز",
+            "بروكلين",
+            "مانهاتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "إلى ماذا يرمز الحرف \"⁦C⁩\" في اسم العاصمة الأمريكية واشنطن (⁦Washington⁩, ⁦D.C⁩)‏؟",
+        "correct_answer": "كولومبيا",
+        "incorrect_answers": [
+            "كاليدونيا",
+            "كورنثيا",
+            "سيتي (مدينة)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم يبلغ ارتفاع مبنى مركز التجارة العالمي الواحد (⁦One World Trade Center⁩) في مدينة نيويورك؟",
+        "correct_answer": "1,776 قدم",
+        "incorrect_answers": [
+            "1,888 قدم",
+            "1,225 قدم",
+            "1,960 قدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من المعالم الجغرافية التالية عبارة عن شعاب مرجانية دائرية الشكل أو جزيرة أو سلسلة من الجزر الصغيرة؟",
+        "correct_answer": "جزيرة شعب مرجانية (أطول)",
+        "incorrect_answers": [
+            "شبه جزيرة",
+            "برزخ",
+            "دلتا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "بين أي دولتين تقع أطول حدود مشتركة في العالم؟",
+        "correct_answer": "كندا والولايات المتحدة",
+        "incorrect_answers": [
+            "تشيلي والأرجنتين",
+            "روسيا والصين",
+            "الهند وباكستان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أول متنزه وطني تم إنشاؤه في الولايات المتحدة؟",
+        "correct_answer": "يلوستون",
+        "incorrect_answers": [
+            "سيكويا",
+            "يوسيميتي",
+            "روكي ماونتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي معلم سياحي في أمريكا الشمالية تخدمه شركة الرحلات \"⁦Maid of the Mist⁩\" (خادمة الضباب)‏؟",
+        "correct_answer": "شلالات نياجرا",
+        "incorrect_answers": [
+            "ويسلر، كولومبيا البريطانية",
+            "عالم ديزني",
+            "متنزه يوسيميتي الوطني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي مدينة كندية يقع نُصب \"النيكل الكبير\" (⁦Big Nickel⁩)‏؟",
+        "correct_answer": "سودبوري، أونتاريو",
+        "incorrect_answers": [
+            "كالغاري، ألبرتا",
+            "هاليفاكس، نوفا سكوشا",
+            "فيكتوريا، كولومبيا البريطانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع دولة أنغولا؟",
+        "correct_answer": "أفريقيا",
+        "incorrect_answers": [
+            "أمريكا الجنوبية",
+            "أوروبا",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في العالم؟",
+        "correct_answer": "الفاتيكان",
+        "incorrect_answers": [
+            "ليسوتو",
+            "مدينة موناكو",
+            "تيتانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة ألمانية تقع على نهر إيسار؟",
+        "correct_answer": "ميونخ",
+        "incorrect_answers": [
+            "برلين",
+            "هامبورغ",
+            "دورتموند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عاصمة ولاية أوهايو الأمريكية هي مدينة تشيليكوث.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ماذا يُطلق على الكتلة الأرضية لتركيا الحديثة؟",
+        "correct_answer": "الأناضول",
+        "incorrect_answers": [
+            "برزخ أوتوما",
+            "أوتوما",
+            "برزخ الأناضول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تتميز بوجود ورقة قيقب على علمها؟",
+        "correct_answer": "كندا",
+        "incorrect_answers": [
+            "المكسيك",
+            "البرازيل",
+            "الهند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية تعتبر جزيرة؟",
+        "correct_answer": "قبرص",
+        "incorrect_answers": [
+            "أذربيجان",
+            "السلفادور",
+            "جيبوتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة إنجليزية يقع نصب ستونهنج (⁦Stonehenge⁩)‏؟",
+        "correct_answer": "ويلتشر",
+        "incorrect_answers": [
+            "سومرست",
+            "كامبريا",
+            "هيرفوردشير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المقاطعات في هولندا؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "14",
+            "10",
+            "13"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو المركز الإداري وأكبر مستوطنة في أرخبيل سفالبارد النرويجي؟",
+        "correct_answer": "لونغياربين",
+        "incorrect_answers": [
+            "سفيغروفا",
+            "ني آليسوند",
+            "بارنتسبورغ"
+        ]
+    }
+]

@@ -1,0 +1,232 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كيف أُعدم الفيلسوف سقراط؟",
+        "correct_answer": "بالسم",
+        "incorrect_answers": [
+            "بقطع الرأس",
+            "رمياً بالرصاص",
+            "بالصلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى أعلنت ليتوانيا استقلالها عن الاتحاد السوفيتي؟",
+        "correct_answer": "11 مارس 1990",
+        "incorrect_answers": [
+            "25 ديسمبر 1991",
+            "5 ديسمبر 1991",
+            "20 أبريل 1989"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى تُوّج نابليون بونابرت إمبراطوراً لفرنسا؟",
+        "correct_answer": "2 ديسمبر 1804",
+        "incorrect_answers": [
+            "3 يوليو 1802",
+            "8 مارس 1803",
+            "15 أكتوبر 1804"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من ينسب إليه كتابة الملحمة الشعرية 'الأوديسة'؟",
+        "correct_answer": "هوميروس",
+        "incorrect_answers": [
+            "أرسطو",
+            "أوديسيوس",
+            "سقراط"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من اللغات التالية لا تنتمي إلى عائلة اللغات الهندوأوروبية؟",
+        "correct_answer": "الفنلندية",
+        "incorrect_answers": [
+            "الإنجليزية",
+            "الهندية",
+            "الروسية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "هل قوبلاي خان هو حفيد جنكيز خان؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى بدأت حرب شبه الجزيرة الإيبيرية (حرب الاستقلال الإسبانية)‏؟",
+        "correct_answer": "1808",
+        "incorrect_answers": [
+            "1806",
+            "1810",
+            "1809"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "فيما يتعلق بالاحتلال البريطاني لأيرلندا، إلى ماذا يرمز الاختصار (⁦IRA⁩)‏؟",
+        "correct_answer": "الجيش الجمهوري الأيرلندي",
+        "incorrect_answers": [
+            "تحالف المتمردين الأيرلنديين",
+            "جيش الإصلاح الأيرلندي",
+            "التحالف الملكي الأيرلندي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كانت آخر خدمة للمركبة الحربية الأمريكية 'يو إس إس ميسوري' (⁦BB-63⁩) في الحرب الكورية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من من رؤساء الولايات المتحدة التاليين تعرض للاغتيال؟",
+        "correct_answer": "ويليام ماكينلي",
+        "incorrect_answers": [
+            "ليندون جونسون",
+            "تشيستر آرثر",
+            "فرانكلين روزفلت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى بدأت الثورة الفرنسية؟",
+        "correct_answer": "1789",
+        "incorrect_answers": [
+            "1823",
+            "1756",
+            "1799"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "هل صُممت طائرة 'سبتفاير' الحربية في الأصل بناءً على طائرة سباق؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هو التاريخ الدقيق لبدء الثورة الفرنسية؟",
+        "correct_answer": "5 مايو 1789",
+        "incorrect_answers": [
+            "12 أبريل 1789",
+            "5 أبريل 1789",
+            "6 مايو 1799"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أين كان أبراهام لينكولن عندما اغتاله جون ويلكس بوث عام 1865‏؟",
+        "correct_answer": "في المسرح",
+        "incorrect_answers": [
+            "على متن قارب",
+            "على ظهر حصانه",
+            "في السرير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "لأي غرض بُني قمة (تاج) مبنى إمباير ستيت في الأصل؟",
+        "correct_answer": "مرسى للمناطيد",
+        "incorrect_answers": [
+            "مانعة صواعق",
+            "هوائي إرسال",
+            "سارية علم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي سنوات وقعت معركة جاليبولي؟",
+        "correct_answer": "1915 - 1916",
+        "incorrect_answers": [
+            "1914 - 1918",
+            "1914 - 1915",
+            "1915 - 1918"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "تأسست الدولة العثمانية في عام 1299.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كم بلغت نسبة سكان العالم الذين توفوا بسبب 'الإنفلونزا الإسبانية' التي تعتبر من أكثر الأوبئة فتكاً بالبشر؟",
+        "correct_answer": "3 إلى 6 بالمئة",
+        "incorrect_answers": [
+            "6 إلى 10 بالمئة",
+            "1 إلى 3 بالمئة",
+            "أقل من 1 بالمئة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كانت المدخنة الرابعة لسفينة تايتانيك وهمية (غير حقيقية)، وصُممت لجعل السفينة تبدو أكثر قوة وتناسقاً.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام انتهت الحرب العالمية الثانية؟",
+        "correct_answer": "1945",
+        "incorrect_answers": [
+            "1943",
+            "1947",
+            "1950"
+        ]
+    }
+]

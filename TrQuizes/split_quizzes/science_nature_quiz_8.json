@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الكوكب الأكثر سخونة في المجموعة الشمسية؟",
+        "correct_answer": "الزهرة",
+        "incorrect_answers": [
+            "المشتري",
+            "عطارد",
+            "المريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الجزيئية لغاز الأوزون؟",
+        "correct_answer": "⁦O3⁩",
+        "incorrect_answers": [
+            "⁦C6H2O6⁩",
+            "⁦N2O⁩",
+            "⁦SO4⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من الذي طور أول لقاح ناجح لشلل الأطفال في خمسينيات القرن الماضي؟",
+        "correct_answer": "جوناس سالك",
+        "incorrect_answers": [
+            "جون إندرز",
+            "توماس ويلر",
+            "فريدريك روبنز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني الاسم العلمي للمخلوق البحري \"أنومالوكاريس\" الذي عاش في العصر الكامبري؟",
+        "correct_answer": "الروبيان غير الطبيعي",
+        "incorrect_answers": [
+            "السمكة المشوهة",
+            "السرطان الغريب",
+            "المحار الشاذ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو النوكليوتيد الذي يرتبط مع الغوانين؟",
+        "correct_answer": "السيتوزين",
+        "incorrect_answers": [
+            "الثايمين",
+            "الأدينين",
+            "اليوراسيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي كواكب المجموعة الشمسية هو الأقرب إلى الشمس؟",
+        "correct_answer": "عطارد",
+        "incorrect_answers": [
+            "الأرض",
+            "المريخ",
+            "الزهرة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "علم النفس هو علم دراسة السلوك والعقل.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما الاسم الشائع لحمض إيزوبوتيل فينيل بروبيونيك؟",
+        "correct_answer": "الإيبوبروفين",
+        "incorrect_answers": [
+            "المورفين",
+            "الكيتامين",
+            "الأسبرين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "مما تتكون أظافر الإنسان؟",
+        "correct_answer": "الكيراتين",
+        "incorrect_answers": [
+            "العظام",
+            "الكيتين",
+            "الكالسيوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يتكون معظم الشمس من أي عنصرين؟",
+        "correct_answer": "الهيدروجين والهيليوم",
+        "incorrect_answers": [
+            "الهيدروجين والنيتروجين",
+            "الكربون والنيتروجين",
+            "الكربون والهيليوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي قمر هو التابع الوحيد في مجموعتنا الشمسية الذي يمتلك غلافاً جوياً كثيفاً؟",
+        "correct_answer": "تيتان",
+        "incorrect_answers": [
+            "أوروبا",
+            "ميراندا",
+            "كاليستو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي يقع في مركز مجرتنا؟",
+        "correct_answer": "ثقب أسود",
+        "incorrect_answers": [
+            "ثقب دودي",
+            "مستعر أعظم",
+            "شبه نجم (كوازار)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي أطول عظمة في جسم الإنسان؟",
+        "correct_answer": "عظمة الفخذ",
+        "incorrect_answers": [
+            "لوح الكتف",
+            "الشظية",
+            "الزند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه الصفائح هي الأكثر شهرة بالتسبب في حدوث الزلازل والتسونامي؟",
+        "correct_answer": "حدود الصفائح المتقاربة/القشرة المحيطية",
+        "incorrect_answers": [
+            "حدود الصفائح المتباعدة/المتقاربة/القشرة المحيطية",
+            "حدود الصفائح التحويلية/حدود الصفائح المتباعدة",
+            "القشرة المحيطية والقارية/حدود الصفائح التحويلية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من البلاستيك التالي يُسخدم عادةً في إطارات النوافذ والمزاريب وأنابيب الصرف؟",
+        "correct_answer": "بولي فينيل كلورايد (⁦PVC⁩)",
+        "incorrect_answers": [
+            "بولي إيثيلين (⁦PE⁩)",
+            "بولي بروبيلين (⁦PP⁩)",
+            "بولي ستيرين (⁦PS⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس عنصراً حقيقياً في الجدول الدوري؟",
+        "correct_answer": "فيترينيوم",
+        "incorrect_answers": [
+            "براسيديوميوم",
+            "هاسيوم",
+            "لوتيتيوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "متى تم استنساخ أول ثديي بنجاح؟",
+        "correct_answer": "1996",
+        "incorrect_answers": [
+            "2009",
+            "1999",
+            "1985"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "المرض الجوفي (السيلياك) هو مرض يصيب القلب، مما يجعل المصابين به غير قادرين على تناول اللحوم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الفولاذ هو سبيكة من الحديد والكربون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكروموسومات في خلايا جسمك؟",
+        "correct_answer": "23",
+        "incorrect_answers": [
+            "21",
+            "22",
+            "24"
+        ]
+    }
+]

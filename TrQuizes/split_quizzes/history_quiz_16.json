@@ -1,0 +1,222 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "عن أي إنجاز فاز ألبرت أينشتاين بجائزة نوبل عام 1921‏؟",
+        "correct_answer": "التأثير الكهروضوئي",
+        "incorrect_answers": [
+            "النسبية",
+            "ثنائية الموجة والجسيم",
+            "طاقة نقطة الصفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان أول مستشار لألمانيا الموحدة عام 1871‏؟",
+        "correct_answer": "أوتو فون بسمارك",
+        "incorrect_answers": [
+            "القيصر فيلهلم",
+            "فريدريك الثاني",
+            "روبرت كوخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان الاستراتيجي العسكري في فترة زو الشرقية؟",
+        "correct_answer": "سون تزو",
+        "incorrect_answers": [
+            "لو بو",
+            "جنكيز خان",
+            "فلاد المخوزق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من خلف جوزيف ستالين في قيادة الاتحاد السوفيتي؟",
+        "correct_answer": "نيكيتا خروتشوف",
+        "incorrect_answers": [
+            "لافرينتي بيريا",
+            "فياتشيسلاف مولوتوف",
+            "جيورجي مالينكوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي دولة صغيرة جداً يُعتبر دستورها الأقدم ولا يزال سارياً حتى اليوم؟",
+        "correct_answer": "سان مارينو",
+        "incorrect_answers": [
+            "أندورا",
+            "موناكو",
+            "سانت كيتس ونيفيس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ولد مارتن لوثر كينغ الابن وآن فرانك في نفس العام.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ماذا يعني الاختصار \"⁦RMS⁩\" في سفينة \"⁦RMS Titanic⁩\" عام 1912‏؟",
+        "correct_answer": "سفينة البريد الملكي",
+        "incorrect_answers": [
+            "خدمة الجلالة الملكية",
+            "الجدول البحري المنتظم",
+            "مستشعر الدوامات المنظم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من اغتال الرئيس الأمريكي جيمس غارفيلد؟",
+        "correct_answer": "تشارلز غيتو",
+        "incorrect_answers": [
+            "سرحان سرحان",
+            "ليون تشولغوش",
+            "جون ويلكس بوث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي دولة من هذه الدول كانت من قوات الحلفاء في الحرب العالمية الثانية؟",
+        "correct_answer": "الاتحاد السوفيتي",
+        "incorrect_answers": [
+            "إيطاليا",
+            "ألمانيا",
+            "اليابان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من هذه الدول تم رسم خريطتها البحرية في عام 1500 من قبل الاستكشافات البحرية البرتغالية؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الهند",
+            "موزمبيق",
+            "مدغشقر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في عام 1967، نشرت إحدى المجلات قصة حول استخراج مواد كيميائية مهلوسة من الموز لإثارة تساؤلات أخلاقية حول حظر المخدرات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ماذا كانت تبيع أولى آلات البيع الذاتي في أوائل ثمانينيات القرن التاسع عشر؟",
+        "correct_answer": "بطاقات بريدية",
+        "incorrect_answers": [
+            "الكحول",
+            "السجائر",
+            "المشروبات الغازية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان قائد السويد في حرب الشمال العظمى؟",
+        "correct_answer": "كارل الثاني عشر",
+        "incorrect_answers": [
+            "بير ألبين هانسون",
+            "بطرس الأكبر",
+            "غوستافوس أدولفوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو رئيس الولايات المتحدة الوحيد الذي انتخب أربع مرات؟",
+        "correct_answer": "فرانكلين روزفلت",
+        "incorrect_answers": [
+            "ثيودور روزفلت",
+            "جورج واشنطن",
+            "أبراهام لينكون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "تأسست إسبانيا عام 1469 بزواج إيزابيلا الأولى ملكة قشتالة وفرديناند الثاني ملك أي مملكة أيبيرية أخرى؟",
+        "correct_answer": "أراغون",
+        "incorrect_answers": [
+            "غاليسيا",
+            "ليون",
+            "نافارا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في الحرب العالمية الثانية، خدمت طائرات 'هوكر تيفون' في مسرح عمليات المحيط الهادئ.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "بماذا كان يشتهر ويليام فريدريك كودي؟",
+        "correct_answer": "بوفالو بيل",
+        "incorrect_answers": [
+            "بيلي ذا كيد",
+            "وايلد بيل هيكوك",
+            "بوني بيل"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "لا تزال دبابة 'إم 41 ووكر بولدوغ' في الخدمة في بعض الدول حتى يومنا هذا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "بأي معاهدة انتهت حرب الثلاثين عاماً؟",
+        "correct_answer": "صلح وستفاليا",
+        "incorrect_answers": [
+            "معاهدة فرساي",
+            "معاهدة باريس",
+            "صلح براغ"
+        ]
+    }
+]

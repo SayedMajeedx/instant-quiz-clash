@@ -1,0 +1,210 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "على عكس معظم السلمندرات، أي جزء من سمندل الماء (⁦Newt⁩) يكون مسطحاً؟",
+        "correct_answer": "الذيل",
+        "incorrect_answers": [
+            "الرأس",
+            "الأسنان",
+            "الأقدام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الحقيقي للقط الغاضب (⁦Grumpy Cat⁩)‏؟",
+        "correct_answer": "تاردار سوس (⁦Tardar Sauce⁩)",
+        "incorrect_answers": [
+            "سوس",
+            "ميني",
+            "بروكلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "سمندل المكسيك (الأكسولوتل) هو حيوان برمائي يمكنه قضاء حياته بأكملها في طور اليرقة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "تمتلك القطط شوارب (شعيرات حسية) خلف أرجلها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "الفيلة غير قادرة جسدياً على القفز.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "كم عدد فصائل الضباع الحية المعروفة؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "8",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "أي مما يلي عبارة عن مستعمرة من الكائنات المجهرية (⁦Polyps⁩) وليس قنديل بحر حقيقي؟",
+        "correct_answer": "رجل الحرب البرتغالي (⁦Portuguese Man-of-War⁩)",
+        "incorrect_answers": [
+            "دبور البحر",
+            "إيروكاندجي",
+            "قرصع البحر (⁦Sea Nettle⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "الحمر الوحشية بيضاء اللون ولديها خطوط سوداء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "أي فصيلة من الدببة البنية ليست منقرضة؟",
+        "correct_answer": "الدب البني السوري",
+        "incorrect_answers": [
+            "دب كاليفورنيا الرمادي",
+            "دب الأطلس",
+            "الدب الرمادي المكسيكي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "دم البزّاقة (البزّاق) أخضر اللون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "خلد الماء (البلاتيبوس) من الثدييات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "متوسط عمر القط البري يتراوح بين 5 إلى 6 سنوات فقط.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "يمكن للأخطبوط المرور عبر أي فتحة تكون أكبر من منقاره.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي للإنسان المعاصر؟",
+        "correct_answer": "⁦Homo Sapiens⁩ (الإنسان العاقل)",
+        "incorrect_answers": [
+            "⁦Homo Ergaster⁩ (إنسان العمل)",
+            "⁦Homo Erectus⁩ (الإنسان المنتصب)",
+            "⁦Homo Neanderthalensis⁩ (إنسان نياندرتال)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "حيوان \"دجاج الجبل\" هو في الواقع دجاجة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "كم تبلغ تقريباً كمية الطعام التي يتناولها قضاعة البحر (ثعلب الماء) يومياً مقارنة بوزن جسمه؟",
+        "correct_answer": "25%",
+        "incorrect_answers": [
+            "10%",
+            "80%",
+            "45%"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "يمكن لحيوان إسفنج البحر أن يمتلك قلباً.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "طائر الكاكابو هو ببغاء كبير الحجم، غير قادر على الطيران، ونشاطه ليلي. ما هو موطنه الأصلي؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "جنوب أفريقيا",
+            "أستراليا",
+            "مدغشقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو أسرع حيوان في العالم؟",
+        "correct_answer": "صقر الشاهين",
+        "incorrect_answers": [
+            "العقاب الذهبي",
+            "الفهد (الشيتا)",
+            "ذبابة الخيل"
+        ]
+    }
+]

@@ -1,0 +1,232 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو الاسم الذي كان يُطلق تاريخياً على المدينة التركية المعروفة حالياً بإسطنبول؟",
+        "correct_answer": "القسطنطينية",
+        "incorrect_answers": [
+            "هودافينديغار",
+            "سوغوت",
+            "أدريانوبل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول هي الأصغر من حيث عدد السكان؟",
+        "correct_answer": "النرويج",
+        "incorrect_answers": [
+            "سلوفاكيا",
+            "فنلندا",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي المدينة البولندية التي يعرفها الألمان باسم دانزيغ؟",
+        "correct_answer": "غدانسك",
+        "incorrect_answers": [
+            "وارسو",
+            "زاكوباني",
+            "بوزنان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تسبق إسرائيل نيويورك بـ 7 ساعات زمنية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "سان مارينو هي الدولة الوحيدة المحاطة بالكامل بدولة أخرى.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تورونتو هي عاصمة دولة كندا الواقعة في أمريكا الشمالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تفوق أستراليا مساحةً؟",
+        "correct_answer": "5",
+        "incorrect_answers": [
+            "4",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من لغات الإنويت التالية كانت الأولى في استخدام نظام كتابة فريد لا يعتمد على الأبجدية اللاتينية؟",
+        "correct_answer": "الإنوكتيتوتية",
+        "incorrect_answers": [
+            "الإنوينّاكتونية",
+            "الغرينلاندية",
+            "الإنوبياتية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو اسم النشيد الوطني الكندي؟",
+        "correct_answer": "يا كندا",
+        "incorrect_answers": [
+            "يا أيتها القيقب الحمراء",
+            "الراية المزينة بأوراق الشجر",
+            "مارش إسقاط القرص"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "حركة المرور في اليابان تكون على الجانب الأيسر من الطريق.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "تقع بلدة لانفايربولغوينغيلغوغيريتشويرندروبولانتيسيليوغوغوغوتش (⁦Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch⁩) في أي جزيرة ويلزية؟",
+        "correct_answer": "أنجلسي",
+        "incorrect_answers": [
+            "باري",
+            "باردسي",
+            "كالدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الرسمية في ليختنشتاين؟",
+        "correct_answer": "الألمانية",
+        "incorrect_answers": [
+            "الفرنسية",
+            "الإنجليزية",
+            "الإيطالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كل اللغات التالية تُصنف ضمن اللغات الفنلندية الأوغرية ما عدا:",
+        "correct_answer": "السامودية",
+        "incorrect_answers": [
+            "المجرية",
+            "الفنلندية",
+            "الإستونية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع المنطقة المعروفة باسم مثلث برمودا؟",
+        "correct_answer": "شمال المحيط الأطلسي، بين فلوريدا وبورتوريكو",
+        "incorrect_answers": [
+            "شمال المحيط الهادئ، بين اليابان والولايات المتحدة",
+            "في البحر الكاريبي",
+            "جنوب المحيط الهادئ، بعيداً عن تشيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الأوبلاستات (المحافظات) الروسية التالية تشترك في الحدود مع بولندا؟",
+        "correct_answer": "كالينينغراد",
+        "incorrect_answers": [
+            "سامارا",
+            "نيجني نوفغورود",
+            "أومسك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يمكنك السير مشياً على الأقدام من النرويج إلى كوريا الشمالية عبر المرور بروسيا فقط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مدينة في ولاية تكساس تُلقب بـ \"الوردة الصفراء لتكساس\"؟",
+        "correct_answer": "أماريلو",
+        "incorrect_answers": [
+            "كوربوس كريستي",
+            "فريسكو",
+            "هيوستن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه المدن تقع على خط طول 4 درجات شرقاً؟",
+        "correct_answer": "أمستردام",
+        "incorrect_answers": [
+            "ريو دي جانيرو",
+            "تورونتو",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي مدينة تقع جامعة هارفارد؟",
+        "correct_answer": "كامبريدج",
+        "incorrect_answers": [
+            "بروفيدنس",
+            "نيويورك",
+            "واشنطن العاصمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع سلسلة جبال هونوا (⁦Hunua Ranges⁩)‏؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "نيبال",
+            "الصين",
+            "المكسيك"
+        ]
+    }
+]

@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الحقيقي لقطة الإنترنت الشهيرة 'جرامبي كات'؟",
+        "correct_answer": "تاردار سوس",
+        "incorrect_answers": [
+            "ليل باب",
+            "مارو",
+            "كولونيل مياو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو اللقب الرسمي الكامل لرئيس وزراء المملكة المتحدة؟",
+        "correct_answer": "اللورد الأول للخزانة",
+        "incorrect_answers": [
+            "دوق كامبريدج",
+            "المعارضة الوفية لجلالة الملكة",
+            "مدير عقارات التاج الملكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو رمز برج الجوزاء الفلكي؟",
+        "correct_answer": "التوأم",
+        "incorrect_answers": [
+            "السمك",
+            "الميزان",
+            "العذراء"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "سلوفاكيا عضو في الاتحاد الأوروبي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في المتوسط، يُقتل شخص واحد على الأقل كل ساعة في الولايات المتحدة بسبب سائق مخمور.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان ألبرت أينشتاين يواجه صعوبة في الرياضيات عندما كان في المدرسة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الجبل الذي يملك أعلى قمة في أمريكا الشمالية؟",
+        "correct_answer": "دينالي، الولايات المتحدة الأمريكية",
+        "incorrect_answers": [
+            "جبل سانت إلياس، الحدود الأمريكية الكندية",
+            "جبل لوغان، كندا",
+            "بيكو دي أوريزابا، المكسيك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الماء ملون باللون الأزرق بشكل طبيعي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الشعار الترويجي الأصلي لمشروب ماونتن ديو؟",
+        "correct_answer": "ياهو! ماونتن ديو... سوف يداعب أحشاءك!",
+        "incorrect_answers": [
+            "أعطني ديو",
+            "افعل الديو",
+            "احصل على شعور السير حافي القدمين عند شرب ماونتن ديو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "اللغة الفرنسية هي لغة رسمية في كندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو متوسط عمر نملة الحدائق؟",
+        "correct_answer": "15 عاماً",
+        "incorrect_answers": [
+            "24 ساعة",
+            "أسبوع واحد",
+            "3 أعوام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم لوحة شفيق السيئة في حلقة سبونج بوب 'فنان مجهول'؟",
+        "correct_answer": "جريء ومتهور",
+        "incorrect_answers": [
+            "استراحة شفيق",
+            "قطع ممزقة",
+            "منظور مائل"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "بلوتو كوكب.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الأكثر تحدثاً في نصف الكرة الأرضية الجنوبي؟",
+        "correct_answer": "البرتغالية",
+        "incorrect_answers": [
+            "الإنجليزية",
+            "الإسبانية",
+            "الفرنسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الرسمية في البرازيل؟",
+        "correct_answer": "البرتغالية",
+        "incorrect_answers": [
+            "البرازيلية",
+            "الإسبانية",
+            "الإنجليزية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الذي أُطلق على الديكتاتوريين العسكريين اليابانيين الذين حكموا البلاد بين القرنين الثاني عشر والتاسع عشر؟",
+        "correct_answer": "شوغون",
+        "incorrect_answers": [
+            "نينجا",
+            "ساموراي",
+            "شينوبي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تم شراء موقع مشاركة الفيديوهات يوتيوب بالكامل من قِبل فيسبوك مقابل ⁦1.65⁩ مليار دولار أمريكي على شكل أسهم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الجبل الذي يملك أعلى قمة في أمريكا الجنوبية؟",
+        "correct_answer": "أكونكاغوا، الأرجنتين",
+        "incorrect_answers": [
+            "أوخوس ديل سالادو، الحدود الأرجنتينية التشيلية",
+            "مونتي بيسيس، الأرجنتين",
+            "هواسكاران، بيرو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الباسودوبل (⁦Pasodoble⁩) هو نوع من صلصة المعكرونة الإيطالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان لون كوكاكولا الأصلي أخضر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    }
+]

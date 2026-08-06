@@ -1,0 +1,218 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع أقدم قاعدة إطلاق فضاء ما زالت تعمل في العالم؟",
+        "correct_answer": "كازاخستان",
+        "incorrect_answers": [
+            "روسيا",
+            "إيران",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المناطق الزمنية في روسيا؟",
+        "correct_answer": "11",
+        "incorrect_answers": [
+            "6",
+            "24",
+            "16"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الجزر التي تطالب بها كل من اليابان وروسيا؟",
+        "correct_answer": "جزر كوريل",
+        "incorrect_answers": [
+            "جزر باراسيل",
+            "جزر تشاغوس",
+            "جزر سبراتلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست جزءاً من قارة آسيا؟",
+        "correct_answer": "سورينام",
+        "incorrect_answers": [
+            "جورجيا",
+            "روسيا",
+            "سنغافورة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تسمى مجموعة الجزر المتقاربة 'أرخبيل'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "متى تحتفل فنلندا بيوم استقلالها؟",
+        "correct_answer": "6 ديسمبر",
+        "incorrect_answers": [
+            "2 يناير",
+            "12 نوفمبر",
+            "8 فبراير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي ثاني أكبر مدينة في ليتوانيا؟",
+        "correct_answer": "كاوناس",
+        "incorrect_answers": [
+            "بانيفيزيس",
+            "فيلنيوس",
+            "كلايبيدا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تشترك روسيا في حدود برية مع كوريا الشمالية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر بحيرة مياه عذبة في العالم؟",
+        "correct_answer": "بحيرة سوبيريور",
+        "incorrect_answers": [
+            "بحر قزوين",
+            "بحيرة ميشيغان",
+            "بحيرة هورون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة موريشيوس؟",
+        "correct_answer": "بورت لويس",
+        "incorrect_answers": [
+            "بورت مورسبي",
+            "بورت فيلا",
+            "بورت أو برانس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع دولة غامبيا؟",
+        "correct_answer": "إفريقيا",
+        "incorrect_answers": [
+            "آسيا",
+            "أمريكا الجنوبية",
+            "أوروبا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كانت الأراضي الحديثة للبرتغال جزءاً من الإمبراطورية الرومانية في الماضي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لا تشترك في حدود مع النمسا؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "سلوفينيا",
+            "سويسرا",
+            "سلوفاكيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تبلغ مساحة غرينلاند تقريباً نفس مساحة قارة إفريقيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كوالالمبور هي عاصمة أي دولة؟",
+        "correct_answer": "ماليزيا",
+        "incorrect_answers": [
+            "إندونيسيا",
+            "سنغافورة",
+            "تايلاند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "سيول هي عاصمة كوريا الشمالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة السنغال؟",
+        "correct_answer": "داكار",
+        "incorrect_answers": [
+            "نواكشوط",
+            "كوناكري",
+            "مونروفيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم دولة تشترك في حدود برية مع لوكسمبورغ؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "4",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "المجموعتان العرقيتان الأكبر في بلجيكا هما الفلمنك والوالون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

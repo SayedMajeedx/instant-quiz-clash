@@ -1,0 +1,218 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي مصارع فاز ببطولة رويال رامبل للرجال لعام 2019‏؟",
+        "correct_answer": "سيث رولينز",
+        "incorrect_answers": [
+            "برون سترومان",
+            "إيه جيه ستايلز",
+            "أندرادي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد ألقاب بطولة فرنسا المفتوحة للتنس التي فاز بها بيورن بورغ؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "4",
+            "9",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز بدوري أبطال أوروبا في عام 2017‏؟",
+        "correct_answer": "ريال مدريد",
+        "incorrect_answers": [
+            "أتلتيكو مدريد",
+            "موناكو",
+            "يوفنتوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو لقب نادي رغبي يونيون لبلدة نورثهامبتون؟",
+        "correct_answer": "السينتس",
+        "incorrect_answers": [
+            "هارليكوينز",
+            "ساراسينز",
+            "واسبس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو الطول الدقيق للجزء المستقيم في الحارة الأولى من مضمار أولمبي؟",
+        "correct_answer": "⁦84.39⁩ متر",
+        "incorrect_answers": [
+            "100 متر",
+            "100 ياردة",
+            "⁦109.36⁩ ياردة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي عام تأسس نادي باري الإيطالي لكرة القدم؟",
+        "correct_answer": "1908",
+        "incorrect_answers": [
+            "1945",
+            "2014",
+            "1895"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من كان هداف بطولة كأس العالم لكرة القدم لعام 2014‏؟",
+        "correct_answer": "خاميس رودريغيز",
+        "incorrect_answers": [
+            "توماس مولر",
+            "ليونيل ميسي",
+            "نيمار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي فريق فاز ببطولة دوري كرة السلة الأمريكي للمحترفين (⁦NBA⁩) لموسم 2014-2015‏؟",
+        "correct_answer": "غولدن ستيت واريورز",
+        "incorrect_answers": [
+            "كليفلاند كافالييرز",
+            "هوستون روكتس",
+            "أتلانتا هوكس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من هو السائق الذي توج بلقب بطولة العالم للفورمولا 1 برقم قياسي بلغ 7 مرات؟",
+        "correct_answer": "مايكل شوماخر",
+        "incorrect_answers": [
+            "آيرتون سينا",
+            "فرناندو ألونسو",
+            "جيم كلارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "مع أي فريق فاز ستيفن جيرارد بلقب دوري أبطال أوروبا؟",
+        "correct_answer": "ليفربول",
+        "incorrect_answers": [
+            "ريال مدريد",
+            "تشيلسي",
+            "مانشستر سيتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما اسم الأداة المستخدمة لضرب الكرة البيضاء في السنوكر أو البلياردو؟",
+        "correct_answer": "العصا",
+        "incorrect_answers": [
+            "المضرب",
+            "المضرب الخشبي",
+            "المطرقة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هي الدولة التي استضافت كأس العالم لكرة القدم عام 2022‏؟",
+        "correct_answer": "قطر",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "اليابان",
+            "سويسرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم كان معدل ضربات السير دونالد برادمان في مباريات الاختبار في الكريكت؟",
+        "correct_answer": "⁦99.94⁩",
+        "incorrect_answers": [
+            "100",
+            "⁦69.51⁩",
+            "⁦44.78⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي منتخب هزمه المنتخب الإنجليزي في دور نصف النهائي قبل أن يفوز بنهائي كأس العالم عام 1966‏؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "ألمانيا الغربية",
+            "الاتحاد السوفيتي",
+            "البرازيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "إدسون أرانتيس دو ناسيمنتو هو الاسم الكامل لأي لاعب كرة قدم أسطوري؟",
+        "correct_answer": "بيليه",
+        "incorrect_answers": [
+            "روماريو",
+            "زيكو",
+            "رونالدينيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من أي جزيرة برتغالية ينحدر لاعب كرة القدم كريستيانو رونالدو؟",
+        "correct_answer": "ماديرا",
+        "incorrect_answers": [
+            "تيرسيرا",
+            "سانتا ماريا",
+            "بورتو سانتو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو فريق كرة السلة الذي خاض أكبر عدد من نهائيات دوري كرة السلة الأمريكي للمحترفين (⁦NBA⁩)‏؟",
+        "correct_answer": "لوس أنجلوس ليكرز",
+        "incorrect_answers": [
+            "بوسطن سلتكس",
+            "فيلادلفيا سفنتي سيكسرز",
+            "غولدن ستيت واريورز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي شركة مصنعة للسيارات فازت بسباق لومان 24 ساعة لعام 2016‏؟",
+        "correct_answer": "بورشه",
+        "incorrect_answers": [
+            "تويوتا",
+            "أودي",
+            "فيراري"
+        ]
+    }
+]

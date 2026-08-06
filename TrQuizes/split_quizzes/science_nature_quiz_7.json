@@ -1,0 +1,240 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو نوع عمى الألوان الأكثر ندرة على الإطلاق؟",
+        "correct_answer": "الأزرق",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأخضر",
+            "البنفسجي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كل العناصر الفلزية التالية تكون سائلة عند درجة حرارة الغرفة أو قريباً منها ما عدا:",
+        "correct_answer": "البيريليوم",
+        "incorrect_answers": [
+            "الغاليوم",
+            "السيزيوم",
+            "الزئبق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي لغوريلا السهول الغربية؟",
+        "correct_answer": "غوريلا غوريلا غوريلا",
+        "incorrect_answers": [
+            "غوريلا غوريلا ديهلي",
+            "غوريلا بيرنغي غراويري",
+            "غوريلا بيرنغي بيرنغي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر الذي يتحول إلى ألماس عند تعرضه لحرارة وضغط شديدين؟",
+        "correct_answer": "الكربون",
+        "incorrect_answers": [
+            "النيتروجين",
+            "الأكسجين",
+            "الهيدروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من جسم الإنسان يصيبه مرض ألزهايمر بشكل أساسي؟",
+        "correct_answer": "الدماغ",
+        "incorrect_answers": [
+            "الرئتان",
+            "الجلد",
+            "القلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "حمض الفوليك هو الشكل الاصطناعي لأي من الفيتامينات التالية؟",
+        "correct_answer": "فيتامين ب",
+        "incorrect_answers": [
+            "فيتامين أ",
+            "فيتامين ج",
+            "فيتامين د"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الدماغ يأخذ اسمه من الكلمة اليونانية التي تعني \"حصان البحر\"؟",
+        "correct_answer": "الحصين",
+        "incorrect_answers": [
+            "المخيخ",
+            "المهاد",
+            "اللوزة الدماغية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة قياس المقاومة الكهربائية؟",
+        "correct_answer": "الأوم",
+        "incorrect_answers": [
+            "المهو",
+            "التسلا",
+            "الجول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد أنواع الكواركات في النموذج القياسي للفيزياء؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من هو عالم النفس السويسري الذي يرتبط اسمه بمفهومي الشخصية الانطوائية والانبساطية؟",
+        "correct_answer": "كارل يونغ",
+        "incorrect_answers": [
+            "جان بياجيه",
+            "أليس ميلر",
+            "هيرمان رورشاخ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يقوم القرش الأبيض الكبير أحياناً بهجوم \"الضربة والعضة\" (عضة اختبارية) على ضحاياه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الوحدة القياسية الدولية لشدة الإضاءة؟",
+        "correct_answer": "الكانديلا",
+        "incorrect_answers": [
+            "اللومن",
+            "الفاراداي",
+            "الكولوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي غاز يشكل حوالي 78% من الغلاف الجوي للأرض؟",
+        "correct_answer": "النيتروجين",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الأرغون",
+            "ثاني أكسيد الكربون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "لأقرب دقيقة، كم من الوقت يستغرق ضوء الشمس للوصول إلى الأرض؟",
+        "correct_answer": "8 دقائق",
+        "incorrect_answers": [
+            "6 دقائق",
+            "دقيقتان",
+            "12 دقيقة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تيمناً بمن تم تسمية العنصر الكيميائي الكوريوم؟",
+        "correct_answer": "ماري وبيير كوري",
+        "incorrect_answers": [
+            "مسبار كوريوسيتي",
+            "جورج الفضولي",
+            "ستيفن كوري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أكبر كائن حي معروف للإنسان حالياً؟",
+        "correct_answer": "فطر العسل",
+        "incorrect_answers": [
+            "الحوت الأزرق",
+            "شجرة الخشب الأحمر",
+            "الشعاب المرجانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العضيو الذي يعتبر \"محطة طاقة الخلية\"؟",
+        "correct_answer": "الميتوكوندريا",
+        "incorrect_answers": [
+            "الريبوسوم",
+            "ريد بول",
+            "النواة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "يُعتبر المركب العضوي كحولاً إذا كان يحتوي على أي من المجموعات الوظيفية التالية؟",
+        "correct_answer": "الهيدروكسيل",
+        "incorrect_answers": [
+            "الكربونيل",
+            "الألكيل",
+            "الألدهيد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "إلى ماذا يشير مصطلح \"العزل\" في علم الأحياء الدقيقة؟",
+        "correct_answer": "فصل سلالة معينة من تجمع طبيعي ومختلط للميكروبات الحية",
+        "incorrect_answers": [
+            "نقص التغذية في البيئات الدقيقة",
+            "مستوى النيتروجين في التربة",
+            "اختبار تأثيرات كائنات دقيقة معينة في بيئات معزولة مثل الكهوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مصطلح نفسي يشير إلى التوتر الناتج عن حمل معتقدات متناقضة؟",
+        "correct_answer": "التنافر المعرفي",
+        "incorrect_answers": [
+            "متلازمة التقلب",
+            "انقسام الدماغ",
+            "الرؤية العمياء"
+        ]
+    }
+]

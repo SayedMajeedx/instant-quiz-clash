@@ -1,0 +1,238 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى استقلت كندا عن الاتحاد الكونفدرالي لتصبح دولة مستقلة؟",
+        "correct_answer": "1 يوليو 1867",
+        "incorrect_answers": [
+            "1 يوليو 1763",
+            "1 يوليو 1832",
+            "1 يوليو 1902"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من من علماء الفيزياء التاليين لم يعمل في مشروع مانهاتن؟",
+        "correct_answer": "موراي جيل مان",
+        "incorrect_answers": [
+            "ريتشارد فاينمان",
+            "جيه. روبرت أوبنهايمر",
+            "جون فون نيومان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كم كان الطول الإجمالي لسفينة تايتانيك؟",
+        "correct_answer": "882 قدمًا | ⁦268.8⁩ مترًا",
+        "incorrect_answers": [
+            "759 قدمًا | ⁦231.3⁩ مترًا",
+            "1042 قدمًا | ⁦317.6⁩ مترًا",
+            "825 قدمًا | ⁦251.5⁩ مترًا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام حدث انهيار سوق ألعاب الفيديو في أمريكا الشمالية؟",
+        "correct_answer": "1983",
+        "incorrect_answers": [
+            "1982",
+            "1993",
+            "1970"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من أصبح أول قيصر لروسيا عام 1547‏؟",
+        "correct_answer": "إيفان الرهيب",
+        "incorrect_answers": [
+            "أليكسيس الروسي",
+            "ميخائيل رومانوف",
+            "بطرس الأكبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في عام 1720، كانت إنجلترا غارقة في ديون طائلة وتورطت في كارثة 'فقاعة بحر الجنوب'. من كان العقل المدبر وراءها؟",
+        "correct_answer": "جون بلانت",
+        "incorrect_answers": [
+            "دانيال ديفو",
+            "روبرت هارلي",
+            "جون تشرشل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي بلدة بولاية فرجينيا هاجم المناهض للعبودية جون براون مستودع الأسلحة؟",
+        "correct_answer": "هاربرز فيري",
+        "incorrect_answers": [
+            "ريتشموند",
+            "هاريسونبرغ",
+            "مارتينسبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من هذه الدول لم تكن جزءاً من الاتحاد السوفيتي؟",
+        "correct_answer": "أفغانستان",
+        "incorrect_answers": [
+            "تركمانستان",
+            "كازاخستان",
+            "أوزبكستان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى تأسست جمهورية الصين الشعبية؟",
+        "correct_answer": "1 أكتوبر 1949",
+        "incorrect_answers": [
+            "3 أبريل 1947",
+            "7 مايو 1945",
+            "6 ديسمبر 1950"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ضد أي دولة تشكل تحالف 'الوفاق الصغير'؟",
+        "correct_answer": "المجر",
+        "incorrect_answers": [
+            "ألمانيا",
+            "فرنسا",
+            "بروسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام حدث انهيار بورصة وول ستريت؟",
+        "correct_answer": "1929",
+        "incorrect_answers": [
+            "1932",
+            "1930",
+            "1925"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي عاصمة فيتنام الجنوبية قبل حرب فيتنام؟",
+        "correct_answer": "سايغون",
+        "incorrect_answers": [
+            "مدينة هو تشي منه",
+            "هانوي",
+            "هوي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام تأسست شركة ألعاب الفيديو إلكترونيك آرتس (⁦EA⁩)‏؟",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1999",
+            "1981",
+            "2005"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "بدأت احتجاجات وثورات الربيع العربي في أي من هذه الدول العربية؟",
+        "correct_answer": "تونس",
+        "incorrect_answers": [
+            "المغرب",
+            "سوريا",
+            "مصر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "استمرت الحملة الصليبية الرابعة من عام 1095 إلى عام 1099 ميلادي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ماذا كان هدف 'ثورة المظلات' في هونغ كونغ عام 2014‏؟",
+        "correct_answer": "حق الاقتراع العام الحقيقي",
+        "incorrect_answers": [
+            "نيل الاستقلال",
+            "العودة إلى الحكم البريطاني",
+            "تخفيض الضرائب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "تعتبر 'الفيداس' (وهي مجموعة من الترانيم والقصائد السنسكريتية) نصوصاً مقدسة في أي ديانة؟",
+        "correct_answer": "الهندوسية",
+        "incorrect_answers": [
+            "اليهودية",
+            "الإسلام",
+            "البوذية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "تُعرف الصراعات التي دارت في القرن الخامس عشر بين عائلتي يورك ولانكستر بحرب الـ...",
+        "correct_answer": "حرب الوردتين",
+        "incorrect_answers": [
+            "حرب الزنابق",
+            "حرب النرجس",
+            "حرب التوليب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما اسم السفينة التي كانت على بعد أميال قليلة من تايتانيك عندما اصطدمت بجبل جليدي في 14 أبريل 1912‏؟",
+        "correct_answer": "كاليفورنيان",
+        "incorrect_answers": [
+            "كارباثيا",
+            "كريستول",
+            "كوميرس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كانت البرازيل إمبراطورية في السابق.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

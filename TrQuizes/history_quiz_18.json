@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى بدأت أزمة القرن الثالث؟",
+        "correct_answer": "235 ميلادي",
+        "incorrect_answers": [
+            "235 قبل الميلاد",
+            "242 ميلادي",
+            "210 ميلادي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو المحرك الذي كانت تستخدمه طائرة 'سبتفاير إل إف إم كيه 9' (⁦Spitfire L.F⁩. ⁦Mk IX⁩)‏؟",
+        "correct_answer": "ميرلين 66",
+        "incorrect_answers": [
+            "غريفون 65",
+            "ميرلين 50",
+            "ميرلين ⁦X⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "خاضت جمهورية هولندا حرب الثمانين عاماً ضد أي دولة؟",
+        "correct_answer": "إسبانيا",
+        "incorrect_answers": [
+            "فرنسا",
+            "إنجلترا",
+            "البرتغال"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "الاسم الحقيقي لجوزيف ستالين هو 'يوسف بيساريونيس دزه جوغاشفيلي'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام أصبحت كنتاكي الولاية رقم 15 التي تنضم إلى الاتحاد الأمريكي؟",
+        "correct_answer": "1792",
+        "incorrect_answers": [
+            "1782",
+            "1798",
+            "1788"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من هو أول إنسان يسافر إلى الفضاء الخارجي؟",
+        "correct_answer": "يوري غاغارين",
+        "incorrect_answers": [
+            "فيرجيل إيفان \"غاس\" غريسوم",
+            "نيل آرمسترونغ",
+            "بز ألدرين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي جنسية مخترع آلة التشفير الشهيرة 'إنجما'؟",
+        "correct_answer": "ألماني",
+        "incorrect_answers": [
+            "أمريكي",
+            "بريطاني",
+            "بولندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو المخترع البريطاني الذي اخترع آلة بذار البذور (السطارة)‏؟",
+        "correct_answer": "جيثرو تال",
+        "incorrect_answers": [
+            "تشارلز بابيج",
+            "إسحاق نيوتن",
+            "جوزيف جون طومسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما اسم شبكة التجسس التي ساعدت الولايات المتحدة على الفوز بحرب الاستقلال؟",
+        "correct_answer": "شبكة كولبر",
+        "incorrect_answers": [
+            "شبكة تجسس نيويورك",
+            "جواسيس واشنطن",
+            "غير مسماة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان آخر إمبراطور روماني في عام الأباطرة الأربعة (69 ميلادي)‏؟",
+        "correct_answer": "فيسباسيان",
+        "incorrect_answers": [
+            "فيتيليوس",
+            "أوتو",
+            "غالبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما اسم طائرة بوينغ ⁦B-29⁩ التي ألقت القنبلة الذرية 'الولد الصغير' (⁦Little Boy⁩) على هيروشيما؟",
+        "correct_answer": "إينولا غي",
+        "incorrect_answers": [
+            "الشر الضروري",
+            "الفنان العظيم",
+            "البيت الممتلئ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الاسم غير الرسمي لألمانيا بين عامي 1919 و1933‏؟",
+        "correct_answer": "جمهورية فايمار",
+        "incorrect_answers": [
+            "جمهورية ألمانيا الديمقراطية",
+            "جمهورية ألمانيا الاتحادية",
+            "النمسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "اغتيال أي شخصية ملكية أدى إلى اندلاع الحرب العالمية الأولى؟",
+        "correct_answer": "الأرشيدوق فرانز فرديناند",
+        "incorrect_answers": [
+            "لويس مونتباتن",
+            "الملك تشارلز الأول",
+            "نيقولا الثاني"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "الرئيس الأمريكي رونالد ريجان هو أول رئيس يعين امرأة في المحكمة العليا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي يوم بدأ بناء مبنى البنتاغون، وهو مقر وزارة دفاع الولايات المتحدة؟",
+        "correct_answer": "11 سبتمبر 1941",
+        "incorrect_answers": [
+            "15 يونيو 1947",
+            "15 يناير 1943",
+            "2 سبتمبر 1962"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من هذه الدول لم تكن ضمن قوات دول المحور (دول الوسط) خلال الحرب العالمية الأولى؟",
+        "correct_answer": "إسبانيا",
+        "incorrect_answers": [
+            "النمسا-المجر",
+            "تركيا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو النشاط الإجرامي الذي تضمنه الماضي الإجرامي لجوزيف ستالين؟",
+        "correct_answer": "سرقة القطارات",
+        "incorrect_answers": [
+            "القتل المأجور",
+            "التهرب الضريبي",
+            "تزوير الهوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كم يوماً استمرت انتفاضة وارسو خلال الحرب العالمية الثانية؟",
+        "correct_answer": "63 يوماً",
+        "incorrect_answers": [
+            "20 يوماً",
+            "55 يوماً",
+            "224 يوماً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كم عدد عمليات هبوط البشر على سطح القمر التي تمت بالفعل؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "1",
+            "3",
+            "7"
+        ]
+    }
+]

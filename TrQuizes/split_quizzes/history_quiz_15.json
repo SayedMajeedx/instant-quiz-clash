@@ -1,0 +1,224 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "تم التنازل عن كندا لبريطانيا بموجب شروط معاهدة باريس عام 1763.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من كان الجنرال الكونفدرالي في الحرب الأهلية الأمريكية؟",
+        "correct_answer": "روبرت إي لي",
+        "incorrect_answers": [
+            "جورج كاستر",
+            "يوليسيس غرانت",
+            "جورج ماكليلان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "الرجل الذي أطلق النار على ألكسندر هاميلتون كان يُدعى آرون بور.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو اسم سفينة التجسس التابعة للبحرية الأمريكية التي هاجمتها القوات الكورية الشمالية واستولت عليها عام 1968‏؟",
+        "correct_answer": "يو إس إس بويبلو",
+        "incorrect_answers": [
+            "يو إس إس نورث كارولاينا",
+            "يو إس إس كونستيتيوشن",
+            "يو إس إس إنديانابوليس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي من هذه المدن افتُتح أول متنزه \"ليغولاند\" عام 1968‏؟",
+        "correct_answer": "بيلوند، الدنمارك",
+        "incorrect_answers": [
+            "كارلسباد، كاليفورنيا",
+            "وينتر هافن، فلوريدا",
+            "ناغويا، اليابان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "شغل السير إسحاق نيوتن منصب عضو في البرلمان، ولكن المرة الوحيدة المسجلة التي تحدث فيها كانت للشكوى من تيار هواء بارد في القاعة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى انتهى بناء قناة السويس؟",
+        "correct_answer": "1869",
+        "incorrect_answers": [
+            "1859",
+            "1860",
+            "1850"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي العبارة التذكيرية المستخدمة لتذكر مصائر زوجات الملك هنري الثامن؟",
+        "correct_answer": "مطلقة، مقطوعة الرأس، متوفاة، مطلقة، مقطوعة الرأس، ناجية",
+        "incorrect_answers": [
+            "مقطوعة الرأس، متوفاة، مطلقة، مطلقة، مقطوعة الرأس, ناجية",
+            "متوفاة، مقطوعة الرأس، مطلقة، مقطوعة الرأس، ناجية، مطلقة",
+            "ناجية، مقطوعة الرأس، متوفاة، مطلقة، مطلقة، مقطوعة الرأس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي من هؤلاء الفيزيائيين النظريين تنبأ أولاً بوجود المادة المضادة؟",
+        "correct_answer": "بول ديراك",
+        "incorrect_answers": [
+            "نيلز بور",
+            "ألبيرت أينشتاين",
+            "فيرنر هايزنبرغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من هو إمبراطور الإمبراطورية البيزنطية الذي أمر ببناء آيا صوفيا؟",
+        "correct_answer": "جستنيان الأول",
+        "incorrect_answers": [
+            "قسطنطين الرابع",
+            "أركاديوس",
+            "ثيودوسيوس العظيم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو أول ثديي تم إطلاقه بنجاح إلى مدار الأرض؟",
+        "correct_answer": "الكلبة لايكا",
+        "incorrect_answers": [
+            "الشمبانزي هام",
+            "القردة بيكر",
+            "الكلبة بيلكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "مع أي فيلسوف يوناني تربط مقولة \"أنا أعلم أنني لا أعلم شيئاً\"؟",
+        "correct_answer": "سقراط",
+        "incorrect_answers": [
+            "أرسطو",
+            "أفلاطون",
+            "فيثاغورس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من هو أول رئيس للولايات المتحدة؟",
+        "correct_answer": "جورج واشنطن",
+        "incorrect_answers": [
+            "جيمس ماديسون",
+            "توماس جيفرسون",
+            "جيمس بولك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي تاريخ ولد أدولف هتلر؟",
+        "correct_answer": "20 أبريل 1889",
+        "incorrect_answers": [
+            "12 يونيو 1889",
+            "6 فبراير 1889",
+            "16 أبريل 1889"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من كان من بين الذين لقوا حتفهم في مأساة تحطم طائرة سمولينسك في روسيا عام 2010‏؟",
+        "correct_answer": "الرئيس البولندي",
+        "incorrect_answers": [
+            "البابا يوحنا بولس الثاني",
+            "بانغ-دينغ أو",
+            "ألبرت بوتين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي قرية أيرلندية في مقاطعة مايو أنشأت قطاعاً سياحياً بناءً على ظهور مزعوم للعذراء مريم عام 1879‏؟",
+        "correct_answer": "نوك",
+        "incorrect_answers": [
+            "باليكاسل",
+            "سوينفورد",
+            "تورلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى سلمت بريطانيا سيادة هونغ كونغ مجدداً إلى الصين؟",
+        "correct_answer": "1997",
+        "incorrect_answers": [
+            "1999",
+            "1841",
+            "1900"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كم كان عمر ليندون جونسون عندما تولى رئاسة الولايات المتحدة؟",
+        "correct_answer": "55",
+        "incorrect_answers": [
+            "50",
+            "60",
+            "54"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أين قُتل المستكشف البرتغالي فرديناند ماجلان في عام 1521‏؟",
+        "correct_answer": "الفلبين",
+        "incorrect_answers": [
+            "جزر الكناري",
+            "غوام",
+            "الأرجنتين"
+        ]
+    }
+]

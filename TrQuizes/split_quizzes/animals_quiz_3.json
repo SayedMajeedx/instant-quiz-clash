@@ -1,0 +1,230 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "مما تتكون قرون وحيد القرن (الخرتيت)‏؟",
+        "correct_answer": "الكيراتين",
+        "incorrect_answers": [
+            "العظام",
+            "العاج",
+            "الجلد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو أسرع حيوان بري على الأرض؟",
+        "correct_answer": "الفهد (الشيتا)",
+        "incorrect_answers": [
+            "الأسد",
+            "غزال تومسون",
+            "الظبي شائك القرن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "أي من الثعابين التالية ليس ثعباناً ساماً؟",
+        "correct_answer": "الأصلة الشبكية (⁦Reticulated python⁩)",
+        "incorrect_answers": [
+            "كرايت مالايوي (⁦Malayan Krait⁩)",
+            "ثعبان البحر أصفر البطن",
+            "المامبا السوداء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ماذا كان يُسمى الذئب الإثيوبي قبل أن يُعرف أنه ينتمي إلى فصيلة الذئاب؟",
+        "correct_answer": "ابن آوى سيمين (⁦Simien Jackal⁩)",
+        "incorrect_answers": [
+            "القيوط الإثيوبي",
+            "الثعلب الأمهري",
+            "كانيس سيمينسيس (⁦Canis Simiensis⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "تشتهر الثعابين والسحالي بإخراج لسانها وإدخاله بسرعة (التذوق باللسان). ما سبب هذا السلوك؟",
+        "correct_answer": "التقاط جزيئات الرائحة",
+        "incorrect_answers": [
+            "تذوق الهواء العذب",
+            "تهديد الكائنات الأخرى",
+            "جذب الإناث للتزاوج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو لون طائر \"قيق ستيلر\" (⁦Steller's Jay⁩)‏؟",
+        "correct_answer": "أزرق وأسود",
+        "incorrect_answers": [
+            "أزرق ورمادي",
+            "أزرق وأبيض",
+            "رمادي وأسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو نوع الحيوان الذي ينتمي إليه الـ \"ناتيرجاك\" (⁦Natterjack⁩)‏؟",
+        "correct_answer": "علجوم (ضفدع طين)",
+        "incorrect_answers": [
+            "طائر",
+            "سمكة",
+            "حشرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من الفئران في اللغة الإنجليزية؟",
+        "correct_answer": "⁦Mischief⁩ (ميسشيف)",
+        "incorrect_answers": [
+            "⁦Pack⁩ (باك)",
+            "⁦Race⁩ (ريس)",
+            "⁦Drift⁩ (دريفت)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "إلى أي شعبة حيوية تنتمي جميع الثدييات والطيور والزواحف؟",
+        "correct_answer": "الحبليات (⁦Chordata⁩)",
+        "incorrect_answers": [
+            "شوكيات الجلد (⁦Echinodermata⁩)",
+            "الحلقيات (⁦Annelida⁩)",
+            "الصفيحيات (⁦Placozoa⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "لا يتبرز الدب أثناء فترة البيات الشتوي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو لون أنثى طائر الشحرور؟",
+        "correct_answer": "بني",
+        "incorrect_answers": [
+            "أسود",
+            "أبيض",
+            "أصفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ماذا يسمى مسكن الأرنب؟",
+        "correct_answer": "جحر",
+        "incorrect_answers": [
+            "عش",
+            "عرين",
+            "عش سنجاب (⁦Dray⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "تحتفظ حيوانات الكنغر بالطعام في جيبها (الجراب) بجانب صغارها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "يستطيع حيوان سمندل الماء العذب (الأكسولوتل) إعادة نمو أطرافه المفقودة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هي الدولة الموطن الأصلي لحيوان الوُمْبَات (⁦Wombat⁩)‏؟",
+        "correct_answer": "أستراليا",
+        "incorrect_answers": [
+            "نيوزيلندا",
+            "بابوا غينيا الجديدة",
+            "بالاو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "الأرانب لا يمكنها التقيؤ.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "يمكنك معرفة عمر الدعسوقة (خنفساء أبو العيد) عن طريق عد النقاط الموجودة على ظهرها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "تمتلك حيوانات القضاعة (ثعلب الماء) جيوباً تحت أذرعها لحمل صخورها ووجباتها الخفيفة المفضلة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "أي من هذه الحيوانات لا يُعتبر من السحالي؟",
+        "correct_answer": "التواتارا (⁦Tuatara⁩)",
+        "incorrect_answers": [
+            "تنين كومودو",
+            "وحش غيلا",
+            "الإغوانا الخضراء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "كم عدد الأسنان لدى الأرنب البالغ؟",
+        "correct_answer": "28",
+        "incorrect_answers": [
+            "30",
+            "26",
+            "24"
+        ]
+    }
+]

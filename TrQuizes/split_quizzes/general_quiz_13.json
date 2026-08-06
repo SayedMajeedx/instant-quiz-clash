@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي دولة قامت بتطوير البندقية الهجومية كلاشينكوف (⁦AK-47⁩)‏؟",
+        "correct_answer": "الاتحاد السوفيتي",
+        "incorrect_answers": [
+            "إيران",
+            "إسرائيل",
+            "بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وفقاً لأغنية الأطفال، ما هي الفاكهة التي أخرجها ليتل جاك هورنر من فطيرة عيد الميلاد الخاصة به؟",
+        "correct_answer": "البرقوق",
+        "incorrect_answers": [
+            "التفاح",
+            "الخوخ",
+            "الكمثرى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في لعبة \"كاتاماري داماسي\"، تتحكم بشخصية تُعرف باسم:",
+        "correct_answer": "الأمير",
+        "incorrect_answers": [
+            "فوجيو",
+            "إيتشيغو",
+            "فومين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "البخار الناتج عن السجائر الإلكترونية هو عبارة عن ماء في الواقع.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يُعرف يوم 10 مارس أيضاً باسم يوم ماريو (⁦Mar10⁩).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من مكونات الدم التالية يُشكل سدادة لإغلاق الجروح عند موضع الإصابة؟",
+        "correct_answer": "الصفائح الدموية",
+        "incorrect_answers": [
+            "خلايا الدم الحمراء",
+            "خلايا الدم البيضاء",
+            "بلازما الدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو مؤلف رواية \"جوراسيك بارك\" (حديقة الديناصورات)‏؟",
+        "correct_answer": "مايكل كرايتون",
+        "incorrect_answers": [
+            "بيتر بينشلي",
+            "تشاك بالاهنيوك",
+            "إيرفين ويلش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي البوكيمونات الثلاثة المتاحة للبدء في لعبتي \"بوكيمون بلاك آند وايت\"؟",
+        "correct_answer": "سنايفي، تيبيغ، أوشاووت",
+        "incorrect_answers": [
+            "سنايفي، فينيكين، فروكي",
+            "تشيسبين، تيبيغ، فروكي",
+            "تشيسبين، فينيكين، أوشاووت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في التعبيرات الإنجليزية، عندما يوصف شخص بالجبن، يُقال إن لديه بطناً من أي لون؟",
+        "correct_answer": "أصفر",
+        "incorrect_answers": [
+            "أخضر",
+            "أحمر",
+            "أزرق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام اقترب مذنب هالي (الذي لن يظهر مجدداً حتى عام 2061) من الأرض في آخر ظهور له؟",
+        "correct_answer": "1986",
+        "incorrect_answers": [
+            "2001",
+            "1942",
+            "1909"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في أنظمة الطيران، إلى ماذا يرمز الاختصار \"⁦TCAS⁩\"؟",
+        "correct_answer": "نظام تجنب التصادم الجوي",
+        "incorrect_answers": [
+            "نظام التنبيه للاتصالات المرورية",
+            "نظام محاذاة تكوين المرور",
+            "نظام اختصار إشارة نداء المرور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من المباني التالية يُعد مثالاً بارزاً على نمط العمارة الفنية \"آرت ديكو\" (⁦Art Deco⁩)‏؟",
+        "correct_answer": "مبنى نياجرا موهوك",
+        "incorrect_answers": [
+            "تايبيه 101",
+            "ون ديترويت سنتر",
+            "ويستيندشتراسه 1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا يعني المصطلح الطبي \"أبروسيكسيا\" (⁦Aprosexia⁩)‏؟",
+        "correct_answer": "عدم القدرة على التركيز على أي شيء",
+        "incorrect_answers": [
+            "عدم القدرة على اتخاذ القرارات",
+            "رغبة هوسية في تمزيق ملابس المرء",
+            "عدم القدرة على الوقوف"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الكلمة الفرنسية التي تعني \"يسافر\" هي \"⁦Travail⁩\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وفقاً لسِفر التكوين في العهد القديم، كم يوماً استغرق خلق العالم؟",
+        "correct_answer": "ستة",
+        "incorrect_answers": [
+            "سبعة",
+            "واحد",
+            "اثنا عشر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأبراج الفلكية يُمثله السرطان؟",
+        "correct_answer": "برج السرطان",
+        "incorrect_answers": [
+            "برج الميزان",
+            "برج العذراء",
+            "برج القوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في تحديد فصائل الدم، تُسمى الإشارة (+) أو (-) بعد فصيلة الدم (مثل ⁦A⁩ أو ⁦B⁩) بعامل ⁦Rh⁩ (الرايزيسي). ما هو مصدر تسميته واكتشافه؟",
+        "correct_answer": "قرود الريسوس",
+        "incorrect_answers": [
+            "مرضى الروماتيزم",
+            "ذوو الشعر الأحمر",
+            "الجذامير النباتية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "اللون الـ \"شارتريز\" (⁦Chartreuse⁩) هو درجة لونية تقع بين الأصفر وأي لون آخر؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأسود",
+            "الأرجواني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو عنوان أول مقطع فيديو تم رفعه على موقع يوتيوب على الإطلاق؟",
+        "correct_answer": "أنا في حديقة الحيوان (⁦Me at the zoo⁩)",
+        "incorrect_answers": [
+            "تحية (⁦tribute⁩)",
+            "كاري تركب شاحنة (⁦carrie rides a truck⁩)",
+            "جروها الجديد من الجد الأكبر فيرن (⁦Her new puppy⁩)"
+        ]
+    }
+]

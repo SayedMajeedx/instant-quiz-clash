@@ -1,0 +1,218 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أفريقيا هي عبارة عن دولة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي دولة أفريقية تقع قناة السويس؟",
+        "correct_answer": "مصر",
+        "incorrect_answers": [
+            "ليبيا",
+            "غانا",
+            "نيجيريا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو اسم أكبر مدينة في ولاية تينيسي الأمريكية؟",
+        "correct_answer": "ممفيس",
+        "incorrect_answers": [
+            "طيبة",
+            "الإسكندرية",
+            "الأقصر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بأي لقب تُعرف منطقة أكيهابارا اليابانية أيضاً؟",
+        "correct_answer": "مدينة الكهرباء",
+        "incorrect_answers": [
+            "نهر مشية القمر",
+            "مركز الأوتاكو",
+            "العيون الكبيرة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كانت دولة 'منغوليا' جزءاً من الاتحاد السوفيتي السابق.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الأرخبيلات (مجموعات الجزر) ليست جزءاً من المملكة المتحدة؟",
+        "correct_answer": "جزر القنال الإنجليزي",
+        "incorrect_answers": [
+            "جزر أوركني",
+            "جزر سيلي",
+            "جزر شتلاند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سلوفينيا؟",
+        "correct_answer": "ليوبليانا",
+        "incorrect_answers": [
+            "ماريبور",
+            "فيلينيه",
+            "تربوفلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تقع ولاية رود آيلاند في الواقع على اليابسة الرئيسية للولايات المتحدة، على الرغم من اسمها (الذي يعني جزيرة رود).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر بحيرة في القارة الأفريقية؟",
+        "correct_answer": "بحيرة فيكتوريا",
+        "incorrect_answers": [
+            "بحيرة تنجانيقا",
+            "بحيرة ملاوي",
+            "بحيرة توركانا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لا تقع في أفريقيا؟",
+        "correct_answer": "سورينام",
+        "incorrect_answers": [
+            "بوركينا فاسو",
+            "موزمبيق",
+            "الجزائر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة أوروبية يقع مقر منظمة الصحة العالمية؟",
+        "correct_answer": "سويسرا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "فرنسا",
+            "بلجيكا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "هناك جزيرة في اليابان تُدعى 'أوكونوشيما'، وتُعرف أيضاً باسم 'جزيرة الأرانب' نظراً لعدد الأرانب الهائل فيها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو الممر المائي الذي يربط المحيط الأطلسي بالبحر الأبيض المتوسط؟",
+        "correct_answer": "مضيق جبل طارق",
+        "incorrect_answers": [
+            "ممر جبل طارق",
+            "المضائق الإسبانية",
+            "قناة طنجة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الأنهار في المملكة العربية السعودية؟",
+        "correct_answer": "0",
+        "incorrect_answers": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مقاطعة كندية تقع مدينة مونتريال؟",
+        "correct_answer": "كيبيك",
+        "incorrect_answers": [
+            "أونتاريو",
+            "نوفا سكوشا",
+            "ألبرتا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ألاسكا وهاواي هما الولايتان الأمريكيتان الوحيدتان اللتان تمتلكان منطقتين زمنيتين خاصتين بهما.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "إيطاليا وأيرلندا هما الدولتان الوحيدتان في أوروبا اللتان تبدآن بحرف ⁦I⁩.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عدد سكان ولاية نيويورك الأمريكية يعادل تقريباً عدد سكان دولة:",
+        "correct_answer": "رومانيا",
+        "incorrect_answers": [
+            "بولندا",
+            "ألمانيا",
+            "المجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي خامس أكبر دولة في العالم من حيث المساحة؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "أستراليا",
+            "الهند"
+        ]
+    }
+]

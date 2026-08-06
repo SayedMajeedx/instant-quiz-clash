@@ -1,0 +1,236 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الكلمة الفرنسية التي تعني \"زجاج\" هي \"⁦glace⁩\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي بلد تأسست شركة \"هيونداي\" للسيارات؟",
+        "correct_answer": "كوريا الجنوبية",
+        "incorrect_answers": [
+            "روسيا",
+            "اليابان",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من قطع الحلوى التالية ليست من إنتاج شركة \"مارس\" (⁦Mars⁩)‏؟",
+        "correct_answer": "ألموند جوي (⁦Almond Joy⁩)",
+        "incorrect_answers": [
+            "إم آند إمز (⁦M⁩&⁦M's⁩)",
+            "تويكس (⁦Twix⁩)",
+            "سنيكرز (⁦Snickers⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي شركة طيران كانت مالكة للطائرة التي تحطمت قبالة سواحل نوفا سكوشا في عام 1998‏؟",
+        "correct_answer": "السويسرية للطيران (⁦Swiss Air⁩)",
+        "incorrect_answers": [
+            "الخطوط الجوية الفرنسية (⁦Air France⁩)",
+            "الخطوط الجوية البريطانية (⁦British Airways⁩)",
+            "تي دبليو إيه (⁦TWA⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هو الرئيس الأمريكي الذي افتتح قناة بنما رسمياً؟",
+        "correct_answer": "وودرو ويلسون",
+        "incorrect_answers": [
+            "كالفين كوليدج",
+            "هربرت هوفر",
+            "ثيودور روزفلت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "شاي \"إيرل غري\" (⁦Earl Grey⁩) هو شاي أسود يتميز بنكهة ماذا؟",
+        "correct_answer": "زيت البرغموت",
+        "incorrect_answers": [
+            "الخزامى (اللافندر)",
+            "الفانيليا",
+            "العسل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "وفقاً لمدونة الإشارات الدولية، أي علم فردي يعني \"أحتاج إلى المساعدة (وليس استغاثة)\"؟",
+        "correct_answer": "فيكتور (⁦Victor⁩)",
+        "incorrect_answers": [
+            "كيلو (⁦Kilo⁩)",
+            "بابا (⁦Papa⁩)",
+            "ديلتا (⁦Delta⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يسمي البحارة الجانب الأيمن من السفينة؟",
+        "correct_answer": "ميمنة السفينة (⁦Starboard⁩)",
+        "incorrect_answers": [
+            "ميسرة السفينة (⁦Port⁩)",
+            "مؤخرة السفينة (⁦Stern⁩)",
+            "مقدمة السفينة (⁦Bow⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الحرف الأخير في الأبجدية اليونانية؟",
+        "correct_answer": "أوميغا",
+        "incorrect_answers": [
+            "ميّو",
+            "إبسيلون",
+            "كابا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الهندسة المعمارية، يعبر مصطلح \"بيكلستاينر\" (⁦pecklesteiner⁩) عن مجموعة أبواب تتداخل مع بعضها البعض عند إغلاقها، ويمكن قفلها من خلال ثقب مفتاح واحد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو أول خط تم بناؤه في مترو أنفاق لندن؟",
+        "correct_answer": "خط متروبوليتان (⁦Metropolitan Line⁩)",
+        "incorrect_answers": [
+            "الخط الدائري (⁦Circle Line⁩)",
+            "خط بيكرلو (⁦Bakerloo Line⁩)",
+            "خط فيكتوريا (⁦Victoria Line⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في التعبيرات المجازية، عندما يقال إن شخصاً ما يفتقر إلى الخبرة، يُوصف بأنه يمثل أي لون؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأزرق",
+            "الأصفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الرهاب المعروف بـ \"سينوفوبيا\" (⁦Cynophobia⁩)‏؟",
+        "correct_answer": "الخوف من الكلاب",
+        "incorrect_answers": [
+            "الخوف من الطيور",
+            "الخوف من الطيران",
+            "الخوف من الجراثيم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "متى تأسست شركة نينتندو (⁦Nintendo⁩)‏؟",
+        "correct_answer": "23 سبتمبر 1889",
+        "incorrect_answers": [
+            "19 أكتوبر 1891",
+            "4 مارس 1887",
+            "27 ديسمبر 1894"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تشرق الشمس من جهة الشمال.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو مخترع أول قالب شوكولاتة صلبة في التاريخ عام 1847‏؟",
+        "correct_answer": "جوزيف فراي",
+        "incorrect_answers": [
+            "أندرو جونسون",
+            "جون كادبوري",
+            "جون تايلر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الشكل الهندسي المستخدم عادةً في لافتات التوقف في الشوارع؟",
+        "correct_answer": "ثُماني الأضلاع",
+        "incorrect_answers": [
+            "سُداسي الأضلاع",
+            "دائرة",
+            "مثلث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه المدن الأمريكية لا توجد بها دار لسك العملات المعدنية تابعة للولايات المتحدة؟",
+        "correct_answer": "سانت لويس، ميزوري",
+        "incorrect_answers": [
+            "سان فرانسيسكو، كاليفورنيا",
+            "فيلادلفيا، بنسيلفانيا",
+            "ويست بوينت، نيويورك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "المجرم الذي يقوم بـ \"تزييف الحسابات والكتب المالية\" (⁦Cook the books⁩) قد ارتكب أي نوع من السلوكيات غير القانونية؟",
+        "correct_answer": "الاحتيال المحاسبي",
+        "incorrect_answers": [
+            "غسيل الأموال",
+            "الابتزاز المالي",
+            "الابتزاز والتهديد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الأصلي الذي تأسس به بنك أمريكا (⁦Bank of America⁩) في البداية؟",
+        "correct_answer": "بنك إيطاليا (⁦Bank of Italy⁩)",
+        "incorrect_answers": [
+            "بنك لونغ آيلاند (⁦Bank of Long Island⁩)",
+            "بنك بنسيلفانيا (⁦Bank of Pennsylvania⁩)",
+            "بنك شارلوت (⁦Bank of Charlotte⁩)"
+        ]
+    }
+]

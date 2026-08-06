@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي وحدة علمية سميت تيمناً بنبيل إيطالي؟",
+        "correct_answer": "الفولت",
+        "incorrect_answers": [
+            "الباسكال",
+            "الأوم",
+            "الهيرتز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو عمر النصف لليورانيوم-235‏؟",
+        "correct_answer": "703,800,000 سنة",
+        "incorrect_answers": [
+            "4,300,400,000 سنة",
+            "1,260,900,000 سنة",
+            "اليورانيوم-235 نظير مستقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم تساوي 100 درجة مئوية بالفهرنهايت؟",
+        "correct_answer": "212",
+        "incorrect_answers": [
+            "326",
+            "100",
+            "451"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الكروموسوم الذي تتسبب نسخة إضافية منه عادة في الإصابة بمتلازمة داون؟",
+        "correct_answer": "21",
+        "incorrect_answers": [
+            "23",
+            "15",
+            "24"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "في فيزياء الكم، أي من هذه الجسيمات دون الذرية الافتراضية لم يتم رصدها بعد؟",
+        "correct_answer": "غرافيتون",
+        "incorrect_answers": [
+            "بوزون ⁦Z⁩",
+            "نيوترينو تاو",
+            "غلوون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "إلى جانب الأكسجين، ما هو العنصر المسؤول بشكل أساسي عن ظهور السماء باللون الأزرق؟",
+        "correct_answer": "النيتروجين",
+        "incorrect_answers": [
+            "الهيليوم",
+            "الكربون",
+            "الهيدروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الجسيمات التي تعادل مولاً واحداً؟",
+        "correct_answer": "⁦6.022 × 10⁩^23",
+        "incorrect_answers": [
+            "⁦6.002 × 10⁩^22",
+            "⁦6.022 × 10⁩^22",
+            "⁦6.002 × 10⁩^23"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في الجدول الدوري للعناصر، ما هو الرمز الكيميائي للقصدير؟",
+        "correct_answer": "⁦Sn⁩",
+        "incorrect_answers": [
+            "⁦Ti⁩",
+            "⁦Ni⁩",
+            "⁦Na⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تحتوي الذرة على نواة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الغضروف الهلالي الإنسي يشكل جزءاً من أي مفصل في جسم الإنسان؟",
+        "correct_answer": "الركبة",
+        "incorrect_answers": [
+            "المرفق",
+            "الكاحل",
+            "الكتف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم قلباً يمتلك الأخطبوط؟",
+        "correct_answer": "ثلاثة",
+        "incorrect_answers": [
+            "واحد",
+            "اثنان",
+            "أربعة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من العناصر التالية يُستخدم عادة في تطعيم شبه الموصل (السيليكون)‏؟",
+        "correct_answer": "البورون",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الكربون",
+            "الحديد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي كوكب أرسلت له المركبة الفضائية 'فايكنغ 1' صوراً لسطحه بدءاً من عام 1976‏؟",
+        "correct_answer": "المريخ",
+        "incorrect_answers": [
+            "زحل",
+            "المشتري",
+            "الزهرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "من أي نظير يتكون اليورانيوم الطبيعي بشكل أساسي؟",
+        "correct_answer": "238",
+        "incorrect_answers": [
+            "235",
+            "239",
+            "233"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تدور الأقمار ميراندا، وأرييل، وأومبريل، وتيتانيا، وأوبيرون حول أي كوكب؟",
+        "correct_answer": "أورانوس",
+        "incorrect_answers": [
+            "المشتري",
+            "الزهرة",
+            "نبتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الفئة التي صُنّف بها إعصار كاترينا عام 2005 وفقاً لمقياس سفير-سمبسون لرياح الأعاصير؟",
+        "correct_answer": "الفئة الخامسة",
+        "incorrect_answers": [
+            "الفئة الأولى",
+            "الفئة الرابعة",
+            "الفئة الثانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أين توجد عظمة 'الظنبوب' (قصبة الساق) في جسم الإنسان؟",
+        "correct_answer": "الساق",
+        "incorrect_answers": [
+            "الذراع",
+            "اليد",
+            "الرأس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الجزيئية للمكون النشط في الفلفل الحار (الكابسيسين)‏؟",
+        "correct_answer": "⁦C18H27NO3⁩",
+        "incorrect_answers": [
+            "⁦C21H23NO3⁩",
+            "⁦C6H4Cl2⁩",
+            "⁦C13H25NO4⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "متلازمة العطس الضوئي المنعكس (الخلل البصري الشمسي القهري السائد) هي الحاجة إلى القيام بماذا عند رؤية الشمس؟",
+        "correct_answer": "العطس",
+        "incorrect_answers": [
+            "السعال",
+            "التثاؤب",
+            "الفواق"
+        ]
+    }
+]

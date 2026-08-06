@@ -1,0 +1,470 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى تم اختراع قرص الـ DVD؟",
+        "correct_answer": "1995",
+        "incorrect_answers": [
+            "2000",
+            "1990",
+            "1980"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "في أي عام تم الكشف عن نظارة 'أوكولوس ريفت' للجمهور عبر حملة على منصة كيك ستارتر؟",
+        "correct_answer": "2012",
+        "incorrect_answers": [
+            "2010",
+            "2011",
+            "2013"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "إلى ماذا يرمز الاختصار SSD في وحدات تخزين الكمبيوتر؟",
+        "correct_answer": "قرص الحالة الصلبة",
+        "incorrect_answers": [
+            "جهاز تخزين البرمجيات",
+            "بيانات فائقة السرعة",
+            "قرص النظام الآمن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "في أي عام تم إصدار أول هاتف آيفون؟",
+        "correct_answer": "2007",
+        "incorrect_answers": [
+            "2005",
+            "2006",
+            "2004"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي وحدة قياس المقاومة الكهربائية في النظام الدولي للوحدات؟",
+        "correct_answer": "الأوم",
+        "incorrect_answers": [
+            "الأمبير",
+            "السيمنز",
+            "الفولت"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "يعتبر هاتف آيفون 3G الجيل الثاني من هواتف الآيفون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو المساعد الصوتي الافتراضي الذي طورته شركة أمازون؟",
+        "correct_answer": "أليكسا",
+        "incorrect_answers": [
+            "مساعد جوجل",
+            "سيري",
+            "كورتانا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو اسم الآلة البسيطة التي تتكون من ذراع صلبة تتحرك بحرية حول نقطة ارتكاز ثابتة؟",
+        "correct_answer": "الرافعة",
+        "incorrect_answers": [
+            "الأسفين",
+            "البرغي",
+            "البكرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "من بين جميع مكاكيك الفضاء التابعة لوكالة ناسا، ما هما المكوكان اللذان دُمِّرا في كوارث؟",
+        "correct_answer": "تشالنجر وكولومبيا",
+        "incorrect_answers": [
+            "إنتربرايز وأتلانتس",
+            "ديسكفري وإنديفور",
+            "لاشيء مما سبق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الكلمة الشهيرة التي استخدمتها شركة آبل لوصف إزالتها لمنفذ سماعة الرأس؟",
+        "correct_answer": "الشجاعة",
+        "incorrect_answers": [
+            "الابتكار",
+            "الثورة",
+            "الجرأة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "من هو مهندس القوات الجوية ووكالة ناسا السابق الذي اخترع مسدس الماء الشهير 'سوبر سوكر' (Super Soaker)؟",
+        "correct_answer": "لوني جونسون",
+        "incorrect_answers": [
+            "بروس داندراد",
+            "فرانسيس نورثكوت",
+            "أشيتي تريبي-أولينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "في أي دولة تأسست شركة 'بلاك بيري المحدودة' (BlackBerry Limited) لبرمجيات وأجهزة الهواتف المحمولة؟",
+        "correct_answer": "كندا",
+        "incorrect_answers": [
+            "النرويج",
+            "الولايات المتحدة الأمريكية",
+            "المملكة المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى تم إصدار أول مشغل أقراص مضغوطة (CD player) في الأسواق؟",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1983",
+            "1981",
+            "1980"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "على أي هاتف آيفون ظهر المساعد الصوتي 'سيري' (Siri) من آبل لأول مرة؟",
+        "correct_answer": "آيفون 4S",
+        "incorrect_answers": [
+            "آيفون 6S",
+            "آيفون 3GS",
+            "آيفون 5S"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي أول أفعوانية من نوع 'إنفينيتي كوستر' (Infinity Coaster) في العالم وأين تقع؟",
+        "correct_answer": "ذا سمايلر، ألتون تاورز، المملكة المتحدة",
+        "incorrect_answers": [
+            "مدغشقر ماد بيرسوت، موشنجيت دبي، الإمارات",
+            "غولد راش، سلاغهارين، هولندا",
+            "مونستر، أدفنتشرلاند ألتونا، الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "خلال المراحل الأولى من حرب فيتنام، كان لبندقية M16 سمعة سيئة فيما يتعلق بقلة موثوقيتها وأعطالها المتكررة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو أبرز مشروع جانبي دخلت فيه شركة ريمنغتون (Remington) الشهيرة للأسلحة النارية؟",
+        "correct_answer": "الآلات الكاتبة",
+        "incorrect_answers": [
+            "الخلاطات الكهربائية",
+            "مراوح السقف",
+            "مقابض الأبواب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "أي من شركات الهواتف المحمولة التالية لا يقع مقرها الرئيسي في قارة آسيا؟",
+        "correct_answer": "نوكيا",
+        "incorrect_answers": [
+            "إل جي للإلكترونيات",
+            "سامسونج",
+            "إتش تي سي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الشركة التي صنعت آلة الطبول الإلكترونية الشهيرة TR-808؟",
+        "correct_answer": "رولاند",
+        "incorrect_answers": [
+            "تيكنيكس",
+            "كورج",
+            "كاسيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى بدأت الأقراص المضغوطة (CD) بالظهور في الأسواق الاستهلاكية؟",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1992",
+            "1972",
+            "1962"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الذخيرة (العيار) التي تطلقها بندقية M1 Garand التي استخدمت في الحرب العالمية الثانية؟",
+        "correct_answer": ".30-06",
+        "incorrect_answers": [
+            ".308",
+            "7.62",
+            "7.62x51mm"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ماذا تسمى أجهزة التتبع (المحطات القاعدية) المستخدمة مع نظارة الواقع الافتراضي HTC Vive؟",
+        "correct_answer": "المنارة",
+        "incorrect_answers": [
+            "الحركة",
+            "الكوكبة",
+            "أجهزة التتبع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "إلى ماذا يرمز الاختصار GPS؟",
+        "correct_answer": "نظام تحديد المواقع العالمي",
+        "incorrect_answers": [
+            "النظام الشخصي العالمي",
+            "نظام تحديد المواقع العام",
+            "القمر الصناعي الشخصي العام"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "يستخدم هاتف 'ويسترن إليكتريك موديل 500' (Western Electric Model 500) الاتصال بالنغمة لطلب الأرقام الهاتفيّة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "كيف يقوم جهاز الطرد المركزي بفصل الجسيمات الثقيلة عن الخفيفة؟",
+        "correct_answer": "الدوران",
+        "incorrect_answers": [
+            "الاهتزاز",
+            "الغربلة",
+            "التأيين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو جهاز 'ميتسوبيشي واكامارو' (Mitsubishi Wakamaru)؟",
+        "correct_answer": "روبوت",
+        "incorrect_answers": [
+            "شاحنة بيك آب",
+            "دراجة نارية",
+            "قارب بمحرك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "من صنع أول جهاز ليزر في العالم؟",
+        "correct_answer": "ثيودور هارولد ميمان",
+        "incorrect_answers": [
+            "نيكولا تسلا",
+            "جاك كيلبي",
+            "إيديث كلارك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "يرمز بروتوكول الاتصال NFC إلى 'Near-Field Control' (التحكم في المجال القريب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي رصاصة العيار الأساسي التي تستخدمها بندقية كلاشينكوف AK-47 الكلاسيكية؟",
+        "correct_answer": "7.62x39 ملم",
+        "incorrect_answers": [
+            "7.62x51 ملم",
+            "5.56x45 ملم",
+            "5.45x39 ملم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "أي مما يلي هو التردد القياسي لقطع مضخم الصوت (Subwoofer Crossover Frequency) المعتمد من THX؟",
+        "correct_answer": "80 هرتز",
+        "incorrect_answers": [
+            "70 هرتز",
+            "90 هرتز",
+            "100 هرتز"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "اخترعت شركة iRobot مكنستها الكهربائية الثورية لتنظيف الأرضيات 'رومبا' (Roomba) لأول مرة في عام 2002.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "أي من الأجهزة التالية يُستخدم لقياس ضغط الدم؟",
+        "correct_answer": "مقياس ضغط الدم",
+        "incorrect_answers": [
+            "البارومتر (مقياس الضغط الجوي)",
+            "المسطرة",
+            "مقياس هيموإريثرومتر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى تم إصدار الحيوان الأليف الرقمي 'تاماجوتشي' (Tamagotchi) لأول مرة؟",
+        "correct_answer": "1996",
+        "incorrect_answers": [
+            "1989",
+            "1992",
+            "1990"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "أي مما يلي ليس نوعاً من أنواع فئران الكمبيوتر (الماوس)؟",
+        "correct_answer": "فأرة السموذي",
+        "incorrect_answers": [
+            "فأرة الأسطوانة",
+            "فأرة كرة التتبع",
+            "الفأرة الضوئية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي منصة ألعاب الفيديو (الكونسول) التي طورتها شركة سوني؟",
+        "correct_answer": "بلايستيشن",
+        "incorrect_answers": [
+            "إكس بوكس",
+            "أتاري",
+            "نينتندو سويتش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الشركة التي صممت صيغة أشرطة الفيديو 'بيتاماكس' (Betamax)؟",
+        "correct_answer": "سوني",
+        "incorrect_answers": [
+            "باناسونيك",
+            "إل جي",
+            "فوجيتسو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "من هو أول من صاغ مصطلح 'البطارية' (Battery) لوصف جهاز تخزين الكهرباء؟",
+        "correct_answer": "بنجامين فرانكلين",
+        "incorrect_answers": [
+            "نيكولا تسلا",
+            "لويجي جلفاني",
+            "أليساندرو فولتا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الشركة التي طورت نظارة الواقع المختلط 'هولولينز' (HoloLens)؟",
+        "correct_answer": "مايكروسوفت",
+        "incorrect_answers": [
+            "إتش تي سي",
+            "أوكولوس",
+            "توبي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "لا يقتصر استخدام الميكروفونات على التقاط الصوت فحسب، بل يمكن استخدامها أيضاً لإخراج الصوت وإصداره بشكل مشابه لمكبر الصوت.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "من الذي نال براءة اختراع لمحرك بخاري ينتج حركة دورانية مستمرة؟",
+        "correct_answer": "جيمس واط",
+        "incorrect_answers": [
+            "نيكولا تسلا",
+            "ألبرت أينشتاين",
+            "أليساندرو فولتا"
+        ]
+    }
+]

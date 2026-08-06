@@ -1,0 +1,240 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الكازينو في لاس فيغاس الذي بناه وشغله في الأصل رجل العصابات باغسي سيغل؟",
+        "correct_answer": "ذا فلامينغو",
+        "incorrect_answers": [
+            "ذا إم جي إم غراند",
+            "ذا ساندز",
+            "ذا صحارى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام انتهت حرب فيتنام？",
+        "correct_answer": "1975",
+        "incorrect_answers": [
+            "1978",
+            "1967",
+            "1969"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من كان رئيس وزراء اليابان عندما أعلنت الحرب على الولايات المتحدة؟",
+        "correct_answer": "هيديكي توجو",
+        "incorrect_answers": [
+            "ميتشينوميا هيروهيتو",
+            "إيسوروكو ياماموتو",
+            "فوميمارو كونويه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "خلال الحرب العالمية الثانية عام 1945، ألقت الولايات المتحدة قنبلتين ذريتين على مدينتين يابانيتين، الأولى هيروشيما فما هي المدينة الأخرى؟",
+        "correct_answer": "ناغاساكي",
+        "incorrect_answers": [
+            "كاواساكي",
+            "طوكيو",
+            "كاغوشيما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما الاسم الذي أُطلق على سلسلة المواجهات بين المملكة المتحدة وآيسلندا حول حقوق الصيد في شمال الأطلسي؟",
+        "correct_answer": "حروب القد",
+        "incorrect_answers": [
+            "حروب جراد البحر",
+            "حروب الهلبوت",
+            "حروب الماكريل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي شارع بدأ حريق لندن الكبير عام 1666‏؟",
+        "correct_answer": "شارع بودينغ",
+        "incorrect_answers": [
+            "شارع بيكر",
+            "مبنى البرلمان",
+            "كاتدرائية القديس بولس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام انهار الاتحاد السوفيتي؟",
+        "correct_answer": "1991",
+        "incorrect_answers": [
+            "1992",
+            "1891",
+            "1990"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كم عدد السوناتات التي كتبها لودفيج فان بيتهوفن؟",
+        "correct_answer": "32",
+        "incorrect_answers": [
+            "50",
+            "31",
+            "21"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام أصدرت شركة التبغ غير المدخن \"سكوال\" خط إنتاجها الأول من أكياس التبغ المعروفة باسم \"سكوال بانديتس\"؟",
+        "correct_answer": "1983",
+        "incorrect_answers": [
+            "1934",
+            "1984",
+            "1822"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي قومية السلطان صلاح الدين الأيوبي؟",
+        "correct_answer": "كردي",
+        "incorrect_answers": [
+            "عربي",
+            "مصري",
+            "سوري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هي أطول زوجات هنري الثامن زواجاً منه من بين زوجاته الست؟",
+        "correct_answer": "كاثرين الأراغونية",
+        "incorrect_answers": [
+            "آن بولين",
+            "جين سيمور",
+            "كاثرين بار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام بدأت الحرب الكورية؟",
+        "correct_answer": "1950",
+        "incorrect_answers": [
+            "1945",
+            "1960",
+            "1912"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي يوم تعرضت شبكة أربانت (⁦ARPANET⁩) لعطل كامل استمر لمدة 4 ساعات؟",
+        "correct_answer": "27 أكتوبر 1980",
+        "incorrect_answers": [
+            "21 نوفمبر 1969",
+            "29 أكتوبر 1969",
+            "9 ديسمبر 1991"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي مبنى أُضرمت فيه النيران في 24 أغسطس 1812‏؟",
+        "correct_answer": "البيت الأبيض",
+        "incorrect_answers": [
+            "مبنى البرلمان",
+            "مبنى الجمعية الوطنية الكبرى",
+            "قصر الأمة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كان توماس كرابر سباكاً وهو من اخترع المرحاض ذو السيفون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام تم نصب لوحة هوليوود الشهيرة التي يبلغ ارتفاعها 45 قدماً لأول مرة؟",
+        "correct_answer": "1923",
+        "incorrect_answers": [
+            "1903",
+            "1913",
+            "1933"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي بلد شهد \"الثورة البرتقالية\" بين عامي 2004 و2005‏؟",
+        "correct_answer": "أوكرانيا",
+        "incorrect_answers": [
+            "بيلاروسيا",
+            "لاتفيا",
+            "ليتوانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو الجنرال النازي الذي عُرف بلقب \"ثعلب الصحراء\"؟",
+        "correct_answer": "إرفين رومل",
+        "incorrect_answers": [
+            "جيرد فون رونتشتيت",
+            "فيلهلم كايتل",
+            "هاينز غوديريان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام فُتِحت القسطنطينية على يد الأتراك؟",
+        "correct_answer": "1453",
+        "incorrect_answers": [
+            "1435",
+            "1454",
+            "1440"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الصراع التاريخي الذي تسبب في مقتل أكبر عدد من الناس؟",
+        "correct_answer": "الحرب العالمية الثانية",
+        "incorrect_answers": [
+            "تمرد تايبينغ",
+            "حرب الممالك الثلاث",
+            "الغزو المغولي"
+        ]
+    }
+]

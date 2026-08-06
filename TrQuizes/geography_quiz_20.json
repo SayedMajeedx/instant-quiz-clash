@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة في العالم مساحةً وتعتمد منطقة زمنية واحدة فقط؟",
+        "correct_answer": "الصين",
+        "incorrect_answers": [
+            "كندا",
+            "الهند",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الرسمية في كوستاريكا؟",
+        "correct_answer": "الإسبانية",
+        "incorrect_answers": [
+            "الإنجليزية",
+            "البرتغالية",
+            "الكريولية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة نيوزيلندا؟",
+        "correct_answer": "ويلينغتون",
+        "incorrect_answers": [
+            "أوكلاند",
+            "كرايستشرش",
+            "ملبورن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي مساحة مدينة الفاتيكان؟",
+        "correct_answer": "⁦0.44⁩ كم²",
+        "incorrect_answers": [
+            "⁦0.10⁩ كم²",
+            "⁦0.86⁩ كم²",
+            "⁦12.00⁩ كم²"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "إلى أي دولة يتبع أرخبيل سفالبارد؟",
+        "correct_answer": "النرويج",
+        "incorrect_answers": [
+            "الدنمارك",
+            "آيسلندا",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول لم تكن جزءاً من يوغوسلافيا السابقة؟",
+        "correct_answer": "ألبانيا",
+        "incorrect_answers": [
+            "كرواتيا",
+            "صربيا",
+            "مقدونيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "هل مدينة تارتو هي عاصمة إستونيا؟",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من الدول الحبيسة التالية تقع بالكامل داخل دولة أخرى؟",
+        "correct_answer": "ليسوتو",
+        "incorrect_answers": [
+            "بوركينا فاسو",
+            "منغوليا",
+            "لوكسمبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين يقع ممر كولشستر العلوي، المعروف باسم \"جسر رجل الأرنب\"؟",
+        "correct_answer": "مقاطعة فيرفاكس، فيرجينيا",
+        "incorrect_answers": [
+            "ميدفورد، أوريغون",
+            "مقاطعة براكستون، فيرجينيا",
+            "ليمون غروف، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة لاوس؟",
+        "correct_answer": "فيينتيان",
+        "incorrect_answers": [
+            "تاراوا",
+            "فادوز",
+            "تيغوسيغالبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر ولاية في الولايات المتحدة؟",
+        "correct_answer": "رود آيلاند",
+        "incorrect_answers": [
+            "مين",
+            "فيرمونت",
+            "ماساتشوستس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي سلسلة الجبال التي تمتد على طول الحدود بين إسبانيا وفرنسا؟",
+        "correct_answer": "جبال البرانس",
+        "incorrect_answers": [
+            "جبال الألب",
+            "جبال الكاربات",
+            "جبال الأورال"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "جمهورية مالطا هي أصغر دولة مجهرية في العالم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو الاسم الرسمي بالألمانية للسكك الحديدية الفيدرالية السويسرية؟",
+        "correct_answer": "⁦Schweizerische Bundesbahnen⁩",
+        "incorrect_answers": [
+            "⁦Schweizerische Nationalbahnen⁩",
+            "⁦Bundesbahnen der Schweiz⁩",
+            "⁦Schweizerische Staatsbahnen⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة تركيا؟",
+        "correct_answer": "أنقرة",
+        "incorrect_answers": [
+            "إسطنبول",
+            "إزمير",
+            "بورصة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سويسرا؟",
+        "correct_answer": "بيرن",
+        "incorrect_answers": [
+            "زيورخ",
+            "فرانكفورت",
+            "فيينا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية لا تُعتبر من الدول \"شديدة التنوع\" (التي تأوي عدداً كبيراً من الأنواع المستوطنة في العالم)‏؟",
+        "correct_answer": "تايلاند",
+        "incorrect_answers": [
+            "بيرو",
+            "المكسيك",
+            "جنوب أفريقيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من دول المملكة المتحدة يظهر تنين على علمها؟",
+        "correct_answer": "ويلز",
+        "incorrect_answers": [
+            "إنجلترا",
+            "أيرلندا الشمالية",
+            "اسكتلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع \"صحراء سونوران\"؟",
+        "correct_answer": "أمريكا الشمالية",
+        "incorrect_answers": [
+            "أمريكا الجنوبية",
+            "آسيا",
+            "أفريقيا"
+        ]
+    }
+]

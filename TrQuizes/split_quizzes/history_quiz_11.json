@@ -1,0 +1,222 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من هذه المرافق لم يكن موجوداً على متن سفينة تايتانيك؟",
+        "correct_answer": "غرفة الإغماء",
+        "incorrect_answers": [
+            "الحمام التركي",
+            "مكان إيواء الكلاب",
+            "ملعب الإسكواش"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كان سرجون الثاني، ملك الإمبراطورية الآشورية الحديثة، سليلًا مباشرًا لسرجون الأكدي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام وقعت معركة أجينكور؟",
+        "correct_answer": "1415",
+        "incorrect_answers": [
+            "1463",
+            "1401",
+            "1422"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في عام 1939، أعلنت بريطانيا وفرنسا الحرب على ألمانيا بعد غزوها لأي دولة؟",
+        "correct_answer": "بولندا",
+        "incorrect_answers": [
+            "تشيكوسلوفاكيا",
+            "النمسا",
+            "المجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من بين عجائب الدنيا السبع، ما هي الأعجوبة الوحيدة التي نجت حتى يومنا هذا؟",
+        "correct_answer": "الهرم الأكبر بالجيزة",
+        "incorrect_answers": [
+            "عملاق رودس",
+            "منارة الإسكندرية",
+            "تمثال زيوس في أوليمبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الحدث الذي مثل بداية الحرب العالمية الثانية؟",
+        "correct_answer": "غزو بولندا (1939)",
+        "incorrect_answers": [
+            "غزو روسيا (1942)",
+            "معركة بريطانيا (1940)",
+            "غزو نورماندي (1944)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "انتهت الحرب الكورية في عام 1953 دون أي وقف لإطلاق النار.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "خلال الغزوات المغولية لليابان, ما الذي أوقف السفن المغولية في الغالب؟",
+        "correct_answer": "الأعاصير",
+        "incorrect_answers": [
+            "الأعاصير القمعية",
+            "الكساد الاقتصادي",
+            "الساموراي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما اسم المادة الكيميائية التي أُلقيت على فيتنام خلال حرب فيتنام؟",
+        "correct_answer": "العامل البرتقالي",
+        "incorrect_answers": [
+            "الفوسجين",
+            "غاز الخردل",
+            "سيانيد الهيدروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كانت مؤامرة البارود محاولة اغتيال فاشلة معروفة ضد من من ملوك إنجلترا الحاكمين آنذاك؟",
+        "correct_answer": "جيمس الأول",
+        "incorrect_answers": [
+            "إليزابيث الأولى",
+            "تشارلز الثاني",
+            "تشارلز الأول"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "انتهت الحرب الباردة بوفاة جوزيف ستالين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من هذه المعالم ليس مدرجاً في قائمة 'عجائب الدنيا السبع القديمة' الأصلية؟",
+        "correct_answer": "سور الصين العظيم",
+        "incorrect_answers": [
+            "الهرم الأكبر بالجيزة",
+            "عملاق رودس",
+            "حدائق بابل المعلقة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي بلد وقعت معركة السوم في الحرب العالمية الأولى؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "ألمانيا",
+            "إيطاليا",
+            "النمسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي الديانة التي أسسها جوزيف سميث؟",
+        "correct_answer": "المورمونية",
+        "incorrect_answers": [
+            "البوذية",
+            "المسيحية",
+            "الهندوسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "متى بدأت معركة السوم؟",
+        "correct_answer": "1 يوليو 1916",
+        "incorrect_answers": [
+            "1 أغسطس 1916",
+            "2 يوليو 1916",
+            "30 يونيو 1916"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "اُعتبر تدمير الملك الآشوري سنحاريب لبابل عام 689 قبل الميلاد انتصاراً من قبل المواطنين الآشوريين الآخرين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي بلد زُرعت البطاطس لأول مرة؟",
+        "correct_answer": "بيرو",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "أيرلندا",
+            "نيوزيلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الحدث الأكثر دموية في تاريخ الولايات المتحدة من حيث عدد الضحايا؟",
+        "correct_answer": "معركة أنتيتام",
+        "incorrect_answers": [
+            "بيرل هاربور",
+            "أحداث 11 سبتمبر",
+            "إنزال نورماندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كم سنة استمرت الحرب العالمية الثانية؟",
+        "correct_answer": "6 سنوات",
+        "incorrect_answers": [
+            "4 سنوات",
+            "5 سنوات",
+            "7 سنوات"
+        ]
+    }
+]

@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هو الاسم الرمزي لغزو الحلفاء لجنوب فرنسا في 15 أغسطس 1944‏؟",
+        "correct_answer": "عملية دراغون",
+        "incorrect_answers": [
+            "عملية أوفرلورد",
+            "عملية ماركت غاردن",
+            "عملية الشعلة (⁦Torch⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو أول رئيس ولد في الولايات المتحدة المستقلة؟",
+        "correct_answer": "مارتن فان بيورين",
+        "incorrect_answers": [
+            "جون آدامز",
+            "جورج واشنطن",
+            "جيمس مونرو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي بلد وقع تمرد يوريكا، وهي معركة دارت عام 1856 ضد الحكم الاستعماري؟",
+        "correct_answer": "أستراليا",
+        "incorrect_answers": [
+            "الهند",
+            "كندا",
+            "البرازيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو المرض الذي تسبب في شلل الرئيس فرانكلين روزفلت ودفعه لمساعدة البلاد في العثور على علاج له؟",
+        "correct_answer": "شلل الأطفال",
+        "incorrect_answers": [
+            "السرطان",
+            "التهاب السحايا",
+            "فيروس نقص المناعة البشرية (الإيدز)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من الدول الاستعمارية التالية ارتكبت إبادة هيريرو الجماعية في أفريقيا؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "بريطانيا",
+            "بلجيكا",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هي الدول التي شاركت في حرب جراد البحر؟",
+        "correct_answer": "فرنسا والبرازيل",
+        "incorrect_answers": [
+            "كندا والنرويج",
+            "أستراليا ونيوزيلندا",
+            "الولايات المتحدة وإنجلترا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أطلق غالبية سكان الإمبراطورية البيزنطية على أنفسهم اسم الرومان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من هو الرئيس الأمريكي الذي قيل إنه كان صادقاً جداً لدرجة تمنعه من الكذب على والده بشأن قطعه لشجرة كرز؟",
+        "correct_answer": "جورج واشنطن",
+        "incorrect_answers": [
+            "أبراهام لينكون",
+            "توماس جيفرسون",
+            "جيمس مونرو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو الديكتاتور الذي قتل أكبر عدد من الناس؟",
+        "correct_answer": "ماو تسي تونغ",
+        "incorrect_answers": [
+            "جوزيف ستالين",
+            "أدولف هتلر",
+            "كيم إيل سونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي دولة أهدت تمثال الحرية إلى الولايات المتحدة الأمريكية؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "إسبانيا",
+            "إنجلترا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "اغتيل الرئيس الأمريكي جون كينيدي أثناء موكبه الرئاسي في مدينة أتلانتا بولاية جورجيا في 22 نوفمبر 1963.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من هذه الدبابات من القرن العشرين صُممت وصُنعت قبل بقية الدبابات؟",
+        "correct_answer": "رينو إف تي",
+        "incorrect_answers": [
+            "إم 4 شيرمان",
+            "بانزر 4",
+            "كرومويل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام سيطر ويليام الفاتح على إنجلترا؟",
+        "correct_answer": "1066",
+        "incorrect_answers": [
+            "1123",
+            "1205",
+            "901"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كانت الولايات المتحدة الأمريكية أول دولة تطلق إنساناً إلى الفضاء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "مع دفع الفقر والتوترات العرقية بالأمريكيين من أصل أفريقي إلى خارج جنوب الولايات المتحدة، انتقل العديد منهم إلى الشمال في حدث يُعرف باسم ماذا؟",
+        "correct_answer": "الهجرة الكبرى",
+        "incorrect_answers": [
+            "الصحوة الكبرى",
+            "نهضة هارلم",
+            "إعادة التوطين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من المعارك التالية تُعتبر غالباً علامة على بداية سقوط الإمبراطورية الرومانية الغربية؟",
+        "correct_answer": "معركة أدريانوبل",
+        "incorrect_answers": [
+            "معركة تسالونيكي",
+            "معركة بولينتيا",
+            "معركة القسطنطينية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من اخترع \"المكوك الطائر\" عام 1738، وهو أحد التطورات الرئيسية في تطوير صناعة النسيج؟",
+        "correct_answer": "جون كاي",
+        "incorrect_answers": [
+            "جيمس هاريغريفز",
+            "ريتشارد آركرايت",
+            "جون دير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "خلال أي حرب حدثت \"أزمة الصواريخ الكوبية\"؟",
+        "correct_answer": "الحرب الباردة",
+        "incorrect_answers": [
+            "الحرب العالمية الأولى",
+            "الحرب العالمية الثانية",
+            "الحرب الثورية الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام أصبحت أستراليا اتحاداً فيدرالياً؟",
+        "correct_answer": "1901",
+        "incorrect_answers": [
+            "1910",
+            "1899",
+            "1911"
+        ]
+    }
+]

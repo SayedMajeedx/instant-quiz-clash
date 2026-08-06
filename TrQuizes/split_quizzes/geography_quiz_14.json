@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في العالم من حيث عدد السكان؟",
+        "correct_answer": "مدينة الفاتيكان",
+        "incorrect_answers": [
+            "ناورو",
+            "جزر مارشال",
+            "ليختنشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما اسم المنطقة الصخرية الكبيرة التي تغطي معظم شرق كندا؟",
+        "correct_answer": "الدرع الكندي",
+        "incorrect_answers": [
+            "جبال روكي",
+            "جبال الأبالاش",
+            "جبال الهيمالايا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "يربط ممر خيبر الجبلي بين أي من الدولتين التاليتين؟",
+        "correct_answer": "أفغانستان وباكستان",
+        "incorrect_answers": [
+            "الهند ونيبال",
+            "باكستان والهند",
+            "طاجيكستان وقيرغيزستان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تقع دولة البوسنة والهرسك في منطقة بحر البلطيق في أوروبا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة رومانيا؟",
+        "correct_answer": "بوخارست",
+        "incorrect_answers": [
+            "براتيسلافا",
+            "بلجراد",
+            "بودابست"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه المدن الأمريكية يقل عدد سكانها عن مليون نسمة？",
+        "correct_answer": "سان فرانسيسكو، كاليفورنيا",
+        "incorrect_answers": [
+            "فينيكس، أريزونا",
+            "سان أنطونيو، تكساس",
+            "فيلادلفيا، بنسيلفانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية ميشيغان الأمريكية؟",
+        "correct_answer": "لانسينغ",
+        "incorrect_answers": [
+            "كالامازو",
+            "آن أربور",
+            "ديترويت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أبعد مستوطنة بشرية في أقصى الشمال يقطنها سكان على مدار العام؟",
+        "correct_answer": "أليرت، كندا",
+        "incorrect_answers": [
+            "ناغورسكوي، روسيا",
+            "محطة ماكموردو، القارة القطبية الجنوبية",
+            "هونينغسفاغ، النرويج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الولايات الأمريكية الأربع التي تلتقي حدودها في نقطة واحدة (الولايات الزوايا الأربع)‏؟",
+        "correct_answer": "يوتا، كولورادو، أريزونا، نيومكسيكو",
+        "incorrect_answers": [
+            "أوريغون، أيداهو، نيفادا، يوتا",
+            "كانساس، أوكلاهوما، أركنساس، لويزيانا",
+            "داكوتا الجنوبية، مينيسوتا، نبراسكا، آيوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي اللغة الوطنية الرسمية في باكستان؟",
+        "correct_answer": "الأوردية",
+        "incorrect_answers": [
+            "الهندية",
+            "البنجابية",
+            "البشتوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "في أي دولة يقع نهر تايدونغ؟",
+        "correct_answer": "كوريا الشمالية",
+        "incorrect_answers": [
+            "كوريا الجنوبية",
+            "اليابان",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست الدولة الوحيدة التي يبدأ اسمها بذلك الحرف في الأبجدية الإنجليزية؟",
+        "correct_answer": "زامبيا",
+        "incorrect_answers": [
+            "قطر",
+            "اليمن",
+            "عُمان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع منطقة 'بير طويل'، وهي أرض غير مأهولة بالسكان لا تطالب بها أي دولة، على الحدود بين أي دولتين؟",
+        "correct_answer": "مصر والسودان",
+        "incorrect_answers": [
+            "إسرائيل والأردن",
+            "تشاد وليبيا",
+            "العراق والمملكة العربية السعودية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما اسم شبه الجزيرة التي تضم إسبانيا والبرتغال؟",
+        "correct_answer": "شبه الجزيرة الإيبيرية",
+        "incorrect_answers": [
+            "شبه الجزيرة الأوروبية",
+            "شبه جزيرة بيلوبونيز",
+            "شبه الجزيرة الإسكندنافية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تقع المقاطعات الإسبانية التالية في شمال إسبانيا باستثناء مقاطعة واحدة، فما هي؟",
+        "correct_answer": "مرسية",
+        "incorrect_answers": [
+            "أستورياس",
+            "نافارا",
+            "ليون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "مع أي دولة تتشارك فرنسا أطول حدود برية لها؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "ألمانيا",
+            "إسبانيا",
+            "كندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس مقاطعة صينية؟",
+        "correct_answer": "يانغتسي",
+        "incorrect_answers": [
+            "فوجيان",
+            "سيتشوان",
+            "غوانغدونغ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أوتاوا هي عاصمة كندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من الأسماء التالية يعود لقلعة حقيقية؟",
+        "correct_answer": "قلعة إليزابيث",
+        "incorrect_answers": [
+            "فرانك كاسل",
+            "ريتشارد كاسل",
+            "أوليفيا كاسل"
+        ]
+    }
+]

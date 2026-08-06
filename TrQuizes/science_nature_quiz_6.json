@@ -1,0 +1,240 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة السعة الكهربائية؟",
+        "correct_answer": "الفاراد",
+        "incorrect_answers": [
+            "الغاوس",
+            "الهنري",
+            "الواط"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم قمراً للأرض؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "0",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح العلمي لـ 'حاسة التذوق'؟",
+        "correct_answer": "الإدراك الذوقي",
+        "incorrect_answers": [
+            "حاسة الشم",
+            "الحس الجسدي",
+            "الإدراك السمعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر لديه أعلى درجة انصهار؟",
+        "correct_answer": "الكربون",
+        "incorrect_answers": [
+            "التنجستن",
+            "البلاتين",
+            "الأوزميوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا استخدم غريغور مندل لاختبار العبور الجيني وعلم الوراثة؟",
+        "correct_answer": "البازلاء",
+        "incorrect_answers": [
+            "القطط",
+            "الزهور",
+            "الببّغاوات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أكبر كوكب في النظام الشمسي؟",
+        "correct_answer": "المشتري",
+        "incorrect_answers": [
+            "زحل",
+            "الأرض",
+            "المريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم يبلغ عمر الكون؟",
+        "correct_answer": "⁦13.8⁩ مليار سنة",
+        "incorrect_answers": [
+            "⁦4.5⁩ مليار سنة",
+            "⁦7.9⁩ مليار سنة",
+            "⁦16.2⁩ مليار سنة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أين تقع الغدة الصنوبرية في جسم الإنسان؟",
+        "correct_answer": "الدماغ",
+        "incorrect_answers": [
+            "المنطقة الأربية (أعلى الفخذ)",
+            "الصدر",
+            "الحلق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح الأكثر ارتباطاً بسيغموند فرويد؟",
+        "correct_answer": "التحليل النفسي",
+        "incorrect_answers": [
+            "العلاج المعرفي السلوكي",
+            "نظرية الجاذبية",
+            "العلاج السلوكي الجدلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الجزيئية للجلوكوز؟",
+        "correct_answer": "⁦C6H12O6⁩",
+        "incorrect_answers": [
+            "⁦C2H4O2⁩",
+            "⁦K⁩+",
+            "⁦CH4⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العلم الذي يدرس خلايا وأنسجة النباتات والحيوانات؟",
+        "correct_answer": "علم الأنسجة (⁦Histology⁩)",
+        "incorrect_answers": [
+            "علم الأحياء الدقيقة",
+            "علم التشريح",
+            "الكيمياء الحيوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي المادة الأساسية المسببة للإدمان والموجودة في التبغ؟",
+        "correct_answer": "النيكوتين",
+        "incorrect_answers": [
+            "الكاثينون",
+            "الإيفيدرين",
+            "الغلاوسين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأرجل التي يستحيل بيولوجياً أن تكون لدى أم أربعة وأربعين (حريش)‏؟",
+        "correct_answer": "100",
+        "incorrect_answers": [
+            "26",
+            "50",
+            "74"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو التركيب الكيميائي للماء؟",
+        "correct_answer": "⁦H20⁩",
+        "incorrect_answers": [
+            "⁦C12H6O2⁩",
+            "⁦CO2⁩",
+            "⁦H⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في علم النفس، أي من الاحتياجات التالية تقع في أعلى هرم \"ماسلو للاحتياجات الإنسانية\"؟",
+        "correct_answer": "تقدير الذات (الاحترام)",
+        "incorrect_answers": [
+            "الحب والانتماء",
+            "الأمان",
+            "الاحتياجات الفسيولوجية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من الأوعية الدموية التالية يحمل دماً غير مؤكسج (خالٍ من الأكسجين)‏؟",
+        "correct_answer": "الشريان الرئوي",
+        "incorrect_answers": [
+            "الوريد الرئوي",
+            "الشريان الأورطي (الأبهر)",
+            "الشريان التاجي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أول مركب عضوي تم تحضيره (تخليقه) من مركبات غير عضوية؟",
+        "correct_answer": "اليوريا (البولينا)",
+        "incorrect_answers": [
+            "البروبان",
+            "الإيثانول",
+            "الفورمالديهايد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كان إنسان النياندرتال سلفاً مباشراً للإنسان الحديث.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي للثعلب الأحمر؟",
+        "correct_answer": "فولبيس فولبيس (⁦Vulpes Vulpes⁩)",
+        "incorrect_answers": [
+            "فولبيس ريدوس (⁦Vulpes Redus⁩)",
+            "الثعلب الأحمر (⁦Red Fox⁩)",
+            "فولبيس فولبي (⁦Vulpes Vulpie⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو المصطلح العلمي لـ \"تجمد الدماغ\"؟",
+        "correct_answer": "سفينوبالاتين غانغليونورالجيا",
+        "incorrect_answers": [
+            "هايسنثويدس إيتاليكا",
+            "أمارانثوس ريتروفليكسوس",
+            "أمبليوما أمريكانوم"
+        ]
+    }
+]

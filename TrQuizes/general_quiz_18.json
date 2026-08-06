@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من المؤسسين المشاركين لشركة الواقع الافتراضي \"أوكولوس في آر\" (⁦Oculus VR⁩) توفي في حادث سيارة مأساوي عام 2013‏؟",
+        "correct_answer": "أندرو سكوت ريس",
+        "incorrect_answers": [
+            "نيت ميتشل",
+            "جاك مكاولي",
+            "بالمر لوكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي سلسلة مطاعم الوجبات السريعة التي تمتلك أكبر عدد من الفروع عالمياً؟",
+        "correct_answer": "صَب واي",
+        "incorrect_answers": [
+            "ستاربكس",
+            "ماكدونالدز",
+            "كي إف سي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في اليونان القديمة، إذا كانت وظيفتك هي \"هيبوس\" (⁦hippeus⁩)، فماذا كنت لتمتلك؟",
+        "correct_answer": "حصان",
+        "incorrect_answers": [
+            "نول حياكة",
+            "قيثارة",
+            "قارب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الروسية المكتوبة بالأحرف اللاتينية والتي تعني \"الشتاء\"؟",
+        "correct_answer": "⁦Zima⁩",
+        "incorrect_answers": [
+            "⁦Leto⁩",
+            "⁦Vesna⁩",
+            "⁦Osen⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الموقع الإلكتروني الأكثر زيارة من بين هذه الخيارات؟",
+        "correct_answer": "جوجل",
+        "incorrect_answers": [
+            "يوتيوب",
+            "فيسبوك",
+            "ويكيبيديا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الشخصيات التالية ليس مقدماً لبرنامج على إذاعة ⁦NPR⁩ الأمريكية؟",
+        "correct_answer": "بين شابيرو",
+        "incorrect_answers": [
+            "تيري غروس",
+            "إيرا غلاس",
+            "بيتر ساغال"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يُصنع \"رصاص\" قلم الرصاص عادة من الجرافيت وليس من معدن الرصاص.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الفرنسية التي تعني \"قبعة\"؟",
+        "correct_answer": "⁦Chapeau⁩",
+        "incorrect_answers": [
+            "⁦Bonnet⁩",
+            "⁦Écharpe⁩",
+            "⁦Casque⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هو مؤسس أكاديمية خان التعليمية؟",
+        "correct_answer": "سال خان",
+        "incorrect_answers": [
+            "بين خان",
+            "كيت خان",
+            "أديل خان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يرمز حرف الـ \"⁦G⁩\" في مصطلح \"جي-مان\" (⁦G-Man⁩)‏؟",
+        "correct_answer": "حكومة",
+        "incorrect_answers": [
+            "مستمر",
+            "شبح",
+            "جيرونيمو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الشيء الذي يمثل الخوف المرضي غير العقلاني منه ما يعرف بـ \"فوبيا البرق والرعد\" (⁦Astraphobia⁩)‏؟",
+        "correct_answer": "الرعد",
+        "incorrect_answers": [
+            "المطر",
+            "الرياح",
+            "الثلج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الأصلي الذي أطلق في البداية على محرك البحث \"جوجل\"؟",
+        "correct_answer": "باك رب",
+        "incorrect_answers": [
+            "كات مساج",
+            "سيرش برو",
+            "نتسكيب نافيجيتور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الفيرلونغ (وحدة قياس مسافة) في الميل الواحد؟",
+        "correct_answer": "ثمانية",
+        "incorrect_answers": [
+            "اثنان",
+            "أربعة",
+            "ستة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ينجذب الثيران إلى اللون الأحمر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "صورة أي رئيس أمريكي مطبوعة على ورقة النقد النادرة من فئة الدولارين؟",
+        "correct_answer": "توماس جيفرسون",
+        "incorrect_answers": [
+            "مارتن فان بيورين",
+            "أوليسيس غرانت",
+            "جون كوينسي آدامز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما ترجمة العبارة اللاتينية الشهيرة \"⁦Veni⁩, ⁦vidi⁩, ⁦vici⁩\" باللغة العربية؟",
+        "correct_answer": "أتيت، ورأيت، وانتصرت",
+        "incorrect_answers": [
+            "لا أرى شراً، لا أسمع شراً، لا أتكلم شراً",
+            "الحياة والحرية والسعادة",
+            "الماضي والحاضر والمستقبل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي وسادة \"داكيماكورا\" (⁦dakimakura⁩)‏؟",
+        "correct_answer": "وسادة الجسم",
+        "incorrect_answers": [
+            "وجبة صينية تتكون بشكل أساسي من السمك",
+            "وضعية من وضعيات اليوجا",
+            "كلمة تُستخدم لوصف شخصين يحبان بعضهما بصدق"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "تعتبر \"نظرية الملاعق\" (⁦Spoon theory⁩) نموذجاً تعبيرياً يستعين بـ \"الملاعق\" كرمز لمقدار الطاقة اليومية المتاحة للشخص.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كل كم سنة يتم منح ميدالية فيلدز، التي تعد واحدة من أرفع الجوائز في مجال الرياضيات؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    }
+]

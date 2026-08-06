@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه البنوك غير مخول بإصدار الأوراق النقدية في هونغ كونغ؟",
+        "correct_answer": "⁦OCBC⁩",
+        "incorrect_answers": [
+            "⁦HSBC⁩",
+            "ستاندرد تشارترد",
+            "بنك الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "مشروب الويسكي الإسكتلندي والدامبوي (⁦Drambuie⁩) يكونان أي كوكتيل؟",
+        "correct_answer": "رستي نيل",
+        "incorrect_answers": [
+            "سكرودرايفر",
+            "سكس أون ذا بيتش",
+            "مانهاتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تأسست شركة آبل؟",
+        "correct_answer": "1976",
+        "incorrect_answers": [
+            "1978",
+            "1980",
+            "1974"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "القرآن هو الكتاب المقدس لأي من الديانات الإبراهيمية؟",
+        "correct_answer": "الإسلام",
+        "incorrect_answers": [
+            "المسيحية",
+            "اليهودية",
+            "الراستافارية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي عام توقفت كندا عن إنتاج قطعة السنت الواحد (البنس) المعدنية؟",
+        "correct_answer": "2012",
+        "incorrect_answers": [
+            "2013",
+            "2011",
+            "2010"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان ⁦SCP-173⁩ هو أول مقال عن ⁦SCP⁩ يُكتب لمشروع الخيال التعاوني القائم على الويب والمعروف باسم 'مؤسسة ⁦SCP⁩' (⁦SCP Foundation⁩).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان المعماري المعروف باسم 'لو كوربوزييه' شخصية بارزة في أي طراز معماري؟",
+        "correct_answer": "الحداثة",
+        "incorrect_answers": [
+            "الكلاسيكية الجديدة",
+            "الباروك",
+            "النيوغوطية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "متى تم طرح علكة هوبا بوبا (⁦Hubba Bubba⁩) لأول مرة؟",
+        "correct_answer": "1979",
+        "incorrect_answers": [
+            "1984",
+            "1972",
+            "1980"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "'نادي الـ 27' (⁦27 Club⁩) هو مصطلح يُستخدم للإشارة إلى قائمة من الممثلين والموسيقيين والفنانين المشهورين الذين توفوا في سن السابعة والعشرين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي نهر يتدفق عبر مدينة غلاسكو الإسكتلندية؟",
+        "correct_answer": "كلايد",
+        "incorrect_answers": [
+            "تاي",
+            "دي",
+            "تويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "إذا وُصف شعر شخص ما بأنه 'تيتيان' (⁦Titian⁩)، فما هو لونه؟",
+        "correct_answer": "الأحمر",
+        "incorrect_answers": [
+            "الأشقر",
+            "البني",
+            "الأسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الأصابع (بدون الإبهام) في يد الإنسان الواحدة؟",
+        "correct_answer": "أربعة",
+        "incorrect_answers": [
+            "خمسة",
+            "عشرة",
+            "ثمانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "بعد كم عاماً يتم الاحتفال باليوبيل الكريستالي (ذكرى الزواج الكريستالية)‏؟",
+        "correct_answer": "15",
+        "incorrect_answers": [
+            "20",
+            "10",
+            "25"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الألوان غير موجود في شعار جوجل؟",
+        "correct_answer": "الوردي",
+        "incorrect_answers": [
+            "الأصفر",
+            "الأزرق",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم عدد المفاتيح (النوتات) في البيانو الكبير القياسي (⁦Grand Piano⁩)‏؟",
+        "correct_answer": "88",
+        "incorrect_answers": [
+            "98",
+            "108",
+            "78"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو العضو في الجسم الذي ينتج العصارة الصفراوية؟",
+        "correct_answer": "الكبد",
+        "incorrect_answers": [
+            "المرارة",
+            "البنكرياس",
+            "المعدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو الوصف الأنسب لـ 'كوادرانجولاريس ريفيرسوم' (⁦Quadrangularis Reversum⁩)‏؟",
+        "correct_answer": "آلة إيقاعية موسيقية",
+        "incorrect_answers": [
+            "مبنى في جامعة أكسفورد",
+            "نقلة في الشطرنج",
+            "نظرية هندسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "مما تتكون أكلة الهاجيس (⁦Haggis⁩) الحقيقية؟",
+        "correct_answer": "قلب وكبد ورئتي الخروف",
+        "incorrect_answers": [
+            "قلب وكليتي ورئتي الخروف",
+            "كبد وكليتي وعيني الخروف",
+            "الخروف بأكمله"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع 2,717 قدماً (828 متراً)‏؟",
+        "correct_answer": "برج خليفة، الإمارات العربية المتحدة",
+        "incorrect_answers": [
+            "برج شانغهاي، الصين",
+            "برج لوته العالمي، كوريا الجنوبية",
+            "مركز بينغ آن المالي، الصين"
+        ]
+    }
+]

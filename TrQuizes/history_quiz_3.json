@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من هو أول رئيس وزراء لكندا؟",
+        "correct_answer": "جون ماكدونالد",
+        "incorrect_answers": [
+            "جون أبوت",
+            "ألكسندر ماكينزي",
+            "روبرت بوردن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من هو القائد العسكري الشهير الذي عبر جبال الألب بجيش يضم فيلة حربية خلال الحرب البونيقية الثانية؟",
+        "correct_answer": "حنبعل",
+        "incorrect_answers": [
+            "جيرمانيكوس",
+            "الإسكندر الأكبر",
+            "تيبيريوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما الفيلم الشهير الذي أُطلق اسمه كلقب على نظام الدفاع الاستراتيجي الأمريكي خلال الحرب الباردة؟",
+        "correct_answer": "حرب النجوم",
+        "incorrect_answers": [
+            "الفك المفترس",
+            "بليد رانر",
+            "الفضائي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كان أبراهام لينكولن أول رئيس أمريكي يُولد خارج حدود الولايات الثلاث عشرة الأصلية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "يحتوي شعار نبالة ملك إسبانيا على شعارات ممالك قشتالة، وليون، وأراغون، وأي مملكة إيبيرية سابقة أخرى؟",
+        "correct_answer": "نافارا",
+        "incorrect_answers": [
+            "جاليسيا",
+            "غرناطة",
+            "كتالونيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي من ملوك إنجلترا واجه ثورة الفلاحين عام 1381‏؟",
+        "correct_answer": "ريتشارد الثاني",
+        "incorrect_answers": [
+            "إدوارد الثالث",
+            "إدوارد الثاني",
+            "هنري الرابع"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "مقولة 'قد أختلف معك في الرأي، ولكني مستعد للموت دفاعاً عن حقك في التعبير عنه' منسوبة للفيلسوف الفرنسي فولتير.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كان الملك هنري الثامن ثاني ملوك أي عائلة مالكة أوروبية؟",
+        "correct_answer": "تيودور",
+        "incorrect_answers": [
+            "يورك",
+            "ستيوارت",
+            "لانكستر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى نشر لودفيغ زامنهوف لأول مرة كتاب 'الكتاب الأول' (⁦Unua Libro⁩) الذي يصف فيه لغته العالمية المقترحة 'الإسبرانتو'؟",
+        "correct_answer": "1887",
+        "incorrect_answers": [
+            "1897",
+            "1905",
+            "1915"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "إلى أي حدث تاريخي كانت تشير افتتاحية 1812 للملحن تشايكوفسكي؟",
+        "correct_answer": "الحروب النابليونية",
+        "incorrect_answers": [
+            "حرب عام 1812 الأمريكية",
+            "الثورة الروسية",
+            "هجوم اللواء الخفيف (حرب القرم)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "غرقت سفينة تايتانيك خلال رحلتها الأولى من ساوثهامبتون بإنجلترا إلى أي مدينة أمريكية؟",
+        "correct_answer": "نيويورك",
+        "incorrect_answers": [
+            "بوسطن",
+            "فيلادلفيا",
+            "واشنطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "وفقاً للأسطورة، أي حيوان بنى الإغريق مجسماً خشبياً ضخماً له للتسلل إلى داخل طروادة؟",
+        "correct_answer": "حصان",
+        "incorrect_answers": [
+            "ماعز",
+            "فيل",
+            "ذئب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان حنبعل؟",
+        "correct_answer": "قائد عسكري قرطاجي",
+        "incorrect_answers": [
+            "قاتل متسلسل بريطاني",
+            "مستكشف فرنسي",
+            "فيلسوف يوناني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو أول إمبراطور لروما؟",
+        "correct_answer": "أغسطس",
+        "incorrect_answers": [
+            "يوليوس قيصر",
+            "بومبيوس الكبير",
+            "كلوديوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي الحضارة التي تُعتبر على نطاق واسع أقدم حضارة معروفة للبشرية؟",
+        "correct_answer": "الحضارة السومرية",
+        "incorrect_answers": [
+            "بابل",
+            "آشور",
+            "فينيقيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كان ثيودور روزفلت الابن الجنرال الوحيد الذي شارك في الهجوم الأول بيوم الإنزال في نورماندي (⁦D-Day⁩).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما الاسم الشائع لطرق التجارة القديمة التي ربطت بين شرق وغرب أوراسيا؟",
+        "correct_answer": "طريق الحرير",
+        "incorrect_answers": [
+            "طريق التوابل",
+            "طريق الطين",
+            "طريق الملح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام احتفلت فنلندا بمرور 100 عام على استقلالها؟",
+        "correct_answer": "2017",
+        "incorrect_answers": [
+            "2016",
+            "2018",
+            "2015"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من هذه الدول لم تؤسس مستعمرة في أمريكا الشمالية الحالية؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "إسبانيا",
+            "السويد",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي حضارة أمريكية قديمة كانت مصدر الاعتقاد بأن العالم سينتهي أو يتغير بشكل جذري في 21 ديسمبر 2012‏؟",
+        "correct_answer": "المايا",
+        "incorrect_answers": [
+            "الإنكا",
+            "الأزتيك",
+            "النافاهو"
+        ]
+    }
+]

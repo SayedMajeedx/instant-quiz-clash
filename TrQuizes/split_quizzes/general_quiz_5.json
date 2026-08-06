@@ -1,0 +1,232 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه اللغات الهندية لا تنتمي إلى عائلة اللغات الهندو أوروبية؟",
+        "correct_answer": "التاميلية",
+        "incorrect_answers": [
+            "الهندية",
+            "البنجابية",
+            "الأردية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو أقصى عدد من نجوم ميشلان يمكن للمطعم الحصول عليه؟",
+        "correct_answer": "ثلاثة",
+        "incorrect_answers": [
+            "أربعة",
+            "خمسة",
+            "ستة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "اسم \"موقف الحافلات رقم 16\" (⁦Number 16 Bus Shelter⁩) كان اسماً لطفل وافقت عليه حكومة نيوزيلندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في يناير 2019، تم العثور في لندن على الرفات المدفون لأي مستكشف إنجليزي لأستراليا؟",
+        "correct_answer": "ماثيو فليندرز",
+        "incorrect_answers": [
+            "ويليام بورك",
+            "أبل تاسمان",
+            "ديرك هارتوغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+        "correct_answer": "26",
+        "incorrect_answers": [
+            "30",
+            "17",
+            "5"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في لعبة الأدوار متعددة اللاعبين على الإنترنت \"ريلم أوف ذا ماد غود\" (⁦Realm of the Mad God⁩)، ما هو الدهليز الذي يُعتبر الأكثر صعوبة على نطاق واسع؟",
+        "correct_answer": "ذا شاترز",
+        "incorrect_answers": [
+            "عرين الثعبان",
+            "مقبرة القدماء",
+            "مسرح صانع الدمى"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "اليوم الواحد يحتوي على 86400 ثانية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من ألعاب الإيقاع الموسيقي التالية من إنتاج شركة هارمونيكس (⁦Harmonix⁩)‏؟",
+        "correct_answer": "روك باند",
+        "incorrect_answers": [
+            "ميت بيت مانيا",
+            "غيتار هيرو لايف",
+            "دانس دانس ريفولوشن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة السويدية التي تعني \"نافذة\"؟",
+        "correct_answer": "⁦Fönster⁩",
+        "incorrect_answers": [
+            "⁦Hål⁩",
+            "⁦Skärm⁩",
+            "⁦Ruta⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "اخترع فريدريك رويكهايم الفشار في عام 1871 في الولايات المتحدة الأمريكية، حيث كان يبيع هذه الوجبة الخفيفة في شوارع شيكاغو.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يتكون الخيار عادةً من ماء بنسبة تزيد عن 90%.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما اسم مجسم السمكة المغنية المتحركة الشهير، الذي يغني أغانٍ معروفة مثل \"لا تقلق، كن سعيداً\"؟",
+        "correct_answer": "بيغ ماوث بيلي باس",
+        "incorrect_answers": [
+            "بيغ بيلي باس",
+            "السمكة المغنية",
+            "سردين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "طبق \"فوا جرا\" (⁦Foie gras⁩) الشهير في المطبخ الفرنسي يُصنع عادةً من أي جزء من البط أو الإوز؟",
+        "correct_answer": "الكبد",
+        "incorrect_answers": [
+            "القلب",
+            "المعدة",
+            "الأمعاء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي كلمة إنجليزية تعني \"التفكير بعمق\"؟",
+        "correct_answer": "⁦Contemplate⁩",
+        "incorrect_answers": [
+            "⁦Confiscate⁩",
+            "⁦Constipate⁩",
+            "⁦Condensate⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما نوع الطائرات التي طورها إيغور سيكورسكي في الولايات المتحدة عام 1942‏؟",
+        "correct_answer": "المروحية (الهليكوبتر)",
+        "incorrect_answers": [
+            "منطاد التخفي",
+            "الطائرة النفاثة",
+            "كبسولة الفضاء"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يمكن رؤية سور الصين العظيم من القمر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي أكبر فصيلة حية من البطاريق؟",
+        "correct_answer": "البطريق الإمبراطور",
+        "incorrect_answers": [
+            "البطريق الملك",
+            "بطريق جنتو",
+            "بطريق أديلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو المشروب الكحولي الذي يُصنع من الدبس (عسل قصب السكر)‏؟",
+        "correct_answer": "الرم",
+        "incorrect_answers": [
+            "الجين",
+            "الفودكا",
+            "الويسكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي رئيس أمريكي تظهر صورته على ورقة الدولار الواحد؟",
+        "correct_answer": "جورج واشنطن",
+        "incorrect_answers": [
+            "توماس جيفرسون",
+            "أبراهام لينكون",
+            "بنجامين فرانكلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي ولاية أمريكية تقع المنطقة 51 (⁦Area 51⁩)‏؟",
+        "correct_answer": "نيفادا",
+        "incorrect_answers": [
+            "أريزونا",
+            "نيومكسيكو",
+            "يوتا"
+        ]
+    }
+]

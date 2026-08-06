@@ -1,0 +1,214 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من الرماة (⁦pitchers⁩) التاليين فاز بجائزة أفضل لاعب مبتدئ (⁦Rookie of the Year⁩) في الدوري الوطني لموسم 2013‏؟",
+        "correct_answer": "خوسيه فرنانديز",
+        "incorrect_answers": [
+            "جاكوب ديغروم",
+            "شيلبي ميلر",
+            "مات هارفي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي تاريخ أقيم الحفل الختامي لدورة الألعاب الأولمبية الصيفية في ريو 2016‏؟",
+        "correct_answer": "21 أغسطس",
+        "incorrect_answers": [
+            "23 أغسطس",
+            "19 أغسطس",
+            "17 أغسطس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي دولة استضافت دورة الألعاب الأولمبية الصيفية لعام 2020‏؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "الصين",
+            "أستراليا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من الذي فاز ببطولة العالم لسباقات الفورمولا 1 للسائقين لعام 2017‏؟",
+        "correct_answer": "لويس هاملتون",
+        "incorrect_answers": [
+            "سباستيان فيتل",
+            "نيكو روزبرغ",
+            "ماكس فيرستابن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي منتخب فاز ببطولة كوبا أمريكا المئوية عام 2016‏؟",
+        "correct_answer": "تشيلي",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرازيل",
+            "كولومبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من أي دولة نشأت رياضة \"الكابادي\"، وهي رياضة تلاحمية تعتمد على الدفاع والالتحام؟",
+        "correct_answer": "الهند",
+        "incorrect_answers": [
+            "أستراليا",
+            "تركيا",
+            "كمبوديا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي من الرياضات التالية ليست جزءاً من السباق الثلاثي (الترياتلون)‏؟",
+        "correct_answer": "ركوب الخيل",
+        "incorrect_answers": [
+            "ركوب الدراجات",
+            "السباحة",
+            "الجري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هي أفضل نتيجة (معدل ضربات) حققها تايجر وودز في مسيرته الاحترافية في رياضة الغولف؟",
+        "correct_answer": "61",
+        "incorrect_answers": [
+            "65",
+            "63",
+            "67"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من الذي فاز بسباق جائزة سان مارينو الكبرى عام 1994، وهو السباق الذي لقي فيه آيرتون سينا حتفه؟",
+        "correct_answer": "مايكل شوماخر",
+        "incorrect_answers": [
+            "نيكولا لاريني",
+            "جيرهارد بيرجر",
+            "ميكا هاكينين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "في كرة القدم الكندية، كم عدد النقاط التي يمنحها تسجيل الـ \"روج\" (⁦rouge⁩)‏؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي فريق كرة قدم إنجليزي يُلقب بـ \"النمور\" (⁦The Tigers⁩)‏؟",
+        "correct_answer": "هال سيتي",
+        "incorrect_answers": [
+            "كارديف سيتي",
+            "بريستول سيتي",
+            "مانشستر سيتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو لاعب كرة السلة (⁦NBA⁩) الذي خاض أكبر عدد من المباريات طوال مسيرته الرياضية؟",
+        "correct_answer": "روبرت باريش",
+        "incorrect_answers": [
+            "كريم عبد الجبار",
+            "كيفن غارنيت",
+            "كوبي براينت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من كان الهداف التاريخي للمنتخب الإنجليزي لكرة القدم؟",
+        "correct_answer": "واين روني",
+        "incorrect_answers": [
+            "ديفيد بيكهام",
+            "ستيفن جيرارد",
+            "مايكل أوين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "سباقات الفورمولا إي (⁦Formula E⁩) هي سلسلة سباقات سيارات تستخدم سيارات سباق كهربائية هجينة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من فاز بلقب \"دوري أبطال أوروبا\" في عام 1999‏؟",
+        "correct_answer": "مانشستر يونايتد",
+        "incorrect_answers": [
+            "برشلونة",
+            "بايرن ميونخ",
+            "ليفربول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "يقيس جهاز الـ \"ستيمبميتر\" (⁦stimpmeter⁩) سرعة الكرة على أي سطح؟",
+        "correct_answer": "المنطقة الخضراء لملعب الغولف",
+        "incorrect_answers": [
+            "ملعب كرة القدم",
+            "المنطقة الخارجية لملعب الكريكت",
+            "طاولة البينبول"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كانت رياضة التنس تُعرف في السابق باسم راكيت بول (كرة المضرب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي منتخب فاز ببطولة كوبا أمريكا لعام 2015‏؟",
+        "correct_answer": "تشيلي",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرازيل",
+            "باراغواي"
+        ]
+    }
+]

@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اسم المشروب المصنوع من البطاطس أو الحبوب والذي يعود أصله إلى بولندا وروسيا؟",
+        "correct_answer": "الفودكا",
+        "incorrect_answers": [
+            "الأفسنتين",
+            "الرم",
+            "الساكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الديناميكا الهوائية، ما هي القوة التي تدفع الجسم إلى الأعلى؟",
+        "correct_answer": "قوة الرفع",
+        "incorrect_answers": [
+            "قوة السحب",
+            "الوزن",
+            "قوة الدفع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "محطة أمستردام المركزية للقطارات توأمت مع أي محطة？",
+        "correct_answer": "لندن ليفربول ستريت",
+        "incorrect_answers": [
+            "فرانكفورت الرئيسية",
+            "باريس غار دو نورد",
+            "بروكسل ميدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "توفي ستيف جوبز، الشريك المؤسس لشركة آبل، بسبب مضاعفات أي نوع من أنواع السرطان؟",
+        "correct_answer": "سرطان البنكرياس",
+        "incorrect_answers": [
+            "سرطان العظام",
+            "سرطان الكبد",
+            "سرطان المعدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا يرمز حرف الـ \"⁦S⁩\" في اختصار \"⁦SIM⁩\" الخاص ببطاقة الهاتف (⁦SIM card⁩)‏؟",
+        "correct_answer": "المشترك (⁦Subscriber⁩)",
+        "incorrect_answers": [
+            "فردي (⁦Single⁩)",
+            "آمن (⁦Secure⁩)",
+            "صلب (⁦Solid⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كانت شركة \"ستيج كوتش\" (⁦Stagecoach⁩) تمتلك شركة \"ساوث ويست ترينز\" للقطارات قبل أن تفقد حقوق تشغيلها لصالح شركتي \"فيرست جروب\" و\"⁦MTR⁩\" في مارس 2017.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأبراج الفلكية يقع بين برجي العذراء والعقرب؟",
+        "correct_answer": "برج الميزان",
+        "incorrect_answers": [
+            "برج الجوزاء",
+            "برج الثور",
+            "برج الجدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي جيل من ألعاب سلسلة بوكيمون الرئيسية ظهر النوع \"الخرافي\" (⁦Fairy⁩) لأول مرة؟",
+        "correct_answer": "الجيل السادس",
+        "incorrect_answers": [
+            "الجيل الثاني",
+            "الجيل السابع",
+            "الجيل الرابع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي مدينة بأمريكا الجنوبية نشأت عصابة (كارتيل) المخدرات التي كان يديرها بابلو إسكوبار؟",
+        "correct_answer": "ميديلين",
+        "incorrect_answers": [
+            "بوغوتا",
+            "كيتو",
+            "كالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي سرعة طيران طائر السنونو (بدون حمولة) بالسرعة الجوية؟",
+        "correct_answer": "24 ميل في الساعة",
+        "incorrect_answers": [
+            "15 ميل في الساعة",
+            "20 ميل في الساعة",
+            "200 ميل في الساعة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا تعني ممارسة الـ \"نيفيلوكوكيجيا\" (⁦Nephelococcygia⁩)‏؟",
+        "correct_answer": "رؤية وتخيل أشكال وصور في السحب",
+        "incorrect_answers": [
+            "النوم بأعين مفتوحة",
+            "تحطيم الزجاج بنبرة الصوت",
+            "السباحة في مياه متجمدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "متى تم إطلاق جهاز بلايستيشن 3 (⁦PlayStation 3⁩) لأول مرة؟",
+        "correct_answer": "11 نوفمبر 2006",
+        "incorrect_answers": [
+            "8 يناير 2007",
+            "25 ديسمبر 2007",
+            "16 يوليو 2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو العنصر الكيميائي الذي يحمل الرقم الذري 11 في الجدول الدوري ورمزه (⁦Na⁩)‏؟",
+        "correct_answer": "الصوديوم",
+        "incorrect_answers": [
+            "الكربون",
+            "الرصاص",
+            "النيتروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الماضي، ماذا كان يحتفظ الرجل الأنيق عادةً في جيبه الصغير المخصص لذلك (⁦fob pocket⁩)‏؟",
+        "correct_answer": "ساعة",
+        "incorrect_answers": [
+            "نقود",
+            "مفاتيح",
+            "دفتر ملاحظات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو نوع المشروب المكسيكي الشهير \"كورونا\" (⁦Corona⁩)‏؟",
+        "correct_answer": "لاجر خفيف (⁦Pale Lager⁩)",
+        "incorrect_answers": [
+            "إنديا بايل آيل (⁦IPA⁩)",
+            "بيلسنر (⁦Pilsner⁩)",
+            "بالتيك بورتر (⁦Baltic Porter⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم تأسيس سلسلة مطاعم ماكدونالدز؟",
+        "correct_answer": "1955",
+        "incorrect_answers": [
+            "1964",
+            "1951",
+            "1947"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الذي يمثل حرف \"⁦M⁩\" في أبجدية الناتو الصوتية؟",
+        "correct_answer": "مايك (⁦Mike⁩)",
+        "incorrect_answers": [
+            "ماثيو (⁦Matthew⁩)",
+            "مارك (⁦Mark⁩)",
+            "ماكس (⁦Max⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو الشخص الذي يظهر وجهه باللونين الأبيض والأسود في رمز \"كابا\" (⁦Kappa⁩) التعبيري الشهير على منصة تويتش؟",
+        "correct_answer": "جوش ديسينو",
+        "incorrect_answers": [
+            "جاستن ديسينو",
+            "جون ديسينو",
+            "جيمي ديسينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الصفة المميزة للشخص الذي يوصف بـ \"⁦hirsute⁩\" باللغة الإنجليزية؟",
+        "correct_answer": "كثير الشعر",
+        "incorrect_answers": [
+            "فظ أو وقح",
+            "مرح أو مضحك",
+            "طويل القامة"
+        ]
+    }
+]

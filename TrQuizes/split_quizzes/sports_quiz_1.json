@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو سائق الفورمولا 1 الذي لُقِّب بـ 'البروفيسور'؟",
+        "correct_answer": "ألان بروست",
+        "incorrect_answers": [
+            "أيرتون سينا",
+            "نيكي لاودا",
+            "إيمرسون فيتيبالدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في الفورمولا 1، تم إدخال سيارة الأمان الافتراضية بعد الحادث المميت لأي سائق؟",
+        "correct_answer": "جول بيانكي",
+        "incorrect_answers": [
+            "أيرتون سينا",
+            "رونالد راتزنبرجر",
+            "جيل فيلنوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ملعب 'ستاديوم أوف لايت' (ملعب النور) هو الملعب الرئيسي لأي فريق كرة قدم؟",
+        "correct_answer": "نادي سندرلاند",
+        "incorrect_answers": [
+            "نادي برشلونة",
+            "باريس سان جيرمان",
+            "مانشستر يونايتد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي شارك في أكبر عدد من البطولات مع منتخب ألمانيا لكرة القدم؟",
+        "correct_answer": "لوثار ماتيوس",
+        "incorrect_answers": [
+            "ميروسلاف كلوزه",
+            "فيليب لام",
+            "أوليفر كان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "عند أي جسر يبدأ سباق القوارب السنوي بين أكسفورد وكامبريدج؟",
+        "correct_answer": "باتني",
+        "incorrect_answers": [
+            "هامرسميث",
+            "فوكسهول",
+            "باترسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "بأي حدث مأساوي يُذكر موسم 1994 للفورمولا 1‏؟",
+        "correct_answer": "وفاة أيرتون سينا (سان مارينو)",
+        "incorrect_answers": [
+            "المواجهة الحاسمة (أستراليا)",
+            "احتراق سيارة فيرستابين (ألمانيا)",
+            "إيقاف شوماخر (بريطانيا)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي من هذه المدن الروسية لم تحتوي على ملعب استُخدم في كأس العالم لكرة القدم 2018‏؟",
+        "correct_answer": "فلاديفوستوك",
+        "incorrect_answers": [
+            "روستوف على نهر الدون",
+            "يكاترينبورغ",
+            "كالينينغراد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون? (⁦Wait⁩, ⁦English question⁩: ⁦Which is Kenesisa Bekele's personal best at marathon⁩? ⁦No question mark needed as it wasn't in original⁩, ⁦or let's use standard question mark⁩) ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
+        "correct_answer": "2:01:41",
+        "incorrect_answers": [
+            "2:01:12",
+            "2:01:45",
+            "2:01:51"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "عُرضت الحلقة الأولى من برنامج '⁦WWF Monday Night RAW⁩' في 11 يناير 1990.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أُدرجت رياضة التزلج على الألواح (⁦Skateboarding⁩) في دورة الألعاب الأولمبية الصيفية لعام 2020 في طوكيو.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو لاعب دوري السلة الأمريكي (⁦NBA⁩) الذي فاز بجائزة اللاعب الأكثر قيمة (⁦MVP⁩) لموسم 1999-2000‏؟",
+        "correct_answer": "شاكيل أونيل",
+        "incorrect_answers": [
+            "ألين إيفرسون",
+            "كوبي براينت",
+            "بول بيرس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "متى أُقيمت أول مباراة دولية رسمية في تاريخ كرة القدم؟",
+        "correct_answer": "1872",
+        "incorrect_answers": [
+            "1880",
+            "1863",
+            "1865"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "افتتح لاعب كرة القدم كريستيانو رونالدو متحفاً مخصصاً لنفسه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في أي دولة أُقيمت دورة الألعاب الأولمبية الشتوية لعام 2014 في مدينة سوتشي؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "كوريا الجنوبية",
+            "النرويج",
+            "كندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هو المنتخب الوطني الذي فاز بأول نسخة من دوري الأمم الأوروبية؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "هولندا",
+            "إنجلترا",
+            "سويسرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من يُعتبر أفضل لاعب كرة قدم روماني على مر العصور؟",
+        "correct_answer": "جورجي هاجي",
+        "incorrect_answers": [
+            "كريستيان كيفو",
+            "نيكولاي دوبرين",
+            "جورجي بوبيسكو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو لاعب السهام المريشة (⁦Darts⁩) الذي فاز بأكبر عدد من ألقاب بطولة العالم؟",
+        "correct_answer": "فيل تايلور",
+        "incorrect_answers": [
+            "مايكل فان جيروين",
+            "ريموند فان بارنيفيلد",
+            "إيريك بريستو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هي النتيجة النهائية لمباراة ألمانيا ضد البرازيل في كأس العالم 2014‏؟",
+        "correct_answer": "7 - 1",
+        "incorrect_answers": [
+            "0 - 1",
+            "3 - 4",
+            "16 - 0"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كم عدد النقاط التي سجلها ليبرون جيمس في أول مباراة له في دوري السلة الأمريكي (⁦NBA⁩)‏؟",
+        "correct_answer": "25",
+        "incorrect_answers": [
+            "19",
+            "69",
+            "41"
+        ]
+    }
+]

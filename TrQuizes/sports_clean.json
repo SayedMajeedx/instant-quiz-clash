@@ -1,0 +1,1736 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو سائق الفورمولا 1 الذي لُقِّب بـ 'البروفيسور'؟",
+        "correct_answer": "ألان بروست",
+        "incorrect_answers": [
+            "أيرتون سينا",
+            "نيكي لاودا",
+            "إيمرسون فيتيبالدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في الفورمولا 1، تم إدخال سيارة الأمان الافتراضية بعد الحادث المميت لأي سائق؟",
+        "correct_answer": "جول بيانكي",
+        "incorrect_answers": [
+            "أيرتون سينا",
+            "رونالد راتزنبرجر",
+            "جيل فيلنوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ملعب 'ستاديوم أوف لايت' (ملعب النور) هو الملعب الرئيسي لأي فريق كرة قدم؟",
+        "correct_answer": "نادي سندرلاند",
+        "incorrect_answers": [
+            "نادي برشلونة",
+            "باريس سان جيرمان",
+            "مانشستر يونايتد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي شارك في أكبر عدد من البطولات مع منتخب ألمانيا لكرة القدم؟",
+        "correct_answer": "لوثار ماتيوس",
+        "incorrect_answers": [
+            "ميروسلاف كلوزه",
+            "فيليب لام",
+            "أوليفر كان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "عند أي جسر يبدأ سباق القوارب السنوي بين أكسفورد وكامبريدج؟",
+        "correct_answer": "باتني",
+        "incorrect_answers": [
+            "هامرسميث",
+            "فوكسهول",
+            "باترسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "بأي حدث مأساوي يُذكر موسم 1994 للفورمولا 1؟",
+        "correct_answer": "وفاة أيرتون سينا (سان مارينو)",
+        "incorrect_answers": [
+            "المواجهة الحاسمة (أستراليا)",
+            "احتراق سيارة فيرستابين (ألمانيا)",
+            "إيقاف شوماخر (بريطانيا)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي من هذه المدن الروسية لم تحتوي على ملعب استُخدم في كأس العالم لكرة القدم 2018؟",
+        "correct_answer": "فلاديفوستوك",
+        "incorrect_answers": [
+            "روستوف على نهر الدون",
+            "يكاترينبورغ",
+            "كالينينغراد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون? (Wait, English question: Which is Kenesisa Bekele's personal best at marathon? No question mark needed as it wasn't in original, or let's use standard question mark) ما هو الرقم القياسي الشخصي للعداء كينينيسا بيكيلي في الماراثون؟",
+        "correct_answer": "2:01:41",
+        "incorrect_answers": [
+            "2:01:12",
+            "2:01:45",
+            "2:01:51"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "عُرضت الحلقة الأولى من برنامج 'WWF Monday Night RAW' في 11 يناير 1990.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أُدرجت رياضة التزلج على الألواح (Skateboarding) في دورة الألعاب الأولمبية الصيفية لعام 2020 في طوكيو.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو لاعب دوري السلة الأمريكي (NBA) الذي فاز بجائزة اللاعب الأكثر قيمة (MVP) لموسم 1999-2000؟",
+        "correct_answer": "شاكيل أونيل",
+        "incorrect_answers": [
+            "ألين إيفرسون",
+            "كوبي براينت",
+            "بول بيرس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "متى أُقيمت أول مباراة دولية رسمية في تاريخ كرة القدم؟",
+        "correct_answer": "1872",
+        "incorrect_answers": [
+            "1880",
+            "1863",
+            "1865"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "افتتح لاعب كرة القدم كريستيانو رونالدو متحفاً مخصصاً لنفسه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في أي دولة أُقيمت دورة الألعاب الأولمبية الشتوية لعام 2014 في مدينة سوتشي؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "كوريا الجنوبية",
+            "النرويج",
+            "كندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هو المنتخب الوطني الذي فاز بأول نسخة من دوري الأمم الأوروبية؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "هولندا",
+            "إنجلترا",
+            "سويسرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من يُعتبر أفضل لاعب كرة قدم روماني على مر العصور؟",
+        "correct_answer": "جورجي هاجي",
+        "incorrect_answers": [
+            "كريستيان كيفو",
+            "نيكولاي دوبرين",
+            "جورجي بوبيسكو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو لاعب السهام المريشة (Darts) الذي فاز بأكبر عدد من ألقاب بطولة العالم؟",
+        "correct_answer": "فيل تايلور",
+        "incorrect_answers": [
+            "مايكل فان جيروين",
+            "ريموند فان بارنيفيلد",
+            "إيريك بريستو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هي النتيجة النهائية لمباراة ألمانيا ضد البرازيل في كأس العالم 2014؟",
+        "correct_answer": "7 - 1",
+        "incorrect_answers": [
+            "0 - 1",
+            "3 - 4",
+            "16 - 0"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كم عدد النقاط التي سجلها ليبرون جيمس في أول مباراة له في دوري السلة الأمريكي (NBA)؟",
+        "correct_answer": "25",
+        "incorrect_answers": [
+            "19",
+            "69",
+            "41"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي عام فاز جينسون باتون بأول بطولة عالم لسائقي الفورمولا 1 في مسيرته؟",
+        "correct_answer": "2009",
+        "incorrect_answers": [
+            "2010",
+            "2007",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو سائق الفورمولا 1 الذي انتقل إلى فريق آخر في منتصف موسم 2017؟",
+        "correct_answer": "كارلوس ساينز الابن",
+        "incorrect_answers": [
+            "دانييل كفيات",
+            "جوليون بالمر",
+            "ريو هاريانتو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو اللاعب الأكثر مشاركة في المباريات تاريخياً مع نادي مانشستر يونايتد؟",
+        "correct_answer": "رايان غيغز",
+        "incorrect_answers": [
+            "ديفيد بيكهام",
+            "واين روني",
+            "إيريك كانتونا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز بدوري أبطال أوروبا في عام 2016؟",
+        "correct_answer": "ريال مدريد",
+        "incorrect_answers": [
+            "بايرن ميونخ",
+            "أتلتيكو مدريد",
+            "مانشستر سيتي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في عام 2008، حقق يوسين بولت الرقم القياسي العالمي لسباق 100 متر برباط حذاء واحد غير مربوط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في كأس العالم 2014، ما هي النتيجة النهائية لمباراة البرازيل ضد ألمانيا؟",
+        "correct_answer": "1-7",
+        "incorrect_answers": [
+            "1-5",
+            "1-6",
+            "2-6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما اسم ملعب نادي مانشستر يونايتد الرئيسي؟",
+        "correct_answer": "أولد ترافورد",
+        "incorrect_answers": [
+            "أنفيلد",
+            "ملعب مدينة مانشستر",
+            "سانت جيمس بارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في موسم 1988 للفورمولا 1، فاز فريق ماكلارين بجميع السباقات باستثناء سباق واحد فقط، ما هو هذا السباق؟",
+        "correct_answer": "سباق جائزة إيطاليا الكبرى",
+        "incorrect_answers": [
+            "سباق جائزة اليابان الكبرى",
+            "سباق جائزة موناكو الكبرى",
+            "سباق جائزة البرازيل الكبرى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي من هذه الفرق لم يلعب لصالحها اللاعب يارومير ياغر؟",
+        "correct_answer": "نيويورك آيلاندرز",
+        "incorrect_answers": [
+            "كالغاري فليمز",
+            "نيوجيرسي ديفلز",
+            "دالاس ستارز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كم عدد لاعبي كرة القدم الذين يجب أن يتواجدوا في الملعب في نفس الوقت (لكلا الفريقين)؟",
+        "correct_answer": "22",
+        "incorrect_answers": [
+            "20",
+            "24",
+            "26"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي شركة تصنيع سيارات فازت بسباق لو مان 24 ساعة لعام 2017؟",
+        "correct_answer": "بورشه",
+        "incorrect_answers": [
+            "تويوتا",
+            "أودي",
+            "شيفروليه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في عام 2016، من فاز ببطولة العالم لـ 'الصانعين' في الفورمولا 1 للمرة الثالثة على التوالي؟",
+        "correct_answer": "مرسيدس إيه إم جي بتروناس",
+        "incorrect_answers": [
+            "سكوديريا فيراري",
+            "ماكلارين هوندا",
+            "ريد بول ريسينغ رينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد ألقاب الدوري الإنجليزي الممتاز التي حققها السير أليكس فيرغسون خلال فترة تدريبه لمانشستر يونايتد؟",
+        "correct_answer": "13",
+        "incorrect_answers": [
+            "11",
+            "20",
+            "22"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ملعب الاتحاد هو الملعب الرئيسي لأي فريق؟",
+        "correct_answer": "مانشستر سيتي",
+        "incorrect_answers": [
+            "مانشستر يونايتد",
+            "أرسنال",
+            "بلاكبول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في أي عام فاز نادي ستيوا بوخارست بكأس أوروبا (المعروف حالياً بدوري أبطال أوروبا) ضد نادي برشلونة؟",
+        "correct_answer": "1986",
+        "incorrect_answers": [
+            "1990",
+            "1982",
+            "1989"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من فاز بسباق دايتونا 500 (Daytona 500) لعام 1998؟",
+        "correct_answer": "ديل إيرنهاردت",
+        "incorrect_answers": [
+            "جون أندرسون",
+            "جيف غوردون",
+            "مايكل والتريب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي شركة ملابس رياضية ألمانية تستخدم شعار 'فورم سترايب' (الخط المقوس المميز)؟",
+        "correct_answer": "بوما",
+        "incorrect_answers": [
+            "نايكي",
+            "أديداس",
+            "ريبوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو الهداف التاريخي لنادي مانشستر يونايتد في الدوري الإنجليزي الممتاز؟",
+        "correct_answer": "واين روني",
+        "incorrect_answers": [
+            "السير بوبي تشارلتون",
+            "رايان غيغز",
+            "ديفيد بيكهام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز ببطولة العالم للفورمولا 1 لعام 2015؟",
+        "correct_answer": "لويس هاملتون",
+        "incorrect_answers": [
+            "نيكو روزبرغ",
+            "سيباستيان فيتيل",
+            "جينسون باتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "دوري أبطال أوروبا هو بطولة سنوية لأندية كرة القدم تضم أندية من أي قارة؟",
+        "correct_answer": "أوروبا",
+        "incorrect_answers": [
+            "أمريكا الجنوبية",
+            "أفريقيا",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي دولة استضافت دورة الألعاب الأولمبية الشتوية لعام 2014؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "كندا",
+            "الولايات المتحدة",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من فاز بكأس ستانلي (Stanley Cup) لعام 2011؟",
+        "correct_answer": "بوسطن بروينز",
+        "incorrect_answers": [
+            "مونتريال كاناديانز",
+            "نيويورك رينجرز",
+            "تورونتو ميبل ليفز"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "روجيه فيدرر هو لاعب كرة قدم مشهور.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هي الأداة التي يُطلق اسمها على ميزة الرمية الأخيرة (الحجر الأخير) في جولة لعبة الكيرلنج؟",
+        "correct_answer": "المطرقة",
+        "incorrect_answers": [
+            "مفتاح الربط",
+            "المثقاب",
+            "مفك البراغي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "سجل ويلت تشامبرلين 100 نقطة في مباراته الشهيرة ضد نيويورك نيكس عام 1962.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي فريق فاز بالدوري الإنجليزي الممتاز لموسم 2015-2016؟",
+        "correct_answer": "ليستر سيتي",
+        "incorrect_answers": [
+            "ليفربول",
+            "تشيلسي",
+            "مانشستر يونايتد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "استضافت رابطة محترفي التنس (ATP) عدة بطولات على ملاعب مفروشة بالسجاد (carpet court) قبل أن يتم استبدالها لتقليل الإصابات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هي اللاعبّة التي فازت بالميدالية الذهبية لفردي تنس الطاولة في الألعاب الأولمبية لعام 2016؟",
+        "correct_answer": "دينغ نينغ (الصين)",
+        "incorrect_answers": [
+            "لي شياو شيا (الصين)",
+            "آي فوكوهارا (اليابان)",
+            "سونغ كيم (كوريا الشمالية)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من اللاعبين التاليين سجل هاتريك (ثلاثة أهداف) في أول ظهور له مع مانشستر يونايتد؟",
+        "correct_answer": "واين روني",
+        "incorrect_answers": [
+            "كريستيانو رونالدو",
+            "روبين فان بيرسي",
+            "ديفيد بيكهام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "قبل عام 2018، ما هي شركة السيارات اليابانية الوحيدة التي فازت بسباق لو مان 24 ساعة؟",
+        "correct_answer": "مازدا",
+        "incorrect_answers": [
+            "تويوتا",
+            "سوبارو",
+            "نيسان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو مصطلح الكريكت الذي يشير إلى خروج الضارب دون تسجيل أي نقطة (صفر)؟",
+        "correct_answer": "داك (Duck)",
+        "incorrect_answers": [
+            "باي (Bye)",
+            "بيمر (Beamer)",
+            "كاري (Carry)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في رياضة الغولف، ما الاسم الذي يُطلق على تسجيل ضربتين تحت المعدل في حفرة واحدة؟",
+        "correct_answer": "إيغل",
+        "incorrect_answers": [
+            "بيردي",
+            "بوغي",
+            "ألباتروس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "في أي سباق حُسم لقب بطولة العالم لسائقي الفورمولا 1 لعام 2018؟",
+        "correct_answer": "المكسيك",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "بلجيكا",
+            "أبو ظبي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من بطولات التنس الكبرى التالية (الجراند سلام) تقام في نهاية العام؟",
+        "correct_answer": "بطولة أمريكا المفتوحة",
+        "incorrect_answers": [
+            "بطولة فرنسا المفتوحة",
+            "بطولة ويمبلدون",
+            "بطولة أستراليا المفتوحة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أين أقيمت دورة الألعاب الأولمبية الصيفية الثانية والعشرون؟",
+        "correct_answer": "موسكو",
+        "incorrect_answers": [
+            "برشلونة",
+            "طوكيو",
+            "لوس أنجلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "كم مرة فازت مارتينا نافراتيلوفا ببطولة ويمبلدون لفردي السيدات؟",
+        "correct_answer": "تسع مرات",
+        "incorrect_answers": [
+            "عشر مرات",
+            "سبع مرات",
+            "ثماني مرات"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في كرة القدم، يتم استئناف اللعب بركلة ركنية بعد أن يسجل أحد الفريقين هدفاً.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي رياضة تُستخدم المصطلحات: لوف (love)، ديوس (deuce)، ماتش (match)، وفولي (volley)؟",
+        "correct_answer": "التنس",
+        "incorrect_answers": [
+            "الكريكت",
+            "كرة السلة",
+            "الكيرلنج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو شريك الزوجي الذي حقق معه لاعب التنس جون ماكنرو أكبر نجاحاته؟",
+        "correct_answer": "بيتر فليمنغ",
+        "incorrect_answers": [
+            "مارك وودفورد",
+            "مايكل ستيتش",
+            "ماري كاريلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من منتخبات الدول التالية تأهل إلى كأس العالم لكرة القدم 2018 في روسيا؟",
+        "correct_answer": "تونس",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "إيطاليا",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي فاز بالميدالية الذهبية في فردي كرة الطاولة للرجال في أولمبياد 2016؟",
+        "correct_answer": "ما لونغ (الصين)",
+        "incorrect_answers": [
+            "تشانغ جيكي (الصين)",
+            "جون ميزوتاني (اليابان)",
+            "فلاديمير سامسونوف (بيلاروسيا)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي من المدن الأوروبية التالية كانت الأولى التي تستضيف الألعاب الأولمبية الصيفية الحديثة ثلاث مرات؟",
+        "correct_answer": "لندن",
+        "incorrect_answers": [
+            "باريس",
+            "أثينا",
+            "روما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هي الدولة التي استضافت كأس العالم لكرة القدم عام 2022؟",
+        "correct_answer": "قطر",
+        "incorrect_answers": [
+            "أوغندا",
+            "فيتنام",
+            "بوليفيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي نادٍ إنجليزي لكرة القدم يُلقب بـ 'الثعالب'؟",
+        "correct_answer": "ليستر سيتي",
+        "incorrect_answers": [
+            "نورثهامبتون تاون",
+            "برادفورد سيتي",
+            "وست بروميتش ألبيون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كان هناك ما مجموعه 20 سباقاً في موسم فورمولا 1 لعام 2016.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من فاز بسباق جائزة موناكو الكبرى لعام 2018؟",
+        "correct_answer": "دانيال ريكاردو",
+        "incorrect_answers": [
+            "سباستيان فيتيل",
+            "كيمي رايكونن",
+            "لويس هاملتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو أعلى حزام يمكن الحصول عليه في رياضة التايكوندو؟",
+        "correct_answer": "الأسود",
+        "incorrect_answers": [
+            "الأبيض",
+            "الأحمر",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز ببطولة العالم لسائقي الفورمولا 1 لعام 2016؟",
+        "correct_answer": "نيكو روزبرغ",
+        "incorrect_answers": [
+            "لويس هاملتون",
+            "ماكس فيرستابن",
+            "كيمي رايكونن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي دولة فازت بكأس العالم لكرة القدم 2018 التي استضافتها روسيا؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "كرواتيا",
+            "بلجيكا",
+            "إنجلترا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "لماذا تم بناء جدار 'الوحش الأخضر' في ملعب فينواي بارك في الأصل؟",
+        "correct_answer": "لمنع مشاهدة المباريات من خارج الملعب.",
+        "incorrect_answers": [
+            "لجعل تسجيل الضربات الساحقة أكثر صعوبة.",
+            "لعرض الإعلانات التجارية.",
+            "لتوفير مقاعد إضافية للجمهور."
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هي الرياضة التي تُعرف بـ 'رياضة الملوك'؟",
+        "correct_answer": "سباق الخيل",
+        "incorrect_answers": [
+            "الشطرنج",
+            "المبارزة بالرماح",
+            "المبارزة بالسيف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من أي مدينة أمريكية جاء فريق لوس أنجلوس دودجرز في الأصل؟",
+        "correct_answer": "بروكلين",
+        "incorrect_answers": [
+            "لاس فيغاس",
+            "بوسطن",
+            "سياتل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "جوش منصور هو لاعب في أي فريق من فرق دوري الرغبي الوطني (NRL)؟",
+        "correct_answer": "بينريث بانثرز",
+        "incorrect_answers": [
+            "ملبورن ستورم",
+            "سيدني روسترز",
+            "نورث كوينزلاند كاوبويز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من منافسات ألعاب القوى التالية غير مدرجة في مسابقة العشاري للرجال في الأولمبياد? ",
+        "correct_answer": "رمي المطرقة",
+        "incorrect_answers": [
+            "القفز بالزانة",
+            "الوثب الطويل",
+            "دفع الجلة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "متى تأسس نادي شالكه 04 الألماني لكرة القدم؟",
+        "correct_answer": "1904",
+        "incorrect_answers": [
+            "1909",
+            "2008",
+            "1999"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هي الدولة التي أنجبت لاعبي كرة قدم مثل كافو، وروبيرتو كارلوس، وبيليه؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرتغال",
+            "إسبانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي مصارع فاز ببطولة رويال رامبل للرجال لعام 2019؟",
+        "correct_answer": "سيث رولينز",
+        "incorrect_answers": [
+            "برون سترومان",
+            "إيه جيه ستايلز",
+            "أندرادي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد ألقاب بطولة فرنسا المفتوحة للتنس التي فاز بها بيورن بورغ؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "4",
+            "9",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز بدوري أبطال أوروبا في عام 2017؟",
+        "correct_answer": "ريال مدريد",
+        "incorrect_answers": [
+            "أتلتيكو مدريد",
+            "موناكو",
+            "يوفنتوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو لقب نادي رغبي يونيون لبلدة نورثهامبتون؟",
+        "correct_answer": "السينتس",
+        "incorrect_answers": [
+            "هارليكوينز",
+            "ساراسينز",
+            "واسبس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو الطول الدقيق للجزء المستقيم في الحارة الأولى من مضمار أولمبي؟",
+        "correct_answer": "84.39 متر",
+        "incorrect_answers": [
+            "100 متر",
+            "100 ياردة",
+            "109.36 ياردة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي عام تأسس نادي باري الإيطالي لكرة القدم؟",
+        "correct_answer": "1908",
+        "incorrect_answers": [
+            "1945",
+            "2014",
+            "1895"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من كان هداف بطولة كأس العالم لكرة القدم لعام 2014؟",
+        "correct_answer": "خاميس رودريغيز",
+        "incorrect_answers": [
+            "توماس مولر",
+            "ليونيل ميسي",
+            "نيمار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي فريق فاز ببطولة دوري كرة السلة الأمريكي للمحترفين (NBA) لموسم 2014-2015؟",
+        "correct_answer": "غولدن ستيت واريورز",
+        "incorrect_answers": [
+            "كليفلاند كافالييرز",
+            "هوستون روكتس",
+            "أتلانتا هوكس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من هو السائق الذي توج بلقب بطولة العالم للفورمولا 1 برقم قياسي بلغ 7 مرات؟",
+        "correct_answer": "مايكل شوماخر",
+        "incorrect_answers": [
+            "آيرتون سينا",
+            "فرناندو ألونسو",
+            "جيم كلارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "مع أي فريق فاز ستيفن جيرارد بلقب دوري أبطال أوروبا؟",
+        "correct_answer": "ليفربول",
+        "incorrect_answers": [
+            "ريال مدريد",
+            "تشيلسي",
+            "مانشستر سيتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما اسم الأداة المستخدمة لضرب الكرة البيضاء في السنوكر أو البلياردو؟",
+        "correct_answer": "العصا",
+        "incorrect_answers": [
+            "المضرب",
+            "المضرب الخشبي",
+            "المطرقة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هي الدولة التي استضافت كأس العالم لكرة القدم عام 2022؟",
+        "correct_answer": "قطر",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "اليابان",
+            "سويسرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم كان معدل ضربات السير دونالد برادمان في مباريات الاختبار في الكريكت؟",
+        "correct_answer": "99.94",
+        "incorrect_answers": [
+            "100",
+            "69.51",
+            "44.78"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي منتخب هزمه المنتخب الإنجليزي في دور نصف النهائي قبل أن يفوز بنهائي كأس العالم عام 1966؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "ألمانيا الغربية",
+            "الاتحاد السوفيتي",
+            "البرازيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "إدسون أرانتيس دو ناسيمنتو هو الاسم الكامل لأي لاعب كرة قدم أسطوري؟",
+        "correct_answer": "بيليه",
+        "incorrect_answers": [
+            "روماريو",
+            "زيكو",
+            "رونالدينيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من أي جزيرة برتغالية ينحدر لاعب كرة القدم كريستيانو رونالدو؟",
+        "correct_answer": "ماديرا",
+        "incorrect_answers": [
+            "تيرسيرا",
+            "سانتا ماريا",
+            "بورتو سانتو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو فريق كرة السلة الذي خاض أكبر عدد من نهائيات دوري كرة السلة الأمريكي للمحترفين (NBA)؟",
+        "correct_answer": "لوس أنجلوس ليكرز",
+        "incorrect_answers": [
+            "بوسطن سلتكس",
+            "فيلادلفيا سفنتي سيكسرز",
+            "غولدن ستيت واريورز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي شركة مصنعة للسيارات فازت بسباق لومان 24 ساعة لعام 2016؟",
+        "correct_answer": "بورشه",
+        "incorrect_answers": [
+            "تويوتا",
+            "أودي",
+            "فيراري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو اللقب الشهير الذي عُرف به المصارع المحترف البريطاني شيرلي كرابتري؟",
+        "correct_answer": "بيغ دادي",
+        "incorrect_answers": [
+            "جاينت هاستاكس",
+            "كيندو ناغاساكي",
+            "ماسامبولا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي فريق توج بلقب بطولة دوري كرة السلة الأمريكي للمحترفين (NBA) لموسم 2015-2016؟",
+        "correct_answer": "كليفلاند كافالييرز",
+        "incorrect_answers": [
+            "غولدن ستيت واريورز",
+            "تورونتو رابتورز",
+            "أوكلاهوما سيتي ثاندر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ملعب التنس في الأولمبياد هو عبارة عن شاشة خضراء عملاقة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هو الاسم الكامل للاعب كرة القدم 'كريستيانو رونالدو'؟",
+        "correct_answer": "كريستيانو رونالدو دوس سانتوس أفيرو",
+        "incorrect_answers": [
+            "كريستيانو رونالدو لوس سانتوس دييغو",
+            "كريستيانو أرماندو دييغو رونالدو",
+            "كريستيانو لويس أرماندو رونالدو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "خلال بطولة ويمبلدون، يمكن للمتفرجين في الملعب شراء كرات التنس التي تم استخدامها في المباريات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو مدرب كرة القدم الذي فاز بأكبر عدد من الألقاب خلال فترة تدريبه لنادي مانشستر يونايتد الإنجليزي؟",
+        "correct_answer": "السير أليكس فيرجسون",
+        "incorrect_answers": [
+            "ديفيد مويس",
+            "لويس فان غال",
+            "جوزيه ميرنيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في البولينج، ما هو المصطلح المستخدم للإشارة إلى تسجيل ثلاث ضربات ساحقة متتالية؟",
+        "correct_answer": "تيركي",
+        "incorrect_answers": [
+            "فلامينغو",
+            "بيردي",
+            "إيغل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في أي رياضة تنافس اللاعبة فاني شميلار لصالح ألمانيا؟",
+        "correct_answer": "التزلج",
+        "incorrect_answers": [
+            "السباحة",
+            "قفز الحواجز",
+            "الجمباز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو المنتخب الوطني الذي فاز بنسخة عام 2016 من بطولة أمم أوروبا (اليورو)؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "فرنسا",
+            "ألمانيا",
+            "إنجلترا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي مدينة تتميز جميع فرقها الرياضية المحترفة بقمصان ذات نفس الألوان؟",
+        "correct_answer": "بيتسبرغ",
+        "incorrect_answers": [
+            "نيويورك",
+            "سياتل",
+            "تامبا باي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "مع أي فريق سجل مايكل شوماخر ظهوره الأول في الفورمولا 1 في سباق جائزة بلجيكا الكبرى عام 1991؟",
+        "correct_answer": "جوردان",
+        "incorrect_answers": [
+            "بينيتون",
+            "فيراري",
+            "مرسيدس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من الذي يُطلق عليه غالباً لقب \"المايسترو\" في ملاعب التنس للرجال؟",
+        "correct_answer": "روجر فيدرر",
+        "incorrect_answers": [
+            "بيل تيلدن",
+            "بوريس بيكر",
+            "بيت سامبراس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي دولة استضافت بطولة كأس العالم لكرة القدم في عام 2006؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "البرازيل",
+            "جنوب أفريقيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "سجل شاكيل أونيل رمية ثلاثية واحدة فقط طوال مسيرته الرياضية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "في أي عام فازت سيارة مازدا 787B بسباق لومان 24 ساعة؟",
+        "correct_answer": "1991",
+        "incorrect_answers": [
+            "1990",
+            "2000",
+            "1987"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي منتخب فاز ببطولة كأس العالم لكرة القدم لعام 2014 في البرازيل؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرازيل",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في لعبة السنوكر، ما هو لون الكرة التي تساوي 3 نقاط؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأصفر",
+            "البني",
+            "الأزرق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هو المنتخب الذي هزمه منتخب إنجلترا ليفوز بنهائي كأس العالم عام 1966؟",
+        "correct_answer": "ألمانيا الغربية",
+        "incorrect_answers": [
+            "الاتحاد السوفيتي",
+            "البرتغال",
+            "البرازيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كم عدد اللاعبين في فريق كرة القدم الواحد داخل الملعب؟",
+        "correct_answer": "11",
+        "incorrect_answers": [
+            "10",
+            "9",
+            "8"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من الذي فاز بلقب الدوري الإنجليزي الممتاز في موسم 2015-2016 بعد مسيرة تاريخية أشبه بالمعجزة؟",
+        "correct_answer": "ليستر سيتي",
+        "incorrect_answers": [
+            "توتنهام هوتسبير",
+            "واتفورد",
+            "ستوك سيتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من أحرز هدف الفوز القاتل في الوقت بدل الضائع في نهائي دوري أبطال أوروبا عام 1999 بين مانشستر يونايتد وبايرن ميونخ؟",
+        "correct_answer": "أولي غونار سولشاير",
+        "incorrect_answers": [
+            "دوايت يورك",
+            "أندي كول",
+            "ديفيد بيكهام"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في دوري الرغبي، يُعاقب على ركلة \"40-20\" بركلة حرة للفريق المنافس.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "لأي حدث كروي كبير في عام 1996 أُنتجت أغنية \"الأسود الثلاثة\" (Three Lions) لفرقة \"لايتنينج سيدز\"؟",
+        "correct_answer": "بطولة أمم أوروبا",
+        "incorrect_answers": [
+            "كأس العالم",
+            "دوري أبطال أوروبا",
+            "كأس القارات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من أرقام القمصان التالية لم يرتدها شاكيل أونيل قط؟",
+        "correct_answer": "35",
+        "incorrect_answers": [
+            "36",
+            "33",
+            "32"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من كان أول لاعب كرة قدم يسجل 200 هدف في الدوري الإنجليزي الممتاز؟",
+        "correct_answer": "آلان شيرر",
+        "incorrect_answers": [
+            "واين روني",
+            "روبي فاولر",
+            "تييري هنري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من أندية كرة القدم الإنجليزية التالية يقع مقره في مدينة ليفربول؟",
+        "correct_answer": "إيفرتون",
+        "incorrect_answers": [
+            "وست هام يونايتد",
+            "كريستال بالاس",
+            "أرسنال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي قام بـ \"ركلة كونغ فو\" ضد مشجع لفريق كريستال بالاس في يناير 1995؟",
+        "correct_answer": "إيريك كانتونا",
+        "incorrect_answers": [
+            "ديفيد سيمان",
+            "أشلي كول",
+            "مارك هيوز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد مناطق تسجيل النقاط في لوحة السهام (الدارتس) التقليدية؟",
+        "correct_answer": "82",
+        "incorrect_answers": [
+            "62",
+            "42",
+            "102"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد المباريات التي خاضها نادي أرسنال دون هزيمة خلال موسم 2003-2004 في الدوري الإنجليزي الممتاز؟",
+        "correct_answer": "38",
+        "incorrect_answers": [
+            "51",
+            "49",
+            "22"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو لاعب كرة القدم الإيطالي الذي أشار للحارس نوير إلى الزاوية التي سيسدد فيها ثم أضاع الركلة خارج المرمى، أثناء مباراة إيطاليا وألمانيا في بطولة أمم أوروبا 2016؟",
+        "correct_answer": "بيليه",
+        "incorrect_answers": [
+            "إنسيني",
+            "بارزالي",
+            "جياكيريني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في تاريخ الدوري الإنجليزي الممتاز (EPL)؟",
+        "correct_answer": "آلان شيرر",
+        "incorrect_answers": [
+            "واين روني",
+            "ليونيل ميسي",
+            "ديدييه دروغبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي دولة استضافت بطولة كأس العالم لكرة القدم لعام 2018؟",
+        "correct_answer": "روسيا",
+        "incorrect_answers": [
+            "ألمانيا",
+            "الولايات المتحدة",
+            "المملكة العربية السعودية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو المصارع المحترف الذي سقط من دعامات السقف ليلقى حتفه أثناء عرض مباشر مدفوع الثمن (Pay-Per-View) في عام 1999؟",
+        "correct_answer": "أوين هارت",
+        "incorrect_answers": [
+            "كريس بنوا",
+            "ليكس لوجر",
+            "آل سنو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي شارك في أكبر عدد من المباريات مع منتخب البرازيل لكرة القدم؟",
+        "correct_answer": "كافو",
+        "incorrect_answers": [
+            "رونالدو",
+            "كاكا",
+            "روبيرتو كارلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من هو الملاكم الذي تم إيقافه بسبب قضم جزء من أذن إيفاندر هوليفيلد في عام 1997؟",
+        "correct_answer": "مايك تايسون",
+        "incorrect_answers": [
+            "روي جونز جونيور",
+            "إيفاندر هوليفيلد",
+            "لينوكس لويس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هي المدينة التي كان يمثلها فريق ليكرز (Lakers) قبل انتقاله إلى لوس أنجلوس؟",
+        "correct_answer": "منيابوليس",
+        "incorrect_answers": [
+            "فيلادلفيا",
+            "شيكاغو",
+            "سان فرانسيسكو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من الرماة (pitchers) التاليين فاز بجائزة أفضل لاعب مبتدئ (Rookie of the Year) في الدوري الوطني لموسم 2013؟",
+        "correct_answer": "خوسيه فرنانديز",
+        "incorrect_answers": [
+            "جاكوب ديغروم",
+            "شيلبي ميلر",
+            "مات هارفي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي تاريخ أقيم الحفل الختامي لدورة الألعاب الأولمبية الصيفية في ريو 2016؟",
+        "correct_answer": "21 أغسطس",
+        "incorrect_answers": [
+            "23 أغسطس",
+            "19 أغسطس",
+            "17 أغسطس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي دولة استضافت دورة الألعاب الأولمبية الصيفية لعام 2020؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "الصين",
+            "أستراليا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من الذي فاز ببطولة العالم لسباقات الفورمولا 1 للسائقين لعام 2017؟",
+        "correct_answer": "لويس هاملتون",
+        "incorrect_answers": [
+            "سباستيان فيتل",
+            "نيكو روزبرغ",
+            "ماكس فيرستابن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي منتخب فاز ببطولة كوبا أمريكا المئوية عام 2016؟",
+        "correct_answer": "تشيلي",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرازيل",
+            "كولومبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من أي دولة نشأت رياضة \"الكابادي\"، وهي رياضة تلاحمية تعتمد على الدفاع والالتحام؟",
+        "correct_answer": "الهند",
+        "incorrect_answers": [
+            "أستراليا",
+            "تركيا",
+            "كمبوديا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي من الرياضات التالية ليست جزءاً من السباق الثلاثي (الترياتلون)؟",
+        "correct_answer": "ركوب الخيل",
+        "incorrect_answers": [
+            "ركوب الدراجات",
+            "السباحة",
+            "الجري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هي أفضل نتيجة (معدل ضربات) حققها تايجر وودز في مسيرته الاحترافية في رياضة الغولف؟",
+        "correct_answer": "61",
+        "incorrect_answers": [
+            "65",
+            "63",
+            "67"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من الذي فاز بسباق جائزة سان مارينو الكبرى عام 1994، وهو السباق الذي لقي فيه آيرتون سينا حتفه؟",
+        "correct_answer": "مايكل شوماخر",
+        "incorrect_answers": [
+            "نيكولا لاريني",
+            "جيرهارد بيرجر",
+            "ميكا هاكينين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "في كرة القدم الكندية، كم عدد النقاط التي يمنحها تسجيل الـ \"روج\" (rouge)؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي فريق كرة قدم إنجليزي يُلقب بـ \"النمور\" (The Tigers)؟",
+        "correct_answer": "هال سيتي",
+        "incorrect_answers": [
+            "كارديف سيتي",
+            "بريستول سيتي",
+            "مانشستر سيتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو لاعب كرة السلة (NBA) الذي خاض أكبر عدد من المباريات طوال مسيرته الرياضية؟",
+        "correct_answer": "روبرت باريش",
+        "incorrect_answers": [
+            "كريم عبد الجبار",
+            "كيفن غارنيت",
+            "كوبي براينت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من كان الهداف التاريخي للمنتخب الإنجليزي لكرة القدم؟",
+        "correct_answer": "واين روني",
+        "incorrect_answers": [
+            "ديفيد بيكهام",
+            "ستيفن جيرارد",
+            "مايكل أوين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "سباقات الفورمولا إي (Formula E) هي سلسلة سباقات سيارات تستخدم سيارات سباق كهربائية هجينة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من فاز بلقب \"دوري أبطال أوروبا\" في عام 1999؟",
+        "correct_answer": "مانشستر يونايتد",
+        "incorrect_answers": [
+            "برشلونة",
+            "بايرن ميونخ",
+            "ليفربول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "يقيس جهاز الـ \"ستيمبميتر\" (stimpmeter) سرعة الكرة على أي سطح؟",
+        "correct_answer": "المنطقة الخضراء لملعب الغولف",
+        "incorrect_answers": [
+            "ملعب كرة القدم",
+            "المنطقة الخارجية لملعب الكريكت",
+            "طاولة البينبول"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كانت رياضة التنس تُعرف في السابق باسم راكيت بول (كرة المضرب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي منتخب فاز ببطولة كوبا أمريكا لعام 2015؟",
+        "correct_answer": "تشيلي",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرازيل",
+            "باراغواي"
+        ]
+    }
+]

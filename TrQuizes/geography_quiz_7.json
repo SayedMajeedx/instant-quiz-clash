@@ -1,0 +1,230 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بروم هي بلدة تقع في أي ولاية أسترالية؟",
+        "correct_answer": "أستراليا الغربية",
+        "incorrect_answers": [
+            "الإقليم الشمالي",
+            "أستراليا الجنوبية",
+            "تسمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تشكل المملكة المتحدة؟",
+        "correct_answer": "أربعة",
+        "incorrect_answers": [
+            "اثنتان",
+            "ثلاثة",
+            "واحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إندونيسيا؟",
+        "correct_answer": "جاكرتا",
+        "incorrect_answers": [
+            "باندونغ",
+            "ميدان",
+            "بالمبانغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر ولاية في الولايات المتحدة الأمريكية؟",
+        "correct_answer": "ألاسكا",
+        "incorrect_answers": [
+            "كاليفورنيا",
+            "تكساس",
+            "واشنطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "إلى أي جنسية تشير البادئة (⁦Sino⁩-) (كما في ⁦Sino-American⁩)‏؟",
+        "correct_answer": "الصينية",
+        "incorrect_answers": [
+            "اليابانية",
+            "الروسية",
+            "الهندية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو اسم الدوقية الكبرى الوحيدة المتبقية في العالم؟",
+        "correct_answer": "لوكسمبورغ",
+        "incorrect_answers": [
+            "الجبل الأسود",
+            "ليختنشتاين",
+            "أندورا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة التي تضم أكبر عدد من السكان اليابانيين خارج اليابان؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الصين",
+            "روسيا",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما اسم مناطق الصيد الغنية سابقاً قبالة جزيرة نيوفاوندلاند الكندية؟",
+        "correct_answer": "الضفاف الكبرى",
+        "incorrect_answers": [
+            "الحاجز المرجاني العظيم",
+            "خندق ماريانا",
+            "خليج هدسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة المحاطة بالكامل بجنوب أفريقيا؟",
+        "correct_answer": "ليسوتو",
+        "incorrect_answers": [
+            "سوازيلاند",
+            "بوتسوانا",
+            "زيمبابوي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "جسد تمثال أبي الهول المصري مستوحى من أي حيوان؟",
+        "correct_answer": "الأسد",
+        "incorrect_answers": [
+            "الثور",
+            "الحصان",
+            "الكلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بيلاروسيا؟",
+        "correct_answer": "مينسك",
+        "incorrect_answers": [
+            "وارسو",
+            "كييف",
+            "فيلنيوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ليتوانيا؟",
+        "correct_answer": "فيلنيوس",
+        "incorrect_answers": [
+            "تالين",
+            "هلسنكي",
+            "ريغا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مدينة تُعرف باسم \"عاصمة الورد في العالم\"؟",
+        "correct_answer": "تايلر، تكساس",
+        "incorrect_answers": [
+            "سان دييجو، كاليفورنيا",
+            "ميامي، فلوريدا",
+            "أناهيم، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية التي تُلقب بـ \"الولاية الذهبية\"؟",
+        "correct_answer": "كاليفورنيا",
+        "incorrect_answers": [
+            "فلوريدا",
+            "نيومكسيكو",
+            "ألاسكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة جرينلاند؟",
+        "correct_answer": "نوك",
+        "incorrect_answers": [
+            "سيسيميوت",
+            "نارساك",
+            "مانيتسوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة كوريا الجنوبية؟",
+        "correct_answer": "سول",
+        "incorrect_answers": [
+            "بيونغ يانغ",
+            "دايغو",
+            "كيتاكيوشو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد الولايات الأمريكية التي تبدأ بحرف الـ ⁦K⁩‏؟",
+        "correct_answer": "ولايتان",
+        "incorrect_answers": [
+            "ولاية واحدة",
+            "لا يوجد",
+            "ثلاث ولايات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس ولاية أو إقليماً أسترالياً؟",
+        "correct_answer": "ألبرتا",
+        "incorrect_answers": [
+            "نيو ساوث ويلز",
+            "فيكتوريا",
+            "كوينزلاند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع سلسلة جبال الألب؟",
+        "correct_answer": "أوروبا",
+        "incorrect_answers": [
+            "أمريكا الشمالية",
+            "آسيا",
+            "أفريقيا"
+        ]
+    }
+]

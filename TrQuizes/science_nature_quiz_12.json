@@ -1,0 +1,216 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "فاز فريدريك بانتينغ وجون ماكلويد بجائزة نوبل لمساهماتهما في المجالات العلمية لميكانيكا الكم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تيمناً بأي مدينة دنماركية تمت تسمية العنصر رقم 72 في الجدول الدوري؟",
+        "correct_answer": "كوبنهاجن",
+        "incorrect_answers": [
+            "أودنسه",
+            "هيرنينغ",
+            "سكاجن"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "مثلما حدث مع إنسان نياندرتال، تزاوج الإنسان العاقل (⁦Homo sapiens sapiens⁩) أيضاً مع إنسان دينيسوفان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "جميع كواكب النظام الشمسي تدور حول الشمس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الجسم تؤثر عليه المياه الزرقاء (الجلوكوما)‏؟",
+        "correct_answer": "العينين",
+        "incorrect_answers": [
+            "الحلق",
+            "المعدة",
+            "الدم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تدفع ظاهرة \"النينيو\" المياه الدافئة إلى سواحل غرب المحيط الهادئ خلال فصل الشتاء.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في الجدول الدوري، الرمز الكيميائي للبوتاسيوم هو حرف ⁦K⁩.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح الطبي لسرة البطن من بين الخيارات التالية؟",
+        "correct_answer": "السرة",
+        "incorrect_answers": [
+            "الشامة",
+            "المنخرين",
+            "باكسيلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من العظام التالية ليست موجودة في الساق؟",
+        "correct_answer": "الكعبرة",
+        "incorrect_answers": [
+            "الرضفة",
+            "الظنبوب",
+            "الشظية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم تبلغ مسافة السنة الضوئية؟",
+        "correct_answer": "⁦9.461⁩ تريليون كيلومتر",
+        "incorrect_answers": [
+            "1 وحدة فلكية",
+            "⁦105.40⁩ سنة أرضية",
+            "⁦501.2⁩ مليون ميل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الكوكب الأكثر حرارة في النظام الشمسي؟",
+        "correct_answer": "الزهرة",
+        "incorrect_answers": [
+            "المريخ",
+            "عطارد",
+            "المشتري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر الأكثر وفرة في الكون؟",
+        "correct_answer": "الهيدروجين",
+        "incorrect_answers": [
+            "الهيليوم",
+            "الليثيوم",
+            "الأكسجين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يمكن للإنسان العادي أن يعيش لمدة أسبوعين بدون ماء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "الوحدة الفلكية هي المسافة بين الأرض والقمر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العدد الذري لليورانيوم؟",
+        "correct_answer": "92",
+        "incorrect_answers": [
+            "235",
+            "17",
+            "167"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الرمز الكيميائي للزئبق؟",
+        "correct_answer": "⁦Hg⁩",
+        "incorrect_answers": [
+            "⁦Me⁩",
+            "⁦Mc⁩",
+            "⁦Hy⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي حدث انقراض رئيسي نتج عن اصطدام كويكب وأدى إلى القضاء على غالبية الديناصورات غير الطائرة؟",
+        "correct_answer": "العصر الطباشيري-الباليوجيني",
+        "incorrect_answers": [
+            "العصر الثلاثي-الجراسي",
+            "العصر البرمي-الثلاثي",
+            "العصر الأوردوفيشي-السيلوري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في مجال الطيران، تُستخدم القلابات والجنيحات المساعدة (⁦flaps and slats⁩) للتحكم في ماذا على الطائرة؟",
+        "correct_answer": "الرفع",
+        "incorrect_answers": [
+            "الدفع",
+            "السحب",
+            "الوزن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني اختصار ⁦CPR⁩، وهو الإجراء الطارئ لمساعدة شخص يعاني من توقف القلب؟",
+        "correct_answer": "الإنعاش القلبي الرئوي",
+        "incorrect_answers": [
+            "تخفيف الآلام المزمنة",
+            "تخفيف آلام السرطان",
+            "معدل انتشار وسائل منع الحمل"
+        ]
+    }
+]

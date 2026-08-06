@@ -1,0 +1,224 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تقع مقاطعة نوفا سكوشا على الساحل الشرقي لكندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تنقسم جزيرة بورنيو في جنوب شرق آسيا سياسياً بين 3 دول.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية تكساس الأمريكية؟",
+        "correct_answer": "أوستن",
+        "incorrect_answers": [
+            "دالاس",
+            "هيوستن",
+            "سان أنطونيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو مقر مقاطعة كينغ في ولاية واشنطن؟",
+        "correct_answer": "سياتل",
+        "incorrect_answers": [
+            "بيلفيو",
+            "إينومكلاو",
+            "سكايكوميش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليس مكتوباً بلغتها الأصلية？",
+        "correct_answer": "سلوفاشكو",
+        "incorrect_answers": [
+            "سومي",
+            "شوايتس",
+            "إيلادا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تمتلك علماً بلونين أفقيين أحمر وأبيض؟",
+        "correct_answer": "موناكو",
+        "incorrect_answers": [
+            "البحرين",
+            "مالطا",
+            "ليختنشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول الأفريقية يظهر سلاح ناري (بندقية) على علمها؟",
+        "correct_answer": "موزمبيق",
+        "incorrect_answers": [
+            "أوغندا",
+            "إثيوبيا",
+            "نيجيريا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من اللغات التالية لا تستخدم الأبجدية اللاتينية؟",
+        "correct_answer": "الجورجية",
+        "incorrect_answers": [
+            "التركية",
+            "السواحيلية",
+            "الفيتنامية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "يحتوي علم بيلاروسيا على نمط تطريز باللونين الأحمر والأبيض على جانب السارية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إستونيا؟",
+        "correct_answer": "تالين",
+        "incorrect_answers": [
+            "هلسنكي",
+            "تارتو",
+            "ريغا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر جزيرة في كندا؟",
+        "correct_answer": "جزيرة بافن",
+        "incorrect_answers": [
+            "جزيرة الأمير إدوارد",
+            "جزيرة فانكوفر",
+            "نيوفاوندلاند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي ولاية أمريكية تقع في أقصى الشمال الشرقي؟",
+        "correct_answer": "مين",
+        "incorrect_answers": [
+            "نيويورك",
+            "جورجيا",
+            "فلوريدا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الولايات في أستراليا؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "7",
+            "8",
+            "5"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "إذا كانت كرة القدم تُسمى 'فوتبول' في إنجلترا، فماذا تُسمى كرة القدم الأمريكية هناك؟",
+        "correct_answer": "كرة القدم الأمريكية",
+        "incorrect_answers": [
+            "كومبول",
+            "كرة اليد",
+            "تاتشداون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "جبل طارق، الواقع جنوب شبه الجزيرة الأيبيرية مباشرة، هو إقليم تابع لأي دولة في غرب أوروبا؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "إسبانيا",
+            "البرتغال",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة بومبي الأثرية؟",
+        "correct_answer": "إيطاليا",
+        "incorrect_answers": [
+            "شرق أفريقيا",
+            "أمريكا الجنوبية",
+            "بومبيلانوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع منحدرات دوفر البيضاء؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "هولندا",
+            "السويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة فيتنام؟",
+        "correct_answer": "هانوي",
+        "incorrect_answers": [
+            "دا نانغ",
+            "هاي فونغ",
+            "مدينة هو تشي منه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إسكتلندا؟",
+        "correct_answer": "إدنبرة",
+        "incorrect_answers": [
+            "غلاسكو",
+            "دندي",
+            "لندن"
+        ]
+    }
+]

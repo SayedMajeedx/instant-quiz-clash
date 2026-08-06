@@ -1,0 +1,202 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي شركة سيارات صممت طراز \"أفنتادور\"؟",
+        "correct_answer": "لامبورغيني",
+        "incorrect_answers": [
+            "فيراري",
+            "باغاني",
+            "بوغاتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "على أي نوع من أنواع الطاقة تعمل سيارات تسلا؟",
+        "correct_answer": "الكهرباء",
+        "incorrect_answers": [
+            "البنزين",
+            "الديزل",
+            "الطاقة النووية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ القوة الحصانية التي تنتجها قاطرة ⁦SD40-2⁩‏؟",
+        "correct_answer": "3,000",
+        "incorrect_answers": [
+            "3,200",
+            "2,578",
+            "2,190"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من سيارات أودي التالية لا تستخدم نظام الدفع الرباعي القائم على هالدكس (⁦Haldex⁩)‏؟",
+        "correct_answer": "أودي ⁦A8⁩",
+        "incorrect_answers": [
+            "أودي ⁦TT⁩",
+            "أودي ⁦S3⁩",
+            "أودي ⁦A3⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هو الحيوان المرسوم على شعار شركة \"أبارث\" (⁦Abarth⁩)، القسم الرياضي لشركة فيات؟",
+        "correct_answer": "العقرب",
+        "incorrect_answers": [
+            "الأفعى",
+            "الثور",
+            "الحصان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما اسم أشهر سيارة كهربائية تنتجها شركة نيسان؟",
+        "correct_answer": "ليف (⁦Leaf⁩)",
+        "incorrect_answers": [
+            "تري (⁦Tree⁩)",
+            "دير (⁦Deer⁩)",
+            "روتس (⁦Roots⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من الشركات التالية ليست تابعة لمجموعة فولكس واجن؟",
+        "correct_answer": "أوبل",
+        "incorrect_answers": [
+            "بورش",
+            "بوغاتي",
+            "بنتلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "في عام 1993، أجرت شركة تصنيع السيارات السويدية \"ساب\" (⁦Saab⁩) تجربة لاستبدال عجلة القيادة بعصا تحكم في سيارة ⁦Saab 9000⁩.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي مدينة إيطالية تُعد موطناً لشركة تصنيع السيارات \"فيات\"؟",
+        "correct_answer": "تورينو",
+        "incorrect_answers": [
+            "مارانيلو",
+            "مودينا",
+            "روما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي أسرع سيارة إنتاجية مسموح قانونياً بقيادتها على الطرقات في العالم؟",
+        "correct_answer": "كوينيجسيج أجيرا آر إس (⁦Koenigsegg Agera RS⁩)",
+        "incorrect_answers": [
+            "هينيسي فينوم جي تي (⁦Hennessey Venom GT⁩)",
+            "بوغاتي فيرون سوبر سبورت (⁦Bugatti Veyron Super Sport⁩)",
+            "باغاني هوايرا بي سي (⁦Pagani Huayra BC⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من الموديلات التالية ليس سيارة من إنتاج شركة بروتون (⁦Proton⁩) الماليزية؟",
+        "correct_answer": "كيليسا (⁦Kelisa⁩)",
+        "incorrect_answers": [
+            "ساجا (⁦Saga⁩)",
+            "بيردانا (⁦Perdana⁩)",
+            "إنسبيرّا (⁦Inspira⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما اسم أول سيارة تعمل بالدفع الأمامي أنتجتها شركة داتسون (نيسان حالياً)‏؟",
+        "correct_answer": "تشيري (⁦Cherry⁩)",
+        "incorrect_answers": [
+            "ساني (⁦Sunny⁩)",
+            "بلوبيرد (⁦Bluebird⁩)",
+            "سكايلاين (⁦Skyline⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من أكواد الهيكل (الشاسيه) التالية تُستخدم لسيارات بي إم دبليو الفئة الثالثة؟",
+        "correct_answer": "⁦E46⁩",
+        "incorrect_answers": [
+            "⁦E39⁩",
+            "⁦E85⁩",
+            "⁦F10⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة إطارات السيارات الشهيرة بإنتاج إطارات \"إيغل\" (⁦Eagle⁩)، والمزود الرسمي لإطارات سباقات ناسكار؟",
+        "correct_answer": "جودير",
+        "incorrect_answers": [
+            "بيريللي",
+            "بريدجستون",
+            "ميشلان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من القطارات البريطانية التالية لا تتجاوز سرعته 125 ميلاً في الساعة؟",
+        "correct_answer": "سبرينتر (⁦Sprinter⁩)",
+        "incorrect_answers": [
+            "كلاس 43 (⁦Class 43⁩)",
+            "جافلين (⁦Javelin⁩)",
+            "بندولينو (⁦Pendolino⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "تعتبر ⁦BMW M GmbH⁩ شركة تابعة لـ ⁦BMW AG⁩ وتركز على إنتاج السيارات ذات الأداء الرياضي العالي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "متى تأسست شركة تسلا؟",
+        "correct_answer": "2003",
+        "incorrect_answers": [
+            "2008",
+            "2005",
+            "2007"
+        ]
+    }
+]

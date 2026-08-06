@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة في أوقيانوسيا تُعرف بلغة الماوري باسم \"أوتياروا\"؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "أستراليا",
+            "جزر سليمان",
+            "كاليدونيا الجديدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أصغر دولة في العالم؟",
+        "correct_answer": "الفاتيكان",
+        "incorrect_answers": [
+            "جزر المالديف",
+            "موناكو",
+            "مالطا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بين أي دولتين تقع بحيرة تيتيكاكا؟",
+        "correct_answer": "بيرو وبوليفيا",
+        "incorrect_answers": [
+            "كينيا وأوغندا",
+            "المكسيك والولايات المتحدة",
+            "الهند وبنغلاديش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تعتبر \"حبيسة مرتين\" (محاطة بالكامل بدول حبيسة أخرى)‏؟",
+        "correct_answer": "أوزبكستان",
+        "incorrect_answers": [
+            "سويسرا",
+            "بوليفيا",
+            "إثيوبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تشترك في الحدود مع بولندا؟",
+        "correct_answer": "ليتوانيا",
+        "incorrect_answers": [
+            "فرنسا",
+            "النرويج",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية الأكثر اكتظاظاً بالسكان؟",
+        "correct_answer": "كاليفورنيا",
+        "incorrect_answers": [
+            "نيويورك",
+            "تكساس",
+            "فلوريدا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "يشير الاختصار الساخر \"⁦PIIGS⁩\" إلى أي من الدول الأوروبية التالية وأوضاعها الاقتصادية؟",
+        "correct_answer": "البرتغال، أيرلندا، إيطاليا، اليونان، إسبانيا",
+        "incorrect_answers": [
+            "بولندا، أيسلندا، إيطاليا، اليونان، صربيا",
+            "بولندا، أيسلندا، إيطاليا، جرينلاند، إسبانيا",
+            "البرتغال، أيسلندا، أيرلندا، اليونان، صربيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو أطول نهر في أوروبا؟",
+        "correct_answer": "نهر الفولغا",
+        "incorrect_answers": [
+            "نهر الدانوب",
+            "نهر الراين",
+            "نهر التايمز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي دولة تطالب بملكية القارة القطبية الجنوبية (أنتاركتيكا)‏؟",
+        "correct_answer": "لا أحد، ولكن هناك مطالبات.",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "الأمم المتحدة",
+            "أستراليا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "عنوان فيلم عام 1969 \"كراكاتوا، شرق جاوة\" غير صحيح، لأن كراكاتوا تقع في الواقع غرب جاوة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة تقع إريتريا، التي أصبحت العضو رقم 182 في الأمم المتحدة عام 1993‏؟",
+        "correct_answer": "أفريقيا",
+        "incorrect_answers": [
+            "أوروبا",
+            "آسيا",
+            "أمريكا الجنوبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو البر (البرزخ) الذي يربط بين أمريكا الشمالية وأمريكا الجنوبية؟",
+        "correct_answer": "برزخ بنما",
+        "incorrect_answers": [
+            "برزخ السويس",
+            "جبال الأورال",
+            "أسترالاسيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مدينة نيو هيفن هي عاصمة ولاية كونيتيكت في الولايات المتحدة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي ثاني أكبر مدينة في روسيا؟",
+        "correct_answer": "سانت بطرسبرغ",
+        "incorrect_answers": [
+            "مينسك",
+            "نيجني نوفغورود",
+            "فلاديفوستوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست دولة عضواً في الأمم المتحدة؟",
+        "correct_answer": "نييوي",
+        "incorrect_answers": [
+            "توفالو",
+            "جنوب السودان",
+            "الجبل الأسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول المستقلة الأعضاء في الأمم المتحدة؟",
+        "correct_answer": "195",
+        "incorrect_answers": [
+            "201",
+            "153",
+            "178"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية نيويورك الأمريكية؟",
+        "correct_answer": "ألباني",
+        "incorrect_answers": [
+            "بافالو",
+            "نيويورك",
+            "روتشستر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس مدينة في الهند؟",
+        "correct_answer": "إسلام آباد",
+        "incorrect_answers": [
+            "حيدر آباد",
+            "أحمد آباد",
+            "غازي آباد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة ذات الأغلبية المسلمة الأكثر اكتظاظاً بالسكان في عام 2010‏؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "المملكة العربية السعودية",
+            "إيران",
+            "السودان"
+        ]
+    }
+]

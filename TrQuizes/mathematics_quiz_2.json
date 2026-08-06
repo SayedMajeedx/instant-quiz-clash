@@ -1,0 +1,238 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "من من علماء الرياضيات التاليين قدم مساهمات كبرى في نظرية الألعاب؟",
+        "correct_answer": "جون فون نيومان",
+        "incorrect_answers": [
+            "كارل فريدريش غاوس",
+            "ليونهارت أويلر",
+            "ستيفان باناخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "أي من نرد الألعاب التالي لا يمثل مجسماً أفلاطونياً؟",
+        "correct_answer": "نرد ذو 10 أوجه",
+        "incorrect_answers": [
+            "نرد ذو 12 وجهاً",
+            "نرد ذو 20 وجهاً",
+            "نرد ذو 8 أوجه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "كم زيبتومتر يوجد في الفيمتومتر الواحد؟",
+        "correct_answer": "1,000,000",
+        "incorrect_answers": [
+            "10",
+            "1,000,000,000",
+            "1000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "مفهوم \"المجموعة التي تحتوي على كل المجموعات التي لا تحتوي على نفسها\" هو فكرة مفارقة تنسب إلى أي فيلسوف إنجليزي؟",
+        "correct_answer": "برتراند راسل",
+        "incorrect_answers": [
+            "فرانسيس بيكون",
+            "جون لوك",
+            "ألفريد نورث وايتهيد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "من الذي أثبت مبرهنة فيرما الأخيرة؟",
+        "correct_answer": "أندرو وايلز",
+        "incorrect_answers": [
+            "ليونهارت أويلر",
+            "كارل فريدريش غاوس",
+            "سرينيفاسا رامانوجان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هو الرمز الأبجدي الرقمي المستخدم لتمثيل العدد التخيلي؟",
+        "correct_answer": "⁦i⁩",
+        "incorrect_answers": [
+            "⁦e⁩",
+            "⁦n⁩",
+            "⁦x⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "عدد \"الميلينيليون\" (⁦Millinillion⁩) هو عدد حقيقي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم ضلعاً لشبه المنحرف (⁦Trapezium⁩)‏؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ماذا يسمى المضلع المكون من ثمانية أضلاع؟",
+        "correct_answer": "الشكل الثماني",
+        "incorrect_answers": [
+            "الشكل السداسي",
+            "الشكل التساعي",
+            "الشكل السباعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "أي حرف يوناني يُستخدم للدلالة على المجموع (⁦Summation⁩)‏؟",
+        "correct_answer": "سيغما (⁦Sigma⁩)",
+        "incorrect_answers": [
+            "ديلتا (⁦Delta⁩)",
+            "ألفا (⁦Alpha⁩)",
+            "أوميغا (⁦Omega⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "أي مما يلي لم يقم بتطويره عالم الرياضيات ليونهارت أويلر؟",
+        "correct_answer": "تطوير على تحويل فوريه السريع",
+        "incorrect_answers": [
+            "طريقة لحل المعادلات التفاضلية من الدرجة الأولى",
+            "متطابقة تربط بين الأعداد ⁦e⁩ و ⁦pi⁩ و ⁦i⁩",
+            "صيغة تربط بين الرؤوس والحواف والأوجه في المخطط (الرسم البياني)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "في التوزيع الطبيعي، تقع 95% من البيانات ضمن كم انحراف معياري من المتوسط الحسابي؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "من هما الرجلان اللذان ينسب إليهما الفضل في اكتشاف حساب التفاضل والتكامل بشكل مستقل؟",
+        "correct_answer": "نيوتن ولايبنتز",
+        "incorrect_answers": [
+            "أفلاطون وأرسطو",
+            "أسيموف ورذرفورد",
+            "ديفوراك وسميث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "ما هو الرقم الرابع لـ باي (⁦π⁩)‏؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "في المستوى المركب، ضرب دالة معينة في الحرف ⁦i⁩ يديرها عكس عقارب الساعة بمقدار كم درجة؟",
+        "correct_answer": "90",
+        "incorrect_answers": [
+            "180",
+            "270",
+            "0"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هو الرقم الروماني الذي يمثل العدد 500‏؟",
+        "correct_answer": "⁦D⁩",
+        "incorrect_answers": [
+            "⁦L⁩",
+            "⁦C⁩",
+            "⁦X⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "أي مما يلي ليس من مسائل جائزة الألفية السبع؟",
+        "correct_answer": "حدسية نافييه",
+        "incorrect_answers": [
+            "حدسية بيرش وسوينرتون-داير",
+            "فرضية ريمان",
+            "حدسية بوانكاريه"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "المجموعة الشاملة، أو المجموعة التي تحتوي على جميع المجموعات، موجودة بالفعل.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم ضلعاً للشكل الخماسي؟",
+        "correct_answer": "5",
+        "incorrect_answers": [
+            "9",
+            "6",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو الاسم الأول لعالم الرياضيات الشهير أويلر؟",
+        "correct_answer": "ليونهارت",
+        "incorrect_answers": [
+            "ليونيل",
+            "أدريين",
+            "أجان"
+        ]
+    }
+]

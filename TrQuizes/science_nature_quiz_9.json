@@ -1,0 +1,226 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كان يُعتقد في الماضي أن حقن غضروف القرش في البشر يمنعهم من الإصابة بالسرطان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي كوكبة تحتوي على مركز مجرة درب التبانة؟",
+        "correct_answer": "الرامي (القوس)",
+        "incorrect_answers": [
+            "العقرب",
+            "الحواء",
+            "الجدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تيتسويا فوجيتا كان عالماً طور مقياساً لأي من الكوارث الطبيعية التالية؟",
+        "correct_answer": "الأعاصير القمعية (التورنادو)",
+        "incorrect_answers": [
+            "الأعاصير الاستوائية (الهوريكان)",
+            "الزلازل",
+            "البراكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كولروفوبيا (⁦Coulrophobia⁩) هي الخوف غير العقلاني من ماذا؟",
+        "correct_answer": "المهرجين",
+        "incorrect_answers": [
+            "المقابر",
+            "الإبر",
+            "الأنفاق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه النجوم هو الأكبر حجماً؟",
+        "correct_answer": "يو واي سكوتي (⁦UY Scuti⁩)",
+        "incorrect_answers": [
+            "في واي الكلب الأكبر (⁦VY Canis Majoris⁩)",
+            "منكب الجوزاء (⁦Betelgeuse⁩)",
+            "آر دبليو الملتهب (⁦RW Cephei⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "في الفيزياء، يعتبر حفظ الطاقة وحفظ الزخم كلاهما نتيجة لأي مما يلي؟",
+        "correct_answer": "مبرهنة نويثر",
+        "incorrect_answers": [
+            "مبرهنة بيل",
+            "مبرهنة ويك",
+            "مبرهنة كارنو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما اسم أول قمر صناعي للأرض أطلقه الاتحاد السوفيتي عام 1957‏؟",
+        "correct_answer": "سبوتنيك 1",
+        "incorrect_answers": [
+            "سويوز ⁦7K-OK⁩",
+            "زينيت-2",
+            "فوسخود ⁦3KV⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الميوبيا (⁦Myopia⁩) هو المصطلح العلمي لأي حالة؟",
+        "correct_answer": "قصر النظر",
+        "incorrect_answers": [
+            "طول النظر",
+            "الرؤية المزدوجة",
+            "الرؤية الضبابية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه العناصر يعتبر من أشباه الفلزات؟",
+        "correct_answer": "الأنتيمون",
+        "incorrect_answers": [
+            "القصدير",
+            "البروم",
+            "الروبيديوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي سرعة الضوء في الفراغ؟",
+        "correct_answer": "299,792,458 م/ث",
+        "incorrect_answers": [
+            "50,461 م/ث",
+            "308,215,043 م/ث",
+            "751,665,014,151 م/ث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس مكوناً كهربائياً خاملاً؟",
+        "correct_answer": "الترانزستور",
+        "incorrect_answers": [
+            "المقاوم",
+            "المكثف",
+            "المحث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح الطبي لانخفاض نسبة السكر في الدم؟",
+        "correct_answer": "نقص سكر الدم",
+        "incorrect_answers": [
+            "قصور الغدة الدرقية",
+            "انخفاض حرارة الجسم",
+            "نقص الأكسجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو لون الدم غير المؤكسج؟",
+        "correct_answer": "الأحمر",
+        "incorrect_answers": [
+            "الأزرق",
+            "البنفسجي",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه العناصر في الجدول الدوري يعتبر غازاً نبيلاً؟",
+        "correct_answer": "النيون",
+        "incorrect_answers": [
+            "البوتاسيوم",
+            "اليود",
+            "الكوبالت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العضيو الخلوي المعروف بـ \"محطة طاقة الخلية\"؟",
+        "correct_answer": "الميتوكوندريا",
+        "incorrect_answers": [
+            "النواة",
+            "جهاز جولجي",
+            "الشبكة الإندوبلازمية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "إذا غمست منشفة جافة في حوض مليء بالماء، سيرتفع الماء إلى أعلى المنشفة بفعل ظاهرة تسمى \"الخاصية الكارتيلرية\" (⁦Cartillary Action⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يمثل المعين الأصفر في معين الحرائق (⁦NFPA 704⁩)‏؟",
+        "correct_answer": "التفاعلية",
+        "incorrect_answers": [
+            "المخاطر الصحية",
+            "القابلية للاشتعال",
+            "النشاط الإشعاعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من المركبات الفضائية التالية لم تلمس القمر مطلقاً؟",
+        "correct_answer": "مارينر 4",
+        "incorrect_answers": [
+            "أبولو 11",
+            "لونا 2",
+            "سمارت-1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الجسم يفرز الأنسولين؟",
+        "correct_answer": "البنكرياس",
+        "incorrect_answers": [
+            "الكلية",
+            "الكبد",
+            "المعدة"
+        ]
+    }
+]

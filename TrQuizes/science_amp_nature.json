@@ -1,0 +1,3424 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب في نظامنا الشمسي؟",
+        "correct_answer": "8",
+        "incorrect_answers": [
+            "7",
+            "9",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي للأحفورة البشرية المنقرضة المعروفة باسم \"لوسي\"؟",
+        "correct_answer": "أسترالوبيثكس العفاري (Australopithecus Afarensis)",
+        "incorrect_answers": [
+            "أسترالوبيثكس الأفريقي (Australopithecus Africanus)",
+            "أسترالوبيثكس أرشيتوثيس (Australopithecus Architeuthis)",
+            "أسترالوبيثكس أنتاريس (Australopithecus Antaris)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر كيميائي يرمز له بالرمز 'Fe'؟",
+        "correct_answer": "الحديد",
+        "incorrect_answers": [
+            "الذهب",
+            "الفضة",
+            "القصدير"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "التفاعل الطارد للحرارة هو تفاعل كيميائي يطلق طاقة عن طريق إشعاع الكهرباء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من أقمار لاندسات (Landsat) الاصطناعية فشل في الوصول إلى المدار؟",
+        "correct_answer": "لاندسات 6",
+        "incorrect_answers": [
+            "لاندسات 5",
+            "لاندسات 4",
+            "لاندسات 3"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "النبات الذي تستمر دورة حياته لأكثر من عام يُعرف بالنبات الحولي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هي عضلة رئيسية في الظهر؟",
+        "correct_answer": "العضلة شبه المنحرفة (Trapezius)",
+        "incorrect_answers": [
+            "العظم شبه المنحرف (Trapezium)",
+            "العظم المربعي (Trapezoid)",
+            "العظم المثلثي (Triquetrum)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "النشاط اللاواعي الأكثر تكراراً في جسم الإنسان هو الرمش (غمض العين).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه الخيارات ليس مرحلة من مراحل الانقسام المتساوي (الانقسام الميتوزي)؟",
+        "correct_answer": "الطور الثنائي (Diplophase)",
+        "incorrect_answers": [
+            "الطور الاستوائي (Metaphase)",
+            "الطور الانفصالي (Anaphase)",
+            "الطور النهائي (Telophase)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تنص بديهية الطب الوقائي على أنه يجب فحص الأشخاص ذوي الخطورة ___ للإصابة بمرض ما، وعلينا علاج ___ هؤلاء الأشخاص.",
+        "correct_answer": "المنخفضة، جميع",
+        "incorrect_answers": [
+            "المنخفضة، بعض",
+            "العالية، جميع",
+            "العالية، بعض"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الطبقة الخارجية الرقيقة للأرض؟",
+        "correct_answer": "القشرة الأرضية",
+        "incorrect_answers": [
+            "الإكسوسفير (الغلاف الخارجي)",
+            "الوشاح (الستار)",
+            "النواة الخارجية (اللب الخارجي)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الـ \"ستينوما\" (Stenoma)؟",
+        "correct_answer": "جنس من الفراشات (العث)",
+        "incorrect_answers": [
+            "منشط قتالي من الحرب العالمية الثانية",
+            "نوع من التوابل",
+            "مدينة ساحلية في الكاريبي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي أصغر الأوعية الدموية في جسم الإنسان؟",
+        "correct_answer": "الشعيرات الدموية",
+        "incorrect_answers": [
+            "الشريينات",
+            "الوريدات",
+            "الأوعية اللمفاوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "الجليد الجاف هو الحالة الصلبة لأي مادة؟",
+        "correct_answer": "ثاني أكسيد الكربون",
+        "incorrect_answers": [
+            "النيتروجين",
+            "الأمونيا",
+            "الأكسجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي يُستخدم لإثبات دوران الأرض حول محورها؟",
+        "correct_answer": "بندول فوكو",
+        "incorrect_answers": [
+            "نجم الشمال (الجدي)",
+            "المزولة الشمسية",
+            "الصفائح التكتونية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يتكون 71% من سطح الأرض من:",
+        "correct_answer": "الماء",
+        "incorrect_answers": [
+            "الصحاري",
+            "القارات",
+            "الغابات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الشائع للمركب الكيميائي \"أكسيد ثنائي الهيدروجين\"؟",
+        "correct_answer": "الماء",
+        "incorrect_answers": [
+            "الميثان",
+            "الأمونيا",
+            "غاز الضحك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "غانيميد هو أكبر قمر لأي كوكب؟",
+        "correct_answer": "المشتري",
+        "incorrect_answers": [
+            "أورانوس",
+            "نبتون",
+            "المريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الرياضية لقانون أوم؟",
+        "correct_answer": "V = I*R",
+        "incorrect_answers": [
+            "I = V*R",
+            "R = V*I",
+            "V = I / R"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس عظماً موجوداً في ذراع الإنسان؟",
+        "correct_answer": "عظم الظنبوب (قصبة الساق)",
+        "incorrect_answers": [
+            "عظم العضد",
+            "عظم الزند",
+            "عظم الكعبرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مكوك فضاء تابع لناسا تحطم أثناء دخوله الغلاف الجوي في 1 فبراير 2003؟",
+        "correct_answer": "كولومبيا",
+        "incorrect_answers": [
+            "تشالنجر",
+            "ديكفري",
+            "أنديفور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (SI) للكتلة؟",
+        "correct_answer": "الكيلوغرام",
+        "incorrect_answers": [
+            "الطن",
+            "الرطل",
+            "الغرام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أول كائن حي صعد إلى الفضاء؟",
+        "correct_answer": "ذباب الفاكهة",
+        "incorrect_answers": [
+            "القرد",
+            "الكلب",
+            "الفأر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "فاز ألبرت أينشتاين بجائزة نوبل عن نظريته النسبية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "إلى أي عنصر يشير الرمز \"Au\" في الجدول الدوري؟",
+        "correct_answer": "الذهب",
+        "incorrect_answers": [
+            "الفضة",
+            "الأكسجين",
+            "النيكل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (SI) للتيار الكهربائي؟",
+        "correct_answer": "الأمبير",
+        "incorrect_answers": [
+            "الفولت",
+            "الأوم",
+            "الواط"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي درجة الحرارة المتساوية في مقياسي السيلسيوس والفهرنهايت؟",
+        "correct_answer": "-40",
+        "incorrect_answers": [
+            "32",
+            "-39",
+            "-42"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو فرط صوديوم الدم (Hypernatremia)؟",
+        "correct_answer": "ارتفاع نسبة الصوديوم في الدم",
+        "incorrect_answers": [
+            "انخفاض نسبة البوتاسيوم في الدم",
+            "ارتفاع نسبة الجلوكوز في الدم",
+            "انخفاض نسبة الحديد في الدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس جزءاً من بنية العصبون (الخلية العصبية) النموذجي؟",
+        "correct_answer": "جزر لانجرهانز",
+        "incorrect_answers": [
+            "عقدة رانفييه",
+            "خلية شوان",
+            "غمد المايلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في أي مهمة تحطم مكوك الفضاء كولومبيا أثناء دخوله الغلاف الجوي؟",
+        "correct_answer": "STS-107",
+        "incorrect_answers": [
+            "STS-51-L",
+            "STS-61-C",
+            "STS-109"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي يسبب صوت نبضات القلب؟",
+        "correct_answer": "انغلاق صمامات القلب",
+        "incorrect_answers": [
+            "انقباض حجرات القلب",
+            "خروج الدم من القلب",
+            "ارتخاء حجرات القلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد النسخ التي تمتلكها الخلايا البشرية عادة من كل جين؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "1",
+            "4",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد حجرات قلب الإنسان؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "2",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو اللون الذي لا يمكن إنتاجه في الورود، حتى من خلال التعديل الوراثي؟",
+        "correct_answer": "الأزرق",
+        "incorrect_answers": [
+            "الأسود",
+            "البرتقالي",
+            "البني"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "نجم الشمال (Polaris) هو ألمع نجم في سماء الليل في نصف الكرة الشمالي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي غاز نبيل لديه أقل عدد ذري؟",
+        "correct_answer": "الهيليوم",
+        "incorrect_answers": [
+            "النيون",
+            "الأرجون",
+            "الكريبتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من مهمات أبولو كانت الأولى التي هبطت على سطح القمر؟",
+        "correct_answer": "أبولو 11",
+        "incorrect_answers": [
+            "أبولو 10",
+            "أبولو 9",
+            "أبولو 13"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو \"مصنع الطاقة\" في الخلية الحيوانية حقيقية النواة؟",
+        "correct_answer": "الميتوكوندريا (المتقدرات)",
+        "incorrect_answers": [
+            "النواة",
+            "البلاستيدات الخضراء",
+            "الشبكة الإندوبلازمية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من أين تنحدر سلالة الكلاب \"تشيواوا\" (Chihuahua)؟",
+        "correct_answer": "المكسيك",
+        "incorrect_answers": [
+            "فرنسا",
+            "إسبانيا",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تتشكل الصخور النارية بفعل الحرارة والضغط الشديدين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الماء منزوع الأيونات هو ماء تمت إزالة أي مما يلي منه؟",
+        "correct_answer": "الحديد",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الهيدروجين",
+            "الذرات غير المشحونة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر الأول في الجدول الدوري؟",
+        "correct_answer": "الهيدروجين",
+        "incorrect_answers": [
+            "الهيليوم",
+            "الأكسجين",
+            "الليثيوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "من صاغ نظرية \"الانفجار العظيم\" لأول مرة كان كاهناً ينتمي لأي طائفة دينية؟",
+        "correct_answer": "الكاثوليكية",
+        "incorrect_answers": [
+            "المسيحية العامة",
+            "اليهودية",
+            "الإسلامية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما مقدار الإشعاع الذي تصدره موزة واحدة؟",
+        "correct_answer": "0.1 ميكروسيفيرت",
+        "incorrect_answers": [
+            "0.3 ميكروسيفيرت",
+            "0.5 ميكروسيفيرت",
+            "0.7 ميكروسيفيرت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي قمر اصطناعي من سلسلة لاندسات (Landsat) لديه أطول فترة تشغيلية حتى الآن؟",
+        "correct_answer": "لاندسات 5",
+        "incorrect_answers": [
+            "لاندسات 8",
+            "لاندسات 7",
+            "لاندسات 6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يسمى الغلاف الغازي للمذنب (الذي يشكّل الذيل)؟",
+        "correct_answer": "الذؤابة (Coma)",
+        "incorrect_answers": [
+            "المجرى الخلفي (The wake)",
+            "الارتداد الموجي (The backwash)",
+            "الطبقة المذابة (The ablative)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الديوتيريوم هو نظير لأي عنصر؟",
+        "correct_answer": "الهيدروجين",
+        "incorrect_answers": [
+            "النيتروجين",
+            "الهيليوم",
+            "النيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تتكون الألياف العضلية من حزم من العضيات الطويلة والصغيرة تسمى ماذا؟",
+        "correct_answer": "اللييفات العضلية (Myofibrils)",
+        "incorrect_answers": [
+            "غلاف العضلة (Epimysium)",
+            "الخيوط العضلية (Myofilaments)",
+            "عضلة القلب (Myocardium)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (SI) للوقت؟",
+        "correct_answer": "الثانية",
+        "incorrect_answers": [
+            "الدقيقة",
+            "الساعة",
+            "اليوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي مرحلة النمو التي تقضي فيها معظم الخلايا حقيقية النواة غالبية دورة حياتها؟",
+        "correct_answer": "الطور البيني (Interphase)",
+        "incorrect_answers": [
+            "الطور التمهيدي (Prophase)",
+            "الطور الساكن (Stasis)",
+            "الطور النهائي (Telophase)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من هو مكتشف الأشعة السينية (أشعة إكس)؟",
+        "correct_answer": "فيلهلم كونراد رونتغن (Wilhelm Conrad Röntgen)",
+        "incorrect_answers": [
+            "توماس ألفا إديسون",
+            "جيمس واط",
+            "ألبرت أينشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم تبلغ مدة السنة الواحدة تقريباً على كوكب أورانوس؟",
+        "correct_answer": "84 سنة أرضية",
+        "incorrect_answers": [
+            "47 سنة أرضية",
+            "62 سنة أرضية",
+            "109 سنة أرضية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي صيغة كيميائية للأمونيا (النشادر)؟",
+        "correct_answer": "NH3",
+        "incorrect_answers": [
+            "CO2",
+            "NO3",
+            "CH4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أقوى سم معروف على الإطلاق؟",
+        "correct_answer": "سم البوتولينوم (Botulinum toxin)",
+        "incorrect_answers": [
+            "الريسين",
+            "السيانيد",
+            "الأسبستوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو نوع من منعكسات التمدد/منعكسات الوتر العميق؟",
+        "correct_answer": "منعكس نفضة الكاحل (Ankle jerk reflex)",
+        "incorrect_answers": [
+            "منعكس القيء (Gag reflex)",
+            "المنعكس الحدقي الضوئي (Pupillary light reflex)",
+            "منعكس الحك (Scratch reflex)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ينطبق تأثير دوبلر على الضوء.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم تبلغ نسبة الماء تقريباً من مساحة سطح الأرض؟",
+        "correct_answer": "70%",
+        "incorrect_answers": [
+            "30%",
+            "50%",
+            "90%"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو البوليمر المستخدم في صناعة الأقراص المدمجة (CDs)، ونظارات السلامة، ودروع مكافحة الشغب؟",
+        "correct_answer": "البولي كربونيت (Polycarbonate)",
+        "incorrect_answers": [
+            "المطاط",
+            "النايلون",
+            "الباكليت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم يبلغ عمر كوكب الأرض تقريباً؟",
+        "correct_answer": "4.5 مليار سنة",
+        "incorrect_answers": [
+            "3.5 مليار سنة",
+            "2.5 مليار سنة",
+            "5.5 مليار سنة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الدواء الذي كان يُستخدم سابقاً بشكل شائع كسم للفئران؟",
+        "correct_answer": "كومادين",
+        "incorrect_answers": [
+            "أسبرين",
+            "إليكويس",
+            "تايلينول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر في الجدول الدوري الذي يحتوي على 92 إلكتروناً؟",
+        "correct_answer": "اليورانيوم",
+        "incorrect_answers": [
+            "الكبريت",
+            "الهيدروجين",
+            "الحديد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يغلي الماء دائماً عند 100 درجة مئوية، أو 212 درجة فهرنهايت، أو 373.15 كلفن، بغض النظر عن مكان وجودك.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي (اللينيني) لشجرة التفاح المستأنسة؟",
+        "correct_answer": "مالوس بوميلا (Malus pumila)",
+        "incorrect_answers": [
+            "مالوس أميريكانا (Malus americana)",
+            "بوموس دوميستيكا (Pomus domestica)",
+            "أبيلوس ديليكتيكا (Appelus delectica)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "توفر ظاهرة صعود مياه القاع في المحيط مياهاً أكثر برودة وغنية بالمواد المغذية للنباتات والمحللات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "وفقاً لمقياس سكوفيل، ما هي المادة الكيميائية الأكثر حرارة؟",
+        "correct_answer": "ريزينيفراتوكسين (Resiniferatoxin)",
+        "incorrect_answers": [
+            "كابسيسين (Capsaicin)",
+            "ثنائي هيدروكابسيسين (Dihydrocapsaicin)",
+            "تنياتوكسين (Tinyatoxin)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس نوعاً من الخلايا العصبية؟",
+        "correct_answer": "الخلية العصبية الإدراكية",
+        "incorrect_answers": [
+            "الخلية العصبية الحسية",
+            "الخلية العصبية الحركية",
+            "الخلية العصبية الموصلة (البينية)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني الاختصار العلمي (DNA)؟",
+        "correct_answer": "الحمض النووي الريبوزي منقوص الأكسجين",
+        "incorrect_answers": [
+            "حمض ديوكسي ريبوجينيتيك",
+            "ذرات ديوكسي ريبوجينيتيك",
+            "حمض إزالة السموم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تعتبر الشمس نجماً.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس من المجموعات التصنيفية في الجدول الدوري؟",
+        "correct_answer": "الفلورينات",
+        "incorrect_answers": [
+            "الفلزات القلوية",
+            "الهالوجينات",
+            "الغازات الخاملة (النبيلة)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "من الناحية النباتية، أي من هذه الفواكه لا تُعتبر من التوتيات؟",
+        "correct_answer": "الفراولة",
+        "incorrect_answers": [
+            "التوت الأزرق",
+            "الموز",
+            "عنب كونكورد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي ينتج اللون الأخضر لمعظم أوراق النباتات؟",
+        "correct_answer": "الكلوروفيل",
+        "incorrect_answers": [
+            "انكسار الضوء",
+            "الأصباغ الطبيعية",
+            "الأشعة فوق البنفسجية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "عند أي عمق يجب عليك التوقف لتخفيف الضغط (وقفة الأمان) أثناء الغوص العادي؟",
+        "correct_answer": "15 قدماً / 5 أمتار",
+        "incorrect_answers": [
+            "25 قدماً / 7.5 أمتار",
+            "50 قدماً / 15 متراً",
+            "75 قدماً / 23 متراً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو اسم الطبقة الدنيا (الأقرب للأرض) من الغلاف الجوي؟",
+        "correct_answer": "التروبوسفير",
+        "incorrect_answers": [
+            "الستراتوسفير",
+            "الميزوسفير",
+            "الثرموسفير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي يُعد كودون وقف (Stop Codon) في الحمض النووي (DNA)؟",
+        "correct_answer": "TAA",
+        "incorrect_answers": [
+            "ACT",
+            "ACA",
+            "GTA"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "في أي عضو من أعضاء جسم الإنسان توجد 'جزر لانغرهانز'؟",
+        "correct_answer": "البنكرياس",
+        "incorrect_answers": [
+            "الكلية",
+            "الكبد",
+            "الدماغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من من العلماء التاليين ليس لديه عنصر كيميائي مسمى باسمه؟",
+        "correct_answer": "سير إسحاق نيوتن",
+        "incorrect_answers": [
+            "ألبرت أينشتاين",
+            "نيلز بور",
+            "إنريكو فيرمي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الفصوص في الرئة اليمنى للإنسان؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يستطيع الجمبري (الروبيان) السباحة إلى الخلف.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الوزن الذري القياسي لنواة البلوتونيوم؟",
+        "correct_answer": "244",
+        "incorrect_answers": [
+            "94",
+            "481",
+            "128"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي يسبب داء لايم؟",
+        "correct_answer": "بكتيريا",
+        "incorrect_answers": [
+            "فيروس",
+            "ديدان طفيلية",
+            "أميبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي لرضفة الركبة (صابونة الركبة)؟",
+        "correct_answer": "الرضفة (Patella)",
+        "incorrect_answers": [
+            "عظم الفخذ (Femur)",
+            "الثقبة العظمى (Foramen Magnum)",
+            "لوح الكتف (Scapula)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تلتقي عظام العضد والكعبرة والزند معاً لتشكل أي مفصل؟",
+        "correct_answer": "المرفق (الكوع)",
+        "incorrect_answers": [
+            "الركبة",
+            "الكتف",
+            "الكاحل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ماذا تدرس إذا كنت تدرس علم الحشرات (Entomology)؟",
+        "correct_answer": "الحشرات",
+        "incorrect_answers": [
+            "البشر",
+            "الدماغ",
+            "الأسماك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما اسم الانحياز المعرفي الذي يخطئ فيه الشخص ذو القدرة المنخفضة في مهارة معينة فيظن نفسه متفوقاً؟",
+        "correct_answer": "تأثير دانينغ-كروجر (Dunning-Kruger effect)",
+        "incorrect_answers": [
+            "تأثير مايرز بريغز (Meyers-Briggs effect)",
+            "تأثير مولر-لاير (Müller-Lyer effect)",
+            "تأثير فرويد-هال (Freud-Hall effect)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس مصطلحاً يُستخدم لوصف الزلازل؟",
+        "correct_answer": "الانهيار الانزلاقي (Drop-slide)",
+        "incorrect_answers": [
+            "الهزة الارتدادية المسبقة (Foreshock)",
+            "صدع الانزلاق المضربي (Strike-slip)",
+            "الهزة الأرضية (Temblor)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تتكون النجوم بشكل أساسي من الهيدروجين وأي غاز آخر؟",
+        "correct_answer": "الهيليوم",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الأرغون",
+            "النيتروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الدولة التي نجحت لأول مرة في تفريخ وتربية تونة ذات زعانف زرقاء في المزارع عام 1979؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "فرنسا",
+            "الولايات المتحدة الأمريكية",
+            "الفلبين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم البديل لاضطراب تعدد الشخصيات؟",
+        "correct_answer": "اضطراب الهوية الانفصامي (Dissociative identity disorder)",
+        "incorrect_answers": [
+            "اضطراب سلامة الهوية الجسدية (Body integrity identity disorder)",
+            "أزمة الهوية",
+            "الفصام (Schizophrenia)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يمكن للصوت أن ينتقل عبر الفراغ.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تعتبر نبتة \"جيمبي ستينجر\" النبتة الأكثر فتكاً في العالم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الرسمي للنجم الأقرب إلى القطب السماوي الشمالي؟",
+        "correct_answer": "نجم الشمال (Polaris)",
+        "incorrect_answers": [
+            "النهر (Eridanus)",
+            "جاما الملتهب (Gamma Cephei)",
+            "إيوتا الملتهب (Iota Cephei)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العدد الذري لعنصر الاسترونشيوم؟",
+        "correct_answer": "38",
+        "incorrect_answers": [
+            "73",
+            "47",
+            "11"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي نوع من الصخور يتكون بفعل الحرارة والضغط الشديدين؟",
+        "correct_answer": "الصخور المتحولة",
+        "incorrect_answers": [
+            "الصخور الرسوبية",
+            "الصخور النارية",
+            "الألماس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هي خلايا تابعة لجهاز المناعة التكيفي؟",
+        "correct_answer": "الخلايا التائية القاتلة",
+        "incorrect_answers": [
+            "الخلايا التغصنية",
+            "الخلايا القاتلة الطبيعية",
+            "خلايا الدم البيضاء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو الجزء التناسلي الذكري المنتج لحبوب اللقاح في الزهرة؟",
+        "correct_answer": "السداة",
+        "incorrect_answers": [
+            "السبلة",
+            "المدقة",
+            "البتلة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من نبات الماريجوانا ينتج المادة المؤثرة عقلياً المعروفة باسم THC؟",
+        "correct_answer": "الزهرة الأنثوية",
+        "incorrect_answers": [
+            "الأوراق",
+            "الزهرة الذكرية",
+            "كتلة الجذور"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "طور العالمان الفرنسيان لويس باستور وإيميل رو أول لقاح لداء الكلب في عام 1885.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "قتل العلماء بالخطأ أقدم مخلوق حي معروف في العالم، وهو حيوان رخوي، تبين أن عمره يبلغ 507 سنوات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الرمز الكيميائي لعنصر الهيليوم؟",
+        "correct_answer": "He",
+        "incorrect_answers": [
+            "H",
+            "Hg",
+            "Hs"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تنبع كلمة \"Science\" (علم) من الكلمة اللاتينية \"Scire\" والتي تعني ماذا؟",
+        "correct_answer": "أن تعرف (المعرفة)",
+        "incorrect_answers": [
+            "أن تقيس",
+            "أن تعيش",
+            "أن تعد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة السعة الكهربائية؟",
+        "correct_answer": "الفاراد",
+        "incorrect_answers": [
+            "الغاوس",
+            "الهنري",
+            "الواط"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم قمراً للأرض؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "0",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح العلمي لـ 'حاسة التذوق'؟",
+        "correct_answer": "الإدراك الذوقي",
+        "incorrect_answers": [
+            "حاسة الشم",
+            "الحس الجسدي",
+            "الإدراك السمعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر لديه أعلى درجة انصهار؟",
+        "correct_answer": "الكربون",
+        "incorrect_answers": [
+            "التنجستن",
+            "البلاتين",
+            "الأوزميوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا استخدم غريغور مندل لاختبار العبور الجيني وعلم الوراثة؟",
+        "correct_answer": "البازلاء",
+        "incorrect_answers": [
+            "القطط",
+            "الزهور",
+            "الببّغاوات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أكبر كوكب في النظام الشمسي؟",
+        "correct_answer": "المشتري",
+        "incorrect_answers": [
+            "زحل",
+            "الأرض",
+            "المريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم يبلغ عمر الكون؟",
+        "correct_answer": "13.8 مليار سنة",
+        "incorrect_answers": [
+            "4.5 مليار سنة",
+            "7.9 مليار سنة",
+            "16.2 مليار سنة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أين تقع الغدة الصنوبرية في جسم الإنسان؟",
+        "correct_answer": "الدماغ",
+        "incorrect_answers": [
+            "المنطقة الأربية (أعلى الفخذ)",
+            "الصدر",
+            "الحلق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح الأكثر ارتباطاً بسيغموند فرويد؟",
+        "correct_answer": "التحليل النفسي",
+        "incorrect_answers": [
+            "العلاج المعرفي السلوكي",
+            "نظرية الجاذبية",
+            "العلاج السلوكي الجدلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الجزيئية للجلوكوز؟",
+        "correct_answer": "C6H12O6",
+        "incorrect_answers": [
+            "C2H4O2",
+            "K+",
+            "CH4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العلم الذي يدرس خلايا وأنسجة النباتات والحيوانات؟",
+        "correct_answer": "علم الأنسجة (Histology)",
+        "incorrect_answers": [
+            "علم الأحياء الدقيقة",
+            "علم التشريح",
+            "الكيمياء الحيوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي المادة الأساسية المسببة للإدمان والموجودة في التبغ؟",
+        "correct_answer": "النيكوتين",
+        "incorrect_answers": [
+            "الكاثينون",
+            "الإيفيدرين",
+            "الغلاوسين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأرجل التي يستحيل بيولوجياً أن تكون لدى أم أربعة وأربعين (حريش)؟",
+        "correct_answer": "100",
+        "incorrect_answers": [
+            "26",
+            "50",
+            "74"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو التركيب الكيميائي للماء؟",
+        "correct_answer": "H20",
+        "incorrect_answers": [
+            "C12H6O2",
+            "CO2",
+            "H"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في علم النفس، أي من الاحتياجات التالية تقع في أعلى هرم \"ماسلو للاحتياجات الإنسانية\"؟",
+        "correct_answer": "تقدير الذات (الاحترام)",
+        "incorrect_answers": [
+            "الحب والانتماء",
+            "الأمان",
+            "الاحتياجات الفسيولوجية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من الأوعية الدموية التالية يحمل دماً غير مؤكسج (خالٍ من الأكسجين)؟",
+        "correct_answer": "الشريان الرئوي",
+        "incorrect_answers": [
+            "الوريد الرئوي",
+            "الشريان الأورطي (الأبهر)",
+            "الشريان التاجي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أول مركب عضوي تم تحضيره (تخليقه) من مركبات غير عضوية؟",
+        "correct_answer": "اليوريا (البولينا)",
+        "incorrect_answers": [
+            "البروبان",
+            "الإيثانول",
+            "الفورمالديهايد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كان إنسان النياندرتال سلفاً مباشراً للإنسان الحديث.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي للثعلب الأحمر؟",
+        "correct_answer": "فولبيس فولبيس (Vulpes Vulpes)",
+        "incorrect_answers": [
+            "فولبيس ريدوس (Vulpes Redus)",
+            "الثعلب الأحمر (Red Fox)",
+            "فولبيس فولبي (Vulpes Vulpie)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو المصطلح العلمي لـ \"تجمد الدماغ\"؟",
+        "correct_answer": "سفينوبالاتين غانغليونورالجيا",
+        "incorrect_answers": [
+            "هايسنثويدس إيتاليكا",
+            "أمارانثوس ريتروفليكسوس",
+            "أمبليوما أمريكانوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو نوع عمى الألوان الأكثر ندرة على الإطلاق؟",
+        "correct_answer": "الأزرق",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأخضر",
+            "البنفسجي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كل العناصر الفلزية التالية تكون سائلة عند درجة حرارة الغرفة أو قريباً منها ما عدا:",
+        "correct_answer": "البيريليوم",
+        "incorrect_answers": [
+            "الغاليوم",
+            "السيزيوم",
+            "الزئبق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي لغوريلا السهول الغربية؟",
+        "correct_answer": "غوريلا غوريلا غوريلا",
+        "incorrect_answers": [
+            "غوريلا غوريلا ديهلي",
+            "غوريلا بيرنغي غراويري",
+            "غوريلا بيرنغي بيرنغي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر الذي يتحول إلى ألماس عند تعرضه لحرارة وضغط شديدين؟",
+        "correct_answer": "الكربون",
+        "incorrect_answers": [
+            "النيتروجين",
+            "الأكسجين",
+            "الهيدروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من جسم الإنسان يصيبه مرض ألزهايمر بشكل أساسي؟",
+        "correct_answer": "الدماغ",
+        "incorrect_answers": [
+            "الرئتان",
+            "الجلد",
+            "القلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "حمض الفوليك هو الشكل الاصطناعي لأي من الفيتامينات التالية؟",
+        "correct_answer": "فيتامين ب",
+        "incorrect_answers": [
+            "فيتامين أ",
+            "فيتامين ج",
+            "فيتامين د"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الدماغ يأخذ اسمه من الكلمة اليونانية التي تعني \"حصان البحر\"؟",
+        "correct_answer": "الحصين",
+        "incorrect_answers": [
+            "المخيخ",
+            "المهاد",
+            "اللوزة الدماغية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة قياس المقاومة الكهربائية؟",
+        "correct_answer": "الأوم",
+        "incorrect_answers": [
+            "المهو",
+            "التسلا",
+            "الجول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد أنواع الكواركات في النموذج القياسي للفيزياء؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من هو عالم النفس السويسري الذي يرتبط اسمه بمفهومي الشخصية الانطوائية والانبساطية؟",
+        "correct_answer": "كارل يونغ",
+        "incorrect_answers": [
+            "جان بياجيه",
+            "أليس ميلر",
+            "هيرمان رورشاخ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يقوم القرش الأبيض الكبير أحياناً بهجوم \"الضربة والعضة\" (عضة اختبارية) على ضحاياه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الوحدة القياسية الدولية لشدة الإضاءة؟",
+        "correct_answer": "الكانديلا",
+        "incorrect_answers": [
+            "اللومن",
+            "الفاراداي",
+            "الكولوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي غاز يشكل حوالي 78% من الغلاف الجوي للأرض؟",
+        "correct_answer": "النيتروجين",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الأرغون",
+            "ثاني أكسيد الكربون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "لأقرب دقيقة، كم من الوقت يستغرق ضوء الشمس للوصول إلى الأرض؟",
+        "correct_answer": "8 دقائق",
+        "incorrect_answers": [
+            "6 دقائق",
+            "دقيقتان",
+            "12 دقيقة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تيمناً بمن تم تسمية العنصر الكيميائي الكوريوم؟",
+        "correct_answer": "ماري وبيير كوري",
+        "incorrect_answers": [
+            "مسبار كوريوسيتي",
+            "جورج الفضولي",
+            "ستيفن كوري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أكبر كائن حي معروف للإنسان حالياً؟",
+        "correct_answer": "فطر العسل",
+        "incorrect_answers": [
+            "الحوت الأزرق",
+            "شجرة الخشب الأحمر",
+            "الشعاب المرجانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العضيو الذي يعتبر \"محطة طاقة الخلية\"؟",
+        "correct_answer": "الميتوكوندريا",
+        "incorrect_answers": [
+            "الريبوسوم",
+            "ريد بول",
+            "النواة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "يُعتبر المركب العضوي كحولاً إذا كان يحتوي على أي من المجموعات الوظيفية التالية؟",
+        "correct_answer": "الهيدروكسيل",
+        "incorrect_answers": [
+            "الكربونيل",
+            "الألكيل",
+            "الألدهيد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "إلى ماذا يشير مصطلح \"العزل\" في علم الأحياء الدقيقة؟",
+        "correct_answer": "فصل سلالة معينة من تجمع طبيعي ومختلط للميكروبات الحية",
+        "incorrect_answers": [
+            "نقص التغذية في البيئات الدقيقة",
+            "مستوى النيتروجين في التربة",
+            "اختبار تأثيرات كائنات دقيقة معينة في بيئات معزولة مثل الكهوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مصطلح نفسي يشير إلى التوتر الناتج عن حمل معتقدات متناقضة؟",
+        "correct_answer": "التنافر المعرفي",
+        "incorrect_answers": [
+            "متلازمة التقلب",
+            "انقسام الدماغ",
+            "الرؤية العمياء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الكوكب الأكثر سخونة في المجموعة الشمسية؟",
+        "correct_answer": "الزهرة",
+        "incorrect_answers": [
+            "المشتري",
+            "عطارد",
+            "المريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الجزيئية لغاز الأوزون؟",
+        "correct_answer": "O3",
+        "incorrect_answers": [
+            "C6H2O6",
+            "N2O",
+            "SO4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من الذي طور أول لقاح ناجح لشلل الأطفال في خمسينيات القرن الماضي؟",
+        "correct_answer": "جوناس سالك",
+        "incorrect_answers": [
+            "جون إندرز",
+            "توماس ويلر",
+            "فريدريك روبنز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني الاسم العلمي للمخلوق البحري \"أنومالوكاريس\" الذي عاش في العصر الكامبري؟",
+        "correct_answer": "الروبيان غير الطبيعي",
+        "incorrect_answers": [
+            "السمكة المشوهة",
+            "السرطان الغريب",
+            "المحار الشاذ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو النوكليوتيد الذي يرتبط مع الغوانين؟",
+        "correct_answer": "السيتوزين",
+        "incorrect_answers": [
+            "الثايمين",
+            "الأدينين",
+            "اليوراسيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي كواكب المجموعة الشمسية هو الأقرب إلى الشمس؟",
+        "correct_answer": "عطارد",
+        "incorrect_answers": [
+            "الأرض",
+            "المريخ",
+            "الزهرة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "علم النفس هو علم دراسة السلوك والعقل.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما الاسم الشائع لحمض إيزوبوتيل فينيل بروبيونيك؟",
+        "correct_answer": "الإيبوبروفين",
+        "incorrect_answers": [
+            "المورفين",
+            "الكيتامين",
+            "الأسبرين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "مما تتكون أظافر الإنسان؟",
+        "correct_answer": "الكيراتين",
+        "incorrect_answers": [
+            "العظام",
+            "الكيتين",
+            "الكالسيوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يتكون معظم الشمس من أي عنصرين؟",
+        "correct_answer": "الهيدروجين والهيليوم",
+        "incorrect_answers": [
+            "الهيدروجين والنيتروجين",
+            "الكربون والنيتروجين",
+            "الكربون والهيليوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي قمر هو التابع الوحيد في مجموعتنا الشمسية الذي يمتلك غلافاً جوياً كثيفاً؟",
+        "correct_answer": "تيتان",
+        "incorrect_answers": [
+            "أوروبا",
+            "ميراندا",
+            "كاليستو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي يقع في مركز مجرتنا؟",
+        "correct_answer": "ثقب أسود",
+        "incorrect_answers": [
+            "ثقب دودي",
+            "مستعر أعظم",
+            "شبه نجم (كوازار)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي أطول عظمة في جسم الإنسان؟",
+        "correct_answer": "عظمة الفخذ",
+        "incorrect_answers": [
+            "لوح الكتف",
+            "الشظية",
+            "الزند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه الصفائح هي الأكثر شهرة بالتسبب في حدوث الزلازل والتسونامي؟",
+        "correct_answer": "حدود الصفائح المتقاربة/القشرة المحيطية",
+        "incorrect_answers": [
+            "حدود الصفائح المتباعدة/المتقاربة/القشرة المحيطية",
+            "حدود الصفائح التحويلية/حدود الصفائح المتباعدة",
+            "القشرة المحيطية والقارية/حدود الصفائح التحويلية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من البلاستيك التالي يُسخدم عادةً في إطارات النوافذ والمزاريب وأنابيب الصرف؟",
+        "correct_answer": "بولي فينيل كلورايد (PVC)",
+        "incorrect_answers": [
+            "بولي إيثيلين (PE)",
+            "بولي بروبيلين (PP)",
+            "بولي ستيرين (PS)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس عنصراً حقيقياً في الجدول الدوري؟",
+        "correct_answer": "فيترينيوم",
+        "incorrect_answers": [
+            "براسيديوميوم",
+            "هاسيوم",
+            "لوتيتيوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "متى تم استنساخ أول ثديي بنجاح؟",
+        "correct_answer": "1996",
+        "incorrect_answers": [
+            "2009",
+            "1999",
+            "1985"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "المرض الجوفي (السيلياك) هو مرض يصيب القلب، مما يجعل المصابين به غير قادرين على تناول اللحوم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الفولاذ هو سبيكة من الحديد والكربون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكروموسومات في خلايا جسمك؟",
+        "correct_answer": "23",
+        "incorrect_answers": [
+            "21",
+            "22",
+            "24"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كان يُعتقد في الماضي أن حقن غضروف القرش في البشر يمنعهم من الإصابة بالسرطان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي كوكبة تحتوي على مركز مجرة درب التبانة؟",
+        "correct_answer": "الرامي (القوس)",
+        "incorrect_answers": [
+            "العقرب",
+            "الحواء",
+            "الجدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تيتسويا فوجيتا كان عالماً طور مقياساً لأي من الكوارث الطبيعية التالية؟",
+        "correct_answer": "الأعاصير القمعية (التورنادو)",
+        "incorrect_answers": [
+            "الأعاصير الاستوائية (الهوريكان)",
+            "الزلازل",
+            "البراكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كولروفوبيا (Coulrophobia) هي الخوف غير العقلاني من ماذا؟",
+        "correct_answer": "المهرجين",
+        "incorrect_answers": [
+            "المقابر",
+            "الإبر",
+            "الأنفاق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه النجوم هو الأكبر حجماً؟",
+        "correct_answer": "يو واي سكوتي (UY Scuti)",
+        "incorrect_answers": [
+            "في واي الكلب الأكبر (VY Canis Majoris)",
+            "منكب الجوزاء (Betelgeuse)",
+            "آر دبليو الملتهب (RW Cephei)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "في الفيزياء، يعتبر حفظ الطاقة وحفظ الزخم كلاهما نتيجة لأي مما يلي؟",
+        "correct_answer": "مبرهنة نويثر",
+        "incorrect_answers": [
+            "مبرهنة بيل",
+            "مبرهنة ويك",
+            "مبرهنة كارنو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما اسم أول قمر صناعي للأرض أطلقه الاتحاد السوفيتي عام 1957؟",
+        "correct_answer": "سبوتنيك 1",
+        "incorrect_answers": [
+            "سويوز 7K-OK",
+            "زينيت-2",
+            "فوسخود 3KV"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الميوبيا (Myopia) هو المصطلح العلمي لأي حالة؟",
+        "correct_answer": "قصر النظر",
+        "incorrect_answers": [
+            "طول النظر",
+            "الرؤية المزدوجة",
+            "الرؤية الضبابية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه العناصر يعتبر من أشباه الفلزات؟",
+        "correct_answer": "الأنتيمون",
+        "incorrect_answers": [
+            "القصدير",
+            "البروم",
+            "الروبيديوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي سرعة الضوء في الفراغ؟",
+        "correct_answer": "299,792,458 م/ث",
+        "incorrect_answers": [
+            "50,461 م/ث",
+            "308,215,043 م/ث",
+            "751,665,014,151 م/ث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس مكوناً كهربائياً خاملاً؟",
+        "correct_answer": "الترانزستور",
+        "incorrect_answers": [
+            "المقاوم",
+            "المكثف",
+            "المحث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح الطبي لانخفاض نسبة السكر في الدم؟",
+        "correct_answer": "نقص سكر الدم",
+        "incorrect_answers": [
+            "قصور الغدة الدرقية",
+            "انخفاض حرارة الجسم",
+            "نقص الأكسجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو لون الدم غير المؤكسج؟",
+        "correct_answer": "الأحمر",
+        "incorrect_answers": [
+            "الأزرق",
+            "البنفسجي",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه العناصر في الجدول الدوري يعتبر غازاً نبيلاً؟",
+        "correct_answer": "النيون",
+        "incorrect_answers": [
+            "البوتاسيوم",
+            "اليود",
+            "الكوبالت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العضيو الخلوي المعروف بـ \"محطة طاقة الخلية\"؟",
+        "correct_answer": "الميتوكوندريا",
+        "incorrect_answers": [
+            "النواة",
+            "جهاز جولجي",
+            "الشبكة الإندوبلازمية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "إذا غمست منشفة جافة في حوض مليء بالماء، سيرتفع الماء إلى أعلى المنشفة بفعل ظاهرة تسمى \"الخاصية الكارتيلرية\" (Cartillary Action).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يمثل المعين الأصفر في معين الحرائق (NFPA 704)؟",
+        "correct_answer": "التفاعلية",
+        "incorrect_answers": [
+            "المخاطر الصحية",
+            "القابلية للاشتعال",
+            "النشاط الإشعاعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من المركبات الفضائية التالية لم تلمس القمر مطلقاً؟",
+        "correct_answer": "مارينر 4",
+        "incorrect_answers": [
+            "أبولو 11",
+            "لونا 2",
+            "سمارت-1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الجسم يفرز الأنسولين؟",
+        "correct_answer": "البنكرياس",
+        "incorrect_answers": [
+            "الكلية",
+            "الكبد",
+            "المعدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "إذا زرعت بذور شجرة البلوط الإنجليزي (Quercus robur)، فماذا سينمو؟",
+        "correct_answer": "أشجار",
+        "incorrect_answers": [
+            "زهور",
+            "خضروات",
+            "حبوب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من العناصر التالية يساهم في جعل دم الإنسان أحمر اللون؟",
+        "correct_answer": "الحديد",
+        "incorrect_answers": [
+            "النحاس",
+            "الإريديوم",
+            "الكوبالت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد البروتونات في ذرة الأكسجين؟",
+        "correct_answer": "ثمانية",
+        "incorrect_answers": [
+            "أربعة",
+            "اثنان",
+            "ستة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المرض الوراثي الذي ينتج عن وجود كروموسوم Y إضافي (XYY)؟",
+        "correct_answer": "متلازمة جاكوب",
+        "incorrect_answers": [
+            "متلازمة كلينفلتر",
+            "متلازمة تورنر",
+            "متلازمة داون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من أي قارة تأتي البطاطا الحلوة في الأصل؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "آسيا",
+            "أفريقيا",
+            "أوروبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الكتلة الذرية للكربون؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "14",
+            "16",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "عند أي درجة حرارة يغلي الماء؟",
+        "correct_answer": "212 درجة فهرنهايت",
+        "incorrect_answers": [
+            "200 درجة فهرنهايت",
+            "181 درجة فهرنهايت",
+            "178 درجة فهرنهايت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من من هؤلاء العلماء أجرى تجربة رقاقة الذهب التي استنتجت أن الذرات تتكون في الغالب من فراغ؟",
+        "correct_answer": "إرنست رذرفورد",
+        "incorrect_answers": [
+            "جوزيف جون طومسون",
+            "أرخميدس",
+            "نيلز بور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "بين أي كوكبين يقع حزام الكويكبات؟",
+        "correct_answer": "المريخ والمشتري",
+        "incorrect_answers": [
+            "المشتري وزحل",
+            "عطارد والزهرة",
+            "الأرض والمريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر يحمل العدد الذري 7؟",
+        "correct_answer": "النيتروجين",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الهيدروجين",
+            "النيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو المصطلح الطبي لـ \"المضاعفات الجراحية الناتجة عن نسيان الإسفنج الجراحي داخل جسم المريض\"؟",
+        "correct_answer": "ورم قطني (جوسيبوبوما)",
+        "incorrect_answers": [
+            "غونغوزلر",
+            "جينتاكيولار",
+            "ميوباريونيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر كيميائي كان يُعرف في الأصل باسم \"ألابامين\"؟",
+        "correct_answer": "الأستاتين",
+        "incorrect_answers": [
+            "السيلينيوم",
+            "الأنتيمون",
+            "الموليبدينوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "عندما تم إطلاق صاروخ \"فالكون هيفي\" في رحلته التجريبية، ما هو الجزء الوحيد الذي فشل في العملية؟",
+        "correct_answer": "هبوط القلب المركزي (الصاروخ الأوسط)",
+        "incorrect_answers": [
+            "هبوط المعززات الجانبية",
+            "إطلاق ستارمان",
+            "التشغيل والإقلاع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب في النظام الشمسي؟",
+        "correct_answer": "8",
+        "incorrect_answers": [
+            "9",
+            "11",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الكيميائي للماء (H2O)؟",
+        "correct_answer": "أكسيد ثنائي الهيدروجين",
+        "incorrect_answers": [
+            "كلوريد الأمونيوم",
+            "كربونات الصوديوم اللامائية",
+            "ثاني أكسيد المنجنيز"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يُعتبر مصطلح \"Pneumonoultramicroscopicsilicovolcanoconiosis\" مرادفاً لمرض السحار السيليسي (السحار البركاني).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "المحتوى الحراري (الإنثالبي) هو مقياس للطاقة غير المتاحة للشغل خلال عملية ديناميكية حرارية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "دون احتساب الأسنان الاصطناعية، يمتلك الإنسان مجموعتين من الأسنان طوال حياته.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "على مقياس بوفورت لقوة الرياح، ما الاسم الذي يُطلق على الرياح رقم 8؟",
+        "correct_answer": "عاصفة شديدة",
+        "incorrect_answers": [
+            "عاصفة",
+            "إعصار",
+            "نسيم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يشير مصطلح \"تسارع ضربات القلب\" إلى معدل ضربات قلب أثناء الراحة يقارب أو يتجاوز 100 نبضة في الدقيقة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يمكن أن يصاب الشخص بحروق الشمس في اليوم الغائم.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأسنان في فم الشخص البالغ كمتوسط (باستثناء أسنان العقل)؟",
+        "correct_answer": "32",
+        "incorrect_answers": [
+            "36",
+            "20",
+            "28"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأسنان اللبنية لدى طفل الإنسان إجمالاً؟",
+        "correct_answer": "20",
+        "incorrect_answers": [
+            "10",
+            "15",
+            "25"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "حرق أي من هذه المعادن ينتج لهباً أبيض ساطعاً؟",
+        "correct_answer": "المغنيسيوم",
+        "incorrect_answers": [
+            "النحاس",
+            "الليثيوم",
+            "الرصاص"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من العضيات التالية يساعد في تصنيع الحمض النووي (DNA) في الخلايا؟",
+        "correct_answer": "الريبوسومات",
+        "incorrect_answers": [
+            "النواة",
+            "الليزوسومات",
+            "الميتوكوندريا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تمت تسمية عنصر الليثيوم الكيميائي نسبةً إلى دولة ليتوانيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الشائع للحالة الطبية المعروفة باسم متلازمة الإجهاد الظنبوبي الإنسي (MTSS)؟",
+        "correct_answer": "ألم قصبة الساق",
+        "incorrect_answers": [
+            "مرفق التنس",
+            "النفق الرسغي",
+            "ركبة خادمة المنزل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من السوائل التالية هو الأقل لزوجة؟ (بافتراض أن درجة الحرارة 25 مئوية)",
+        "correct_answer": "الأسيتون",
+        "incorrect_answers": [
+            "الماء",
+            "عطارد",
+            "البنزين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني اختصار كلمة \"ليزر\" (LASER) باللغة الإنجليزية؟",
+        "correct_answer": "تضخيم الضوء بانبعاث الإشعاع المحفز",
+        "incorrect_answers": [
+            "تحليل الضوء بواسطة الإيكوريزر المجسم",
+            "مضخم الضوء بواسطة طاقة الراديو الاحتياطية",
+            "المادة المضادة للحياة عن طريق الدخول الدائم للنطاق"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "شكل الأرض عبارة عن كرة مثالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المثال على مسبب أمراض بكتيري؟",
+        "correct_answer": "الكوليرا",
+        "incorrect_answers": [
+            "الحصبة",
+            "الإيدز",
+            "القوباء الحلقية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يمثل حرف \"S\" في اختصار وكالة الفضاء الأمريكية \"NASA\"؟",
+        "correct_answer": "الفضاء",
+        "incorrect_answers": [
+            "العلوم",
+            "المجتمع",
+            "النجم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "البوزيترون هو الجسيم المضاد لأي مما يلي؟",
+        "correct_answer": "الإلكترون",
+        "incorrect_answers": [
+            "النيوترون",
+            "البروتون",
+            "الفوتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الذي يُطلق على صغار الحيوانات الجرابية؟",
+        "correct_answer": "جوي",
+        "incorrect_answers": [
+            "عجل",
+            "جرو",
+            "شبل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه الحيوانات ينتمي إلى طائفة الأسماك الغضروفية (Chondrichthyes)؟",
+        "correct_answer": "القرش الأبيض الكبير",
+        "incorrect_answers": [
+            "الأخطبوط",
+            "الحوت القاتل",
+            "سمك السلور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة المحاثة الكهربائية (الحث المغناطيسي)؟",
+        "correct_answer": "الهنري",
+        "incorrect_answers": [
+            "الويبر",
+            "الكولوم",
+            "المو (وحدة موصلية)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو جهاز تضخيم من أشباه الموصلات؟",
+        "correct_answer": "الترانزستور",
+        "incorrect_answers": [
+            "الأنبوب المفرغ",
+            "الديود (الوصلة الثنائية)",
+            "وصلة P-N"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الرمز الكيميائي للرصاص؟",
+        "correct_answer": "Pb",
+        "incorrect_answers": [
+            "Ld",
+            "Le",
+            "Pm"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "فاز فريدريك بانتينغ وجون ماكلويد بجائزة نوبل لمساهماتهما في المجالات العلمية لميكانيكا الكم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تيمناً بأي مدينة دنماركية تمت تسمية العنصر رقم 72 في الجدول الدوري؟",
+        "correct_answer": "كوبنهاجن",
+        "incorrect_answers": [
+            "أودنسه",
+            "هيرنينغ",
+            "سكاجن"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "مثلما حدث مع إنسان نياندرتال، تزاوج الإنسان العاقل (Homo sapiens sapiens) أيضاً مع إنسان دينيسوفان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "جميع كواكب النظام الشمسي تدور حول الشمس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الجسم تؤثر عليه المياه الزرقاء (الجلوكوما)؟",
+        "correct_answer": "العينين",
+        "incorrect_answers": [
+            "الحلق",
+            "المعدة",
+            "الدم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تدفع ظاهرة \"النينيو\" المياه الدافئة إلى سواحل غرب المحيط الهادئ خلال فصل الشتاء.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في الجدول الدوري، الرمز الكيميائي للبوتاسيوم هو حرف K.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المصطلح الطبي لسرة البطن من بين الخيارات التالية؟",
+        "correct_answer": "السرة",
+        "incorrect_answers": [
+            "الشامة",
+            "المنخرين",
+            "باكسيلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من العظام التالية ليست موجودة في الساق؟",
+        "correct_answer": "الكعبرة",
+        "incorrect_answers": [
+            "الرضفة",
+            "الظنبوب",
+            "الشظية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم تبلغ مسافة السنة الضوئية؟",
+        "correct_answer": "9.461 تريليون كيلومتر",
+        "incorrect_answers": [
+            "1 وحدة فلكية",
+            "105.40 سنة أرضية",
+            "501.2 مليون ميل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الكوكب الأكثر حرارة في النظام الشمسي؟",
+        "correct_answer": "الزهرة",
+        "incorrect_answers": [
+            "المريخ",
+            "عطارد",
+            "المشتري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر الأكثر وفرة في الكون؟",
+        "correct_answer": "الهيدروجين",
+        "incorrect_answers": [
+            "الهيليوم",
+            "الليثيوم",
+            "الأكسجين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يمكن للإنسان العادي أن يعيش لمدة أسبوعين بدون ماء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "الوحدة الفلكية هي المسافة بين الأرض والقمر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العدد الذري لليورانيوم؟",
+        "correct_answer": "92",
+        "incorrect_answers": [
+            "235",
+            "17",
+            "167"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الرمز الكيميائي للزئبق؟",
+        "correct_answer": "Hg",
+        "incorrect_answers": [
+            "Me",
+            "Mc",
+            "Hy"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي حدث انقراض رئيسي نتج عن اصطدام كويكب وأدى إلى القضاء على غالبية الديناصورات غير الطائرة؟",
+        "correct_answer": "العصر الطباشيري-الباليوجيني",
+        "incorrect_answers": [
+            "العصر الثلاثي-الجراسي",
+            "العصر البرمي-الثلاثي",
+            "العصر الأوردوفيشي-السيلوري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في مجال الطيران، تُستخدم القلابات والجنيحات المساعدة (flaps and slats) للتحكم في ماذا على الطائرة؟",
+        "correct_answer": "الرفع",
+        "incorrect_answers": [
+            "الدفع",
+            "السحب",
+            "الوزن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني اختصار CPR، وهو الإجراء الطارئ لمساعدة شخص يعاني من توقف القلب؟",
+        "correct_answer": "الإنعاش القلبي الرئوي",
+        "incorrect_answers": [
+            "تخفيف الآلام المزمنة",
+            "تخفيف آلام السرطان",
+            "معدل انتشار وسائل منع الحمل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي وحدة علمية سميت تيمناً بنبيل إيطالي؟",
+        "correct_answer": "الفولت",
+        "incorrect_answers": [
+            "الباسكال",
+            "الأوم",
+            "الهيرتز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو عمر النصف لليورانيوم-235؟",
+        "correct_answer": "703,800,000 سنة",
+        "incorrect_answers": [
+            "4,300,400,000 سنة",
+            "1,260,900,000 سنة",
+            "اليورانيوم-235 نظير مستقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم تساوي 100 درجة مئوية بالفهرنهايت؟",
+        "correct_answer": "212",
+        "incorrect_answers": [
+            "326",
+            "100",
+            "451"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الكروموسوم الذي تتسبب نسخة إضافية منه عادة في الإصابة بمتلازمة داون؟",
+        "correct_answer": "21",
+        "incorrect_answers": [
+            "23",
+            "15",
+            "24"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "في فيزياء الكم، أي من هذه الجسيمات دون الذرية الافتراضية لم يتم رصدها بعد؟",
+        "correct_answer": "غرافيتون",
+        "incorrect_answers": [
+            "بوزون Z",
+            "نيوترينو تاو",
+            "غلوون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "إلى جانب الأكسجين، ما هو العنصر المسؤول بشكل أساسي عن ظهور السماء باللون الأزرق؟",
+        "correct_answer": "النيتروجين",
+        "incorrect_answers": [
+            "الهيليوم",
+            "الكربون",
+            "الهيدروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الجسيمات التي تعادل مولاً واحداً؟",
+        "correct_answer": "6.022 × 10^23",
+        "incorrect_answers": [
+            "6.002 × 10^22",
+            "6.022 × 10^22",
+            "6.002 × 10^23"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في الجدول الدوري للعناصر، ما هو الرمز الكيميائي للقصدير؟",
+        "correct_answer": "Sn",
+        "incorrect_answers": [
+            "Ti",
+            "Ni",
+            "Na"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تحتوي الذرة على نواة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الغضروف الهلالي الإنسي يشكل جزءاً من أي مفصل في جسم الإنسان؟",
+        "correct_answer": "الركبة",
+        "incorrect_answers": [
+            "المرفق",
+            "الكاحل",
+            "الكتف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم قلباً يمتلك الأخطبوط؟",
+        "correct_answer": "ثلاثة",
+        "incorrect_answers": [
+            "واحد",
+            "اثنان",
+            "أربعة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من العناصر التالية يُستخدم عادة في تطعيم شبه الموصل (السيليكون)؟",
+        "correct_answer": "البورون",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الكربون",
+            "الحديد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي كوكب أرسلت له المركبة الفضائية 'فايكنغ 1' صوراً لسطحه بدءاً من عام 1976؟",
+        "correct_answer": "المريخ",
+        "incorrect_answers": [
+            "زحل",
+            "المشتري",
+            "الزهرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "من أي نظير يتكون اليورانيوم الطبيعي بشكل أساسي؟",
+        "correct_answer": "238",
+        "incorrect_answers": [
+            "235",
+            "239",
+            "233"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تدور الأقمار ميراندا، وأرييل، وأومبريل، وتيتانيا، وأوبيرون حول أي كوكب؟",
+        "correct_answer": "أورانوس",
+        "incorrect_answers": [
+            "المشتري",
+            "الزهرة",
+            "نبتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الفئة التي صُنّف بها إعصار كاترينا عام 2005 وفقاً لمقياس سفير-سمبسون لرياح الأعاصير؟",
+        "correct_answer": "الفئة الخامسة",
+        "incorrect_answers": [
+            "الفئة الأولى",
+            "الفئة الرابعة",
+            "الفئة الثانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أين توجد عظمة 'الظنبوب' (قصبة الساق) في جسم الإنسان؟",
+        "correct_answer": "الساق",
+        "incorrect_answers": [
+            "الذراع",
+            "اليد",
+            "الرأس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الصيغة الجزيئية للمكون النشط في الفلفل الحار (الكابسيسين)؟",
+        "correct_answer": "C18H27NO3",
+        "incorrect_answers": [
+            "C21H23NO3",
+            "C6H4Cl2",
+            "C13H25NO4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "متلازمة العطس الضوئي المنعكس (الخلل البصري الشمسي القهري السائد) هي الحاجة إلى القيام بماذا عند رؤية الشمس؟",
+        "correct_answer": "العطس",
+        "incorrect_answers": [
+            "السعال",
+            "التثاؤب",
+            "الفواق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (SI) للمسافة؟",
+        "correct_answer": "المتر",
+        "incorrect_answers": [
+            "الأنغستروم",
+            "القدم",
+            "القامة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الكائن الحي الموصوف بأنه 'منتحٍ ضوئي' يميل إلى التحرك نحو أي من هذه الأشياء؟",
+        "correct_answer": "الضوء",
+        "incorrect_answers": [
+            "الماء",
+            "الأشجار",
+            "حبوب اللقاح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما الاسم الذي يطلق على الوهم السمعي لنغمة يبدو أنها ترتفع في حدتها إلى ما لا نهاية؟",
+        "correct_answer": "نغمة شيبارد",
+        "incorrect_answers": [
+            "وهم غليساندو",
+            "تأثير فرانتسن",
+            "تأثير ماكغورك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "من هو مكتشف قانون الجاذبية؟",
+        "correct_answer": "سير إسحاق نيوتن",
+        "incorrect_answers": [
+            "غاليليو غاليلي",
+            "تشارلز داروين",
+            "ألبيرت أينشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المبدأ الفيزيائي الذي يربط بين صافي التدفق الكهربائي الخارج من سطح مغلق والشحنة الموجودة داخل هذا السطح؟",
+        "correct_answer": "قانون غاوس",
+        "incorrect_answers": [
+            "قانون فاراداي",
+            "قانون أمبير",
+            "قانون بيو-سافارت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "بأي وحدة يُقاس الإشعاع؟",
+        "correct_answer": "غراي",
+        "incorrect_answers": [
+            "واط",
+            "ديسيبل",
+            "كلفن"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يدور حول كوكب المريخ قمران.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي النسبة المئوية التقريبية للأكسجين في الغلاف الجوي للأرض؟",
+        "correct_answer": "21%",
+        "incorrect_answers": [
+            "54%",
+            "78%",
+            "7%"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه العظام هو الأصعب كسرًا؟",
+        "correct_answer": "عظم الفخذ",
+        "incorrect_answers": [
+            "الجمجمة",
+            "عظم العضد",
+            "قصبة الساق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تتشارك مجموعات هابلوغروب الجينية البشرية التالية نفس الأسماء بين كروموسوم Y والحمض النووي للميتوكوندريا باستثناء:",
+        "correct_answer": "هابلوغروب U",
+        "incorrect_answers": [
+            "هابلوغروب L",
+            "هابلوغروب T",
+            "هابلوغروب J"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أين تقع العضلة الألوية الكبرى في الجسم؟",
+        "correct_answer": "الأرداف",
+        "incorrect_answers": [
+            "الذراع",
+            "الرأس",
+            "الجذع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الحيوان الذي شارك في أشهر تجربة فكرية للعالم شرودنغر؟",
+        "correct_answer": "القط",
+        "incorrect_answers": [
+            "الكلب",
+            "الخفاش",
+            "الفراشة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "عملية تجميل الأنف (Rhinoplasty) هي إجراء جراحي يُجرى على أي جزء من جسم الإنسان؟",
+        "correct_answer": "الأنف",
+        "incorrect_answers": [
+            "الأذنان",
+            "الذقن",
+            "الرقبة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي من العناصر الكيميائية لديه أدنى درجة غليان؟",
+        "correct_answer": "الهيليوم",
+        "incorrect_answers": [
+            "الهيدروجين",
+            "النيون",
+            "النيتروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من المركبات الكيميائية التالية لا يوجد في حمض المعدة؟",
+        "correct_answer": "حمض الكبريتيك",
+        "incorrect_answers": [
+            "حمض الهيدروكلوريك",
+            "كلوريد البوتاسيوم",
+            "كلوريد الصوديوم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تدور الأرض حول الشمس في سنة واحدة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تقوم ذكور الباندا بالوقوف على أيديها أثناء التبول على الأشجار.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "الفرق الأكبر بين الخلايا حقيقية النواة والخلايا بدائية النواة هو:",
+        "correct_answer": "وجود النواة أو غيابها",
+        "incorrect_answers": [
+            "الحجم الإجمالي",
+            "وجود أو غياب بعض العضيات",
+            "طريقة التكاثر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في الكيمياء، كم عدد المتصاوغات التي يمتلكها البيوتانول (C4H9OH)؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي يُعتبر مثالاً على الإشراط الكلاسيكي؟",
+        "correct_answer": "تجارب كلاب بافلوف",
+        "incorrect_answers": [
+            "تجربة صندوق سكينر",
+            "تجربة قطة شرودنغر",
+            "تجارب قرود هارلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب القزمة المعترف بها رسمياً في النظام الشمسي والتي سميت تيمناً بآلهة بولينيزية؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "0",
+            "1",
+            "5"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يتكون ملح الطعام بنسبة 100% من الصوديوم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كتلة الأرض والقمر متساوية تقريباً.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المعدن الذي يمتلك أقل درجة على مقياس موهس لصلابة المعادن؟",
+        "correct_answer": "التلك",
+        "incorrect_answers": [
+            "الكوارتز",
+            "الألماس",
+            "الجبس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (SI) لدرجة الحرارة؟",
+        "correct_answer": "كلفن",
+        "incorrect_answers": [
+            "فهرنهايت",
+            "سيلسيوس",
+            "رانكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أكبر حيوان يعيش حالياً على وجه الأرض؟",
+        "correct_answer": "الحوت الأزرق",
+        "incorrect_answers": [
+            "الأوركا",
+            "الحبار الضخم",
+            "الزرافة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد قوانين الديناميكا الحرارية؟",
+        "correct_answer": "أربعة",
+        "incorrect_answers": [
+            "ثلاثة",
+            "اثنان",
+            "خمسة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد العظام في جسم الإنسان؟",
+        "correct_answer": "206",
+        "incorrect_answers": [
+            "203",
+            "209",
+            "200"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "قوة الجذب المركزي هي قوة ظاهرة تؤثر إلى الخارج على جسم يتحرك حول مركز، وتنشأ عن قصور الجسم الذاتي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب في نظامنا الشمسي؟",
+        "correct_answer": "ثمانية",
+        "incorrect_answers": [
+            "تسعة",
+            "سبعة",
+            "عشرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أين ضربت العاصفة العظيمة عام 1987 اليابسة أولاً؟",
+        "correct_answer": "كورنوال",
+        "incorrect_answers": [
+            "ساري",
+            "ويلز",
+            "الميدلاندز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما اسم الثقب الأسود الفائق الكتلة الموجود في مركز مجرة درب التبانة؟",
+        "correct_answer": "ساجيتاريوس A*",
+        "incorrect_answers": [
+            "مسييه 87",
+            "ألفا قنطورس",
+            "أندروميدا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأقمار التي يمتلكها كوكب بلوتو؟",
+        "correct_answer": "خمسة",
+        "incorrect_answers": [
+            "اثنان",
+            "ثلاثة",
+            "واحد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يدرس علم التشريح أشكال البنى العيانية مثل الأعضاء والأجهزة العضوية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يحدث مرض السكري من النوع الأول نتيجة لخلل في عمل الكبد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الجسم تؤثر عليه حالة هشاشة العظام المرضية؟",
+        "correct_answer": "العظام",
+        "incorrect_answers": [
+            "الجلد",
+            "الدماغ",
+            "القلب"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يحتوي السكر على الدهون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "رهاب الكلمات الطويلة (هيبوبوتومونستروسيسكيبيداليوفوبيا) هو الخوف غير العقلاني من الكلمات الطويلة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

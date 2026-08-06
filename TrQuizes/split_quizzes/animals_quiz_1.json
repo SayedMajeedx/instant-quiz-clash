@@ -1,0 +1,230 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "أي من هذه الحيوانات ليس حقيقياً؟",
+        "correct_answer": "أسد نيميا",
+        "incorrect_answers": [
+            "تنين البحر",
+            "شيطان تسمانيا",
+            "الحبار العملاق"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "تمتلك اليرقة عضلات أكثر مما يمتلكه الإنسان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "سُمي متصفح الإنترنت فايرفوكس تيمناً بالباندا الأحمر.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "يُعتبر الحوت القاتل (الأوركا) نوعاً من أنواع الدلافين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "كم عدد أرجل الفراشة؟",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "2",
+            "4",
+            "0"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو نوع الكائن الحي الذي ينتمي إليه البونوبو؟",
+        "correct_answer": "قرد",
+        "incorrect_answers": [
+            "أسد",
+            "ببغات",
+            "قط بري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي للشمبانزي الشائع؟",
+        "correct_answer": "⁦Pan troglodytes⁩",
+        "incorrect_answers": [
+            "⁦Gorilla gorilla⁩",
+            "⁦Pan paniscus⁩",
+            "⁦Panthera leo⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "يُعرف ديناصور السيراتوصور (⁦Ceratosaurus⁩) بوجود قرن على أنفه، ويُعتقد أيضاً أنه من سلالة التيرانوصور ركس (⁦T-Rex⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "إلى أي فصيلة علمية ينتمي حيوان ذئب الأرض (الآردولف)‏؟",
+        "correct_answer": "الضبعيات (⁦Hyaenidae⁩)",
+        "incorrect_answers": [
+            "الكلبيات (⁦Canidae⁩)",
+            "السنوريات (⁦Felidae⁩)",
+            "السموريات المدغشقرية (⁦Eupleridae⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "في عام 2016، أعاد الاتحاد الدولي لحفظ الطبيعة (⁦IUCN⁩) تصنيف الباندا العملاق من كائن مهدد بالانقراض إلى كائن معرض للتهديد (ضعيف).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "تعتبر \"عشريات الأرجل\" رتبة من القشريات تمتلك عشر أرجل. أي مما يلي ليس من عشريات الأرجل؟",
+        "correct_answer": "الكريل",
+        "incorrect_answers": [
+            "الكركند (جراد البحر)",
+            "الروبيان (الجمبري)",
+            "السرطان (الكابوريا)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هي سلالة الكلاب التي ترتبط تقليدياً برجال الإطفاء؟",
+        "correct_answer": "الدالميشن (المرقش)",
+        "incorrect_answers": [
+            "الراعي الألماني (جيرمن شيبرد)",
+            "الدانماركي العظيم (جريت دين)",
+            "الماستيف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "إلى أي رتيبة علمية تنتمي فصيلة الضبعيات (⁦Hyaenidae⁩)‏؟",
+        "correct_answer": "سنوريات الشكل (⁦Feliformia⁩)",
+        "incorrect_answers": [
+            "بسيطات الأنف (⁦Haplorhini⁩)",
+            "كلبيات الشكل (⁦Caniformia⁩)",
+            "لقلقيات الشكل (⁦Ciconiiformes⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو الكائن البحري الذي يحمل الاسم اللاتيني \"هيبوكامبوس\" (⁦Hippocampus⁩)‏؟",
+        "correct_answer": "حصان البحر",
+        "incorrect_answers": [
+            "الدلفين",
+            "الحوت",
+            "الأخطبوط"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "صوف الكشمير يؤخذ من أي نوع من الحيوانات؟",
+        "correct_answer": "الماعز",
+        "incorrect_answers": [
+            "الأغنام",
+            "الجمال",
+            "اللاما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هي سلالة الكلاب التي تعد واحدة من أقدم السلالات وازدهرت منذ ما قبل عام 400 قبل الميلاد؟",
+        "correct_answer": "الباج (⁦Pug⁩)",
+        "incorrect_answers": [
+            "البولدوج (⁦Bulldog⁩)",
+            "البوكسر (⁦Boxer⁩)",
+            "الشيواوا (⁦Chihuahua⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "أي مما يلي صحيح عندما تدافع التماسيح الأمريكية (⁦Alligators⁩) عن منطقتها؟",
+        "correct_answer": "تُصدر زئيراً صاخباً (خواراً) مع إظهار ذيلها ورقبتها",
+        "incorrect_answers": [
+            "تفتح فكّيها مع إصدار صوت طقطقة",
+            "تركض بكل قوتها باتجاه مصدر التهديد",
+            "تضرب ذيلها بالأرض"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "الحيوان آكل اللحوم (⁦Carnivorous⁩) يتغذى على اللحم، فماذا يأكل الحيوان آكل الجوزيات (⁦Nucivorous⁩)‏؟",
+        "correct_answer": "المكسرات (الجوزيات)",
+        "incorrect_answers": [
+            "لا شيء",
+            "الفواكه",
+            "الأعشاب البحرية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من النسور في اللغة الإنجليزية؟",
+        "correct_answer": "⁦Wake⁩",
+        "incorrect_answers": [
+            "⁦Ambush⁩",
+            "⁦Building⁩",
+            "⁦Gaze⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "كانت كلاب لابهوند الفنلندية (⁦Finnish Lapphund⁩) تُستخدم لرعي حيوانات الرنة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

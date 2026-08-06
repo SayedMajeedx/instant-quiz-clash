@@ -1,0 +1,222 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة البرتغالية المقابلة لـ \"البرازيل\"؟",
+        "correct_answer": "⁦Brasil⁩",
+        "incorrect_answers": [
+            "⁦Brazil⁩",
+            "⁦Brasilia⁩",
+            "⁦Brasíl⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كليتا \"أول سولز\" (⁦All Souls⁩) و\"ميرتون\" (⁦Merton⁩) هما كليتان تتبعان لأي جامعة؟",
+        "correct_answer": "أكسفورد",
+        "incorrect_answers": [
+            "كامبريدج",
+            "مانشستر",
+            "ليدز"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ولد أدولف هتلر في أستراليا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تم ابتكار الوجه السعيد (⁦The Happy Face⁩) بواسطة الرسام التجاري هارفي بال.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اسم الشركة في لعبة ليزال كومباني (⁦Lethal Company⁩)‏؟",
+        "correct_answer": "الشركة (⁦The Company⁩)",
+        "incorrect_answers": [
+            "شركة خردة الكواكب (⁦Planet Scrap Co⁩.)",
+            "ليزال للروبوتات (⁦Lethal Robotics⁩)",
+            "شركة غورديان للشحن (⁦Gordian Shipping Co⁩.)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي بلد نشأت قصة روبن هود؟",
+        "correct_answer": "إنجلترا",
+        "incorrect_answers": [
+            "فرنسا",
+            "البرتغال",
+            "إسكتلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي دولة تولى فيها رئاسة الوزراء شخصيات بالأسماء التالية: إيدن، وميجور، وبيل، ولو، وبراون، وهيث؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "أستراليا",
+            "نيوزيلندا",
+            "كندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم يبلغ ارتفاع برج خليفة؟",
+        "correct_answer": "2,722 قدم",
+        "incorrect_answers": [
+            "2,717 قدم",
+            "2,546 قدم",
+            "3,024 قدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي يوم تم إطلاق خدمة استضافة الملفات \"جوجل درايف\" (⁦Google Drive⁩)‏؟",
+        "correct_answer": "24 أبريل 2012",
+        "incorrect_answers": [
+            "12 يناير 2014",
+            "14 نوفمبر 2008",
+            "20 يناير 2010"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "بين نصب واشنطن والبركة العاكسة (⁦Reflecting Pool⁩) مباشرة، يوجد نصب تذكاري لأي حرب؟",
+        "correct_answer": "الحرب العالمية الثانية",
+        "incorrect_answers": [
+            "حرب فيتنام",
+            "الحرب الأهلية الأمريكية",
+            "حرب الاستقلال الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من التوابل الأساسية التالية يُعرف أيضاً بالفجل الياباني الحار؟",
+        "correct_answer": "الواسابي",
+        "incorrect_answers": [
+            "مينتسويو",
+            "كاراشي",
+            "بونزو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي القناة التي تربط بين البحر الأبيض المتوسط والبحر الأحمر؟",
+        "correct_answer": "قناة السويس",
+        "incorrect_answers": [
+            "قناة بنما",
+            "قناة سيناء",
+            "قناة قره قوم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الرئيس التنفيذي لشركة التكنولوجيا آبل الذي خلف ستيف جوبز يُدعى تيم آبل.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي رشاش أمريكي الصنع كان معروفاً بشكل غير رسمي بين الجنود الأمريكيين الذين استخدموه باسم \"مسدس الشحم\" (⁦Grease Gun⁩)‏؟",
+        "correct_answer": "⁦M3⁩",
+        "incorrect_answers": [
+            "كولت 9 ملم",
+            "تومبسون",
+            "ماك-10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "بأي منتج غذائي تشتهر الشركة الأمريكية \"كامبلز\" (⁦Campbell's⁩) بشكل أكبر؟",
+        "correct_answer": "الحساء المعلب",
+        "incorrect_answers": [
+            "الشوكولاتة",
+            "المشروبات الغازية",
+            "السجق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "التكملة الأقل شهرة للمثل القائل \"الفضول قتل القط...\" هي:",
+        "correct_answer": "\"...لكن الرضا أعاده للحياة.\"",
+        "incorrect_answers": [
+            "\"...والفأر الصامت بقي مكانه.\"",
+            "\"...مما علمه ألا يفعل ذلك مجدداً.\"",
+            "\"...لكن الموت بالمعرفة أفضل من الجهل.\""
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم من الوقت استغرق منظفو النوافذ الآليون في مركز التجارة العالمي الأصلي لتنظيف واجهة المبنى الخارجية بأكملها؟",
+        "correct_answer": "شهر واحد",
+        "incorrect_answers": [
+            "3 أسابيع",
+            "أسبوع واحد",
+            "شهران"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو المشروب الكحولي الذي يُصنع بشكل أساسي من عرعر الشرب (ثمار الجونيبير)‏؟",
+        "correct_answer": "الجين",
+        "incorrect_answers": [
+            "الفودكا",
+            "الرم",
+            "التيكيلا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "رقم خط الطوارئ الساخن في الولايات المتحدة هو 911 بسبب هجمات 11 سبتمبر الإرهابية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    }
+]

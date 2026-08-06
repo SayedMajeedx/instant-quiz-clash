@@ -1,0 +1,226 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يرمز اسم القناة التلفزيونية البريطانية التجارية ⁦ITV⁩ إلى \"⁦International Television⁩\" (التلفزيون الدولي).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم صياغة مصطلح \"عالم\" (⁦scientist⁩) لأول مرة؟",
+        "correct_answer": "1833",
+        "incorrect_answers": [
+            "1933",
+            "1942",
+            "1796"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأبراج الفلكية يمثله الميزان؟",
+        "correct_answer": "برج الميزان",
+        "incorrect_answers": [
+            "برج الحمل",
+            "برج الجدي",
+            "برج القوس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "هل الكلب من الثدييات؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "على لوحة الهدف في لعبة السهام المريشة (الدارتس)، ما الرقم المقابل مباشرة للرقم 1‏؟",
+        "correct_answer": "19",
+        "incorrect_answers": [
+            "20",
+            "12",
+            "15"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد النجوم الموجودة على علم الاتحاد الأوروبي؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "10",
+            "14",
+            "16"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من المناسبات التالية لا يُحتفل بها عادة في شهر ديسمبر؟",
+        "correct_answer": "عيد الشكر",
+        "incorrect_answers": [
+            "عيد الميلاد",
+            "عيد الكوانزا",
+            "عيد الأنوار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي شهر يُحتفل بشهر تاريخ السود في الولايات المتحدة الأمريكية؟",
+        "correct_answer": "فبراير",
+        "incorrect_answers": [
+            "مايو",
+            "نوفمبر",
+            "أغسطس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو صاحب مقولة \"ما لا يقتلك يجعلك أقوى\"؟",
+        "correct_answer": "فريدريش نيتشه",
+        "incorrect_answers": [
+            "جي جوردون ليدي",
+            "كيلي كلاركسون",
+            "كريستوفر هيتشنز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي كوكب لم يُسمَّ تيمناً بإله يوناني أو روماني؟",
+        "correct_answer": "الأرض",
+        "incorrect_answers": [
+            "المشتري",
+            "المريخ",
+            "عطارد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي دولة تضم أكبر عدد من مصانع جعة التراپيست؟",
+        "correct_answer": "بلجيكا",
+        "incorrect_answers": [
+            "هولندا",
+            "فرنسا",
+            "الولايات المتحدة الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من أين تأتي مياه زجاجات مياه \"بولاند سبرينغ\"؟",
+        "correct_answer": "مين، الولايات المتحدة",
+        "incorrect_answers": [
+            "هسن، ألمانيا",
+            "مازوفيا، بولندا",
+            "بافاريا، بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "وفقاً لمراكز السيطرة على الأمراض والوقاية منها (⁦CDC⁩) في الولايات المتحدة، يموت شخص واحد من بين كل كم أمريكي سنوياً بسبب التدخين؟",
+        "correct_answer": "خمسة",
+        "incorrect_answers": [
+            "عشرين",
+            "عشرة",
+            "مئة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في لغة مورس، ما هو الحرف الذي يرمز إليه بثلاث نقاط؟",
+        "correct_answer": "⁦S⁩",
+        "incorrect_answers": [
+            "⁦O⁩",
+            "⁦A⁩",
+            "⁦C⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو مركب ⁦H2O⁩‏؟",
+        "correct_answer": "الماء",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الهيدروجين",
+            "لا شيء مما سبق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "متى تم إصدار لعبة بونغ (⁦Pong⁩)‏؟",
+        "correct_answer": "29 نوفمبر 1972",
+        "incorrect_answers": [
+            "29 مارس 2017",
+            "29 نوفمبر 1970",
+            "14 ديسمبر 1974"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يطلق البحارة على الجانب الأيسر من القارب أو السفينة؟",
+        "correct_answer": "بورت (⁦Port⁩)",
+        "incorrect_answers": [
+            "ستاربورد (⁦Starboard⁩)",
+            "المقدمة (⁦Bow⁩)",
+            "المؤخرة (⁦Stern⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي ليست من خرافات إيسوب؟",
+        "correct_answer": "الثعلب وكلب الصيد (⁦The Fox and the Hound⁩)",
+        "incorrect_answers": [
+            "الثعلب والعنب (⁦The Fox and the Grapes⁩)",
+            "السلحفاة والأرنب (⁦The Tortoise and the Hare⁩)",
+            "الضفدع والثور (⁦The Frog and the Ox⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو أول رئيس للمكسيك؟",
+        "correct_answer": "غوادالوبي فيكتوريا",
+        "incorrect_answers": [
+            "بينيتو خواريز",
+            "ميغيل هيدالغو إي كوستيا",
+            "فيسنتي غيريرو"
+        ]
+    }
+]

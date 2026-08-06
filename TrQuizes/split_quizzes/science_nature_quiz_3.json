@@ -1,0 +1,240 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الماء منزوع الأيونات هو ماء تمت إزالة أي مما يلي منه؟",
+        "correct_answer": "الحديد",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الهيدروجين",
+            "الذرات غير المشحونة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر الأول في الجدول الدوري؟",
+        "correct_answer": "الهيدروجين",
+        "incorrect_answers": [
+            "الهيليوم",
+            "الأكسجين",
+            "الليثيوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "من صاغ نظرية \"الانفجار العظيم\" لأول مرة كان كاهناً ينتمي لأي طائفة دينية؟",
+        "correct_answer": "الكاثوليكية",
+        "incorrect_answers": [
+            "المسيحية العامة",
+            "اليهودية",
+            "الإسلامية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما مقدار الإشعاع الذي تصدره موزة واحدة؟",
+        "correct_answer": "⁦0.1⁩ ميكروسيفيرت",
+        "incorrect_answers": [
+            "⁦0.3⁩ ميكروسيفيرت",
+            "⁦0.5⁩ ميكروسيفيرت",
+            "⁦0.7⁩ ميكروسيفيرت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي قمر اصطناعي من سلسلة لاندسات (⁦Landsat⁩) لديه أطول فترة تشغيلية حتى الآن؟",
+        "correct_answer": "لاندسات 5",
+        "incorrect_answers": [
+            "لاندسات 8",
+            "لاندسات 7",
+            "لاندسات 6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يسمى الغلاف الغازي للمذنب (الذي يشكّل الذيل)‏؟",
+        "correct_answer": "الذؤابة (⁦Coma⁩)",
+        "incorrect_answers": [
+            "المجرى الخلفي (⁦The wake⁩)",
+            "الارتداد الموجي (⁦The backwash⁩)",
+            "الطبقة المذابة (⁦The ablative⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "الديوتيريوم هو نظير لأي عنصر؟",
+        "correct_answer": "الهيدروجين",
+        "incorrect_answers": [
+            "النيتروجين",
+            "الهيليوم",
+            "النيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تتكون الألياف العضلية من حزم من العضيات الطويلة والصغيرة تسمى ماذا؟",
+        "correct_answer": "اللييفات العضلية (⁦Myofibrils⁩)",
+        "incorrect_answers": [
+            "غلاف العضلة (⁦Epimysium⁩)",
+            "الخيوط العضلية (⁦Myofilaments⁩)",
+            "عضلة القلب (⁦Myocardium⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للوقت؟",
+        "correct_answer": "الثانية",
+        "incorrect_answers": [
+            "الدقيقة",
+            "الساعة",
+            "اليوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي مرحلة النمو التي تقضي فيها معظم الخلايا حقيقية النواة غالبية دورة حياتها؟",
+        "correct_answer": "الطور البيني (⁦Interphase⁩)",
+        "incorrect_answers": [
+            "الطور التمهيدي (⁦Prophase⁩)",
+            "الطور الساكن (⁦Stasis⁩)",
+            "الطور النهائي (⁦Telophase⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من هو مكتشف الأشعة السينية (أشعة إكس)‏؟",
+        "correct_answer": "فيلهلم كونراد رونتغن (⁦Wilhelm Conrad Röntgen⁩)",
+        "incorrect_answers": [
+            "توماس ألفا إديسون",
+            "جيمس واط",
+            "ألبرت أينشتاين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم تبلغ مدة السنة الواحدة تقريباً على كوكب أورانوس؟",
+        "correct_answer": "84 سنة أرضية",
+        "incorrect_answers": [
+            "47 سنة أرضية",
+            "62 سنة أرضية",
+            "109 سنة أرضية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي صيغة كيميائية للأمونيا (النشادر)‏؟",
+        "correct_answer": "⁦NH3⁩",
+        "incorrect_answers": [
+            "⁦CO2⁩",
+            "⁦NO3⁩",
+            "⁦CH4⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أقوى سم معروف على الإطلاق؟",
+        "correct_answer": "سم البوتولينوم (⁦Botulinum toxin⁩)",
+        "incorrect_answers": [
+            "الريسين",
+            "السيانيد",
+            "الأسبستوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو نوع من منعكسات التمدد/منعكسات الوتر العميق؟",
+        "correct_answer": "منعكس نفضة الكاحل (⁦Ankle jerk reflex⁩)",
+        "incorrect_answers": [
+            "منعكس القيء (⁦Gag reflex⁩)",
+            "المنعكس الحدقي الضوئي (⁦Pupillary light reflex⁩)",
+            "منعكس الحك (⁦Scratch reflex⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ينطبق تأثير دوبلر على الضوء.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم تبلغ نسبة الماء تقريباً من مساحة سطح الأرض؟",
+        "correct_answer": "70%",
+        "incorrect_answers": [
+            "30%",
+            "50%",
+            "90%"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو البوليمر المستخدم في صناعة الأقراص المدمجة (⁦CDs⁩)، ونظارات السلامة، ودروع مكافحة الشغب؟",
+        "correct_answer": "البولي كربونيت (⁦Polycarbonate⁩)",
+        "incorrect_answers": [
+            "المطاط",
+            "النايلون",
+            "الباكليت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم يبلغ عمر كوكب الأرض تقريباً؟",
+        "correct_answer": "⁦4.5⁩ مليار سنة",
+        "incorrect_answers": [
+            "⁦3.5⁩ مليار سنة",
+            "⁦2.5⁩ مليار سنة",
+            "⁦5.5⁩ مليار سنة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الدواء الذي كان يُستخدم سابقاً بشكل شائع كسم للفئران؟",
+        "correct_answer": "كومادين",
+        "incorrect_answers": [
+            "أسبرين",
+            "إليكويس",
+            "تايلينول"
+        ]
+    }
+]

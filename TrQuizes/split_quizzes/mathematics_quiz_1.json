@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "التكامل هو عكس أي عملية رياضية؟",
+        "correct_answer": "الاشتقاق",
+        "incorrect_answers": [
+            "القسمة",
+            "الانحراف المعياري",
+            "الضرب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هي مساحة دائرة قطرها 20 بوصة إذا كانت قيمة باي (⁦π⁩) تساوي ⁦3.1415⁩‏؟",
+        "correct_answer": "⁦314.15⁩ بوصة",
+        "incorrect_answers": [
+            "⁦380.1215⁩ بوصة",
+            "⁦3141.5⁩ بوصة",
+            "⁦1256.6⁩ بوصة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هي مشتقة ⁦sin⁩(⁦x⁩)‏؟",
+        "correct_answer": "⁦cos⁩(⁦x⁩)",
+        "incorrect_answers": [
+            "⁦csc⁩(⁦x⁩)",
+            "-⁦cos⁩(⁦x⁩)",
+            "-⁦sin⁩(⁦x⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "من هو عالم الرياضيات اليوناني الذي جرى في شوارع سرقوسة عارياً وهو يصرخ \"وجدتها\" بعد اكتشافه لمبدأ الإزاحة؟",
+        "correct_answer": "أرخميدس",
+        "incorrect_answers": [
+            "إقليدس",
+            "هوميروس",
+            "إراتوستينس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "هل معادلة تكافؤ المادة والطاقة لأينشتاين هي ⁦E⁩ = ⁦MC3⁩‏؟",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "كم ضلعاً للشكل السباعي؟",
+        "correct_answer": "7",
+        "incorrect_answers": [
+            "5",
+            "4",
+            "9"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "في الأرقام الرومانية، ماذا يعادل الرمز ⁦XL⁩‏؟",
+        "correct_answer": "40",
+        "incorrect_answers": [
+            "60",
+            "15",
+            "90"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "ما هو المقابل الست عشري (⁦Hexadecimal⁩) للعدد العشري 31‏؟",
+        "correct_answer": "⁦1F⁩",
+        "incorrect_answers": [
+            "⁦3D⁩",
+            "⁦2E⁩",
+            "⁦1B⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو رمز الإزاحة؟",
+        "correct_answer": "Δ⁦r⁩",
+        "incorrect_answers": [
+            "⁦dr⁩",
+            "⁦Dp⁩",
+            "⁦r⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "المثلث متساوي الأضلاع تكون دائماً جميع زواياه قياسها 60 درجة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "العدد الثنائي \"101001101\" يعادل العدد العشري \"334\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "المثلث مختلف الأضلاع (⁦Scalene⁩) يحتوي على ضلعين متساويين في الطول.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو أقل عدد من الأضلاع يمكن أن يتكون منه المضلع?؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "1",
+            "2",
+            "7"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هي معادلة مساحة الكرة؟",
+        "correct_answer": "(4/3)⁦π⁩⁦r⁩^3",
+        "incorrect_answers": [
+            "4⁦π⁩⁦r⁩^2",
+            "(1/3)⁦π⁩⁦hr⁩^2",
+            "⁦π⁩⁦r⁩^4"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "إذا تمكنت من طي ورقة من المنتصف 50 مرة، فسيصل سمكها إلى ثلاثة أرباع المسافة بين الأرض والشمس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "مضروب الصفر (⁦Zero factorial⁩) يساوي صفراً.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "كم عدد الأجزاء (الكتب) في كتاب \"العناصر\" لإقليدس في الهندسة؟",
+        "correct_answer": "13",
+        "incorrect_answers": [
+            "8",
+            "10",
+            "17"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "ما هي القيمة التقريبية للثابت الرياضي ⁦e⁩‏؟",
+        "correct_answer": "⁦2.72⁩",
+        "incorrect_answers": [
+            "⁦3.14⁩",
+            "⁦1.62⁩",
+            "⁦1.41⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "مجموعة جميع الأعداد الجبرية هي مجموعة قابلة للعد.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "بأي حرف يوناني يُرمز عادةً للثابت الرياضي المعروف باسم \"النسبة الذهبية\"؟",
+        "correct_answer": "Φ (فاي)",
+        "incorrect_answers": [
+            "⁦π⁩ (باي)",
+            "Ψ (بساي)",
+            "Τ (تاو)"
+        ]
+    }
+]

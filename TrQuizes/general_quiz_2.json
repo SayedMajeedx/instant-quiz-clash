@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة التي تمثل حرف '⁦T⁩' في أبجدية الناتو الصوتية؟",
+        "correct_answer": "تانغو",
+        "incorrect_answers": [
+            "تارجت",
+            "تاكسي",
+            "تركي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من المصطلحات التشريحية التالية يشير إلى الطرف الذي يحتوي على الذيل لدى الكائن الحي؟",
+        "correct_answer": "ذيلي (⁦Caudal⁩)",
+        "incorrect_answers": [
+            "بطني (⁦Ventral⁩)",
+            "قريب (⁦Proximal⁩)",
+            "إكليلي (⁦Coronal⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الشعار الذي استخدمته شركة الوجبات السريعة ماكدونالدز قبل شعارها الحالي \"أنا أحبه\"؟",
+        "correct_answer": "نحب أن نرى ابتسامتك",
+        "incorrect_answers": [
+            "لماذا تدفع أكثر؟!",
+            "احصل عليها بطريقتك",
+            "إسعاد الناس من خلال الطعام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في التقويم الميلادي القياسي، كم شهراً يبدأ اسمه بالحرف الإنجليزي '⁦J⁩'؟",
+        "correct_answer": "ثلاثة",
+        "incorrect_answers": [
+            "أربعة",
+            "خمسة",
+            "اثنان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من المشروبات الغازية التالية تم طرحه في الأسواق أولاً؟",
+        "correct_answer": "دكتور بيبر",
+        "incorrect_answers": [
+            "كوكاكولا",
+            "سبرايت",
+            "ماونتن ديو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تُنتج نوتيلا بواسطة شركة فيريرو الألمانية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الأوراق في ورق اللعب (الكوتشينة) القياسي؟",
+        "correct_answer": "52",
+        "incorrect_answers": [
+            "32",
+            "40",
+            "64"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "توفي الفيلسوف فرانسيس بيكون بسبب حالة التهاب رئوي حادة أثناء محاولته حفظ اللحم عن طريق حشو دجاجة بالثلج.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الميتوكوندريا هي مركز توليد الطاقة في الخلية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي بلد أوروبي تأتي جبنة جودا الشهيرة؟",
+        "correct_answer": "هولندا",
+        "incorrect_answers": [
+            "بلجيكا",
+            "ألمانيا",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هي أصغر شخصية حصلت على جائزة نوبل في التاريخ؟",
+        "correct_answer": "ملالا يوسفزاي",
+        "incorrect_answers": [
+            "لورنس براغ",
+            "فيرنر هايزنبرغ",
+            "ياسر عرفات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا ترمز الحروف الثلاثة لسلسلة مطاعم \"⁦KFC⁩\"؟",
+        "correct_answer": "كنتاكي فرايد تشيكن",
+        "incorrect_answers": [
+            "كنتاكي فريش تشيز",
+            "كيبلد فريكي كاو",
+            "كيوي فود كت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو المهندس المعماري الذي صمم برج التجارة العالمي الجديد (⁦One World Trade Center⁩) في مانهاتن بنيويورك؟",
+        "correct_answer": "ديفيد تشايلدز",
+        "incorrect_answers": [
+            "بياركي إنجلز",
+            "مايكل أراد",
+            "فوميهيكو ماكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هو الموسيقي الذي تعاون مع المنتج الأمريكي بورتر روبنسون لإصدار أغنية \"شيلتر\" عام 2016‏؟",
+        "correct_answer": "ماديون",
+        "incorrect_answers": [
+            "مات زو",
+            "ديد ماوس",
+            "زيد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من المجالات التالية يُعرف أحياناً باسم \"العلم الكئيب\"؟",
+        "correct_answer": "علم الاقتصاد",
+        "incorrect_answers": [
+            "الفلسفة",
+            "السياسة",
+            "الفيزياء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الرسمية في مدينة برشلونة بجانب اللغة الإسبانية؟",
+        "correct_answer": "الكتالونية",
+        "incorrect_answers": [
+            "الغاليسية",
+            "الفرنسية",
+            "الباسكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام وُلد والت ديزني؟",
+        "correct_answer": "1901",
+        "incorrect_answers": [
+            "1902",
+            "1903",
+            "1900"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في لعبة هالف لايف (⁦Half-Life⁩)، ما هو اسم المخلوق الفضائي الذي يلتصق بالرؤوس؟",
+        "correct_answer": "هيدكراب",
+        "incorrect_answers": [
+            "بولسكويد",
+            "فورتيغاونت",
+            "فيس هجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيهم الأطول بارتفاع يبلغ 1,483 قدماً (⁦451.9⁩ متراً)‏؟",
+        "correct_answer": "أبراج بتروناس التوأم، ماليزيا",
+        "incorrect_answers": [
+            "برج زيفينج، الصين",
+            "فندق وبرج ترامب الدولي، الولايات المتحدة",
+            "برج الحمراء، الكويت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يُقصد بمصطلح \"المجمع التجاري الميت\" (⁦Dead Mall⁩)‏؟",
+        "correct_answer": "مجمع تجاري يعاني من معدلات خلو مرتفعة أو حركة إقبال منخفضة جداً من المستهلكين",
+        "incorrect_answers": [
+            "مجمع تجاري لا يحتوي على أي متاجر",
+            "مجمع تجاري صدر قرار بإغلاقه وإدانته",
+            "مجمع تجاري بعد ساعات العمل الرسمية"
+        ]
+    }
+]

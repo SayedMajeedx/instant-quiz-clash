@@ -1,0 +1,230 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مترو أنفاق نيويورك هو أقدم مترو أنفاق تحت الأرض في العالم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في مجموعة أوراق اللعب القياسية، من هو ملك الرمز (النقش) الوحيد الذي يظهر بدون شارب؟",
+        "correct_answer": "القلوب",
+        "incorrect_answers": [
+            "البستوني",
+            "الديناري",
+            "السباتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الوجهة التي كانت تقصدها الطائرة المفقودة في الرحلة (⁦MH370⁩)‏؟",
+        "correct_answer": "بكين",
+        "incorrect_answers": [
+            "كوالالمبور",
+            "سنغافورة",
+            "طوكيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي هو اسم نظام ياباني للطب البديل، ويعني حرفياً \"الضغط بالأصابع\"؟",
+        "correct_answer": "شياتسو",
+        "incorrect_answers": [
+            "أوكيو",
+            "ماجيمي",
+            "إيكيغاي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مع أي فرقة كوميدية بريطانية عمل رسام الرسوم المتحركة تيري غيليام؟",
+        "correct_answer": "مونتي بايثون",
+        "incorrect_answers": [
+            "ذا غوديز",
+            "ذا ليغ أوف جينتلمن",
+            "ذا بيني دريدفولس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "سُمّي اللون البرتقالي نسبةً إلى فاكهة البرتقال.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي أغلى توابل العالم من حيث الوزن؟",
+        "correct_answer": "الزعفران",
+        "incorrect_answers": [
+            "القرفة",
+            "الهيل",
+            "الفانيليا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي جبل يضم أعلى قمة جبلية في إفريقيا؟",
+        "correct_answer": "جبل كليمنجارو، تنزانيا",
+        "incorrect_answers": [
+            "جبل كينيا، كينيا",
+            "جبل ستانلي، جمهورية الكونغو الديمقراطية/أوغندا",
+            "جبل بيك، أوغندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "إذا قمت بزراعة بذور نبات \"⁦Quercus robur⁩\" (السنديان القوي)، فما الذي سينمو؟",
+        "correct_answer": "أشجار",
+        "incorrect_answers": [
+            "حبوب",
+            "خضروات",
+            "زهور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما اسم العملة المستخدمة في إثيوبيا؟",
+        "correct_answer": "البير",
+        "incorrect_answers": [
+            "الدرهم",
+            "الدولار الأمريكي",
+            "الراند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مادة \"أكسيد ثنائي الهيدروجين\" هي مادة كيميائية خطيرة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يقل طول المرأة المتوسطة بمقدار 5 بوصات / 13 سنتيمتراً عن طول الرجل المتوسط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "وفقاً للجمعية البريطانية للبيرة والحانات (⁦BBPA⁩)، ما هو الاسم الأكثر شيوعاً للحانات في المملكة المتحدة؟",
+        "correct_answer": "الأسد الأحمر (⁦Red Lion⁩)",
+        "incorrect_answers": [
+            "البلوط الملكي (⁦Royal Oak⁩)",
+            "الأيل الأبيض (⁦White Hart⁩)",
+            "رأس الملك (⁦King's Head⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الجامعات التالية ليست من جامعات رابطة اللبلاب (⁦Ivy League⁩) المرموقة؟",
+        "correct_answer": "ستانفورد",
+        "incorrect_answers": [
+            "جامعة بنسلفانيا",
+            "هارفارد",
+            "برينستون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اسم تلسكوب الفضاء الأكثر شهرة التابع لوكالة ناسا؟",
+        "correct_answer": "تلسكوب هابل الفضائي",
+        "incorrect_answers": [
+            "العين الكبيرة",
+            "نجم الموت",
+            "ميلينيوم فالكون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو أكبر عضو في جسم الإنسان؟",
+        "correct_answer": "الجلد",
+        "incorrect_answers": [
+            "القلب",
+            "الأمعاء الغليظة",
+            "الكبد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كلمة \"⁦Typewriter⁩\" هي أطول كلمة يمكن كتابتها باستخدام الصف الأول فقط من لوحة مفاتيح كويرتي (⁦QWERTY⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى كم عدد من الأشياء تشير كلمة \"درزن\" أو \"دزينة\" عادةً؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "6",
+            "20",
+            "10"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "هل اللغة اللوكسمبورغية هي لغة حقيقية؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إذا كنت تسير بسرعة 80 ميلاً في الساعة، فكم من الوقت ستحتاج لقطع مسافة 80 ميلاً؟",
+        "correct_answer": "60 دقيقة",
+        "incorrect_answers": [
+            "90 دقيقة",
+            "30 دقيقة",
+            "50 دقيقة"
+        ]
+    }
+]

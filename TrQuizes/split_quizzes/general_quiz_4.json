@@ -1,0 +1,228 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الاسم العلمي للأضواء الجنوبية (الشفق القطبي الجنوبي) هو أورورا أوستراليس؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من ألعاب الورق التالية تعتمد على الأرقام والعمليات الحسابية البسيطة؟",
+        "correct_answer": "أونو",
+        "incorrect_answers": [
+            "جو فيش",
+            "تويستر",
+            "منشكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي هي عائلة موجودة في لعبة \"ذا سيمز\"؟",
+        "correct_answer": "عائلة غوث",
+        "incorrect_answers": [
+            "العائلة",
+            "عائلة سيموليون",
+            "عائلة براود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في اللغة الإنجليزية، ما هو اسم الرمز \"&\"؟",
+        "correct_answer": "أمبرساند",
+        "incorrect_answers": [
+            "إيت سلاش",
+            "علامة و",
+            "أوبيلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الذي طُرح به المشروب الغازي بيبسي في الأصل؟",
+        "correct_answer": "شراب براد",
+        "incorrect_answers": [
+            "ببسين بوب",
+            "كارولينا كولا",
+            "شراب الببسين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي التقنية التي سُميت على اسم حاكم الدنمارك والنرويج في القرن العاشر؟",
+        "correct_answer": "بلوتوث",
+        "incorrect_answers": [
+            "واي فاي",
+            "جي بي إس",
+            "الإنترنت"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كل ثمار الفراولة حمراء اللون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تأسست مجموعة ليغو في عام 1932.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الماء النقي يوصل الكهرباء بشكل فعال.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في عام 2010، عقدت منصة تويتر ومكتبة الكونغرس الأمريكي شراكة لأرشفة كل تغريدة يكتبها المواطنون الأمريكيون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الذي يطلق على الطعام الهندي المطبوخ على الفحم في فرن طيني؟",
+        "correct_answer": "تندوري",
+        "incorrect_answers": [
+            "برياني",
+            "باني بوري",
+            "تيكي ماسالا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في أي عام ولدت الملكة إليزابيث الثانية؟",
+        "correct_answer": "1926",
+        "incorrect_answers": [
+            "1923",
+            "1929",
+            "1930"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي حركة الـ \"دابينغ\" (⁦Dabbing⁩)‏؟",
+        "correct_answer": "رقصة",
+        "incorrect_answers": [
+            "إجراء طبي",
+            "رياضة",
+            "لغة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الحيوان الوطني لاسكتلندا هو أحادي القرن (اليونيكورن).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يسمي البحارة مقدمة القارب؟",
+        "correct_answer": "المقدمة",
+        "incorrect_answers": [
+            "المؤخرة",
+            "الجانب الأيسر",
+            "الجانب الأيمن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الأخير لـ \"بابا جون\" الشهير؟",
+        "correct_answer": "شنيتر",
+        "incorrect_answers": [
+            "تشاودر",
+            "ويليامز",
+            "أندرسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو الممثل الكوميدي الذي أدى صوت شخصية \"الحمار\" في فيلم \"شريك\"؟",
+        "correct_answer": "إيدي ميرفي",
+        "incorrect_answers": [
+            "كريس روك",
+            "ريتشارد بريور",
+            "بيرني ماك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما معنى الكلمة السويدية \"غرونكا\" (⁦Grunka⁩) باللغة الإنجليزية؟",
+        "correct_answer": "شيء",
+        "incorrect_answers": [
+            "أشخاص",
+            "مكان",
+            "أناناس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يُسمح لك ببيع روحك على موقع إيباي (⁦eBay⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة التي استحوذت على شركة تصنيع الكمبيوتر \"كومباك\" (⁦Compaq⁩) مقابل 25 مليار دولار في عام 2002‏؟",
+        "correct_answer": "هيوليت-باكارد (⁦HP⁩)",
+        "incorrect_answers": [
+            "توشيبا",
+            "أسوس",
+            "ديل"
+        ]
+    }
+]

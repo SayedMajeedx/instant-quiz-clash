@@ -1,0 +1,222 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر مدينة في المغرب؟",
+        "correct_answer": "الدار البيضاء",
+        "incorrect_answers": [
+            "الرباط",
+            "فاس",
+            "سلا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة جزر برمودا؟",
+        "correct_answer": "هاميلتون",
+        "incorrect_answers": [
+            "سانتو دومينغو",
+            "سان خوان",
+            "هافانا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو الحرف الخامس عشر في الأبجدية اليونانية؟",
+        "correct_answer": "أوميكرون (Ο)",
+        "incorrect_answers": [
+            "سيغما (Σ)",
+            "باي (Π)",
+            "نيو (Ν)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة هارلم؟",
+        "correct_answer": "هولندا",
+        "incorrect_answers": [
+            "ألمانيا",
+            "الولايات المتحدة",
+            "سويسرا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ألاسكا هي أكبر ولاية في الولايات المتحدة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو الشيء المميز في بحيرة تيتيكاكا؟",
+        "correct_answer": "أعلى بحيرة قابلة للملاحة في العالم",
+        "incorrect_answers": [
+            "أطول بحيرة في العالم",
+            "أعمق بحيرة في العالم",
+            "تظل متجمدة طوال العام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مع كم دولة تشترك الولايات المتحدة في حدود برية؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "فيتنام هي الدولة الوحيدة في العالم التي يبدأ اسمها بحرف الـ ⁦V⁩.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع مدينة ريو دي جانيرو؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "بيرو",
+            "تشيلي",
+            "فنزويلا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هو اللقب المميز لولاية ديلاوير الأمريكية؟",
+        "correct_answer": "الولاية الأولى",
+        "incorrect_answers": [
+            "الولاية الخمسون",
+            "الولاية الثانية",
+            "الولاية السادسة عشرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة البتراء الأثرية؟",
+        "correct_answer": "الأردن",
+        "incorrect_answers": [
+            "مصر",
+            "إسرائيل",
+            "إيطاليا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أستراليا أكبر من غرينلاند في المساحة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي الكلمة الفنلندية لاسم \"فنلندا\"؟",
+        "correct_answer": "سومي",
+        "incorrect_answers": [
+            "إيستي",
+            "ماجيارورسزاغ",
+            "سويري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي ولاية أمريكية تقع مدينة فرانكنموث الملقبة بـ \"بافاريا الصغيرة\"؟",
+        "correct_answer": "ميشيغان",
+        "incorrect_answers": [
+            "بنسلفانيا",
+            "كنتاكي",
+            "فرجينيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يحتوي علم جنوب أفريقيا على 7 ألوان.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي بلد تقع بلدات بروجيليت وأرلون وأث؟",
+        "correct_answer": "بلجيكا",
+        "incorrect_answers": [
+            "أندورا",
+            "فرنسا",
+            "لوكسمبورغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي نهر تم بناء سد عليه لإنشاء بحيرة غاتون وقناة بنما؟",
+        "correct_answer": "نهر تشاغريس",
+        "incorrect_answers": [
+            "نهر تويرا",
+            "نهر تشوكوناكي",
+            "نهر تشيبو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "على حدود أي دولتين تقع جبال البرانس؟",
+        "correct_answer": "فرنسا وإسبانيا",
+        "incorrect_answers": [
+            "إيطاليا وسويسرا",
+            "النرويج والسويد",
+            "روسيا وأوكرانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "بريدجتاون هي عاصمة أي دولة جزيرية في البحر الكاريبي؟",
+        "correct_answer": "باربادوس",
+        "incorrect_answers": [
+            "كوبا",
+            "جامايكا",
+            "دومينيكا"
+        ]
+    }
+]

@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في المتوسط، كم يستهلك الأمريكيون من أي من المواد التالية بمعدل 100 رطل (حوالي 45 كجم) في الثانية الواحدة؟",
+        "correct_answer": "الشوكولاتة",
+        "incorrect_answers": [
+            "البطاطس",
+            "الدونات",
+            "الكوكايين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "\"سانتا كلوز\" (⁦Santa Claus⁩) هو نوع من أنواع الشمام.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أين يقع المقر الرئيسي لمجموعة \"إنديتكس\" (⁦Inditex⁩)، أكبر مجموعة أزياء في العالم، في مقاطعة لا كورونيا الإسبانية؟",
+        "correct_answer": "أرتيخو (⁦Arteijo⁩)",
+        "incorrect_answers": [
+            "سانخينخو (⁦Sanjenjo⁩)",
+            "موخيا (⁦Muxía⁩)",
+            "أوردينس (⁦Órdenes⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي ثاني أكبر لغة محلية يتحدث بها السكان في إسبانيا من حيث عدد المتحدثين؟",
+        "correct_answer": "الكتالونية",
+        "incorrect_answers": [
+            "البرتغالية",
+            "الإسبانية",
+            "الفرنسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي قطعة الملابس التي يرتديها الرجل الإسكتلندي عادةً في حفلات الزفاف؟",
+        "correct_answer": "التنورة الإسكتلندية (⁦Kilt⁩)",
+        "incorrect_answers": [
+            "تنورة عادية",
+            "فستان",
+            "أردية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما المعروض في متحف \"مدام توسو\" في لندن؟",
+        "correct_answer": "تماثيل الشمع",
+        "incorrect_answers": [
+            "ملابس المصممين",
+            "بكرات أفلام لم تُعرض بعد",
+            "سيارات كلاسيكية قديمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي نوع من الحيوانات كان \"هارامبي\"، الذي تم إطلاق النار عليه بعد سقوط طفل في حظيرته في حديقة حيوان سينسيناتي؟",
+        "correct_answer": "غوريلا",
+        "incorrect_answers": [
+            "نمر",
+            "باندا",
+            "تمساح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الألمانية التي تعني \"ملعقة\"؟",
+        "correct_answer": "لوفل (⁦Löffel⁩)",
+        "incorrect_answers": [
+            "غابل (⁦Gabel⁩)",
+            "ميسر (⁦Messer⁩)",
+            "إسشتيبشن (⁦Essstäbchen⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من لغات أي دولة تنحدر الكلمتان \"بنغالو\" (منزل من طابق واحد) و\"شامبو\"؟",
+        "correct_answer": "الهند",
+        "incorrect_answers": [
+            "بابوا غينيا الجديدة",
+            "إثيوبيا",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي العملة الرسمية لبولندا؟",
+        "correct_answer": "الزلوتي",
+        "incorrect_answers": [
+            "الروبل",
+            "اليورو",
+            "الكرونة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي دولة تأسست شركة إطارات \"ميشلان\" عام 1889‏؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "إيطاليا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو البرج الفلكي لشخص ولد في عيد الحب (14 فبراير)‏؟",
+        "correct_answer": "الدلو",
+        "incorrect_answers": [
+            "الحوت",
+            "الجدي",
+            "العقرب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو السفر الأول من العهد القديم؟",
+        "correct_answer": "سفر التكوين",
+        "incorrect_answers": [
+            "سفر الخروج",
+            "سفر اللاويين",
+            "سفر العدد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أطلق شركة ماكنتوش أسماء فصائل السنوريات الكبيرة على ستة من أنظمة التشغيل الخاصة بها. فما هو السنور الكبير الذي أطلقت ماكنتوش اسمه على إصدارها لعام 2007‏؟",
+        "correct_answer": "ليوبارد (الفهد)",
+        "incorrect_answers": [
+            "تايجر (النمر)",
+            "بانثر (النمر الأسود)",
+            "بوما"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ظهر مصطلح \"بريد عشوائي\" (⁦Spam⁩) قبل ظهور المنتج الغذائي المعلب الشهير \"سبام\" (⁦Spam⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أين تقع محطة القطار ذات الاسم الطويل جداً \"⁦Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch⁩\"؟",
+        "correct_answer": "ويلز",
+        "incorrect_answers": [
+            "مولدوفا",
+            "جمهورية التشيك",
+            "الدنمارك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "المنظمة البريطانية \"كامرا\" (⁦CAMRA⁩) هي اختصار لـ \"الحملة من أجل البيرة الحقيقية\" (⁦The Campaign for Real Ale⁩).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من مصانع البيرة المملوكة لأمريكيين تصدرت المبيعات في البلاد من حيث الحجم في عام 2015‏؟",
+        "correct_answer": "دي جي يونغلينغ آند سون (⁦D⁩. ⁦G⁩. ⁦Yuengling and Son⁩, ⁦Inc⁩)",
+        "incorrect_answers": [
+            "أنهاوزر بوش (⁦Anheuser Busch⁩)",
+            "شركة بوسطن للبيرة (⁦Boston Beer Company⁩)",
+            "ميلر كورس (⁦Miller Coors⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو شكل اللعبة الشهيرة التي اخترعها البروفيسور المجري إرنو روبيك؟",
+        "correct_answer": "مكعب",
+        "incorrect_answers": [
+            "كرة",
+            "أسطوانة",
+            "هرم"
+        ]
+    }
+]

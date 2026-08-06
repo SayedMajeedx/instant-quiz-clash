@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "إذا زرعت بذور شجرة البلوط الإنجليزي (⁦Quercus robur⁩)، فماذا سينمو؟",
+        "correct_answer": "أشجار",
+        "incorrect_answers": [
+            "زهور",
+            "خضروات",
+            "حبوب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من العناصر التالية يساهم في جعل دم الإنسان أحمر اللون؟",
+        "correct_answer": "الحديد",
+        "incorrect_answers": [
+            "النحاس",
+            "الإريديوم",
+            "الكوبالت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد البروتونات في ذرة الأكسجين؟",
+        "correct_answer": "ثمانية",
+        "incorrect_answers": [
+            "أربعة",
+            "اثنان",
+            "ستة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المرض الوراثي الذي ينتج عن وجود كروموسوم ⁦Y⁩ إضافي (⁦XYY⁩)‏؟",
+        "correct_answer": "متلازمة جاكوب",
+        "incorrect_answers": [
+            "متلازمة كلينفلتر",
+            "متلازمة تورنر",
+            "متلازمة داون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من أي قارة تأتي البطاطا الحلوة في الأصل؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "آسيا",
+            "أفريقيا",
+            "أوروبا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الكتلة الذرية للكربون؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "14",
+            "16",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "عند أي درجة حرارة يغلي الماء؟",
+        "correct_answer": "212 درجة فهرنهايت",
+        "incorrect_answers": [
+            "200 درجة فهرنهايت",
+            "181 درجة فهرنهايت",
+            "178 درجة فهرنهايت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من من هؤلاء العلماء أجرى تجربة رقاقة الذهب التي استنتجت أن الذرات تتكون في الغالب من فراغ؟",
+        "correct_answer": "إرنست رذرفورد",
+        "incorrect_answers": [
+            "جوزيف جون طومسون",
+            "أرخميدس",
+            "نيلز بور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "بين أي كوكبين يقع حزام الكويكبات؟",
+        "correct_answer": "المريخ والمشتري",
+        "incorrect_answers": [
+            "المشتري وزحل",
+            "عطارد والزهرة",
+            "الأرض والمريخ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر يحمل العدد الذري 7‏؟",
+        "correct_answer": "النيتروجين",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الهيدروجين",
+            "النيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو المصطلح الطبي لـ \"المضاعفات الجراحية الناتجة عن نسيان الإسفنج الجراحي داخل جسم المريض\"؟",
+        "correct_answer": "ورم قطني (جوسيبوبوما)",
+        "incorrect_answers": [
+            "غونغوزلر",
+            "جينتاكيولار",
+            "ميوباريونيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي عنصر كيميائي كان يُعرف في الأصل باسم \"ألابامين\"؟",
+        "correct_answer": "الأستاتين",
+        "incorrect_answers": [
+            "السيلينيوم",
+            "الأنتيمون",
+            "الموليبدينوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "عندما تم إطلاق صاروخ \"فالكون هيفي\" في رحلته التجريبية، ما هو الجزء الوحيد الذي فشل في العملية؟",
+        "correct_answer": "هبوط القلب المركزي (الصاروخ الأوسط)",
+        "incorrect_answers": [
+            "هبوط المعززات الجانبية",
+            "إطلاق ستارمان",
+            "التشغيل والإقلاع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب في النظام الشمسي؟",
+        "correct_answer": "8",
+        "incorrect_answers": [
+            "9",
+            "11",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الكيميائي للماء (⁦H2O⁩)‏؟",
+        "correct_answer": "أكسيد ثنائي الهيدروجين",
+        "incorrect_answers": [
+            "كلوريد الأمونيوم",
+            "كربونات الصوديوم اللامائية",
+            "ثاني أكسيد المنجنيز"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يُعتبر مصطلح \"⁦Pneumonoultramicroscopicsilicovolcanoconiosis⁩\" مرادفاً لمرض السحار السيليسي (السحار البركاني).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "المحتوى الحراري (الإنثالبي) هو مقياس للطاقة غير المتاحة للشغل خلال عملية ديناميكية حرارية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "دون احتساب الأسنان الاصطناعية، يمتلك الإنسان مجموعتين من الأسنان طوال حياته.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "على مقياس بوفورت لقوة الرياح، ما الاسم الذي يُطلق على الرياح رقم 8‏؟",
+        "correct_answer": "عاصفة شديدة",
+        "incorrect_answers": [
+            "عاصفة",
+            "إعصار",
+            "نسيم"
+        ]
+    }
+]

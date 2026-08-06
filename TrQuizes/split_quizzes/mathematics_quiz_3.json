@@ -1,0 +1,232 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو نوع الزاوية التي يكون قياسها أكبر من 90 درجة؟",
+        "correct_answer": "زاوية منفرجة",
+        "incorrect_answers": [
+            "زاوية حادة",
+            "زاوية قائمة",
+            "زاوية مستقيمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هو أول أس لعدد ميرسين الأولي (⁦Mersenne prime exponent⁩) يتجاوز 1000‏؟",
+        "correct_answer": "1279",
+        "incorrect_answers": [
+            "2203",
+            "1009",
+            "1069"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "ما هي مسألة جائزة الألفية الوحيدة التي تم حلها حتى الآن؟",
+        "correct_answer": "حدسية بوانكاريه",
+        "incorrect_answers": [
+            "مسألة ⁦P⁩ مقابل ⁦NP⁩",
+            "فرضية ريمان",
+            "حدسية فيرما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "أي من هذه الأرقام هو الأقرب إلى العدد الإجمالي للحالات المحتملة لآلة التشفير \"إنيجما\" القياسية للجيش؟",
+        "correct_answer": "⁦1.58 × 10⁩^20",
+        "incorrect_answers": [
+            "⁦1.58 × 10⁩^22",
+            "⁦1.58 × 10⁩^18",
+            "⁦1.58 × 10⁩^24"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "كم مليبار (⁦mbar⁩) يعادل بوصة زئبقية واحدة (⁦inHg⁩)‏؟",
+        "correct_answer": "⁦33.9⁩",
+        "incorrect_answers": [
+            "⁦30.0⁩",
+            "⁦27.4⁩",
+            "⁦10.6⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "بماذا يُعرف عالم الرياضيات الفرنسي إيفاريست غالوا في المقام الأول في أعماله؟",
+        "correct_answer": "نظرية غالوا",
+        "incorrect_answers": [
+            "الكسور المستمرة لغالوا",
+            "طريقة غالوا للمعادلات التفاضلية الجزئية",
+            "التكامل الأبيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "ما هو مشتق التسارع بالنسبة للزمن؟",
+        "correct_answer": "الرعشة (⁦Jerk⁩)",
+        "incorrect_answers": [
+            "الإزاحة (⁦Shift⁩)",
+            "الارتطام (⁦Bump⁩)",
+            "الانزلاق (⁦Slide⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ما هو الاسم الذي يطلق على المضلع ذي التسعة أضلاع؟",
+        "correct_answer": "الشكل التساعي",
+        "incorrect_answers": [
+            "الشكل السداسي",
+            "الشكل الثماني",
+            "الشكل السباعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "عند أي درجة حرارة تتساوى القيمة بالدرجة المئوية (⁦°C⁩) مع القيمة بالفهرنهايت (⁦°F⁩)‏؟",
+        "correct_answer": "-40",
+        "incorrect_answers": [
+            "+40",
+            "0",
+            "+100"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هو الشكل الذي تمثله الدالتان ⁦sin⁩(⁦x⁩) أو ⁦cos⁩(⁦x⁩) على الرسم البياني؟",
+        "correct_answer": "أمواج",
+        "incorrect_answers": [
+            "قطع مكافئ",
+            "خط مستقيم",
+            "خطوط متعرجة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "رياضيات",
+        "question": "لوبيتال (⁦L'Hôpital⁩) هو عالم الرياضيات الذي ابتكر القاعدة الشهيرة التي تحمل اسمه وتستخدم المشتقات لإيجاد الغايات (النهايات) غير المعينة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "إن إثبات مبرهنة الباقي الصينية المستخدمة في نظرية الأعداد لم يتم تطويره بواسطة أول من نشرها، وهو سون تزو.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "هل ناتج ضرب العدد 111,111,111 في نفسه يساوي 12,345,678,987,654,321‏؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "يمكنك إيجاد الجذر التربيعي لعدد سالب باستخدام العدد التخيلي \"⁦i⁩\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "في نظام العد الست عشري، ما الذي يأتي بعد الرقم 9‏؟",
+        "correct_answer": "الحرف ⁦A⁩",
+        "incorrect_answers": [
+            "10",
+            "الرقم 0",
+            "16"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "ماذا يأتي بعد المليون، المليار، والتريليون؟",
+        "correct_answer": "كوادريليون (⁦Quadrillion⁩)",
+        "incorrect_answers": [
+            "سيكستيليون (⁦Sextillion⁩)",
+            "كوينتيليون (⁦Quintillion⁩)",
+            "سيبتيليون (⁦Septillion⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "مسألة \"تربيع الدائرة\" (⁦Squaring the Circle⁩) قابلة للحل.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هي الأرقام الستة الأولى للعدد \"باي\" (⁦Pi⁩)‏؟",
+        "correct_answer": "⁦3.14159⁩",
+        "incorrect_answers": [
+            "⁦3.14169⁩",
+            "⁦3.12423⁩",
+            "⁦3.25812⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضيات",
+        "question": "البادئة المتريّة \"أتو-\" (⁦atto⁩-) تجعل القياس أصغر بمقدار كم مرة مقارنة بالوحدة الأساسية؟",
+        "correct_answer": "جزء من كوينتيليون",
+        "incorrect_answers": [
+            "جزء من مليار",
+            "جزء من كوادريليون",
+            "جزء من سيبتيليون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضيات",
+        "question": "ما هي الأعداد التي تقع في الصف الخامس من مثلث باسكال؟",
+        "correct_answer": "1 4 6 4 1",
+        "incorrect_answers": [
+            "1 3 3 1",
+            "1 5 10 10 5 1",
+            "1 6 15 20 15 6 1"
+        ]
+    }
+]

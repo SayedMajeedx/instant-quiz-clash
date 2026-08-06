@@ -1,0 +1,202 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من موديلات السيارات التالية تم تسويقه وتغيير علامته التجارية (⁦Rebadged⁩) تحت أكبر عدد من الأسماء التجارية الأخرى؟",
+        "correct_answer": "إيسوزو تروبر (⁦Isuzu Trooper⁩)",
+        "incorrect_answers": [
+            "هولدن مونارو (⁦Holden Monaro⁩)",
+            "سوزوكي سويفت (⁦Suzuki Swift⁩)",
+            "شيفروليه كامارو (⁦Chevy Camaro⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما اللقب الذي أُطلق على طائرة رحلة طيران كندا رقم 143 بعد نفاد وقودها وهبوطها الشراعي بسلام في عام 1983‏؟",
+        "correct_answer": "طائرة غيملي الشراعية (⁦Gimli Glider⁩)",
+        "incorrect_answers": [
+            "غيملي مايكرولايت (⁦Gimli Microlight⁩)",
+            "غيملي تشيسر (⁦Gimli Chaser⁩)",
+            "غيملي سوبيرب (⁦Gimli Superb⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من علامات السيارات التالية لا تنتمي إلى شركة جنرال موتورز؟",
+        "correct_answer": "فورد",
+        "incorrect_answers": [
+            "بويك",
+            "كاديلاك",
+            "شيفروليه"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "لم تصنع فيراري مطلقاً محرك ⁦V10⁩ لأي من سياراتها المخصصة للطرقات.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي الشركة اليابانية التي تعد أكبر مصنع للدراجات النارية في العالم؟",
+        "correct_answer": "هوندا",
+        "incorrect_answers": [
+            "ياماها",
+            "سوزوكي",
+            "كاواساكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي مما يلي ليست شركة تصنيع سيارات روسية؟",
+        "correct_answer": "بي واي دي (⁦BYD⁩)",
+        "incorrect_answers": [
+            "سيلانت (⁦Silant⁩)",
+            "دراغون (⁦Dragon⁩)",
+            "جاز (⁦GAZ⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من سيارات رالي الاتحاد الدولي للسيارات (⁦FIA⁩) التالية تم اعتمادها للاستخدام في فئة المجموعة ب (⁦Group B⁩) أولاً؟",
+        "correct_answer": "بورش 911 توربو",
+        "incorrect_answers": [
+            "أودي كواترو ⁦A2⁩",
+            "بي إم دبليو ⁦M1⁩",
+            "لانشيا رالي 037"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي الشركة المصنعة للسيارة المستخدمة في فيلم العودة إلى المستقبل (⁦Back to the Future⁩)‏؟",
+        "correct_answer": "ديلوريان (⁦DeLorean⁩)",
+        "incorrect_answers": [
+            "فورد",
+            "تويوتا",
+            "ديهاتسو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من أنظمة تجنب التصادم التالية يساعد الطائرات على تجنب الاصطدام ببعضها البعض؟",
+        "correct_answer": "⁦TCAS⁩",
+        "incorrect_answers": [
+            "⁦GPWS⁩",
+            "⁦OCAS⁩",
+            "⁦TAWS⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هو الحيوان الذي تتخذه شركة صناعة السيارات الإيطالية لامبورغيني شعاراً لها؟",
+        "correct_answer": "الثور",
+        "incorrect_answers": [
+            "الخفاش",
+            "الحصان",
+            "الأفعى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من المركبات التالية تميزت بوجود سقف زجاجي بالكامل في طرازها الأساسي؟",
+        "correct_answer": "رينو أفانتايم",
+        "incorrect_answers": [
+            "شيفروليه فولت",
+            "مرسيدس-بنز الفئة ⁦A⁩",
+            "هوندا أوديسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة تصنيع السيارات التي تنازلت عن براءة اختراع حزام الأمان بهدف إنقاذ الأرواح؟",
+        "correct_answer": "فولفو",
+        "incorrect_answers": [
+            "فيراري",
+            "فورد",
+            "رينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من سيارات فورد التالية سميت على اسم طائرة مقاتلة من الحرب العالمية الثانية؟",
+        "correct_answer": "موستانج",
+        "incorrect_answers": [
+            "إكسبلورر",
+            "رينجر",
+            "جالاكسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي مما يلي ليس من وظائف زيت المحرك في محركات السيارات؟",
+        "correct_answer": "الاحتراق",
+        "incorrect_answers": [
+            "التزييت",
+            "التبريد",
+            "تقليل التآكل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هو طراز السيارة الرياضية التي أهدتها الحكومة الفرنسية ليوري غاغارين في عام 1965‏؟",
+        "correct_answer": "ماترا دجيت",
+        "incorrect_answers": [
+            "بورش 911",
+            "ألبين ⁦A110⁩",
+            "إيه سي كوبرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من هذه السيارات لا تعتبر واحدة من السيارات الخارقة الخمس الحديثة من فيراري؟",
+        "correct_answer": "تستاروسا",
+        "incorrect_answers": [
+            "إنزو فيراري",
+            "إف 40",
+            "288 جي تي أو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "كانت شركة بوغاتي مصنعاً إيطالياً للسيارات.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    }
+]

@@ -1,0 +1,200 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "في أي عام ظهرت الشاحنة الصغيرة \"شيفروليه لوف\" (⁦LUV⁩) لأول مرة؟",
+        "correct_answer": "1972",
+        "incorrect_answers": [
+            "1982",
+            "1975",
+            "1973"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "طوال تاريخها، صُنعت سيارة شيفروليه كورفيت حصرياً بمحركات ⁦V8⁩ فقط.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من موديلات السيارات التالية تنتجها شركة لامبورغيني؟",
+        "correct_answer": "أفنتادور",
+        "incorrect_answers": [
+            "هوايرا",
+            "918",
+            "شيرون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "إلى أي عائلة قطارات تنتمي الفئات البريطانية ⁦Class 700⁩ و ⁦Class 707⁩ و ⁦Class 717⁩‏؟",
+        "correct_answer": "ديسيرو سيتي (⁦Desiro City⁩)",
+        "incorrect_answers": [
+            "نتوركر (⁦Networker⁩)",
+            "أفنترا (⁦Aventra⁩)",
+            "إلكتروستار (⁦Electrostar⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك ⁦LS3⁩ بالبوصة المكعبة؟",
+        "correct_answer": "376",
+        "incorrect_answers": [
+            "346",
+            "364",
+            "427"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "فرق الطول بين طائرتي بوينغ ⁦777-300ER⁩ وإيرباص ⁦A350-1000⁩ أقرب إلى:",
+        "correct_answer": "⁦0.1⁩ متر",
+        "incorrect_answers": [
+            "1 متر",
+            "10 أمتار",
+            "100 متر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من شركات السيارات التالية سُميت حرب باسمها؟",
+        "correct_answer": "تويوتا",
+        "incorrect_answers": [
+            "هوندا",
+            "فورد",
+            "فولكس واجن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك ⁦LS2⁩ بالبوصة المكعبة؟",
+        "correct_answer": "364",
+        "incorrect_answers": [
+            "346",
+            "376",
+            "402"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "متى تأسست شركة كاديلاك للسيارات؟",
+        "correct_answer": "1902",
+        "incorrect_answers": [
+            "1964",
+            "1898",
+            "1985"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من هذه الشركات لا تصنع الدراجات النارية؟",
+        "correct_answer": "تويوتا",
+        "incorrect_answers": [
+            "هوندا",
+            "كاواساكي",
+            "ياماها"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من الدول التالية حظرت رسمياً استخدام كاميرات لوحة القيادة (داش كام) في السيارات للمدنيين؟",
+        "correct_answer": "النمسا",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "التشيك",
+            "كوريا الجنوبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي جزء في محرك السيارة يستخدم فصوصاً لفتح وإغلاق صمامات السحب والعادم للسماح بدخول خليط الهواء والوقود؟",
+        "correct_answer": "عمود الحدبات",
+        "incorrect_answers": [
+            "المكبس (بستون)",
+            "عمود القيادة",
+            "عمود المرفق (كرنك)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "كانت سيارة ⁦GM EV1⁩ من جنرال موتورز أول سيارة كهربائية إنتاجية مسموح بقيادتها قانونياً في الطرقات العامة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "في عام 2014، تم استدعاء أكثر من 6 ملايين سيارة من جنرال موتورز بسبب أي عيب مصنعي خطير؟",
+        "correct_answer": "خلل في مفتاح التشغيل",
+        "incorrect_answers": [
+            "خلل في دواسة الوقود",
+            "تلف خراطيم الوقود",
+            "خلل في مكابح السيارة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "يوجد طراز لسيارات رولز رويس يُطلق عليه اسم \"سبيكتر\" (⁦Spectre⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم عجلة للدراجة أحادية العجلة؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "4",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "في أي دولة صُنعت سيارة ترابانت 601 (⁦Trabant 601⁩)‏؟",
+        "correct_answer": "ألمانيا الشرقية",
+        "incorrect_answers": [
+            "الاتحاد السوفيتي",
+            "المجر",
+            "فرنسا"
+        ]
+    }
+]

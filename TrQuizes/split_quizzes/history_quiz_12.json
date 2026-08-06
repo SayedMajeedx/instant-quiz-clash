@@ -1,0 +1,224 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "خُيضت حرب المئة عام لأكثر من مئة عام.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي خائن أوروبي سيئ السمعة كان يُعرف بـ \"آخر شخص دخل البرلمان بنوايا صادقة\"؟",
+        "correct_answer": "غاي فوكس",
+        "incorrect_answers": [
+            "روبرت كاتسبي",
+            "فرانسيس تريشام",
+            "إيفرارد ديغبي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام هبط نيل آرمسترونغ وبوز ألدرين على سطح القمر؟",
+        "correct_answer": "1969",
+        "incorrect_answers": [
+            "1965",
+            "1966",
+            "1973"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "خلال أي حملة في الحرب الأهلية الأمريكية حفرت قوات الاتحاد نفقاً تحت قوات الكونفدرالية لتفجير المتفجرات تحتهم؟",
+        "correct_answer": "حصار بيترسبرغ",
+        "incorrect_answers": [
+            "حصار فيكسبورغ",
+            "حملة أنتيتام",
+            "حملة غيتيسبيرغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو المهندس المعماري الذي صمم منزل شلالات المياه (⁦Fallingwater⁩) الواقع في بنسلفانيا؟",
+        "correct_answer": "فرانك لويد رايت",
+        "incorrect_answers": [
+            "أنطوني غاودي",
+            "فرانك جيري",
+            "لو كوربوزييه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أين تأسست أول منظمة معروفة لحقوق المثليات في الولايات المتحدة، والمعروفة باسم 'بنات بيليتيس' (⁦Daughters of Bilitis⁩)‏؟",
+        "correct_answer": "سان فرانسيسكو",
+        "incorrect_answers": [
+            "نيويورك",
+            "شيكاغو",
+            "لوس أنجلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام أُطلق سراح نيلسون مانديلا من السجن؟",
+        "correct_answer": "1990",
+        "incorrect_answers": [
+            "1994",
+            "1992",
+            "1980"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "دخلت شوكة الطعام إلى إيطاليا قبل أي دولة أوروبية أخرى.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ماذا كان الهدف الرئيسي للعملية الألمانية \"الحالة الزرقاء\" (⁦Case Blue⁩) في الأصل خلال الحرب العالمية الثانية؟",
+        "correct_answer": "القوقاز",
+        "incorrect_answers": [
+            "ستالينغراد",
+            "شبه جزيرة القرم",
+            "فارونيش"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في الحرب العالمية الثانية، استخدمت بريطانيا دبابات قابلة للنفخ في الموانئ لتشتيت هتلر بعيداً عن إنزال نورماندي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي من هؤلاء الحكام لم يكن ينتمي إلى سلالة هابسبورغ؟",
+        "correct_answer": "فيليب الخامس",
+        "incorrect_answers": [
+            "تشارلز الخامس",
+            "فيليب الثاني",
+            "فرانز جوزيف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من الذي قاد الثورة الشيوعية في روسيا؟",
+        "correct_answer": "فلاديمير لينين",
+        "incorrect_answers": [
+            "جوزيف ستالين",
+            "فلاديمير بوتين",
+            "ميخائيل غورباتشوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في عام 1900، ما هي الأسماء الأكثر شعبية التي أُطلقت على المواليد الذكور والإناث في الولايات المتحدة؟",
+        "correct_answer": "جون وماري",
+        "incorrect_answers": [
+            "جوزيف وكاثرين",
+            "ويليام وإليزابيث",
+            "جورج وآن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كانت الأبجدية الرومانية الأصلية تفتقر إلى الحروف التالية باستثناء:",
+        "correct_answer": "⁦X⁩",
+        "incorrect_answers": [
+            "⁦W⁩",
+            "⁦U⁩",
+            "⁦J⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي حرب حدث الهجوم بالقنابل الذرية على هيروشيما وناغاساكي؟",
+        "correct_answer": "الحرب العالمية الثانية",
+        "incorrect_answers": [
+            "الحرب العالمية الأولى",
+            "الحرب الروسية اليابانية",
+            "الحرب الصينية اليابانية الأولى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما اسم زعيم قبيلة الأباتشي الشهير الذي توفي عام 1909 عن عمر يناهز 70 عاماً؟",
+        "correct_answer": "جيرونيمو",
+        "incorrect_answers": [
+            "سيتينغ بول (الثور الجالس)",
+            "ريد كلاود (السحابة الحمراء)",
+            "كريزي هورس (الحصان الجامح)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "بلغت قوة قنبلة القيصر، وهي أقوى قنبلة نووية تم اختبارها على الإطلاق، 50 ميغاطن، ولكن من الناحية النظرية، كم كانت قوتها القصوى؟",
+        "correct_answer": "100 ميغاطن",
+        "incorrect_answers": [
+            "200 ميغاطن",
+            "75 ميغاطن",
+            "150 ميغاطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما اسم العملية الهجومية الألمانية في أكتوبر 1941 للسيطرة على موسكو قبل الشتاء؟",
+        "correct_answer": "عملية الإعصار (⁦Operation Typhoon⁩)",
+        "incorrect_answers": [
+            "عملية عباد الشمس (⁦Operation Sunflower⁩)",
+            "عملية بارباروسا (⁦Operation Barbarossa⁩)",
+            "الحالة الزرقاء (⁦Case Blue⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كم عدد النساء اللواتي انضممن إلى القوات المسلحة الأمريكية خلال الحرب العالمية الثانية؟",
+        "correct_answer": "350,000",
+        "incorrect_answers": [
+            "225,000",
+            "100,000",
+            "500,000"
+        ]
+    }
+]

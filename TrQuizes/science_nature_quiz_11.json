@@ -1,0 +1,222 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يشير مصطلح \"تسارع ضربات القلب\" إلى معدل ضربات قلب أثناء الراحة يقارب أو يتجاوز 100 نبضة في الدقيقة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يمكن أن يصاب الشخص بحروق الشمس في اليوم الغائم.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأسنان في فم الشخص البالغ كمتوسط (باستثناء أسنان العقل)‏؟",
+        "correct_answer": "32",
+        "incorrect_answers": [
+            "36",
+            "20",
+            "28"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأسنان اللبنية لدى طفل الإنسان إجمالاً؟",
+        "correct_answer": "20",
+        "incorrect_answers": [
+            "10",
+            "15",
+            "25"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "حرق أي من هذه المعادن ينتج لهباً أبيض ساطعاً؟",
+        "correct_answer": "المغنيسيوم",
+        "incorrect_answers": [
+            "النحاس",
+            "الليثيوم",
+            "الرصاص"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من العضيات التالية يساعد في تصنيع الحمض النووي (⁦DNA⁩) في الخلايا؟",
+        "correct_answer": "الريبوسومات",
+        "incorrect_answers": [
+            "النواة",
+            "الليزوسومات",
+            "الميتوكوندريا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تمت تسمية عنصر الليثيوم الكيميائي نسبةً إلى دولة ليتوانيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الشائع للحالة الطبية المعروفة باسم متلازمة الإجهاد الظنبوبي الإنسي (⁦MTSS⁩)‏؟",
+        "correct_answer": "ألم قصبة الساق",
+        "incorrect_answers": [
+            "مرفق التنس",
+            "النفق الرسغي",
+            "ركبة خادمة المنزل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من السوائل التالية هو الأقل لزوجة؟ (بافتراض أن درجة الحرارة 25 مئوية)",
+        "correct_answer": "الأسيتون",
+        "incorrect_answers": [
+            "الماء",
+            "عطارد",
+            "البنزين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني اختصار كلمة \"ليزر\" (⁦LASER⁩) باللغة الإنجليزية؟",
+        "correct_answer": "تضخيم الضوء بانبعاث الإشعاع المحفز",
+        "incorrect_answers": [
+            "تحليل الضوء بواسطة الإيكوريزر المجسم",
+            "مضخم الضوء بواسطة طاقة الراديو الاحتياطية",
+            "المادة المضادة للحياة عن طريق الدخول الدائم للنطاق"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "شكل الأرض عبارة عن كرة مثالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المثال على مسبب أمراض بكتيري؟",
+        "correct_answer": "الكوليرا",
+        "incorrect_answers": [
+            "الحصبة",
+            "الإيدز",
+            "القوباء الحلقية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يمثل حرف \"⁦S⁩\" في اختصار وكالة الفضاء الأمريكية \"⁦NASA⁩\"؟",
+        "correct_answer": "الفضاء",
+        "incorrect_answers": [
+            "العلوم",
+            "المجتمع",
+            "النجم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "البوزيترون هو الجسيم المضاد لأي مما يلي؟",
+        "correct_answer": "الإلكترون",
+        "incorrect_answers": [
+            "النيوترون",
+            "البروتون",
+            "الفوتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الذي يُطلق على صغار الحيوانات الجرابية؟",
+        "correct_answer": "جوي",
+        "incorrect_answers": [
+            "عجل",
+            "جرو",
+            "شبل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي من هذه الحيوانات ينتمي إلى طائفة الأسماك الغضروفية (⁦Chondrichthyes⁩)‏؟",
+        "correct_answer": "القرش الأبيض الكبير",
+        "incorrect_answers": [
+            "الأخطبوط",
+            "الحوت القاتل",
+            "سمك السلور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة المحاثة الكهربائية (الحث المغناطيسي)‏؟",
+        "correct_answer": "الهنري",
+        "incorrect_answers": [
+            "الويبر",
+            "الكولوم",
+            "المو (وحدة موصلية)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو جهاز تضخيم من أشباه الموصلات؟",
+        "correct_answer": "الترانزستور",
+        "incorrect_answers": [
+            "الأنبوب المفرغ",
+            "الديود (الوصلة الثنائية)",
+            "وصلة ⁦P-N⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الرمز الكيميائي للرصاص؟",
+        "correct_answer": "⁦Pb⁩",
+        "incorrect_answers": [
+            "⁦Ld⁩",
+            "⁦Le⁩",
+            "⁦Pm⁩"
+        ]
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو اللقب الشهير الذي عُرف به المصارع المحترف البريطاني شيرلي كرابتري؟",
+        "correct_answer": "بيغ دادي",
+        "incorrect_answers": [
+            "جاينت هاستاكس",
+            "كيندو ناغاساكي",
+            "ماسامبولا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي فريق توج بلقب بطولة دوري كرة السلة الأمريكي للمحترفين (⁦NBA⁩) لموسم 2015-2016‏؟",
+        "correct_answer": "كليفلاند كافالييرز",
+        "incorrect_answers": [
+            "غولدن ستيت واريورز",
+            "تورونتو رابتورز",
+            "أوكلاهوما سيتي ثاندر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ملعب التنس في الأولمبياد هو عبارة عن شاشة خضراء عملاقة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هو الاسم الكامل للاعب كرة القدم 'كريستيانو رونالدو'؟",
+        "correct_answer": "كريستيانو رونالدو دوس سانتوس أفيرو",
+        "incorrect_answers": [
+            "كريستيانو رونالدو لوس سانتوس دييغو",
+            "كريستيانو أرماندو دييغو رونالدو",
+            "كريستيانو لويس أرماندو رونالدو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "خلال بطولة ويمبلدون، يمكن للمتفرجين في الملعب شراء كرات التنس التي تم استخدامها في المباريات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو مدرب كرة القدم الذي فاز بأكبر عدد من الألقاب خلال فترة تدريبه لنادي مانشستر يونايتد الإنجليزي؟",
+        "correct_answer": "السير أليكس فيرجسون",
+        "incorrect_answers": [
+            "ديفيد مويس",
+            "لويس فان غال",
+            "جوزيه ميرنيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في البولينج، ما هو المصطلح المستخدم للإشارة إلى تسجيل ثلاث ضربات ساحقة متتالية؟",
+        "correct_answer": "تيركي",
+        "incorrect_answers": [
+            "فلامينغو",
+            "بيردي",
+            "إيغل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في أي رياضة تنافس اللاعبة فاني شميلار لصالح ألمانيا؟",
+        "correct_answer": "التزلج",
+        "incorrect_answers": [
+            "السباحة",
+            "قفز الحواجز",
+            "الجمباز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو المنتخب الوطني الذي فاز بنسخة عام 2016 من بطولة أمم أوروبا (اليورو)‏؟",
+        "correct_answer": "البرتغال",
+        "incorrect_answers": [
+            "فرنسا",
+            "ألمانيا",
+            "إنجلترا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي مدينة تتميز جميع فرقها الرياضية المحترفة بقمصان ذات نفس الألوان؟",
+        "correct_answer": "بيتسبرغ",
+        "incorrect_answers": [
+            "نيويورك",
+            "سياتل",
+            "تامبا باي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "مع أي فريق سجل مايكل شوماخر ظهوره الأول في الفورمولا 1 في سباق جائزة بلجيكا الكبرى عام 1991‏؟",
+        "correct_answer": "جوردان",
+        "incorrect_answers": [
+            "بينيتون",
+            "فيراري",
+            "مرسيدس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من الذي يُطلق عليه غالباً لقب \"المايسترو\" في ملاعب التنس للرجال؟",
+        "correct_answer": "روجر فيدرر",
+        "incorrect_answers": [
+            "بيل تيلدن",
+            "بوريس بيكر",
+            "بيت سامبراس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي دولة استضافت بطولة كأس العالم لكرة القدم في عام 2006‏؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "البرازيل",
+            "جنوب أفريقيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "سجل شاكيل أونيل رمية ثلاثية واحدة فقط طوال مسيرته الرياضية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "في أي عام فازت سيارة مازدا ⁦787B⁩ بسباق لومان 24 ساعة؟",
+        "correct_answer": "1991",
+        "incorrect_answers": [
+            "1990",
+            "2000",
+            "1987"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي منتخب فاز ببطولة كأس العالم لكرة القدم لعام 2014 في البرازيل؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرازيل",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في لعبة السنوكر، ما هو لون الكرة التي تساوي 3 نقاط؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأصفر",
+            "البني",
+            "الأزرق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هو المنتخب الذي هزمه منتخب إنجلترا ليفوز بنهائي كأس العالم عام 1966‏؟",
+        "correct_answer": "ألمانيا الغربية",
+        "incorrect_answers": [
+            "الاتحاد السوفيتي",
+            "البرتغال",
+            "البرازيل"
+        ]
+    }
+]

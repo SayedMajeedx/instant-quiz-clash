@@ -1,0 +1,232 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "نسبة صغيرة فقط من سكان العالم تعاني من عدم تحمل اللاكتوز (حساسية الحليب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وجدت دراسة علمية أجريت على الفول السوداني المتوفر في الحانات آثاراً لأكثر من 100 عينة بول مختلفة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "على ماذا يمشي السيرك البهلواني المعروف بـ (⁦Funambulist⁩)‏؟",
+        "correct_answer": "حبل مشدود",
+        "incorrect_answers": [
+            "زجاج مكسور",
+            "كرات",
+            "سطح القمر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تعتبر جملة \"⁦Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo⁩\" صحيحة من الناحية النحوية في اللغة الإنجليزية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو ارتفاع قطار الموت \"كينغدا كا\" (⁦Kingda Ka⁩)، الذي كان أطول قطار ملاهي ترفيهي في العالم من عام 2005 إلى عام 2024‏؟",
+        "correct_answer": "456 قدماً",
+        "incorrect_answers": [
+            "500 قدم",
+            "429 قدماً",
+            "396 قدماً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا ترمز الحروف في التوقيت العالمي (⁦GMT⁩)‏؟",
+        "correct_answer": "توقيت جرينتش المتوسط (⁦Greenwich Mean Time⁩)",
+        "incorrect_answers": [
+            "التوقيت الزوالي العالمي (⁦Global Meridian Time⁩)",
+            "التوقيت المتوسط العام (⁦General Median Time⁩)",
+            "توقيت غلاسكو للرجال (⁦Glasgow Man Time⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من معالم ديزني لاند الشهيرة تم إغلاقه في عام 2017 ليعاد تصميمه ليصبح مستوحى من فيلم \"حراس المجرة\" (⁦Guardians of the Galaxy⁩)‏؟",
+        "correct_answer": "برج الرعب لمنطقة الغسق (⁦Twilight Zone Tower of Terror⁩)",
+        "incorrect_answers": [
+            "القصر المسكون (⁦The Haunted Mansion⁩)",
+            "قراصنة الكاريبي (⁦Pirates of the Caribbean⁩)",
+            "رحلة بيتر بان (⁦Peter Pan's Flight⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا يعني المصطلح الطبي \"أبوليا\" (⁦abulia⁩)‏؟",
+        "correct_answer": "العجز عن اتخاذ القرارات",
+        "incorrect_answers": [
+            "العجز عن الوقوف",
+            "العجز عن التركيز على أي شيء",
+            "رغبة حمّى لتمزيق ملابس الشخص"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في بداية أي عقد بدأت ثقافة \"القوط\" (⁦Goth Subculture⁩) الفرعية بالظهور؟",
+        "correct_answer": "الثمانينيات",
+        "incorrect_answers": [
+            "التسعينيات",
+            "الألفينيات",
+            "السبعينيات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من اللغات التالية لا تستخدم التذكير والتأنيث (الجنس النحوي) في قواعدها؟",
+        "correct_answer": "التركية",
+        "incorrect_answers": [
+            "الألمانية",
+            "الدانماركية",
+            "البولندية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم الشخصية الرئيسية في سلسلة ألعاب الرعب \"ديد سبيس\" (⁦Dead Space⁩)‏؟",
+        "correct_answer": "آيزاك كلارك",
+        "incorrect_answers": [
+            "إلين ريبلي",
+            "القائد شيبارد",
+            "الكابتن كيرك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يتكون \"الصمغ العربي\" من العصارة المتصلبة لأي نوع من الأشجار؟",
+        "correct_answer": "أشجار السنط (الأكاسيا)",
+        "incorrect_answers": [
+            "أشجار النخيل",
+            "أشجار الفيكس",
+            "أشجار الكافور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي كاتدرائية في مدينة الفاتيكان صمم جزأها الداخلي عام 1503 فنانون من عصر النهضة مثل برامانتي وميكيلانجيلو وبرنيني؟",
+        "correct_answer": "كاتدرائية القديس بطرس",
+        "incorrect_answers": [
+            "كاتدرائية كاتانيا",
+            "كاتدرائية القديس مرقص",
+            "كاتدرائية فلورنسا (الدوومو)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو اللون الذي تمثل كلمة \"كوكليكوت\" (⁦Coquelicot⁩) إحدى درجاته، والتي كانت تعني في الأصل زهرة الخشخاش؟",
+        "correct_answer": "الأحمر",
+        "incorrect_answers": [
+            "الأخضر",
+            "الأزرق",
+            "الوردي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع يصل إلى 1250 قدماً (381 متراً)‏؟",
+        "correct_answer": "مبنى إمباير ستيت، الولايات المتحدة",
+        "incorrect_answers": [
+            "برج بنك الصين، هونغ كونغ",
+            "برج الاتحاد، روسيا",
+            "فندق جيفورا، الإمارات العربية المتحدة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يؤدي شخصية \"دون شيتو\" دور المذيع في محطة الراديو \"⁦East Los FM⁩\" في لعبة ⁦GTA V⁩.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من سلاسل مطاعم الوجبات السريعة التالية غير معروفة ببيع البيتزا بشكل أساسي؟",
+        "correct_answer": "وينديز (⁦Wendy's⁩)",
+        "incorrect_answers": [
+            "دومينوز (⁦Domino's⁩)",
+            "ليتل سيزرز (⁦Little Caesars⁩)",
+            "بابا جونز (⁦Papa John's⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أين يعيش البطل الخارق \"السهم الأخضر\" (أوليفر كوين) في قصص دي سي (⁦DC⁩) المصورة؟",
+        "correct_answer": "ستار سيتي (مدينة النجوم)",
+        "incorrect_answers": [
+            "سنترال سيتي (المدينة المركزية)",
+            "غوثام سيتي (مدينة غوثام)",
+            "متروبوليس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في لعبة \"معركة القطط\" (⁦Battle Cats⁩)، ما هي النسبة المئوية للضربة القاضية (⁦Critical Rate⁩) للشخصية مونيكو (⁦Moneko⁩)‏؟",
+        "correct_answer": "15%",
+        "incorrect_answers": [
+            "20%",
+            "10%",
+            "25%"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "يُطلق مصطلح \"سامهينوفوبيا\" (⁦Samhainophobia⁩) على الخوف المرضي والمستمر من الهالوين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

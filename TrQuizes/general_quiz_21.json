@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الجزء الميكانيكي الموجود في مركز ألعاب سبينر (⁦Fidget Spinners⁩)‏؟",
+        "correct_answer": "المحامل (رولمان بلي)",
+        "incorrect_answers": [
+            "المحاور",
+            "التروس",
+            "الأحزمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من برامج نيكتونز (⁦Nicktoons⁩) هذه لم تكن في الأصل فقرة قصيرة في برنامج \"أوه ييه! كارتونز\" قبل أن تصبح مسلسلاً خاصاً بها؟",
+        "correct_answer": "داني المراهق (⁦Danny Phantom⁩)",
+        "incorrect_answers": [
+            "منطقة الطباشير (⁦ChalkZone⁩)",
+            "جيني المراهقة الآلية (⁦My Life as a Teenage Robot⁩)",
+            "الوالدان السحريان (⁦The Fairly OddParents⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو أكبر نظام نقل سريع (مترو) في العالم من حيث عدد المحطات، بوجود 472 محطة قيد التشغيل؟",
+        "correct_answer": "مترو أنفاق مدينة نيويورك",
+        "incorrect_answers": [
+            "مترو شانغهاي",
+            "مترو أنفاق لندن",
+            "مترو أنفاق برلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الفاكهة التي تعد مكوناً تقليدياً في كعكة الغابة السوداء (بلاك فورست)‏؟",
+        "correct_answer": "الكرز",
+        "incorrect_answers": [
+            "المشمش",
+            "الزبيب",
+            "التفاح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "السكيوفوبيا (⁦Sciophobia⁩) هي الخوف من ماذا؟",
+        "correct_answer": "الظلال",
+        "incorrect_answers": [
+            "الأكل",
+            "الأضواء الساطعة",
+            "وسائل النقل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "فرانك لويد رايت كان المهندس المعماري وراء تصميم أي مبنى شهير؟",
+        "correct_answer": "متحف غوغنهايم",
+        "incorrect_answers": [
+            "فيلا سافوي",
+            "دار أوبرا سيدني",
+            "إبرة الفضاء (ذا سبيس نيدل)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أين يقع المقر الرئيسي لشركة أبل (⁦Apple Inc⁩.)‏؟",
+        "correct_answer": "كوبيرتينو، كاليفورنيا",
+        "incorrect_answers": [
+            "ريدوود سيتي، كاليفورنيا",
+            "ريدموند، واشنطن",
+            "سانتا مونيكا، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في عالم ⁦SCP⁩ الخيالي، ما هي \"فئة الكائن\" (⁦Object Class⁩) التي تُمنح لكيانات ⁦SCP⁩ التي لا يمكن احتواؤها على الإطلاق؟",
+        "correct_answer": "أبوليون (⁦Apollyon⁩)",
+        "incorrect_answers": [
+            "ثوميل (⁦Thaumiel⁩)",
+            "كيتير-ثوميل (⁦Keter-Thaumiel⁩)",
+            "الفئات الباطنية/السردية (⁦Esoteric/Narrative Classes⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي دولة تنتج ما يقارب 40% من الفانيليا في العالم؟",
+        "correct_answer": "مدغشقر",
+        "incorrect_answers": [
+            "إندونيسيا",
+            "الصين",
+            "المكسيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو مؤسس مجموعة ليغو (⁦The Lego Group⁩)‏؟",
+        "correct_answer": "أولي كيرك كريستيانسن",
+        "incorrect_answers": [
+            "ينس نيلز كريستيانسن",
+            "كيرستين كريستيانسن",
+            "جيرهارد كيرك كريستيانسن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة اليابانية المكتوبة بالأحرف اللاتينية (روماجي) والتي تعني \"جامعة\"؟",
+        "correct_answer": "دايغاكو (⁦Daigaku⁩)",
+        "incorrect_answers": [
+            "توشوكان (⁦Toshokan⁩)",
+            "جيموشو (⁦Jimusho⁩)",
+            "شوكودو (⁦Shokudou⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة التي تعاونت معها شركة فالف (⁦Valve⁩) لصناعة نظارة الواقع الافتراضي فايف (⁦Vive⁩)‏؟",
+        "correct_answer": "⁦HTC⁩",
+        "incorrect_answers": [
+            "أوكولوس (⁦Oculus⁩)",
+            "جوجل (⁦Google⁩)",
+            "رايزر (⁦Razer⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مهندس معماري شهير، توفي عام 2019 عن عمر يناهز 102 عاماً، صمم الهرم الزجاجي في متحف اللوفر بباريس؟",
+        "correct_answer": "آي إم بي (⁦I⁩. ⁦M⁩. ⁦Pei⁩)",
+        "incorrect_answers": [
+            "بسكال غيدو (⁦Pascale Guédot⁩)",
+            "فرانك جيري",
+            "وانغ شو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "هل مايكل جاكسون هو من اخترع رقصة مشية القمر (⁦Moonwalk⁩)‏؟",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كانت أغنية \"جينغل بيلز\" (⁦Jingle Bells⁩) مخصصة في الأصل لعيد الشكر.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من يُعتبر \"أبو الفلسفة الحديثة\"؟",
+        "correct_answer": "رينيه ديكارت",
+        "incorrect_answers": [
+            "أفلاطون",
+            "ألبرت أينشتاين",
+            "أنطوان لافوازييه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هي الشخصية المرسومة على ورقة المئة دولار الأمريكية؟",
+        "correct_answer": "بنجامين فرانكلين",
+        "incorrect_answers": [
+            "جورج واشنطن",
+            "أبراهام لينكون",
+            "توماس جيفرسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي عام حصلت غانا على استقلالها؟",
+        "correct_answer": "1957",
+        "incorrect_answers": [
+            "1947",
+            "1960",
+            "1958"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي دولة أقيمت الألعاب الأولمبية الصيفية لعام 1992‏؟",
+        "correct_answer": "إسبانيا",
+        "incorrect_answers": [
+            "روسيا",
+            "كوريا",
+            "الولايات المتحدة الأمريكية"
+        ]
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي أولى الدول التي انفصلت عن يوغوسلافيا؟",
+        "correct_answer": "سلوفينيا وكرواتيا",
+        "incorrect_answers": [
+            "مقدونيا والجبل الأسود",
+            "سلوفينيا ومقدونيا",
+            "الجبل الأسود وسلوفينيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي يوم بدأت معركة غيتيسبرغ؟",
+        "correct_answer": "1 يوليو 1863",
+        "incorrect_answers": [
+            "17 سبتمبر 1862",
+            "21 يوليو 1861",
+            "30 أبريل 1863"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من كان رئيس وزراء بريطانيا عند اندلاع الحرب العالمية الثانية عام 1939‏؟",
+        "correct_answer": "نيفيل تشامبرلين",
+        "incorrect_answers": [
+            "ستانلي بالدوين",
+            "وينستون تشرشل",
+            "رامزي ماكدونالد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "قاد توسان لوفرتور ثورة ناجحة للعبيد في أي بلد؟",
+        "correct_answer": "هايتي",
+        "incorrect_answers": [
+            "فرنسا",
+            "كوبا",
+            "الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام بدأت الحرب العالمية الأولى؟",
+        "correct_answer": "1914",
+        "incorrect_answers": [
+            "1930",
+            "1917",
+            "1939"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "عندما أبحر كريستوفر كولومبوس إلى أمريكا، ما هي أول منطقة وصل إليها؟",
+        "correct_answer": "أرخبيل جزر البهاما",
+        "incorrect_answers": [
+            "فلوريدا",
+            "برزخ بنما",
+            "نيكاراغوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي أول رياضة لُعبت على سطح القمر؟",
+        "correct_answer": "الغولف",
+        "incorrect_answers": [
+            "كرة القدم الأمريكية",
+            "التنس",
+            "كرة القدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من الذي اغتال الأرشيدوق فرانز فرديناند؟",
+        "correct_answer": "غافريلو برينسيب",
+        "incorrect_answers": [
+            "نيديلكو تشابرينوفيتش",
+            "أوسكار بوتيوريك",
+            "فرديناند كوهين بليند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من هذه الدول ظلت محايدة خلال الحرب العالمية الثانية؟",
+        "correct_answer": "سويسرا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "فرنسا",
+            "إيطاليا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى حصلت النرويج على دستورها؟",
+        "correct_answer": "1814",
+        "incorrect_answers": [
+            "1932",
+            "1905",
+            "1854"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي أقدم ولاية أمريكية؟",
+        "correct_answer": "ديلاوير",
+        "incorrect_answers": [
+            "رود آيلاند",
+            "مين",
+            "فرجينيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي رئيس وزراء أسترالي اختفى في عام 1967 ولم يُعثر عليه أبداً؟",
+        "correct_answer": "هارولد هولت",
+        "incorrect_answers": [
+            "بول كيتنغ",
+            "إدموند بارتون",
+            "سكوت موريسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي تاريخ تحول سلاح الجو التابع للجيش الأمريكي إلى القوات الجوية الأمريكية؟",
+        "correct_answer": "18 سبتمبر 1947",
+        "incorrect_answers": [
+            "14 ديسمبر 1946",
+            "27 أكتوبر 1945",
+            "8 نوفمبر 1944"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "القنبلتان الذريتان اللتان ألقتهما الولايات المتحدة على اليابان في أغسطس 1945 كانتا باسم '⁦Little Man⁩' (الرجل الصغير) و'⁦Fat Boy⁩' (الولد السمين).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام وقع هجوم غاز السارين في مترو طوكيو؟",
+        "correct_answer": "1995",
+        "incorrect_answers": [
+            "2001",
+            "2011",
+            "1991"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي رئيس أمريكي تعرض لهجوم شهير من قبل أرنب يسبح؟",
+        "correct_answer": "جيمي كارتر",
+        "incorrect_answers": [
+            "رونالد ريجان",
+            "ليندون جونسون",
+            "جيرالد فورد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى تم تعيين أدولف هتلر مستشاراً لألمانيا؟",
+        "correct_answer": "30 يناير 1933",
+        "incorrect_answers": [
+            "1 سبتمبر 1939",
+            "27 فبراير 1933",
+            "6 أكتوبر 1939"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي حوار دافع سقراط عن نفسه أمام محكمة أثينا؟",
+        "correct_answer": "الدفاع",
+        "incorrect_answers": [
+            "إيثيفرو",
+            "القوانين",
+            "الجمهورية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "تأسست وزارة الأمن الداخلي الأمريكية كاستجابة لهجمات 11 سبتمبر.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

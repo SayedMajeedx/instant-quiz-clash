@@ -1,0 +1,232 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "يرمز الاختصار \"⁦NCIS⁩\" إلى \"⁦Navy Corps Investigative Service⁩\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الشركات لا تصنع السيارات؟",
+        "correct_answer": "دوكاتي",
+        "incorrect_answers": [
+            "نيسان",
+            "جي إم سي",
+            "فيات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا تعني ممارسة الـ \"نيفيلوكوكيميديا\" (⁦Nephelococcygia⁩)‏؟",
+        "correct_answer": "رؤية أو تخيل أشكال في السحب",
+        "incorrect_answers": [
+            "النوم والعينان مفتوحتان",
+            "كسر الزجاج بالصوت",
+            "السباحة في مياه متجمدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في سلسلة ألعاب الفيديو \"كينغدوم هارتس\" (⁦Kingdom Hearts⁩)، ما شكل السلاح الذي يحمله البطل الرئيسي؟",
+        "correct_answer": "مفتاح",
+        "incorrect_answers": [
+            "سيف",
+            "قلم",
+            "هاتف محمول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يصنع ويبيع صانع القبعات (⁦Milliner⁩)‏؟",
+        "correct_answer": "القبعات",
+        "incorrect_answers": [
+            "الأحذية",
+            "الأحزمة",
+            "القمصان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما المعنى الكامل للاختصار \"⁦RAM⁩\" في الكمبيوتر؟",
+        "correct_answer": "ذاكرة الوصول العشوائي",
+        "incorrect_answers": [
+            "ذاكرة المساعدة العشوائية",
+            "تفويض المساعدة العشوائية",
+            "رام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يسمي البحارة مؤخرة القارب؟",
+        "correct_answer": "المؤخرة",
+        "incorrect_answers": [
+            "المقدمة",
+            "الجانب الأيمن",
+            "الجانب الأيسر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "وفقاً للمكتب الأسترالي للإحصاء لعامي 2014-2015، ما هي نسبة الأستراليين الذين ولدوا خارج البلاد؟",
+        "correct_answer": "28%",
+        "incorrect_answers": [
+            "13%",
+            "20%",
+            "7%"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي اتجاه يتجه تمثال الحرية؟",
+        "correct_answer": "الجنوب الشرقي",
+        "incorrect_answers": [
+            "الجنوب الغربي",
+            "الشمال الغربي",
+            "الشمال الشرقي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الباذنجان هو نوع من الخضار.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "حامل شهادة الدكتوراه (⁦PhD⁩) هو دكتور في ماذا؟",
+        "correct_answer": "الفلسفة",
+        "incorrect_answers": [
+            "علم النفس",
+            "علم فراسة الدماغ",
+            "العلاج الطبيعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو المؤسس المشارك لخدمة بث الموسيقى \"سبوتيفاي\" (⁦Spotify⁩)‏؟",
+        "correct_answer": "دانيال إيك",
+        "incorrect_answers": [
+            "شون باركر",
+            "فيليكس ميلر",
+            "مايكل بريدنبروكير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو نوع المنتجات التي تتخصص فيها شركة رولكس (⁦Rolex⁩)‏؟",
+        "correct_answer": "الساعات",
+        "incorrect_answers": [
+            "السيارات",
+            "أجهزة الكمبيوتر",
+            "المعدات الرياضية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تم اختراع البطاطس المهروسة الفورية من قِبل الكندي إدوارد أسيلبرغز في عام 1962.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "قبل القرن التاسع عشر، كانت \"غرفة المعيشة\" تُسمى في الأصل...",
+        "correct_answer": "غرفة الاستقبال",
+        "incorrect_answers": [
+            "الغرفة المفتوحة",
+            "غرفة الجلوس",
+            "السقيفة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "مجموع كل الأرقام الموجودة على عجلة الروليت هو 666.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من أين نشأ نبات الأناناس في الأصل؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "هاواي",
+            "أوروبا",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي متحف بلندن يقع تمثال تشارلز داروين؟",
+        "correct_answer": "متحف التاريخ الطبيعي",
+        "incorrect_answers": [
+            "متحف تيت",
+            "المتحف البريطاني",
+            "متحف العلوم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "العلم الوطني لفيتنام يتكون من نجمة حمراء على خلفية صفراء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي جبل يضم أعلى قمة في أوروبا؟",
+        "correct_answer": "جبل إلبروس، روسيا",
+        "incorrect_answers": [
+            "جبل شخارا، جورجيا",
+            "جبل أرارات، تركيا",
+            "جبل مون بلان، فرنسا"
+        ]
+    }
+]

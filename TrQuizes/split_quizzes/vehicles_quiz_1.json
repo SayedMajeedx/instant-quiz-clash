@@ -1,0 +1,204 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة إطارات السيارات الشهيرة بإنتاج سلسلة \"⁦P Zero⁩\"؟",
+        "correct_answer": "بيريللي",
+        "incorrect_answers": [
+            "جودير",
+            "بريدجستون",
+            "ميشلان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ماذا تمثل الحلقات الأربع في شعار سيارات أودي؟",
+        "correct_answer": "شركات تصنيع سيارات كانت مستقلة سابقاً",
+        "incorrect_answers": [
+            "الولايات التي تحقق فيها أودي أعلى مبيعات",
+            "المدن الرئيسية الحيوية لشركة أودي",
+            "الدول التي تحقق فيها أودي أعلى مبيعات"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "في عام 1991، أصبحت مازدا أول شركة سيارات يابانية تفوز بسباق لومان (⁦Le Mans⁩).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي زاوية ميل الأسطوانات في محرك ⁦VR6⁩ الأسطوري من فولكس واجن؟",
+        "correct_answer": "15 درجة",
+        "incorrect_answers": [
+            "30 درجة",
+            "45 درجة",
+            "90 درجة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة السيارات الخارقة التي تنتمي إلى السويد؟",
+        "correct_answer": "كوينيجسيج",
+        "incorrect_answers": [
+            "بوغاتي",
+            "لامبورغيني",
+            "ماكلارين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي دولة ترمز إليها لوحات تسجيل المركبات الدولية بالحرف '⁦A⁩'؟",
+        "correct_answer": "النمسا",
+        "incorrect_answers": [
+            "أفغانستان",
+            "أستراليا",
+            "أرمينيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك ⁦LS7⁩ بالبوصة المكعبة؟",
+        "correct_answer": "427",
+        "incorrect_answers": [
+            "346",
+            "364",
+            "376"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أكمل التناظر التالي: أودي بالنسبة لفولكس واجن مثل إنفينيتي بالنسبة لـ...؟",
+        "correct_answer": "نيسان",
+        "incorrect_answers": [
+            "هوندا",
+            "هيونداي",
+            "سوبارو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "شركة النقل \"أريفا\" (⁦Arriva⁩) مملوكة لشركة السكك الحديدية الألمانية \"دويتشه بان\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من ماركات السيارات التالية نشأت في السويد؟",
+        "correct_answer": "فولفو",
+        "incorrect_answers": [
+            "مرسيدس",
+            "أكورا",
+            "لينكون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "تعتبر سيارة \"بنز باتنت موتورواجن\" لعام 1886 أول سيارة حقيقية صُنعت في التاريخ.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من السيارات التالية ليست من إنتاج شركة فورد؟",
+        "correct_answer": "كامري",
+        "incorrect_answers": [
+            "فيوجن",
+            "موديل إيه (⁦Model A⁩)",
+            "إف-150 (⁦F-150⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "حطم قطار الطلقة الياباني \"شينكانسن\" الرقم القياسي لسرعة أسرع قطار كهربائي المسجل باسم قطار ⁦TGV⁩ الفرنسي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "تأسست شركة هوندا للمحركات في اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "اخترع الكندي جوزيف-أرماند بومباردييه عربة الجليد الآلية (السنوموبيل) في عام 1937.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة السيارات التي كان إنزو فيراري يتسابق لصالحها قبل تأسيس شركته الخاصة؟",
+        "correct_answer": "ألفا روميو",
+        "incorrect_answers": [
+            "أوتو يونيون",
+            "مرسيدس بنز",
+            "بنتلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "تُصنع غالبية سيارات سوبارو في الصين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هو المحرك المستخدم في سيارة لكزس ⁦SC400⁩‏؟",
+        "correct_answer": "⁦1UZ-FE⁩",
+        "incorrect_answers": [
+            "⁦2JZ-GTE⁩",
+            "⁦7M-GTE⁩",
+            "⁦5M-GE⁩"
+        ]
+    }
+]

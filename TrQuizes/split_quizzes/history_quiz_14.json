@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هو الاسم الأصلي لمدينة نيويورك؟",
+        "correct_answer": "نيو أمستردام",
+        "incorrect_answers": [
+            "نيو لندن",
+            "نيو باريس",
+            "نيو روما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كان \"درب الدموع\" نتيجة لسياسة ترحيل السكان الأصليين التي اتبعها أي رئيس للولايات المتحدة؟",
+        "correct_answer": "أندرو جاكسون",
+        "incorrect_answers": [
+            "هاري ترومان",
+            "مارتن فان بيورين",
+            "جون كوينسي آدامز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى انتهت الحرب الوطنية العظمى في الاتحاد السوفيتي؟",
+        "correct_answer": "9 مايو 1945",
+        "incorrect_answers": [
+            "2 سبتمبر 1945",
+            "9 أغسطس 1945",
+            "11 ديسمبر 1945"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام تم تصميم مسدس ⁦M1911⁩‏؟",
+        "correct_answer": "1911",
+        "incorrect_answers": [
+            "1907",
+            "1899",
+            "1917"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هو صاحب المقولة الشهيرة \"أنا أفكر، إذن أنا موجود\"؟",
+        "correct_answer": "ديكارت",
+        "incorrect_answers": [
+            "أفلاطون",
+            "أرسطو",
+            "شكسبير"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كان عصر التنوير حقبة مليئة بالفلسفات والتقدم والنظريات العلمية لتحسين المجتمع.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هو اللقب الشهير لمانفريد فون ريشتهوفن؟",
+        "correct_answer": "البارون الأحمر",
+        "incorrect_answers": [
+            "الطيار الماهر المحلق عالياً",
+            "الثعبان الأزرق",
+            "المدفعي الألماني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "قبل أن تتحول المستعمرات الأمريكية إلى التقويم الغريغوري عام 1752، في أي تاريخ كانت تبدأ سنتهم الجديدة؟",
+        "correct_answer": "25 مارس",
+        "incorrect_answers": [
+            "1 يونيو",
+            "25 سبتمبر",
+            "1 ديسمبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي مما يلي لا يُصنف كأحد اللغات السامية؟",
+        "correct_answer": "السومرية",
+        "incorrect_answers": [
+            "المالطية",
+            "الأكادية",
+            "المندائية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ماذا كان اسم نابليون بونابرت قبل أن يغيره؟",
+        "correct_answer": "نابليوني دي بونابرت",
+        "incorrect_answers": [
+            "ناابوليون فان بونيبارت",
+            "نابوليون دو بوابارت",
+            "نابليونا دي بوينوبارتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من هو أول أمريكي يصعد إلى الفضاء؟",
+        "correct_answer": "ألان شيبارد",
+        "incorrect_answers": [
+            "نيل آرمسترونغ",
+            "جون غلين",
+            "جيم لوفيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي بندقية الهجوم الروسية الآلية التي تعمل بالغاز وتم تطويرها في الاتحاد السوفيتي عام 1947، ولا تزال تستخدم بشكل شائع حتى اليوم؟",
+        "correct_answer": "⁦AK-47⁩",
+        "incorrect_answers": [
+            "⁦RPK⁩",
+            "⁦M16⁩",
+            "⁦MG 42⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ابن أي بابا يُزعم أنه أقام حفلاً ماجناً شاركت فيه 50 محظية في القصر البابوي؟",
+        "correct_answer": "ألكسندر السادس",
+        "incorrect_answers": [
+            "إينوسنت الخامس",
+            "أوربان الثاني",
+            "بيوس الثالث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كم كان عمر الملك هنري الخامس عندما توفي؟",
+        "correct_answer": "35",
+        "incorrect_answers": [
+            "62",
+            "87",
+            "73"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "إذا أمسكت بالنصل الحاد للسيف الطويل بطريقة معينة، فلن تجرح نفسك.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي العملة الرسمية لألمانيا حتى عام 2002‏؟",
+        "correct_answer": "مارك",
+        "incorrect_answers": [
+            "فرنك",
+            "جنيه إسترليني",
+            "رايخ توكن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام غرقت سفينة تايتانيك؟",
+        "correct_answer": "1912",
+        "incorrect_answers": [
+            "1930",
+            "1917",
+            "1941"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "متى انهارت الإمبراطورية البيزنطية؟",
+        "correct_answer": "1453",
+        "incorrect_answers": [
+            "1299",
+            "1353",
+            "1498"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "كانت اليابان جزءاً من قوات الحلفاء خلال الحرب العالمية الأولى.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

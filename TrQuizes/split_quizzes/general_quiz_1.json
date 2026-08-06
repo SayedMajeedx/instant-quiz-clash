@@ -1,0 +1,238 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الدول التالية لم تكن طرفاً محارباً في الحرب العالمية الأولى؟",
+        "correct_answer": "الدنمارك",
+        "incorrect_answers": [
+            "البرتغال",
+            "اليونان",
+            "رومانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يحتوي منتج \"تشيز ويز\" من كرافت على مستنبتات الجبن، ولكنه لا يحتوي على جبن حقيقي في الواقع.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة المالكة لخدمة أوتلوك؟",
+        "correct_answer": "مايكروسوفت",
+        "incorrect_answers": [
+            "جوجل",
+            "أبل",
+            "ياهو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "منتجعات وفيلات العطلات \"دي إيمهوف\" و\"بورت زيلاند\" و\"هيت هايدربوس\" مملوكة لأي شركة؟",
+        "correct_answer": "سنتر باركس",
+        "incorrect_answers": [
+            "يلو فيليج",
+            "كيكامب",
+            "فيلا بلس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما معنى كلمة \"أستازيا\" (⁦Astasia⁩) من بين الخيارات التالية؟",
+        "correct_answer": "عدم القدرة على الوقوف",
+        "incorrect_answers": [
+            "عدم القدرة على اتخاذ القرارات",
+            "عدم القدرة على التركيز في أي شيء",
+            "رغبة حمى شديدة في تمزيق الملابس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الذي يطلق في لعبة البوكر على اليد التي تحتوي على ثلاث بطاقات من نفس النوع وبطاقتين متطابقتين (زوج)‏؟",
+        "correct_answer": "فول هاوس",
+        "incorrect_answers": [
+            "فلاش",
+            "ستريت",
+            "هايت كارد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو الرئيس الأمريكي الذي لا توجد صورته على جبل راشمور؟",
+        "correct_answer": "جون كينيدي",
+        "incorrect_answers": [
+            "ثيودور روزفلت",
+            "أبراهام لينكولن",
+            "توماس جيفرسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللعبة الأكثر مبيعاً لعام 1983 والتي سببت هوساً كبيراً أدى إلى اندلاع أعمال شغب في المتاجر؟",
+        "correct_answer": "دمى كابج باتش كيدز",
+        "incorrect_answers": [
+            "المتحولون",
+            "كير بيرز",
+            "مكعب روبيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من اللغات التالية ليست لغة هندوأوروبية؟",
+        "correct_answer": "المجرية",
+        "incorrect_answers": [
+            "الروسية",
+            "اليونانية",
+            "اللاتفية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "متى تأسس موقع \"يوتيوب\"؟",
+        "correct_answer": "14 فبراير 2005",
+        "incorrect_answers": [
+            "22 مايو 2004",
+            "12 سبتمبر 2005",
+            "19 يوليو 2009"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "سلسلتا مطاعم الوجبات السريعة \"كارلز جونيور\" و\"هارديز\" مملوكتان للشركة نفسها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من ماذا تُصنع قبعات بنما الشهيرة؟",
+        "correct_answer": "القش",
+        "incorrect_answers": [
+            "الحرير",
+            "القنب",
+            "الكتان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي بلد يأتي السوشي والكاريوكي؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "الصين",
+            "كوريا الجنوبية",
+            "فيتنام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم الدواسة الإضافية في السيارات ذات ناقل الحركة اليدوي (القير العادي)‏؟",
+        "correct_answer": "القابض (الكلتش)",
+        "incorrect_answers": [
+            "مغير السرعة",
+            "المعزز",
+            "فرامل اليد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة التي ينتهي بها شعار صحيفة نيويورك تايمز: \"كل الأخبار الصالحة لـ...\"؟",
+        "correct_answer": "النشر",
+        "incorrect_answers": [
+            "الاستيعاب",
+            "الرؤية",
+            "القراءة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي العبارة اللاتينية التي تُترجم تقريباً إلى \"اغتنم اليوم\"؟",
+        "correct_answer": "كاربي ديم",
+        "incorrect_answers": [
+            "مومينتو موري",
+            "بلس ألترا",
+            "سيك سيمبر تيرانبس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من المواد الكيميائية التالية توجد في بذور الباذنجان؟",
+        "correct_answer": "النيكوتين",
+        "incorrect_answers": [
+            "الميسكالين",
+            "السيانيد",
+            "السيبلوسيبين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي تسمانيا？",
+        "correct_answer": "ولاية أسترالية",
+        "incorrect_answers": [
+            "نكهة آيس كريم من بين آند جيريز",
+            "اضطراب نفسي",
+            "اسم شخصية كرتونية من وارنر برذرز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "متى تأسس موقع ريديت الشهير؟",
+        "correct_answer": "2005",
+        "incorrect_answers": [
+            "2008",
+            "2004",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم طرح جهاز آيبود الأول من شركة أبل؟",
+        "correct_answer": "2001",
+        "incorrect_answers": [
+            "2000",
+            "1999",
+            "1998"
+        ]
+    }
+]

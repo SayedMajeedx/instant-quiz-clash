@@ -1,0 +1,198 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "عندما تأسست شركة بي إم دبليو في عام 1916، كانت تنتج السيارات.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي تقنية توقيت الصمامات المتغير التي تستخدمها شركة بي إم دبليو؟",
+        "correct_answer": "⁦VANOS⁩",
+        "incorrect_answers": [
+            "⁦VVT-iw⁩",
+            "⁦VVEL⁩",
+            "⁦MultiAir⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من قاطرات يونيون باسيفيك من طراز 'بيغ بوي' التالية تمت إعادتها إلى الخدمة والعمل في عام 2019‏؟",
+        "correct_answer": "4014",
+        "incorrect_answers": [
+            "4012",
+            "4004",
+            "4000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هو نوع القطار 'ستيبني' على سكة حديد بلوبيل والمعروف بظهوره في 'سلسلة السكك الحديدية' (⁦The Railway Series⁩)‏؟",
+        "correct_answer": "⁦LB⁩&⁦SCR A1X⁩",
+        "incorrect_answers": [
+            "⁦LB⁩&⁦SCR E2⁩",
+            "⁦LB⁩&⁦SCR J1⁩",
+            "⁦LB⁩&⁦SCR D1⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "في أي دولة يتم تجميع السيارة الخارقة 'هوساريا' التي تنتجها شركة 'أرينيرا' لصناعة السيارات؟",
+        "correct_answer": "بولندا",
+        "incorrect_answers": [
+            "الصين",
+            "السويد",
+            "إيطاليا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هو رقم تسجيل آخر طائرة كونكورد تم تصنيعها؟",
+        "correct_answer": "⁦G-BOAF⁩",
+        "incorrect_answers": [
+            "⁦F-BTSC⁩",
+            "⁦G-BOAC⁩",
+            "⁦F-BVFF⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "تتمتع شركة ميتسوبيشي موتورز بشراكة دامت 30 عاماً مع جاكي شان، حيث ظهرت سياراتهم بشكل بارز في أفلامه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي أول سيارة هجينة تم إنتاجها بكميات تجارية؟",
+        "correct_answer": "تويوتا بريوس",
+        "incorrect_answers": [
+            "شيفروليه فولت",
+            "هوندا فيت",
+            "بيجو 308 آر هايبرد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "خلال الحرب العالمية الثانية، ما هي الدبابة التي كان الحلفاء يخشونها أكثر من غيرها؟",
+        "correct_answer": "بانزر-كامبف-واجن 5 بانثر",
+        "incorrect_answers": [
+            "ماردر 3",
+            "ماتيلدا 2",
+            "بانزر-كامبف-واجن 6 تايجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي القطع الشبيهة بالأسطوانات التي تتحرك صعوداً وهبوطاً داخل المحرك؟",
+        "correct_answer": "المكابس",
+        "incorrect_answers": [
+            "النوابض الصفائحية",
+            "المبردات",
+            "نظام ⁦ABS⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك ⁦LS1⁩ بالبوصة المكعبة؟",
+        "correct_answer": "346",
+        "incorrect_answers": [
+            "350",
+            "355",
+            "360"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي أول سيارة تم تزويدها بنظام تكييف الهواء كميزة قياسية من المصنع؟",
+        "correct_answer": "باكارد",
+        "incorrect_answers": [
+            "تاكر",
+            "فورد",
+            "هادسن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أين يتم تصنيع سيارات العلامة التجارية 'فيراري'؟",
+        "correct_answer": "إيطاليا",
+        "incorrect_answers": [
+            "رومانيا",
+            "ألمانيا",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من طائرات الركاب النفاثة التالية هي الأطول؟",
+        "correct_answer": "بوينغ 747-8",
+        "incorrect_answers": [
+            "إيرباص ⁦A350-1000⁩",
+            "إيرباص ⁦A330-200⁩",
+            "بوينغ 787-10"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "هل مصطلح '⁦GTO⁩' نشأ في الأصل من شركة فيراري؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "الاسم الإنجليزي الكامل لشركة تصنيع السيارات بي إم دبليو (⁦BMW⁩) هو '⁦Bavarian Motor Works⁩'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة السيارات التي كانت تملك شركة جاغوار سابقاً؟",
+        "correct_answer": "فورد",
+        "incorrect_answers": [
+            "كرايسلر",
+            "جنرال موتورز",
+            "فيات"
+        ]
+    }
+]

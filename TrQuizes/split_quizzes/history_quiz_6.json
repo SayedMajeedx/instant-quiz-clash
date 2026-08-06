@@ -1,0 +1,232 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام حدث الغزو العراقي للكويت؟",
+        "correct_answer": "1990",
+        "incorrect_answers": [
+            "1992",
+            "1988",
+            "1986"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أقامت هاتان الدولتان اتحاداً فيدرالياً (كومنولث) من القرن السادس عشر إلى القرن الثامن عشر.",
+        "correct_answer": "بولندا وليتوانيا",
+        "incorrect_answers": [
+            "الهوتو ورواندا",
+            "كوريا الشمالية وكوريا الجنوبية",
+            "بنغلاديش وبوتان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما اسم الغزو المخطط له لليابان قرب نهاية الحرب العالمية الثانية؟",
+        "correct_answer": "عملية السقوط",
+        "incorrect_answers": [
+            "عملية الصعود على متن السفينة",
+            "عملية درع الحديد",
+            "عملية الاشتعال"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كان بريجنيف الزعيم الخامس للاتحاد السوفيتي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "هناك 13 شهراً في التقويم الإثيوبي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كان أغسطس ابن عم يوليوس قيصر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "سيطرت مملكة بروسيا لفترة وجيزة على أراضٍ في إستونيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام تأسست كندا؟",
+        "correct_answer": "1867",
+        "incorrect_answers": [
+            "1798",
+            "1859",
+            "1668"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الاسم الحقيقي لجنكيز خان؟",
+        "correct_answer": "تيموجين",
+        "incorrect_answers": [
+            "مونكو",
+            "أوقطاي",
+            "تيمور"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "توفي الرئيسان الأمريكيان السابقان جون آدامز وتوماس جيفرسون بفارق ساعات قليلة عن بعضهما البعض.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كم كان عمر أدولف هتلر عندما توفي؟",
+        "correct_answer": "56",
+        "incorrect_answers": [
+            "43",
+            "65",
+            "47"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "بعد معركة مرج دابق عام 1516، بسطت الدولة العثمانية سيطرتها على القدس بعد انتزاعها من أي سلطنة؟",
+        "correct_answer": "المماليك",
+        "incorrect_answers": [
+            "الأيوبيون",
+            "الأمويون",
+            "السلاجقة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ماذا يُطلق على حركة انتقال الأمراض والمحاصيل والناس عبر المحيط الأطلسي بعد وقت قصير من اكتشاف الأمريكتين؟",
+        "correct_answer": "التبادل الكولومبي",
+        "incorrect_answers": [
+            "التجارة المثلثية",
+            "تجارة الرقيق عبر الأطلسي",
+            "طريق الحرير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أين دارت حرب البوير الثانية عام 1899‏؟",
+        "correct_answer": "جنوب أفريقيا",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "نيبال",
+            "بلغاريا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى أصبحت أغنية \"يا كندا\" النشيد الوطني الرسمي للبلاد؟",
+        "correct_answer": "1980",
+        "incorrect_answers": [
+            "1950",
+            "1920",
+            "1880"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي دولة حديثة تقع في المنطقة التي كانت تُعرف بـ \"فريجيا\" في العصور القديمة؟",
+        "correct_answer": "تركيا",
+        "incorrect_answers": [
+            "سوريا",
+            "اليونان",
+            "مصر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام دارت معركة هاستنغز؟",
+        "correct_answer": "1066",
+        "incorrect_answers": [
+            "911",
+            "1204",
+            "1420"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى تم اعتماد التقويم الغريغوري لأول مرة؟",
+        "correct_answer": "1582",
+        "incorrect_answers": [
+            "1623",
+            "1501",
+            "1555"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي ملك بريطاني كان يُعرف أيضاً باسم \"ويليام أورانج\"؟",
+        "correct_answer": "ويليام الثالث",
+        "incorrect_answers": [
+            "ويليام الأول",
+            "ويليام الثاني",
+            "ويليام الرابع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في حرب المحيط الهادئ (1879 - 1883)، خسرت بوليفيا منفذها إلى المحيط الهادئ بعد هزيمتها من قبل أي دولة في أمريكا الجنوبية؟",
+        "correct_answer": "تشيلي",
+        "incorrect_answers": [
+            "بيرو",
+            "البرازيل",
+            "الأرجنتين"
+        ]
+    }
+]

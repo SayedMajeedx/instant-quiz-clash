@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "بدأت الثورة البوهيمية (1618-1620) بعد أن فعل البروتستانت في براغ ماذا بالحكام الكاثوليك؟",
+        "correct_answer": "ألقوهم من النافذة",
+        "incorrect_answers": [
+            "أهانوهم وأمهاتهم",
+            "حبسوهم في القيود الخشبية",
+            "شنقوهم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام سقط جدار برلين؟",
+        "correct_answer": "1989",
+        "incorrect_answers": [
+            "1987",
+            "1991",
+            "1993"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ساعدت المملكة الفرنسية الولايات المتحدة في الحصول على استقلالها من بريطانيا العظمى خلال الحرب الثورية الأمريكية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "وقع الحادث النووي الكارثي في أوكرانيا عام 1986 في أي محطة طاقة؟",
+        "correct_answer": "تشيرنوبيل",
+        "incorrect_answers": [
+            "إيغنالينا",
+            "ماياك",
+            "كورسك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "رتب الإمبراطوريات الإيرانية (الفارسية) التالية ترتيباً زمنياً:",
+        "correct_answer": "الميدية، الأخمينية، الفرثية، الساسانية",
+        "incorrect_answers": [
+            "الميدية، الأخمينية، الساسانية، الفرثية",
+            "الأخمينية، الميدية، الفرثية، الساسانية",
+            "الأخمينية، الميدية، الساسانية، الفرثية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من الذي توّج شارلمان إمبراطوراً رومانياً مقدساً في يوم عيد الميلاد عام 800‏؟",
+        "correct_answer": "البابا ليون الثالث",
+        "incorrect_answers": [
+            "البابا أوربان الرابع",
+            "البابا ستيفين الخامس",
+            "البابا فالنتين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "افتُتحت قناة بنما أمام حركة الملاحة خلال 30 يوماً من بدء الحرب العالمية الأولى.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كانت أول مناظرة رئاسية متلفزة بين جيمي كارتر وجيرالد فورد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام انصهر المفاعل النووي في محطة تشيرنوبيل؟",
+        "correct_answer": "1986",
+        "incorrect_answers": [
+            "1991",
+            "1975",
+            "1998"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي مارشال ألماني كان يُلقب بـ 'ثعلب الصحراء'؟",
+        "correct_answer": "إرفين رومل",
+        "incorrect_answers": [
+            "إرنست بوش",
+            "فولفرام فريهر فون ريختهوفن",
+            "فيلهلم ليست"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هي آخر مستعمرة تنازلت عنها المملكة المتحدة، معلنة بذلك نهاية الإمبراطورية البريطانية؟",
+        "correct_answer": "هونغ كونغ",
+        "incorrect_answers": [
+            "الهند",
+            "أستراليا",
+            "أيرلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في الحرب العالمية الأولى، ما اسم التحالف الذي ضم ألمانيا، والنمسا-المجر، والدولة العثمانية، وبلغاريا؟",
+        "correct_answer": "دول المركز",
+        "incorrect_answers": [
+            "دول المحور",
+            "اتحاد الإمبراطوريات",
+            "التحالف السلطوي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هي أول عاصمة لكندا؟",
+        "correct_answer": "كينغستون",
+        "incorrect_answers": [
+            "تورونتو",
+            "أوتاوا",
+            "مونتريال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي يوم غزت ألمانيا بولندا؟",
+        "correct_answer": "1 سبتمبر 1939",
+        "incorrect_answers": [
+            "7 ديسمبر 1941",
+            "22 يونيو 1941",
+            "7 يوليو 1937"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في عام 1845، بدأت سلسلة من الحروب في نيوزيلندا سُميت باسم أي من السكان الأصليين؟",
+        "correct_answer": "الماوري",
+        "incorrect_answers": [
+            "البابوانيون",
+            "السكان الأصليون (الأبوريجين)",
+            "البولينيزيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو تاريخ الرحلة الأولى لطائرة بي-40 وارهوك؟",
+        "correct_answer": "14 أكتوبر 1938",
+        "incorrect_answers": [
+            "21 أغسطس 1939",
+            "12 يناير 1940",
+            "1 يونيو 1939"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي حضارة قامت ببناء مدينة تشيتشن إيتزا القديمة؟",
+        "correct_answer": "المايا",
+        "incorrect_answers": [
+            "الأزتك",
+            "الإنكا",
+            "التولتك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "بول بوت كان الديكتاتور السابق لأي دولة؟",
+        "correct_answer": "كمبوديا",
+        "incorrect_answers": [
+            "لاوس",
+            "كوريا الشمالية",
+            "فيتنام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى تم اختبار \"ذا غادجيت\"، أول جهاز نووي تم تفجيره في التاريخ؟",
+        "correct_answer": "16 يوليو 1945",
+        "incorrect_answers": [
+            "22 يونيو 1945",
+            "6 أغسطس 1945",
+            "5 أبريل 1945"
+        ]
+    }
+]

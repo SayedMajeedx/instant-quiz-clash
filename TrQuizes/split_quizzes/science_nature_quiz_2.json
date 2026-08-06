@@ -1,0 +1,236 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مكوك فضاء تابع لناسا تحطم أثناء دخوله الغلاف الجوي في 1 فبراير 2003‏؟",
+        "correct_answer": "كولومبيا",
+        "incorrect_answers": [
+            "تشالنجر",
+            "ديكفري",
+            "أنديفور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للكتلة؟",
+        "correct_answer": "الكيلوغرام",
+        "incorrect_answers": [
+            "الطن",
+            "الرطل",
+            "الغرام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أول كائن حي صعد إلى الفضاء؟",
+        "correct_answer": "ذباب الفاكهة",
+        "incorrect_answers": [
+            "القرد",
+            "الكلب",
+            "الفأر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "فاز ألبرت أينشتاين بجائزة نوبل عن نظريته النسبية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "إلى أي عنصر يشير الرمز \"⁦Au⁩\" في الجدول الدوري؟",
+        "correct_answer": "الذهب",
+        "incorrect_answers": [
+            "الفضة",
+            "الأكسجين",
+            "النيكل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) للتيار الكهربائي؟",
+        "correct_answer": "الأمبير",
+        "incorrect_answers": [
+            "الفولت",
+            "الأوم",
+            "الواط"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي درجة الحرارة المتساوية في مقياسي السيلسيوس والفهرنهايت؟",
+        "correct_answer": "-40",
+        "incorrect_answers": [
+            "32",
+            "-39",
+            "-42"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو فرط صوديوم الدم (⁦Hypernatremia⁩)‏؟",
+        "correct_answer": "ارتفاع نسبة الصوديوم في الدم",
+        "incorrect_answers": [
+            "انخفاض نسبة البوتاسيوم في الدم",
+            "ارتفاع نسبة الجلوكوز في الدم",
+            "انخفاض نسبة الحديد في الدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس جزءاً من بنية العصبون (الخلية العصبية) النموذجي؟",
+        "correct_answer": "جزر لانجرهانز",
+        "incorrect_answers": [
+            "عقدة رانفييه",
+            "خلية شوان",
+            "غمد المايلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "في أي مهمة تحطم مكوك الفضاء كولومبيا أثناء دخوله الغلاف الجوي؟",
+        "correct_answer": "⁦STS-107⁩",
+        "incorrect_answers": [
+            "⁦STS-51-L⁩",
+            "⁦STS-61-C⁩",
+            "⁦STS-109⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي يسبب صوت نبضات القلب؟",
+        "correct_answer": "انغلاق صمامات القلب",
+        "incorrect_answers": [
+            "انقباض حجرات القلب",
+            "خروج الدم من القلب",
+            "ارتخاء حجرات القلب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد النسخ التي تمتلكها الخلايا البشرية عادة من كل جين؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "1",
+            "4",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد حجرات قلب الإنسان؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "2",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو اللون الذي لا يمكن إنتاجه في الورود، حتى من خلال التعديل الوراثي؟",
+        "correct_answer": "الأزرق",
+        "incorrect_answers": [
+            "الأسود",
+            "البرتقالي",
+            "البني"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "نجم الشمال (⁦Polaris⁩) هو ألمع نجم في سماء الليل في نصف الكرة الشمالي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي غاز نبيل لديه أقل عدد ذري؟",
+        "correct_answer": "الهيليوم",
+        "incorrect_answers": [
+            "النيون",
+            "الأرجون",
+            "الكريبتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي من مهمات أبولو كانت الأولى التي هبطت على سطح القمر؟",
+        "correct_answer": "أبولو 11",
+        "incorrect_answers": [
+            "أبولو 10",
+            "أبولو 9",
+            "أبولو 13"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو \"مصنع الطاقة\" في الخلية الحيوانية حقيقية النواة؟",
+        "correct_answer": "الميتوكوندريا (المتقدرات)",
+        "incorrect_answers": [
+            "النواة",
+            "البلاستيدات الخضراء",
+            "الشبكة الإندوبلازمية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من أين تنحدر سلالة الكلاب \"تشيواوا\" (⁦Chihuahua⁩)‏؟",
+        "correct_answer": "المكسيك",
+        "incorrect_answers": [
+            "فرنسا",
+            "إسبانيا",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تتشكل الصخور النارية بفعل الحرارة والضغط الشديدين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    }
+]

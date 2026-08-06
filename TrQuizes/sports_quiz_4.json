@@ -1,0 +1,216 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو شريك الزوجي الذي حقق معه لاعب التنس جون ماكنرو أكبر نجاحاته؟",
+        "correct_answer": "بيتر فليمنغ",
+        "incorrect_answers": [
+            "مارك وودفورد",
+            "مايكل ستيتش",
+            "ماري كاريلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من منتخبات الدول التالية تأهل إلى كأس العالم لكرة القدم 2018 في روسيا؟",
+        "correct_answer": "تونس",
+        "incorrect_answers": [
+            "الولايات المتحدة الأمريكية",
+            "إيطاليا",
+            "هولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو اللاعب الذي فاز بالميدالية الذهبية في فردي كرة الطاولة للرجال في أولمبياد 2016‏؟",
+        "correct_answer": "ما لونغ (الصين)",
+        "incorrect_answers": [
+            "تشانغ جيكي (الصين)",
+            "جون ميزوتاني (اليابان)",
+            "فلاديمير سامسونوف (بيلاروسيا)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "أي من المدن الأوروبية التالية كانت الأولى التي تستضيف الألعاب الأولمبية الصيفية الحديثة ثلاث مرات؟",
+        "correct_answer": "لندن",
+        "incorrect_answers": [
+            "باريس",
+            "أثينا",
+            "روما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هي الدولة التي استضافت كأس العالم لكرة القدم عام 2022‏؟",
+        "correct_answer": "قطر",
+        "incorrect_answers": [
+            "أوغندا",
+            "فيتنام",
+            "بوليفيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي نادٍ إنجليزي لكرة القدم يُلقب بـ 'الثعالب'؟",
+        "correct_answer": "ليستر سيتي",
+        "incorrect_answers": [
+            "نورثهامبتون تاون",
+            "برادفورد سيتي",
+            "وست بروميتش ألبيون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كان هناك ما مجموعه 20 سباقاً في موسم فورمولا 1 لعام 2016.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من فاز بسباق جائزة موناكو الكبرى لعام 2018‏؟",
+        "correct_answer": "دانيال ريكاردو",
+        "incorrect_answers": [
+            "سباستيان فيتيل",
+            "كيمي رايكونن",
+            "لويس هاملتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "ما هو أعلى حزام يمكن الحصول عليه في رياضة التايكوندو؟",
+        "correct_answer": "الأسود",
+        "incorrect_answers": [
+            "الأبيض",
+            "الأحمر",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز ببطولة العالم لسائقي الفورمولا 1 لعام 2016‏؟",
+        "correct_answer": "نيكو روزبرغ",
+        "incorrect_answers": [
+            "لويس هاملتون",
+            "ماكس فيرستابن",
+            "كيمي رايكونن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي دولة فازت بكأس العالم لكرة القدم 2018 التي استضافتها روسيا؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "كرواتيا",
+            "بلجيكا",
+            "إنجلترا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "لماذا تم بناء جدار 'الوحش الأخضر' في ملعب فينواي بارك في الأصل؟",
+        "correct_answer": "لمنع مشاهدة المباريات من خارج الملعب.",
+        "incorrect_answers": [
+            "لجعل تسجيل الضربات الساحقة أكثر صعوبة.",
+            "لعرض الإعلانات التجارية.",
+            "لتوفير مقاعد إضافية للجمهور."
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ما هي الرياضة التي تُعرف بـ 'رياضة الملوك'؟",
+        "correct_answer": "سباق الخيل",
+        "incorrect_answers": [
+            "الشطرنج",
+            "المبارزة بالرماح",
+            "المبارزة بالسيف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من أي مدينة أمريكية جاء فريق لوس أنجلوس دودجرز في الأصل؟",
+        "correct_answer": "بروكلين",
+        "incorrect_answers": [
+            "لاس فيغاس",
+            "بوسطن",
+            "سياتل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "جوش منصور هو لاعب في أي فريق من فرق دوري الرغبي الوطني (⁦NRL⁩)‏؟",
+        "correct_answer": "بينريث بانثرز",
+        "incorrect_answers": [
+            "ملبورن ستورم",
+            "سيدني روسترز",
+            "نورث كوينزلاند كاوبويز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي من منافسات ألعاب القوى التالية غير مدرجة في مسابقة العشاري للرجال في الأولمبياد؟",
+        "correct_answer": "رمي المطرقة",
+        "incorrect_answers": [
+            "القفز بالزانة",
+            "الوثب الطويل",
+            "دفع الجلة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "متى تأسس نادي شالكه 04 الألماني لكرة القدم؟",
+        "correct_answer": "1904",
+        "incorrect_answers": [
+            "1909",
+            "2008",
+            "1999"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما هي الدولة التي أنجبت لاعبي كرة قدم مثل كافو، وروبيرتو كارلوس، وبيليه؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الأرجنتين",
+            "البرتغال",
+            "إسبانيا"
+        ]
+    }
+]

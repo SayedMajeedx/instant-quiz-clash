@@ -1,0 +1,240 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من نجوم السينما لديه تمثال في ساحة ليستر (⁦Leicester Square⁩)‏؟",
+        "correct_answer": "تشارلي تشابلن",
+        "incorrect_answers": [
+            "بول نيومان",
+            "روان أتكينسون",
+            "ألفريد هيتشكوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من المعالم التالية لا يقع في مدينة نيويورك؟",
+        "correct_answer": "نصب لينكون التذكاري",
+        "incorrect_answers": [
+            "مبنى إمباير ستيت",
+            "تايمز سكوير",
+            "سنترال بارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي دولة تضع علم الاتحاد البريطاني (⁦Union Jack⁩) في علمها؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "جنوب أفريقيا",
+            "كندا",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الجبل الذي يملك أعلى قمة في أستراليا؟",
+        "correct_answer": "جبل كوسيوسكو، نيوساوث ويلز",
+        "incorrect_answers": [
+            "جبل أوسا، تسمانيا",
+            "جبل بارتل فرير، كوينزلاند",
+            "جبل زيل، الإقليم الشمالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الرسمية والأكثر انتشاراً في كوبا؟",
+        "correct_answer": "الإسبانية",
+        "incorrect_answers": [
+            "البرتغالية",
+            "الفرنسية",
+            "الإيطالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+        "correct_answer": "26",
+        "incorrect_answers": [
+            "28",
+            "23",
+            "24"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم سعرة حرارية توجد في علبة بيبسي كولا سعة 355 مل؟",
+        "correct_answer": "150",
+        "incorrect_answers": [
+            "200",
+            "100",
+            "155"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع 1,776 قدماً (⁦541.3⁩ متراً)‏؟",
+        "correct_answer": "مركز التجارة العالمي الواحد، الولايات المتحدة",
+        "incorrect_answers": [
+            "تايبيه 101، تايوان",
+            "برج ويليس، الولايات المتحدة",
+            "برج جين ماو، الصين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تُستخدم كلمة 'أناناس' (⁦Ananas⁩) في معظم اللغات الأخرى للإشارة إلى فاكهة الأناناس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي هو رمز اتحاد النقل الجوي الدولي (⁦IATA⁩) لمطار مانشستر؟",
+        "correct_answer": "⁦MAN⁩",
+        "incorrect_answers": [
+            "⁦EGLL⁩",
+            "⁦LHR⁩",
+            "⁦EGCC⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في عام 2013، كم من الأموال خُسرت بسبب عمليات الاحتيال النيجيرية؟",
+        "correct_answer": "⁦12.7⁩ مليار دولار",
+        "incorrect_answers": [
+            "95 مليون دولار",
+            "956 مليون دولار",
+            "⁦2.7⁩ مليار دولار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "خمسة دولارات تعادل كم قطعة من فئة النيكل؟",
+        "correct_answer": "100",
+        "incorrect_answers": [
+            "50",
+            "25",
+            "69"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "رهاب الـ 'زانثوفوبيا' (⁦Xanthophobia⁩) هو الخوف من أي لون؟",
+        "correct_answer": "الأصفر",
+        "incorrect_answers": [
+            "الأزرق",
+            "الأحمر",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من من المغنين وكتاب الأغاني الأمريكيين التاليين فاز بجائزة نوبل في الأدب؟",
+        "correct_answer": "بوب ديلن",
+        "incorrect_answers": [
+            "بادي هولي",
+            "جوني كاش",
+            "أليس كوبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "إلى أي عائلة لغوية تنتمي اللغة الكازاخية؟",
+        "correct_answer": "التركية",
+        "incorrect_answers": [
+            "المغولية",
+            "الهندية الأوروبية",
+            "الأورالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو المنتج الذي كانت تبيعه شركة الاتصالات 'نوكيا' في الأصل؟",
+        "correct_answer": "الورق",
+        "incorrect_answers": [
+            "الهواتف",
+            "الحواسيب",
+            "المعالجات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من أدوات المائدة هي الأنسب لتناول الحساء (الشوربة)‏؟",
+        "correct_answer": "الملعقة",
+        "incorrect_answers": [
+            "الشوكة",
+            "السكين",
+            "عيدان تناول الطعام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في مقابلة مع قناة ⁦CBS⁩ عام 1994، ما هي الحركة الغريبة التي قام بها بيل غيتس، المؤسس المشارك لشركة مايكروسوفت، أمام الكاميرا؟",
+        "correct_answer": "القفز فوق كرسي مكتب",
+        "incorrect_answers": [
+            "القفز للخلف فوق مكتب",
+            "الوقوف على رأسه",
+            "الكتابة على لوحة المفاتيح أثناء الوقوف على اليدين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو وزن سبائك الذهب في لعبة 'فول آوت: نيو فيغاس' (⁦Fallout⁩: ⁦New Vegas⁩)‏؟",
+        "correct_answer": "35 رطلاً",
+        "incorrect_answers": [
+            "30 رطلاً",
+            "40 رطلاً",
+            "⁦32.50⁩ رطلاً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "عندما يقال عن شخص إنه 'حسود'، فبأي لون يوصف عادةً؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأزرق",
+            "الأصفر"
+        ]
+    }
+]

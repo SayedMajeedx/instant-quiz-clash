@@ -1,0 +1,222 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من دول يوغوسلافيا السابقة التالية هي دولة حبيسة (لا تطل على بحار)‏؟",
+        "correct_answer": "صربيا",
+        "incorrect_answers": [
+            "البوسنة والهرسك",
+            "الجبل الأسود",
+            "كرواتيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "إلى أي دولة تنتمي جزر ملوك (المعروفة بشكل غير رسمي باسم جزر التوابل)‏؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "تشيلي",
+            "نيوزيلندا",
+            "فيجي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "دولة واحدة فقط في العالم يبدأ اسمها باللغة الإنجليزية بحرف '⁦Q⁩'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي مدينة هندية يقع تاج محل？",
+        "correct_answer": "أغرا",
+        "incorrect_answers": [
+            "مومباي",
+            "فريد آباد",
+            "ثين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "غرينلاند هي جزء من أي مملكة؟",
+        "correct_answer": "الدنمارك",
+        "incorrect_answers": [
+            "السويد",
+            "النرويج",
+            "المملكة المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "تحت سيادة أي دولة تقع جزر أندمان ونيكوبار في جنوب شرق آسيا؟",
+        "correct_answer": "الهند",
+        "incorrect_answers": [
+            "فيتنام",
+            "تايلاند",
+            "إندونيسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة أستراليا؟",
+        "correct_answer": "كانبرا",
+        "incorrect_answers": [
+            "سيدني",
+            "ملبورن",
+            "بريزبان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي مما يلي هي العملة الرسمية لجزر كوك؟",
+        "correct_answer": "الدولار النيوزيلندي",
+        "incorrect_answers": [
+            "الدولار الأمريكي",
+            "الجنيه الإسترليني",
+            "الدولار الأسترالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بوركينا فاسو؟",
+        "correct_answer": "واغادوغو",
+        "incorrect_answers": [
+            "ياوندي",
+            "ياموسوكرو",
+            "أبيدجان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو الميناء الأكثر نشاطاً في أوروبا؟",
+        "correct_answer": "ميناء روتردام",
+        "incorrect_answers": [
+            "ميناء أنتويرب",
+            "ميناء هامبورغ",
+            "ميناء أمستردام"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "طوكيو هي عاصمة اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الوحيدة في الولايات المتحدة التي لا يملك علمها شكلاً رباعي الأضلاع؟",
+        "correct_answer": "أوهايو",
+        "incorrect_answers": [
+            "فلوريدا",
+            "أيداهو",
+            "نيومكسيكو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مدينة الفاتيكان، أصغر دولة في العالم، محاطة بالكامل بأي دولة؟",
+        "correct_answer": "إيطاليا",
+        "incorrect_answers": [
+            "فرنسا",
+            "إسبانيا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ولاية كاليفورنيا أكبر مساحةً من اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "القارة القطبية الجنوبية (أنتاركتيكا) هي أكبر صحراء في العالم.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الجزر اليابانية التالية هي الأكبر مساحة؟",
+        "correct_answer": "شيكوكو",
+        "incorrect_answers": [
+            "إكي",
+            "أودايبا",
+            "أوكيناوا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة داخل المملكة المتحدة لا يمثلها علمها الوطني (علم الاتحاد)‏؟",
+        "correct_answer": "ويلز",
+        "incorrect_answers": [
+            "إسكتلندا",
+            "أيرلندا",
+            "جزيرة وايت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي دولة تطالب بالسيادة على إقليم كوسوفو المتنازع عليه؟",
+        "correct_answer": "صربيا",
+        "incorrect_answers": [
+            "كرواتيا",
+            "ألبانيا",
+            "مقدونيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر صحراء حارة في العالم؟",
+        "correct_answer": "الصحراء الكبرى",
+        "incorrect_answers": [
+            "صحراء غوبي",
+            "صحراء موهافي",
+            "صحراء كالاهاري"
+        ]
+    }
+]

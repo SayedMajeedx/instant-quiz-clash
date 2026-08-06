@@ -1,0 +1,230 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من الدول الأفريقية التالية كانت الأكثر نجاحاً في مقاومة الاستعمار؟",
+        "correct_answer": "إثيوبيا",
+        "incorrect_answers": [
+            "ساحل العاج",
+            "الكونغو",
+            "ناميبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من هو الملك الإنجليزي الذي تزوج من إليانور آكيتيان؟",
+        "correct_answer": "هنري الثاني",
+        "incorrect_answers": [
+            "ريتشارد الأول",
+            "هنري الأول",
+            "هنري الخامس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "خلال الحرب الأهلية الإسبانية (1936)، قاتل فرانسيسكو فرانكو لصالح أي فصيل سياسي؟",
+        "correct_answer": "إسبانيا القومية",
+        "incorrect_answers": [
+            "إسبانيا الجمهورية",
+            "الجبهة الشعبية",
+            "الدولة البابوية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "إلى من يُنسب أول دليل وجودي (الدليل الأنطولوجي) لإثبات وجود الله؟",
+        "correct_answer": "أنزلم من كانتربري",
+        "incorrect_answers": [
+            "رينيه ديكارت",
+            "إيمانويل كانت",
+            "أرسطو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عصر موسيقي كان عازف البيانو والمؤلف فريدريك شوبان؟",
+        "correct_answer": "العصر الرومانسي",
+        "incorrect_answers": [
+            "العصر الكلاسيكي",
+            "عصر الباروك",
+            "عصر النهضة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من شعوب الشرق الأدنى القديم التالية لا تزال قائمة كمجموعة عرقية معاصرة؟",
+        "correct_answer": "الآشوريون",
+        "incorrect_answers": [
+            "البابليون",
+            "الحثيون",
+            "العيلاميون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى تأسست قوات الـ (⁦SS⁩) أو شوتزشتافل؟",
+        "correct_answer": "4 أبريل 1925",
+        "incorrect_answers": [
+            "1 سبتمبر 1941",
+            "8 مارس 1935",
+            "21 فبراير 1926"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من كان رئيس الولايات المتحدة أثناء توقيع صفقة شراء غادسدن؟",
+        "correct_answer": "فرانكلين بيرس",
+        "incorrect_answers": [
+            "أندرو جونسون",
+            "أبراهام لينكون",
+            "جيمس بولك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من هي الشركة التي صممت رشاش المينيغون (⁦Minigun⁩) في عام 1960‏؟",
+        "correct_answer": "جنرال إلكتريك",
+        "incorrect_answers": [
+            "كولت لصناعة الأسلحة",
+            "هيكلير آند كوخ",
+            "سيغ ساور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كم عدد السفن الشقيقة لسفينة تايتنيك؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "4",
+            "3",
+            "1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما الذي عثر عليه راعيان شابان عام 1946 بالقرب من أحد الكهوف؟",
+        "correct_answer": "مخطوطات البحر الميت",
+        "incorrect_answers": [
+            "صندوق اللحية السوداء",
+            "خراف",
+            "أول نائم في كهف واهاكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي ملك قُتل في معركة بوسورث عام 1485‏؟",
+        "correct_answer": "ريتشارد الثالث",
+        "incorrect_answers": [
+            "إدوارد الخامس",
+            "هنري السابع",
+            "جيمس الأول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من كان أول رئيس لكينيا؟",
+        "correct_answer": "جومو كينياتا",
+        "incorrect_answers": [
+            "دانيال موي",
+            "توم مبويا",
+            "أوجينجا أودينجا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي يوم بدأت الحرب العالمية الأولى؟",
+        "correct_answer": "28 يوليو",
+        "incorrect_answers": [
+            "28 يناير",
+            "28 يونيو",
+            "28 أبريل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي دولة في أمريكا الجنوبية حاربت بريطانيا العظمى على جزر فالكلاند عام 1982‏؟",
+        "correct_answer": "الأرجنتين",
+        "incorrect_answers": [
+            "البرازيل",
+            "تشيلي",
+            "فنزويلا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان المطور والمخطط الرئيسي لقناة السويس؟",
+        "correct_answer": "فرديناند دي لسبس",
+        "incorrect_answers": [
+            "لويس أوجين كافينياك",
+            "جون ميلتون",
+            "يوهان لوكاس فون هيلدبراندت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما اسم البطل القومي للفلبين الذي ألهم وقاد الثورة الفلبينية ضد الاستعمار الإسباني؟",
+        "correct_answer": "خوسيه ريزال",
+        "incorrect_answers": [
+            "سيمون بوليفار",
+            "بينيتو خواريز",
+            "خوسيه دي سان مارتين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "خلال الثلاثية الرومانية عام 42 قبل الميلاد، ما هي المنطقة التي مُنحت لليبيدوس؟",
+        "correct_answer": "هسبانيا",
+        "incorrect_answers": [
+            "إيطاليا",
+            "غاليا",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من هو مبتكر المشروب الغازي دكتور بيبر (⁦Dr⁩. ⁦Pepper⁩)‏؟",
+        "correct_answer": "تشارلز ألديرتون",
+        "incorrect_answers": [
+            "جيمس ويلينغتون",
+            "جونسون هينسين",
+            "بوريس هيفيلتيك"
+        ]
+    }
+]

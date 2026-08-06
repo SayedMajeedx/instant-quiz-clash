@@ -1,0 +1,216 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي يُعتبر مثالاً على الإشراط الكلاسيكي؟",
+        "correct_answer": "تجارب كلاب بافلوف",
+        "incorrect_answers": [
+            "تجربة صندوق سكينر",
+            "تجربة قطة شرودنغر",
+            "تجارب قرود هارلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب القزمة المعترف بها رسمياً في النظام الشمسي والتي سميت تيمناً بآلهة بولينيزية؟",
+        "correct_answer": "2",
+        "incorrect_answers": [
+            "0",
+            "1",
+            "5"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يتكون ملح الطعام بنسبة 100% من الصوديوم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كتلة الأرض والقمر متساوية تقريباً.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو المعدن الذي يمتلك أقل درجة على مقياس موهس لصلابة المعادن؟",
+        "correct_answer": "التلك",
+        "incorrect_answers": [
+            "الكوارتز",
+            "الألماس",
+            "الجبس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هي وحدة القياس العالمية الأساسية (⁦SI⁩) لدرجة الحرارة؟",
+        "correct_answer": "كلفن",
+        "incorrect_answers": [
+            "فهرنهايت",
+            "سيلسيوس",
+            "رانكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو أكبر حيوان يعيش حالياً على وجه الأرض؟",
+        "correct_answer": "الحوت الأزرق",
+        "incorrect_answers": [
+            "الأوركا",
+            "الحبار الضخم",
+            "الزرافة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد قوانين الديناميكا الحرارية؟",
+        "correct_answer": "أربعة",
+        "incorrect_answers": [
+            "ثلاثة",
+            "اثنان",
+            "خمسة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد العظام في جسم الإنسان؟",
+        "correct_answer": "206",
+        "incorrect_answers": [
+            "203",
+            "209",
+            "200"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "قوة الجذب المركزي هي قوة ظاهرة تؤثر إلى الخارج على جسم يتحرك حول مركز، وتنشأ عن قصور الجسم الذاتي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الكواكب في نظامنا الشمسي؟",
+        "correct_answer": "ثمانية",
+        "incorrect_answers": [
+            "تسعة",
+            "سبعة",
+            "عشرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أين ضربت العاصفة العظيمة عام 1987 اليابسة أولاً؟",
+        "correct_answer": "كورنوال",
+        "incorrect_answers": [
+            "ساري",
+            "ويلز",
+            "الميدلاندز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما اسم الثقب الأسود الفائق الكتلة الموجود في مركز مجرة درب التبانة؟",
+        "correct_answer": "ساجيتاريوس ⁦A⁩*",
+        "incorrect_answers": [
+            "مسييه 87",
+            "ألفا قنطورس",
+            "أندروميدا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الأقمار التي يمتلكها كوكب بلوتو؟",
+        "correct_answer": "خمسة",
+        "incorrect_answers": [
+            "اثنان",
+            "ثلاثة",
+            "واحد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يدرس علم التشريح أشكال البنى العيانية مثل الأعضاء والأجهزة العضوية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يحدث مرض السكري من النوع الأول نتيجة لخلل في عمل الكبد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من الجسم تؤثر عليه حالة هشاشة العظام المرضية؟",
+        "correct_answer": "العظام",
+        "incorrect_answers": [
+            "الجلد",
+            "الدماغ",
+            "القلب"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يحتوي السكر على الدهون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "رهاب الكلمات الطويلة (هيبوبوتومونستروسيسكيبيداليوفوبيا) هو الخوف غير العقلاني من الكلمات الطويلة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    }
+]

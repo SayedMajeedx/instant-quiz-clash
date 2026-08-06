@@ -1,0 +1,238 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى تم اختراع قرص الـ ⁦DVD⁩‏؟",
+        "correct_answer": "1995",
+        "incorrect_answers": [
+            "2000",
+            "1990",
+            "1980"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "في أي عام تم الكشف عن نظارة 'أوكولوس ريفت' للجمهور عبر حملة على منصة كيك ستارتر؟",
+        "correct_answer": "2012",
+        "incorrect_answers": [
+            "2010",
+            "2011",
+            "2013"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "إلى ماذا يرمز الاختصار ⁦SSD⁩ في وحدات تخزين الكمبيوتر؟",
+        "correct_answer": "قرص الحالة الصلبة",
+        "incorrect_answers": [
+            "جهاز تخزين البرمجيات",
+            "بيانات فائقة السرعة",
+            "قرص النظام الآمن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "في أي عام تم إصدار أول هاتف آيفون؟",
+        "correct_answer": "2007",
+        "incorrect_answers": [
+            "2005",
+            "2006",
+            "2004"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي وحدة قياس المقاومة الكهربائية في النظام الدولي للوحدات؟",
+        "correct_answer": "الأوم",
+        "incorrect_answers": [
+            "الأمبير",
+            "السيمنز",
+            "الفولت"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "يعتبر هاتف آيفون ⁦3G⁩ الجيل الثاني من هواتف الآيفون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو المساعد الصوتي الافتراضي الذي طورته شركة أمازون؟",
+        "correct_answer": "أليكسا",
+        "incorrect_answers": [
+            "مساعد جوجل",
+            "سيري",
+            "كورتانا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو اسم الآلة البسيطة التي تتكون من ذراع صلبة تتحرك بحرية حول نقطة ارتكاز ثابتة؟",
+        "correct_answer": "الرافعة",
+        "incorrect_answers": [
+            "الأسفين",
+            "البرغي",
+            "البكرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "من بين جميع مكاكيك الفضاء التابعة لوكالة ناسا، ما هما المكوكان اللذان دُمِّرا في كوارث؟",
+        "correct_answer": "تشالنجر وكولومبيا",
+        "incorrect_answers": [
+            "إنتربرايز وأتلانتس",
+            "ديسكفري وإنديفور",
+            "لاشيء مما سبق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الكلمة الشهيرة التي استخدمتها شركة آبل لوصف إزالتها لمنفذ سماعة الرأس؟",
+        "correct_answer": "الشجاعة",
+        "incorrect_answers": [
+            "الابتكار",
+            "الثورة",
+            "الجرأة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "من هو مهندس القوات الجوية ووكالة ناسا السابق الذي اخترع مسدس الماء الشهير 'سوبر سوكر' (⁦Super Soaker⁩)‏؟",
+        "correct_answer": "لوني جونسون",
+        "incorrect_answers": [
+            "بروس داندراد",
+            "فرانسيس نورثكوت",
+            "أشيتي تريبي-أولينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "في أي دولة تأسست شركة 'بلاك بيري المحدودة' (⁦BlackBerry Limited⁩) لبرمجيات وأجهزة الهواتف المحمولة؟",
+        "correct_answer": "كندا",
+        "incorrect_answers": [
+            "النرويج",
+            "الولايات المتحدة الأمريكية",
+            "المملكة المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى تم إصدار أول مشغل أقراص مضغوطة (⁦CD player⁩) في الأسواق؟",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1983",
+            "1981",
+            "1980"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "على أي هاتف آيفون ظهر المساعد الصوتي 'سيري' (⁦Siri⁩) من آبل لأول مرة؟",
+        "correct_answer": "آيفون ⁦4S⁩",
+        "incorrect_answers": [
+            "آيفون ⁦6S⁩",
+            "آيفون ⁦3GS⁩",
+            "آيفون ⁦5S⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي أول أفعوانية من نوع 'إنفينيتي كوستر' (⁦Infinity Coaster⁩) في العالم وأين تقع؟",
+        "correct_answer": "ذا سمايلر، ألتون تاورز، المملكة المتحدة",
+        "incorrect_answers": [
+            "مدغشقر ماد بيرسوت، موشنجيت دبي، الإمارات",
+            "غولد راش، سلاغهارين، هولندا",
+            "مونستر، أدفنتشرلاند ألتونا، الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "خلال المراحل الأولى من حرب فيتنام، كان لبندقية ⁦M16⁩ سمعة سيئة فيما يتعلق بقلة موثوقيتها وأعطالها المتكررة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هو أبرز مشروع جانبي دخلت فيه شركة ريمنغتون (⁦Remington⁩) الشهيرة للأسلحة النارية؟",
+        "correct_answer": "الآلات الكاتبة",
+        "incorrect_answers": [
+            "الخلاطات الكهربائية",
+            "مراوح السقف",
+            "مقابض الأبواب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الأجهزة والتقنيات",
+        "question": "أي من شركات الهواتف المحمولة التالية لا يقع مقرها الرئيسي في قارة آسيا؟",
+        "correct_answer": "نوكيا",
+        "incorrect_answers": [
+            "إل جي للإلكترونيات",
+            "سامسونج",
+            "إتش تي سي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الأجهزة والتقنيات",
+        "question": "ما هي الشركة التي صنعت آلة الطبول الإلكترونية الشهيرة ⁦TR-808⁩‏؟",
+        "correct_answer": "رولاند",
+        "incorrect_answers": [
+            "تيكنيكس",
+            "كورج",
+            "كاسيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الأجهزة والتقنيات",
+        "question": "متى بدأت الأقراص المضغوطة (⁦CD⁩) بالظهور في الأسواق الاستهلاكية؟",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1992",
+            "1972",
+            "1962"
+        ]
+    }
+]

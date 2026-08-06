@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام بدأت الحرب العالمية الأولى؟",
+        "correct_answer": "1914",
+        "incorrect_answers": [
+            "1905",
+            "1919",
+            "1925"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كم مرة تزوج ألبرت أينشتاين في حياته؟",
+        "correct_answer": "مرتين",
+        "incorrect_answers": [
+            "خمس مرات",
+            "ثلاث مرات",
+            "مرة واحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي مما يلي لم يكن من مواقع الإنزال على الشواطئ خلال غزو نورماندي؟",
+        "correct_answer": "سيلفر",
+        "incorrect_answers": [
+            "غولد",
+            "جونو",
+            "سورد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام حدث زلزال وتسونامي يوم عيد الصناديق (بوسكينغ داي) في المحيط الهندي؟",
+        "correct_answer": "2004",
+        "incorrect_answers": [
+            "2006",
+            "2008",
+            "2002"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كل ما يلي أسماء للولايات المتحاربة السبع في الصين القديمة ما عدا:",
+        "correct_answer": "جاي (翟)",
+        "incorrect_answers": [
+            "جاو (趙)",
+            "تشين (秦)",
+            "تشي (齊)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "وقعت معركة طرف الغار (ترافالغار) في 23 أكتوبر 1805.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من كان بوهدان خميلنيتسكي من بين الخيارات التالية؟",
+        "correct_answer": "قائد القوزاق الأوكرانيين",
+        "incorrect_answers": [
+            "الأمين العام للحزب الشيوعي في الاتحاد السوفيتي",
+            "أمير الأفلاق",
+            "أمير نوفغورود الأكبر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "جامعة أكسفورد أقدم من إمبراطورية الأزتيك.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي الحرب التي تطوع فيها الكاتب جورج أورويل وكاد أن يلقى حتفه فيها؟",
+        "correct_answer": "الحرب الأهلية الإسبانية",
+        "incorrect_answers": [
+            "الحرب العالمية الأولى",
+            "الحرب العالمية الثانية",
+            "الحرب الأهلية الروسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من الذي اكتشف البنسلين؟",
+        "correct_answer": "ألكسندر فليمنغ",
+        "incorrect_answers": [
+            "ماري كوري",
+            "ألفرد نوبل",
+            "لويس باستور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هو الاسم الرمزي للغزو الألماني للاتحاد السوفيتي في الحرب العالمية الثانية؟",
+        "correct_answer": "عملية بارباروسا",
+        "incorrect_answers": [
+            "عملية القيصر (كايسرشلاخت)",
+            "عملية غير معقولة (أنثينكابل)",
+            "عملية مولوتوف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من من الثوار السوفييت التاليين تم نفيُه من الاتحاد السوفيتي واغتيل لاحقاً في عام 1940 بسبب انتقاده للستالينية؟",
+        "correct_answer": "ليون تروتسكي",
+        "incorrect_answers": [
+            "ليف كامينيف",
+            "ميخائيل كالينين",
+            "فلاديمير لينين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في عام 1961، تحطمت طائرة أمريكية من طراز ⁦B-52⁩ وكادت أن تفجر قنبلتين نوويتين بقوة 4 ميغاطن فوق أي مدينة أمريكية؟",
+        "correct_answer": "غولدسبورو، كارولاينا الشمالية",
+        "incorrect_answers": [
+            "هيكسفيل، نيويورك",
+            "جاكسونفيل، فلوريدا",
+            "كونواي، أركنساس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من الشعوب القديمة التالية لم يُصنف ضمن الشعوب الهيلينية (اليونانية)‏؟",
+        "correct_answer": "الإيليريون",
+        "incorrect_answers": [
+            "الدوريون",
+            "الآخيون",
+            "الأيونيون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "تفككت الدولة العثمانية بعد خسارتها في أي حرب؟",
+        "correct_answer": "الحرب العالمية الأولى",
+        "incorrect_answers": [
+            "حرب القرم",
+            "الثورة الصربية",
+            "حرب البلقان الثانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي يوم بدأت محاولة الانقلاب عام 1991 في الاتحاد السوفيتي؟",
+        "correct_answer": "19 أغسطس",
+        "incorrect_answers": [
+            "21 أغسطس",
+            "26 ديسمبر",
+            "24 ديسمبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام افتُتح أول مطعم بيتزا هت؟",
+        "correct_answer": "1958",
+        "incorrect_answers": [
+            "1976",
+            "1965",
+            "1942"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من يُعتقد أنه أول أوروبي 'اكتشف' نيوزيلندا؟",
+        "correct_answer": "أبل تاسمان",
+        "incorrect_answers": [
+            "كريستوفر كولومبوس",
+            "جين باريه",
+            "جون كابوت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى تأسست مدينة روما في إيطاليا؟",
+        "correct_answer": "753 قبل الميلاد",
+        "incorrect_answers": [
+            "902 قبل الميلاد",
+            "524 قبل الميلاد",
+            "697 قبل الميلاد"
+        ]
+    }
+]

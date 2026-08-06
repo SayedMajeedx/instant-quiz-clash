@@ -1,0 +1,5430 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الدول التالية لم تكن طرفاً محارباً في الحرب العالمية الأولى؟",
+        "correct_answer": "الدنمارك",
+        "incorrect_answers": [
+            "البرتغال",
+            "اليونان",
+            "رومانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يحتوي منتج \"تشيز ويز\" من كرافت على مستنبتات الجبن، ولكنه لا يحتوي على جبن حقيقي في الواقع.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة المالكة لخدمة أوتلوك؟",
+        "correct_answer": "مايكروسوفت",
+        "incorrect_answers": [
+            "جوجل",
+            "أبل",
+            "ياهو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "منتجعات وفيلات العطلات \"دي إيمهوف\" و\"بورت زيلاند\" و\"هيت هايدربوس\" مملوكة لأي شركة؟",
+        "correct_answer": "سنتر باركس",
+        "incorrect_answers": [
+            "يلو فيليج",
+            "كيكامب",
+            "فيلا بلس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما معنى كلمة \"أستازيا\" (Astasia) من بين الخيارات التالية؟",
+        "correct_answer": "عدم القدرة على الوقوف",
+        "incorrect_answers": [
+            "عدم القدرة على اتخاذ القرارات",
+            "عدم القدرة على التركيز في أي شيء",
+            "رغبة حمى شديدة في تمزيق الملابس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الذي يطلق في لعبة البوكر على اليد التي تحتوي على ثلاث بطاقات من نفس النوع وبطاقتين متطابقتين (زوج)؟",
+        "correct_answer": "فول هاوس",
+        "incorrect_answers": [
+            "فلاش",
+            "ستريت",
+            "هايت كارد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو الرئيس الأمريكي الذي لا توجد صورته على جبل راشمور؟",
+        "correct_answer": "جون كينيدي",
+        "incorrect_answers": [
+            "ثيودور روزفلت",
+            "أبراهام لينكولن",
+            "توماس جيفرسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللعبة الأكثر مبيعاً لعام 1983 والتي سببت هوساً كبيراً أدى إلى اندلاع أعمال شغب في المتاجر؟",
+        "correct_answer": "دمى كابج باتش كيدز",
+        "incorrect_answers": [
+            "المتحولون",
+            "كير بيرز",
+            "مكعب روبيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من اللغات التالية ليست لغة هندوأوروبية؟",
+        "correct_answer": "المجرية",
+        "incorrect_answers": [
+            "الروسية",
+            "اليونانية",
+            "اللاتفية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "متى تأسس موقع \"يوتيوب\"؟",
+        "correct_answer": "14 فبراير 2005",
+        "incorrect_answers": [
+            "22 مايو 2004",
+            "12 سبتمبر 2005",
+            "19 يوليو 2009"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "سلسلتا مطاعم الوجبات السريعة \"كارلز جونيور\" و\"هارديز\" مملوكتان للشركة نفسها.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من ماذا تُصنع قبعات بنما الشهيرة؟",
+        "correct_answer": "القش",
+        "incorrect_answers": [
+            "الحرير",
+            "القنب",
+            "الكتان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي بلد يأتي السوشي والكاريوكي؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "الصين",
+            "كوريا الجنوبية",
+            "فيتنام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم الدواسة الإضافية في السيارات ذات ناقل الحركة اليدوي (القير العادي)؟",
+        "correct_answer": "القابض (الكلتش)",
+        "incorrect_answers": [
+            "مغير السرعة",
+            "المعزز",
+            "فرامل اليد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة التي ينتهي بها شعار صحيفة نيويورك تايمز: \"كل الأخبار الصالحة لـ...\"؟",
+        "correct_answer": "النشر",
+        "incorrect_answers": [
+            "الاستيعاب",
+            "الرؤية",
+            "القراءة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي العبارة اللاتينية التي تُترجم تقريباً إلى \"اغتنم اليوم\"؟",
+        "correct_answer": "كاربي ديم",
+        "incorrect_answers": [
+            "مومينتو موري",
+            "بلس ألترا",
+            "سيك سيمبر تيرانبس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من المواد الكيميائية التالية توجد في بذور الباذنجان؟",
+        "correct_answer": "النيكوتين",
+        "incorrect_answers": [
+            "الميسكالين",
+            "السيانيد",
+            "السيبلوسيبين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي تسمانيا？",
+        "correct_answer": "ولاية أسترالية",
+        "incorrect_answers": [
+            "نكهة آيس كريم من بين آند جيريز",
+            "اضطراب نفسي",
+            "اسم شخصية كرتونية من وارنر برذرز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "متى تأسس موقع ريديت الشهير؟",
+        "correct_answer": "2005",
+        "incorrect_answers": [
+            "2008",
+            "2004",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم طرح جهاز آيبود الأول من شركة أبل؟",
+        "correct_answer": "2001",
+        "incorrect_answers": [
+            "2000",
+            "1999",
+            "1998"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة التي تمثل حرف 'T' في أبجدية الناتو الصوتية؟",
+        "correct_answer": "تانغو",
+        "incorrect_answers": [
+            "تارجت",
+            "تاكسي",
+            "تركي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من المصطلحات التشريحية التالية يشير إلى الطرف الذي يحتوي على الذيل لدى الكائن الحي؟",
+        "correct_answer": "ذيلي (Caudal)",
+        "incorrect_answers": [
+            "بطني (Ventral)",
+            "قريب (Proximal)",
+            "إكليلي (Coronal)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الشعار الذي استخدمته شركة الوجبات السريعة ماكدونالدز قبل شعارها الحالي \"أنا أحبه\"؟",
+        "correct_answer": "نحب أن نرى ابتسامتك",
+        "incorrect_answers": [
+            "لماذا تدفع أكثر؟!",
+            "احصل عليها بطريقتك",
+            "إسعاد الناس من خلال الطعام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في التقويم الميلادي القياسي، كم شهراً يبدأ اسمه بالحرف الإنجليزي 'J'؟",
+        "correct_answer": "ثلاثة",
+        "incorrect_answers": [
+            "أربعة",
+            "خمسة",
+            "اثنان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من المشروبات الغازية التالية تم طرحه في الأسواق أولاً؟",
+        "correct_answer": "دكتور بيبر",
+        "incorrect_answers": [
+            "كوكاكولا",
+            "سبرايت",
+            "ماونتن ديو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تُنتج نوتيلا بواسطة شركة فيريرو الألمانية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الأوراق في ورق اللعب (الكوتشينة) القياسي؟",
+        "correct_answer": "52",
+        "incorrect_answers": [
+            "32",
+            "40",
+            "64"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "توفي الفيلسوف فرانسيس بيكون بسبب حالة التهاب رئوي حادة أثناء محاولته حفظ اللحم عن طريق حشو دجاجة بالثلج.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الميتوكوندريا هي مركز توليد الطاقة في الخلية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي بلد أوروبي تأتي جبنة جودا الشهيرة؟",
+        "correct_answer": "هولندا",
+        "incorrect_answers": [
+            "بلجيكا",
+            "ألمانيا",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هي أصغر شخصية حصلت على جائزة نوبل في التاريخ؟",
+        "correct_answer": "ملالا يوسفزاي",
+        "incorrect_answers": [
+            "لورنس براغ",
+            "فيرنر هايزنبرغ",
+            "ياسر عرفات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا ترمز الحروف الثلاثة لسلسلة مطاعم \"KFC\"؟",
+        "correct_answer": "كنتاكي فرايد تشيكن",
+        "incorrect_answers": [
+            "كنتاكي فريش تشيز",
+            "كيبلد فريكي كاو",
+            "كيوي فود كت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو المهندس المعماري الذي صمم برج التجارة العالمي الجديد (One World Trade Center) في مانهاتن بنيويورك؟",
+        "correct_answer": "ديفيد تشايلدز",
+        "incorrect_answers": [
+            "بياركي إنجلز",
+            "مايكل أراد",
+            "فوميهيكو ماكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هو الموسيقي الذي تعاون مع المنتج الأمريكي بورتر روبنسون لإصدار أغنية \"شيلتر\" عام 2016؟",
+        "correct_answer": "ماديون",
+        "incorrect_answers": [
+            "مات زو",
+            "ديد ماوس",
+            "زيد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من المجالات التالية يُعرف أحياناً باسم \"العلم الكئيب\"؟",
+        "correct_answer": "علم الاقتصاد",
+        "incorrect_answers": [
+            "الفلسفة",
+            "السياسة",
+            "الفيزياء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الرسمية في مدينة برشلونة بجانب اللغة الإسبانية؟",
+        "correct_answer": "الكتالونية",
+        "incorrect_answers": [
+            "الغاليسية",
+            "الفرنسية",
+            "الباسكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام وُلد والت ديزني؟",
+        "correct_answer": "1901",
+        "incorrect_answers": [
+            "1902",
+            "1903",
+            "1900"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في لعبة هالف لايف (Half-Life)، ما هو اسم المخلوق الفضائي الذي يلتصق بالرؤوس؟",
+        "correct_answer": "هيدكراب",
+        "incorrect_answers": [
+            "بولسكويد",
+            "فورتيغاونت",
+            "فيس هجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيهم الأطول بارتفاع يبلغ 1,483 قدماً (451.9 متراً)؟",
+        "correct_answer": "أبراج بتروناس التوأم، ماليزيا",
+        "incorrect_answers": [
+            "برج زيفينج، الصين",
+            "فندق وبرج ترامب الدولي، الولايات المتحدة",
+            "برج الحمراء، الكويت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يُقصد بمصطلح \"المجمع التجاري الميت\" (Dead Mall)؟",
+        "correct_answer": "مجمع تجاري يعاني من معدلات خلو مرتفعة أو حركة إقبال منخفضة جداً من المستهلكين",
+        "incorrect_answers": [
+            "مجمع تجاري لا يحتوي على أي متاجر",
+            "مجمع تجاري صدر قرار بإغلاقه وإدانته",
+            "مجمع تجاري بعد ساعات العمل الرسمية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مترو أنفاق نيويورك هو أقدم مترو أنفاق تحت الأرض في العالم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في مجموعة أوراق اللعب القياسية، من هو ملك الرمز (النقش) الوحيد الذي يظهر بدون شارب؟",
+        "correct_answer": "القلوب",
+        "incorrect_answers": [
+            "البستوني",
+            "الديناري",
+            "السباتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الوجهة التي كانت تقصدها الطائرة المفقودة في الرحلة (MH370)؟",
+        "correct_answer": "بكين",
+        "incorrect_answers": [
+            "كوالالمبور",
+            "سنغافورة",
+            "طوكيو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي هو اسم نظام ياباني للطب البديل، ويعني حرفياً \"الضغط بالأصابع\"؟",
+        "correct_answer": "شياتسو",
+        "incorrect_answers": [
+            "أوكيو",
+            "ماجيمي",
+            "إيكيغاي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مع أي فرقة كوميدية بريطانية عمل رسام الرسوم المتحركة تيري غيليام؟",
+        "correct_answer": "مونتي بايثون",
+        "incorrect_answers": [
+            "ذا غوديز",
+            "ذا ليغ أوف جينتلمن",
+            "ذا بيني دريدفولس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "سُمّي اللون البرتقالي نسبةً إلى فاكهة البرتقال.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي أغلى توابل العالم من حيث الوزن؟",
+        "correct_answer": "الزعفران",
+        "incorrect_answers": [
+            "القرفة",
+            "الهيل",
+            "الفانيليا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي جبل يضم أعلى قمة جبلية في إفريقيا؟",
+        "correct_answer": "جبل كليمنجارو، تنزانيا",
+        "incorrect_answers": [
+            "جبل كينيا، كينيا",
+            "جبل ستانلي، جمهورية الكونغو الديمقراطية/أوغندا",
+            "جبل بيك، أوغندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "إذا قمت بزراعة بذور نبات \"Quercus robur\" (السنديان القوي)، فما الذي سينمو؟",
+        "correct_answer": "أشجار",
+        "incorrect_answers": [
+            "حبوب",
+            "خضروات",
+            "زهور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما اسم العملة المستخدمة في إثيوبيا؟",
+        "correct_answer": "البير",
+        "incorrect_answers": [
+            "الدرهم",
+            "الدولار الأمريكي",
+            "الراند"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مادة \"أكسيد ثنائي الهيدروجين\" هي مادة كيميائية خطيرة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يقل طول المرأة المتوسطة بمقدار 5 بوصات / 13 سنتيمتراً عن طول الرجل المتوسط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "وفقاً للجمعية البريطانية للبيرة والحانات (BBPA)، ما هو الاسم الأكثر شيوعاً للحانات في المملكة المتحدة؟",
+        "correct_answer": "الأسد الأحمر (Red Lion)",
+        "incorrect_answers": [
+            "البلوط الملكي (Royal Oak)",
+            "الأيل الأبيض (White Hart)",
+            "رأس الملك (King's Head)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الجامعات التالية ليست من جامعات رابطة اللبلاب (Ivy League) المرموقة؟",
+        "correct_answer": "ستانفورد",
+        "incorrect_answers": [
+            "جامعة بنسلفانيا",
+            "هارفارد",
+            "برينستون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اسم تلسكوب الفضاء الأكثر شهرة التابع لوكالة ناسا؟",
+        "correct_answer": "تلسكوب هابل الفضائي",
+        "incorrect_answers": [
+            "العين الكبيرة",
+            "نجم الموت",
+            "ميلينيوم فالكون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو أكبر عضو في جسم الإنسان؟",
+        "correct_answer": "الجلد",
+        "incorrect_answers": [
+            "القلب",
+            "الأمعاء الغليظة",
+            "الكبد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كلمة \"Typewriter\" هي أطول كلمة يمكن كتابتها باستخدام الصف الأول فقط من لوحة مفاتيح كويرتي (QWERTY).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى كم عدد من الأشياء تشير كلمة \"درزن\" أو \"دزينة\" عادةً؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "6",
+            "20",
+            "10"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "هل اللغة اللوكسمبورغية هي لغة حقيقية؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إذا كنت تسير بسرعة 80 ميلاً في الساعة، فكم من الوقت ستحتاج لقطع مسافة 80 ميلاً؟",
+        "correct_answer": "60 دقيقة",
+        "incorrect_answers": [
+            "90 دقيقة",
+            "30 دقيقة",
+            "50 دقيقة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الاسم العلمي للأضواء الجنوبية (الشفق القطبي الجنوبي) هو أورورا أوستراليس؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من ألعاب الورق التالية تعتمد على الأرقام والعمليات الحسابية البسيطة؟",
+        "correct_answer": "أونو",
+        "incorrect_answers": [
+            "جو فيش",
+            "تويستر",
+            "منشكين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي هي عائلة موجودة في لعبة \"ذا سيمز\"؟",
+        "correct_answer": "عائلة غوث",
+        "incorrect_answers": [
+            "العائلة",
+            "عائلة سيموليون",
+            "عائلة براود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في اللغة الإنجليزية، ما هو اسم الرمز \"&\"؟",
+        "correct_answer": "أمبرساند",
+        "incorrect_answers": [
+            "إيت سلاش",
+            "علامة و",
+            "أوبيلوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الذي طُرح به المشروب الغازي بيبسي في الأصل؟",
+        "correct_answer": "شراب براد",
+        "incorrect_answers": [
+            "ببسين بوب",
+            "كارولينا كولا",
+            "شراب الببسين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي التقنية التي سُميت على اسم حاكم الدنمارك والنرويج في القرن العاشر؟",
+        "correct_answer": "بلوتوث",
+        "incorrect_answers": [
+            "واي فاي",
+            "جي بي إس",
+            "الإنترنت"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كل ثمار الفراولة حمراء اللون.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تأسست مجموعة ليغو في عام 1932.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الماء النقي يوصل الكهرباء بشكل فعال.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في عام 2010، عقدت منصة تويتر ومكتبة الكونغرس الأمريكي شراكة لأرشفة كل تغريدة يكتبها المواطنون الأمريكيون.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الذي يطلق على الطعام الهندي المطبوخ على الفحم في فرن طيني؟",
+        "correct_answer": "تندوري",
+        "incorrect_answers": [
+            "برياني",
+            "باني بوري",
+            "تيكي ماسالا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في أي عام ولدت الملكة إليزابيث الثانية؟",
+        "correct_answer": "1926",
+        "incorrect_answers": [
+            "1923",
+            "1929",
+            "1930"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي حركة الـ \"دابينغ\" (Dabbing)؟",
+        "correct_answer": "رقصة",
+        "incorrect_answers": [
+            "إجراء طبي",
+            "رياضة",
+            "لغة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الحيوان الوطني لاسكتلندا هو أحادي القرن (اليونيكورن).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يسمي البحارة مقدمة القارب؟",
+        "correct_answer": "المقدمة",
+        "incorrect_answers": [
+            "المؤخرة",
+            "الجانب الأيسر",
+            "الجانب الأيمن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الأخير لـ \"بابا جون\" الشهير؟",
+        "correct_answer": "شنيتر",
+        "incorrect_answers": [
+            "تشاودر",
+            "ويليامز",
+            "أندرسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو الممثل الكوميدي الذي أدى صوت شخصية \"الحمار\" في فيلم \"شريك\"؟",
+        "correct_answer": "إيدي ميرفي",
+        "incorrect_answers": [
+            "كريس روك",
+            "ريتشارد بريور",
+            "بيرني ماك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما معنى الكلمة السويدية \"غرونكا\" (Grunka) باللغة الإنجليزية؟",
+        "correct_answer": "شيء",
+        "incorrect_answers": [
+            "أشخاص",
+            "مكان",
+            "أناناس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يُسمح لك ببيع روحك على موقع إيباي (eBay).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة التي استحوذت على شركة تصنيع الكمبيوتر \"كومباك\" (Compaq) مقابل 25 مليار دولار في عام 2002؟",
+        "correct_answer": "هيوليت-باكارد (HP)",
+        "incorrect_answers": [
+            "توشيبا",
+            "أسوس",
+            "ديل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه اللغات الهندية لا تنتمي إلى عائلة اللغات الهندو أوروبية؟",
+        "correct_answer": "التاميلية",
+        "incorrect_answers": [
+            "الهندية",
+            "البنجابية",
+            "الأردية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو أقصى عدد من نجوم ميشلان يمكن للمطعم الحصول عليه؟",
+        "correct_answer": "ثلاثة",
+        "incorrect_answers": [
+            "أربعة",
+            "خمسة",
+            "ستة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "اسم \"موقف الحافلات رقم 16\" (Number 16 Bus Shelter) كان اسماً لطفل وافقت عليه حكومة نيوزيلندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في يناير 2019، تم العثور في لندن على الرفات المدفون لأي مستكشف إنجليزي لأستراليا؟",
+        "correct_answer": "ماثيو فليندرز",
+        "incorrect_answers": [
+            "ويليام بورك",
+            "أبل تاسمان",
+            "ديرك هارتوغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+        "correct_answer": "26",
+        "incorrect_answers": [
+            "30",
+            "17",
+            "5"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في لعبة الأدوار متعددة اللاعبين على الإنترنت \"ريلم أوف ذا ماد غود\" (Realm of the Mad God)، ما هو الدهليز الذي يُعتبر الأكثر صعوبة على نطاق واسع؟",
+        "correct_answer": "ذا شاترز",
+        "incorrect_answers": [
+            "عرين الثعبان",
+            "مقبرة القدماء",
+            "مسرح صانع الدمى"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "اليوم الواحد يحتوي على 86400 ثانية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من ألعاب الإيقاع الموسيقي التالية من إنتاج شركة هارمونيكس (Harmonix)؟",
+        "correct_answer": "روك باند",
+        "incorrect_answers": [
+            "ميت بيت مانيا",
+            "غيتار هيرو لايف",
+            "دانس دانس ريفولوشن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة السويدية التي تعني \"نافذة\"؟",
+        "correct_answer": "Fönster",
+        "incorrect_answers": [
+            "Hål",
+            "Skärm",
+            "Ruta"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "اخترع فريدريك رويكهايم الفشار في عام 1871 في الولايات المتحدة الأمريكية، حيث كان يبيع هذه الوجبة الخفيفة في شوارع شيكاغو.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يتكون الخيار عادةً من ماء بنسبة تزيد عن 90%.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما اسم مجسم السمكة المغنية المتحركة الشهير، الذي يغني أغانٍ معروفة مثل \"لا تقلق، كن سعيداً\"؟",
+        "correct_answer": "بيغ ماوث بيلي باس",
+        "incorrect_answers": [
+            "بيغ بيلي باس",
+            "السمكة المغنية",
+            "سردين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "طبق \"فوا جرا\" (Foie gras) الشهير في المطبخ الفرنسي يُصنع عادةً من أي جزء من البط أو الإوز؟",
+        "correct_answer": "الكبد",
+        "incorrect_answers": [
+            "القلب",
+            "المعدة",
+            "الأمعاء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي كلمة إنجليزية تعني \"التفكير بعمق\"؟",
+        "correct_answer": "Contemplate",
+        "incorrect_answers": [
+            "Confiscate",
+            "Constipate",
+            "Condensate"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما نوع الطائرات التي طورها إيغور سيكورسكي في الولايات المتحدة عام 1942؟",
+        "correct_answer": "المروحية (الهليكوبتر)",
+        "incorrect_answers": [
+            "منطاد التخفي",
+            "الطائرة النفاثة",
+            "كبسولة الفضاء"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يمكن رؤية سور الصين العظيم من القمر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي أكبر فصيلة حية من البطاريق؟",
+        "correct_answer": "البطريق الإمبراطور",
+        "incorrect_answers": [
+            "البطريق الملك",
+            "بطريق جنتو",
+            "بطريق أديلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو المشروب الكحولي الذي يُصنع من الدبس (عسل قصب السكر)؟",
+        "correct_answer": "الرم",
+        "incorrect_answers": [
+            "الجين",
+            "الفودكا",
+            "الويسكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي رئيس أمريكي تظهر صورته على ورقة الدولار الواحد؟",
+        "correct_answer": "جورج واشنطن",
+        "incorrect_answers": [
+            "توماس جيفرسون",
+            "أبراهام لينكون",
+            "بنجامين فرانكلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي ولاية أمريكية تقع المنطقة 51 (Area 51)؟",
+        "correct_answer": "نيفادا",
+        "incorrect_answers": [
+            "أريزونا",
+            "نيومكسيكو",
+            "يوتا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "يرمز الاختصار \"NCIS\" إلى \"Navy Corps Investigative Service\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الشركات لا تصنع السيارات؟",
+        "correct_answer": "دوكاتي",
+        "incorrect_answers": [
+            "نيسان",
+            "جي إم سي",
+            "فيات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا تعني ممارسة الـ \"نيفيلوكوكيميديا\" (Nephelococcygia)؟",
+        "correct_answer": "رؤية أو تخيل أشكال في السحب",
+        "incorrect_answers": [
+            "النوم والعينان مفتوحتان",
+            "كسر الزجاج بالصوت",
+            "السباحة في مياه متجمدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في سلسلة ألعاب الفيديو \"كينغدوم هارتس\" (Kingdom Hearts)، ما شكل السلاح الذي يحمله البطل الرئيسي? ",
+        "correct_answer": "مفتاح",
+        "incorrect_answers": [
+            "سيف",
+            "قلم",
+            "هاتف محمول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يصنع ويبيع صانع القبعات (Milliner)؟",
+        "correct_answer": "القبعات",
+        "incorrect_answers": [
+            "الأحذية",
+            "الأحزمة",
+            "القمصان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما المعنى الكامل للاختصار \"RAM\" في الكمبيوتر؟",
+        "correct_answer": "ذاكرة الوصول العشوائي",
+        "incorrect_answers": [
+            "ذاكرة المساعدة العشوائية",
+            "تفويض المساعدة العشوائية",
+            "رام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يسمي البحارة مؤخرة القارب؟",
+        "correct_answer": "المؤخرة",
+        "incorrect_answers": [
+            "المقدمة",
+            "الجانب الأيمن",
+            "الجانب الأيسر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "وفقاً للمكتب الأسترالي للإحصاء لعامي 2014-2015، ما هي نسبة الأستراليين الذين ولدوا خارج البلاد؟",
+        "correct_answer": "28%",
+        "incorrect_answers": [
+            "13%",
+            "20%",
+            "7%"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي اتجاه يتجه تمثال الحرية؟",
+        "correct_answer": "الجنوب الشرقي",
+        "incorrect_answers": [
+            "الجنوب الغربي",
+            "الشمال الغربي",
+            "الشمال الشرقي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الباذنجان هو نوع من الخضار.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "حامل شهادة الدكتوراه (PhD) هو دكتور في ماذا؟",
+        "correct_answer": "الفلسفة",
+        "incorrect_answers": [
+            "علم النفس",
+            "علم فراسة الدماغ",
+            "العلاج الطبيعي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو المؤسس المشارك لخدمة بث الموسيقى \"سبوتيفاي\" (Spotify)؟",
+        "correct_answer": "دانيال إيك",
+        "incorrect_answers": [
+            "شون باركر",
+            "فيليكس ميلر",
+            "مايكل بريدنبروكير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو نوع المنتجات التي تتخصص فيها شركة رولكس (Rolex)؟",
+        "correct_answer": "الساعات",
+        "incorrect_answers": [
+            "السيارات",
+            "أجهزة الكمبيوتر",
+            "المعدات الرياضية"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تم اختراع البطاطس المهروسة الفورية من قِبل الكندي إدوارد أسيلبرغز في عام 1962.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "قبل القرن التاسع عشر، كانت \"غرفة المعيشة\" تُسمى في الأصل...",
+        "correct_answer": "غرفة الاستقبال",
+        "incorrect_answers": [
+            "الغرفة المفتوحة",
+            "غرفة الجلوس",
+            "السقيفة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "مجموع كل الأرقام الموجودة على عجلة الروليت هو 666.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من أين نشأ نبات الأناناس في الأصل؟",
+        "correct_answer": "أمريكا الجنوبية",
+        "incorrect_answers": [
+            "هاواي",
+            "أوروبا",
+            "آسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي متحف بلندن يقع تمثال تشارلز داروين؟",
+        "correct_answer": "متحف التاريخ الطبيعي",
+        "incorrect_answers": [
+            "متحف تيت",
+            "المتحف البريطاني",
+            "متحف العلوم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "العلم الوطني لفيتنام يتكون من نجمة حمراء على خلفية صفراء.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي جبل يضم أعلى قمة في أوروبا؟",
+        "correct_answer": "جبل إلبروس، روسيا",
+        "incorrect_answers": [
+            "جبل شخارا، جورجيا",
+            "جبل أرارات، تركيا",
+            "جبل مون بلان، فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الكورية المكتوبة بالأحرف اللاتينية والتي تعني \"قلب\"؟",
+        "correct_answer": "سيمجانغ (Simjang)",
+        "incorrect_answers": [
+            "آيجونغ (Aejeong)",
+            "جيونغسين (Jeongsin)",
+            "سيغسو (Segseu)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "لماذا تبدو السماء مظلمة في الليل؟",
+        "correct_answer": "الكون محدود العمر والحجم",
+        "incorrect_answers": [
+            "سحب الغبار تمتص الضوء",
+            "الانزياح نحو الأحمر يمنعنا من رؤية النجوم البعيدة",
+            "ميكانيكا الكم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما الذي تؤخذ المضادات الحيوية عادةً لمحاربته؟",
+        "correct_answer": "الالتهابات البكتيرية",
+        "incorrect_answers": [
+            "الفيروسات",
+            "الصداع النصفي",
+            "آلام العضلات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "عبارة \"حادث على وشك الوقوع\" (accident waiting to happen) هي مثال على أي نوع من الأساليب التعبيرية؟",
+        "correct_answer": "تعبير اصطلاحي (Idiom)",
+        "incorrect_answers": [
+            "تشبيه (Simile)",
+            "استعارة (Metaphor)",
+            "تناظر (Analogy)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اللقب الذي أُطلق على طائرة النقل الثقيل المائية \"هوز إتش-4 هيركوليز\" التي طارت لأول مرة عام 1947؟",
+        "correct_answer": "إوزة التنوب (Spruce Goose)",
+        "incorrect_answers": [
+            "سفينة نوح (Noah's Ark)",
+            "الرجل البدين (Fat Man)",
+            "حصان طروادة (Trojan Horse)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو رائد الفضاء الوحيد من بين طاقم رحلة \"أبولو 11\" الذي لم يمشِ على سطح القمر؟",
+        "correct_answer": "مايكل كولينز",
+        "incorrect_answers": [
+            "باز ألدرين",
+            "نيل آرمسترونغ",
+            "لا أحد منهم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أدى دور الجنرال علاء الدين في فيلم \"الديكتاتور\" (The Dictator)؟",
+        "correct_answer": "ساشا بارون كوهين",
+        "incorrect_answers": [
+            "جوني ديب",
+            "جيمس فرانكو",
+            "ليوناردو دي كابريو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي مجرة يقع كوكب الأرض؟",
+        "correct_answer": "مجرة درب التبانة",
+        "incorrect_answers": [
+            "مجرة المريخ",
+            "مجرة نوت (Galaxy Note)",
+            "الثقب الأسود"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "نشأت لعبة تنس الطاولة (بينغ بونغ) في إنجلترا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إذا تم ضبطك متلبساً بـ \"التهرب من العمل\" (Goldbricking)، فما الخطأ الذي ترتكبه؟",
+        "correct_answer": "التكاسل والتهرب",
+        "incorrect_answers": [
+            "التدخين",
+            "السرقة",
+            "الغش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة العربية المكتوبة بالأحرف اللاتينية والتي تعني \"قمر\"؟",
+        "correct_answer": "Qamar",
+        "incorrect_answers": [
+            "Najma",
+            "Kawkab",
+            "Shams"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من الملوك البريطانيين التاليين لم تظهر صورته قط على عملة الجنيه الإسترليني المتداولة؟",
+        "correct_answer": "إدوارد الثامن",
+        "incorrect_answers": [
+            "الملكة فيكتوريا",
+            "جورج السادس",
+            "تشارلز الثاني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم (Noun) الأكثر استخداماً في اللغة الإنجليزية؟",
+        "correct_answer": "Time (الوقت)",
+        "incorrect_answers": [
+            "Home (المنزل)",
+            "Water (الماء)",
+            "Man (الرجل)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي مهنة \"ماي ماسك\"، والدة الملياردير إيلون ماسك؟",
+        "correct_answer": "عارضة أزياء",
+        "incorrect_answers": [
+            "أستاذة جامعية",
+            "عالمة أحياء",
+            "موسيقية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم إصدار لعبة الروبوت الشهيرة \"روبوسابيان\" (RoboSapien)؟",
+        "correct_answer": "2004",
+        "incorrect_answers": [
+            "2000",
+            "2001",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "فاز لاينوس باولينغ بجائزتي نوبل؛ الأولى كانت في الكيمياء، ففي أي مجال كانت الجائزة الثانية؟",
+        "correct_answer": "السلام",
+        "incorrect_answers": [
+            "الفيزياء",
+            "الاقتصاد",
+            "علم وظائف الأعضاء أو الطب"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أُضيف مخلل الخيار لأول مرة إلى الهامبرغر لأن قانون الصحة الأمريكي كان يفرض على جميع مطاعم الوجبات السريعة تضمين مصدر لفيتامين سي (C).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "متى وافق الكونغرس القاري الثاني على إعلان الاستقلال الأمريكي؟",
+        "correct_answer": "4 يوليو 1776",
+        "incorrect_answers": [
+            "4 مايو 1776",
+            "4 يونيو 1776",
+            "2 يوليو 1776"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "عند البكاء في الفضاء، تلتصق الدموع بوجهك ولا تسقط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي عملة الهند وباكستان بالإضافة إلى بعض الدول الآسيوية الأخرى؟",
+        "correct_answer": "الروبية",
+        "incorrect_answers": [
+            "الريال",
+            "البيزو",
+            "الدينار"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "نسبة صغيرة فقط من سكان العالم تعاني من عدم تحمل اللاكتوز (حساسية الحليب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وجدت دراسة علمية أجريت على الفول السوداني المتوفر في الحانات آثاراً لأكثر من 100 عينة بول مختلفة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "على ماذا يمشي السيرك البهلواني المعروف بـ (Funambulist)؟",
+        "correct_answer": "حبل مشدود",
+        "incorrect_answers": [
+            "زجاج مكسور",
+            "كرات",
+            "سطح القمر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تعتبر جملة \"Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo\" صحيحة من الناحية النحوية في اللغة الإنجليزية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو ارتفاع قطار الموت \"كينغدا كا\" (Kingda Ka)، الذي كان أطول قطار ملاهي ترفيهي في العالم من عام 2005 إلى عام 2024؟",
+        "correct_answer": "456 قدماً",
+        "incorrect_answers": [
+            "500 قدم",
+            "429 قدماً",
+            "396 قدماً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا ترمز الحروف في التوقيت العالمي (GMT)؟",
+        "correct_answer": "توقيت جرينتش المتوسط (Greenwich Mean Time)",
+        "incorrect_answers": [
+            "التوقيت الزوالي العالمي (Global Meridian Time)",
+            "التوقيت المتوسط العام (General Median Time)",
+            "توقيت غلاسكو للرجال (Glasgow Man Time)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من معالم ديزني لاند الشهيرة تم إغلاقه في عام 2017 ليعاد تصميمه ليصبح مستوحى من فيلم \"حراس المجرة\" (Guardians of the Galaxy)؟",
+        "correct_answer": "برج الرعب لمنطقة الغسق (Twilight Zone Tower of Terror)",
+        "incorrect_answers": [
+            "القصر المسكون (The Haunted Mansion)",
+            "قراصنة الكاريبي (Pirates of the Caribbean)",
+            "رحلة بيتر بان (Peter Pan's Flight)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا يعني المصطلح الطبي \"أبوليا\" (abulia)؟",
+        "correct_answer": "العجز عن اتخاذ القرارات",
+        "incorrect_answers": [
+            "العجز عن الوقوف",
+            "العجز عن التركيز على أي شيء",
+            "رغبة حمّى لتمزيق ملابس الشخص"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في بداية أي عقد بدأت ثقافة \"القوط\" (Goth Subculture) الفرعية بالظهور؟",
+        "correct_answer": "الثمانينيات",
+        "incorrect_answers": [
+            "التسعينيات",
+            "الألفينيات",
+            "السبعينيات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من اللغات التالية لا تستخدم التذكير والتأنيث (الجنس النحوي) في قواعدها؟",
+        "correct_answer": "التركية",
+        "incorrect_answers": [
+            "الألمانية",
+            "الدانماركية",
+            "البولندية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم الشخصية الرئيسية في سلسلة ألعاب الرعب \"ديد سبيس\" (Dead Space)؟",
+        "correct_answer": "آيزاك كلارك",
+        "incorrect_answers": [
+            "إلين ريبلي",
+            "القائد شيبارد",
+            "الكابتن كيرك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يتكون \"الصمغ العربي\" من العصارة المتصلبة لأي نوع من الأشجار؟",
+        "correct_answer": "أشجار السنط (الأكاسيا)",
+        "incorrect_answers": [
+            "أشجار النخيل",
+            "أشجار الفيكس",
+            "أشجار الكافور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي كاتدرائية في مدينة الفاتيكان صمم جزأها الداخلي عام 1503 فنانون من عصر النهضة مثل برامانتي وميكيلانجيلو وبرنيني؟",
+        "correct_answer": "كاتدرائية القديس بطرس",
+        "incorrect_answers": [
+            "كاتدرائية كاتانيا",
+            "كاتدرائية القديس مرقص",
+            "كاتدرائية فلورنسا (الدوومو)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو اللون الذي تمثل كلمة \"كوكليكوت\" (Coquelicot) إحدى درجاته، والتي كانت تعني في الأصل زهرة الخشخاش؟",
+        "correct_answer": "الأحمر",
+        "incorrect_answers": [
+            "الأخضر",
+            "الأزرق",
+            "الوردي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع يصل إلى 1250 قدماً (381 متراً)؟",
+        "correct_answer": "مبنى إمباير ستيت، الولايات المتحدة",
+        "incorrect_answers": [
+            "برج بنك الصين، هونغ كونغ",
+            "برج الاتحاد، روسيا",
+            "فندق جيفورا، الإمارات العربية المتحدة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يؤدي شخصية \"دون شيتو\" دور المذيع في محطة الراديو \"East Los FM\" في لعبة GTA V.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من سلاسل مطاعم الوجبات السريعة التالية غير معروفة ببيع البيتزا بشكل أساسي؟",
+        "correct_answer": "وينديز (Wendy's)",
+        "incorrect_answers": [
+            "دومينوز (Domino's)",
+            "ليتل سيزرز (Little Caesars)",
+            "بابا جونز (Papa John's)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أين يعيش البطل الخارق \"السهم الأخضر\" (أوليفر كوين) في قصص دي سي (DC) المصورة؟",
+        "correct_answer": "ستار سيتي (مدينة النجوم)",
+        "incorrect_answers": [
+            "سنترال سيتي (المدينة المركزية)",
+            "غوثام سيتي (مدينة غوثام)",
+            "متروبوليس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في لعبة \"معركة القطط\" (Battle Cats)، ما هي النسبة المئوية للضربة القاضية (Critical Rate) للشخصية مونيكو (Moneko)؟",
+        "correct_answer": "15%",
+        "incorrect_answers": [
+            "20%",
+            "10%",
+            "25%"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "يُطلق مصطلح \"سامهينوفوبيا\" (Samhainophobia) على الخوف المرضي والمستمر من الهالوين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الكلمة الفرنسية التي تعني \"زجاج\" هي \"glace\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي بلد تأسست شركة \"هيونداي\" للسيارات؟",
+        "correct_answer": "كوريا الجنوبية",
+        "incorrect_answers": [
+            "روسيا",
+            "اليابان",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من قطع الحلوى التالية ليست من إنتاج شركة \"مارس\" (Mars)؟",
+        "correct_answer": "ألموند جوي (Almond Joy)",
+        "incorrect_answers": [
+            "إم آند إمز (M&M's)",
+            "تويكس (Twix)",
+            "سنيكرز (Snickers)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي شركة طيران كانت مالكة للطائرة التي تحطمت قبالة سواحل نوفا سكوشا في عام 1998؟",
+        "correct_answer": "السويسرية للطيران (Swiss Air)",
+        "incorrect_answers": [
+            "الخطوط الجوية الفرنسية (Air France)",
+            "الخطوط الجوية البريطانية (British Airways)",
+            "تي دبليو إيه (TWA)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هو الرئيس الأمريكي الذي افتتح قناة بنما رسمياً؟",
+        "correct_answer": "وودرو ويلسون",
+        "incorrect_answers": [
+            "كالفين كوليدج",
+            "هربرت هوفر",
+            "ثيودور روزفلت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "شاي \"إيرل غري\" (Earl Grey) هو شاي أسود يتميز بنكهة ماذا؟",
+        "correct_answer": "زيت البرغموت",
+        "incorrect_answers": [
+            "الخزامى (اللافندر)",
+            "الفانيليا",
+            "العسل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "وفقاً لمدونة الإشارات الدولية، أي علم فردي يعني \"أحتاج إلى المساعدة (وليس استغاثة)\"؟",
+        "correct_answer": "فيكتور (Victor)",
+        "incorrect_answers": [
+            "كيلو (Kilo)",
+            "بابا (Papa)",
+            "ديلتا (Delta)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يسمي البحارة الجانب الأيمن من السفينة؟",
+        "correct_answer": "ميمنة السفينة (Starboard)",
+        "incorrect_answers": [
+            "ميسرة السفينة (Port)",
+            "مؤخرة السفينة (Stern)",
+            "مقدمة السفينة (Bow)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الحرف الأخير في الأبجدية اليونانية؟",
+        "correct_answer": "أوميغا",
+        "incorrect_answers": [
+            "ميّو",
+            "إبسيلون",
+            "كابا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الهندسة المعمارية، يعبر مصطلح \"بيكلستاينر\" (pecklesteiner) عن مجموعة أبواب تتداخل مع بعضها البعض عند إغلاقها، ويمكن قفلها من خلال ثقب مفتاح واحد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو أول خط تم بناؤه في مترو أنفاق لندن؟",
+        "correct_answer": "خط متروبوليتان (Metropolitan Line)",
+        "incorrect_answers": [
+            "الخط الدائري (Circle Line)",
+            "خط بيكرلو (Bakerloo Line)",
+            "خط فيكتوريا (Victoria Line)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في التعبيرات المجازية، عندما يقال إن شخصاً ما يفتقر إلى الخبرة، يُوصف بأنه يمثل أي لون؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأزرق",
+            "الأصفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الرهاب المعروف بـ \"سينوفوبيا\" (Cynophobia)؟",
+        "correct_answer": "الخوف من الكلاب",
+        "incorrect_answers": [
+            "الخوف من الطيور",
+            "الخوف من الطيران",
+            "الخوف من الجراثيم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "متى تأسست شركة نينتندو (Nintendo)؟",
+        "correct_answer": "23 سبتمبر 1889",
+        "incorrect_answers": [
+            "19 أكتوبر 1891",
+            "4 مارس 1887",
+            "27 ديسمبر 1894"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تشرق الشمس من جهة الشمال.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو مخترع أول قالب شوكولاتة صلبة في التاريخ عام 1847؟",
+        "correct_answer": "جوزيف فراي",
+        "incorrect_answers": [
+            "أندرو جونسون",
+            "جون كادبوري",
+            "جون تايلر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الشكل الهندسي المستخدم عادةً في لافتات التوقف في الشوارع؟",
+        "correct_answer": "ثُماني الأضلاع",
+        "incorrect_answers": [
+            "سُداسي الأضلاع",
+            "دائرة",
+            "مثلث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه المدن الأمريكية لا توجد بها دار لسك العملات المعدنية تابعة للولايات المتحدة؟",
+        "correct_answer": "سانت لويس، ميزوري",
+        "incorrect_answers": [
+            "سان فرانسيسكو، كاليفورنيا",
+            "فيلادلفيا، بنسيلفانيا",
+            "ويست بوينت، نيويورك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "المجرم الذي يقوم بـ \"تزييف الحسابات والكتب المالية\" (Cook the books) قد ارتكب أي نوع من السلوكيات غير القانونية؟",
+        "correct_answer": "الاحتيال المحاسبي",
+        "incorrect_answers": [
+            "غسيل الأموال",
+            "الابتزاز المالي",
+            "الابتزاز والتهديد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الأصلي الذي تأسس به بنك أمريكا (Bank of America) في البداية؟",
+        "correct_answer": "بنك إيطاليا (Bank of Italy)",
+        "incorrect_answers": [
+            "بنك لونغ آيلاند (Bank of Long Island)",
+            "بنك بنسيلفانيا (Bank of Pennsylvania)",
+            "بنك شارلوت (Bank of Charlotte)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الحقيقي لقطة الإنترنت الشهيرة 'جرامبي كات'؟",
+        "correct_answer": "تاردار سوس",
+        "incorrect_answers": [
+            "ليل باب",
+            "مارو",
+            "كولونيل مياو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو اللقب الرسمي الكامل لرئيس وزراء المملكة المتحدة؟",
+        "correct_answer": "اللورد الأول للخزانة",
+        "incorrect_answers": [
+            "دوق كامبريدج",
+            "المعارضة الوفية لجلالة الملكة",
+            "مدير عقارات التاج الملكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو رمز برج الجوزاء الفلكي؟",
+        "correct_answer": "التوأم",
+        "incorrect_answers": [
+            "السمك",
+            "الميزان",
+            "العذراء"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "سلوفاكيا عضو في الاتحاد الأوروبي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في المتوسط، يُقتل شخص واحد على الأقل كل ساعة في الولايات المتحدة بسبب سائق مخمور.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان ألبرت أينشتاين يواجه صعوبة في الرياضيات عندما كان في المدرسة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الجبل الذي يملك أعلى قمة في أمريكا الشمالية؟",
+        "correct_answer": "دينالي، الولايات المتحدة الأمريكية",
+        "incorrect_answers": [
+            "جبل سانت إلياس، الحدود الأمريكية الكندية",
+            "جبل لوغان، كندا",
+            "بيكو دي أوريزابا، المكسيك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الماء ملون باللون الأزرق بشكل طبيعي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الشعار الترويجي الأصلي لمشروب ماونتن ديو؟",
+        "correct_answer": "ياهو! ماونتن ديو... سوف يداعب أحشاءك!",
+        "incorrect_answers": [
+            "أعطني ديو",
+            "افعل الديو",
+            "احصل على شعور السير حافي القدمين عند شرب ماونتن ديو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "اللغة الفرنسية هي لغة رسمية في كندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو متوسط عمر نملة الحدائق؟",
+        "correct_answer": "15 عاماً",
+        "incorrect_answers": [
+            "24 ساعة",
+            "أسبوع واحد",
+            "3 أعوام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم لوحة شفيق السيئة في حلقة سبونج بوب 'فنان مجهول'؟",
+        "correct_answer": "جريء ومتهور",
+        "incorrect_answers": [
+            "استراحة شفيق",
+            "قطع ممزقة",
+            "منظور مائل"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "بلوتو كوكب.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الأكثر تحدثاً في نصف الكرة الأرضية الجنوبي؟",
+        "correct_answer": "البرتغالية",
+        "incorrect_answers": [
+            "الإنجليزية",
+            "الإسبانية",
+            "الفرنسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الرسمية في البرازيل؟",
+        "correct_answer": "البرتغالية",
+        "incorrect_answers": [
+            "البرازيلية",
+            "الإسبانية",
+            "الإنجليزية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الذي أُطلق على الديكتاتوريين العسكريين اليابانيين الذين حكموا البلاد بين القرنين الثاني عشر والتاسع عشر؟",
+        "correct_answer": "شوغون",
+        "incorrect_answers": [
+            "نينجا",
+            "ساموراي",
+            "شينوبي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تم شراء موقع مشاركة الفيديوهات يوتيوب بالكامل من قِبل فيسبوك مقابل 1.65 مليار دولار أمريكي على شكل أسهم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الجبل الذي يملك أعلى قمة في أمريكا الجنوبية؟",
+        "correct_answer": "أكونكاغوا، الأرجنتين",
+        "incorrect_answers": [
+            "أوخوس ديل سالادو، الحدود الأرجنتينية التشيلية",
+            "مونتي بيسيس، الأرجنتين",
+            "هواسكاران، بيرو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الباسودوبل (Pasodoble) هو نوع من صلصة المعكرونة الإيطالية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان لون كوكاكولا الأصلي أخضر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من نجوم السينما لديه تمثال في ساحة ليستر (Leicester Square)؟",
+        "correct_answer": "تشارلي تشابلن",
+        "incorrect_answers": [
+            "بول نيومان",
+            "روان أتكينسون",
+            "ألفريد هيتشكوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من المعالم التالية لا يقع في مدينة نيويورك؟",
+        "correct_answer": "نصب لينكون التذكاري",
+        "incorrect_answers": [
+            "مبنى إمباير ستيت",
+            "تايمز سكوير",
+            "سنترال بارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي دولة تضع علم الاتحاد البريطاني (Union Jack) في علمها؟",
+        "correct_answer": "نيوزيلندا",
+        "incorrect_answers": [
+            "جنوب أفريقيا",
+            "كندا",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الجبل الذي يملك أعلى قمة في أستراليا؟",
+        "correct_answer": "جبل كوسيوسكو، نيوساوث ويلز",
+        "incorrect_answers": [
+            "جبل أوسا، تسمانيا",
+            "جبل بارتل فرير، كوينزلاند",
+            "جبل زيل، الإقليم الشمالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الرسمية والأكثر انتشاراً في كوبا؟",
+        "correct_answer": "الإسبانية",
+        "incorrect_answers": [
+            "البرتغالية",
+            "الفرنسية",
+            "الإيطالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+        "correct_answer": "26",
+        "incorrect_answers": [
+            "28",
+            "23",
+            "24"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم سعرة حرارية توجد في علبة بيبسي كولا سعة 355 مل؟",
+        "correct_answer": "150",
+        "incorrect_answers": [
+            "200",
+            "100",
+            "155"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع 1,776 قدماً (541.3 متراً)؟",
+        "correct_answer": "مركز التجارة العالمي الواحد، الولايات المتحدة",
+        "incorrect_answers": [
+            "تايبيه 101، تايوان",
+            "برج ويليس، الولايات المتحدة",
+            "برج جين ماو، الصين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تُستخدم كلمة 'أناناس' (Ananas) في معظم اللغات الأخرى للإشارة إلى فاكهة الأناناس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي هو رمز اتحاد النقل الجوي الدولي (IATA) لمطار مانشستر؟",
+        "correct_answer": "MAN",
+        "incorrect_answers": [
+            "EGLL",
+            "LHR",
+            "EGCC"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في عام 2013، كم من الأموال خُسرت بسبب عمليات الاحتيال النيجيرية؟",
+        "correct_answer": "12.7 مليار دولار",
+        "incorrect_answers": [
+            "95 مليون دولار",
+            "956 مليون دولار",
+            "2.7 مليار دولار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "خمسة دولارات تعادل كم قطعة من فئة النيكل؟",
+        "correct_answer": "100",
+        "incorrect_answers": [
+            "50",
+            "25",
+            "69"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "رهاب الـ 'زانثوفوبيا' (Xanthophobia) هو الخوف من أي لون؟",
+        "correct_answer": "الأصفر",
+        "incorrect_answers": [
+            "الأزرق",
+            "الأحمر",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من من المغنين وكتاب الأغاني الأمريكيين التاليين فاز بجائزة نوبل في الأدب؟",
+        "correct_answer": "بوب ديلن",
+        "incorrect_answers": [
+            "بادي هولي",
+            "جوني كاش",
+            "أليس كوبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "إلى أي عائلة لغوية تنتمي اللغة الكازاخية؟",
+        "correct_answer": "التركية",
+        "incorrect_answers": [
+            "المغولية",
+            "الهندية الأوروبية",
+            "الأورالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو المنتج الذي كانت تبيعه شركة الاتصالات 'نوكيا' في الأصل؟",
+        "correct_answer": "الورق",
+        "incorrect_answers": [
+            "الهواتف",
+            "الحواسيب",
+            "المعالجات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من أدوات المائدة هي الأنسب لتناول الحساء (الشوربة)؟",
+        "correct_answer": "الملعقة",
+        "incorrect_answers": [
+            "الشوكة",
+            "السكين",
+            "عيدان تناول الطعام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في مقابلة مع قناة CBS عام 1994، ما هي الحركة الغريبة التي قام بها بيل غيتس، المؤسس المشارك لشركة مايكروسوفت، أمام الكاميرا؟",
+        "correct_answer": "القفز فوق كرسي مكتب",
+        "incorrect_answers": [
+            "القفز للخلف فوق مكتب",
+            "الوقوف على رأسه",
+            "الكتابة على لوحة المفاتيح أثناء الوقوف على اليدين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو وزن سبائك الذهب في لعبة 'فول آوت: نيو فيغاس' (Fallout: New Vegas)؟",
+        "correct_answer": "35 رطلاً",
+        "incorrect_answers": [
+            "30 رطلاً",
+            "40 رطلاً",
+            "32.50 رطلاً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "عندما يقال عن شخص إنه 'حسود'، فبأي لون يوصف عادةً؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأزرق",
+            "الأصفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه البنوك غير مخول بإصدار الأوراق النقدية في هونغ كونغ؟",
+        "correct_answer": "OCBC",
+        "incorrect_answers": [
+            "HSBC",
+            "ستاندرد تشارترد",
+            "بنك الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "مشروب الويسكي الإسكتلندي والدامبوي (Drambuie) يكونان أي كوكتيل؟",
+        "correct_answer": "رستي نيل",
+        "incorrect_answers": [
+            "سكرودرايفر",
+            "سكس أون ذا بيتش",
+            "مانهاتن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تأسست شركة آبل؟",
+        "correct_answer": "1976",
+        "incorrect_answers": [
+            "1978",
+            "1980",
+            "1974"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "القرآن هو الكتاب المقدس لأي من الديانات الإبراهيمية؟",
+        "correct_answer": "الإسلام",
+        "incorrect_answers": [
+            "المسيحية",
+            "اليهودية",
+            "الراستافارية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي عام توقفت كندا عن إنتاج قطعة السنت الواحد (البنس) المعدنية؟",
+        "correct_answer": "2012",
+        "incorrect_answers": [
+            "2013",
+            "2011",
+            "2010"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان SCP-173 هو أول مقال عن SCP يُكتب لمشروع الخيال التعاوني القائم على الويب والمعروف باسم 'مؤسسة SCP' (SCP Foundation).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كان المعماري المعروف باسم 'لو كوربوزييه' شخصية بارزة في أي طراز معماري؟",
+        "correct_answer": "الحداثة",
+        "incorrect_answers": [
+            "الكلاسيكية الجديدة",
+            "الباروك",
+            "النيوغوطية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "متى تم طرح علكة هوبا بوبا (Hubba Bubba) لأول مرة؟",
+        "correct_answer": "1979",
+        "incorrect_answers": [
+            "1984",
+            "1972",
+            "1980"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "'نادي الـ 27' (27 Club) هو مصطلح يُستخدم للإشارة إلى قائمة من الممثلين والموسيقيين والفنانين المشهورين الذين توفوا في سن السابعة والعشرين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي نهر يتدفق عبر مدينة غلاسكو الإسكتلندية؟",
+        "correct_answer": "كلايد",
+        "incorrect_answers": [
+            "تاي",
+            "دي",
+            "تويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "إذا وُصف شعر شخص ما بأنه 'تيتيان' (Titian)، فما هو لونه؟",
+        "correct_answer": "الأحمر",
+        "incorrect_answers": [
+            "الأشقر",
+            "البني",
+            "الأسود"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الأصابع (بدون الإبهام) في يد الإنسان الواحدة؟",
+        "correct_answer": "أربعة",
+        "incorrect_answers": [
+            "خمسة",
+            "عشرة",
+            "ثمانية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "بعد كم عاماً يتم الاحتفال باليوبيل الكريستالي (ذكرى الزواج الكريستالية)؟",
+        "correct_answer": "15",
+        "incorrect_answers": [
+            "20",
+            "10",
+            "25"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الألوان غير موجود في شعار جوجل؟",
+        "correct_answer": "الوردي",
+        "incorrect_answers": [
+            "الأصفر",
+            "الأزرق",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم عدد المفاتيح (النوتات) في البيانو الكبير القياسي (Grand Piano)؟",
+        "correct_answer": "88",
+        "incorrect_answers": [
+            "98",
+            "108",
+            "78"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو العضو في الجسم الذي ينتج العصارة الصفراوية؟",
+        "correct_answer": "الكبد",
+        "incorrect_answers": [
+            "المرارة",
+            "البنكرياس",
+            "المعدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو الوصف الأنسب لـ 'كوادرانجولاريس ريفيرسوم' (Quadrangularis Reversum)؟",
+        "correct_answer": "آلة إيقاعية موسيقية",
+        "incorrect_answers": [
+            "مبنى في جامعة أكسفورد",
+            "نقلة في الشطرنج",
+            "نظرية هندسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "مما تتكون أكلة الهاجيس (Haggis) الحقيقية؟",
+        "correct_answer": "قلب وكبد ورئتي الخروف",
+        "incorrect_answers": [
+            "قلب وكليتي ورئتي الخروف",
+            "كبد وكليتي وعيني الخروف",
+            "الخروف بأكمله"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من بين هذه المباني الأربعة، أيها الأطول بارتفاع 2,717 قدماً (828 متراً)؟",
+        "correct_answer": "برج خليفة، الإمارات العربية المتحدة",
+        "incorrect_answers": [
+            "برج شانغهاي، الصين",
+            "برج لوته العالمي، كوريا الجنوبية",
+            "مركز بينغ آن المالي، الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي دولة قامت بتطوير البندقية الهجومية كلاشينكوف (AK-47)؟",
+        "correct_answer": "الاتحاد السوفيتي",
+        "incorrect_answers": [
+            "إيران",
+            "إسرائيل",
+            "بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وفقاً لأغنية الأطفال، ما هي الفاكهة التي أخرجها ليتل جاك هورنر من فطيرة عيد الميلاد الخاصة به؟",
+        "correct_answer": "البرقوق",
+        "incorrect_answers": [
+            "التفاح",
+            "الخوخ",
+            "الكمثرى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في لعبة \"كاتاماري داماسي\"، تتحكم بشخصية تُعرف باسم:",
+        "correct_answer": "الأمير",
+        "incorrect_answers": [
+            "فوجيو",
+            "إيتشيغو",
+            "فومين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "البخار الناتج عن السجائر الإلكترونية هو عبارة عن ماء في الواقع.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يُعرف يوم 10 مارس أيضاً باسم يوم ماريو (Mar10).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من مكونات الدم التالية يُشكل سدادة لإغلاق الجروح عند موضع الإصابة؟",
+        "correct_answer": "الصفائح الدموية",
+        "incorrect_answers": [
+            "خلايا الدم الحمراء",
+            "خلايا الدم البيضاء",
+            "بلازما الدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو مؤلف رواية \"جوراسيك بارك\" (حديقة الديناصورات)؟",
+        "correct_answer": "مايكل كرايتون",
+        "incorrect_answers": [
+            "بيتر بينشلي",
+            "تشاك بالاهنيوك",
+            "إيرفين ويلش"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي البوكيمونات الثلاثة المتاحة للبدء في لعبتي \"بوكيمون بلاك آند وايت\"؟",
+        "correct_answer": "سنايفي، تيبيغ، أوشاووت",
+        "incorrect_answers": [
+            "سنايفي، فينيكين، فروكي",
+            "تشيسبين، تيبيغ، فروكي",
+            "تشيسبين، فينيكين، أوشاووت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في التعبيرات الإنجليزية، عندما يوصف شخص بالجبن، يُقال إن لديه بطناً من أي لون؟",
+        "correct_answer": "أصفر",
+        "incorrect_answers": [
+            "أخضر",
+            "أحمر",
+            "أزرق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام اقترب مذنب هالي (الذي لن يظهر مجدداً حتى عام 2061) من الأرض في آخر ظهور له؟",
+        "correct_answer": "1986",
+        "incorrect_answers": [
+            "2001",
+            "1942",
+            "1909"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في أنظمة الطيران، إلى ماذا يرمز الاختصار \"TCAS\"؟",
+        "correct_answer": "نظام تجنب التصادم الجوي",
+        "incorrect_answers": [
+            "نظام التنبيه للاتصالات المرورية",
+            "نظام محاذاة تكوين المرور",
+            "نظام اختصار إشارة نداء المرور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من المباني التالية يُعد مثالاً بارزاً على نمط العمارة الفنية \"آرت ديكو\" (Art Deco)؟",
+        "correct_answer": "مبنى نياجرا موهوك",
+        "incorrect_answers": [
+            "تايبيه 101",
+            "ون ديترويت سنتر",
+            "ويستيندشتراسه 1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا يعني المصطلح الطبي \"أبروسيكسيا\" (Aprosexia)؟",
+        "correct_answer": "عدم القدرة على التركيز على أي شيء",
+        "incorrect_answers": [
+            "عدم القدرة على اتخاذ القرارات",
+            "رغبة هوسية في تمزيق ملابس المرء",
+            "عدم القدرة على الوقوف"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الكلمة الفرنسية التي تعني \"يسافر\" هي \"Travail\".",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وفقاً لسِفر التكوين في العهد القديم، كم يوماً استغرق خلق العالم؟",
+        "correct_answer": "ستة",
+        "incorrect_answers": [
+            "سبعة",
+            "واحد",
+            "اثنا عشر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأبراج الفلكية يُمثله السرطان؟",
+        "correct_answer": "برج السرطان",
+        "incorrect_answers": [
+            "برج الميزان",
+            "برج العذراء",
+            "برج القوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في تحديد فصائل الدم، تُسمى الإشارة (+) أو (-) بعد فصيلة الدم (مثل A أو B) بعامل Rh (الرايزيسي). ما هو مصدر تسميته واكتشافه؟",
+        "correct_answer": "قرود الريسوس",
+        "incorrect_answers": [
+            "مرضى الروماتيزم",
+            "ذوو الشعر الأحمر",
+            "الجذامير النباتية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "اللون الـ \"شارتريز\" (Chartreuse) هو درجة لونية تقع بين الأصفر وأي لون آخر؟",
+        "correct_answer": "الأخضر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأسود",
+            "الأرجواني"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو عنوان أول مقطع فيديو تم رفعه على موقع يوتيوب على الإطلاق؟",
+        "correct_answer": "أنا في حديقة الحيوان (Me at the zoo)",
+        "incorrect_answers": [
+            "تحية (tribute)",
+            "كاري تركب شاحنة (carrie rides a truck)",
+            "جروها الجديد من الجد الأكبر فيرن (Her new puppy)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اسم المشروب المصنوع من البطاطس أو الحبوب والذي يعود أصله إلى بولندا وروسيا؟",
+        "correct_answer": "الفودكا",
+        "incorrect_answers": [
+            "الأفسنتين",
+            "الرم",
+            "الساكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الديناميكا الهوائية، ما هي القوة التي تدفع الجسم إلى الأعلى؟",
+        "correct_answer": "قوة الرفع",
+        "incorrect_answers": [
+            "قوة السحب",
+            "الوزن",
+            "قوة الدفع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "محطة أمستردام المركزية للقطارات توأمت مع أي محطة？",
+        "correct_answer": "لندن ليفربول ستريت",
+        "incorrect_answers": [
+            "فرانكفورت الرئيسية",
+            "باريس غار دو نورد",
+            "بروكسل ميدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "توفي ستيف جوبز، الشريك المؤسس لشركة آبل، بسبب مضاعفات أي نوع من أنواع السرطان؟",
+        "correct_answer": "سرطان البنكرياس",
+        "incorrect_answers": [
+            "سرطان العظام",
+            "سرطان الكبد",
+            "سرطان المعدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا يرمز حرف الـ \"S\" في اختصار \"SIM\" الخاص ببطاقة الهاتف (SIM card)؟",
+        "correct_answer": "المشترك (Subscriber)",
+        "incorrect_answers": [
+            "فردي (Single)",
+            "آمن (Secure)",
+            "صلب (Solid)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كانت شركة \"ستيج كوتش\" (Stagecoach) تمتلك شركة \"ساوث ويست ترينز\" للقطارات قبل أن تفقد حقوق تشغيلها لصالح شركتي \"فيرست جروب\" و\"MTR\" في مارس 2017.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأبراج الفلكية يقع بين برجي العذراء والعقرب؟",
+        "correct_answer": "برج الميزان",
+        "incorrect_answers": [
+            "برج الجوزاء",
+            "برج الثور",
+            "برج الجدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي جيل من ألعاب سلسلة بوكيمون الرئيسية ظهر النوع \"الخرافي\" (Fairy) لأول مرة؟",
+        "correct_answer": "الجيل السادس",
+        "incorrect_answers": [
+            "الجيل الثاني",
+            "الجيل السابع",
+            "الجيل الرابع"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي مدينة بأمريكا الجنوبية نشأت عصابة (كارتيل) المخدرات التي كان يديرها بابلو إسكوبار؟",
+        "correct_answer": "ميديلين",
+        "incorrect_answers": [
+            "بوغوتا",
+            "كيتو",
+            "كالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي سرعة طيران طائر السنونو (بدون حمولة) بالسرعة الجوية؟",
+        "correct_answer": "24 ميل في الساعة",
+        "incorrect_answers": [
+            "15 ميل في الساعة",
+            "20 ميل في الساعة",
+            "200 ميل في الساعة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ماذا تعني ممارسة الـ \"نيفيلوكوكيجيا\" (Nephelococcygia)؟",
+        "correct_answer": "رؤية وتخيل أشكال وصور في السحب",
+        "incorrect_answers": [
+            "النوم بأعين مفتوحة",
+            "تحطيم الزجاج بنبرة الصوت",
+            "السباحة في مياه متجمدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "متى تم إطلاق جهاز بلايستيشن 3 (PlayStation 3) لأول مرة؟",
+        "correct_answer": "11 نوفمبر 2006",
+        "incorrect_answers": [
+            "8 يناير 2007",
+            "25 ديسمبر 2007",
+            "16 يوليو 2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو العنصر الكيميائي الذي يحمل الرقم الذري 11 في الجدول الدوري ورمزه (Na)؟",
+        "correct_answer": "الصوديوم",
+        "incorrect_answers": [
+            "الكربون",
+            "الرصاص",
+            "النيتروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الماضي، ماذا كان يحتفظ الرجل الأنيق عادةً في جيبه الصغير المخصص لذلك (fob pocket)؟",
+        "correct_answer": "ساعة",
+        "incorrect_answers": [
+            "نقود",
+            "مفاتيح",
+            "دفتر ملاحظات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو نوع المشروب المكسيكي الشهير \"كورونا\" (Corona)؟",
+        "correct_answer": "لاجر خفيف (Pale Lager)",
+        "incorrect_answers": [
+            "إنديا بايل آيل (IPA)",
+            "بيلسنر (Pilsner)",
+            "بالتيك بورتر (Baltic Porter)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم تأسيس سلسلة مطاعم ماكدونالدز؟",
+        "correct_answer": "1955",
+        "incorrect_answers": [
+            "1964",
+            "1951",
+            "1947"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الذي يمثل حرف \"M\" في أبجدية الناتو الصوتية؟",
+        "correct_answer": "مايك (Mike)",
+        "incorrect_answers": [
+            "ماثيو (Matthew)",
+            "مارك (Mark)",
+            "ماكس (Max)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو الشخص الذي يظهر وجهه باللونين الأبيض والأسود في رمز \"كابا\" (Kappa) التعبيري الشهير على منصة تويتش؟",
+        "correct_answer": "جوش ديسينو",
+        "incorrect_answers": [
+            "جاستن ديسينو",
+            "جون ديسينو",
+            "جيمي ديسينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الصفة المميزة للشخص الذي يوصف بـ \"hirsute\" باللغة الإنجليزية؟",
+        "correct_answer": "كثير الشعر",
+        "incorrect_answers": [
+            "فظ أو وقح",
+            "مرح أو مضحك",
+            "طويل القامة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الخوف المعروف بـ \"التريبوفوبيا\" (Trypophobia)？",
+        "correct_answer": "الخوف من الثقوب الصغيرة المتجمعة",
+        "incorrect_answers": [
+            "الخوف من السباحة في المياه العميقة",
+            "الخوف من التحدث أمام الجمهور",
+            "الخوف من تناول الطعام بكثرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي المكسرات المستخدمة بشكل أساسي في صناعة حلوى \"المرزبان\" (Marzipan)؟",
+        "correct_answer": "اللوز",
+        "incorrect_answers": [
+            "الفول السوداني",
+            "عين الجمل (الجوز)",
+            "الفستق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من أنواع المشروبات التالية يحتوي عادةً على نسبة أعلى من المتوسط من نبات الجنجل (Hops)؟",
+        "correct_answer": "إنديا بايل آيل (India Pale Ale)",
+        "incorrect_answers": [
+            "ستوت (Stout)",
+            "إكسترا سبيشال بيتر (ESB)",
+            "سكوتش آيل (Scotch Ale)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من أي سلالة كلاب يأتي \"هاندسوم دان\" (Handsome Dan)، وهو جالب الحظ الرسمي لجامعة ييل؟",
+        "correct_answer": "بولدوغ (Bulldog)",
+        "incorrect_answers": [
+            "يوركشاير تيرير",
+            "بوكسر",
+            "باغ (Pug)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تم بيع مشروب \"كريستال بيبسي\" (Crystal Pepsi) لأول مرة في الأسواق الأمريكية في عام 1993.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "لأي معدن يُعد منجم \"إل تينيينتي\" (El Teniente) الواقع في تشيلي أكبر منجم تحت الأرض في العالم؟",
+        "correct_answer": "النحاس",
+        "incorrect_answers": [
+            "الحديد",
+            "النيكل",
+            "الفضة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي يصف ترتيب الكلمات الصحيح في الجملة اليابانية؟",
+        "correct_answer": "فاعل - مفعول به - فعل (Subject Object Verb)",
+        "incorrect_answers": [
+            "فاعل - فعل - مفعول به (Subject Verb Object)",
+            "فعل - فاعل - مفعول به (Verb Subject Object)",
+            "فعل - مفعول به - فاعل (Verb Object Subject)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الصينية المكتوبة بالحروف اللاتينية والتي تعني \"طائرة\"؟",
+        "correct_answer": "فيجي (Feiji)",
+        "incorrect_answers": [
+            "كيتشي (Qiche)",
+            "زونغشيان (Zongxian)",
+            "هواجايين (Huojian)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "صوّتت اسكتلندا لتصبح دولة مستقلة خلال الاستفتاء الذي أُجري في سبتمبر 2014.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الإيطالية التي تعني \"طماطم\"؟",
+        "correct_answer": "بومودورو (Pomodoro)",
+        "incorrect_answers": [
+            "آليو (Aglio)",
+            "تشيبولا (Cipolla)",
+            "بيبيرونشينو (Peperoncino)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "سُمي لباس البحر \"البيكيني\" بهذا الاسم نسبةً إلى \"جزيرة بيكيني الحلقية\" (Bikini Atoll)، حيث أجرت الولايات المتحدة تجارب للقنابل الذرية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "وفقاً لهيئة العمل العادل الأسترالية (Fair Work)، كم سنة يجب أن تعمل في نفس الوظيفة لتستحق إجازة الخدمة الطويلة (Long Service Leave)؟",
+        "correct_answer": "7 سنوات",
+        "incorrect_answers": [
+            "سنتان",
+            "8 سنوات",
+            "6 أشهر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم العامي الذي تُعرف به عملة الدولار الكندي المعدنية؟",
+        "correct_answer": "لوني (Loonie)",
+        "incorrect_answers": [
+            "بولي (Boolie)",
+            "فولي (Foolie)",
+            "مودي (Moodie)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "حساء \"الغامبو\" (Gumbo) هو يخنة نشأت في الأصل في ولاية لويزيانا الأمريكية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "\"A3\" و\"B1\" و\"Legal\" هي تسميات قياسية شائعة لمقاسات أي من الأشياء التالية؟",
+        "correct_answer": "الورق",
+        "incorrect_answers": [
+            "الطائرات",
+            "كتب القانون",
+            "شاشات الهواتف"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الشركات السويدية تأسست في عام 1943؟",
+        "correct_answer": "إيكيا (IKEA)",
+        "incorrect_answers": [
+            "إتش آند إم (H&M)",
+            "ليندكس (Lindex)",
+            "كلاس أولسون (Clas Ohlson)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أُطلقت لعبة الأطفال الشهيرة \"فيربي\" (Furby) لأول مرة في عام 1998.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من جامعات رابطة اللبلاب (Ivy League) التالية كُتب شعارها الرسمي باللغة العبرية واللاتينية معاً؟",
+        "correct_answer": "جامعة ييل",
+        "incorrect_answers": [
+            "جامعة برينستون",
+            "جامعة هارفارد",
+            "جامعة كولومبيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من الرموز التالية كان يُعتبر في الماضي الحرف السابع والعشرين في الأبجدية الإنجليزية؟",
+        "correct_answer": "علامة العطف & (Ampersand)",
+        "incorrect_answers": [
+            "علامة الاستفهام والتعجب المدمجة (Interrobang)",
+            "علامة المدة (Tilde)",
+            "علامة الفقرة (Pilcrow)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم إطلاق موقع \"فيسبوك\" (Facebook)؟",
+        "correct_answer": "2004",
+        "incorrect_answers": [
+            "2005",
+            "2003",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تأسس تطبيق التواصل الشهير \"واتساب\" (WhatsApp)؟",
+        "correct_answer": "2009",
+        "incorrect_answers": [
+            "2007",
+            "2012",
+            "2010"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هي الدولة الثالثة في العالم التي افتتحت مطعماً لسلسلة \"ماكدونالدز\"؟",
+        "correct_answer": "كوستاريكا",
+        "incorrect_answers": [
+            "اليابان",
+            "فرنسا",
+            "أستراليا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "مرض السرطان في حد ذاته ليس مرضاً معدياً.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الدولة -باستثناء اليابان- التي تضم أكبر عدد من الأشخاص من أصول يابانية؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "الصين",
+            "كوريا الجنوبية",
+            "الولايات المتحدة الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم جماعة الأشرار في لعبة \"دانغانرونبا أنوذر إبيسود: أولترا ديسبير غيرلز\" (Danganronpa Another Episode: Ultra Despair Girls)؟",
+        "correct_answer": "محاربو الأمل",
+        "incorrect_answers": [
+            "مونوكوبس",
+            "محاربو اليأس",
+            "اليأس المطلق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة التي طورت برنامج الفوكالويد الشهير \"هاتسوني ميكو\"؟",
+        "correct_answer": "كريبتون فيوثر ميديا",
+        "incorrect_answers": [
+            "سيجا",
+            "سوني",
+            "مؤسسة ياماها"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي ليس من تصميمات السيوف الأوروبية التقليدية؟",
+        "correct_answer": "السيف المقوس",
+        "incorrect_answers": [
+            "فالشيوني",
+            "أولفبرت",
+            "فلامبيرج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من أي دولة أوروبية نشأت سلطة الكولسلو؟",
+        "correct_answer": "هولندا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "الدنمارك",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من ألعاب مارفل التالية تم إصدارها على جهاز بلايستيشن 2؟",
+        "correct_answer": "سبايدرمان 2",
+        "incorrect_answers": [
+            "سيلفر سيرفر",
+            "هوارد ذا داك",
+            "ولفرين: أدامانتيوم ريج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "إذا قال لك شخص ما بالإنجليزية \"أنت أوليد\" (you are olid)، فماذا يعني ذلك؟",
+        "correct_answer": "رائحتك كريهة للغاية.",
+        "incorrect_answers": [
+            "بنيتك ضعيفة أو لست في حالة بدنية جيدة.",
+            "مظهرك منفر.",
+            "أنت شخص غير مفهوم أو أحمق."
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي العملة الرسمية لدولة لاوس؟",
+        "correct_answer": "الكيب",
+        "incorrect_answers": [
+            "الروبل",
+            "الكونرا",
+            "الدولار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الخطوة في عملية التنفس الخلوي التي تنتج جزيئات الـ ATP؟",
+        "correct_answer": "الفسفرة التأكسدية",
+        "incorrect_answers": [
+            "التحلل السكري",
+            "أكسدة البيروفات",
+            "دورة كالفن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "شركات فيرجن للقطارات، وفيرجن أتلانتيك، وفيرجن ريسينغ، هي جميعها شركات مملوكة لأي رجل أعمال شهير؟",
+        "correct_answer": "ريتشارد برانسون",
+        "incorrect_answers": [
+            "ألان شوجر",
+            "دونالد ترامب",
+            "بيل غيتس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو مؤسس الباستافاريانية (ديانة وحش السباغيتي الطائر)؟",
+        "correct_answer": "بوبي هندرسون",
+        "incorrect_answers": [
+            "إريك تيغنور",
+            "بيل ناي",
+            "زاك سولدي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تأتي كلمة \"news\" (أخبار) من الحروف الأولى للاتجاهات الأربعة الرئيسية على البوصلة (الشمال، الشرق، الغرب، الجنوب).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كانت فوانيس الهالوين الأصلية (Jack-o-Lanterns) تُصنع في الأصل من اللفت المجوف.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ارتفعت شهرة منتج الموسيقى الإلكترونية \"كايغو\" (Kygo) بشكل كبير بعد ريمكس معين، ما هي الأغنية التي قام بإعادة توزيعها؟",
+        "correct_answer": "إيد شيران - آي سي فاير",
+        "incorrect_answers": [
+            "مارفين غي - سيكشوال هيلينغ",
+            "كولدبلاي - ميدنايت",
+            "آ-ها - تيك أون مي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد المقاطع اللفظية التي تتكون منها قصيدة الهايكو؟",
+        "correct_answer": "17",
+        "incorrect_answers": [
+            "15",
+            "10",
+            "21"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الإسبانية التي تعني \"حمار\"؟",
+        "correct_answer": "بورو",
+        "incorrect_answers": [
+            "كابايو",
+            "تورو",
+            "بيرو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تستخدم الإكوادور البيزو المكسيكي كعملة رسمية لها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الكلمات الإنجليزية تعني \"متفرج كسول أو فضولي\"؟",
+        "correct_answer": "Gongoozler",
+        "incorrect_answers": [
+            "Gossypiboma",
+            "Jentacular",
+            "Meupareunia"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو نوع الألعاب أو الوسائط التي يراجعها موقع \"شات أب آند سيت داون\" (Shut Up & Sit Down)؟",
+        "correct_answer": "الألعاب اللوحية",
+        "incorrect_answers": [
+            "البرامج التلفزيونية",
+            "ألعاب الفيديو",
+            "الأفلام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مغالطة منطقية تعني مهاجمة شخصية الخصم بدلاً من مناقشة حججه؟",
+        "correct_answer": "مغالطة الشخصنة (Ad hominem)",
+        "incorrect_answers": [
+            "مغالطة التزامن (Post hoc ergo propter hoc)",
+            "مغالطة \"وأنت كذلك\" (Tu quoque)",
+            "مغالطة التوسل بالأغلبية (Argumentum ad populum)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو أقصر شهر في السنة؟",
+        "correct_answer": "فبراير",
+        "incorrect_answers": [
+            "ديسمبر",
+            "أبريل",
+            "سبتمبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الذي حظرته منطقة كتالونيا ذاتية الحكم في إسبانيا عام 2010، ودخل حيز التنفيذ في عام 2012؟",
+        "correct_answer": "مصارعة الثيران",
+        "incorrect_answers": [
+            "المهرجانات الشعبية",
+            "رقص الفلامنكو",
+            "موسيقى المارياتشي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي شركة تصنيع سيارات إيطالية حصلت على حصة الأغلبية في شركة كرايسلر الأمريكية لصناعة السيارات في عام 2011؟",
+        "correct_answer": "فيات",
+        "incorrect_answers": [
+            "مازيراتي",
+            "ألفا روميو",
+            "فيراري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يعتبر حوض بادواتر في وادي الموت أخفض نقطة في أمريكا الشمالية، فكم قدماً يبلغ انخفاضه تحت مستوى سطح البحر؟",
+        "correct_answer": "282 قدماً",
+        "incorrect_answers": [
+            "79 قدماً",
+            "1,640 قدماً",
+            "12,092 قدماً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الاسم الذي يطلق على رأس السنة اليهودية؟",
+        "correct_answer": "روش هاشانا",
+        "incorrect_answers": [
+            "إيلول",
+            "رأس السنة الجديدة",
+            "سوكوت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اللقب الشهير لولاية كاليفورنيا الأمريكية؟",
+        "correct_answer": "الولاية الذهبية",
+        "incorrect_answers": [
+            "ولاية أشعة الشمس",
+            "ولاية الخليج",
+            "ولاية الكنز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا يرمز حرف الـ F في مكتب التحقيقات الفيدرالي (FBI)؟",
+        "correct_answer": "فيدرالي",
+        "incorrect_answers": [
+            "أجنبي",
+            "رسمي",
+            "أول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو المصطلح الأكثر شيوعاً للتعبير عن محيط الدائرة؟",
+        "correct_answer": "المحيط",
+        "incorrect_answers": [
+            "القطر",
+            "نصف القطر",
+            "القوس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في اللغات الاسكندنافية، يعني حرف Å \"نهر\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "هذه هي الطريقة الصحيحة لكتابة الكلمة الإنجليزية الشهيرة \"Supercalifragilisticexpialidocious\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأشهر التالية يحتوي على أكبر عدد من الأيام؟",
+        "correct_answer": "ديسمبر",
+        "incorrect_answers": [
+            "أبريل",
+            "سبتمبر",
+            "نوفمبر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو اللون الذي يعتبر اللون الموف (الخبازي) درجة من درجاته، والمسمى نسبة إلى زهرة الخبازى؟",
+        "correct_answer": "البنفسجي",
+        "incorrect_answers": [
+            "الأحمر",
+            "البني",
+            "الوردي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الفرنسية التي تعني \"سمكة\"؟",
+        "correct_answer": "poisson",
+        "incorrect_answers": [
+            "fiche",
+            "escargot",
+            "mer"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما كان اسم فريق المصارعة الثنائي الشهير في اتحاد WWF والمكون من المصارعين \"أكس\" و\"سماش\"؟",
+        "correct_answer": "ديموليشن",
+        "incorrect_answers": [
+            "ذا دريم تيم",
+            "ذا بوشواكرز",
+            "ذا بريتيش بولدوغز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي من المؤسسين المشاركين لشركة الواقع الافتراضي \"أوكولوس في آر\" (Oculus VR) توفي في حادث سيارة مأساوي عام 2013؟",
+        "correct_answer": "أندرو سكوت ريس",
+        "incorrect_answers": [
+            "نيت ميتشل",
+            "جاك مكاولي",
+            "بالمر لوكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي سلسلة مطاعم الوجبات السريعة التي تمتلك أكبر عدد من الفروع عالمياً؟",
+        "correct_answer": "صَب واي",
+        "incorrect_answers": [
+            "ستاربكس",
+            "ماكدونالدز",
+            "كي إف سي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في اليونان القديمة، إذا كانت وظيفتك هي \"هيبوس\" (hippeus)، فماذا كنت لتمتلك؟",
+        "correct_answer": "حصان",
+        "incorrect_answers": [
+            "نول حياكة",
+            "قيثارة",
+            "قارب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الروسية المكتوبة بالأحرف اللاتينية والتي تعني \"الشتاء\"؟",
+        "correct_answer": "Zima",
+        "incorrect_answers": [
+            "Leto",
+            "Vesna",
+            "Osen"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الموقع الإلكتروني الأكثر زيارة من بين هذه الخيارات؟",
+        "correct_answer": "جوجل",
+        "incorrect_answers": [
+            "يوتيوب",
+            "فيسبوك",
+            "ويكيبيديا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الشخصيات التالية ليس مقدماً لبرنامج على إذاعة NPR الأمريكية؟",
+        "correct_answer": "بين شابيرو",
+        "incorrect_answers": [
+            "تيري غروس",
+            "إيرا غلاس",
+            "بيتر ساغال"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يُصنع \"رصاص\" قلم الرصاص عادة من الجرافيت وليس من معدن الرصاص.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الفرنسية التي تعني \"قبعة\"؟",
+        "correct_answer": "Chapeau",
+        "incorrect_answers": [
+            "Bonnet",
+            "Écharpe",
+            "Casque"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هو مؤسس أكاديمية خان التعليمية؟",
+        "correct_answer": "سال خان",
+        "incorrect_answers": [
+            "بين خان",
+            "كيت خان",
+            "أديل خان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يرمز حرف الـ \"G\" في مصطلح \"جي-مان\" (G-Man)؟",
+        "correct_answer": "حكومة",
+        "incorrect_answers": [
+            "مستمر",
+            "شبح",
+            "جيرونيمو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو الشيء الذي يمثل الخوف المرضي غير العقلاني منه ما يعرف بـ \"فوبيا البرق والرعد\" (Astraphobia)؟",
+        "correct_answer": "الرعد",
+        "incorrect_answers": [
+            "المطر",
+            "الرياح",
+            "الثلج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما الاسم الأصلي الذي أطلق في البداية على محرك البحث \"جوجل\"؟",
+        "correct_answer": "باك رب",
+        "incorrect_answers": [
+            "كات مساج",
+            "سيرش برو",
+            "نتسكيب نافيجيتور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الفيرلونغ (وحدة قياس مسافة) في الميل الواحد؟",
+        "correct_answer": "ثمانية",
+        "incorrect_answers": [
+            "اثنان",
+            "أربعة",
+            "ستة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ينجذب الثيران إلى اللون الأحمر.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "صورة أي رئيس أمريكي مطبوعة على ورقة النقد النادرة من فئة الدولارين؟",
+        "correct_answer": "توماس جيفرسون",
+        "incorrect_answers": [
+            "مارتن فان بيورين",
+            "أوليسيس غرانت",
+            "جون كوينسي آدامز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما ترجمة العبارة اللاتينية الشهيرة \"Veni, vidi, vici\" باللغة العربية؟",
+        "correct_answer": "أتيت، ورأيت، وانتصرت",
+        "incorrect_answers": [
+            "لا أرى شراً، لا أسمع شراً، لا أتكلم شراً",
+            "الحياة والحرية والسعادة",
+            "الماضي والحاضر والمستقبل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي وسادة \"داكيماكورا\" (dakimakura)؟",
+        "correct_answer": "وسادة الجسم",
+        "incorrect_answers": [
+            "وجبة صينية تتكون بشكل أساسي من السمك",
+            "وضعية من وضعيات اليوجا",
+            "كلمة تُستخدم لوصف شخصين يحبان بعضهما بصدق"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "تعتبر \"نظرية الملاعق\" (Spoon theory) نموذجاً تعبيرياً يستعين بـ \"الملاعق\" كرمز لمقدار الطاقة اليومية المتاحة للشخص.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كل كم سنة يتم منح ميدالية فيلدز، التي تعد واحدة من أرفع الجوائز في مجال الرياضيات؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "يرمز اسم القناة التلفزيونية البريطانية التجارية ITV إلى \"International Television\" (التلفزيون الدولي).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام تم صياغة مصطلح \"عالم\" (scientist) لأول مرة؟",
+        "correct_answer": "1833",
+        "incorrect_answers": [
+            "1933",
+            "1942",
+            "1796"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الأبراج الفلكية يمثله الميزان؟",
+        "correct_answer": "برج الميزان",
+        "incorrect_answers": [
+            "برج الحمل",
+            "برج الجدي",
+            "برج القوس"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "هل الكلب من الثدييات؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "على لوحة الهدف في لعبة السهام المريشة (الدارتس)، ما الرقم المقابل مباشرة للرقم 1؟",
+        "correct_answer": "19",
+        "incorrect_answers": [
+            "20",
+            "12",
+            "15"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد النجوم الموجودة على علم الاتحاد الأوروبي؟",
+        "correct_answer": "12",
+        "incorrect_answers": [
+            "10",
+            "14",
+            "16"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من المناسبات التالية لا يُحتفل بها عادة في شهر ديسمبر؟",
+        "correct_answer": "عيد الشكر",
+        "incorrect_answers": [
+            "عيد الميلاد",
+            "عيد الكوانزا",
+            "عيد الأنوار"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي شهر يُحتفل بشهر تاريخ السود في الولايات المتحدة الأمريكية؟",
+        "correct_answer": "فبراير",
+        "incorrect_answers": [
+            "مايو",
+            "نوفمبر",
+            "أغسطس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو صاحب مقولة \"ما لا يقتلك يجعلك أقوى\"؟",
+        "correct_answer": "فريدريش نيتشه",
+        "incorrect_answers": [
+            "جي جوردون ليدي",
+            "كيلي كلاركسون",
+            "كريستوفر هيتشنز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي كوكب لم يُسمَّ تيمناً بإله يوناني أو روماني؟",
+        "correct_answer": "الأرض",
+        "incorrect_answers": [
+            "المشتري",
+            "المريخ",
+            "عطارد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي دولة تضم أكبر عدد من مصانع جعة التراپيست؟",
+        "correct_answer": "بلجيكا",
+        "incorrect_answers": [
+            "هولندا",
+            "فرنسا",
+            "الولايات المتحدة الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من أين تأتي مياه زجاجات مياه \"بولاند سبرينغ\"؟",
+        "correct_answer": "مين، الولايات المتحدة",
+        "incorrect_answers": [
+            "هسن، ألمانيا",
+            "مازوفيا، بولندا",
+            "بافاريا، بولندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "وفقاً لمراكز السيطرة على الأمراض والوقاية منها (CDC) في الولايات المتحدة، يموت شخص واحد من بين كل كم أمريكي سنوياً بسبب التدخين؟",
+        "correct_answer": "خمسة",
+        "incorrect_answers": [
+            "عشرين",
+            "عشرة",
+            "مئة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في لغة مورس، ما هو الحرف الذي يرمز إليه بثلاث نقاط؟",
+        "correct_answer": "S",
+        "incorrect_answers": [
+            "O",
+            "A",
+            "C"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو مركب H2O؟",
+        "correct_answer": "الماء",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الهيدروجين",
+            "لا شيء مما سبق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "متى تم إصدار لعبة بونغ (Pong)؟",
+        "correct_answer": "29 نوفمبر 1972",
+        "incorrect_answers": [
+            "29 مارس 2017",
+            "29 نوفمبر 1970",
+            "14 ديسمبر 1974"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ماذا يطلق البحارة على الجانب الأيسر من القارب أو السفينة؟",
+        "correct_answer": "بورت (Port)",
+        "incorrect_answers": [
+            "ستاربورد (Starboard)",
+            "المقدمة (Bow)",
+            "المؤخرة (Stern)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي ليست من خرافات إيسوب؟",
+        "correct_answer": "الثعلب وكلب الصيد (The Fox and the Hound)",
+        "incorrect_answers": [
+            "الثعلب والعنب (The Fox and the Grapes)",
+            "السلحفاة والأرنب (The Tortoise and the Hare)",
+            "الضفدع والثور (The Frog and the Ox)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هو أول رئيس للمكسيك؟",
+        "correct_answer": "غوادالوبي فيكتوريا",
+        "incorrect_answers": [
+            "بينيتو خواريز",
+            "ميغيل هيدالغو إي كوستيا",
+            "فيسنتي غيريرو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يُسمح قانوناً بتناول الكحول أثناء القيادة في ولاية مسيسيبي الأمريكية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "الجلوس لأكثر من ثلاث ساعات في اليوم يمكن أن يقلل من عمر الإنسان المتوقع بمقدار عامين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تشير الدراسات إلى أن ما يقارب 40% من سكان العالم يستخدمون اليد اليسرى (عُسر).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي عنصر كيميائي يحمل الرمز Kr؟",
+        "correct_answer": "الكريبتون",
+        "incorrect_answers": [
+            "الكيروسين",
+            "الكينيتيكيوم",
+            "الكوريوم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الدول تقود السيارات على الجانب الأيسر من الطريق؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "ألمانيا",
+            "روسيا",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي عاصمة إسبانيا؟",
+        "correct_answer": "مدريد",
+        "incorrect_answers": [
+            "باريس",
+            "برشلونة",
+            "لشبونة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي اتجاه جغرافي تشرق الشمس؟",
+        "correct_answer": "الشرق",
+        "incorrect_answers": [
+            "الغرب",
+            "الشمال",
+            "الجنوب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ماذا يطلق الهولنديون على لغتهم؟",
+        "correct_answer": "نيدرلاندس (Nederlands)",
+        "incorrect_answers": [
+            "دانسك (Dansk)",
+            "دويتش (Deutsch)",
+            "هولاندر (Hollander)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تُؤكل وجبة الهاجيس تقليدياً في ليلة بيرنز (Burns Night).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "يعد قصر ديزني المسكون (Haunted Mansion) موطناً لثلاثي من أشباح الأوتوستوب (الهيتشهايكر). أي من هؤلاء ليس واحداً منهم؟",
+        "correct_answer": "هاري",
+        "incorrect_answers": [
+            "غاس",
+            "فينياس",
+            "إيزرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من حبوب الإفطار المرعبة لشركة \"جنرال ميلز\" كانت الأخيرة التي تم إصدارها في السبعينيات؟",
+        "correct_answer": "فروت بروت (Fruit Brute)",
+        "incorrect_answers": [
+            "كونت شوكولا (Count Chocula)",
+            "فرانكن بيري (Franken Berry)",
+            "بو بيري (Boo-Berry)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "إلى ماذا يرمز الاختصار VR؟",
+        "correct_answer": "الواقع الافتراضي (Virtual Reality)",
+        "incorrect_answers": [
+            "حقيقي جداً (Very Real)",
+            "التعرف البصري (Visual Recognition)",
+            "التعرف على الصوت (Voice Recognition)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "تنتمي اللغة الرومانية إلى عائلة اللغات الرومانسية، والتي تشترك فيها مع الفرنسية والإسبانية والبرتغالية والإيطالية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "يمكن تشغيل ألبوم فرقة \"كينغ غيزارد آند ذا ليزرد ويزارد\" بعنوان \"نونغون إنفينيتي\" (Nonagon Infinity) بشكل متكرر دون انقطاع مسموع.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في لعبة \"ريزيدنت إيفل 3\"، كم عدد خانات المخزن (الحقيبة) التي تمتلكها جيل في بداية اللعبة؟",
+        "correct_answer": "8",
+        "incorrect_answers": [
+            "6",
+            "10",
+            "12"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أي مما يلي ليس اسماً آخر للباذنجان؟",
+        "correct_answer": "بوتيمارون (Potimarron)",
+        "incorrect_answers": [
+            "برينجال (Brinjal)",
+            "قرع غينيا (Guinea Squash)",
+            "ميلونجين (Melongene)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم عدد بذور التفاح التقريبي التي يجب ابتلاعها للحصول على جرعة قاتلة من السيانيد؟",
+        "correct_answer": "200",
+        "incorrect_answers": [
+            "20",
+            "2,000",
+            "20,000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "اشتهر الشقيقان بوب ومايك براين في أي رياضة؟",
+        "correct_answer": "التنس (كرة المضرب)",
+        "incorrect_answers": [
+            "كرة السلة",
+            "كرة القدم",
+            "البيسبول (كرة القاعدة)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تقبيل شخص ما لمدة دقيقة واحدة يحرق حوالي سعرتين حراريتين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الجزء الميكانيكي الموجود في مركز ألعاب سبينر (Fidget Spinners)؟",
+        "correct_answer": "المحامل (رولمان بلي)",
+        "incorrect_answers": [
+            "المحاور",
+            "التروس",
+            "الأحزمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من برامج نيكتونز (Nicktoons) هذه لم تكن في الأصل فقرة قصيرة في برنامج \"أوه ييه! كارتونز\" قبل أن تصبح مسلسلاً خاصاً بها؟",
+        "correct_answer": "داني المراهق (Danny Phantom)",
+        "incorrect_answers": [
+            "منطقة الطباشير (ChalkZone)",
+            "جيني المراهقة الآلية (My Life as a Teenage Robot)",
+            "الوالدان السحريان (The Fairly OddParents)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو أكبر نظام نقل سريع (مترو) في العالم من حيث عدد المحطات، بوجود 472 محطة قيد التشغيل؟",
+        "correct_answer": "مترو أنفاق مدينة نيويورك",
+        "incorrect_answers": [
+            "مترو شانغهاي",
+            "مترو أنفاق لندن",
+            "مترو أنفاق برلين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الفاكهة التي تعد مكوناً تقليدياً في كعكة الغابة السوداء (بلاك فورست)؟",
+        "correct_answer": "الكرز",
+        "incorrect_answers": [
+            "المشمش",
+            "الزبيب",
+            "التفاح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "السكيوفوبيا (Sciophobia) هي الخوف من ماذا؟",
+        "correct_answer": "الظلال",
+        "incorrect_answers": [
+            "الأكل",
+            "الأضواء الساطعة",
+            "وسائل النقل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "فرانك لويد رايت كان المهندس المعماري وراء تصميم أي مبنى شهير؟",
+        "correct_answer": "متحف غوغنهايم",
+        "incorrect_answers": [
+            "فيلا سافوي",
+            "دار أوبرا سيدني",
+            "إبرة الفضاء (ذا سبيس نيدل)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أين يقع المقر الرئيسي لشركة أبل (Apple Inc.)؟",
+        "correct_answer": "كوبيرتينو، كاليفورنيا",
+        "incorrect_answers": [
+            "ريدوود سيتي، كاليفورنيا",
+            "ريدموند، واشنطن",
+            "سانتا مونيكا، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في عالم SCP الخيالي، ما هي \"فئة الكائن\" (Object Class) التي تُمنح لكيانات SCP التي لا يمكن احتواؤها على الإطلاق؟",
+        "correct_answer": "أبوليون (Apollyon)",
+        "incorrect_answers": [
+            "ثوميل (Thaumiel)",
+            "كيتير-ثوميل (Keter-Thaumiel)",
+            "الفئات الباطنية/السردية (Esoteric/Narrative Classes)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي دولة تنتج ما يقارب 40% من الفانيليا في العالم؟",
+        "correct_answer": "مدغشقر",
+        "incorrect_answers": [
+            "إندونيسيا",
+            "الصين",
+            "المكسيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "من هو مؤسس مجموعة ليغو (The Lego Group)؟",
+        "correct_answer": "أولي كيرك كريستيانسن",
+        "incorrect_answers": [
+            "ينس نيلز كريستيانسن",
+            "كيرستين كريستيانسن",
+            "جيرهارد كيرك كريستيانسن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة اليابانية المكتوبة بالأحرف اللاتينية (روماجي) والتي تعني \"جامعة\"؟",
+        "correct_answer": "دايغاكو (Daigaku)",
+        "incorrect_answers": [
+            "توشوكان (Toshokan)",
+            "جيموشو (Jimusho)",
+            "شوكودو (Shokudou)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي الشركة التي تعاونت معها شركة فالف (Valve) لصناعة نظارة الواقع الافتراضي فايف (Vive)؟",
+        "correct_answer": "HTC",
+        "incorrect_answers": [
+            "أوكولوس (Oculus)",
+            "جوجل (Google)",
+            "رايزر (Razer)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي مهندس معماري شهير، توفي عام 2019 عن عمر يناهز 102 عاماً، صمم الهرم الزجاجي في متحف اللوفر بباريس؟",
+        "correct_answer": "آي إم بي (I. M. Pei)",
+        "incorrect_answers": [
+            "بسكال غيدو (Pascale Guédot)",
+            "فرانك جيري",
+            "وانغ شو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "هل مايكل جاكسون هو من اخترع رقصة مشية القمر (Moonwalk)؟",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كانت أغنية \"جينغل بيلز\" (Jingle Bells) مخصصة في الأصل لعيد الشكر.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من يُعتبر \"أبو الفلسفة الحديثة\"؟",
+        "correct_answer": "رينيه ديكارت",
+        "incorrect_answers": [
+            "أفلاطون",
+            "ألبرت أينشتاين",
+            "أنطوان لافوازييه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من هي الشخصية المرسومة على ورقة المئة دولار الأمريكية؟",
+        "correct_answer": "بنجامين فرانكلين",
+        "incorrect_answers": [
+            "جورج واشنطن",
+            "أبراهام لينكون",
+            "توماس جيفرسون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي عام حصلت غانا على استقلالها؟",
+        "correct_answer": "1957",
+        "incorrect_answers": [
+            "1947",
+            "1960",
+            "1958"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي دولة أقيمت الألعاب الأولمبية الصيفية لعام 1992؟",
+        "correct_answer": "إسبانيا",
+        "incorrect_answers": [
+            "روسيا",
+            "كوريا",
+            "الولايات المتحدة الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة البرتغالية المقابلة لـ \"البرازيل\"؟",
+        "correct_answer": "Brasil",
+        "incorrect_answers": [
+            "Brazil",
+            "Brasilia",
+            "Brasíl"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "كليتا \"أول سولز\" (All Souls) و\"ميرتون\" (Merton) هما كليتان تتبعان لأي جامعة؟",
+        "correct_answer": "أكسفورد",
+        "incorrect_answers": [
+            "كامبريدج",
+            "مانشستر",
+            "ليدز"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ولد أدولف هتلر في أستراليا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "تم ابتكار الوجه السعيد (The Happy Face) بواسطة الرسام التجاري هارفي بال.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو اسم الشركة في لعبة ليزال كومباني (Lethal Company)؟",
+        "correct_answer": "الشركة (The Company)",
+        "incorrect_answers": [
+            "شركة خردة الكواكب (Planet Scrap Co.)",
+            "ليزال للروبوتات (Lethal Robotics)",
+            "شركة غورديان للشحن (Gordian Shipping Co.)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "من أي بلد نشأت قصة روبن هود؟",
+        "correct_answer": "إنجلترا",
+        "incorrect_answers": [
+            "فرنسا",
+            "البرتغال",
+            "إسكتلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي دولة تولى فيها رئاسة الوزراء شخصيات بالأسماء التالية: إيدن، وميجور، وبيل، ولو، وبراون، وهيث؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "أستراليا",
+            "نيوزيلندا",
+            "كندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم يبلغ ارتفاع برج خليفة؟",
+        "correct_answer": "2,722 قدم",
+        "incorrect_answers": [
+            "2,717 قدم",
+            "2,546 قدم",
+            "3,024 قدم"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي يوم تم إطلاق خدمة استضافة الملفات \"جوجل درايف\" (Google Drive)؟",
+        "correct_answer": "24 أبريل 2012",
+        "incorrect_answers": [
+            "12 يناير 2014",
+            "14 نوفمبر 2008",
+            "20 يناير 2010"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "بين نصب واشنطن والبركة العاكسة (Reflecting Pool) مباشرة، يوجد نصب تذكاري لأي حرب؟",
+        "correct_answer": "الحرب العالمية الثانية",
+        "incorrect_answers": [
+            "حرب فيتنام",
+            "الحرب الأهلية الأمريكية",
+            "حرب الاستقلال الأمريكية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي من التوابل الأساسية التالية يُعرف أيضاً بالفجل الياباني الحار؟",
+        "correct_answer": "الواسابي",
+        "incorrect_answers": [
+            "مينتسويو",
+            "كاراشي",
+            "بونزو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي القناة التي تربط بين البحر الأبيض المتوسط والبحر الأحمر؟",
+        "correct_answer": "قناة السويس",
+        "incorrect_answers": [
+            "قناة بنما",
+            "قناة سيناء",
+            "قناة قره قوم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "الرئيس التنفيذي لشركة التكنولوجيا آبل الذي خلف ستيف جوبز يُدعى تيم آبل.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أي رشاش أمريكي الصنع كان معروفاً بشكل غير رسمي بين الجنود الأمريكيين الذين استخدموه باسم \"مسدس الشحم\" (Grease Gun)؟",
+        "correct_answer": "M3",
+        "incorrect_answers": [
+            "كولت 9 ملم",
+            "تومبسون",
+            "ماك-10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "بأي منتج غذائي تشتهر الشركة الأمريكية \"كامبلز\" (Campbell's) بشكل أكبر؟",
+        "correct_answer": "الحساء المعلب",
+        "incorrect_answers": [
+            "الشوكولاتة",
+            "المشروبات الغازية",
+            "السجق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "التكملة الأقل شهرة للمثل القائل \"الفضول قتل القط...\" هي:",
+        "correct_answer": "\"...لكن الرضا أعاده للحياة.\"",
+        "incorrect_answers": [
+            "\"...والفأر الصامت بقي مكانه.\"",
+            "\"...مما علمه ألا يفعل ذلك مجدداً.\"",
+            "\"...لكن الموت بالمعرفة أفضل من الجهل.\""
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "كم من الوقت استغرق منظفو النوافذ الآليون في مركز التجارة العالمي الأصلي لتنظيف واجهة المبنى الخارجية بأكملها؟",
+        "correct_answer": "شهر واحد",
+        "incorrect_answers": [
+            "3 أسابيع",
+            "أسبوع واحد",
+            "شهران"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو المشروب الكحولي الذي يُصنع بشكل أساسي من عرعر الشرب (ثمار الجونيبير)؟",
+        "correct_answer": "الجين",
+        "incorrect_answers": [
+            "الفودكا",
+            "الرم",
+            "التيكيلا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "رقم خط الطوارئ الساخن في الولايات المتحدة هو 911 بسبب هجمات 11 سبتمبر الإرهابية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو البيرجي (Burgee)؟",
+        "correct_answer": "علم",
+        "incorrect_answers": [
+            "حبل",
+            "نافذة",
+            "نوع من الطعام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الألوان التالية لا يُعتبر من ألوان قوس قزح؟",
+        "correct_answer": "الوردي",
+        "incorrect_answers": [
+            "الأزرق",
+            "البنفسجي",
+            "البرتقالي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الولايات المتحدة، يُعتبر الأمر تلقائياً إيقاعاً غير قانوني في الشرك (Entrapment) إذا باعتك الشرطة مواد غير قانونية دون الكشف عن هويتها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الأكثر انتشاراً وتحدثاً في سويسرا؟",
+        "correct_answer": "الألمانية",
+        "incorrect_answers": [
+            "الفرنسية",
+            "الإيطالية",
+            "السويسرية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في علم اللغويات، أي مما يلي لا يُعد من قواعد غرايس (Gricean Maxims) تحت مبدأ التعاون؟",
+        "correct_answer": "الطول",
+        "incorrect_answers": [
+            "الجودة",
+            "الصلة",
+            "الأسلوب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم بولندا باللغة البولندية؟",
+        "correct_answer": "بولسكا (Polska)",
+        "incorrect_answers": [
+            "بوبشيا (Pupcia)",
+            "بولشكا (Polszka)",
+            "بولاند (Poland)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كيف تقول \"وداعاً\" باللغة الإسبانية؟",
+        "correct_answer": "أديوس (Adiós)",
+        "incorrect_answers": [
+            "هولا (Hola)",
+            "أو ريفوار (Au Revoir)",
+            "سالير (Salir)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الحرف الأكثر استخداماً في الأبجدية الإنجليزية؟",
+        "correct_answer": "E",
+        "incorrect_answers": [
+            "A",
+            "I",
+            "O"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي سلسلة مطاعم للوجبات السريعة يمكنك طلب مخفوق الحليب \"جاموكا\" (Jamocha Shake)؟",
+        "correct_answer": "آربيز (Arby's)",
+        "incorrect_answers": [
+            "ماكدونالدز",
+            "برجر كنج",
+            "وينديز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ريد فاينز (Red Vines) هي علامة تجارية لأي نوع من الحلوى؟",
+        "correct_answer": "العرقسوس الأحمر (Licorice)",
+        "incorrect_answers": [
+            "المصاصات",
+            "الشوكولاتة",
+            "العلكة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الألوان في قوس قزح؟",
+        "correct_answer": "7",
+        "incorrect_answers": [
+            "8",
+            "9",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هي سيدة الأعمال الغانية التي تُعتبر من رواد الإقراض متناهي الصغر؟",
+        "correct_answer": "إستير أفوا أوكلو",
+        "incorrect_answers": [
+            "فريدة بدوي",
+            "أما آتا آيدو",
+            "سيون نيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو أطول جسر في العالم؟",
+        "correct_answer": "جسر دانيانغ-كونشان الكبير، الصين",
+        "incorrect_answers": [
+            "جسر بحيرة بونتشارترين، الولايات المتحدة",
+            "جسر الملك فهد الأول، المملكة العربية السعودية",
+            "جسر السلطان عبد الحليم معظم شاه، ماليزيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وفقاً لـ شيرلوك هولمز: \"إذا استبعدت المستحيل، فإن ما يتبقى، مهما بدا مستبعداً، لا بد أن يكون هو...\"",
+        "correct_answer": "الحقيقة",
+        "incorrect_answers": [
+            "الجواب",
+            "السبب",
+            "المصدر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الكلمات تشير إلى شيء تم صنعه أو توزيعه أو بيعه بطريقة غير قانونية ومهرّبة؟",
+        "correct_answer": "بوتليغ (Bootleg)",
+        "incorrect_answers": [
+            "بوتبلاك (Bootblack)",
+            "بوتليس (Bootlace)",
+            "بوتستراب (Bootstrap)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللعبة التي ظهر فيها والويجي لأول مرة؟",
+        "correct_answer": "ماريو تينس 64 (على جهاز نينتندو 64)",
+        "incorrect_answers": [
+            "واريو لاند: سوبر ماريو لاند 3",
+            "ماريو بارتي (على جهاز نينتندو 64)",
+            "سوبر سماش برذرز ألتيميت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من هذه المطاعم جالب حظه (التميمة) هو مهرج؟",
+        "correct_answer": "ماكدونالدز",
+        "incorrect_answers": [
+            "واتابورجر",
+            "برجر كنج",
+            "سونيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الكوكب الأقرب إلى شمس مجموعتنا الشمسية؟",
+        "correct_answer": "عطارد",
+        "incorrect_answers": [
+            "المريخ",
+            "المشتري",
+            "الأرض"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "9% فقط من الأسر في الولايات المتحدة كانت تمتلك جهاز تلفاز في عام:",
+        "correct_answer": "1950",
+        "incorrect_answers": [
+            "1965",
+            "1913",
+            "1969"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في المتوسط، كم يستهلك الأمريكيون من أي من المواد التالية بمعدل 100 رطل (حوالي 45 كجم) في الثانية الواحدة؟",
+        "correct_answer": "الشوكولاتة",
+        "incorrect_answers": [
+            "البطاطس",
+            "الدونات",
+            "الكوكايين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "\"سانتا كلوز\" (Santa Claus) هو نوع من أنواع الشمام.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "أين يقع المقر الرئيسي لمجموعة \"إنديتكس\" (Inditex)، أكبر مجموعة أزياء في العالم، في مقاطعة لا كورونيا الإسبانية؟",
+        "correct_answer": "أرتيخو (Arteijo)",
+        "incorrect_answers": [
+            "سانخينخو (Sanjenjo)",
+            "موخيا (Muxía)",
+            "أوردينس (Órdenes)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي ثاني أكبر لغة محلية يتحدث بها السكان في إسبانيا من حيث عدد المتحدثين؟",
+        "correct_answer": "الكتالونية",
+        "incorrect_answers": [
+            "البرتغالية",
+            "الإسبانية",
+            "الفرنسية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي قطعة الملابس التي يرتديها الرجل الإسكتلندي عادةً في حفلات الزفاف؟",
+        "correct_answer": "التنورة الإسكتلندية (Kilt)",
+        "incorrect_answers": [
+            "تنورة عادية",
+            "فستان",
+            "أردية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما المعروض في متحف \"مدام توسو\" في لندن؟",
+        "correct_answer": "تماثيل الشمع",
+        "incorrect_answers": [
+            "ملابس المصممين",
+            "بكرات أفلام لم تُعرض بعد",
+            "سيارات كلاسيكية قديمة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي نوع من الحيوانات كان \"هارامبي\"، الذي تم إطلاق النار عليه بعد سقوط طفل في حظيرته في حديقة حيوان سينسيناتي؟",
+        "correct_answer": "غوريلا",
+        "incorrect_answers": [
+            "نمر",
+            "باندا",
+            "تمساح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي الكلمة الألمانية التي تعني \"ملعقة\"؟",
+        "correct_answer": "لوفل (Löffel)",
+        "incorrect_answers": [
+            "غابل (Gabel)",
+            "ميسر (Messer)",
+            "إسشتيبشن (Essstäbchen)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من لغات أي دولة تنحدر الكلمتان \"بنغالو\" (منزل من طابق واحد) و\"شامبو\"؟",
+        "correct_answer": "الهند",
+        "incorrect_answers": [
+            "بابوا غينيا الجديدة",
+            "إثيوبيا",
+            "الصين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هي العملة الرسمية لبولندا؟",
+        "correct_answer": "الزلوتي",
+        "incorrect_answers": [
+            "الروبل",
+            "اليورو",
+            "الكرونة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي دولة تأسست شركة إطارات \"ميشلان\" عام 1889؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "المملكة المتحدة",
+            "إيطاليا",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو البرج الفلكي لشخص ولد في عيد الحب (14 فبراير)؟",
+        "correct_answer": "الدلو",
+        "incorrect_answers": [
+            "الحوت",
+            "الجدي",
+            "العقرب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو السفر الأول من العهد القديم؟",
+        "correct_answer": "سفر التكوين",
+        "incorrect_answers": [
+            "سفر الخروج",
+            "سفر اللاويين",
+            "سفر العدد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "أطلق شركة ماكنتوش أسماء فصائل السنوريات الكبيرة على ستة من أنظمة التشغيل الخاصة بها. فما هو السنور الكبير الذي أطلقت ماكنتوش اسمه على إصدارها لعام 2007؟",
+        "correct_answer": "ليوبارد (الفهد)",
+        "incorrect_answers": [
+            "تايجر (النمر)",
+            "بانثر (النمر الأسود)",
+            "بوما"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ظهر مصطلح \"بريد عشوائي\" (Spam) قبل ظهور المنتج الغذائي المعلب الشهير \"سبام\" (Spam).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أين تقع محطة القطار ذات الاسم الطويل جداً \"Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch\"؟",
+        "correct_answer": "ويلز",
+        "incorrect_answers": [
+            "مولدوفا",
+            "جمهورية التشيك",
+            "الدنمارك"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "المنظمة البريطانية \"كامرا\" (CAMRA) هي اختصار لـ \"الحملة من أجل البيرة الحقيقية\" (The Campaign for Real Ale).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من مصانع البيرة المملوكة لأمريكيين تصدرت المبيعات في البلاد من حيث الحجم في عام 2015؟",
+        "correct_answer": "دي جي يونغلينغ آند سون (D. G. Yuengling and Son, Inc)",
+        "incorrect_answers": [
+            "أنهاوزر بوش (Anheuser Busch)",
+            "شركة بوسطن للبيرة (Boston Beer Company)",
+            "ميلر كورس (Miller Coors)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو شكل اللعبة الشهيرة التي اخترعها البروفيسور المجري إرنو روبيك؟",
+        "correct_answer": "مكعب",
+        "incorrect_answers": [
+            "كرة",
+            "أسطوانة",
+            "هرم"
+        ]
+    }
+]

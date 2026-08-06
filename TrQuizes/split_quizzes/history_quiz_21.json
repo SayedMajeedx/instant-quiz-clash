@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "خلال الحرب العالمية الأولى، ملوك أي دول كانت تربطهم صلة قرابة دموية؟",
+        "correct_answer": "إنجلترا، ألمانيا، روسيا",
+        "incorrect_answers": [
+            "فرنسا، روسيا، ألمانيا",
+            "صربيا، روسيا، كرواتيا",
+            "ألمانيا، إسبانيا، النمسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي عام انتهت حرب الشمال العظمى بين روسيا والسويد؟",
+        "correct_answer": "1721",
+        "incorrect_answers": [
+            "1726",
+            "1727",
+            "1724"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي رئيس أمريكي شارك في مؤتمر بوتسدام، حيث توصل الحلفاء إلى تسوية سلام مع ألمانيا؟",
+        "correct_answer": "هاري ترومان",
+        "incorrect_answers": [
+            "دوايت أيزنهاور",
+            "فرانكلين روزفلت",
+            "هربرت هوفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي سجن احتُجز أدولف هتلر عام 1924‏؟",
+        "correct_answer": "سجن لاندسبرغ",
+        "incorrect_answers": [
+            "سجن سبانداو",
+            "دير إبراخ",
+            "هوهناشبرغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى انتهت معركة الثغرة (معركة البولج)‏؟",
+        "correct_answer": "25 يناير 1945",
+        "incorrect_answers": [
+            "6 أغسطس 1945",
+            "7 ديسمبر 1941",
+            "16 ديسمبر 1944"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "بعد خسارته في معركة واترلو، إلى أي جزيرة نُفي نابليون بونابرت؟",
+        "correct_answer": "سانت هيلين",
+        "incorrect_answers": [
+            "ألبا",
+            "كورسيكا",
+            "جزر الكناري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما هو رقم هيكل المدمرة فليتشر من فئة فليتشر؟",
+        "correct_answer": "⁦DD-445⁩",
+        "incorrect_answers": [
+            "⁦DD-992⁩",
+            "⁦DD-444⁩",
+            "⁦DD-446⁩"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "انتصرت طيور الإيمو في حرب الإيمو العظمى عام 1932.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما الاسم التاريخي لسيريلانكا؟",
+        "correct_answer": "سيلان",
+        "incorrect_answers": [
+            "ميانمار",
+            "كولومبو",
+            "بادولا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "تمت محاكمة أدولف هتلر في محاكمات نورمبرغ.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما اسم النهضة الثقافية للأمريكيين من أصل أفريقي التي تركزت في شمال مانهاتن خلال عشرينيات وثلاثينيات القرن العشرين؟",
+        "correct_answer": "نهضة هارلم",
+        "incorrect_answers": [
+            "نهضة إنوود",
+            "نهضة بيد-ستاي",
+            "نهضة أبير إيست"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى دمر بركان فيزوف مدينة بومبي؟",
+        "correct_answer": "79 ميلادية",
+        "incorrect_answers": [
+            "62 ميلادية",
+            "31 قبل الميلاد",
+            "54 قبل الميلاد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من كان آخر إمبراطور للمكسيك؟",
+        "correct_answer": "فرديناند ماكسيميليان",
+        "incorrect_answers": [
+            "أندريس مانويل لوبيز أوبرادور",
+            "نابليون الثالث",
+            "أغوستين دي إيتوربيدي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان رئيس وزراء المملكة المتحدة خلال معظم فترة الحرب العالمية الثانية؟",
+        "correct_answer": "وينستون تشرشل",
+        "incorrect_answers": [
+            "نيفيل تشامبرلين",
+            "هارولد ماكميلان",
+            "إدوارد هيث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "في أي عام تم توقيع إعلان استقلال الولايات المتحدة؟",
+        "correct_answer": "1776",
+        "incorrect_answers": [
+            "1775",
+            "1774",
+            "1777"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام تأسست شركة بيريتا الإيطالية لتصنيع الأسلحة النارية؟",
+        "correct_answer": "1526",
+        "incorrect_answers": [
+            "1776",
+            "1923",
+            "1998"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من السنوات التالية يُشار إليها عادةً باسم \"عام بلا صيف\"؟",
+        "correct_answer": "1816",
+        "incorrect_answers": [
+            "1823",
+            "1813",
+            "1808"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي من الدول التالية لم تكن من دول المحور خلال الحرب العالمية الثانية؟",
+        "correct_answer": "الاتحاد السوفيتي",
+        "incorrect_answers": [
+            "إيطاليا",
+            "ألمانيا",
+            "اليابان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "ما الاسم الحقيقي للقائد الوطني الألباني إسكندر بك؟",
+        "correct_answer": "جرج كاستريوتي",
+        "incorrect_answers": [
+            "ديتوراك جولاتي",
+            "إسكندر بيكو",
+            "ميراش كراسنيكي"
+        ]
+    }
+]

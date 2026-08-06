@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي قارة تُعتبر الأكبر والأكثر اكتظاظاً بالسكان في العالم؟",
+        "correct_answer": "آسيا",
+        "incorrect_answers": [
+            "أفريقيا",
+            "أوروبا",
+            "أمريكا الشمالية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو الاسم الأصلي لمدينة هو تشي منه؟",
+        "correct_answer": "سايغون",
+        "incorrect_answers": [
+            "هانوي",
+            "دار السلام",
+            "أنغكور وات"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي لاوس؟",
+        "correct_answer": "دولة",
+        "incorrect_answers": [
+            "منطقة",
+            "نهر",
+            "مدينة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تقع صحراء سونوران في شرق أفريقيا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة الولايات المتحدة؟",
+        "correct_answer": "واشنطن العاصمة",
+        "incorrect_answers": [
+            "لوس أنجلوس، كاليفورنيا",
+            "مدينة نيويورك، نيويورك",
+            "هيوستن، تكساس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو المتحف الوطني الذي ستجده في كوبرستاون، نيويورك؟",
+        "correct_answer": "القاعة الوطنية لمشاهير البيسبول",
+        "incorrect_answers": [
+            "متحف المتروبوليتان للفنون",
+            "القاعة الوطنية لمشاهير الألعاب",
+            "متحف الفن الحديث"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية داكوتا الجنوبية؟",
+        "correct_answer": "بيير",
+        "incorrect_answers": [
+            "سيوكس فالز",
+            "رابيد سيتي",
+            "واترتاون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي مما يلي ليس مدينة في المملكة العربية السعودية؟",
+        "correct_answer": "دبي",
+        "incorrect_answers": [
+            "الرياض",
+            "مكة",
+            "المدينة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول ليست في أفريقيا؟",
+        "correct_answer": "غيانا",
+        "incorrect_answers": [
+            "السنغال",
+            "ليبيريا",
+            "الصومال"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الأولى عالمياً من حيث عدد البراكين النشطة تاريخياً؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "اليابان",
+            "الولايات المتحدة الأمريكية",
+            "الهند"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم منطقة زمنية توجد في الصين؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "3",
+            "4",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي مدينة أوروبية تشتهر بلقب \"مدينة النور\"؟",
+        "correct_answer": "باريس",
+        "incorrect_answers": [
+            "روما",
+            "لندن",
+            "مدريد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما اسم إحدى اللغات الآرامية الحديثة التي يتحدث بها السكان اليهود من شمال غرب العراق؟",
+        "correct_answer": "ليشانا ديني",
+        "incorrect_answers": [
+            "هولاولا",
+            "ليشان ديدان",
+            "الآرامية الكلدانية الحديثة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بنغلاديش؟",
+        "correct_answer": "دكا",
+        "incorrect_answers": [
+            "خولنا",
+            "لندن",
+            "لاهور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الجزر الأربع هي الأكبر مساحة؟",
+        "correct_answer": "بورنيو",
+        "incorrect_answers": [
+            "بريطانيا العظمى",
+            "كوبا",
+            "مدغشقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة بيرو؟",
+        "correct_answer": "ليما",
+        "incorrect_answers": [
+            "سانتياغو",
+            "مونتيفيديو",
+            "بوينس آيرس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كل الدول التالية لديها مطالبات رسمية بأراضٍ في القارة القطبية الجنوبية (أنتاركتيكا) باستثناء:",
+        "correct_answer": "الولايات المتحدة",
+        "incorrect_answers": [
+            "أستراليا",
+            "تشيلي",
+            "النرويج"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية لا تعترف بأرمينيا كدولة مستقلة؟",
+        "correct_answer": "باكستان",
+        "incorrect_answers": [
+            "إيران",
+            "تركيا",
+            "أذربيجان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "المجر (⁦Hungary⁩) هي الدولة الوحيدة في العالم التي يبدأ اسمها باللغة الإنجليزية بحرف ⁦H⁩.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    }
+]

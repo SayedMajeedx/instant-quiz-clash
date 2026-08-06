@@ -1,0 +1,234 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي لرضفة الركبة (صابونة الركبة)‏؟",
+        "correct_answer": "الرضفة (⁦Patella⁩)",
+        "incorrect_answers": [
+            "عظم الفخذ (⁦Femur⁩)",
+            "الثقبة العظمى (⁦Foramen Magnum⁩)",
+            "لوح الكتف (⁦Scapula⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تلتقي عظام العضد والكعبرة والزند معاً لتشكل أي مفصل؟",
+        "correct_answer": "المرفق (الكوع)",
+        "incorrect_answers": [
+            "الركبة",
+            "الكتف",
+            "الكاحل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ماذا تدرس إذا كنت تدرس علم الحشرات (⁦Entomology⁩)‏؟",
+        "correct_answer": "الحشرات",
+        "incorrect_answers": [
+            "البشر",
+            "الدماغ",
+            "الأسماك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما اسم الانحياز المعرفي الذي يخطئ فيه الشخص ذو القدرة المنخفضة في مهارة معينة فيظن نفسه متفوقاً؟",
+        "correct_answer": "تأثير دانينغ-كروجر (⁦Dunning-Kruger effect⁩)",
+        "incorrect_answers": [
+            "تأثير مايرز بريغز (⁦Meyers-Briggs effect⁩)",
+            "تأثير مولر-لاير (⁦Müller-Lyer effect⁩)",
+            "تأثير فرويد-هال (⁦Freud-Hall effect⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس مصطلحاً يُستخدم لوصف الزلازل؟",
+        "correct_answer": "الانهيار الانزلاقي (⁦Drop-slide⁩)",
+        "incorrect_answers": [
+            "الهزة الارتدادية المسبقة (⁦Foreshock⁩)",
+            "صدع الانزلاق المضربي (⁦Strike-slip⁩)",
+            "الهزة الأرضية (⁦Temblor⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تتكون النجوم بشكل أساسي من الهيدروجين وأي غاز آخر؟",
+        "correct_answer": "الهيليوم",
+        "incorrect_answers": [
+            "الأكسجين",
+            "الأرغون",
+            "النيتروجين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هي الدولة التي نجحت لأول مرة في تفريخ وتربية تونة ذات زعانف زرقاء في المزارع عام 1979‏؟",
+        "correct_answer": "اليابان",
+        "incorrect_answers": [
+            "فرنسا",
+            "الولايات المتحدة الأمريكية",
+            "الفلبين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم البديل لاضطراب تعدد الشخصيات؟",
+        "correct_answer": "اضطراب الهوية الانفصامي (⁦Dissociative identity disorder⁩)",
+        "incorrect_answers": [
+            "اضطراب سلامة الهوية الجسدية (⁦Body integrity identity disorder⁩)",
+            "أزمة الهوية",
+            "الفصام (⁦Schizophrenia⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يمكن للصوت أن ينتقل عبر الفراغ.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "تعتبر نبتة \"جيمبي ستينجر\" النبتة الأكثر فتكاً في العالم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم الرسمي للنجم الأقرب إلى القطب السماوي الشمالي؟",
+        "correct_answer": "نجم الشمال (⁦Polaris⁩)",
+        "incorrect_answers": [
+            "النهر (⁦Eridanus⁩)",
+            "جاما الملتهب (⁦Gamma Cephei⁩)",
+            "إيوتا الملتهب (⁦Iota Cephei⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العدد الذري لعنصر الاسترونشيوم؟",
+        "correct_answer": "38",
+        "incorrect_answers": [
+            "73",
+            "47",
+            "11"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي نوع من الصخور يتكون بفعل الحرارة والضغط الشديدين؟",
+        "correct_answer": "الصخور المتحولة",
+        "incorrect_answers": [
+            "الصخور الرسوبية",
+            "الصخور النارية",
+            "الألماس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هي خلايا تابعة لجهاز المناعة التكيفي؟",
+        "correct_answer": "الخلايا التائية القاتلة",
+        "incorrect_answers": [
+            "الخلايا التغصنية",
+            "الخلايا القاتلة الطبيعية",
+            "خلايا الدم البيضاء"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي هو الجزء التناسلي الذكري المنتج لحبوب اللقاح في الزهرة؟",
+        "correct_answer": "السداة",
+        "incorrect_answers": [
+            "السبلة",
+            "المدقة",
+            "البتلة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "أي جزء من نبات الماريجوانا ينتج المادة المؤثرة عقلياً المعروفة باسم ⁦THC⁩‏؟",
+        "correct_answer": "الزهرة الأنثوية",
+        "incorrect_answers": [
+            "الأوراق",
+            "الزهرة الذكرية",
+            "كتلة الجذور"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "طور العالمان الفرنسيان لويس باستور وإيميل رو أول لقاح لداء الكلب في عام 1885.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "قتل العلماء بالخطأ أقدم مخلوق حي معروف في العالم، وهو حيوان رخوي، تبين أن عمره يبلغ 507 سنوات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الرمز الكيميائي لعنصر الهيليوم؟",
+        "correct_answer": "⁦He⁩",
+        "incorrect_answers": [
+            "⁦H⁩",
+            "⁦Hg⁩",
+            "⁦Hs⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "تنبع كلمة \"⁦Science⁩\" (علم) من الكلمة اللاتينية \"⁦Scire⁩\" والتي تعني ماذا؟",
+        "correct_answer": "أن تعرف (المعرفة)",
+        "incorrect_answers": [
+            "أن تقيس",
+            "أن تعيش",
+            "أن تعد"
+        ]
+    }
+]

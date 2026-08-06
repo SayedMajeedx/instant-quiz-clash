@@ -1,0 +1,234 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "ما هو العنصر في الجدول الدوري الذي يحتوي على 92 إلكتروناً؟",
+        "correct_answer": "اليورانيوم",
+        "incorrect_answers": [
+            "الكبريت",
+            "الهيدروجين",
+            "الحديد"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "يغلي الماء دائماً عند 100 درجة مئوية، أو 212 درجة فهرنهايت، أو ⁦373.15⁩ كلفن، بغض النظر عن مكان وجودك.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الاسم العلمي (اللينيني) لشجرة التفاح المستأنسة؟",
+        "correct_answer": "مالوس بوميلا (⁦Malus pumila⁩)",
+        "incorrect_answers": [
+            "مالوس أميريكانا (⁦Malus americana⁩)",
+            "بوموس دوميستيكا (⁦Pomus domestica⁩)",
+            "أبيلوس ديليكتيكا (⁦Appelus delectica⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "توفر ظاهرة صعود مياه القاع في المحيط مياهاً أكثر برودة وغنية بالمواد المغذية للنباتات والمحللات.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "وفقاً لمقياس سكوفيل، ما هي المادة الكيميائية الأكثر حرارة؟",
+        "correct_answer": "ريزينيفراتوكسين (⁦Resiniferatoxin⁩)",
+        "incorrect_answers": [
+            "كابسيسين (⁦Capsaicin⁩)",
+            "ثنائي هيدروكابسيسين (⁦Dihydrocapsaicin⁩)",
+            "تنياتوكسين (⁦Tinyatoxin⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس نوعاً من الخلايا العصبية؟",
+        "correct_answer": "الخلية العصبية الإدراكية",
+        "incorrect_answers": [
+            "الخلية العصبية الحسية",
+            "الخلية العصبية الحركية",
+            "الخلية العصبية الموصلة (البينية)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ماذا يعني الاختصار العلمي (⁦DNA⁩)‏؟",
+        "correct_answer": "الحمض النووي الريبوزي منقوص الأكسجين",
+        "incorrect_answers": [
+            "حمض ديوكسي ريبوجينيتيك",
+            "ذرات ديوكسي ريبوجينيتيك",
+            "حمض إزالة السموم"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "تعتبر الشمس نجماً.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي ليس من المجموعات التصنيفية في الجدول الدوري؟",
+        "correct_answer": "الفلورينات",
+        "incorrect_answers": [
+            "الفلزات القلوية",
+            "الهالوجينات",
+            "الغازات الخاملة (النبيلة)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "من الناحية النباتية، أي من هذه الفواكه لا تُعتبر من التوتيات؟",
+        "correct_answer": "الفراولة",
+        "incorrect_answers": [
+            "التوت الأزرق",
+            "الموز",
+            "عنب كونكورد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي ينتج اللون الأخضر لمعظم أوراق النباتات؟",
+        "correct_answer": "الكلوروفيل",
+        "incorrect_answers": [
+            "انكسار الضوء",
+            "الأصباغ الطبيعية",
+            "الأشعة فوق البنفسجية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "عند أي عمق يجب عليك التوقف لتخفيف الضغط (وقفة الأمان) أثناء الغوص العادي؟",
+        "correct_answer": "15 قدماً / 5 أمتار",
+        "incorrect_answers": [
+            "25 قدماً / ⁦7.5⁩ أمتار",
+            "50 قدماً / 15 متراً",
+            "75 قدماً / 23 متراً"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما هو اسم الطبقة الدنيا (الأقرب للأرض) من الغلاف الجوي؟",
+        "correct_answer": "التروبوسفير",
+        "incorrect_answers": [
+            "الستراتوسفير",
+            "الميزوسفير",
+            "الثرموسفير"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "أي مما يلي يُعد كودون وقف (⁦Stop Codon⁩) في الحمض النووي (⁦DNA⁩)‏؟",
+        "correct_answer": "⁦TAA⁩",
+        "incorrect_answers": [
+            "⁦ACT⁩",
+            "⁦ACA⁩",
+            "⁦GTA⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "علوم وطبيعة",
+        "question": "في أي عضو من أعضاء جسم الإنسان توجد 'جزر لانغرهانز'؟",
+        "correct_answer": "البنكرياس",
+        "incorrect_answers": [
+            "الكلية",
+            "الكبد",
+            "الدماغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "من من العلماء التاليين ليس لديه عنصر كيميائي مسمى باسمه؟",
+        "correct_answer": "سير إسحاق نيوتن",
+        "incorrect_answers": [
+            "ألبرت أينشتاين",
+            "نيلز بور",
+            "إنريكو فيرمي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "كم عدد الفصوص في الرئة اليمنى للإنسان؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "يستطيع الجمبري (الروبيان) السباحة إلى الخلف.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "علوم وطبيعة",
+        "question": "ما هو الوزن الذري القياسي لنواة البلوتونيوم؟",
+        "correct_answer": "244",
+        "incorrect_answers": [
+            "94",
+            "481",
+            "128"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "علوم وطبيعة",
+        "question": "ما الذي يسبب داء لايم؟",
+        "correct_answer": "بكتيريا",
+        "incorrect_answers": [
+            "فيروس",
+            "ديدان طفيلية",
+            "أميبا"
+        ]
+    }
+]

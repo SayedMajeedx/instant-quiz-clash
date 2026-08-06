@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي جزيرة في جزر الكناري كانت مسرحاً لواحدة من أسوأ كوارث الطيران في التاريخ بعد تصادم طائرتي جامبو؟",
+        "correct_answer": "تينيريفي",
+        "incorrect_answers": [
+            "فورتيفنتورا",
+            "غران كناريا",
+            "ماوي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "لا توجد مطارات في ليختنشتاين.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الدول العربية التالية لا يحتوي علمها على ألوان الوحدة العربية فقط؟",
+        "correct_answer": "قطر",
+        "incorrect_answers": [
+            "الكويت",
+            "الإمارات العربية المتحدة",
+            "الأردن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة في العالم؟",
+        "correct_answer": "الاتحاد الروسي",
+        "incorrect_answers": [
+            "الصين",
+            "كندا",
+            "البرازيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في استطلاع مؤشر السلام العالمي لعام 2016، من بين 163 دولة، ما كان ترتيب الولايات المتحدة الأمريكية؟",
+        "correct_answer": "103",
+        "incorrect_answers": [
+            "10",
+            "59",
+            "79"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما الاسم السابق لدولة زيمبابوي الأفريقية؟",
+        "correct_answer": "روديسيا",
+        "incorrect_answers": [
+            "زامبيا",
+            "موزمبيق",
+            "بولاوايو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين يقع سور هادريان؟",
+        "correct_answer": "كارلايل، إنجلترا",
+        "incorrect_answers": [
+            "روما، إيطاليا",
+            "الإسكندرية، مصر",
+            "دبلن، أيرلندا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي مدينة يقع جيش التراكوتا (جيش الطين)‏؟",
+        "correct_answer": "شيان",
+        "incorrect_answers": [
+            "بكين",
+            "شنغهاي",
+            "هونغ كونغ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر مدينة والعاصمة التجارية لسريلانكا؟",
+        "correct_answer": "كولومبو",
+        "incorrect_answers": [
+            "موراتوا",
+            "نيغومبو",
+            "كاندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "يتميز الشعار الموجود على علم جمهورية طاجيكستان بشروق الشمس فوق الجبال تحت أي رمز؟",
+        "correct_answer": "تاج",
+        "incorrect_answers": [
+            "طائر",
+            "منجل",
+            "شجرة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم عدد النجوم الموجودة على علم نيوزيلندا؟",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "5",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو مسار التسلق الأكثر شيوعاً لثاني أعلى جبل في العالم (جبل ⁦K2⁩)‏؟",
+        "correct_answer": "حافة أبروتسي",
+        "incorrect_answers": [
+            "ماجيك لاين",
+            "مسار سيسين",
+            "المسار البولندي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر جزيرة غير قارية في العالم؟",
+        "correct_answer": "جرينلاند",
+        "incorrect_answers": [
+            "غينيا الجديدة",
+            "بورنيو",
+            "مدغشقر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية نيفادا الأمريكية؟",
+        "correct_answer": "كارسن سيتي",
+        "incorrect_answers": [
+            "لاس فيغاس",
+            "هندرسون",
+            "رينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كل ما يلي عبارة عن بلدات/قرى في دولة كيريباتي الواقعة في المحيط الهادئ باستثناء:",
+        "correct_answer": "أوروتورا",
+        "incorrect_answers": [
+            "رونغاتا",
+            "لندن",
+            "واشنطن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من الدول التالية حظرت استخدام فحوصات السلالة الجينية الشخصية؟",
+        "correct_answer": "ألمانيا",
+        "incorrect_answers": [
+            "النمسا",
+            "كندا",
+            "السويد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أي من هذه المدن ليست في إنجلترا؟",
+        "correct_answer": "إدنبرة",
+        "incorrect_answers": [
+            "أكسفورد",
+            "مانشستر",
+            "ساوثهامبتون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة سورينام؟",
+        "correct_answer": "باراماريبو",
+        "incorrect_answers": [
+            "أنتاناناريفو",
+            "تيغوسيغالبا",
+            "سوكري"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من اللغات الأوروبية التالية تُصنف كـ \"لغة معزولة\"؟",
+        "correct_answer": "الباسكية",
+        "incorrect_answers": [
+            "الغاليسية",
+            "المالطية",
+            "المجرية"
+        ]
+    }
+]

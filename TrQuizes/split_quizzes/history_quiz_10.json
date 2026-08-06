@@ -1,0 +1,222 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "على أي قطاع صناعي أُطلق في الأصل مصطلح 'اللوديون' (⁦Luddite⁩) للإشارة إلى العمال الساخطين؟",
+        "correct_answer": "صناعة النسيج",
+        "incorrect_answers": [
+            "الزراعة",
+            "التعدين",
+            "صناعة الخزف"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أُقيمت احتجاجات ساحة تيانانمن عام 1989 في هونغ كونغ.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام انتهت الحرب العالمية الأولى؟",
+        "correct_answer": "1918",
+        "incorrect_answers": [
+            "1914",
+            "1916",
+            "1912"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كم كان عمر الملك الشهير توت عنخ آمون (توت) عندما توفي؟",
+        "correct_answer": "19",
+        "incorrect_answers": [
+            "21",
+            "15",
+            "30"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "إلى أي ديانة كان ينتمي جون موسى براونينغ، مصمم بندقية ⁦M1918 BAR⁩ (بندقية براونينغ الآلية)‏؟",
+        "correct_answer": "المورمونية",
+        "incorrect_answers": [
+            "الكاثوليكية",
+            "اليهودية",
+            "الإلحاد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من عام 1940 إلى عام 1942، ما هي عاصمة فرنسا الحرة في المنفى؟",
+        "correct_answer": "برازافيل",
+        "incorrect_answers": [
+            "الجزائر",
+            "باريس",
+            "تونس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما هي المعركة الأكثر دموية في يوم واحد خلال الحرب الأهلية الأمريكية؟",
+        "correct_answer": "معركة أنتيتام",
+        "incorrect_answers": [
+            "حصار فيكسبورغ",
+            "معركة غيتيسبيرغ",
+            "معارك تشانسلورسفيل"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كانت الولايات المتحدة عضواً في عصبة الأمم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كان فرانز جوزيف الأول آخر إمبراطور للنمسا.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي أطول معركة في الحرب العالمية الأولى، والتي استمرت حوالي 303 أيام؟",
+        "correct_answer": "معركة فردان",
+        "incorrect_answers": [
+            "معركة باشنديل",
+            "معركة أميان",
+            "معركة ستالينغراد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من الذي ركب الحصان لتحذير 'رجال الدقيقة' (⁦Minutemen⁩) من أن البريطانيين قادمون خلال حرب الاستقلال الأمريكية؟",
+        "correct_answer": "بول ريفير",
+        "incorrect_answers": [
+            "توماس بين",
+            "هنري لونغفيلو",
+            "ناثان هيل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "بماذا تحتفل الولايات المتحدة الأمريكية في الرابع من يوليو؟",
+        "correct_answer": "التوقيع على إعلان الاستقلال",
+        "incorrect_answers": [
+            "الذكرى السنوية لمعركة غيتيسبيرغ",
+            "عبور نهر ديلاوير",
+            "المصادقة على الدستور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "من كان أول رجل يسافر إلى الفضاء الخارجي مرتين؟",
+        "correct_answer": "غاس غريسوم",
+        "incorrect_answers": [
+            "فلاديمير كوماروف",
+            "تشارلز كونراد",
+            "يوري غاغارين"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "كان الفايكنج أول أوروبيين يكتشفون أمريكا الشمالية.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "كم سنة استمرت حرب المئة عام؟",
+        "correct_answer": "116",
+        "incorrect_answers": [
+            "100",
+            "90",
+            "101"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من قاد فرنسا خلال \"عهد الإرهاب\"؟",
+        "correct_answer": "ماكسيميليان روبسبير",
+        "incorrect_answers": [
+            "نابليون بونابرت",
+            "جان بول مارا",
+            "لويس السادس عشر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أي من علماء الفيزياء التاليين ساعد ألمانيا النازية في إنتاج سلاح نووي؟",
+        "correct_answer": "فيرنر هايزنبرغ",
+        "incorrect_answers": [
+            "جون فون نيومان",
+            "ألبيرت أينشتاين",
+            "ماكس بلانك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي قائد عالمي مشهور اشتهر بمقولة \"فليأكلوا الكعك\"، ومع ذلك يُشاع أنه لم يقلها على الإطلاق؟",
+        "correct_answer": "ماري أنطوانيت",
+        "incorrect_answers": [
+            "القيصر نيكولاس الثاني",
+            "إليزابيث الأولى",
+            "هنري الثامن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "متى نالت جامايكا استقلالها عن إنجلترا؟",
+        "correct_answer": "1962",
+        "incorrect_answers": [
+            "1492",
+            "1963",
+            "1987"
+        ]
+    }
+]

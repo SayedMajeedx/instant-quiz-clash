@@ -1,0 +1,218 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "يمتد الطريق 66 في الولايات المتحدة عبر البر الرئيسي لأمريكا بالكامل، من كاليفورنيا إلى نيويورك.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة أوروبية تقع جزيرة غوتلاند؟",
+        "correct_answer": "السويد",
+        "incorrect_answers": [
+            "الدانمرك",
+            "النرويج",
+            "ألمانيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "حتى عام 1939، كانت لاوس تسمى سيام.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد المناطق الزمنية في روسيا؟",
+        "correct_answer": "11",
+        "incorrect_answers": [
+            "8",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة مقاطعة كولومبيا البريطانية في كندا؟",
+        "correct_answer": "فيكتوريا",
+        "incorrect_answers": [
+            "فانكوفر",
+            "هوب",
+            "كيلونا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين يقع المقر الرئيسي لسلسلة مطاعم الوجبات السريعة \"باندا إكسبريس\"؟",
+        "correct_answer": "روزميد، كاليفورنيا",
+        "incorrect_answers": [
+            "ساكرامنتو، كاليفورنيا",
+            "فريزنو، كاليفورنيا",
+            "سان دييغو، كاليفورنيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من المدن التالية هي عاصمة لاتفيا؟",
+        "correct_answer": "ريغا",
+        "incorrect_answers": [
+            "مينسك",
+            "تالين",
+            "فيلنيوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي أكبر دولة إسلامية في العالم؟",
+        "correct_answer": "إندونيسيا",
+        "incorrect_answers": [
+            "باكستان",
+            "المملكة العربية السعودية",
+            "إيران"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تمتلك النرويج مساحة برية أكبر من السويد.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "تسمانيا هي ولاية جزيرية تابعة لأستراليا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع جزيرة بيكيني الحلقية؟",
+        "correct_answer": "جزر مارشال",
+        "incorrect_answers": [
+            "فيجي",
+            "جزر الكريسماس",
+            "جزر البهاما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي محيط تقع جزيرة ريونيون؟",
+        "correct_answer": "المحيط الهندي",
+        "incorrect_answers": [
+            "المحيط الأطلسي",
+            "جنوب المحيط الهادئ",
+            "شمال المحيط الهادئ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "توجد جزيرة تسمى \"جاوة\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "توجد 47 محافظة في اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة الوحيدة التي تحد كلاً من الأوروغواي وفنزويلا؟",
+        "correct_answer": "البرازيل",
+        "incorrect_answers": [
+            "المكسيك",
+            "تشيلي",
+            "بنما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الولاية الأمريكية الوحيدة التي تقع بالكامل ضمن منطقة جبال الأبالاش؟",
+        "correct_answer": "فرجينيا الغربية",
+        "incorrect_answers": [
+            "بنسلفانيا",
+            "ألاباما",
+            "كنتاكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولة التي تمتلك ثلاث عواصم؟",
+        "correct_answer": "جنوب أفريقيا",
+        "incorrect_answers": [
+            "الصومال",
+            "الصين",
+            "المملكة المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "ما هو أعلى جبل في كندا؟",
+        "correct_answer": "جبل لوغان",
+        "incorrect_answers": [
+            "جبل تريمبلانت",
+            "جبل ويسلر",
+            "الجبل الأزرق"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي المدينة الروسية المعروفة اليوم باسم كونيغسبرغ (عاصمة بروسيا الشرقية سابقاً)‏؟",
+        "correct_answer": "كالينينغراد",
+        "incorrect_answers": [
+            "قازان",
+            "كورسك",
+            "كراسنودار"
+        ]
+    }
+]

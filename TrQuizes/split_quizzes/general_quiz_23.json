@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "ما هو البيرجي (⁦Burgee⁩)‏؟",
+        "correct_answer": "علم",
+        "incorrect_answers": [
+            "حبل",
+            "نافذة",
+            "نوع من الطعام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من الألوان التالية لا يُعتبر من ألوان قوس قزح؟",
+        "correct_answer": "الوردي",
+        "incorrect_answers": [
+            "الأزرق",
+            "البنفسجي",
+            "البرتقالي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في الولايات المتحدة، يُعتبر الأمر تلقائياً إيقاعاً غير قانوني في الشرك (⁦Entrapment⁩) إذا باعتك الشرطة مواد غير قانونية دون الكشف عن هويتها.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللغة الأكثر انتشاراً وتحدثاً في سويسرا؟",
+        "correct_answer": "الألمانية",
+        "incorrect_answers": [
+            "الفرنسية",
+            "الإيطالية",
+            "السويسرية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "في علم اللغويات، أي مما يلي لا يُعد من قواعد غرايس (⁦Gricean Maxims⁩) تحت مبدأ التعاون؟",
+        "correct_answer": "الطول",
+        "incorrect_answers": [
+            "الجودة",
+            "الصلة",
+            "الأسلوب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما اسم بولندا باللغة البولندية؟",
+        "correct_answer": "بولسكا (⁦Polska⁩)",
+        "incorrect_answers": [
+            "بوبشيا (⁦Pupcia⁩)",
+            "بولشكا (⁦Polszka⁩)",
+            "بولاند (⁦Poland⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كيف تقول \"وداعاً\" باللغة الإسبانية؟",
+        "correct_answer": "أديوس (⁦Adiós⁩)",
+        "incorrect_answers": [
+            "هولا (⁦Hola⁩)",
+            "أو ريفوار (⁦Au Revoir⁩)",
+            "سالير (⁦Salir⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الحرف الأكثر استخداماً في الأبجدية الإنجليزية؟",
+        "correct_answer": "⁦E⁩",
+        "incorrect_answers": [
+            "⁦A⁩",
+            "⁦I⁩",
+            "⁦O⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "في أي سلسلة مطاعم للوجبات السريعة يمكنك طلب مخفوق الحليب \"جاموكا\" (⁦Jamocha Shake⁩)‏؟",
+        "correct_answer": "آربيز (⁦Arby's⁩)",
+        "incorrect_answers": [
+            "ماكدونالدز",
+            "برجر كنج",
+            "وينديز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ريد فاينز (⁦Red Vines⁩) هي علامة تجارية لأي نوع من الحلوى؟",
+        "correct_answer": "العرقسوس الأحمر (⁦Licorice⁩)",
+        "incorrect_answers": [
+            "المصاصات",
+            "الشوكولاتة",
+            "العلكة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "كم عدد الألوان في قوس قزح؟",
+        "correct_answer": "7",
+        "incorrect_answers": [
+            "8",
+            "9",
+            "10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "من هي سيدة الأعمال الغانية التي تُعتبر من رواد الإقراض متناهي الصغر؟",
+        "correct_answer": "إستير أفوا أوكلو",
+        "incorrect_answers": [
+            "فريدة بدوي",
+            "أما آتا آيدو",
+            "سيون نيلي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "معلومات عامة",
+        "question": "ما هو أطول جسر في العالم؟",
+        "correct_answer": "جسر دانيانغ-كونشان الكبير، الصين",
+        "incorrect_answers": [
+            "جسر بحيرة بونتشارترين، الولايات المتحدة",
+            "جسر الملك فهد الأول، المملكة العربية السعودية",
+            "جسر السلطان عبد الحليم معظم شاه، ماليزيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "وفقاً لـ شيرلوك هولمز: \"إذا استبعدت المستحيل، فإن ما يتبقى، مهما بدا مستبعداً، لا بد أن يكون هو...\"",
+        "correct_answer": "الحقيقة",
+        "incorrect_answers": [
+            "الجواب",
+            "السبب",
+            "المصدر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من هذه الكلمات تشير إلى شيء تم صنعه أو توزيعه أو بيعه بطريقة غير قانونية ومهرّبة؟",
+        "correct_answer": "بوتليغ (⁦Bootleg⁩)",
+        "incorrect_answers": [
+            "بوتبلاك (⁦Bootblack⁩)",
+            "بوتليس (⁦Bootlace⁩)",
+            "بوتستراب (⁦Bootstrap⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هي اللعبة التي ظهر فيها والويجي لأول مرة؟",
+        "correct_answer": "ماريو تينس 64 (على جهاز نينتندو 64)",
+        "incorrect_answers": [
+            "واريو لاند: سوبر ماريو لاند 3",
+            "ماريو بارتي (على جهاز نينتندو 64)",
+            "سوبر سماش برذرز ألتيميت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "أي من هذه المطاعم جالب حظه (التميمة) هو مهرج؟",
+        "correct_answer": "ماكدونالدز",
+        "incorrect_answers": [
+            "واتابورجر",
+            "برجر كنج",
+            "سونيك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "معلومات عامة",
+        "question": "ما هو الكوكب الأقرب إلى شمس مجموعتنا الشمسية؟",
+        "correct_answer": "عطارد",
+        "incorrect_answers": [
+            "المريخ",
+            "المشتري",
+            "الأرض"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "معلومات عامة",
+        "question": "في أي عام كانت نسبة الأسر التي تمتلك جهاز تلفاز في الولايات المتحدة 9% فقط؟",
+        "correct_answer": "1950",
+        "incorrect_answers": [
+            "1965",
+            "1913",
+            "1969"
+        ]
+    }
+]

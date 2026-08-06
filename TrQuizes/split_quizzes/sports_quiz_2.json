@@ -1,0 +1,228 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في أي عام فاز جينسون باتون بأول بطولة عالم لسائقي الفورمولا 1 في مسيرته؟",
+        "correct_answer": "2009",
+        "incorrect_answers": [
+            "2010",
+            "2007",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو سائق الفورمولا 1 الذي انتقل إلى فريق آخر في منتصف موسم 2017‏؟",
+        "correct_answer": "كارلوس ساينز الابن",
+        "incorrect_answers": [
+            "دانييل كفيات",
+            "جوليون بالمر",
+            "ريو هاريانتو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من هو اللاعب الأكثر مشاركة في المباريات تاريخياً مع نادي مانشستر يونايتد؟",
+        "correct_answer": "رايان غيغز",
+        "incorrect_answers": [
+            "ديفيد بيكهام",
+            "واين روني",
+            "إيريك كانتونا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز بدوري أبطال أوروبا في عام 2016‏؟",
+        "correct_answer": "ريال مدريد",
+        "incorrect_answers": [
+            "بايرن ميونخ",
+            "أتلتيكو مدريد",
+            "مانشستر سيتي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في عام 2008، حقق يوسين بولت الرقم القياسي العالمي لسباق 100 متر برباط حذاء واحد غير مربوط.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "في كأس العالم 2014، ما هي النتيجة النهائية لمباراة البرازيل ضد ألمانيا؟",
+        "correct_answer": "1-7",
+        "incorrect_answers": [
+            "1-5",
+            "1-6",
+            "2-6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "ما اسم ملعب نادي مانشستر يونايتد الرئيسي؟",
+        "correct_answer": "أولد ترافورد",
+        "incorrect_answers": [
+            "أنفيلد",
+            "ملعب مدينة مانشستر",
+            "سانت جيمس بارك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في موسم 1988 للفورمولا 1، فاز فريق ماكلارين بجميع السباقات باستثناء سباق واحد فقط، ما هو هذا السباق؟",
+        "correct_answer": "سباق جائزة إيطاليا الكبرى",
+        "incorrect_answers": [
+            "سباق جائزة اليابان الكبرى",
+            "سباق جائزة موناكو الكبرى",
+            "سباق جائزة البرازيل الكبرى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "أي من هذه الفرق لم يلعب لصالحها اللاعب يارومير ياغر؟",
+        "correct_answer": "نيويورك آيلاندرز",
+        "incorrect_answers": [
+            "كالغاري فليمز",
+            "نيوجيرسي ديفلز",
+            "دالاس ستارز"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "كم عدد لاعبي كرة القدم الذين يجب أن يتواجدوا في الملعب في نفس الوقت (لكلا الفريقين)‏؟",
+        "correct_answer": "22",
+        "incorrect_answers": [
+            "20",
+            "24",
+            "26"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي شركة تصنيع سيارات فازت بسباق لو مان 24 ساعة لعام 2017‏؟",
+        "correct_answer": "بورشه",
+        "incorrect_answers": [
+            "تويوتا",
+            "أودي",
+            "شيفروليه"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في عام 2016، من فاز ببطولة العالم لـ 'الصانعين' في الفورمولا 1 للمرة الثالثة على التوالي؟",
+        "correct_answer": "مرسيدس إيه إم جي بتروناس",
+        "incorrect_answers": [
+            "سكوديريا فيراري",
+            "ماكلارين هوندا",
+            "ريد بول ريسينغ رينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "كم عدد ألقاب الدوري الإنجليزي الممتاز التي حققها السير أليكس فيرغسون خلال فترة تدريبه لمانشستر يونايتد؟",
+        "correct_answer": "13",
+        "incorrect_answers": [
+            "11",
+            "20",
+            "22"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "ملعب الاتحاد هو الملعب الرئيسي لأي فريق؟",
+        "correct_answer": "مانشستر سيتي",
+        "incorrect_answers": [
+            "مانشستر يونايتد",
+            "أرسنال",
+            "بلاكبول"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "في أي عام فاز نادي ستيوا بوخارست بكأس أوروبا (المعروف حالياً بدوري أبطال أوروبا) ضد نادي برشلونة؟",
+        "correct_answer": "1986",
+        "incorrect_answers": [
+            "1990",
+            "1982",
+            "1989"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "رياضة",
+        "question": "من فاز بسباق دايتونا 500 (⁦Daytona 500⁩) لعام 1998‏؟",
+        "correct_answer": "ديل إيرنهاردت",
+        "incorrect_answers": [
+            "جون أندرسون",
+            "جيف غوردون",
+            "مايكل والتريب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "أي شركة ملابس رياضية ألمانية تستخدم شعار 'فورم سترايب' (الخط المقوس المميز)‏؟",
+        "correct_answer": "بوما",
+        "incorrect_answers": [
+            "نايكي",
+            "أديداس",
+            "ريبوك"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "رياضة",
+        "question": "من هو الهداف التاريخي لنادي مانشستر يونايتد في الدوري الإنجليزي الممتاز؟",
+        "correct_answer": "واين روني",
+        "incorrect_answers": [
+            "السير بوبي تشارلتون",
+            "رايان غيغز",
+            "ديفيد بيكهام"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "رياضة",
+        "question": "من فاز ببطولة العالم للفورمولا 1 لعام 2015‏؟",
+        "correct_answer": "لويس هاملتون",
+        "incorrect_answers": [
+            "نيكو روزبرغ",
+            "سيباستيان فيتيل",
+            "جينسون باتون"
+        ]
+    }
+]

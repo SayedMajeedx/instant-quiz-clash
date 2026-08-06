@@ -1,0 +1,998 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة إطارات السيارات الشهيرة بإنتاج سلسلة \"P Zero\"؟",
+        "correct_answer": "بيريللي",
+        "incorrect_answers": [
+            "جودير",
+            "بريدجستون",
+            "ميشلان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ماذا تمثل الحلقات الأربع في شعار سيارات أودي؟",
+        "correct_answer": "شركات تصنيع سيارات كانت مستقلة سابقاً",
+        "incorrect_answers": [
+            "الولايات التي تحقق فيها أودي أعلى مبيعات",
+            "المدن الرئيسية الحيوية لشركة أودي",
+            "الدول التي تحقق فيها أودي أعلى مبيعات"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "في عام 1991، أصبحت مازدا أول شركة سيارات يابانية تفوز بسباق لومان (Le Mans).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي زاوية ميل الأسطوانات في محرك VR6 الأسطوري من فولكس واجن؟",
+        "correct_answer": "15 درجة",
+        "incorrect_answers": [
+            "30 درجة",
+            "45 درجة",
+            "90 درجة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة السيارات الخارقة التي تنتمي إلى السويد؟",
+        "correct_answer": "كوينيجسيج",
+        "incorrect_answers": [
+            "بوغاتي",
+            "لامبورغيني",
+            "ماكلارين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي دولة ترمز إليها لوحات تسجيل المركبات الدولية بالحرف 'A'؟",
+        "correct_answer": "النمسا",
+        "incorrect_answers": [
+            "أفغانستان",
+            "أستراليا",
+            "أرمينيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك LS7 بالبوصة المكعبة؟",
+        "correct_answer": "427",
+        "incorrect_answers": [
+            "346",
+            "364",
+            "376"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أكمل التناظر التالي: أودي بالنسبة لفولكس واجن مثل إنفينيتي بالنسبة لـ...؟",
+        "correct_answer": "نيسان",
+        "incorrect_answers": [
+            "هوندا",
+            "هيونداي",
+            "سوبارو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "شركة النقل \"أريفا\" (Arriva) مملوكة لشركة السكك الحديدية الألمانية \"دويتشه بان\".",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من ماركات السيارات التالية نشأت في السويد؟",
+        "correct_answer": "فولفو",
+        "incorrect_answers": [
+            "مرسيدس",
+            "أكورا",
+            "لينكون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "تعتبر سيارة \"بنز باتنت موتورواجن\" لعام 1886 أول سيارة حقيقية صُنعت في التاريخ.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من السيارات التالية ليست من إنتاج شركة فورد؟",
+        "correct_answer": "كامري",
+        "incorrect_answers": [
+            "فيوجن",
+            "موديل إيه (Model A)",
+            "إف-150 (F-150)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "حطم قطار الطلقة الياباني \"شينكانسن\" الرقم القياسي لسرعة أسرع قطار كهربائي المسجل باسم قطار TGV الفرنسي.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "تأسست شركة هوندا للمحركات في اليابان.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "اخترع الكندي جوزيف-أرماند بومباردييه عربة الجليد الآلية (السنوموبيل) في عام 1937.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة السيارات التي كان إنزو فيراري يتسابق لصالحها قبل تأسيس شركته الخاصة؟",
+        "correct_answer": "ألفا روميو",
+        "incorrect_answers": [
+            "أوتو يونيون",
+            "مرسيدس بنز",
+            "بنتلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "تُصنع غالبية سيارات سوبارو في الصين.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هو المحرك المستخدم في سيارة لكزس SC400؟",
+        "correct_answer": "1UZ-FE",
+        "incorrect_answers": [
+            "2JZ-GTE",
+            "7M-GTE",
+            "5M-GE"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "في أي عام ظهرت الشاحنة الصغيرة \"شيفروليه لوف\" (LUV) لأول مرة؟",
+        "correct_answer": "1972",
+        "incorrect_answers": [
+            "1982",
+            "1975",
+            "1973"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "طوال تاريخها، صُنعت سيارة شيفروليه كورفيت حصرياً بمحركات V8 فقط.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من موديلات السيارات التالية تنتجها شركة لامبورغيني؟",
+        "correct_answer": "أفنتادور",
+        "incorrect_answers": [
+            "هوايرا",
+            "918",
+            "شيرون"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "إلى أي عائلة قطارات تنتمي الفئات البريطانية Class 700 و Class 707 و Class 717؟",
+        "correct_answer": "ديسيرو سيتي (Desiro City)",
+        "incorrect_answers": [
+            "نتوركر (Networker)",
+            "أفنترا (Aventra)",
+            "إلكتروستار (Electrostar)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك LS3 بالبوصة المكعبة؟",
+        "correct_answer": "376",
+        "incorrect_answers": [
+            "346",
+            "364",
+            "427"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "فرق الطول بين طائرتي بوينغ 777-300ER وإيرباص A350-1000 أقرب إلى:",
+        "correct_answer": "0.1 متر",
+        "incorrect_answers": [
+            "1 متر",
+            "10 أمتار",
+            "100 متر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من شركات السيارات التالية سُميت حرب باسمها؟",
+        "correct_answer": "تويوتا",
+        "incorrect_answers": [
+            "هوندا",
+            "فورد",
+            "فولكس واجن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك LS2 بالبوصة المكعبة؟",
+        "correct_answer": "364",
+        "incorrect_answers": [
+            "346",
+            "376",
+            "402"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "متى تأسست شركة كاديلاك للسيارات؟",
+        "correct_answer": "1902",
+        "incorrect_answers": [
+            "1964",
+            "1898",
+            "1985"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من هذه الشركات لا تصنع الدراجات النارية؟",
+        "correct_answer": "تويوتا",
+        "incorrect_answers": [
+            "هوندا",
+            "كاواساكي",
+            "ياماها"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من الدول التالية حظرت رسمياً استخدام كاميرات لوحة القيادة (داش كام) في السيارات للمدنيين؟",
+        "correct_answer": "النمسا",
+        "incorrect_answers": [
+            "الولايات المتحدة",
+            "التشيك",
+            "كوريا الجنوبية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي جزء في محرك السيارة يستخدم فصوصاً لفتح وإغلاق صمامات السحب والعادم للسماح بدخول خليط الهواء والوقود؟",
+        "correct_answer": "عمود الحدبات",
+        "incorrect_answers": [
+            "المكبس (بستون)",
+            "عمود القيادة",
+            "عمود المرفق (كرنك)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "كانت سيارة GM EV1 من جنرال موتورز أول سيارة كهربائية إنتاجية مسموح بقيادتها قانونياً في الطرقات العامة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "في عام 2014، تم استدعاء أكثر من 6 ملايين سيارة من جنرال موتورز بسبب أي عيب مصنعي خطير؟",
+        "correct_answer": "خلل في مفتاح التشغيل",
+        "incorrect_answers": [
+            "خلل في دواسة الوقود",
+            "تلف خراطيم الوقود",
+            "خلل في مكابح السيارة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "يوجد طراز لسيارات رولز رويس يُطلق عليه اسم \"سبيكتر\" (Spectre).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم عجلة للدراجة أحادية العجلة؟",
+        "correct_answer": "1",
+        "incorrect_answers": [
+            "4",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "في أي دولة صُنعت سيارة ترابانت 601 (Trabant 601)؟",
+        "correct_answer": "ألمانيا الشرقية",
+        "incorrect_answers": [
+            "الاتحاد السوفيتي",
+            "المجر",
+            "فرنسا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي شركة سيارات صممت طراز \"أفنتادور\"؟",
+        "correct_answer": "لامبورغيني",
+        "incorrect_answers": [
+            "فيراري",
+            "باغاني",
+            "بوغاتي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "على أي نوع من أنواع الطاقة تعمل سيارات تسلا؟",
+        "correct_answer": "الكهرباء",
+        "incorrect_answers": [
+            "البنزين",
+            "الديزل",
+            "الطاقة النووية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ القوة الحصانية التي تنتجها قاطرة SD40-2؟",
+        "correct_answer": "3,000",
+        "incorrect_answers": [
+            "3,200",
+            "2,578",
+            "2,190"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من سيارات أودي التالية لا تستخدم نظام الدفع الرباعي القائم على هالدكس (Haldex)؟",
+        "correct_answer": "أودي A8",
+        "incorrect_answers": [
+            "أودي TT",
+            "أودي S3",
+            "أودي A3"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هو الحيوان المرسوم على شعار شركة \"أبارث\" (Abarth)، القسم الرياضي لشركة فيات؟",
+        "correct_answer": "العقرب",
+        "incorrect_answers": [
+            "الأفعى",
+            "الثور",
+            "الحصان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما اسم أشهر سيارة كهربائية تنتجها شركة نيسان؟",
+        "correct_answer": "ليف (Leaf)",
+        "incorrect_answers": [
+            "تري (Tree)",
+            "دير (Deer)",
+            "روتس (Roots)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من الشركات التالية ليست تابعة لمجموعة فولكس واجن؟",
+        "correct_answer": "أوبل",
+        "incorrect_answers": [
+            "بورش",
+            "بوغاتي",
+            "بنتلي"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "في عام 1993، أجرت شركة تصنيع السيارات السويدية \"ساب\" (Saab) تجربة لاستبدال عجلة القيادة بعصا تحكم في سيارة Saab 9000.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي مدينة إيطالية تُعد موطناً لشركة تصنيع السيارات \"فيات\"؟",
+        "correct_answer": "تورينو",
+        "incorrect_answers": [
+            "مارانيلو",
+            "مودينا",
+            "روما"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي أسرع سيارة إنتاجية مسموح قانونياً بقيادتها على الطرقات في العالم؟",
+        "correct_answer": "كوينيجسيج أجيرا آر إس (Koenigsegg Agera RS)",
+        "incorrect_answers": [
+            "هينيسي فينوم جي تي (Hennessey Venom GT)",
+            "بوغاتي فيرون سوبر سبورت (Bugatti Veyron Super Sport)",
+            "باغاني هوايرا بي سي (Pagani Huayra BC)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من الموديلات التالية ليس سيارة من إنتاج شركة بروتون (Proton) الماليزية؟",
+        "correct_answer": "كيليسا (Kelisa)",
+        "incorrect_answers": [
+            "ساجا (Saga)",
+            "بيردانا (Perdana)",
+            "إنسبيرّا (Inspira)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما اسم أول سيارة تعمل بالدفع الأمامي أنتجتها شركة داتسون (نيسان حالياً)؟",
+        "correct_answer": "تشيري (Cherry)",
+        "incorrect_answers": [
+            "ساني (Sunny)",
+            "بلوبيرد (Bluebird)",
+            "سكايلاين (Skyline)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من أكواد الهيكل (الشاسيه) التالية تُستخدم لسيارات بي إم دبليو الفئة الثالثة؟",
+        "correct_answer": "E46",
+        "incorrect_answers": [
+            "E39",
+            "E85",
+            "F10"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة إطارات السيارات الشهيرة بإنتاج إطارات \"إيغل\" (Eagle)، والمزود الرسمي لإطارات سباقات ناسكار؟",
+        "correct_answer": "جودير",
+        "incorrect_answers": [
+            "بيريللي",
+            "بريدجستون",
+            "ميشلان"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من القطارات البريطانية التالية لا تتجاوز سرعته 125 ميلاً في الساعة؟",
+        "correct_answer": "سبرينتر (Sprinter)",
+        "incorrect_answers": [
+            "كلاس 43 (Class 43)",
+            "جافلين (Javelin)",
+            "بندولينو (Pendolino)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "تعتبر BMW M GmbH شركة تابعة لـ BMW AG وتركز على إنتاج السيارات ذات الأداء الرياضي العالي.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "متى تأسست شركة تسلا؟",
+        "correct_answer": "2003",
+        "incorrect_answers": [
+            "2008",
+            "2005",
+            "2007"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من موديلات السيارات التالية تم تسويقه وتغيير علامته التجارية (Rebadged) تحت أكبر عدد من الأسماء التجارية الأخرى؟",
+        "correct_answer": "إيسوزو تروبر (Isuzu Trooper)",
+        "incorrect_answers": [
+            "هولدن مونارو (Holden Monaro)",
+            "سوزوكي سويفت (Suzuki Swift)",
+            "شيفروليه كامارو (Chevy Camaro)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما اللقب الذي أُطلق على طائرة رحلة طيران كندا رقم 143 بعد نفاد وقودها وهبوطها الشراعي بسلام في عام 1983؟",
+        "correct_answer": "طائرة غيملي الشراعية (Gimli Glider)",
+        "incorrect_answers": [
+            "غيملي مايكرولايت (Gimli Microlight)",
+            "غيملي تشيسر (Gimli Chaser)",
+            "غيملي سوبيرب (Gimli Superb)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من علامات السيارات التالية لا تنتمي إلى شركة جنرال موتورز؟",
+        "correct_answer": "فورد",
+        "incorrect_answers": [
+            "بويك",
+            "كاديلاك",
+            "شيفروليه"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "لم تصنع فيراري مطلقاً محرك V10 لأي من سياراتها المخصصة للطرقات.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي الشركة اليابانية التي تعد أكبر مصنع للدراجات النارية في العالم؟",
+        "correct_answer": "هوندا",
+        "incorrect_answers": [
+            "ياماها",
+            "سوزوكي",
+            "كاواساكي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي مما يلي ليست شركة تصنيع سيارات روسية؟",
+        "correct_answer": "بي واي دي (BYD)",
+        "incorrect_answers": [
+            "سيلانت (Silant)",
+            "دراغون (Dragon)",
+            "جاز (GAZ)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من سيارات رالي الاتحاد الدولي للسيارات (FIA) التالية تم اعتمادها للاستخدام في فئة المجموعة ب (Group B) أولاً؟",
+        "correct_answer": "بورش 911 توربو",
+        "incorrect_answers": [
+            "أودي كواترو A2",
+            "بي إم دبليو M1",
+            "لانشيا رالي 037"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي الشركة المصنعة للسيارة المستخدمة في فيلم العودة إلى المستقبل (Back to the Future)؟",
+        "correct_answer": "ديلوريان (DeLorean)",
+        "incorrect_answers": [
+            "فورد",
+            "تويوتا",
+            "ديهاتسو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من أنظمة تجنب التصادم التالية يساعد الطائرات على تجنب الاصطدام ببعضها البعض؟",
+        "correct_answer": "TCAS",
+        "incorrect_answers": [
+            "GPWS",
+            "OCAS",
+            "TAWS"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هو الحيوان الذي تتخذه شركة صناعة السيارات الإيطالية لامبورغيني شعاراً لها؟",
+        "correct_answer": "الثور",
+        "incorrect_answers": [
+            "الخفاش",
+            "الحصان",
+            "الأفعى"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من المركبات التالية تميزت بوجود سقف زجاجي بالكامل في طرازها الأساسي؟",
+        "correct_answer": "رينو أفانتايم",
+        "incorrect_answers": [
+            "شيفروليه فولت",
+            "مرسيدس-بنز الفئة A",
+            "هوندا أوديسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة تصنيع السيارات التي تنازلت عن براءة اختراع حزام الأمان بهدف إنقاذ الأرواح؟",
+        "correct_answer": "فولفو",
+        "incorrect_answers": [
+            "فيراري",
+            "فورد",
+            "رينو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أي من سيارات فورد التالية سميت على اسم طائرة مقاتلة من الحرب العالمية الثانية؟",
+        "correct_answer": "موستانج",
+        "incorrect_answers": [
+            "إكسبلورر",
+            "رينجر",
+            "جالاكسي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي مما يلي ليس من وظائف زيت المحرك في محركات السيارات؟",
+        "correct_answer": "الاحتراق",
+        "incorrect_answers": [
+            "التزييت",
+            "التبريد",
+            "تقليل التآكل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هو طراز السيارة الرياضية التي أهدتها الحكومة الفرنسية ليوري غاغارين في عام 1965؟",
+        "correct_answer": "ماترا دجيت",
+        "incorrect_answers": [
+            "بورش 911",
+            "ألبين A110",
+            "إيه سي كوبرا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من هذه السيارات لا تعتبر واحدة من السيارات الخارقة الخمس الحديثة من فيراري؟",
+        "correct_answer": "تستاروسا",
+        "incorrect_answers": [
+            "إنزو فيراري",
+            "إف 40",
+            "288 جي تي أو"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "كانت شركة بوغاتي مصنعاً إيطالياً للسيارات.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "عندما تأسست شركة بي إم دبليو في عام 1916، كانت تنتج السيارات.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي تقنية توقيت الصمامات المتغير التي تستخدمها شركة بي إم دبليو؟",
+        "correct_answer": "VANOS",
+        "incorrect_answers": [
+            "VVT-iw",
+            "VVEL",
+            "MultiAir"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "أي من قاطرات يونيون باسيفيك من طراز 'بيغ بوي' التالية تمت إعادتها إلى الخدمة والعمل في عام 2019؟",
+        "correct_answer": "4014",
+        "incorrect_answers": [
+            "4012",
+            "4004",
+            "4000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هو نوع القطار 'ستيبني' على سكة حديد بلوبيل والمعروف بظهوره في 'سلسلة السكك الحديدية' (The Railway Series)؟",
+        "correct_answer": "LB&SCR A1X",
+        "incorrect_answers": [
+            "LB&SCR E2",
+            "LB&SCR J1",
+            "LB&SCR D1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "في أي دولة يتم تجميع السيارة الخارقة 'هوساريا' التي تنتجها شركة 'أرينيرا' لصناعة السيارات؟",
+        "correct_answer": "بولندا",
+        "incorrect_answers": [
+            "الصين",
+            "السويد",
+            "إيطاليا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هو رقم تسجيل آخر طائرة كونكورد تم تصنيعها؟",
+        "correct_answer": "G-BOAF",
+        "incorrect_answers": [
+            "F-BTSC",
+            "G-BOAC",
+            "F-BVFF"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "تتمتع شركة ميتسوبيشي موتورز بشراكة دامت 30 عاماً مع جاكي شان، حيث ظهرت سياراتهم بشكل بارز في أفلامه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "ما هي أول سيارة هجينة تم إنتاجها بكميات تجارية؟",
+        "correct_answer": "تويوتا بريوس",
+        "incorrect_answers": [
+            "شيفروليه فولت",
+            "هوندا فيت",
+            "بيجو 308 آر هايبرد"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "خلال الحرب العالمية الثانية، ما هي الدبابة التي كان الحلفاء يخشونها أكثر من غيرها؟",
+        "correct_answer": "بانزر-كامبف-واجن 5 بانثر",
+        "incorrect_answers": [
+            "ماردر 3",
+            "ماتيلدا 2",
+            "بانزر-كامبف-واجن 6 تايجر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي القطع الشبيهة بالأسطوانات التي تتحرك صعوداً وهبوطاً داخل المحرك؟",
+        "correct_answer": "المكابس",
+        "incorrect_answers": [
+            "النوابض الصفائحية",
+            "المبردات",
+            "نظام ABS"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "كم تبلغ سعة محرك LS1 بالبوصة المكعبة؟",
+        "correct_answer": "346",
+        "incorrect_answers": [
+            "350",
+            "355",
+            "360"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "ما هي أول سيارة تم تزويدها بنظام تكييف الهواء كميزة قياسية من المصنع؟",
+        "correct_answer": "باكارد",
+        "incorrect_answers": [
+            "تاكر",
+            "فورد",
+            "هادسن"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "أين يتم تصنيع سيارات العلامة التجارية 'فيراري'؟",
+        "correct_answer": "إيطاليا",
+        "incorrect_answers": [
+            "رومانيا",
+            "ألمانيا",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "مركبات وسيارات",
+        "question": "أي من طائرات الركاب النفاثة التالية هي الأطول؟",
+        "correct_answer": "بوينغ 747-8",
+        "incorrect_answers": [
+            "إيرباص A350-1000",
+            "إيرباص A330-200",
+            "بوينغ 787-10"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "مركبات وسيارات",
+        "question": "هل مصطلح 'GTO' نشأ في الأصل من شركة فيراري؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "الاسم الإنجليزي الكامل لشركة تصنيع السيارات بي إم دبليو (BMW) هو 'Bavarian Motor Works'.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "مركبات وسيارات",
+        "question": "ما هي شركة السيارات التي كانت تملك شركة جاغوار سابقاً؟",
+        "correct_answer": "فورد",
+        "incorrect_answers": [
+            "كرايسلر",
+            "جنرال موتورز",
+            "فيات"
+        ]
+    }
+]

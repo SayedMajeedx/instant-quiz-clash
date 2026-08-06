@@ -1,0 +1,232 @@
+[
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "يُعتبر حيوان آكل النمل الشوكي (الأكيدنا) من الثدييات البيوضة (أحاديات المسلك).",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الشائع لمرض \"اعتلال الدماغ الإسفنجي البقري\" (⁦BSE⁩)‏؟",
+        "correct_answer": "مرض جنون البقر",
+        "incorrect_answers": [
+            "داء ويل",
+            "حمى الحليب",
+            "الحمى القلاعية"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الآخر لعنكبوت الرتيلاء الأزرق المعدني (⁦Poecilotheria Metallica⁩)‏؟",
+        "correct_answer": "غوتي (⁦Gooty⁩)",
+        "incorrect_answers": [
+            "هوبر (⁦Hopper⁩)",
+            "سيلفر سترايب (⁦Silver Stripe⁩)",
+            "ويبجون (⁦Woebegone⁩)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "مما تتكون الحراشف الموجودة على جميع الثعابين ومعظم السحالي؟",
+        "correct_answer": "الكيراتين (⁦Keratin⁩)",
+        "incorrect_answers": [
+            "الانسلاخ (⁦Ecdysis⁩)",
+            "البشرة (⁦Epidermis⁩)",
+            "التصاق اللسان (⁦Ankyloglossia⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "يستطيع الأرنب رؤية ما يدور خلفه دون الحاجة إلى لف رأسه.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو متوسط عدد صغار الشنشيلة (⁦Chinchilla⁩) الذين يولدون في البطن الواحد؟",
+        "correct_answer": "2-3",
+        "incorrect_answers": [
+            "10-15",
+            "5-8",
+            "15-18"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "هل كلمة \"كاميا\" (⁦Kamea⁩) التي تعني كلباً بلغة سكان جزر كيريباتي مشتقة من العبارة الإنجليزية \"⁦Come here⁩!\" (تعال إلى هنا)‏؟",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الطائر الذي يولد بمخالب على أطراف أجنحته؟",
+        "correct_answer": "الهواتسين",
+        "incorrect_answers": [
+            "الغاق",
+            "الشبنم",
+            "الطائر الكاتب (السكرتير)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي لـ \"الدب القطبي\"؟",
+        "correct_answer": "⁦Ursus Maritimus⁩",
+        "incorrect_answers": [
+            "⁦Polar Bear⁩",
+            "⁦Ursus Spelaeus⁩",
+            "⁦Ursus Arctos⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ماذا يُطلق على ذكر النحل الذي ينتج من بيضة غير مخصبة؟",
+        "correct_answer": "اليعسوب (ذكر النحل)",
+        "incorrect_answers": [
+            "الجندي",
+            "العاملة",
+            "الذكر"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "يُطلق على سرب الغربان في اللغة الإنجليزية اسم \"هوميسايد\" (⁦Homicide⁩).",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما اسم الفصيلة العلمية التي تنتمي إليها القطط الأليفة؟",
+        "correct_answer": "السنوريات (⁦Felidae⁩)",
+        "incorrect_answers": [
+            "القطية (⁦Felinae⁩)",
+            "جنس القطط (⁦Felis⁩)",
+            "القط (⁦Cat⁩)"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "تعتبر الأرانب من الحيوانات آكلة اللحوم.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من الغربان في اللغة الإنجليزية؟",
+        "correct_answer": "⁦Murder⁩ (ميردر)",
+        "incorrect_answers": [
+            "⁦Pack⁩ (باك)",
+            "⁦Gaggle⁩ (غاغل)",
+            "⁦Herd⁩ (هيرد)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "أين كان الموطن الأصلي لحيوان \"الثايلاسين\" (ببر تسمانيا) المنقرض حالياً؟",
+        "correct_answer": "تسمانيا، أستراليا",
+        "incorrect_answers": [
+            "بلوشستان، باكستان",
+            "والاشيا، رومانيا",
+            "أوريغون، الولايات المتحدة"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم العلمي للنسر الأصلع (⁦Bald Eagle⁩)‏؟",
+        "correct_answer": "⁦Haliaeetus Leucocephalus⁩",
+        "incorrect_answers": [
+            "⁦Tyto Alba⁩",
+            "⁦Cyanocitta Cristata⁩",
+            "⁦Aquila Chrysaetos⁩"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو الاسم الجماعي المستخدم لوصف مجموعة من الدببة في اللغة الإنجليزية؟",
+        "correct_answer": "⁦Sloth⁩ (سلوث)",
+        "incorrect_answers": [
+            "⁦Drove⁩ (دروف)",
+            "⁦Tribe⁩ (ترايب)",
+            "⁦Husk⁩ (هاسك)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "الحيوانات",
+        "question": "ما هو الحيوان الوطني لجمهورية الهند؟",
+        "correct_answer": "النمر",
+        "incorrect_answers": [
+            "الأسد",
+            "الحصان",
+            "الجمل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "طبق \"الفوغو\" الياباني الشهير يتم تحضيره من أي فصيلة من الأسماك؟",
+        "correct_answer": "السمكة المنتفخة (الفهقة)",
+        "incorrect_answers": [
+            "القاروص",
+            "السلمون",
+            "الماكريل"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "الحيوانات",
+        "question": "ما هو الطائر الوطني لمملكة البحرين؟",
+        "correct_answer": "البلبل",
+        "incorrect_answers": [
+            "الطائر الطنان",
+            "الصقر",
+            "العصفور الدوري"
+        ]
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي من بعثات أبولو كانت الأخيرة في برنامج أبولو التابع لوكالة ناسا؟",
+        "correct_answer": "أبولو 17",
+        "incorrect_answers": [
+            "أبولو 13",
+            "أبولو 11",
+            "أبولو 15"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من أي حاملة طائرات انطلقت غارة دوليتل في 18 أبريل 1942 خلال الحرب العالمية الثانية؟",
+        "correct_answer": "يو إس إس هورنت",
+        "incorrect_answers": [
+            "يو إس إس إنتربرايز",
+            "يو إس إس ليكسينغتون",
+            "يو إس إس ساراتوغا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "ما الخدمة التي قدمها الطبيب المزيف جون آر برينكلي في أوائل القرن العشرين ليجني من ورائها شهرة وثروة طائلتين؟",
+        "correct_answer": "زراعة خصية الماعز",
+        "incorrect_answers": [
+            "نقل دم الخنزير",
+            "زراعة كبد البقر",
+            "زراعة صدر الديك الرومي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "ما هي اللعبة التي فازت بجائزة لعبة العام في 2018‏؟",
+        "correct_answer": "جود أوف وار",
+        "incorrect_answers": [
+            "ديترويت: بيكام هومان",
+            "ريد ديد ريدمبشن 2",
+            "إيه واي آوت"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "لعبادة أي إله استُخدم معبد البانثيون في روما؟",
+        "correct_answer": "أي إله يريدونه",
+        "incorrect_answers": [
+            "أثينا",
+            "زيوس",
+            "كل من أثينا وزيوس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "أين ولد نابليون بونابرت؟",
+        "correct_answer": "كورسيكا",
+        "incorrect_answers": [
+            "نورماندي",
+            "بريتاني",
+            "باريس"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "في أي بلد بُني تمثال الحرية وصُدِّر إلى الولايات المتحدة الأمريكية؟",
+        "correct_answer": "فرنسا",
+        "incorrect_answers": [
+            "ألمانيا",
+            "إسبانيا",
+            "إنجلترا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من من الآباء المؤسسين للولايات المتحدة الأمريكية أصبح رئيساً لاحقاً؟",
+        "correct_answer": "جيمس مونرو",
+        "incorrect_answers": [
+            "ألكسندر هاملتون",
+            "سامويل آدامز",
+            "روجر شيرمان"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "تم قبول أدولف هتلر في أكاديمية فيينا للفنون الجميلة.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "في أي عام انفصلت تكساس عن المكسيك؟",
+        "correct_answer": "1836",
+        "incorrect_answers": [
+            "1838",
+            "1845",
+            "1844"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "بالإضافة إلى مسيرته المهنية كمنجم و\"متنبئ\"، نشر نوستراداموس أطروحة عام 1555 تضمنت قسماً عن ماذا؟",
+        "correct_answer": "صنع المربى والجيليه",
+        "incorrect_answers": [
+            "تعليم الببغاوات الكلام",
+            "الغش في ألعاب الورق",
+            "حفر القبور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "من كان أول حاكم لهايتي بعد نيلها استقلالها؟",
+        "correct_answer": "جان جاك ديسالين",
+        "incorrect_answers": [
+            "توسان لوفرتور",
+            "هنري كريستوف",
+            "ألكسندر بيتيون"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "خلال حرب الشتاء، كان عدد جنود الاتحاد السوفيتي الذين لقوا حتفهم أو فُقدوا يعادل خمسة أضعاف خسائر فنلندا.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "تاريخ",
+        "question": "متى تم رفع \"حصار لينينغراد\" خلال الحرب العالمية الثانية؟",
+        "correct_answer": "يناير 1944",
+        "incorrect_answers": [
+            "سبتمبر 1943",
+            "نوفمبر 1943",
+            "مارس 1944"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "من كان معلم الإسكندر الأكبر؟",
+        "correct_answer": "أرسطو",
+        "incorrect_answers": [
+            "سقراط",
+            "أفلاطون",
+            "الملك فيليب"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "تاريخ",
+        "question": "أي دولة حديثة تُعرف باسم \"مقبرة الإمبراطوريات\"؟",
+        "correct_answer": "أفغانستان",
+        "incorrect_answers": [
+            "الصين",
+            "العراق",
+            "روسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي ملك من ملوك فرنسا باسم لويس عُرف بلقب 'ملك الشمس'؟",
+        "correct_answer": "لويس الرابع عشر",
+        "incorrect_answers": [
+            "لويس الثالث عشر",
+            "لويس الخامس عشر",
+            "لويس السادس عشر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "أي عام يُعتبر تاريخ نهاية الإمبراطورية البريطانية؟",
+        "correct_answer": "1997",
+        "incorrect_answers": [
+            "1986",
+            "1981",
+            "1971"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "تاريخ",
+        "question": "وفقاً لتقديرات العلماء، ما هي النسبة المئوية لسكان العالم الذين لقوا حتفهم في ذلك الوقت بسبب فتوحات تيمورلنك؟",
+        "correct_answer": "5%",
+        "incorrect_answers": [
+            "1%",
+            "3%",
+            "<1%"
+        ]
+    }
+]

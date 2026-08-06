@@ -1,0 +1,224 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة إسبانيا؟",
+        "correct_answer": "مدريد",
+        "incorrect_answers": [
+            "برشلونة",
+            "إشبيلية",
+            "طليطلة"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "مدينة سانت لويس هي عاصمة ولاية ميزوري الأمريكية.",
+        "correct_answer": "خطأ",
+        "incorrect_answers": [
+            "صحيح"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "سُميت كولومبيا نسبةً إلى كريستوفر كولومبوس.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة ولاية أريزونا الأمريكية؟",
+        "correct_answer": "فينيكس",
+        "incorrect_answers": [
+            "مونتغومري",
+            "تالاهاسي",
+            "رالي"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "في أي مدينة يقع برج \"سبيس نيدل\"؟",
+        "correct_answer": "سياتل",
+        "incorrect_answers": [
+            "لوس أنجلوس",
+            "تورونتو",
+            "فانكوفر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أي من هذه الدول تقع في أبعد نقطة عن بحر الصين الجنوبي؟",
+        "correct_answer": "بنغلاديش",
+        "incorrect_answers": [
+            "ماليزيا",
+            "فيتنام",
+            "الفلبين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي من الجزر اليابانية التالية هي الأكبر مساحة؟",
+        "correct_answer": "هونشو",
+        "incorrect_answers": [
+            "هوكايدو",
+            "شيكوكو",
+            "كيوشو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "إمارة سيلاند هي دولة مجهرية غير معترف بها تقع قبالة سواحل أي دولة؟",
+        "correct_answer": "المملكة المتحدة",
+        "incorrect_answers": [
+            "اليابان",
+            "أستراليا",
+            "الأرجنتين"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "ما هي عاصمة فنلندا؟",
+        "correct_answer": "هلسنكي",
+        "incorrect_answers": [
+            "جبل طارق",
+            "مقدونيا",
+            "أوسلو"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "كم عدد الدول التي تشترك مع إسبانيا في حدود برية؟",
+        "correct_answer": "5",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "كم دولة تشترك في الحدود مع المكسيك؟",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "أي منطقة في شرق أوروبا تشتهر بارتباطها بمصاصي الدماء؟",
+        "correct_answer": "ترانسيلفانيا",
+        "incorrect_answers": [
+            "سيليزيا",
+            "مقدونيا",
+            "سلوفاكيا"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "جغرافيا",
+        "question": "تعتبر مدينة الفاتيكان دولة مستقلة.",
+        "correct_answer": "صحيح",
+        "incorrect_answers": [
+            "خطأ"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي قارة (أو قارات) تقع إسبانيا عند أخذ جميع أراضيها بعين الاعتبار؟",
+        "correct_answer": "أوروبا وإفريقيا",
+        "incorrect_answers": [
+            "أوروبا وإفريقيا وآسيا",
+            "أوروبا",
+            "أوروبا وآسيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هو لون 'خط سيركل' (الخط الدائري) على خريطة مترو أنفاق لندن؟",
+        "correct_answer": "الأصفر",
+        "incorrect_answers": [
+            "الأحمر",
+            "الأزرق",
+            "الأخضر"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "في أي دولة تقع بلدية أرتيخو؟",
+        "correct_answer": "إسبانيا",
+        "incorrect_answers": [
+            "المغرب",
+            "فرنسا",
+            "بلجيكا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "أين تقع خطوط نازكا الشهيرة؟",
+        "correct_answer": "بيرو",
+        "incorrect_answers": [
+            "البرازيل",
+            "كولومبيا",
+            "الإكوادور"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "جغرافيا",
+        "question": "أين تقع مدينة تمبكتو؟",
+        "correct_answer": "مالي، إفريقيا",
+        "incorrect_answers": [
+            "أذربيجان، آسيا",
+            "بنجلاديش، آسيا",
+            "موريتانيا، إفريقيا"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "جغرافيا",
+        "question": "ما هي الدولتان المعاصرتان اللتان كانتا تعرفان باسم منطقة 'روديسيا' بين تسعينيات القرن التاسع عشر وعام 1980‏؟",
+        "correct_answer": "زامبيا وزيمبابوي",
+        "incorrect_answers": [
+            "توجو وبنين",
+            "ليسوتو وسوازيلاند",
+            "رواندا وبوروندي"
+        ]
+    }
+]
