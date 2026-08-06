@@ -13,9 +13,9 @@ import { cleanQuizTitle } from "@/lib/browse-helpers";
 export const Route = createFileRoute("/browse/$quizId/preview")({
   head: () => ({
     meta: [
-      { title: "معاينة الكويز — QuizClash" },
-      { name: "description", content: "معاينة آمنة بدون إظهار الإجابات الصحيحة قبل الاستضافة." },
-      { property: "og:title", content: "معاينة الكويز — QuizClash" },
+      { title: "نظرة على أسئلة الكويز — QuizClash" },
+      { name: "description", content: "شاهد الأسئلة والخيارات قبل بدء اللعب، والإجابات الصحيحة مخفية." },
+      { property: "og:title", content: "نظرة على أسئلة الكويز — QuizClash" },
     ],
   }),
   component: QuizPreviewPage,
@@ -226,7 +226,7 @@ function QuizPreviewPage() {
 
               <h1 className="mt-4 font-display text-3xl md:text-5xl leading-tight">{displayTitle}</h1>
               <p className="mt-2 text-sm text-muted-foreground">
-                معاينة آمنة بدون إظهار الإجابات الصحيحة — يمكنك مراجعة نص الأسئلة والخيارات قبل البدء باستضافة اللعبة.
+                اطّلع على الأسئلة والخيارات قبل البدء — الإجابات الصحيحة مخفية حتى لا تُفسد اللعبة.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -237,7 +237,7 @@ function QuizPreviewPage() {
                   className="press rounded-2xl bg-gradient-hero px-8 py-4 font-display text-xl text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center gap-2"
                 >
                   <span>✨</span>
-                  <span>{cloning ? "جارٍ التنسيق والبدء..." : "نسخ واستضافة هذا الكويز"}</span>
+                  <span>{cloning ? "جارٍ التجهيز…" : "ابدأ اللعب بهذا الكويز"}</span>
                 </button>
               </div>
             </div>
@@ -300,7 +300,7 @@ function QuizPreviewPage() {
                 onClick={() => void handleCloneAndHost()}
                 className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 shrink-0"
               >
-                {cloning ? "جارٍ البدء..." : "نسخ واستضافة"}
+                {cloning ? "جارٍ التجهيز…" : "ابدأ اللعب"}
               </button>
             </div>
           </>

@@ -95,7 +95,7 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
           className="press flex-1 rounded-2xl border border-border/80 bg-background/50 py-2.5 text-center font-display text-xs sm:text-sm hover:border-primary/50 flex items-center justify-center gap-1.5"
         >
           <span>👁️</span>
-          <span>معاينة</span>
+          <span>{t("browse.preview")}</span>
         </Link>
         <button
           type="button"
