@@ -114,19 +114,32 @@ function AdminImportPage() {
   // Fetch Categories & Existing Quiz titles
   const fetchDbData = async () => {
     try {
-      // Fetch categories
+      // Fetch categories safely
       const { data: catData } = await db
         .from("categories")
-        .select("id, name")
-        .order("name", { ascending: true });
-      if (catData) setCategories(catData);
+        .select("*");
+      if (catData && Array.isArray(catData)) {
+        setCategories(
+          catData.map((c: any) => ({
+            id: c.id,
+            name: c.name || c.name_ar || c.name_en || c.title || c.slug || "بدون اسم",
+          }))
+        );
+      }
 
-      // Fetch subcategories
+      // Fetch subcategories safely
       const { data: subData } = await db
         .from("subcategories")
-        .select("id, name, category_id")
-        .order("name", { ascending: true });
-      if (subData) setSubcategories(subData);
+        .select("*");
+      if (subData && Array.isArray(subData)) {
+        setSubcategories(
+          subData.map((s: any) => ({
+            id: s.id,
+            name: s.name || s.name_ar || s.name_en || s.title || s.slug || "بدون اسم",
+            category_id: s.category_id || "",
+          }))
+        );
+      }
 
       // Fetch existing quiz titles
       const { data: quizData } = await db
@@ -201,6 +214,8 @@ function AdminImportPage() {
             time_limit_seconds: Number(q.time_limit_seconds || q.timer || 20),
             question_type: q.question_type || "multiple_choice",
             image_url: q.image_url || null,
+            explanation: q.explanation || null,
+            subcategory: q.subcategory || null,
           };
         });
 
@@ -328,11 +343,13 @@ function AdminImportPage() {
 
     try {
       const { data: userData } = await supabase.auth.getUser();
-      const currentUserId = userData.user?.id || "system";
+      const currentUserId = userData.user?.id || null;
 
       let importedCount = 0;
       let skippedCount = 0;
       let updatedCount = 0;
+      let failedCount = 0;
+      let lastErrorMessage = "";
 
       const totalItems = parsedQuizzes.length;
 
@@ -379,6 +396,8 @@ function AdminImportPage() {
                 order_index: idx,
                 question_type: q.question_type || "multiple_choice",
                 image_url: q.image_url || null,
+                explanation: q.explanation || null,
+                subcategory: q.subcategory || null,
               }));
 
               await db.from("questions").insert(questionInserts);
@@ -396,21 +415,26 @@ function AdminImportPage() {
             ? `${item.title} (مستورد)`
             : item.title;
 
+        const quizPayload: any = {
+          title: quizInsertTitle,
+          category: targetCategory,
+          subcategory: targetSubcategory,
+        };
+
+        if (currentUserId) {
+          quizPayload.user_id = currentUserId;
+        }
+
         const { data: newQuiz, error: quizErr } = await db
           .from("quizzes")
-          .insert([
-            {
-              title: quizInsertTitle,
-              category: targetCategory,
-              subcategory: targetSubcategory,
-              user_id: currentUserId,
-            },
-          ])
+          .insert([quizPayload])
           .select()
           .single();
 
         if (quizErr || !newQuiz) {
           console.error("Failed to insert quiz:", quizErr);
+          failedCount++;
+          lastErrorMessage = quizErr?.message || "فشل في حفظ البيانات";
           continue;
         }
 
@@ -425,6 +449,8 @@ function AdminImportPage() {
             order_index: idx,
             question_type: q.question_type || "multiple_choice",
             image_url: q.image_url || null,
+            explanation: q.explanation || null,
+            subcategory: q.subcategory || null,
           }));
 
           const { error: qErr } = await db.from("questions").insert(questionInserts);
@@ -438,13 +464,24 @@ function AdminImportPage() {
       }
 
       setImportProgress(100);
-      toast.success(
-        `اكتمل الاستيراد بنجاح! (تم إضافة: ${importedCount}، تحديث: ${updatedCount}، تخطي: ${skippedCount})`
-      );
+
+      if (importedCount > 0 || updatedCount > 0) {
+        toast.success(
+          `تمت العملية! (تم إضافة: ${importedCount}، تحديث: ${updatedCount}، تخطي: ${skippedCount}${failedCount > 0 ? `، فشل: ${failedCount}` : ""})`
+        );
+      } else if (skippedCount > 0) {
+        toast.info(
+          `تم تخطي جميع الكويزات (${skippedCount}) لأن عناوينها موجودة مسبقاً في قاعدة البيانات بالتزامن مع خيار (تخطي الكويزات الموجودة). اختر (استبدال) أو (إنشاء نسخة) لإعادة استيرادها.`
+        );
+      } else {
+        toast.error(`لم يتم استيراد أي كويز. ${lastErrorMessage ? `السبب: ${lastErrorMessage}` : ""}`);
+      }
 
       // Reset state and refresh existing quiz titles
-      setParsedQuizzes([]);
-      setFileNameInfo("");
+      if (importedCount > 0 || updatedCount > 0) {
+        setParsedQuizzes([]);
+        setFileNameInfo("");
+      }
       void fetchDbData();
     } catch (err: any) {
       console.error("Bulk import failed:", err);
