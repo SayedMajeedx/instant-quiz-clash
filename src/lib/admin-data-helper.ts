@@ -151,7 +151,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 
   try {
     const { data, error } = await (supabase.from("quizzes") as any)
-      .select("*, questions(id, question_text, options, correct_index, question_type, time_limit_seconds, order_index, explanation, image_url)")
+      .select("*, questions(*)")
       .order("created_at", { ascending: false });
 
     if (!error && data && Array.isArray(data)) {
@@ -217,13 +217,13 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
     }
   });
 
-  // Try DB categories
+  // Try DB categories safely
   let dbCategories: any[] = [];
   try {
-    const { data } = await (supabase.from("categories") as any)
+    const { data, error } = await (supabase.from("categories") as any)
       .select("*, subcategories(*)")
       .order("name");
-    if (data && Array.isArray(data)) dbCategories = data;
+    if (!error && data && Array.isArray(data)) dbCategories = data;
   } catch {}
 
   const categoryMap = new Map<string, AdminCategoryItem>();

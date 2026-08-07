@@ -13,7 +13,11 @@ import {
 } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
 
-import { getAllAdminCategories, type AdminSubcategoryItem } from "@/lib/admin-data-helper";
+import {
+  getAllAdminCategories,
+  getAllAdminQuizzes,
+  type AdminSubcategoryItem,
+} from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/browse/$category")({
   head: ({ params }) => {
