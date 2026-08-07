@@ -72,6 +72,11 @@ export function getLocalQuizOverrides(): Record<string, Partial<AdminQuizItem>> 
   }
 }
 
+export function isUUID(str: string | null | undefined): boolean {
+  if (!str || typeof str !== "string") return false;
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(str.trim());
+}
+
 /**
  * Save quiz override PERMANENTLY to Supabase DB
  */
@@ -92,12 +97,15 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
     const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId || q.title === quizId);
     const searchTitle = libQuiz ? libQuiz.title : (override.title || quizId);
 
-    // 1. Find existing row in Supabase DB by ID or Title
+    // 1. Find existing row in Supabase DB by ID or Title safely
     let existingDbQuiz: any = null;
-    const { data: byId } = await db.from("quizzes").select("id, title").eq("id", quizId).maybeSingle();
-    if (byId) {
-      existingDbQuiz = byId;
-    } else {
+
+    if (isUUID(quizId)) {
+      const { data: byId } = await db.from("quizzes").select("id, title").eq("id", quizId).maybeSingle();
+      if (byId) existingDbQuiz = byId;
+    }
+
+    if (!existingDbQuiz && searchTitle) {
       const { data: byTitle } = await db.from("quizzes").select("id, title").eq("title", searchTitle).maybeSingle();
       if (byTitle) existingDbQuiz = byTitle;
     }

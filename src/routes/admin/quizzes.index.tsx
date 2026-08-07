@@ -57,6 +57,7 @@ import {
   getAllAdminQuizzes,
   saveLocalQuizOverride,
   saveLocalSubcategory,
+  isUUID,
   type AdminCategoryItem,
 } from "@/lib/admin-data-helper";
 
@@ -273,11 +274,14 @@ export function AdminQuizzesPage() {
         payload.subcategory = finalSubcategory;
       }
 
-      await (supabase.from("quizzes") as any)
-        .update(payload)
-        .in("id", selectedArray)
-        .then(() => {})
-        .catch(() => {});
+      const validUuidIds = selectedArray.filter((id) => isUUID(id));
+      if (validUuidIds.length > 0) {
+        await (supabase.from("quizzes") as any)
+          .update(payload)
+          .in("id", validUuidIds)
+          .then(() => {})
+          .catch(() => {});
+      }
 
       const newCategory = bulkCategory.trim();
 
@@ -318,12 +322,19 @@ export function AdminQuizzesPage() {
     const selectedArray = Array.from(selectedIds);
 
     try {
-      const { error } = await (supabase.from("quizzes") as any)
-        .update({ is_public: makePublic })
-        .in("id", selectedArray);
+      const validUuidIds = selectedArray.filter((id) => isUUID(id));
+      if (validUuidIds.length > 0) {
+        const { error } = await (supabase.from("quizzes") as any)
+          .update({ is_public: makePublic })
+          .in("id", validUuidIds);
 
-      if (error) {
-        console.warn("Bulk public note:", error.message);
+        if (error) {
+          console.warn("Bulk public note:", error.message);
+        }
+      }
+
+      for (const quizId of selectedArray) {
+        await saveLocalQuizOverride(quizId, { is_public: makePublic });
       }
 
       setQuizzes((prev) =>
@@ -345,13 +356,16 @@ export function AdminQuizzesPage() {
     const selectedArray = Array.from(selectedIds);
 
     try {
-      // Delete questions first
-      await (supabase.from("questions") as any).delete().in("quiz_id", selectedArray);
-      // Delete quizzes
-      const { error } = await (supabase.from("quizzes") as any).delete().in("id", selectedArray);
+      const validUuidIds = selectedArray.filter((id) => isUUID(id));
+      if (validUuidIds.length > 0) {
+        // Delete questions first
+        await (supabase.from("questions") as any).delete().in("quiz_id", validUuidIds);
+        // Delete quizzes
+        const { error } = await (supabase.from("quizzes") as any).delete().in("id", validUuidIds);
 
-      if (error) {
-        console.warn("Bulk delete note:", error.message);
+        if (error) {
+          console.warn("Bulk delete note:", error.message);
+        }
       }
 
       setQuizzes((prev) => prev.filter((item) => !selectedIds.has(item.id)));
@@ -371,11 +385,13 @@ export function AdminQuizzesPage() {
     setActionLoading(true);
 
     try {
-      await (supabase.from("questions") as any).delete().eq("quiz_id", quizToDelete.id);
-      const { error } = await (supabase.from("quizzes") as any).delete().eq("id", quizToDelete.id);
+      if (isUUID(quizToDelete.id)) {
+        await (supabase.from("questions") as any).delete().eq("quiz_id", quizToDelete.id);
+        const { error } = await (supabase.from("quizzes") as any).delete().eq("id", quizToDelete.id);
 
-      if (error) {
-        console.warn("Delete note:", error.message);
+        if (error) {
+          console.warn("Delete note:", error.message);
+        }
       }
 
       setQuizzes((prev) => prev.filter((item) => item.id !== quizToDelete.id));
