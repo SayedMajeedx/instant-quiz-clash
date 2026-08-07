@@ -305,48 +305,25 @@ function BrowseLandingPage() {
                       key={cat.id}
                       to="/browse/$category"
                       params={{ category: encodeURIComponent(cat.name) }}
-                      className="press group flex flex-col justify-between rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/60 hover:bg-background/90 hover:shadow-glow hover:-translate-y-1"
+                      className="press group flex items-center justify-between rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/60 hover:bg-background/90 hover:shadow-glow hover:-translate-y-1"
                     >
-                      <div className="flex items-center justify-between gap-4">
-                        <div className="flex items-center gap-4">
-                          <span className="grid size-14 place-items-center shrink-0 rounded-2xl border border-primary/30 bg-primary/10 text-3xl shadow-sm transition-transform group-hover:scale-110">
-                            {cat.icon}
-                          </span>
-                          <div>
-                            <h3 className="font-display text-xl sm:text-2xl text-foreground group-hover:text-primary transition-colors">
-                              {cat.name}
-                            </h3>
-                            <p className="mt-1 text-xs font-bold text-sun">
-                              {cat.count} {cat.count === 1 ? "كويز" : "كويزات"}
-                            </p>
-                          </div>
-                        </div>
-
-                        <span className="font-display text-2xl text-muted-foreground transition-transform group-hover:translate-x-[-4px] group-hover:text-primary">
-                          ←
+                      <div className="flex items-center gap-4">
+                        <span className="grid size-14 place-items-center shrink-0 rounded-2xl border border-primary/30 bg-primary/10 text-3xl shadow-sm transition-transform group-hover:scale-110">
+                          {cat.icon}
                         </span>
+                        <div>
+                          <h3 className="font-display text-xl sm:text-2xl text-foreground group-hover:text-primary transition-colors">
+                            {cat.name}
+                          </h3>
+                          <p className="mt-1 text-xs font-bold text-sun">
+                            {cat.count} {cat.count === 1 ? "كويز" : "كويزات"}
+                          </p>
+                        </div>
                       </div>
 
-                      {/* Subcategories Badges */}
-                      {cat.subcategories && cat.subcategories.length > 0 && (
-                        <div className="mt-4 pt-3.5 border-t border-border/40 flex flex-wrap items-center gap-2">
-                          <span className="text-[11px] font-extrabold text-muted-foreground flex items-center gap-1">
-                            <span>✨</span>
-                            <span>الأقسام الفرعية:</span>
-                          </span>
-                          {cat.subcategories.map((sub) => (
-                            <span
-                              key={sub.id}
-                              className="inline-flex items-center gap-1.5 rounded-2xl border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-bold text-primary shadow-sm transition-all group-hover:bg-primary/20 group-hover:border-primary/50"
-                            >
-                              <span>{sub.name}</span>
-                              <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-black text-primary-foreground">
-                                {sub.quiz_count}
-                              </span>
-                            </span>
-                          ))}
-                        </div>
-                      )}
+                      <span className="font-display text-2xl text-muted-foreground transition-transform group-hover:translate-x-[-4px] group-hover:text-primary">
+                        ←
+                      </span>
                     </Link>
                   ))}
                 </div>
