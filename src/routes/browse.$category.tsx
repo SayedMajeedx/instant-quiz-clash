@@ -199,9 +199,50 @@ function CategoryDetailPage() {
           </div>
         </div>
 
+        {/* Search inside this category */}
+        <div className="mt-6 flex flex-col gap-3 md:flex-row md:items-center">
+          <div className="relative flex-1">
+            <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-muted-foreground">
+              🔎
+            </span>
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder={`ابحث داخل قسم ${category}...`}
+              className="w-full rounded-2xl border border-border bg-background/60 py-3 pr-11 pl-4 font-semibold text-sm text-foreground outline-none placeholder:text-muted-foreground focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+            />
+            {search ? (
+              <button
+                type="button"
+                onClick={() => setSearch("")}
+                className="absolute inset-y-0 left-3 my-auto h-7 rounded-lg border border-border px-2 text-xs text-muted-foreground hover:text-foreground"
+              >
+                مسح
+              </button>
+            ) : null}
+          </div>
+
+          {/* Sort dropdown (separate from filters) */}
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">↕️ ترتيب حسب:</span>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="rounded-2xl border border-border bg-background/60 px-3 py-2.5 text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+            >
+              <option value="newest">الأحدث أولاً</option>
+              <option value="easiest">من الأسهل للأصعب</option>
+              <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
+              <option value="alpha">أبجدياً</option>
+            </select>
+          </div>
+        </div>
+
         {/* Collapsible Scoped Filter Bar */}
-        <div className="mt-6 rounded-3xl border border-border bg-surface-gradient p-5 shadow-md">
+        <div className="mt-4 rounded-3xl border border-border bg-surface-gradient p-5 shadow-md">
           <div className="flex items-center justify-between">
+
             <button
               type="button"
               onClick={() => setFilterExpanded((v) => !v)}
