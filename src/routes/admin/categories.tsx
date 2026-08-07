@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, useMemo } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { getAllAdminCategories, getAllAdminQuizzes } from "@/lib/admin-data-helper";
+import { getAllAdminCategories, getAllAdminQuizzes, saveLocalSubcategory, deleteLocalSubcategory } from "@/lib/admin-data-helper";
 import {
   FolderTree,
   FolderPlus,
@@ -273,21 +273,30 @@ function AdminCategoriesPage() {
         }
       }
 
-      // Optimistic local state update so the subcategory appears immediately in UI
+      // Optimistic local state and localStorage update so the subcategory persists permanently
       const newSubItem: SubcategoryRecord = {
         id: editingSub?.id || `sub-${Date.now()}`,
-        category_id: realCategoryId,
+        category_id: subCatId,
         name: subName.trim(),
         slug: slugToSave,
         quiz_count: 0,
       };
+
+      saveLocalSubcategory({
+        id: newSubItem.id,
+        category_id: subCatId,
+        category_name: catName,
+        name: subName.trim(),
+        slug: slugToSave,
+        quiz_count: 0,
+      });
 
       setSubcategories((prev) => {
         const filtered = prev.filter((s) => s.id !== newSubItem.id);
         return [...filtered, newSubItem];
       });
 
-      toast.success("تم إضافة القسم الفرعي بنجاح!");
+      toast.success("تم إضافة القسم الفرعي وحفظه بنجاح!");
       setIsSubModalOpen(false);
       setSubName("");
       setSubSlug("");
@@ -588,7 +597,10 @@ function AdminCategoriesPage() {
                 <TableBody>
                   {filteredCategories.map((cat) => {
                     const childSubs = subcategories.filter(
-                      (s) => s.category_id === cat.id || s.category_id === cat.name
+                      (s) =>
+                        s.category_id === cat.id ||
+                        s.category_id === `derived-${cat.slug}` ||
+                        (s as any).category_name?.trim().toLowerCase() === cat.name.trim().toLowerCase()
                     );
 
                     return (
