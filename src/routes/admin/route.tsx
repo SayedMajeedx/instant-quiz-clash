@@ -11,7 +11,7 @@ import {
   ArrowRight,
   ShieldCheck,
   LogOut,
-  Sparkles,
+  ShieldAlert,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -19,11 +19,26 @@ import { Badge } from "@/components/ui/badge";
 export const Route = createFileRoute("/admin")({
   ssr: false,
   beforeLoad: async () => {
-    const { data } = await supabase.auth.getUser();
-    if (!data.user) {
+    const { data: userData } = await supabase.auth.getUser();
+    if (!userData.user) {
       throw redirect({ to: "/auth" });
     }
-    return { user: data.user };
+
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("id", userData.user.id)
+      .maybeSingle();
+
+    const role = (profile as any)?.role;
+    const isAdmin = role === "admin" || role === "super_admin" || role === "owner";
+
+    if (!isAdmin) {
+      // STRICT ACCESS CONTROL: Non-admins are blocked and redirected to homepage
+      throw redirect({ to: "/" });
+    }
+
+    return { user: userData.user, role };
   },
   component: AdminLayout,
 });
@@ -43,7 +58,6 @@ function AdminLayout() {
       }
       setUserEmail(userData.user.email || "");
 
-      // Query profile role
       const { data: profile } = await supabase
         .from("profiles")
         .select("role, name")
@@ -53,14 +67,19 @@ function AdminLayout() {
       if (profile) {
         setDisplayName((profile as any).name || (profile as any).display_name || userData.user.email || "");
         const role = (profile as any).role;
-        setIsAdmin(role === "admin" || role === "super_admin" || role === "owner");
+        const adminAllowed = role === "admin" || role === "super_admin" || role === "owner";
+        setIsAdmin(adminAllowed);
+
+        if (!adminAllowed) {
+          void navigate({ to: "/", replace: true });
+        }
       } else {
-        setDisplayName(userData.user.email || "");
-        setIsAdmin(true);
+        setIsAdmin(false);
+        void navigate({ to: "/", replace: true });
       }
     }
     checkRole();
-  }, []);
+  }, [navigate]);
 
   const navItems = [
     { label: "لوحة التحكم الرئيسية", to: "/admin", icon: LayoutDashboard, exact: true },
@@ -78,6 +97,24 @@ function AdminLayout() {
           <div className="size-10 rounded-full border-4 border-primary border-t-transparent animate-spin" />
           <p className="text-sm font-medium text-muted-foreground">جارٍ التحقق من صلاحيات المسؤول...</p>
         </div>
+      </div>
+    );
+  }
+
+  if (isAdmin === false) {
+    return (
+      <div dir="rtl" className="flex h-screen w-full flex-col items-center justify-center bg-background p-6 text-center">
+        <div className="flex size-16 items-center justify-center rounded-3xl bg-destructive/10 text-destructive mb-4">
+          <ShieldAlert className="size-8" />
+        </div>
+        <h2 className="font-display text-2xl font-bold">عفواً، الوصول غير مصرح به</h2>
+        <p className="text-sm text-muted-foreground mt-2 mb-6 max-w-md">
+          هذه الصفحة مخصصة لمدراء النظام فقط. تم حظر وصول هذا الحساب إلى لوحة التحكم.
+        </p>
+        <Button onClick={() => void navigate({ to: "/" })} className="rounded-xl gap-2">
+          <ArrowRight className="size-4" />
+          العودة للصفحة الرئيسية
+        </Button>
       </div>
     );
   }

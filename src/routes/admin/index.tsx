@@ -16,13 +16,11 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+import { getAdminKPIStats } from "@/lib/admin-data-helper";
+
 export const Route = createFileRoute("/admin/")({
   component: AdminOverview,
 });
-
-function AdminLayout() {
-  return null;
-}
 
 function AdminOverview() {
   const [counts, setCounts] = useState({
@@ -36,23 +34,12 @@ function AdminOverview() {
   useEffect(() => {
     async function fetchCounts() {
       try {
-        const [
-          { count: quizCount },
-          { count: questionCount },
-          { count: categoryCount },
-          { count: userCount },
-        ] = await Promise.all([
-          supabase.from("quizzes").select("*", { count: "exact", head: true }),
-          supabase.from("questions").select("*", { count: "exact", head: true }),
-          supabase.from("categories").select("*", { count: "exact", head: true }),
-          supabase.from("profiles").select("*", { count: "exact", head: true }),
-        ]);
-
+        const kpis = await getAdminKPIStats();
         setCounts({
-          quizzes: quizCount || 0,
-          questions: questionCount || 0,
-          categories: categoryCount || 0,
-          users: userCount || 0,
+          quizzes: kpis.totalQuizzes,
+          questions: kpis.totalQuestions,
+          categories: kpis.totalCategories,
+          users: kpis.totalUsers,
         });
       } catch (err) {
         console.error("Failed to load admin stats:", err);

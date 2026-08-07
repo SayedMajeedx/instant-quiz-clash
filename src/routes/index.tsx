@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
+import { useIsAdmin } from "@/hooks/useIsAdmin";
 import { supabase } from "@/integrations/supabase/client";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
@@ -31,6 +32,7 @@ export const Route = createFileRoute("/")({
 function Home() {
   const { lang, t } = useI18n();
   const { user } = useAuth();
+  const { isAdmin } = useIsAdmin();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const [creating, setCreating] = useState(false);
@@ -115,6 +117,15 @@ function Home() {
 
         <div className="flex items-center gap-3">
           <LanguageToggle />
+          {isAdmin && (
+            <Link
+              to="/admin"
+              className="press flex items-center gap-1.5 rounded-2xl bg-primary/20 border border-primary/40 px-4 py-2 text-sm font-bold text-primary hover:bg-primary/30"
+            >
+              <span>🛡️</span>
+              <span>{lang === "ar" ? "لوحة التحكم" : "Admin Dashboard"}</span>
+            </Link>
+          )}
           {user ? (
             <>
               <Link

@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, useMemo } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { getAllAdminCategories, getAllAdminQuizzes } from "@/lib/admin-data-helper";
 import {
   FolderTree,
   FolderPlus,
@@ -121,68 +122,39 @@ function AdminCategoriesPage() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      // 1. Fetch categories
-      const { data: catData, error: catErr } = await db
-        .from("categories")
-        .select("*")
-        .order("name", { ascending: true });
+      const [adminCategories, adminQuizzes] = await Promise.all([
+        getAllAdminCategories(),
+        getAllAdminQuizzes(),
+      ]);
 
-      // 2. Fetch subcategories
-      const { data: subData, error: subErr } = await db
-        .from("subcategories")
-        .select("*")
-        .order("name", { ascending: true });
+      setQuizzes(adminQuizzes.map((q) => ({ id: q.id, title: q.title, category: q.category, subcategory: q.subcategory || "" })));
 
-      // 3. Fetch quizzes for count metrics
-      const { data: quizData } = await db
-        .from("quizzes")
-        .select("id, title, category, subcategory");
+      const formattedCats: CategoryRecord[] = adminCategories.map((c) => ({
+        id: c.id,
+        name: c.name,
+        slug: c.slug,
+        quiz_count: c.quiz_count,
+      }));
 
-      const fetchedQuizzes = (quizData || []) as { id: string; title: string; category?: string; subcategory?: string }[];
-      setQuizzes(fetchedQuizzes);
-
-      // Map counts
-      const catQuizCounts: Record<string, number> = {};
-      const subQuizCounts: Record<string, number> = {};
-
-      fetchedQuizzes.forEach((q) => {
-        if (q.category) {
-          catQuizCounts[q.category.trim()] = (catQuizCounts[q.category.trim()] || 0) + 1;
-        }
-        if (q.subcategory) {
-          subQuizCounts[q.subcategory.trim()] = (subQuizCounts[q.subcategory.trim()] || 0) + 1;
+      const formattedSubs: SubcategoryRecord[] = [];
+      adminCategories.forEach((c) => {
+        if (c.subcategories) {
+          c.subcategories.forEach((sub) => {
+            formattedSubs.push({
+              id: sub.id,
+              category_id: c.id,
+              name: sub.name,
+              slug: sub.slug,
+              quiz_count: sub.quiz_count,
+            });
+          });
         }
       });
 
-      let finalCats: CategoryRecord[] = [];
-      if (!catErr && catData && catData.length > 0) {
-        finalCats = catData.map((c: any) => ({
-          ...c,
-          quiz_count: catQuizCounts[c.name.trim()] || 0,
-        }));
-      } else {
-        // Fallback: derive categories from existing quizzes if table is empty or missing
-        const uniqueCatNames = Array.from(new Set(fetchedQuizzes.map((q) => q.category?.trim()).filter(Boolean) as string[]));
-        finalCats = uniqueCatNames.map((name, idx) => ({
-          id: `derived-cat-${idx}`,
-          name,
-          slug: generateSlug(name),
-          quiz_count: catQuizCounts[name] || 0,
-        }));
-      }
-
-      let finalSubs: SubcategoryRecord[] = [];
-      if (!subErr && subData && subData.length > 0) {
-        finalSubs = subData.map((s: any) => ({
-          ...s,
-          quiz_count: subQuizCounts[s.name.trim()] || 0,
-        }));
-      }
-
-      setCategories(finalCats);
-      setSubcategories(finalSubs);
+      setCategories(formattedCats);
+      setSubcategories(formattedSubs);
     } catch (err) {
-      console.error("Error loading categories:", err);
+      console.error("Failed to load category data:", err);
       toast.error("حدث خطأ أثناء تحميل بيانات الأقسام");
     } finally {
       setLoading(false);
