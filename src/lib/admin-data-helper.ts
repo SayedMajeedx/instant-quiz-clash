@@ -89,16 +89,21 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
   // Persist permanently in Supabase Database
   try {
     const db = supabase as any;
+    const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId || q.title === quizId);
+    const searchTitle = libQuiz ? libQuiz.title : (override.title || quizId);
 
-    // Check if quiz exists in Supabase DB
-    const { data: existingDbQuiz } = await db
-      .from("quizzes")
-      .select("id")
-      .eq("id", quizId)
-      .maybeSingle();
+    // 1. Find existing row in Supabase DB by ID or Title
+    let existingDbQuiz: any = null;
+    const { data: byId } = await db.from("quizzes").select("id, title").eq("id", quizId).maybeSingle();
+    if (byId) {
+      existingDbQuiz = byId;
+    } else {
+      const { data: byTitle } = await db.from("quizzes").select("id, title").eq("title", searchTitle).maybeSingle();
+      if (byTitle) existingDbQuiz = byTitle;
+    }
 
     if (existingDbQuiz) {
-      // Update existing quiz row in Supabase
+      // Update existing DB row
       const updatePayload: any = {};
       if (override.title !== undefined) updatePayload.title = override.title;
       if (override.category !== undefined) updatePayload.category = override.category;
@@ -107,46 +112,39 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       if (override.quiz_difficulty !== undefined) updatePayload.quiz_difficulty = override.quiz_difficulty;
       if (override.language !== undefined) updatePayload.language = override.language;
 
-      await db.from("quizzes").update(updatePayload).eq("id", quizId);
+      await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
     } else {
-      // Static library quiz: find in QUIZ_LIBRARY and persist as real row in Supabase DB
-      const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId);
-      if (libQuiz) {
-        const { data: userData } = await supabase.auth.getUser();
-        const currentUserId = userData.user?.id || null;
+      // Insert new DB row for static or new quiz
+      const insertPayload: any = {
+        title: override.title || (libQuiz ? libQuiz.title : "كويز"),
+        category: override.category || (libQuiz ? libQuiz.category : "عام") || "عام",
+        subcategory: override.subcategory !== undefined ? override.subcategory : ((libQuiz as any)?.subcategory || ""),
+        is_public: override.is_public !== undefined ? override.is_public : true,
+        quiz_difficulty: override.quiz_difficulty || (libQuiz ? libQuiz.quiz_difficulty : "standard") || "standard",
+        language: override.language || (libQuiz ? libQuiz.language : "ar") || "ar",
+      };
 
-        const insertPayload: any = {
-          id: libQuiz.id,
-          title: override.title || libQuiz.title,
-          category: override.category || libQuiz.category || "عام",
-          subcategory: override.subcategory !== undefined ? override.subcategory : ((libQuiz as any).subcategory || ""),
-          is_public: override.is_public !== undefined ? override.is_public : true,
-          quiz_difficulty: override.quiz_difficulty || libQuiz.quiz_difficulty || "standard",
-          language: override.language || libQuiz.language || "ar",
-        };
-        if (currentUserId) insertPayload.user_id = currentUserId;
+      const { data: newQuiz, error: insertErr } = await db
+        .from("quizzes")
+        .insert([insertPayload])
+        .select()
+        .single();
 
-        const { data: newQuiz, error: insertErr } = await db
-          .from("quizzes")
-          .upsert([insertPayload])
-          .select()
-          .single();
+      if (!insertErr && newQuiz && libQuiz && Array.isArray(libQuiz.questions) && libQuiz.questions.length > 0) {
+        const qInserts = libQuiz.questions.map((q: any, idx: number) => ({
+          quiz_id: newQuiz.id,
+          question_text: q.question_text || q.question || "سؤال",
+          options: q.options || ["خيار 1", "خيار 2", "خيار 3", "خيار 4"],
+          correct_index: typeof q.correct_index === "number" ? q.correct_index : 0,
+          time_limit_seconds: q.time_limit_seconds || 20,
+          order_index: idx,
+          question_type: q.question_type || "multi",
+          explanation: q.explanation || null,
+          image_url: q.image_url || null,
+          subcategory: q.subcategory || override.subcategory || null,
+        }));
 
-        if (!insertErr && newQuiz && Array.isArray(libQuiz.questions) && libQuiz.questions.length > 0) {
-          const qInserts = libQuiz.questions.map((q: any, idx: number) => ({
-            quiz_id: newQuiz.id,
-            question_text: q.question_text || q.question || "سؤال",
-            options: q.options || ["خيار 1", "خيار 2", "خيار 3", "خيار 4"],
-            correct_index: typeof q.correct_index === "number" ? q.correct_index : 0,
-            time_limit_seconds: q.time_limit_seconds || 20,
-            order_index: idx,
-            question_type: q.question_type || "multiple_choice",
-            explanation: q.explanation || null,
-            image_url: q.image_url || null,
-          }));
-
-          await db.from("questions").insert(qInserts);
-        }
+        await db.from("questions").insert(qInserts);
       }
     }
   } catch (err) {
@@ -206,12 +204,12 @@ export async function saveLocalCategory(catName: string, catSlug?: string): Prom
   // Persist permanently in Supabase DB
   try {
     const db = supabase as any;
-    await db
-      .from("categories")
-      .upsert([{ name, name_ar: name, name_en: name, slug }])
-      .catch(async () => {
-        await db.from("categories").upsert([{ name, slug }]).catch(() => {});
-      });
+    const { data: existingCat } = await db.from("categories").select("id").eq("name", name).maybeSingle();
+    if (existingCat) {
+      await db.from("categories").update({ name, slug }).eq("id", existingCat.id);
+    } else {
+      await db.from("categories").insert([{ name, slug }]);
+    }
   } catch (e) {
     console.error("Failed to persist category to Supabase DB:", e);
   }
@@ -246,7 +244,6 @@ export async function deleteLocalCategory(catId: string, catName?: string) {
     }
     if (catName) {
       await db.from("categories").delete().eq("name", catName);
-      await db.from("categories").delete().eq("name_ar", catName);
     }
   } catch (e) {
     console.error("Failed to delete category from Supabase DB:", e);
@@ -310,15 +307,24 @@ export async function saveLocalSubcategory(parentCatId: string, parentCatName: s
   // Persist permanently in Supabase DB
   try {
     const db = supabase as any;
-    const subPayload: any = {
-      name: subName.trim(),
-      name_ar: subName.trim(),
-      slug,
-    };
+    let realCatId: string | null = null;
     if (parentCatId && !parentCatId.startsWith("cat-")) {
-      subPayload.category_id = parentCatId;
+      realCatId = parentCatId;
+    } else if (cleanParentName) {
+      const { data: pCat } = await db.from("categories").select("id").eq("name", cleanParentName).maybeSingle();
+      if (pCat) realCatId = pCat.id;
     }
-    await db.from("subcategories").upsert([subPayload]).catch(() => {});
+
+    const { data: existingSub } = await db.from("subcategories").select("id").eq("name", subName.trim()).maybeSingle();
+    if (existingSub) {
+      const updatePayload: any = { name: subName.trim(), slug };
+      if (realCatId) updatePayload.category_id = realCatId;
+      await db.from("subcategories").update(updatePayload).eq("id", existingSub.id);
+    } else {
+      const insertPayload: any = { name: subName.trim(), slug };
+      if (realCatId) insertPayload.category_id = realCatId;
+      await db.from("subcategories").insert([insertPayload]);
+    }
   } catch (e) {
     console.error("Failed to persist subcategory to Supabase DB:", e);
   }
@@ -353,7 +359,6 @@ export async function deleteLocalSubcategory(subId: string, subName?: string) {
     }
     if (subName) {
       await db.from("subcategories").delete().eq("name", subName);
-      await db.from("subcategories").delete().eq("name_ar", subName);
     }
   } catch (e) {
     console.error("Failed to delete subcategory from Supabase DB:", e);
