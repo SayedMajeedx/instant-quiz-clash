@@ -91,13 +91,26 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
     }
   }
 
-  // Persist permanently in Supabase Database
+  // Persist permanently in Supabase Database via SECURITY DEFINER RPC (Bypasses schema cache errors)
   try {
     const db = supabase as any;
     const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId || q.title === quizId || (override.title && q.title === override.title));
     const targetTitle = override.title || (libQuiz ? libQuiz.title : (isUUID(quizId) ? "" : quizId));
 
-    // 1. Find existing row in Supabase DB by ID or Title
+    if (targetTitle && targetTitle.trim() && !isUUID(targetTitle)) {
+      const { error: rpcErr } = await db.rpc("upsert_admin_quiz", {
+        p_title: targetTitle.trim(),
+        p_category: override.category || (libQuiz ? libQuiz.category : "عام") || "عام",
+        p_subcategory: override.subcategory !== undefined ? override.subcategory : ((libQuiz as any)?.subcategory || ""),
+        p_difficulty: override.quiz_difficulty || (libQuiz ? libQuiz.quiz_difficulty : "standard") || "standard",
+        p_language: override.language || (libQuiz ? libQuiz.language : "ar") || "ar",
+        p_is_public: override.is_public !== undefined ? override.is_public : true,
+      });
+
+      if (!rpcErr) return;
+    }
+
+    // Fallback direct DB query if RPC is unavailable
     let existingDbQuiz: any = null;
 
     if (isUUID(quizId)) {
@@ -111,7 +124,6 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
     }
 
     if (existingDbQuiz) {
-      // Update existing DB row
       const updatePayload: any = {};
       if (override.title !== undefined) updatePayload.title = override.title;
       if (override.category !== undefined) updatePayload.category = override.category;
@@ -121,39 +133,6 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       if (override.language !== undefined) updatePayload.language = override.language;
 
       await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
-    } else if (targetTitle && targetTitle.trim() && !isUUID(targetTitle)) {
-      // Insert new DB row for static or new quiz
-      const insertPayload: any = {
-        title: targetTitle.trim(),
-        category: override.category || (libQuiz ? libQuiz.category : "عام") || "عام",
-        subcategory: override.subcategory !== undefined ? override.subcategory : ((libQuiz as any)?.subcategory || ""),
-        is_public: override.is_public !== undefined ? override.is_public : true,
-        quiz_difficulty: override.quiz_difficulty || (libQuiz ? libQuiz.quiz_difficulty : "standard") || "standard",
-        language: override.language || (libQuiz ? libQuiz.language : "ar") || "ar",
-      };
-
-      const { data: newQuiz, error: insertErr } = await db
-        .from("quizzes")
-        .insert([insertPayload])
-        .select()
-        .single();
-
-      if (!insertErr && newQuiz && libQuiz && Array.isArray(libQuiz.questions) && libQuiz.questions.length > 0) {
-        const qInserts = libQuiz.questions.map((q: any, idx: number) => ({
-          quiz_id: newQuiz.id,
-          question_text: q.question_text || q.question || "سؤال",
-          options: q.options || ["خيار 1", "خيار 2", "خيار 3", "خيار 4"],
-          correct_index: typeof q.correct_index === "number" ? q.correct_index : 0,
-          time_limit_seconds: q.time_limit_seconds || 20,
-          order_index: idx,
-          question_type: q.question_type || "multi",
-          explanation: q.explanation || null,
-          image_url: q.image_url || null,
-          subcategory: q.subcategory || override.subcategory || null,
-        }));
-
-        await db.from("questions").insert(qInserts);
-      }
     }
   } catch (err) {
     console.error("Failed to persist quiz override to Supabase:", err);
