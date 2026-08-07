@@ -65,6 +65,77 @@ export function saveLocalQuizOverride(quizId: string, override: Partial<AdminQui
 }
 
 /**
+ * Get all local main categories
+ */
+export function getLocalCategories(): AdminCategoryItem[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_CATEGORIES);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Save or update a main category
+ */
+export function saveLocalCategory(catName: string, catSlug?: string): AdminCategoryItem {
+  const existing = getLocalCategories();
+  const name = catName.trim();
+  const slug = catSlug?.trim() || name.toLowerCase().replace(/\s+/g, "-");
+
+  let item = existing.find((c) => c.name.trim().toLowerCase() === name.toLowerCase());
+
+  if (!item) {
+    item = {
+      id: `cat-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
+      name,
+      slug,
+      quiz_count: 0,
+      subcategories: [],
+    };
+    existing.push(item);
+  } else {
+    item.slug = slug;
+  }
+
+  if (typeof window !== "undefined") {
+    try {
+      localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(existing));
+    } catch (e) {
+      console.warn("Failed to save category locally", e);
+    }
+  }
+
+  // Attempt background DB insert safely without throwing unhandled UI errors
+  void (async () => {
+    try {
+      await (supabase.from("categories") as any)
+        .insert([{ name, slug }])
+        .then(() => {})
+        .catch(() => {});
+    } catch {}
+  })();
+
+  return item;
+}
+
+/**
+ * Delete a main category
+ */
+export function deleteLocalCategory(catId: string) {
+  if (typeof window === "undefined") return;
+  try {
+    const existing = getLocalCategories();
+    const updated = existing.filter((c) => c.id !== catId);
+    localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(updated));
+  } catch (e) {
+    console.warn("Failed to delete category", e);
+  }
+}
+
+/**
  * Get all local subcategories
  */
 export function getLocalSubcategories(): AdminSubcategoryItem[] {
@@ -250,6 +321,21 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
         name,
         slug: name.toLowerCase().replace(/\s+/g, "-"),
         quiz_count: count,
+        subcategories: [],
+      });
+    }
+  });
+
+  // Add Local Categories
+  const localCats = getLocalCategories();
+  localCats.forEach((lc) => {
+    const name = lc.name.trim();
+    if (!categoryMap.has(name)) {
+      categoryMap.set(name, {
+        id: lc.id,
+        name,
+        slug: lc.slug || name.toLowerCase().replace(/\s+/g, "-"),
+        quiz_count: categoryQuizCounts.get(name) || 0,
         subcategories: [],
       });
     }

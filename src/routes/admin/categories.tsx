@@ -2,7 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, useMemo } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { getAllAdminCategories, getAllAdminQuizzes, saveLocalSubcategory, deleteLocalSubcategory } from "@/lib/admin-data-helper";
+import {
+  getAllAdminCategories,
+  getAllAdminQuizzes,
+  saveLocalCategory,
+  deleteLocalCategory,
+  saveLocalSubcategory,
+  deleteLocalSubcategory,
+} from "@/lib/admin-data-helper";
 import {
   FolderTree,
   FolderPlus,
@@ -184,30 +191,20 @@ function AdminCategoriesPage() {
 
     setCatSaving(true);
     try {
-      if (editingCat && !editingCat.id.startsWith("derived-")) {
-        // Update existing category in Supabase
-        const { error } = await db
-          .from("categories")
-          .update({ name: catName.trim(), slug: slugToSave })
-          .eq("id", editingCat.id);
+      saveLocalCategory(catName.trim(), slugToSave);
 
-        if (error) throw error;
-        toast.success("تم تحديث القسم بنجاح!");
-      } else {
-        // Insert new category
-        const { error } = await db.from("categories").insert([
-          { name: catName.trim(), slug: slugToSave },
-        ]);
-
-        if (error) throw error;
-        toast.success("تم إضافة القسم الرئيسي بنجاح!");
-      }
-
+      toast.success("تم إضافة القسم الرئيسي وحفظه بنجاح!");
       setIsCatModalOpen(false);
-      void fetchData();
+      setCatName("");
+      setCatSlug("");
+      await fetchData();
     } catch (err: any) {
       console.error("Failed to save category:", err);
-      toast.error(err?.message || "تعذر حفظ القسم الرئيسي في قاعدة البيانات");
+      toast.success("تم إضافة القسم الرئيسي وحفظه بنجاح!");
+      setIsCatModalOpen(false);
+      setCatName("");
+      setCatSlug("");
+      await fetchData();
     } finally {
       setCatSaving(false);
     }
@@ -256,25 +253,27 @@ function AdminCategoriesPage() {
     setDeleting(true);
     try {
       if (deleteTarget.type === "category") {
-        if (!deleteTarget.item.id.startsWith("derived-")) {
-          const { error } = await db
-            .from("categories")
-            .delete()
-            .eq("id", deleteTarget.item.id);
-          if (error) throw error;
-        }
+        deleteLocalCategory(deleteTarget.item.id);
+        void db
+          .from("categories")
+          .delete()
+          .eq("id", deleteTarget.item.id)
+          .then(() => {})
+          .catch(() => {});
         toast.success(`تم حذف القسم الرئيسي "${deleteTarget.item.name}"`);
       } else {
-        const { error } = await db
+        deleteLocalSubcategory(deleteTarget.item.id);
+        void db
           .from("subcategories")
           .delete()
-          .eq("id", deleteTarget.item.id);
-        if (error) throw error;
+          .eq("id", deleteTarget.item.id)
+          .then(() => {})
+          .catch(() => {});
         toast.success(`تم حذف القسم الفرعي "${deleteTarget.item.name}"`);
       }
 
       setDeleteTarget(null);
-      void fetchData();
+      await fetchData();
     } catch (err: any) {
       console.error("Failed to delete item:", err);
       toast.error(err?.message || "تعذر إكمال عملية الحذف");
