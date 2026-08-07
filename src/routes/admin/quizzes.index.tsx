@@ -119,53 +119,28 @@ export function AdminQuizzesPage() {
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
-      const [cats, { data, error }] = await Promise.all([
+      const [cats, adminQuizzes] = await Promise.all([
         getAllAdminCategories(),
-        (supabase.from("quizzes") as any)
-          .select("*, questions(*)")
-          .order("created_at", { ascending: false }),
+        getAllAdminQuizzes(),
       ]);
 
       setAllCategories(cats);
 
-      if (error) {
-        console.error("Error fetching quizzes:", error);
-      }
-
-      let dbQuizzes: AdminQuiz[] = [];
-      if (data && data.length > 0) {
-        dbQuizzes = data.map((q: any) => ({
-          id: q.id,
-          title: q.title || "بدون عنوان",
-          user_id: q.user_id || "system",
-          created_at: q.created_at || new Date().toISOString(),
-          is_public: q.is_public ?? true,
-          category: q.category || "عام",
-          subcategory: q.subcategory || q.questions?.[0]?.subcategory || null,
-          language: q.language || "ar",
-          quiz_difficulty: q.quiz_difficulty || "standard",
-          question_count: Array.isArray(q.questions) ? q.questions.length : 0,
-          questions: q.questions || [],
-        }));
-      }
-
-      // Merge with static library quizzes for completeness if needed
-      const dbIds = new Set(dbQuizzes.map((q) => q.id));
-      const libraryQuizzes: AdminQuiz[] = QUIZ_LIBRARY.filter((q) => !dbIds.has(q.id)).map((q) => ({
+      const formatted: AdminQuiz[] = adminQuizzes.map((q) => ({
         id: q.id,
-        title: q.title,
-        user_id: q.user_id,
-        created_at: q.created_at,
+        title: q.title || "بدون عنوان",
+        user_id: q.user_id || "system",
+        created_at: q.created_at || new Date().toISOString(),
         is_public: q.is_public ?? true,
         category: q.category || "عام",
-        subcategory: q.questions?.[0]?.subcategory || null,
+        subcategory: q.subcategory || null,
         language: q.language || "ar",
         quiz_difficulty: q.quiz_difficulty || "standard",
-        question_count: q.questions?.length || 0,
+        question_count: q.question_count,
         questions: q.questions || [],
       }));
 
-      setQuizzes([...dbQuizzes, ...libraryQuizzes]);
+      setQuizzes(formatted);
     } catch (err) {
       toast.error("حدث خطأ أثناء تحميل الكويزات");
       console.error(err);
