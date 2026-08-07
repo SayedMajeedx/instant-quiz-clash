@@ -243,18 +243,25 @@ function CategoryDetailPage() {
 
           {/* Sort dropdown (separate from filters) */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">↕️ ترتيب حسب:</span>
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="rounded-2xl border border-border bg-background/60 px-3 py-2.5 text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
-            >
-              <option value="newest">الأحدث أولاً</option>
-              <option value="easiest">من الأسهل للأصعب</option>
-              <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
-              <option value="alpha">أبجدياً</option>
-            </select>
+            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">ترتيب حسب:</span>
+            <div className="relative">
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="w-full appearance-none rounded-2xl border border-border bg-background/60 py-2.5 pr-4 pl-9 text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+              >
+                <option value="newest">الأحدث أولاً</option>
+                <option value="popular">الأكثر لعباً</option>
+                <option value="easiest">من الأسهل للأصعب</option>
+                <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
+                <option value="alpha">أبجدياً</option>
+              </select>
+              <span className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-xs text-muted-foreground">
+                ▼
+              </span>
+            </div>
           </div>
+
         </div>
 
         {/* Collapsible Scoped Filter Bar */}
