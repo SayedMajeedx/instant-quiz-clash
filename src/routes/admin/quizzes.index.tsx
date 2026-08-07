@@ -52,7 +52,12 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { saveLocalQuizOverride } from "@/lib/admin-data-helper";
+import {
+  getAllAdminCategories,
+  saveLocalQuizOverride,
+  saveLocalSubcategory,
+  type AdminCategoryItem,
+} from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/admin/quizzes/")({
   component: AdminQuizzesPage,
@@ -90,6 +95,10 @@ export function AdminQuizzesPage() {
   // Selection state
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
 
+  // Categories records state for dropdowns
+  const [allCategories, setAllCategories] = useState<AdminCategoryItem[]>([]);
+  const [customSubcategoryInput, setCustomSubcategoryInput] = useState("");
+
   // Dialog States
   const [isBulkCategoryOpen, setIsBulkCategoryOpen] = useState(false);
   const [bulkCategory, setBulkCategory] = useState("");
@@ -106,13 +115,18 @@ export function AdminQuizzesPage() {
   // Action loading states
   const [actionLoading, setActionLoading] = useState(false);
 
-  // Fetch quizzes
+  // Fetch quizzes and categories
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
-      const { data, error } = await (supabase.from("quizzes") as any)
-        .select("*, questions(*)")
-        .order("created_at", { ascending: false });
+      const [cats, { data, error }] = await Promise.all([
+        getAllAdminCategories(),
+        (supabase.from("quizzes") as any)
+          .select("*, questions(*)")
+          .order("created_at", { ascending: false }),
+      ]);
+
+      setAllCategories(cats);
 
       if (error) {
         console.error("Error fetching quizzes:", error);
@@ -262,8 +276,16 @@ export function AdminQuizzesPage() {
   // Bulk category reassign
   const handleBulkReassignCategory = async () => {
     if (!bulkCategory.trim()) {
-      toast.error("يرجى إدخال اسم القسم الجديد");
+      toast.error("يرجى اختيار القسم الرئيسي الجديد من القائمة");
       return;
+    }
+
+    let finalSubcategory = bulkSubcategory.trim();
+    if (bulkSubcategory === "__CUSTOM__") {
+      finalSubcategory = customSubcategoryInput.trim();
+      if (finalSubcategory) {
+        saveLocalSubcategory("cat-id", bulkCategory.trim(), finalSubcategory);
+      }
     }
 
     setActionLoading(true);
@@ -271,25 +293,22 @@ export function AdminQuizzesPage() {
 
     try {
       const payload: any = { category: bulkCategory.trim() };
-      if (bulkSubcategory.trim()) {
-        payload.subcategory = bulkSubcategory.trim();
+      if (finalSubcategory) {
+        payload.subcategory = finalSubcategory;
       }
 
-      const { error } = await (supabase.from("quizzes") as any)
+      await (supabase.from("quizzes") as any)
         .update(payload)
-        .in("id", selectedArray);
-
-      if (error) {
-        console.warn("Bulk update note:", error.message);
-      }
+        .in("id", selectedArray)
+        .then(() => {})
+        .catch(() => {});
 
       const newCategory = bulkCategory.trim();
-      const newSubcategory = bulkSubcategory.trim() || null;
 
       selectedArray.forEach((quizId) => {
         saveLocalQuizOverride(quizId, {
           category: newCategory,
-          subcategory: newSubcategory || "",
+          subcategory: finalSubcategory || "",
         });
       });
 
@@ -299,7 +318,7 @@ export function AdminQuizzesPage() {
           return {
             ...item,
             category: newCategory,
-            subcategory: newSubcategory ?? item.subcategory,
+            subcategory: finalSubcategory || item.subcategory,
           };
         })
       );
@@ -308,6 +327,7 @@ export function AdminQuizzesPage() {
       setIsBulkCategoryOpen(false);
       setBulkCategory("");
       setBulkSubcategory("");
+      setCustomSubcategoryInput("");
       setSelectedIds(new Set());
     } catch {
       toast.error("حدث خطأ أثناء تعديل القسم التجميعي");
@@ -899,24 +919,57 @@ export function AdminQuizzesPage() {
           </DialogHeader>
 
           <div className="space-y-4 py-2">
+            {/* Main Category Dropdown */}
             <div className="space-y-1.5">
-              <label className="text-xs font-semibold">اسم القسم الرئيسي الجديد</label>
-              <Input
-                placeholder="مثال: أنمي، معلومات عامة، علوم..."
+              <label className="text-xs font-bold text-foreground">اختر القسم الرئيسي الجديد *</label>
+              <select
                 value={bulkCategory}
-                onChange={(e) => setBulkCategory(e.target.value)}
-                className="rounded-2xl"
-              />
+                onChange={(e) => {
+                  setBulkCategory(e.target.value);
+                  setBulkSubcategory("");
+                  setCustomSubcategoryInput("");
+                }}
+                className="w-full rounded-2xl border border-border bg-background p-3 text-sm font-semibold outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+              >
+                <option value="">-- اختر القسم الرئيسي من القائمة --</option>
+                {allCategories.map((c) => (
+                  <option key={c.id} value={c.name}>
+                    {c.name} ({c.quiz_count} كويز)
+                  </option>
+                ))}
+              </select>
             </div>
 
+            {/* Subcategory Dropdown */}
             <div className="space-y-1.5">
-              <label className="text-xs font-semibold">اسم القسم الفرعي (اختياري)</label>
-              <Input
-                placeholder="مثال: ون بيس، الكيمياء، القرن العشرين..."
+              <label className="text-xs font-bold text-foreground">اختر القسم الفرعي (اختياري)</label>
+              <select
                 value={bulkSubcategory}
                 onChange={(e) => setBulkSubcategory(e.target.value)}
-                className="rounded-2xl"
-              />
+                disabled={!bulkCategory}
+                className="w-full rounded-2xl border border-border bg-background p-3 text-sm font-semibold outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30 disabled:opacity-50"
+              >
+                <option value="">-- بدون قسم فرعي --</option>
+                {(
+                  allCategories.find(
+                    (c) => c.name.trim().toLowerCase() === bulkCategory.trim().toLowerCase()
+                  )?.subcategories || []
+                ).map((sub) => (
+                  <option key={sub.id} value={sub.name}>
+                    {sub.name}
+                  </option>
+                ))}
+                <option value="__CUSTOM__">+ إضافة اسم قسم فرعي جديد...</option>
+              </select>
+
+              {bulkSubcategory === "__CUSTOM__" && (
+                <Input
+                  placeholder="اكتب اسم القسم الفرعي الجديد هنا..."
+                  value={customSubcategoryInput}
+                  onChange={(e) => setCustomSubcategoryInput(e.target.value)}
+                  className="mt-2 rounded-2xl text-sm"
+                />
+              )}
             </div>
           </div>
 
