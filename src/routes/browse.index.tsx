@@ -329,13 +329,20 @@ function BrowseLandingPage() {
 
                       {/* Subcategories Badges */}
                       {cat.subcategories && cat.subcategories.length > 0 && (
-                        <div className="mt-4 pt-3 border-t border-border/40 flex flex-wrap gap-1.5">
+                        <div className="mt-4 pt-3.5 border-t border-border/40 flex flex-wrap items-center gap-2">
+                          <span className="text-[11px] font-extrabold text-muted-foreground flex items-center gap-1">
+                            <span>✨</span>
+                            <span>الأقسام الفرعية:</span>
+                          </span>
                           {cat.subcategories.map((sub) => (
                             <span
                               key={sub.id}
-                              className="rounded-xl border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary"
+                              className="inline-flex items-center gap-1.5 rounded-2xl border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-bold text-primary shadow-sm transition-all group-hover:bg-primary/20 group-hover:border-primary/50"
                             >
-                              {sub.name} ({sub.quiz_count})
+                              <span>{sub.name}</span>
+                              <span className="rounded-full bg-primary/20 px-1.5 py-0.5 text-[10px] font-black text-primary-foreground">
+                                {sub.quiz_count}
+                              </span>
                             </span>
                           ))}
                         </div>

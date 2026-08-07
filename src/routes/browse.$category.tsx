@@ -72,53 +72,43 @@ function CategoryDetailPage() {
     void (async () => {
       setLoading(true);
       try {
-        const [adminCats, { data, error }] = await Promise.all([
+        const [adminCats, adminQuizzes] = await Promise.all([
           getAllAdminCategories(),
-          (supabase.from("quizzes") as any)
-            .select("*, questions(id)")
-            .eq("is_public", true)
-            .order("created_at", { ascending: false }),
+          getAllAdminQuizzes(),
         ]);
 
         // Find subcategories for this category
-        const foundCat = adminCats.find((c) => c.name.trim().toLowerCase() === category.toLowerCase());
+        const foundCat = adminCats.find(
+          (c) => c.name.trim().toLowerCase() === category.trim().toLowerCase()
+        );
         if (foundCat && foundCat.subcategories) {
           setSubcategories(foundCat.subcategories);
         }
 
-        let allQuizzes = STATIC_QUIZZES;
-
-        if (!error && data && data.length > 0) {
-          const dbFormatted: PublicQuiz[] = data.map((q: any) => ({
+        // Format public quizzes with overrides
+        const publicQuizzes: PublicQuiz[] = adminQuizzes
+          .filter((q) => q.is_public)
+          .map((q) => ({
             id: q.id,
             title: q.title,
-            user_id: q.user_id ?? "system",
+            user_id: q.user_id || "system",
             created_at: q.created_at,
-            is_public: q.is_public ?? true,
+            is_public: true,
             category: q.category,
             subcategory: q.subcategory || "",
-            language: q.language,
+            language: q.language || "ar",
             quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
-            question_count: Array.isArray(q.questions) ? q.questions.length : 0,
+            question_count: q.question_count,
           }));
 
-          const dbIds = new Set(dbFormatted.map((q) => q.id));
-          const restStatic = STATIC_QUIZZES.filter((q) => !dbIds.has(q.id));
-          allQuizzes = [...dbFormatted, ...restStatic];
-        }
-
         // Filter strictly for this category
-        const categoryQuizzes = allQuizzes.filter(
-          (q) => (q.category || "").trim().toLowerCase() === category.toLowerCase()
+        const categoryQuizzes = publicQuizzes.filter(
+          (q) => (q.category || "").trim().toLowerCase() === category.trim().toLowerCase()
         );
 
         setQuizzes(categoryQuizzes);
-      } catch {
-        // Fallback to static
-        const categoryQuizzes = STATIC_QUIZZES.filter(
-          (q) => (q.category || "").trim().toLowerCase() === category.toLowerCase()
-        );
-        setQuizzes(categoryQuizzes);
+      } catch (err) {
+        console.error("Error loading category quizzes:", err);
       } finally {
         setLoading(false);
       }
@@ -158,8 +148,9 @@ function CategoryDetailPage() {
 
     const list = quizzes.filter((q) => {
       if (selectedSubcategory !== "all") {
-        const sub = ((q as any).subcategory || "").trim();
-        if (sub !== selectedSubcategory.trim()) return false;
+        const subNorm = norm((q as any).subcategory || "");
+        const targetNorm = norm(selectedSubcategory);
+        if (subNorm !== targetNorm) return false;
       }
       if (selectedDiff !== "all") {
         const diffInfo = getDifficultyDetails(q);
@@ -238,42 +229,75 @@ function CategoryDetailPage() {
           </div>
         </div>
 
-        {/* Subcategories Filter Bar */}
+        {/* Subcategories Filter Bar - State of the Art Design */}
         {subcategories.length > 0 && (
-          <div className="mt-4 flex flex-wrap items-center gap-2 rounded-2xl border border-border/80 bg-surface-gradient p-3 shadow-sm">
-            <span className="text-xs font-bold text-muted-foreground ml-2">الأقسام الفرعية:</span>
-            <button
-              type="button"
-              onClick={() => setSelectedSubcategory("all")}
-              className={cn(
-                "rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer",
-                selectedSubcategory === "all"
-                  ? "bg-primary text-primary-foreground shadow-sm"
-                  : "bg-background/60 text-muted-foreground hover:bg-muted hover:text-foreground"
-              )}
-            >
-              الكل ({quizzes.length})
-            </button>
-
-            {subcategories.map((sub) => {
-              const count = quizzes.filter((q) => ((q as any).subcategory || "").trim() === sub.name.trim()).length;
-              return (
+          <div className="mt-5 rounded-3xl border border-primary/20 bg-card/40 p-4 backdrop-blur-md shadow-md space-y-2">
+            <div className="flex items-center justify-between px-1">
+              <span className="text-xs font-extrabold text-foreground flex items-center gap-1.5">
+                <span className="inline-block size-2 rounded-full bg-primary animate-pulse" />
+                <span>التصنيفات الفرعية لقسم {category}:</span>
+              </span>
+              {selectedSubcategory !== "all" && (
                 <button
-                  key={sub.id}
                   type="button"
-                  onClick={() => setSelectedSubcategory(sub.name)}
-                  className={cn(
-                    "rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer",
-                    selectedSubcategory === sub.name
-                      ? "bg-primary text-primary-foreground shadow-sm"
-                      : "bg-background/60 text-muted-foreground hover:bg-muted hover:text-foreground"
-                  )}
+                  onClick={() => setSelectedSubcategory("all")}
+                  className="text-xs text-primary hover:underline font-semibold"
                 >
-                  <span>{sub.name}</span>
-                  <span className="text-[10px] opacity-75">({count})</span>
+                  عرض جميع الكويزات ↺
                 </button>
-              );
-            })}
+              )}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <button
+                type="button"
+                onClick={() => setSelectedSubcategory("all")}
+                className={cn(
+                  "press rounded-2xl px-4 py-2 text-xs font-bold transition-all flex items-center gap-2 cursor-pointer border",
+                  selectedSubcategory === "all"
+                    ? "bg-gradient-hero text-primary-foreground border-primary/50 shadow-glow"
+                    : "bg-background/80 text-muted-foreground border-border/80 hover:border-primary/40 hover:text-foreground"
+                )}
+              >
+                <span>الكل</span>
+                <span className={cn(
+                  "rounded-full px-2 py-0.5 text-[10px] font-extrabold",
+                  selectedSubcategory === "all" ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"
+                )}>
+                  {quizzes.length}
+                </span>
+              </button>
+
+              {subcategories.map((sub) => {
+                const count = quizzes.filter(
+                  (q) => ((q as any).subcategory || "").trim().toLowerCase() === sub.name.trim().toLowerCase()
+                ).length;
+
+                const isSelected = selectedSubcategory.trim().toLowerCase() === sub.name.trim().toLowerCase();
+
+                return (
+                  <button
+                    key={sub.id}
+                    type="button"
+                    onClick={() => setSelectedSubcategory(sub.name)}
+                    className={cn(
+                      "press rounded-2xl px-4 py-2 text-xs font-bold transition-all flex items-center gap-2 cursor-pointer border",
+                      isSelected
+                        ? "bg-gradient-hero text-primary-foreground border-primary/50 shadow-glow scale-[1.02]"
+                        : "bg-background/80 text-muted-foreground border-border/80 hover:border-primary/40 hover:text-foreground"
+                    )}
+                  >
+                    <span>✨ {sub.name}</span>
+                    <span className={cn(
+                      "rounded-full px-2 py-0.5 text-[10px] font-extrabold",
+                      isSelected ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"
+                    )}>
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
 
