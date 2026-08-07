@@ -10,6 +10,7 @@ import {
   getCategoryIcon,
   getDifficultyDetails,
 } from "@/lib/browse-helpers";
+import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { cloneQuiz } from "@/lib/clone-quiz";
 import {
