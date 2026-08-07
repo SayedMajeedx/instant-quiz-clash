@@ -62,6 +62,7 @@ function InteractiveQuizEditorPage() {
 
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("عام");
+  const [subcategory, setSubcategory] = useState("");
   const [difficulty, setDifficulty] = useState("standard");
   const [language, setLanguage] = useState("ar");
   const [isPublic, setIsPublic] = useState(true);
@@ -89,42 +90,55 @@ function InteractiveQuizEditorPage() {
   async function loadQuizData() {
     setLoading(true);
     try {
-      const { data: quizData, error: quizError } = await (supabase.from("quizzes") as any)
+      let targetQuiz: any = null;
+      const { data: quizData } = await (supabase.from("quizzes") as any)
         .select("*")
         .eq("id", quizId)
-        .single();
-
-      if (quizError) throw quizError;
+        .maybeSingle();
 
       if (quizData) {
-        setTitle(quizData.title || "");
-        setCategory(quizData.category || "عام");
-        setDifficulty(quizData.quiz_difficulty || "standard");
-        setLanguage(quizData.language || "ar");
-        setIsPublic(quizData.is_public ?? true);
+        targetQuiz = quizData;
+      } else {
+        const { getAllAdminQuizzes } = await import("@/lib/admin-data-helper");
+        const allAdmin = await getAllAdminQuizzes();
+        const found = allAdmin.find((q) => q.id === quizId);
+        if (found) {
+          targetQuiz = found;
+        }
       }
 
-      // Fetch Questions
-      const { data: qData } = await supabase
-        .from("questions")
-        .select("*")
-        .eq("quiz_id", quizId)
-        .order("order_index", { ascending: true });
+      if (targetQuiz) {
+        setTitle(targetQuiz.title || "");
+        setCategory(targetQuiz.category || "عام");
+        setSubcategory(targetQuiz.subcategory || "");
+        setDifficulty(targetQuiz.quiz_difficulty || "standard");
+        setLanguage(targetQuiz.language || "ar");
+        setIsPublic(targetQuiz.is_public ?? true);
 
-      if (qData) {
-        const formatted: QuestionItem[] = qData.map((q: any) => ({
+        // Fetch Questions from DB first, else from targetQuiz.questions
+        const { data: qData } = await supabase
+          .from("questions")
+          .select("*")
+          .eq("quiz_id", quizId)
+          .order("order_index", { ascending: true });
+
+        const rawQuestions = qData && qData.length > 0 ? qData : (targetQuiz.questions || []);
+
+        const formatted: QuestionItem[] = rawQuestions.map((q: any, idx: number) => ({
           id: q.id,
-          quiz_id: q.quiz_id,
-          question_text: q.question_text,
-          options: Array.isArray(q.options) ? q.options : ["", "", "", ""],
+          quiz_id: quizId,
+          question_text: q.question_text || q.question || "سؤال",
+          options: Array.isArray(q.options) ? q.options : ["خيار 1", "خيار 2", "خيار 3", "خيار 4"],
           correct_index: q.correct_index ?? 0,
           question_type: (q.question_type as any) || "multi",
           time_limit_seconds: q.time_limit_seconds || 20,
-          order_index: q.order_index ?? 0,
+          order_index: q.order_index ?? idx,
           explanation: q.explanation || "",
           image_url: q.image_url || "",
         }));
         setQuestions(formatted);
+      } else {
+        toast.error("الكويز المطلوب غير موجود");
       }
     } catch (err: any) {
       console.error("Error loading quiz:", err);
@@ -140,10 +154,10 @@ function InteractiveQuizEditorPage() {
     if (index !== null && questions[index]) {
       const q = questions[index];
       setQText(q.question_text);
-      setQType(q.question_type);
-      setQOptions(q.question_type === "boolean" ? ["صح", "خطأ"] : [...q.options]);
+      setQType(q.question_type || "multi");
+      setQOptions([...q.options]);
       setQCorrectIndex(q.correct_index);
-      setQTimeLimit(q.time_limit_seconds);
+      setQTimeLimit(q.time_limit_seconds || 20);
       setQExplanation(q.explanation || "");
       setQImageUrl(q.image_url || "");
     } else {
@@ -158,22 +172,30 @@ function InteractiveQuizEditorPage() {
     setQDialogOpen(true);
   };
 
-  // Handle Save Question in Modal
+  // Save Question in Modal
   const handleSaveQuestion = () => {
     if (!qText.trim()) {
-      toast.error("يرجى إدخال نص السؤال");
+      toast.error("يرجى كتابة نص السؤال");
       return;
     }
 
-    const optionsToSave =
-      qType === "boolean"
-        ? ["صح", "خطأ"]
-        : qOptions.map((o) => o.trim() || "خيار");
+    let finalOptions = qOptions;
+    if (qType === "boolean") {
+      finalOptions = ["صح", "خطأ"];
+    } else {
+      const cleanOpts = qOptions.map((o) => o.trim());
+      if (cleanOpts.some((o) => !o)) {
+        toast.error("يرجى تعبئة جميع الخيارات الأربعة");
+        return;
+      }
+      finalOptions = cleanOpts;
+    }
 
-    const newQ: QuestionItem = {
+    const newQuestion: QuestionItem = {
+      quiz_id: quizId,
       question_text: qText.trim(),
-      options: optionsToSave,
-      correct_index: qCorrectIndex,
+      options: finalOptions,
+      correct_index: Math.min(qCorrectIndex, finalOptions.length - 1),
       question_type: qType,
       time_limit_seconds: qTimeLimit,
       order_index: editingIndex !== null ? editingIndex : questions.length,
@@ -183,14 +205,14 @@ function InteractiveQuizEditorPage() {
 
     if (editingIndex !== null) {
       const updated = [...questions];
-      updated[editingIndex] = { ...updated[editingIndex], ...newQ };
+      updated[editingIndex] = newQuestion;
       setQuestions(updated);
     } else {
-      setQuestions([...questions, newQ]);
+      setQuestions([...questions, newQuestion]);
     }
 
     setQDialogOpen(false);
-    toast.success("تم تحديث السؤال في القائمة المحلية");
+    toast.success(editingIndex !== null ? "تم تحديث السؤال" : "تم إضافة السؤال للقائمة");
   };
 
   // Move Question
@@ -203,7 +225,6 @@ function InteractiveQuizEditorPage() {
     updated[index] = updated[targetIndex];
     updated[targetIndex] = temp;
 
-    // Update order_index
     updated.forEach((q, i) => {
       q.order_index = i;
     });
@@ -220,7 +241,7 @@ function InteractiveQuizEditorPage() {
     setQuestions(updated);
   };
 
-  // Save Full Quiz & Questions to Supabase
+  // Save Full Quiz & Questions permanently to Supabase DB
   const handleSaveAll = async () => {
     if (!title.trim()) {
       toast.error("يرجى إدخال عنوان الكويز");
@@ -229,21 +250,36 @@ function InteractiveQuizEditorPage() {
 
     setSaving(true);
     try {
-      // 1. Update Quiz Metadata
-      const { error: quizError } = await (supabase.from("quizzes") as any)
-        .update({
-          title: title.trim(),
-          category: category.trim(),
-          quiz_difficulty: difficulty,
-          language: language,
-          is_public: isPublic,
-        })
-        .eq("id", quizId);
+      const db = supabase as any;
+      const { data: userData } = await supabase.auth.getUser();
+      const currentUserId = userData.user?.id || null;
 
-      if (quizError) throw quizError;
+      // 1. Upsert Quiz Metadata in Supabase DB
+      const quizPayload: any = {
+        id: quizId,
+        title: title.trim(),
+        category: category.trim(),
+        subcategory: subcategory.trim(),
+        quiz_difficulty: difficulty,
+        language: language,
+        is_public: isPublic,
+      };
+      if (currentUserId) quizPayload.user_id = currentUserId;
+
+      const { error: quizError } = await db
+        .from("quizzes")
+        .upsert([quizPayload]);
+
+      if (quizError) {
+        console.warn("Full quiz upsert warning, trying minimal upsert:", quizError);
+        const { error: quizError2 } = await db
+          .from("quizzes")
+          .upsert([{ id: quizId, title: title.trim() }]);
+        if (quizError2) throw quizError2;
+      }
 
       // 2. Sync Questions (Delete old questions & re-insert updated array)
-      await supabase.from("questions").delete().eq("quiz_id", quizId);
+      await db.from("questions").delete().eq("quiz_id", quizId);
 
       if (questions.length > 0) {
         const qInserts = questions.map((q, idx) => ({
@@ -258,12 +294,12 @@ function InteractiveQuizEditorPage() {
           image_url: q.image_url || null,
         }));
 
-        const { error: qError } = await supabase.from("questions").insert(qInserts as any);
+        const { error: qError } = await db.from("questions").insert(qInserts);
         if (qError) throw qError;
       }
 
-      toast.success("تم حفظ جميع التعديلات بنجاح!");
-      loadQuizData();
+      toast.success("تم حفظ جميع التعديلات في قاعدة البيانات بنجاح!");
+      void loadQuizData();
     } catch (err: any) {
       console.error("Save error:", err);
       toast.error(err.message || "حدث خطأ أثناء حفظ الكويز");

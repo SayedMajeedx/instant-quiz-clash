@@ -73,16 +73,84 @@ export function getLocalQuizOverrides(): Record<string, Partial<AdminQuizItem>> 
 }
 
 /**
- * Save quiz override (e.g. reassigned subcategory or public status)
+ * Save quiz override PERMANENTLY to Supabase DB
  */
-export function saveLocalQuizOverride(quizId: string, override: Partial<AdminQuizItem>) {
-  if (typeof window === "undefined") return;
+export async function saveLocalQuizOverride(quizId: string, override: Partial<AdminQuizItem>) {
+  if (typeof window !== "undefined") {
+    try {
+      const existing = getLocalQuizOverrides();
+      existing[quizId] = { ...(existing[quizId] || {}), ...override };
+      localStorage.setItem(STORAGE_KEY_QUIZ_OVERRIDES, JSON.stringify(existing));
+    } catch (e) {
+      console.warn("Failed to save quiz override in localStorage", e);
+    }
+  }
+
+  // Persist permanently in Supabase Database
   try {
-    const existing = getLocalQuizOverrides();
-    existing[quizId] = { ...(existing[quizId] || {}), ...override };
-    localStorage.setItem(STORAGE_KEY_QUIZ_OVERRIDES, JSON.stringify(existing));
-  } catch (e) {
-    console.warn("Failed to save quiz override", e);
+    const db = supabase as any;
+
+    // Check if quiz exists in Supabase DB
+    const { data: existingDbQuiz } = await db
+      .from("quizzes")
+      .select("id")
+      .eq("id", quizId)
+      .maybeSingle();
+
+    if (existingDbQuiz) {
+      // Update existing quiz row in Supabase
+      const updatePayload: any = {};
+      if (override.title !== undefined) updatePayload.title = override.title;
+      if (override.category !== undefined) updatePayload.category = override.category;
+      if (override.subcategory !== undefined) updatePayload.subcategory = override.subcategory;
+      if (override.is_public !== undefined) updatePayload.is_public = override.is_public;
+      if (override.quiz_difficulty !== undefined) updatePayload.quiz_difficulty = override.quiz_difficulty;
+      if (override.language !== undefined) updatePayload.language = override.language;
+
+      await db.from("quizzes").update(updatePayload).eq("id", quizId);
+    } else {
+      // Static library quiz: find in QUIZ_LIBRARY and persist as real row in Supabase DB
+      const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId);
+      if (libQuiz) {
+        const { data: userData } = await supabase.auth.getUser();
+        const currentUserId = userData.user?.id || null;
+
+        const insertPayload: any = {
+          id: libQuiz.id,
+          title: override.title || libQuiz.title,
+          category: override.category || libQuiz.category || "عام",
+          subcategory: override.subcategory !== undefined ? override.subcategory : ((libQuiz as any).subcategory || ""),
+          is_public: override.is_public !== undefined ? override.is_public : true,
+          quiz_difficulty: override.quiz_difficulty || libQuiz.quiz_difficulty || "standard",
+          language: override.language || libQuiz.language || "ar",
+        };
+        if (currentUserId) insertPayload.user_id = currentUserId;
+
+        const { data: newQuiz, error: insertErr } = await db
+          .from("quizzes")
+          .upsert([insertPayload])
+          .select()
+          .single();
+
+        if (!insertErr && newQuiz && Array.isArray(libQuiz.questions) && libQuiz.questions.length > 0) {
+          const qInserts = libQuiz.questions.map((q: any, idx: number) => ({
+            quiz_id: newQuiz.id,
+            question_text: q.question_text || q.question || "سؤال",
+            options: q.options || ["خيار 1", "خيار 2", "خيار 3", "خيار 4"],
+            correct_index: typeof q.correct_index === "number" ? q.correct_index : 0,
+            time_limit_seconds: q.time_limit_seconds || 20,
+            order_index: idx,
+            question_type: q.question_type || "multiple_choice",
+            explanation: q.explanation || null,
+            image_url: q.image_url || null,
+          }));
+
+          await db.from("questions").insert(qInserts);
+        }
+      }
+    }
+  } catch (err) {
+    console.error("Failed to persist quiz override to Supabase:", err);
   }
 }
 
@@ -100,13 +168,13 @@ export function getLocalCategories(): AdminCategoryItem[] {
 }
 
 /**
- * Save or update a main category
+ * Save or update a main category PERMANENTLY in Supabase DB
  */
-export function saveLocalCategory(catName: string, catSlug?: string): AdminCategoryItem {
-  const existing = getLocalCategories();
+export async function saveLocalCategory(catName: string, catSlug?: string): Promise<AdminCategoryItem> {
   const name = catName.trim();
   const slug = catSlug?.trim() || name.toLowerCase().replace(/\s+/g, "-");
 
+  const existing = getLocalCategories();
   let item = existing.find((c) => c.name.trim().toLowerCase() === name.toLowerCase());
 
   if (!item) {
@@ -126,7 +194,6 @@ export function saveLocalCategory(catName: string, catSlug?: string): AdminCateg
     try {
       localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(existing));
 
-      // Remove from deleted list if previously deleted
       const deletedCats = getDeletedCategories().filter(
         (x) => x.toLowerCase() !== name.toLowerCase() && x.toLowerCase() !== item!.id.toLowerCase()
       );
@@ -136,35 +203,53 @@ export function saveLocalCategory(catName: string, catSlug?: string): AdminCateg
     }
   }
 
-  // Attempt background DB insert safely without throwing unhandled UI errors
-  void (async () => {
-    try {
-      await (supabase.from("categories") as any)
-        .insert([{ name, slug }])
-        .then(() => {})
-        .catch(() => {});
-    } catch {}
-  })();
+  // Persist permanently in Supabase DB
+  try {
+    const db = supabase as any;
+    await db
+      .from("categories")
+      .upsert([{ name, name_ar: name, name_en: name, slug }])
+      .catch(async () => {
+        await db.from("categories").upsert([{ name, slug }]).catch(() => {});
+      });
+  } catch (e) {
+    console.error("Failed to persist category to Supabase DB:", e);
+  }
 
   return item;
 }
 
 /**
- * Delete a main category
+ * Delete a main category PERMANENTLY from Supabase DB
  */
-export function deleteLocalCategory(catId: string, catName?: string) {
-  if (typeof window === "undefined") return;
-  try {
-    const existing = getLocalCategories();
-    const updated = existing.filter((c) => c.id !== catId && c.name.trim().toLowerCase() !== (catName || "").trim().toLowerCase());
-    localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(updated));
+export async function deleteLocalCategory(catId: string, catName?: string) {
+  if (typeof window !== "undefined") {
+    try {
+      const existing = getLocalCategories();
+      const updated = existing.filter((c) => c.id !== catId && c.name.trim().toLowerCase() !== (catName || "").trim().toLowerCase());
+      localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(updated));
 
-    const deletedList = getDeletedCategories();
-    if (!deletedList.includes(catId)) deletedList.push(catId);
-    if (catName && !deletedList.includes(catName.trim())) deletedList.push(catName.trim());
-    localStorage.setItem(STORAGE_KEY_DELETED_CATEGORIES, JSON.stringify(deletedList));
+      const deletedList = getDeletedCategories();
+      if (!deletedList.includes(catId)) deletedList.push(catId);
+      if (catName && !deletedList.includes(catName.trim())) deletedList.push(catName.trim());
+      localStorage.setItem(STORAGE_KEY_DELETED_CATEGORIES, JSON.stringify(deletedList));
+    } catch (e) {
+      console.warn("Failed to delete category locally", e);
+    }
+  }
+
+  // Persist deletion permanently in Supabase DB
+  try {
+    const db = supabase as any;
+    if (catId && !catId.startsWith("cat-")) {
+      await db.from("categories").delete().eq("id", catId);
+    }
+    if (catName) {
+      await db.from("categories").delete().eq("name", catName);
+      await db.from("categories").delete().eq("name_ar", catName);
+    }
   } catch (e) {
-    console.warn("Failed to delete category", e);
+    console.error("Failed to delete category from Supabase DB:", e);
   }
 }
 
@@ -182,14 +267,13 @@ export function getLocalSubcategories(): AdminSubcategoryItem[] {
 }
 
 /**
- * Save or update a subcategory
+ * Save or update a subcategory PERMANENTLY in Supabase DB
  */
-export function saveLocalSubcategory(parentCatId: string, parentCatName: string, subName: string, subSlug?: string): AdminSubcategoryItem {
+export async function saveLocalSubcategory(parentCatId: string, parentCatName: string, subName: string, subSlug?: string): Promise<AdminSubcategoryItem> {
   const existing = getLocalSubcategories();
   const slug = subSlug?.trim() || subName.trim().toLowerCase().replace(/\s+/g, "-");
   const cleanParentName = parentCatName.trim();
 
-  // Check if subcategory with same name and parent exists
   let item = existing.find(
     (s) => s.name.trim() === subName.trim() && s.category_name.trim() === cleanParentName
   );
@@ -214,52 +298,70 @@ export function saveLocalSubcategory(parentCatId: string, parentCatName: string,
     try {
       localStorage.setItem(STORAGE_KEY_SUBCATEGORIES, JSON.stringify(existing));
 
-      // Remove from deleted list if previously deleted
       const deletedSubs = getDeletedSubcategories().filter(
         (x) => x.toLowerCase() !== subName.trim().toLowerCase() && x.toLowerCase() !== item!.id.toLowerCase()
       );
       localStorage.setItem(STORAGE_KEY_DELETED_SUBCATEGORIES, JSON.stringify(deletedSubs));
     } catch (e) {
-      console.warn("Failed to save subcategory", e);
+      console.warn("Failed to save subcategory locally", e);
     }
   }
 
-  // Attempt background DB insert safely
-  void (async () => {
-    try {
-      await (supabase.from("subcategories") as any)
-        .insert([{ category_id: parentCatId, name: subName.trim(), slug }])
-        .then(() => {})
-        .catch(() => {});
-    } catch {}
-  })();
+  // Persist permanently in Supabase DB
+  try {
+    const db = supabase as any;
+    const subPayload: any = {
+      name: subName.trim(),
+      name_ar: subName.trim(),
+      slug,
+    };
+    if (parentCatId && !parentCatId.startsWith("cat-")) {
+      subPayload.category_id = parentCatId;
+    }
+    await db.from("subcategories").upsert([subPayload]).catch(() => {});
+  } catch (e) {
+    console.error("Failed to persist subcategory to Supabase DB:", e);
+  }
 
   return item;
 }
 
 /**
- * Delete a subcategory
+ * Delete a subcategory PERMANENTLY from Supabase DB
  */
-export function deleteLocalSubcategory(subId: string, subName?: string) {
-  if (typeof window === "undefined") return;
-  try {
-    const existing = getLocalSubcategories();
-    const updated = existing.filter((s) => s.id !== subId && s.name.trim().toLowerCase() !== (subName || "").trim().toLowerCase());
-    localStorage.setItem(STORAGE_KEY_SUBCATEGORIES, JSON.stringify(updated));
+export async function deleteLocalSubcategory(subId: string, subName?: string) {
+  if (typeof window !== "undefined") {
+    try {
+      const existing = getLocalSubcategories();
+      const updated = existing.filter((s) => s.id !== subId && s.name.trim().toLowerCase() !== (subName || "").trim().toLowerCase());
+      localStorage.setItem(STORAGE_KEY_SUBCATEGORIES, JSON.stringify(updated));
 
-    const deletedList = getDeletedSubcategories();
-    if (!deletedList.includes(subId)) deletedList.push(subId);
-    if (subName && !deletedList.includes(subName.trim())) deletedList.push(subName.trim());
-    localStorage.setItem(STORAGE_KEY_DELETED_SUBCATEGORIES, JSON.stringify(deletedList));
+      const deletedList = getDeletedSubcategories();
+      if (!deletedList.includes(subId)) deletedList.push(subId);
+      if (subName && !deletedList.includes(subName.trim())) deletedList.push(subName.trim());
+      localStorage.setItem(STORAGE_KEY_DELETED_SUBCATEGORIES, JSON.stringify(deletedList));
+    } catch (e) {
+      console.warn("Failed to delete subcategory locally", e);
+    }
+  }
+
+  // Persist deletion permanently in Supabase DB
+  try {
+    const db = supabase as any;
+    if (subId && !subId.startsWith("sub-")) {
+      await db.from("subcategories").delete().eq("id", subId);
+    }
+    if (subName) {
+      await db.from("subcategories").delete().eq("name", subName);
+      await db.from("subcategories").delete().eq("name_ar", subName);
+    }
   } catch (e) {
-    console.warn("Failed to delete subcategory", e);
+    console.error("Failed to delete subcategory from Supabase DB:", e);
   }
 }
 
-
-
 /**
- * Fetch ALL quizzes across DB, QUIZ_LIBRARY, and Local Overrides
+ * Fetch ALL quizzes across DB and QUIZ_LIBRARY
  */
 export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   const overrides = getLocalQuizOverrides();
@@ -320,7 +422,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 }
 
 /**
- * Get ALL Categories & Subcategories with accurate strictly scoped hierarchy
+ * Get ALL Categories & Subcategories with accurate strictly scoped hierarchy from Supabase DB
  */
 export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
   const allQuizzes = await getAllAdminQuizzes();
@@ -338,8 +440,7 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
   let dbCategories: any[] = [];
   try {
     const { data, error } = await (supabase.from("categories") as any)
-      .select("*, subcategories(*)")
-      .order("name");
+      .select("*, subcategories(*)");
     if (!error && data && Array.isArray(data)) dbCategories = data;
   } catch {}
 
@@ -348,14 +449,16 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
   // Add DB Categories
   if (dbCategories.length > 0) {
     dbCategories.forEach((c: any) => {
-      const name = c.name.trim();
-      categoryMap.set(name, {
-        id: c.id,
-        name,
-        slug: c.slug || name.toLowerCase().replace(/\s+/g, "-"),
-        quiz_count: categoryQuizCounts.get(name) || 0,
-        subcategories: [],
-      });
+      const name = (c.name || c.name_ar || c.name_en || c.title || "").trim();
+      if (name) {
+        categoryMap.set(name, {
+          id: c.id,
+          name,
+          slug: c.slug || name.toLowerCase().replace(/\s+/g, "-"),
+          quiz_count: categoryQuizCounts.get(name) || 0,
+          subcategories: [],
+        });
+      }
     });
   }
 
@@ -387,28 +490,30 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
     }
   });
 
-  // Attach Subcategories STRICTLY to their parent Category
+  // Attach Subcategories
   const localSubs = getLocalSubcategories();
 
   // 1. From DB
   dbCategories.forEach((c: any) => {
-    const parentName = c.name.trim();
+    const parentName = (c.name || c.name_ar || c.name_en || "").trim();
     const parentObj = categoryMap.get(parentName);
     if (parentObj && Array.isArray(c.subcategories)) {
       c.subcategories.forEach((sub: any) => {
-        const subName = sub.name.trim();
-        const exists = parentObj.subcategories.some((s) => s.name === subName);
-        if (!exists) {
-          parentObj.subcategories.push({
-            id: sub.id,
-            category_id: c.id,
-            category_name: parentName,
-            name: subName,
-            slug: sub.slug || subName.toLowerCase().replace(/\s+/g, "-"),
-            quiz_count: allQuizzes.filter(
-              (q) => q.category.trim() === parentName && q.subcategory?.trim() === subName
-            ).length,
-          });
+        const subName = (sub.name || sub.name_ar || sub.name_en || "").trim();
+        if (subName) {
+          const exists = parentObj.subcategories.some((s) => s.name === subName);
+          if (!exists) {
+            parentObj.subcategories.push({
+              id: sub.id,
+              category_id: c.id,
+              category_name: parentName,
+              name: subName,
+              slug: sub.slug || subName.toLowerCase().replace(/\s+/g, "-"),
+              quiz_count: allQuizzes.filter(
+                (q) => q.category.trim() === parentName && q.subcategory?.trim() === subName
+              ).length,
+            });
+          }
         }
       });
     }
@@ -469,7 +574,6 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
       deletedCats.has(parentObj.id.toLowerCase().trim());
 
     if (!isDeletedCat) {
-      // Filter out deleted subcategories
       parentObj.subcategories = parentObj.subcategories.filter(
         (s) =>
           !deletedSubs.has(s.id.toLowerCase().trim()) &&

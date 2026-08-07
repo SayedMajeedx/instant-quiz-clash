@@ -191,7 +191,7 @@ function AdminCategoriesPage() {
 
     setCatSaving(true);
     try {
-      saveLocalCategory(catName.trim(), slugToSave);
+      await saveLocalCategory(catName.trim(), slugToSave);
 
       toast.success("تم إضافة القسم الرئيسي وحفظه بنجاح!");
       setIsCatModalOpen(false);
@@ -200,11 +200,7 @@ function AdminCategoriesPage() {
       await fetchData();
     } catch (err: any) {
       console.error("Failed to save category:", err);
-      toast.success("تم إضافة القسم الرئيسي وحفظه بنجاح!");
-      setIsCatModalOpen(false);
-      setCatName("");
-      setCatSlug("");
-      await fetchData();
+      toast.error("فشل حفظ القسم الرئيسي في قاعدة البيانات");
     } finally {
       setCatSaving(false);
     }
@@ -227,8 +223,7 @@ function AdminCategoriesPage() {
       const selectedParentCat = categories.find((c) => c.id === subCatId);
       const parentCatName = selectedParentCat?.name || "إسلاميات";
 
-      // Save to localStorage & background DB
-      saveLocalSubcategory(subCatId, parentCatName, subName.trim(), slugToSave);
+      await saveLocalSubcategory(subCatId, parentCatName, subName.trim(), slugToSave);
 
       toast.success("تم إضافة القسم الفرعي وحفظه بنجاح!");
       setIsSubModalOpen(false);
@@ -237,11 +232,7 @@ function AdminCategoriesPage() {
       await fetchData();
     } catch (err: any) {
       console.error("Failed to save subcategory:", err);
-      toast.success("تم إضافة القسم الفرعي وحفظه بنجاح!");
-      setIsSubModalOpen(false);
-      setSubName("");
-      setSubSlug("");
-      await fetchData();
+      toast.error("فشل حفظ القسم الفرعي في قاعدة البيانات");
     } finally {
       setSubSaving(false);
     }
@@ -253,22 +244,10 @@ function AdminCategoriesPage() {
     setDeleting(true);
     try {
       if (deleteTarget.type === "category") {
-        deleteLocalCategory(deleteTarget.item.id, deleteTarget.item.name);
-        void db
-          .from("categories")
-          .delete()
-          .eq("id", deleteTarget.item.id)
-          .then(() => {})
-          .catch(() => {});
+        await deleteLocalCategory(deleteTarget.item.id, deleteTarget.item.name);
         toast.success(`تم حذف القسم الرئيسي "${deleteTarget.item.name}"`);
       } else {
-        deleteLocalSubcategory(deleteTarget.item.id, deleteTarget.item.name);
-        void db
-          .from("subcategories")
-          .delete()
-          .eq("id", deleteTarget.item.id)
-          .then(() => {})
-          .catch(() => {});
+        await deleteLocalSubcategory(deleteTarget.item.id, deleteTarget.item.name);
         toast.success(`تم حذف القسم الفرعي "${deleteTarget.item.name}"`);
       }
 

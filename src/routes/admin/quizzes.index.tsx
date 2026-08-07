@@ -281,12 +281,12 @@ export function AdminQuizzesPage() {
 
       const newCategory = bulkCategory.trim();
 
-      selectedArray.forEach((quizId) => {
-        saveLocalQuizOverride(quizId, {
+      for (const quizId of selectedArray) {
+        await saveLocalQuizOverride(quizId, {
           category: newCategory,
           subcategory: finalSubcategory || "",
         });
-      });
+      }
 
       setQuizzes((prev) =>
         prev.map((item) => {
