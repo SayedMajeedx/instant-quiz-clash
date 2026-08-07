@@ -35,6 +35,7 @@ const STATIC_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter(
   created_at: q.created_at,
   is_public: true,
   category: q.category,
+  subcategory: q.questions?.[0]?.subcategory ?? null,
   language: q.language,
   quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
   question_count: q.questions.length,

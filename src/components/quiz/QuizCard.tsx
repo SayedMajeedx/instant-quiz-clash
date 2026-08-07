@@ -22,6 +22,7 @@ export type PublicQuiz = {
   archived?: boolean;
   launch_enabled?: boolean;
   question_count: number;
+  subcategory?: string | null;
 };
 
 export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
@@ -81,7 +82,15 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
 
         {/* Secondary Info Line */}
         <div className="mt-2 flex items-center gap-2 text-xs font-medium text-muted-foreground flex-wrap">
-          <span>{quiz.category || "عام"}</span>
+          <span className="font-semibold text-foreground/90">{quiz.category || "عام"}</span>
+          {quiz.subcategory ? (
+            <>
+              <span>·</span>
+              <span className="rounded-md border border-primary/30 bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
+                {quiz.subcategory}
+              </span>
+            </>
+          ) : null}
           <span>·</span>
           <span>{t("quizzes.questionCount", { count: quiz.question_count })}</span>
         </div>
