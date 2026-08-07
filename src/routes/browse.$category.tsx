@@ -170,7 +170,7 @@ function CategoryDetailPage() {
       );
     }
     return sorted;
-  }, [quizzes, selectedDiff, search, sortBy]);
+  }, [quizzes, selectedDiff, search, sortBy, playCounts]);
 
   // Reset pagination when filters change
   useEffect(() => {
