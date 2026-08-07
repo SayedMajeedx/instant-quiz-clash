@@ -50,6 +50,7 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
+  SheetTitle,
 } from "@/components/ui/sheet";
 import { saveLocalQuizOverride } from "@/lib/admin-data-helper";
 
