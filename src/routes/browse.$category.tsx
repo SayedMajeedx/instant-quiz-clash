@@ -110,6 +110,22 @@ function CategoryDetailPage() {
     })();
   }, [category]);
 
+  // Play counts (how many times each quiz was launched)
+  const [playCounts, setPlayCounts] = useState<Record<string, number>>({});
+  useEffect(() => {
+    void (async () => {
+      const { data } = await (supabase.from("quiz_play_stats") as any).select(
+        "source_quiz_id, play_count"
+      );
+      if (!data) return;
+      const map: Record<string, number> = {};
+      for (const row of data as { source_quiz_id: string; play_count: number }[]) {
+        map[row.source_quiz_id] = row.play_count;
+      }
+      setPlayCounts(map);
+    })();
+  }, []);
+
   // Filter + sort logic
   const filteredQuizzes = useMemo(() => {
     const norm = (s: string) =>
@@ -140,10 +156,12 @@ function CategoryDetailPage() {
         (a, b) =>
           (diffRank[getDifficultyDetails(a).label] ?? 1) -
           (diffRank[getDifficultyDetails(b).label] ?? 1)
-
       );
+    } else if (sortBy === "popular") {
+      sorted.sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0));
     } else if (sortBy === "questions") {
       sorted.sort((a, b) => (a.question_count ?? 0) - (b.question_count ?? 0));
+
     } else if (sortBy === "alpha") {
       sorted.sort((a, b) => cleanQuizTitle(a.title).localeCompare(cleanQuizTitle(b.title), "ar"));
     } else {
