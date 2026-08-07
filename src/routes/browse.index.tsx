@@ -12,6 +12,8 @@ import {
   type CategoryInfo,
 } from "@/lib/browse-helpers";
 
+import { getAllAdminQuizzes, getAllAdminCategories, type AdminCategoryItem } from "@/lib/admin-data-helper";
+
 export const Route = createFileRoute("/browse/")({
   head: () => ({
     meta: [
@@ -26,25 +28,11 @@ export const Route = createFileRoute("/browse/")({
 
 const BATCH_SIZE = 12;
 
-const STATIC_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter(
-  (q) => !q.archived && q.launch_enabled !== false
-).map((q) => ({
-  id: q.id,
-  title: q.title,
-  user_id: q.user_id,
-  created_at: q.created_at,
-  is_public: true,
-  category: q.category,
-  subcategory: q.questions?.[0]?.subcategory ?? null,
-  language: q.language,
-  quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
-  question_count: q.questions.length,
-}));
-
 function BrowseLandingPage() {
   const { t } = useI18n();
 
-  const [quizzes, setQuizzes] = useState<PublicQuiz[]>(STATIC_QUIZZES);
+  const [quizzes, setQuizzes] = useState<PublicQuiz[]>([]);
+  const [categoriesList, setCategoriesList] = useState<AdminCategoryItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Search state
@@ -55,57 +43,46 @@ function BrowseLandingPage() {
     void (async () => {
       setLoading(true);
       try {
-        const { data, error } = await (supabase.from("quizzes") as any)
-          .select("*, questions(id)")
-          .eq("is_public", true)
-          .order("created_at", { ascending: false });
+        const [adminQuizzes, adminCategories] = await Promise.all([
+          getAllAdminQuizzes(),
+          getAllAdminCategories(),
+        ]);
 
-        if (!error && data && data.length > 0) {
-          const dbFormatted: PublicQuiz[] = data.map((q: any) => ({
+        const publicQuizzes: PublicQuiz[] = adminQuizzes
+          .filter((q) => q.is_public)
+          .map((q) => ({
             id: q.id,
             title: q.title,
-            user_id: q.user_id ?? "system",
+            user_id: q.user_id || "system",
             created_at: q.created_at,
-            is_public: q.is_public ?? true,
+            is_public: true,
             category: q.category,
-            language: q.language,
+            subcategory: q.subcategory || null,
+            language: q.language || "ar",
             quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
-            question_count: Array.isArray(q.questions) ? q.questions.length : 0,
+            question_count: q.question_count,
           }));
 
-          const dbIds = new Set(dbFormatted.map((q) => q.id));
-          const restStatic = STATIC_QUIZZES.filter((q) => !dbIds.has(q.id));
-          setQuizzes([...dbFormatted, ...restStatic]);
-        }
+        setQuizzes(publicQuizzes);
+        setCategoriesList(adminCategories);
       } catch {
-        // Static QUIZ_LIBRARY fallback
+        // Fallback
       } finally {
         setLoading(false);
       }
     })();
   }, []);
 
-  // Derive unique categories with live quiz counts
-  const categories = useMemo<CategoryInfo[]>(() => {
-    const map = new Map<string, number>();
-
-    quizzes.forEach((q) => {
-      const cat = (q.category || "عام").trim();
-      if (cat) {
-        map.set(cat, (map.get(cat) ?? 0) + 1);
-      }
-    });
-
-    // Sort categories by popularity / quiz count
-    const sorted = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
-
-    return sorted.map(([name, count]) => ({
-      id: name,
-      name,
-      icon: getCategoryIcon(name),
-      count,
+  // Derive unique categories with subcategories and live quiz counts
+  const categories = useMemo(() => {
+    return categoriesList.map((c) => ({
+      id: c.id,
+      name: c.name,
+      icon: getCategoryIcon(c.name),
+      count: c.quiz_count,
+      subcategories: c.subcategories || [],
     }));
-  }, [quizzes]);
+  }, [categoriesList]);
 
   // Dynamic & Hybrid Selection for "الأحدث والأكثر شهرة" (Latest + Most Popular)
   const popularQuizzes = useMemo(() => {
@@ -328,25 +305,41 @@ function BrowseLandingPage() {
                       key={cat.id}
                       to="/browse/$category"
                       params={{ category: encodeURIComponent(cat.name) }}
-                      className="press group flex items-center justify-between rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/60 hover:bg-background/90 hover:shadow-glow hover:-translate-y-1"
+                      className="press group flex flex-col justify-between rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/60 hover:bg-background/90 hover:shadow-glow hover:-translate-y-1"
                     >
-                      <div className="flex items-center gap-4">
-                        <span className="grid size-14 place-items-center rounded-2xl border border-primary/30 bg-primary/10 text-3xl shadow-sm transition-transform group-hover:scale-110">
-                          {cat.icon}
-                        </span>
-                        <div>
-                          <h3 className="font-display text-xl sm:text-2xl text-foreground group-hover:text-primary transition-colors">
-                            {cat.name}
-                          </h3>
-                          <p className="mt-1 text-xs font-bold text-sun">
-                            {cat.count} {cat.count === 1 ? "كويز" : "كويزات"}
-                          </p>
+                      <div className="flex items-center justify-between gap-4">
+                        <div className="flex items-center gap-4">
+                          <span className="grid size-14 place-items-center shrink-0 rounded-2xl border border-primary/30 bg-primary/10 text-3xl shadow-sm transition-transform group-hover:scale-110">
+                            {cat.icon}
+                          </span>
+                          <div>
+                            <h3 className="font-display text-xl sm:text-2xl text-foreground group-hover:text-primary transition-colors">
+                              {cat.name}
+                            </h3>
+                            <p className="mt-1 text-xs font-bold text-sun">
+                              {cat.count} {cat.count === 1 ? "كويز" : "كويزات"}
+                            </p>
+                          </div>
                         </div>
+
+                        <span className="font-display text-2xl text-muted-foreground transition-transform group-hover:translate-x-[-4px] group-hover:text-primary">
+                          ←
+                        </span>
                       </div>
 
-                      <span className="font-display text-2xl text-muted-foreground transition-transform group-hover:translate-x-[-4px] group-hover:text-primary">
-                        ←
-                      </span>
+                      {/* Subcategories Badges */}
+                      {cat.subcategories && cat.subcategories.length > 0 && (
+                        <div className="mt-4 pt-3 border-t border-border/40 flex flex-wrap gap-1.5">
+                          {cat.subcategories.map((sub) => (
+                            <span
+                              key={sub.id}
+                              className="rounded-xl border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary"
+                            >
+                              {sub.name} ({sub.quiz_count})
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </Link>
                   ))}
                 </div>
