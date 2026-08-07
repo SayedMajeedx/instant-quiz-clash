@@ -286,9 +286,11 @@ export function AdminQuizzesPage() {
       const newCategory = bulkCategory.trim();
 
       for (const quizId of selectedArray) {
+        const quizObj = quizzes.find((q) => q.id === quizId);
         await saveLocalQuizOverride(quizId, {
           category: newCategory,
           subcategory: finalSubcategory || "",
+          title: quizObj?.title,
         });
       }
 

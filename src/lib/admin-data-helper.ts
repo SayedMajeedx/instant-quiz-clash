@@ -94,10 +94,10 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
   // Persist permanently in Supabase Database
   try {
     const db = supabase as any;
-    const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId || q.title === quizId);
-    const searchTitle = libQuiz ? libQuiz.title : (override.title || quizId);
+    const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId || q.title === quizId || (override.title && q.title === override.title));
+    const targetTitle = override.title || (libQuiz ? libQuiz.title : (isUUID(quizId) ? "" : quizId));
 
-    // 1. Find existing row in Supabase DB by ID or Title safely
+    // 1. Find existing row in Supabase DB by ID or Title
     let existingDbQuiz: any = null;
 
     if (isUUID(quizId)) {
@@ -105,8 +105,8 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       if (byId) existingDbQuiz = byId;
     }
 
-    if (!existingDbQuiz && searchTitle) {
-      const { data: byTitle } = await db.from("quizzes").select("id, title").eq("title", searchTitle).maybeSingle();
+    if (!existingDbQuiz && targetTitle && targetTitle.trim() && !isUUID(targetTitle)) {
+      const { data: byTitle } = await db.from("quizzes").select("id, title").eq("title", targetTitle.trim()).maybeSingle();
       if (byTitle) existingDbQuiz = byTitle;
     }
 
@@ -121,10 +121,10 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       if (override.language !== undefined) updatePayload.language = override.language;
 
       await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
-    } else {
+    } else if (targetTitle && targetTitle.trim() && !isUUID(targetTitle)) {
       // Insert new DB row for static or new quiz
       const insertPayload: any = {
-        title: override.title || (libQuiz ? libQuiz.title : "كويز"),
+        title: targetTitle.trim(),
         category: override.category || (libQuiz ? libQuiz.category : "عام") || "عام",
         subcategory: override.subcategory !== undefined ? override.subcategory : ((libQuiz as any)?.subcategory || ""),
         is_public: override.is_public !== undefined ? override.is_public : true,
