@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import {
+  cleanQuizTitle,
   getCategoryIcon,
   getDifficultyDetails,
 } from "@/lib/browse-helpers";
