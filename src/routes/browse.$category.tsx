@@ -110,6 +110,22 @@ function CategoryDetailPage() {
     })();
   }, [category]);
 
+  // Play counts (how many times each quiz was launched)
+  const [playCounts, setPlayCounts] = useState<Record<string, number>>({});
+  useEffect(() => {
+    void (async () => {
+      const { data } = await (supabase.from("quiz_play_stats") as any).select(
+        "source_quiz_id, play_count"
+      );
+      if (!data) return;
+      const map: Record<string, number> = {};
+      for (const row of data as { source_quiz_id: string; play_count: number }[]) {
+        map[row.source_quiz_id] = row.play_count;
+      }
+      setPlayCounts(map);
+    })();
+  }, []);
+
   // Filter + sort logic
   const filteredQuizzes = useMemo(() => {
     const norm = (s: string) =>
@@ -140,10 +156,12 @@ function CategoryDetailPage() {
         (a, b) =>
           (diffRank[getDifficultyDetails(a).label] ?? 1) -
           (diffRank[getDifficultyDetails(b).label] ?? 1)
-
       );
+    } else if (sortBy === "popular") {
+      sorted.sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0));
     } else if (sortBy === "questions") {
       sorted.sort((a, b) => (a.question_count ?? 0) - (b.question_count ?? 0));
+
     } else if (sortBy === "alpha") {
       sorted.sort((a, b) => cleanQuizTitle(a.title).localeCompare(cleanQuizTitle(b.title), "ar"));
     } else {
@@ -152,7 +170,7 @@ function CategoryDetailPage() {
       );
     }
     return sorted;
-  }, [quizzes, selectedDiff, search, sortBy]);
+  }, [quizzes, selectedDiff, search, sortBy, playCounts]);
 
   // Reset pagination when filters change
   useEffect(() => {
@@ -225,18 +243,25 @@ function CategoryDetailPage() {
 
           {/* Sort dropdown (separate from filters) */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">↕️ ترتيب حسب:</span>
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="rounded-2xl border border-border bg-background/60 px-3 py-2.5 text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
-            >
-              <option value="newest">الأحدث أولاً</option>
-              <option value="easiest">من الأسهل للأصعب</option>
-              <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
-              <option value="alpha">أبجدياً</option>
-            </select>
+            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">ترتيب حسب:</span>
+            <div className="relative">
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="w-full appearance-none rounded-2xl border border-border bg-background/60 py-2.5 pr-4 pl-9 text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+              >
+                <option value="newest">الأحدث أولاً</option>
+                <option value="popular">الأكثر لعباً</option>
+                <option value="easiest">من الأسهل للأصعب</option>
+                <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
+                <option value="alpha">أبجدياً</option>
+              </select>
+              <span className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-xs text-muted-foreground">
+                ▼
+              </span>
+            </div>
           </div>
+
         </div>
 
         {/* Collapsible Scoped Filter Bar */}
