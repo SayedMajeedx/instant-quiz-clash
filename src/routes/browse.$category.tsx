@@ -44,6 +44,12 @@ export function CategoryBreadcrumb({
   activeSubcategory?: string | null;
   onResetSubcategory: () => void;
 }) {
+  const isRealSub =
+    activeSubcategory &&
+    activeSubcategory !== "all" &&
+    activeSubcategory !== "__UNCATEGORIZED__" &&
+    activeSubcategory !== "كويزات عامة أخرى";
+
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-muted-foreground flex-wrap dir-rtl">
       <Link to="/" className="hover:text-primary transition-colors flex items-center gap-1.5">
@@ -55,7 +61,7 @@ export function CategoryBreadcrumb({
         الأقسام
       </Link>
       <span className="text-muted-foreground/40">←</span>
-      {activeSubcategory && activeSubcategory !== "all" ? (
+      {isRealSub ? (
         <button
           type="button"
           onClick={onResetSubcategory}
@@ -67,7 +73,7 @@ export function CategoryBreadcrumb({
         <span className="text-foreground font-bold">{category}</span>
       )}
 
-      {activeSubcategory && activeSubcategory !== "all" && (
+      {isRealSub && (
         <>
           <span className="text-muted-foreground/40">←</span>
           <span className="text-primary font-bold">{activeSubcategory}</span>
