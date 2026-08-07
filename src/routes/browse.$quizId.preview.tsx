@@ -10,6 +10,8 @@ import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 
+import { getAllAdminQuizzes } from "@/lib/admin-data-helper";
+
 export const Route = createFileRoute("/browse/$quizId/preview")({
   head: () => ({
     meta: [
@@ -54,9 +56,16 @@ function QuizPreviewPage() {
     void (async () => {
       setLoading(true);
       try {
-        // 1. Check local QUIZ_LIBRARY first
-        const libraryMatch = QUIZ_LIBRARY.find((q) => q.id === quizId);
-        const starterMatch = STARTER_QUIZZES.find((sq) => sq.id === quizId);
+        const decodedQuizId = decodeURIComponent(quizId || "").trim();
+        const normTitle = (s: string) => cleanQuizTitle(s).toLowerCase().trim();
+
+        // 1. Check local QUIZ_LIBRARY first by ID or cleaned title
+        const libraryMatch = QUIZ_LIBRARY.find(
+          (q) => q.id === decodedQuizId || normTitle(q.title) === normTitle(decodedQuizId)
+        );
+        const starterMatch = STARTER_QUIZZES.find(
+          (sq) => sq.id === decodedQuizId || normTitle(sq.title) === normTitle(decodedQuizId)
+        );
 
         if (libraryMatch) {
           setQuizMeta({
@@ -66,7 +75,6 @@ function QuizPreviewPage() {
             language: libraryMatch.language,
             question_count: libraryMatch.questions.length,
           });
-          // Explicitly omit correct_index and explanation from preview state
           setQuestions(
             libraryMatch.questions.map((q, idx) => ({
               id: `q-${idx}`,
@@ -104,17 +112,63 @@ function QuizPreviewPage() {
           return;
         }
 
-        // 2. Fetch quiz meta from Supabase
-        const { data: qData } = await (supabase.from("quizzes") as any)
+        // 2. Fetch quiz meta from Supabase by ID or Title
+        let qData: any = null;
+        const { data: byIdData } = await (supabase.from("quizzes") as any)
           .select("id, title, category, language")
-          .eq("id", quizId)
-          .single();
+          .eq("id", decodedQuizId)
+          .maybeSingle();
+
+        if (byIdData) {
+          qData = byIdData;
+        } else {
+          // Try matching title in Supabase
+          const { data: byTitleData } = await (supabase.from("quizzes") as any)
+            .select("id, title, category, language")
+            .ilike("title", `%${decodedQuizId}%`)
+            .maybeSingle();
+          if (byTitleData) qData = byTitleData;
+        }
+
+        // 3. Fallback to getAllAdminQuizzes()
+        if (!qData) {
+          const adminQuizzes = await getAllAdminQuizzes();
+          const adminMatch = adminQuizzes.find(
+            (q) => q.id === decodedQuizId || normTitle(q.title) === normTitle(decodedQuizId)
+          );
+
+          if (adminMatch) {
+            setQuizMeta({
+              id: adminMatch.id,
+              title: adminMatch.title,
+              category: adminMatch.category,
+              language: adminMatch.language,
+              question_count: adminMatch.question_count,
+            });
+
+            if (Array.isArray(adminMatch.questions) && adminMatch.questions.length > 0) {
+              setQuestions(
+                adminMatch.questions.map((q: any, idx: number) => ({
+                  id: `aq-${idx}`,
+                  question_text: q.question_text || q.question || "سؤال",
+                  options: q.options || [],
+                  time_limit_seconds: q.time_limit_seconds || 20,
+                  question_type: q.question_type || "multi",
+                  difficulty: q.difficulty,
+                  subcategory: q.subcategory,
+                }))
+              );
+              setLoading(false);
+              return;
+            }
+            qData = adminMatch;
+          }
+        }
 
         if (qData) {
-          // Dedicated answer-free query selecting non-answer columns only
           const { data: pQuestions } = await (supabase.from("questions") as any)
             .select("id, quiz_id, question_text, options, time_limit_seconds, order_index, question_type, difficulty, subcategory, tags")
-            .eq("quiz_id", quizId)
+            .eq("quiz_id", qData.id)
             .order("order_index");
 
           const fetchedRows = pQuestions || [];
