@@ -10,8 +10,8 @@ import {
   getCategoryIcon,
   getDifficultyDetails,
 } from "@/lib/browse-helpers";
-import { cn } from "@/lib/utils";
-
+import { toast } from "sonner";
+import { cloneQuiz } from "@/lib/clone-quiz";
 import {
   getAllAdminCategories,
   getAllAdminQuizzes,
@@ -173,8 +173,41 @@ export function SubcategoryChips({
 /* Component 3: Compact Carousel Quiz Card */
 function CarouselQuizCard({ quiz }: { quiz: PublicQuiz }) {
   const navigate = useNavigate();
+  const { t } = useI18n();
+  const [isCloning, setIsCloning] = useState(false);
+
   const cleanedTitle = cleanQuizTitle(quiz.title);
   const diffInfo = getDifficultyDetails(quiz);
+
+  async function handleClone() {
+    setIsCloning(true);
+    try {
+      const { data: userRes } = await supabase.auth.getUser();
+      const user = userRes.user;
+
+      if (!user) {
+        toast.error(t("auth.required") || "يرجى تسجيل الدخول للعب الكويز");
+        void navigate({ to: "/auth" });
+        return;
+      }
+
+      const res = await cloneQuiz(quiz.id, quiz, user.id);
+
+      if (!res.success || !res.newQuizId) {
+        toast.error(res.error || t("browse.error"));
+        return;
+      }
+
+      void (supabase.rpc as any)("record_quiz_play", { p_source_id: quiz.id });
+
+      toast.success(t("browse.cloned") || "تم تجهيز الكويز للعب!");
+      void navigate({ to: "/host", search: { quiz: res.newQuizId } });
+    } catch {
+      toast.error("حدث خطأ أثناء تجهيز الكويز");
+    } finally {
+      setIsCloning(false);
+    }
+  }
 
   return (
     <div className="shrink-0 w-[150px] sm:w-[210px] flex flex-col justify-between rounded-3xl border border-border/80 bg-surface-gradient p-3.5 sm:p-4 shadow-md transition-all hover:border-primary/50 hover:shadow-glow">
@@ -204,10 +237,11 @@ function CarouselQuizCard({ quiz }: { quiz: PublicQuiz }) {
       <div className="mt-3 flex flex-col gap-1.5">
         <button
           type="button"
-          onClick={() => void navigate({ to: "/host", search: { quiz: quiz.id } })}
-          className="press w-full rounded-xl bg-gradient-hero py-1.5 sm:py-2 text-[11px] sm:text-xs font-bold text-primary-foreground shadow-sm hover:scale-[1.02]"
+          onClick={handleClone}
+          disabled={isCloning}
+          className="press w-full rounded-xl bg-gradient-hero py-1.5 sm:py-2 text-[11px] sm:text-xs font-bold text-primary-foreground shadow-sm hover:scale-[1.02] disabled:opacity-50 cursor-pointer"
         >
-          العب الآن 🚀
+          {isCloning ? "جارٍ التحضير..." : "العب الآن 🚀"}
         </button>
         <Link
           to="/browse/$quizId/preview"
