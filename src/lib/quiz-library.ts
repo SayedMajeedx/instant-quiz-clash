@@ -9,12 +9,12 @@ export type LibraryQuiz = Quiz & {
   questions: (Omit<Question, "id" | "quiz_id"> & { id?: string; quiz_id?: string; [key: string]: any })[];
 };
 
-// Reorganized & Deduplicated Quiz Library with Subcategories and Descriptive Arabic Titles
+// Reorganized & Deduplicated Quiz Library with Specific Descriptive Arabic Titles (No Generic "الجزء X")
 export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-1",
     "user_id": "system",
-    "title": "اختبار: ألغاز الذكاء والتفكير المنطقي — الجزء 1",
+    "title": "ألغاز الحساب ومتتاليات الأرقام الذكية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "ألغاز ومنطق",
@@ -300,7 +300,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-2",
     "user_id": "system",
-    "title": "اختبار: ألغاز الذكاء والتفكير المنطقي — الجزء 2",
+    "title": "ألغاز الحساب ومتتاليات الأرقام الذكية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "ألغاز ومنطق",
@@ -586,7 +586,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-3",
     "user_id": "system",
-    "title": "اختبار: ألغاز الذكاء والتفكير المنطقي — الجزء 3",
+    "title": "ألغاز الحساب ومتتاليات الأرقام الذكية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "ألغاز ومنطق",
@@ -872,7 +872,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-4",
     "user_id": "system",
-    "title": "اختبار: ألغاز الذكاء والتفكير المنطقي — الجزء 4",
+    "title": "ألغاز الحساب ومتتاليات الأرقام الذكية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "ألغاز ومنطق",
@@ -1158,7 +1158,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-5",
     "user_id": "system",
-    "title": "اختبار: أساطير أنمي الشونين والمغامرات — الجزء 1",
+    "title": "أنمي ون بيس: لوفي ومعارك القراصنة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -1376,7 +1376,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-6",
     "user_id": "system",
-    "title": "اختبار: أساطير أنمي الشونين والمغامرات — الجزء 2",
+    "title": "أنمي ون بيس: لوفي ومعارك القراصنة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -1594,7 +1594,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-7",
     "user_id": "system",
-    "title": "اختبار: خبراء أنمي الغموض والإثارة",
+    "title": "أنمي هجوم العمالقة: فيلق الاستكشاف والعمالقة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -1659,7 +1659,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-8",
     "user_id": "system",
-    "title": "اختبار: عالم الأنمي والكرتون الكلاسيكي — الجزء 1",
+    "title": "أنمي هجوم العمالقة: فيلق الاستكشاف والعمالقة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -1962,7 +1962,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-9",
     "user_id": "system",
-    "title": "اختبار: عالم الأنمي والكرتون الكلاسيكي — الجزء 2",
+    "title": "أنمي هجوم العمالقة: فيلق الاستكشاف والعمالقة: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -2265,7 +2265,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-10",
     "user_id": "system",
-    "title": "اختبار: عالم الأنمي والكرتون الكلاسيكي — الجزء 3",
+    "title": "أنمي ون بيس: لوفي ومعارك القراصنة: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -2568,7 +2568,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-11",
     "user_id": "system",
-    "title": "اختبار: عالم الأنمي والكرتون الكلاسيكي — الجزء 4",
+    "title": "أنمي ون بيس: لوفي ومعارك القراصنة: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -2871,7 +2871,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-12",
     "user_id": "system",
-    "title": "اختبار: عالم الأنمي والكرتون الكلاسيكي — الجزء 5",
+    "title": "أنمي ون بيس: لوفي ومعارك القراصنة: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "أنمي",
@@ -3157,7 +3157,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-13",
     "user_id": "system",
-    "title": "اختبار: معالم الثقافة والسيرة الإسلامية — الجزء 1",
+    "title": "مسائل الصوم والحج والعبادات الفقهية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -3477,7 +3477,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-14",
     "user_id": "system",
-    "title": "اختبار: معالم الثقافة والسيرة الإسلامية — الجزء 2",
+    "title": "علوم القرآن الكريم: أسباب النزول والتفسير",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -3797,7 +3797,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-15",
     "user_id": "system",
-    "title": "اختبار: المسائل الفقهية والأحكام الشرعية — الجزء 1",
+    "title": "أحكام الصلاة والطهارة والوضوء الفقهية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -4118,7 +4118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-16",
     "user_id": "system",
-    "title": "اختبار: المسائل الفقهية والأحكام الشرعية — الجزء 2",
+    "title": "أحكام الصلاة والطهارة والوضوء الفقهية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -4447,7 +4447,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-17",
     "user_id": "system",
-    "title": "اختبار: المسائل الفقهية والأحكام الشرعية — الجزء 3",
+    "title": "أحكام الصلاة والطهارة والوضوء الفقهية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -4753,7 +4753,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-18",
     "user_id": "system",
-    "title": "اختبار: علوم القرآن الكريم والتفسير — الجزء 1",
+    "title": "علوم القرآن الكريم: أسباب النزول والتفسير: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -5022,7 +5022,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-19",
     "user_id": "system",
-    "title": "اختبار: علوم القرآن الكريم والتفسير — الجزء 2",
+    "title": "علوم القرآن الكريم: أسباب النزول والتفسير: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "إسلاميات",
@@ -5289,7 +5289,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-20",
     "user_id": "system",
-    "title": "اختبار: معارك وحروب العالم الحديث — الجزء 1",
+    "title": "الحرب العالمية الأولى: أسباب ومعارك 1914",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -5605,7 +5605,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-21",
     "user_id": "system",
-    "title": "اختبار: معارك وحروب العالم الحديث — الجزء 2",
+    "title": "الحرب العالمية الثانية: هتلر وخطوط المواجهة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -5917,7 +5917,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-22",
     "user_id": "system",
-    "title": "اختبار: عجائب الحضارات الآثار القديمة — الجزء 1",
+    "title": "عجائب الأهرامات والحضارة الفرعونية القديمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -6199,7 +6199,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-23",
     "user_id": "system",
-    "title": "اختبار: عجائب الحضارات الآثار القديمة — الجزء 2",
+    "title": "عجائب الأهرامات والحضارة الفرعونية القديمة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -6464,7 +6464,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-24",
     "user_id": "system",
-    "title": "اختبار: أسرار حضارة دلمون وآثار البحرين — الجزء 1",
+    "title": "حضارة دلمون ومدافن عالي الأثرية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -6810,7 +6810,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-25",
     "user_id": "system",
-    "title": "اختبار: أسرار حضارة دلمون وآثار البحرين — الجزء 2",
+    "title": "حضارة دلمون ومدافن عالي الأثرية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -7148,7 +7148,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-26",
     "user_id": "system",
-    "title": "اختبار: أسرار حضارة دلمون وآثار البحرين — الجزء 3",
+    "title": "حضارة دلمون ومدافن عالي الأثرية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -7490,7 +7490,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-27",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 1",
+    "title": "عجائب الأهرامات والحضارة الفرعونية القديمة: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -7844,7 +7844,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-28",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 2",
+    "title": "عجائب الأهرامات والحضارة الفرعونية القديمة: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -8198,7 +8198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-29",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 3",
+    "title": "عجائب الأهرامات والحضارة الفرعونية القديمة: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -8552,7 +8552,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-30",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 4",
+    "title": "الحرب العالمية الأولى: أسباب ومعارك 1914: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -8896,7 +8896,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-31",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 5",
+    "title": "تاريخ الحضارة الإغريقية والإمبراطورية الرومانية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -9242,7 +9242,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-32",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 6",
+    "title": "الحرب العالمية الأولى: أسباب ومعارك 1914: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -9592,7 +9592,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-33",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 7",
+    "title": "تاريخ الحضارة الإغريقية والإمبراطورية الرومانية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -9942,7 +9942,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-34",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 8",
+    "title": "أسرار بلاد الرافدين والحضارات القديمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -10284,7 +10284,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-35",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 9",
+    "title": "الحرب العالمية الثانية: هتلر وخطوط المواجهة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -10636,7 +10636,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-36",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 10",
+    "title": "شخصيات وأحداث غيرت مجرى التاريخ",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -10982,7 +10982,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-37",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 11",
+    "title": "محطات التاريخ الإسلامي: العصر الأموي والعباسي",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -11332,7 +11332,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-38",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 12",
+    "title": "الحرب العالمية الأولى: أسباب ومعارك 1914: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -11682,7 +11682,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-39",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 13",
+    "title": "شخصيات وأحداث غيرت مجرى التاريخ: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -12005,7 +12005,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-40",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 14",
+    "title": "تاريخ الحضارة الإغريقية والإمبراطورية الرومانية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -12340,7 +12340,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-41",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 15",
+    "title": "تاريخ الحضارة الإغريقية والإمبراطورية الرومانية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -12673,7 +12673,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-42",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 16",
+    "title": "شخصيات وأحداث غيرت مجرى التاريخ: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -13006,7 +13006,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-43",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 17",
+    "title": "شخصيات وأحداث غيرت مجرى التاريخ: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -13343,7 +13343,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-44",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 18",
+    "title": "شخصيات وأحداث غيرت مجرى التاريخ: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -13672,7 +13672,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-45",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 19",
+    "title": "تاريخ الحضارة الإغريقية والإمبراطورية الرومانية: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -14009,7 +14009,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-46",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 20",
+    "title": "محطات التاريخ الإسلامي: العصر الأموي والعباسي: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -14342,7 +14342,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-47",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 21",
+    "title": "تاريخ الحضارة الإغريقية والإمبراطورية الرومانية: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -14675,7 +14675,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-48",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 22",
+    "title": "حضارة دلمون ومدافن عالي الأثرية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -14998,7 +14998,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-49",
     "user_id": "system",
-    "title": "اختبار: شخصيات وأحداث غيرت التاريخ — الجزء 23",
+    "title": "حضارة دلمون ومدافن عالي الأثرية: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -15319,7 +15319,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-50",
     "user_id": "system",
-    "title": "اختبار: صناع ومحطات التاريخ الإسلامي — الجزء 1",
+    "title": "عجائب الأهرامات والحضارة الفرعونية القديمة: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -15669,7 +15669,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-51",
     "user_id": "system",
-    "title": "اختبار: صناع ومحطات التاريخ الإسلامي — الجزء 2",
+    "title": "تاريخ الأندلس والفتوحات الإسلامية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تاريخ",
@@ -16019,7 +16019,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-52",
     "user_id": "system",
-    "title": "اختبار: الأجهزة الذكية والابتكارات الحديثة",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -16201,7 +16201,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-53",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 1",
+    "title": "تاريخ الأجهزة الذكية وتطور الهواتف",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -16555,7 +16555,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-54",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 2",
+    "title": "أسرار البرمجة ولغات الحاسوب والشبكات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -16909,7 +16909,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-55",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 3",
+    "title": "تاريخ الأجهزة الذكية وتطور الهواتف: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -17246,7 +17246,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-56",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 4",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -17581,7 +17581,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-57",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 5",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -17906,7 +17906,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-58",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 6",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -18239,7 +18239,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-59",
     "user_id": "system",
-    "title": "اختبار: معالم التقنية والتطور التكنولوجي — الجزء 7",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -18568,7 +18568,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-60",
     "user_id": "system",
-    "title": "اختبار: أسرار البرمجة والتقنيات الرقمية",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -18782,7 +18782,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-61",
     "user_id": "system",
-    "title": "اختبار: عالم السيارات والمركبات الهندسية — الجزء 1",
+    "title": "عالم السيارات الرياضية والمحركات الهندسية: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -19109,7 +19109,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-62",
     "user_id": "system",
-    "title": "اختبار: عالم السيارات والمركبات الهندسية — الجزء 2",
+    "title": "هندسة الطيران والسيارات السريعة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "تكنولوجيا",
@@ -19440,7 +19440,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-63",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 1",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -19794,7 +19794,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-64",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 2",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -20142,7 +20142,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-65",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 3",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -20492,7 +20492,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-66",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 4",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -20844,7 +20844,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-67",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 5",
+    "title": "أسرار المحيطات والأنهار الكبرى في العالم",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -21184,7 +21184,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-68",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 6",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -21530,7 +21530,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-69",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 7",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -21884,7 +21884,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-70",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 8",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -22209,7 +22209,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-71",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 9",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -22538,7 +22538,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-72",
     "user_id": "system",
-    "title": "اختبار: الموسوعة الجغرافية وحقائق الدول — الجزء 10",
+    "title": "أسرار المحيطات والأنهار الكبرى في العالم: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -22867,7 +22867,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-73",
     "user_id": "system",
-    "title": "اختبار: أسرار البحار والمناخ العالمي",
+    "title": "أسرار المحيطات والأنهار الكبرى في العالم: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -23000,7 +23000,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-74",
     "user_id": "system",
-    "title": "اختبار: تضاريس الأرض وعجائب الطبيعة — الجزء 1",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -23303,7 +23303,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-75",
     "user_id": "system",
-    "title": "اختبار: تضاريس الأرض وعجائب الطبيعة — الجزء 2",
+    "title": "عواصم قارتي إفريقيا والأمريكتين",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -23604,7 +23604,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-76",
     "user_id": "system",
-    "title": "اختبار: تضاريس الأرض وعجائب الطبيعة — الجزء 3",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -23899,7 +23899,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-77",
     "user_id": "system",
-    "title": "اختبار: تضاريس الأرض وعجائب الطبيعة — الجزء 4",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -24200,7 +24200,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-78",
     "user_id": "system",
-    "title": "اختبار: تضاريس الأرض وعجائب الطبيعة — الجزء 5",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -24489,7 +24489,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-79",
     "user_id": "system",
-    "title": "اختبار: تضاريس الأرض وعجائب الطبيعة — الجزء 6",
+    "title": "تضاريس الأرض: الجبال الشامخة والقمم البركانية: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -24757,7 +24757,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-80",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 1",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -25094,7 +25094,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-81",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 2",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: الموسوعة المكتملة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -25425,7 +25425,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-82",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 3",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: تحدي المحترفين",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -25758,7 +25758,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-83",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 4",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: السجلات الخالدة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -26087,7 +26087,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-84",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 5",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: الرؤية والتحليل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -26420,7 +26420,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-85",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 6",
+    "title": "عواصم وخرائط دول قارة آسيا والشرق الأوسط",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -26728,7 +26728,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-86",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 7",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: المحطات التاريخية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -27040,7 +27040,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-87",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 8",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: الرموز والأساطير",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -27356,7 +27356,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-88",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 9",
+    "title": "عواصم قارتي إفريقيا والأمريكتين: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -27670,7 +27670,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-89",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 10",
+    "title": "عواصم قارتي إفريقيا والأمريكتين: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -27988,7 +27988,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-90",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 11",
+    "title": "عواصم قارتي إفريقيا والأمريكتين: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -28300,7 +28300,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-91",
     "user_id": "system",
-    "title": "اختبار: دليل عواصم وخرائط دول العالم — الجزء 12",
+    "title": "عواصم دول قارة أوروبا والدول السكاندنافيّة: الدروس والعبر",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "جغرافيا",
@@ -28602,7 +28602,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-92",
     "user_id": "system",
-    "title": "اختبار: سجال الألعاب الأولمبية والرياضات — الجزء 1",
+    "title": "عالم كرة السلة والتنس والملاكمة العالمية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -28952,7 +28952,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-93",
     "user_id": "system",
-    "title": "اختبار: سجال الألعاب الأولمبية والرياضات — الجزء 2",
+    "title": "عالم كرة السلة والتنس والملاكمة العالمية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -29296,7 +29296,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-94",
     "user_id": "system",
-    "title": "اختبار: تاريخ كرة القدم والدوريات الكبرى — الجزء 1",
+    "title": "تاريخ كأس العالم والمونديال الكروي",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -29582,7 +29582,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-95",
     "user_id": "system",
-    "title": "اختبار: تاريخ كرة القدم والدوريات الكبرى — الجزء 2",
+    "title": "تاريخ كأس العالم والمونديال الكروي: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -29866,7 +29866,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-96",
     "user_id": "system",
-    "title": "اختبار: تاريخ كرة القدم والدوريات الكبرى — الجزء 3",
+    "title": "تاريخ كأس العالم والمونديال الكروي: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -30150,7 +30150,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-97",
     "user_id": "system",
-    "title": "اختبار: تاريخ كرة القدم والدوريات الكبرى — الجزء 4",
+    "title": "تاريخ كأس العالم والمونديال الكروي: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -30434,7 +30434,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-98",
     "user_id": "system",
-    "title": "اختبار: موسوعة الرياضات والأبطال — الجزء 1",
+    "title": "تاريخ كأس العالم والمونديال الكروي: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -30788,7 +30788,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-99",
     "user_id": "system",
-    "title": "اختبار: موسوعة الرياضات والأبطال — الجزء 2",
+    "title": "موسوعة الرياضات العالمية وأبطال التحدي",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -31142,7 +31142,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-100",
     "user_id": "system",
-    "title": "اختبار: موسوعة الرياضات والأبطال — الجزء 3",
+    "title": "موسوعة الرياضات العالمية وأبطال التحدي: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -31475,7 +31475,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-101",
     "user_id": "system",
-    "title": "اختبار: موسوعة الرياضات والأبطال — الجزء 4",
+    "title": "أبطال الدوري الإسباني ودوري أبطال أوروبا",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -31808,7 +31808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-102",
     "user_id": "system",
-    "title": "اختبار: موسوعة الرياضات والأبطال — الجزء 5",
+    "title": "تاريخ كأس العالم والمونديال الكروي: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -32143,7 +32143,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-103",
     "user_id": "system",
-    "title": "اختبار: موسوعة الرياضات والأبطال — الجزء 6",
+    "title": "أبطال الدوري الإسباني ودوري أبطال أوروبا: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضة",
@@ -32480,7 +32480,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-104",
     "user_id": "system",
-    "title": "اختبار: ألغاز المنطق والهندسة الحسابية — الجزء 1",
+    "title": "تحدي المعادلة الرياضية والجبر والأرقام",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضيات",
@@ -32754,7 +32754,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-105",
     "user_id": "system",
-    "title": "اختبار: ألغاز المنطق والهندسة الحسابية — الجزء 2",
+    "title": "ألغاز الهندسة والمنطق الحسابي",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضيات",
@@ -33036,7 +33036,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-106",
     "user_id": "system",
-    "title": "اختبار: ألغاز المنطق والهندسة الحسابية — الجزء 3",
+    "title": "ألغاز الهندسة والمنطق الحسابي: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضيات",
@@ -33312,7 +33312,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-107",
     "user_id": "system",
-    "title": "اختبار: ألغاز المنطق والهندسة الحسابية — الجزء 4",
+    "title": "ألغاز الهندسة والمنطق الحسابي: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضيات",
@@ -33575,7 +33575,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-108",
     "user_id": "system",
-    "title": "اختبار: تحدي معادلات الرياضيات والأرقام",
+    "title": "تحدي المعادلة الرياضية والجبر والأرقام: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "رياضيات",
@@ -33855,7 +33855,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-109",
     "user_id": "system",
-    "title": "اختبار: السيرة النبوية والعترة الطاهرة — الجزء 1",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -34158,7 +34158,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-110",
     "user_id": "system",
-    "title": "اختبار: السيرة النبوية والعترة الطاهرة — الجزء 2",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -34461,7 +34461,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-111",
     "user_id": "system",
-    "title": "اختبار: السيرة النبوية والعترة الطاهرة — الجزء 3",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -34764,7 +34764,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-112",
     "user_id": "system",
-    "title": "اختبار: السيرة النبوية والعترة الطاهرة — الجزء 4",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -35067,7 +35067,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-113",
     "user_id": "system",
-    "title": "اختبار: السيرة النبوية والعترة الطاهرة — الجزء 5",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -35370,7 +35370,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-114",
     "user_id": "system",
-    "title": "اختبار: النهضة الحسينية ومعركة كربلاء — الجزء 1",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -35656,7 +35656,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-115",
     "user_id": "system",
-    "title": "اختبار: النهضة الحسينية ومعركة كربلاء — الجزء 2",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -35925,7 +35925,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-116",
     "user_id": "system",
-    "title": "اختبار: النهضة الحسينية ومعركة كربلاء — الجزء 3",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -36194,7 +36194,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-117",
     "user_id": "system",
-    "title": "اختبار: النهضة الحسينية ومعركة كربلاء — الجزء 4",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -36463,7 +36463,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-118",
     "user_id": "system",
-    "title": "اختبار: حِكَم وسيرة أمير المؤمنين علي (ع)",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -36596,7 +36596,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-119",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 1",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -36933,7 +36933,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-120",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 2",
+    "title": "شعراء أهل البيت والقصائد الخالدة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -37270,7 +37270,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-121",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 3",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -37590,7 +37590,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-122",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 4",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: الموسوعة المكتملة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -37910,7 +37910,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-123",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 5",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -38230,7 +38230,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-124",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 6",
+    "title": "شعراء أهل البيت: قصائد الكميت ودعبل الخزاعي",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -38550,7 +38550,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-125",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 7",
+    "title": "سيرة الإمام علي (ع): الخلافة ونهج البلاغة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -38870,7 +38870,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-126",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 8",
+    "title": "النهضة الحسينية: شهد معركة كربلاء وعاشوراء: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -39190,7 +39190,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-127",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 9",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: تحدي المحترفين",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -39510,7 +39510,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-128",
     "user_id": "system",
-    "title": "اختبار: سيرة وأحداث الأئمة المعصومين (ع) — الجزء 10",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: السجلات الخالدة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -39830,7 +39830,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-129",
     "user_id": "system",
-    "title": "اختبار: سيرة وسيدة النساء فاطمة الزهراء (ع) — الجزء 1",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: الرؤية والتحليل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -40116,7 +40116,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-130",
     "user_id": "system",
-    "title": "اختبار: سيرة وسيدة النساء فاطمة الزهراء (ع) — الجزء 2",
+    "title": "سيرة الإمام علي (ع): الولادة والنشأة وغزوة خيبر: المحطات التاريخية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -40385,7 +40385,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-131",
     "user_id": "system",
-    "title": "اختبار: قصائد ومدائح شعراء أهل البيت (ع) — الجزء 1",
+    "title": "شعراء أهل البيت: قصائد الكميت ودعبل الخزاعي: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -40654,7 +40654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-132",
     "user_id": "system",
-    "title": "اختبار: قصائد ومدائح شعراء أهل البيت (ع) — الجزء 2",
+    "title": "شعراء أهل البيت: قصائد الكميت ودعبل الخزاعي: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -40919,7 +40919,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-133",
     "user_id": "system",
-    "title": "اختبار: قصائد ومدائح شعراء أهل البيت (ع) — الجزء 3",
+    "title": "شعراء أهل البيت: قصائد الكميت ودعبل الخزاعي: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "سلسلة مسابقات أهل البيت (ع)",
@@ -41171,7 +41171,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-134",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 1",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -41525,7 +41525,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-135",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 2",
+    "title": "أسرار الكائنات البحرية والطيور المهاجرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -41865,7 +41865,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-136",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 3",
+    "title": "أسرار الكائنات البحرية والطيور المهاجرة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -42209,7 +42209,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-137",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 4",
+    "title": "العلوم الطبيعية والاكتشافات العلمية المذهلة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -42549,7 +42549,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-138",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 5",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -42880,7 +42880,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-139",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 6",
+    "title": "الفيزياء الحديثة: قوانين الحركة والجاذبية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -43207,7 +43207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-140",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 7",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -43540,7 +43540,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-141",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 8",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -43865,7 +43865,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-142",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 9",
+    "title": "خفايا الجهاز العصبي والدماغ البشري",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -44194,7 +44194,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-143",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 10",
+    "title": "خفايا الجهاز العصبي والدماغ البشري: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -44525,7 +44525,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-144",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 11",
+    "title": "عالم الثدييات والحيوانات المفترسة والبرية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -44858,7 +44858,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-145",
     "user_id": "system",
-    "title": "اختبار: الاكتشافات والعلوم الطبيعية — الجزء 12",
+    "title": "أسرار الكائنات البحرية والطيور المهاجرة: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -45187,7 +45187,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-146",
     "user_id": "system",
-    "title": "اختبار: رحلة إلى أسرار الفضاء والكواكب — الجزء 1",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -45529,7 +45529,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-147",
     "user_id": "system",
-    "title": "اختبار: رحلة إلى أسرار الفضاء والكواكب — الجزء 2",
+    "title": "أسرار كواكب المجموعة الشمسية والقمر",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -45864,7 +45864,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-148",
     "user_id": "system",
-    "title": "اختبار: خفايا جسم الإنسان وعجائب الطب — الجزء 1",
+    "title": "خفايا الجهاز العصبي والدماغ البشري: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -46218,7 +46218,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-149",
     "user_id": "system",
-    "title": "اختبار: خفايا جسم الإنسان وعجائب الطب — الجزء 2",
+    "title": "خفايا الجهاز العصبي والدماغ البشري: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -46572,7 +46572,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-150",
     "user_id": "system",
-    "title": "اختبار: خفايا جسم الإنسان وعجائب الطب — الجزء 3",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -46918,7 +46918,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-151",
     "user_id": "system",
-    "title": "اختبار: خفايا جسم الإنسان وعجائب الطب — الجزء 4",
+    "title": "خفايا الجهاز العصبي والدماغ البشري: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -47251,7 +47251,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-152",
     "user_id": "system",
-    "title": "اختبار: خفايا جسم الإنسان وعجائب الطب — الجزء 5",
+    "title": "خفايا الجهاز العصبي والدماغ البشري: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -47586,7 +47586,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-153",
     "user_id": "system",
-    "title": "اختبار: أسرار عالم الحيوان والتنوع الحيوي — الجزء 1",
+    "title": "أسرار الكائنات البحرية والطيور المهاجرة: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -47864,7 +47864,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-154",
     "user_id": "system",
-    "title": "اختبار: أسرار عالم الحيوان والتنوع الحيوي — الجزء 2",
+    "title": "أسرار الكائنات البحرية والطيور المهاجرة: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -48123,7 +48123,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-155",
     "user_id": "system",
-    "title": "اختبار: أسرار عالم الحيوان والتنوع الحيوي — الجزء 3",
+    "title": "أسرار الكائنات البحرية والطيور المهاجرة: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -48386,7 +48386,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-156",
     "user_id": "system",
-    "title": "اختبار: الكيمياء والفيزياء والتفاعلات — الجزء 1",
+    "title": "تشريح جسم الإنسان: وظائف القلب والدورة الدموية: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -48687,7 +48687,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-157",
     "user_id": "system",
-    "title": "اختبار: الكيمياء والفيزياء والتفاعلات — الجزء 2",
+    "title": "عالم الكيمياء: العناصر والجدول الدوري",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -48986,7 +48986,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-158",
     "user_id": "system",
-    "title": "اختبار: الكيمياء والفيزياء والتفاعلات — الجزء 3",
+    "title": "عالم الكيمياء: العناصر والجدول الدوري: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "علوم وطب",
@@ -49272,7 +49272,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-159",
     "user_id": "system",
-    "title": "اختبار: روائع اللغة العربية والأدب الخالد — الجزء 1",
+    "title": "روائع شعر المعلقات والأدب العربي",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "لغة عربية وأدب",
@@ -49592,7 +49592,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-160",
     "user_id": "system",
-    "title": "اختبار: روائع اللغة العربية والأدب الخالد — الجزء 2",
+    "title": "روائع شعر المعلقات والأدب العربي: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "لغة عربية وأدب",
@@ -49895,7 +49895,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-161",
     "user_id": "system",
-    "title": "اختبار: روائع اللغة العربية والأدب الخالد — الجزء 3",
+    "title": "روائع شعر المعلقات والأدب العربي: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "لغة عربية وأدب",
@@ -50198,7 +50198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-162",
     "user_id": "system",
-    "title": "اختبار: روائع اللغة العربية والأدب الخالد — الجزء 4",
+    "title": "روائع شعر المعلقات والأدب العربي: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "لغة عربية وأدب",
@@ -50501,7 +50501,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-163",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 1",
+    "title": "موسوعة الابتكارات والمخترعين العظام",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -50855,7 +50855,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-164",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 2",
+    "title": "ثقافات الشعوب والمطابخ العالمية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -51209,7 +51209,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-165",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 3",
+    "title": "موسوعة الابتكارات والمخترعين العظام: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -51563,7 +51563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-166",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 4",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -51915,7 +51915,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-167",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 5",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -52261,7 +52261,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-168",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 6",
+    "title": "عالم السينما والفنون والموسيقى العالمية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -52603,7 +52603,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-169",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 7",
+    "title": "ثقافات الشعوب والمطابخ العالمية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -52953,7 +52953,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-170",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 8",
+    "title": "ثقافات الشعوب والمطابخ العالمية: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -53301,7 +53301,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-171",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 9",
+    "title": "موسوعة الابتكارات والمخترعين العظام: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -53651,7 +53651,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-172",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 10",
+    "title": "ثقافات الشعوب والمطابخ العالمية: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -54001,7 +54001,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-173",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 11",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: الشخصيات والمحطات",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -54347,7 +54347,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-174",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 12",
+    "title": "ثقافات الشعوب والمطابخ العالمية: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -54695,7 +54695,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-175",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 13",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -55043,7 +55043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-176",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 14",
+    "title": "ثقافات الشعوب والمطابخ العالمية: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -55389,7 +55389,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-177",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 15",
+    "title": "ثقافات الشعوب والمطابخ العالمية: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -55737,7 +55737,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-178",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 16",
+    "title": "ثقافات الشعوب والمطابخ العالمية: الموسوعة المكتملة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -56079,7 +56079,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-179",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 17",
+    "title": "ثقافات الشعوب والمطابخ العالمية: تحدي المحترفين",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -56427,7 +56427,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-180",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 18",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -56775,7 +56775,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-181",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 19",
+    "title": "ثقافات الشعوب والمطابخ العالمية: السجلات الخالدة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -57125,7 +57125,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-182",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 20",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: المستويات المتقدمة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -57456,7 +57456,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-183",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 21",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: المرجع الشامل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -57783,7 +57783,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-184",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 22",
+    "title": "ثقافات الشعوب والمطابخ العالمية: الرؤية والتحليل",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -58106,7 +58106,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-185",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 23",
+    "title": "ثقافات الشعوب والمطابخ العالمية: المحطات التاريخية",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -58431,7 +58431,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-186",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 24",
+    "title": "موسوعة الابتكارات والمخترعين العظام: الخفايا والأسرار",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -58762,7 +58762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-187",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 25",
+    "title": "عالم السينما والفنون والموسيقى العالمية: المفاهيم والحقائق",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -59093,7 +59093,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-188",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 26",
+    "title": "ثقافات الشعوب والمطابخ العالمية: الرموز والأساطير",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -59420,7 +59420,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-189",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 27",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: الموسوعة المكتملة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -59749,7 +59749,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-190",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 28",
+    "title": "موسوعة الابتكارات والمخترعين العظام: التحدي والخبرة",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
@@ -60080,7 +60080,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
   {
     "id": "lib-reorg-191",
     "user_id": "system",
-    "title": "اختبار: موسوعة المعارف والمعلومات العامة — الجزء 29",
+    "title": "الأرقام القياسية والحقائق العلمية المذهلة: تحدي المحترفين",
     "created_at": "2026-08-07T00:00:00.000Z",
     "is_public": true,
     "category": "معلومات عامة",
