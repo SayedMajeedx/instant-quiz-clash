@@ -519,7 +519,7 @@ function HostRoom() {
               onClick={() => void handleStartGame()}
               className="press mt-6 w-full rounded-3xl bg-gradient-hero px-6 py-4 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
             >
-              {startsIn !== null ? t("host.startsIn", { n: startsIn }) : t("host.start")}
+              {startsIn !== null ? t("host.startingIn", { n: startsIn }) : t("host.start")}
             </button>
           </section>
         </div>
@@ -733,7 +733,7 @@ function HostRoom() {
         </div>
       </div>
 
-      <div dir="ltr" className="shrink-0 w-full max-w-5xl mx-auto grid grid-cols-2 gap-2 sm:gap-3 pt-1 pb-2 sm:pb-3">
+      <div dir="ltr" className={cn("shrink-0 w-full max-w-5xl mx-auto grid gap-2 sm:gap-3 pt-1 pb-2 sm:pb-3", question.question_type === "boolean" ? "grid-cols-1" : "grid-cols-2")}>
         {Array.from({ length: choices }, (_, i) => (
           <AnswerTile
             key={i}
