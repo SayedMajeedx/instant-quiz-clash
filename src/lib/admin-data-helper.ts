@@ -372,6 +372,9 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   const overrides = getLocalQuizOverrides();
   const dbQuizzes: AdminQuizItem[] = [];
   const dbIds = new Set<string>();
+  const dbTitles = new Set<string>();
+
+  const cleanTitle = (s: string) => (s || "").toLowerCase().replace(/[\u064B-\u0652\u0640]/g, "").trim();
 
   try {
     const { data, error } = await (supabase.from("quizzes") as any)
@@ -380,8 +383,10 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 
     if (!error && data && Array.isArray(data)) {
       data.forEach((q: any) => {
-        dbIds.add(q.id);
-        const ov = overrides[q.id] || {};
+        if (q.id) dbIds.add(q.id);
+        if (q.title) dbTitles.add(cleanTitle(q.title));
+
+        const ov = overrides[q.id] || overrides[cleanTitle(q.title)] || {};
         dbQuizzes.push({
           id: q.id,
           title: ov.title || q.title || "كويز بدون عنوان",
@@ -402,11 +407,11 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
     // Silent catch for DB query errors
   }
 
-  // Merge static QUIZ_LIBRARY
+  // Merge static QUIZ_LIBRARY (ONLY for quizzes NOT present in Supabase DB by ID or Title)
   const libraryQuizzes: AdminQuizItem[] = QUIZ_LIBRARY.filter(
-    (q) => !q.archived && q.launch_enabled !== false && !dbIds.has(q.id)
+    (q) => !q.archived && q.launch_enabled !== false && !dbIds.has(q.id) && !dbTitles.has(cleanTitle(q.title))
   ).map((q) => {
-    const ov = overrides[q.id] || {};
+    const ov = overrides[q.id] || overrides[cleanTitle(q.title)] || {};
     return {
       id: q.id,
       title: ov.title || q.title,
