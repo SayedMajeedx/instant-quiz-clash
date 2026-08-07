@@ -54,6 +54,7 @@ import {
 } from "@/components/ui/sheet";
 import {
   getAllAdminCategories,
+  getAllAdminQuizzes,
   saveLocalQuizOverride,
   saveLocalSubcategory,
   type AdminCategoryItem,
