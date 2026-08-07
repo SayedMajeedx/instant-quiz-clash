@@ -279,6 +279,27 @@ export type Database = {
           },
         ]
       }
+      quiz_play_stats: {
+        Row: {
+          created_at: string
+          last_played_at: string
+          play_count: number
+          source_quiz_id: string
+        }
+        Insert: {
+          created_at?: string
+          last_played_at?: string
+          play_count?: number
+          source_quiz_id: string
+        }
+        Update: {
+          created_at?: string
+          last_played_at?: string
+          play_count?: number
+          source_quiz_id?: string
+        }
+        Relationships: []
+      }
       quizzes: {
         Row: {
           created_at: string
@@ -407,6 +428,7 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      record_quiz_play: { Args: { p_source_id: string }; Returns: number }
       room_answers: {
         Args: { p_player_id: string; p_room_id: string }
         Returns: {

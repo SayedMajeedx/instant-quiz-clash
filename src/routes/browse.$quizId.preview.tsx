@@ -168,7 +168,10 @@ function QuizPreviewPage() {
         return;
       }
 
+      void (supabase.rpc as any)("record_quiz_play", { p_source_id: quizMeta.id });
+
       toast.success(t("browse.cloned") || "Quiz cloned successfully!");
+
       // Navigate directly to Host / Lobby creation screen — NEVER to quiz editor
       void navigate({ to: "/host", search: { quiz: res.newQuizId } });
     } catch {

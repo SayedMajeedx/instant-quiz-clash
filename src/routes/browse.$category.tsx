@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import {
+  cleanQuizTitle,
   getCategoryIcon,
   getDifficultyDetails,
 } from "@/lib/browse-helpers";
@@ -53,9 +54,12 @@ function CategoryDetailPage() {
   // Filters scoped to this category (Difficulty level)
   const [selectedDiff, setSelectedDiff] = useState("all");
   const [filterExpanded, setFilterExpanded] = useState(false);
+  const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState("newest");
 
   // Pagination state
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+
 
   const icon = getCategoryIcon(category);
 
@@ -106,28 +110,76 @@ function CategoryDetailPage() {
     })();
   }, [category]);
 
-  // Filter logic
+  // Play counts (how many times each quiz was launched)
+  const [playCounts, setPlayCounts] = useState<Record<string, number>>({});
+  useEffect(() => {
+    void (async () => {
+      const { data } = await (supabase.from("quiz_play_stats") as any).select(
+        "source_quiz_id, play_count"
+      );
+      if (!data) return;
+      const map: Record<string, number> = {};
+      for (const row of data as { source_quiz_id: string; play_count: number }[]) {
+        map[row.source_quiz_id] = row.play_count;
+      }
+      setPlayCounts(map);
+    })();
+  }, []);
+
+  // Filter + sort logic
   const filteredQuizzes = useMemo(() => {
-    return quizzes.filter((q) => {
-      let matchDiff = true;
+    const norm = (s: string) =>
+      (s || "")
+        .replace(/[\u064B-\u0652\u0640]/g, "")
+        .replace(/[إأآا]/g, "ا")
+        .replace(/ى/g, "ي")
+        .replace(/ة/g, "ه")
+        .toLowerCase()
+        .trim();
+    const term = norm(search);
+    const diffRank = { "سهل": 0, "متوسط": 1, "صعب": 2 } as Record<string, number>;
+
+    const list = quizzes.filter((q) => {
       if (selectedDiff !== "all") {
         const diffInfo = getDifficultyDetails(q);
-        if (selectedDiff === "easy" && diffInfo.label !== "سهل") matchDiff = false;
-        if (selectedDiff === "medium" && diffInfo.label !== "متوسط") matchDiff = false;
-        if (selectedDiff === "hard" && diffInfo.label !== "صعب") matchDiff = false;
+        if (selectedDiff === "easy" && diffInfo.label !== "سهل") return false;
+        if (selectedDiff === "medium" && diffInfo.label !== "متوسط") return false;
+        if (selectedDiff === "hard" && diffInfo.label !== "صعب") return false;
       }
-
-      return matchDiff;
+      if (term && !norm(cleanQuizTitle(q.title) + " " + (q.title || "")).includes(term)) return false;
+      return true;
     });
-  }, [quizzes, selectedDiff]);
+
+    const sorted = [...list];
+    if (sortBy === "easiest") {
+      sorted.sort(
+        (a, b) =>
+          (diffRank[getDifficultyDetails(a).label] ?? 1) -
+          (diffRank[getDifficultyDetails(b).label] ?? 1)
+      );
+    } else if (sortBy === "popular") {
+      sorted.sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0));
+    } else if (sortBy === "questions") {
+      sorted.sort((a, b) => (a.question_count ?? 0) - (b.question_count ?? 0));
+
+    } else if (sortBy === "alpha") {
+      sorted.sort((a, b) => cleanQuizTitle(a.title).localeCompare(cleanQuizTitle(b.title), "ar"));
+    } else {
+      sorted.sort(
+        (a, b) => new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime()
+      );
+    }
+    return sorted;
+  }, [quizzes, selectedDiff, search, sortBy, playCounts]);
 
   // Reset pagination when filters change
   useEffect(() => {
     setVisibleCount(BATCH_SIZE);
-  }, [selectedDiff]);
+  }, [selectedDiff, search, sortBy]);
 
   const visibleQuizzes = filteredQuizzes.slice(0, visibleCount);
   const hasMore = visibleCount < filteredQuizzes.length;
+
 
   return (
     <main className="relative min-h-screen px-5 py-8 pb-24">
@@ -165,9 +217,57 @@ function CategoryDetailPage() {
           </div>
         </div>
 
+        {/* Search inside this category */}
+        <div className="mt-6 flex flex-col gap-3 md:flex-row md:items-center">
+          <div className="relative flex-1">
+            <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-muted-foreground">
+              🔎
+            </span>
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder={`ابحث داخل قسم ${category}...`}
+              className="w-full rounded-2xl border border-border bg-background/60 py-3 pr-11 pl-4 font-semibold text-sm text-foreground outline-none placeholder:text-muted-foreground focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+            />
+            {search ? (
+              <button
+                type="button"
+                onClick={() => setSearch("")}
+                className="absolute inset-y-0 left-3 my-auto h-7 rounded-lg border border-border px-2 text-xs text-muted-foreground hover:text-foreground"
+              >
+                مسح
+              </button>
+            ) : null}
+          </div>
+
+          {/* Sort dropdown (separate from filters) */}
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">ترتيب حسب:</span>
+            <div className="relative">
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="w-full appearance-none rounded-2xl border border-border bg-background/60 py-2.5 pr-4 pl-9 text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+              >
+                <option value="newest">الأحدث أولاً</option>
+                <option value="popular">الأكثر لعباً</option>
+                <option value="easiest">من الأسهل للأصعب</option>
+                <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
+                <option value="alpha">أبجدياً</option>
+              </select>
+              <span className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-xs text-muted-foreground">
+                ▼
+              </span>
+            </div>
+          </div>
+
+        </div>
+
         {/* Collapsible Scoped Filter Bar */}
-        <div className="mt-6 rounded-3xl border border-border bg-surface-gradient p-5 shadow-md">
+        <div className="mt-4 rounded-3xl border border-border bg-surface-gradient p-5 shadow-md">
           <div className="flex items-center justify-between">
+
             <button
               type="button"
               onClick={() => setFilterExpanded((v) => !v)}
