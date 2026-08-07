@@ -253,7 +253,7 @@ function AdminCategoriesPage() {
     setDeleting(true);
     try {
       if (deleteTarget.type === "category") {
-        deleteLocalCategory(deleteTarget.item.id);
+        deleteLocalCategory(deleteTarget.item.id, deleteTarget.item.name);
         void db
           .from("categories")
           .delete()
@@ -262,7 +262,7 @@ function AdminCategoriesPage() {
           .catch(() => {});
         toast.success(`تم حذف القسم الرئيسي "${deleteTarget.item.name}"`);
       } else {
-        deleteLocalSubcategory(deleteTarget.item.id);
+        deleteLocalSubcategory(deleteTarget.item.id, deleteTarget.item.name);
         void db
           .from("subcategories")
           .delete()

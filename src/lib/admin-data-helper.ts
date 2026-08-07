@@ -36,6 +36,28 @@ export type AdminCategoryItem = {
 const STORAGE_KEY_CATEGORIES = "QUIZCLASH_ADMIN_CATEGORIES_V2";
 const STORAGE_KEY_SUBCATEGORIES = "QUIZCLASH_ADMIN_SUBCATEGORIES_V2";
 const STORAGE_KEY_QUIZ_OVERRIDES = "QUIZCLASH_ADMIN_QUIZ_OVERRIDES_V2";
+const STORAGE_KEY_DELETED_CATEGORIES = "QUIZCLASH_ADMIN_DELETED_CATS_V2";
+const STORAGE_KEY_DELETED_SUBCATEGORIES = "QUIZCLASH_ADMIN_DELETED_SUBS_V2";
+
+export function getDeletedCategories(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_DELETED_CATEGORIES);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function getDeletedSubcategories(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_DELETED_SUBCATEGORIES);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
 
 /**
  * Get custom quiz category/subcategory/public overrides from localStorage
@@ -103,6 +125,12 @@ export function saveLocalCategory(catName: string, catSlug?: string): AdminCateg
   if (typeof window !== "undefined") {
     try {
       localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(existing));
+
+      // Remove from deleted list if previously deleted
+      const deletedCats = getDeletedCategories().filter(
+        (x) => x.toLowerCase() !== name.toLowerCase() && x.toLowerCase() !== item!.id.toLowerCase()
+      );
+      localStorage.setItem(STORAGE_KEY_DELETED_CATEGORIES, JSON.stringify(deletedCats));
     } catch (e) {
       console.warn("Failed to save category locally", e);
     }
@@ -124,12 +152,17 @@ export function saveLocalCategory(catName: string, catSlug?: string): AdminCateg
 /**
  * Delete a main category
  */
-export function deleteLocalCategory(catId: string) {
+export function deleteLocalCategory(catId: string, catName?: string) {
   if (typeof window === "undefined") return;
   try {
     const existing = getLocalCategories();
-    const updated = existing.filter((c) => c.id !== catId);
+    const updated = existing.filter((c) => c.id !== catId && c.name.trim().toLowerCase() !== (catName || "").trim().toLowerCase());
     localStorage.setItem(STORAGE_KEY_CATEGORIES, JSON.stringify(updated));
+
+    const deletedList = getDeletedCategories();
+    if (!deletedList.includes(catId)) deletedList.push(catId);
+    if (catName && !deletedList.includes(catName.trim())) deletedList.push(catName.trim());
+    localStorage.setItem(STORAGE_KEY_DELETED_CATEGORIES, JSON.stringify(deletedList));
   } catch (e) {
     console.warn("Failed to delete category", e);
   }
@@ -180,12 +213,18 @@ export function saveLocalSubcategory(parentCatId: string, parentCatName: string,
   if (typeof window !== "undefined") {
     try {
       localStorage.setItem(STORAGE_KEY_SUBCATEGORIES, JSON.stringify(existing));
+
+      // Remove from deleted list if previously deleted
+      const deletedSubs = getDeletedSubcategories().filter(
+        (x) => x.toLowerCase() !== subName.trim().toLowerCase() && x.toLowerCase() !== item!.id.toLowerCase()
+      );
+      localStorage.setItem(STORAGE_KEY_DELETED_SUBCATEGORIES, JSON.stringify(deletedSubs));
     } catch (e) {
       console.warn("Failed to save subcategory", e);
     }
   }
 
-  // Attempt background DB insert silently without uncaught error logs
+  // Attempt background DB insert safely
   void (async () => {
     try {
       await (supabase.from("subcategories") as any)
@@ -201,16 +240,23 @@ export function saveLocalSubcategory(parentCatId: string, parentCatName: string,
 /**
  * Delete a subcategory
  */
-export function deleteLocalSubcategory(subId: string) {
+export function deleteLocalSubcategory(subId: string, subName?: string) {
   if (typeof window === "undefined") return;
   try {
     const existing = getLocalSubcategories();
-    const updated = existing.filter((s) => s.id !== subId);
+    const updated = existing.filter((s) => s.id !== subId && s.name.trim().toLowerCase() !== (subName || "").trim().toLowerCase());
     localStorage.setItem(STORAGE_KEY_SUBCATEGORIES, JSON.stringify(updated));
+
+    const deletedList = getDeletedSubcategories();
+    if (!deletedList.includes(subId)) deletedList.push(subId);
+    if (subName && !deletedList.includes(subName.trim())) deletedList.push(subName.trim());
+    localStorage.setItem(STORAGE_KEY_DELETED_SUBCATEGORIES, JSON.stringify(deletedList));
   } catch (e) {
     console.warn("Failed to delete subcategory", e);
   }
 }
+
+
 
 /**
  * Fetch ALL quizzes across DB, QUIZ_LIBRARY, and Local Overrides
@@ -412,7 +458,28 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
     }
   });
 
-  return Array.from(categoryMap.values()).sort((a, b) => b.quiz_count - a.quiz_count);
+  const deletedCats = new Set(getDeletedCategories().map((x) => x.toLowerCase().trim()));
+  const deletedSubs = new Set(getDeletedSubcategories().map((x) => x.toLowerCase().trim()));
+
+  const result: AdminCategoryItem[] = [];
+
+  categoryMap.forEach((parentObj, key) => {
+    const isDeletedCat =
+      deletedCats.has(key.toLowerCase().trim()) ||
+      deletedCats.has(parentObj.id.toLowerCase().trim());
+
+    if (!isDeletedCat) {
+      // Filter out deleted subcategories
+      parentObj.subcategories = parentObj.subcategories.filter(
+        (s) =>
+          !deletedSubs.has(s.id.toLowerCase().trim()) &&
+          !deletedSubs.has(s.name.toLowerCase().trim())
+      );
+      result.push(parentObj);
+    }
+  });
+
+  return result.sort((a, b) => b.quiz_count - a.quiz_count);
 }
 
 /**
