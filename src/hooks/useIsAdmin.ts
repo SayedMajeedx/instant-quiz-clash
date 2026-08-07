@@ -1,27 +1,38 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
+const ADMIN_EMAILS = new Set(["ifatshady@gmail.com"]);
+
 export function useIsAdmin() {
   const [isAdmin, setIsAdmin] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     let mounted = true;
-    async function check() {
-      try {
-        const { data: authData } = await supabase.auth.getUser();
-        if (!authData.user) {
-          if (mounted) {
-            setIsAdmin(false);
-            setLoading(false);
-          }
-          return;
-        }
 
+    async function checkUser(user: any) {
+      if (!user) {
+        if (mounted) {
+          setIsAdmin(false);
+          setLoading(false);
+        }
+        return;
+      }
+
+      const email = user.email?.toLowerCase();
+      if (email && ADMIN_EMAILS.has(email)) {
+        if (mounted) {
+          setIsAdmin(true);
+          setLoading(false);
+        }
+        return;
+      }
+
+      try {
         const { data: profile } = await supabase
           .from("profiles")
           .select("role")
-          .eq("id", authData.user.id)
+          .eq("id", user.id)
           .maybeSingle();
 
         const role = (profile as any)?.role;
@@ -37,9 +48,20 @@ export function useIsAdmin() {
         }
       }
     }
-    check();
+
+    // Initial check
+    supabase.auth.getUser().then(({ data }) => {
+      checkUser(data.user);
+    });
+
+    // Listen to auth state changes (e.g. login with Google redirect completion)
+    const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
+      checkUser(session?.user ?? null);
+    });
+
     return () => {
       mounted = false;
+      authListener.subscription.unsubscribe();
     };
   }, []);
 

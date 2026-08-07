@@ -1,4 +1,4 @@
-import { createFileRoute, Outlet, Link, redirect, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Outlet, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import {
@@ -16,69 +16,95 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+const ADMIN_EMAILS = new Set(["ifatshady@gmail.com"]);
+
 export const Route = createFileRoute("/admin")({
   ssr: false,
-  beforeLoad: async () => {
-    const { data: userData } = await supabase.auth.getUser();
-    if (!userData.user) {
-      throw redirect({ to: "/auth" });
-    }
-
-    const { data: profile } = await supabase
-      .from("profiles")
-      .select("role")
-      .eq("id", userData.user.id)
-      .maybeSingle();
-
-    const role = (profile as any)?.role;
-    const isAdmin = role === "admin" || role === "super_admin" || role === "owner";
-
-    if (!isAdmin) {
-      // STRICT ACCESS CONTROL: Non-admins are blocked and redirected to homepage
-      throw redirect({ to: "/" });
-    }
-
-    return { user: userData.user, role };
-  },
   component: AdminLayout,
 });
 
 function AdminLayout() {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
   const [userEmail, setUserEmail] = useState<string>("");
   const [displayName, setDisplayName] = useState<string>("");
 
   useEffect(() => {
-    async function checkRole() {
-      const { data: userData } = await supabase.auth.getUser();
-      if (!userData.user) {
-        setIsAdmin(false);
+    let mounted = true;
+
+    async function checkRole(user: any) {
+      if (!user) {
+        if (mounted) {
+          setIsAdmin(false);
+          setLoading(false);
+          void navigate({ to: "/auth", replace: true });
+        }
         return;
       }
-      setUserEmail(userData.user.email || "");
 
-      const { data: profile } = await supabase
-        .from("profiles")
-        .select("role, name")
-        .eq("id", userData.user.id)
-        .maybeSingle();
+      const email = (user.email || "").toLowerCase();
+      if (mounted) {
+        setUserEmail(user.email || "");
+      }
 
-      if (profile) {
-        setDisplayName((profile as any).name || (profile as any).display_name || userData.user.email || "");
-        const role = (profile as any).role;
-        const adminAllowed = role === "admin" || role === "super_admin" || role === "owner";
-        setIsAdmin(adminAllowed);
-
-        if (!adminAllowed) {
-          void navigate({ to: "/", replace: true });
+      // 1. Check hardcoded admin whitelist first
+      if (email && ADMIN_EMAILS.has(email)) {
+        if (mounted) {
+          setDisplayName(user.user_metadata?.full_name || email.split("@")[0]);
+          setIsAdmin(true);
+          setLoading(false);
         }
-      } else {
-        setIsAdmin(false);
-        void navigate({ to: "/", replace: true });
+        return;
+      }
+
+      // 2. Query Supabase profiles table for role
+      try {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("role, name")
+          .eq("id", user.id)
+          .maybeSingle();
+
+        if (profile) {
+          const role = (profile as any)?.role;
+          const isAllowed = role === "admin" || role === "super_admin" || role === "owner";
+          if (mounted) {
+            setDisplayName((profile as any).name || (profile as any).display_name || user.email || "");
+            setIsAdmin(isAllowed);
+            setLoading(false);
+          }
+        } else {
+          if (mounted) {
+            setIsAdmin(false);
+            setLoading(false);
+          }
+        }
+      } catch (err) {
+        console.error("Role check error:", err);
+        if (mounted) {
+          setIsAdmin(false);
+          setLoading(false);
+        }
       }
     }
-    checkRole();
+
+    // Check initial user
+    supabase.auth.getUser().then(({ data }) => {
+      checkRole(data.user);
+    });
+
+    // Listen for auth changes (e.g. Google OAuth redirect completion)
+    const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        checkRole(session.user);
+      }
+    });
+
+    return () => {
+      mounted = false;
+      authListener.subscription.unsubscribe();
+    };
   }, [navigate]);
 
   const navItems = [
@@ -90,7 +116,7 @@ function AdminLayout() {
     { label: "إدارة المستخدمين", to: "/admin/users", icon: Users },
   ];
 
-  if (isAdmin === null) {
+  if (loading) {
     return (
       <div className="flex h-screen w-full items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-3">
