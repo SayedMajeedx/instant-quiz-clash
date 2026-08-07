@@ -137,7 +137,10 @@ function CategoryDetailPage() {
     const sorted = [...list];
     if (sortBy === "easiest") {
       sorted.sort(
-        (a, b) => diffRank[getDifficultyDetails(a).label] - diffRank[getDifficultyDetails(b).label]
+        (a, b) =>
+          (diffRank[getDifficultyDetails(a).label] ?? 1) -
+          (diffRank[getDifficultyDetails(b).label] ?? 1)
+
       );
     } else if (sortBy === "questions") {
       sorted.sort((a, b) => (a.question_count ?? 0) - (b.question_count ?? 0));
