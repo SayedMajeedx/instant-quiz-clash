@@ -358,7 +358,9 @@ function AdminImportPage() {
 
         // Determine final category and subcategory
         const targetCategory = importMode === "override" ? overrideCategory : (item.category || "عام");
-        const targetSubcategory = importMode === "override" ? overrideSubcategory : (item.subcategory || "");
+        const targetSubcategory = importMode === "override"
+          ? (overrideSubcategory === "none" ? "" : overrideSubcategory)
+          : (item.subcategory || "");
 
         // Check Collision strategy
         if (item.collisionStatus === "collision") {
