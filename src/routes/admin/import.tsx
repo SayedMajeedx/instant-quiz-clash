@@ -417,21 +417,38 @@ function AdminImportPage() {
             ? `${item.title} (مستورد)`
             : item.title;
 
-        const quizPayload: any = {
+        let newQuiz: any = null;
+        let quizErr: any = null;
+
+        // Tier 1: Attempt full insert with category and subcategory
+        const quizPayloadFull: any = {
           title: quizInsertTitle,
-          category: targetCategory,
-          subcategory: targetSubcategory,
+          category: targetCategory || null,
+          subcategory: targetSubcategory || null,
         };
+        if (currentUserId) quizPayloadFull.user_id = currentUserId;
 
-        if (currentUserId) {
-          quizPayload.user_id = currentUserId;
+        const res1 = await db.from("quizzes").insert([quizPayloadFull]).select().single();
+        if (!res1.error && res1.data) {
+          newQuiz = res1.data;
+        } else {
+          quizErr = res1.error;
+          console.warn("Full quiz insert failed, trying fallback insert:", res1.error);
+
+          // Tier 2: Minimal insert fallback (in case category/subcategory columns are missing in PostgREST schema cache)
+          const quizPayloadMinimal: any = {
+            title: quizInsertTitle,
+          };
+          if (currentUserId) quizPayloadMinimal.user_id = currentUserId;
+
+          const res2 = await db.from("quizzes").insert([quizPayloadMinimal]).select().single();
+          if (!res2.error && res2.data) {
+            newQuiz = res2.data;
+            quizErr = null;
+          } else {
+            quizErr = res2.error;
+          }
         }
-
-        const { data: newQuiz, error: quizErr } = await db
-          .from("quizzes")
-          .insert([quizPayload])
-          .select()
-          .single();
 
         if (quizErr || !newQuiz) {
           console.error("Failed to insert quiz:", quizErr);
@@ -442,7 +459,7 @@ function AdminImportPage() {
 
         // Insert questions
         if (item.questions.length > 0) {
-          const questionInserts = item.questions.map((q, idx) => ({
+          const questionInsertsFull = item.questions.map((q, idx) => ({
             quiz_id: newQuiz.id,
             question_text: q.question_text,
             options: q.options,
@@ -455,9 +472,21 @@ function AdminImportPage() {
             subcategory: q.subcategory || null,
           }));
 
-          const { error: qErr } = await db.from("questions").insert(questionInserts);
+          let { error: qErr } = await db.from("questions").insert(questionInsertsFull);
           if (qErr) {
-            console.error("Failed to insert questions for quiz:", newQuiz.id, qErr);
+            console.warn("Full questions insert failed, trying minimal questions insert:", qErr);
+            const questionInsertsMinimal = item.questions.map((q, idx) => ({
+              quiz_id: newQuiz.id,
+              question_text: q.question_text,
+              options: q.options,
+              correct_index: q.correct_index,
+              time_limit_seconds: q.time_limit_seconds || 20,
+              order_index: idx,
+            }));
+            const { error: qErr2 } = await db.from("questions").insert(questionInsertsMinimal);
+            if (qErr2) {
+              console.error("Failed to insert questions for quiz:", newQuiz.id, qErr2);
+            }
           }
         }
 
