@@ -109,28 +109,55 @@ function CategoryDetailPage() {
     })();
   }, [category]);
 
-  // Filter logic
+  // Filter + sort logic
   const filteredQuizzes = useMemo(() => {
-    return quizzes.filter((q) => {
-      let matchDiff = true;
+    const norm = (s: string) =>
+      (s || "")
+        .replace(/[\u064B-\u0652\u0640]/g, "")
+        .replace(/[إأآا]/g, "ا")
+        .replace(/ى/g, "ي")
+        .replace(/ة/g, "ه")
+        .toLowerCase()
+        .trim();
+    const term = norm(search);
+    const diffRank = { "سهل": 0, "متوسط": 1, "صعب": 2 } as Record<string, number>;
+
+    const list = quizzes.filter((q) => {
       if (selectedDiff !== "all") {
         const diffInfo = getDifficultyDetails(q);
-        if (selectedDiff === "easy" && diffInfo.label !== "سهل") matchDiff = false;
-        if (selectedDiff === "medium" && diffInfo.label !== "متوسط") matchDiff = false;
-        if (selectedDiff === "hard" && diffInfo.label !== "صعب") matchDiff = false;
+        if (selectedDiff === "easy" && diffInfo.label !== "سهل") return false;
+        if (selectedDiff === "medium" && diffInfo.label !== "متوسط") return false;
+        if (selectedDiff === "hard" && diffInfo.label !== "صعب") return false;
       }
-
-      return matchDiff;
+      if (term && !norm(cleanQuizTitle(q.title) + " " + (q.title || "")).includes(term)) return false;
+      return true;
     });
-  }, [quizzes, selectedDiff]);
+
+    const sorted = [...list];
+    if (sortBy === "easiest") {
+      sorted.sort(
+        (a, b) => diffRank[getDifficultyDetails(a).label] - diffRank[getDifficultyDetails(b).label]
+      );
+    } else if (sortBy === "questions") {
+      sorted.sort((a, b) => (a.question_count ?? 0) - (b.question_count ?? 0));
+    } else if (sortBy === "alpha") {
+      sorted.sort((a, b) => cleanQuizTitle(a.title).localeCompare(cleanQuizTitle(b.title), "ar"));
+    } else {
+      sorted.sort(
+        (a, b) => new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime()
+      );
+    }
+    return sorted;
+  }, [quizzes, selectedDiff, search, sortBy]);
 
   // Reset pagination when filters change
   useEffect(() => {
     setVisibleCount(BATCH_SIZE);
-  }, [selectedDiff]);
+  }, [selectedDiff, search, sortBy]);
 
   const visibleQuizzes = filteredQuizzes.slice(0, visibleCount);
   const hasMore = visibleCount < filteredQuizzes.length;
+
 
   return (
     <main className="relative min-h-screen px-5 py-8 pb-24">
