@@ -73,7 +73,7 @@ function UserManagementPage() {
       // Fetch profiles
       const { data: profiles, error: profileError } = await supabase
         .from("profiles")
-        .select("id, name, email, created_at, role")
+        .select("*")
         .order("created_at", { ascending: false });
 
       if (profileError) {
