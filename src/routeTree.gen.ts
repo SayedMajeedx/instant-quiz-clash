@@ -11,8 +11,14 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AdminRouteRouteImport } from './routes/admin/route'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as JoinRouteImport } from './routes/join'
+import { Route as AdminIndexRouteImport } from './routes/admin/index'
+import { Route as AdminAnalyticsRouteImport } from './routes/admin/analytics'
+import { Route as AdminCategoriesRouteImport } from './routes/admin/categories'
+import { Route as AdminImportRouteImport } from './routes/admin/import'
+import { Route as AdminUsersRouteImport } from './routes/admin/users'
 import { Route as BrowseIndexRouteImport } from './routes/browse.index'
 import { Route as BrowseCategoryRouteImport } from './routes/browse.$category'
 import { Route as PlayCodeRouteImport } from './routes/play.$code'
@@ -20,7 +26,9 @@ import { Route as AuthenticatedHostIndexRouteImport } from './routes/_authentica
 import { Route as AuthenticatedHostCodeRouteImport } from './routes/_authenticated/host.$code'
 import { Route as AuthenticatedQuizzesIndexRouteImport } from './routes/_authenticated/quizzes.index'
 import { Route as AuthenticatedQuizzesQuizIdRouteImport } from './routes/_authenticated/quizzes.$quizId'
+import { Route as AdminQuizzesIndexRouteImport } from './routes/admin/quizzes.index'
 import { Route as BrowseQuizIdPreviewRouteImport } from './routes/browse.$quizId.preview'
+import { Route as AdminQuizzesQuizIdEditRouteImport } from './routes/admin/quizzes.$quizId.edit'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -29,6 +37,11 @@ const IndexRoute = IndexRouteImport.update({
 } as any)
 const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
   id: '/_authenticated',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRouteRoute = AdminRouteRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -40,6 +53,31 @@ const JoinRoute = JoinRouteImport.update({
   id: '/join',
   path: '/join',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
+const AdminAnalyticsRoute = AdminAnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
+const AdminCategoriesRoute = AdminCategoriesRouteImport.update({
+  id: '/categories',
+  path: '/categories',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
+const AdminImportRoute = AdminImportRouteImport.update({
+  id: '/import',
+  path: '/import',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
+const AdminUsersRoute = AdminUsersRouteImport.update({
+  id: '/users',
+  path: '/users',
+  getParentRoute: () => AdminRouteRoute,
 } as any)
 const BrowseIndexRoute = BrowseIndexRouteImport.update({
   id: '/browse/',
@@ -78,99 +116,156 @@ const AuthenticatedQuizzesQuizIdRoute =
     path: '/quizzes/$quizId',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const AdminQuizzesIndexRoute = AdminQuizzesIndexRouteImport.update({
+  id: '/quizzes/',
+  path: '/quizzes/',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
 const BrowseQuizIdPreviewRoute = BrowseQuizIdPreviewRouteImport.update({
   id: '/browse/$quizId/preview',
   path: '/browse/$quizId/preview',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminQuizzesQuizIdEditRoute = AdminQuizzesQuizIdEditRouteImport.update({
+  id: '/quizzes/$quizId/edit',
+  path: '/quizzes/$quizId/edit',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteRouteWithChildren
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
+  '/admin/categories': typeof AdminCategoriesRoute
+  '/admin/import': typeof AdminImportRoute
+  '/admin/users': typeof AdminUsersRoute
   '/browse/$category': typeof BrowseCategoryRoute
   '/play/$code': typeof PlayCodeRoute
+  '/admin/': typeof AdminIndexRoute
   '/browse/': typeof BrowseIndexRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
   '/host/': typeof AuthenticatedHostIndexRoute
   '/quizzes/': typeof AuthenticatedQuizzesIndexRoute
+  '/admin/quizzes/': typeof AdminQuizzesIndexRoute
+  '/admin/quizzes/$quizId/edit': typeof AdminQuizzesQuizIdEditRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
+  '/admin/categories': typeof AdminCategoriesRoute
+  '/admin/import': typeof AdminImportRoute
+  '/admin/users': typeof AdminUsersRoute
   '/browse/$category': typeof BrowseCategoryRoute
   '/play/$code': typeof PlayCodeRoute
+  '/admin': typeof AdminIndexRoute
   '/browse': typeof BrowseIndexRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
   '/host': typeof AuthenticatedHostIndexRoute
   '/quizzes': typeof AuthenticatedQuizzesIndexRoute
+  '/admin/quizzes': typeof AdminQuizzesIndexRoute
+  '/admin/quizzes/$quizId/edit': typeof AdminQuizzesQuizIdEditRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
+  '/admin': typeof AdminRouteRouteWithChildren
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/admin/analytics': typeof AdminAnalyticsRoute
+  '/admin/categories': typeof AdminCategoriesRoute
+  '/admin/import': typeof AdminImportRoute
+  '/admin/users': typeof AdminUsersRoute
   '/browse/$category': typeof BrowseCategoryRoute
   '/play/$code': typeof PlayCodeRoute
+  '/admin/': typeof AdminIndexRoute
   '/browse/': typeof BrowseIndexRoute
   '/_authenticated/host/$code': typeof AuthenticatedHostCodeRoute
   '/_authenticated/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
   '/_authenticated/host/': typeof AuthenticatedHostIndexRoute
   '/_authenticated/quizzes/': typeof AuthenticatedQuizzesIndexRoute
+  '/admin/quizzes/': typeof AdminQuizzesIndexRoute
+  '/admin/quizzes/$quizId/edit': typeof AdminQuizzesQuizIdEditRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/auth'
     | '/join'
+    | '/admin/analytics'
+    | '/admin/categories'
+    | '/admin/import'
+    | '/admin/users'
     | '/browse/$category'
     | '/play/$code'
+    | '/admin/'
     | '/browse/'
     | '/host/$code'
     | '/quizzes/$quizId'
     | '/browse/$quizId/preview'
     | '/host/'
     | '/quizzes/'
+    | '/admin/quizzes/'
+    | '/admin/quizzes/$quizId/edit'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/auth'
     | '/join'
+    | '/admin/analytics'
+    | '/admin/categories'
+    | '/admin/import'
+    | '/admin/users'
     | '/browse/$category'
     | '/play/$code'
+    | '/admin'
     | '/browse'
     | '/host/$code'
     | '/quizzes/$quizId'
     | '/browse/$quizId/preview'
     | '/host'
     | '/quizzes'
+    | '/admin/quizzes'
+    | '/admin/quizzes/$quizId/edit'
   id:
     | '__root__'
     | '/'
     | '/_authenticated'
+    | '/admin'
     | '/auth'
     | '/join'
+    | '/admin/analytics'
+    | '/admin/categories'
+    | '/admin/import'
+    | '/admin/users'
     | '/browse/$category'
     | '/play/$code'
+    | '/admin/'
     | '/browse/'
     | '/_authenticated/host/$code'
     | '/_authenticated/quizzes/$quizId'
     | '/browse/$quizId/preview'
     | '/_authenticated/host/'
     | '/_authenticated/quizzes/'
+    | '/admin/quizzes/'
+    | '/admin/quizzes/$quizId/edit'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
+  AdminRouteRoute: typeof AdminRouteRouteWithChildren
   AuthRoute: typeof AuthRoute
   JoinRoute: typeof JoinRoute
   BrowseCategoryRoute: typeof BrowseCategoryRoute
@@ -195,6 +290,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/auth': {
       id: '/auth'
       path: '/auth'
@@ -208,6 +310,41 @@ declare module '@tanstack/react-router' {
       fullPath: '/join'
       preLoaderRoute: typeof JoinRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
+    '/admin/analytics': {
+      id: '/admin/analytics'
+      path: '/analytics'
+      fullPath: '/admin/analytics'
+      preLoaderRoute: typeof AdminAnalyticsRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
+    '/admin/categories': {
+      id: '/admin/categories'
+      path: '/categories'
+      fullPath: '/admin/categories'
+      preLoaderRoute: typeof AdminCategoriesRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
+    '/admin/import': {
+      id: '/admin/import'
+      path: '/import'
+      fullPath: '/admin/import'
+      preLoaderRoute: typeof AdminImportRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
+    '/admin/users': {
+      id: '/admin/users'
+      path: '/users'
+      fullPath: '/admin/users'
+      preLoaderRoute: typeof AdminUsersRouteImport
+      parentRoute: typeof AdminRouteRoute
     }
     '/browse/': {
       id: '/browse/'
@@ -258,12 +395,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedQuizzesQuizIdRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/admin/quizzes/': {
+      id: '/admin/quizzes/'
+      path: '/quizzes'
+      fullPath: '/admin/quizzes/'
+      preLoaderRoute: typeof AdminQuizzesIndexRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
     '/browse/$quizId/preview': {
       id: '/browse/$quizId/preview'
       path: '/browse/$quizId/preview'
       fullPath: '/browse/$quizId/preview'
       preLoaderRoute: typeof BrowseQuizIdPreviewRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/admin/quizzes/$quizId/edit': {
+      id: '/admin/quizzes/$quizId/edit'
+      path: '/quizzes/$quizId/edit'
+      fullPath: '/admin/quizzes/$quizId/edit'
+      preLoaderRoute: typeof AdminQuizzesQuizIdEditRouteImport
+      parentRoute: typeof AdminRouteRoute
     }
   }
 }
@@ -285,9 +436,34 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
 const AuthenticatedRouteRouteWithChildren =
   AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
 
+interface AdminRouteRouteChildren {
+  AdminAnalyticsRoute: typeof AdminAnalyticsRoute
+  AdminCategoriesRoute: typeof AdminCategoriesRoute
+  AdminImportRoute: typeof AdminImportRoute
+  AdminUsersRoute: typeof AdminUsersRoute
+  AdminIndexRoute: typeof AdminIndexRoute
+  AdminQuizzesIndexRoute: typeof AdminQuizzesIndexRoute
+  AdminQuizzesQuizIdEditRoute: typeof AdminQuizzesQuizIdEditRoute
+}
+
+const AdminRouteRouteChildren: AdminRouteRouteChildren = {
+  AdminAnalyticsRoute: AdminAnalyticsRoute,
+  AdminCategoriesRoute: AdminCategoriesRoute,
+  AdminImportRoute: AdminImportRoute,
+  AdminUsersRoute: AdminUsersRoute,
+  AdminIndexRoute: AdminIndexRoute,
+  AdminQuizzesIndexRoute: AdminQuizzesIndexRoute,
+  AdminQuizzesQuizIdEditRoute: AdminQuizzesQuizIdEditRoute,
+}
+
+const AdminRouteRouteWithChildren = AdminRouteRoute._addFileChildren(
+  AdminRouteRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
+  AdminRouteRoute: AdminRouteRouteWithChildren,
   AuthRoute: AuthRoute,
   JoinRoute: JoinRoute,
   BrowseCategoryRoute: BrowseCategoryRoute,
