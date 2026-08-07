@@ -46,14 +46,14 @@ function AdminLayout() {
       // Query profile role
       const { data: profile } = await supabase
         .from("profiles")
-        .select("role, display_name")
+        .select("role, name")
         .eq("id", userData.user.id)
         .maybeSingle();
 
       if (profile) {
-        setDisplayName((profile as any).display_name || userData.user.email || "");
-        // If role is admin or user is the creator/first user, grant access
-        setIsAdmin((profile as any).role === "admin" || (profile as any).role === "owner" || true); // Dev default: open for system admins
+        setDisplayName((profile as any).name || (profile as any).display_name || userData.user.email || "");
+        const role = (profile as any).role;
+        setIsAdmin(role === "admin" || role === "super_admin" || role === "owner");
       } else {
         setDisplayName(userData.user.email || "");
         setIsAdmin(true);
