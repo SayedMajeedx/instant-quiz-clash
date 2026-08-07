@@ -53,9 +53,12 @@ function CategoryDetailPage() {
   // Filters scoped to this category (Difficulty level)
   const [selectedDiff, setSelectedDiff] = useState("all");
   const [filterExpanded, setFilterExpanded] = useState(false);
+  const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState("newest");
 
   // Pagination state
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+
 
   const icon = getCategoryIcon(category);
 
