@@ -1,0 +1,270 @@
+{
+  "id": "lib-new-anime_cartoons-1",
+  "user_id": "system",
+  "title": "عالم الأنمي والكرتون — الجزء 1",
+  "created_at": "2026-08-07T00:00:00.000Z",
+  "is_public": true,
+  "category": "أنمي",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "question_text": "في أنمي 'كابتن ماجد' (⁦Captain Tsubasa⁩)، ما اسم الفريق الياباني الذي ينتمي إليه ماجد في المراحل الأولى من المسلسل؟",
+      "options": [
+        "فريق طوكيو",
+        "فريق ناينتس",
+        "فريق نانكاتسو",
+        "فريق أوساكا"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ماجد (تسوباسا أوزورا) ينتمي إلى فريق نانكاتسو المدرسي الذي يُعدّ قاعدته الأولى في رحلته نحو كرة القدم الاحترافية.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في مسلسل 'سيلور مون' (⁦Sailor Moon⁩)، ما اسم القمر الخيالي الذي تنحدر منه أميرة سيرينيتي وهو مملكة المحاربات؟",
+      "options": [
+        "مملكة كريستال طوكيو",
+        "مملكة المملكة الفضية",
+        "مملكة هيليوس",
+        "مملكة كريستال طوكيو الجديدة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تنتمي الأميرة سيرينيتي (أساغي تسوكينو) إلى 'المملكة الفضية' (⁦Silver Millennium⁩) الواقعة على القمر، وهي حضارة قديمة دُمِّرت في حرب كونية.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "في أنمي 'دراغون بول ⁦Z⁩'، ما اسم الكوكب الأصلي لجنس السايانز الذي دمّره فريزا خوفاً منهم؟",
+      "options": [
+        "كوكب نامك",
+        "كوكب فيجيتا",
+        "كوكب زينو",
+        "كوكب أرليان"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كوكب فيجيتا (⁦Planet Vegeta⁩) هو الكوكب الأصلي لجنس السايانز، دمّره فريزا لخشيته من قوتهم المتنامية، وكان غوكو (كاكاروت) قد أُرسل إلى الأرض قبل التدمير.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'هجوم العمالقة' (⁦Attack on Titan⁩)، ما اسم القوة الخاصة التي يمتلكها إيرين ييغر والتي تُمكّنه من التحوّل إلى عملاق والتحكم في العمالقة النقيين؟",
+      "options": [
+        "عملاق المدرّع",
+        "عملاق الهجوم",
+        "عملاق التيتان الأساسي",
+        "عملاق المؤسِّس"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 25,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عملاق المؤسِّس (⁦Founding Titan⁩) هو القوة الأعظم التي ورثها إيرين، وتُمكّنه من التحكم في العمالقة النقيين وذاكرة أبناء يمير، وهي محور الأحداث الرئيسي في الجزء الأخير.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ون بيس' (⁦One Piece⁩)، ما اسم السجن البحري المحصّن الذي يقع تحت الماء وأقدم على اقتحامه مونكي دي لوفي لإنقاذ أخيه إيس؟",
+      "options": [
+        "إمبل داون",
+        "إنيس لوبي",
+        "ماريفورد",
+        "روكي بورت"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "إمبل داون هو السجن الحكومي المرعب الواقع تحت الماء، اقتحمه لوفي في قوس إنقاذ إيس من الإعدام.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ناروتو' (⁦Naruto⁩)، ما اسم التقنية التي ابتكرها الجيل الرابع هوكاجي مينامين نامي كازي وأودت بحياته عند إبعاد مخلب الثعلب التسعة الأذناب؟",
+      "options": [
+        "هيراشين نو جوتسو",
+        "راسينغان",
+        "كاجي ريو",
+        "أماتيراسو"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "هيراشين نو جوتسو أو 'تقنية برق النار' هي جوتسو الانتقال الفوري الذي اشتُهر به الهوكاجي الرابع مينامين وتمكّن به من إنقاذ القرية.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'فولميتال ألكيميست: برذرهود' (⁦Fullmetal Alchemist Brotherhood⁩)، ما اسم الخطيئة المجسَّدة التي تمثّل 'الكسل' وتستطيع النوم لفترات طويلة جداً؟",
+      "options": [
+        "غريد (⁦Greed⁩)",
+        "سلوث (⁦Sloth⁩)",
+        "إنفي (⁦Envy⁩)",
+        "غلوتوني (⁦Gluttony⁩)"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "سلوث يمثّل خطيئة الكسل في المسلسل، وهو من أضخم الخطايا المجسّدة جسماً وأبطأها بسبب طبيعته الكسولة رغم قوّته الهائلة.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'يو-غي-أوه!' (⁦Yu-Gi-Oh⁩!) الأصلي، ما اسم اللعبة الإلكترونية المصغّرة التي كان البطل يوغي يحملها وتضمّنت الروح القديمة للفرعون؟",
+      "options": [
+        "الشطرنج الملكي",
+        "مكعب المليونير",
+        "لغز الألف وجه (⁦Millennium Puzzle⁩)",
+        "درع المحارب"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Millennium Puzzle⁩ هو القطعة الذهبية المثلثة التي أمضى يوغي موتو ثماني سنوات في تجميعها، وكانت تحمل روح الفرعون أتيم وهي أصل قوّته.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ديث نوت' (⁦Death Note⁩)، ما اسم المحقق الشهير الغامض الذي تصدّى للكشف عن هوية كيرا وكان يجلس بطريقة غريبة ويُحبّ الحلوى بشكل مفرط؟",
+      "options": [
+        "⁦Near⁩",
+        "⁦Mello⁩",
+        "⁦L Lawliet⁩",
+        "⁦Light Yagami⁩"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦L Lawliet⁩ هو المحقق العبقري في ⁦Death Note⁩ الذي عرف باسم '⁦L⁩' فقط، ويتميز بجلسته الغريبة وشغفه الاستثنائي بالسكريات.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'سيلور مون' (⁦Sailor Moon⁩) الكلاسيكي، ما اسم الفيلق الشرير الرئيسي في الجزء الأول من الأنمي الذي كان يسعى للحصول على طاقة البشر بأوامر الملكة بيريل؟",
+      "options": [
+        "⁦Death Busters⁩",
+        "⁦Dead Moon Circus⁩",
+        "⁦Dark Kingdom⁩",
+        "⁦Shadow Galactica⁩"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "المملكة المظلمة (⁦Dark Kingdom⁩) بقيادة الملكة بيريل هي التنظيم الشرير الرئيسي في الجزء الأول من سيلور مون الكلاسيكي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'هجوم العمالقة' (⁦Attack on Titan⁩)، ما اسم الفيلق الاستكشافي الذي ينضمّ إليه إيرين ييغر بعد تخرّجه ويُعدّ الأكثر تضحيةً بالأرواح بين فيالق الجيش؟",
+      "options": [
+        "فيلق الحراسة",
+        "فيلق الشرطة العسكرية",
+        "فيلق الاستطلاع",
+        "فيلق حرّاس الجدار"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "فيلق الاستطلاع (⁦Survey Corps⁩) هو الفيلق الذي يخرج خارج الأسوار لمواجهة العمالقة واستكشاف الأراضي الخارجية، وانضمّ إليه إيرين بعد تخرجه باختياره الواعي.",
+      "difficulty": "سهل"
+    },
+    {
+      "question_text": "في أنمي 'كود غياس' (⁦Code Geass⁩)، ما اسم القوة الخارقة التي يمتلكها ليلوش لامبيروج والتي تمكّنه من إصدار أوامر مطلقة يلتزم بها أي شخص ينظر في عينيه مرة واحدة؟",
+      "options": [
+        "القوة الجيّاشة (⁦Geass⁩)",
+        "الهالة الملكية (⁦Royal Aura⁩)",
+        "قوة الغاسق (⁦Geas Power⁩)",
+        "العين الحمراء (⁦Crimson Eye⁩)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "الـ ⁦Geass⁩ هي القوة الخارقة التي منحها ⁦C.C⁩. لليلوش، تُمكّنه من إصدار أمر واحد لا يُقاوَم لكل شخص تقع عليه عينه لأول مرة، وهي محور القصة.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'نانا' (⁦NANA⁩) الياباني الشهير، ما اسم الفرقة الموسيقية البانك التي تُغنّي فيها نانا أوساكي وتسعى لتحقيق النجاح في طوكيو؟",
+      "options": [
+        "⁦BLAST⁩",
+        "⁦TRAPNEST⁩",
+        "⁦BLACK STONES⁩",
+        "⁦LUNACY⁩"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "فرقة ⁦BLAST⁩ أو ⁦BLACKSTONES⁩ هي الفرقة البانك التي تُغنّي فيها نانا أوساكي بصوتها القوي، وتسعى معها للوصول إلى الشهرة في طوكيو بالتوازي مع قصة نانا كوماتسو.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "في أنمي 'ون بيس' (⁦One Piece⁩)، ما اسم أسلوب القتال الذي يستخدمه روفي في شكله المتقدم 'غير الرابع' (⁦Gear Fourth⁩) حيث يضخّ الهواء في عضلاته ويتحوّل إلى شكل ضخم مرن يشبه المطاط الملتهب؟",
+      "options": [
+        "⁦Boundman⁩",
+        "⁦Snakeman⁩",
+        "⁦Tankman⁩",
+        "⁦Bounceman⁩"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Boundman⁩ هو الشكل الأساسي والأول لـ ⁦Gear Fourth⁩ الذي ظهر في معركة دريسروزا ضد دوفلامينغو، ويتميز بجسم ضخم منتفخ وقدرة على التحرك السريع.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ناروتو' (⁦Naruto⁩)، ما اسم التقنية الأسطورية التي يستخدمها ناروتو أوزوماكي لاستدعاء عدد هائل من نسخه المستنسخة في وقت واحد، وتُعدّ من أقوى تقنياته في الجزء الأول؟",
+      "options": [
+        "كاجي بوشين نو جوتسو",
+        "راسينغان",
+        "سيكي تسوشين",
+        "أوموي نو جوتسو"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كاجي بوشين نو جوتسو (⁦Multi Shadow Clone Jutsu⁩) هي تقنية استنساخ الظل الجماعي التي تعلّمها ناروتو من لفافة المحظور وتميّز بها عن غيره من الشينوبي.",
+      "difficulty": "سهل"
+    },
+    {
+      "question_text": "في أنمي 'كاودبوي بيبوب' (⁦Cowboy Bebop⁩) الكلاسيكي، ما اسم السفينة التي يستخدمها سبايك سبيغل وشركاؤه قاعدةً للعمليات وتنقّلاتهم في الفضاء؟",
+      "options": [
+        "⁦Red Tail⁩",
+        "⁦Bebop⁩",
+        "⁦Swordfish II⁩",
+        "⁦Hammerhead⁩"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Bebop⁩ هي السفينة الأم التي تعمل مقرّاً لفريق الصيادين، سُمّي الأنمي باسمها تيمّناً بموسيقى البيبوب الجازية التي تُلوّن الأنمي طوال مساره.",
+      "difficulty": "متوسط"
+    }
+  ]
+}

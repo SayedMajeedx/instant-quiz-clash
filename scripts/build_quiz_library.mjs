@@ -252,6 +252,31 @@ if (fs.existsSync(TR_QUIZES_DIR)) {
   }
 }
 
+// Processed quizzes from new_quizzes/processed (23 files)
+const NEW_PROCESSED_DIR = "new_quizzes/processed";
+if (fs.existsSync(NEW_PROCESSED_DIR)) {
+  const newFiles = fs.readdirSync(NEW_PROCESSED_DIR)
+    .filter((file) => file.endsWith(".json"))
+    .sort();
+
+  for (const newFile of newFiles) {
+    const quiz = JSON.parse(fs.readFileSync(path.join(NEW_PROCESSED_DIR, newFile), "utf8"));
+    if (!Array.isArray(quiz.questions) || quiz.questions.length === 0) continue;
+
+    quizzes.push({
+      ...quiz,
+      category: CATEGORY_MAP[quiz.category] ?? quiz.category,
+      questions: quiz.questions.map((q, i) => ({
+        ...q,
+        order_index: i,
+        time_limit_seconds: q.time_limit_seconds ?? 25,
+        image_url: q.image_url ?? null,
+        question_type: q.question_type ?? (q.options?.length === 2 ? "boolean" : "multi"),
+      })),
+    });
+  }
+}
+
 const out = `import type { Question, Quiz } from "@/lib/quizclash";
 
 export type LibraryQuiz = Quiz & {

@@ -1,0 +1,300 @@
+{
+  "id": "lib-new-world_geography-2",
+  "user_id": "system",
+  "title": "جغرافيا العالم والدول — الجزء 2",
+  "created_at": "2026-08-07T00:00:00.000Z",
+  "is_public": true,
+  "category": "جغرافيا",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "question_text": "أي مدينة عربية تقع على ضفتي نهر العاصي وتُعدّ من أقدم المدن المأهولة في التاريخ؟",
+      "options": [
+        "حلب",
+        "دمشق",
+        "حمص",
+        "اللاذقية"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تقع مدينة حمص السورية على ضفتَي نهر العاصي، وهي من أقدم المدن المأهولة باستمرار في التاريخ منذ آلاف السنين.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "ما هي أعلى قمة جبلية في شبه الجزيرة العربية؟",
+      "options": [
+        "جبل شمس في عُمان",
+        "جبل النبي شعيب في اليمن",
+        "جبل سودة في السعودية",
+        "جبل طبق في اليمن"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جبل النبي شعيب في اليمن هو أعلى قمة في شبه الجزيرة العربية، إذ يبلغ ارتفاعه نحو 3666 متراً فوق مستوى سطح البحر.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "أي من هذه الدول لا تطل على البحر الأحمر؟",
+      "options": [
+        "الأردن",
+        "إريتريا",
+        "عُمان",
+        "جيبوتي"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عُمان تطل على بحر العرب وخليج عُمان وخليج عدن، وليس لها أي ساحل على البحر الأحمر.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "نهر الأردن هو أطول أنهار منطقة المشرق العربي.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "نهر الفرات هو الأطول في المشرق العربي، إذ يتجاوز طوله 2700 كم، بينما نهر الأردن لا يتجاوز 360 كم.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "تُعدّ صحراء الربع الخالي في جنوب شرق الجزيرة العربية أكبر صحراء رملية متصلة في العالم.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "يمتد الربع الخالي على مساحة تتجاوز 650,000 كم² مما يجعله أكبر صحراء رملية متصلة في العالم، ويغطي أجزاء من السعودية واليمن وعُمان والإمارات.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أي من هذه المضائق يربط البحر الأحمر بخليج عدن؟",
+      "options": [
+        "مضيق هرمز",
+        "مضيق باب المندب",
+        "مضيق تيران",
+        "مضيق جبل طارق"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يقع مضيق باب المندب عند الطرف الجنوبي للبحر الأحمر ويفصله عن خليج عدن بين اليمن وجيبوتي وإريتريا.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "نهر الفرات يمر عبر ثلاث دول هي تركيا وسوريا والعراق.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "ينبع نهر الفرات من المرتفعات الأناضولية في تركيا ثم يعبر سوريا والعراق حتى يصب في شط العرب.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أين يقع جبل الشيخ الذي يُعدّ أعلى قمة في بلاد الشام؟",
+      "options": [
+        "في لبنان فقط",
+        "على الحدود السورية اللبنانية",
+        "في الأردن",
+        "في فلسطين"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يقع جبل الشيخ (حرمون) على الحدود بين سوريا ولبنان، ويبلغ ارتفاعه نحو 2814 متراً ليكون أعلى قمة في بلاد الشام.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "أي من هذه العواصم العربية تقع على نهر دجلة؟",
+      "options": [
+        "عمّان",
+        "دمشق",
+        "بغداد",
+        "الخرطوم"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تقع بغداد على ضفتي نهر دجلة وسط العراق، وقد اختار الخليفة المنصور موقعها بالقرب من النهر عند تأسيسها عام 762م.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "نهر الفرات يمر عبر ثلاث دول هي تركيا وسوريا والعراق.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "ينبع الفرات من تركيا ثم يخترق سوريا فالعراق قبل أن يصب في شط العرب.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "البحر الميت يقع على الحدود بين الأردن وإسرائيل فقط، ولا يشترك فيه أي طرف آخر.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "البحر الميت محاط بالأردن من الشرق وإسرائيل والأراضي الفلسطينية من الغرب، دون أي دولة ثالثة.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "ما هو أطول نهر يقع بالكامل داخل الأراضي العربية؟",
+      "options": [
+        "نهر النيل",
+        "نهر الفرات",
+        "نهر دجلة",
+        "نهر الأردن"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نهر الفرات هو الأطول الذي يجري بالكامل داخل الدول العربية (سوريا والعراق)، إذ ينبع الجزء العربي منه من الحدود التركية-السورية.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "ما هي أعلى قمة جبلية في شبه الجزيرة العربية؟",
+      "options": [
+        "جبل الشفا",
+        "جبل النبي شعيب",
+        "جبل أخضر",
+        "جبل رام"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جبل النبي شعيب في اليمن هو أعلى قمة في شبه الجزيرة العربية، إذ يبلغ ارتفاعه نحو 3666 متراً فوق مستوى سطح البحر.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "مضيق هرمز يربط بين الخليج العربي وبحر العرب، وتشرف عليه كل من إيران وسلطنة عُمان.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "مضيق هرمز يصل الخليج العربي ببحر العرب عبر خليج عُمان، وتتقاسم إيران وسلطنة عُمان السيطرة على ضفتيه الشمالية والجنوبية.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "بحيرة طبريا (بحر الجليل) هي أعمق بحيرة مياه عذبة في العالم.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "أعمق بحيرة مياه عذبة في العالم هي بحيرة بايكال في روسيا، وليست بحيرة طبريا.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "يقع جبل أرارات، المقدس في الموروث الديني، ضمن الأراضي التركية الحالية.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "يقع جبل أرارات في أقصى شرق تركيا بالقرب من الحدود الأرمينية والإيرانية، وهو جزء من الأراضي التركية الحالية.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أي نهر يُشكِّل الحدود الطبيعية بين سوريا والعراق في جزء منه؟",
+      "options": [
+        "النيل",
+        "دجلة",
+        "الفرات",
+        "الأردن"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يمر نهر الفرات عبر سوريا والعراق ويشكّل في بعض مساراته حداً طبيعياً بين البلدين قبل أن يصبّ في شط العرب.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "ما هو الاسم الذي أطلقه العرب قديماً على المحيط الهندي؟",
+      "options": [
+        "بحر الروم",
+        "البحر المحيط",
+        "بحر الهند",
+        "بحر فارس"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اعتاد الجغرافيون والرحالة العرب القدامى تسمية المحيط الهندي بـ'بحر الهند' نسبةً إلى شبه القارة الهندية المطلة عليه.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "مضيق هرمز يربط بين الخليج العربي وبحر العرب، وتُشرف عليه إيران وسلطنة عُمان.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "يقع مضيق هرمز بين إيران شمالاً وسلطنة عُمان جنوباً، ويربط الخليج العربي ببحر عُمان وصولاً إلى بحر العرب.",
+      "difficulty": "متوسط"
+    }
+  ]
+}

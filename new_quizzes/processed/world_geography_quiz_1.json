@@ -1,0 +1,316 @@
+{
+  "id": "lib-new-world_geography-1",
+  "user_id": "system",
+  "title": "جغرافيا العالم والدول — الجزء 1",
+  "created_at": "2026-08-07T00:00:00.000Z",
+  "is_public": true,
+  "category": "جغرافيا",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "question_text": "كانت مدينة صنعاء عاصمة اليمن الجنوبي قبل توحيد اليمن عام 1990.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "كانت عدن هي عاصمة اليمن الجنوبي (جمهورية اليمن الديمقراطية الشعبية)، أما صنعاء فكانت عاصمة اليمن الشمالي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "نهر الأردن هو أعمق نهر في منطقة الشرق الأوسط.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "نهر الأردن ليس أعمق أنهار الشرق الأوسط، إذ تتميز المنطقة بأنهار أخرى أعمق كدجلة والفرات، كما أن شهرة الأردن ترتبط بانخفاض مصبّه لا بعمقه.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أيّ دولة عربية تحتضن جبل توبقال، أعلى قمة في شمال أفريقيا والعالم العربي؟",
+      "options": [
+        "الجزائر",
+        "ليبيا",
+        "المغرب",
+        "تونس"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يقع جبل توبقال في جبال الأطلس الكبير بالمغرب، ويبلغ ارتفاعه نحو 4167 متراً، مما يجعله أعلى قمة في شمال أفريقيا والعالم العربي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "البحر الميت يقع بالكامل داخل الأراضي الأردنية.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "البحر الميت بحيرة حدودية تتقاسمها كل من الأردن وفلسطين (الضفة الغربية) وإسرائيل.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أيّ مضيق يفصل بين المغرب وإسبانيا ويربط البحر المتوسط بالمحيط الأطلسي؟",
+      "options": [
+        "مضيق هرمز",
+        "مضيق جبل طارق",
+        "مضيق باب المندب",
+        "مضيق تيران"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "مضيق جبل طارق يقع بين الساحل المغربي جنوباً والساحل الإسباني شمالاً، ويمثل المنفذ الوحيد بين البحر المتوسط والمحيط الأطلسي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "ما اسم المضيق الذي يفصل بين المغرب وإسبانيا؟",
+      "options": [
+        "مضيق هرمز",
+        "مضيق باب المندب",
+        "مضيق جبل طارق",
+        "مضيق تيران"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "مضيق جبل طارق يفصل جنوب إسبانيا عن شمال المغرب ويربط البحر الأبيض المتوسط بالمحيط الأطلسي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أي من هذه المدن تقع على ضفاف نهر دجلة مباشرةً؟",
+      "options": [
+        "الموصل",
+        "حلب",
+        "دمشق",
+        "عمّان"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تقع مدينة الموصل العراقية على الضفة الغربية لنهر دجلة، وهي من أعرق المدن المطلة عليه.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "تُعدّ صحراء الربع الخالي في شبه الجزيرة العربية أكبر صحراء رملية متواصلة في العالم.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "تبلغ مساحة الربع الخالي نحو 650,000 كم² مما يجعلها أكبر صحراء رملية متواصلة على وجه الأرض.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "ما هو اسم البحيرة الملحية التي تقع على الحدود بين الأردن وفلسطين المحتلة وتُعدّ الأخفض في العالم؟",
+      "options": [
+        "بحيرة طبريا",
+        "البحر الميت",
+        "بحيرة قارون",
+        "بحيرة ناصر"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يقع البحر الميت على ارتفاع سالب يتجاوز 430 متراً تحت مستوى سطح البحر مما يجعله أخفض نقطة على سطح الأرض.",
+      "difficulty": "سهل"
+    },
+    {
+      "question_text": "يُعدّ جبل قاسيون الواقع في دمشق من أعلى الجبال في منطقة الشرق الأوسط، إذ يتجاوز ارتفاعه 3000 متر.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "جبل قاسيون ارتفاعه نحو 1151 متراً فقط فوق سطح البحر، وهو أبعد ما يكون عن أعلى جبال الشرق الأوسط.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "ما اسم الممر المائي الذي يربط البحر الأحمر بخليج عدن ويُعدّ من أهم الممرات الملاحية في العالم؟",
+      "options": [
+        "مضيق هرمز",
+        "مضيق تيران",
+        "باب المندب",
+        "قناة السويس"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "باب المندب هو المضيق الذي يفصل اليمن عن جيبوتي والصومال، ويربط البحر الأحمر بخليج عدن والمحيط الهندي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "تُعدّ تركيا الدولة الوحيدة في منطقة الشرق الأوسط التي تمتد أراضيها على قارتَي آسيا وأوروبا معاً.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "تركيا هي الدولة الوحيدة في الشرق الأوسط التي تمتد على قارتين، إذ تقع منطقة تراقيا الغربية في أوروبا والأناضول في آسيا.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أي مدينة عراقية تقع مرقد الإمام علي بن أبي طالب؟",
+      "options": [
+        "كربلاء",
+        "النجف",
+        "سامراء",
+        "الكوفة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "مرقد الإمام علي بن أبي طالب يقع في مدينة النجف العراقية، وهو من أقدس المراقد الإسلامية لدى المسلمين الشيعة.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أي من هذه الأنهار يصبّ في الخليج العربي بعد التقاء دجلة والفرات؟",
+      "options": [
+        "نهر الأردن",
+        "شط العرب",
+        "نهر الليطاني",
+        "نهر الزاب"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يتشكل شط العرب من التقاء نهري دجلة والفرات قرب مدينة القرنة العراقية، ثم يصب في الخليج العربي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "مدينة صنعاء اليمنية هي أعلى عاصمة عربية من حيث الارتفاع عن سطح البحر.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "تقع صنعاء على ارتفاع يبلغ نحو 2300 متر فوق سطح البحر، مما يجعلها أعلى عاصمة عربية ارتفاعاً.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "جبل طارق الواقع عند مدخل البحر الأبيض المتوسط يقع تحت السيادة الإسبانية.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "جبل طارق إقليم بريطاني ما وراء البحار منذ معاهدة أوترخت عام 1713م، وليس تحت السيادة الإسبانية رغم مطالبة إسبانيا به.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "أي مدينة سعودية تحتضن ميناء جدة وتُعدّ بوابة الحرمين الشريفين؟",
+      "options": [
+        "الدمام",
+        "ينبع",
+        "جدة",
+        "الجبيل"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جدة تقع على ساحل البحر الأحمر وتضم أكبر موانئ المملكة، وهي المدخل الرئيسي للحجاج القادمين إلى مكة المكرمة والمدينة المنورة.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "مضيق هرمز الاستراتيجي يفصل بين إيران وسلطنة عُمان.",
+      "options": [
+        "صح",
+        "خطأ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "boolean",
+      "explanation": "مضيق هرمز يقع بين الشاطئ الإيراني شمالاً وشبه جزيرة مسندم العُمانية جنوباً، وهو ممر حيوي لصادرات النفط الخليجي.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أي دولة عربية يقع جبل شمر الذي يُعدّ من أبرز جبال شبه الجزيرة العربية؟",
+      "options": [
+        "اليمن",
+        "الأردن",
+        "المملكة العربية السعودية",
+        "سلطنة عُمان"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جبال شمر تقع في منطقة حائل شمال وسط المملكة العربية السعودية، وكانت مقراً لإمارة آل رشيد التاريخية.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "ما اسم المضيق الذي يفصل بين المغرب وإسبانيا؟",
+      "options": [
+        "مضيق هرمز",
+        "مضيق باب المندب",
+        "مضيق جبل طارق",
+        "مضيق تيران"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "مضيق جبل طارق يفصل بين المغرب شمال أفريقيا وإسبانيا جنوب أوروبا، ويربط البحر الأبيض المتوسط بالمحيط الأطلسي.",
+      "difficulty": "متوسط"
+    }
+  ]
+}

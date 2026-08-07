@@ -1,0 +1,270 @@
+{
+  "id": "lib-new-anime_cartoons-2",
+  "user_id": "system",
+  "title": "عالم الأنمي والكرتون — الجزء 2",
+  "created_at": "2026-08-07T00:00:00.000Z",
+  "is_public": true,
+  "category": "أنمي",
+  "language": "ar",
+  "quiz_difficulty": "standard",
+  "archived": false,
+  "launch_enabled": true,
+  "questions": [
+    {
+      "question_text": "في أنمي 'فولميتال ألكيميست: برذرهود' (⁦Fullmetal Alchemist⁩: ⁦Brotherhood⁩)، ما اسم الكيان الشرير الرئيسي الذي خلق الهومونكولي السبعة ويسعى لامتصاص قوى إله الأرض (⁦Truth⁩) بأكمله؟",
+      "options": [
+        "إنفي",
+        "أبوهم (⁦Father⁩)",
+        "برايد",
+        "كينغ برادلي"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Father⁩ هو الكيان الرئيسي الشرير في ⁦Brotherhood⁩، وهو مخلوق من دم الملك هوهنهايم وخلق الهومونكولي ليمتص طاقة جميع أرواح شيمبالا.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'دراغون بول زد' (⁦Dragon Ball Z⁩)، ما اسم التحوّل الأسطوري الأول الذي يبلغه غوكو ويظهر فيه شعره أصفر وعيناه خضراوان، ويُعدّ نقلة نوعية في قوة أبطال السايا؟",
+      "options": [
+        "سوبر سايا 2",
+        "سوبر سايا غود",
+        "سوبر سايا 1",
+        "أولترا إنستينكت"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تحوّل ⁦Super Saiyan 1⁩ هو التحوّل التاريخي الأول الذي بلغه غوكو في معركته مع فريزا على كوكب نامك، وغيّر مسار السلسلة كلياً.",
+      "difficulty": "سهل"
+    },
+    {
+      "question_text": "في أنمي 'بليتش' (⁦Bleach⁩)، ما اسم القدرة الخاصة بالنوم الروحي (⁦Zanpakuto⁩) التي يمتلكها إيشيغو كوروساكي في شكلها الأوّلي، والتي تُطلق موجات طاقة هائلة تُعرف بـ'⁦Getsuga Tensho⁩'؟",
+      "options": [
+        "⁦Senbonzakura⁩",
+        "⁦Zangetsu⁩",
+        "⁦Tensa Zangetsu⁩",
+        "⁦Hyorinmaru⁩"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Zangetsu⁩ هو اسم سيف الروح (⁦Zanpakuto⁩) الخاص بإيشيغو كوروساكي، وهو من يمنحه قدرة ⁦Getsuga Tensho⁩ الشهيرة.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'هانتر ⁦×⁩ هانتر' (⁦Hunter x Hunter⁩)، ما اسم نوع قوة الـ ⁦Nen⁩ الذي يتخصص فيه كيلوا زولديك والذي يُمكّنه من توليد الكهرباء والتحكم بها في جسده؟",
+      "options": [
+        "⁦Transmutation⁩ (التحويل)",
+        "⁦Emission⁩ (الإرسال)",
+        "⁦Enhancement⁩ (التعزيز)",
+        "⁦Manipulation⁩ (التحكم)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كيلوا زولديك من فئة ⁦Transmutation⁩ أي يُحوّل طاقة الـ ⁦Nen⁩ إلى خصائص الكهرباء، وهو ما يُشكّل أساس تقنياته القتالية كـ ⁦Godspeed⁩.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ديمون سلاير' (⁦Demon Slayer⁩)، ما اسم أسلوب التنفس الأصلي الذي اشتُقّت منه جميع أساليب التنفس الأخرى المستخدمة في صيد الشياطين؟",
+      "options": [
+        "تنفس الشمس (⁦Sun Breathing⁩)",
+        "تنفس اللهب (⁦Flame Breathing⁩)",
+        "تنفس الماء (⁦Water Breathing⁩)",
+        "تنفس الريح (⁦Wind Breathing⁩)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تنفس الشمس أو '⁦Hinokami Kagura⁩' هو الأسلوب الأصلي الذي ابتكره يوريتشي تسوجيكوني وانبثقت منه جميع الأساليب الأخرى كالماء واللهب والريح.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'أتاك أوف أون تايتان' (⁦Attack on Titan⁩)، ما اسم قوة التيتان الخاصة بيمير فريتز الأصلية والتي تُعدّ أصل جميع قوى التيتانات التسعة؟",
+      "options": [
+        "تيتان الهجوم",
+        "تيتان المؤسِّس",
+        "تيتان العظام",
+        "تيتان الضربة القاضية"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تيتان المؤسِّس (⁦Founding Titan⁩) هو القوة الأصلية التي منحها الشيطان ليمير فريتز، ومنها تفرّعت التيتانات التسعة جميعها.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'فيري تيل' (⁦Fairy Tail⁩)، ما اسم سحر الفريق السري الذي يمتلكه ناتسو دراغنيل والذي يُخفيه طوال معظم القصة، ويُكشف أنه مرتبط بشيطان الكتاب الأسود؟",
+      "options": [
+        "⁦Dragon Force⁩",
+        "⁦Etherious Form⁩ - ⁦E.N.D⁩",
+        "⁦Fire Dragon King Mode⁩",
+        "⁦Lightning Flame Dragon Mode⁩"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ناتسو هو في الحقيقة ⁦E.N.D⁩ (⁦Etherious Natsu Dragneel⁩) وهو أقوى شياطين الكتاب الأسود الذي صنعه أخوه زيريف.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ماي هيرو أكاديميا' (⁦My Hero Academia⁩)، ما اسم تقنية إيزوكو ميدوريا التي طوّرها للتغلّب على الضرر الذي يلحق بجسده عند استخدام ⁦One For All⁩ بنسبة 100%، وتعتمد على توزيع القوة بدلاً من تركيزها؟",
+      "options": [
+        "⁦Full Cowling⁩",
+        "⁦Delaware Smash Air Force⁩",
+        "⁦Shoot Style⁩",
+        "⁦Black Whip⁩"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تقنية ⁦Full Cowling⁩ تتيح لميدوريا توزيع طاقة ⁦One For All⁩ على كامل جسده بنسبة محدودة بدلاً من تركيزها في نقطة واحدة، مما يقلّل الأضرار الجسدية.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ون بيس' (⁦One Piece⁩)، ما اسم أسلوب القتال الذي طوّره زورو روانوا في جزيرة ثريلر بارك، والذي يجمع بين سيوفه الثلاثة وتقنية الأساليب التسعة في ضربة واحدة هائلة؟",
+      "options": [
+        "⁦Asura⁩",
+        "⁦Shishi Sonson⁩",
+        "⁦Oni Giri⁩",
+        "⁦Three Thousand Worlds⁩"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أسلوب ⁦Asura⁩ هو تقنية زورو السرية التي يظهر فيها بستة أذرع وثلاثة رؤوس حاملاً تسعة سيوف، وهي ضربته الأشد فتكاً في مرحلة ما قبل الزمن الفاصل.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'نارُتو شيبودن' (⁦Naruto Shippuden⁩)، ما اسم الفنّ الإبداعي الذي ابتكره ناروتو أوزوماكي بنفسه بالجمع بين طاقة الخيلاء (⁦Sage Mode⁩) وطاقة الثعلب الأحمر (⁦Kurama's Chakra⁩) لتشكيل ضربة الراسنغان العملاقة؟",
+      "options": [
+        "⁦Sage Art⁩: ⁦Super Big Ball Rasengan⁩",
+        "⁦Wind Style⁩: ⁦Rasenshuriken⁩",
+        "⁦Tailed Beast Bomb Rasenshuriken⁩",
+        "⁦Sage Art⁩: ⁦Magnet Release Rasengan⁩"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 25,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Tailed Beast Bomb Rasenshuriken⁩ هي التقنية التي جمع فيها ناروتو بين قوة مودات الحيوانات المُذيَّلة وأسلوب الراسنغان، وظهرت في المعارك الكبرى ضد مادارا.",
+      "difficulty": "صعب"
+    },
+    {
+      "question_text": "في أنمي 'فولميتال ألكيميست: براذرهود' (⁦Fullmetal Alchemist⁩: ⁦Brotherhood⁩)، ما اسم الشخصية التي تُلقَّب بـ'⁦Greed⁩' (الجشع) وهي إحدى خطايا الأب السبع، والتي تمتلك قدرة تحويل جسمها إلى درع كربوني لا يُخترق؟",
+      "options": [
+        "إنفي",
+        "غريد",
+        "برايد",
+        "غلاتوني"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "غريد (⁦Greed⁩) هو الهومنكولوس الممثِّل للجشع، ويمتلك قدرة ⁦Ultimate Shield⁩ التي تحوّل جسمه إلى درع كربوني صلب تقريباً لا يُقهر.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ون بانش مان' (⁦One Punch Man⁩)، ما اسم المنظمة التي تُصنِّف الأبطال وفق درجات من ⁦C⁩ إلى ⁦S⁩ وتُشرف على مكافحة التهديدات في العالم؟",
+      "options": [
+        "⁦Hero Association⁩",
+        "⁦Monster Association⁩",
+        "⁦Justice League⁩",
+        "⁦Neo Heroes⁩"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "⁦Hero Association⁩ هي المنظمة الرسمية في عالم ⁦One Punch Man⁩ التي تُصنّف الأبطال وتُوفّر لهم الدعم اللوجستي وتُحدّد مستوياتهم من ⁦C⁩ إلى ⁦S⁩.",
+      "difficulty": "سهل"
+    },
+    {
+      "question_text": "في أنمي 'بلاك كلوفر' (⁦Black Clover⁩)، ما اسم نوع السحر النادر الذي يمتلكه أستا ويُعدّ فريداً من نوعه لأنه لا يعتمد على قوة السحر (⁦Mana⁩) بل يُبطل السحر تماماً؟",
+      "options": [
+        "⁦Dark Magic⁩",
+        "⁦Anti-Magic⁩",
+        "⁦Void Magic⁩",
+        "⁦Gravity Magic⁩"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 25,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أستا لا يمتلك أي قوة سحرية (⁦Mana⁩) لكنه يستخدم ⁦Anti-Magic⁩ المستخرجة من شيطانه لإبطال أي سحر، وهو ما يجعله فريداً في عالم البلاك كلوفر.",
+      "difficulty": "سهل"
+    },
+    {
+      "question_text": "في أنمي 'هانتر ⁦×⁩ هانتر' (⁦Hunter × Hunter⁩)، ما اسم نوع قدرة النِن (⁦Nen⁩) التي يستخدمها هيسوكا موريو، والتي تُتيح له إلصاق الأشياء ومطّها كالمطاط بفضل قدرتَي '⁦Bungee Gum⁩' و'⁦Texture Surprise⁩'؟",
+      "options": [
+        "⁦Transmutation⁩ (التحويل)",
+        "⁦Emission⁩ (الإطلاق)",
+        "⁦Manipulation⁩ (التحكم)",
+        "⁦Enhancement⁩ (التعزيز)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "هيسوكا من فئة ⁦Transmutation⁩، وقدرته '⁦Bungee Gum⁩' تُحوّل طاقة النِن لتكتسب خصائص المطاط والصمغ معاً.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'ديمون سلاير' (⁦Demon Slayer⁩ - ⁦Kimetsu no Yaiba⁩)، ما اسم أسلوب التنفس الأصلي الذي اشتُقّت منه جميع أساليب التنفس الأخرى المستخدمة في قتل الشياطين؟",
+      "options": [
+        "تنفس الشمس (⁦Sun Breathing⁩)",
+        "تنفس اللهب (⁦Flame Breathing⁩)",
+        "تنفس الماء (⁦Water Breathing⁩)",
+        "تنفس الرياح (⁦Wind Breathing⁩)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تنفس الشمس هو الأسلوب الأصلي الذي ابتكره يوريتشي تسوجيكوني، واشتُقّت منه جميع الأساليب الأخرى كالماء والنار والرياح.",
+      "difficulty": "متوسط"
+    },
+    {
+      "question_text": "في أنمي 'أتاك أون تايتان' (⁦Attack on Titan⁩)، ما اسم القدرة الخاصة التي يمتلكها إيرن ييغر والتي تُتيح له استدعاء ذكريات وأفعال كل حاملي قوة التيتان من الماضي والمستقبل معاً؟",
+      "options": [
+        "قوة المؤسِّس (⁦The Founding Titan⁩)",
+        "قوة التيتان الهاجوم (⁦Attack Titan⁩)",
+        "قوة التيتان المتصلّب (⁦Armored Titan⁩)",
+        "مسار الرؤى (⁦Path Vision⁩)"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 25,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "قوة المؤسِّس هي أصل جميع قوى التيتان وتُتيح لحاملها التواصل عبر المسارات مع جميع أبناء يمير والتأثير في ذكرياتهم.",
+      "difficulty": "متوسط"
+    }
+  ]
+}
