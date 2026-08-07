@@ -73,7 +73,7 @@ function UserManagementPage() {
       // Fetch profiles
       const { data: profiles, error: profileError } = await supabase
         .from("profiles")
-        .select("id, display_name, created_at, role")
+        .select("id, name, email, created_at, role")
         .order("created_at", { ascending: false });
 
       if (profileError) {
@@ -84,13 +84,12 @@ function UserManagementPage() {
       }
 
       // Fetch game host counts per user
-      const { data: gameCounts } = await supabase
-        .from("game_results")
+      const { data: gameCounts } = await (supabase.from("game_sessions") as any)
         .select("host_id");
 
       const gamesMap = new Map<string, number>();
       if (gameCounts) {
-        gameCounts.forEach((g) => {
+        gameCounts.forEach((g: any) => {
           if (g.host_id) {
             gamesMap.set(g.host_id, (gamesMap.get(g.host_id) || 0) + 1);
           }
@@ -100,9 +99,9 @@ function UserManagementPage() {
       // Format profiles
       const formattedUsers: UserProfile[] = (profiles || []).map((p: any) => ({
         id: p.id,
-        display_name: p.display_name || "مستخدم بدون اسم",
+        display_name: p.name || p.display_name || p.email?.split("@")[0] || "مستخدم",
         email: p.email || `${p.id.substring(0, 8)}@quizclash.app`,
-        role: (p.role === "admin" || p.role === "owner") ? "admin" : "user",
+        role: (p.role === "admin" || p.role === "super_admin" || p.role === "owner") ? "admin" : "user",
         created_at: p.created_at || new Date().toISOString(),
         total_games_hosted: gamesMap.get(p.id) || 0,
       }));

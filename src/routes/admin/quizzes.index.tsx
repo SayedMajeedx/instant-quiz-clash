@@ -717,17 +717,26 @@ export function AdminQuizzesPage() {
                         </span>
                       </td>
 
-                      {/* Is Public Switch */}
+                      {/* Is Public Toggle */}
                       <td className="p-4 text-center">
-                        <div className="flex items-center justify-center gap-2">
-                          <Switch
-                            checked={quiz.is_public}
-                            onCheckedChange={() => handleTogglePublic(quiz)}
-                          />
-                          <span className="text-xs text-muted-foreground hidden lg:inline">
-                            {quiz.is_public ? "عام" : "خاص"}
-                          </span>
-                        </div>
+                        <button
+                          type="button"
+                          onClick={() => void handleTogglePublic(quiz)}
+                          title="انقر لتغيير حالة الإتاحة (عام / خاص)"
+                          className="cursor-pointer transition-transform hover:scale-105"
+                        >
+                          {quiz.is_public ? (
+                            <Badge className="bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 gap-1.5 py-1 px-3 font-semibold">
+                              <Globe className="size-3.5" />
+                              <span>عام</span>
+                            </Badge>
+                          ) : (
+                            <Badge variant="secondary" className="bg-muted text-muted-foreground border border-border gap-1.5 py-1 px-3 font-semibold">
+                              <Lock className="size-3.5" />
+                              <span>خاص</span>
+                            </Badge>
+                          )}
+                        </button>
                       </td>
 
                       {/* Action Buttons */}
