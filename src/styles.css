@@ -112,7 +112,7 @@
   --gradient-hero: linear-gradient(135deg, oklch(0.66 0.245 302), oklch(0.7 0.24 350) 55%, oklch(0.85 0.17 88));
   --gradient-surface: linear-gradient(160deg, oklch(0.26 0.085 296), oklch(0.2 0.07 292));
   --shadow-chunky: 0 10px 0 0 oklch(0.14 0.05 295), 0 22px 45px -18px oklch(0.1 0.05 295 / 80%);
-  --shadow-glow: 0 0 60px -12px oklch(0.66 0.245 302 / 70%);
+  --shadow-glow: 0 12px 35px -6px oklch(0.66 0.245 302 / 40%), 0 0 15px 0 oklch(0.66 0.245 302 / 20%);
 }
 
 @keyframes float {

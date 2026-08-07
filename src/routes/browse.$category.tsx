@@ -218,27 +218,24 @@ function CarouselQuizCard({ quiz }: { quiz: PublicQuiz }) {
 /* Component 4: More Subcategory Card */
 function MoreSubcategoryCard({
   count,
-  subName,
   onSelect,
 }: {
   count: number;
-  subName: string;
+  subName?: string;
   onSelect: () => void;
 }) {
   return (
     <button
       type="button"
       onClick={onSelect}
-      className="shrink-0 w-[140px] sm:w-[180px] flex flex-col items-center justify-center rounded-3xl border border-dashed border-primary/50 bg-primary/5 p-4 sm:p-6 shadow-sm hover:bg-primary/10 hover:border-primary transition-all group cursor-pointer"
+      className="shrink-0 w-[140px] sm:w-[170px] flex flex-col items-center justify-center rounded-3xl border border-dashed border-primary/50 bg-primary/5 p-4 sm:p-6 shadow-sm hover:bg-primary/10 hover:border-primary transition-all group cursor-pointer"
     >
       <span className="grid size-10 sm:size-12 place-items-center rounded-2xl bg-primary/20 text-primary text-xl sm:text-2xl font-black group-hover:scale-110 transition-transform">
         +{count}
       </span>
-      <span className="mt-2.5 font-display text-xs sm:text-sm text-foreground text-center line-clamp-1">
-        المزيد من {subName}
-      </span>
-      <span className="mt-1 text-[11px] sm:text-xs font-bold text-primary group-hover:underline">
-        عرض الكل ←
+      <span className="mt-3 text-xs sm:text-sm font-extrabold text-primary group-hover:underline flex items-center gap-1">
+        <span>عرض الكل</span>
+        <span>←</span>
       </span>
     </button>
   );
@@ -407,9 +404,18 @@ function CategoryDetailPage() {
 
     const list = quizzes.filter((q) => {
       if (selectedSubcategory !== "all") {
-        const subNorm = norm((q as any).subcategory || "");
-        const targetNorm = norm(selectedSubcategory);
-        if (subNorm !== targetNorm) return false;
+        if (
+          selectedSubcategory === "__UNCATEGORIZED__" ||
+          selectedSubcategory === "كويزات عامة أخرى" ||
+          norm(selectedSubcategory) === norm(category)
+        ) {
+          const subNorm = norm((q as any).subcategory || "");
+          if (subNorm && subNorm !== norm(category)) return false;
+        } else {
+          const subNorm = norm((q as any).subcategory || "");
+          const targetNorm = norm(selectedSubcategory);
+          if (subNorm !== targetNorm) return false;
+        }
       }
       if (selectedDiff !== "all") {
         const diffInfo = getDifficultyDetails(q);
@@ -440,7 +446,7 @@ function CategoryDetailPage() {
       );
     }
     return sorted;
-  }, [quizzes, selectedSubcategory, selectedDiff, search, sortBy, playCounts]);
+  }, [quizzes, selectedSubcategory, selectedDiff, search, sortBy, playCounts, category]);
 
   // Reset pagination when filters change
   useEffect(() => {
@@ -454,7 +460,7 @@ function CategoryDetailPage() {
   const groupedSections = useMemo(() => {
     if (selectedSubcategory !== "all") return [];
 
-    const sections: { id: string; title: string; quizzes: PublicQuiz[] }[] = [];
+    const sections: { id: string; title: string; filterKey: string; quizzes: PublicQuiz[] }[] = [];
     const assignedIds = new Set<string>();
 
     subcategories.forEach((sub) => {
@@ -466,6 +472,7 @@ function CategoryDetailPage() {
         sections.push({
           id: sub.id,
           title: sub.name,
+          filterKey: sub.name,
           quizzes: subQuizzes,
         });
       }
@@ -477,12 +484,13 @@ function CategoryDetailPage() {
       sections.push({
         id: "uncategorized",
         title: subcategories.length > 0 ? "كويزات عامة أخرى" : category,
+        filterKey: "__UNCATEGORIZED__",
         quizzes: remainingQuizzes,
       });
     }
 
     return sections;
-  }, [selectedSubcategory, subcategories, quizzes]);
+  }, [selectedSubcategory, subcategories, quizzes, category]);
 
   return (
     <main className="relative min-h-screen px-4 sm:px-6 py-8 pb-24">
@@ -651,7 +659,7 @@ function CategoryDetailPage() {
                 key={sec.id}
                 title={sec.title}
                 quizzes={sec.quizzes}
-                onViewAll={() => setSelectedSubcategory(sec.title)}
+                onViewAll={() => setSelectedSubcategory(sec.filterKey)}
               />
             ))}
           </div>
@@ -660,7 +668,11 @@ function CategoryDetailPage() {
           <>
             <div className="mt-6 flex items-center justify-between px-1">
               <h2 className="font-display text-lg sm:text-xl text-foreground">
-                {selectedSubcategory !== "all" ? `كويزات ${selectedSubcategory}` : "نتائج البحث والتصفية"}
+                {selectedSubcategory === "__UNCATEGORIZED__" || selectedSubcategory === "كويزات عامة أخرى" || norm(selectedSubcategory) === norm(category)
+                  ? `الكويزات العامة - قسم ${category}`
+                  : selectedSubcategory !== "all"
+                  ? `كويزات ${selectedSubcategory}`
+                  : "نتائج البحث والتصفية"}
               </h2>
               <span className="text-xs font-bold text-muted-foreground">
                 ({filteredQuizzes.length} كويز)
