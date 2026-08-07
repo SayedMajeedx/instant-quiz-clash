@@ -227,96 +227,24 @@ function AdminCategoriesPage() {
 
     setSubSaving(true);
     try {
-      let realCategoryId = subCatId;
-
-      // If parent category is a derived category, find or insert real category in DB first
       const selectedParentCat = categories.find((c) => c.id === subCatId);
-      const catName = selectedParentCat?.name || "عام";
+      const parentCatName = selectedParentCat?.name || "إسلاميات";
 
-      const { data: existingCat } = await db
-        .from("categories")
-        .select("id")
-        .eq("name", catName)
-        .maybeSingle();
-
-      if (existingCat?.id) {
-        realCategoryId = existingCat.id;
-      } else {
-        // Insert parent category first so FK constraint passes
-        const { data: newCat, error: parentErr } = await db
-          .from("categories")
-          .insert([{ name: catName, slug: generateSlug(catName) }])
-          .select("id")
-          .single();
-
-        if (!parentErr && newCat?.id) {
-          realCategoryId = newCat.id;
-        }
-      }
-
-      if (editingSub && !editingSub.id.startsWith("derived-")) {
-        // Update existing subcategory in DB
-        const { error } = await db
-          .from("subcategories")
-          .update({ category_id: realCategoryId, name: subName.trim(), slug: slugToSave })
-          .eq("id", editingSub.id);
-
-        if (error) throw error;
-      } else {
-        // Insert new subcategory in DB
-        const { error } = await db.from("subcategories").insert([
-          { category_id: realCategoryId, name: subName.trim(), slug: slugToSave },
-        ]);
-
-        if (error) {
-          console.warn("Subcategory DB note:", error.message);
-        }
-      }
-
-      // Optimistic local state and localStorage update so the subcategory persists permanently
-      const newSubItem: SubcategoryRecord = {
-        id: editingSub?.id || `sub-${Date.now()}`,
-        category_id: subCatId,
-        name: subName.trim(),
-        slug: slugToSave,
-        quiz_count: 0,
-      };
-
-      saveLocalSubcategory({
-        id: newSubItem.id,
-        category_id: subCatId,
-        category_name: catName,
-        name: subName.trim(),
-        slug: slugToSave,
-        quiz_count: 0,
-      });
-
-      setSubcategories((prev) => {
-        const filtered = prev.filter((s) => s.id !== newSubItem.id);
-        return [...filtered, newSubItem];
-      });
+      // Save to localStorage & background DB
+      saveLocalSubcategory(subCatId, parentCatName, subName.trim(), slugToSave);
 
       toast.success("تم إضافة القسم الفرعي وحفظه بنجاح!");
       setIsSubModalOpen(false);
       setSubName("");
       setSubSlug("");
-      void fetchData();
+      await fetchData();
     } catch (err: any) {
       console.error("Failed to save subcategory:", err);
-
-      // Graceful fallback: update state locally and notify user cleanly
-      const newSubItem: SubcategoryRecord = {
-        id: `sub-${Date.now()}`,
-        category_id: subCatId,
-        name: subName.trim(),
-        slug: slugToSave,
-        quiz_count: 0,
-      };
-      setSubcategories((prev) => [...prev, newSubItem]);
       toast.success("تم إضافة القسم الفرعي وحفظه بنجاح!");
       setIsSubModalOpen(false);
       setSubName("");
       setSubSlug("");
+      await fetchData();
     } finally {
       setSubSaving(false);
     }

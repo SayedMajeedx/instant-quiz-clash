@@ -50,8 +50,8 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
 } from "@/components/ui/sheet";
+import { saveLocalQuizOverride } from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/admin/quizzes/")({
   component: AdminQuizzesPage,
@@ -284,6 +284,13 @@ export function AdminQuizzesPage() {
 
       const newCategory = bulkCategory.trim();
       const newSubcategory = bulkSubcategory.trim() || null;
+
+      selectedArray.forEach((quizId) => {
+        saveLocalQuizOverride(quizId, {
+          category: newCategory,
+          subcategory: newSubcategory || "",
+        });
+      });
 
       setQuizzes((prev) =>
         prev.map((item) => {

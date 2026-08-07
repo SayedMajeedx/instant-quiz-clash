@@ -13,6 +13,8 @@ import {
 } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
 
+import { getAllAdminCategories, type AdminSubcategoryItem } from "@/lib/admin-data-helper";
+
 export const Route = createFileRoute("/browse/$category")({
   head: ({ params }) => {
     const categoryName = decodeURIComponent(params.category || "كويزات");
@@ -38,6 +40,7 @@ const STATIC_QUIZZES: PublicQuiz[] = QUIZ_LIBRARY.filter(
   created_at: q.created_at,
   is_public: true,
   category: q.category,
+  subcategory: (q as any).subcategory || "",
   language: q.language,
   quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
   question_count: q.questions.length,
@@ -49,6 +52,8 @@ function CategoryDetailPage() {
   const { t } = useI18n();
 
   const [quizzes, setQuizzes] = useState<PublicQuiz[]>([]);
+  const [subcategories, setSubcategories] = useState<AdminSubcategoryItem[]>([]);
+  const [selectedSubcategory, setSelectedSubcategory] = useState<string>("all");
   const [loading, setLoading] = useState(true);
 
   // Filters scoped to this category (Difficulty level)
@@ -67,10 +72,19 @@ function CategoryDetailPage() {
     void (async () => {
       setLoading(true);
       try {
-        const { data, error } = await (supabase.from("quizzes") as any)
-          .select("*, questions(id)")
-          .eq("is_public", true)
-          .order("created_at", { ascending: false });
+        const [adminCats, { data, error }] = await Promise.all([
+          getAllAdminCategories(),
+          (supabase.from("quizzes") as any)
+            .select("*, questions(id)")
+            .eq("is_public", true)
+            .order("created_at", { ascending: false }),
+        ]);
+
+        // Find subcategories for this category
+        const foundCat = adminCats.find((c) => c.name.trim().toLowerCase() === category.toLowerCase());
+        if (foundCat && foundCat.subcategories) {
+          setSubcategories(foundCat.subcategories);
+        }
 
         let allQuizzes = STATIC_QUIZZES;
 
@@ -82,6 +96,7 @@ function CategoryDetailPage() {
             created_at: q.created_at,
             is_public: q.is_public ?? true,
             category: q.category,
+            subcategory: q.subcategory || "",
             language: q.language,
             quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : "standard",
             question_count: Array.isArray(q.questions) ? q.questions.length : 0,
@@ -114,15 +129,17 @@ function CategoryDetailPage() {
   const [playCounts, setPlayCounts] = useState<Record<string, number>>({});
   useEffect(() => {
     void (async () => {
-      const { data } = await (supabase.from("quiz_play_stats") as any).select(
-        "source_quiz_id, play_count"
-      );
-      if (!data) return;
-      const map: Record<string, number> = {};
-      for (const row of data as { source_quiz_id: string; play_count: number }[]) {
-        map[row.source_quiz_id] = row.play_count;
-      }
-      setPlayCounts(map);
+      try {
+        const { data } = await (supabase.from("quiz_play_stats") as any).select(
+          "source_quiz_id, play_count"
+        );
+        if (!data) return;
+        const map: Record<string, number> = {};
+        for (const row of data as { source_quiz_id: string; play_count: number }[]) {
+          map[row.source_quiz_id] = row.play_count;
+        }
+        setPlayCounts(map);
+      } catch {}
     })();
   }, []);
 
@@ -140,6 +157,10 @@ function CategoryDetailPage() {
     const diffRank = { "سهل": 0, "متوسط": 1, "صعب": 2 } as Record<string, number>;
 
     const list = quizzes.filter((q) => {
+      if (selectedSubcategory !== "all") {
+        const sub = ((q as any).subcategory || "").trim();
+        if (sub !== selectedSubcategory.trim()) return false;
+      }
       if (selectedDiff !== "all") {
         const diffInfo = getDifficultyDetails(q);
         if (selectedDiff === "easy" && diffInfo.label !== "سهل") return false;
@@ -216,6 +237,45 @@ function CategoryDetailPage() {
             </div>
           </div>
         </div>
+
+        {/* Subcategories Filter Bar */}
+        {subcategories.length > 0 && (
+          <div className="mt-4 flex flex-wrap items-center gap-2 rounded-2xl border border-border/80 bg-surface-gradient p-3 shadow-sm">
+            <span className="text-xs font-bold text-muted-foreground ml-2">الأقسام الفرعية:</span>
+            <button
+              type="button"
+              onClick={() => setSelectedSubcategory("all")}
+              className={cn(
+                "rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer",
+                selectedSubcategory === "all"
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "bg-background/60 text-muted-foreground hover:bg-muted hover:text-foreground"
+              )}
+            >
+              الكل ({quizzes.length})
+            </button>
+
+            {subcategories.map((sub) => {
+              const count = quizzes.filter((q) => ((q as any).subcategory || "").trim() === sub.name.trim()).length;
+              return (
+                <button
+                  key={sub.id}
+                  type="button"
+                  onClick={() => setSelectedSubcategory(sub.name)}
+                  className={cn(
+                    "rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer",
+                    selectedSubcategory === sub.name
+                      ? "bg-primary text-primary-foreground shadow-sm"
+                      : "bg-background/60 text-muted-foreground hover:bg-muted hover:text-foreground"
+                  )}
+                >
+                  <span>{sub.name}</span>
+                  <span className="text-[10px] opacity-75">({count})</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         {/* Search inside this category */}
         <div className="mt-6 flex flex-col gap-3 md:flex-row md:items-center">
