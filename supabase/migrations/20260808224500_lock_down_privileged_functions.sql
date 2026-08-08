@@ -181,16 +181,29 @@ GRANT EXECUTE ON FUNCTION public.upsert_admin_quiz_by_id_or_title(uuid, text, te
   TO authenticated, service_role;
 
 -- Retire exposure from obsolete privileged overloads if they still exist.
-REVOKE ALL ON FUNCTION public.upsert_admin_quiz(text, text, text, text, text, boolean)
-  FROM PUBLIC, anon, authenticated;
-REVOKE ALL ON FUNCTION public.upsert_admin_quiz_by_id_or_title(uuid, text)
-  FROM PUBLIC, anon, authenticated;
-GRANT EXECUTE ON FUNCTION public.upsert_admin_quiz(text, text, text, text, text, boolean) TO service_role;
-GRANT EXECUTE ON FUNCTION public.upsert_admin_quiz_by_id_or_title(uuid, text) TO service_role;
+DO $$
+BEGIN
+  IF to_regprocedure('public.upsert_admin_quiz(text,text,text,text,text,boolean)') IS NOT NULL THEN
+    EXECUTE 'REVOKE ALL ON FUNCTION public.upsert_admin_quiz(text,text,text,text,text,boolean) FROM PUBLIC, anon, authenticated';
+    EXECUTE 'GRANT EXECUTE ON FUNCTION public.upsert_admin_quiz(text,text,text,text,text,boolean) TO service_role';
+  END IF;
+
+  IF to_regprocedure('public.upsert_admin_quiz_by_id_or_title(uuid,text)') IS NOT NULL THEN
+    EXECUTE 'REVOKE ALL ON FUNCTION public.upsert_admin_quiz_by_id_or_title(uuid,text) FROM PUBLIC, anon, authenticated';
+    EXECUTE 'GRANT EXECUTE ON FUNCTION public.upsert_admin_quiz_by_id_or_title(uuid,text) TO service_role';
+  END IF;
+END;
+$$;
 
 -- Schema cache reload is maintenance-only and must never be callable by clients.
-REVOKE ALL ON FUNCTION public.reload_schema_cache() FROM PUBLIC, anon, authenticated;
-GRANT EXECUTE ON FUNCTION public.reload_schema_cache() TO service_role;
+DO $$
+BEGIN
+  IF to_regprocedure('public.reload_schema_cache()') IS NOT NULL THEN
+    EXECUTE 'REVOKE ALL ON FUNCTION public.reload_schema_cache() FROM PUBLIC, anon, authenticated';
+    EXECUTE 'GRANT EXECUTE ON FUNCTION public.reload_schema_cache() TO service_role';
+  END IF;
+END;
+$$;
 
 -- The public catalog needs deletion tombstones, but not an elevated function.
 DROP POLICY IF EXISTS admin_deleted_quizzes_catalog_select ON public.admin_deleted_quizzes;
