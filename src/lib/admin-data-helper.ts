@@ -421,7 +421,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   const deletedTitles = new Set<string>();
 
   const { data: deletedData, error: deletedError } = await (supabase as any).rpc(
-    "get_admin_deleted_quizzes"
+    "get_catalog_deleted_quizzes"
   );
   if (deletedError) {
     throw new Error(`Could not synchronize deleted quizzes: ${deletedError.message}`);
