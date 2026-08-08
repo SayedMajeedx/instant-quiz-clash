@@ -16,8 +16,6 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import { getAdminKPIStats } from "@/lib/admin-data-helper";
-
 export const Route = createFileRoute("/admin/")({
   component: AdminOverview,
 });
@@ -34,12 +32,13 @@ function AdminOverview() {
   useEffect(() => {
     async function fetchCounts() {
       try {
-        const kpis = await getAdminKPIStats();
+        const { data, error } = await (supabase.rpc as any)("admin_catalog_counts");
+        if (error) throw error;
         setCounts({
-          quizzes: kpis.totalQuizzes,
-          questions: kpis.totalQuestions,
-          categories: kpis.totalCategories,
-          users: kpis.totalUsers,
+          quizzes: Number(data?.quizzes || 0),
+          questions: Number(data?.questions || 0),
+          categories: Number(data?.categories || 0),
+          users: Number(data?.users || 0),
         });
       } catch (err) {
         console.error("Failed to load admin stats:", err);
