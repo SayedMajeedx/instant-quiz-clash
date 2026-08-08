@@ -61,22 +61,23 @@ export interface ImportedQuestion {
   question_text: string;
   options: string[];
   correct_index: number;
-  time_limit_seconds?: number;
-  question_type?: string;
-  image_url?: string;
-  explanation?: string;
+  time_limit_seconds?: number | undefined;
+  question_type?: string | undefined;
+  image_url?: string | undefined;
+  explanation?: string | undefined;
+  subcategory?: string | undefined;
 }
 
 export interface ParsedQuiz {
   tempId: string;
   title: string;
-  category?: string;
-  subcategory?: string;
-  language?: string;
-  quiz_difficulty?: string;
+  category?: string | undefined;
+  subcategory?: string | undefined;
+  language?: string | undefined;
+  quiz_difficulty?: string | undefined;
   questions: ImportedQuestion[];
   collisionStatus: "new" | "collision" | "unknown";
-  matchedDbQuizId?: string;
+  matchedDbQuizId?: string | undefined;
 }
 
 export type ImportMode = "auto" | "override";
@@ -354,7 +355,7 @@ function AdminImportPage() {
       const totalItems = parsedQuizzes.length;
 
       for (let i = 0; totalItems > 0 && i < totalItems; i++) {
-        const item = parsedQuizzes[i];
+        const item = parsedQuizzes[i]!;
 
         // Determine final category and subcategory
         const targetCategory = importMode === "override" ? overrideCategory : (item.category || "عام");

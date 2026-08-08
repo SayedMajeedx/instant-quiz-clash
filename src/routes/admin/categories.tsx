@@ -102,7 +102,7 @@ function AdminCategoriesPage() {
   const [isCatModalOpen, setIsCatModalOpen] = useState(false);
   const [editingCat, setEditingCat] = useState<CategoryRecord | null>(null);
   const [catName, setCatName] = useState("");
-  const [catSlug, setCatNameSlug] = useState("");
+  const [catSlug, setCatSlug] = useState("");
   const [catSaving, setCatSaving] = useState(false);
 
   // Subcategory Dialog state
@@ -322,14 +322,14 @@ function AdminCategoriesPage() {
   const openNewCategoryModal = () => {
     setEditingCat(null);
     setCatName("");
-    setCatNameSlug("");
+    setCatSlug("");
     setIsCatModalOpen(true);
   };
 
   const openEditCategoryModal = (cat: CategoryRecord) => {
     setEditingCat(cat);
     setCatName(cat.name);
-    setCatNameSlug(cat.slug);
+    setCatSlug(cat.slug);
     setIsCatModalOpen(true);
   };
 
@@ -633,7 +633,7 @@ function AdminCategoriesPage() {
                 onChange={(e) => {
                   setCatName(e.target.value);
                   if (!editingCat) {
-                    setCatNameSlug(generateSlug(e.target.value));
+                    setCatSlug(generateSlug(e.target.value));
                   }
                 }}
                 className="rounded-2xl text-sm"
@@ -645,7 +645,7 @@ function AdminCategoriesPage() {
                 <label className="text-xs font-bold text-foreground">الرابط المباشر (Slug)</label>
                 <button
                   type="button"
-                  onClick={() => setCatNameSlug(generateSlug(catName))}
+                  onClick={() => setCatSlug(generateSlug(catName))}
                   className="text-[11px] text-primary hover:underline"
                 >
                   توليد تلقائي
@@ -654,7 +654,7 @@ function AdminCategoriesPage() {
               <Input
                 placeholder="general-culture"
                 value={catSlug}
-                onChange={(e) => setCatNameSlug(e.target.value)}
+                onChange={(e) => setCatSlug(e.target.value)}
                 className="rounded-2xl font-mono text-xs dir-ltr text-right"
               />
               <p className="text-[11px] text-muted-foreground">يستخدم في روابط التصفح مثل `/browse/culture`</p>

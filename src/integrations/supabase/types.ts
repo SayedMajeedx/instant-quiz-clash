@@ -75,6 +75,39 @@ export type Database = {
           },
         ]
       }
+      categories: {
+        Row: {
+          brand_id: string | null
+          created_at: string | null
+          id: string
+          is_active: boolean | null
+          name: string
+          name_en: string | null
+          slug: string
+          sort_order: number | null
+        }
+        Insert: {
+          brand_id?: string | null
+          created_at?: string | null
+          id?: string
+          is_active?: boolean | null
+          name: string
+          name_en?: string | null
+          slug: string
+          sort_order?: number | null
+        }
+        Update: {
+          brand_id?: string | null
+          created_at?: string | null
+          id?: string
+          is_active?: boolean | null
+          name?: string
+          name_en?: string | null
+          slug?: string
+          sort_order?: number | null
+        }
+        Relationships: []
+      }
       game_player_results: {
         Row: {
           answered_count: number
@@ -374,6 +407,59 @@ export type Database = {
           },
         ]
       }
+      subcategories: {
+        Row: {
+          category_id: string | null
+          created_at: string | null
+          id: string
+          name: string
+          slug: string
+        }
+        Insert: {
+          category_id?: string | null
+          created_at?: string | null
+          id?: string
+          name: string
+          slug: string
+        }
+        Update: {
+          category_id?: string | null
+          created_at?: string | null
+          id?: string
+          name?: string
+          slug?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "subcategories_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -407,6 +493,14 @@ export type Database = {
         }
       }
       archive_room: { Args: { p_room_id: string }; Returns: string }
+      get_all_admin_quizzes: { Args: never; Returns: Json }
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
         Returns: {
@@ -526,13 +620,17 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      upsert_admin_quiz_by_id_or_title: {
+        Args: { p_quiz_id?: string; p_title?: string }
+        Returns: string
+      }
       use_fifty_fifty: {
         Args: { p_player_id: string; p_question_id: string }
         Returns: number[]
       }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "moderator" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -659,6 +757,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "moderator", "user"],
+    },
   },
 } as const

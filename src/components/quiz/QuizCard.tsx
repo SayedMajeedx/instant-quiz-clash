@@ -1,3 +1,4 @@
+import { recordQuizPlay } from "@/lib/quiz-stats.functions";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -52,7 +53,7 @@ export function QuizCard({ quiz }: { quiz: PublicQuiz }) {
         return;
       }
 
-      void (supabase.rpc as any)("record_quiz_play", { p_source_id: quiz.id });
+      void recordQuizPlay({ data: { sourceId: quiz.id } }).catch(() => {});
 
       toast.success(t("browse.cloned") || "Quiz cloned successfully!");
       void navigate({ to: "/host", search: { quiz: res.newQuizId } });

@@ -290,7 +290,7 @@ export function AdminQuizzesPage() {
         await saveLocalQuizOverride(quizId, {
           category: newCategory,
           subcategory: finalSubcategory || "",
-          title: quizObj?.title,
+          ...(quizObj?.title ? { title: quizObj.title } : {}),
         });
       }
 

@@ -84,7 +84,7 @@ function UserManagementPage() {
       }
 
       // Fetch game host counts per user
-      const { data: gameCounts } = await (supabase.from("game_sessions") as any)
+      const { data: gameCounts } = await (supabase.from("game_results") as any)
         .select("host_id");
 
       const gamesMap = new Map<string, number>();
