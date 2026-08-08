@@ -439,6 +439,27 @@ export type Database = {
           },
         ]
       }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -473,6 +494,13 @@ export type Database = {
       }
       archive_room: { Args: { p_room_id: string }; Returns: string }
       get_all_admin_quizzes: { Args: never; Returns: Json }
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
         Returns: {
@@ -593,15 +621,7 @@ export type Database = {
         }
       }
       upsert_admin_quiz_by_id_or_title: {
-        Args: {
-          p_category?: string
-          p_difficulty?: string
-          p_is_public?: boolean
-          p_language?: string
-          p_quiz_id?: string
-          p_subcategory?: string
-          p_title?: string
-        }
+        Args: { p_quiz_id?: string; p_title?: string }
         Returns: string
       }
       use_fifty_fifty: {
@@ -610,7 +630,7 @@ export type Database = {
       }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "moderator" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -737,6 +757,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "moderator", "user"],
+    },
   },
 } as const
