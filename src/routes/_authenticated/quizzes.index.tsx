@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
@@ -8,6 +9,8 @@ import { useI18n } from "@/lib/i18n";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 
 import type { Quiz } from "@/lib/quizclash";
+
+const PAGE_SIZE = 10;
 
 export const Route = createFileRoute("/_authenticated/quizzes/")({
   head: () => ({
@@ -27,6 +30,7 @@ function MyQuizzes() {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
 
   const load = useCallback(async () => {
     // 1. Fetch from Supabase
@@ -34,38 +38,27 @@ function MyQuizzes() {
       .from("quizzes")
       .select("*")
       .eq("user_id", user.id)
+      .eq("personal_library", true)
       .order("created_at", { ascending: false });
-    
+
     let rows = ((data ?? []) as unknown as Quiz[]).filter(
-      (quiz) => quiz.quiz_kind !== "custom_generated"
+      (quiz) => quiz.quiz_kind !== "custom_generated",
     );
 
-    // 2. Local Storage Cache Fallback & Merge (Ensures quizzes NEVER disappear)
-    const localKey = `quizclash_user_quizzes_${user.id}`;
-    try {
-      const cachedRaw = localStorage.getItem(localKey);
-      if (cachedRaw) {
-        const cachedQuizzes = (JSON.parse(cachedRaw) as Quiz[]).filter(
-          (quiz) => quiz.quiz_kind !== "custom_generated"
-        );
-        const existingIds = new Set(rows.map((r) => r.id));
-        const missingFromDb = cachedQuizzes.filter((cq) => !existingIds.has(cq.id));
-        rows = [...rows, ...missingFromDb];
-      }
-      localStorage.setItem(localKey, JSON.stringify(rows));
-    } catch {
-      // Local storage fallback ignore
-    }
-
     setQuizzes(rows);
+    setPage(1);
 
     if (rows.length) {
       const { data: qs } = await supabase
         .from("questions")
         .select("id, quiz_id")
-        .in("quiz_id", rows.map((q) => q.id));
+        .in(
+          "quiz_id",
+          rows.map((q) => q.id),
+        );
       const map: Record<string, number> = {};
-      for (const q of (qs ?? []) as { quiz_id: string }[]) map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
+      for (const q of (qs ?? []) as { quiz_id: string }[])
+        map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
 
       rows.forEach((rq) => {
         if (!map[rq.id]) map[rq.id] = 10;
@@ -84,7 +77,12 @@ function MyQuizzes() {
   async function createQuiz(withImport = false) {
     const { data, error } = await supabase
       .from("quizzes")
-      .insert({ user_id: user.id, title: t("quizzes.newTitle") })
+      .insert({
+        user_id: user.id,
+        title: t("quizzes.newTitle"),
+        personal_library: true,
+        personal_library_origin: "created",
+      } as never)
       .select()
       .single();
 
@@ -146,12 +144,18 @@ function MyQuizzes() {
     toast.success(t("quizzes.deleted"));
   }
 
+  const totalPages = Math.max(1, Math.ceil(quizzes.length / PAGE_SIZE));
+  const pageQuizzes = quizzes.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
   return (
     <main className="relative min-h-screen">
       <AnimatedBg />
       <div className="mx-auto max-w-3xl px-5 py-10">
         <div className="flex items-center justify-between gap-3">
-          <Link to="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
+          <Link
+            to="/"
+            className="text-sm font-semibold text-muted-foreground hover:text-foreground"
+          >
             {t("nav.backHome")}
           </Link>
           <LanguageToggle />
@@ -205,7 +209,7 @@ function MyQuizzes() {
               </div>
             </div>
           ) : null}
-          {quizzes.map((quiz) => {
+          {pageQuizzes.map((quiz) => {
             const displayTitle = cleanQuizTitle(quiz.title);
             return (
               <div
@@ -243,6 +247,29 @@ function MyQuizzes() {
               </div>
             );
           })}
+          {!loading && quizzes.length > PAGE_SIZE ? (
+            <div className="flex items-center justify-center gap-3 pt-5" dir="ltr">
+              <button
+                type="button"
+                disabled={page === 1}
+                onClick={() => setPage((current) => Math.max(1, current - 1))}
+                className="rounded-xl border border-border px-4 py-2 font-bold disabled:opacity-35"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </button>
+              <span className="min-w-20 text-center text-sm font-bold text-muted-foreground">
+                {page} / {totalPages}
+              </span>
+              <button
+                type="button"
+                disabled={page === totalPages}
+                onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
+                className="rounded-xl border border-border px-4 py-2 font-bold disabled:opacity-35"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            </div>
+          ) : null}
         </div>
       </div>
     </main>

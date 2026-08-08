@@ -25,8 +25,12 @@ export async function cloneQuiz(
       questionsToCopy = libraryMatch.questions.map((q, idx) => ({
         question_text: q.question_text,
         options: Array.isArray(q.options) ? q.options : ["", "", "", ""],
-        correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
-        time_limit_seconds: typeof q.time_limit_seconds === "number" ? Math.max(5, Math.min(120, q.time_limit_seconds)) : 30,
+        correct_index:
+          typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
+        time_limit_seconds:
+          typeof q.time_limit_seconds === "number"
+            ? Math.max(5, Math.min(120, q.time_limit_seconds))
+            : 30,
         order_index: idx,
         question_type: q.question_type || "multi",
         explanation: q.explanation || null,
@@ -42,8 +46,12 @@ export async function cloneQuiz(
       questionsToCopy = starterMatch.questions.map((q, idx) => ({
         question_text: q.question_text,
         options: Array.isArray(q.options) ? q.options : ["", "", "", ""],
-        correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
-        time_limit_seconds: typeof q.time_limit_seconds === "number" ? Math.max(5, Math.min(120, q.time_limit_seconds)) : 30,
+        correct_index:
+          typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
+        time_limit_seconds:
+          typeof q.time_limit_seconds === "number"
+            ? Math.max(5, Math.min(120, q.time_limit_seconds))
+            : 30,
         order_index: idx,
         question_type: q.question_type || "multi",
         explanation: null,
@@ -70,8 +78,12 @@ export async function cloneQuiz(
       questionsToCopy = qData.map((q: any) => ({
         question_text: q.question_text,
         options: Array.isArray(q.options) ? (q.options as string[]) : ["", "", "", ""],
-        correct_index: typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
-        time_limit_seconds: typeof q.time_limit_seconds === "number" ? Math.max(5, Math.min(120, q.time_limit_seconds)) : 30,
+        correct_index:
+          typeof q.correct_index === "number" ? Math.max(0, Math.min(3, q.correct_index)) : 0,
+        time_limit_seconds:
+          typeof q.time_limit_seconds === "number"
+            ? Math.max(5, Math.min(120, q.time_limit_seconds))
+            : 30,
         order_index: q.order_index,
         question_type: q.question_type || "multi",
         explanation: q.explanation || null,
@@ -96,6 +108,8 @@ export async function cloneQuiz(
         title: quizMeta.title,
         user_id: userId,
         is_public: false,
+        personal_library: true,
+        personal_library_origin: "copied",
         category: quizMeta.category || null,
         language: quizMeta.language || "ar",
       } as never)
@@ -110,6 +124,8 @@ export async function cloneQuiz(
         .insert({
           title: quizMeta.title,
           user_id: userId,
+          personal_library: true,
+          personal_library_origin: "copied",
         } as never)
         .select()
         .single();
@@ -151,7 +167,9 @@ export async function cloneQuiz(
       version: q.version || 1,
     }));
 
-    let { error: qInsertError } = await supabase.from("questions").insert(questionsToInsert as never);
+    let { error: qInsertError } = await supabase
+      .from("questions")
+      .insert(questionsToInsert as never);
 
     if (qInsertError) {
       console.warn("Full question insert failed, attempting reload and basic retry:", qInsertError);
@@ -177,7 +195,9 @@ export async function cloneQuiz(
           question_type: q.question_type || "multi",
         }));
 
-        const fallbackRes = await supabase.from("questions").insert(basicQuestionsToInsert as never);
+        const fallbackRes = await supabase
+          .from("questions")
+          .insert(basicQuestionsToInsert as never);
         qInsertError = fallbackRes.error;
       }
     }
