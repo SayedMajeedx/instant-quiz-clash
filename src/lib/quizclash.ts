@@ -96,18 +96,33 @@ export const AVATAR_COLORS = [
   "#8b5cf6",
 ];
 
-export const OPTION_COLORS = [
-  "#ef4444",
-  "#3b82f6",
-  "#eab308",
-  "#22c55e",
-];
+export const OPTION_COLORS = ["#ef4444", "#3b82f6", "#eab308", "#22c55e"];
 
 export const ANSWER_STYLES = [
-  { bg: "bg-rose-600 hover:bg-rose-500 text-white", label: "مثلث", icon: "▲", shape: "triangle" as const },
-  { bg: "bg-blue-600 hover:bg-blue-500 text-white", label: "معيّن", icon: "◆", shape: "diamond" as const },
-  { bg: "bg-amber-500 hover:bg-amber-400 text-white", label: "دائرة", icon: "●", shape: "circle" as const },
-  { bg: "bg-emerald-600 hover:bg-emerald-500 text-white", label: "مربع", icon: "■", shape: "square" as const },
+  {
+    bg: "bg-rose-600 hover:bg-rose-500 text-white",
+    label: "مثلث",
+    icon: "▲",
+    shape: "triangle" as const,
+  },
+  {
+    bg: "bg-blue-600 hover:bg-blue-500 text-white",
+    label: "معيّن",
+    icon: "◆",
+    shape: "diamond" as const,
+  },
+  {
+    bg: "bg-amber-500 hover:bg-amber-400 text-white",
+    label: "دائرة",
+    icon: "●",
+    shape: "circle" as const,
+  },
+  {
+    bg: "bg-emerald-600 hover:bg-emerald-500 text-white",
+    label: "مربع",
+    icon: "■",
+    shape: "square" as const,
+  },
 ];
 
 export function randomCode(): string {
@@ -125,6 +140,7 @@ export function pointsFor(timeLimitSeconds: number, msUsed: number): number {
 
 export type Phase =
   | { kind: "lobby" }
+  | { kind: "countdown"; msLeft: number }
   | { kind: "question"; index: number; msLeft: number; question: Question }
   | { kind: "reveal"; index: number; msLeft: number; question: Question }
   | { kind: "leaderboard"; index: number; msLeft: number; question: Question }
@@ -143,7 +159,11 @@ export function optionCount(question: Pick<Question, "question_type">): number {
 export function phaseAt(room: Room | null, questions: Question[], now: number): Phase {
   if (!room) return { kind: "lobby" };
   if (room.status === "ended") return { kind: "ended" };
-  if (room.status === "lobby" || !room.started_at || questions.length === 0) return { kind: "lobby" };
+  if (room.status === "lobby" || !room.started_at || questions.length === 0)
+    return { kind: "lobby" };
+
+  const startsAt = new Date(room.started_at).getTime();
+  if (now < startsAt) return { kind: "countdown", msLeft: startsAt - now };
 
   const index = Math.min(Math.max(0, room.cursor_index), questions.length - 1);
   const question = questions[index]!;
@@ -182,14 +202,21 @@ export type Standing = {
   answered: number;
 };
 
-export function standings(players: Player[], answers: Answer[], questions: Question[], upToIndex: number): Standing[] {
+export function standings(
+  players: Player[],
+  answers: Answer[],
+  questions: Question[],
+  upToIndex: number,
+): Standing[] {
   const orderedIds = questions.slice(0, upToIndex + 1).map((q) => q.id);
 
   let prevStandingsMap: Record<string, { prevRank: number; prevTotal: number }> = {};
   if (upToIndex > 0) {
     const prevOrderedIds = questions.slice(0, upToIndex).map((q) => q.id);
     const prevRows = players.map((player) => {
-      const mine = answers.filter((a) => a.player_id === player.id && prevOrderedIds.includes(a.question_id));
+      const mine = answers.filter(
+        (a) => a.player_id === player.id && prevOrderedIds.includes(a.question_id),
+      );
       const total = mine.reduce((sum, a) => sum + a.points_awarded, 0);
       return { id: player.id, nickname: player.nickname, total, rank: 0 };
     });
@@ -200,7 +227,9 @@ export function standings(players: Player[], answers: Answer[], questions: Quest
   }
 
   const rows = players.map((player) => {
-    const mine = answers.filter((a) => a.player_id === player.id && orderedIds.includes(a.question_id));
+    const mine = answers.filter(
+      (a) => a.player_id === player.id && orderedIds.includes(a.question_id),
+    );
     const total = mine.reduce((sum, a) => sum + a.points_awarded, 0);
     let streak = 0;
     for (let i = orderedIds.length - 1; i >= 0; i -= 1) {

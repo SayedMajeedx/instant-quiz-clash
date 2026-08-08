@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { GameCountdown } from "@/components/quiz/GameCountdown";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
@@ -12,7 +13,14 @@ import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { optionCount, standings, teamStandings, TEAM_COLORS, type CursorPhase, type Room } from "@/lib/quizclash";
+import {
+  optionCount,
+  standings,
+  teamStandings,
+  TEAM_COLORS,
+  type CursorPhase,
+  type Room,
+} from "@/lib/quizclash";
 import { getSyncedNow } from "@/lib/server-time";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
@@ -27,9 +35,15 @@ export const Route = createFileRoute("/_authenticated/host/$code")({
   head: () => ({
     meta: [
       { title: "Host Display — QuizClash" },
-      { name: "description", content: "The shared QuizClash game screen: live question, countdown and leaderboard." },
+      {
+        name: "description",
+        content: "The shared QuizClash game screen: live question, countdown and leaderboard.",
+      },
       { property: "og:title", content: "Host Display — QuizClash" },
-      { property: "og:description", content: "Project this screen and let everyone play along from their phones." },
+      {
+        property: "og:description",
+        content: "Project this screen and let everyone play along from their phones.",
+      },
     ],
   }),
   component: HostRoom,
@@ -48,12 +62,15 @@ function HostRoom() {
     return 3;
   });
 
-  const setInterQuestionSec = useCallback((sec: number) => {
-    setInterQuestionSecState(sec);
-    if (typeof window !== "undefined") {
-      localStorage.setItem(`quizclash_delay_${code}`, String(sec));
-    }
-  }, [code]);
+  const setInterQuestionSec = useCallback(
+    (sec: number) => {
+      setInterQuestionSecState(sec);
+      if (typeof window !== "undefined") {
+        localStorage.setItem(`quizclash_delay_${code}`, String(sec));
+      }
+    },
+    [code],
+  );
 
   // Optimistic local state for 0ms instant UI responses
   const [localRoomPatch, setLocalRoomPatch] = useState<Partial<Room>>({});
@@ -95,20 +112,26 @@ function HostRoom() {
   const [assigning, setAssigning] = useState<string | null>(null);
   const navigate = Route.useNavigate();
 
-  const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join?code=${code.toUpperCase()}` : "";
+  const joinUrl =
+    typeof window !== "undefined"
+      ? `${window.location.origin}/join?code=${code.toUpperCase()}`
+      : "";
 
   const roomId = room?.id ?? null;
 
   async function patchRoom(patch: Partial<Room>) {
     if (!room) return;
     setLocalRoomPatch((prev) => ({ ...prev, ...patch }));
-    await supabase.from("rooms").update(patch as never).eq("id", room.id);
+    await supabase
+      .from("rooms")
+      .update(patch as never)
+      .eq("id", room.id);
     void state.refresh();
   }
 
   async function handleStartGame() {
     if (!room) return;
-    const nowIso = new Date(getSyncedNow()).toISOString();
+    const nowIso = new Date(getSyncedNow() + 3000).toISOString();
     await patchRoom({
       status: "active",
       cursor_index: 0,
@@ -120,7 +143,10 @@ function HostRoom() {
 
   async function exitGame() {
     if (!room) return;
-    await supabase.from("rooms").update({ status: "ended" } as never).eq("id", room.id);
+    await supabase
+      .from("rooms")
+      .update({ status: "ended" } as never)
+      .eq("id", room.id);
     void navigate({ to: "/quizzes" });
   }
 
@@ -147,7 +173,11 @@ function HostRoom() {
           if (fromIndex >= questions.length - 1) {
             directPayload = { status: "ended", phase_started_at: nowIso };
           } else {
-            directPayload = { cursor_index: fromIndex + 1, cursor_phase: "question", phase_started_at: nowIso };
+            directPayload = {
+              cursor_index: fromIndex + 1,
+              cursor_phase: "question",
+              phase_started_at: nowIso,
+            };
           }
         }
 
@@ -162,11 +192,19 @@ function HostRoom() {
         const rpcAdvanced =
           !rpcErr &&
           rpcRes &&
-          (rpcRes.cursor_phase !== fromPhase || rpcRes.cursor_index !== fromIndex || rpcRes.status !== "active");
+          (rpcRes.cursor_phase !== fromPhase ||
+            rpcRes.cursor_index !== fromIndex ||
+            rpcRes.status !== "active");
 
         if (!rpcAdvanced && Object.keys(directPayload).length > 0) {
-          console.warn("RPC advance_room mismatch fallback -> applying direct update", directPayload);
-          await supabase.from("rooms").update(directPayload as never).eq("id", roomId);
+          console.warn(
+            "RPC advance_room mismatch fallback -> applying direct update",
+            directPayload,
+          );
+          await supabase
+            .from("rooms")
+            .update(directPayload as never)
+            .eq("id", roomId);
         }
 
         setLocalRoomPatch((prev) => ({ ...prev, ...directPayload }));
@@ -184,7 +222,17 @@ function HostRoom() {
   useEffect(() => {
     if (!room || room.status !== "ended" || archivedRef.current) return;
     archivedRef.current = true;
-    void supabase.rpc("archive_room", { p_room_id: room.id });
+    const archiveWithRetry = async (attempt = 1): Promise<void> => {
+      const { error } = await supabase.rpc("archive_room", { p_room_id: room.id });
+      if (!error) return;
+      if (attempt < 4) {
+        window.setTimeout(() => void archiveWithRetry(attempt + 1), attempt * 750);
+        return;
+      }
+      archivedRef.current = false;
+      console.error("Failed to record completed game after retries:", error);
+    };
+    void archiveWithRetry();
   }, [room]);
 
   // Play category-specific background music continuously during gameplay
@@ -211,7 +259,8 @@ function HostRoom() {
 
   const questionAnswerCount =
     phase.kind === "question"
-      ? new Set(answers.filter((a) => a.question_id === phase.question.id).map((a) => a.player_id)).size
+      ? new Set(answers.filter((a) => a.question_id === phase.question.id).map((a) => a.player_id))
+          .size
       : 0;
   const everyoneAnswered =
     phase.kind === "question" && players.length > 0 && questionAnswerCount >= players.length;
@@ -223,7 +272,9 @@ function HostRoom() {
 
   const phaseKind = phase.kind;
   const phaseIndex =
-    phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard" ? phase.index : -1;
+    phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
+      ? phase.index
+      : -1;
   const advanceMode = room?.advance_mode;
   const roomStatus = room?.status;
 
@@ -245,7 +296,8 @@ function HostRoom() {
       return;
     }
 
-    const from: CursorPhase = phaseKind === "question" ? "question" : phaseKind === "reveal" ? "reveal" : "board";
+    const from: CursorPhase =
+      phaseKind === "question" ? "question" : phaseKind === "reveal" ? "reveal" : "board";
     const delay = phaseKind === "question" && everyoneAnswered && !timeUp ? 700 : 0;
 
     if (delay === 0) {
@@ -292,7 +344,12 @@ function HostRoom() {
     setLocalPlayerTeams(newTeamMap);
 
     await Promise.all(
-      list.map((p, i) => supabase.from("players").update({ team_index: i % room.team_count }).eq("id", p.id)),
+      list.map((p, i) =>
+        supabase
+          .from("players")
+          .update({ team_index: i % room.team_count })
+          .eq("id", p.id),
+      ),
     );
     await refresh();
   }
@@ -312,7 +369,10 @@ function HostRoom() {
         <AnimatedBg />
         <div className="text-center">
           <h1 className="font-display text-4xl">{t("host.notFound")}</h1>
-          <Link to="/host" className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky">
+          <Link
+            to="/host"
+            className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
+          >
             {t("host.createNew")}
           </Link>
         </div>
@@ -325,15 +385,25 @@ function HostRoom() {
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
-        <Podium rows={rows} title={cleanQuizTitle(quiz?.title ?? "QuizClash")} actions categoryBreakdown={categoryBreakdown} />
+        <Podium
+          rows={rows}
+          title={cleanQuizTitle(quiz?.title ?? "QuizClash")}
+          actions
+          categoryBreakdown={categoryBreakdown}
+        />
       </main>
     );
   }
 
+  if (phase.kind === "countdown") {
+    return <GameCountdown msLeft={phase.msLeft} />;
+  }
+
   if (phase.kind === "lobby") {
-    const startsIn = room.started_at && new Date(room.started_at).getTime() > state.now
-      ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000)
-      : null;
+    const startsIn =
+      room.started_at && new Date(room.started_at).getTime() > state.now
+        ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000)
+        : null;
     const manualTeams = room.team_count > 1 && room.team_mode === "manual";
     return (
       <main className="relative min-h-screen">
@@ -344,14 +414,20 @@ function HostRoom() {
               <DisplayControls />
               <LanguageToggle />
             </div>
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">{cleanQuizTitle(quiz?.title || "")}</p>
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">
+              {cleanQuizTitle(quiz?.title || "")}
+            </p>
             <h1 className="mt-3 font-display text-3xl md:text-4xl">{t("host.joinAt")}</h1>
             <p className="mt-1 break-all font-display text-xl text-muted-foreground">
               {joinUrl.replace(/^https?:\/\//, "")}
             </p>
             <div className="mt-6 rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-glow">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">{t("host.gameCode")}</p>
-              <p className="mt-2 font-display text-6xl tracking-[0.15em] md:text-8xl text-gradient">{room.code}</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+                {t("host.gameCode")}
+              </p>
+              <p className="mt-2 font-display text-6xl tracking-[0.15em] md:text-8xl text-gradient">
+                {room.code}
+              </p>
             </div>
             {joinUrl ? (
               <img
@@ -374,7 +450,9 @@ function HostRoom() {
 
             {/* Progression Mode Control */}
             <div className="mt-5 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
-              <span className="text-xs sm:text-sm font-bold text-foreground">⏱️ {t("host.pacing")}</span>
+              <span className="text-xs sm:text-sm font-bold text-foreground">
+                ⏱️ {t("host.pacing")}
+              </span>
               <div className="flex items-center gap-1.5">
                 {(["auto", "manual"] as const).map((mode) => (
                   <button
@@ -396,7 +474,9 @@ function HostRoom() {
 
             {/* Inter-question screen delay timer setting */}
             <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
-              <span className="text-xs sm:text-sm font-bold text-foreground">⏳ مدة شاشة النتيجة بين الأسئلة:</span>
+              <span className="text-xs sm:text-sm font-bold text-foreground">
+                ⏳ مدة شاشة النتيجة بين الأسئلة:
+              </span>
               <div className="flex items-center gap-1.5">
                 {[3, 5, 8, 12].map((sec) => (
                   <button
@@ -418,7 +498,9 @@ function HostRoom() {
 
             {/* Game Mode / Team Count Control */}
             <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
-              <span className="text-xs sm:text-sm font-bold text-foreground">🎮 {t("host.teams")}:</span>
+              <span className="text-xs sm:text-sm font-bold text-foreground">
+                🎮 {t("host.teams")}:
+              </span>
               <div className="flex items-center gap-1.5">
                 {[0, 2, 3, 4].map((n) => (
                   <button
@@ -448,7 +530,9 @@ function HostRoom() {
                       onClick={() => void patchRoom({ team_mode: mode })}
                       className={cn(
                         "press rounded-full border px-4 py-1.5 text-sm font-semibold",
-                        room.team_mode === mode ? "border-primary text-foreground ring-2 ring-primary" : "border-border",
+                        room.team_mode === mode
+                          ? "border-primary text-foreground ring-2 ring-primary"
+                          : "border-border",
                       )}
                     >
                       {mode === "auto" ? t("host.teamAuto") : t("host.teamManual")}
@@ -471,7 +555,9 @@ function HostRoom() {
             ) : null}
 
             <div className="mt-5 flex flex-wrap gap-2">
-              {players.length === 0 ? <p className="text-muted-foreground">{t("host.waiting")}</p> : null}
+              {players.length === 0 ? (
+                <p className="text-muted-foreground">{t("host.waiting")}</p>
+              ) : null}
               {players.map((p) => {
                 const teamIdx = p.team_index ?? null;
                 const badge =
@@ -598,7 +684,9 @@ function HostRoom() {
                     <span className="flex items-center gap-3 font-display text-lg">
                       <span
                         className="size-4 rounded-full"
-                        style={{ backgroundColor: TEAM_COLORS[team.teamIndex % TEAM_COLORS.length] }}
+                        style={{
+                          backgroundColor: TEAM_COLORS[team.teamIndex % TEAM_COLORS.length],
+                        }}
                       />
                       {t("team.name", { n: team.teamIndex + 1 })}
                     </span>
@@ -665,7 +753,9 @@ function HostRoom() {
           {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
         </span>
         <div className="flex items-center gap-2 sm:gap-3">
-          <span className="font-display text-base sm:text-lg text-muted-foreground">{t("host.code", { code: room.code })}</span>
+          <span className="font-display text-base sm:text-lg text-muted-foreground">
+            {t("host.code", { code: room.code })}
+          </span>
           <DisplayControls />
           <button
             type="button"
@@ -685,12 +775,22 @@ function HostRoom() {
                 path={question.image_url}
                 className="max-h-[18vh] max-w-[80vw] md:max-w-[30vw] rounded-2xl border border-border object-contain shrink-0"
               />
-              <h1 className={cn("font-display max-w-3xl leading-snug", getQuestionFontSize(question.question_text, true))}>
+              <h1
+                className={cn(
+                  "font-display max-w-3xl leading-snug",
+                  getQuestionFontSize(question.question_text, true),
+                )}
+              >
                 {question.question_text || "…"}
               </h1>
             </div>
           ) : (
-            <h1 className={cn("font-display max-w-5xl leading-snug px-2", getQuestionFontSize(question.question_text, false))}>
+            <h1
+              className={cn(
+                "font-display max-w-5xl leading-snug px-2",
+                getQuestionFontSize(question.question_text, false),
+              )}
+            >
               {question.question_text || "…"}
             </h1>
           )}
@@ -699,7 +799,9 @@ function HostRoom() {
         <div className="mt-2 sm:mt-3 flex w-full max-w-xl items-center justify-between gap-3 shrink-0 px-2">
           {revealing ? (
             <div className="flex-1 flex flex-col items-center">
-              <p className="font-display text-xl sm:text-2xl text-lime">{t("host.correctAnswer")}</p>
+              <p className="font-display text-xl sm:text-2xl text-lime">
+                {t("host.correctAnswer")}
+              </p>
               {manual ? (
                 <button
                   type="button"
@@ -717,7 +819,10 @@ function HostRoom() {
                 <p className="font-display text-lg sm:text-xl tabular-nums">
                   {everyoneAnswered
                     ? t("host.everyoneAnswered")
-                    : t("host.answered", { answered: questionAnswers.length, total: players.length })}
+                    : t("host.answered", {
+                        answered: questionAnswers.length,
+                        total: players.length,
+                      })}
                 </p>
                 <div className="mt-1.5">
                   <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />
@@ -735,7 +840,13 @@ function HostRoom() {
         </div>
       </div>
 
-      <div dir="ltr" className={cn("shrink-0 w-full max-w-5xl mx-auto grid gap-2 sm:gap-3 pt-1 pb-2 sm:pb-3", question.question_type === "boolean" ? "grid-cols-1" : "grid-cols-2")}>
+      <div
+        dir="ltr"
+        className={cn(
+          "shrink-0 w-full max-w-5xl mx-auto grid gap-2 sm:gap-3 pt-1 pb-2 sm:pb-3",
+          question.question_type === "boolean" ? "grid-cols-1" : "grid-cols-2",
+        )}
+      >
         {Array.from({ length: choices }, (_, i) => (
           <AnswerTile
             key={i}

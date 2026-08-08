@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { GameCountdown } from "@/components/quiz/GameCountdown";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
 import { CountdownRing } from "@/components/quiz/CountdownRing";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
@@ -26,9 +27,15 @@ export const Route = createFileRoute("/play/$code")({
   head: () => ({
     meta: [
       { title: "Play — QuizClash" },
-      { name: "description", content: "Your QuizClash controller: tap the shape that matches the right answer, fast." },
+      {
+        name: "description",
+        content: "Your QuizClash controller: tap the shape that matches the right answer, fast.",
+      },
       { property: "og:title", content: "Play — QuizClash" },
-      { property: "og:description", content: "Answer fast to score up to 1000 points per question." },
+      {
+        property: "og:description",
+        content: "Answer fast to score up to 1000 points per question.",
+      },
     ],
   }),
   component: Play,
@@ -75,16 +82,21 @@ function Play() {
 
   const me = players.find((p) => p.id === playerId) ?? null;
   const phaseKind = phase.kind;
-  const phaseIndex = phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard" ? phase.index : -1;
+  const phaseIndex =
+    phase.kind === "question" || phase.kind === "reveal" || phase.kind === "leaderboard"
+      ? phase.index
+      : -1;
   const rows = useMemo(() => {
     const upTo = phaseIndex >= 0 ? phaseIndex : questions.length - 1;
     return standings(players, answers, questions, upTo);
   }, [players, answers, questions, phaseKind, phaseIndex]);
   const myRow = rows.find((r) => r.player.id === playerId) ?? null;
 
-  const currentQuestion = phase.kind === "question" || phase.kind === "reveal" ? phase.question : null;
+  const currentQuestion =
+    phase.kind === "question" || phase.kind === "reveal" ? phase.question : null;
   const myAnswer = currentQuestion
-    ? (answers.find((a) => a.question_id === currentQuestion.id && a.player_id === playerId) ?? null)
+    ? (answers.find((a) => a.question_id === currentQuestion.id && a.player_id === playerId) ??
+      null)
     : null;
 
   // Clear optimistic choice when moving to next question or when real myAnswer arrives
@@ -99,8 +111,16 @@ function Play() {
   }, [phase.kind, phase.kind === "reveal" ? phase.index : -1]);
 
   async function submit(choice: number) {
-    if (phase.kind !== "question" || !room?.started_at || !playerId || myAnswer || sending || optimisticChoice !== null) return;
-    
+    if (
+      phase.kind !== "question" ||
+      !room?.started_at ||
+      !playerId ||
+      myAnswer ||
+      sending ||
+      optimisticChoice !== null
+    )
+      return;
+
     // 0ms INSTANT OPTIMISTIC FEEDBACK
     setOptimisticChoice(choice);
     sounds.playTap();
@@ -141,7 +161,6 @@ function Play() {
     await state.refresh();
   }
 
-
   if (!sessionResolved || state.loading) {
     return (
       <main className="grid min-h-screen place-items-center">
@@ -157,7 +176,10 @@ function Play() {
         <AnimatedBg />
         <div>
           <h1 className="font-display text-3xl">{t("play.notFound")}</h1>
-          <Link to="/join" className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky">
+          <Link
+            to="/join"
+            className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
+          >
             {t("play.tryAnother")}
           </Link>
         </div>
@@ -188,13 +210,25 @@ function Play() {
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
-        <Podium rows={rows} title={quiz?.title ?? "QuizClash"} highlightPlayerId={playerId} actions categoryBreakdown={categoryBreakdown} />
+        <Podium
+          rows={rows}
+          title={quiz?.title ?? "QuizClash"}
+          highlightPlayerId={playerId}
+          actions
+          categoryBreakdown={categoryBreakdown}
+        />
       </main>
     );
   }
 
+  if (phase.kind === "countdown") {
+    return <GameCountdown msLeft={phase.msLeft} />;
+  }
+
   if (phase.kind === "lobby") {
-    const startsIn = room.started_at ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000) : null;
+    const startsIn = room.started_at
+      ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000)
+      : null;
     return (
       <main className="relative grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg dense />
@@ -203,9 +237,13 @@ function Play() {
           <h1 className="mt-6 font-display text-4xl text-gradient">{t("play.youreIn")}</h1>
           <p className="mt-2 font-display text-2xl">{me.nickname}</p>
           <p className="mt-6 text-muted-foreground">
-            {startsIn !== null && startsIn > 0 ? t("play.startingIn", { n: startsIn }) : t("play.waitingHost")}
+            {startsIn !== null && startsIn > 0
+              ? t("play.startingIn", { n: startsIn })
+              : t("play.waitingHost")}
           </p>
-          <p className="mt-10 text-sm text-muted-foreground">{t("play.room", { code: room.code })}</p>
+          <p className="mt-10 text-sm text-muted-foreground">
+            {t("play.room", { code: room.code })}
+          </p>
         </div>
       </main>
     );
@@ -216,9 +254,15 @@ function Play() {
       <main className="relative grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg dense />
         <div className="w-full max-w-sm animate-pop rounded-3xl border border-border bg-surface-gradient p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">{t("play.yourRank")}</p>
-          <p className="mt-2 font-display text-7xl text-gradient tabular-nums">#{myRow?.rank ?? "-"}</p>
-          <p className="mt-2 font-display text-3xl tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</p>
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">
+            {t("play.yourRank")}
+          </p>
+          <p className="mt-2 font-display text-7xl text-gradient tabular-nums">
+            #{myRow?.rank ?? "-"}
+          </p>
+          <p className="mt-2 font-display text-3xl tabular-nums">
+            {t("play.points", { n: myRow?.total ?? 0 })}
+          </p>
           {myRow && myRow.rank > 1 ? (
             <p className="mt-4 text-muted-foreground">
               {t("play.behind", {
@@ -240,7 +284,6 @@ function Play() {
               ? t("play.waitingNext")
               : t("play.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
           </p>
-
         </div>
       </main>
     );
@@ -262,12 +305,16 @@ function Play() {
             {t("play.gained", { n: myAnswer?.points_awarded ?? 0 })}
           </p>
           {myRow && myRow.streak > 1 ? (
-            <p className="mt-2 font-display text-lg text-lime">{t("play.inARow", { n: myRow.streak })}</p>
+            <p className="mt-2 font-display text-lg text-lime">
+              {t("play.inARow", { n: myRow.streak })}
+            </p>
           ) : null}
           {question.correct_index >= 0 ? (
             <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4 text-start">
               <p className="text-sm text-muted-foreground text-center">{t("play.correctAnswer")}</p>
-              <p className="mt-1 font-display text-xl text-center">{question.options[question.correct_index]}</p>
+              <p className="mt-1 font-display text-xl text-center">
+                {question.options[question.correct_index]}
+              </p>
               {question.explanation ? (
                 <div className="mt-3 border-t border-border/50 pt-3 text-sm text-sun animate-pop">
                   <span className="font-bold">💡 الشرح: </span>
@@ -277,7 +324,9 @@ function Play() {
             </div>
           ) : null}
 
-          <p className="mt-6 text-sm text-muted-foreground">{t("play.total", { n: myRow?.total ?? 0 })}</p>
+          <p className="mt-6 text-sm text-muted-foreground">
+            {t("play.total", { n: myRow?.total ?? 0 })}
+          </p>
         </div>
       </main>
     );
@@ -287,7 +336,6 @@ function Play() {
   const choices = optionCount(question);
   const isBoolean = question.question_type === "boolean";
   const fiftyHidden = me.fifty_question_id === question.id ? (me.fifty_hidden ?? []) : [];
-
 
   return (
     <main className="relative flex h-[100dvh] max-h-[100dvh] flex-col justify-between overflow-hidden px-3.5 pt-2.5 pb-12 sm:pb-14">
@@ -306,7 +354,9 @@ function Play() {
               {t("play.yourTeam", { n: me.team_index + 1 })}
             </span>
           ) : null}
-          <span className="font-display tabular-nums">{t("play.points", { n: myRow?.total ?? 0 })}</span>
+          <span className="font-display tabular-nums">
+            {t("play.points", { n: myRow?.total ?? 0 })}
+          </span>
           <button
             type="button"
             onClick={toggleMute}
@@ -353,7 +403,13 @@ function Play() {
               className="mx-auto mt-2 max-h-[16vh] rounded-2xl border border-border object-contain shrink-0"
             />
           ) : null}
-          <div dir="ltr" className={cn("my-2 grid flex-1 min-h-0 gap-2.5", isBoolean ? "grid-cols-1" : "grid-cols-2")}>
+          <div
+            dir="ltr"
+            className={cn(
+              "my-2 grid flex-1 min-h-0 gap-2.5",
+              isBoolean ? "grid-cols-1" : "grid-cols-2",
+            )}
+          >
             {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
               return (
@@ -375,8 +431,7 @@ function Play() {
           <div className="pb-1 pt-1 shrink-0">
             <div className="flex items-center justify-between px-1 mb-1.5">
               <span className="flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-sun">
-                <span className="size-2 rounded-full bg-sun animate-ping" />
-                ✨ {t("play.powerups")}
+                <span className="size-2 rounded-full bg-sun animate-ping" />✨ {t("play.powerups")}
               </span>
               {armedDouble && !me.used_double ? (
                 <span className="rounded-full border border-sun bg-sun/20 px-2 py-0.5 text-[10px] font-extrabold text-sun animate-pulse">
@@ -396,8 +451,8 @@ function Play() {
                   armedDouble
                     ? "border-sun bg-gradient-to-b from-sun/30 via-sun/15 to-background text-sun ring-2 ring-sun/80 shadow-glow animate-pulse-hard"
                     : me.used_double
-                    ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
-                    : "liquid-glass border-sun/60 bg-gradient-to-b from-sun/10 to-background text-foreground hover:border-sun hover:shadow-glow",
+                      ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
+                      : "liquid-glass border-sun/60 bg-gradient-to-b from-sun/10 to-background text-foreground hover:border-sun hover:shadow-glow",
                 )}
               >
                 {/* Glossy Reflection */}
@@ -422,8 +477,8 @@ function Play() {
                   me.used_fifty
                     ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
                     : isBoolean
-                    ? "border-border/30 bg-background/20 opacity-30 text-muted-foreground"
-                    : "liquid-glass border-electric/60 bg-gradient-to-b from-electric/10 to-background text-foreground hover:border-electric hover:shadow-glow",
+                      ? "border-border/30 bg-background/20 opacity-30 text-muted-foreground"
+                      : "liquid-glass border-electric/60 bg-gradient-to-b from-electric/10 to-background text-foreground hover:border-electric hover:shadow-glow",
                 )}
               >
                 {/* Glossy Reflection */}
@@ -471,7 +526,9 @@ function Play() {
             ⏸️
           </div>
           <h2 className="mt-6 font-display text-4xl text-gradient">اللعبة متوقفة مؤقتاً</h2>
-          <p className="mt-2 text-center text-muted-foreground max-w-xs">أوقف المضيف اللعبة لبرهة. سنستأنف فوراً بمجرد الضغط على استئناف...</p>
+          <p className="mt-2 text-center text-muted-foreground max-w-xs">
+            أوقف المضيف اللعبة لبرهة. سنستأنف فوراً بمجرد الضغط على استئناف...
+          </p>
         </div>
       ) : null}
 

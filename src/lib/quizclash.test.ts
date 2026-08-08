@@ -49,8 +49,11 @@ describe("phaseAt pure function", () => {
     const unstartedRoom = { ...mockRoom, started_at: null };
     expect(phaseAt(unstartedRoom, mockQuestions, startTime)).toEqual({ kind: "lobby" });
 
-    // Before started_at timestamp
-    expect(phaseAt(mockRoom, mockQuestions, startTime - 1000)).toEqual({ kind: "lobby" });
+    // An active room with a future start timestamp is in the synchronized countdown.
+    expect(phaseAt(mockRoom, mockQuestions, startTime - 1000)).toEqual({
+      kind: "countdown",
+      msLeft: 1000,
+    });
   });
 
   it("returns ended phase when room status is ended", () => {
