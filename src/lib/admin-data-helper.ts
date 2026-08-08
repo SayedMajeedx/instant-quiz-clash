@@ -111,11 +111,14 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       });
 
       if (!rpcErr) return;
+      console.warn("upsert_admin_quiz_by_id_or_title failed, falling back:", rpcErr);
     } catch (e) {
       // RPC fallback
     }
 
     // 2. Direct DB fallback if RPC is unavailable
+    const { data: userData } = await supabase.auth.getUser();
+    const currentUserId = userData.user?.id ?? null;
     let existingDbQuiz: any = null;
 
     if (validUuid) {
@@ -137,7 +140,8 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       if (override.quiz_difficulty !== undefined) updatePayload.quiz_difficulty = override.quiz_difficulty;
       if (override.language !== undefined) updatePayload.language = override.language;
 
-      await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
+      const { error } = await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
+      if (error) throw error;
     } else if (targetTitle && targetTitle.trim() && !isUUID(targetTitle)) {
       const insertPayload: any = {
         title: targetTitle.trim(),
@@ -147,11 +151,14 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
         quiz_difficulty: override.quiz_difficulty || (libQuiz ? libQuiz.quiz_difficulty : "standard") || "standard",
         language: override.language || (libQuiz ? libQuiz.language : "ar") || "ar",
       };
+      if (currentUserId) insertPayload.user_id = currentUserId;
 
-      await db.from("quizzes").insert([insertPayload]);
+      const { error } = await db.from("quizzes").insert([insertPayload]);
+      if (error) throw error;
     }
   } catch (err) {
-    console.warn("Quiz override saved locally, DB sync note:", err);
+    console.error("Failed to persist quiz change:", err);
+    throw err;
   }
 }
 
