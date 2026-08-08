@@ -77,6 +77,26 @@ export function isUUID(str: string | null | undefined): boolean {
   return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(str.trim());
 }
 
+/** Permanently delete quizzes and record library tombstones in one DB transaction. */
+export async function deleteAdminQuizzes(
+  quizzes: Array<{ id: string; title: string }>
+): Promise<number> {
+  if (quizzes.length === 0) return 0;
+
+  const { data, error } = await (supabase as any).rpc("delete_admin_quizzes", {
+    p_quiz_ids: quizzes.filter((quiz) => isUUID(quiz.id)).map((quiz) => quiz.id),
+    p_library_ids: quizzes.map((quiz) => quiz.id),
+    p_titles: quizzes.map((quiz) => quiz.title),
+  });
+
+  if (error) throw new Error(error.message || "Quiz deletion failed");
+  const deletedCount = Number(data);
+  if (!Number.isFinite(deletedCount) || deletedCount !== quizzes.length) {
+    throw new Error("The database did not confirm every quiz deletion");
+  }
+  return deletedCount;
+}
+
 /**
  * Save quiz override PERMANENTLY to Supabase DB
  */
@@ -397,6 +417,21 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   const dbTitles = new Set<string>();
 
   const cleanTitle = (s: string) => (s || "").toLowerCase().replace(/[\u064B-\u0652\u0640]/g, "").trim();
+  const deletedLibraryIds = new Set<string>();
+  const deletedTitles = new Set<string>();
+
+  try {
+    const { data, error } = await (supabase.from("admin_deleted_quizzes" as any) as any)
+      .select("library_id, title");
+    if (!error && Array.isArray(data)) {
+      data.forEach((item: any) => {
+        if (item.library_id) deletedLibraryIds.add(item.library_id);
+        if (item.title) deletedTitles.add(cleanTitle(item.title));
+      });
+    }
+  } catch {
+    // The migration may not have reached an older environment yet.
+  }
 
   try {
     const { data, error } = await (supabase.from("quizzes") as any)
@@ -431,7 +466,13 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 
   // Merge static QUIZ_LIBRARY (ONLY for quizzes NOT present in Supabase DB by ID or Title)
   const libraryQuizzes: AdminQuizItem[] = QUIZ_LIBRARY.filter(
-    (q) => !q.archived && q.launch_enabled !== false && !dbIds.has(q.id) && !dbTitles.has(cleanTitle(q.title))
+    (q) =>
+      !q.archived &&
+      q.launch_enabled !== false &&
+      !deletedLibraryIds.has(q.id) &&
+      !deletedTitles.has(cleanTitle(q.title)) &&
+      !dbIds.has(q.id) &&
+      !dbTitles.has(cleanTitle(q.title))
   ).map((q) => {
     const ov = overrides[q.id] || overrides[cleanTitle(q.title)] || {};
     return {
