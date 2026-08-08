@@ -174,12 +174,6 @@ export async function cloneQuiz(
     if (qInsertError) {
       console.warn("Full question insert failed, attempting reload and basic retry:", qInsertError);
 
-      try {
-        await (supabase.rpc as any)("reload_schema_cache");
-      } catch {
-        // Ignore if RPC does not exist
-      }
-
       const retryRes = await supabase.from("questions").insert(questionsToInsert as never);
       qInsertError = retryRes.error;
 
