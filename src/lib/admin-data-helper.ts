@@ -420,26 +420,29 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   const deletedLibraryIds = new Set<string>();
   const deletedTitles = new Set<string>();
 
-  try {
-    const { data, error } = await (supabase.from("admin_deleted_quizzes" as any) as any)
-      .select("library_id, title");
-    if (!error && Array.isArray(data)) {
-      data.forEach((item: any) => {
-        if (item.library_id) deletedLibraryIds.add(item.library_id);
-        if (item.title) deletedTitles.add(cleanTitle(item.title));
-      });
-    }
-  } catch {
-    // The migration may not have reached an older environment yet.
+  const { data: deletedData, error: deletedError } = await (supabase as any).rpc(
+    "get_admin_deleted_quizzes"
+  );
+  if (deletedError) {
+    throw new Error(`Could not synchronize deleted quizzes: ${deletedError.message}`);
+  }
+  if (!Array.isArray(deletedData)) {
+    throw new Error("Could not synchronize deleted quizzes: invalid database response");
+  }
+  deletedData.forEach((item: any) => {
+    if (item.library_id) deletedLibraryIds.add(item.library_id);
+    if (item.title) deletedTitles.add(cleanTitle(item.title));
+  });
+
+  const { data, error } = await (supabase.from("quizzes") as any)
+    .select("*, questions(*)")
+    .order("created_at", { ascending: false });
+  if (error) throw new Error(`Could not synchronize quizzes: ${error.message}`);
+  if (!Array.isArray(data)) {
+    throw new Error("Could not synchronize quizzes: invalid database response");
   }
 
-  try {
-    const { data, error } = await (supabase.from("quizzes") as any)
-      .select("*, questions(*)")
-      .order("created_at", { ascending: false });
-
-    if (!error && data && Array.isArray(data)) {
-      data.forEach((q: any) => {
+  data.forEach((q: any) => {
         if (q.id) dbIds.add(q.id);
         if (q.title) dbTitles.add(cleanTitle(q.title));
 
@@ -458,11 +461,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
           questions: q.questions || [],
           source: "db",
         });
-      });
-    }
-  } catch {
-    // Silent catch for DB query errors
-  }
+  });
 
   // Merge static QUIZ_LIBRARY (ONLY for quizzes NOT present in Supabase DB by ID or Title)
   const libraryQuizzes: AdminQuizItem[] = QUIZ_LIBRARY.filter(
