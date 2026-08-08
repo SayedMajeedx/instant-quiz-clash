@@ -276,11 +276,10 @@ export function AdminQuizzesPage() {
 
       const validUuidIds = selectedArray.filter((id) => isUUID(id));
       if (validUuidIds.length > 0) {
-        await (supabase.from("quizzes") as any)
+        const { error } = await (supabase.from("quizzes") as any)
           .update(payload)
-          .in("id", validUuidIds)
-          .then(() => {})
-          .catch(() => {});
+          .in("id", validUuidIds);
+        if (error) throw error;
       }
 
       const newCategory = bulkCategory.trim();
