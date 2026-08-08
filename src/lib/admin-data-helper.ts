@@ -444,6 +444,14 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 
   data.forEach((q: any) => {
     if (q.quiz_kind === "custom_generated") return;
+        const matchingLibraryQuiz = QUIZ_LIBRARY.find(
+          (libraryQuiz) =>
+            libraryQuiz.id === q.id || cleanTitle(libraryQuiz.title) === cleanTitle(q.title),
+        );
+        const resolvedQuestions =
+          Array.isArray(q.questions) && q.questions.length > 0
+            ? q.questions
+            : matchingLibraryQuiz?.questions || [];
         if (q.id) dbIds.add(q.id);
         if (q.title) dbTitles.add(cleanTitle(q.title));
 
@@ -457,9 +465,9 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
           quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : q.quiz_difficulty === "easy" ? "easy" : "standard",
           is_public: ov.is_public !== undefined ? ov.is_public : (q.is_public ?? true),
           created_at: q.created_at || new Date().toISOString(),
-          question_count: Array.isArray(q.questions) ? q.questions.length : 0,
+          question_count: resolvedQuestions.length,
           user_id: q.user_id,
-          questions: q.questions || [],
+          questions: resolvedQuestions,
           source: "db",
         });
   });

@@ -4,6 +4,8 @@ import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
+import { getAllAdminQuizzes } from "@/lib/admin-data-helper";
+import { selectCustomQuestions } from "@/lib/custom-quiz";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -20,13 +22,27 @@ type CategoryOption = {
   name: string;
   subcategories: Array<{ id: string; name: string }>;
 };
+type UnifiedQuestion = {
+  id: string;
+  question_text: string;
+  options: unknown[];
+  correct_index: number;
+  question_type?: string | null;
+  explanation?: string | null;
+  image_url?: string | null;
+  difficulty: string;
+  subcategory: string;
+  source_category: string;
+};
 
 const QUESTION_COUNTS = [20, 40, 50, 100] as const;
+const subcategoryKey = (category: string, subcategory: string) => `${category}\u0000${subcategory}`;
 
 function CustomChallengeSetup() {
   const navigate = useNavigate();
   const { lang } = useI18n();
   const [categories, setCategories] = useState<CategoryOption[]>([]);
+  const [questionBank, setQuestionBank] = useState<UnifiedQuestion[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedSubcategories, setSelectedSubcategories] = useState<string[]>([]);
   const [questionCount, setQuestionCount] = useState<(typeof QUESTION_COUNTS)[number]>(20);
@@ -42,14 +58,41 @@ function CustomChallengeSetup() {
 
   useEffect(() => {
     void (async () => {
-      const [managedResult, quizResult] = await Promise.all([
-        (supabase.from("categories") as any)
-          .select("id, name, subcategories(id, name)")
-          .order("name"),
-        (supabase.from("quizzes") as any)
-          .select("id, category, subcategory, quiz_kind")
-          .eq("is_public", true),
-      ]);
+      const quizzes = (await getAllAdminQuizzes()).filter((quiz) => quiz.is_public);
+      const bank: UnifiedQuestion[] = [];
+      const categoryRows: Array<{
+        id: string;
+        category: string;
+        subcategory: string;
+        quiz_kind: string;
+      }> = [];
+      for (const quiz of quizzes) {
+        for (const [index, question] of (quiz.questions ?? []).entries()) {
+          if (!question?.question_text || !Array.isArray(question.options)) continue;
+          const subcategory = String(question.subcategory ?? quiz.subcategory ?? "").trim();
+          bank.push({
+            id: `${quiz.id}:${question.id ?? index}`,
+            question_text: question.question_text,
+            options: question.options,
+            correct_index: Number(question.correct_index ?? 0),
+            question_type: question.question_type,
+            explanation: question.explanation,
+            image_url: question.image_url,
+            difficulty: String(question.difficulty ?? quiz.quiz_difficulty ?? "standard"),
+            subcategory,
+            source_category: quiz.category,
+          });
+          categoryRows.push({
+            id: `${quiz.id}:${index}`,
+            category: quiz.category,
+            subcategory,
+            quiz_kind: "standard",
+          });
+        }
+      }
+      setQuestionBank(bank);
+      const managedResult = { error: null, data: [] as CategoryOption[] };
+      const quizResult = { error: null, data: categoryRows };
       if (managedResult.error && quizResult.error) {
         toast.error(ar ? "تعذر تحميل الأقسام" : "Could not load categories");
       } else {
@@ -97,19 +140,31 @@ function CustomChallengeSetup() {
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
-      void (async () => {
-        setChecking(true);
-        const { data, error } = await (supabase as any).rpc("custom_quiz_pool_size", {
-          p_categories: selectedCategories,
-          p_subcategories: selectedSubcategories,
-          p_difficulty: difficulty,
-        });
-        setAvailable(error ? null : Number(data ?? 0));
-        setChecking(false);
-      })();
+      setChecking(true);
+      const filtered = questionBank.filter((question) => {
+        if (
+          selectedCategories.length > 0 &&
+          !selectedCategories.includes(question.source_category)
+        ) {
+          return false;
+        }
+        if (
+          selectedSubcategories.length > 0 &&
+          !selectedSubcategories.includes(
+            subcategoryKey(question.source_category, question.subcategory),
+          )
+        ) {
+          return false;
+        }
+        const normalized = question.difficulty.toLocaleLowerCase();
+        const challenging = ["challenge", "hard", "expert"].includes(normalized);
+        return difficulty === "all" || (difficulty === "challenge" ? challenging : !challenging);
+      });
+      setAvailable(filtered.length);
+      setChecking(false);
     }, 250);
     return () => window.clearTimeout(timer);
-  }, [selectedCategories, selectedSubcategories, difficulty]);
+  }, [questionBank, selectedCategories, selectedSubcategories, difficulty]);
 
   const visibleSubcategories = useMemo(
     () =>
@@ -127,25 +182,44 @@ function CustomChallengeSetup() {
     );
     const category = categories.find((item) => item.name === name);
     if (category && selectedCategories.includes(name)) {
-      const removed = new Set(category.subcategories.map((sub) => sub.name));
+      const removed = new Set(
+        category.subcategories.map((sub) => subcategoryKey(category.name, sub.name)),
+      );
       setSelectedSubcategories((current) => current.filter((item) => !removed.has(item)));
     }
   }
 
-  function toggleSubcategory(name: string) {
+  function toggleSubcategory(category: string, name: string) {
+    const key = subcategoryKey(category, name);
     setSelectedSubcategories((current) =>
-      current.includes(name) ? current.filter((item) => item !== name) : [...current, name],
+      current.includes(key) ? current.filter((item) => item !== key) : [...current, key],
     );
   }
 
   async function createChallenge() {
     if (available === null || available < questionCount) return;
+    const eligible = questionBank.filter((question) => {
+      if (selectedCategories.length > 0 && !selectedCategories.includes(question.source_category)) {
+        return false;
+      }
+      if (
+        selectedSubcategories.length > 0 &&
+        !selectedSubcategories.includes(
+          subcategoryKey(question.source_category, question.subcategory),
+        )
+      ) {
+        return false;
+      }
+      const normalized = question.difficulty.toLocaleLowerCase();
+      const challenging = ["challenge", "hard", "expert"].includes(normalized);
+      return difficulty === "all" || (difficulty === "challenge" ? challenging : !challenging);
+    });
+    const selected = selectCustomQuestions(eligible, questionCount).map(
+      ({ id: _id, ...question }) => question,
+    );
     setCreating(true);
-    const { data, error } = await (supabase as any).rpc("generate_custom_quiz_room", {
-      p_categories: selectedCategories,
-      p_subcategories: selectedSubcategories,
-      p_question_count: questionCount,
-      p_difficulty: difficulty,
+    const { data, error } = await (supabase as any).rpc("create_custom_quiz_room", {
+      p_questions: selected,
       p_advance_mode: advanceMode,
       p_team_count: teamCount,
       p_team_mode: "auto",
@@ -223,7 +297,7 @@ function CustomChallengeSetup() {
                       className={cn(
                         "rounded-2xl border p-4 text-start font-bold transition",
                         active
-                          ? "border-primary bg-primary/15 text-primary"
+                          ? "border-primary bg-primary/35 text-white shadow-glow"
                           : "border-border bg-background/50",
                       )}
                     >
@@ -248,16 +322,18 @@ function CustomChallengeSetup() {
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {visibleSubcategories.map((sub) => {
-                  const active = selectedSubcategories.includes(sub.name);
+                  const active = selectedSubcategories.includes(
+                    subcategoryKey(sub.category, sub.name),
+                  );
                   return (
                     <button
                       key={`${sub.category}-${sub.id}`}
                       type="button"
-                      onClick={() => toggleSubcategory(sub.name)}
+                      onClick={() => toggleSubcategory(sub.category, sub.name)}
                       className={cn(
                         "rounded-full border px-3 py-2 text-xs font-bold",
                         active
-                          ? "border-secondary bg-secondary/20 text-secondary"
+                          ? "border-primary bg-primary/40 text-white shadow-glow"
                           : "border-border",
                       )}
                     >
@@ -280,10 +356,9 @@ function CustomChallengeSetup() {
                   <button
                     key={count}
                     type="button"
-                    disabled={available !== null && available < count}
                     onClick={() => setQuestionCount(count)}
                     className={cn(
-                      "rounded-2xl border px-2 py-3 font-display text-lg disabled:cursor-not-allowed disabled:opacity-35",
+                      "rounded-2xl border px-2 py-3 font-display text-lg",
                       questionCount === count
                         ? "border-primary bg-primary/20 text-primary"
                         : "border-border",
