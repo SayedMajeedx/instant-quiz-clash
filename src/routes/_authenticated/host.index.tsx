@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { GameHistory } from "@/components/quiz/GameHistory";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
@@ -10,6 +11,8 @@ import { randomCode, type Quiz } from "@/lib/quizclash";
 import { getSyncedNow } from "@/lib/server-time";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
+
+const PAGE_SIZE = 10;
 
 export const Route = createFileRoute("/_authenticated/host/")({
   validateSearch: (search: Record<string, unknown>): { quiz?: string } =>
@@ -33,6 +36,7 @@ function HostCreate() {
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [selected, setSelected] = useState<string | null>(preselected ?? null);
   const [busy, setBusy] = useState(false);
+  const [page, setPage] = useState(1);
 
   const load = useCallback(async () => {
     // 1. Fetch from Supabase
@@ -40,38 +44,28 @@ function HostCreate() {
       .from("quizzes")
       .select("*")
       .eq("user_id", user.id)
+      .eq("personal_library", true)
       .order("created_at", { ascending: false });
-    
-    let rows = ((data ?? []) as unknown as Quiz[]).filter(
-      (quiz) => quiz.quiz_kind !== "custom_generated"
+
+    const rows = ((data ?? []) as unknown as Quiz[]).filter(
+      (quiz) => quiz.quiz_kind !== "custom_generated",
     );
 
-    // 2. Local Storage Cache Fallback & Merge (Ensures quizzes NEVER disappear)
-    const localKey = `quizclash_user_quizzes_${user.id}`;
-    try {
-      const cachedRaw = localStorage.getItem(localKey);
-      if (cachedRaw) {
-        const cachedQuizzes = (JSON.parse(cachedRaw) as Quiz[]).filter(
-          (quiz) => quiz.quiz_kind !== "custom_generated"
-        );
-        const existingIds = new Set(rows.map((r) => r.id));
-        const missingFromDb = cachedQuizzes.filter((cq) => !existingIds.has(cq.id));
-        rows = [...rows, ...missingFromDb];
-      }
-      localStorage.setItem(localKey, JSON.stringify(rows));
-    } catch {
-      // Local storage fallback ignore
-    }
-
     setQuizzes(rows);
+    const selectedIndex = preselected ? rows.findIndex((quiz) => quiz.id === preselected) : -1;
+    setPage(selectedIndex >= 0 ? Math.floor(selectedIndex / PAGE_SIZE) + 1 : 1);
 
     if (rows.length) {
       const { data: qs } = await supabase
         .from("questions")
         .select("id, quiz_id")
-        .in("quiz_id", rows.map((q) => q.id));
+        .in(
+          "quiz_id",
+          rows.map((q) => q.id),
+        );
       const map: Record<string, number> = {};
-      for (const q of (qs ?? []) as { quiz_id: string }[]) map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
+      for (const q of (qs ?? []) as { quiz_id: string }[])
+        map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
 
       // Ensure fallback question count for local cached quizzes if questions table query is empty
       rows.forEach((rq) => {
@@ -88,6 +82,9 @@ function HostCreate() {
     void load();
   }, [load]);
 
+  const totalPages = Math.max(1, Math.ceil(quizzes.length / PAGE_SIZE));
+  const pageQuizzes = quizzes.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
   async function createRoom() {
     if (!selected) return;
     if ((counts[selected] ?? 0) === 0) {
@@ -102,7 +99,9 @@ function HostCreate() {
       .lt("created_at", new Date(getSyncedNow() - 6 * 60 * 60 * 1000).toISOString());
     for (let attempt = 0; attempt < 6; attempt += 1) {
       const code = randomCode();
-      const { error } = await supabase.from("rooms").insert({ code, quiz_id: selected, status: "lobby" });
+      const { error } = await supabase
+        .from("rooms")
+        .insert({ code, quiz_id: selected, status: "lobby" });
       if (!error) {
         void navigate({ to: "/host/$code", params: { code } });
         return;
@@ -117,7 +116,10 @@ function HostCreate() {
       <AnimatedBg />
       <div className="mx-auto max-w-2xl px-5 py-10">
         <div className="flex items-center justify-between gap-3">
-          <Link to="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
+          <Link
+            to="/"
+            className="text-sm font-semibold text-muted-foreground hover:text-foreground"
+          >
             {t("nav.backHome")}
           </Link>
           <LanguageToggle />
@@ -137,7 +139,7 @@ function HostCreate() {
               </Link>
             </div>
           ) : null}
-          {quizzes.map((quiz) => {
+          {pageQuizzes.map((quiz) => {
             const displayTitle = cleanQuizTitle(quiz.title);
             const isSel = selected === quiz.id;
             return (
@@ -176,6 +178,31 @@ function HostCreate() {
               </div>
             );
           })}
+          {quizzes.length > PAGE_SIZE ? (
+            <div className="flex items-center justify-center gap-3 pt-5" dir="ltr">
+              <button
+                type="button"
+                disabled={page === 1}
+                onClick={() => setPage((current) => Math.max(1, current - 1))}
+                className="rounded-xl border border-border p-2.5 disabled:opacity-35"
+                aria-label="Previous page"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </button>
+              <span className="min-w-20 text-center text-sm font-bold text-muted-foreground">
+                {page} / {totalPages}
+              </span>
+              <button
+                type="button"
+                disabled={page === totalPages}
+                onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
+                className="rounded-xl border border-border p-2.5 disabled:opacity-35"
+                aria-label="Next page"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            </div>
+          ) : null}
         </div>
 
         {quizzes.length > 0 ? (
