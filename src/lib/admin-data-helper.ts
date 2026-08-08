@@ -111,11 +111,14 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       });
 
       if (!rpcErr) return;
+      console.warn("upsert_admin_quiz_by_id_or_title failed, falling back:", rpcErr);
     } catch (e) {
       // RPC fallback
     }
 
     // 2. Direct DB fallback if RPC is unavailable
+    const { data: userData } = await supabase.auth.getUser();
+    const currentUserId = userData.user?.id ?? null;
     let existingDbQuiz: any = null;
 
     if (validUuid) {
@@ -137,7 +140,8 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
       if (override.quiz_difficulty !== undefined) updatePayload.quiz_difficulty = override.quiz_difficulty;
       if (override.language !== undefined) updatePayload.language = override.language;
 
-      await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
+      const { error } = await db.from("quizzes").update(updatePayload).eq("id", existingDbQuiz.id);
+      if (error) throw error;
     } else if (targetTitle && targetTitle.trim() && !isUUID(targetTitle)) {
       const insertPayload: any = {
         title: targetTitle.trim(),
@@ -147,11 +151,14 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
         quiz_difficulty: override.quiz_difficulty || (libQuiz ? libQuiz.quiz_difficulty : "standard") || "standard",
         language: override.language || (libQuiz ? libQuiz.language : "ar") || "ar",
       };
+      if (currentUserId) insertPayload.user_id = currentUserId;
 
-      await db.from("quizzes").insert([insertPayload]);
+      const { error } = await db.from("quizzes").insert([insertPayload]);
+      if (error) throw error;
     }
   } catch (err) {
-    console.warn("Quiz override saved locally, DB sync note:", err);
+    console.error("Failed to persist quiz change:", err);
+    throw err;
   }
 }
 
@@ -209,12 +216,15 @@ export async function saveLocalCategory(catName: string, catSlug?: string): Prom
     const db = supabase as any;
     const { data: existingCat } = await db.from("categories").select("id").eq("name", name).maybeSingle();
     if (existingCat) {
-      await db.from("categories").update({ name, slug }).eq("id", existingCat.id);
+      const { error } = await db.from("categories").update({ name, slug }).eq("id", existingCat.id);
+      if (error) throw error;
     } else {
-      await db.from("categories").insert([{ name, slug }]);
+      const { error } = await db.from("categories").insert([{ name, slug }]);
+      if (error) throw error;
     }
   } catch (e) {
     console.error("Failed to persist category to Supabase DB:", e);
+    throw e;
   }
 
   return item;
@@ -243,13 +253,16 @@ export async function deleteLocalCategory(catId: string, catName?: string) {
   try {
     const db = supabase as any;
     if (catId && !catId.startsWith("cat-")) {
-      await db.from("categories").delete().eq("id", catId);
+      const { error } = await db.from("categories").delete().eq("id", catId);
+      if (error) throw error;
     }
     if (catName) {
-      await db.from("categories").delete().eq("name", catName);
+      const { error } = await db.from("categories").delete().eq("name", catName);
+      if (error) throw error;
     }
   } catch (e) {
     console.error("Failed to delete category from Supabase DB:", e);
+    throw e;
   }
 }
 
@@ -322,14 +335,17 @@ export async function saveLocalSubcategory(parentCatId: string, parentCatName: s
     if (existingSub) {
       const updatePayload: any = { name: subName.trim(), slug };
       if (realCatId) updatePayload.category_id = realCatId;
-      await db.from("subcategories").update(updatePayload).eq("id", existingSub.id);
+      const { error } = await db.from("subcategories").update(updatePayload).eq("id", existingSub.id);
+      if (error) throw error;
     } else {
       const insertPayload: any = { name: subName.trim(), slug };
       if (realCatId) insertPayload.category_id = realCatId;
-      await db.from("subcategories").insert([insertPayload]);
+      const { error } = await db.from("subcategories").insert([insertPayload]);
+      if (error) throw error;
     }
   } catch (e) {
     console.error("Failed to persist subcategory to Supabase DB:", e);
+    throw e;
   }
 
   return item;
@@ -358,13 +374,16 @@ export async function deleteLocalSubcategory(subId: string, subName?: string) {
   try {
     const db = supabase as any;
     if (subId && !subId.startsWith("sub-")) {
-      await db.from("subcategories").delete().eq("id", subId);
+      const { error } = await db.from("subcategories").delete().eq("id", subId);
+      if (error) throw error;
     }
     if (subName) {
-      await db.from("subcategories").delete().eq("name", subName);
+      const { error } = await db.from("subcategories").delete().eq("name", subName);
+      if (error) throw error;
     }
   } catch (e) {
     console.error("Failed to delete subcategory from Supabase DB:", e);
+    throw e;
   }
 }
 

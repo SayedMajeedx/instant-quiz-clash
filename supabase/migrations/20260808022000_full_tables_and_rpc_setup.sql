@@ -1,4 +1,4 @@
--- Migration: Full setup of categories, subcategories, quizzes, questions tables & RPCs for fresh databases
+-- Migration: Full setup of categories, subcategories, quizzes, questions tables & RPC for fresh databases
 
 -- 1. Create categories table
 CREATE TABLE IF NOT EXISTS public.categories (
@@ -129,52 +129,5 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 
 GRANT EXECUTE ON FUNCTION public.upsert_admin_quiz_by_id_or_title(uuid, text, text, text, text, text, boolean) TO anon, authenticated, service_role, postgres;
 
--- 9. Create RPC to fetch all admin quizzes directly from Postgres SQL engine
-CREATE OR REPLACE FUNCTION public.get_all_admin_quizzes()
-RETURNS jsonb AS $$
-DECLARE
-  v_result jsonb;
-BEGIN
-  SELECT jsonb_agg(
-    jsonb_build_object(
-      'id', q.id,
-      'title', q.title,
-      'category', COALESCE(q.category, 'عام'),
-      'subcategory', COALESCE(q.subcategory, ''),
-      'quiz_difficulty', COALESCE(q.quiz_difficulty, 'standard'),
-      'language', COALESCE(q.language, 'ar'),
-      'is_public', COALESCE(q.is_public, true),
-      'created_at', q.created_at,
-      'questions', COALESCE(
-        (
-          SELECT jsonb_agg(
-            jsonb_build_object(
-              'id', qn.id,
-              'question_text', qn.question_text,
-              'options', qn.options,
-              'correct_index', qn.correct_index,
-              'time_limit_seconds', qn.time_limit_seconds,
-              'order_index', qn.order_index,
-              'question_type', qn.question_type,
-              'explanation', qn.explanation,
-              'image_url', qn.image_url,
-              'subcategory', qn.subcategory
-            )
-          )
-          FROM public.questions qn
-          WHERE qn.quiz_id = q.id
-        ),
-        '[]'::jsonb
-      )
-    )
-  ) INTO v_result
-  FROM public.quizzes q;
-
-  RETURN COALESCE(v_result, '[]'::jsonb);
-END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
-
-GRANT EXECUTE ON FUNCTION public.get_all_admin_quizzes() TO anon, authenticated, service_role, postgres;
-
--- 10. Reload PostgREST Schema Cache
+-- 9. Reload PostgREST Schema Cache
 NOTIFY pgrst, 'reload schema';
