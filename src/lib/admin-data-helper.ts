@@ -505,8 +505,8 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 /**
  * Get ALL Categories & Subcategories with accurate strictly scoped hierarchy from Supabase DB
  */
-export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
-  const allQuizzes = await getAllAdminQuizzes();
+export async function getAllAdminCategories(providedQuizzes?: AdminQuizItem[]): Promise<AdminCategoryItem[]> {
+  const allQuizzes = providedQuizzes || await getAllAdminQuizzes();
 
   // Count quizzes per category
   const categoryQuizCounts = new Map<string, number>();
@@ -671,8 +671,15 @@ export async function getAllAdminCategories(): Promise<AdminCategoryItem[]> {
  * Get KPI Stats
  */
 export async function getAdminKPIStats() {
-  const allQuizzes = await getAllAdminQuizzes();
-  const allCategories = await getAllAdminCategories();
+  const [allQuizzes, activityResult] = await Promise.all([
+    getAllAdminQuizzes(),
+    (supabase.rpc as any)("admin_activity_summary"),
+  ]);
+  const allCategories = await getAllAdminCategories(allQuizzes);
+
+  if (activityResult.error) {
+    throw new Error(`Could not load unified admin activity: ${activityResult.error.message}`);
+  }
 
   let totalQuestions = 0;
   allQuizzes.forEach((q) => {
@@ -684,22 +691,14 @@ export async function getAdminKPIStats() {
     totalSubcategories += cat.subcategories ? cat.subcategories.length : 0;
   });
 
-  let userCount = 1;
-  try {
-    const { count } = await supabase
-      .from("profiles")
-      .select("*", { count: "exact", head: true });
-    if (count) userCount = count;
-  } catch {
-    userCount = 1;
-  }
+  const activity = activityResult.data || {};
 
   return {
     totalQuizzes: allQuizzes.length,
     totalQuestions,
     totalCategories: allCategories.length,
     totalSubcategories,
-    totalUsers: userCount,
-    totalSessions: 108,
+    totalUsers: Number(activity.users || 0),
+    totalSessions: Number(activity.game_sessions || 0),
   };
 }

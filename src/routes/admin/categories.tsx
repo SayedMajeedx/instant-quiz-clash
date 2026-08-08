@@ -129,10 +129,8 @@ function AdminCategoriesPage() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const [adminCategories, adminQuizzes] = await Promise.all([
-        getAllAdminCategories(),
-        getAllAdminQuizzes(),
-      ]);
+      const adminQuizzes = await getAllAdminQuizzes();
+      const adminCategories = await getAllAdminCategories(adminQuizzes);
 
       setQuizzes(adminQuizzes.map((q) => ({ id: q.id, title: q.title, category: q.category, subcategory: q.subcategory || "" })));
 

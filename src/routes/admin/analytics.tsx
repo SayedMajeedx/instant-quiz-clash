@@ -15,6 +15,7 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { getAdminKPIStats, getAllAdminQuizzes } from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/admin/analytics")({
   component: AnalyticsDashboardPage,
@@ -55,16 +56,32 @@ function AnalyticsDashboardPage() {
   async function loadAnalytics() {
     setLoading(true);
     try {
-      const { data, error } = await (supabase.rpc as any)("admin_reporting_snapshot");
-      if (error) throw error;
-      const report = data || {};
+      const [kpis, quizCatalog, activityResult, playResult] = await Promise.all([
+        getAdminKPIStats(),
+        getAllAdminQuizzes(),
+        (supabase.rpc as any)("admin_activity_summary"),
+        supabase.from("quiz_play_stats").select("source_quiz_id, play_count, last_played_at"),
+      ]);
+      if (activityResult.error) throw activityResult.error;
+      if (playResult.error) throw playResult.error;
+      const report = activityResult.data || {};
       setCounts({
-        quizzes: Number(report.quizzes || 0),
-        questions: Number(report.questions || 0),
-        users: Number(report.users || 0),
-        gameSessions: Number(report.game_sessions || 0),
+        quizzes: kpis.totalQuizzes,
+        questions: kpis.totalQuestions,
+        users: kpis.totalUsers,
+        gameSessions: kpis.totalSessions,
       });
-      setTopQuizzes(Array.isArray(report.top_quizzes) ? report.top_quizzes : []);
+      const quizById = new Map(quizCatalog.map((quiz) => [quiz.id, quiz]));
+      const ranked = (playResult.data || [])
+        .filter((row) => Number(row.play_count) > 0 && quizById.has(row.source_quiz_id))
+        .sort((a, b) => Number(b.play_count) - Number(a.play_count)
+          || new Date(b.last_played_at).getTime() - new Date(a.last_played_at).getTime())
+        .slice(0, 5)
+        .map((row) => {
+          const quiz = quizById.get(row.source_quiz_id)!;
+          return { id: quiz.id, title: quiz.title, category: quiz.category, play_count: Number(row.play_count) };
+        });
+      setTopQuizzes(ranked);
       setHardestQuestions(Array.isArray(report.hardest_questions) ? report.hardest_questions : []);
     } catch (err) {
       console.error("Analytics fetch error:", err);

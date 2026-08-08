@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import {
   FolderTree,
   FileUp,
@@ -15,6 +14,8 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+
+import { getAdminKPIStats } from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/admin/")({
   component: AdminOverview,
@@ -32,13 +33,12 @@ function AdminOverview() {
   useEffect(() => {
     async function fetchCounts() {
       try {
-        const { data, error } = await (supabase.rpc as any)("admin_catalog_counts");
-        if (error) throw error;
+        const data = await getAdminKPIStats();
         setCounts({
-          quizzes: Number(data?.quizzes || 0),
-          questions: Number(data?.questions || 0),
-          categories: Number(data?.categories || 0),
-          users: Number(data?.users || 0),
+          quizzes: data.totalQuizzes,
+          questions: data.totalQuestions,
+          categories: data.totalCategories,
+          users: data.totalUsers,
         });
       } catch (err) {
         console.error("Failed to load admin stats:", err);
