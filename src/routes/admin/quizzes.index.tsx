@@ -233,20 +233,22 @@ export function AdminQuizzesPage() {
   const handleTogglePublic = async (quiz: AdminQuiz) => {
     const newStatus = !quiz.is_public;
     try {
-      const { error } = await (supabase.from("quizzes") as any)
-        .update({ is_public: newStatus })
-        .eq("id", quiz.id);
-
-      if (error) {
-        console.warn("Update Supabase note:", error.message);
+      if (isUUID(quiz.id)) {
+        const { error } = await (supabase.from("quizzes") as any)
+          .update({ is_public: newStatus })
+          .eq("id", quiz.id);
+        if (error) throw error;
+      } else {
+        await saveLocalQuizOverride(quiz.id, { is_public: newStatus, title: quiz.title });
       }
 
       setQuizzes((prev) =>
         prev.map((item) => (item.id === quiz.id ? { ...item, is_public: newStatus } : item))
       );
       toast.success(newStatus ? "تمت إتاحة الكويز كعمومي" : "تم تحويل الكويز إلى خاص");
-    } catch {
-      toast.error("فشل تغيير حالة الكويز");
+    } catch (err: any) {
+      console.error("Toggle public failed:", err);
+      toast.error(err?.message || "فشل تغيير حالة الكويز");
     }
   };
 
