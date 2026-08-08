@@ -355,7 +355,7 @@ function AdminImportPage() {
       const totalItems = parsedQuizzes.length;
 
       for (let i = 0; totalItems > 0 && i < totalItems; i++) {
-        const item = parsedQuizzes[i];
+        const item = parsedQuizzes[i]!;
 
         // Determine final category and subcategory
         const targetCategory = importMode === "override" ? overrideCategory : (item.category || "عام");
