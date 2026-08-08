@@ -47,23 +47,6 @@ export function CategoryBreadcrumb({
   activeSubcategory?: string | null;
   onResetSubcategory: () => void;
 }) {
-  const scrollerRef = useRef<HTMLDivElement>(null);
-  const [isOverflowing, setIsOverflowing] = useState(false);
-
-  useEffect(() => {
-    const updateOverflow = () => {
-      const element = scrollerRef.current;
-      setIsOverflowing(Boolean(element && element.scrollWidth > element.clientWidth + 4));
-    };
-    updateOverflow();
-    window.addEventListener("resize", updateOverflow);
-    return () => window.removeEventListener("resize", updateOverflow);
-  }, [subcategories, quizzes.length]);
-
-  const scrollChips = (direction: number) => {
-    scrollerRef.current?.scrollBy({ left: direction * 320, behavior: "smooth" });
-  };
-
   const isRealSub =
     activeSubcategory &&
     activeSubcategory !== "all" &&
@@ -115,6 +98,23 @@ export function SubcategoryChips({
   onSelectSubcategory: (subName: string) => void;
   quizzes: PublicQuiz[];
 }) {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+
+  useEffect(() => {
+    const updateOverflow = () => {
+      const element = scrollerRef.current;
+      setIsOverflowing(Boolean(element && element.scrollWidth > element.clientWidth + 4));
+    };
+    updateOverflow();
+    window.addEventListener("resize", updateOverflow);
+    return () => window.removeEventListener("resize", updateOverflow);
+  }, [subcategories, quizzes.length]);
+
+  const scrollChips = (direction: number) => {
+    scrollerRef.current?.scrollBy({ left: direction * 320, behavior: "smooth" });
+  };
+
   const norm = (s: string) =>
     (s || "")
       .replace(/[\u064B-\u0652\u0640]/g, "")
