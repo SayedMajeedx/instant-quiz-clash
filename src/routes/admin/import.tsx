@@ -46,6 +46,7 @@ import {
 import { Progress } from "@/components/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+import { getAllAdminCategories } from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/admin/import")({
   component: AdminImportPage,
@@ -111,6 +112,7 @@ function AdminImportPage() {
   // Fetch Categories & Existing Quiz titles
   const fetchDbData = async () => {
     try {
+      const unifiedCategoryData = await getAllAdminCategories();
       // Fetch categories safely
       const { data: catData } = await db.from("categories").select("*");
       if (catData && Array.isArray(catData)) {
@@ -207,6 +209,20 @@ function AdminImportPage() {
         }
       }
       setSubcategories(Array.from(mergedSubcategories.values()));
+
+      // The shared catalog taxonomy is authoritative across Browse, Admin and imports.
+      setCategories(
+        unifiedCategoryData.map((category) => ({ id: category.id, name: category.name })),
+      );
+      setSubcategories(
+        unifiedCategoryData.flatMap((category) =>
+          category.subcategories.map((subcategory) => ({
+            id: subcategory.id,
+            name: subcategory.name,
+            category_id: category.id,
+          })),
+        ),
+      );
 
       if (quizData) {
         const titleMap = new Map<string, string>();
@@ -771,11 +787,19 @@ function AdminImportPage() {
                         <SelectItem value="none" className="text-xs">
                           بدون قسم فرعي
                         </SelectItem>
-                        {subcategories.map((s) => (
-                          <SelectItem key={s.id} value={s.name} className="text-xs">
-                            {s.name}
-                          </SelectItem>
-                        ))}
+                        {subcategories
+                          .filter((subcategory) => {
+                            if (!overrideCategory) return true;
+                            const category = categories.find(
+                              (item) => item.name === overrideCategory,
+                            );
+                            return category?.id === subcategory.category_id;
+                          })
+                          .map((s) => (
+                            <SelectItem key={s.id} value={s.name} className="text-xs">
+                              {s.name}
+                            </SelectItem>
+                          ))}
                       </SelectContent>
                     </Select>
                   </div>

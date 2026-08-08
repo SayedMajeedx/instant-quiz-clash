@@ -168,18 +168,24 @@ function CustomChallengeSetup() {
 
   const visibleSubcategories = useMemo(
     () =>
-      categories
-        .filter((category) => selectedCategories.includes(category.name))
-        .flatMap((category) =>
-          category.subcategories.map((sub) => ({ ...sub, category: category.name })),
-        ),
+      selectedCategories.length === 1
+        ? categories
+            .filter((category) => selectedCategories.includes(category.name))
+            .flatMap((category) =>
+              category.subcategories.map((sub) => ({ ...sub, category: category.name })),
+            )
+        : [],
     [categories, selectedCategories],
   );
 
   function toggleCategory(name: string) {
-    setSelectedCategories((current) =>
-      current.includes(name) ? current.filter((item) => item !== name) : [...current, name],
-    );
+    setSelectedCategories((current) => {
+      const next = current.includes(name)
+        ? current.filter((item) => item !== name)
+        : [...current, name];
+      if (next.length !== 1) setSelectedSubcategories([]);
+      return next;
+    });
     const category = categories.find((item) => item.name === name);
     if (category && selectedCategories.includes(name)) {
       const removed = new Set(
@@ -270,6 +276,7 @@ function CustomChallengeSetup() {
                     setSelectedSubcategories([]);
                   } else {
                     setSelectedCategories(categories.map((category) => category.name));
+                    setSelectedSubcategories([]);
                   }
                 }}
                 className="rounded-xl border border-primary/40 px-3 py-1.5 text-xs font-bold text-primary"
@@ -344,6 +351,14 @@ function CustomChallengeSetup() {
                 })}
               </div>
             </section>
+          )}
+
+          {selectedCategories.length > 1 && (
+            <p className="mt-5 rounded-2xl border border-primary/25 bg-primary/10 px-4 py-3 text-sm text-muted-foreground">
+              {ar
+                ? "عند اختيار عدة أقسام، تُستخدم جميع أقسامها الفرعية تلقائياً. اختر قسماً رئيسياً واحداً فقط إذا أردت تصفية أقسامه الفرعية."
+                : "With multiple categories selected, all of their subcategories are included automatically. Select one category to refine its subcategories."}
+            </p>
           )}
 
           <section className="mt-8 grid gap-7 md:grid-cols-2">
