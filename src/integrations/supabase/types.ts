@@ -269,6 +269,7 @@ export type Database = {
         Row: {
           correct_index: number
           created_at: string
+          explanation: string | null
           id: string
           image_url: string | null
           options: Json
@@ -276,11 +277,13 @@ export type Database = {
           question_text: string
           question_type: string
           quiz_id: string
+          subcategory: string | null
           time_limit_seconds: number
         }
         Insert: {
           correct_index?: number
           created_at?: string
+          explanation?: string | null
           id?: string
           image_url?: string | null
           options?: Json
@@ -288,11 +291,13 @@ export type Database = {
           question_text?: string
           question_type?: string
           quiz_id: string
+          subcategory?: string | null
           time_limit_seconds?: number
         }
         Update: {
           correct_index?: number
           created_at?: string
+          explanation?: string | null
           id?: string
           image_url?: string | null
           options?: Json
@@ -300,6 +305,7 @@ export type Database = {
           question_text?: string
           question_type?: string
           quiz_id?: string
+          subcategory?: string | null
           time_limit_seconds?: number
         }
         Relationships: [
@@ -335,20 +341,35 @@ export type Database = {
       }
       quizzes: {
         Row: {
+          category: string
           created_at: string
           id: string
+          is_public: boolean
+          language: string
+          quiz_difficulty: string
+          subcategory: string
           title: string
           user_id: string
         }
         Insert: {
+          category?: string
           created_at?: string
           id?: string
+          is_public?: boolean
+          language?: string
+          quiz_difficulty?: string
+          subcategory?: string
           title?: string
           user_id: string
         }
         Update: {
+          category?: string
           created_at?: string
           id?: string
+          is_public?: boolean
+          language?: string
+          quiz_difficulty?: string
+          subcategory?: string
           title?: string
           user_id?: string
         }
@@ -414,6 +435,7 @@ export type Database = {
           id: string
           name: string
           slug: string
+          sort_order: number
         }
         Insert: {
           category_id?: string | null
@@ -421,6 +443,7 @@ export type Database = {
           id?: string
           name: string
           slug: string
+          sort_order?: number
         }
         Update: {
           category_id?: string | null
@@ -428,6 +451,7 @@ export type Database = {
           id?: string
           name?: string
           slug?: string
+          sort_order?: number
         }
         Relationships: [
           {
@@ -621,7 +645,15 @@ export type Database = {
         }
       }
       upsert_admin_quiz_by_id_or_title: {
-        Args: { p_quiz_id?: string; p_title?: string }
+        Args: {
+          p_category?: string
+          p_difficulty?: string
+          p_is_public?: boolean
+          p_language?: string
+          p_quiz_id?: string
+          p_subcategory?: string
+          p_title?: string
+        }
         Returns: string
       }
       use_fifty_fifty: {
