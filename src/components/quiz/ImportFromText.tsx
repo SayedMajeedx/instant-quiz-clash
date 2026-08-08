@@ -378,7 +378,7 @@ export function ImportFromText({
                       value={draft.time_limit_seconds}
                       onChange={(e) =>
                         patch(index, {
-                          time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 20)),
+                          time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 30)),
                         })
                       }
                       className="w-20 rounded-xl border border-border bg-background/50 px-3 py-1 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"

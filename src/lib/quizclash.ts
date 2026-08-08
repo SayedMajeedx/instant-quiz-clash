@@ -23,6 +23,7 @@ export type Quiz = {
   title: string;
   created_at: string;
   is_public?: boolean;
+  quiz_kind?: "standard" | "custom_generated";
 };
 
 export type QuestionType = "multi" | "boolean";
@@ -43,6 +44,7 @@ export type Question = {
   subcategory?: string | null;
   tags?: string[] | null;
   source?: string | null;
+  source_category?: string | null;
   external_id?: string | null;
   is_verified?: boolean;
   version?: number;

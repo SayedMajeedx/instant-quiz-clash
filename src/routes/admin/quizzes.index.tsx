@@ -1059,7 +1059,7 @@ export function AdminQuizzesPage() {
                   <CardHeader className="p-4 pb-2">
                     <div className="flex items-center justify-between text-xs text-muted-foreground">
                       <span className="font-bold text-primary">سؤال #{idx + 1}</span>
-                      <span>⏱️ {q.time_limit_seconds || 20} ثانية</span>
+                      <span>⏱️ {q.time_limit_seconds || 30} ثانية</span>
                     </div>
                     <CardTitle className="text-base font-bold mt-1">
                       {q.question_text}

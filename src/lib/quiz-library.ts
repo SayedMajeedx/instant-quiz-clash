@@ -33,7 +33,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيري تيل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -48,7 +48,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كتاب الظلال"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -63,7 +63,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيغانشينا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -78,7 +78,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قرية السحاب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -93,7 +93,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توي أنيميشن"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -108,7 +108,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميثاق الدم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -123,7 +123,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سكويرتل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -138,7 +138,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البيسبول"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -153,7 +153,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأكوما فقط"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -168,7 +168,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيرومو أراكاوا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -183,7 +183,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجيان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -198,7 +198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السباحة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -417,7 +417,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأرغون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -432,7 +432,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الروبية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -447,7 +447,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عشرة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -462,7 +462,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأمعاء الدقيقة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -477,7 +477,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهيدروجين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -492,7 +492,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزمبيزي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -507,7 +507,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الاقتصاد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -522,7 +522,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصوديوم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -537,7 +537,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "30"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -552,7 +552,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نبتون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -567,7 +567,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النقرس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -582,7 +582,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنقرة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -801,7 +801,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيرث"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -816,7 +816,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليبيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -831,7 +831,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غينيا الجديدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -846,7 +846,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القوقاز الصغرى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -861,7 +861,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ملقا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -876,7 +876,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليونان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -891,7 +891,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بحيرة بايكال"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -906,7 +906,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النوبة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -921,7 +921,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فانكوفر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -936,7 +936,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كازاخستان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -951,7 +951,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أفريقيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -966,7 +966,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديالى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -1185,7 +1185,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الآشورية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -1200,7 +1200,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سبارتاكوس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -1215,7 +1215,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1258"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -1230,7 +1230,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صوفيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -1245,7 +1245,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون آدامز"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -1260,7 +1260,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثورة أكتوبر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -1275,7 +1275,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القادسية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -1290,7 +1290,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هشام بن عبد الملك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -1305,7 +1305,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1993"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -1320,7 +1320,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الثورة الصناعية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -1335,7 +1335,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البيزنطية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -1350,7 +1350,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زنوبيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -1569,7 +1569,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "116"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -1584,7 +1584,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكهف"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -1599,7 +1599,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غار المرسلات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -1614,7 +1614,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإخلاص"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -1629,7 +1629,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلال بن رباح"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -1644,7 +1644,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سبعة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -1659,7 +1659,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المسجد الأقصى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -1674,7 +1674,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نوح"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -1689,7 +1689,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "محرم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -1704,7 +1704,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهجرة إلى الشام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -1719,7 +1719,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آية النور"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -1734,7 +1734,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خمسة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -1953,7 +1953,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البارودي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -1968,7 +1968,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طه حسين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -1983,7 +1983,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "على هامش السيرة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -1998,7 +1998,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو نواس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -2013,7 +2013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المتقارب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -2028,7 +2028,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بديع الزمان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -2043,7 +2043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأصمعي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -2058,7 +2058,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النقائض"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -2073,7 +2073,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يوسف وهبي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -2088,7 +2088,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المقالة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -2103,7 +2103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خليل مطران"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -2118,7 +2118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ابن رشد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -2337,7 +2337,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "18"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -2352,7 +2352,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "44"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -2367,7 +2367,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "30 دقيقة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -2382,7 +2382,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مئة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -2397,7 +2397,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كل ما يذبل ورد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -2412,7 +2412,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -2427,7 +2427,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أربعة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -2442,7 +2442,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السبت"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -2457,7 +2457,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لا حل ممكنًا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -2472,7 +2472,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -2487,7 +2487,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "90"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -2502,7 +2502,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مطر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -2721,7 +2721,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "B"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -2736,7 +2736,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النواة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -2751,7 +2751,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الباسكال"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -2766,7 +2766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "110"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -2781,7 +2781,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الليسوسوم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -2796,7 +2796,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهيليوم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -2811,7 +2811,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "B سالب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -2826,7 +2826,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قانون أوم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -2841,7 +2841,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكبريت"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -2856,7 +2856,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النخاع المستطيل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -2871,7 +2871,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الطفرة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -2886,7 +2886,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حمض اللاكتيك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -3105,7 +3105,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "12"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -3120,7 +3120,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأرجنتين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -3135,7 +3135,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كأس الاتحاد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -3150,7 +3150,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "50 دقيقة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -3165,7 +3165,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرنسا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -3180,7 +3180,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جائزة بوشكاش"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -3195,7 +3195,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خمسة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -3210,7 +3210,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الاسكواش"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -3225,7 +3225,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خمس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -3240,7 +3240,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سبع"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -3255,7 +3255,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليابان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -3270,7 +3270,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باريس روبيه"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -3489,7 +3489,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طبقة عرض الصور"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -3504,7 +3504,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1024"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -3519,7 +3519,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلاك بيري"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -3534,7 +3534,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تبريد المعالج"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -3549,7 +3549,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "JSON"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -3564,7 +3564,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اسم النطاق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -3579,7 +3579,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدودة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -3594,7 +3594,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نظام تصفح مجهول محلي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -3609,7 +3609,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المزوّد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -3624,7 +3624,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوراكل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -3639,7 +3639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "TIFF"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -3654,7 +3654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجيل الخامس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -3875,7 +3875,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "17 ربيع الأول"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -3978,7 +3978,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خمس وعشرون سنة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -4004,7 +4004,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حمزة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -4055,7 +4055,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "13 رجب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -4185,7 +4185,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو سلمة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -4237,7 +4237,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بناء السوق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -4263,7 +4263,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المهاجرين والأنصار"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -4341,7 +4341,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزبير بن العوام"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -4419,7 +4419,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العباس وحده"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -4460,7 +4460,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "في شعب أبي طالب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -4487,7 +4487,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السابع والعشرون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -4513,7 +4513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صفية بنت عبد المطلب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -4539,7 +4539,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو القاسم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -4617,7 +4617,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثلاث عشرة سنة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -4644,7 +4644,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خمس سنوات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -4671,7 +4671,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثلاثًا وثلاثين سنة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -4724,7 +4724,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العباس بن عبد المطلب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -4750,7 +4750,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لا فتى إلا علي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -4776,7 +4776,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يحيى من زكريا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -4803,7 +4803,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثلاثًا وثلاثين سنة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -4856,7 +4856,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مسجد قباء"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -4882,7 +4882,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عبد الرحمن بن ملجم المرادي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -4908,7 +4908,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليلة الثالث والعشرين من رمضان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -4935,7 +4935,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كان من غنائم بدر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -4962,7 +4962,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "19 رمضان سنة 39هـ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -5016,7 +5016,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وادي السلام في البصرة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -5097,7 +5097,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثمانٍ وخمسين سنة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 24,
         "image_url": null,
         "question_type": "multi",
@@ -5137,7 +5137,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صفية بنت عبد المطلب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -5162,7 +5162,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مكة المكرمة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -5187,7 +5187,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "10 ربيع الأول"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -5212,7 +5212,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أم عبد الله"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -5237,7 +5237,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام علي بن أبي طالب (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -5262,7 +5262,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خاتمه"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -5287,7 +5287,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القاسم وعبد الله"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -5312,7 +5312,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زينب وأم كلثوم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -5362,7 +5362,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تسبيح الزهراء"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -5412,7 +5412,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فاطمة الزهراء (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -5437,7 +5437,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حمزة والعباس وجعفر وعقيل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -5462,7 +5462,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آية النجوى"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -5487,7 +5487,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سورة الملك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -5512,7 +5512,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بضعة منه"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -5537,7 +5537,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكريمة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -5562,7 +5562,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العقيق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -5587,7 +5587,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مسجد الكوفة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -5638,7 +5638,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عمار بن ياسر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -5706,7 +5706,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البصرة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "question_type": "multi",
         "explanation": "وُلد الإمام الحسن (ع) في المدينة المنورة في شهر رمضان سنة 3 هـ.",
@@ -5733,7 +5733,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "محرم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "question_type": "multi",
         "explanation": "يذكر الشيخ المفيد أن ولادته (ع) كانت في النصف من شهر رمضان سنة 3 هـ.",
@@ -5760,7 +5760,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو جعفر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "question_type": "multi",
         "explanation": "كنية الإمام الحسن بن علي (ع) هي أبو محمد.",
@@ -5787,7 +5787,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فاطمة بنت أسد (ع)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "question_type": "multi",
         "explanation": "الإمام الحسن (ع) هو الابن الأكبر للإمام علي (ع) والسيدة فاطمة الزهراء (ع).",
@@ -5814,7 +5814,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عبد الله بن عباس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "question_type": "multi",
         "explanation": "انتقلت الإمامة بعد أمير المؤمنين (ع) إلى ابنه الإمام الحسن المجتبى (ع).",
@@ -5896,7 +5896,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المدينة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "question_type": "multi",
         "explanation": "بعد تثبيت الولاة والعمال أرسل الإمام عبد الله بن العباس إلى البصرة.",
@@ -6006,7 +6006,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النهروان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "question_type": "multi",
         "explanation": "تحرك الإمام من الكوفة حتى نزل ساباط المدائن، وهناك اختبر استعداد الناس.",
@@ -6145,7 +6145,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المدينة المنورة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "question_type": "multi",
         "explanation": "غادر الإمام الحسن (ع) الكوفة بعد الصلح وعاد إلى المدينة، فأقام فيها بقية حياته.",
@@ -6201,7 +6201,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أربعين يومًا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "question_type": "multi",
         "explanation": "ذكر الشيخ المفيد أن الإمام (ع) بقي مريضًا من أثر السم أربعين يومًا.",
@@ -6228,7 +6228,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كربلاء المقدسة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "question_type": "multi",
         "explanation": "دُفن الإمام الحسن (ع) في البقيع إلى جوار جدته فاطمة بنت أسد.",
@@ -6266,7 +6266,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أم سلمة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -6316,7 +6316,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام الحسن (ع)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -6341,7 +6341,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو عبد الله"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -6366,7 +6366,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيدا شباب أهل الجنة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -6391,7 +6391,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آية الكلالة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -6416,7 +6416,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام الباقر (ع)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -6466,7 +6466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لرفضه البيعة ليزيد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -6491,7 +6491,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دمشق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -6516,7 +6516,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حبيب بن مظاهر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -6541,7 +6541,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الوليد بن عتبة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -6591,7 +6591,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حصين بن نمير"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -6616,7 +6616,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أمر بسقيهم وخيلهم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -6641,7 +6641,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كربلاء"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -6691,7 +6691,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الوليد بن عتبة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -6766,7 +6766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عبيد الله بن زياد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -6791,7 +6791,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حبيب بن مظاهر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -6816,7 +6816,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جعفر بن الحسين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 22,
         "image_url": null,
         "question_type": "multi",
@@ -6841,7 +6841,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "21 رمضان سنة 61 هـ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 23,
         "image_url": null,
         "question_type": "multi",
@@ -6931,7 +6931,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيت عقيل وفاطمة بنت عتبة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -7012,7 +7012,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ابن أخيه"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -7038,7 +7038,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "علي بن الحسين (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -7092,7 +7092,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حبيب بن مظاهر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -7118,7 +7118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصبر والتقوى"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -7145,7 +7145,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام السجاد (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -7172,7 +7172,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كانت تكتب للكوفة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -7199,7 +7199,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أم سلمة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -7280,7 +7280,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنصار الحق"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -7334,7 +7334,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قاطعوا الخطبة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -7468,7 +7468,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أن يكتبه في السجلات"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -7522,7 +7522,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اعتزال الشأن العام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 22,
         "image_url": null,
         "question_type": "multi",
@@ -7576,7 +7576,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الرجوع إلى الكوفة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 24,
         "image_url": null,
         "question_type": "multi",
@@ -7616,7 +7616,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام علي (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -7641,7 +7641,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليلى بنت مسعود"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -7666,7 +7666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أخوه لأبيه"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -7742,7 +7742,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حمل اللواء"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -7767,7 +7767,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إلى المدينة لإحضار السلاح"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -7895,7 +7895,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اشترطوا خروج العيال"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -7972,7 +7972,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إرسال وفد إلى يزيد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -8022,7 +8022,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كتفاه"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -8047,7 +8047,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عينين من الجنة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -8098,7 +8098,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قاد ركب السبايا إلى الشام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -8191,7 +8191,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "44 هـ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -8217,7 +8217,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو محمد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -8243,7 +8243,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كان مريضًا لا يقدر على القتال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -8269,7 +8269,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فاطمة بنت الحسين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -8322,7 +8322,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تفريق الركب بين البلدان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -8348,7 +8348,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سعيد بن المسيب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -8401,7 +8401,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ودائع الإمامة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -8428,7 +8428,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تكليفًا بكتابة الرسائل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -8455,7 +8455,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حصر المحبة في القرابة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -8482,7 +8482,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وشم على الجبهة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -8536,7 +8536,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بعد وفاة الإمام"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -8562,7 +8562,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أخذ منه غرامة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -8643,7 +8643,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "101 هـ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -8669,7 +8669,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "70 سنة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -8762,7 +8762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام الحسن (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -8919,7 +8919,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مصحفًا بلا كتب أخرى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -8971,7 +8971,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أن ينشد شعرًا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -8997,7 +8997,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أرسل كتابًا للمدينة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -9023,7 +9023,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لأنه بقر العلم وأظهره"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -9076,7 +9076,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يحيى بن زيد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -9102,7 +9102,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المودة لأهل المدينة فقط"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -9182,7 +9182,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "121 هـ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -9430,7 +9430,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أن يحسن إلى أصحابه"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -9456,7 +9456,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "امتنع عن الجواب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -9482,7 +9482,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لإعلان رحلة إلى مكة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -9534,7 +9534,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عشرة آلاف"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -9560,7 +9560,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حمله الرواة إلى البلدان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -9586,7 +9586,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إلى رسول الله ثم الله"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -9638,7 +9638,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يعتزل الخصومات كلها"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -9664,7 +9664,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "في مقبرة البقيع"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -9690,7 +9690,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بحركة الشمس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -9716,7 +9716,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تختص بمعرفة الأحكام"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -9820,7 +9820,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اجتماع النية والقدرة والتوفيق والإصابة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -10173,7 +10173,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المفضّل بن عمر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -10199,7 +10199,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنه يتولى القضاء"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -10225,7 +10225,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوسعهم ولايةً في الدولة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -10252,7 +10252,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رب اجعلني ملكًا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -10305,7 +10305,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "من 200 إلى 300 دينار"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -10410,7 +10410,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لتعليمه وضوء الجبيرة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -10490,7 +10490,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هارون الرشيد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -10543,7 +10543,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "منع إعلان موته"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -10569,7 +10569,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السم في الطعام وقيل في تمر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -10713,7 +10713,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام محمد الجواد (ع)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -10738,7 +10738,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المدينة المنورة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -10763,7 +10763,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سمانة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -10788,7 +10788,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو عبد الله"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -10813,7 +10813,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام علي الهادي (ع)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -10838,7 +10838,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام موسى الكاظم (ع)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -10913,7 +10913,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سورة الأنفال"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -10938,7 +10938,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بمترجم دائمًا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -10963,7 +10963,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إدارة بريد الدولة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -10988,7 +10988,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المأمون العباسي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -11013,7 +11013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رجاء بن أبي الضحاك"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -11038,7 +11038,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوفة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -11063,7 +11063,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المؤمن مرآة المؤمن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -11088,7 +11088,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ولاية المدينة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -11138,7 +11138,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأحمر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -11163,7 +11163,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المأمون العباسي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -11188,7 +11188,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عمران الصابي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -11213,7 +11213,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سليمان المروزي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -11238,7 +11238,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دعبل الخزاعي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -11288,7 +11288,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النجف قرب أمير المؤمنين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 23,
         "image_url": null,
         "question_type": "multi",
@@ -11327,7 +11327,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام جعفر الصادق (ع)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -11352,7 +11352,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المدينة المنورة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -11377,7 +11377,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "212هـ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -11402,7 +11402,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شهر محرم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -11427,7 +11427,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سمانة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -11452,7 +11452,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو عبد الله"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -11477,7 +11477,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام علي الرضا (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -11502,7 +11502,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نوح (ع)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -11577,7 +11577,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أيوب (ع)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -11602,7 +11602,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تسع سنوات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -11627,7 +11627,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المأمون العباسي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -11652,7 +11652,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الريان بن شبيب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -11677,7 +11677,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عدة المطلقة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -11727,7 +11727,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حوّل السؤال إلى المأمون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -11752,7 +11752,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سامراء"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -11777,7 +11777,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام علي الهادي (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -11802,7 +11802,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوفة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -11827,7 +11827,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "260هـ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 20,
         "image_url": null,
         "question_type": "multi",
@@ -11852,7 +11852,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ذو القعدة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -11877,7 +11877,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أربعًا وخمسين سنة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 22,
         "image_url": null,
         "question_type": "multi",
@@ -11902,7 +11902,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سامراء عند قبر الهادي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 23,
         "image_url": null,
         "question_type": "multi",
@@ -11941,7 +11941,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام الحسن العسكري (ع)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -11966,7 +11966,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سمانة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -11991,7 +11991,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طوس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -12016,7 +12016,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو عبد الله"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -12041,7 +12041,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العسكري والمنتظر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -12066,7 +12066,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام موسى الكاظم (ع)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -12091,7 +12091,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام الحسن العسكري (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -12166,7 +12166,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السلطان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -12191,7 +12191,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زيارة أمين الله"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -12216,7 +12216,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يوم الغدير"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -12241,7 +12241,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عبد الله بن محمد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -12266,7 +12266,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التزم الصمت تمامًا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -12291,7 +12291,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أحمد بن الخصيب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -12316,7 +12316,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رايات معدة للقتال"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -12341,7 +12341,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دمشق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -12366,7 +12366,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جامع سامراء"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -12391,7 +12391,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كان منفردًا يتلو القرآن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -12466,7 +12466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "254 هـ"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 21,
         "image_url": null,
         "question_type": "multi",
@@ -12491,7 +12491,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "في طوس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 22,
         "image_url": null,
         "question_type": "multi",
@@ -12516,7 +12516,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جعفر بن علي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 23,
         "image_url": null,
         "question_type": "multi",
@@ -12559,7 +12559,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوفة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "question_type": "multi",
         "explanation": "يذكر الشيخ المفيد أن مولد الإمام الحسن العسكري (ع) كان في المدينة.",
@@ -12586,7 +12586,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ربيع الآخر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "question_type": "multi",
         "explanation": "أثبت الإرشاد ولادته في شهر ربيع الآخر سنة 232هـ.",
@@ -12613,7 +12613,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "238هـ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "question_type": "multi",
         "explanation": "ولد الإمام الحسن العسكري (ع) سنة اثنتين وثلاثين ومئتين للهجرة.",
@@ -12667,7 +12667,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام موسى الكاظم (ع)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "question_type": "multi",
         "explanation": "الإمام العسكري (ع) هو ابن الإمام علي بن محمد الهادي (ع)، الإمام العاشر.",
@@ -12722,7 +12722,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإمام علي الهادي (ع)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "question_type": "multi",
         "explanation": "روى الكليني نصوصًا صريحة عن الإمام الهادي (ع) في تعيين ابنه أبي محمد للإمامة بعده.",
@@ -12750,7 +12750,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "260هـ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "question_type": "multi",
         "explanation": "بدأت إمامته بعد وفاة أبيه الإمام الهادي (ع) سنة 254هـ.",
@@ -12777,7 +12777,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عشرون سنة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "question_type": "multi",
         "explanation": "امتدت إمامته من سنة 254هـ إلى سنة 260هـ، أي نحو ست سنوات.",
@@ -12804,7 +12804,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "question_type": "multi",
         "explanation": "عاش الإمام العسكري (ع) في سامراء، حيث أحاطت به السلطة العباسية ورجالها بالرقابة.",
@@ -13027,7 +13027,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "265هـ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "question_type": "multi",
         "explanation": "توفي الإمام العسكري (ع) في سامراء سنة 260هـ، وبوفاته بدأت إمامة ابنه المهدي (عج).",
@@ -13054,7 +13054,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثمانٍ وعشرون سنة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "question_type": "multi",
         "explanation": "يذكر المفيد أن عمر الإمام العسكري (ع) عند وفاته كان ثمانيًا وعشرين سنة.",
@@ -13082,7 +13082,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "في النجف الأشرف"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "question_type": "multi",
         "explanation": "دُفن الإمام العسكري (ع) في الدار التي دُفن فيها أبوه الإمام الهادي (ع) بسامراء.",
@@ -13120,7 +13120,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15 رمضان سنة 256هـ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -13198,7 +13198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سمانة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -13224,7 +13224,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أمامة بنت الإمام الرضا (ع)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -13327,7 +13327,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سجله لدى ديوان الخلافة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -13353,7 +13353,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عشرون سنة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -13457,7 +13457,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تجارة الورق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -13587,7 +13587,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التوقيعات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -15217,7 +15217,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هاتسو Hatsu"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "question_type": "multi",
         "explanation": "زيتسو يغلق عقد الهالة ويوقف تدفقها، فيفيد في إخفاء الحضور واستعادة النشاط، لكنه يترك الجسد بلا غلاف هالة واقٍ أمام هجوم نين. تين يحافظ على الغلاف، ورين يضخم الخرج.",
@@ -15263,7 +15263,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنه حاجز يعكس أي هجوم جسدي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "question_type": "multi",
         "explanation": "الريغان، أو المسدس الروحي، يركز ريكي يوسكي في طلقة من السبابة. نمو مخزونه الروحي وتدريبه يرفعان عدد الطلقات وقوتها؛ ليست التقنية سيفًا أو حاجزًا.",
@@ -15355,7 +15355,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليفي بنذره ألّا يقتل بعد عصر الباكوماتسو مع بقائه قادرًا على القتال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "question_type": "multi",
         "explanation": "يحمل كنشن الساكاباتو كي يقاتل بحافة غير قاتلة بعد أن أقسم ألّا يعود إلى القتل الذي مارسه بصفته هيتوكيري باتوساي. السيف رمز عملي لتكفيره، لا سلاحًا حكوميًا.",
@@ -15535,7 +15535,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يوسا ماساكي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "question_type": "multi",
         "explanation": "اعتمادات المسلسل تسمي شينيتشيرو واتانابي مخرجًا، وكان العمل من إنتاج Sunrise. أما ساتوشي كون ومامورو أوشي ويوسا ماساكي فمخرجون بارزون، لكنهم لم يخرجوا هذا المسلسل.",
@@ -15563,7 +15563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "Madhouse — تيتسورو أراكي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "question_type": "multi",
         "explanation": "اعتمادات نسخة 2006 التلفزيونية من Death Note تنسب إنتاج الرسوم إلى Madhouse والإخراج إلى تيتسورو أراكي. الخيارات الأخرى تجمع أسماء حقيقية لكنها تخص أعمالًا وإنتاجات مختلفة.",
@@ -15591,7 +15591,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "Studio Pierrot"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "question_type": "multi",
         "explanation": "الموسم الأول أُنجز في Madhouse بإخراج شينغو ناتسومي، ثم تغيرت جهة إنتاج الرسوم في الموسم الثاني إلى J.C.STAFF. لذا لا ينبغي نسبة الموسمين إلى استوديو واحد.",
@@ -15619,7 +15619,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "Kyoto Animation"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "question_type": "multi",
         "explanation": "كلا الاقتباسين من إنتاج Bones؛ أخرج نسخة 2003 سيجي ميزوشيما، بينما أخرج Brotherhood ياسوهيرو إيري. ثبات الاستوديو لا يعني ثبات القيادة الإخراجية أو مسار الاقتباس.",
@@ -15647,7 +15647,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "WIT Studio — تتسورو أراكي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "question_type": "multi",
         "explanation": "الموقع الرسمي يسجل ufotable لإنتاج الرسوم المتحركة وهاروؤو سوتوزاكي للإخراج. بقية الأزواج مرتبطة بأعمال أنمي معروفة، ولذلك تبدو معقولة لكنها لا تخص Kimetsu no Yaiba.",
@@ -15675,7 +15675,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "Monthly Afternoon"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "question_type": "multi",
         "explanation": "نشرت Kodansha مانجا Sailor Moon في مجلة Nakayoshi الموجهة أساسًا لفئة الشوجو. المجلات الأخرى حقيقية، لكنها تنتمي إلى خطوط تحريرية وناشرين أو جماهير مختلفة.",
@@ -15703,7 +15703,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماساؤكي كوجيما"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "question_type": "multi",
         "explanation": "تنسب الصفحة الرسمية إخراج Frieren إلى كييتشيرو سايتو وإنتاج الرسوم إلى Madhouse. أما الأسماء الأخرى فكلها لمخرجين عملوا مع Madhouse أو في محيط إنتاجات مشابهة، ما يجعلها مشتتات مهنية لا عشوائية.",
@@ -21425,7 +21425,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مفعول به منصوب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -21452,7 +21452,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تمييز منصوب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -26133,7 +26133,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحبار العملاق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -26146,7 +26146,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -26159,7 +26159,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -26172,7 +26172,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -26187,7 +26187,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "0"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -26202,7 +26202,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قط بري"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -26217,7 +26217,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Panthera leo⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -26230,7 +26230,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -26245,7 +26245,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السموريات المدغشقرية (⁦Eupleridae⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -26258,7 +26258,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -26273,7 +26273,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السرطان (الكابوريا)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -26288,7 +26288,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدالميشن (المرقش)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -26303,7 +26303,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لقلقيات الشكل (⁦Ciconiiformes⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -26318,7 +26318,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخطبوط"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -26333,7 +26333,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اللاما"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -26348,7 +26348,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الباج (⁦Pug⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -26363,7 +26363,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تضرب ذيلها بالأرض"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -26378,7 +26378,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأعشاب البحرية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -26393,7 +26393,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Gaze⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -26406,7 +26406,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "boolean",
@@ -26433,7 +26433,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -26448,7 +26448,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحمى القلاعية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -26463,7 +26463,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ويبجون (⁦Woebegone⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -26478,7 +26478,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكيراتين (⁦Keratin⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -26491,7 +26491,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -26506,7 +26506,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15-18"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -26519,7 +26519,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -26534,7 +26534,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهواتسين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -26549,7 +26549,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Ursus Arctos⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -26564,7 +26564,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الذكر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -26577,7 +26577,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -26592,7 +26592,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السنوريات (⁦Felidae⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -26605,7 +26605,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -26620,7 +26620,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Herd⁩ (هيرد)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -26635,7 +26635,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوريغون، الولايات المتحدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -26650,7 +26650,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Haliaeetus Leucocephalus⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -26665,7 +26665,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Husk⁩ (هاسك)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -26680,7 +26680,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجمل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -26695,7 +26695,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الماكريل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -26710,7 +26710,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البلبل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -26739,7 +26739,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجلد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -26754,7 +26754,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الظبي شائك القرن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -26769,7 +26769,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المامبا السوداء"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -26784,7 +26784,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ابن آوى سيمين (⁦Simien Jackal⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -26799,7 +26799,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جذب الإناث للتزاوج"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -26814,7 +26814,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رمادي وأسود"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -26829,7 +26829,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حشرة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -26844,7 +26844,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Mischief⁩ (ميسشيف)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -26859,7 +26859,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصفيحيات (⁦Placozoa⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -26872,7 +26872,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -26887,7 +26887,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أصفر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -26902,7 +26902,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جحر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -26915,7 +26915,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -26928,7 +26928,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -26943,7 +26943,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بالاو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -26956,7 +26956,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -26969,7 +26969,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -26982,7 +26982,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -26997,7 +26997,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإغوانا الخضراء"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -27012,7 +27012,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "28"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -27041,7 +27041,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الغزال السعودي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -27056,7 +27056,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Ara macao⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -27071,7 +27071,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التمساح الأمريكي (الأليغيتور)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -27086,7 +27086,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "8-12 سنوات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -27099,7 +27099,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -27114,7 +27114,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثعبان البحر أصفر البطن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -27129,7 +27129,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Canis Lupus Lycaon⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -27144,7 +27144,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "في قاع المحيط"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -27157,7 +27157,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -27172,7 +27172,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإرهاق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -27187,7 +27187,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أخضر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -27202,7 +27202,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Acinonyx jubatus⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -27217,7 +27217,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميثيونين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -27232,7 +27232,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ذبابة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -27247,7 +27247,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خنزير سمين (اللاتينية)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -27262,7 +27262,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دالميشن (الكلب المرقّط)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -27277,7 +27277,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الثدييات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -27292,7 +27292,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكلبيات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -27307,7 +27307,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جدي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -27320,7 +27320,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "boolean",
@@ -27349,7 +27349,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأقدام"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -27364,7 +27364,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بروكلي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -27377,7 +27377,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -27390,7 +27390,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -27403,7 +27403,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -27418,7 +27418,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -27433,7 +27433,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قرصع البحر (⁦Sea Nettle⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -27446,7 +27446,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -27461,7 +27461,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدب الرمادي المكسيكي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -27474,7 +27474,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -27487,7 +27487,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -27500,7 +27500,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -27513,7 +27513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -27528,7 +27528,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Homo Neanderthalensis⁩ (إنسان نياندرتال)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -27541,7 +27541,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -27556,7 +27556,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "25%"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -27569,7 +27569,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -27584,7 +27584,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدغشقر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -27599,7 +27599,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ذبابة الخيل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -27628,7 +27628,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1980"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -27643,7 +27643,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2013"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -27658,7 +27658,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قرص النظام الآمن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -27673,7 +27673,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2007"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -27688,7 +27688,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفولت"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -27701,7 +27701,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -27716,7 +27716,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كورتانا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -27731,7 +27731,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الرافعة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -27746,7 +27746,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لاشيء مما سبق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -27761,7 +27761,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجرأة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -27776,7 +27776,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أشيتي تريبي-أولينو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -27791,7 +27791,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كندا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -27806,7 +27806,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1980"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -27821,7 +27821,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آيفون ⁦5S⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -27836,7 +27836,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مونستر، أدفنتشرلاند ألتونا، الولايات المتحدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -27849,7 +27849,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -27864,7 +27864,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مقابض الأبواب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -27879,7 +27879,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إتش تي سي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -27894,7 +27894,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاسيو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -27909,7 +27909,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1982"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -27938,7 +27938,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦7.62x51mm⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -27953,7 +27953,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أجهزة التتبع"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -27968,7 +27968,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القمر الصناعي الشخصي العام"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -27981,7 +27981,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -27996,7 +27996,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التأيين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -28011,7 +28011,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قارب بمحرك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -28026,7 +28026,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيديث كلارك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -28039,7 +28039,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -28054,7 +28054,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦5.45x39⁩ ملم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -28069,7 +28069,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "100 هرتز"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -28082,7 +28082,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -28097,7 +28097,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مقياس ضغط الدم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -28112,7 +28112,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1990"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -28127,7 +28127,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفأرة الضوئية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -28142,7 +28142,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نينتندو سويتش"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -28157,7 +28157,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سوني"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -28172,7 +28172,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أليساندرو فولتا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -28187,7 +28187,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توبي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -28200,7 +28200,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -28215,7 +28215,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمس واط"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -28244,7 +28244,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رومانيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -28257,7 +28257,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -28272,7 +28272,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ياهو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -28287,7 +28287,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سنتر باركس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -28302,7 +28302,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رغبة حمى شديدة في تمزيق الملابس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -28317,7 +28317,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هايت كارد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -28332,7 +28332,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توماس جيفرسون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -28347,7 +28347,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دمى كابج باتش كيدز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -28362,7 +28362,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اللاتفية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -28377,7 +28377,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "19 يوليو 2009"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -28390,7 +28390,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -28405,7 +28405,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القش"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -28420,7 +28420,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيتنام"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -28435,7 +28435,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرامل اليد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -28450,7 +28450,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القراءة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -28465,7 +28465,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاربي ديم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -28480,7 +28480,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السيبلوسيبين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -28495,7 +28495,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اسم شخصية كرتونية من وارنر برذرز"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -28510,7 +28510,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2006"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -28525,7 +28525,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2001"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -28554,7 +28554,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كولونيل مياو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -28569,7 +28569,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدير عقارات التاج الملكي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -28584,7 +28584,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العذراء"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -28597,7 +28597,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -28610,7 +28610,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -28623,7 +28623,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -28638,7 +28638,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيكو دي أوريزابا، المكسيك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -28651,7 +28651,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -28666,7 +28666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "احصل على شعور السير حافي القدمين عند شرب ماونتن ديو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -28679,7 +28679,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -28694,7 +28694,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "3 أعوام"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -28709,7 +28709,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جريء ومتهور"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -28722,7 +28722,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -28737,7 +28737,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفرنسية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -28752,7 +28752,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإنجليزية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -28767,7 +28767,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شوغون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -28780,7 +28780,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -28795,7 +28795,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هواسكاران، بيرو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -28808,7 +28808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -28821,7 +28821,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "boolean",
@@ -28850,7 +28850,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألفريد هيتشكوك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -28865,7 +28865,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سنترال بارك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -28880,7 +28880,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هونغ كونغ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -28895,7 +28895,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جبل كوسيوسكو، نيوساوث ويلز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -28910,7 +28910,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإيطالية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -28925,7 +28925,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "24"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -28940,7 +28940,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "155"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -28955,7 +28955,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مركز التجارة العالمي الواحد، الولايات المتحدة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -28968,7 +28968,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -28983,7 +28983,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦EGCC⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -28998,7 +28998,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦2.7⁩ مليار دولار"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -29013,7 +29013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "100"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -29028,7 +29028,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -29043,7 +29043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أليس كوبر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -29058,7 +29058,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأورالية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -29073,7 +29073,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الورق"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -29088,7 +29088,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عيدان تناول الطعام"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -29103,7 +29103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكتابة على لوحة المفاتيح أثناء الوقوف على اليدين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -29118,7 +29118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦32.50⁩ رطلاً"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -29133,7 +29133,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -29162,7 +29162,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بنك الصين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -29177,7 +29177,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانهاتن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -29192,7 +29192,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1974"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -29207,7 +29207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإسلام"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -29222,7 +29222,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2010"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -29235,7 +29235,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -29250,7 +29250,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيوغوطية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -29265,7 +29265,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1979"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -29278,7 +29278,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -29293,7 +29293,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تويد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -29308,7 +29308,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأسود"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -29323,7 +29323,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أربعة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -29338,7 +29338,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "25"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -29353,7 +29353,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -29368,7 +29368,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "78"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -29383,7 +29383,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكبد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -29398,7 +29398,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نظرية هندسية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -29413,7 +29413,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الخروف بأكمله"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -29428,7 +29428,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مركز بينغ آن المالي، الصين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -29457,7 +29457,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولندا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -29472,7 +29472,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكمثرى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -29487,7 +29487,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فومين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -29500,7 +29500,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -29513,7 +29513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -29528,7 +29528,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلازما الدم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -29543,7 +29543,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيرفين ويلش"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -29558,7 +29558,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سنايفي، تيبيغ، أوشاووت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -29573,7 +29573,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أزرق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -29588,7 +29588,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1909"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -29603,7 +29603,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نظام اختصار إشارة نداء المرور"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -29618,7 +29618,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مبنى نياجرا موهوك"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -29633,7 +29633,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عدم القدرة على الوقوف"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -29646,7 +29646,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -29661,7 +29661,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اثنا عشر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -29676,7 +29676,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برج السرطان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -29691,7 +29691,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجذامير النباتية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -29706,7 +29706,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأرجواني"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -29721,7 +29721,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جروها الجديد من الجد الأكبر فيرن (⁦Her new puppy⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -29750,7 +29750,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الساكي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -29765,7 +29765,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قوة الدفع"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -29780,7 +29780,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بروكسل ميدي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -29795,7 +29795,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سرطان البنكرياس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -29810,7 +29810,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صلب (⁦Solid⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -29823,7 +29823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -29838,7 +29838,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برج الجدي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -29853,7 +29853,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجيل السادس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -29868,7 +29868,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كالي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -29883,7 +29883,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "200 ميل في الساعة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -29898,7 +29898,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السباحة في مياه متجمدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -29913,7 +29913,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "11 نوفمبر 2006"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -29928,7 +29928,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيتروجين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -29943,7 +29943,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دفتر ملاحظات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -29958,7 +29958,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بالتيك بورتر (⁦Baltic Porter⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -29973,7 +29973,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1955"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -29988,7 +29988,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماكس (⁦Max⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -30003,7 +30003,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمي ديسينو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -30018,7 +30018,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طويل القامة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -30047,7 +30047,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الخوف من تناول الطعام بكثرة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -30062,7 +30062,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفستق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -30077,7 +30077,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سكوتش آيل (⁦Scotch Ale⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -30092,7 +30092,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولدوغ (⁦Bulldog⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -30105,7 +30105,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -30120,7 +30120,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفضة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -30135,7 +30135,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فعل - مفعول به - فاعل (⁦Verb Object Subject⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -30150,7 +30150,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيجي (⁦Feiji⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -30163,7 +30163,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -30178,7 +30178,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيبيرونشينو (⁦Peperoncino⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -30191,7 +30191,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -30206,7 +30206,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "7 سنوات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -30221,7 +30221,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مودي (⁦Moodie⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -30234,7 +30234,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -30249,7 +30249,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شاشات الهواتف"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -30264,7 +30264,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيكيا (⁦IKEA⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -30277,7 +30277,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -30292,7 +30292,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جامعة كولومبيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -30307,7 +30307,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "علامة الفقرة (⁦Pilcrow⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -30336,7 +30336,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2006"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -30351,7 +30351,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2010"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -30366,7 +30366,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أستراليا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -30379,7 +30379,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -30394,7 +30394,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولايات المتحدة الأمريكية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -30409,7 +30409,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليأس المطلق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -30424,7 +30424,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مؤسسة ياماها"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -30439,7 +30439,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السيف المقوس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -30454,7 +30454,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -30469,7 +30469,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ولفرين: أدامانتيوم ريج"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -30484,7 +30484,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنت شخص غير مفهوم أو أحمق."
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -30499,7 +30499,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكيب"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -30514,7 +30514,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دورة كالفن"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -30529,7 +30529,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيل غيتس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -30544,7 +30544,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زاك سولدي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -30557,7 +30557,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -30570,7 +30570,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -30585,7 +30585,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آ-ها - تيك أون مي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -30600,7 +30600,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "21"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -30629,7 +30629,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيرو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -30642,7 +30642,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -30657,7 +30657,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Meupareunia⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -30672,7 +30672,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الألعاب اللوحية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -30687,7 +30687,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مغالطة التوسل بالأغلبية (⁦Argumentum ad populum⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -30702,7 +30702,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سبتمبر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -30717,7 +30717,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "موسيقى المارياتشي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -30732,7 +30732,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -30747,7 +30747,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "12,092 قدماً"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -30762,7 +30762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سوكوت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -30777,7 +30777,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ولاية الكنز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -30792,7 +30792,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيدرالي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -30807,7 +30807,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القوس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -30820,7 +30820,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -30833,7 +30833,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -30848,7 +30848,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديسمبر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -30863,7 +30863,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الوردي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -30878,7 +30878,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦mer⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -30893,7 +30893,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ذا بريتيش بولدوغز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -30922,7 +30922,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بالمر لوكي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -30937,7 +30937,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كي إف سي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -30952,7 +30952,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قارب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -30967,7 +30967,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Zima⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -30982,7 +30982,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ويكيبيديا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -30997,7 +30997,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيتر ساغال"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -31010,7 +31010,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -31025,7 +31025,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Chapeau⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -31040,7 +31040,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أديل خان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -31055,7 +31055,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيرونيمو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -31070,7 +31070,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الثلج"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -31085,7 +31085,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باك رب"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -31100,7 +31100,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ستة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -31113,7 +31113,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -31128,7 +31128,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون كوينسي آدامز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -31143,7 +31143,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أتيت، ورأيت، وانتصرت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -31158,7 +31158,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كلمة تُستخدم لوصف شخصين يحبان بعضهما بصدق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -31171,7 +31171,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -31186,7 +31186,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -31213,7 +31213,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -31228,7 +31228,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1796"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -31243,7 +31243,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برج القوس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -31256,7 +31256,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -31271,7 +31271,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -31286,7 +31286,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "16"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -31301,7 +31301,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عيد الأنوار"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -31316,7 +31316,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فبراير"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -31331,7 +31331,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كريستوفر هيتشنز"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -31346,7 +31346,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عطارد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -31361,7 +31361,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولايات المتحدة الأمريكية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -31376,7 +31376,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مين، الولايات المتحدة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -31391,7 +31391,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مئة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -31406,7 +31406,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦C⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -31421,7 +31421,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لا شيء مما سبق"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -31436,7 +31436,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "29 نوفمبر 1972"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -31451,7 +31451,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المؤخرة (⁦Stern⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -31466,7 +31466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الضفدع والثور (⁦The Frog and the Ox⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -31481,7 +31481,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيسنتي غيريرو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -31510,7 +31510,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تركي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -31525,7 +31525,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إكليلي (⁦Coronal⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -31540,7 +31540,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إسعاد الناس من خلال الطعام"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -31555,7 +31555,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثلاثة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -31570,7 +31570,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماونتن ديو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -31583,7 +31583,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -31598,7 +31598,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "64"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -31611,7 +31611,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -31624,7 +31624,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -31639,7 +31639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرنسا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -31654,7 +31654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ياسر عرفات"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -31669,7 +31669,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كنتاكي فرايد تشيكن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -31684,7 +31684,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فوميهيكو ماكي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -31699,7 +31699,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زيد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -31714,7 +31714,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفيزياء"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -31729,7 +31729,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكتالونية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -31744,7 +31744,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1900"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -31759,7 +31759,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيس هجر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -31774,7 +31774,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برج الحمراء، الكويت"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -31789,7 +31789,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مجمع تجاري يعاني من معدلات خلو مرتفعة أو حركة إقبال منخفضة جداً من المستهلكين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -31816,7 +31816,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -31829,7 +31829,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -31842,7 +31842,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -31857,7 +31857,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكريبتون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -31872,7 +31872,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -31887,7 +31887,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لشبونة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -31902,7 +31902,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجنوب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -31917,7 +31917,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيدرلاندس (⁦Nederlands⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -31930,7 +31930,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -31945,7 +31945,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيزرا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -31960,7 +31960,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بو بيري (⁦Boo-Berry⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -31975,7 +31975,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الواقع الافتراضي (⁦Virtual Reality⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -31988,7 +31988,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -32001,7 +32001,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -32016,7 +32016,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "12"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -32031,7 +32031,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوتيمارون (⁦Potimarron⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -32046,7 +32046,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "20,000"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -32061,7 +32061,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البيسبول (كرة القاعدة)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -32074,7 +32074,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -32103,7 +32103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأحزمة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -32118,7 +32118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الوالدان السحريان (⁦The Fairly OddParents⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -32133,7 +32133,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مترو أنفاق برلين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -32148,7 +32148,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكرز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -32163,7 +32163,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وسائل النقل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -32178,7 +32178,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إبرة الفضاء (ذا سبيس نيدل)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -32193,7 +32193,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سانتا مونيكا، كاليفورنيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -32208,7 +32208,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبوليون (⁦Apollyon⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -32223,7 +32223,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المكسيك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -32238,7 +32238,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيرهارد كيرك كريستيانسن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -32253,7 +32253,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شوكودو (⁦Shokudou⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -32268,7 +32268,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦HTC⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -32283,7 +32283,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وانغ شو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -32296,7 +32296,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -32309,7 +32309,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -32324,7 +32324,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رينيه ديكارت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -32339,7 +32339,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توماس جيفرسون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -32354,7 +32354,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1958"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -32369,7 +32369,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولايات المتحدة الأمريكية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -32398,7 +32398,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Brasíl⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -32413,7 +32413,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليدز"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -32426,7 +32426,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -32439,7 +32439,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -32454,7 +32454,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شركة غورديان للشحن (⁦Gordian Shipping Co⁩.)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -32469,7 +32469,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إسكتلندا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -32484,7 +32484,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كندا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -32499,7 +32499,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2,722 قدم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -32514,7 +32514,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "20 يناير 2010"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -32529,7 +32529,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حرب الاستقلال الأمريكية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -32544,7 +32544,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بونزو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -32559,7 +32559,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قناة السويس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -32572,7 +32572,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -32587,7 +32587,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماك-10"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -32602,7 +32602,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السجق"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -32617,7 +32617,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "\"...لكن الرضا أعاده للحياة.\""
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -32632,7 +32632,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شهران"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -32647,7 +32647,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التيكيلا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -32660,7 +32660,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -32689,7 +32689,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نوع من الطعام"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -32704,7 +32704,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرتقالي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -32717,7 +32717,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -32732,7 +32732,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الألمانية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -32747,7 +32747,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأسلوب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -32762,7 +32762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولاند (⁦Poland⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -32777,7 +32777,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سالير (⁦Salir⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -32792,7 +32792,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦E⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -32807,7 +32807,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وينديز"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -32822,7 +32822,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العلكة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -32837,7 +32837,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "10"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -32852,7 +32852,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إستير أفوا أوكلو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -32867,7 +32867,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جسر السلطان عبد الحليم معظم شاه، ماليزيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -32882,7 +32882,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المصدر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -32897,7 +32897,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوتستراب (⁦Bootstrap⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -32912,7 +32912,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماريو تينس 64 (على جهاز نينتندو 64)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -32927,7 +32927,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سونيك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -32942,7 +32942,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأرض"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -32957,7 +32957,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1969"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -32986,7 +32986,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوكايين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -32999,7 +32999,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -33014,7 +33014,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوردينس (⁦Órdenes⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -33029,7 +33029,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكتالونية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -33044,7 +33044,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أردية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -33059,7 +33059,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيارات كلاسيكية قديمة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -33074,7 +33074,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تمساح"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -33089,7 +33089,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لوفل (⁦Löffel⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -33104,7 +33104,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -33119,7 +33119,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكرونة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -33134,7 +33134,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -33149,7 +33149,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدلو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -33164,7 +33164,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سفر العدد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -33179,7 +33179,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوما"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -33192,7 +33192,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -33207,7 +33207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ويلز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -33220,7 +33220,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -33235,7 +33235,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميلر كورس (⁦Miller Coors⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -33250,7 +33250,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هرم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -33277,7 +33277,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -33292,7 +33292,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السباتي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -33307,7 +33307,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طوكيو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -33322,7 +33322,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شياتسو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -33337,7 +33337,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ذا بيني دريدفولس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -33350,7 +33350,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -33365,7 +33365,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفانيليا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -33380,7 +33380,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جبل كليمنجارو، تنزانيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -33395,7 +33395,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زهور"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -33410,7 +33410,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الراند"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -33423,7 +33423,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -33436,7 +33436,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -33451,7 +33451,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رأس الملك (⁦King's Head⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -33466,7 +33466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برينستون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -33481,7 +33481,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميلينيوم فالكون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -33496,7 +33496,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجلد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -33509,7 +33509,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -33524,7 +33524,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "10"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -33537,7 +33537,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -33552,7 +33552,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "60 دقيقة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -33579,7 +33579,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -33594,7 +33594,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "منشكين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -33609,7 +33609,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عائلة براود"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -33624,7 +33624,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أمبرساند"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -33639,7 +33639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شراب الببسين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -33654,7 +33654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإنترنت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -33667,7 +33667,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -33680,7 +33680,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -33693,7 +33693,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -33706,7 +33706,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -33721,7 +33721,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيكي ماسالا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -33736,7 +33736,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1926"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -33751,7 +33751,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لغة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -33764,7 +33764,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -33779,7 +33779,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجانب الأيمن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -33794,7 +33794,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شنيتر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -33809,7 +33809,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيرني ماك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -33824,7 +33824,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أناناس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -33837,7 +33837,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -33852,7 +33852,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيوليت-باكارد (⁦HP⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -33881,7 +33881,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأردية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -33896,7 +33896,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ستة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -33909,7 +33909,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -33924,7 +33924,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماثيو فليندرز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -33939,7 +33939,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -33954,7 +33954,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مسرح صانع الدمى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -33967,7 +33967,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -33982,7 +33982,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روك باند"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -33997,7 +33997,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Ruta⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -34010,7 +34010,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -34023,7 +34023,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -34038,7 +34038,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيغ ماوث بيلي باس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -34053,7 +34053,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأمعاء"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -34068,7 +34068,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Condensate⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -34083,7 +34083,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كبسولة الفضاء"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -34096,7 +34096,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -34111,7 +34111,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بطريق أديلي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -34126,7 +34126,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الويسكي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -34141,7 +34141,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بنجامين فرانكلين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -34156,7 +34156,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيفادا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -34183,7 +34183,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -34198,7 +34198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -34213,7 +34213,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السباحة في مياه متجمدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -34228,7 +34228,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مفتاح"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -34243,7 +34243,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القمصان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -34258,7 +34258,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -34273,7 +34273,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجانب الأيسر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -34288,7 +34288,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "28%"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -34303,7 +34303,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشمال الشرقي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -34316,7 +34316,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -34331,7 +34331,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العلاج الطبيعي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -34346,7 +34346,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دانيال إيك"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -34361,7 +34361,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المعدات الرياضية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -34374,7 +34374,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -34389,7 +34389,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السقيفة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -34402,7 +34402,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -34417,7 +34417,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آسيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -34432,7 +34432,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "متحف العلوم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -34445,7 +34445,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -34460,7 +34460,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جبل إلبروس، روسيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -34489,7 +34489,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيغسو (⁦Segseu⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -34504,7 +34504,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميكانيكا الكم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -34519,7 +34519,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آلام العضلات"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -34534,7 +34534,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تعبير اصطلاحي (⁦Idiom⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -34549,7 +34549,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حصان طروادة (⁦Trojan Horse⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -34564,7 +34564,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لا أحد منهم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -34579,7 +34579,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليوناردو دي كابريو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -34594,7 +34594,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مجرة درب التبانة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -34607,7 +34607,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -34622,7 +34622,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الغش"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -34637,7 +34637,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Shams⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -34652,7 +34652,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إدوارد الثامن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -34667,7 +34667,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Man⁩ (الرجل)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -34682,7 +34682,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "موسيقية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -34697,7 +34697,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2006"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -34712,7 +34712,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السلام"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -34725,7 +34725,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -34740,7 +34740,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2 يوليو 1776"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -34753,7 +34753,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -34768,7 +34768,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الروبية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -34795,7 +34795,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -34808,7 +34808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -34823,7 +34823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سطح القمر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -34836,7 +34836,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -34851,7 +34851,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "396 قدماً"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -34866,7 +34866,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توقيت غلاسكو للرجال (⁦Glasgow Man Time⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -34881,7 +34881,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رحلة بيتر بان (⁦Peter Pan's Flight⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -34896,7 +34896,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العجز عن اتخاذ القرارات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -34911,7 +34911,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السبعينيات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -34926,7 +34926,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البولندية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -34941,7 +34941,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكابتن كيرك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -34956,7 +34956,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أشجار السنط (الأكاسيا)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -34971,7 +34971,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاتدرائية فلورنسا (الدوومو)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -34986,7 +34986,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الوردي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -35001,7 +35001,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فندق جيفورا، الإمارات العربية المتحدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -35014,7 +35014,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -35029,7 +35029,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بابا جونز (⁦Papa John's⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -35044,7 +35044,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "متروبوليس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -35059,7 +35059,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "25%"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -35072,7 +35072,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "boolean",
@@ -35099,7 +35099,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -35114,7 +35114,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -35129,7 +35129,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سنيكرز (⁦Snickers⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -35144,7 +35144,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السويسرية للطيران (⁦Swiss Air⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -35159,7 +35159,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثيودور روزفلت"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -35174,7 +35174,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العسل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -35189,7 +35189,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديلتا (⁦Delta⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -35204,7 +35204,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميمنة السفينة (⁦Starboard⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -35219,7 +35219,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كابا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -35232,7 +35232,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -35247,7 +35247,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خط فيكتوريا (⁦Victoria Line⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -35262,7 +35262,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -35277,7 +35277,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الخوف من الجراثيم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -35292,7 +35292,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "27 ديسمبر 1894"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -35305,7 +35305,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -35320,7 +35320,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جوزيف فراي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -35335,7 +35335,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مثلث"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -35350,7 +35350,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ويست بوينت، نيويورك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -35365,7 +35365,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الابتزاز والتهديد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -35380,7 +35380,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بنك إيطاليا (⁦Bank of Italy⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -35409,7 +35409,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أدريانوبل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -35424,7 +35424,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هونغ كونغ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -35439,7 +35439,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوزنان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -35452,7 +35452,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -35465,7 +35465,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -35478,7 +35478,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -35493,7 +35493,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -35508,7 +35508,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإنوكتيتوتية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -35523,7 +35523,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مارش إسقاط القرص"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -35536,7 +35536,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -35551,7 +35551,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كالدي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -35566,7 +35566,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الألمانية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -35581,7 +35581,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإستونية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -35596,7 +35596,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جنوب المحيط الهادئ، بعيداً عن تشيلي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -35611,7 +35611,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أومسك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -35624,7 +35624,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -35639,7 +35639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيوستن"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -35654,7 +35654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هونغ كونغ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -35669,7 +35669,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "واشنطن العاصمة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -35684,7 +35684,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيوزيلندا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -35713,7 +35713,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أمريكا الشمالية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -35728,7 +35728,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنغكور وات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -35743,7 +35743,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدينة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -35756,7 +35756,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -35771,7 +35771,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيوستن، تكساس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -35786,7 +35786,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "متحف الفن الحديث"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -35801,7 +35801,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "واترتاون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -35816,7 +35816,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دبي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -35831,7 +35831,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصومال"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -35846,7 +35846,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهند"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -35861,7 +35861,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -35876,7 +35876,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باريس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -35891,7 +35891,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الآرامية الكلدانية الحديثة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -35906,7 +35906,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لاهور"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -35921,7 +35921,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدغشقر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -35936,7 +35936,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليما"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -35951,7 +35951,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النرويج"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -35966,7 +35966,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أذربيجان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -35979,7 +35979,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -36008,7 +36008,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آسيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -36023,7 +36023,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المحيط المتجمد الشمالي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -36038,7 +36038,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توقيع دستور ليختنشتاين لعام 1862"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -36053,7 +36053,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1848"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -36068,7 +36068,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كينيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -36081,7 +36081,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -36096,7 +36096,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "47"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -36111,7 +36111,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باربادوس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -36126,7 +36126,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -36141,7 +36141,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غرين باي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -36156,7 +36156,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مالطا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -36171,7 +36171,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ساو باولو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -36186,7 +36186,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بريدجند"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -36201,7 +36201,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولندا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -36216,7 +36216,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوتان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -36231,7 +36231,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Budapest⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -36246,7 +36246,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تركيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -36261,7 +36261,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "25"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -36276,7 +36276,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السويد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -36305,7 +36305,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماوي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -36318,7 +36318,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -36333,7 +36333,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأردن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -36348,7 +36348,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الاتحاد الروسي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -36363,7 +36363,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "79"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -36378,7 +36378,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولاوايو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -36393,7 +36393,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دبلن، أيرلندا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -36408,7 +36408,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -36423,7 +36423,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاندي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -36438,7 +36438,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شجرة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -36453,7 +36453,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "0"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -36468,7 +36468,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حافة أبروتسي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -36483,7 +36483,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدغشقر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -36498,7 +36498,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رينو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -36513,7 +36513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "واشنطن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -36528,7 +36528,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -36543,7 +36543,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ساوثهامبتون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -36558,7 +36558,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سوكري"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -36573,7 +36573,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المجرية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -36602,7 +36602,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طليطلة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -36615,7 +36615,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -36628,7 +36628,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -36643,7 +36643,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فينيكس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -36658,7 +36658,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فانكوفر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -36673,7 +36673,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفلبين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -36688,7 +36688,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كيوشو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -36703,7 +36703,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المملكة المتحدة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -36718,7 +36718,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوسلو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -36733,7 +36733,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -36748,7 +36748,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -36763,7 +36763,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ترانسيلفانيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -36776,7 +36776,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -36791,7 +36791,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوروبا وآسيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -36806,7 +36806,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -36821,7 +36821,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إسبانيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -36836,7 +36836,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإكوادور"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -36851,7 +36851,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "موريتانيا، إفريقيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -36866,7 +36866,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رواندا وبوروندي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -36895,7 +36895,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليختنشتاين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -36910,7 +36910,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جبال الهيمالايا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -36925,7 +36925,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طاجيكستان وقيرغيزستان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -36938,7 +36938,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -36953,7 +36953,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بودابست"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -36968,7 +36968,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيلادلفيا، بنسيلفانيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -36983,7 +36983,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديترويت"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -36998,7 +36998,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أليرت، كندا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -37013,7 +37013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "داكوتا الجنوبية، مينيسوتا، نبراسكا، آيوا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -37028,7 +37028,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البشتوية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -37043,7 +37043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -37058,7 +37058,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زامبيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -37073,7 +37073,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العراق والمملكة العربية السعودية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -37088,7 +37088,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شبه الجزيرة الإسكندنافية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -37103,7 +37103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -37118,7 +37118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرازيل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -37133,7 +37133,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غوانغدونغ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -37146,7 +37146,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -37161,7 +37161,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوليفيا كاسل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -37190,7 +37190,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولايات المتحدة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -37205,7 +37205,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "16"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -37220,7 +37220,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزر سبراتلي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -37235,7 +37235,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سورينام"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -37248,7 +37248,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -37263,7 +37263,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "8 فبراير"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -37278,7 +37278,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كلايبيدا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -37291,7 +37291,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -37306,7 +37306,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بحيرة هورون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -37321,7 +37321,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بورت أو برانس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -37336,7 +37336,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوروبا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -37349,7 +37349,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -37364,7 +37364,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سلوفاكيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -37377,7 +37377,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -37392,7 +37392,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تايلاند"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -37405,7 +37405,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -37420,7 +37420,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مونروفيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -37435,7 +37435,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -37448,7 +37448,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -37475,7 +37475,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -37490,7 +37490,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "8"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -37505,7 +37505,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التشيك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -37520,7 +37520,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روسيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -37533,7 +37533,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -37548,7 +37548,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لارنكا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -37563,7 +37563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قطر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -37578,7 +37578,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيدني"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -37593,7 +37593,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مصر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -37608,7 +37608,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المحيط المتجمد الشمالي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -37623,7 +37623,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سري"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -37638,7 +37638,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزيرة الأمير إدوارد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -37651,7 +37651,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -37666,7 +37666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الغروما"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -37681,7 +37681,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السامويون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -37694,7 +37694,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -37709,7 +37709,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طاجيكستان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -37724,7 +37724,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مولدوفا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -37739,7 +37739,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنتوفاغاستا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -37766,7 +37766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -37779,7 +37779,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -37794,7 +37794,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سان أنطونيو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -37809,7 +37809,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سياتل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -37824,7 +37824,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيلادا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -37839,7 +37839,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليختنشتاين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -37854,7 +37854,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيجيريا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -37869,7 +37869,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجورجية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -37882,7 +37882,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -37897,7 +37897,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ريغا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -37912,7 +37912,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيوفاوندلاند"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -37927,7 +37927,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -37942,7 +37942,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -37957,7 +37957,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تاتشداون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -37972,7 +37972,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرنسا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -37987,7 +37987,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيطاليا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -38002,7 +38002,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السويد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -38017,7 +38017,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدينة هو تشي منه"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -38032,7 +38032,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لندن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -38061,7 +38061,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كرواتيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -38076,7 +38076,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيجي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -38089,7 +38089,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -38104,7 +38104,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أغرا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -38119,7 +38119,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المملكة المتحدة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -38134,7 +38134,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إندونيسيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -38149,7 +38149,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بريزبان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -38164,7 +38164,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدولار النيوزيلندي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -38179,7 +38179,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبيدجان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -38194,7 +38194,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميناء أمستردام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -38207,7 +38207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -38222,7 +38222,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوهايو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -38237,7 +38237,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -38250,7 +38250,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -38263,7 +38263,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -38278,7 +38278,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيكوكو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -38293,7 +38293,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزيرة وايت"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -38308,7 +38308,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مقدونيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -38323,7 +38323,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صحراء كالاهاري"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -38350,7 +38350,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -38365,7 +38365,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيجيريا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -38380,7 +38380,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأقصر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -38395,7 +38395,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدينة الكهرباء"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -38408,7 +38408,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -38423,7 +38423,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزر شتلاند"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -38438,7 +38438,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تربوفلي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -38451,7 +38451,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -38466,7 +38466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بحيرة توركانا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -38481,7 +38481,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجزائر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -38496,7 +38496,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلجيكا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -38509,7 +38509,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -38524,7 +38524,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قناة طنجة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -38539,7 +38539,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "3"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -38554,7 +38554,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألبرتا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -38567,7 +38567,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -38580,7 +38580,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -38595,7 +38595,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المجر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -38610,7 +38610,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهند"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -38637,7 +38637,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -38652,7 +38652,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنابورا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -38665,7 +38665,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -38680,7 +38680,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تورونتو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -38695,7 +38695,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صفيحة نازكا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -38710,7 +38710,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دوفر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -38725,7 +38725,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "500"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -38740,7 +38740,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أتلانتا، جورجيا، الولايات المتحدة الأمريكية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -38755,7 +38755,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بحر سالتون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -38768,7 +38768,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -38783,7 +38783,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "323,400"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -38798,7 +38798,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بحيرة بايكال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -38813,7 +38813,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برلين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -38828,7 +38828,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نهر الدنيبر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -38843,7 +38843,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدنمارك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -38858,7 +38858,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "موزمبيق"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -38871,7 +38871,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -38886,7 +38886,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سان مارينو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -38901,7 +38901,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليختنشتاين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -38916,7 +38916,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كندا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -38945,7 +38945,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روسيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -38960,7 +38960,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكريولية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -38975,7 +38975,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ملبورن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -38990,7 +38990,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦0.44⁩ كم²"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -39005,7 +39005,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روسيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -39020,7 +39020,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مقدونيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -39033,7 +39033,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -39048,7 +39048,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليسوتو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -39063,7 +39063,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليمون غروف، كاليفورنيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -39078,7 +39078,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيغوسيغالبا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -39093,7 +39093,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماساتشوستس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -39108,7 +39108,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جبال البرانس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -39121,7 +39121,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -39136,7 +39136,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Schweizerische Staatsbahnen⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -39151,7 +39151,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بورصة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -39166,7 +39166,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيرن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -39181,7 +39181,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جنوب أفريقيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -39196,7 +39196,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اسكتلندا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -39211,7 +39211,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أفريقيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -39240,7 +39240,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لوس أنجلوس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -39255,7 +39255,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانهاتن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -39270,7 +39270,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيتي (مدينة)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -39285,7 +39285,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1,776 قدم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -39300,7 +39300,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دلتا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -39315,7 +39315,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهند وباكستان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -39330,7 +39330,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روكي ماونتن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -39345,7 +39345,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شلالات نياجرا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -39360,7 +39360,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيكتوريا، كولومبيا البريطانية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -39375,7 +39375,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آسيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -39390,7 +39390,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيتانيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -39405,7 +39405,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميونخ"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -39418,7 +39418,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -39433,7 +39433,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برزخ الأناضول"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -39448,7 +39448,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهند"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -39463,7 +39463,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قبرص"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -39478,7 +39478,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيرفوردشير"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -39493,7 +39493,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "13"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -39508,7 +39508,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بارنتسبورغ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -39537,7 +39537,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيثي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -39552,7 +39552,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوسيتيا الجنوبية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -39567,7 +39567,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كوريتيبا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -39582,7 +39582,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جاوة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -39595,7 +39595,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -39610,7 +39610,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيوستن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -39623,7 +39623,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -39636,7 +39636,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -39651,7 +39651,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنغولا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -39666,7 +39666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كامبريدجشاير"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -39681,7 +39681,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أفريقيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -39696,7 +39696,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أولمبيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -39711,7 +39711,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لا توجد دولة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -39726,7 +39726,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سراييفو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -39741,7 +39741,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كوين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -39756,7 +39756,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوركينا فاسو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -39771,7 +39771,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرتغال"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -39786,7 +39786,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أسود"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -39801,7 +39801,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لشبونة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -39828,7 +39828,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -39843,7 +39843,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -39856,7 +39856,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -39871,7 +39871,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "11"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -39886,7 +39886,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كيلونا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -39901,7 +39901,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سان دييغو، كاليفورنيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -39916,7 +39916,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيلنيوس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -39931,7 +39931,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إندونيسيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -39944,7 +39944,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -39957,7 +39957,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -39972,7 +39972,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزر البهاما"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -39987,7 +39987,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المحيط الهندي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -40000,7 +40000,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -40013,7 +40013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -40028,7 +40028,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بنما"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -40043,7 +40043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرجينيا الغربية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -40058,7 +40058,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المملكة المتحدة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -40073,7 +40073,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجبل الأزرق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -40088,7 +40088,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كراسنودار"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -40117,7 +40117,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سلا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -40132,7 +40132,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هافانا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -40147,7 +40147,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيو (Ν)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -40162,7 +40162,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هولندا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -40175,7 +40175,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -40190,7 +40190,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تظل متجمدة طوال العام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -40205,7 +40205,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -40218,7 +40218,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -40233,7 +40233,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فنزويلا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -40248,7 +40248,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولاية السادسة عشرة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -40263,7 +40263,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيطاليا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -40276,7 +40276,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -40291,7 +40291,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سويري"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -40306,7 +40306,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرجينيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -40319,7 +40319,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -40334,7 +40334,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلجيكا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -40349,7 +40349,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نهر تشيبو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -40364,7 +40364,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روسيا وأوكرانيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -40379,7 +40379,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دومينيكا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -40408,7 +40408,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تسمانيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -40423,7 +40423,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "واحدة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -40438,7 +40438,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بالمبانغ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -40453,7 +40453,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألاسكا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -40468,7 +40468,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهندية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -40483,7 +40483,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أندورا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -40498,7 +40498,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولايات المتحدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -40513,7 +40513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الضفاف الكبرى"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -40528,7 +40528,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زيمبابوي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -40543,7 +40543,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكلب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -40558,7 +40558,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيلنيوس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -40573,7 +40573,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيلنيوس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -40588,7 +40588,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أناهيم، كاليفورنيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -40603,7 +40603,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألاسكا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -40618,7 +40618,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانيتسوك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -40633,7 +40633,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سول"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -40648,7 +40648,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثلاث ولايات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -40663,7 +40663,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كوينزلاند"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -40678,7 +40678,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أفريقيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -40705,7 +40705,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -40720,7 +40720,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بريدج تاون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -40735,7 +40735,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طرابلس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -40750,7 +40750,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تكساس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -40765,7 +40765,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "30"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -40780,7 +40780,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لندن، إنجلترا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -40793,7 +40793,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -40808,7 +40808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "9"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -40823,7 +40823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألبورغ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -40838,7 +40838,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سانتا في"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -40851,7 +40851,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -40866,7 +40866,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سورينام"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -40881,7 +40881,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "10"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -40896,7 +40896,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يوكون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -40909,7 +40909,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -40924,7 +40924,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السودان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -40939,7 +40939,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوركينا فاسو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -40954,7 +40954,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نهر يانغتسي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -40969,7 +40969,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهندية الأوروبية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -40998,7 +40998,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاليدونيا الجديدة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -41013,7 +41013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مالطا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -41028,7 +41028,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهند وبنغلاديش"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -41043,7 +41043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوزبكستان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -41058,7 +41058,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هولندا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -41073,7 +41073,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فلوريدا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -41088,7 +41088,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرتغال، أيسلندا، أيرلندا، اليونان، صربيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -41103,7 +41103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نهر الفولغا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -41118,7 +41118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أستراليا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -41131,7 +41131,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -41146,7 +41146,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أمريكا الجنوبية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -41161,7 +41161,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برزخ بنما"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -41174,7 +41174,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -41189,7 +41189,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فلاديفوستوك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -41204,7 +41204,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجبل الأسود"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -41219,7 +41219,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "195"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -41234,7 +41234,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روتشستر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -41249,7 +41249,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غازي آباد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -41264,7 +41264,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السودان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -41293,7 +41293,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1 يوليو 1902"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -41308,7 +41308,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون فون نيومان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -41323,7 +41323,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "825 قدمًا | ⁦251.5⁩ مترًا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -41338,7 +41338,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1983"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -41353,7 +41353,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بطرس الأكبر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -41368,7 +41368,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون تشرشل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -41383,7 +41383,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مارتينسبورغ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -41398,7 +41398,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أفغانستان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -41413,7 +41413,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6 ديسمبر 1950"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -41428,7 +41428,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بروسيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -41443,7 +41443,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1925"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -41458,7 +41458,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سايغون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -41473,7 +41473,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2005"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -41488,7 +41488,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مصر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -41501,7 +41501,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -41516,7 +41516,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حق الاقتراع العام الحقيقي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -41531,7 +41531,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البوذية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -41546,7 +41546,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حرب التوليب"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -41561,7 +41561,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كوميرس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -41574,7 +41574,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "boolean",
@@ -41603,7 +41603,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صناعة الخزف"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -41616,7 +41616,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -41631,7 +41631,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1912"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -41646,7 +41646,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "19"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -41661,7 +41661,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإلحاد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -41676,7 +41676,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تونس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -41691,7 +41691,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "معارك تشانسلورسفيل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -41704,7 +41704,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -41717,7 +41717,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -41732,7 +41732,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "معركة ستالينغراد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -41747,7 +41747,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ناثان هيل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -41762,7 +41762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التوقيع على إعلان الاستقلال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -41777,7 +41777,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يوري غاغارين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -41790,7 +41790,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -41805,7 +41805,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "101"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -41820,7 +41820,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماكسيميليان روبسبير"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -41835,7 +41835,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماكس بلانك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -41850,7 +41850,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هنري الثامن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -41865,7 +41865,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1987"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -41894,7 +41894,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ملعب الإسكواش"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -41907,7 +41907,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -41922,7 +41922,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1422"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -41937,7 +41937,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولندا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -41952,7 +41952,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تمثال زيوس في أوليمبيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -41967,7 +41967,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غزو نورماندي (1944)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -41980,7 +41980,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -41995,7 +41995,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأعاصير"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -42010,7 +42010,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيانيد الهيدروجين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -42025,7 +42025,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تشارلز الأول"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -42038,7 +42038,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -42053,7 +42053,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سور الصين العظيم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -42068,7 +42068,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النمسا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -42083,7 +42083,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهندوسية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -42098,7 +42098,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "30 يونيو 1916"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -42111,7 +42111,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -42126,7 +42126,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيوزيلندا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -42141,7 +42141,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنزال نورماندي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -42156,7 +42156,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "7 سنوات"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -42183,7 +42183,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -42198,7 +42198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيفرارد ديغبي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -42213,7 +42213,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1973"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -42228,7 +42228,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حصار بيترسبرغ"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -42243,7 +42243,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لو كوربوزييه"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -42258,7 +42258,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لوس أنجلوس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -42273,7 +42273,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1980"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -42286,7 +42286,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -42301,7 +42301,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فارونيش"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -42314,7 +42314,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -42329,7 +42329,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرانز جوزيف"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -42344,7 +42344,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فلاديمير لينين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -42359,7 +42359,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جورج وآن"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -42374,7 +42374,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦J⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -42389,7 +42389,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحرب الصينية اليابانية الأولى"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -42404,7 +42404,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيرونيمو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -42419,7 +42419,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "150 ميغاطن"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -42434,7 +42434,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحالة الزرقاء (⁦Case Blue⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -42449,7 +42449,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "500,000"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -42478,7 +42478,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عملية الشعلة (⁦Torch⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -42493,7 +42493,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمس مونرو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -42508,7 +42508,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرازيل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -42523,7 +42523,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شلل الأطفال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -42538,7 +42538,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرنسا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -42553,7 +42553,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الولايات المتحدة وإنجلترا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -42566,7 +42566,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -42581,7 +42581,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جورج واشنطن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -42596,7 +42596,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كيم إيل سونغ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -42611,7 +42611,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -42624,7 +42624,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -42639,7 +42639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رينو إف تي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -42654,7 +42654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "901"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -42667,7 +42667,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -42682,7 +42682,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إعادة التوطين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -42697,7 +42697,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "معركة أدريانوبل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -42712,7 +42712,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون دير"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -42727,7 +42727,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحرب الثورية الأمريكية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -42742,7 +42742,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1911"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -42771,7 +42771,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيو روما"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -42786,7 +42786,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون كوينسي آدامز"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -42801,7 +42801,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "11 ديسمبر 1945"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -42816,7 +42816,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1911"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -42831,7 +42831,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شكسبير"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -42844,7 +42844,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -42859,7 +42859,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المدفعي الألماني"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -42874,7 +42874,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "25 مارس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -42889,7 +42889,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المندائية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -42904,7 +42904,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نابليونا دي بوينوبارتي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -42919,7 +42919,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيم لوفيل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -42934,7 +42934,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦AK-47⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -42949,7 +42949,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيوس الثالث"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -42964,7 +42964,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "73"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -42977,7 +42977,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -42992,7 +42992,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مارك"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -43007,7 +43007,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1941"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -43022,7 +43022,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1498"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -43035,7 +43035,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -43062,7 +43062,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -43077,7 +43077,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جورج ماكليلان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -43090,7 +43090,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -43105,7 +43105,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يو إس إس بويبلو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -43120,7 +43120,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ناغويا، اليابان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -43133,7 +43133,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -43148,7 +43148,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1850"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -43163,7 +43163,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مطلقة، مقطوعة الرأس، متوفاة، مطلقة، مقطوعة الرأس، ناجية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -43178,7 +43178,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيرنر هايزنبرغ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -43193,7 +43193,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثيودوسيوس العظيم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -43208,7 +43208,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكلبة بيلكا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -43223,7 +43223,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سقراط"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -43238,7 +43238,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمس بولك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -43253,7 +43253,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "16 أبريل 1889"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -43268,7 +43268,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألبرت بوتين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -43283,7 +43283,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نوك"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -43298,7 +43298,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1900"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -43313,7 +43313,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "54"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -43328,7 +43328,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأرجنتين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -43357,7 +43357,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طاقة نقطة الصفر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -43372,7 +43372,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روبرت كوخ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -43387,7 +43387,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فلاد المخوزق"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -43402,7 +43402,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيكيتا خروتشوف"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -43417,7 +43417,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سانت كيتس ونيفيس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -43430,7 +43430,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -43445,7 +43445,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مستشعر الدوامات المنظم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -43460,7 +43460,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تشارلز غيتو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -43475,7 +43475,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليابان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -43490,7 +43490,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مدغشقر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -43503,7 +43503,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -43518,7 +43518,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بطاقات بريدية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -43533,7 +43533,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غوستافوس أدولفوس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -43548,7 +43548,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبراهام لينكون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -43563,7 +43563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نافارا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -43576,7 +43576,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -43591,7 +43591,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوني بيل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -43604,7 +43604,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -43619,7 +43619,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صلح براغ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -43648,7 +43648,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوسيدون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -43663,7 +43663,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فلاديمير بوتين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -43678,7 +43678,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تحرير باريس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -43693,7 +43693,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "معركة ميدواي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -43708,7 +43708,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثيودور روزفلت"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -43721,7 +43721,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -43736,7 +43736,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "50"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -43751,7 +43751,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جورج بوش الأب"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -43766,7 +43766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سبوتنيك 2"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -43781,7 +43781,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1 سبتمبر 1939"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -43796,7 +43796,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تي-34"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -43811,7 +43811,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألكسندر السادس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -43826,7 +43826,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تركيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -43841,7 +43841,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عضو في البرلمان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -43856,7 +43856,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تايلاند"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -43869,7 +43869,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -43884,7 +43884,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قسطنطين العظيم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -43899,7 +43899,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرنسا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -43914,7 +43914,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إندونيسيا الفرنسية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -43943,7 +43943,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "210 ميلادي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -43958,7 +43958,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميرلين ⁦X⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -43973,7 +43973,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرتغال"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -43986,7 +43986,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -44001,7 +44001,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1788"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -44016,7 +44016,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بز ألدرين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -44031,7 +44031,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولندي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -44046,7 +44046,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيثرو تال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -44061,7 +44061,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غير مسماة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -44076,7 +44076,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غالبا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -44091,7 +44091,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البيت الممتلئ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -44106,7 +44106,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جمهورية فايمار"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -44121,7 +44121,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيقولا الثاني"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -44134,7 +44134,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -44149,7 +44149,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2 سبتمبر 1962"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -44164,7 +44164,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إسبانيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -44179,7 +44179,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تزوير الهوية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -44194,7 +44194,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "224 يوماً"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -44209,7 +44209,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "7"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -44238,7 +44238,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1925"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -44253,7 +44253,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مرة واحدة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -44268,7 +44268,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سورد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -44283,7 +44283,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2004"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -44298,7 +44298,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تشي (齊)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -44311,7 +44311,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -44326,7 +44326,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أمير نوفغورود الأكبر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -44339,7 +44339,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -44354,7 +44354,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحرب الأهلية الروسية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -44369,7 +44369,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لويس باستور"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -44384,7 +44384,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عملية مولوتوف"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -44399,7 +44399,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليون تروتسكي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -44414,7 +44414,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كونواي، أركنساس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -44429,7 +44429,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأيونيون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -44444,7 +44444,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حرب البلقان الثانية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -44459,7 +44459,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "19 أغسطس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -44474,7 +44474,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1942"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -44489,7 +44489,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جون كابوت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -44504,7 +44504,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "697 قبل الميلاد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -44533,7 +44533,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بالصلب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -44548,7 +44548,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "20 أبريل 1989"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -44563,7 +44563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15 أكتوبر 1804"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -44578,7 +44578,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هوميروس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -44593,7 +44593,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الروسية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -44606,7 +44606,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -44621,7 +44621,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1809"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -44636,7 +44636,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجيش الجمهوري الأيرلندي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -44649,7 +44649,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -44664,7 +44664,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرانكلين روزفلت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -44679,7 +44679,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1799"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -44692,7 +44692,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -44707,7 +44707,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6 مايو 1799"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -44722,7 +44722,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "في السرير"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -44737,7 +44737,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سارية علم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -44752,7 +44752,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1915 - 1916"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -44765,7 +44765,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -44780,7 +44780,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أقل من 1 بالمئة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -44793,7 +44793,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -44808,7 +44808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1945"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -44837,7 +44837,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شنقوهم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -44852,7 +44852,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1993"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -44865,7 +44865,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -44880,7 +44880,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تشيرنوبيل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -44895,7 +44895,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخمينية، الميدية، الساسانية، الفرثية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -44910,7 +44910,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البابا فالنتين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -44923,7 +44923,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -44936,7 +44936,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -44951,7 +44951,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1998"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -44966,7 +44966,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيلهلم ليست"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -44981,7 +44981,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أيرلندا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -44996,7 +44996,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دول المركز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -45011,7 +45011,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مونتريال"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -45026,7 +45026,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "7 يوليو 1937"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -45041,7 +45041,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البولينيزيون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -45056,7 +45056,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "14 أكتوبر 1938"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -45071,7 +45071,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التولتك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -45086,7 +45086,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيتنام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -45101,7 +45101,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5 أبريل 1945"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -45130,7 +45130,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا، إسبانيا، النمسا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -45145,7 +45145,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1724"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -45160,7 +45160,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هربرت هوفر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -45175,7 +45175,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سجن لاندسبرغ"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -45190,7 +45190,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "16 ديسمبر 1944"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -45205,7 +45205,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزر الكناري"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -45220,7 +45220,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦DD-446⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -45233,7 +45233,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -45248,7 +45248,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بادولا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -45261,7 +45261,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -45276,7 +45276,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نهضة أبير إيست"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -45291,7 +45291,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "79 ميلادية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -45306,7 +45306,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أغوستين دي إيتوربيدي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -45321,7 +45321,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إدوارد هيث"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -45336,7 +45336,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1777"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -45351,7 +45351,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1526"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -45366,7 +45366,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1808"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -45381,7 +45381,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليابان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -45396,7 +45396,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميراش كراسنيكي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -45425,7 +45425,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روبرت بوردن"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -45440,7 +45440,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيبيريوس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -45455,7 +45455,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفضائي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -45468,7 +45468,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -45483,7 +45483,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كتالونيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -45498,7 +45498,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هنري الرابع"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -45511,7 +45511,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -45526,7 +45526,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيودور"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -45541,7 +45541,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1915"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -45556,7 +45556,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هجوم اللواء الخفيف (حرب القرم)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -45571,7 +45571,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "واشنطن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -45586,7 +45586,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حصان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -45601,7 +45601,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيلسوف يوناني"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -45616,7 +45616,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كلوديوس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -45631,7 +45631,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فينيقيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -45644,7 +45644,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -45659,7 +45659,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طريق الملح"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -45674,7 +45674,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2015"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -45689,7 +45689,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هولندا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -45704,7 +45704,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المايا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -45733,7 +45733,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ذا صحارى"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -45748,7 +45748,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1969"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -45763,7 +45763,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فوميمارو كونويه"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -45778,7 +45778,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ناغاساكي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -45793,7 +45793,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حروب الماكريل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -45808,7 +45808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاتدرائية القديس بولس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -45823,7 +45823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1990"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -45838,7 +45838,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "32"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -45853,7 +45853,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1822"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -45868,7 +45868,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سوري"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -45883,7 +45883,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاثرين بار"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -45898,7 +45898,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1950"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -45913,7 +45913,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "9 ديسمبر 1991"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -45928,7 +45928,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قصر الأمة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -45941,7 +45941,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -45956,7 +45956,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1923"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -45971,7 +45971,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليتوانيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -45986,7 +45986,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هاينز غوديريان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -46001,7 +46001,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1440"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -46016,7 +46016,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحرب العالمية الثانية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -46045,7 +46045,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "25 نوفمبر 2002"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -46060,7 +46060,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حزب الويغ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -46075,7 +46075,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أثينا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -46090,7 +46090,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15 مارس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -46105,7 +46105,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألكسندر بيتروفيتش"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -46120,7 +46120,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "102 ميلادي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -46135,7 +46135,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لي شيانيان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -46150,7 +46150,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمستاون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -46165,7 +46165,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آشور ناصربال الثاني"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -46180,7 +46180,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "توماس وارويك"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -46195,7 +46195,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولندا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -46210,7 +46210,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنجلترا، 1817"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -46225,7 +46225,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1990"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -46240,7 +46240,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "7 فبراير 2000"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -46255,7 +46255,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -46270,7 +46270,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هجوم فيستولا - الأودر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -46285,7 +46285,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرديناند ماجلان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -46300,7 +46300,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سكونه"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -46315,7 +46315,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيران"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -46330,7 +46330,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1916"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -46359,7 +46359,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1986"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -46374,7 +46374,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بنغلاديش وبوتان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -46389,7 +46389,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عملية الاشتعال"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -46402,7 +46402,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -46415,7 +46415,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -46428,7 +46428,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -46441,7 +46441,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -46456,7 +46456,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1867"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -46471,7 +46471,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تيمور"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -46484,7 +46484,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -46499,7 +46499,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "47"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -46514,7 +46514,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المماليك"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -46529,7 +46529,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طريق الحرير"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -46544,7 +46544,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلغاريا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -46559,7 +46559,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1880"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -46574,7 +46574,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تركيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -46589,7 +46589,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1420"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -46604,7 +46604,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1555"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -46619,7 +46619,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ويليام الرابع"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -46634,7 +46634,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تشيلي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -46663,7 +46663,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ناميبيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -46678,7 +46678,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هنري الخامس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -46693,7 +46693,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدولة البابوية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -46708,7 +46708,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنزلم من كانتربري"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -46723,7 +46723,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عصر النهضة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -46738,7 +46738,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العيلاميون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -46753,7 +46753,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "21 فبراير 1926"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -46768,7 +46768,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرانكلين بيرس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -46783,7 +46783,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سيغ ساور"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -46798,7 +46798,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -46813,7 +46813,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أول نائم في كهف واهاكا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -46828,7 +46828,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ريتشارد الثالث"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -46843,7 +46843,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوجينجا أودينجا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -46858,7 +46858,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "28 أبريل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -46873,7 +46873,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فنزويلا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -46888,7 +46888,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرديناند دي لسبس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -46903,7 +46903,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خوسيه دي سان مارتين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -46918,7 +46918,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آسيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -46933,7 +46933,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوريس هيفيلتيك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -46962,7 +46962,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجبل الأسود وسلوفينيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -46977,7 +46977,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "30 أبريل 1863"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -46992,7 +46992,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رامزي ماكدونالد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -47007,7 +47007,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هايتي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -47022,7 +47022,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1939"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -47037,7 +47037,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيكاراغوا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -47052,7 +47052,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كرة القدم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -47067,7 +47067,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غافريلو برينسيب"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -47082,7 +47082,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيطاليا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -47097,7 +47097,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1854"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -47112,7 +47112,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرجينيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -47127,7 +47127,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هارولد هولت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -47142,7 +47142,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "8 نوفمبر 1944"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -47155,7 +47155,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -47170,7 +47170,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1991"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -47185,7 +47185,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمي كارتر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -47200,7 +47200,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6 أكتوبر 1939"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -47215,7 +47215,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجمهورية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -47228,7 +47228,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -47257,7 +47257,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبولو 15"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -47272,7 +47272,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يو إس إس ساراتوغا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -47287,7 +47287,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زراعة صدر الديك الرومي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -47302,7 +47302,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جود أوف وار"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -47317,7 +47317,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كل من أثينا وزيوس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -47332,7 +47332,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باريس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -47347,7 +47347,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنجلترا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -47362,7 +47362,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيمس مونرو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -47375,7 +47375,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -47390,7 +47390,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1844"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -47405,7 +47405,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حفر القبور"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -47420,7 +47420,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جان جاك ديسالين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -47433,7 +47433,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -47448,7 +47448,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مارس 1944"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -47463,7 +47463,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الملك فيليب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -47478,7 +47478,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أفغانستان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -47493,7 +47493,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لويس السادس عشر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -47508,7 +47508,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1971"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -47523,7 +47523,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "<1%"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -47552,7 +47552,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الضرب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -47567,7 +47567,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦1256.6⁩ بوصة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -47582,7 +47582,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "-⁦sin⁩(⁦x⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -47597,7 +47597,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أرخميدس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -47610,7 +47610,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -47625,7 +47625,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "9"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -47640,7 +47640,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "90"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -47655,7 +47655,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦1F⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -47670,7 +47670,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦r⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -47683,7 +47683,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -47696,7 +47696,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -47709,7 +47709,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -47724,7 +47724,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "7"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -47739,7 +47739,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦π⁩⁦r⁩^4"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -47752,7 +47752,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -47765,7 +47765,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -47780,7 +47780,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "17"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -47795,7 +47795,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦1.41⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -47808,7 +47808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -47823,7 +47823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "Φ (فاي)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -47852,7 +47852,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ستيفان باناخ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -47867,7 +47867,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نرد ذو 8 أوجه"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -47882,7 +47882,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1000"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -47897,7 +47897,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "برتراند راسل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -47912,7 +47912,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سرينيفاسا رامانوجان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -47927,7 +47927,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦x⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -47940,7 +47940,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -47955,7 +47955,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -47970,7 +47970,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشكل السباعي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -47985,7 +47985,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوميغا (⁦Omega⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -48000,7 +48000,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "صيغة تربط بين الرؤوس والحواف والأوجه في المخطط (الرسم البياني)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -48015,7 +48015,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -48030,7 +48030,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديفوراك وسميث"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -48045,7 +48045,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -48060,7 +48060,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "0"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -48075,7 +48075,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦D⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -48090,7 +48090,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حدسية بوانكاريه"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -48103,7 +48103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -48118,7 +48118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -48133,7 +48133,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليونهارت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -48162,7 +48162,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "زاوية مستقيمة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -48177,7 +48177,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1069"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -48192,7 +48192,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حدسية فيرما"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -48207,7 +48207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦1.58 × 10⁩^20"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -48222,7 +48222,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦10.6⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -48237,7 +48237,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التكامل الأبيلي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -48252,7 +48252,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الانزلاق (⁦Slide⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -48267,7 +48267,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشكل التساعي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -48282,7 +48282,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "+100"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -48297,7 +48297,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطوط متعرجة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -48310,7 +48310,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -48323,7 +48323,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "boolean",
@@ -48336,7 +48336,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -48349,7 +48349,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -48364,7 +48364,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "16"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -48379,7 +48379,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كوادريليون (⁦Quadrillion⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -48392,7 +48392,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -48407,7 +48407,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦3.25812⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -48422,7 +48422,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جزء من سيبتيليون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -48437,7 +48437,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1 4 6 4 1"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -48466,7 +48466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -48479,7 +48479,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -48492,7 +48492,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -48507,7 +48507,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "100"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -48520,7 +48520,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -48535,7 +48535,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "720"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -48550,7 +48550,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غاووس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -48563,7 +48563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -48578,7 +48578,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "27"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -48593,7 +48593,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الترتيب الذي كُتبت به العمليات الحسابية."
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -48606,7 +48606,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -48621,7 +48621,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غريغوري بيريلمان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -48636,7 +48636,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4104"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -48651,7 +48651,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "9"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -48666,7 +48666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أسية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -48681,7 +48681,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -48696,7 +48696,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -48711,7 +48711,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهندسي الفائق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -48726,7 +48726,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -48755,7 +48755,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -48770,7 +48770,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أسترالوبيثكس أنتاريس (⁦Australopithecus Antaris⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -48785,7 +48785,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القصدير"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -48798,7 +48798,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -48813,7 +48813,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لاندسات 3"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -48826,7 +48826,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -48841,7 +48841,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العظم المثلثي (⁦Triquetrum⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -48854,7 +48854,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -48869,7 +48869,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الطور النهائي (⁦Telophase⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -48884,7 +48884,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العالية، بعض"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -48899,7 +48899,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النواة الخارجية (اللب الخارجي)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -48914,7 +48914,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جنس من الفراشات (العث)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -48929,7 +48929,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأوعية اللمفاوية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -48944,7 +48944,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأكسجين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -48959,7 +48959,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الصفائح التكتونية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -48974,7 +48974,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الماء"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -48989,7 +48989,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غاز الضحك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -49004,7 +49004,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المريخ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -49019,7 +49019,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦V⁩ = ⁦I⁩ / ⁦R⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -49034,7 +49034,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عظم الظنبوب (قصبة الساق)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -49063,7 +49063,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حبوب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -49078,7 +49078,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوبالت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -49093,7 +49093,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ستة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -49108,7 +49108,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "متلازمة جاكوب"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -49123,7 +49123,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوروبا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -49138,7 +49138,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "10"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -49153,7 +49153,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "178 درجة فهرنهايت"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -49168,7 +49168,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إرنست رذرفورد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -49183,7 +49183,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأرض والمريخ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -49198,7 +49198,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -49213,7 +49213,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميوباريونيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -49228,7 +49228,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأستاتين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -49243,7 +49243,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التشغيل والإقلاع"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -49258,7 +49258,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "10"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -49273,7 +49273,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثاني أكسيد المنجنيز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -49286,7 +49286,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -49299,7 +49299,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -49312,7 +49312,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -49327,7 +49327,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نسيم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -49354,7 +49354,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -49367,7 +49367,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -49382,7 +49382,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "28"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -49397,7 +49397,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "20"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -49412,7 +49412,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الرصاص"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -49427,7 +49427,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الميتوكوندريا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -49440,7 +49440,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -49455,7 +49455,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألم قصبة الساق"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -49470,7 +49470,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البنزين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -49485,7 +49485,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المادة المضادة للحياة عن طريق الدخول الدائم للنطاق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -49498,7 +49498,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -49513,7 +49513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوليرا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -49528,7 +49528,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النجم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -49543,7 +49543,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفوتون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -49558,7 +49558,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شبل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -49573,7 +49573,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القرش الأبيض الكبير"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -49588,7 +49588,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المو (وحدة موصلية)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -49603,7 +49603,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وصلة ⁦P-N⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -49618,7 +49618,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Pm⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -49645,7 +49645,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -49660,7 +49660,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سكاجن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -49673,7 +49673,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -49686,7 +49686,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -49701,7 +49701,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -49714,7 +49714,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -49727,7 +49727,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -49742,7 +49742,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السرة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -49757,7 +49757,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشظية"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -49772,7 +49772,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦501.2⁩ مليون ميل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -49787,7 +49787,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المشتري"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -49802,7 +49802,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهيدروجين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -49815,7 +49815,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -49828,7 +49828,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -49843,7 +49843,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "167"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -49858,7 +49858,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Hg⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -49873,7 +49873,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العصر الأوردوفيشي-السيلوري"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -49888,7 +49888,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الوزن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -49903,7 +49903,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "معدل انتشار وسائل منع الحمل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -49932,7 +49932,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهيرتز"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -49947,7 +49947,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليورانيوم-235 نظير مستقر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -49962,7 +49962,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "451"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -49977,7 +49977,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "21"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -49992,7 +49992,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غلوون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -50007,7 +50007,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهيدروجين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -50022,7 +50022,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦6.002 × 10⁩^23"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -50037,7 +50037,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Sn⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -50050,7 +50050,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -50065,7 +50065,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكتف"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -50080,7 +50080,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أربعة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -50095,7 +50095,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البورون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -50110,7 +50110,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزهرة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -50125,7 +50125,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "233"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -50140,7 +50140,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نبتون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -50155,7 +50155,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفئة الخامسة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -50170,7 +50170,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الرأس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -50185,7 +50185,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦C13H25NO4⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -50200,7 +50200,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفواق"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -50229,7 +50229,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القامة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -50244,7 +50244,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حبوب اللقاح"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -50259,7 +50259,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تأثير ماكغورك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -50274,7 +50274,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سير إسحاق نيوتن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -50289,7 +50289,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قانون بيو-سافارت"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -50304,7 +50304,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كلفن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -50317,7 +50317,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -50332,7 +50332,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "21%"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -50347,7 +50347,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قصبة الساق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -50362,7 +50362,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هابلوغروب ⁦J⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -50377,7 +50377,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجذع"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -50392,7 +50392,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القط"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -50407,7 +50407,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الرقبة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -50422,7 +50422,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيتروجين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -50437,7 +50437,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كلوريد الصوديوم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -50450,7 +50450,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -50463,7 +50463,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -50478,7 +50478,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "طريقة التكاثر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -50493,7 +50493,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "6"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -50522,7 +50522,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تجارب قرود هارلو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -50537,7 +50537,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "5"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -50550,7 +50550,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -50563,7 +50563,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -50578,7 +50578,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجبس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -50593,7 +50593,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رانكين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -50608,7 +50608,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزرافة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -50623,7 +50623,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أربعة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -50638,7 +50638,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "200"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -50651,7 +50651,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -50666,7 +50666,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عشرة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -50681,7 +50681,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كورنوال"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -50696,7 +50696,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أندروميدا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -50711,7 +50711,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "واحد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -50724,7 +50724,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -50737,7 +50737,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -50752,7 +50752,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القلب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -50765,7 +50765,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -50778,7 +50778,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -50807,7 +50807,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أنديفور"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -50822,7 +50822,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الغرام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -50837,7 +50837,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفأر"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -50850,7 +50850,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -50865,7 +50865,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيكل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -50880,7 +50880,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الواط"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -50895,7 +50895,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "-42"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -50910,7 +50910,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ارتفاع نسبة الصوديوم في الدم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -50925,7 +50925,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غمد المايلين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -50940,7 +50940,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦STS-109⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -50955,7 +50955,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ارتخاء حجرات القلب"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -50970,7 +50970,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -50985,7 +50985,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "3"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -51000,7 +51000,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البني"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -51013,7 +51013,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -51028,7 +51028,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهيليوم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -51043,7 +51043,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبولو 13"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -51058,7 +51058,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشبكة الإندوبلازمية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -51073,7 +51073,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روسيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -51086,7 +51086,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "boolean",
@@ -51115,7 +51115,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الذرات غير المشحونة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -51130,7 +51130,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الليثيوم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -51145,7 +51145,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإسلامية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -51160,7 +51160,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦0.1⁩ ميكروسيفيرت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -51175,7 +51175,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لاندسات 6"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -51190,7 +51190,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الطبقة المذابة (⁦The ablative⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -51205,7 +51205,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -51220,7 +51220,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اللييفات العضلية (⁦Myofibrils⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -51235,7 +51235,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليوم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -51250,7 +51250,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الطور النهائي (⁦Telophase⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -51265,7 +51265,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألبرت أينشتاين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -51280,7 +51280,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "84 سنة أرضية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -51295,7 +51295,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦CH4⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -51310,7 +51310,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأسبستوس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -51325,7 +51325,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "منعكس الحك (⁦Scratch reflex⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -51338,7 +51338,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -51353,7 +51353,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "90%"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -51368,7 +51368,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الباكليت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -51383,7 +51383,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦5.5⁩ مليار سنة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -51398,7 +51398,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كومادين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -51427,7 +51427,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحديد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -51440,7 +51440,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -51455,7 +51455,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبيلوس ديليكتيكا (⁦Appelus delectica⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -51468,7 +51468,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -51483,7 +51483,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تنياتوكسين (⁦Tinyatoxin⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -51498,7 +51498,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الخلية العصبية الموصلة (البينية)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -51513,7 +51513,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "حمض إزالة السموم"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -51526,7 +51526,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -51541,7 +51541,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الغازات الخاملة (النبيلة)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -51556,7 +51556,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عنب كونكورد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -51571,7 +51571,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأشعة فوق البنفسجية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -51586,7 +51586,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15 قدماً / 5 أمتار"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -51601,7 +51601,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الثرموسفير"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -51616,7 +51616,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦GTA⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -51631,7 +51631,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدماغ"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -51646,7 +51646,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سير إسحاق نيوتن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -51661,7 +51661,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -51674,7 +51674,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -51689,7 +51689,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "128"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -51704,7 +51704,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بكتيريا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -51733,7 +51733,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لوح الكتف (⁦Scapula⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -51748,7 +51748,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكاحل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -51763,7 +51763,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأسماك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -51778,7 +51778,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تأثير دانينغ-كروجر (⁦Dunning-Kruger effect⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -51793,7 +51793,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الهزة الأرضية (⁦Temblor⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -51808,7 +51808,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيتروجين"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -51823,7 +51823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفلبين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -51838,7 +51838,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اضطراب الهوية الانفصامي (⁦Dissociative identity disorder⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -51851,7 +51851,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -51864,7 +51864,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -51879,7 +51879,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيوتا الملتهب (⁦Iota Cephei⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -51894,7 +51894,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "38"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -51909,7 +51909,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الألماس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -51924,7 +51924,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خلايا الدم البيضاء"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -51939,7 +51939,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البتلة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -51954,7 +51954,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزهرة الأنثوية"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -51967,7 +51967,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -51980,7 +51980,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -51995,7 +51995,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦Hs⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -52010,7 +52010,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أن تعرف (المعرفة)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -52039,7 +52039,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الواط"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -52054,7 +52054,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "3"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -52069,7 +52069,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإدراك السمعي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -52084,7 +52084,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكربون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -52099,7 +52099,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الببّغاوات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -52114,7 +52114,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المريخ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -52129,7 +52129,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦16.2⁩ مليار سنة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -52144,7 +52144,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدماغ"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -52159,7 +52159,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "العلاج السلوكي الجدلي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -52174,7 +52174,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦CH4⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -52189,7 +52189,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكيمياء الحيوية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -52204,7 +52204,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النيكوتين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -52219,7 +52219,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "74"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -52234,7 +52234,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦H⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -52249,7 +52249,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الاحتياجات الفسيولوجية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -52264,7 +52264,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشريان الرئوي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -52279,7 +52279,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الفورمالديهايد"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -52292,7 +52292,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -52307,7 +52307,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فولبيس فولبي (⁦Vulpes Vulpie⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -52322,7 +52322,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سفينوبالاتين غانغليونورالجيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -52351,7 +52351,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البنفسجي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -52366,7 +52366,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزئبق"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -52381,7 +52381,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غوريلا بيرنغي بيرنغي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -52396,7 +52396,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكربون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -52411,7 +52411,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القلب"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -52426,7 +52426,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيتامين د"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -52441,7 +52441,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اللوزة الدماغية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -52456,7 +52456,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأوم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -52471,7 +52471,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -52486,7 +52486,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هيرمان رورشاخ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -52499,7 +52499,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -52514,7 +52514,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكانديلا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -52529,7 +52529,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثاني أكسيد الكربون"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -52544,7 +52544,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "12 دقيقة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -52559,7 +52559,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ستيفن كوري"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -52574,7 +52574,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فطر العسل"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -52589,7 +52589,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النواة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -52604,7 +52604,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الألدهيد"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -52619,7 +52619,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اختبار تأثيرات كائنات دقيقة معينة في بيئات معزولة مثل الكهوف"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -52634,7 +52634,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التنافر المعرفي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -52663,7 +52663,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المريخ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -52678,7 +52678,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦SO4⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -52693,7 +52693,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فريدريك روبنز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -52708,7 +52708,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الروبيان غير الطبيعي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -52723,7 +52723,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "اليوراسيل"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -52738,7 +52738,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزهرة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -52751,7 +52751,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -52766,7 +52766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الإيبوبروفين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -52781,7 +52781,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكالسيوم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -52796,7 +52796,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكربون والهيليوم"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -52811,7 +52811,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاليستو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -52826,7 +52826,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثقب أسود"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -52841,7 +52841,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الزند"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -52856,7 +52856,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "القشرة المحيطية والقارية/حدود الصفائح التحويلية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -52871,7 +52871,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بولي ستيرين (⁦PS⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -52886,7 +52886,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيترينيوم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -52901,7 +52901,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1985"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -52914,7 +52914,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -52927,7 +52927,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "boolean",
@@ -52942,7 +52942,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "23"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 19,
         "image_url": null,
         "question_type": "multi",
@@ -52969,7 +52969,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -52984,7 +52984,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجدي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -52999,7 +52999,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البراكين"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -53014,7 +53014,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المهرجين"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -53029,7 +53029,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آر دبليو الملتهب (⁦RW Cephei⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -53044,7 +53044,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مبرهنة كارنو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -53059,7 +53059,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فوسخود ⁦3KV⁩"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -53074,7 +53074,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قصر النظر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -53089,7 +53089,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الروبيديوم"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -53104,7 +53104,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "751,665,014,151 م/ث"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -53119,7 +53119,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المحث"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -53134,7 +53134,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نقص سكر الدم"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -53149,7 +53149,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -53164,7 +53164,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكوبالت"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -53179,7 +53179,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الشبكة الإندوبلازمية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -53192,7 +53192,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -53207,7 +53207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "النشاط الإشعاعي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -53222,7 +53222,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سمارت-1"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -53237,7 +53237,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المعدة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -53266,7 +53266,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيمرسون فيتيبالدي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -53281,7 +53281,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيل فيلنوف"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -53296,7 +53296,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانشستر يونايتد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -53311,7 +53311,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لوثار ماتيوس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -53326,7 +53326,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باترسي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -53341,7 +53341,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيقاف شوماخر (بريطانيا)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -53356,7 +53356,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كالينينغراد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -53371,7 +53371,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2:01:41"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -53384,7 +53384,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -53397,7 +53397,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "boolean",
@@ -53412,7 +53412,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بول بيرس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -53427,7 +53427,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1872"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -53440,7 +53440,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -53455,7 +53455,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كندا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -53470,7 +53470,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سويسرا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -53485,7 +53485,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جورجي هاجي"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -53500,7 +53500,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيريك بريستو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -53515,7 +53515,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "16 - 0"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -53530,7 +53530,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "41"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -53559,7 +53559,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2006"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -53574,7 +53574,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ريو هاريانتو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -53589,7 +53589,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيريك كانتونا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -53604,7 +53604,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ريال مدريد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -53617,7 +53617,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -53632,7 +53632,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2-6"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -53647,7 +53647,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سانت جيمس بارك"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -53662,7 +53662,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سباق جائزة إيطاليا الكبرى"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -53677,7 +53677,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دالاس ستارز"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -53692,7 +53692,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "26"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -53707,7 +53707,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيفروليه"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -53722,7 +53722,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مرسيدس إيه إم جي بتروناس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -53737,7 +53737,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "22"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -53752,7 +53752,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بلاكبول"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -53767,7 +53767,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1989"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -53782,7 +53782,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديل إيرنهاردت"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -53797,7 +53797,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ريبوك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -53812,7 +53812,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديفيد بيكهام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -53827,7 +53827,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جينسون باتون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -53856,7 +53856,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آسيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -53871,7 +53871,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -53886,7 +53886,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تورونتو ميبل ليفز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -53899,7 +53899,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -53914,7 +53914,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مفك البراغي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -53927,7 +53927,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "boolean",
@@ -53942,7 +53942,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانشستر يونايتد"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -53955,7 +53955,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -53970,7 +53970,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سونغ كيم (كوريا الشمالية)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -53985,7 +53985,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديفيد بيكهام"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -54000,7 +54000,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيسان"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -54015,7 +54015,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "داك (⁦Duck⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -54030,7 +54030,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألباتروس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -54045,7 +54045,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أبو ظبي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -54060,7 +54060,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بطولة أستراليا المفتوحة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -54075,7 +54075,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "موسكو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -54090,7 +54090,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ثماني مرات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -54103,7 +54103,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "boolean",
@@ -54118,7 +54118,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الكيرلنج"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 18,
         "image_url": null,
         "question_type": "multi",
@@ -54147,7 +54147,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماري كاريلو"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -54162,7 +54162,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هولندا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -54177,7 +54177,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فلاديمير سامسونوف (بيلاروسيا)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -54192,7 +54192,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لندن"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -54207,7 +54207,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوليفيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -54222,7 +54222,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "وست بروميتش ألبيون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -54235,7 +54235,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -54250,7 +54250,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "دانيال ريكاردو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -54265,7 +54265,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأخضر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -54280,7 +54280,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كيمي رايكونن"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -54295,7 +54295,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنجلترا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -54310,7 +54310,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لمنع مشاهدة المباريات من خارج الملعب."
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -54325,7 +54325,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المبارزة بالسيف"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -54340,7 +54340,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سياتل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -54355,7 +54355,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نورث كوينزلاند كاوبويز"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -54370,7 +54370,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رمي المطرقة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -54385,7 +54385,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1999"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -54400,7 +54400,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إسبانيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -54429,7 +54429,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أندرادي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -54444,7 +54444,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -54459,7 +54459,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "يوفنتوس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -54474,7 +54474,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "السينتس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -54489,7 +54489,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦109.36⁩ ياردة"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -54504,7 +54504,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1895"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -54519,7 +54519,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيمار"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -54534,7 +54534,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غولدن ستيت واريورز"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -54549,7 +54549,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جيم كلارك"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -54564,7 +54564,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانشستر سيتي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -54579,7 +54579,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المطرقة"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -54594,7 +54594,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "قطر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -54609,7 +54609,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦44.78⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -54624,7 +54624,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرازيل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -54639,7 +54639,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "رونالدينيو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -54654,7 +54654,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماديرا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -54669,7 +54669,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غولدن ستيت واريورز"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -54684,7 +54684,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيراري"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -54713,7 +54713,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماسامبولا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -54728,7 +54728,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أوكلاهوما سيتي ثاندر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -54741,7 +54741,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -54756,7 +54756,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كريستيانو رونالدو دوس سانتوس أفيرو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -54769,7 +54769,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "boolean",
@@ -54784,7 +54784,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جوزيه ميرنيو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -54799,7 +54799,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيغل"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -54814,7 +54814,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "التزلج"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -54829,7 +54829,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنجلترا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -54844,7 +54844,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تامبا باي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -54859,7 +54859,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مرسيدس"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -54874,7 +54874,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روجر فيدرر"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -54889,7 +54889,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جنوب أفريقيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -54902,7 +54902,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -54917,7 +54917,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1987"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -54932,7 +54932,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -54947,7 +54947,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأزرق"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -54962,7 +54962,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "البرازيل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -54991,7 +54991,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "8"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -55006,7 +55006,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ستوك سيتي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -55021,7 +55021,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديفيد بيكهام"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -55034,7 +55034,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -55049,7 +55049,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كأس القارات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -55064,7 +55064,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "32"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -55079,7 +55079,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تييري هنري"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -55094,7 +55094,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيفرتون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -55109,7 +55109,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مارك هيوز"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -55124,7 +55124,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "102"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -55139,7 +55139,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "22"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -55154,7 +55154,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بيليه"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -55169,7 +55169,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديدييه دروغبا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -55184,7 +55184,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المملكة العربية السعودية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -55199,7 +55199,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "آل سنو"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -55214,7 +55214,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كافو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -55229,7 +55229,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لينوكس لويس"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -55244,7 +55244,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "سان فرانسيسكو"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -55273,7 +55273,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مات هارفي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -55288,7 +55288,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "17 أغسطس"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -55303,7 +55303,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألمانيا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -55318,7 +55318,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لويس هاملتون"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -55333,7 +55333,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كولومبيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -55348,7 +55348,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كمبوديا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -55363,7 +55363,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الجري"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -55378,7 +55378,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "61"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -55393,7 +55393,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميكا هاكينين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -55408,7 +55408,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -55423,7 +55423,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مانشستر سيتي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -55438,7 +55438,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روبرت باريش"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -55453,7 +55453,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "مايكل أوين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -55466,7 +55466,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -55481,7 +55481,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ليفربول"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -55496,7 +55496,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "المنطقة الخضراء لملعب الغولف"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -55509,7 +55509,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -55524,7 +55524,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باراغواي"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -55553,7 +55553,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميشلان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -55568,7 +55568,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الدول التي تحقق فيها أودي أعلى مبيعات"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -55581,7 +55581,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "boolean",
@@ -55596,7 +55596,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "15 درجة"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -55611,7 +55611,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ماكلارين"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -55626,7 +55626,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أرمينيا"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -55641,7 +55641,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "376"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -55656,7 +55656,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نيسان"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -55669,7 +55669,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "boolean",
@@ -55684,7 +55684,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لينكون"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -55697,7 +55697,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "boolean",
@@ -55712,7 +55712,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كامري"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -55725,7 +55725,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -55738,7 +55738,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "boolean",
@@ -55751,7 +55751,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -55766,7 +55766,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ألفا روميو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -55779,7 +55779,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -55794,7 +55794,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦5M-GE⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 17,
         "image_url": null,
         "question_type": "multi",
@@ -55823,7 +55823,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1973"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -55836,7 +55836,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "boolean",
@@ -55851,7 +55851,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيرون"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -55866,7 +55866,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديسيرو سيتي (⁦Desiro City⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -55881,7 +55881,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "427"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -55896,7 +55896,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "100 متر"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -55911,7 +55911,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فولكس واجن"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -55926,7 +55926,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "364"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -55941,7 +55941,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1985"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -55956,7 +55956,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ياماها"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -55971,7 +55971,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كوريا الجنوبية"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -55986,7 +55986,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "عمود الحدبات"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -55999,7 +55999,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "boolean",
@@ -56014,7 +56014,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خلل في مكابح السيارة"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -56027,7 +56027,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -56042,7 +56042,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "1"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -56057,7 +56057,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فرنسا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -56086,7 +56086,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوغاتي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -56101,7 +56101,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الطاقة النووية"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -56116,7 +56116,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2,190"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -56131,7 +56131,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "أودي ⁦A8⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -56146,7 +56146,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الحصان"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -56161,7 +56161,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روتس (⁦Roots⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -56176,7 +56176,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بنتلي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -56189,7 +56189,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "boolean",
@@ -56204,7 +56204,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روما"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -56219,7 +56219,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باغاني هوايرا بي سي (⁦Pagani Huayra BC⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -56234,7 +56234,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إنسبيرّا (⁦Inspira⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -56249,7 +56249,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تشيري (⁦Cherry⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -56264,7 +56264,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦F10⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -56279,7 +56279,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ميشلان"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -56294,7 +56294,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بندولينو (⁦Pendolino⁩)"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -56307,7 +56307,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -56322,7 +56322,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "2007"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",
@@ -56351,7 +56351,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيفروليه كامارو (⁦Chevy Camaro⁩)"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "multi",
@@ -56366,7 +56366,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "غيملي سوبيرب (⁦Gimli Superb⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -56381,7 +56381,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "شيفروليه"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -56394,7 +56394,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "boolean",
@@ -56409,7 +56409,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "كاواساكي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -56424,7 +56424,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جاز (⁦GAZ⁩)"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -56439,7 +56439,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "لانشيا رالي 037"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "multi",
@@ -56454,7 +56454,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "ديلوريان (⁦DeLorean⁩)"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -56469,7 +56469,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦TAWS⁩"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -56484,7 +56484,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "الأفعى"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -56499,7 +56499,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "هوندا أوديسي"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -56514,7 +56514,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فولفو"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -56529,7 +56529,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "جالاكسي"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -56544,7 +56544,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تقليل التآكل"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -56559,7 +56559,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيه سي كوبرا"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "multi",
@@ -56574,7 +56574,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تستاروسا"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "multi",
@@ -56587,7 +56587,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "boolean",
@@ -56614,7 +56614,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 0,
         "image_url": null,
         "question_type": "boolean",
@@ -56629,7 +56629,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦MultiAir⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 1,
         "image_url": null,
         "question_type": "multi",
@@ -56644,7 +56644,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "4000"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 2,
         "image_url": null,
         "question_type": "multi",
@@ -56659,7 +56659,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦LB⁩&⁦SCR A1X⁩"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 3,
         "image_url": null,
         "question_type": "multi",
@@ -56674,7 +56674,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "إيطاليا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 4,
         "image_url": null,
         "question_type": "multi",
@@ -56689,7 +56689,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "⁦F-BVFF⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 5,
         "image_url": null,
         "question_type": "multi",
@@ -56702,7 +56702,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 6,
         "image_url": null,
         "question_type": "boolean",
@@ -56717,7 +56717,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "تويوتا بريوس"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 7,
         "image_url": null,
         "question_type": "multi",
@@ -56732,7 +56732,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بانزر-كامبف-واجن 6 تايجر"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 8,
         "image_url": null,
         "question_type": "multi",
@@ -56747,7 +56747,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "نظام ⁦ABS⁩"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 9,
         "image_url": null,
         "question_type": "multi",
@@ -56762,7 +56762,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "360"
         ],
         "correct_index": 2,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 10,
         "image_url": null,
         "question_type": "multi",
@@ -56777,7 +56777,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "باكارد"
         ],
         "correct_index": 3,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 11,
         "image_url": null,
         "question_type": "multi",
@@ -56792,7 +56792,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "روسيا"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 12,
         "image_url": null,
         "question_type": "multi",
@@ -56807,7 +56807,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "بوينغ 787-10"
         ],
         "correct_index": 1,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 13,
         "image_url": null,
         "question_type": "multi",
@@ -56820,7 +56820,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 14,
         "image_url": null,
         "question_type": "boolean",
@@ -56833,7 +56833,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "خطأ"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 15,
         "image_url": null,
         "question_type": "boolean",
@@ -56848,7 +56848,7 @@ export const QUIZ_LIBRARY: LibraryQuiz[] = [
           "فيات"
         ],
         "correct_index": 0,
-        "time_limit_seconds": 20,
+        "time_limit_seconds": 30,
         "order_index": 16,
         "image_url": null,
         "question_type": "multi",

@@ -71,7 +71,7 @@ function Home() {
         question_text: "",
         options: ["", "", "", ""],
         correct_index: 0,
-        time_limit_seconds: 20,
+        time_limit_seconds: 30,
         order_index: 0,
       });
 
@@ -195,6 +195,13 @@ function Home() {
             className="press w-full max-w-xs sm:max-w-none rounded-3xl border border-secondary/60 bg-background/60 hover:bg-background/90 px-7 py-5 font-display text-xl text-foreground backdrop-blur-md shadow-md hover:border-secondary"
           >
             🎮 {t("home.joinGame")}
+          </Link>
+
+          <Link
+            to="/custom-challenge"
+            className="press w-full max-w-xs sm:max-w-none rounded-3xl border border-sun/60 bg-sun/10 px-7 py-5 font-display text-xl text-sun shadow-md hover:bg-sun/20"
+          >
+            ⚡ {lang === "ar" ? "تحدي كويز مخصص" : "Custom Challenge"}
           </Link>
         </div>
 

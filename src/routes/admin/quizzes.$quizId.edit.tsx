@@ -131,7 +131,7 @@ function InteractiveQuizEditorPage() {
           options: Array.isArray(q.options) ? q.options : ["خيار 1", "خيار 2", "خيار 3", "خيار 4"],
           correct_index: q.correct_index ?? 0,
           question_type: (q.question_type as any) || "multi",
-          time_limit_seconds: q.time_limit_seconds || 20,
+          time_limit_seconds: q.time_limit_seconds || 30,
           order_index: q.order_index ?? idx,
           explanation: q.explanation || "",
           image_url: q.image_url || "",
@@ -157,7 +157,7 @@ function InteractiveQuizEditorPage() {
       setQType(q.question_type || "multi");
       setQOptions([...q.options]);
       setQCorrectIndex(q.correct_index);
-      setQTimeLimit(q.time_limit_seconds || 20);
+      setQTimeLimit(q.time_limit_seconds || 30);
       setQExplanation(q.explanation || "");
       setQImageUrl(q.image_url || "");
     } else {

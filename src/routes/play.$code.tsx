@@ -11,6 +11,7 @@ import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
+import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 
 import { Volume2, VolumeX } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -183,10 +184,11 @@ function Play() {
   }
 
   if (phase.kind === "ended") {
+    const categoryBreakdown = buildCategoryBreakdown(questions, answers, playerId);
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
-        <Podium rows={rows} title={quiz?.title ?? "QuizClash"} highlightPlayerId={playerId} actions />
+        <Podium rows={rows} title={quiz?.title ?? "QuizClash"} highlightPlayerId={playerId} actions categoryBreakdown={categoryBreakdown} />
       </main>
     );
   }

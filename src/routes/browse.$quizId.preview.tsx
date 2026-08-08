@@ -153,7 +153,7 @@ function QuizPreviewPage() {
                   id: `aq-${idx}`,
                   question_text: q.question_text || q.question || "سؤال",
                   options: q.options || [],
-                  time_limit_seconds: q.time_limit_seconds || 20,
+                  time_limit_seconds: q.time_limit_seconds || 30,
                   question_type: q.question_type || "multi",
                   difficulty: q.difficulty,
                   subcategory: q.subcategory,

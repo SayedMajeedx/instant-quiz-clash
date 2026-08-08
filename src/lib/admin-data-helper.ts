@@ -443,6 +443,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   }
 
   data.forEach((q: any) => {
+    if (q.quiz_kind === "custom_generated") return;
         if (q.id) dbIds.add(q.id);
         if (q.title) dbTitles.add(cleanTitle(q.title));
 

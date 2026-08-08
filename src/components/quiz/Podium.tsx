@@ -6,6 +6,7 @@ import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { sounds } from "@/lib/audio";
 import { useI18n } from "@/lib/i18n";
 import type { Standing } from "@/lib/quizclash";
+import type { CategoryBreakdown } from "@/lib/custom-quiz";
 import { cn } from "@/lib/utils";
 
 const PODIUM = [
@@ -19,11 +20,13 @@ export function Podium({
   title,
   highlightPlayerId,
   actions,
+  categoryBreakdown = [],
 }: {
   rows: Standing[];
   title: string;
   highlightPlayerId?: string | null | undefined;
   actions?: boolean;
+  categoryBreakdown?: CategoryBreakdown[];
 }) {
   const { t } = useI18n();
 
@@ -45,7 +48,11 @@ export function Podium({
             <div key={slot.rank} className={cn("flex w-1/3 flex-col items-center", slot.order)}>
               {row ? (
                 <div className="mb-3 flex animate-pop flex-col items-center text-center">
-                  <PlayerAvatar player={row.player} size={slot.rank === 1 ? "xl" : "lg"} crownRank={slot.rank} />
+                  <PlayerAvatar
+                    player={row.player}
+                    size={slot.rank === 1 ? "xl" : "lg"}
+                    crownRank={slot.rank}
+                  />
                   <span className="mt-2 max-w-full truncate font-display text-lg md:text-2xl">
                     {row.player.nickname}
                   </span>
@@ -70,8 +77,35 @@ export function Podium({
 
       <div className="mt-12">
         <h2 className="mb-4 font-display text-2xl">{t("podium.standings")}</h2>
-        <Leaderboard rows={rows} limit={rows.length} highlightPlayerId={highlightPlayerId} showDelta={false} />
+        <Leaderboard
+          rows={rows}
+          limit={rows.length}
+          highlightPlayerId={highlightPlayerId}
+          showDelta={false}
+        />
       </div>
+
+      {categoryBreakdown.length > 0 ? (
+        <div className="mt-10">
+          <h2 className="mb-4 font-display text-2xl">تحليل الأداء حسب القسم</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {categoryBreakdown.map((item) => (
+              <div
+                key={item.category}
+                className="rounded-2xl border border-border bg-surface-gradient p-4"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-bold">{item.category}</span>
+                  <span className="font-display text-xl text-primary">{item.accuracyPercent}%</span>
+                </div>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {item.correct} إجابة صحيحة من {item.answered} · {item.questionCount} سؤال
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
 
       {actions ? (
         <div className="mt-10 flex flex-wrap justify-center gap-3">

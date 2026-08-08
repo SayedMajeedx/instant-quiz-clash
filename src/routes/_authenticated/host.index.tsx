@@ -42,14 +42,18 @@ function HostCreate() {
       .eq("user_id", user.id)
       .order("created_at", { ascending: false });
     
-    let rows = (data ?? []) as unknown as Quiz[];
+    let rows = ((data ?? []) as unknown as Quiz[]).filter(
+      (quiz) => quiz.quiz_kind !== "custom_generated"
+    );
 
     // 2. Local Storage Cache Fallback & Merge (Ensures quizzes NEVER disappear)
     const localKey = `quizclash_user_quizzes_${user.id}`;
     try {
       const cachedRaw = localStorage.getItem(localKey);
       if (cachedRaw) {
-        const cachedQuizzes = JSON.parse(cachedRaw) as Quiz[];
+        const cachedQuizzes = (JSON.parse(cachedRaw) as Quiz[]).filter(
+          (quiz) => quiz.quiz_kind !== "custom_generated"
+        );
         const existingIds = new Set(rows.map((r) => r.id));
         const missingFromDb = cachedQuizzes.filter((cq) => !existingIds.has(cq.id));
         rows = [...rows, ...missingFromDb];

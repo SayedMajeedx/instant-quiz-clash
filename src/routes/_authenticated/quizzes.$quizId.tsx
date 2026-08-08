@@ -158,7 +158,7 @@ function Editor() {
         question_text: "",
         options: ["", "", "", ""],
         correct_index: 0,
-        time_limit_seconds: 20,
+        time_limit_seconds: 30,
         order_index: questions.length,
       })
       .select()
@@ -188,7 +188,7 @@ function Editor() {
       question_text: q.question_text,
       options: [0, 1, 2, 3].map((k) => q.options[k] ?? ""),
       correct_index: Math.max(0, Math.min(3, q.correct_index)),
-      time_limit_seconds: Math.max(5, Math.min(120, q.time_limit_seconds || 20)),
+      time_limit_seconds: Math.max(5, Math.min(120, q.time_limit_seconds || 30)),
       order_index: existingQuestions.length + i,
       explanation: q.explanation ?? null,
       difficulty: q.difficulty === "challenge" || q.difficulty === "hard" ? "challenge" : "standard",
@@ -432,7 +432,7 @@ function Editor() {
                     value={question.time_limit_seconds}
                     onChange={(e) =>
                       patchQuestion(question.id, {
-                        time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 20)),
+                        time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 30)),
                       })
                     }
                     className="w-20 rounded-xl border border-border bg-background/50 px-3 py-2 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"

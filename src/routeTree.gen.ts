@@ -14,6 +14,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as AdminRouteRouteImport } from './routes/admin/route'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as JoinRouteImport } from './routes/join'
+import { Route as AuthenticatedCustomChallengeRouteImport } from './routes/_authenticated/custom-challenge'
 import { Route as AdminIndexRouteImport } from './routes/admin/index'
 import { Route as AdminAnalyticsRouteImport } from './routes/admin/analytics'
 import { Route as AdminCategoriesRouteImport } from './routes/admin/categories'
@@ -54,6 +55,12 @@ const JoinRoute = JoinRouteImport.update({
   path: '/join',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedCustomChallengeRoute =
+  AuthenticatedCustomChallengeRouteImport.update({
+    id: '/custom-challenge',
+    path: '/custom-challenge',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const AdminIndexRoute = AdminIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -137,6 +144,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRouteRouteWithChildren
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/custom-challenge': typeof AuthenticatedCustomChallengeRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/categories': typeof AdminCategoriesRoute
   '/admin/import': typeof AdminImportRoute
@@ -157,6 +165,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/custom-challenge': typeof AuthenticatedCustomChallengeRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/categories': typeof AdminCategoriesRoute
   '/admin/import': typeof AdminImportRoute
@@ -180,6 +189,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRouteRouteWithChildren
   '/auth': typeof AuthRoute
   '/join': typeof JoinRoute
+  '/_authenticated/custom-challenge': typeof AuthenticatedCustomChallengeRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/categories': typeof AdminCategoriesRoute
   '/admin/import': typeof AdminImportRoute
@@ -203,6 +213,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/join'
+    | '/custom-challenge'
     | '/admin/analytics'
     | '/admin/categories'
     | '/admin/import'
@@ -223,6 +234,7 @@ export interface FileRouteTypes {
     | '/'
     | '/auth'
     | '/join'
+    | '/custom-challenge'
     | '/admin/analytics'
     | '/admin/categories'
     | '/admin/import'
@@ -245,6 +257,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/join'
+    | '/_authenticated/custom-challenge'
     | '/admin/analytics'
     | '/admin/categories'
     | '/admin/import'
@@ -310,6 +323,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/join'
       preLoaderRoute: typeof JoinRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/custom-challenge': {
+      id: '/_authenticated/custom-challenge'
+      path: '/custom-challenge'
+      fullPath: '/custom-challenge'
+      preLoaderRoute: typeof AuthenticatedCustomChallengeRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/admin/': {
       id: '/admin/'
@@ -420,6 +440,7 @@ declare module '@tanstack/react-router' {
 }
 
 interface AuthenticatedRouteRouteChildren {
+  AuthenticatedCustomChallengeRoute: typeof AuthenticatedCustomChallengeRoute
   AuthenticatedHostCodeRoute: typeof AuthenticatedHostCodeRoute
   AuthenticatedQuizzesQuizIdRoute: typeof AuthenticatedQuizzesQuizIdRoute
   AuthenticatedHostIndexRoute: typeof AuthenticatedHostIndexRoute
@@ -427,6 +448,7 @@ interface AuthenticatedRouteRouteChildren {
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedCustomChallengeRoute: AuthenticatedCustomChallengeRoute,
   AuthenticatedHostCodeRoute: AuthenticatedHostCodeRoute,
   AuthenticatedQuizzesQuizIdRoute: AuthenticatedQuizzesQuizIdRoute,
   AuthenticatedHostIndexRoute: AuthenticatedHostIndexRoute,

@@ -19,6 +19,7 @@ import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
 import { getBgmForQuiz, sounds } from "@/lib/audio";
 import { cn } from "@/lib/utils";
+import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 
 import { useWakeLock } from "@/hooks/useWakeLock";
 
@@ -320,10 +321,11 @@ function HostRoom() {
   }
 
   if (phase.kind === "ended") {
+    const categoryBreakdown = buildCategoryBreakdown(questions, answers);
     return (
       <main className="relative min-h-screen">
         <AnimatedBg dense />
-        <Podium rows={rows} title={cleanQuizTitle(quiz?.title ?? "QuizClash")} actions />
+        <Podium rows={rows} title={cleanQuizTitle(quiz?.title ?? "QuizClash")} actions categoryBreakdown={categoryBreakdown} />
       </main>
     );
   }
@@ -644,7 +646,7 @@ function HostRoom() {
   const choices = optionCount(question);
   const isLast = phase.index === questions.length - 1;
   const manual = room.advance_mode === "manual";
-  const totalMs = (question.time_limit_seconds || 20) * 1000;
+  const totalMs = (question.time_limit_seconds || 30) * 1000;
 
   const counts = [0, 0, 0, 0];
   for (const a of questionAnswers) {

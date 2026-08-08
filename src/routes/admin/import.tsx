@@ -212,7 +212,7 @@ function AdminImportPage() {
             question_text,
             options,
             correct_index: Math.max(0, Math.min(correct_index, options.length - 1)),
-            time_limit_seconds: Number(q.time_limit_seconds || q.timer || 20),
+            time_limit_seconds: Number(q.time_limit_seconds || q.timer || 30),
             question_type: q.question_type || "multiple_choice",
             image_url: q.image_url || null,
             explanation: q.explanation || null,
@@ -395,7 +395,7 @@ function AdminImportPage() {
                 question_text: q.question_text,
                 options: q.options,
                 correct_index: q.correct_index,
-                time_limit_seconds: q.time_limit_seconds || 20,
+                time_limit_seconds: q.time_limit_seconds || 30,
                 order_index: idx,
                 question_type: q.question_type || "multiple_choice",
                 image_url: q.image_url || null,
@@ -465,7 +465,7 @@ function AdminImportPage() {
             question_text: q.question_text,
             options: q.options,
             correct_index: q.correct_index,
-            time_limit_seconds: q.time_limit_seconds || 20,
+            time_limit_seconds: q.time_limit_seconds || 30,
             order_index: idx,
             question_type: q.question_type || "multiple_choice",
             image_url: q.image_url || null,
@@ -481,7 +481,7 @@ function AdminImportPage() {
               question_text: q.question_text,
               options: q.options,
               correct_index: q.correct_index,
-              time_limit_seconds: q.time_limit_seconds || 20,
+              time_limit_seconds: q.time_limit_seconds || 30,
               order_index: idx,
             }));
             const { error: qErr2 } = await db.from("questions").insert(questionInsertsMinimal);
@@ -878,7 +878,7 @@ function AdminImportPage() {
                     {idx + 1}. {q.question_text}
                   </span>
                   <Badge variant="outline" className="text-[10px] shrink-0 rounded-lg">
-                    ⏱️ {q.time_limit_seconds || 20} ثانية
+                    ⏱️ {q.time_limit_seconds || 30} ثانية
                   </Badge>
                 </div>
 

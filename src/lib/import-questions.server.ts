@@ -5,7 +5,7 @@ export const parsedQuestionSchema = z.object({
   question_text: z.string().trim().min(1).max(400),
   options: z.array(z.string().trim().min(1).max(200)).length(4),
   correct_index: z.number().int().min(0).max(3),
-  time_limit_seconds: z.number().int().min(5).max(120).default(20),
+  time_limit_seconds: z.number().int().min(5).max(120).default(30),
   padded_options: z.boolean().default(false),
   inferred_correct: z.boolean().default(false),
   ambiguous_split: z.boolean().default(false),
@@ -35,13 +35,13 @@ Rules:
 - If the source has fewer than 4 options, invent plausible distractors and set "padded_options": true.
 - If the source has more than 4, keep the correct one plus the 3 strongest distractors and set "padded_options": true.
 - "correct_index" is the 0-based index of the correct option. If the source does not explicitly state the answer, pick the factually correct option and set "inferred_correct": true.
-- "time_limit_seconds" defaults to 20 unless the text specifies a time.
+- "time_limit_seconds" defaults to 30 unless the text specifies a time.
 - Set "ambiguous_split": true when you were unsure where one question ended and the next began.
 - Handle any layout: A/B/C/D labels, numbered lists, inline comma-separated options, bullet points, or loose trivia notes.
 - If the text contains no quiz-like content at all, return {"questions": []}.
 
 Respond with ONLY strict JSON matching:
-{"questions":[{"question_text":"string","options":["s","s","s","s"],"correct_index":0,"time_limit_seconds":20,"padded_options":false,"inferred_correct":false,"ambiguous_split":false}]}
+{"questions":[{"question_text":"string","options":["s","s","s","s"],"correct_index":0,"time_limit_seconds":30,"padded_options":false,"inferred_correct":false,"ambiguous_split":false}]}
 No markdown, no code fences, no commentary.`;
 
 const STRICTER_SUFFIX = `
@@ -114,12 +114,12 @@ Strict Rules:
 - Distractors must be plausible, well-matched, and non-trivial.
 - Keep question text under 140 characters and options under 60 characters so they fit nicely on mobile screens.
 - Vary the position of the correct answer (correct_index between 0 and 3).
-- "time_limit_seconds" should be 20 by default.
+- "time_limit_seconds" should be 30 by default.
 - Set "padded_options", "inferred_correct", and "ambiguous_split" to false.
 - Write strictly in the specified target language (Arabic if language is "ar", English if language is "en").
 
 Respond with ONLY strict JSON matching:
-{"questions":[{"question_text":"string","options":["s","s","s","s"],"correct_index":0,"time_limit_seconds":20,"padded_options":false,"inferred_correct":false,"ambiguous_split":false}]}
+{"questions":[{"question_text":"string","options":["s","s","s","s"],"correct_index":0,"time_limit_seconds":30,"padded_options":false,"inferred_correct":false,"ambiguous_split":false}]}
 No markdown, no code fences, no commentary.`;
 
 /**
