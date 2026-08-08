@@ -58,6 +58,7 @@ import {
   saveLocalQuizOverride,
   saveLocalSubcategory,
   isUUID,
+  deleteAdminQuizzes,
   type AdminCategoryItem,
 } from "@/lib/admin-data-helper";
 
@@ -355,26 +356,18 @@ export function AdminQuizzesPage() {
   // Bulk delete
   const handleBulkDelete = async () => {
     setActionLoading(true);
-    const selectedArray = Array.from(selectedIds);
-
     try {
-      const validUuidIds = selectedArray.filter((id) => isUUID(id));
-      if (validUuidIds.length > 0) {
-        // Delete questions first
-        await (supabase.from("questions") as any).delete().in("quiz_id", validUuidIds);
-        // Delete quizzes
-        const { error } = await (supabase.from("quizzes") as any).delete().in("id", validUuidIds);
-
-        if (error) {
-          console.warn("Bulk delete note:", error.message);
-        }
-      }
+      const selectedQuizzes = quizzes
+        .filter((quiz) => selectedIds.has(quiz.id))
+        .map(({ id, title }) => ({ id, title }));
+      await deleteAdminQuizzes(selectedQuizzes);
 
       setQuizzes((prev) => prev.filter((item) => !selectedIds.has(item.id)));
       toast.success(`تم حذف ${selectedIds.size} كويز بنجاح`);
       setIsBulkDeleteOpen(false);
       setSelectedIds(new Set());
-    } catch {
+    } catch (error) {
+      console.error("Bulk quiz deletion failed:", error);
       toast.error("حدث خطأ أثناء حذف الكويزات المحددة");
     } finally {
       setActionLoading(false);
@@ -387,20 +380,14 @@ export function AdminQuizzesPage() {
     setActionLoading(true);
 
     try {
-      if (isUUID(quizToDelete.id)) {
-        await (supabase.from("questions") as any).delete().eq("quiz_id", quizToDelete.id);
-        const { error } = await (supabase.from("quizzes") as any).delete().eq("id", quizToDelete.id);
-
-        if (error) {
-          console.warn("Delete note:", error.message);
-        }
-      }
+      await deleteAdminQuizzes([{ id: quizToDelete.id, title: quizToDelete.title }]);
 
       setQuizzes((prev) => prev.filter((item) => item.id !== quizToDelete.id));
       toast.success("تم حذف الكويز بنجاح");
       setIsSingleDeleteOpen(false);
       setQuizToDelete(null);
-    } catch {
+    } catch (error) {
+      console.error("Quiz deletion failed:", error);
       toast.error("فشل حذف الكويز");
     } finally {
       setActionLoading(false);
