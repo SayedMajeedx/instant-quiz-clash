@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import {
@@ -17,6 +17,8 @@ import {
   CheckCircle2,
   RefreshCw,
   Sparkles,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -60,6 +62,11 @@ function UserManagementPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [roleFilter, setRoleFilter] = useState<"all" | "admin" | "user">("all");
   const [currentUserId, setCurrentUserId] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
+  const [filteredTotal, setFilteredTotal] = useState(0);
+  const [totalUsers, setTotalUsers] = useState(0);
+  const [totalAdmins, setTotalAdmins] = useState(0);
+  const pageSize = 10;
 
   const fetchUsers = async () => {
     setLoading(true);
@@ -70,7 +77,12 @@ function UserManagementPage() {
         setCurrentUserId(authData.user.id);
       }
 
-      const { data: directory, error: profileError } = await (supabase.rpc as any)("admin_user_directory");
+      const { data: result, error: profileError } = await (supabase.rpc as any)("admin_user_directory_page", {
+        p_page: page,
+        p_page_size: pageSize,
+        p_search: searchQuery.trim(),
+        p_role: roleFilter,
+      });
 
       if (profileError) {
         console.error("Error fetching profiles:", profileError);
@@ -79,7 +91,7 @@ function UserManagementPage() {
         return;
       }
 
-      const formattedUsers: UserProfile[] = (directory || []).map((p: any) => ({
+      const formattedUsers: UserProfile[] = (result?.items || []).map((p: any) => ({
         id: p.id,
         display_name: p.name || p.display_name || p.email?.split("@")[0] || "مستخدم",
         email: p.email || "",
@@ -89,6 +101,9 @@ function UserManagementPage() {
       }));
 
       setUsers(formattedUsers);
+      setFilteredTotal(Number(result?.filtered_total || 0));
+      setTotalUsers(Number(result?.total_users || 0));
+      setTotalAdmins(Number(result?.total_admins || 0));
     } catch (err) {
       console.error("Unexpected error in fetchUsers:", err);
       toast.error("حدث خطأ أثناء تحميل بيانات المستخدمين");
@@ -98,8 +113,13 @@ function UserManagementPage() {
   };
 
   useEffect(() => {
-    fetchUsers();
-  }, []);
+    const timer = window.setTimeout(() => void fetchUsers(), 250);
+    return () => window.clearTimeout(timer);
+  }, [page, searchQuery, roleFilter]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [searchQuery, roleFilter]);
 
   // Update Role handler
   const handleUpdateRole = async (userId: string, newRole: "admin" | "user") => {
@@ -134,25 +154,8 @@ function UserManagementPage() {
     }
   };
 
-  // Filtered users based on search and role
-  const filteredUsers = useMemo(() => {
-    return users.filter((user) => {
-      const matchesSearch =
-        user.display_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (user.email && user.email.toLowerCase().includes(searchQuery.toLowerCase()));
-
-      const matchesRole =
-        roleFilter === "all" ||
-        (roleFilter === "admin" && user.role === "admin") ||
-        (roleFilter === "user" && user.role === "user");
-
-      return matchesSearch && matchesRole;
-    });
-  }, [users, searchQuery, roleFilter]);
-
-  // Statistics summaries
-  const totalAdmins = useMemo(() => users.filter((u) => u.role === "admin").length, [users]);
-  const totalStandardUsers = useMemo(() => users.filter((u) => u.role === "user").length, [users]);
+  const totalStandardUsers = totalUsers - totalAdmins;
+  const totalPages = Math.max(1, Math.ceil(filteredTotal / pageSize));
 
   return (
     <div className="space-y-8 pb-10" dir="rtl">
@@ -186,7 +189,7 @@ function UserManagementPage() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-xs font-semibold text-muted-foreground">إجمالي الحسابات المسجلة</p>
-              <p className="font-display text-3xl font-extrabold mt-1">{loading ? "..." : users.length}</p>
+              <p className="font-display text-3xl font-extrabold mt-1">{loading ? "..." : totalUsers}</p>
             </div>
             <div className="flex size-11 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400">
               <Users className="size-5" />
@@ -241,7 +244,7 @@ function UserManagementPage() {
                 <SelectValue placeholder="تصفية الصلاحية" />
               </SelectTrigger>
               <SelectContent className="rounded-xl">
-                <SelectItem value="all">كافة الصلاحيات ({users.length})</SelectItem>
+                <SelectItem value="all">كافة الصلاحيات ({totalUsers})</SelectItem>
                 <SelectItem value="admin">مسؤول فقط ({totalAdmins})</SelectItem>
                 <SelectItem value="user">مستخدم عادي ({totalStandardUsers})</SelectItem>
               </SelectContent>
@@ -257,7 +260,7 @@ function UserManagementPage() {
             <div>
               <CardTitle className="font-display text-xl font-bold flex items-center gap-2">
                 <Users className="size-5 text-primary" />
-                قائمة الحسابات ({filteredUsers.length})
+                قائمة الحسابات ({filteredTotal})
               </CardTitle>
               <CardDescription className="text-xs mt-1">
                 إدارة أذونات المستخدمين وتعديل الصلاحية بضغطة زر
@@ -280,7 +283,7 @@ function UserManagementPage() {
                 </div>
               ))}
             </div>
-          ) : filteredUsers.length > 0 ? (
+          ) : users.length > 0 ? (
             <table className="w-full text-right text-sm">
               <thead className="bg-muted/40 text-xs font-semibold text-muted-foreground border-b border-border/50">
                 <tr>
@@ -292,7 +295,7 @@ function UserManagementPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-border/40">
-                {filteredUsers.map((user) => {
+                {users.map((user) => {
                   const isCurrent = user.id === currentUserId;
                   const isAdmin = user.role === "admin";
                   const isUpdating = updatingId === user.id;
@@ -428,6 +431,22 @@ function UserManagementPage() {
             </div>
           )}
         </CardContent>
+        {!loading && filteredTotal > 0 ? (
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border/50 px-6 py-4">
+            <p className="text-xs text-muted-foreground">
+              عرض {(page - 1) * pageSize + 1}–{Math.min(page * pageSize, filteredTotal)} من {filteredTotal} حساب
+            </p>
+            <div className="flex items-center gap-2" dir="ltr">
+              <Button variant="outline" size="sm" className="rounded-xl" disabled={page <= 1} onClick={() => setPage((value) => value - 1)}>
+                <ChevronLeft className="size-4" />
+              </Button>
+              <span className="min-w-20 text-center text-xs font-semibold">{page} / {totalPages}</span>
+              <Button variant="outline" size="sm" className="rounded-xl" disabled={page >= totalPages} onClick={() => setPage((value) => value + 1)}>
+                <ChevronRight className="size-4" />
+              </Button>
+            </div>
+          </div>
+        ) : null}
       </Card>
     </div>
   );
