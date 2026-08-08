@@ -102,7 +102,7 @@ function AdminCategoriesPage() {
   const [isCatModalOpen, setIsCatModalOpen] = useState(false);
   const [editingCat, setEditingCat] = useState<CategoryRecord | null>(null);
   const [catName, setCatName] = useState("");
-  const [catSlug, setCatNameSlug] = useState("");
+  const [catSlug, setCatSlug] = useState("");
   const [catSaving, setCatSaving] = useState(false);
 
   // Subcategory Dialog state
