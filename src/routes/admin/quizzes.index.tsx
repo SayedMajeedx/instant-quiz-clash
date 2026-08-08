@@ -1,7 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { toast } from "sonner";
 import {
   Search,
@@ -23,6 +22,8 @@ import {
   X,
   Check,
   AlertTriangle,
+  Download,
+  ScanSearch,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -61,6 +62,7 @@ import {
   deleteAdminQuizzes,
   type AdminCategoryItem,
 } from "@/lib/admin-data-helper";
+import { buildCatalogExport, buildDuplicateReport, downloadJson } from "@/lib/quiz-export";
 
 export const Route = createFileRoute("/admin/quizzes/")({
   component: AdminQuizzesPage,
@@ -400,6 +402,19 @@ export function AdminQuizzesPage() {
     void navigate({ to: "/host" as any, search: { quizId } as any });
   };
 
+  const exportDate = () => new Date().toISOString().slice(0, 10);
+
+  const handleExportCatalog = () => {
+    downloadJson(`quizclash-catalog-${exportDate()}.json`, buildCatalogExport(quizzes));
+    toast.success(`تم تصدير ${quizzes.length} كويز بنجاح`);
+  };
+
+  const handleExportDuplicates = () => {
+    const report = buildDuplicateReport(quizzes);
+    downloadJson(`quizclash-duplicate-report-${exportDate()}.json`, report);
+    toast.success(`تم إنشاء تقرير المكررات: ${report.summary.exact_duplicate_groups} مجموعة مطابقة`);
+  };
+
   return (
     <div dir="rtl" className="space-y-6">
       {/* Top Header & Action */}
@@ -417,15 +432,25 @@ export function AdminQuizzesPage() {
           </p>
         </div>
 
-        <Button
-          asChild
-          className="rounded-2xl bg-primary px-5 py-2.5 font-semibold text-primary-foreground shadow-md hover:bg-primary/90"
-        >
-          <Link to="/admin/quizzes/$quizId/edit" params={{ quizId: "new" } as any}>
-            <Plus className="ml-2 size-4" />
-            <span>إنشاء كويز جديد</span>
-          </Link>
-        </Button>
+        <div className="flex flex-wrap items-center gap-2">
+          <Button variant="outline" disabled={loading || quizzes.length === 0} onClick={handleExportDuplicates} className="rounded-2xl">
+            <ScanSearch className="ml-2 size-4" />
+            تقرير المكررات
+          </Button>
+          <Button variant="outline" disabled={loading || quizzes.length === 0} onClick={handleExportCatalog} className="rounded-2xl">
+            <Download className="ml-2 size-4" />
+            تصدير JSON
+          </Button>
+          <Button
+            asChild
+            className="rounded-2xl bg-primary px-5 py-2.5 font-semibold text-primary-foreground shadow-md hover:bg-primary/90"
+          >
+            <Link to="/admin/quizzes/$quizId/edit" params={{ quizId: "new" } as any}>
+              <Plus className="ml-2 size-4" />
+              <span>إنشاء كويز جديد</span>
+            </Link>
+          </Button>
+        </div>
       </div>
 
       {/* Filter and Search Bar */}
