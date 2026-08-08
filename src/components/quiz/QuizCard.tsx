@@ -1,3 +1,4 @@
+import { recordQuizPlay } from "@/lib/quiz-stats.functions";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";

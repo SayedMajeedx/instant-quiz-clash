@@ -1,3 +1,4 @@
+import { recordQuizPlay } from "@/lib/quiz-stats.functions";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
@@ -199,7 +200,7 @@ function CarouselQuizCard({ quiz }: { quiz: PublicQuiz }) {
         return;
       }
 
-      void (supabase.rpc as any)("record_quiz_play", { p_source_id: quiz.id });
+      void recordQuizPlay({ data: { sourceId: quiz.id } }).catch(() => {});
 
       toast.success(t("browse.cloned") || "تم تجهيز الكويز للعب!");
       void navigate({ to: "/host", search: { quiz: res.newQuizId } });
