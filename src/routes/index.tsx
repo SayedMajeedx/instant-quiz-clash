@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { Gamepad2, LibraryBig, Sparkles, Zap } from "lucide-react";
@@ -10,6 +10,8 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { useI18n } from "@/lib/i18n";
+import { getAllAdminQuizzes } from "@/lib/admin-data-helper";
+import { getCategoryIcon } from "@/lib/browse-helpers";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +39,39 @@ function Home() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const [creating, setCreating] = useState(false);
+  const [libraryStats, setLibraryStats] = useState<{
+    quizzes: number;
+    questions: number;
+    categories: Array<{ label: string; icon: string; count: number }>;
+  } | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    void getAllAdminQuizzes()
+      .then((catalog) => {
+        if (!active) return;
+        const playable = catalog.filter((quiz) => quiz.is_public);
+        const categoryCounts = new Map<string, number>();
+        for (const quiz of playable) {
+          const category = (quiz.category || "عام").trim();
+          categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+        }
+        const categories = [...categoryCounts.entries()]
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ar"))
+          .slice(0, 6)
+          .map(([label, count]) => ({ label, count, icon: getCategoryIcon(label) }));
+
+        setLibraryStats({
+          quizzes: playable.length,
+          questions: playable.reduce((sum, quiz) => sum + quiz.question_count, 0),
+          categories,
+        });
+      })
+      .catch((error) => console.error("Failed to load homepage catalog figures:", error));
+    return () => {
+      active = false;
+    };
+  }, []);
 
   async function signOut() {
     await queryClient.cancelQueries();
@@ -94,15 +129,6 @@ function Home() {
     { t: t("home.f2.t"), d: t("home.f2.d") },
     { t: t("home.f3.t"), d: t("home.f3.d") },
     { t: t("home.f4.t"), d: t("home.f4.d") },
-  ];
-
-  const categories = [
-    { label: lang === "ar" ? "أنمي ومانغا" : "Anime", icon: "⚔️" },
-    { label: lang === "ar" ? "كرة قدم ورياضة" : "Sports", icon: "⚽" },
-    { label: lang === "ar" ? "تاريخ وحضارات" : "History", icon: "📜" },
-    { label: lang === "ar" ? "جغرافيا وعواصم" : "Geography", icon: "🌍" },
-    { label: lang === "ar" ? "ثقافة ومعلومات عامة" : "Trivia", icon: "💡" },
-    { label: lang === "ar" ? "أفلام ومسلسلات" : "Movies & TV", icon: "🎬" },
   ];
 
   return (
@@ -296,17 +322,17 @@ function Home() {
                   📚 {lang === "ar" ? "مكتبة جاهزة للعب" : "Ready-to-Play Library"}
                 </span>
                 <span className="rounded-full border border-sun/40 bg-sun/10 px-3.5 py-1 text-xs font-bold text-sun">
-                  ⚡ 370+ {lang === "ar" ? "كويز" : "Quizzes"}
+                  ⚡ {libraryStats ? libraryStats.quizzes.toLocaleString(lang === "ar" ? "ar-BH" : "en-US") : "…"} {lang === "ar" ? "كويز" : "Quizzes"}
                 </span>
                 <span className="rounded-full border border-border bg-background/50 px-3.5 py-1 text-xs font-bold text-muted-foreground">
-                  5,000+ {lang === "ar" ? "سؤال" : "Questions"}
+                  {libraryStats ? libraryStats.questions.toLocaleString(lang === "ar" ? "ar-BH" : "en-US") : "…"} {lang === "ar" ? "سؤال" : "Questions"}
                 </span>
               </div>
 
               <h2 className="mt-4 font-display text-2xl sm:text-4xl text-gradient">
                 {lang === "ar"
-                  ? "تصفح مئات الكويزات جاهزة للإطلاق فوراً"
-                  : "Explore Hundreds of Ready-Made Quizzes"}
+                  ? `تصفح ${libraryStats?.quizzes.toLocaleString("ar-BH") || ""} كويزاً جاهزاً للإطلاق فوراً`
+                  : `Explore ${libraryStats?.quizzes.toLocaleString("en-US") || ""} Ready-Made Quizzes`}
               </h2>
 
               <p className="mt-2 text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
@@ -317,13 +343,14 @@ function Home() {
 
               {/* Category Pills Spotlight */}
               <div className="mt-4 flex flex-wrap gap-2">
-                {categories.map((cat) => (
+                {(libraryStats?.categories || []).map((cat) => (
                   <span
                     key={cat.label}
                     className="flex items-center gap-1.5 rounded-xl border border-border/80 bg-background/60 px-3 py-1.5 text-xs font-semibold text-foreground/90 shadow-sm"
                   >
                     <span>{cat.icon}</span>
                     <span>{cat.label}</span>
+                    <span className="rounded-full bg-primary/15 px-1.5 py-0.5 text-[10px] font-extrabold text-primary">{cat.count}</span>
                   </span>
                 ))}
               </div>
