@@ -269,44 +269,62 @@ export type Database = {
         Row: {
           correct_index: number
           created_at: string
+          difficulty: string
           explanation: string | null
+          external_id: string | null
           id: string
           image_url: string | null
+          is_verified: boolean
           options: Json
           order_index: number
           question_text: string
           question_type: string
           quiz_id: string
+          source: string | null
           subcategory: string | null
+          tags: string[]
           time_limit_seconds: number
+          version: number
         }
         Insert: {
           correct_index?: number
           created_at?: string
+          difficulty?: string
           explanation?: string | null
+          external_id?: string | null
           id?: string
           image_url?: string | null
+          is_verified?: boolean
           options?: Json
           order_index?: number
           question_text?: string
           question_type?: string
           quiz_id: string
+          source?: string | null
           subcategory?: string | null
+          tags?: string[]
           time_limit_seconds?: number
+          version?: number
         }
         Update: {
           correct_index?: number
           created_at?: string
+          difficulty?: string
           explanation?: string | null
+          external_id?: string | null
           id?: string
           image_url?: string | null
+          is_verified?: boolean
           options?: Json
           order_index?: number
           question_text?: string
           question_type?: string
           quiz_id?: string
+          source?: string | null
           subcategory?: string | null
+          tags?: string[]
           time_limit_seconds?: number
+          version?: number
         }
         Relationships: [
           {
