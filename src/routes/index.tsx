@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
+import { Gamepad2, LibraryBig, Sparkles, Zap } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { useIsAdmin } from "@/hooks/useIsAdmin";
 import { supabase } from "@/integrations/supabase/client";
@@ -171,37 +172,73 @@ function Home() {
         </p>
 
         {/* Clear Action Hierarchy: Single Primary CTA + Clean Secondary Outlines */}
-        <div className="mt-10 flex flex-col items-center justify-center gap-3.5 sm:flex-row">
+        <div className="mx-auto mt-10 grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {/* PRIMARY DOMINANT CTA - CREATE QUIZ -> BLANK QUIZ EDITOR */}
           <button
             type="button"
             disabled={creating}
             onClick={() => void handleCreateQuiz()}
-            className="press w-full max-w-xs sm:max-w-none rounded-3xl bg-gradient-hero px-9 py-5 font-display text-2xl text-primary-foreground shadow-chunky transition-transform hover:scale-[1.02] disabled:opacity-50"
+            className="group press relative min-h-36 overflow-hidden rounded-[2rem] border border-primary/60 bg-gradient-to-br from-primary/35 via-secondary/20 to-background/80 p-5 text-start shadow-[0_18px_50px_-24px_hsl(var(--primary)/0.9)] backdrop-blur-xl disabled:opacity-50"
           >
-            ✨ {creating ? t("quizzes.loading") : t("home.createQuiz")}
+            <span className="absolute -end-10 -top-12 h-32 w-32 rounded-full bg-primary/30 blur-3xl transition-transform duration-500 group-hover:scale-150" />
+            <span className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-hero text-primary-foreground shadow-glow">
+              <Sparkles className="h-6 w-6" />
+            </span>
+            <span className="relative mt-5 block font-display text-xl text-foreground">
+              {creating ? t("quizzes.loading") : t("home.createQuiz")}
+            </span>
+            <span className="relative mt-1 block text-xs font-semibold text-primary">
+              {lang === "ar" ? "صمّمها بطريقتك" : "Build it your way"}
+            </span>
           </button>
 
           {/* SECONDARY OUTLINE CTAs */}
           <Link
             to="/browse"
-            className="press w-full max-w-xs sm:max-w-none rounded-3xl border border-primary/50 bg-background/60 hover:bg-background/90 px-7 py-5 font-display text-xl text-primary backdrop-blur-md shadow-md hover:border-primary"
+            className="group press relative min-h-36 overflow-hidden rounded-[2rem] border border-violet-400/50 bg-gradient-to-br from-violet-500/20 via-primary/10 to-background/80 p-5 text-start shadow-[0_18px_50px_-28px_hsl(var(--primary)/0.8)] backdrop-blur-xl"
           >
-            📚 {t("browse.title")}
+            <span className="absolute -end-10 -top-12 h-32 w-32 rounded-full bg-violet-500/25 blur-3xl transition-transform duration-500 group-hover:scale-150" />
+            <span className="relative flex h-12 w-12 items-center justify-center rounded-2xl border border-violet-400/40 bg-violet-500/20 text-violet-300">
+              <LibraryBig className="h-6 w-6" />
+            </span>
+            <span className="relative mt-5 block font-display text-xl text-foreground">
+              {t("browse.title")}
+            </span>
+            <span className="relative mt-1 block text-xs font-semibold text-violet-300">
+              {lang === "ar" ? "اختر من المكتبة" : "Explore the library"}
+            </span>
           </Link>
 
           <Link
             to="/join"
-            className="press w-full max-w-xs sm:max-w-none rounded-3xl border border-secondary/60 bg-background/60 hover:bg-background/90 px-7 py-5 font-display text-xl text-foreground backdrop-blur-md shadow-md hover:border-secondary"
+            className="group press relative min-h-36 overflow-hidden rounded-[2rem] border border-cyan-400/45 bg-gradient-to-br from-cyan-500/20 via-blue-500/10 to-background/80 p-5 text-start shadow-[0_18px_50px_-28px_rgba(34,211,238,0.7)] backdrop-blur-xl"
           >
-            🎮 {t("home.joinGame")}
+            <span className="absolute -end-10 -top-12 h-32 w-32 rounded-full bg-cyan-400/20 blur-3xl transition-transform duration-500 group-hover:scale-150" />
+            <span className="relative flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-400/40 bg-cyan-500/20 text-cyan-300">
+              <Gamepad2 className="h-6 w-6" />
+            </span>
+            <span className="relative mt-5 block font-display text-xl text-foreground">
+              {t("home.joinGame")}
+            </span>
+            <span className="relative mt-1 block text-xs font-semibold text-cyan-300">
+              {lang === "ar" ? "ادخل برمز الغرفة" : "Enter a room code"}
+            </span>
           </Link>
 
           <Link
             to="/custom-challenge"
-            className="press w-full max-w-xs sm:max-w-none rounded-3xl border border-sun/60 bg-sun/10 px-7 py-5 font-display text-xl text-sun shadow-md hover:bg-sun/20"
+            className="group press relative min-h-36 overflow-hidden rounded-[2rem] border border-sun/55 bg-gradient-to-br from-sun/20 via-orange-500/10 to-background/80 p-5 text-start shadow-[0_18px_50px_-28px_rgba(251,191,36,0.7)] backdrop-blur-xl"
           >
-            ⚡ {lang === "ar" ? "تحدي كويز مخصص" : "Custom Challenge"}
+            <span className="absolute -end-10 -top-12 h-32 w-32 rounded-full bg-sun/25 blur-3xl transition-transform duration-500 group-hover:scale-150" />
+            <span className="relative flex h-12 w-12 items-center justify-center rounded-2xl border border-sun/40 bg-sun/15 text-sun">
+              <Zap className="h-6 w-6" />
+            </span>
+            <span className="relative mt-5 block font-display text-xl text-foreground">
+              {lang === "ar" ? "تحدي كويز مخصص" : "Custom Challenge"}
+            </span>
+            <span className="relative mt-1 block text-xs font-semibold text-sun">
+              {lang === "ar" ? "اصنع تحدياً فورياً" : "Generate an instant challenge"}
+            </span>
           </Link>
         </div>
 
