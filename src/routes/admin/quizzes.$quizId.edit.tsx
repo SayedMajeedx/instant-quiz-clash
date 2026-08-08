@@ -221,8 +221,8 @@ function InteractiveQuizEditorPage() {
     if (targetIndex < 0 || targetIndex >= questions.length) return;
 
     const updated = [...questions];
-    const temp = updated[index];
-    updated[index] = updated[targetIndex];
+    const temp = updated[index]!;
+    updated[index] = updated[targetIndex]!;
     updated[targetIndex] = temp;
 
     updated.forEach((q, i) => {
