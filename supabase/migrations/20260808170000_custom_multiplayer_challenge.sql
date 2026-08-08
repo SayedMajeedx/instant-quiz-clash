@@ -43,7 +43,11 @@ LANGUAGE sql STABLE SECURITY DEFINER SET search_path = public, pg_temp AS $$
     question.source_category
   FROM public.questions AS question
   JOIN public.rooms AS room ON room.quiz_id = question.quiz_id
-  WHERE room.id = p_room_id AND public.room_is_live(room.id)
+  WHERE room.id = p_room_id
+    AND CASE
+          WHEN room.status = 'ended' THEN room.created_at > now() - interval '1 hour'
+          ELSE room.created_at > now() - interval '12 hours'
+        END
   ORDER BY question.order_index;
 $$;
 REVOKE ALL ON FUNCTION public.room_questions(uuid) FROM PUBLIC;
