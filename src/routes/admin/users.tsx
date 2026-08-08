@@ -70,11 +70,7 @@ function UserManagementPage() {
         setCurrentUserId(authData.user.id);
       }
 
-      // Fetch profiles
-      const { data: profiles, error: profileError } = await supabase
-        .from("profiles")
-        .select("*")
-        .order("created_at", { ascending: false });
+      const { data: directory, error: profileError } = await (supabase.rpc as any)("admin_user_directory");
 
       if (profileError) {
         console.error("Error fetching profiles:", profileError);
@@ -83,27 +79,13 @@ function UserManagementPage() {
         return;
       }
 
-      // Fetch game host counts per user
-      const { data: gameCounts } = await (supabase.from("game_results") as any)
-        .select("host_id");
-
-      const gamesMap = new Map<string, number>();
-      if (gameCounts) {
-        gameCounts.forEach((g: any) => {
-          if (g.host_id) {
-            gamesMap.set(g.host_id, (gamesMap.get(g.host_id) || 0) + 1);
-          }
-        });
-      }
-
-      // Format profiles
-      const formattedUsers: UserProfile[] = (profiles || []).map((p: any) => ({
+      const formattedUsers: UserProfile[] = (directory || []).map((p: any) => ({
         id: p.id,
         display_name: p.name || p.display_name || p.email?.split("@")[0] || "مستخدم",
-        email: p.email || `${p.id.substring(0, 8)}@quizclash.app`,
+        email: p.email || "",
         role: (p.role === "admin" || p.role === "super_admin" || p.role === "owner") ? "admin" : "user",
         created_at: p.created_at || new Date().toISOString(),
-        total_games_hosted: gamesMap.get(p.id) || 0,
+        total_games_hosted: Number(p.total_games_hosted || 0),
       }));
 
       setUsers(formattedUsers);
@@ -126,10 +108,10 @@ function UserManagementPage() {
 
     try {
       // Supabase database update
-      const { error } = await supabase
-        .from("profiles")
-        .update({ role: newRole } as any)
-        .eq("id", userId);
+      const { error } = await (supabase.rpc as any)("admin_set_user_role", {
+        p_user_id: userId,
+        p_role: newRole,
+      });
 
       if (error) {
         console.error("Failed to update role:", error);

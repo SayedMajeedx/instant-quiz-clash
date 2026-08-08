@@ -33,6 +33,7 @@ function BrowseLandingPage() {
 
   const [quizzes, setQuizzes] = useState<PublicQuiz[]>([]);
   const [categoriesList, setCategoriesList] = useState<AdminCategoryItem[]>([]);
+  const [playStats, setPlayStats] = useState<Record<string, { count: number; lastPlayedAt: string }>>({});
   const [loading, setLoading] = useState(true);
 
   // Search state
@@ -43,9 +44,10 @@ function BrowseLandingPage() {
     void (async () => {
       setLoading(true);
       try {
-        const [adminQuizzes, adminCategories] = await Promise.all([
+        const [adminQuizzes, adminCategories, statsResult] = await Promise.all([
           getAllAdminQuizzes(),
           getAllAdminCategories(),
+          supabase.from("quiz_play_stats").select("source_quiz_id, play_count, last_played_at"),
         ]);
 
         const publicQuizzes: PublicQuiz[] = adminQuizzes
@@ -65,6 +67,11 @@ function BrowseLandingPage() {
 
         setQuizzes(publicQuizzes);
         setCategoriesList(adminCategories);
+        const nextStats: Record<string, { count: number; lastPlayedAt: string }> = {};
+        for (const row of statsResult.data || []) {
+          nextStats[row.source_quiz_id] = { count: row.play_count, lastPlayedAt: row.last_played_at };
+        }
+        setPlayStats(nextStats);
       } catch {
         // Fallback
       } finally {
@@ -95,51 +102,20 @@ function BrowseLandingPage() {
       return dateB - dateA;
     });
 
-    // 2. Pick top 3 Latest quizzes
-    const latest3 = sortedByDate.slice(0, 3);
-    const usedIds = new Set(latest3.map((q) => q.id));
+    const latest = sortedByDate.slice(0, 2);
+    const usedIds = new Set(latest.map((q) => q.id));
+    const popular = [...quizzes]
+      .filter((q) => !usedIds.has(q.id))
+      .sort((a, b) => {
+        const aStat = playStats[a.id];
+        const bStat = playStats[b.id];
+        return (bStat?.count || 0) - (aStat?.count || 0)
+          || new Date(bStat?.lastPlayedAt || b.created_at || 0).getTime() - new Date(aStat?.lastPlayedAt || a.created_at || 0).getTime();
+      })
+      .slice(0, 2);
 
-    // 3. Pick top 3 Popular/Featured quizzes across diverse categories
-    const remaining = quizzes.filter((q) => !usedIds.has(q.id));
-
-    const popular3: PublicQuiz[] = [];
-    const featuredCats = [
-      "سلسلة مسابقات أهل البيت (ع)",
-      "أنمي",
-      "معلومات عامة",
-      "تاريخ",
-      "جغرافيا",
-      "علوم وطب",
-      "تكنولوجيا",
-      "رياضة",
-    ];
-
-    for (const cat of featuredCats) {
-      if (popular3.length >= 3) break;
-      const match = remaining.find(
-        (q) => q.category === cat && !popular3.some((p) => p.id === q.id)
-      );
-      if (match) popular3.push(match);
-    }
-
-    // Fallback if needed
-    while (popular3.length < 3 && remaining.length > popular3.length) {
-      const next = remaining.find((q) => !popular3.some((p) => p.id === q.id));
-      if (next) popular3.push(next);
-      else break;
-    }
-
-    // Interleave Latest and Popular
-    const hybrid: PublicQuiz[] = [];
-    for (let i = 0; i < 3; i++) {
-      const itemL = latest3[i];
-      if (itemL) hybrid.push(itemL);
-      const itemP = popular3[i];
-      if (itemP) hybrid.push(itemP);
-    }
-
-    return hybrid;
-  }, [quizzes]);
+    return [latest[0], popular[0], latest[1], popular[1]].filter(Boolean) as PublicQuiz[];
+  }, [quizzes, playStats]);
 
   // Search filtered results
   const searchResults = useMemo(() => {
@@ -272,7 +248,7 @@ function BrowseLandingPage() {
                 </span>
               </div>
 
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 [&>div]:rounded-2xl [&>div]:p-4 [&_h2]:text-lg [&_h2]:mt-2 [&>div>div:last-child]:mt-3">
                 {popularQuizzes.map((quiz) => (
                   <QuizCard key={quiz.id} quiz={quiz} />
                 ))}

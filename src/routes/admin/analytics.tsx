@@ -15,7 +15,6 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { getAdminKPIStats, getAllAdminQuizzes } from "@/lib/admin-data-helper";
 
 export const Route = createFileRoute("/admin/analytics")({
   component: AnalyticsDashboardPage,
@@ -56,49 +55,17 @@ function AnalyticsDashboardPage() {
   async function loadAnalytics() {
     setLoading(true);
     try {
-      // 1. KPI stats from helper
-      const kpis = await getAdminKPIStats();
+      const { data, error } = await (supabase.rpc as any)("admin_reporting_snapshot");
+      if (error) throw error;
+      const report = data || {};
       setCounts({
-        quizzes: kpis.totalQuizzes,
-        questions: kpis.totalQuestions,
-        users: kpis.totalUsers,
-        gameSessions: kpis.totalSessions,
+        quizzes: Number(report.quizzes || 0),
+        questions: Number(report.questions || 0),
+        users: Number(report.users || 0),
+        gameSessions: Number(report.game_sessions || 0),
       });
-
-      // 2. All Quizzes & Questions
-      const allQuizzes = await getAllAdminQuizzes();
-
-      // Top Played Quizzes
-      const topList: TopQuiz[] = allQuizzes.slice(0, 5).map((q, idx) => ({
-        id: q.id,
-        title: q.title,
-        category: q.category,
-        play_count: 12 + (5 - idx) * 3,
-      }));
-      setTopQuizzes(topList);
-
-      // Hardest Questions
-      const hardestList: HardestQuestion[] = [];
-      allQuizzes.forEach((q) => {
-        if (q.questions && Array.isArray(q.questions)) {
-          q.questions.forEach((question: any, idx: number) => {
-            if (hardestList.length < 5 && question.question_text) {
-              const total = 35 + idx * 7;
-              const wrong = 20 + idx * 4;
-              hardestList.push({
-                id: question.id || `q-${idx}`,
-                question_text: question.question_text,
-                category: q.category,
-                total_attempts: total,
-                wrong_attempts: wrong,
-                failure_rate: Math.round((wrong / total) * 100),
-              });
-            }
-          });
-        }
-      });
-
-      setHardestQuestions(hardestList.sort((a, b) => b.failure_rate - a.failure_rate));
+      setTopQuizzes(Array.isArray(report.top_quizzes) ? report.top_quizzes : []);
+      setHardestQuestions(Array.isArray(report.hardest_questions) ? report.hardest_questions : []);
     } catch (err) {
       console.error("Analytics fetch error:", err);
     } finally {
