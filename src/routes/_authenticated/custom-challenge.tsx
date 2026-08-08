@@ -42,13 +42,54 @@ function CustomChallengeSetup() {
 
   useEffect(() => {
     void (async () => {
-      const { data, error } = await (supabase.from("categories") as any)
-        .select("id, name, subcategories(id, name)")
-        .order("name");
-      if (error) {
+      const [managedResult, quizResult] = await Promise.all([
+        (supabase.from("categories") as any)
+          .select("id, name, subcategories(id, name)")
+          .order("name"),
+        (supabase.from("quizzes") as any)
+          .select("id, category, subcategory, quiz_kind")
+          .eq("is_public", true),
+      ]);
+      if (managedResult.error && quizResult.error) {
         toast.error(ar ? "تعذر تحميل الأقسام" : "Could not load categories");
       } else {
-        setCategories((data ?? []) as CategoryOption[]);
+        const byName = new Map<string, CategoryOption>();
+        for (const category of managedResult.data ?? []) {
+          const name = String(category.name ?? "").trim();
+          if (!name) continue;
+          byName.set(name.toLocaleLowerCase(), {
+            id: category.id,
+            name,
+            subcategories: category.subcategories ?? [],
+          });
+        }
+        for (const quiz of quizResult.data ?? []) {
+          if (quiz.quiz_kind === "custom_generated") continue;
+          const name = String(quiz.category ?? "").trim();
+          if (!name) continue;
+          const key = name.toLocaleLowerCase();
+          const category = byName.get(key) ?? {
+            id: `quiz-category:${name}`,
+            name,
+            subcategories: [],
+          };
+          const subcategory = String(quiz.subcategory ?? "").trim();
+          if (
+            subcategory &&
+            !category.subcategories.some(
+              (item) => item.name.toLocaleLowerCase() === subcategory.toLocaleLowerCase(),
+            )
+          ) {
+            category.subcategories.push({
+              id: `quiz-subcategory:${name}:${subcategory}`,
+              name: subcategory,
+            });
+          }
+          byName.set(key, category);
+        }
+        setCategories(
+          Array.from(byName.values()).sort((a, b) => a.name.localeCompare(b.name, "ar")),
+        );
       }
       setLoadingCategories(false);
     })();

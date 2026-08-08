@@ -17,13 +17,7 @@ import {
   Check,
   FileText,
 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -89,7 +83,9 @@ function AdminImportPage() {
 
   // Categories list fetched from DB
   const [categories, setCategories] = useState<{ id: string; name: string }[]>([]);
-  const [subcategories, setSubcategories] = useState<{ id: string; name: string; category_id: string }[]>([]);
+  const [subcategories, setSubcategories] = useState<
+    { id: string; name: string; category_id: string }[]
+  >([]);
 
   // Import configuration
   const [importMode, setImportMode] = useState<ImportMode>("auto");
@@ -116,36 +112,101 @@ function AdminImportPage() {
   const fetchDbData = async () => {
     try {
       // Fetch categories safely
-      const { data: catData } = await db
-        .from("categories")
-        .select("*");
+      const { data: catData } = await db.from("categories").select("*");
       if (catData && Array.isArray(catData)) {
         setCategories(
           catData.map((c: any) => ({
             id: c.id,
             name: c.name || c.name_ar || c.name_en || c.title || c.slug || "بدون اسم",
-          }))
+          })),
         );
       }
 
       // Fetch subcategories safely
-      const { data: subData } = await db
-        .from("subcategories")
-        .select("*");
+      const { data: subData } = await db.from("subcategories").select("*");
       if (subData && Array.isArray(subData)) {
         setSubcategories(
           subData.map((s: any) => ({
             id: s.id,
             name: s.name || s.name_ar || s.name_en || s.title || s.slug || "بدون اسم",
             category_id: s.category_id || "",
-          }))
+          })),
         );
       }
 
       // Fetch existing quiz titles
       const { data: quizData } = await db
         .from("quizzes")
-        .select("id, title");
+        .select("id, title, category, subcategory, quiz_kind");
+
+      const mergedCategories = new Map<string, { id: string; name: string }>();
+      const categoryIdByName = new Map<string, string>();
+      for (const category of Array.isArray(catData) ? catData : []) {
+        const name = String(
+          category.name ||
+            category.name_ar ||
+            category.name_en ||
+            category.title ||
+            category.slug ||
+            "",
+        ).trim();
+        if (!name) continue;
+        const key = name.toLocaleLowerCase();
+        mergedCategories.set(key, { id: category.id, name });
+        categoryIdByName.set(key, category.id);
+      }
+      for (const quiz of Array.isArray(quizData) ? quizData : []) {
+        if (quiz.quiz_kind === "custom_generated") continue;
+        const name = String(quiz.category ?? "").trim();
+        if (!name) continue;
+        const key = name.toLocaleLowerCase();
+        if (!mergedCategories.has(key)) {
+          const id = `quiz-category:${name}`;
+          mergedCategories.set(key, { id, name });
+          categoryIdByName.set(key, id);
+        }
+      }
+      setCategories(
+        Array.from(mergedCategories.values()).sort((a, b) => a.name.localeCompare(b.name, "ar")),
+      );
+
+      const mergedSubcategories = new Map<
+        string,
+        { id: string; name: string; category_id: string }
+      >();
+      for (const subcategory of Array.isArray(subData) ? subData : []) {
+        const name = String(
+          subcategory.name ||
+            subcategory.name_ar ||
+            subcategory.name_en ||
+            subcategory.title ||
+            subcategory.slug ||
+            "",
+        ).trim();
+        if (!name) continue;
+        const categoryId = subcategory.category_id || "";
+        mergedSubcategories.set(`${categoryId}:${name.toLocaleLowerCase()}`, {
+          id: subcategory.id,
+          name,
+          category_id: categoryId,
+        });
+      }
+      for (const quiz of Array.isArray(quizData) ? quizData : []) {
+        if (quiz.quiz_kind === "custom_generated") continue;
+        const categoryName = String(quiz.category ?? "").trim();
+        const name = String(quiz.subcategory ?? "").trim();
+        const categoryId = categoryIdByName.get(categoryName.toLocaleLowerCase()) ?? "";
+        if (!name || !categoryId) continue;
+        const key = `${categoryId}:${name.toLocaleLowerCase()}`;
+        if (!mergedSubcategories.has(key)) {
+          mergedSubcategories.set(key, {
+            id: `quiz-subcategory:${categoryName}:${name}`,
+            name,
+            category_id: categoryId,
+          });
+        }
+      }
+      setSubcategories(Array.from(mergedSubcategories.values()));
 
       if (quizData) {
         const titleMap = new Map<string, string>();
@@ -176,7 +237,7 @@ function AdminImportPage() {
           collisionStatus: matchedId ? "collision" : "new",
           matchedDbQuizId: matchedId,
         };
-      })
+      }),
     );
   }, [existingQuizTitles]);
 
@@ -189,17 +250,25 @@ function AdminImportPage() {
       const normalizeQuiz = (raw: any, index: number): ParsedQuiz | null => {
         if (!raw || typeof raw !== "object") return null;
 
-        const title = (raw.title || raw.quiz_title || raw.name || `كويز مستورد ${index + 1}`).toString().trim();
+        const title = (raw.title || raw.quiz_title || raw.name || `كويز مستورد ${index + 1}`)
+          .toString()
+          .trim();
         const rawQuestions = Array.isArray(raw.questions) ? raw.questions : [];
 
         const questions: ImportedQuestion[] = rawQuestions.map((q: any, qIdx: number) => {
-          const question_text = (q.question_text || q.question || q.title || `سؤال ${qIdx + 1}`).toString().trim();
+          const question_text = (q.question_text || q.question || q.title || `سؤال ${qIdx + 1}`)
+            .toString()
+            .trim();
           let options: string[] = [];
 
           if (Array.isArray(q.options)) {
-            options = q.options.map((opt: any) => (typeof opt === "object" ? opt.text || opt.label || JSON.stringify(opt) : String(opt)));
+            options = q.options.map((opt: any) =>
+              typeof opt === "object" ? opt.text || opt.label || JSON.stringify(opt) : String(opt),
+            );
           } else if (Array.isArray(q.choices)) {
-            options = q.choices.map((opt: any) => (typeof opt === "object" ? opt.text || opt.label || JSON.stringify(opt) : String(opt)));
+            options = q.choices.map((opt: any) =>
+              typeof opt === "object" ? opt.text || opt.label || JSON.stringify(opt) : String(opt),
+            );
           } else {
             options = ["خيار 1", "خيار 2", "خيار 3", "خيار 4"];
           }
@@ -358,10 +427,14 @@ function AdminImportPage() {
         const item = parsedQuizzes[i]!;
 
         // Determine final category and subcategory
-        const targetCategory = importMode === "override" ? overrideCategory : (item.category || "عام");
-        const targetSubcategory = importMode === "override"
-          ? (overrideSubcategory === "none" ? "" : overrideSubcategory)
-          : (item.subcategory || "");
+        const targetCategory =
+          importMode === "override" ? overrideCategory : item.category || "عام";
+        const targetSubcategory =
+          importMode === "override"
+            ? overrideSubcategory === "none"
+              ? ""
+              : overrideSubcategory
+            : item.subcategory || "";
 
         // Check Collision strategy
         if (item.collisionStatus === "collision") {
@@ -373,10 +446,7 @@ function AdminImportPage() {
 
           if (collisionStrategy === "upsert" && item.matchedDbQuizId) {
             // Delete old questions first
-            await db
-              .from("questions")
-              .delete()
-              .eq("quiz_id", item.matchedDbQuizId);
+            await db.from("questions").delete().eq("quiz_id", item.matchedDbQuizId);
 
             // Update quiz meta
             await db
@@ -499,14 +569,16 @@ function AdminImportPage() {
 
       if (importedCount > 0 || updatedCount > 0) {
         toast.success(
-          `تمت العملية! (تم إضافة: ${importedCount}، تحديث: ${updatedCount}، تخطي: ${skippedCount}${failedCount > 0 ? `، فشل: ${failedCount}` : ""})`
+          `تمت العملية! (تم إضافة: ${importedCount}، تحديث: ${updatedCount}، تخطي: ${skippedCount}${failedCount > 0 ? `، فشل: ${failedCount}` : ""})`,
         );
       } else if (skippedCount > 0) {
         toast.info(
-          `تم تخطي جميع الكويزات (${skippedCount}) لأن عناوينها موجودة مسبقاً في قاعدة البيانات بالتزامن مع خيار (تخطي الكويزات الموجودة). اختر (استبدال) أو (إنشاء نسخة) لإعادة استيرادها.`
+          `تم تخطي جميع الكويزات (${skippedCount}) لأن عناوينها موجودة مسبقاً في قاعدة البيانات بالتزامن مع خيار (تخطي الكويزات الموجودة). اختر (استبدال) أو (إنشاء نسخة) لإعادة استيرادها.`,
         );
       } else {
-        toast.error(`لم يتم استيراد أي كويز. ${lastErrorMessage ? `السبب: ${lastErrorMessage}` : ""}`);
+        toast.error(
+          `لم يتم استيراد أي كويز. ${lastErrorMessage ? `السبب: ${lastErrorMessage}` : ""}`,
+        );
       }
 
       // Reset state and refresh existing quiz titles
@@ -533,10 +605,13 @@ function AdminImportPage() {
             <span className="flex size-9 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
               <FileUp className="size-5" />
             </span>
-            <h1 className="font-display text-2xl font-extrabold sm:text-3xl">مستورد ملفات JSON الذكي</h1>
+            <h1 className="font-display text-2xl font-extrabold sm:text-3xl">
+              مستورد ملفات JSON الذكي
+            </h1>
           </div>
           <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
-            ارفع كويزات مفردة أو مصفوفات كاملة بملفات JSON مع تحديد وضع دمج وتصنيف الكويزات تلقائياً.
+            ارفع كويزات مفردة أو مصفوفات كاملة بملفات JSON مع تحديد وضع دمج وتصنيف الكويزات
+            تلقائياً.
           </p>
         </div>
 
@@ -594,10 +669,12 @@ function AdminImportPage() {
                 </div>
 
                 <h3 className="font-display text-base font-bold sm:text-lg">
-                  اسحب وأفلت ملفات JSON هنا أو <span className="text-primary underline">استعرض جهازك</span>
+                  اسحب وأفلت ملفات JSON هنا أو{" "}
+                  <span className="text-primary underline">استعرض جهازك</span>
                 </h3>
                 <p className="mt-1 text-xs text-muted-foreground max-w-sm leading-relaxed">
-                  يمكنك رفع ملف واحد أو ملفات متعددة في نفس الوقت وسيقوم النظام بتفحص البنية والأسئلة تلقائياً.
+                  يمكنك رفع ملف واحد أو ملفات متعددة في نفس الوقت وسيقوم النظام بتفحص البنية
+                  والأسئلة تلقائياً.
                 </p>
 
                 {fileNameInfo && (
@@ -627,7 +704,9 @@ function AdminImportPage() {
             <CardContent className="p-6 pt-0 space-y-5">
               {/* Mode Toggle */}
               <div className="space-y-2">
-                <label className="text-xs font-bold text-foreground block">وضع التصنيف (Mode)</label>
+                <label className="text-xs font-bold text-foreground block">
+                  وضع التصنيف (Mode)
+                </label>
                 <div className="grid grid-cols-2 gap-2 p-1 rounded-2xl bg-muted/50 border border-border/60">
                   <button
                     type="button"
@@ -663,7 +742,9 @@ function AdminImportPage() {
               {importMode === "override" && (
                 <div className="rounded-2xl border border-primary/30 bg-primary/5 p-3.5 space-y-3">
                   <div className="space-y-1">
-                    <label className="text-[11px] font-bold text-foreground">القسم الرئيسي الموحد *</label>
+                    <label className="text-[11px] font-bold text-foreground">
+                      القسم الرئيسي الموحد *
+                    </label>
                     <Select value={overrideCategory} onValueChange={setOverrideCategory}>
                       <SelectTrigger className="rounded-xl text-xs bg-background">
                         <SelectValue placeholder="اختر القسم..." />
@@ -679,13 +760,17 @@ function AdminImportPage() {
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-[11px] font-bold text-foreground">القسم الفرعي الموحد (اختياري)</label>
+                    <label className="text-[11px] font-bold text-foreground">
+                      القسم الفرعي الموحد (اختياري)
+                    </label>
                     <Select value={overrideSubcategory} onValueChange={setOverrideSubcategory}>
                       <SelectTrigger className="rounded-xl text-xs bg-background">
                         <SelectValue placeholder="بدون قسم فرعي" />
                       </SelectTrigger>
                       <SelectContent dir="rtl">
-                        <SelectItem value="none" className="text-xs">بدون قسم فرعي</SelectItem>
+                        <SelectItem value="none" className="text-xs">
+                          بدون قسم فرعي
+                        </SelectItem>
                         {subcategories.map((s) => (
                           <SelectItem key={s.id} value={s.name} className="text-xs">
                             {s.name}
@@ -699,7 +784,9 @@ function AdminImportPage() {
 
               {/* Collision Strategy Selector */}
               <div className="space-y-2 pt-2 border-t border-border/60">
-                <label className="text-xs font-bold text-foreground block">استراتيجية التعارض (Collisions)</label>
+                <label className="text-xs font-bold text-foreground block">
+                  استراتيجية التعارض (Collisions)
+                </label>
                 <RadioGroup
                   value={collisionStrategy}
                   onValueChange={(val) => setCollisionStrategy(val as CollisionStrategy)}
@@ -707,21 +794,30 @@ function AdminImportPage() {
                 >
                   <div className="flex items-center gap-2.5 rounded-2xl border border-border p-2.5 hover:bg-muted/20">
                     <RadioGroupItem value="skip" id="strat-skip" />
-                    <Label htmlFor="strat-skip" className="text-xs font-semibold cursor-pointer flex-1">
+                    <Label
+                      htmlFor="strat-skip"
+                      className="text-xs font-semibold cursor-pointer flex-1"
+                    >
                       تخطي الكويزات الموجودة (Skip)
                     </Label>
                   </div>
 
                   <div className="flex items-center gap-2.5 rounded-2xl border border-border p-2.5 hover:bg-muted/20">
                     <RadioGroupItem value="upsert" id="strat-upsert" />
-                    <Label htmlFor="strat-upsert" className="text-xs font-semibold cursor-pointer flex-1">
+                    <Label
+                      htmlFor="strat-upsert"
+                      className="text-xs font-semibold cursor-pointer flex-1"
+                    >
                       استبدال وتحديث الأسئلة (Upsert)
                     </Label>
                   </div>
 
                   <div className="flex items-center gap-2.5 rounded-2xl border border-border p-2.5 hover:bg-muted/20">
                     <RadioGroupItem value="duplicate" id="strat-duplicate" />
-                    <Label htmlFor="strat-duplicate" className="text-xs font-semibold cursor-pointer flex-1">
+                    <Label
+                      htmlFor="strat-duplicate"
+                      className="text-xs font-semibold cursor-pointer flex-1"
+                    >
                       إنشاء نسخة جديدة مكررة (Duplicate)
                     </Label>
                   </div>
@@ -744,7 +840,8 @@ function AdminImportPage() {
               </Badge>
             </CardTitle>
             <CardDescription className="text-xs">
-              راجع عناوين الكويزات، عدد الأسئلة، الأقسام وحالة المطابقة قبل الحفظ النهائي بـ Supabase.
+              راجع عناوين الكويزات، عدد الأسئلة، الأقسام وحالة المطابقة قبل الحفظ النهائي بـ
+              Supabase.
             </CardDescription>
           </div>
 
@@ -773,7 +870,9 @@ function AdminImportPage() {
             <div className="rounded-2xl border border-dashed border-border p-12 text-center space-y-3">
               <FileText className="mx-auto size-10 text-muted-foreground/50" />
               <p className="text-sm font-semibold">لا توجد كويزات في قائمة المعاينة حالياً</p>
-              <p className="text-xs text-muted-foreground">قم بسحب وإفلات ملف JSON في المنطقة أعلاه لتظهر الكويزات هنا للمعاينة</p>
+              <p className="text-xs text-muted-foreground">
+                قم بسحب وإفلات ملف JSON في المنطقة أعلاه لتظهر الكويزات هنا للمعاينة
+              </p>
             </div>
           ) : (
             <div className="rounded-2xl border border-border overflow-hidden">
@@ -790,12 +889,23 @@ function AdminImportPage() {
                 </TableHeader>
                 <TableBody>
                   {parsedQuizzes.map((quiz, index) => {
-                    const displayCat = importMode === "override" ? (overrideCategory || "غير محدد") : (quiz.category || "عام");
-                    const displaySub = importMode === "override" ? (overrideSubcategory || "") : (quiz.subcategory || "");
+                    const displayCat =
+                      importMode === "override"
+                        ? overrideCategory || "غير محدد"
+                        : quiz.category || "عام";
+                    const displaySub =
+                      importMode === "override"
+                        ? overrideSubcategory || ""
+                        : quiz.subcategory || "";
 
                     return (
-                      <TableRow key={quiz.tempId} className="group hover:bg-muted/20 transition-colors">
-                        <TableCell className="text-xs text-muted-foreground font-mono">{index + 1}</TableCell>
+                      <TableRow
+                        key={quiz.tempId}
+                        className="group hover:bg-muted/20 transition-colors"
+                      >
+                        <TableCell className="text-xs text-muted-foreground font-mono">
+                          {index + 1}
+                        </TableCell>
                         <TableCell className="font-bold text-sm">
                           <span className="line-clamp-1">{quiz.title}</span>
                         </TableCell>
@@ -808,18 +918,26 @@ function AdminImportPage() {
                           <div className="flex flex-col gap-0.5">
                             <span className="text-xs font-semibold">{displayCat}</span>
                             {displaySub && displaySub !== "none" && (
-                              <span className="text-[11px] text-muted-foreground">← {displaySub}</span>
+                              <span className="text-[11px] text-muted-foreground">
+                                ← {displaySub}
+                              </span>
                             )}
                           </div>
                         </TableCell>
                         <TableCell className="text-center">
                           {quiz.collisionStatus === "collision" ? (
-                            <Badge variant="outline" className="bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-300 rounded-xl text-[11px] gap-1">
+                            <Badge
+                              variant="outline"
+                              className="bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-300 rounded-xl text-[11px] gap-1"
+                            >
                               <AlertTriangle className="size-3" />
                               <span>موجود حالياً</span>
                             </Badge>
                           ) : (
-                            <Badge variant="outline" className="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-300 rounded-xl text-[11px] gap-1">
+                            <Badge
+                              variant="outline"
+                              className="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-300 rounded-xl text-[11px] gap-1"
+                            >
                               <CheckCircle2 className="size-3" />
                               <span>جديد</span>
                             </Badge>
@@ -894,7 +1012,9 @@ function AdminImportPage() {
                       }`}
                     >
                       <span className="truncate">{opt}</span>
-                      {optIdx === q.correct_index && <Check className="size-3 text-emerald-500 shrink-0" />}
+                      {optIdx === q.correct_index && (
+                        <Check className="size-3 text-emerald-500 shrink-0" />
+                      )}
                     </div>
                   ))}
                 </div>
