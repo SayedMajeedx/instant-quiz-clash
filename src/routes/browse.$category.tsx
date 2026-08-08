@@ -1,6 +1,6 @@
 import { recordQuizPlay } from "@/lib/quiz-stats.functions";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { QuizCard, type PublicQuiz } from "@/components/quiz/QuizCard";
@@ -19,6 +19,7 @@ import {
   getAllAdminQuizzes,
   type AdminSubcategoryItem,
 } from "@/lib/admin-data-helper";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Route = createFileRoute("/browse/$category")({
   head: ({ params }) => {
@@ -46,6 +47,23 @@ export function CategoryBreadcrumb({
   activeSubcategory?: string | null;
   onResetSubcategory: () => void;
 }) {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+
+  useEffect(() => {
+    const updateOverflow = () => {
+      const element = scrollerRef.current;
+      setIsOverflowing(Boolean(element && element.scrollWidth > element.clientWidth + 4));
+    };
+    updateOverflow();
+    window.addEventListener("resize", updateOverflow);
+    return () => window.removeEventListener("resize", updateOverflow);
+  }, [subcategories, quizzes.length]);
+
+  const scrollChips = (direction: number) => {
+    scrollerRef.current?.scrollBy({ left: direction * 320, behavior: "smooth" });
+  };
+
   const isRealSub =
     activeSubcategory &&
     activeSubcategory !== "all" &&
@@ -107,8 +125,12 @@ export function SubcategoryChips({
       .trim();
 
   return (
-    <div className="w-full overflow-x-auto no-scrollbar py-2 my-2">
-      <div className="flex items-center gap-2.5 min-w-max">
+    <div className="relative my-2 rounded-3xl border border-border/60 bg-background/35 px-2 py-2 shadow-sm backdrop-blur-md">
+      <div
+        ref={scrollerRef}
+        className="w-full overflow-x-auto px-1 py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        <div className="flex items-center gap-2.5 min-w-max">
         {/* All Chip */}
         <button
           type="button"
@@ -167,7 +189,31 @@ export function SubcategoryChips({
             </button>
           );
         })}
+        </div>
       </div>
+
+      {isOverflowing ? (
+        <>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 rounded-l-3xl bg-gradient-to-r from-background via-background/80 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 rounded-r-3xl bg-gradient-to-l from-background via-background/80 to-transparent" />
+          <button
+            type="button"
+            aria-label="عرض التصنيفات السابقة"
+            onClick={() => scrollChips(-1)}
+            className="press absolute left-2 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full border border-primary/40 bg-background/95 text-primary shadow-lg backdrop-blur hover:bg-primary hover:text-primary-foreground"
+          >
+            <ChevronLeft className="size-5" />
+          </button>
+          <button
+            type="button"
+            aria-label="عرض التصنيفات التالية"
+            onClick={() => scrollChips(1)}
+            className="press absolute right-2 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full border border-primary/40 bg-background/95 text-primary shadow-lg backdrop-blur hover:bg-primary hover:text-primary-foreground"
+          >
+            <ChevronRight className="size-5" />
+          </button>
+        </>
+      ) : null}
     </div>
   );
 }
