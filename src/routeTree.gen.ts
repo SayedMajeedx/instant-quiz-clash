@@ -18,6 +18,7 @@ import { Route as AuthenticatedCustomChallengeRouteImport } from './routes/_auth
 import { Route as AdminIndexRouteImport } from './routes/admin/index'
 import { Route as AdminAnalyticsRouteImport } from './routes/admin/analytics'
 import { Route as AdminCategoriesRouteImport } from './routes/admin/categories'
+import { Route as AdminDuplicatesRouteImport } from './routes/admin/duplicates'
 import { Route as AdminImportRouteImport } from './routes/admin/import'
 import { Route as AdminUsersRouteImport } from './routes/admin/users'
 import { Route as BrowseIndexRouteImport } from './routes/browse.index'
@@ -74,6 +75,11 @@ const AdminAnalyticsRoute = AdminAnalyticsRouteImport.update({
 const AdminCategoriesRoute = AdminCategoriesRouteImport.update({
   id: '/categories',
   path: '/categories',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
+const AdminDuplicatesRoute = AdminDuplicatesRouteImport.update({
+  id: '/duplicates',
+  path: '/duplicates',
   getParentRoute: () => AdminRouteRoute,
 } as any)
 const AdminImportRoute = AdminImportRouteImport.update({
@@ -147,6 +153,7 @@ export interface FileRoutesByFullPath {
   '/custom-challenge': typeof AuthenticatedCustomChallengeRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/categories': typeof AdminCategoriesRoute
+  '/admin/duplicates': typeof AdminDuplicatesRoute
   '/admin/import': typeof AdminImportRoute
   '/admin/users': typeof AdminUsersRoute
   '/browse/$category': typeof BrowseCategoryRoute
@@ -168,6 +175,7 @@ export interface FileRoutesByTo {
   '/custom-challenge': typeof AuthenticatedCustomChallengeRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/categories': typeof AdminCategoriesRoute
+  '/admin/duplicates': typeof AdminDuplicatesRoute
   '/admin/import': typeof AdminImportRoute
   '/admin/users': typeof AdminUsersRoute
   '/browse/$category': typeof BrowseCategoryRoute
@@ -192,6 +200,7 @@ export interface FileRoutesById {
   '/_authenticated/custom-challenge': typeof AuthenticatedCustomChallengeRoute
   '/admin/analytics': typeof AdminAnalyticsRoute
   '/admin/categories': typeof AdminCategoriesRoute
+  '/admin/duplicates': typeof AdminDuplicatesRoute
   '/admin/import': typeof AdminImportRoute
   '/admin/users': typeof AdminUsersRoute
   '/browse/$category': typeof BrowseCategoryRoute
@@ -216,6 +225,7 @@ export interface FileRouteTypes {
     | '/custom-challenge'
     | '/admin/analytics'
     | '/admin/categories'
+    | '/admin/duplicates'
     | '/admin/import'
     | '/admin/users'
     | '/browse/$category'
@@ -237,6 +247,7 @@ export interface FileRouteTypes {
     | '/custom-challenge'
     | '/admin/analytics'
     | '/admin/categories'
+    | '/admin/duplicates'
     | '/admin/import'
     | '/admin/users'
     | '/browse/$category'
@@ -260,6 +271,7 @@ export interface FileRouteTypes {
     | '/_authenticated/custom-challenge'
     | '/admin/analytics'
     | '/admin/categories'
+    | '/admin/duplicates'
     | '/admin/import'
     | '/admin/users'
     | '/browse/$category'
@@ -350,6 +362,13 @@ declare module '@tanstack/react-router' {
       path: '/categories'
       fullPath: '/admin/categories'
       preLoaderRoute: typeof AdminCategoriesRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
+    '/admin/duplicates': {
+      id: '/admin/duplicates'
+      path: '/duplicates'
+      fullPath: '/admin/duplicates'
+      preLoaderRoute: typeof AdminDuplicatesRouteImport
       parentRoute: typeof AdminRouteRoute
     }
     '/admin/import': {
@@ -461,6 +480,7 @@ const AuthenticatedRouteRouteWithChildren =
 interface AdminRouteRouteChildren {
   AdminAnalyticsRoute: typeof AdminAnalyticsRoute
   AdminCategoriesRoute: typeof AdminCategoriesRoute
+  AdminDuplicatesRoute: typeof AdminDuplicatesRoute
   AdminImportRoute: typeof AdminImportRoute
   AdminUsersRoute: typeof AdminUsersRoute
   AdminIndexRoute: typeof AdminIndexRoute
@@ -471,6 +491,7 @@ interface AdminRouteRouteChildren {
 const AdminRouteRouteChildren: AdminRouteRouteChildren = {
   AdminAnalyticsRoute: AdminAnalyticsRoute,
   AdminCategoriesRoute: AdminCategoriesRoute,
+  AdminDuplicatesRoute: AdminDuplicatesRoute,
   AdminImportRoute: AdminImportRoute,
   AdminUsersRoute: AdminUsersRoute,
   AdminIndexRoute: AdminIndexRoute,

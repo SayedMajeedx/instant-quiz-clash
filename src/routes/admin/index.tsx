@@ -11,6 +11,7 @@ import {
   Database,
   Sparkles,
   Layers,
+  ScanSearch,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -60,27 +61,41 @@ function AdminOverview() {
     },
     {
       title: "مستورد JSON الذكي",
-      description: "رفع وتحليل أسئلة الكويزات بملفات JSON منفردة أو مصفوفات مع دمج وإسناد الأقسام تلقائياً.",
+      description:
+        "رفع وتحليل أسئلة الكويزات بملفات JSON منفردة أو مصفوفات مع دمج وإسناد الأقسام تلقائياً.",
       to: "/admin/import",
       icon: FileUp,
       badge: "أداة سريعة",
-      color: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800",
+      color:
+        "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800",
     },
     {
       title: "إدارة الكويزات والأسئلة",
-      description: "عرض كافة الكويزات، البحث، التصفية، والتعديل التفاعلي للأسئلة مع إمكانية التبديل والإعادة.",
+      description:
+        "عرض كافة الكويزات، البحث، التصفية، والتعديل التفاعلي للأسئلة مع إمكانية التبديل والإعادة.",
       to: "/admin/quizzes",
       icon: HelpCircle,
       badge: `${counts.quizzes} كويز`,
-      color: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-800",
+      color:
+        "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-800",
+    },
+    {
+      title: "كشف الأسئلة المكررة",
+      description: "فحص عربي هجين وتحكيم دلالي مع طابور مراجعة آمن قبل حذف أي سؤال.",
+      to: "/admin/duplicates",
+      icon: ScanSearch,
+      badge: "ذكاء دلالي",
+      color: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-200 dark:border-cyan-800",
     },
     {
       title: "التقارير والإحصائيات",
-      description: "متابعة أداء اللعبة، الأسئلة الأكثر صعوبة، الكويزات الأكثر لعباً، ونسب الإجابات الصحيحة.",
+      description:
+        "متابعة أداء اللعبة، الأسئلة الأكثر صعوبة، الكويزات الأكثر لعباً، ونسب الإجابات الصحيحة.",
       to: "/admin/analytics",
       icon: BarChart3,
       badge: "تقارير شاملة",
-      color: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-800",
+      color:
+        "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-800",
     },
     {
       title: "إدارة المستخدمين والصلاحيات",
@@ -101,9 +116,12 @@ function AdminOverview() {
             <Sparkles className="size-3.5" />
             نظام لوحة التحكم المتكامل v2.0
           </div>
-          <h1 className="font-display text-3xl font-extrabold md:text-4xl">مرحباً بك في لوحة إدارة كويز كلاش</h1>
+          <h1 className="font-display text-3xl font-extrabold md:text-4xl">
+            مرحباً بك في لوحة إدارة كويز كلاش
+          </h1>
           <p className="text-primary-foreground/80 text-sm md:text-base leading-relaxed">
-            من هنا يمكنك التحكم الكامل بالأقسام، رفع الكويزات الذكي عبر JSON، تعديل الأسئلة التفاعلي، ومتابعة إحصائيات الأداء والمستخدمين.
+            من هنا يمكنك التحكم الكامل بالأقسام، رفع الكويزات الذكي عبر JSON، تعديل الأسئلة
+            التفاعلي، ومتابعة إحصائيات الأداء والمستخدمين.
           </p>
         </div>
       </div>
@@ -113,28 +131,36 @@ function AdminOverview() {
         <Card className="rounded-2xl border-border bg-card/60 backdrop-blur-sm shadow-sm">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs">إجمالي الكويزات</CardDescription>
-            <CardTitle className="font-display text-2xl font-bold">{loading ? "..." : counts.quizzes}</CardTitle>
+            <CardTitle className="font-display text-2xl font-bold">
+              {loading ? "..." : counts.quizzes}
+            </CardTitle>
           </CardHeader>
         </Card>
 
         <Card className="rounded-2xl border-border bg-card/60 backdrop-blur-sm shadow-sm">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs">إجمالي الأسئلة</CardDescription>
-            <CardTitle className="font-display text-2xl font-bold">{loading ? "..." : counts.questions}</CardTitle>
+            <CardTitle className="font-display text-2xl font-bold">
+              {loading ? "..." : counts.questions}
+            </CardTitle>
           </CardHeader>
         </Card>
 
         <Card className="rounded-2xl border-border bg-card/60 backdrop-blur-sm shadow-sm">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs">الأقسام المعتمدة</CardDescription>
-            <CardTitle className="font-display text-2xl font-bold">{loading ? "..." : counts.categories}</CardTitle>
+            <CardTitle className="font-display text-2xl font-bold">
+              {loading ? "..." : counts.categories}
+            </CardTitle>
           </CardHeader>
         </Card>
 
         <Card className="rounded-2xl border-border bg-card/60 backdrop-blur-sm shadow-sm">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs">المستخدمين المسجلين</CardDescription>
-            <CardTitle className="font-display text-2xl font-bold">{loading ? "..." : counts.users}</CardTitle>
+            <CardTitle className="font-display text-2xl font-bold">
+              {loading ? "..." : counts.users}
+            </CardTitle>
           </CardHeader>
         </Card>
       </div>
@@ -147,10 +173,15 @@ function AdminOverview() {
           {modules.map((mod) => {
             const Icon = mod.icon;
             return (
-              <Card key={mod.to} className="group relative overflow-hidden rounded-2xl border-border transition-all hover:border-primary/50 hover:shadow-md">
+              <Card
+                key={mod.to}
+                className="group relative overflow-hidden rounded-2xl border-border transition-all hover:border-primary/50 hover:shadow-md"
+              >
                 <CardHeader className="p-5 pb-3">
                   <div className="flex items-center justify-between gap-2">
-                    <div className={`flex size-11 items-center justify-center rounded-2xl border ${mod.color}`}>
+                    <div
+                      className={`flex size-11 items-center justify-center rounded-2xl border ${mod.color}`}
+                    >
                       <Icon className="size-5" />
                     </div>
                     <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-semibold text-muted-foreground">
@@ -166,7 +197,12 @@ function AdminOverview() {
                 </CardHeader>
 
                 <CardContent className="p-5 pt-0">
-                  <Button asChild variant="ghost" size="sm" className="w-full justify-between rounded-xl hover:bg-primary/10 hover:text-primary">
+                  <Button
+                    asChild
+                    variant="ghost"
+                    size="sm"
+                    className="w-full justify-between rounded-xl hover:bg-primary/10 hover:text-primary"
+                  >
                     <Link to={mod.to}>
                       <span>الانتقال للوحدة</span>
                       <ArrowUpRight className="size-4" />

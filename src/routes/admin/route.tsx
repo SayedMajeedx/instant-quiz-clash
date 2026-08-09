@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   LogOut,
   ShieldAlert,
+  ScanSearch,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -70,7 +71,9 @@ function AdminLayout() {
           const role = (profile as any)?.role;
           const isAllowed = role === "admin" || role === "super_admin" || role === "owner";
           if (mounted) {
-            setDisplayName((profile as any).name || (profile as any).display_name || user.email || "");
+            setDisplayName(
+              (profile as any).name || (profile as any).display_name || user.email || "",
+            );
             setIsAdmin(isAllowed);
             setLoading(false);
           }
@@ -112,6 +115,7 @@ function AdminLayout() {
     { label: "إدارة الأقسام", to: "/admin/categories", icon: FolderTree },
     { label: "استيراد ملفات JSON", to: "/admin/import", icon: FileUp },
     { label: "إدارة الكويزات والأسئلة", to: "/admin/quizzes", icon: HelpCircle },
+    { label: "كشف الأسئلة المكررة", to: "/admin/duplicates", icon: ScanSearch },
     { label: "التقارير والإحصائيات", to: "/admin/analytics", icon: BarChart3 },
     { label: "إدارة المستخدمين", to: "/admin/users", icon: Users },
   ];
@@ -121,7 +125,9 @@ function AdminLayout() {
       <div className="flex h-screen w-full items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-3">
           <div className="size-10 rounded-full border-4 border-primary border-t-transparent animate-spin" />
-          <p className="text-sm font-medium text-muted-foreground">جارٍ التحقق من صلاحيات المسؤول...</p>
+          <p className="text-sm font-medium text-muted-foreground">
+            جارٍ التحقق من صلاحيات المسؤول...
+          </p>
         </div>
       </div>
     );
@@ -129,7 +135,10 @@ function AdminLayout() {
 
   if (isAdmin === false) {
     return (
-      <div dir="rtl" className="flex h-screen w-full flex-col items-center justify-center bg-background p-6 text-center">
+      <div
+        dir="rtl"
+        className="flex h-screen w-full flex-col items-center justify-center bg-background p-6 text-center"
+      >
         <div className="flex size-16 items-center justify-center rounded-3xl bg-destructive/10 text-destructive mb-4">
           <ShieldAlert className="size-8" />
         </div>
@@ -169,8 +178,12 @@ function AdminLayout() {
                 <Link
                   key={item.to}
                   to={item.to}
-                  activeProps={{ className: "bg-primary text-primary-foreground font-semibold shadow-sm" }}
-                  inactiveProps={{ className: "text-muted-foreground hover:bg-muted hover:text-foreground" }}
+                  activeProps={{
+                    className: "bg-primary text-primary-foreground font-semibold shadow-sm",
+                  }}
+                  inactiveProps={{
+                    className: "text-muted-foreground hover:bg-muted hover:text-foreground",
+                  }}
                   className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm transition-all"
                 >
                   <Icon className="size-4 shrink-0" />
@@ -188,7 +201,10 @@ function AdminLayout() {
               <p className="text-sm font-semibold truncate">{displayName || "مسؤول النظام"}</p>
               <p className="text-xs text-muted-foreground truncate">{userEmail}</p>
             </div>
-            <Badge variant="secondary" className="bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-0 text-[10px]">
+            <Badge
+              variant="secondary"
+              className="bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-0 text-[10px]"
+            >
               مسؤول
             </Badge>
           </div>
