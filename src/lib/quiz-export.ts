@@ -64,8 +64,8 @@ export function buildCatalogExport(quizzes: ExportQuiz[]) {
     summary: {
       quiz_count: quizzes.length,
       question_count: questionCount,
-      public_quiz_count: quizzes.filter((quiz) => quiz.is_public === true).length,
-      private_quiz_count: quizzes.filter((quiz) => quiz.is_public === false).length,
+      public_quiz_count: quizzes.filter((quiz) => quiz['is_public'] === true).length,
+      private_quiz_count: quizzes.filter((quiz) => quiz['is_public'] === false).length,
     },
     quizzes,
   };
