@@ -1,4 +1,12 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 
 export type Lang = "en" | "ar";
 const STORAGE_KEY = "quizclash:lang";
@@ -29,7 +37,8 @@ const en: Dict = {
   "auth.toSignUp": "No account yet? Register",
   "auth.toSignIn": "Already have an account? Sign in",
   "auth.checkEmail": "Check your email",
-  "auth.checkEmailBody": "We sent you a confirmation link. Click it to finish creating your account.",
+  "auth.checkEmailBody":
+    "We sent you a confirmation link. Click it to finish creating your account.",
   "auth.error": "Something went wrong, try again",
   "auth.signedOut": "Signed out",
   "nav.backHome": "← QuizClash",
@@ -82,15 +91,18 @@ const en: Dict = {
   "editor.addError": "Could not add question",
   "import.open": "Import from text",
   "import.title": "Import from text",
-  "import.sub": "Paste notes, a Word doc, a PDF copy or quick trivia jottings — AI turns it into questions you can review before saving.",
+  "import.sub":
+    "Paste notes, a Word doc, a PDF copy or quick trivia jottings — AI turns it into questions you can review before saving.",
   "import.close": "Close",
-  "import.placeholder": "Paste anything quiz-like. For example:\n\nWhat is the capital of France?\nA) London\nB) Paris\nC) Berlin\nD) Madrid\nAnswer: B\n\nWhich planet is known as the Red Planet?\nMars, Venus, Jupiter, Saturn\nCorrect: Mars\n\nNumbered lists, missing labels, inline options and loose notes all work too.",
+  "import.placeholder":
+    "Paste anything quiz-like. For example:\n\nWhat is the capital of France?\nA) London\nB) Paris\nC) Berlin\nD) Madrid\nAnswer: B\n\nWhich planet is known as the Red Planet?\nMars, Venus, Jupiter, Saturn\nCorrect: Mars\n\nNumbered lists, missing labels, inline options and loose notes all work too.",
   "import.counter": "{n} / {max} characters",
   "import.tooLong": "Too long — trim your text a little",
   "import.parse": "Read my questions",
   "import.loading": "Reading your questions…",
   "import.cancel": "Cancel",
-  "import.reviewHint": "Found {n} question(s). Edit anything, untick what you do not want, then add them to your quiz.",
+  "import.reviewHint":
+    "Found {n} question(s). Edit anything, untick what you do not want, then add them to your quiz.",
   "import.flag.padded": "Options added by AI",
   "import.flag.inferred": "Correct answer guessed",
   "import.flag.ambiguous": "Unclear question split",
@@ -98,11 +110,13 @@ const en: Dict = {
   "import.adding": "Adding…",
   "import.backToPaste": "Back to paste",
   "import.emptyTitle": "No questions found",
-  "import.emptyBody": "We could not spot any questions in that text. Try adding a question line with its answer options, or rephrase your notes.",
+  "import.emptyBody":
+    "We could not spot any questions in that text. Try adding a question line with its answer options, or rephrase your notes.",
   "import.tryAgain": "Try different text",
   "import.empty": "No questions found in that text",
   "import.failed": "Could not read that text, please try again",
   "import.rateLimited": "Too many requests just now — try again in a moment",
+  "import.monthlyQuota": "You have used your monthly AI allowance. It resets next month.",
   "import.added": "Added {n} question(s)",
 
   "hostPick.title": "Host a game",
@@ -125,7 +139,8 @@ const en: Dict = {
   "host.waiting": "Waiting for players to join…",
   "host.startingIn": "Starting in {n}…",
   "host.start": "Start game",
-  "host.autoNote": "Questions advance automatically — you can close this tab and the game keeps going.",
+  "host.autoNote":
+    "Questions advance automatically — you can close this tab and the game keeps going.",
   "host.scoreboard": "Scoreboard",
   "host.afterQuestion": "After question {n}",
   "host.nextIn": "Next question in {n}s",
@@ -229,7 +244,8 @@ const en: Dict = {
   "browse.error": "Could not clone quiz, please try again",
   "browse.empty": "No quizzes found in this category.",
   "browse.ctaTitle": "Looking for ready-to-play quizzes?",
-  "browse.ctaSub": "Explore our pre-seeded library of trivia quizzes in history, science, sports, and culture.",
+  "browse.ctaSub":
+    "Explore our pre-seeded library of trivia quizzes in history, science, sports, and culture.",
   "browse.ctaBtn": "Browse Quiz Library",
 
   "preview.back": "← Back to Library",
@@ -333,8 +349,6 @@ const en: Dict = {
   "editor.uploading": "Uploading…",
 };
 
-
-
 const ar: Dict = {
   "brand.quiz": "كويز",
   "brand.clash": "كلاش",
@@ -412,15 +426,18 @@ const ar: Dict = {
   "editor.addError": "تعذّرت إضافة السؤال",
   "import.open": "أضف أسئلة جاهزة",
   "import.title": "أضف أسئلة جاهزة",
-  "import.sub": "الصق ملاحظاتك أو نصًا من مستند — سيحوّله الذكاء الاصطناعي إلى أسئلة يمكنك مراجعتها قبل الحفظ.",
+  "import.sub":
+    "الصق ملاحظاتك أو نصًا من مستند — سيحوّله الذكاء الاصطناعي إلى أسئلة يمكنك مراجعتها قبل الحفظ.",
   "import.close": "إغلاق",
-  "import.placeholder": "الصق أي نص يشبه الأسئلة. مثال:\n\nما هي عاصمة فرنسا؟\nأ) لندن\nب) باريس\nج) برلين\nد) مدريد\nالإجابة: ب\n\nالصيغ الحرة والقوائم المرقمة والخيارات المفصولة بفواصل مدعومة أيضًا.",
+  "import.placeholder":
+    "الصق أي نص يشبه الأسئلة. مثال:\n\nما هي عاصمة فرنسا؟\nأ) لندن\nب) باريس\nج) برلين\nد) مدريد\nالإجابة: ب\n\nالصيغ الحرة والقوائم المرقمة والخيارات المفصولة بفواصل مدعومة أيضًا.",
   "import.counter": "{n} / {max} حرف",
   "import.tooLong": "النص طويل جدًا — اختصره قليلًا",
   "import.parse": "حوّل النص إلى أسئلة",
   "import.loading": "جارٍ قراءة أسئلتك…",
   "import.cancel": "إلغاء",
-  "import.reviewHint": "تم العثور على {n} سؤال. عدّل ما تشاء، وألغِ تحديد ما لا تريده، ثم أضفها إلى كويزك.",
+  "import.reviewHint":
+    "تم العثور على {n} سؤال. عدّل ما تشاء، وألغِ تحديد ما لا تريده، ثم أضفها إلى كويزك.",
   "import.flag.padded": "خيارات أضافها الذكاء الاصطناعي",
   "import.flag.inferred": "إجابة صحيحة مُستنتجة",
   "import.flag.ambiguous": "فصل غير واضح للسؤال",
@@ -428,11 +445,13 @@ const ar: Dict = {
   "import.adding": "جارٍ الإضافة…",
   "import.backToPaste": "العودة للصق",
   "import.emptyTitle": "لم نجد أي أسئلة",
-  "import.emptyBody": "لم نتمكن من العثور على أسئلة في هذا النص. جرّب إضافة سؤال مع خيارات إجابته أو أعد صياغة ملاحظاتك.",
+  "import.emptyBody":
+    "لم نتمكن من العثور على أسئلة في هذا النص. جرّب إضافة سؤال مع خيارات إجابته أو أعد صياغة ملاحظاتك.",
   "import.tryAgain": "جرّب نصًا آخر",
   "import.empty": "لم نجد أسئلة في هذا النص",
   "import.failed": "تعذّرت قراءة النص، حاول مرة أخرى",
   "import.rateLimited": "طلبات كثيرة الآن — حاول بعد لحظات",
+  "import.monthlyQuota": "استخدمت حصتك الشهرية من الذكاء الاصطناعي. ستتجدد الحصة الشهر القادم.",
   "import.added": "تمت إضافة {n} سؤال",
 
   "hostPick.title": "ابدأ لعبة جديدة",
@@ -549,7 +568,8 @@ const ar: Dict = {
 
   "nav.browse": "مكتبة الكويزات",
   "browse.title": "مكتبة الكويزات الجاهزة",
-  "browse.sub": "اختر كويزاً جاهزاً وابدأ اللعب فوراً — وستُحفظ نسخة منه في كويزاتك لتعدّلها متى شئت.",
+  "browse.sub":
+    "اختر كويزاً جاهزاً وابدأ اللعب فوراً — وستُحفظ نسخة منه في كويزاتك لتعدّلها متى شئت.",
   "browse.allCategories": "جميع التصنيفات",
   "browse.allLanguages": "جميع اللغات",
   "browse.cloneAndPlay": "العب الآن",
@@ -564,7 +584,8 @@ const ar: Dict = {
 
   "preview.back": "← رجوع للكويزات",
   "preview.title": "نظرة على الأسئلة",
-  "preview.sub": "اطّلع على الأسئلة والخيارات قبل البدء — الإجابات الصحيحة مخفية حتى لا تُفسد اللعبة.",
+  "preview.sub":
+    "اطّلع على الأسئلة والخيارات قبل البدء — الإجابات الصحيحة مخفية حتى لا تُفسد اللعبة.",
   "preview.notFound": "لم نجد هذا الكويز",
   "preview.questionsHeader": "أسئلة الكويز ({n})",
   "preview.questionN": "سؤال {n} من {total}",
@@ -630,11 +651,13 @@ const ar: Dict = {
   "cast.modalTitle": "عرض وبث شاشة اللعبة",
   "cast.modalSub": "اعرض اللعبة على شاشة التلفزيون الكبير أو البروجيكتور أو الشاشة الخارجية.",
   "cast.openWindow": "فتح شاشة العرض في نافذة جديدة",
-  "cast.openWindowSub": "يفتح نافذة شاشة عرض نظيفة بأبعاد 16:9 لسحبها وعرضها على التلفزيون أو البروجيكتور.",
+  "cast.openWindowSub":
+    "يفتح نافذة شاشة عرض نظيفة بأبعاد 16:9 لسحبها وعرضها على التلفزيون أو البروجيكتور.",
   "cast.chromecast": "بث عبر Chromecast / التلفزيون الذكي",
   "cast.chromecastSub": "تشغيل جلسة البث اللاسلكي المباشر عبر المتصفح إلى جهاز التلفزيون.",
   "cast.airplayTitle": "بث عبر Apple AirPlay / آيفون و ماك",
-  "cast.airplaySub": "على أجهزة آيفون أو ماك: افتح مركز التحكم ← انعكاس الشاشة (Screen Mirroring) ← اختر التلفزيون.",
+  "cast.airplaySub":
+    "على أجهزة آيفون أو ماك: افتح مركز التحكم ← انعكاس الشاشة (Screen Mirroring) ← اختر التلفزيون.",
   "cast.close": "إغلاق",
   "display.fullscreen": "ملء الشاشة",
   "display.exitFullscreen": "إنهاء ملء الشاشة",
@@ -695,7 +718,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       dir: "rtl",
       setLang: () => {},
       toggle: () => {},
-      t: (key, vars) => interpolate(ar[key as string] ?? en[key as string] ?? (key as string), vars),
+      t: (key, vars) =>
+        interpolate(ar[key as string] ?? en[key as string] ?? (key as string), vars),
     }),
     [],
   );
@@ -711,10 +735,16 @@ export function useI18n(): Ctx {
       dir: "rtl",
       setLang: () => {},
       toggle: () => {},
-      t: (key, vars) => interpolate(ar[key as string] ?? en[key as string] ?? (key as string), vars),
+      t: (key, vars) =>
+        interpolate(ar[key as string] ?? en[key as string] ?? (key as string), vars),
     };
   }
   return ctx;
 }
 
-export const SHAPE_KEYS = ["shape.triangle", "shape.diamond", "shape.circle", "shape.square"] as const;
+export const SHAPE_KEYS = [
+  "shape.triangle",
+  "shape.diamond",
+  "shape.circle",
+  "shape.square",
+] as const;

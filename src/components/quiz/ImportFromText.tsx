@@ -66,7 +66,15 @@ export function ImportFromText({
     try {
       const result = await importQuestionsFromText({ data: { text } });
       if (result.questions.length === 0) {
-        toast.error(t(result.error === "rate_limited" ? "import.rateLimited" : "import.empty"));
+        toast.error(
+          t(
+            result.error === "quota_exceeded"
+              ? "import.monthlyQuota"
+              : result.error === "rate_limited"
+                ? "import.rateLimited"
+                : "import.empty",
+          ),
+        );
         setDrafts([]);
         return;
       }
@@ -86,7 +94,15 @@ export function ImportFromText({
         data: { topic: topic.trim(), count, difficulty, language },
       });
       if (result.questions.length === 0) {
-        toast.error(t(result.error === "rate_limited" ? "import.rateLimited" : "aiGen.failed"));
+        toast.error(
+          t(
+            result.error === "quota_exceeded"
+              ? "import.monthlyQuota"
+              : result.error === "rate_limited"
+                ? "import.rateLimited"
+                : "aiGen.failed",
+          ),
+        );
         return;
       }
       setDrafts(result.questions.map((q) => ({ ...q, include: true })));
@@ -141,7 +157,9 @@ export function ImportFromText({
                   onClick={() => setMode(m)}
                   className={cn(
                     "press flex-1 rounded-xl px-4 py-2 font-display text-sm",
-                    mode === m ? "bg-gradient-hero text-primary-foreground shadow-chunky" : "text-muted-foreground",
+                    mode === m
+                      ? "bg-gradient-hero text-primary-foreground shadow-chunky"
+                      : "text-muted-foreground",
                   )}
                 >
                   {t(m === "topic" ? "aiGen.tabTopic" : "aiGen.tabText")}
@@ -151,7 +169,10 @@ export function ImportFromText({
 
             {mode === "topic" ? (
               <>
-                <label className="mt-5 block text-sm font-semibold text-muted-foreground" htmlFor="ai-topic">
+                <label
+                  className="mt-5 block text-sm font-semibold text-muted-foreground"
+                  htmlFor="ai-topic"
+                >
                   {t("aiGen.topicLabel")}
                 </label>
                 <input
@@ -170,7 +191,9 @@ export function ImportFromText({
                   <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
                     <div className="flex justify-between items-center">
                       <span>{t("aiGen.count")}</span>
-                      <span className="font-display text-primary text-base tabular-nums">{count}</span>
+                      <span className="font-display text-primary text-base tabular-nums">
+                        {count}
+                      </span>
                     </div>
                     <input
                       type="range"
@@ -247,7 +270,11 @@ export function ImportFromText({
                       <>✨ {t("aiGen.generate")}</>
                     )}
                   </button>
-                  <button type="button" onClick={close} className="press rounded-2xl border border-border px-5 py-3">
+                  <button
+                    type="button"
+                    onClick={close}
+                    className="press rounded-2xl border border-border px-5 py-3"
+                  >
                     {t("import.cancel")}
                   </button>
                 </div>
@@ -262,10 +289,20 @@ export function ImportFromText({
                   className="mt-5 w-full resize-y rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
                 />
                 <div className="mt-2 flex items-center justify-between gap-3 text-sm">
-                  <span className={cn(overLimit ? "text-destructive" : nearLimit ? "text-sun" : "text-muted-foreground")}>
+                  <span
+                    className={cn(
+                      overLimit
+                        ? "text-destructive"
+                        : nearLimit
+                          ? "text-sun"
+                          : "text-muted-foreground",
+                    )}
+                  >
                     {t("import.counter", { n: text.length, max: MAX_IMPORT_CHARS })}
                   </span>
-                  {overLimit ? <span className="text-destructive">{t("import.tooLong")}</span> : null}
+                  {overLimit ? (
+                    <span className="text-destructive">{t("import.tooLong")}</span>
+                  ) : null}
                 </div>
                 <div className="mt-5 flex flex-wrap items-center gap-3">
                   <button
@@ -276,7 +313,11 @@ export function ImportFromText({
                   >
                     {loading ? t("import.loading") : t("import.parse")}
                   </button>
-                  <button type="button" onClick={close} className="press rounded-2xl border border-border px-5 py-3">
+                  <button
+                    type="button"
+                    onClick={close}
+                    className="press rounded-2xl border border-border px-5 py-3"
+                  >
                     {t("import.cancel")}
                   </button>
                 </div>
@@ -306,7 +347,9 @@ export function ImportFromText({
                   key={index}
                   className={cn(
                     "rounded-2xl border p-4",
-                    draft.include ? "border-border bg-background/40" : "border-border/50 bg-background/20 opacity-60",
+                    draft.include
+                      ? "border-border bg-background/40"
+                      : "border-border/50 bg-background/20 opacity-60",
                   )}
                 >
                   <header className="flex flex-wrap items-center gap-2">
@@ -347,7 +390,9 @@ export function ImportFromText({
                           value={draft.options[i] ?? ""}
                           onChange={(e) =>
                             patch(index, {
-                              options: [0, 1, 2, 3].map((k) => (k === i ? e.target.value : (draft.options[k] ?? ""))),
+                              options: [0, 1, 2, 3].map((k) =>
+                                k === i ? e.target.value : (draft.options[k] ?? ""),
+                              ),
                             })
                           }
                           className="min-w-0 flex-1 rounded-xl border border-border bg-background/50 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
@@ -378,7 +423,10 @@ export function ImportFromText({
                       value={draft.time_limit_seconds}
                       onChange={(e) =>
                         patch(index, {
-                          time_limit_seconds: Math.max(5, Math.min(120, Number(e.target.value) || 30)),
+                          time_limit_seconds: Math.max(
+                            5,
+                            Math.min(120, Number(e.target.value) || 30),
+                          ),
                         })
                       }
                       className="w-20 rounded-xl border border-border bg-background/50 px-3 py-1 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"

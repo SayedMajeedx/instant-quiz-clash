@@ -61,11 +61,10 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
   const load = useCallback(
     async (forceFull = false) => {
       const upper = code.toUpperCase();
-      const { data: roomRow } = await supabase
-        .from("rooms")
-        .select("*")
-        .eq("code", upper)
-        .maybeSingle();
+      const { data: roomRows } = await (supabase as any).rpc("get_room_by_code", {
+        p_code: upper,
+      });
+      const roomRow = Array.isArray(roomRows) ? roomRows[0] : roomRows;
 
       if (!roomRow) {
         setMissing(true);
@@ -81,7 +80,11 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
       if (needsFullLoad) {
         const [quizRes, ownerQuestionRes, playerRes, answerRes] = await Promise.all([
           supabase.from("quizzes").select("*").eq("id", typedRoom.quiz_id).maybeSingle(),
-          supabase.from("questions").select("*").eq("quiz_id", typedRoom.quiz_id).order("order_index"),
+          supabase
+            .from("questions")
+            .select("*")
+            .eq("quiz_id", typedRoom.quiz_id)
+            .order("order_index"),
           supabase.from("players").select("*").eq("room_id", typedRoom.id).order("joined_at"),
           supabase.from("answers").select("*").eq("room_id", typedRoom.id),
         ]);
@@ -89,8 +92,13 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
         let rows = (ownerQuestionRes.data ?? []) as unknown as Question[];
         const isOwner = rows.length > 0;
         if (!isOwner) {
-          const { data: publicRows } = await supabase.rpc("room_questions", { p_room_id: typedRoom.id });
-          rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({ ...q, correct_index: -1 }));
+          const { data: publicRows } = await supabase.rpc("room_questions", {
+            p_room_id: typedRoom.id,
+          });
+          rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({
+            ...q,
+            correct_index: -1,
+          }));
           const { data: reveals } = await supabase.rpc("room_reveals", { p_room_id: typedRoom.id });
           const map = new Map((reveals ?? []).map((r) => [r.question_id, r.correct_index]));
           rows = rows.map((q) => (map.has(q.id) ? { ...q, correct_index: map.get(q.id)! } : q));
@@ -108,11 +116,15 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
         }
 
         const loadedQuiz = (quizRes.data as unknown as Quiz) ?? null;
-        let loadedQuestions = rows.map((q) => ({ ...q, options: q.options as unknown as string[] }));
+        let loadedQuestions = rows.map((q) => ({
+          ...q,
+          options: q.options as unknown as string[],
+        }));
 
         // Enrich questions with QUIZ_LIBRARY static data if explanation or other fields are missing
         const libMatch = QUIZ_LIBRARY.find(
-          (lq) => lq.id === typedRoom.quiz_id || (loadedQuiz?.title && lq.title === loadedQuiz.title)
+          (lq) =>
+            lq.id === typedRoom.quiz_id || (loadedQuiz?.title && lq.title === loadedQuiz.title),
         );
         if (libMatch && libMatch.questions.length > 0) {
           loadedQuestions = loadedQuestions.map((q, idx) => {

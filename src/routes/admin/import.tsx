@@ -559,7 +559,7 @@ function AdminImportPage() {
             subcategory: q.subcategory || null,
           }));
 
-          let { error: qErr } = await db.from("questions").insert(questionInsertsFull);
+          const { error: qErr } = await db.from("questions").insert(questionInsertsFull);
           if (qErr) {
             console.warn("Full questions insert failed, trying minimal questions insert:", qErr);
             const questionInsertsMinimal = item.questions.map((q, idx) => ({

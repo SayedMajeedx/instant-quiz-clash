@@ -523,7 +523,9 @@ export async function getAllAdminCategories(providedQuizzes?: AdminQuizItem[]): 
     const { data, error } = await (supabase.from("categories") as any)
       .select("*, subcategories(*)");
     if (!error && data && Array.isArray(data)) dbCategories = data;
-  } catch {}
+  } catch {
+    // Fall back to the local catalog when the remote category query is unavailable.
+  }
 
   const categoryMap = new Map<string, AdminCategoryItem>();
 

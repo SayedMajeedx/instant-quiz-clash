@@ -148,7 +148,7 @@ function Play() {
     }
   }
 
-  async function useFifty() {
+  async function activateFifty() {
     if (phase.kind !== "question" || !playerId || myAnswer || !me || me.used_fifty) return;
     const { error } = await supabase.rpc("use_fifty_fifty", {
       p_player_id: playerId,
@@ -470,7 +470,7 @@ function Play() {
               <button
                 type="button"
                 disabled={me.used_fifty || isBoolean}
-                onClick={() => void useFifty()}
+                onClick={() => void activateFifty()}
                 title={isBoolean ? t("play.fiftyUnavailable") : undefined}
                 className={cn(
                   "press relative flex flex-col items-center justify-center gap-0.5 overflow-hidden rounded-2xl border p-2.5 transition-all shadow-lg",

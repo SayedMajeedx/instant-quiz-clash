@@ -133,6 +133,11 @@ function Editor() {
   }
 
   async function uploadImage(questionId: string, file: File) {
+    const allowedTypes = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
+    if (!allowedTypes.has(file.type)) {
+      toast.error(t("editor.imageFailed"));
+      return;
+    }
     if (file.size > 5 * 1024 * 1024) {
       toast.error(t("editor.imageTooBig"));
       return;

@@ -17,8 +17,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-const ADMIN_EMAILS = new Set(["ifatshady@gmail.com"]);
-
 export const Route = createFileRoute("/admin")({
   ssr: false,
   component: AdminLayout,
@@ -44,26 +42,15 @@ function AdminLayout() {
         return;
       }
 
-      const email = (user.email || "").toLowerCase();
       if (mounted) {
         setUserEmail(user.email || "");
       }
 
-      // 1. Check hardcoded admin whitelist first
-      if (email && ADMIN_EMAILS.has(email)) {
-        if (mounted) {
-          setDisplayName(user.user_metadata?.full_name || email.split("@")[0]);
-          setIsAdmin(true);
-          setLoading(false);
-        }
-        return;
-      }
-
-      // 2. Query Supabase profiles table for role
+      // The database role is the single source of truth for admin access.
       try {
         const { data: profile } = await supabase
           .from("profiles")
-          .select("role, name")
+          .select("role, display_name")
           .eq("id", user.id)
           .maybeSingle();
 
@@ -72,7 +59,7 @@ function AdminLayout() {
           const isAllowed = role === "admin" || role === "super_admin" || role === "owner";
           if (mounted) {
             setDisplayName(
-              (profile as any).name || (profile as any).display_name || user.email || "",
+              (profile as any).display_name || user.email || "",
             );
             setIsAdmin(isAllowed);
             setLoading(false);

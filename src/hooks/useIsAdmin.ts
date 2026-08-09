@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
-const ADMIN_EMAILS = new Set(["ifatshady@gmail.com"]);
-
 export function useIsAdmin() {
   const [isAdmin, setIsAdmin] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
@@ -14,15 +12,6 @@ export function useIsAdmin() {
       if (!user) {
         if (mounted) {
           setIsAdmin(false);
-          setLoading(false);
-        }
-        return;
-      }
-
-      const email = user.email?.toLowerCase();
-      if (email && ADMIN_EMAILS.has(email)) {
-        if (mounted) {
-          setIsAdmin(true);
           setLoading(false);
         }
         return;

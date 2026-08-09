@@ -472,7 +472,9 @@ function CategoryDetailPage() {
           map[row.source_quiz_id] = row.play_count;
         }
         setPlayCounts(map);
-      } catch {}
+      } catch {
+        // Play counts are optional; keep the catalog usable if analytics are unavailable.
+      }
     })();
   }, []);
 

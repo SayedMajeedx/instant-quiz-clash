@@ -210,7 +210,7 @@ export function standings(
 ): Standing[] {
   const orderedIds = questions.slice(0, upToIndex + 1).map((q) => q.id);
 
-  let prevStandingsMap: Record<string, { prevRank: number; prevTotal: number }> = {};
+  const prevStandingsMap: Record<string, { prevRank: number; prevTotal: number }> = {};
   if (upToIndex > 0) {
     const prevOrderedIds = questions.slice(0, upToIndex).map((q) => q.id);
     const prevRows = players.map((player) => {

@@ -41,7 +41,7 @@ function MyQuizzes() {
       .eq("personal_library", true)
       .order("created_at", { ascending: false });
 
-    let rows = ((data ?? []) as unknown as Quiz[]).filter(
+    const rows = ((data ?? []) as unknown as Quiz[]).filter(
       (quiz) => quiz.quiz_kind !== "custom_generated",
     );
 
