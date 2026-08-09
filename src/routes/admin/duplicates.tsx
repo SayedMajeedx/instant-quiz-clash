@@ -55,7 +55,10 @@ function DuplicateReviewPage() {
     setScanning(true);
     try {
       const result = await scanDuplicateQuestions({ data: { useAi: true } });
-      toast.success(`فُحص ${result.scanned} سؤالاً، وعُثر على ${result.flagged} حالة قوية.`);
+      toast.success(
+        `فُحص ${result.scanned} سؤالاً، وأضيفت ${result.flagged} حالة جديدة للمراجعة` +
+          (result.skippedReviewed ? `، وتُخطيت ${result.skippedReviewed} حالة سبق حسمها.` : "."),
+      );
       await load();
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "فشل الفحص");

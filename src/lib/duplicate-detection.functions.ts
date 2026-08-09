@@ -21,7 +21,10 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
       await import("@/lib/duplicate-detection.server");
     const { data: quizzes, error: quizError } = await (supabaseAdmin.from("quizzes") as any)
       .select("id,title,category,quiz_kind")
-      .neq("quiz_kind", "custom_generated");
+      // PostgREST `neq` does not include NULL rows. Most catalog quizzes predate
+      // quiz_kind and therefore have NULL here, so excluding them made the scan
+      // silently inspect only a fraction of the question bank.
+      .or("quiz_kind.is.null,quiz_kind.neq.custom_generated");
     if (quizError) throw quizError;
     const quizMap = new Map((quizzes ?? []).map((quiz: any) => [quiz.id, quiz]));
     const { data: rows, error } = await (supabaseAdmin.from("questions") as any).select(
@@ -55,8 +58,20 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
       .delete()
       .eq("status", "pending");
     if (clearError) throw clearError;
-    for (const candidate of accepted) {
-      await (supabaseAdmin.from("quiz_duplicate_reviews") as any).upsert(
+    const { data: reviewed, error: reviewedError } = await (
+      supabaseAdmin.from("quiz_duplicate_reviews") as any
+    )
+      .select("fingerprint")
+      .in("status", ["dismissed", "resolved"]);
+    if (reviewedError) throw reviewedError;
+    const reviewedFingerprints = new Set(
+      (reviewed ?? []).map((item: { fingerprint: string }) => item.fingerprint),
+    );
+    const queued = accepted.filter(
+      (candidate) => !reviewedFingerprints.has(candidate.fingerprint),
+    );
+    for (const candidate of queued) {
+      const { error: saveError } = await (supabaseAdmin.from("quiz_duplicate_reviews") as any).upsert(
         {
           fingerprint: candidate.fingerprint,
           status: "pending",
@@ -69,8 +84,15 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
         },
         { onConflict: "fingerprint", ignoreDuplicates: true },
       );
+      if (saveError) throw saveError;
     }
-    return { scanned: questions.length, retrieved: retrieved.length, flagged: accepted.length };
+    return {
+      scanned: questions.length,
+      retrieved: retrieved.length,
+      matched: accepted.length,
+      flagged: queued.length,
+      skippedReviewed: accepted.length - queued.length,
+    };
   });
 
 export const listDuplicateReviews = createServerFn({ method: "GET" })
