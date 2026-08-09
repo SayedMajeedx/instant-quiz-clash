@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  adjudicateCandidates,
   groupCandidates,
   normalizeArabic,
   retrieveCandidates,
@@ -38,10 +39,34 @@ test("retrieves the reported Year of Sorrow paraphrase before AI adjudication", 
 
   const candidates = retrieveCandidates(questions);
   assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].verdict, "equivalent");
+  assert.equal(candidates[0].confidence, 0.93);
   assert.deepEqual(
     new Set(candidates[0].questions.map((question) => question.id)),
     new Set(questions.map((question) => question.id)),
   );
+});
+
+test("returns the Year of Sorrow pair in final results without the AI judge", async () => {
+  const questions = [
+    {
+      ...base,
+      id: "year-of-sorrow-a",
+      orderIndex: 3,
+      text: "في أي سنة من البعثة النبوية توفيت خديجة بنت خويلد وأبو طالب في نفس العام المعروف بعام الحزن؟",
+      answer: "السنة العاشرة",
+    },
+    {
+      ...base,
+      id: "year-of-sorrow-b",
+      orderIndex: 8,
+      text: "في أي عام يسمى عام الحزن توفي فيه كل من أبي طالب وخديجة بنت خويلد؟",
+      answer: "السنة العاشرة من البعثة",
+    },
+  ];
+  const finalResults = await adjudicateCandidates(retrieveCandidates(questions));
+  assert.equal(finalResults.length, 1);
+  assert.equal(finalResults[0].verdict, "equivalent");
 });
 
 test("groups a third equivalent formulation into the same review case", () => {

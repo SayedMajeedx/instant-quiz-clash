@@ -49,6 +49,12 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
       ? await adjudicateCandidates(retrieved)
       : retrieved.filter((item) => item.verdict === "exact");
     const accepted = groupCandidates(acceptedPairs);
+    // A scan is a fresh snapshot. Remove only unresolved rows so stale findings do not
+    // accumulate across algorithm revisions; dismissed/resolved audit decisions remain.
+    const { error: clearError } = await (supabaseAdmin.from("quiz_duplicate_reviews") as any)
+      .delete()
+      .eq("status", "pending");
+    if (clearError) throw clearError;
     for (const candidate of accepted) {
       await (supabaseAdmin.from("quiz_duplicate_reviews") as any).upsert(
         {

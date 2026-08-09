@@ -140,7 +140,10 @@ export function retrieveCandidates(questions: DuplicateQuestion[]): DuplicateCan
     const leftText = normalizeArabic(left.text);
     const rightText = normalizeArabic(right.text);
     const exact = leftText === rightText;
-    const tokenSimilarity = jaccard(contentTokens(left.text), contentTokens(right.text));
+    const leftTokens = contentTokens(left.text);
+    const rightTokens = contentTokens(right.text);
+    const tokenSimilarity = jaccard(leftTokens, rightTokens);
+    const factContainment = containment(leftTokens, rightTokens);
     const charSimilarity = jaccard(charTrigrams(left.text), charTrigrams(right.text));
     const answerMatch = compatibleAnswers(left.answer, right.answer);
     const numberMatch = sameValues(numbers(left.text), numbers(right.text));
@@ -158,15 +161,27 @@ export function retrieveCandidates(questions: DuplicateQuestion[]): DuplicateCan
     // surface wording differs but the answer and named entities agree.
     const minimumScore = answerMatch && categoryMatch ? 0.38 : 0.57;
     if (!exact && (!numberMatch || retrievalScore < minimumScore)) continue;
+    const deterministicEquivalent =
+      answerMatch && categoryMatch && numberMatch && factContainment >= 0.4;
     candidates.push({
       fingerprint: fingerprint([left.id, right.id]),
-      confidence: exact && answerMatch ? 1 : Math.min(0.94, retrievalScore),
-      verdict: exact && answerMatch ? "exact" : "related",
-      sharedFact: "",
+      confidence:
+        exact && answerMatch ? 1 : deterministicEquivalent ? 0.93 : Math.min(0.89, retrievalScore),
+      verdict: exact && answerMatch ? "exact" : deterministicEquivalent ? "equivalent" : "related",
+      sharedFact: deterministicEquivalent ? left.answer : "",
       rationale: exact
         ? "نص السؤال والإجابة متطابقان بعد التطبيع."
-        : "مرشح من الاسترجاع العربي الهجين ويحتاج تحكيماً دلالياً.",
-      signals: { tokenSimilarity, charSimilarity, answerMatch, numberMatch, categoryMatch },
+        : deterministicEquivalent
+          ? "الإجابة متوافقة والكيانات والعبارات المميزة متداخلة دون تعارض رقمي."
+          : "مرشح من الاسترجاع العربي الهجين ويحتاج تحكيماً دلالياً.",
+      signals: {
+        tokenSimilarity,
+        factContainment,
+        charSimilarity,
+        answerMatch,
+        numberMatch,
+        categoryMatch,
+      },
       questions: [left, right],
     });
   }
@@ -231,9 +246,15 @@ async function judgeBatch(
 export async function adjudicateCandidates(
   candidates: DuplicateCandidate[],
 ): Promise<DuplicateCandidate[]> {
-  const exact = candidates.filter((candidate) => candidate.verdict === "exact");
-  const uncertain = candidates.filter((candidate) => candidate.verdict !== "exact").slice(0, 240);
-  const accepted: DuplicateCandidate[] = [...exact];
+  const deterministic = candidates.filter(
+    (candidate) =>
+      candidate.verdict === "exact" ||
+      (candidate.verdict === "equivalent" && candidate.confidence >= 0.93),
+  );
+  const uncertain = candidates
+    .filter((candidate) => !deterministic.includes(candidate))
+    .slice(0, 240);
+  const accepted: DuplicateCandidate[] = [...deterministic];
   for (let index = 0; index < uncertain.length; index += 20) {
     const batch = uncertain.slice(index, index + 20);
     const judgments = await judgeBatch(batch);
