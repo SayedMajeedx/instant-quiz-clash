@@ -14,6 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
+      admin_deleted_quizzes: {
+        Row: {
+          deleted_at: string
+          deleted_by: string | null
+          library_id: string
+          title: string
+        }
+        Insert: {
+          deleted_at?: string
+          deleted_by?: string | null
+          library_id: string
+          title: string
+        }
+        Update: {
+          deleted_at?: string
+          deleted_by?: string | null
+          library_id?: string
+          title?: string
+        }
+        Relationships: []
+      }
       answers: {
         Row: {
           answered_at: string
@@ -252,16 +273,19 @@ export type Database = {
           created_at: string
           display_name: string
           id: string
+          role: string | null
         }
         Insert: {
           created_at?: string
           display_name?: string
           id: string
+          role?: string | null
         }
         Update: {
           created_at?: string
           display_name?: string
           id?: string
+          role?: string | null
         }
         Relationships: []
       }
@@ -281,6 +305,8 @@ export type Database = {
           question_type: string
           quiz_id: string
           source: string | null
+          source_category: string | null
+          source_question_id: string | null
           subcategory: string | null
           tags: string[]
           time_limit_seconds: number
@@ -301,6 +327,8 @@ export type Database = {
           question_type?: string
           quiz_id: string
           source?: string | null
+          source_category?: string | null
+          source_question_id?: string | null
           subcategory?: string | null
           tags?: string[]
           time_limit_seconds?: number
@@ -321,6 +349,8 @@ export type Database = {
           question_type?: string
           quiz_id?: string
           source?: string | null
+          source_category?: string | null
+          source_question_id?: string | null
           subcategory?: string | null
           tags?: string[]
           time_limit_seconds?: number
@@ -332,6 +362,13 @@ export type Database = {
             columns: ["quiz_id"]
             isOneToOne: false
             referencedRelation: "quizzes"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "questions_source_question_id_fkey"
+            columns: ["source_question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
             referencedColumns: ["id"]
           },
         ]
@@ -361,10 +398,15 @@ export type Database = {
         Row: {
           category: string
           created_at: string
+          expires_at: string | null
           id: string
           is_public: boolean
           language: string
+          personal_library: boolean
+          personal_library_origin: string | null
           quiz_difficulty: string
+          quiz_kind: string
+          source_config: Json | null
           subcategory: string
           title: string
           user_id: string
@@ -372,10 +414,15 @@ export type Database = {
         Insert: {
           category?: string
           created_at?: string
+          expires_at?: string | null
           id?: string
           is_public?: boolean
           language?: string
+          personal_library?: boolean
+          personal_library_origin?: string | null
           quiz_difficulty?: string
+          quiz_kind?: string
+          source_config?: Json | null
           subcategory?: string
           title?: string
           user_id: string
@@ -383,10 +430,15 @@ export type Database = {
         Update: {
           category?: string
           created_at?: string
+          expires_at?: string | null
           id?: string
           is_public?: boolean
           language?: string
+          personal_library?: boolean
+          personal_library_origin?: string | null
           quiz_difficulty?: string
+          quiz_kind?: string
+          source_config?: Json | null
           subcategory?: string
           title?: string
           user_id?: string
@@ -507,6 +559,34 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      admin_activity_summary: { Args: never; Returns: Json }
+      admin_catalog_counts: { Args: never; Returns: Json }
+      admin_reporting_snapshot: { Args: never; Returns: Json }
+      admin_set_user_role: {
+        Args: { p_role: string; p_user_id: string }
+        Returns: undefined
+      }
+      admin_user_directory: {
+        Args: never
+        Returns: {
+          created_at: string
+          display_name: string
+          email: string
+          id: string
+          last_sign_in_at: string
+          role: string
+          total_games_hosted: number
+        }[]
+      }
+      admin_user_directory_page: {
+        Args: {
+          p_page?: number
+          p_page_size?: number
+          p_role?: string
+          p_search?: string
+        }
+        Returns: Json
+      }
       advance_room: {
         Args: {
           p_expect_index: number
@@ -535,7 +615,60 @@ export type Database = {
         }
       }
       archive_room: { Args: { p_room_id: string }; Returns: string }
+      create_custom_quiz_room: {
+        Args: {
+          p_advance_mode?: string
+          p_questions: Json
+          p_team_count?: number
+          p_team_mode?: string
+        }
+        Returns: Json
+      }
+      custom_quiz_pool_size: {
+        Args: {
+          p_categories?: string[]
+          p_difficulty?: string
+          p_subcategories?: string[]
+        }
+        Returns: number
+      }
+      delete_admin_quizzes: {
+        Args: {
+          p_library_ids?: string[]
+          p_quiz_ids?: string[]
+          p_titles?: string[]
+        }
+        Returns: number
+      }
+      generate_custom_quiz_room: {
+        Args: {
+          p_advance_mode?: string
+          p_categories?: string[]
+          p_difficulty?: string
+          p_question_count?: number
+          p_subcategories?: string[]
+          p_team_count?: number
+          p_team_mode?: string
+        }
+        Returns: Json
+      }
+      get_admin_deleted_quizzes: {
+        Args: never
+        Returns: {
+          deleted_at: string
+          library_id: string
+          title: string
+        }[]
+      }
       get_all_admin_quizzes: { Args: never; Returns: Json }
+      get_catalog_deleted_quizzes: {
+        Args: never
+        Returns: {
+          deleted_at: string
+          library_id: string
+          title: string
+        }[]
+      }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
@@ -543,6 +676,7 @@ export type Database = {
         }
         Returns: boolean
       }
+      is_admin: { Args: never; Returns: boolean }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
         Returns: {
@@ -605,6 +739,8 @@ export type Database = {
           question_text: string
           question_type: string
           quiz_id: string
+          source_category: string
+          subcategory: string
           time_limit_seconds: number
         }[]
       }
