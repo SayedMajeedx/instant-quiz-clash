@@ -27,10 +27,19 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
       .or("quiz_kind.is.null,quiz_kind.neq.custom_generated");
     if (quizError) throw quizError;
     const quizMap = new Map((quizzes ?? []).map((quiz: any) => [quiz.id, quiz]));
-    const { data: rows, error } = await (supabaseAdmin.from("questions") as any).select(
-      "id,quiz_id,question_text,options,correct_index,explanation,order_index",
-    );
-    if (error) throw error;
+    // Supabase/PostgREST caps a response at the project's max-rows setting
+    // (commonly 1,000). Fetch every page or the detector silently scans only
+    // the first slice of the catalog.
+    const rows: any[] = [];
+    const pageSize = 1_000;
+    for (let from = 0; ; from += pageSize) {
+      const { data: page, error } = await (supabaseAdmin.from("questions") as any)
+        .select("id,quiz_id,question_text,options,correct_index,explanation,order_index")
+        .range(from, from + pageSize - 1);
+      if (error) throw error;
+      rows.push(...(page ?? []));
+      if ((page ?? []).length < pageSize) break;
+    }
     const questions = (rows ?? []).flatMap((row: any) => {
       const quiz: any = quizMap.get(row.quiz_id);
       if (!quiz) return [];
