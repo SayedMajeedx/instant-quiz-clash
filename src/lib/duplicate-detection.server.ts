@@ -152,7 +152,12 @@ export function retrieveCandidates(questions: DuplicateQuestion[]): DuplicateCan
         0.22 * Number(answerMatch) +
         0.08 * Number(categoryMatch);
 
-    if (!exact && (!numberMatch || retrievalScore < 0.57)) continue;
+    // Matching/contained answers are a powerful retrieval signal. Keep these pairs at a
+    // deliberately lower lexical threshold and let the factual judge reject shared generic
+    // answers (for example "نعم") later. This catches paraphrases such as عام الحزن where
+    // surface wording differs but the answer and named entities agree.
+    const minimumScore = answerMatch && categoryMatch ? 0.38 : 0.57;
+    if (!exact && (!numberMatch || retrievalScore < minimumScore)) continue;
     candidates.push({
       fingerprint: fingerprint([left.id, right.id]),
       confidence: exact && answerMatch ? 1 : Math.min(0.94, retrievalScore),
