@@ -840,9 +840,6 @@ function HostRoom() {
   const fastestPlayer = fastestAnswer
     ? players.find((player) => player.id === fastestAnswer.player_id) ?? null
     : null;
-  const fastestSeconds = fastestAnswer && room.phase_started_at
-    ? Math.max(0, (new Date(fastestAnswer.answered_at).getTime() - new Date(room.phase_started_at).getTime()) / 1000)
-    : null;
 
   return (
     <main className="relative h-screen max-h-screen w-full overflow-hidden flex flex-col justify-between p-3 sm:p-4 md:p-5">
@@ -907,7 +904,6 @@ function HostRoom() {
                   <span>⚡ أسرع إجابة</span>
                   <PlayerAvatar player={fastestPlayer} size="sm" />
                   <span>{fastestPlayer.nickname}</span>
-                  {fastestSeconds !== null ? <span className="text-amber-300">{fastestSeconds.toFixed(1)}ث</span> : null}
                 </div>
               ) : null}
               {manual ? (
