@@ -1,30 +1,551 @@
 {
   "title": "سيرة الإمام الحسن العسكري (ع)",
   "category": "سلسلة مسابقات أهل البيت (ع)",
+  "subcategory": "سيرة الإمام الحسن العسكري (ع)",
   "language": "ar",
   "quiz_difficulty": "standard",
   "archived": false,
   "launch_enabled": true,
   "questions": [
-    {"id":"ASK-001","category":"أهل البيت","subcategory":"الولادة والنشأة","difficulty":"easy","question_text":"في أي مدينة وُلد الإمام الحسن العسكري (ع) بحسب الشيخ المفيد؟","options":["سامراء","المدينة المنورة","بغداد","الكوفة"],"correct_index":1,"time_limit_seconds":20,"order_index":0,"question_type":"multi","explanation":"يذكر الشيخ المفيد أن مولد الإمام الحسن العسكري (ع) كان في المدينة.","tags":["الإمام العسكري","الولادة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي العسكري (ع)","external_id":"ASK-001","is_verified":true,"version":1},
-    {"id":"ASK-002","category":"أهل البيت","subcategory":"الولادة والنشأة","difficulty":"medium","question_text":"في أي شهر كانت ولادة الإمام الحسن العسكري (ع) بحسب رواية الإرشاد؟","options":["ربيع الأول","جمادى الآخرة","شعبان","ربيع الآخر"],"correct_index":3,"time_limit_seconds":20,"order_index":1,"question_type":"multi","explanation":"أثبت الإرشاد ولادته في شهر ربيع الآخر سنة 232هـ.","tags":["الإمام العسكري","الولادة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي العسكري (ع)","external_id":"ASK-002","is_verified":true,"version":1},
-    {"id":"ASK-003","category":"أهل البيت","subcategory":"الولادة والنشأة","difficulty":"easy","question_text":"ما السنة الهجرية التي وُلد فيها الإمام الحسن العسكري (ع)؟","options":["232هـ","220هـ","225هـ","238هـ"],"correct_index":0,"time_limit_seconds":20,"order_index":2,"question_type":"multi","explanation":"ولد الإمام الحسن العسكري (ع) سنة اثنتين وثلاثين ومئتين للهجرة.","tags":["الإمام العسكري","الولادة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي العسكري (ع)","external_id":"ASK-003","is_verified":true,"version":1},
-    {"id":"ASK-004","category":"أهل البيت","subcategory":"الولادة والنشأة","difficulty":"easy","question_text":"ما كنية الإمام الحسن العسكري (ع)؟","options":["أبو الحسن","أبو جعفر","أبو محمد","أبو عبد الله"],"correct_index":2,"time_limit_seconds":15,"order_index":3,"question_type":"multi","explanation":"كنية الإمام الحسن بن علي العسكري (ع) هي أبو محمد.","tags":["الإمام العسكري","الكنية"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي العسكري (ع)","external_id":"ASK-004","is_verified":true,"version":1},
-    {"id":"ASK-005","category":"أهل البيت","subcategory":"الولادة والنشأة","difficulty":"easy","question_text":"من والد الإمام الحسن العسكري (ع)؟","options":["الإمام محمد الجواد (ع)","الإمام علي الرضا (ع)","الإمام علي الهادي (ع)","الإمام موسى الكاظم (ع)"],"correct_index":2,"time_limit_seconds":20,"order_index":4,"question_type":"multi","explanation":"الإمام العسكري (ع) هو ابن الإمام علي بن محمد الهادي (ع)، الإمام العاشر.","tags":["الإمام العسكري","النسب"],"source":"الكافي — الشيخ الكليني، ج1، كتاب الحجة، باب مولد أبي محمد الحسن بن علي (ع)","external_id":"ASK-005","is_verified":true,"version":1},
-    {"id":"ASK-006","category":"أهل البيت","subcategory":"الولادة والنشأة","difficulty":"medium","question_text":"لماذا اشتهر الإمام الحسن وأبوه الهادي بلقب «العسكريين»؟","options":["لإقامتهما في محلة العسكر بسامراء","لقيادتهما جيشًا في الكوفة","لولادتهما في معسكر حدودي","لانتسابهما إلى قبيلة عسكر"],"correct_index":0,"time_limit_seconds":25,"order_index":5,"question_type":"multi","explanation":"نُسب الإمامان الهادي والعسكري (ع) إلى «العسكر»، وهي المحلة التي أُسكنا فيها بسامراء.","tags":["الإمام العسكري","سامراء","اللقب"],"source":"إعلام الورى بأعلام الهدى — الشيخ الطبرسي، باب الإمام الحسن العسكري (ع)","external_id":"ASK-006","is_verified":true,"version":1},
-    {"id":"ASK-007","category":"أهل البيت","subcategory":"الإمامة","difficulty":"easy","question_text":"من الإمام الذي نصّ على إمامة الحسن العسكري (ع) من بعده؟","options":["الإمام محمد الجواد (ع)","الإمام علي الرضا (ع)","الإمام موسى الكاظم (ع)","الإمام علي الهادي (ع)"],"correct_index":3,"time_limit_seconds":20,"order_index":6,"question_type":"multi","explanation":"روى الكليني نصوصًا صريحة عن الإمام الهادي (ع) في تعيين ابنه أبي محمد للإمامة بعده.","tags":["الإمام العسكري","الإمامة","النص"],"source":"الكافي — الشيخ الكليني، ج1، كتاب الحجة، باب الإشارة والنص على أبي محمد (ع)","external_id":"ASK-007","is_verified":true,"version":1},
-    {"id":"ASK-008","category":"أهل البيت","subcategory":"الإمامة","difficulty":"medium","question_text":"في أي سنة بدأت إمامة الإمام الحسن العسكري (ع)؟","options":["250هـ","254هـ","255هـ","260هـ"],"correct_index":1,"time_limit_seconds":20,"order_index":7,"question_type":"multi","explanation":"بدأت إمامته بعد وفاة أبيه الإمام الهادي (ع) سنة 254هـ.","tags":["الإمام العسكري","الإمامة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب وفاة أبي الحسن علي بن محمد (ع) وإمامة ابنه","external_id":"ASK-008","is_verified":true,"version":1},
-    {"id":"ASK-009","category":"أهل البيت","subcategory":"الإمامة","difficulty":"easy","question_text":"كم دامت إمامة الإمام الحسن العسكري (ع) تقريبًا؟","options":["ست سنوات","أربع سنوات","عشر سنوات","عشرون سنة"],"correct_index":0,"time_limit_seconds":20,"order_index":8,"question_type":"multi","explanation":"امتدت إمامته من سنة 254هـ إلى سنة 260هـ، أي نحو ست سنوات.","tags":["الإمام العسكري","الإمامة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي العسكري (ع)","external_id":"ASK-009","is_verified":true,"version":1},
-    {"id":"ASK-010","category":"أهل البيت","subcategory":"الرقابة العباسية","difficulty":"easy","question_text":"في أي مدينة قضى الإمام العسكري (ع) مدة إمامته تحت الرقابة العباسية؟","options":["المدينة المنورة","الكوفة","سامراء","قم"],"correct_index":2,"time_limit_seconds":20,"order_index":9,"question_type":"multi","explanation":"عاش الإمام العسكري (ع) في سامراء، حيث أحاطت به السلطة العباسية ورجالها بالرقابة.","tags":["الإمام العسكري","سامراء","الرقابة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام الحسن بن علي العسكري (ع)","external_id":"ASK-010","is_verified":true,"version":1},
-    {"id":"ASK-011","category":"أهل البيت","subcategory":"الرقابة العباسية","difficulty":"hard","question_text":"عند من كان الإمام العسكري (ع) محبوسًا حين طلب العباسيون التشديد عليه؟","options":["عبيد الله بن خاقان","صالح بن وصيف","أحمد بن طولون","الفتح بن خاقان"],"correct_index":1,"time_limit_seconds":25,"order_index":10,"question_type":"multi","explanation":"تروي المصادر أن الإمام (ع) حُبس عند صالح بن وصيف، وأن شدة العبادة أثرت في الموكلين به.","tags":["الإمام العسكري","السجن"],"source":"الإرشاد — الشيخ المفيد، ج2، باب طرف من أخبار أبي محمد الحسن بن علي (ع)","external_id":"ASK-011","is_verified":true,"version":1},
-    {"id":"ASK-012","category":"أهل البيت","subcategory":"العبادة","difficulty":"medium","question_text":"ماذا حدث للرجلين الشديدين اللذين وُكّلا بالإمام في حبس صالح بن وصيف؟","options":["نقلاه سرًا إلى المدينة","أطلقاه بلا أمر السلطان","كتبا كتابًا في الأنساب","صارا من أهل العبادة والصلاة"],"correct_index":3,"time_limit_seconds":30,"order_index":11,"question_type":"multi","explanation":"لما لازما الإمام في الحبس تأثرا بعبادته، فصارا كثيري الصلاة والعبادة.","tags":["الإمام العسكري","العبادة","السجن"],"source":"الإرشاد — الشيخ المفيد، ج2، باب طرف من أخبار أبي محمد الحسن بن علي (ع)","external_id":"ASK-012","is_verified":true,"version":1},
-    {"id":"ASK-013","category":"أهل البيت","subcategory":"الوكلاء","difficulty":"medium","question_text":"من الوكيل الذي خدم الإمامين الهادي والعسكري ثم صار أول نواب المهدي (عج)؟","options":["محمد بن عثمان العمري","الحسين بن روح","علي بن محمد السمري","عثمان بن سعيد العمري"],"correct_index":3,"time_limit_seconds":25,"order_index":12,"question_type":"multi","explanation":"وثّق الإمام العسكري (ع) عثمان بن سعيد، وكان وكيلًا له ولأبيه ثم صار أول النواب الخاصين للمهدي (عج).","tags":["الإمام العسكري","عثمان بن سعيد","الوكلاء"],"source":"الكافي — الشيخ الكليني، ج1، كتاب الحجة، باب في تسمية من رآه (عج)؛ وباب مولد الصاحب (عج)","external_id":"ASK-013","is_verified":true,"version":1},
-    {"id":"ASK-014","category":"أهل البيت","subcategory":"الوكلاء","difficulty":"hard","question_text":"بأي وسيلة كان عثمان بن سعيد يخفي الأموال المنقولة إلى الإمام؟","options":["داخل كتب الفقه","في أوعية السمن","في أكياس الحبوب","تحت سروج الخيل"],"correct_index":1,"time_limit_seconds":25,"order_index":13,"question_type":"multi","explanation":"عُرف عثمان بن سعيد بالسمّان لأنه كان يجعل الأموال في أوعية السمن تمويهًا على رقابة السلطة.","tags":["الإمام العسكري","عثمان بن سعيد","السمان"],"source":"بحار الأنوار — العلامة المجلسي، ج51، باب أحوال السفراء الذين كانوا في الغيبة الصغرى","external_id":"ASK-014","is_verified":true,"version":1},
-    {"id":"ASK-015","category":"أهل البيت","subcategory":"التواصل مع الشيعة","difficulty":"hard","question_text":"من القمي الذي خاطبه الإمام العسكري (ع) في روايات الوكالة والمراسلات؟","options":["زكريا بن آدم","علي بن بابويه","أحمد بن إسحاق","سعد بن عبد الله"],"correct_index":2,"time_limit_seconds":25,"order_index":14,"question_type":"multi","explanation":"كان أحمد بن إسحاق القمي من خواص الإمام العسكري (ع)، ووردت مخاطباته له في شؤون الإمامة والوكلاء.","tags":["الإمام العسكري","أحمد بن إسحاق","قم"],"source":"الكافي — الشيخ الكليني، ج1، كتاب الحجة، باب الإشارة والنص على أبي محمد (ع)، وباب مولد الصاحب (عج)","external_id":"ASK-015","is_verified":true,"version":1},
-    {"id":"ASK-016","category":"أهل البيت","subcategory":"التمهيد للغيبة","difficulty":"medium","question_text":"ما اسم عمة الإمام العسكري (ع) التي روت خبر ولادة الإمام المهدي (عج)؟","options":["حكيمة بنت محمد الجواد","فاطمة بنت موسى الكاظم","عليّة بنت موسى الكاظم","أمامة بنت علي الهادي"],"correct_index":0,"time_limit_seconds":25,"order_index":15,"question_type":"multi","explanation":"روت السيدة حكيمة بنت الإمام الجواد (ع)، عمة الإمام العسكري، تفاصيل ولادة الإمام المهدي (عج).","tags":["الإمام العسكري","حكيمة","الإمام المهدي"],"source":"بحار الأنوار — العلامة المجلسي، ج51، باب ولادته (عج)؛ دلائل الإمامة — الطبري الإمامي، باب ولادة صاحب الزمان","external_id":"ASK-016","is_verified":true,"version":1},
-    {"id":"ASK-017","category":"أهل البيت","subcategory":"التمهيد للغيبة","difficulty":"medium","question_text":"لماذا حرص الإمام العسكري (ع) على إخفاء ولادة ابنه عن السلطة؟","options":["لأن الأسرة كانت في سفر","خوفًا من طلب العباسيين له","انتظارًا لموافقة قاضي سامراء","لعدم اكتمال بناء الدار"],"correct_index":1,"time_limit_seconds":25,"order_index":16,"question_type":"multi","explanation":"أُخفي أمر الولادة عن عامة الناس بسبب ترقب السلطة العباسية للمولود الموعود وسعيها للوصول إليه.","tags":["الإمام العسكري","الإمام المهدي","الولادة"],"source":"الإرشاد — الشيخ المفيد، ج2، باب ذكر الإمام القائم بعد أبي محمد (ع)؛ بحار الأنوار، ج51، باب ولادته (عج)","external_id":"ASK-017","is_verified":true,"version":1},
-    {"id":"ASK-018","category":"أهل البيت","subcategory":"الاستشهاد","difficulty":"easy","question_text":"في أي سنة هجرية استشهد الإمام الحسن العسكري (ع)؟","options":["260هـ","254هـ","255هـ","265هـ"],"correct_index":0,"time_limit_seconds":20,"order_index":17,"question_type":"multi","explanation":"توفي الإمام العسكري (ع) في سامراء سنة 260هـ، وبوفاته بدأت إمامة ابنه المهدي (عج).","tags":["الإمام العسكري","الاستشهاد"],"source":"الإرشاد — الشيخ المفيد، ج2، باب وفاة أبي محمد الحسن بن علي (ع)","external_id":"ASK-018","is_verified":true,"version":1},
-    {"id":"ASK-019","category":"أهل البيت","subcategory":"الاستشهاد","difficulty":"medium","question_text":"كم كان عمر الإمام العسكري (ع) عند وفاته بحسب الإرشاد؟","options":["خمس وعشرون سنة","اثنتان وثلاثون سنة","أربعون سنة","ثمانٍ وعشرون سنة"],"correct_index":3,"time_limit_seconds":20,"order_index":18,"question_type":"multi","explanation":"يذكر المفيد أن عمر الإمام العسكري (ع) عند وفاته كان ثمانيًا وعشرين سنة.","tags":["الإمام العسكري","العمر","الاستشهاد"],"source":"الإرشاد — الشيخ المفيد، ج2، باب وفاة أبي محمد الحسن بن علي (ع)","external_id":"ASK-019","is_verified":true,"version":1},
-    {"id":"ASK-020","category":"أهل البيت","subcategory":"الدفن","difficulty":"easy","question_text":"أين دُفن الإمام الحسن العسكري (ع)؟","options":["في مقبرة البقيع","في الكاظمية","في داره بسامراء إلى جوار أبيه","في النجف الأشرف"],"correct_index":2,"time_limit_seconds":20,"order_index":19,"question_type":"multi","explanation":"دُفن الإمام العسكري (ع) في الدار التي دُفن فيها أبوه الإمام الهادي (ع) بسامراء.","tags":["الإمام العسكري","الدفن","سامراء"],"source":"الإرشاد — الشيخ المفيد، ج2، باب وفاة أبي محمد الحسن بن علي (ع)","external_id":"ASK-020","is_verified":true,"version":1}
+    {
+      "question_text": "من هي والدة العباس بن علي عليه السلام؟",
+      "options": [
+        "ليلى بنت أبي مرة",
+        "أسماء بنت عميس",
+        "أمامة بنت أبي العاص",
+        "فاطمة بنت حزام"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "العباس هو ابن أمير المؤمنين من فاطمة بنت حزام الكلابية، المعروفة بأم البنين. — الإرشاد للمفيد؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "إلى أي قبيلة تنتسب والدته أم البنين؟",
+      "options": [
+        "بني أسد",
+        "بني مخزوم",
+        "بني كلاب",
+        "بني تميم"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "فاطمة أم البنين هي بنت حزام بن خالد من بني كلاب. — عمدة الطالب؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما كنية العباس بن علي المشهورة؟",
+      "options": [
+        "أبو محمد",
+        "أبو الحسن",
+        "أبو القاسم",
+        "أبو الفضل"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اشتهر العباس بن علي عليه السلام بكنية أبي الفضل. — بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي لقب اشتهر به لارتباطه بمهمة حمل راية الإمام الحسين؟",
+      "options": [
+        "قائد الميمنة",
+        "أمير الفرسان",
+        "حامل اللواء",
+        "صاحب الراية"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر مصادر واقعة الطف أن راية الإمام الحسين عليه السلام كانت مع العباس يوم عاشوراء. — الإرشاد؛ اللهوف.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "كم أخًا شقيقًا كان للعباس من أم البنين؟",
+      "options": [
+        "خمسة",
+        "ثلاثة",
+        "أربعة",
+        "اثنان"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "إخوة العباس من أمه وأبيه هم عبد الله وجعفر وعثمان أبناء علي وأم البنين. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي هؤلاء كان أحد إخوته الأشقاء؟",
+      "options": [
+        "عثمان بن علي",
+        "محمد بن علي",
+        "عمر بن علي",
+        "عبيد الله بن علي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عدّ الشيخ المفيد عثمان مع العباس وجعفر وعبد الله من أبناء أمير المؤمنين من أم البنين. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من كان أكبر أبناء أم البنين؟",
+      "options": [
+        "العباس",
+        "عبد الله",
+        "جعفر",
+        "عثمان"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر كتب الأنساب والسير العباس بوصفه أكبر أبناء أم البنين. — عمدة الطالب؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي صفة جسدية اشتهر بها العباس في كتب السيرة؟",
+      "options": [
+        "قصر القامة",
+        "نحول الجسد",
+        "طول القامة",
+        "صغر البنية"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "وصفته المصادر بأنه كان طويلًا حتى إن رجليه تخطان في الأرض إذا ركب الفرس المطهم. — مقاتل الطالبيين؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "بأي لقب ارتبط جمال هيئته في المصادر المتأخرة؟",
+      "options": [
+        "قمر بني هاشم",
+        "فارس بني هاشم",
+        "أسد بني هاشم",
+        "سيف بني هاشم"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اشتهر العباس في كتب السير والمقاتل المتأخرة بلقب «قمر بني هاشم» لجماله وهيبته. — بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي ابن للعباس استمر منه عقبه بحسب كتب الأنساب؟",
+      "options": [
+        "الحسن",
+        "الفضل",
+        "عبيد الله",
+        "القاسم"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر كتب الأنساب أن عقب العباس عليه السلام استمر من ابنه عبيد الله. — عمدة الطالب.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "عندما وصل الركب إلى كربلاء، ما الدور العسكري البارز الذي كان للعباس؟",
+      "options": [
+        "حراسة المؤخرة",
+        "قيادة الميسرة",
+        "حمل اللواء",
+        "قيادة الرماة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان لواء الإمام الحسين عليه السلام يوم الطف بيد أخيه العباس. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي يوم وصل شمر بن ذي الجوشن بكتاب ابن زياد إلى عمر بن سعد؟",
+      "options": [
+        "العاشر من المحرم",
+        "الثامن من المحرم",
+        "السابع من المحرم",
+        "التاسع من المحرم"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "وصل شمر إلى كربلاء بأمر عبيد الله بن زياد في التاسع من المحرم. — الإرشاد؛ تاريخ الطبري.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ماذا أحضر الشمر للعباس وإخوته بسبب قرابته القبلية بأمهم؟",
+      "options": [
+        "خيولًا",
+        "أمانًا",
+        "رسالة صلح",
+        "مالًا"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نادى الشمر العباس وإخوته وعرض عليهم الأمان مستفيدًا من الصلة القبلية من جهة أمهم. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "كيف كان موقف العباس وإخوته من أمان الشمر؟",
+      "options": [
+        "قبلوه بشرط",
+        "تفاوضوا عليه",
+        "طلبوا مهلة",
+        "رفضوه"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "رفض العباس وإخوته الأمان واختاروا البقاء مع الإمام الحسين عليه السلام. — الإرشاد؛ اللهوف.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "عندما تحرك جيش عمر بن سعد مساء التاسع، من أرسله الإمام الحسين ليستوضح أمرهم؟",
+      "options": [
+        "مسلم بن عوسجة",
+        "حبيب بن مظاهر",
+        "العباس بن علي",
+        "علي بن الحسين"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أرسل الإمام الحسين أخاه العباس مع جماعة لمعرفة ما يريده الجيش المتقدم نحو المخيم. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ماذا طلب الإمام الحسين عبر العباس من جيش عمر بن سعد تلك الليلة؟",
+      "options": [
+        "مقابلة ابن زياد",
+        "فتح طريق الكوفة",
+        "تأخير القتال",
+        "السماح بالرحيل"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "طلب الإمام تأجيل المواجهة إلى صباح عاشوراء ليقضي الليل بالصلاة والدعاء والاستغفار. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من قاد مجموعة الفرسان التي ذهبت لجلب الماء إلى المخيم قبل عاشوراء؟",
+      "options": [
+        "نافع بن هلال",
+        "حبيب بن مظاهر",
+        "العباس بن علي",
+        "زهير بن القين"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يذكر المفيد أن العباس قاد جماعةً إلى الفرات لجلب الماء إلى أصحاب الإمام الحسين. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من كان يحمل راية الإمام الحسين صباح عاشوراء؟",
+      "options": [
+        "العباس بن علي",
+        "حبيب بن مظاهر",
+        "مسلم بن عوسجة",
+        "زهير بن القين"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جعل الإمام الحسين رايته مع أخيه العباس يوم عاشوراء. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما المهمة التي ارتبطت بخروج العباس الأخير في الروايات المشهورة؟",
+      "options": [
+        "إحضار الخيل",
+        "جلب الماء",
+        "استطلاع الجيش",
+        "طلب المدد"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ارتبط خروجه الأخير بمحاولة الوصول إلى الماء بعد اشتداد العطش على المخيم. — بحار الأنوار؛ المقاتل.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "إلى أي نهر توجه العباس في خروجه الأخير؟",
+      "options": [
+        "العلقمي",
+        "النهروان",
+        "الفرات",
+        "دجلة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اتجه العباس إلى ماء الفرات الذي كان جيش عمر بن سعد يمنع أصحاب الحسين من الوصول إليه. — الإرشاد؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الأداة التي ارتبطت بمحاولته إيصال الماء إلى المخيم؟",
+      "options": [
+        "المزادة",
+        "القربة",
+        "الدلو",
+        "الجرة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر روايات المقتل حمل العباس قربة الماء في محاولته العودة بها إلى المخيم. — بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما العضو الذي تذكر روايات المقتل أنه قُطع أولًا أثناء عودته؟",
+      "options": [
+        "ساقه اليسرى",
+        "يده اليمنى",
+        "ساقه اليمنى",
+        "يده اليسرى"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تنقل روايات المقتل قطع يمينه أولًا ثم يساره أثناء محاولته العودة بالماء. — بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ماذا حدث للقربة التي كان يحملها قبل استشهاده؟",
+      "options": [
+        "أخذها أحد أصحابه",
+        "أصابها سهم",
+        "أعادها إلى المخيم",
+        "سقطت في النهر"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 22,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "في رواية المقتل أصاب سهم القربة وأُريق ماؤها قبل استشهاده. — بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أين استشهد العباس بالنسبة إلى موضع استشهاد الإمام الحسين؟",
+      "options": [
+        "داخل خيمة الإمام",
+        "بعيدًا عن مركز المخيم",
+        "عند تل الزينبية",
+        "داخل ساحة المخيم"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 23,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ارتبط موضع استشهاده بمساره نحو الماء، ولذلك صار قبره منفصلًا عن موضع قبر الإمام الحسين وأصحابه.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما النص المعتبر الذي يصف العباس بأنه «نافذ البصيرة، صلب الإيمان»؟",
+      "options": [
+        "زيارة وارث",
+        "زيارة عاشوراء",
+        "الزيارة الجامعة",
+        "زيارة الإمام الصادق"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 24,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ورد عن الإمام الصادق في زيارته للعباس وصفه بنفاذ البصيرة وصلابة الإيمان. — كامل الزيارات.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي إمام ورد عنه النص: «كان عمنا العباس نافذ البصيرة صلب الإيمان»؟",
+      "options": [
+        "موسى الكاظم",
+        "علي السجاد",
+        "جعفر الصادق",
+        "محمد الباقر"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 25,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نُقل هذا الوصف عن الإمام جعفر الصادق عليه السلام في بيان منزلة عمه العباس. — عمدة الطالب؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "بماذا يصفه الإمام الصادق في الزيارة بعد الشهادة والتسليم؟",
+      "options": [
+        "الوفاء والنصيحة",
+        "القضاء والحكمة",
+        "الفقه والرواية",
+        "الزهد والعزلة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 26,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تتضمن زيارته المروية الثناء على تصديقه ووفائه ونصيحته لخلف النبي ﷺ. — كامل الزيارات.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي إمام وصف منزلة العباس يوم القيامة بأنها يغبطه بها جميع الشهداء؟",
+      "options": [
+        "جعفر الصادق",
+        "موسى الكاظم",
+        "محمد الباقر",
+        "علي بن الحسين"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 27,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "رُوي عن الإمام السجاد أن للعباس منزلة يوم القيامة يغبطه بها جميع الشهداء. — الخصال للصدوق؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أين يقع قبر العباس عليه السلام؟",
+      "options": [
+        "النجف",
+        "كربلاء",
+        "الكوفة",
+        "المدينة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 28,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دُفن العباس في موضع استشهاده بكربلاء، وقبره معروف بالقرب من مرقد الإمام الحسين عليه السلام.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي سمة تلخص دوره في كربلاء كما تعكسها المصادر الإمامية؟",
+      "options": [
+        "الرواية والفقه",
+        "النصرة والوفاء",
+        "القضاء والتعليم",
+        "الخطابة والمناظرة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 29,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تؤكد النصوص المروية في حقه ثباته ونصرته ووفاءه للإمام الحسين حتى استشهاده. — كامل الزيارات؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام الحسن العسكري (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    }
   ]
 }

@@ -110,3 +110,13 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Local semantic duplicate checker
+
+Export the complete catalog from `/admin/quizzes`, then run:
+
+```powershell
+npm run duplicates:semantic -- "C:\path\to\quizclash-catalog-YYYY-MM-DD.json"
+```
+
+The checker uses the local multilingual Sentence Transformers model to detect Arabic questions that express the same meaning with different wording. It creates a JSON report and a readable HTML report beside the catalog. It never edits or deletes catalog data.

@@ -1,38 +1,551 @@
 {
   "title": "سيرة الإمام جعفر الصادق (ع)",
   "category": "سلسلة مسابقات أهل البيت (ع)",
+  "subcategory": "سيرة الإمام جعفر الصادق (ع)",
   "language": "ar",
   "quiz_difficulty": "standard",
   "archived": false,
   "launch_enabled": true,
   "questions": [
-    {"id":"alsadiq-001","question_text":"من هو والد الإمام جعفر الصادق (ع)؟","options":["الإمام علي زين العابدين (ع)","الإمام محمد الباقر (ع)","الإمام موسى الكاظم (ع)","زيد بن علي (ع)"],"correct_index":1,"time_limit_seconds":15,"order_index":0,"image_url":null,"question_type":"multi","explanation":"أبوه الإمام محمد الباقر (ع).","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الصادق","النسب"],"source":"الإرشاد، ج2، ص179","external_id":"alsadiq-001","is_verified":true,"version":1},
-    {"id":"alsadiq-002","question_text":"ما كنية الإمام جعفر الصادق (ع) الأشهر؟","options":["أبو جعفر","أبو الحسن","أبو محمد","أبو عبد الله"],"correct_index":3,"time_limit_seconds":15,"order_index":1,"image_url":null,"question_type":"multi","explanation":"كنيته الأشهر أبو عبد الله.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الصادق","الكنية"],"source":"الإرشاد، ج2، ص179-180","external_id":"alsadiq-002","is_verified":true,"version":1},
-    {"id":"alsadiq-003","question_text":"من هي أم الإمام جعفر الصادق (ع)؟","options":["أم فروة بنت القاسم","أم عبد الله بنت الحسن","حميدة المصفاة","نجمة خاتون"],"correct_index":0,"time_limit_seconds":15,"order_index":2,"image_url":null,"question_type":"multi","explanation":"أمه أم فروة بنت القاسم بن محمد.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الصادق","الأم"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-003","is_verified":true,"version":1},
-    {"id":"alsadiq-004","question_text":"في أي مدينة ولد الإمام الصادق (ع)؟","options":["مكة المكرمة","الكوفة","المدينة المنورة","دمشق"],"correct_index":2,"time_limit_seconds":15,"order_index":3,"image_url":null,"question_type":"multi","explanation":"كان مولده (ع) في المدينة المنورة.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الصادق","المولد"],"source":"بحار الأنوار، ج47، باب 1","external_id":"alsadiq-004","is_verified":true,"version":1},
-    {"id":"alsadiq-005","question_text":"ما سنة ولادة الإمام الصادق (ع) عند الشيخ المفيد؟","options":["80 هـ","95 هـ","83 هـ","100 هـ"],"correct_index":2,"time_limit_seconds":15,"order_index":4,"image_url":null,"question_type":"multi","explanation":"ذكر المفيد أن ولادته كانت سنة 83 هـ.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الصادق","المولد"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-005","is_verified":true,"version":1},
-    {"id":"alsadiq-006","question_text":"أي إمام سبق الصادق (ع) مباشرة في الإمامة؟","options":["الإمام محمد الباقر (ع)","الإمام زين العابدين (ع)","الإمام موسى الكاظم (ع)","الإمام الحسن المجتبى (ع)"],"correct_index":0,"time_limit_seconds":15,"order_index":5,"image_url":null,"question_type":"multi","explanation":"تولى الإمامة بعد أبيه الإمام الباقر (ع).","difficulty":"easy","subcategory":"الإمامة","tags":["الصادق","الإمامة"],"source":"الكافي، ج1، باب النص على أبي عبد الله (ع)","external_id":"alsadiq-006","is_verified":true,"version":1},
-    {"id":"alsadiq-007","question_text":"بماذا أوصى الباقر (ع) ابنه جعفرًا عند قرب وفاته؟","options":["أن يغادر المدينة","أن يعتزل تعليم الناس","أن يبيع كتبه","أن يحسن إلى أصحابه"],"correct_index":3,"time_limit_seconds":20,"order_index":6,"image_url":null,"question_type":"multi","explanation":"أوصاه بأصحابه خيرًا، فوعد بتفقيههم.","difficulty":"medium","subcategory":"الإمامة","tags":["الصادق","الوصية"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-007","is_verified":true,"version":1},
-    {"id":"alsadiq-008","question_text":"ماذا فعل الباقر (ع) حين سئل عمن يقوم بالأمر بعده؟","options":["أشار إلى زيد بن علي","وضع يده على جعفر (ع)","كتب اسم إسماعيل","امتنع عن الجواب"],"correct_index":1,"time_limit_seconds":20,"order_index":7,"image_url":null,"question_type":"multi","explanation":"وضع يده على جعفر وعيّنه قائمًا بالأمر بعده.","difficulty":"medium","subcategory":"الإمامة","tags":["الصادق","النص"],"source":"الإرشاد، ج2، ص181","external_id":"alsadiq-008","is_verified":true,"version":1},
-    {"id":"alsadiq-009","question_text":"لماذا أشهد الباقر (ع) جماعة على وصيته إلى جعفر؟","options":["لتكون له حجة ولا يغلب","لتقسيم أموال التجارة","لتعيين والي المدينة","لإعلان رحلة إلى مكة"],"correct_index":0,"time_limit_seconds":20,"order_index":8,"image_url":null,"question_type":"multi","explanation":"أراد أن تكون لجعفر حجة وألا يقال إنه لم يوص إليه.","difficulty":"medium","subcategory":"الإمامة","tags":["الصادق","الوصية"],"source":"الإرشاد، ج2، ص181-182","external_id":"alsadiq-009","is_verified":true,"version":1},
-    {"id":"alsadiq-010","question_text":"كم سنة دامت إمامة الإمام الصادق (ع)؟","options":["19 سنة","25 سنة","34 سنة","40 سنة"],"correct_index":2,"time_limit_seconds":15,"order_index":9,"image_url":null,"question_type":"multi","explanation":"دامت إمامته أربعًا وثلاثين سنة.","difficulty":"easy","subcategory":"الإمامة","tags":["الصادق","مدة الإمامة"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-010","is_verified":true,"version":1},
-    {"id":"alsadiq-011","question_text":"كم راويًا جمع أصحاب الحديث ممن رووا عن الصادق (ع)؟","options":["ألفان","أربعة آلاف","سبعمائة","عشرة آلاف"],"correct_index":1,"time_limit_seconds":20,"order_index":10,"image_url":null,"question_type":"multi","explanation":"جمع أصحاب الحديث أسماء أربعة آلاف راوٍ عنه.","difficulty":"medium","subcategory":"العلم","tags":["الصادق","الرواة"],"source":"الإرشاد، ج2، ص179","external_id":"alsadiq-011","is_verified":true,"version":1},
-    {"id":"alsadiq-012","question_text":"كيف انتشر علم الإمام الصادق (ع) في الآفاق؟","options":["بقي محصورًا في أسرته","اقتصر على رسائل سياسية","لم يروه إلا أهل المدينة","حمله الرواة إلى البلدان"],"correct_index":3,"time_limit_seconds":20,"order_index":11,"image_url":null,"question_type":"multi","explanation":"حمل الرواة علومه إلى البلدان فانتشر ذكره.","difficulty":"medium","subcategory":"العلم","tags":["الصادق","العلم"],"source":"الإرشاد، ج2، ص179","external_id":"alsadiq-012","is_verified":true,"version":1},
-    {"id":"alsadiq-013","question_text":"إلى من تنتهي سلسلة حديث الإمام الصادق (ع)؟","options":["إلى علماء المدينة فقط","إلى كتب اليونان","إلى اجتهاده الشخصي","إلى رسول الله ثم الله"],"correct_index":3,"time_limit_seconds":20,"order_index":12,"image_url":null,"question_type":"multi","explanation":"حديثه عن آبائه عن الرسول، وحديث الرسول قول الله.","difficulty":"medium","subcategory":"العلم","tags":["الصادق","الحديث"],"source":"الإرشاد، ج2، ص186","external_id":"alsadiq-013","is_verified":true,"version":1},
-    {"id":"alsadiq-014","question_text":"من الشاب الذي قدّمه الصادق (ع) لمناظرة الشامي؟","options":["جابر الجعفي","هشام بن الحكم","المفضل بن عمر","أبان بن تغلب"],"correct_index":1,"time_limit_seconds":15,"order_index":13,"image_url":null,"question_type":"multi","explanation":"قدّم هشام بن الحكم لمناظرة الشامي في الإمامة.","difficulty":"medium","subcategory":"المناظرات","tags":["الصادق","هشام"],"source":"الإرشاد، ج2، ص193-195","external_id":"alsadiq-014","is_verified":true,"version":1},
-    {"id":"alsadiq-015","question_text":"كيف وصف الصادق (ع) نصرة هشام بن الحكم؟","options":["يكثر السفر وحده","يجمع المال لأهله","ينصرنا بقلبه ولسانه ويده","يعتزل الخصومات كلها"],"correct_index":2,"time_limit_seconds":20,"order_index":14,"image_url":null,"question_type":"multi","explanation":"قال عنه: ناصرنا بقلبه ولسانه ويده.","difficulty":"medium","subcategory":"المناظرات","tags":["الصادق","هشام"],"source":"الإرشاد، ج2، ص194","external_id":"alsadiq-015","is_verified":true,"version":1},
-    {"id":"alsadiq-016","question_text":"أين كان مجلس مناظرة الشامي مع أصحاب الصادق (ع)؟","options":["قرب حرم مكة","في مسجد الكوفة","في قصر دمشق","في مقبرة البقيع"],"correct_index":0,"time_limit_seconds":20,"order_index":15,"image_url":null,"question_type":"multi","explanation":"كان المجلس في خيمة بطرف الحرم قبل الحج.","difficulty":"medium","subcategory":"المناظرات","tags":["الصادق","مكة"],"source":"الإرشاد، ج2، ص193-194","external_id":"alsadiq-016","is_verified":true,"version":1},
-    {"id":"alsadiq-017","question_text":"بماذا استدل الصادق (ع) لأبي شاكر على حدوث العالم؟","options":["بسفينة في البحر","ببيضة تنفلق عن طائر","بنخلة مثمرة","بحركة الشمس"],"correct_index":1,"time_limit_seconds":20,"order_index":16,"image_url":null,"question_type":"multi","explanation":"استدل ببيضة محكمة تنفلق عن صورة طائر.","difficulty":"medium","subcategory":"المناظرات","tags":["الصادق","التوحيد"],"source":"الإرشاد، ج2، ص201-202","external_id":"alsadiq-017","is_verified":true,"version":1},
-    {"id":"alsadiq-018","question_text":"ماذا قال الصادق (ع) عن دور الحواس في الاستدلال؟","options":["هي أدلة ويحتاج الاستنباط إلى العقل","تكفي وحدها لكل معرفة","لا قيمة لها مطلقًا","تختص بمعرفة الأحكام"],"correct_index":0,"time_limit_seconds":20,"order_index":17,"image_url":null,"question_type":"multi","explanation":"الحواس أدلة، ولا يتم الاستنباط بها من دون العقل.","difficulty":"hard","subcategory":"العلم","tags":["الصادق","العقل"],"source":"الإرشاد، ج2، ص202","external_id":"alsadiq-018","is_verified":true,"version":1},
-    {"id":"alsadiq-019","question_text":"إلى كم أصل لخّص الصادق (ع) ما لا يسع الناس جهله؟","options":["ثلاثة أصول","خمسة أصول","سبعة أصول","أربعة أصول"],"correct_index":3,"time_limit_seconds":15,"order_index":18,"image_url":null,"question_type":"multi","explanation":"جمع ما لا يسع جهله في أربعة أصول.","difficulty":"medium","subcategory":"الحكمة","tags":["الصادق","المعرفة"],"source":"الإرشاد، ج2، ص203","external_id":"alsadiq-019","is_verified":true,"version":1},
-    {"id":"alsadiq-020","question_text":"ما موقف الصادق (ع) من تشبيه الله بالأشياء؟","options":["أجازه للتقريب","خصه بالأجرام","نفى أن يشبهه شيء","توقف فيه"],"correct_index":2,"time_limit_seconds":15,"order_index":19,"image_url":null,"question_type":"multi","explanation":"نفى تشبيه الله بشيء أو تشبيه شيء به.","difficulty":"easy","subcategory":"التوحيد","tags":["الصادق","التوحيد"],"source":"الإرشاد، ج2، ص204","external_id":"alsadiq-020","is_verified":true,"version":1},
-    {"id":"alsadiq-021","question_text":"ما الذي عدّه الصادق (ع) غفلةً في موعظته؟","options":["قلة السفر","تأخير التوبة","ترك التجارة","الصمت الطويل"],"correct_index":1,"time_limit_seconds":15,"order_index":20,"image_url":null,"question_type":"multi","explanation":"عدّ تأخير التوبة اغترارًا وغفلة.","difficulty":"easy","subcategory":"الحكمة","tags":["الصادق","التوبة"],"source":"الإرشاد، ج2، ص204","external_id":"alsadiq-021","is_verified":true,"version":1},
-    {"id":"alsadiq-022","question_text":"ما الذي يكمل السعادة في حكمة الإمام الصادق (ع)؟","options":["كثرة المال والولد","طول العمر والسفر","العزلة وترك العمل","اجتماع النية والقدرة والتوفيق والإصابة"],"correct_index":3,"time_limit_seconds":20,"order_index":21,"image_url":null,"question_type":"multi","explanation":"تكتمل السعادة باجتماع النية والقدرة والتوفيق والإصابة.","difficulty":"hard","subcategory":"الحكمة","tags":["الصادق","السعادة"],"source":"الإرشاد، ج2، ص204","external_id":"alsadiq-022","is_verified":true,"version":1},
-    {"id":"alsadiq-023","question_text":"من الإمام الذي نص عليه الصادق (ع) من بعده؟","options":["الإمام موسى الكاظم (ع)","إسماعيل بن جعفر","عبد الله الأفطح","محمد الديباج"],"correct_index":0,"time_limit_seconds":15,"order_index":22,"image_url":null,"question_type":"multi","explanation":"نص على ابنه الإمام موسى الكاظم (ع).","difficulty":"easy","subcategory":"الأسرة","tags":["الصادق","الكاظم","الوصية"],"source":"الكافي، ج1، باب النص على أبي الحسن موسى (ع)","external_id":"alsadiq-023","is_verified":true,"version":1},
-    {"id":"alsadiq-024","question_text":"كم ولدًا يذكر المفيد للإمام الصادق (ع)؟","options":["سبعة","اثنا عشر","عشرة","أربعة عشر"],"correct_index":2,"time_limit_seconds":15,"order_index":23,"image_url":null,"question_type":"multi","explanation":"ذكر المفيد له عشرة أولاد: سبعة ذكور وثلاث إناث.","difficulty":"medium","subcategory":"الأسرة","tags":["الصادق","الأولاد"],"source":"الإرشاد، ج2، ص209","external_id":"alsadiq-024","is_verified":true,"version":1},
-    {"id":"alsadiq-025","question_text":"في أي شهر توفي الإمام الصادق (ع) بحسب المفيد؟","options":["محرم","رمضان","شوال","ذو الحجة"],"correct_index":2,"time_limit_seconds":15,"order_index":24,"image_url":null,"question_type":"multi","explanation":"ذكر المفيد أن وفاته كانت في شهر شوال.","difficulty":"easy","subcategory":"الاستشهاد","tags":["الصادق","الوفاة"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-025","is_verified":true,"version":1},
-    {"id":"alsadiq-026","question_text":"ما السنة الهجرية لوفاة الإمام الصادق (ع)؟","options":["148 هـ","114 هـ","183 هـ","203 هـ"],"correct_index":0,"time_limit_seconds":15,"order_index":25,"image_url":null,"question_type":"multi","explanation":"توفي سنة 148 هـ.","difficulty":"easy","subcategory":"الاستشهاد","tags":["الصادق","الوفاة"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-026","is_verified":true,"version":1},
-    {"id":"alsadiq-027","question_text":"كم كان عمر الإمام الصادق (ع) عند وفاته؟","options":["55 سنة","70 سنة","75 سنة","65 سنة"],"correct_index":3,"time_limit_seconds":15,"order_index":26,"image_url":null,"question_type":"multi","explanation":"توفي وله خمس وستون سنة.","difficulty":"easy","subcategory":"الاستشهاد","tags":["الصادق","العمر"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-027","is_verified":true,"version":1},
-    {"id":"alsadiq-028","question_text":"أين دفن الإمام جعفر الصادق (ع)؟","options":["النجف","البقيع","الكاظمية","كربلاء"],"correct_index":1,"time_limit_seconds":15,"order_index":27,"image_url":null,"question_type":"multi","explanation":"دفن في البقيع مع عدد من آبائه (ع).","difficulty":"easy","subcategory":"الاستشهاد","tags":["الصادق","البقيع"],"source":"الإرشاد، ج2، ص180","external_id":"alsadiq-028","is_verified":true,"version":1}
+    {
+      "question_text": "في أي مدينة وُلد الإمام الرضا عليه السلام؟",
+      "options": [
+        "سامراء",
+        "الكوفة",
+        "المدينة",
+        "بغداد"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ولد الإمام علي بن موسى الرضا عليه السلام في المدينة. — الكافي؛ الإرشاد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي سنة هجرية كانت ولادته على قول مشهور في المصادر الإمامية؟",
+      "options": [
+        "153 هـ",
+        "146 هـ",
+        "148 هـ",
+        "150 هـ"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ذكر الشيخ المفيد أن مولده عليه السلام كان سنة 148 هـ، مع وجود أقوال أخرى في تاريخ ولادته. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما كنيته المشهورة؟",
+      "options": [
+        "أبو عبد الله",
+        "أبو محمد",
+        "أبو جعفر",
+        "أبو الحسن"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كنيته عليه السلام أبو الحسن، ويُعبّر عنه في كتب الحديث بأبي الحسن الثاني. — الكافي؛ الإرشاد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما اسم والدته المشهور في عدد من المصادر؟",
+      "options": [
+        "خيزران",
+        "نجمة",
+        "سمانة",
+        "حميدة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ورد لوالدته أكثر من اسم في المصادر، ومن أشهرها نجمة. — بحار الأنوار؛ منتهى الآمال.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي جماعة ظهرت بعد وفاة الإمام الكاظم وتوقفت عند إمامته؟",
+      "options": [
+        "الفطحية",
+        "الكيسانية",
+        "الزيدية",
+        "الواقفة"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "توقفت الواقفة على الإمام موسى الكاظم عليه السلام ولم تقر بانتقال الإمامة إلى الرضا. — الكافي؛ رجال الكشي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الدافع الذي تنسبه بعض الروايات إلى عدد من رؤوس الواقفة؟",
+      "options": [
+        "الخوف من والي المدينة",
+        "الخلاف على المواريث",
+        "النزاع على الأوقاف",
+        "الأموال الموجودة عندهم"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر الروايات أن أموالًا للإمام الكاظم بقيت عند بعض وكلائه، وكان ذلك من دوافع بعض رؤوس الوقف. — رجال الكشي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي خليفتين عباسيين تنازعا الحكم خلال إمامة الإمام الرضا؟",
+      "options": [
+        "المهدي والهادي",
+        "السفاح والمنصور",
+        "المعتصم والواثق",
+        "الأمين والمأمون"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "شهد عصر الإمام الحرب بين محمد الأمين وأخيه عبد الله المأمون على الخلافة العباسية. — الإرشاد؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من انتصر في الصراع بين الأخوين؟",
+      "options": [
+        "العباس بن المأمون",
+        "المأمون",
+        "الأمين",
+        "إبراهيم بن المهدي"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتهى الصراع بسقوط الأمين واستقرار الخلافة للمأمون سنة 198 هـ. — بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "إلى أي إقليم استُدعي الإمام بأمر المأمون؟",
+      "options": [
+        "الحجاز",
+        "اليمن",
+        "خراسان",
+        "الشام"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استدعى المأمون الإمام من المدينة إلى خراسان حيث كان مركز حكمه. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من أرسله المأمون لإحضار الإمام من المدينة؟",
+      "options": [
+        "الفضل بن سهل",
+        "هرثمة بن أعين",
+        "رجاء بن أبي الضحاك",
+        "الحسن بن سهل"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كُلّف رجاء بن أبي الضحاك بإخراج الإمام من المدينة والسير به إلى المأمون. — عيون أخبار الرضا؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي مدينة مر بها الإمام في طريقه إلى خراسان واشتهرت بحديث مهم له؟",
+      "options": [
+        "قم",
+        "الري",
+        "همدان",
+        "نيسابور"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ارتبط مرور الإمام بنيسابور بروايتة الحديث المعروف بحديث سلسلة الذهب. — عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما العبارة المحورية في حديث سلسلة الذهب؟",
+      "options": [
+        "المؤمن أخو المؤمن",
+        "الصبر مفتاح الفرج",
+        "العلم نور يقذفه الله",
+        "كلمة لا إله إلا الله حصني"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "رُوي عنه عن آبائه عن الله تعالى: «كلمة لا إله إلا الله حصني»، ضمن حديث سلسلة الذهب. — عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ماذا أضاف الإمام بعد رواية حديث الحصن؟",
+      "options": [
+        "لمن عمل بكتاب الله",
+        "لمن أطاع السلطان",
+        "بشرطها وشروطها",
+        "لمن أدى الأمانة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أضاف عليه السلام بعد الحديث: «بشرطها وشروطها وأنا من شروطها». — عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي مدينة كان مقر المأمون عندما وصل إليه الإمام؟",
+      "options": [
+        "مرو",
+        "الكوفة",
+        "واسط",
+        "بغداد"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان المأمون يقيم في مرو بخراسان عندما وصل الإمام الرضا عليه السلام إليه. — الإرشاد؛ عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما المنصب الذي عرضه المأمون أولًا على الإمام؟",
+      "options": [
+        "الوزارة",
+        "القضاء",
+        "إمارة الحجاز",
+        "الخلافة"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تذكر المصادر أن المأمون عرض الخلافة أولًا، فرفضها الإمام عليه السلام. — الإرشاد؛ عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما المنصب الذي أُلزم الإمام بقبوله بعد رفض الخلافة؟",
+      "options": [
+        "نقابة الطالبيين",
+        "ولاية العهد",
+        "إمارة العراق",
+        "الوزارة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتهى الأمر بإلزام الإمام بقبول ولاية العهد للمأمون. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي سنة هجرية جرى إعلان ولاية العهد؟",
+      "options": [
+        "201 هـ",
+        "200 هـ",
+        "199 هـ",
+        "202 هـ"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عقد المأمون ولاية العهد للإمام الرضا عليه السلام سنة 201 هـ. — الإرشاد؛ عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما اللون الذي أمر المأمون باستبداله باللون العباسي بعد ولاية العهد؟",
+      "options": [
+        "الأزرق",
+        "الأخضر",
+        "الأحمر",
+        "الأبيض"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "غيّر المأمون شعار اللباس من السواد العباسي إلى الخضرة في سياق ولاية العهد. — الإرشاد؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الشرط الأساسي الذي وضعه الإمام عند قبول ولاية العهد؟",
+      "options": [
+        "أن يختار الولاة بنفسه",
+        "ألا يتدخل في الحكم",
+        "أن يقيم في المدينة",
+        "أن يقود جيش خراسان"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اشترط ألا يولي ولا يعزل ولا يغيّر شيئًا من نظام السلطة، بما يوضح عدم مشاركته الفعلية في الحكم. — عيون أخبار الرضا؛ بحار الأنوار.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من كان وزير المأمون المعروف بلقب ذي الرياستين؟",
+      "options": [
+        "هرثمة بن أعين",
+        "الفضل بن سهل",
+        "الحسن بن سهل",
+        "رجاء بن أبي الضحاك"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان الفضل بن سهل وزير المأمون ومن أبرز رجال دولته، واشتهر بلقب ذي الرياستين. — الإرشاد؛ عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من العالم المسيحي الذي ناظره الإمام في مجلس المأمون؟",
+      "options": [
+        "الجاثليق",
+        "رأس الجالوت",
+        "عمران الصابئ",
+        "سليمان المروزي"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تروي عيون أخبار الرضا مناظرة الإمام مع الجاثليق في مجلس جمع أصحاب الأديان. — عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من مثّل اليهود في المناظرات المشهورة؟",
+      "options": [
+        "الهربذ الأكبر",
+        "رأس الجالوت",
+        "الجاثليق",
+        "عمران الصابئ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان رأس الجالوت من ممثلي اليهود الذين حاورهم الإمام في مجلس المأمون. — عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من كان من المتكلمين الذين ناظرهم الإمام في التوحيد حتى أقر بالحجة؟",
+      "options": [
+        "يحيى بن أكثم",
+        "سليمان المروزي",
+        "أبو قرة",
+        "عمران الصابئ"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 22,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نقل الصدوق مناظرة مطولة بين الإمام وعمران الصابئ في التوحيد حتى أعلن عمران إقراره. — عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي مناسبة طلب المأمون من الإمام الخروج للصلاة بالناس؟",
+      "options": [
+        "عيد الفطر",
+        "صلاة الاستسقاء",
+        "أول المحرم",
+        "يوم الجمعة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 23,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "طلب المأمون منه الخروج لصلاة العيد بالناس، فوافق بعد الإلحاح على أن يخرج بسنة رسول الله ﷺ. — الإرشاد؛ عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "لماذا أرسل المأمون يطلب منه الرجوع قبل إتمام صلاة العيد؟",
+      "options": [
+        "لتأثر الناس بخروجه",
+        "لوصول جيش إلى مرو",
+        "لمرض أصاب الإمام",
+        "لاشتداد المطر"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 24,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "لما رأى المأمون شدة تأثر الناس به وخشي نتائج ذلك، أرسل إليه يطلب رجوعه. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من ابن الإمام الذي ثار تساؤل بعض أصحابه بسبب صغر سنه؟",
+      "options": [
+        "موسى المبرقع",
+        "الحسن العسكري",
+        "محمد الجواد",
+        "علي الهادي"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 25,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان الإمام الجواد عليه السلام صغير السن، ولذلك وردت أسئلة أصحاب الرضا عن الحجة من بعده. — الكافي، كتاب الحجة.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "بأي نبي احتج الإمام عندما سُئل عن صغر سن ابنه للإمامة؟",
+      "options": [
+        "يوسف بن يعقوب",
+        "عيسى بن مريم",
+        "موسى بن عمران",
+        "إسماعيل بن إبراهيم"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 26,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استشهد الإمام بصغر سن عيسى عليه السلام عند النبوة في جواب الاعتراض على سن الجواد. — الكافي، كتاب الحجة.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي منطقة كانت وفاة الإمام الرضا عليه السلام؟",
+      "options": [
+        "مرو",
+        "نيسابور",
+        "سرخس",
+        "طوس"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 27,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "توفي الإمام عليه السلام في ناحية طوس أثناء رحلة المأمون نحو العراق. — الإرشاد؛ عيون أخبار الرضا.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "إلى جوار من دُفن الإمام الرضا عليه السلام؟",
+      "options": [
+        "المأمون العباسي",
+        "الفضل بن سهل",
+        "الأمين العباسي",
+        "هارون الرشيد"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 28,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دُفن الإمام عليه السلام في سناباد من طوس إلى جوار قبر هارون الرشيد. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي سنة هجرية توفي الإمام الرضا عليه السلام؟",
+      "options": [
+        "204 هـ",
+        "203 هـ",
+        "201 هـ",
+        "202 هـ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 29,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يذكر الشيخ المفيد وفاته عليه السلام بطوس سنة 203 هـ. — الإرشاد للمفيد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام جعفر الصادق (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    }
   ]
 }

@@ -1,34 +1,551 @@
 {
-  "title": "سيرة الإمام علي الهادي (ع)",
+  "title": "سيرة الإمام علي بن محمد الهادي (ع)",
   "category": "سلسلة مسابقات أهل البيت (ع)",
+  "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
   "language": "ar",
   "quiz_difficulty": "standard",
   "archived": false,
   "launch_enabled": true,
   "questions": [
-    {"question_text":"من هو والد الإمام علي الهادي (ع)؟","options":["الإمام علي الرضا (ع)","الإمام محمد الجواد (ع)","الإمام موسى الكاظم (ع)","الإمام الحسن العسكري (ع)"],"correct_index":1,"time_limit_seconds":20,"order_index":0,"image_url":null,"question_type":"multi","explanation":"هو علي بن محمد بن علي، ابن الإمام محمد الجواد (ع).","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الإمام الهادي","النسب"],"source":"الإرشاد، ج2، باب ذكر الإمام بعد أبي جعفر محمد بن علي، ص297","external_id":"HAD-001","is_verified":true,"version":1},
-    {"question_text":"ما الاسم الذي تذكره المصادر لأم الإمام الهادي (ع)؟","options":["نجمة","حميدة","حكيمة","سمانة"],"correct_index":3,"time_limit_seconds":20,"order_index":1,"image_url":null,"question_type":"multi","explanation":"تذكر كتب السيرة أن أمه أم ولد يقال لها سمانة.","difficulty":"medium","subcategory":"الولادة والنشأة","tags":["الإمام الهادي","الأم"],"source":"إعلام الورى بأعلام الهدى، ج2، باب الإمام علي بن محمد الهادي، ص109","external_id":"HAD-002","is_verified":true,"version":1},
-    {"question_text":"أين وُلد الإمام الهادي (ع)؟","options":["صريا قرب المدينة","سامراء","بغداد","طوس"],"correct_index":0,"time_limit_seconds":20,"order_index":2,"image_url":null,"question_type":"multi","explanation":"كانت ولادته في صريا، وهي قرية أسسها الإمام الكاظم (ع) قرب المدينة.","difficulty":"medium","subcategory":"الولادة والنشأة","tags":["الإمام الهادي","صريا"],"source":"مناقب آل أبي طالب، ج4، فصل في أبي الحسن علي بن محمد، ص401","external_id":"HAD-003","is_verified":true,"version":1},
-    {"question_text":"ما كنية الإمام علي الهادي (ع)؟","options":["أبو جعفر","أبو محمد","أبو الحسن","أبو عبد الله"],"correct_index":2,"time_limit_seconds":20,"order_index":3,"image_url":null,"question_type":"multi","explanation":"كنيته أبو الحسن، ويُعبّر عنه في كتب الحديث بأبي الحسن الثالث.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الإمام الهادي","الكنية"],"source":"الإرشاد، ج2، باب الإمام علي بن محمد، ص297","external_id":"HAD-004","is_verified":true,"version":1},
-    {"question_text":"أي لقبين اشتهر بهما الإمام علي بن محمد (ع)؟","options":["الرضا والجواد","السجاد والباقر","الهادي والنقي","العسكري والمنتظر"],"correct_index":2,"time_limit_seconds":20,"order_index":4,"image_url":null,"question_type":"multi","explanation":"من أشهر ألقابه الهادي والنقي، وهما دالان على الهداية والطهارة.","difficulty":"easy","subcategory":"الولادة والنشأة","tags":["الإمام الهادي","الألقاب"],"source":"مناقب آل أبي طالب، ج4، فصل في أبي الحسن علي بن محمد، ص401","external_id":"HAD-005","is_verified":true,"version":1},
-    {"question_text":"من نصّ على إمامة علي الهادي (ع) من بعده؟","options":["الإمام محمد الجواد (ع)","الإمام علي الرضا (ع)","الإمام الحسن العسكري (ع)","الإمام موسى الكاظم (ع)"],"correct_index":0,"time_limit_seconds":20,"order_index":5,"image_url":null,"question_type":"multi","explanation":"روت النصوص تعيين الإمام الجواد ابنه عليًا للإمامة من بعده.","difficulty":"medium","subcategory":"الإمامة","tags":["الإمام الهادي","النص"],"source":"الكافي، ج1، باب الإشارة والنص على أبي الحسن الثالث، ح1-7، ص323-325","external_id":"HAD-006","is_verified":true,"version":1},
-    {"question_text":"من تولّى الإمامة بعد الإمام الهادي (ع)؟","options":["الإمام محمد الجواد (ع)","الإمام موسى الكاظم (ع)","الإمام جعفر الصادق (ع)","الإمام الحسن العسكري (ع)"],"correct_index":3,"time_limit_seconds":20,"order_index":6,"image_url":null,"question_type":"multi","explanation":"نص الإمام الهادي على ابنه أبي محمد الحسن العسكري (ع) من بعده.","difficulty":"easy","subcategory":"الإمامة","tags":["الإمام الهادي","الإمام العسكري"],"source":"الكافي، ج1، باب الإشارة والنص على أبي محمد (ع)، ح1-10، ص325-328","external_id":"HAD-007","is_verified":true,"version":1},
-    {"question_text":"من عيّنه العباسيون لتعليم الإمام صغيرًا ثم أقرّ بعلمه؟","options":["ابن السكيت","الجنيدي","يحيى بن هرثمة","الفتح بن خاقان"],"correct_index":1,"time_limit_seconds":25,"order_index":7,"image_url":null,"question_type":"multi","explanation":"عُيّن الجنيدي لملازمته وتعليمه، ثم شهد بأنه أعلم الناس وأنه يتعلم منه.","difficulty":"hard","subcategory":"العلم والدلائل","tags":["الإمام الهادي","الجنيدي"],"source":"بحار الأنوار، ج50، باب أحواله ومعجزاته، ص129-130","external_id":"HAD-008","is_verified":true,"version":1},
-    {"question_text":"بماذا فسّر اختلاف معجزات موسى وعيسى ومحمد (ص)؟","options":["وافقت الغالب على أهل عصورهم","اختيرت بلا حكمة ظاهرة","كانت كلها من نوع واحد","اقتصرت على شفاء المرضى"],"correct_index":0,"time_limit_seconds":25,"order_index":8,"image_url":null,"question_type":"multi","explanation":"بيّن لابن السكيت أن الحجة جاءت بما يغلب فن العصر: السحر والطب والكلام.","difficulty":"hard","subcategory":"العلم والدلائل","tags":["الإمام الهادي","المعجزات"],"source":"الكافي، ج1، كتاب الحجة، باب الاضطرار إلى الحجة، ح20، ص24-25","external_id":"HAD-009","is_verified":true,"version":1},
-    {"question_text":"ما الحجة الباقية التي يُعرف بها الصادق وفق جواب الإمام؟","options":["النسب","كثرة الأتباع","العقل","السلطان"],"correct_index":2,"time_limit_seconds":20,"order_index":9,"image_url":null,"question_type":"multi","explanation":"قال الإمام لابن السكيت إن الحجة اليوم هي العقل، فيعرف به الصادق ويُكذّب المفتري.","difficulty":"medium","subcategory":"العلم والدلائل","tags":["الإمام الهادي","العقل"],"source":"الكافي، ج1، كتاب الحجة، باب الاضطرار إلى الحجة، ح20، ص24-25","external_id":"HAD-010","is_verified":true,"version":1},
-    {"question_text":"ما الزيارة الجامعة المروية عن الإمام الهادي (ع)؟","options":["زيارة عاشوراء","الزيارة الجامعة الكبيرة","زيارة وارث","زيارة أمين الله"],"correct_index":1,"time_limit_seconds":20,"order_index":10,"image_url":null,"question_type":"multi","explanation":"علّم الإمام موسى النخعي نصًا جامعًا لزيارة الأئمة عُرف بالزيارة الجامعة الكبيرة.","difficulty":"easy","subcategory":"العلم والدلائل","tags":["الإمام الهادي","الزيارة الجامعة"],"source":"بحار الأنوار، ج99، باب الزيارات الجامعة، ص127-134","external_id":"HAD-011","is_verified":true,"version":1},
-    {"question_text":"أي مناسبة تناولتها زيارة مروية عنه لأمير المؤمنين (ع)؟","options":["يوم المباهلة","ليلة القدر","يوم الفطر","يوم الغدير"],"correct_index":3,"time_limit_seconds":20,"order_index":11,"image_url":null,"question_type":"multi","explanation":"رُويت عنه زيارة لأمير المؤمنين يوم الغدير تستعرض فضائله ومواقفه.","difficulty":"medium","subcategory":"العلم والدلائل","tags":["الإمام الهادي","الغدير"],"source":"بحار الأنوار، ج97، باب زيارة أمير المؤمنين يوم الغدير، ص359-373","external_id":"HAD-012","is_verified":true,"version":1},
-    {"question_text":"من سعى بالإمام الهادي (ع) إلى المتوكل في المدينة؟","options":["يحيى بن هرثمة","سعيد الحاجب","ابن السكيت","عبد الله بن محمد"],"correct_index":3,"time_limit_seconds":20,"order_index":12,"image_url":null,"question_type":"multi","explanation":"كان يتولى الحرب والصلاة بالمدينة، فوشى بالإمام إلى المتوكل وقصده بالأذى.","difficulty":"hard","subcategory":"الانتقال إلى سامراء","tags":["الإمام الهادي","الوشاية"],"source":"الإرشاد، ج2، باب سبب شخوص أبي الحسن إلى سر من رأى، ص309-310","external_id":"HAD-013","is_verified":true,"version":1},
-    {"question_text":"كيف واجه الإمام الهادي وشاية والي المدينة؟","options":["غادر المدينة سرًا","كتب إلى المتوكل وكذّبها","جمع جيشًا لمقاتلته","التزم الصمت تمامًا"],"correct_index":1,"time_limit_seconds":20,"order_index":13,"image_url":null,"question_type":"multi","explanation":"كتب الإمام يذكر تحامل عبد الله بن محمد ويكذب ما سعى به.","difficulty":"medium","subcategory":"الانتقال إلى سامراء","tags":["الإمام الهادي","المتوكل"],"source":"الإرشاد، ج2، باب سبب شخوص أبي الحسن إلى سر من رأى، ص309","external_id":"HAD-014","is_verified":true,"version":1},
-    {"question_text":"من أرسله المتوكل لإشخاص الإمام الهادي من المدينة؟","options":["سعيد الحاجب","الفتح بن خاقان","يحيى بن هرثمة","أحمد بن الخصيب"],"correct_index":2,"time_limit_seconds":20,"order_index":14,"image_url":null,"question_type":"multi","explanation":"حمل يحيى بن هرثمة كتاب المتوكل وصحب الإمام في رحلته إلى سامراء.","difficulty":"medium","subcategory":"الانتقال إلى سامراء","tags":["الإمام الهادي","يحيى بن هرثمة"],"source":"الإرشاد، ج2، باب سبب شخوص أبي الحسن إلى سر من رأى، ص310-311","external_id":"HAD-015","is_verified":true,"version":1},
-    {"question_text":"ماذا وجد يحيى بن هرثمة عند تفتيش دار الإمام؟","options":["مصاحف وأدعية وكتب علم","أسلحة ورسائل عسكرية","أموال خراج الدولة","رايات معدة للقتال"],"correct_index":0,"time_limit_seconds":20,"order_index":15,"image_url":null,"question_type":"multi","explanation":"لم يجد في الدار ما يؤيد الوشاية، بل وجد المصاحف والأدعية وكتب العلم.","difficulty":"medium","subcategory":"الانتقال إلى سامراء","tags":["الإمام الهادي","تفتيش الدار"],"source":"بحار الأنوار، ج50، باب أحواله ومعجزاته، ص207-208","external_id":"HAD-016","is_verified":true,"version":1},
-    {"question_text":"إلى أي مدينة استُدعي الإمام الهادي بأمر المتوكل؟","options":["الكوفة","سامراء","طوس","دمشق"],"correct_index":1,"time_limit_seconds":20,"order_index":16,"image_url":null,"question_type":"multi","explanation":"استدعاه المتوكل إلى عاصمة حكمه «سر من رأى»، وهي سامراء.","difficulty":"easy","subcategory":"الانتقال إلى سامراء","tags":["الإمام الهادي","سامراء"],"source":"الإرشاد، ج2، باب سبب شخوص أبي الحسن إلى سر من رأى، ص309-312","external_id":"HAD-017","is_verified":true,"version":1},
-    {"question_text":"أين أُنزل الإمام الهادي عند وصوله سامراء أول مرة؟","options":["خان الصعاليك","قصر الخلافة","دار الفتح بن خاقان","جامع سامراء"],"correct_index":0,"time_limit_seconds":20,"order_index":17,"image_url":null,"question_type":"multi","explanation":"احتجب المتوكل عنه أول وصوله، فنزل في خان يُعرف بخان الصعاليك.","difficulty":"medium","subcategory":"الانتقال إلى سامراء","tags":["الإمام الهادي","خان الصعاليك"],"source":"الإرشاد، ج2، باب سبب شخوص أبي الحسن إلى سر من رأى، ص311","external_id":"HAD-018","is_verified":true,"version":1},
-    {"question_text":"ماذا وجد رجال المتوكل عندما هجموا على دار الإمام؟","options":["كان يجمع السلاح","كان يكتب إلى الروم","كان يقيم وليمة كبيرة","كان منفردًا يتلو القرآن"],"correct_index":3,"time_limit_seconds":20,"order_index":18,"image_url":null,"question_type":"multi","explanation":"وجدوه وحده في بيت مغلق، عليه مدرعة من شعر، يتلو القرآن.","difficulty":"medium","subcategory":"مواقفه مع المتوكل","tags":["الإمام الهادي","تلاوة القرآن"],"source":"الإرشاد، ج2، باب طرف من أخبار أبي الحسن ومناقبه، ص312-313","external_id":"HAD-019","is_verified":true,"version":1},
-    {"question_text":"ماذا صنع الإمام عندما ناوله المتوكل كأس الخمر؟","options":["شربه مجاملة للمتوكل","ناوله للفتح بن خاقان","امتنع وقال إن لحمه ودمه لم يخالطاه","خرج من المجلس بلا جواب"],"correct_index":2,"time_limit_seconds":25,"order_index":19,"image_url":null,"question_type":"multi","explanation":"رفض الإمام الشرب مؤكدًا أن الخمر لم تخالط لحمه ودمه قط.","difficulty":"easy","subcategory":"مواقفه مع المتوكل","tags":["الإمام الهادي","المتوكل"],"source":"الإرشاد، ج2، باب طرف من أخبار أبي الحسن ومناقبه، ص313","external_id":"HAD-020","is_verified":true,"version":1},
-    {"question_text":"ما أثر قصيدة الإمام في زوال الملوك على مجلس المتوكل؟","options":["أمر المتوكل بسجن الإمام","بكى المتوكل والحاضرون","ضحك الحاضرون منها","انتهى المجلس بمناظرة فقهية"],"correct_index":1,"time_limit_seconds":25,"order_index":20,"image_url":null,"question_type":"multi","explanation":"أنشد الإمام أبيات «باتوا على قلل الأجبال»، فبكى المتوكل حتى بلّت دموعه لحيته وبكى الحاضرون.","difficulty":"medium","subcategory":"مواقفه مع المتوكل","tags":["الإمام الهادي","القصيدة"],"source":"الإرشاد، ج2، باب طرف من أخبار أبي الحسن ومناقبه، ص313-314","external_id":"HAD-021","is_verified":true,"version":1},
-    {"question_text":"في أي سنة هجرية توفي الإمام الهادي (ع)؟","options":["220 هـ","260 هـ","203 هـ","254 هـ"],"correct_index":3,"time_limit_seconds":20,"order_index":21,"image_url":null,"question_type":"multi","explanation":"توفي الإمام الهادي في سامراء في رجب سنة أربع وخمسين ومئتين.","difficulty":"medium","subcategory":"الاستشهاد والمرقد","tags":["الإمام الهادي","الوفاة"],"source":"الإرشاد، ج2، باب ذكر الإمام علي بن محمد ووفاته، ص297","external_id":"HAD-022","is_verified":true,"version":1},
-    {"question_text":"أين دُفن الإمام علي الهادي (ع)؟","options":["في داره بسامراء","في البقيع بالمدينة","في الكاظمية ببغداد","في طوس"],"correct_index":0,"time_limit_seconds":20,"order_index":22,"image_url":null,"question_type":"multi","explanation":"دُفن الإمام في الدار التي كان يسكنها في سامراء.","difficulty":"easy","subcategory":"الاستشهاد والمرقد","tags":["الإمام الهادي","المرقد"],"source":"الإرشاد، ج2، باب ذكر الإمام علي بن محمد ووفاته، ص297؛ تاريخ اليعقوبي، ج2، خبر سنة 254هـ، ص503","external_id":"HAD-023","is_verified":true,"version":1},
-    {"question_text":"أي ابن للإمام الهادي دُفن معه لاحقًا في الدار نفسها؟","options":["محمد بن علي","الحسين بن علي","الإمام الحسن العسكري (ع)","جعفر بن علي"],"correct_index":2,"time_limit_seconds":20,"order_index":23,"image_url":null,"question_type":"multi","explanation":"صار الموضع مرقد الإمامين العسكريين بعد دفن ابنه الإمام الحسن العسكري معه.","difficulty":"easy","subcategory":"الاستشهاد والمرقد","tags":["الإمام الهادي","الإمام العسكري"],"source":"إعلام الورى بأعلام الهدى، ج2، باب الإمام الحسن العسكري ووفاته، ص131-132","external_id":"HAD-024","is_verified":true,"version":1}
+    {
+      "question_text": "في أي سنة بدأت إمامة الإمام المهدي عليه السلام؟",
+      "options": [
+        "262 هـ",
+        "260 هـ",
+        "258 هـ",
+        "256 هـ"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 0,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بدأت إمامته بعد وفاة أبيه الإمام الحسن العسكري عليه السلام سنة 260 هـ. — الكافي؛ كمال الدين.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "كم كان عمره تقريبًا عند بدء إمامته بحسب المشهور الإمامي؟",
+      "options": [
+        "خمس سنوات",
+        "سبع سنوات",
+        "تسع سنوات",
+        "ثلاث سنوات"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 1,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بناءً على ولادته سنة 255 هـ ووفاة أبيه سنة 260 هـ، كان عمره نحو خمس سنوات. — كمال الدين؛ الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما المرحلة التي بدأت مع انتقال الإمامة إليه سنة 260 هـ؟",
+      "options": [
+        "الغيبة الصغرى",
+        "عصر الرجعة",
+        "الغيبة الكبرى",
+        "عصر الظهور"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 2,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تبدأ الغيبة الصغرى بوفاة الإمام العسكري سنة 260 هـ واستمرار الاتصال بالإمام عبر السفراء. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من كان أول السفراء الأربعة في الغيبة الصغرى؟",
+      "options": [
+        "عثمان بن سعيد",
+        "محمد بن عثمان",
+        "الحسين بن روح",
+        "علي بن محمد السمري"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 3,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تولى عثمان بن سعيد العمري النيابة الخاصة عن الإمام في بداية الغيبة الصغرى. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الكنية التي اشتهر بها عثمان بن سعيد؟",
+      "options": [
+        "أبو جعفر",
+        "أبو عمرو",
+        "أبو القاسم",
+        "أبو محمد"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 4,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عُرف السفير الأول عثمان بن سعيد بكنية أبي عمرو. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من تولّى السفارة بعد وفاة عثمان بن سعيد؟",
+      "options": [
+        "علي بن محمد السمري",
+        "الحسين بن روح",
+        "أحمد بن إسحاق",
+        "محمد بن عثمان"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 5,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتقلت النيابة الخاصة بعد عثمان إلى ابنه محمد بن عثمان العمري. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما العلاقة بين السفيرين الأول والثاني؟",
+      "options": [
+        "معلم وتلميذه",
+        "أب وابنه",
+        "عم وابن أخيه",
+        "أخوان"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 6,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "محمد بن عثمان هو ابن السفير الأول عثمان بن سعيد العمري. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من نصّ على نيابة محمد بن عثمان بعد أبيه بحسب الروايات؟",
+      "options": [
+        "الحسين بن روح",
+        "محمد بن إبراهيم",
+        "الإمام المهدي",
+        "أحمد بن إسحاق"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 7,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "خرجت توقيعات تؤكد مكانة محمد بن عثمان ونيابته بعد أبيه. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الاسم الذي أُطلق على الرسائل الصادرة عن الإمام إلى شيعته ووكلائه؟",
+      "options": [
+        "الصحائف",
+        "المسائل",
+        "التوقيعات",
+        "العهود"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 8,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عُرفت الكتب والأجوبة الصادرة عن الإمام في عصر الغيبة الصغرى بالتوقيعات. — كمال الدين؛ الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما إحدى الوظائف الأساسية للسفراء؟",
+      "options": [
+        "إيصال الأسئلة والأجوبة",
+        "إدارة القضاء",
+        "قيادة الجيوش",
+        "تعيين الولاة"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 9,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان السفراء واسطة موثوقة في إيصال مسائل الشيعة والتوقيعات والأجوبة إليهم. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي سمة ساعدت على حماية الإمام وشبكة وكلائه من السلطة؟",
+      "options": [
+        "الهجرة",
+        "السرية",
+        "العلنية",
+        "المصاهرة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 10,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "اعتمدت شبكة الاتصال في الغيبة الصغرى على قدر كبير من الكتمان والسرية بسبب الرقابة العباسية. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من أطول السفراء الأربعة مدةً في النيابة؟",
+      "options": [
+        "علي بن محمد السمري",
+        "محمد بن عثمان",
+        "عثمان بن سعيد",
+        "الحسين بن روح"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 11,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "استمرت سفارة محمد بن عثمان عقودًا، وكانت الأطول بين السفراء الأربعة. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من عيّنه محمد بن عثمان سفيرًا من بعده؟",
+      "options": [
+        "محمد بن علي الشلمغاني",
+        "علي بن محمد السمري",
+        "أحمد بن إسحاق القمي",
+        "الحسين بن روح"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 12,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نص محمد بن عثمان على الحسين بن روح النوبختي ليخلفه في السفارة. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "إلى أي أسرة معروفة في بغداد نُسب السفير الثالث؟",
+      "options": [
+        "البرمكية",
+        "الحمدانية",
+        "النوبختية",
+        "الطاهرية"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 13,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "عُرف السفير الثالث بالحسين بن روح النوبختي لارتباطه بآل نوبخت. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من الشخصية التي انحرفت وادعت مقامًا خاصًا بعد أن كانت مرتبطة بالحسين بن روح؟",
+      "options": [
+        "محمد بن نصير النميري",
+        "علي بن حسكة",
+        "فارس بن حاتم",
+        "محمد بن علي الشلمغاني"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 14,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انحرف الشلمغاني وصدرت البراءة منه بعد ادعاءاته، مع أنه كان قبل ذلك من المرتبطين بدائرة الحسين بن روح. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الموقف المنقول عن الإمام تجاه الشلمغاني بعد انحرافه؟",
+      "options": [
+        "صدر توقيع بلعنه",
+        "أُرسل إلى قم",
+        "عُيّن سفيرًا",
+        "أُمر بكتمان أمره"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 15,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "يروي الشيخ الطوسي خروج توقيع يتضمن البراءة من الشلمغاني ولعنه بعد انحرافه. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "من تولّى السفارة بعد وفاة الحسين بن روح؟",
+      "options": [
+        "علي بن محمد السمري",
+        "محمد بن عثمان العمري",
+        "أبو سهل النوبختي",
+        "محمد بن علي الشلمغاني"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 16,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "كان علي بن محمد السمري رابع السفراء وآخرهم. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما ترتيب علي بن محمد السمري بين السفراء الأربعة؟",
+      "options": [
+        "الثالث",
+        "الأول",
+        "الثاني",
+        "الرابع"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 17,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ترتيب السفراء هو عثمان بن سعيد، ثم محمد بن عثمان، ثم الحسين بن روح، ثم علي السمري. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "قبل كم يوم من وفاة السمري خرج إليه التوقيع الأخير المشهور؟",
+      "options": [
+        "أربعة أيام",
+        "ثمانية أيام",
+        "ستة أيام",
+        "عشرة أيام"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 18,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "أخبر التوقيع السمري بوفاته بعد ستة أيام ونهاه عن الوصية بالسفارة إلى أحد بعده. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ماذا أمر التوقيع الأخير السمري بشأن من يخلفه؟",
+      "options": [
+        "ألا يوصي إلى أحد",
+        "أن يختار ابنه",
+        "أن يختار فقيهًا",
+        "أن يختار نوبختيًا"
+      ],
+      "correct_index": 0,
+      "time_limit_seconds": 20,
+      "order_index": 19,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نص التوقيع الأخير على عدم الوصية إلى شخص يقوم مقام السمري بعد وفاته. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "في أي سنة توفي علي بن محمد السمري؟",
+      "options": [
+        "325 هـ",
+        "331 هـ",
+        "329 هـ",
+        "327 هـ"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 20,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "توفي السفير الرابع سنة 329 هـ، وبوفاته انتهت النيابة الخاصة. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما المرحلة التي بدأت بعد وفاة السفير الرابع؟",
+      "options": [
+        "الغيبة الصغرى",
+        "عصر الحضور",
+        "عصر السفارة",
+        "الغيبة الكبرى"
+      ],
+      "correct_index": 3,
+      "time_limit_seconds": 20,
+      "order_index": 21,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "انتهت الغيبة الصغرى بوفاة السمري وبدأت الغيبة الكبرى سنة 329 هـ. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "كم استمرت الغيبة الصغرى تقريبًا؟",
+      "options": [
+        "مئة وعشر سنوات",
+        "تسعين سنة",
+        "سبعين سنة",
+        "خمسين سنة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 22,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "امتدت من سنة 260 هـ إلى سنة 329 هـ، أي نحو تسعة وستين عامًا. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الذي انتهى بانتهاء الغيبة الصغرى؟",
+      "options": [
+        "رواية الحديث",
+        "السفارة الخاصة",
+        "شبكة العلماء",
+        "أصل الإمامة"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 23,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "بوفاة السمري انتهى نظام السفراء المعينين بأشخاصهم عن الإمام. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ماذا تفيد الرواية المشهورة في «الحوادث الواقعة»؟",
+      "options": [
+        "الرجوع إلى قضاة السلطان",
+        "الرجوع إلى أمراء البلدان",
+        "الرجوع إلى رواة الحديث",
+        "الرجوع إلى نقباء القبائل"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 24,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "ورد في التوقيع: «وأما الحوادث الواقعة فارجعوا فيها إلى رواة حديثنا». — كمال الدين؛ الاحتجاج.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي شخص ورد التوقيع المشهور في جواب مسائله المتضمنة «الحوادث الواقعة»؟",
+      "options": [
+        "أحمد بن إسحاق",
+        "إسحاق بن يعقوب",
+        "سعد بن عبد الله",
+        "محمد بن عثمان"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 25,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نُقل التوقيع جوابًا عن مسائل إسحاق بن يعقوب بواسطة محمد بن عثمان العمري. — كمال الدين؛ الاحتجاج.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "بحسب التوقيع الأخير، ما الحكم فيمن يدعي المشاهدة مقرونة بالسفارة والنيابة الخاصة قبل العلامات المذكورة؟",
+      "options": [
+        "يُسأل عن نسبه",
+        "يُكذَّب ادعاؤه",
+        "يُختبر علمه",
+        "تُقبل شهادته"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 26,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "جاء في التوقيع الأخير التحذير من دعوى المشاهدة قبل خروج السفياني والصيحة، في سياق انتهاء السفارة الخاصة. — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "أي علامة وردت صراحة في التوقيع الأخير مع الصيحة؟",
+      "options": [
+        "خسف البيداء",
+        "خروج اليماني",
+        "خروج السفياني",
+        "قتل النفس الزكية"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 27,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "نص التوقيع المنقول للسمري على «خروج السفياني والصيحة». — الغيبة للطوسي.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الدعاء المشهور الذي يبدأ بنداء الله ثم النبي والأئمة وينتهي بطلب النصرة للإمام؟",
+      "options": [
+        "دعاء كميل",
+        "دعاء الجوشن",
+        "دعاء الندبة",
+        "دعاء أبي حمزة"
+      ],
+      "correct_index": 2,
+      "time_limit_seconds": 20,
+      "order_index": 28,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "دعاء الندبة من أشهر النصوص المرتبطة بالانتظار والندبة على غيبة الحجة عليه السلام. — مصباح المتهجد.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    },
+    {
+      "question_text": "ما الواجب الذي تؤكد عليه الروايات بدل تحديد موعد لظهور الإمام؟",
+      "options": [
+        "ترك طلب العلم",
+        "الانتظار والاستعداد",
+        "تحديد سنة الظهور",
+        "اعتزال المجتمع"
+      ],
+      "correct_index": 1,
+      "time_limit_seconds": 20,
+      "order_index": 29,
+      "image_url": null,
+      "question_type": "multi",
+      "explanation": "تؤكد الروايات الإمامية انتظار الفرج وتنهى عن التوقيت وتحديد موعد للظهور. — الكافي؛ الغيبة للنعماني.",
+      "difficulty": "standard",
+      "subcategory": "سيرة الإمام علي بن محمد الهادي (ع)",
+      "source": "سلسلة مسابقات أهل البيت (ع)"
+    }
   ]
 }
