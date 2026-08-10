@@ -190,6 +190,7 @@ const en: Dict = {
   "podium.final": "Final results",
   "podium.standings": "Full standings",
   "podium.playAgain": "Play again",
+  "podium.chooseQuiz": "Choose another quiz",
   "podium.home": "Back home",
 
   "shape.triangle": "Triangle",
@@ -524,6 +525,7 @@ const ar: Dict = {
   "podium.final": "النتائج النهائية",
   "podium.standings": "الترتيب الكامل",
   "podium.playAgain": "العب مرة أخرى",
+  "podium.chooseQuiz": "اختر كويزاً جديداً",
   "podium.home": "العودة للرئيسية",
 
   "shape.triangle": "المثلث",

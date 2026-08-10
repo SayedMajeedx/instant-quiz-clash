@@ -5,7 +5,7 @@ import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { sounds } from "@/lib/audio";
 import { useI18n } from "@/lib/i18n";
-import type { Standing } from "@/lib/quizclash";
+import type { Standing, TeamStanding } from "@/lib/quizclash";
 import type { CategoryBreakdown } from "@/lib/custom-quiz";
 import { cn } from "@/lib/utils";
 
@@ -21,12 +21,18 @@ export function Podium({
   highlightPlayerId,
   actions,
   categoryBreakdown = [],
+  teamRows = [],
+  teamNames = [],
+  teamColors = [],
 }: {
   rows: Standing[];
   title: string;
   highlightPlayerId?: string | null | undefined;
   actions?: boolean;
   categoryBreakdown?: CategoryBreakdown[];
+  teamRows?: TeamStanding[];
+  teamNames?: string[];
+  teamColors?: string[];
 }) {
   const { t } = useI18n();
 
@@ -40,6 +46,17 @@ export function Podium({
         {t("podium.final")}
       </p>
       <h1 className="mt-2 text-center font-display text-4xl md:text-6xl text-gradient">{title}</h1>
+
+      {teamRows.length > 1 ? (
+        <div className="mx-auto mt-8 max-w-2xl overflow-hidden rounded-3xl border border-amber-300/30 bg-gradient-to-r from-amber-500/15 via-fuchsia-500/15 to-violet-500/15 p-5 text-center shadow-[0_0_40px_rgba(168,85,247,.18)] animate-pop">
+          <p className="text-xs font-black uppercase tracking-[0.28em] text-amber-300">🏆 الفريق البطل</p>
+          <div className="mt-3 flex items-center justify-center gap-3">
+            <span className="size-6 rounded-full shadow-[0_0_20px_currentColor]" style={{ backgroundColor: teamColors[teamRows[0]!.teamIndex], color: teamColors[teamRows[0]!.teamIndex] }} />
+            <span className="font-display text-3xl sm:text-4xl">{teamNames[teamRows[0]!.teamIndex] ?? `الفريق ${teamRows[0]!.teamIndex + 1}`}</span>
+            <span className="rounded-full bg-amber-300/15 px-3 py-1 font-display text-amber-300">{teamRows[0]!.total}</span>
+          </div>
+        </div>
+      ) : null}
 
       <div className="mt-12 flex items-end justify-center gap-3 md:gap-6">
         {PODIUM.map((slot) => {
@@ -110,10 +127,10 @@ export function Podium({
       {actions ? (
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <Link
-            to="/host"
+            to="/browse"
             className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky"
           >
-            {t("podium.playAgain")}
+            {t("podium.chooseQuiz")}
           </Link>
           <Link
             to="/"

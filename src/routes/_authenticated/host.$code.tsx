@@ -17,7 +17,10 @@ import {
   optionCount,
   standings,
   teamStandings,
-  TEAM_COLORS,
+  TEAM_COLOR_PALETTE,
+  fastestCorrectAnswer,
+  roomTeamColor,
+  roomTeamName,
   type CursorPhase,
   type Room,
 } from "@/lib/quizclash";
@@ -324,6 +327,20 @@ function HostRoom() {
 
   const teams = useMemo(() => teamStandings(rows), [rows]);
 
+  function updateTeamName(index: number, value: string) {
+    if (!room) return;
+    const names = Array.from({ length: 4 }, (_, i) => roomTeamName(room, i));
+    names[index] = value.trim() || roomTeamName({ team_names: null }, index);
+    void patchRoom({ team_names: names });
+  }
+
+  function updateTeamColor(index: number, color: string) {
+    if (!room) return;
+    const colors = Array.from({ length: 4 }, (_, i) => roomTeamColor(room, i));
+    colors[index] = color;
+    void patchRoom({ team_colors: colors });
+  }
+
   async function cycleTeam(pid: string, current: number | null) {
     if (!room || room.team_count <= 1) return;
     setAssigning(pid);
@@ -390,6 +407,9 @@ function HostRoom() {
           title={cleanQuizTitle(quiz?.title ?? "QuizClash")}
           actions
           categoryBreakdown={categoryBreakdown}
+          teamRows={teams}
+          teamNames={Array.from({ length: 4 }, (_, i) => roomTeamName(room, i))}
+          teamColors={Array.from({ length: 4 }, (_, i) => roomTeamColor(room, i))}
         />
       </main>
     );
@@ -554,6 +574,39 @@ function HostRoom() {
               </>
             ) : null}
 
+            {room.team_count > 1 ? (
+              <div className="mt-4 rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/10 via-background/50 to-fuchsia-500/10 p-4 shadow-lg">
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <div>
+                    <h3 className="font-display text-lg">✨ هوية الفرق</h3>
+                    <p className="text-xs text-muted-foreground">خصص الاسم واللون الذي سيظهر للاعبين</p>
+                  </div>
+                </div>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {Array.from({ length: room.team_count }, (_, index) => (
+                    <div key={index} className="rounded-2xl border border-white/10 bg-background/45 p-3">
+                      <div className="flex items-center gap-2">
+                        <span className="size-4 shrink-0 rounded-full shadow-[0_0_14px_currentColor]" style={{ backgroundColor: roomTeamColor(room, index), color: roomTeamColor(room, index) }} />
+                        <input
+                          key={`${index}-${roomTeamName(room, index)}`}
+                          defaultValue={roomTeamName(room, index)}
+                          maxLength={18}
+                          onBlur={(event) => updateTeamName(index, event.currentTarget.value)}
+                          className="min-w-0 flex-1 rounded-xl border border-border/70 bg-background/70 px-3 py-2 font-bold outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/30"
+                          aria-label={`اسم الفريق ${index + 1}`}
+                        />
+                      </div>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {TEAM_COLOR_PALETTE.map((color) => (
+                          <button key={color} type="button" onClick={() => updateTeamColor(index, color)} aria-label={`اختيار اللون ${color}`} className={cn("size-7 rounded-full border-2 transition hover:scale-110", roomTeamColor(room, index) === color ? "border-white ring-2 ring-primary" : "border-transparent")} style={{ backgroundColor: color }} />
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
             <div className="mt-5 flex flex-wrap gap-2">
               {players.length === 0 ? (
                 <p className="text-muted-foreground">{t("host.waiting")}</p>
@@ -564,7 +617,7 @@ function HostRoom() {
                   teamIdx !== null ? (
                     <span
                       className="rounded-full px-2 py-0.5 text-[10px] font-bold text-background"
-                      style={{ backgroundColor: TEAM_COLORS[teamIdx % TEAM_COLORS.length] }}
+                      style={{ backgroundColor: roomTeamColor(room, teamIdx) }}
                     >
                       {teamIdx + 1}
                     </span>
@@ -685,10 +738,10 @@ function HostRoom() {
                       <span
                         className="size-4 rounded-full"
                         style={{
-                          backgroundColor: TEAM_COLORS[team.teamIndex % TEAM_COLORS.length],
+                          backgroundColor: roomTeamColor(room, team.teamIndex),
                         }}
                       />
-                      {t("team.name", { n: team.teamIndex + 1 })}
+                      {roomTeamName(room, team.teamIndex)}
                     </span>
                     <span className="font-display text-2xl tabular-nums">{team.total}</span>
                   </div>
@@ -744,6 +797,13 @@ function HostRoom() {
   }
 
   const revealing = phase.kind === "reveal";
+  const fastestAnswer = revealing ? fastestCorrectAnswer(answers, question.id) : null;
+  const fastestPlayer = fastestAnswer
+    ? players.find((player) => player.id === fastestAnswer.player_id) ?? null
+    : null;
+  const fastestSeconds = fastestAnswer && room.phase_started_at
+    ? Math.max(0, (new Date(fastestAnswer.answered_at).getTime() - new Date(room.phase_started_at).getTime()) / 1000)
+    : null;
 
   return (
     <main className="relative h-screen max-h-screen w-full overflow-hidden flex flex-col justify-between p-3 sm:p-4 md:p-5">
@@ -766,6 +826,7 @@ function HostRoom() {
           </button>
         </div>
       </header>
+
 
       <div className="my-auto min-h-0 flex-1 flex flex-col items-center justify-center text-center overflow-hidden py-1 sm:py-2">
         <div className="flex flex-col items-center justify-center gap-2 w-full max-w-5xl">
@@ -802,6 +863,14 @@ function HostRoom() {
               <p className="font-display text-xl sm:text-2xl text-lime">
                 {t("host.correctAnswer")}
               </p>
+              {fastestPlayer ? (
+                <div className="mt-2 flex items-center gap-2 rounded-full border border-amber-300/60 bg-gradient-to-r from-amber-500/20 to-fuchsia-500/20 px-3 py-1 text-xs font-bold text-amber-100 shadow-[0_0_20px_rgba(245,158,11,.2)] animate-pop">
+                  <span>⚡ أسرع إجابة</span>
+                  <PlayerAvatar player={fastestPlayer} size="sm" />
+                  <span>{fastestPlayer.nickname}</span>
+                  {fastestSeconds !== null ? <span className="text-amber-300">{fastestSeconds.toFixed(1)}ث</span> : null}
+                </div>
+              ) : null}
               {manual ? (
                 <button
                   type="button"

@@ -11,7 +11,7 @@ import { QuestionImage } from "@/components/quiz/QuestionImage";
 import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { optionCount, standings, TEAM_COLORS } from "@/lib/quizclash";
+import { fastestCorrectAnswer, optionCount, roomTeamColor, roomTeamName, standings, teamStandings } from "@/lib/quizclash";
 import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 
 import { Volume2, VolumeX } from "lucide-react";
@@ -91,6 +91,7 @@ function Play() {
     return standings(players, answers, questions, upTo);
   }, [players, answers, questions, phaseKind, phaseIndex]);
   const myRow = rows.find((r) => r.player.id === playerId) ?? null;
+  const teams = useMemo(() => teamStandings(rows), [rows]);
 
   const currentQuestion =
     phase.kind === "question" || phase.kind === "reveal" ? phase.question : null;
@@ -216,6 +217,9 @@ function Play() {
           highlightPlayerId={playerId}
           actions
           categoryBreakdown={categoryBreakdown}
+          teamRows={teams}
+          teamNames={Array.from({ length: 4 }, (_, i) => roomTeamName(room, i))}
+          teamColors={Array.from({ length: 4 }, (_, i) => roomTeamColor(room, i))}
         />
       </main>
     );
@@ -236,6 +240,12 @@ function Play() {
           <PlayerAvatar player={me} size="xl" className="animate-float" />
           <h1 className="mt-6 font-display text-4xl text-gradient">{t("play.youreIn")}</h1>
           <p className="mt-2 font-display text-2xl">{me.nickname}</p>
+          {me.team_index !== null && me.team_index !== undefined ? (
+            <div className="mt-4 flex items-center gap-2 rounded-full border border-white/15 bg-background/45 px-4 py-2 font-bold shadow-lg">
+              <span className="size-3 rounded-full shadow-[0_0_14px_currentColor]" style={{ backgroundColor: roomTeamColor(room, me.team_index), color: roomTeamColor(room, me.team_index) }} />
+              {roomTeamName(room, me.team_index)}
+            </div>
+          ) : null}
           <p className="mt-6 text-muted-foreground">
             {startsIn !== null && startsIn > 0
               ? t("play.startingIn", { n: startsIn })
@@ -293,6 +303,8 @@ function Play() {
 
   if (phase.kind === "reveal") {
     const correct = myAnswer?.is_correct;
+    const fastest = fastestCorrectAnswer(answers, question.id);
+    const isFastest = fastest?.player_id === playerId;
     return (
       <main className="relative grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg dense />
@@ -304,6 +316,9 @@ function Play() {
           <p className="mt-3 font-display text-3xl text-sun tabular-nums">
             {t("play.gained", { n: myAnswer?.points_awarded ?? 0 })}
           </p>
+          {isFastest ? (
+            <div className="mx-auto mt-4 w-fit rounded-2xl border border-amber-300/60 bg-gradient-to-r from-amber-500/20 via-fuchsia-500/20 to-violet-500/20 px-5 py-3 font-display text-lg text-amber-200 shadow-[0_0_28px_rgba(245,158,11,.3)] animate-pop">⚡ أنت صاحب أسرع إجابة صحيحة!</div>
+          ) : null}
           {myRow && myRow.streak > 1 ? (
             <p className="mt-2 font-display text-lg text-lime">
               {t("play.inARow", { n: myRow.streak })}
@@ -349,9 +364,9 @@ function Play() {
           {me.team_index !== null && me.team_index !== undefined ? (
             <span
               className="rounded-full px-3 py-1 text-xs font-bold text-background"
-              style={{ backgroundColor: TEAM_COLORS[me.team_index % TEAM_COLORS.length] }}
+              style={{ backgroundColor: roomTeamColor(room, me.team_index) }}
             >
-              {t("play.yourTeam", { n: me.team_index + 1 })}
+              {roomTeamName(room, me.team_index)}
             </span>
           ) : null}
           <span className="font-display tabular-nums">

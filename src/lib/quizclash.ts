@@ -15,6 +15,8 @@ export type Room = {
   board_ms?: number;
   is_paused?: boolean;
   paused_elapsed_ms?: number;
+  team_names?: string[] | null;
+  team_colors?: string[] | null;
 };
 
 export type Quiz = {
@@ -73,7 +75,8 @@ export type Answer = {
   points_awarded: number;
   streak_bonus: number;
   powerup: string | null;
-  created_at: string;
+  answered_at: string;
+  created_at?: string;
 };
 
 export type CursorPhase = "question" | "reveal" | "board";
@@ -284,6 +287,36 @@ export function teamStandings(rows: Standing[]): TeamStanding[] {
   return teams;
 }
 
-export const TEAM_COLORS = ["#a855f7", "#f59e0b", "#22c55e", "#3b82f6"];
+export const TEAM_COLORS = ["#a855f7", "#f59e0b", "#10b981", "#3b82f6"];
+export const TEAM_COLOR_PALETTE = [
+  "#a855f7",
+  "#ec4899",
+  "#f97316",
+  "#f59e0b",
+  "#10b981",
+  "#06b6d4",
+  "#3b82f6",
+  "#6366f1",
+];
+export const DEFAULT_TEAM_NAMES = ["الفريق البنفسجي", "الفريق الذهبي", "الفريق الأخضر", "الفريق الأزرق"];
+
+export function roomTeamName(room: Pick<Room, "team_names">, index: number): string {
+  const value = room.team_names?.[index]?.trim();
+  return value || DEFAULT_TEAM_NAMES[index] || `الفريق ${index + 1}`;
+}
+
+export function roomTeamColor(room: Pick<Room, "team_colors">, index: number): string {
+  return room.team_colors?.[index] || TEAM_COLORS[index % TEAM_COLORS.length] || "#a855f7";
+}
+
+export function fastestCorrectAnswer(answers: Answer[], questionId: string): Answer | null {
+  return answers
+    .filter((answer) => answer.question_id === questionId && answer.is_correct)
+    .sort((a, b) => {
+      const aTime = new Date(a.answered_at).getTime();
+      const bTime = new Date(b.answered_at).getTime();
+      return aTime - bTime;
+    })[0] ?? null;
+}
 export const POWERUPS = ["double", "fifty"] as const;
 export type PowerUp = (typeof POWERUPS)[number];
