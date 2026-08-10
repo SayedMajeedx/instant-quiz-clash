@@ -1,551 +1,580 @@
 {
-  "title": "سيرة النبي محمد ﷺ",
+  "title": "سيرة النبي محمد (ص)",
   "category": "سلسلة مسابقات أهل البيت (ع)",
-  "subcategory": "سيرة النبي محمد ﷺ",
   "language": "ar",
   "quiz_difficulty": "standard",
   "archived": false,
   "launch_enabled": true,
   "questions": [
     {
-      "question_text": "في أي عام وُلد النبي محمد ﷺ؟",
+      "question_text": "ما التاريخ المشهور عند الإمامية لولادة النبي محمد (ص)؟",
       "options": [
-        "عام الفيل",
-        "عام الحزن",
-        "عام الفتح",
-        "عام الوفود"
+        "12 ربيع الأول",
+        "15 شعبان",
+        "27 رجب",
+        "17 ربيع الأول"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 0,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "تذكر المصادر الإمامية أن مولده ﷺ كان عام الفيل. — الكافي؛ إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "ينقل المجلسي اتفاق علماء الإمامية على السابع عشر من ربيع الأول.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "المولد",
+        "التاريخ"
+      ],
+      "source": "بحار الأنوار، ج15، باب تاريخ ولادته (ص)",
+      "external_id": "prophet-muhammad-001",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "ما اليوم المشهور عند الإمامية لولادته ﷺ؟",
+      "question_text": "في أي مدينة وُلد النبي محمد (ص)؟",
       "options": [
-        "12 ربيع الأول",
-        "17 ربيع الأول",
-        "15 ربيع الأول",
-        "10 ربيع الأول"
+        "المدينة",
+        "الطائف",
+        "القدس",
+        "مكة"
       ],
-      "correct_index": 1,
-      "time_limit_seconds": 20,
+      "correct_index": 3,
+      "time_limit_seconds": 15,
       "order_index": 1,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "المشهور عند الإمامية أن مولده ﷺ كان في السابع عشر من ربيع الأول. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "تورد روايات مولده أنه وُلد في مكة.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "المولد",
+        "مكة"
+      ],
+      "source": "بحار الأنوار، ج15، باب تاريخ ولادته (ص)",
+      "external_id": "prophet-muhammad-002",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "إلى أي بطن من قريش تنتمي والدته آمنة بنت وهب؟",
+      "question_text": "من هو والد النبي محمد (ص)؟",
       "options": [
-        "بني تيم",
-        "بني زهرة",
-        "بني عدي",
-        "بني مخزوم"
+        "أبو طالب",
+        "عبد الله بن عبد المطلب",
+        "حمزة",
+        "عبد المطلب"
       ],
       "correct_index": 1,
-      "time_limit_seconds": 20,
+      "time_limit_seconds": 15,
       "order_index": 2,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "آمنة هي بنت وهب بن عبد مناف بن زهرة. — الكافي؛ إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "نسبه هو محمد بن عبد الله بن عبد المطلب.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "النسب"
+      ],
+      "source": "إعلام الورى، ج1، الباب الأول في نسب رسول الله ومولده",
+      "external_id": "prophet-muhammad-003",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "من تولّى كفالته ﷺ بعد وفاة أمه؟",
+      "question_text": "من كفل النبي (ص) بعد وفاة جده عبد المطلب؟",
       "options": [
-        "عبد المطلب",
         "العباس",
         "حمزة",
-        "أبو طالب"
+        "أبو طالب",
+        "أبو لهب"
       ],
-      "correct_index": 0,
-      "time_limit_seconds": 20,
+      "correct_index": 2,
+      "time_limit_seconds": 15,
       "order_index": 3,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "انتقلت كفالته بعد وفاة آمنة إلى جده عبد المطلب. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "انتقلت كفالته بعد وفاة عبد المطلب إلى عمه أبي طالب.",
+      "difficulty": "easy",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "أبو طالب",
+        "الكفالة"
+      ],
+      "source": "بحار الأنوار، ج15، باب نشوئه (ص)",
+      "external_id": "prophet-muhammad-004",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "من تولّى كفالته ﷺ بعد وفاة عبد المطلب؟",
+      "question_text": "كم كان عمر النبي (ص) حين تزوج السيدة خديجة (ع)؟",
       "options": [
-        "أبو لهب",
-        "حمزة",
-        "العباس",
-        "أبو طالب"
+        "عشرون سنة",
+        "خمس وثلاثون سنة",
+        "ثلاثون سنة",
+        "خمس وعشرون سنة"
       ],
       "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 4,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "أوصى عبد المطلب أبا طالب برعاية النبي ﷺ، فكفله بعد وفاته. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "تزوج النبي خديجة وهو ابن خمس وعشرين سنة.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "الزواج"
+      ],
+      "source": "بحار الأنوار، ج16، ص12–22",
+      "external_id": "prophet-muhammad-005",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "ما اللقب الذي اشتهر به بين أهل مكة قبل البعثة؟",
+      "question_text": "من ألقى خطبة زواج النبي (ص) من السيدة خديجة (ع)؟",
       "options": [
-        "المرتضى",
-        "الصديق",
-        "الأمين",
-        "المختار"
+        "عبد المطلب",
+        "أبو طالب",
+        "العباس",
+        "حمزة"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 5,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "عُرف ﷺ بين قريش بالصدق والأمانة قبل إعلان رسالته. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "حفظت الرواية خطبة أبي طالب في طلب خديجة لابن أخيه.",
+      "difficulty": "medium",
+      "subcategory": "الولادة والنشأة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "أبو طالب"
+      ],
+      "source": "بحار الأنوار، ج16، ص17",
+      "external_id": "prophet-muhammad-006",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "من خرج النبي ﷺ في مالها إلى الشام قبل زواجه منها؟",
+      "question_text": "كم كان عمر النبي (ص) عند بعثته بالرسالة؟",
       "options": [
-        "خديجة بنت خويلد",
-        "هند بنت عتبة",
-        "صفية بنت عبد المطلب",
-        "عاتكة بنت عبد المطلب"
+        "ثلاثون سنة",
+        "خمس وثلاثون سنة",
+        "خمس وأربعون سنة",
+        "أربعون سنة"
       ],
-      "correct_index": 0,
-      "time_limit_seconds": 20,
+      "correct_index": 3,
+      "time_limit_seconds": 15,
       "order_index": 6,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "خرج ﷺ في تجارة خديجة عليها السلام إلى الشام قبل زواجه منها. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "كانت بعثته بعد مضي أربعين سنة من عمره الشريف.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "البعثة"
+      ],
+      "source": "إعلام الورى، ج1، فصل مبعثه (ص)",
+      "external_id": "prophet-muhammad-007",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "كم كان عمره ﷺ عند بعثته؟",
+      "question_text": "ما التاريخ المشهور عند الإمامية لبعثة النبي (ص)؟",
       "options": [
-        "خمس وأربعون سنة",
-        "خمس وثلاثون سنة",
-        "أربعون سنة",
-        "خمسون سنة"
+        "17 ربيع الأول",
+        "27 رجب",
+        "15 شعبان",
+        "13 رجب"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "time_limit_seconds": 20,
       "order_index": 7,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "بعث الله النبي محمدًا ﷺ بالرسالة وهو ابن أربعين سنة. — الكافي، باب مولد النبي ووفاته.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "المشهور الإمامي أن المبعث وقع في السابع والعشرين من رجب.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "المبعث",
+        "رجب"
+      ],
+      "source": "بحار الأنوار، ج18، باب المبعث وإظهار الدعوة",
+      "external_id": "prophet-muhammad-008",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "في أي موضع ارتبط بدء نزول الوحي عليه ﷺ؟",
+      "question_text": "من كانت أول امرأة آمنت برسالة النبي (ص)؟",
       "options": [
-        "جبل ثبير",
-        "غار ثور",
-        "غار حراء",
-        "جبل أحد"
+        "خديجة بنت خويلد",
+        "أم سلمة",
+        "فاطمة بنت أسد",
+        "أسماء بنت عميس"
       ],
-      "correct_index": 2,
-      "time_limit_seconds": 20,
+      "correct_index": 0,
+      "time_limit_seconds": 15,
       "order_index": 8,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "ارتبط بدء الوحي بخلوته ﷺ في حراء خارج مكة. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "كانت خديجة أول من صدّق النبي وآمن به من النساء.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "الإيمان"
+      ],
+      "source": "بحار الأنوار، ج38، ص260",
+      "external_id": "prophet-muhammad-009",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "كم سنة بقيت الدعوة في مكة بعد البعثة؟",
+      "question_text": "من كان أول الرجال إيمانًا بالنبي (ص)؟",
       "options": [
-        "اثنتا عشرة سنة",
-        "ثلاث عشرة سنة",
-        "عشر سنوات",
-        "إحدى عشرة سنة"
+        "حمزة بن عبد المطلب",
+        "علي بن أبي طالب",
+        "زيد بن حارثة",
+        "جعفر بن أبي طالب"
       ],
       "correct_index": 1,
-      "time_limit_seconds": 20,
+      "time_limit_seconds": 15,
       "order_index": 9,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "أقام ﷺ بعد البعثة ثلاث عشرة سنة بمكة قبل الهجرة. — الكافي، باب مولد النبي ووفاته.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "علي أول من آمن من الرجال، بعد خديجة.",
+      "difficulty": "easy",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "الإمام علي",
+        "الإيمان"
+      ],
+      "source": "بحار الأنوار، ج38، ص260",
+      "external_id": "prophet-muhammad-010",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "إلى أي بلد أذن للمسلمين بالهجرة هربًا من اضطهاد قريش؟",
+      "question_text": "أين جمع النبي (ص) بني عبد المطلب عند إنذار عشيرته الأقربين؟",
       "options": [
-        "اليمن",
-        "البحرين",
-        "الحبشة",
-        "الشام"
+        "دار الأرقم",
+        "دار أبي طالب",
+        "المسجد الحرام",
+        "جبل الصفا"
       ],
-      "correct_index": 2,
-      "time_limit_seconds": 20,
+      "correct_index": 1,
+      "time_limit_seconds": 25,
       "order_index": 10,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "أذن ﷺ لجماعة من أصحابه بالهجرة إلى الحبشة اتقاءً لأذى قريش. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "جمع بني عبد المطلب في دار أبي طالب في واقعة حديث الدار.",
+      "difficulty": "hard",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "حديث الدار",
+        "العشيرة"
+      ],
+      "source": "بحار الأنوار، ج18، باب إظهار الدعوة وإنذار العشيرة",
+      "external_id": "prophet-muhammad-011",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "من كان ملك البلاد التي قصدها المهاجرون؟",
+      "question_text": "ما المقاطعة التي فرضتها قريش على بني هاشم؟",
       "options": [
-        "كسرى",
-        "النجاشي",
-        "هرقل",
-        "المقوقس"
+        "منع البيع والزواج والمخالطة",
+        "منع السفر إلى الشام",
+        "منع الحج وحده",
+        "منع دخول المسجد فقط"
       ],
-      "correct_index": 1,
-      "time_limit_seconds": 20,
+      "correct_index": 0,
+      "time_limit_seconds": 25,
       "order_index": 11,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "قصد المسلمون الحبشة لما عُرف عن النجاشي من العدل. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "تضمنت الصحيفة منع البيع والزواج والمخالطة حتى يسلموا النبي.",
+      "difficulty": "medium",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "شعب أبي طالب",
+        "المقاطعة"
+      ],
+      "source": "بحار الأنوار، ج19، ص346",
+      "external_id": "prophet-muhammad-012",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "أين حوصر النبي ﷺ وبنو هاشم خلال مقاطعة قريش؟",
+      "question_text": "من أنفق ماله في نصرة النبي (ص) زمن حصار الشعب؟",
       "options": [
-        "شعب أبي طالب",
-        "وادي محسر",
-        "شعب عامر",
-        "وادي العقيق"
+        "العباس",
+        "حمزة",
+        "السيدة خديجة",
+        "أبو سلمة"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "time_limit_seconds": 20,
       "order_index": 12,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "حاصرت قريش بني هاشم في شعب أبي طالب خلال سنوات المقاطعة. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "أنفقت خديجة من مالها في شدة الحصار على المحاصرين.",
+      "difficulty": "medium",
+      "subcategory": "البعثة والدعوة",
+      "tags": [
+        "النبي محمد",
+        "خديجة",
+        "شعب أبي طالب"
+      ],
+      "source": "بحار الأنوار، ج19، ص346–350",
+      "external_id": "prophet-muhammad-013",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "أي شخصيتين فقدهما النبي ﷺ في العام المعروف بعام الحزن؟",
+      "question_text": "من نام في فراش النبي (ص) ليلة خروجه للهجرة؟",
       "options": [
-        "القاسم وإبراهيم",
-        "أبو طالب وخديجة",
-        "عبد المطلب وآمنة",
-        "حمزة وجعفر"
+        "حمزة",
+        "جعفر",
+        "علي بن أبي طالب",
+        "سلمان"
       ],
-      "correct_index": 1,
-      "time_limit_seconds": 20,
+      "correct_index": 2,
+      "time_limit_seconds": 15,
       "order_index": 13,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "شهدت المرحلة المكية وفاة أبي طالب والسيدة خديجة عليها السلام في فترة متقاربة. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "بات علي في فراش النبي تمويهًا على المتآمرين.",
+      "difficulty": "easy",
+      "subcategory": "الهجرة",
+      "tags": [
+        "النبي محمد",
+        "الإمام علي",
+        "ليلة المبيت"
+      ],
+      "source": "بحار الأنوار، ج19، باب الهجرة ومبيت أمير المؤمنين",
+      "external_id": "prophet-muhammad-014",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "إلى أي مدينة خرج بعد اشتداد الأذى عليه في مكة؟",
+      "question_text": "ما أول عمل عمراني قام به النبي (ص) عند وصوله إلى قباء؟",
       "options": [
-        "نجران",
-        "يثرب",
-        "الطائف",
-        "خيبر"
+        "بناء مسجد قباء",
+        "حفر خندق",
+        "بناء دار الإمارة",
+        "بناء السوق"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "time_limit_seconds": 20,
       "order_index": 14,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "توجه ﷺ إلى الطائف بعد اشتداد الأذى يلتمس النصرة لدعوته. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "أقام النبي في قباء وبنى مسجدها قبل دخوله المدينة.",
+      "difficulty": "medium",
+      "subcategory": "الهجرة",
+      "tags": [
+        "النبي محمد",
+        "قباء",
+        "المسجد"
+      ],
+      "source": "بحار الأنوار، ج19، باب نزوله قباء",
+      "external_id": "prophet-muhammad-015",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "من لقيه ﷺ في بستان بعد خروجه من الطائف؟",
+      "question_text": "بين أي جماعتين عقد النبي (ص) المؤاخاة بعد الهجرة؟",
       "options": [
-        "صهيب",
-        "سلمان",
-        "بحيراء",
-        "عداس"
+        "قريش وثقيف",
+        "الأوس والخزرج فقط",
+        "أهل مكة واليهود",
+        "المهاجرين والأنصار"
       ],
       "correct_index": 3,
       "time_limit_seconds": 20,
       "order_index": 15,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "تذكر أخبار رحلة الطائف لقاءه بعداس في البستان بعد ما لقيه من أهل الطائف. — بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "آخى النبي بين المهاجرين والأنصار، واتخذ عليًا أخًا له.",
+      "difficulty": "easy",
+      "subcategory": "بناء المجتمع",
+      "tags": [
+        "النبي محمد",
+        "المؤاخاة",
+        "المدينة"
+      ],
+      "source": "بحار الأنوار، ج38، باب المؤاخاة",
+      "external_id": "prophet-muhammad-016",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "ما الاسم الذي عُرفت به البيعة التي سبقت الهجرة مباشرة؟",
+      "question_text": "ما أول معركة كبرى انتصر فيها المسلمون بقيادة النبي (ص)؟",
       "options": [
-        "العقبة الثانية",
-        "بيعة الرضوان",
-        "بيعة النساء",
-        "بيعة الفتح"
+        "أحد",
+        "الخندق",
+        "بدر",
+        "خيبر"
       ],
-      "correct_index": 0,
-      "time_limit_seconds": 20,
+      "correct_index": 2,
+      "time_limit_seconds": 15,
       "order_index": 16,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "مهّدت بيعة العقبة الثانية مع أهل يثرب لانتقال النبي ﷺ والمسلمين إليها. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "كانت بدر أول مواجهة كبرى وانتهت بنصر المسلمين.",
+      "difficulty": "easy",
+      "subcategory": "الغزوات",
+      "tags": [
+        "النبي محمد",
+        "بدر",
+        "الغزوات"
+      ],
+      "source": "بحار الأنوار، ج19، أبواب غزوة بدر",
+      "external_id": "prophet-muhammad-017",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "في أي غار مكث النبي ﷺ أثناء طريق الهجرة؟",
+      "question_text": "ما الوسيلة الدفاعية التي استُخدمت حول المدينة في غزوة الأحزاب؟",
       "options": [
-        "غار حراء",
-        "غار ثور",
-        "غار أحد",
-        "غار ثبير"
+        "حفر الخندق",
+        "أبراج خشبية",
+        "متاريس بحرية",
+        "سور حجري"
       ],
-      "correct_index": 1,
-      "time_limit_seconds": 20,
+      "correct_index": 0,
+      "time_limit_seconds": 15,
       "order_index": 17,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "مكث ﷺ في غار ثور خلال خروجه من مكة في طريقه إلى المدينة. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "حُفر الخندق في الجهة المكشوفة من المدينة فعاق الأحزاب.",
+      "difficulty": "easy",
+      "subcategory": "الغزوات",
+      "tags": [
+        "النبي محمد",
+        "الخندق",
+        "الأحزاب"
+      ],
+      "source": "بحار الأنوار، ج20، أبواب غزوة الخندق",
+      "external_id": "prophet-muhammad-018",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "ما أول مسجد أسسه ﷺ عند وصوله إلى أطراف المدينة؟",
+      "question_text": "لمن أعطى النبي (ص) الراية يوم خيبر بعد قوله إنه يحب الله ورسوله؟",
       "options": [
-        "مسجد الفتح",
-        "مسجد قباء",
-        "مسجد القبلتين",
-        "مسجد الإجابة"
+        "علي بن أبي طالب",
+        "سعد بن أبي وقاص",
+        "خالد بن الوليد",
+        "الزبير بن العوام"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "time_limit_seconds": 20,
       "order_index": 18,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "نزل ﷺ بقباء عند وصوله وأسس مسجدها قبل دخوله المدينة. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "دعا النبي عليًا ودفع إليه الراية، وكان الفتح على يديه.",
+      "difficulty": "medium",
+      "subcategory": "الغزوات",
+      "tags": [
+        "النبي محمد",
+        "الإمام علي",
+        "خيبر"
+      ],
+      "source": "الإرشاد، ج1، فصل مناقب أمير المؤمنين في خيبر",
+      "external_id": "prophet-muhammad-019",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "ما أول مواجهة عسكرية كبرى مع قريش بعد الهجرة؟",
+      "question_text": "من الذين خرج بهم النبي (ص) لمباهلة نصارى نجران؟",
       "options": [
-        "بدر",
-        "أحد",
-        "الخندق",
-        "الحديبية"
+        "العباس وحمزة وجعفر وعقيل",
+        "علي وفاطمة والحسن والحسين",
+        "زوجاته وبناته جميعًا",
+        "أبو ذر وسلمان والمقداد وعمار"
       ],
-      "correct_index": 0,
-      "time_limit_seconds": 20,
+      "correct_index": 1,
+      "time_limit_seconds": 25,
       "order_index": 19,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "وقعت بدر في السنة الثانية للهجرة وكانت أولى المواجهات الكبرى مع قريش. — إعلام الورى؛ الإرشاد.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "خرج النبي للمباهلة بعلي وفاطمة والحسن والحسين.",
+      "difficulty": "medium",
+      "subcategory": "المواقف المفصلية",
+      "tags": [
+        "النبي محمد",
+        "المباهلة",
+        "أهل البيت"
+      ],
+      "source": "الإرشاد، ج1، فصل آية المباهلة",
+      "external_id": "prophet-muhammad-020",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "في أي معركة استشهد حمزة بن عبد المطلب؟",
+      "question_text": "ماذا أعلن النبي (ص) في غدير خم بشأن الإمام علي (ع)؟",
       "options": [
-        "بدر",
-        "حنين",
-        "الخندق",
-        "أحد"
+        "تعيينه قائدًا على اليمن فقط",
+        "تكليفه بجمع الصدقات",
+        "أنه مولى من كان النبي مولاه",
+        "إرساله إلى خيبر"
       ],
-      "correct_index": 3,
-      "time_limit_seconds": 20,
+      "correct_index": 2,
+      "time_limit_seconds": 25,
       "order_index": 20,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "استشهد حمزة عليه السلام في غزوة أحد في السنة الثالثة للهجرة. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "explanation": "أعلن النبي في غدير خم: من كنت مولاه فعلي مولاه.",
+      "difficulty": "medium",
+      "subcategory": "المواقف المفصلية",
+      "tags": [
+        "النبي محمد",
+        "الغدير",
+        "الإمام علي"
+      ],
+      "source": "الإرشاد، ج1، باب النص على أمير المؤمنين، خبر الغدير",
+      "external_id": "prophet-muhammad-021",
+      "is_verified": true,
+      "version": 1
     },
     {
-      "question_text": "من أشار بحفر الخندق حول المدينة؟",
+      "question_text": "من تولى غسل النبي (ص) وتجهيزه بعد وفاته؟",
       "options": [
-        "عمار بن ياسر",
-        "المقداد بن الأسود",
-        "أبو ذر الغفاري",
-        "سلمان الفارسي"
+        "علي بن أبي طالب",
+        "أبو ذر",
+        "سلمان",
+        "العباس وحده"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "time_limit_seconds": 20,
       "order_index": 21,
       "image_url": null,
       "question_type": "multi",
-      "explanation": "ارتبطت خطة حفر الخندق بمشورة سلمان الفارسي عند اقتراب الأحزاب. — بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "ما اسم الصلح الذي عقده ﷺ مع قريش في السنة السادسة للهجرة؟",
-      "options": [
-        "صلح نجران",
-        "صلح خيبر",
-        "صلح تبوك",
-        "صلح الحديبية"
+      "explanation": "أوصى النبي أن يتولى علي غسله، فغسله وكفنه.",
+      "difficulty": "medium",
+      "subcategory": "الرحيل",
+      "tags": [
+        "النبي محمد",
+        "الوفاة",
+        "الإمام علي"
       ],
-      "correct_index": 3,
-      "time_limit_seconds": 20,
-      "order_index": 22,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "عقد ﷺ صلح الحديبية مع قريش في السنة السادسة للهجرة. — إعلام الورى؛ الإرشاد.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "إلى أي ملك أرسل النبي ﷺ كتابًا فمزقه بحسب الروايات؟",
-      "options": [
-        "هرقل",
-        "النجاشي",
-        "كسرى",
-        "المقوقس"
-      ],
-      "correct_index": 2,
-      "time_limit_seconds": 20,
-      "order_index": 23,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "تذكر كتب السيرة أن كسرى مزق كتاب النبي ﷺ الذي دعاه فيه إلى الإسلام. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "من كان حاكم مصر الذي أرسل إليه النبي ﷺ كتابًا يدعوه إلى الإسلام؟",
-      "options": [
-        "النجاشي",
-        "المقوقس",
-        "هرقل",
-        "كسرى"
-      ],
-      "correct_index": 1,
-      "time_limit_seconds": 20,
-      "order_index": 24,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "كان المقوقس من الحكام الذين وجه إليهم النبي ﷺ رسائل الدعوة. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "في أي سنة هجرية دخل النبي ﷺ مكة فاتحًا؟",
-      "options": [
-        "السادسة",
-        "التاسعة",
-        "الثامنة",
-        "السابعة"
-      ],
-      "correct_index": 2,
-      "time_limit_seconds": 20,
-      "order_index": 25,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "وقع فتح مكة في شهر رمضان من السنة الثامنة للهجرة. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "أي معركة وقعت بعد فتح مكة في مواجهة هوازن وثقيف؟",
-      "options": [
-        "خيبر",
-        "تبوك",
-        "مؤتة",
-        "حنين"
-      ],
-      "correct_index": 3,
-      "time_limit_seconds": 20,
-      "order_index": 26,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "خرج ﷺ بعد فتح مكة لمواجهة هوازن وثقيف في حنين. — إعلام الورى.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "ما آخر غزوة خرج فيها النبي ﷺ بجيش كبير بحسب المشهور؟",
-      "options": [
-        "مؤتة",
-        "خيبر",
-        "حنين",
-        "تبوك"
-      ],
-      "correct_index": 3,
-      "time_limit_seconds": 20,
-      "order_index": 27,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "كانت غزوة تبوك سنة 9 هـ آخر غزوات النبي ﷺ التي خرج فيها بنفسه. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "ما الاسم المشهور للحجة التي أداها ﷺ في السنة العاشرة للهجرة؟",
-      "options": [
-        "حجة البلاغ",
-        "حجة الوداع",
-        "حجة الفتح",
-        "حجة الإسلام"
-      ],
-      "correct_index": 1,
-      "time_limit_seconds": 20,
-      "order_index": 28,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "حج النبي ﷺ في السنة العاشرة للهجرة حجته الأخيرة المعروفة بحجة الوداع. — إعلام الورى؛ بحار الأنوار.",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
-    },
-    {
-      "question_text": "كم كان عمر النبي ﷺ عند وفاته؟",
-      "options": [
-        "أربع وستون سنة",
-        "اثنتان وستون سنة",
-        "ثلاث وستون سنة",
-        "إحدى وستون سنة"
-      ],
-      "correct_index": 2,
-      "time_limit_seconds": 20,
-      "order_index": 29,
-      "image_url": null,
-      "question_type": "multi",
-      "explanation": "ينص الكافي على أنه ﷺ قُبض وهو ابن ثلاث وستين سنة. — الكافي، باب مولد النبي ووفاته",
-      "difficulty": "standard",
-      "subcategory": "سيرة النبي محمد ﷺ",
-      "source": "سلسلة مسابقات أهل البيت (ع)"
+      "source": "بحار الأنوار، ج22، ص516",
+      "external_id": "prophet-muhammad-022",
+      "is_verified": true,
+      "version": 1
     }
   ]
 }
