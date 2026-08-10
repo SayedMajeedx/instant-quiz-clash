@@ -166,14 +166,21 @@ function HostRoom() {
 
   async function handleStartGame() {
     if (!room) return;
-    const nowIso = new Date(getSyncedNow() + 3000).toISOString();
-    await patchRoom({
-      status: "active",
-      cursor_index: 0,
-      cursor_phase: "question",
-      started_at: nowIso,
-      phase_started_at: nowIso,
+    const { data, error } = await supabase.rpc("start_room", { p_room_id: room.id });
+    if (error || !data) {
+      console.error("Failed to start room:", error);
+      return;
+    }
+
+    const startedRoom = data as unknown as Room;
+    setLocalRoomPatch({
+      status: startedRoom.status,
+      cursor_index: startedRoom.cursor_index,
+      cursor_phase: startedRoom.cursor_phase,
+      started_at: startedRoom.started_at,
+      phase_started_at: startedRoom.phase_started_at,
     });
+    await state.refresh();
   }
 
   async function exitGame() {
