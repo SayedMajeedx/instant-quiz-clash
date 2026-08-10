@@ -181,11 +181,41 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
     void load(true);
   }, [load]);
 
-  // Polling fallback every 2 seconds for dynamic state
+  // General polling fallback for missed realtime events.
   useEffect(() => {
     const id = window.setInterval(() => void load(false), 2000);
     return () => window.clearInterval(id);
   }, [load]);
+
+  // Anonymous players cannot rely on rooms-table Realtime after the security
+  // hardening. While they are in the lobby, poll only the tiny room snapshot
+  // frequently, then stop immediately once the host starts the game.
+  useEffect(() => {
+    if (!playerId || !room || room.status !== "lobby") return;
+    let cancelled = false;
+    let inFlight = false;
+
+    const refreshLobbyRoom = async () => {
+      if (inFlight) return;
+      inFlight = true;
+      try {
+        const { data } = await (supabase as any).rpc("get_room_by_code", {
+          p_code: code.toUpperCase(),
+        });
+        const nextRoom = Array.isArray(data) ? data[0] : data;
+        if (!cancelled && nextRoom) setRoom(nextRoom as unknown as Room);
+      } finally {
+        inFlight = false;
+      }
+    };
+
+    void refreshLobbyRoom();
+    const id = window.setInterval(() => void refreshLobbyRoom(), 500);
+    return () => {
+      cancelled = true;
+      window.clearInterval(id);
+    };
+  }, [code, playerId, room?.id, room?.status]);
 
   // Ticker for smooth UI countdown rendering using getSyncedNow()
   useEffect(() => {

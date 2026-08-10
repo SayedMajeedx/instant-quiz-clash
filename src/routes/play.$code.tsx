@@ -47,8 +47,8 @@ function Play() {
 
   // Keep player phone screen awake during active game session
   useWakeLock(true);
-  const [playerId, setPlayerId] = useState<string | null>(null);
-  const [sessionResolved, setSessionResolved] = useState(false);
+  const [playerId, setPlayerId] = useState<string | null>(() => storedPlayerId(code));
+  const [sessionResolved, setSessionResolved] = useState(() => Boolean(storedPlayerId(code)));
   const [showLeaveModal, setShowLeaveConfirm] = useState(false);
   const [muted, setMuted] = useState(() => sounds.getMuted());
 
