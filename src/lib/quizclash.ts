@@ -86,7 +86,7 @@ export type CursorPhase = "question" | "reveal" | "board";
 export const MAX_POINTS = 1000;
 export const MIN_POINTS = 300;
 export const REVEAL_MS = 2500;
-export const BOARD_MS = 3000;
+export const BOARD_MS = 5000;
 
 export const AVATAR_COLORS = [
   "#a855f7",

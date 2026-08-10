@@ -61,9 +61,9 @@ function HostRoom() {
   const [interQuestionSec, setInterQuestionSecState] = useState<number>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem(`quizclash_delay_${code}`);
-      if (saved) return Number(saved) || 3;
+      if (saved) return Number(saved) || 5;
     }
-    return 3;
+    return 5;
   });
 
   const setInterQuestionSec = useCallback(
