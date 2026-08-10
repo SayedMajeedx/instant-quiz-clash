@@ -389,11 +389,12 @@ export const sounds = new SoundManager();
  * defaulting to /audio/islamic.mp3 for Islamic & Ahl al-Bayt quizzes.
  */
 export function getBgmForQuiz(
-  quiz: { id?: string; quiz_id?: string; category?: string | null; title?: string | null } | null | undefined
+  quiz: { id?: string; quiz_id?: string; category?: string | null; subcategory?: string | null; title?: string | null } | null | undefined
 ): string | null {
   if (!quiz) return null;
   const title = (quiz.title ?? "").trim();
   const category = (quiz.category ?? "").trim();
+  const subcategory = (quiz.subcategory ?? "").trim();
 
   // Search QUIZ_LIBRARY to match metadata if category is missing on DB object
   const libMatch = QUIZ_LIBRARY.find(
@@ -405,8 +406,12 @@ export function getBgmForQuiz(
   );
 
   const fullCategory = category || libMatch?.category || "";
+  const fullSubcategory = subcategory || libMatch?.subcategory || "";
   const fullTitle = title || libMatch?.title || "";
-  const testStr = `${fullCategory} ${fullTitle}`.toLowerCase();
+  const normalizeArabic = (value: string) =>
+    value.toLowerCase().replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/[ـ\s_-]+/g, "");
+  const categoryPath = normalizeArabic(`${fullCategory} ${fullSubcategory}`);
+  const testStr = normalizeArabic(`${fullCategory} ${fullSubcategory} ${fullTitle}`);
 
   // Strictly match ONLY Ahl al-Bayt quiz series ("سلسلة مسابقات أهل البيت")
   const isAhlAlBaytSeries =
@@ -416,7 +421,9 @@ export function getBgmForQuiz(
     testStr.includes("ahl_albayt") ||
     testStr.includes("ahlalbayt");
 
-  if (isAhlAlBaytSeries) {
+  const isIslamicCategory = categoryPath.includes("اسلاميات");
+
+  if (isIslamicCategory || isAhlAlBaytSeries) {
     return "/audio/islamic.mp3";
   }
 

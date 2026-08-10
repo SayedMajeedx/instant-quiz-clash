@@ -10,11 +10,12 @@ import { DisplayControls, ExitFullscreenButton } from "@/components/quiz/Display
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
 import { QuestionImage } from "@/components/quiz/QuestionImage";
-import { usePhase, useRoomGame } from "@/hooks/useRoomGame";
+import { useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import {
   optionCount,
+  phaseAt,
   standings,
   teamStandings,
   TEAM_COLOR_PALETTE,
@@ -84,8 +85,28 @@ function HostRoom() {
     return { ...state.room, ...localRoomPatch };
   }, [state.room, localRoomPatch]);
 
-  const rawPhase = usePhase(state);
+  // Drop optimistic values as soon as the server snapshot confirms them. This
+  // prevents the start timestamp/cursor from masking later realtime updates.
+  useEffect(() => {
+    if (!state.room) return;
+    setLocalRoomPatch((prev) => {
+      const next = { ...prev };
+      let changed = false;
+      for (const key of Object.keys(prev) as (keyof Room)[]) {
+        if (JSON.stringify(state.room?.[key]) === JSON.stringify(prev[key])) {
+          delete next[key];
+          changed = true;
+        }
+      }
+      return changed ? next : prev;
+    });
+  }, [state.room]);
+
   const { quiz, questions, players: rawPlayers, answers } = state;
+  const rawPhase = useMemo(
+    () => phaseAt(room, questions, state.now),
+    [room, questions, state.now],
+  );
 
   const players = useMemo(() => {
     return rawPlayers.map((p) => {
@@ -125,11 +146,22 @@ function HostRoom() {
   async function patchRoom(patch: Partial<Room>) {
     if (!room) return;
     setLocalRoomPatch((prev) => ({ ...prev, ...patch }));
-    await supabase
+    const { error } = await supabase
       .from("rooms")
       .update(patch as never)
       .eq("id", room.id);
-    void state.refresh();
+
+    if (error) {
+      setLocalRoomPatch((prev) => {
+        const next = { ...prev };
+        for (const key of Object.keys(patch) as (keyof Room)[]) delete next[key];
+        return next;
+      });
+      console.error("Failed to update room:", error);
+      return;
+    }
+
+    await state.refresh();
   }
 
   async function handleStartGame() {

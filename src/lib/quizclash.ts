@@ -26,6 +26,8 @@ export type Quiz = {
   created_at: string;
   is_public?: boolean;
   quiz_kind?: "standard" | "custom_generated";
+  category?: string | null;
+  subcategory?: string | null;
 };
 
 export type QuestionType = "multi" | "boolean";
