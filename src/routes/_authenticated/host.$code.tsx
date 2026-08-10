@@ -166,7 +166,7 @@ function HostRoom() {
 
   async function handleStartGame() {
     if (!room) return;
-    const { data, error } = await supabase.rpc("start_room", { p_room_id: room.id });
+    const { data, error } = await supabase.rpc("start_room_v2", { p_room_id: room.id });
     if (error || !data) {
       console.error("Failed to start room:", error);
       return;

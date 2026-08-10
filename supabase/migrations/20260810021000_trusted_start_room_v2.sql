@@ -1,6 +1,8 @@
--- Start a room atomically on the database clock so every client sees the same state.
-CREATE OR REPLACE FUNCTION public.start_room(p_room_id uuid)
-RETURNS public.rooms
+-- Clean, versioned room starter. Uses only columns present in the live rooms table.
+DROP FUNCTION IF EXISTS public.start_room_v2(uuid);
+
+CREATE FUNCTION public.start_room_v2(p_room_id uuid)
+RETURNS jsonb
 LANGUAGE plpgsql
 SECURITY DEFINER
 SET search_path = public, pg_temp
@@ -28,9 +30,9 @@ BEGIN
   RETURNING * INTO v_room;
 
   IF v_room.id IS NULL THEN RAISE EXCEPTION 'room not found'; END IF;
-  RETURN v_room;
+  RETURN to_jsonb(v_room);
 END;
 $$;
 
-REVOKE ALL ON FUNCTION public.start_room(uuid) FROM PUBLIC, anon;
-GRANT EXECUTE ON FUNCTION public.start_room(uuid) TO authenticated, service_role;
+REVOKE ALL ON FUNCTION public.start_room_v2(uuid) FROM PUBLIC, anon;
+GRANT EXECUTE ON FUNCTION public.start_room_v2(uuid) TO authenticated, service_role;
