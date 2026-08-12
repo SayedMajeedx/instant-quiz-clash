@@ -3,8 +3,6 @@
  * Independent dual audio channels (BGM & SFX) with mastering dynamics compressor.
  */
 
-import { QUIZ_LIBRARY } from "@/lib/quiz-library";
-
 class SoundManager {
   private ctx: AudioContext | null = null;
   private compressor: DynamicsCompressorNode | null = null;
@@ -396,18 +394,9 @@ export function getBgmForQuiz(
   const category = (quiz.category ?? "").trim();
   const subcategory = (quiz.subcategory ?? "").trim();
 
-  // Search QUIZ_LIBRARY to match metadata if category is missing on DB object
-  const libMatch = QUIZ_LIBRARY.find(
-    (lq) =>
-      lq.id === quiz.id ||
-      lq.id === quiz.quiz_id ||
-      (title && lq.title.includes(title)) ||
-      (lq.title && title.includes(lq.title))
-  );
-
-  const fullCategory = category || libMatch?.category || "";
-  const fullSubcategory = subcategory || libMatch?.subcategory || "";
-  const fullTitle = title || libMatch?.title || "";
+  const fullCategory = category;
+  const fullSubcategory = subcategory;
+  const fullTitle = title;
   const normalizeArabic = (value: string) =>
     value.toLowerCase().replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/[ـ\s_-]+/g, "");
   const categoryPath = normalizeArabic(`${fullCategory} ${fullSubcategory}`);

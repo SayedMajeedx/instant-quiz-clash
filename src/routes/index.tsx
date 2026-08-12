@@ -10,7 +10,6 @@ import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { useI18n } from "@/lib/i18n";
-import { getAllAdminQuizzes } from "@/lib/admin-data-helper";
 import { getCategoryIcon } from "@/lib/browse-helpers";
 
 export const Route = createFileRoute("/")({
@@ -47,10 +46,18 @@ function Home() {
 
   useEffect(() => {
     let active = true;
-    void getAllAdminQuizzes()
-      .then((catalog) => {
+    void supabase
+      .from("quizzes")
+      .select("id,category,questions(count)")
+      .eq("is_public", true)
+      .then(({ data, error }) => {
+        if (error) throw error;
         if (!active) return;
-        const playable = catalog.filter((quiz) => quiz.is_public);
+        const playable = (data ?? []) as unknown as Array<{
+          id: string;
+          category: string | null;
+          questions: Array<{ count: number }>;
+        }>;
         const categoryCounts = new Map<string, number>();
         for (const quiz of playable) {
           const category = (quiz.category || "عام").trim();
@@ -63,7 +70,7 @@ function Home() {
 
         setLibraryStats({
           quizzes: playable.length,
-          questions: playable.reduce((sum, quiz) => sum + quiz.question_count, 0),
+          questions: playable.reduce((sum, quiz) => sum + (quiz.questions[0]?.count ?? 0), 0),
           categories,
         });
       })
@@ -329,7 +336,7 @@ function Home() {
                 </span>
               </div>
 
-              <h2 className="mt-4 font-display text-2xl sm:text-4xl text-gradient">
+              <h2 className="mt-4 min-h-[4rem] font-display text-2xl sm:min-h-[6rem] sm:text-4xl text-gradient">
                 {lang === "ar"
                   ? `تصفح ${libraryStats?.quizzes.toLocaleString("ar-BH") || ""} كويزاً جاهزاً للإطلاق فوراً`
                   : `Explore ${libraryStats?.quizzes.toLocaleString("en-US") || ""} Ready-Made Quizzes`}
@@ -342,7 +349,7 @@ function Home() {
               </p>
 
               {/* Category Pills Spotlight */}
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mt-4 flex min-h-[4.5rem] flex-wrap content-start gap-2 sm:min-h-9">
                 {(libraryStats?.categories || []).map((cat) => (
                   <span
                     key={cat.label}

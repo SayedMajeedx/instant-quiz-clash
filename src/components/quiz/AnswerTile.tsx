@@ -1,4 +1,4 @@
-import { useEffect, type ReactNode } from "react";
+import { memo, useEffect, type ReactNode } from "react";
 import { SHAPE_KEYS, useI18n } from "@/lib/i18n";
 import { ANSWER_STYLES } from "@/lib/quizclash";
 import { sounds } from "@/lib/audio";
@@ -29,7 +29,7 @@ type TileProps = {
   count?: number | undefined;
 };
 
-export function AnswerTile({
+export const AnswerTile = memo(function AnswerTile({
   index,
   children,
   onClick,
@@ -91,4 +91,4 @@ export function AnswerTile({
       ) : null}
     </button>
   );
-}
+});
