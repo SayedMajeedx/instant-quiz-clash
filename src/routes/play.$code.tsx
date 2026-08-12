@@ -124,7 +124,6 @@ function Play() {
 
     // 0ms INSTANT OPTIMISTIC FEEDBACK
     setOptimisticChoice(choice);
-    sounds.playTap();
     setSending(true);
 
     const question = phase.question;
