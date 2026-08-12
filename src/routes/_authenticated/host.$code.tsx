@@ -782,7 +782,7 @@ function HostRoom() {
                       />
                       {roomTeamName(room, team.teamIndex)}
                     </span>
-                    <span className="font-display text-2xl tabular-nums">{team.total}</span>
+                    <span className="font-display text-2xl tabular-nums">{team.total} <small className="text-xs text-muted-foreground">متوسط</small></span>
                   </div>
                 ))}
               </div>

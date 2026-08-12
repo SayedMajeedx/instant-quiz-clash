@@ -53,7 +53,7 @@ export function Podium({
           <div className="mt-3 flex items-center justify-center gap-3">
             <span className="size-6 rounded-full shadow-[0_0_20px_currentColor]" style={{ backgroundColor: teamColors[teamRows[0]!.teamIndex], color: teamColors[teamRows[0]!.teamIndex] }} />
             <span className="font-display text-3xl sm:text-4xl">{teamNames[teamRows[0]!.teamIndex] ?? `الفريق ${teamRows[0]!.teamIndex + 1}`}</span>
-            <span className="rounded-full bg-amber-300/15 px-3 py-1 font-display text-amber-300">{teamRows[0]!.total}</span>
+            <span className="rounded-full bg-amber-300/15 px-3 py-1 font-display text-amber-300">متوسط {teamRows[0]!.total}</span>
           </div>
         </div>
       ) : null}

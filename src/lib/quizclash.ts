@@ -223,9 +223,23 @@ export function standings(
         (a) => a.player_id === player.id && prevOrderedIds.includes(a.question_id),
       );
       const total = mine.reduce((sum, a) => sum + a.points_awarded, 0);
-      return { id: player.id, nickname: player.nickname, total, rank: 0 };
+      return {
+        id: player.id,
+        total,
+        correct: mine.filter((a) => a.is_correct).length,
+        answered: mine.length,
+        responseOrder: mine.reduce((sum, a) => sum + new Date(a.answered_at).getTime(), 0),
+        rank: 0,
+      };
     });
-    prevRows.sort((a, b) => b.total - a.total || a.nickname.localeCompare(b.nickname));
+    prevRows.sort(
+      (a, b) =>
+        b.total - a.total ||
+        b.correct - a.correct ||
+        b.answered - a.answered ||
+        a.responseOrder - b.responseOrder ||
+        a.id.localeCompare(b.id),
+    );
     prevRows.forEach((r, i) => {
       prevStandingsMap[r.id] = { prevRank: i + 1, prevTotal: r.total };
     });
@@ -253,13 +267,21 @@ export function standings(
       streak,
       correct: mine.filter((a) => a.is_correct).length,
       answered: mine.length,
+      responseOrder: mine.reduce((sum, a) => sum + new Date(a.answered_at).getTime(), 0),
       lastPoints,
       rank: 0,
       prevTotal,
       prevRank: prevInfo ? prevInfo.prevRank : 0,
     };
   });
-  rows.sort((a, b) => b.total - a.total || a.player.nickname.localeCompare(b.player.nickname));
+  rows.sort(
+    (a, b) =>
+      b.total - a.total ||
+      b.correct - a.correct ||
+      b.answered - a.answered ||
+      a.responseOrder - b.responseOrder ||
+      a.player.id.localeCompare(b.player.id),
+  );
   rows.forEach((r, i) => {
     r.rank = i + 1;
     if (r.prevRank === 0) {
@@ -281,6 +303,9 @@ export function teamStandings(rows: Standing[]): TeamStanding[] {
     entry.total += row.total;
     entry.members += 1;
     byTeam.set(idx, entry);
+  }
+  for (const teamRow of byTeam.values()) {
+    teamRow.total = Math.round(teamRow.total / Math.max(1, teamRow.members));
   }
   const teams = [...byTeam.values()].sort((a, b) => b.total - a.total || a.teamIndex - b.teamIndex);
   teams.forEach((teamRow, i) => {
