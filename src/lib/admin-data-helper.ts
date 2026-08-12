@@ -1,5 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
-import { QUIZ_LIBRARY, type LibraryQuiz } from "@/lib/quiz-library";
+import type { LibraryQuiz } from "@/lib/quiz-library";
 
 export type AdminQuizItem = {
   id: string;
@@ -113,6 +113,7 @@ export async function saveLocalQuizOverride(quizId: string, override: Partial<Ad
 
   // Persist permanently in Supabase Database
   try {
+    const { QUIZ_LIBRARY } = await import("@/lib/quiz-library");
     const db = supabase as any;
     const libQuiz = QUIZ_LIBRARY.find((q) => q.id === quizId || q.title === quizId || (override.title && q.title === override.title));
     const targetTitle = override.title || (libQuiz ? libQuiz.title : (isUUID(quizId) ? "" : quizId));
@@ -411,6 +412,7 @@ export async function deleteLocalSubcategory(subId: string, subName?: string) {
  * Fetch ALL quizzes across DB and QUIZ_LIBRARY
  */
 export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
+  const { QUIZ_LIBRARY } = await import("@/lib/quiz-library");
   const overrides = getLocalQuizOverrides();
   const dbQuizzes: AdminQuizItem[] = [];
   const dbIds = new Set<string>();

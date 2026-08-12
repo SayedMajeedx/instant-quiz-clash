@@ -7,7 +7,6 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { cloneQuiz } from "@/lib/clone-quiz";
 import { useI18n } from "@/lib/i18n";
-import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 
@@ -57,6 +56,7 @@ function QuizPreviewPage() {
     void (async () => {
       setLoading(true);
       try {
+        const { QUIZ_LIBRARY } = await import("@/lib/quiz-library");
         const decodedQuizId = decodeURIComponent(quizId || "").trim();
         const normTitle = (s: string) => cleanQuizTitle(s).toLowerCase().trim();
 

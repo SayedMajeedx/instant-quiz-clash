@@ -1,5 +1,4 @@
 import { supabase } from "@/integrations/supabase/client";
-import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import { STARTER_QUIZZES } from "@/lib/starter-quizzes";
 import type { Question, Quiz } from "@/lib/quizclash";
 
@@ -15,6 +14,7 @@ export async function cloneQuiz(
   userId: string,
 ): Promise<CloneQuizResult> {
   try {
+    const { QUIZ_LIBRARY } = await import("@/lib/quiz-library");
     // 1. Check local library first, then starter quizzes, then Supabase DB
     const libraryMatch = QUIZ_LIBRARY.find((q) => q.id === quizId);
     const starterMatch = STARTER_QUIZZES.find((sq) => sq.id === quizId);

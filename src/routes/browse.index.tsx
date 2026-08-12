@@ -5,7 +5,6 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { QuizCard, type PublicQuiz } from "@/components/quiz/QuizCard";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import { QUIZ_LIBRARY } from "@/lib/quiz-library";
 import {
   cleanQuizTitle,
   getCategoryIcon,
