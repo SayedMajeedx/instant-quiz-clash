@@ -59,13 +59,24 @@ export function Leaderboard({
     } else {
       list.sort((a, b) => a.rank - b.rank);
     }
-    return list.slice(0, limit);
+    // Keep both the previous and current top rows mounted. New leaders can then
+    // glide into view while displaced players visibly leave the board.
+    return list.filter((row) => row.prevRank <= limit || row.rank <= limit);
   }, [rows, limit, stage]);
+
+  const biggestClimberId = useMemo(() => {
+    let best: Standing | null = null;
+    for (const row of rows) {
+      const climb = row.prevRank - row.rank;
+      if (climb > 0 && (!best || climb > best.prevRank - best.rank)) best = row;
+    }
+    return best?.player.id ?? null;
+  }, [rows]);
 
   const rowHeight = 88;
 
   return (
-    <div className="relative w-full" style={{ height: activeRows.length * rowHeight }}>
+    <div className="relative w-full overflow-hidden" style={{ height: Math.min(limit, rows.length) * rowHeight }}>
       {activeRows.map((row) => {
         const isPastInitial = stage >= 1;
         const isSwapped = stage >= 2;
@@ -76,20 +87,31 @@ export function Leaderboard({
           : (row.prevTotal / max) * 100;
 
         const rankDiff = row.prevRank - row.rank; // > 0 means moved UP (e.g. 3 -> 1 is +2)
+        const isVisible = currentRank <= limit;
+        const isBiggestClimber = isSwapped && row.player.id === biggestClimberId;
 
         return (
           <div
             key={row.player.id}
-            className="absolute left-0 right-0 transition-all duration-700 cubic-bezier(0.34, 1.56, 0.64, 1)"
-            style={{ transform: `translateY(${(currentRank - 1) * rowHeight}px)` }}
+            className="absolute left-0 right-0 transition-[transform,opacity,filter] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] motion-reduce:transition-none"
+            style={{
+              transform: `translateY(${(currentRank - 1) * rowHeight}px) scale(${isVisible ? 1 : 0.96})`,
+              opacity: isVisible ? 1 : 0,
+              filter: isVisible ? "blur(0)" : "blur(3px)",
+              zIndex: Math.max(1, limit - currentRank + 1),
+            }}
           >
             <div
               className={cn(
-                "flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3.5 shadow-sm transition-all duration-500",
+                "relative flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3.5 shadow-sm transition-all duration-500 motion-reduce:transition-none",
                 row.player.id === highlightPlayerId && "ring-2 ring-sun",
                 isSwapped && rankDiff > 0 && "border-lime/60 bg-lime/10 shadow-glow",
+                isBiggestClimber && "leaderboard-climber",
               )}
             >
+              {isBiggestClimber ? (
+                <span className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 skew-x-[-20deg] bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[leaderboard-shine_900ms_ease-out_1] motion-reduce:hidden" />
+              ) : null}
               {/* Rank number badge */}
               <div className="relative shrink-0">
                 <span className="grid size-10 place-items-center rounded-xl bg-background/50 font-display text-lg tabular-nums transition-all duration-500">
@@ -123,7 +145,7 @@ export function Leaderboard({
 
               {/* Score & Delta */}
               <div className="text-end shrink-0">
-                <div className="font-display text-2xl tabular-nums leading-none">
+                <div className={cn("font-display text-2xl tabular-nums leading-none", isPastInitial && row.lastPoints > 0 && "animate-[score-lock_500ms_ease-out_1] motion-reduce:animate-none")}>
                   <CounterNumber from={row.prevTotal} target={row.total} active={isPastInitial} />
                 </div>
 
