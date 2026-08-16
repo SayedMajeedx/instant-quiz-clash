@@ -46,11 +46,13 @@ function Home() {
 
   useEffect(() => {
     let active = true;
-    void supabase
-      .from("quizzes")
-      .select("id,category,questions(count)")
-      .eq("is_public", true)
-      .then(({ data, error }) => {
+    void (async () => {
+      try {
+        const { data, error } = await supabase
+          .from("quizzes")
+          .select("id,category,questions(count)")
+          .eq("is_public", true);
+
         if (error) throw error;
         if (!active) return;
         const playable = (data ?? []) as unknown as Array<{
@@ -73,8 +75,10 @@ function Home() {
           questions: playable.reduce((sum, quiz) => sum + (quiz.questions[0]?.count ?? 0), 0),
           categories,
         });
-      })
-      .catch((error) => console.error("Failed to load homepage catalog figures:", error));
+      } catch (error) {
+        console.error("Failed to load homepage catalog figures:", error);
+      }
+    })();
     return () => {
       active = false;
     };

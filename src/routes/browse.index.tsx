@@ -43,11 +43,15 @@ function BrowseLandingPage() {
     void (async () => {
       setLoading(true);
       try {
-        const [adminQuizzes, adminCategories, statsResult] = await Promise.all([
+        const [quizzesRes, categoriesRes, statsRes] = await Promise.allSettled([
           getAllAdminQuizzes(),
           getAllAdminCategories(),
           supabase.from("quiz_play_stats").select("source_quiz_id, play_count, last_played_at"),
         ]);
+
+        const adminQuizzes = quizzesRes.status === "fulfilled" ? quizzesRes.value : [];
+        const adminCategories = categoriesRes.status === "fulfilled" ? categoriesRes.value : [];
+        const statsRows = statsRes.status === "fulfilled" && statsRes.value.data ? statsRes.value.data : [];
 
         const publicQuizzes: PublicQuiz[] = adminQuizzes
           .filter((q) => q.is_public)
@@ -67,12 +71,12 @@ function BrowseLandingPage() {
         setQuizzes(publicQuizzes);
         setCategoriesList(adminCategories);
         const nextStats: Record<string, { count: number; lastPlayedAt: string }> = {};
-        for (const row of statsResult.data || []) {
+        for (const row of statsRows) {
           nextStats[row.source_quiz_id] = { count: row.play_count, lastPlayedAt: row.last_played_at };
         }
         setPlayStats(nextStats);
-      } catch {
-        // Fallback
+      } catch (err) {
+        console.error("Error loading browse index catalog:", err);
       } finally {
         setLoading(false);
       }

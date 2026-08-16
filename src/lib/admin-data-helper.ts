@@ -422,30 +422,28 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
   const deletedLibraryIds = new Set<string>();
   const deletedTitles = new Set<string>();
 
-  const { data: deletedData, error: deletedError } = await (supabase as any).rpc(
-    "get_catalog_deleted_quizzes"
-  );
-  if (deletedError) {
-    throw new Error(`Could not synchronize deleted quizzes: ${deletedError.message}`);
-  }
-  if (!Array.isArray(deletedData)) {
-    throw new Error("Could not synchronize deleted quizzes: invalid database response");
-  }
-  deletedData.forEach((item: any) => {
-    if (item.library_id) deletedLibraryIds.add(item.library_id);
-    if (item.title) deletedTitles.add(cleanTitle(item.title));
-  });
-
-  const { data, error } = await (supabase.from("quizzes") as any)
-    .select("*, questions(*)")
-    .order("created_at", { ascending: false });
-  if (error) throw new Error(`Could not synchronize quizzes: ${error.message}`);
-  if (!Array.isArray(data)) {
-    throw new Error("Could not synchronize quizzes: invalid database response");
+  try {
+    const { data: deletedData, error: deletedError } = await (supabase as any).rpc(
+      "get_catalog_deleted_quizzes"
+    );
+    if (!deletedError && Array.isArray(deletedData)) {
+      deletedData.forEach((item: any) => {
+        if (item.library_id) deletedLibraryIds.add(item.library_id);
+        if (item.title) deletedTitles.add(cleanTitle(item.title));
+      });
+    }
+  } catch (e) {
+    console.warn("Could not fetch deleted catalog quizzes, proceeding with defaults:", e);
   }
 
-  data.forEach((q: any) => {
-    if (q.quiz_kind === "custom_generated") return;
+  try {
+    const { data, error } = await (supabase.from("quizzes") as any)
+      .select("*, questions(*)")
+      .order("created_at", { ascending: false });
+
+    if (!error && Array.isArray(data)) {
+      data.forEach((q: any) => {
+        if (q.quiz_kind === "custom_generated") return;
         const matchingLibraryQuiz = QUIZ_LIBRARY.find(
           (libraryQuiz) =>
             libraryQuiz.id === q.id || cleanTitle(libraryQuiz.title) === cleanTitle(q.title),
@@ -472,7 +470,13 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
           questions: resolvedQuestions,
           source: "db",
         });
-  });
+      });
+    } else if (error) {
+      console.warn("Notice: Failed to fetch DB quizzes for public view, falling back to static library:", error.message);
+    }
+  } catch (e) {
+    console.warn("Notice: Exception during DB quiz fetch, falling back to static library:", e);
+  }
 
   // Merge static QUIZ_LIBRARY (ONLY for quizzes NOT present in Supabase DB by ID or Title)
   const libraryQuizzes: AdminQuizItem[] = QUIZ_LIBRARY.filter(

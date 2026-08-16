@@ -415,10 +415,13 @@ function CategoryDetailPage() {
     void (async () => {
       setLoading(true);
       try {
-        const [adminCats, adminQuizzes] = await Promise.all([
+        const [catsRes, quizzesRes] = await Promise.allSettled([
           getAllAdminCategories(),
           getAllAdminQuizzes(),
         ]);
+
+        const adminCats = catsRes.status === "fulfilled" ? catsRes.value : [];
+        const adminQuizzes = quizzesRes.status === "fulfilled" ? quizzesRes.value : [];
 
         // Find subcategories for this category
         const foundCat = adminCats.find(
