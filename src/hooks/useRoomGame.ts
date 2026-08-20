@@ -163,21 +163,23 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
     void load(true);
   }, [load]);
 
-  // General polling fallback for missed realtime events.
+  // Active polling fallback: Fast 600ms polling during active game or for player devices
+  // that don't receive rooms-table Realtime events due to RLS security.
   useEffect(() => {
-    const id = window.setInterval(() => void load(false), 2000);
+    const intervalMs = room?.status === "active" || playerId ? 600 : 2000;
+    const id = window.setInterval(() => void load(false), intervalMs);
     return () => window.clearInterval(id);
-  }, [load]);
+  }, [load, room?.status, playerId]);
 
-  // Anonymous players cannot rely on rooms-table Realtime after the security
-  // hardening. While they are in the lobby, poll only the tiny room snapshot
-  // frequently, then stop immediately once the host starts the game.
+  // Anonymous players cannot rely on rooms-table Realtime after security hardening.
+  // Poll room snapshot frequently (600ms) during active play and lobby so phase/cursor
+  // changes sync immediately.
   useEffect(() => {
-    if (!playerId || !room || room.status !== "lobby") return;
+    if (!playerId || !room || room.status === "ended") return;
     let cancelled = false;
     let inFlight = false;
 
-    const refreshLobbyRoom = async () => {
+    const refreshRoomSnapshot = async () => {
       if (inFlight) return;
       inFlight = true;
       try {
@@ -191,8 +193,9 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
       }
     };
 
-    void refreshLobbyRoom();
-    const id = window.setInterval(() => void refreshLobbyRoom(), 500);
+    void refreshRoomSnapshot();
+    const intervalMs = room.status === "lobby" ? 500 : 600;
+    const id = window.setInterval(() => void refreshRoomSnapshot(), intervalMs);
     return () => {
       cancelled = true;
       window.clearInterval(id);

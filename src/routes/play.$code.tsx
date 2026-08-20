@@ -139,9 +139,11 @@ function Play() {
         setArmedDouble(false);
         void state.refresh();
       } else {
+        void state.refresh();
         setOptimisticChoice(null);
       }
     } catch {
+      void state.refresh();
       setOptimisticChoice(null);
     } finally {
       setSending(false);

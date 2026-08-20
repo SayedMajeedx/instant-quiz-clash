@@ -356,6 +356,28 @@ function HostRoom() {
     }
   }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance]);
 
+  // Fail-safe watchdog: Check every 1s during active game. If timeUp or everyoneAnswered is true,
+  // ensure advance() is retried until the room state successfully moves forward.
+  useEffect(() => {
+    if (!roomStatus || roomStatus !== "active") return;
+    if (phaseKind !== "question" && phaseKind !== "reveal" && phaseKind !== "leaderboard") return;
+    const auto = advanceMode !== "manual";
+    const shouldAdvance = phaseKind === "question" ? everyoneAnswered || timeUp : auto && timeUp;
+
+    if (!shouldAdvance) return;
+
+    const from: CursorPhase =
+      phaseKind === "question" ? "question" : phaseKind === "reveal" ? "reveal" : "board";
+
+    const watchdogId = window.setInterval(() => {
+      if (!isAdvancingRef.current) {
+        void advance(phaseIndex, from);
+      }
+    }, 1000);
+
+    return () => window.clearInterval(watchdogId);
+  }, [roomStatus, advanceMode, phaseKind, phaseIndex, timeUp, everyoneAnswered, advance]);
+
   const rows = useMemo(() => {
     const upTo =
       phaseKind === "question" || phaseKind === "reveal" || phaseKind === "leaderboard"
