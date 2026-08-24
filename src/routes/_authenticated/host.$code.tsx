@@ -93,7 +93,14 @@ function HostRoom() {
       const next = { ...prev };
       let changed = false;
       for (const key of Object.keys(prev) as (keyof Room)[]) {
-        if (JSON.stringify(state.room?.[key]) === JSON.stringify(prev[key])) {
+        if (key === "phase_started_at" || key === "started_at") {
+          const serverTime = state.room?.[key] ? new Date(state.room[key] as string).getTime() : 0;
+          const patchTime = prev[key] ? new Date(prev[key] as string).getTime() : 0;
+          if (Math.abs(serverTime - patchTime) < 2500) {
+            delete next[key];
+            changed = true;
+          }
+        } else if (state.room?.[key] === prev[key]) {
           delete next[key];
           changed = true;
         }
@@ -238,7 +245,9 @@ function HostRoom() {
             rpcRes.cursor_index !== fromIndex ||
             rpcRes.status !== "active");
 
-        if (!rpcAdvanced && Object.keys(directPayload).length > 0) {
+        if (rpcAdvanced) {
+          setLocalRoomPatch((prev) => ({ ...prev, ...(rpcRes as unknown as Partial<Room>) }));
+        } else if (Object.keys(directPayload).length > 0) {
           console.warn(
             "RPC advance_room mismatch fallback -> applying direct update",
             directPayload,
@@ -247,9 +256,9 @@ function HostRoom() {
             .from("rooms")
             .update(directPayload as never)
             .eq("id", roomId);
+          setLocalRoomPatch((prev) => ({ ...prev, ...directPayload }));
         }
 
-        setLocalRoomPatch((prev) => ({ ...prev, ...directPayload }));
         await refresh();
       } catch (e) {
         console.error("Failed to advance room:", e);

@@ -60,10 +60,27 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
   const load = useCallback(
     async (forceFull = false) => {
       const upper = code.toUpperCase();
-      const { data: roomRows } = await (supabase as any).rpc("get_room_by_code", {
-        p_code: upper,
-      });
-      const roomRow = Array.isArray(roomRows) ? roomRows[0] : roomRows;
+      let roomRow: any = null;
+
+      try {
+        const { data: roomRows, error: rpcErr } = await (supabase as any).rpc("get_room_by_code", {
+          p_code: upper,
+        });
+        if (!rpcErr && roomRows) {
+          roomRow = Array.isArray(roomRows) ? roomRows[0] : roomRows;
+        }
+      } catch {
+        // Fallback below
+      }
+
+      if (!roomRow) {
+        const { data: directRoom } = await supabase
+          .from("rooms")
+          .select("*")
+          .eq("code", upper)
+          .maybeSingle();
+        roomRow = directRoom;
+      }
 
       if (!roomRow) {
         setMissing(true);
@@ -89,35 +106,45 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
         ]);
 
         let rows = (ownerQuestionRes.data ?? []) as unknown as Question[];
-        const isOwner = rows.length > 0;
+        const isOwner = rows.length > 0 && rows.some((q) => q.correct_index !== -1 && q.correct_index !== undefined);
         if (!isOwner) {
-          const { data: publicRows } = await supabase.rpc("room_questions", {
-            p_room_id: typedRoom.id,
-          });
-          rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({
-            ...q,
-            correct_index: -1,
-          }));
-          const { data: reveals } = await supabase.rpc("room_reveals", { p_room_id: typedRoom.id });
-          const map = new Map((reveals ?? []).map((r) => [r.question_id, r.correct_index]));
-          rows = rows.map((q) => (map.has(q.id) ? { ...q, correct_index: map.get(q.id)! } : q));
+          try {
+            const { data: publicRows } = await supabase.rpc("room_questions", {
+              p_room_id: typedRoom.id,
+            });
+            if (publicRows && publicRows.length > 0) {
+              rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({
+                ...q,
+                correct_index: -1,
+              }));
+              const { data: reveals } = await supabase.rpc("room_reveals", { p_room_id: typedRoom.id });
+              const map = new Map((reveals ?? []).map((r: any) => [r.question_id, r.correct_index]));
+              rows = rows.map((q) => (map.has(q.id) ? { ...q, correct_index: map.get(q.id)! } : q));
+            }
+          } catch {
+            // Keep rows as ownerQuestionRes
+          }
         }
 
         let playerRows = (playerRes.data ?? []) as unknown as Player[];
         let answerRows = (answerRes.data ?? []) as unknown as Answer[];
-        if (!isOwner && playerId) {
-          const [p, a] = await Promise.all([
-            supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
-            supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
-          ]);
-          playerRows = (p.data ?? []) as unknown as Player[];
-          answerRows = (a.data ?? []) as unknown as Answer[];
+        if (playerRows.length === 0 && playerId) {
+          try {
+            const [p, a] = await Promise.all([
+              supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
+              supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
+            ]);
+            if (p.data) playerRows = p.data as unknown as Player[];
+            if (a.data) answerRows = a.data as unknown as Answer[];
+          } catch {
+            // keep fallback
+          }
         }
 
         const loadedQuiz = (quizRes.data as unknown as Quiz) ?? null;
         const loadedQuestions = rows.map((q) => ({
           ...q,
-          options: q.options as unknown as string[],
+          options: (Array.isArray(q.options) ? q.options : []) as string[],
         }));
 
         quizRef.current = loadedQuiz;
@@ -129,24 +156,24 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
         setAnswers(answerRows);
       } else {
         // Lightweight delta load: fetch only dynamic players and answers
-        const isOwner = questionsRef.current.some((q) => q.correct_index !== -1);
-        let playerRows: Player[] = [];
-        let answerRows: Answer[] = [];
+        const [playerRes, answerRes] = await Promise.all([
+          supabase.from("players").select("*").eq("room_id", typedRoom.id).order("joined_at"),
+          supabase.from("answers").select("*").eq("room_id", typedRoom.id),
+        ]);
+        let playerRows = (playerRes.data ?? []) as unknown as Player[];
+        let answerRows = (answerRes.data ?? []) as unknown as Answer[];
 
-        if (isOwner) {
-          const [playerRes, answerRes] = await Promise.all([
-            supabase.from("players").select("*").eq("room_id", typedRoom.id).order("joined_at"),
-            supabase.from("answers").select("*").eq("room_id", typedRoom.id),
-          ]);
-          playerRows = (playerRes.data ?? []) as unknown as Player[];
-          answerRows = (answerRes.data ?? []) as unknown as Answer[];
-        } else if (playerId) {
-          const [p, a] = await Promise.all([
-            supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
-            supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
-          ]);
-          playerRows = (p.data ?? []) as unknown as Player[];
-          answerRows = (a.data ?? []) as unknown as Answer[];
+        if (playerRows.length === 0 && playerId) {
+          try {
+            const [p, a] = await Promise.all([
+              supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
+              supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
+            ]);
+            if (p.data) playerRows = p.data as unknown as Player[];
+            if (a.data) answerRows = a.data as unknown as Answer[];
+          } catch {
+            // keep table data
+          }
         }
 
         setPlayers(playerRows);
@@ -183,10 +210,20 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
       if (inFlight) return;
       inFlight = true;
       try {
-        const { data } = await (supabase as any).rpc("get_room_by_code", {
+        let nextRoom: any = null;
+        const { data, error } = await (supabase as any).rpc("get_room_by_code", {
           p_code: code.toUpperCase(),
         });
-        const nextRoom = Array.isArray(data) ? data[0] : data;
+        if (!error && data) {
+          nextRoom = Array.isArray(data) ? data[0] : data;
+        } else {
+          const { data: directRoom } = await supabase
+            .from("rooms")
+            .select("*")
+            .eq("code", code.toUpperCase())
+            .maybeSingle();
+          nextRoom = directRoom;
+        }
         if (!cancelled && nextRoom) setRoom(nextRoom as unknown as Room);
       } finally {
         inFlight = false;
