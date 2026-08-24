@@ -18,10 +18,10 @@ interface SubscriptionPaywallModalProps {
   reason?: string;
 }
 
-// Configurable Payhip Product Links (can be customized with exact Payhip link/slug)
+// Configurable Payhip Product Links (connected to actual Payhip membership products)
 export const PAYHIP_CONFIG = {
-  monthlyProductUrl: "https://payhip.com/b/QuizClashMonthly",
-  yearlyProductUrl: "https://payhip.com/b/QuizClashYearly",
+  monthlyProductUrl: "https://payhip.com/order?link=hP2Fr&pricing_plan=xABmKPdKW1",
+  yearlyProductUrl: "https://payhip.com/order?link=hP2Fr&pricing_plan=lNzM4b8gW7",
 };
 
 export function SubscriptionPaywallModal({
