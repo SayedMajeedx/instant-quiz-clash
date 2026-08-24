@@ -11,6 +11,9 @@ import { randomCode, type Quiz } from "@/lib/quizclash";
 import { getSyncedNow } from "@/lib/server-time";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
+import { useSubscription } from "@/hooks/useSubscription";
+import { SubscriptionStatusBadge } from "@/components/subscription/SubscriptionStatusBadge";
+import { SubscriptionPaywallModal } from "@/components/subscription/SubscriptionPaywallModal";
 
 const PAGE_SIZE = 10;
 
@@ -37,6 +40,9 @@ function HostCreate() {
   const [selected, setSelected] = useState<string | null>(preselected ?? null);
   const [busy, setBusy] = useState(false);
   const [page, setPage] = useState(1);
+  const [showPaywall, setShowPaywall] = useState(false);
+  const [paywallReason, setPaywallReason] = useState<string>("");
+  const { refresh: refreshSub } = useSubscription();
 
   const load = useCallback(async () => {
     // 1. Fetch from Supabase
@@ -92,6 +98,32 @@ function HostCreate() {
       return;
     }
     setBusy(true);
+
+    // 1. Verify Hosting Quota / Subscription
+    try {
+      const { data: eligibility, error: elErr } = await supabase.rpc("check_user_hosting_eligibility");
+      if (elErr) {
+        console.warn("Eligibility RPC fallback:", elErr);
+      } else if (eligibility && !eligibility.allowed) {
+        setPaywallReason("daily_limit_reached");
+        setShowPaywall(true);
+        setBusy(false);
+        return;
+      }
+
+      // Claim daily usage quota
+      const { error: claimErr } = await supabase.rpc("claim_daily_hosted_quiz");
+      if (claimErr) {
+        setPaywallReason("daily_limit_reached");
+        setShowPaywall(true);
+        setBusy(false);
+        return;
+      }
+      void refreshSub();
+    } catch (e) {
+      console.error("Quota check failed:", e);
+    }
+
     // Housekeeping: finished/abandoned rooms free their codes after 6 hours.
     await supabase
       .from("rooms")
@@ -114,6 +146,11 @@ function HostCreate() {
   return (
     <main className="relative min-h-screen">
       <AnimatedBg />
+      <SubscriptionPaywallModal
+        open={showPaywall}
+        onOpenChange={setShowPaywall}
+        reason={paywallReason}
+      />
       <div className="mx-auto max-w-2xl px-5 py-10">
         <div className="flex items-center justify-between gap-3">
           <Link
@@ -122,7 +159,10 @@ function HostCreate() {
           >
             {t("nav.backHome")}
           </Link>
-          <LanguageToggle />
+          <div className="flex items-center gap-2.5">
+            <SubscriptionStatusBadge onOpenUpgrade={() => setShowPaywall(true)} />
+            <LanguageToggle />
+          </div>
         </div>
         <h1 className="mt-4 font-display text-4xl md:text-5xl">{t("hostPick.title")}</h1>
         <p className="mt-2 text-muted-foreground">{t("hostPick.sub")}</p>
