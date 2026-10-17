@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { GameCountdown } from "@/components/quiz/GameCountdown";
 import { AnswerTile } from "@/components/quiz/AnswerTile";
-import { CountdownBar, CountdownRing } from "@/components/quiz/CountdownRing";
+import { CountdownBar } from "@/components/quiz/CountdownRing";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { Logo } from "@/components/quiz/Logo";
 import { DisplayControls, ExitFullscreenButton } from "@/components/quiz/DisplayControls";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
@@ -33,6 +33,7 @@ import { cn } from "@/lib/utils";
 import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 
 import { useWakeLock } from "@/hooks/useWakeLock";
+import { Check, Lightbulb, LogOut, Shuffle, Zap } from "lucide-react";
 
 export const Route = createFileRoute("/_authenticated/host/$code")({
   head: () => ({
@@ -393,26 +394,52 @@ function HostRoom() {
     await refresh();
   }
 
+  const exitDialog = showExitModal ? (
+    <div className="fixed inset-0 z-50 grid place-items-center bg-black/70 p-5">
+      <div role="dialog" aria-modal="true" className="w-full max-w-sm animate-pop rounded-3xl bg-card p-6 text-center">
+        <h2 className="font-display text-2xl">{t("host.exitGame")}</h2>
+        <p className="mt-2 text-muted-foreground">{t("host.exitConfirm")}</p>
+        <div className="mt-6 flex gap-3">
+          <button type="button" onClick={() => setShowExitConfirm(false)} className="ledge ledge-panel flex-1">
+            <span className="ledge-face h-12 font-display text-lg">{t("host.cancel")}</span>
+          </button>
+          <button type="button" onClick={() => void exitGame()} className="ledge ledge-red flex-1">
+            <span className="ledge-face h-12 font-display text-lg">{t("host.exitBtn")}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  ) : null;
+
+  const exitButton = (
+    <button
+      type="button"
+      onClick={() => setShowExitConfirm(true)}
+      aria-label={t("host.exitGame")}
+      className="press grid size-10 place-items-center rounded-full bg-secondary text-muted-foreground"
+    >
+      <LogOut className="size-5 rtl:-scale-x-100" />
+    </button>
+  );
+
   if (state.loading) {
     return (
-      <main className="relative grid min-h-screen place-items-center">
-        <AnimatedBg />
-        <p className="font-display text-2xl animate-pulse">{t("host.loadingRoom")}</p>
+      <main className="grid min-h-screen place-items-center">
+        <div className="flex flex-col items-center gap-4 text-muted-foreground">
+          <span className="size-10 animate-spin rounded-full border-4 border-secondary border-t-sun" aria-hidden />
+          <p className="font-display text-2xl">{t("host.loadingRoom")}</p>
+        </div>
       </main>
     );
   }
 
   if (state.missing || !room) {
     return (
-      <main className="relative grid min-h-screen place-items-center">
-        <AnimatedBg />
-        <div className="text-center">
-          <h1 className="font-display text-4xl">{t("host.notFound")}</h1>
-          <Link
-            to="/host"
-            className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
-          >
-            {t("host.createNew")}
+      <main className="grid min-h-screen place-items-center px-5 text-center">
+        <div className="w-full max-w-sm rounded-3xl bg-card p-8">
+          <h1 className="font-display text-3xl">{t("host.notFound")}</h1>
+          <Link to="/host" className="ledge ledge-blue mt-6 w-full">
+            <span className="ledge-face h-14 font-display text-xl">{t("host.createNew")}</span>
           </Link>
         </div>
       </main>
@@ -422,8 +449,7 @@ function HostRoom() {
   if (phase.kind === "ended") {
     const categoryBreakdown = buildCategoryBreakdown(questions, answers);
     return (
-      <main className="relative min-h-screen">
-        <AnimatedBg dense />
+      <main className="min-h-screen">
         <Podium
           rows={rows}
           title={cleanQuizTitle(quiz?.title ?? "QuizClash")}
@@ -448,210 +474,64 @@ function HostRoom() {
         : null;
     const manualTeams = room.team_count > 1 && room.team_mode === "manual";
     return (
-      <main className="relative min-h-screen">
-        <AnimatedBg dense />
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 lg:grid-cols-[1.1fr_1fr]">
-          <section>
-            <div className="mb-4 flex items-center justify-end gap-2">
-              <DisplayControls />
-              <LanguageToggle />
+      <main className="min-h-screen">
+        <div className="mx-auto grid max-w-7xl gap-6 px-5 py-8 lg:grid-cols-[1fr_1.15fr] lg:py-10">
+          {/* Join panel: the room code is the hero, readable from across the room. */}
+          <section className="flex flex-col rounded-3xl bg-card p-6 lg:p-8">
+            <div className="flex items-center justify-between gap-3">
+              <Logo />
+              <span className="flex items-center gap-2">
+                <DisplayControls />
+                <LanguageToggle />
+              </span>
             </div>
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-sun">
-              {cleanQuizTitle(quiz?.title || "")}
+            <p className="mt-8 font-semibold text-muted-foreground">{cleanQuizTitle(quiz?.title || "")}</p>
+            <h1 className="mt-1 font-display text-3xl lg:text-4xl">{t("host.joinOnPhone")}</h1>
+            <p className="mt-1 break-all font-display text-xl text-sun" dir="ltr">
+              {joinUrl.replace(/^https?:\/\//, "").replace(/\?code=.*$/, "")}
             </p>
-            <h1 className="mt-3 font-display text-3xl md:text-4xl">{t("host.joinAt")}</h1>
-            <p className="mt-1 break-all font-display text-xl text-muted-foreground">
-              {joinUrl.replace(/^https?:\/\//, "")}
-            </p>
-            <div className="mt-6 rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-glow">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">
-                {t("host.gameCode")}
-              </p>
-              <p className="mt-2 font-display text-6xl tracking-[0.15em] md:text-8xl text-gradient">
-                {room.code}
-              </p>
+            <div className="mt-6 flex flex-col items-center gap-6 rounded-2xl bg-background p-6 sm:flex-row sm:justify-between">
+              <div className="text-center sm:text-start">
+                <p className="font-semibold text-muted-foreground">{t("host.gameCode")}</p>
+                <p className="mt-1 font-display text-7xl leading-none tracking-[0.12em] lg:text-8xl" dir="ltr">
+                  {room.code}
+                </p>
+              </div>
+              {joinUrl ? (
+                <img
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=12&data=${encodeURIComponent(joinUrl)}`}
+                  alt={t("host.qrAlt", { code: room.code })}
+                  width={176}
+                  height={176}
+                  className="size-44 shrink-0 rounded-2xl bg-white p-1"
+                />
+              ) : null}
             </div>
-            {joinUrl ? (
-              <img
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=12&data=${encodeURIComponent(joinUrl)}`}
-                alt={t("host.qrAlt", { code: room.code })}
-                width={240}
-                height={240}
-                className="mt-6 rounded-3xl border border-border bg-background p-2"
-              />
-            ) : null}
           </section>
 
-          <section className="rounded-3xl border border-border bg-surface-gradient p-6">
+          {/* Players, settings, start */}
+          <section className="flex flex-col gap-5 rounded-3xl bg-card p-6 lg:p-8">
             <div className="flex items-center justify-between">
               <h2 className="font-display text-2xl">{t("host.players")}</h2>
-              <span className="rounded-full bg-primary px-4 py-1 font-display text-lg text-primary-foreground tabular-nums">
+              <span className="min-w-12 rounded-full bg-sun px-4 py-1 text-center font-display text-xl text-on-sun tabular-nums">
                 {players.length}
               </span>
             </div>
 
-            {/* Progression Mode Control */}
-            <div className="mt-5 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
-              <span className="text-xs sm:text-sm font-bold text-foreground">
-                ⏱️ {t("host.pacing")}
-              </span>
-              <div className="flex items-center gap-1.5">
-                {(["auto", "manual"] as const).map((mode) => (
-                  <button
-                    key={mode}
-                    type="button"
-                    onClick={() => void patchRoom({ advance_mode: mode })}
-                    className={cn(
-                      "press rounded-xl border px-3 py-1.5 text-xs font-bold transition-all",
-                      room.advance_mode === mode
-                        ? "border-primary bg-primary/20 text-primary ring-2 ring-primary/40 shadow-sm"
-                        : "border-border text-muted-foreground hover:bg-background/80",
-                    )}
-                  >
-                    {mode === "auto" ? t("host.pacingAuto") : t("host.pacingManual")}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Inter-question screen delay timer setting */}
-            <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
-              <span className="text-xs sm:text-sm font-bold text-foreground">
-                ⏳ مدة شاشة النتيجة بين الأسئلة:
-              </span>
-              <div className="flex items-center gap-1.5">
-                {[3, 5, 8, 12].map((sec) => (
-                  <button
-                    key={sec}
-                    type="button"
-                    onClick={() => setInterQuestionSec(sec)}
-                    className={cn(
-                      "press rounded-xl border px-2.5 py-1.5 text-xs font-bold transition-all",
-                      interQuestionSec === sec
-                        ? "border-primary bg-primary/20 text-primary ring-2 ring-primary/40 shadow-sm"
-                        : "border-border text-muted-foreground hover:bg-background/80",
-                    )}
-                  >
-                    {sec}ث
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Game Mode / Team Count Control */}
-            <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/50 bg-background/30 p-3">
-              <span className="text-xs sm:text-sm font-bold text-foreground">
-                🎮 {t("host.teams")}:
-              </span>
-              <div className="flex items-center gap-1.5">
-                {[0, 2, 3, 4].map((n) => (
-                  <button
-                    key={n}
-                    type="button"
-                    onClick={() => void patchRoom({ team_count: n })}
-                    className={cn(
-                      "press rounded-xl border px-3 py-1.5 text-xs font-bold transition-all",
-                      (room.team_count ?? 0) === n
-                        ? "border-primary bg-primary/20 text-primary ring-2 ring-primary/40 shadow-sm"
-                        : "border-border text-muted-foreground hover:bg-background/80",
-                    )}
-                  >
-                    {n === 0 ? t("host.solo") : t("host.teamsN", { n })}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {room.team_count > 1 ? (
-              <>
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                  {(["auto", "manual"] as const).map((mode) => (
-                    <button
-                      key={mode}
-                      type="button"
-                      onClick={() => void patchRoom({ team_mode: mode })}
-                      className={cn(
-                        "press rounded-full border px-4 py-1.5 text-sm font-semibold",
-                        room.team_mode === mode
-                          ? "border-primary text-foreground ring-2 ring-primary"
-                          : "border-border",
-                      )}
-                    >
-                      {mode === "auto" ? t("host.teamAuto") : t("host.teamManual")}
-                    </button>
-                  ))}
-                  {manualTeams && players.length > 0 ? (
-                    <button
-                      type="button"
-                      onClick={() => void shuffleTeams()}
-                      className="press rounded-full border border-border px-4 py-1.5 text-sm font-semibold"
-                    >
-                      🎲 {t("host.shuffleTeams")}
-                    </button>
-                  ) : null}
-                </div>
-                <p className="mt-2 text-xs text-muted-foreground">
-                  {manualTeams ? t("host.teamManualNote") : t("host.teamAutoNote")}
-                </p>
-              </>
-            ) : null}
-
-            {room.team_count > 1 ? (
-              <div className="mt-4 rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/10 via-background/50 to-fuchsia-500/10 p-4 shadow-lg">
-                <div className="mb-3 flex items-center justify-between gap-3">
-                  <div>
-                    <h3 className="font-display text-lg">✨ هوية الفرق</h3>
-                    <p className="text-xs text-muted-foreground">خصص الاسم واللون الذي سيظهر للاعبين</p>
-                  </div>
-                </div>
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {Array.from({ length: room.team_count }, (_, index) => (
-                    <div key={index} className="rounded-2xl border border-white/10 bg-background/45 p-3">
-                      <div className="flex items-center gap-2">
-                        <span className="size-4 shrink-0 rounded-full shadow-[0_0_14px_currentColor]" style={{ backgroundColor: roomTeamColor(room, index), color: roomTeamColor(room, index) }} />
-                        <input
-                          key={`${index}-${roomTeamName(room, index)}`}
-                          defaultValue={roomTeamName(room, index)}
-                          maxLength={18}
-                          onBlur={(event) => updateTeamName(index, event.currentTarget.value)}
-                          className="min-w-0 flex-1 rounded-xl border border-border/70 bg-background/70 px-3 py-2 font-bold outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/30"
-                          aria-label={`اسم الفريق ${index + 1}`}
-                        />
-                      </div>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {TEAM_COLOR_PALETTE.map((color) => (
-                          <button key={color} type="button" onClick={() => updateTeamColor(index, color)} aria-label={`اختيار اللون ${color}`} className={cn("size-7 rounded-full border-2 transition hover:scale-110", roomTeamColor(room, index) === color ? "border-white ring-2 ring-primary" : "border-transparent")} style={{ backgroundColor: color }} />
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-
-            <div className="mt-5 flex flex-wrap gap-2">
-              {players.length === 0 ? (
-                <p className="text-muted-foreground">{t("host.waiting")}</p>
-              ) : null}
+            <div className="flex min-h-24 flex-wrap content-start gap-2">
+              {players.length === 0 ? <p className="text-muted-foreground">{t("host.waiting")}</p> : null}
               {players.map((p) => {
                 const teamIdx = p.team_index ?? null;
                 const badge =
                   teamIdx !== null ? (
-                    <span
-                      className="rounded-full px-2 py-0.5 text-[10px] font-bold text-background"
-                      style={{ backgroundColor: roomTeamColor(room, teamIdx) }}
-                    >
-                      {teamIdx + 1}
-                    </span>
+                    <span className="size-3 rounded-full" style={{ backgroundColor: roomTeamColor(room, teamIdx) }} />
                   ) : manualTeams ? (
-                    <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
-                      {t("host.unassigned")}
-                    </span>
+                    <span className="text-xs text-muted-foreground">{t("host.unassigned")}</span>
                   ) : null;
                 const inner = (
                   <>
                     <PlayerAvatar player={p} size="sm" />
-                    {p.nickname}
+                    <span>{p.nickname}</span>
                     {badge}
                   </>
                 );
@@ -661,28 +541,120 @@ function HostRoom() {
                     type="button"
                     disabled={assigning === p.id}
                     onClick={() => void cycleTeam(p.id, teamIdx)}
-                    className="press flex animate-pop items-center gap-2 rounded-full border border-border bg-background/50 px-3 py-2 font-semibold disabled:opacity-50"
+                    className="press flex animate-pop items-center gap-2 rounded-full bg-secondary py-1.5 ps-1.5 pe-4 font-semibold disabled:opacity-50"
                   >
                     {inner}
                   </button>
                 ) : (
-                  <span
-                    key={p.id}
-                    className="flex animate-pop items-center gap-2 rounded-full border border-border bg-background/50 px-3 py-2 font-semibold"
-                  >
+                  <span key={p.id} className="flex animate-pop items-center gap-2 rounded-full bg-secondary py-1.5 ps-1.5 pe-4 font-semibold">
                     {inner}
                   </span>
                 );
               })}
             </div>
 
+            <div className="rounded-2xl bg-background p-4">
+              <h3 className="font-display text-lg">{t("host.settings")}</h3>
+              <div className="mt-3 grid gap-3">
+                <Segmented
+                  label={t("host.pacing")}
+                  value={room.advance_mode}
+                  options={[
+                    { value: "auto", label: t("host.pacingAuto") },
+                    { value: "manual", label: t("host.pacingManual") },
+                  ]}
+                  onChange={(mode) => void patchRoom({ advance_mode: mode })}
+                />
+                <Segmented
+                  label={t("host.revealDelay")}
+                  value={interQuestionSec}
+                  options={[3, 5, 8, 12].map((sec) => ({ value: sec, label: t("host.seconds", { n: sec }) }))}
+                  onChange={setInterQuestionSec}
+                />
+                <Segmented
+                  label={t("host.teams")}
+                  value={room.team_count ?? 0}
+                  options={[0, 2, 3, 4].map((n) => ({ value: n, label: n === 0 ? t("host.solo") : t("host.teamsN", { n }) }))}
+                  onChange={(n) => void patchRoom({ team_count: n })}
+                />
+                {room.team_count > 1 ? (
+                  <>
+                    <Segmented
+                      label=""
+                      value={room.team_mode}
+                      options={[
+                        { value: "auto", label: t("host.teamAuto") },
+                        { value: "manual", label: t("host.teamManual") },
+                      ]}
+                      onChange={(mode) => void patchRoom({ team_mode: mode })}
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      {manualTeams ? t("host.teamManualNote") : t("host.teamAutoNote")}
+                    </p>
+                    {manualTeams && players.length > 0 ? (
+                      <button
+                        type="button"
+                        onClick={() => void shuffleTeams()}
+                        className="press flex w-fit items-center gap-2 rounded-full bg-secondary px-4 py-2 text-sm font-semibold"
+                      >
+                        <Shuffle className="size-4" aria-hidden />
+                        {t("host.shuffleTeams")}
+                      </button>
+                    ) : null}
+                  </>
+                ) : null}
+              </div>
+            </div>
+
+            {room.team_count > 1 ? (
+              <div className="rounded-2xl bg-background p-4">
+                <h3 className="font-display text-lg">{t("host.teamIdentity")}</h3>
+                <p className="text-sm text-muted-foreground">{t("host.teamIdentityHint")}</p>
+                <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  {Array.from({ length: room.team_count }, (_, index) => (
+                    <div key={index} className="rounded-xl bg-card p-3">
+                      <div className="flex items-center gap-2">
+                        <span className="size-4 shrink-0 rounded-full" style={{ backgroundColor: roomTeamColor(room, index) }} />
+                        <input
+                          key={`${index}-${roomTeamName(room, index)}`}
+                          defaultValue={roomTeamName(room, index)}
+                          maxLength={18}
+                          onBlur={(event) => updateTeamName(index, event.currentTarget.value)}
+                          className="min-w-0 flex-1 rounded-lg border-2 border-border bg-background px-3 py-1.5 font-semibold outline-none transition-colors duration-150 focus:border-sun"
+                          aria-label={t("host.teamNameLabel", { n: index + 1 })}
+                        />
+                      </div>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {TEAM_COLOR_PALETTE.map((color) => (
+                          <button
+                            key={color}
+                            type="button"
+                            onClick={() => updateTeamColor(index, color)}
+                            aria-label={t("host.pickColor", { color })}
+                            aria-pressed={roomTeamColor(room, index) === color}
+                            className={cn(
+                              "press size-7 rounded-full border-2",
+                              roomTeamColor(room, index) === color ? "border-white" : "border-transparent",
+                            )}
+                            style={{ backgroundColor: color }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
             <button
               type="button"
               disabled={players.length === 0 || startsIn !== null}
               onClick={() => void handleStartGame()}
-              className="press mt-6 w-full rounded-3xl bg-gradient-hero px-6 py-4 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
+              className="ledge ledge-green mt-auto w-full disabled:opacity-50"
             >
-              {startsIn !== null ? t("host.startingIn", { n: startsIn }) : t("host.start")}
+              <span className="ledge-face h-16 font-display text-2xl">
+                {startsIn !== null ? t("host.startingIn", { n: startsIn }) : t("host.start")}
+              </span>
             </button>
           </section>
         </div>
@@ -695,52 +667,35 @@ function HostRoom() {
     const currentQ = questions[phase.index];
     const explanation = currentQ?.explanation;
     return (
-      <main className="relative min-h-screen px-5 py-8 pb-20">
-        <AnimatedBg dense />
+      <main className="min-h-screen px-5 py-6 pb-20">
         <ReconnectingBanner status={state.connectionStatus} />
         <DebugPanel state={state} />
 
         <div className="mx-auto max-w-4xl">
           <div className="flex items-center justify-between gap-3">
-            <span className="rounded-full border border-border bg-surface-gradient px-4 py-1.5 font-display text-sm">
+            <span className="rounded-full bg-secondary px-4 py-1.5 font-semibold">
               {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
             </span>
             <div className="flex items-center gap-2">
               <DisplayControls />
-              <button
-                type="button"
-                onClick={() => setShowExitConfirm(true)}
-                className="press rounded-full border border-destructive/40 bg-destructive/10 px-3.5 py-1.5 text-xs font-semibold text-destructive hover:bg-destructive/20"
-              >
-                🚪 {t("host.exitGame")}
-              </button>
+              {exitButton}
             </div>
           </div>
 
-          <h1 className="mt-4 text-center font-display text-3xl md:text-5xl">
+          <h1 className="mt-6 text-center font-display text-4xl md:text-5xl">
             {t("host.afterQuestion", { n: phase.index + 1 })}
           </h1>
 
-          {/* Premium Animated Explanation Showcase Card — Displayed Exclusively Here between questions */}
           {explanation ? (
-            <div className="mt-6 overflow-hidden rounded-3xl border border-sun/50 bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-primary/10 p-6 md:p-8 text-center shadow-glow backdrop-blur-xl animate-pop relative">
-              <div className="absolute -right-12 -top-12 size-36 rounded-full bg-sun/10 blur-2xl pointer-events-none" />
-              <div className="absolute -left-12 -bottom-12 size-36 rounded-full bg-primary/10 blur-2xl pointer-events-none" />
-
-              <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-sun/40 bg-sun/20 px-4 py-1.5 text-xs sm:text-sm font-bold text-sun shadow-sm">
-                <span className="animate-pulse text-base">💡</span>
-                <span>هل تعلم؟ / توضيح الإجابة</span>
-              </div>
-
-              {currentQ?.question_text ? (
-                <p className="mt-3 text-xs sm:text-sm font-medium text-muted-foreground line-clamp-1">
-                  سؤال: «{currentQ.question_text}»
-                </p>
-              ) : null}
-
-              <p className="mt-3 font-display text-lg sm:text-2xl md:text-3xl leading-relaxed text-foreground/95 tracking-wide">
-                {explanation}
+            <div className="mt-6 animate-pop rounded-3xl bg-card p-6 text-center md:p-8">
+              <p className="mx-auto flex w-fit items-center gap-2 font-semibold text-sun">
+                <Lightbulb className="size-5" aria-hidden />
+                {t("play.didYouKnow")}
               </p>
+              {currentQ?.question_text ? (
+                <p className="mt-2 line-clamp-1 text-sm text-muted-foreground">{currentQ.question_text}</p>
+              ) : null}
+              <p className="mt-3 font-display text-xl leading-relaxed sm:text-2xl md:text-3xl">{explanation}</p>
             </div>
           ) : null}
 
@@ -752,33 +707,25 @@ function HostRoom() {
               <h2 className="mb-3 text-center font-display text-2xl">{t("board.teamScores")}</h2>
               <div className="grid gap-3 sm:grid-cols-2">
                 {teams.map((team) => (
-                  <div
-                    key={team.teamIndex}
-                    className="flex items-center justify-between rounded-2xl border border-border bg-surface-gradient px-4 py-3"
-                  >
+                  <div key={team.teamIndex} className="flex items-center justify-between rounded-2xl bg-card px-4 py-3">
                     <span className="flex items-center gap-3 font-display text-lg">
-                      <span
-                        className="size-4 rounded-full"
-                        style={{
-                          backgroundColor: roomTeamColor(room, team.teamIndex),
-                        }}
-                      />
+                      <span className="size-4 rounded-full" style={{ backgroundColor: roomTeamColor(room, team.teamIndex) }} />
                       {roomTeamName(room, team.teamIndex)}
                     </span>
-                    <span className="font-display text-2xl tabular-nums">{team.total} <small className="text-xs text-muted-foreground">متوسط</small></span>
+                    <span className="font-display text-2xl tabular-nums">
+                      {team.total} <small className="text-sm text-muted-foreground">{t("host.average")}</small>
+                    </span>
                   </div>
                 ))}
               </div>
             </div>
           ) : null}
           {manual ? (
-            <button
-              type="button"
-              onClick={() => void advance(phase.index, "board")}
-              className="press mx-auto mt-8 block rounded-3xl bg-gradient-hero px-8 py-4 font-display text-2xl text-primary-foreground shadow-chunky"
-            >
-              {t("host.nextQuestion")}
-            </button>
+            <div className="mt-8 flex justify-center">
+              <button type="button" onClick={() => void advance(phase.index, "board")} className="ledge ledge-blue">
+                <span className="ledge-face h-16 px-10 font-display text-2xl">{t("host.nextQuestion")}</span>
+              </button>
+            </div>
           ) : (
             <p className="mt-8 text-center text-muted-foreground">
               {t("host.nextIn", { n: Math.ceil(phase.msLeft / 1000) })}
@@ -786,6 +733,7 @@ function HostRoom() {
           )}
           <ExitFullscreenButton />
         </div>
+        {exitDialog}
       </main>
     );
   }
@@ -793,14 +741,14 @@ function HostRoom() {
   function getQuestionFontSize(text: string, hasImage: boolean): string {
     const len = text ? text.length : 0;
     if (hasImage) {
-      if (len > 120) return "text-base sm:text-lg md:text-xl";
-      if (len > 60) return "text-lg sm:text-xl md:text-2xl";
-      return "text-xl sm:text-2xl md:text-3xl";
+      if (len > 120) return "text-lg sm:text-xl md:text-2xl";
+      if (len > 60) return "text-xl sm:text-2xl md:text-3xl";
+      return "text-2xl sm:text-3xl md:text-4xl";
     }
-    if (len > 140) return "text-lg sm:text-xl md:text-2xl";
-    if (len > 80) return "text-xl sm:text-2xl md:text-3xl";
-    if (len > 40) return "text-2xl sm:text-3xl md:text-4xl";
-    return "text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
+    if (len > 140) return "text-xl sm:text-2xl md:text-3xl";
+    if (len > 80) return "text-2xl sm:text-3xl md:text-4xl";
+    if (len > 40) return "text-3xl sm:text-4xl md:text-5xl";
+    return "text-3xl sm:text-4xl md:text-5xl lg:text-6xl";
   }
 
   const question = phase.question;
@@ -823,114 +771,98 @@ function HostRoom() {
   const fastestPlayer = fastestAnswer
     ? players.find((player) => player.id === fastestAnswer.player_id) ?? null
     : null;
+  const secondsLeft = Math.max(0, Math.ceil(phase.msLeft / 1000));
 
   return (
-    <main className="relative h-screen max-h-screen w-full overflow-hidden flex flex-col justify-between p-3 sm:p-4 md:p-5">
-      <AnimatedBg />
+    <main className="flex h-screen max-h-screen w-full flex-col gap-3 overflow-hidden p-3 sm:p-5">
       <header className="flex shrink-0 items-center justify-between gap-4">
-        <span className="rounded-full border border-border bg-surface-gradient px-4 py-1.5 font-display text-sm">
+        <span className="rounded-full bg-secondary px-4 py-1.5 font-semibold">
           {t("host.qOfN", { n: phase.index + 1, total: questions.length })}
         </span>
+        <span className="font-semibold text-muted-foreground tabular-nums">
+          {revealing
+            ? null
+            : everyoneAnswered
+              ? t("host.everyoneAnswered")
+              : t("host.answered", { answered: questionAnswers.length, total: players.length })}
+        </span>
         <div className="flex items-center gap-2 sm:gap-3">
-          <span className="font-display text-base sm:text-lg text-muted-foreground">
-            {t("host.code", { code: room.code })}
+          <span className="rounded-full bg-secondary px-4 py-1.5 font-display text-lg tracking-wider" dir="ltr">
+            {room.code}
           </span>
           <DisplayControls />
-          <button
-            type="button"
-            onClick={() => setShowExitConfirm(true)}
-            className="press rounded-full border border-destructive/40 bg-destructive/10 px-3 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
-          >
-            🚪 {t("host.exitGame")}
-          </button>
+          {exitButton}
         </div>
       </header>
 
+      {revealing ? (
+        <div className="h-3 shrink-0" />
+      ) : (
+        <div className="flex shrink-0 items-center gap-4">
+          <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} withTick className="h-4" />
+          <span
+            className={cn(
+              "w-14 shrink-0 text-center font-display text-3xl tabular-nums",
+              secondsLeft <= 5 && "text-destructive",
+            )}
+          >
+            {secondsLeft}
+          </span>
+        </div>
+      )}
 
-      <div className="my-auto min-h-0 flex-1 flex flex-col items-center justify-center text-center overflow-hidden py-1 sm:py-2">
-        <div className="flex flex-col items-center justify-center gap-2 w-full max-w-5xl">
-          {question.image_url ? (
-            <div className="flex flex-col md:flex-row items-center justify-center gap-3 sm:gap-5 w-full">
-              <QuestionImage
-                path={question.image_url}
-                className="max-h-[18vh] max-w-[80vw] md:max-w-[30vw] rounded-2xl border border-border object-contain shrink-0"
-              />
-              <h1
-                className={cn(
-                  "font-display max-w-3xl leading-snug",
-                  getQuestionFontSize(question.question_text, true),
-                )}
-              >
-                {question.question_text || "…"}
-              </h1>
-            </div>
-          ) : (
-            <h1
-              className={cn(
-                "font-display max-w-5xl leading-snug px-2",
-                getQuestionFontSize(question.question_text, false),
-              )}
-            >
+      <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-4 text-center">
+        {question.image_url ? (
+          <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+            <QuestionImage
+              path={question.image_url}
+              className="max-h-[24vh] max-w-[80vw] shrink-0 rounded-2xl object-contain md:max-w-[34vw]"
+            />
+            <h1 className={cn("max-w-3xl font-display leading-snug", getQuestionFontSize(question.question_text, true))}>
               {question.question_text || "…"}
             </h1>
-          )}
-        </div>
+          </div>
+        ) : (
+          <h1 className={cn("max-w-6xl px-2 font-display leading-snug", getQuestionFontSize(question.question_text, false))}>
+            {question.question_text || "…"}
+          </h1>
+        )}
 
-        <div className="mt-2 sm:mt-3 flex w-full max-w-xl items-center justify-between gap-3 shrink-0 px-2">
-          {revealing ? (
-            <div className="flex-1 flex flex-col items-center">
-              <p className="font-display text-xl sm:text-2xl text-lime">
-                {t("host.correctAnswer")}
-              </p>
-              {fastestPlayer ? (
-                <div className="mt-2 flex items-center gap-2 rounded-full border border-amber-300/60 bg-gradient-to-r from-amber-500/20 to-fuchsia-500/20 px-3 py-1 text-xs font-bold text-amber-100 shadow-[0_0_20px_rgba(245,158,11,.2)] animate-pop">
-                  <span>⚡ أسرع إجابة</span>
-                  <PlayerAvatar player={fastestPlayer} size="sm" />
-                  <span>{fastestPlayer.nickname}</span>
-                </div>
-              ) : null}
-              {manual ? (
-                <button
-                  type="button"
-                  onClick={() => void advance(phase.index, "reveal")}
-                  className="press mt-2 rounded-2xl bg-gradient-hero px-5 py-2 font-display text-base sm:text-lg text-primary-foreground shadow-chunky"
-                >
+        {revealing ? (
+          <div className="flex animate-pop flex-wrap items-center justify-center gap-3">
+            <span className="flex items-center gap-2 rounded-full bg-answer-4 px-4 py-2 font-display text-xl text-white">
+              <Check className="size-5" strokeWidth={3} aria-hidden />
+              {t("host.correctAnswer")}
+            </span>
+            {fastestPlayer ? (
+              <span className="flex items-center gap-2 rounded-full bg-sun py-1 ps-1 pe-4 font-display text-lg text-on-sun">
+                <PlayerAvatar player={fastestPlayer} size="sm" />
+                <Zap className="size-4" aria-hidden />
+                {t("host.fastest")}: {fastestPlayer.nickname}
+              </span>
+            ) : null}
+            {manual ? (
+              <button type="button" onClick={() => void advance(phase.index, "reveal")} className="ledge ledge-blue">
+                <span className="ledge-face h-12 px-6 font-display text-lg">
                   {isLast ? t("host.finish") : t("host.showScores")}
-                </button>
-              ) : null}
-            </div>
-          ) : (
-            <>
-              <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={76} />
-              <div className="flex-1">
-                <p className="font-display text-lg sm:text-xl tabular-nums">
-                  {everyoneAnswered
-                    ? t("host.everyoneAnswered")
-                    : t("host.answered", {
-                        answered: questionAnswers.length,
-                        total: players.length,
-                      })}
-                </p>
-                <div className="mt-1.5">
-                  <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} />
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={() => void advance(phase.index, "question")}
-                className="press rounded-2xl border border-border bg-surface-gradient px-3.5 py-1.5 font-display text-sm"
-              >
-                {t("host.next")}
+                </span>
               </button>
-            </>
-          )}
-        </div>
+            ) : null}
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => void advance(phase.index, "question")}
+            className="press rounded-full bg-secondary px-5 py-2 font-semibold text-muted-foreground"
+          >
+            {t("host.next")}
+          </button>
+        )}
       </div>
 
       <div
-        dir="ltr"
         className={cn(
-          "shrink-0 w-full max-w-5xl mx-auto grid gap-2 sm:gap-3 pt-1 pb-2 sm:pb-3",
+          "mx-auto grid w-full max-w-6xl shrink-0 gap-3 pb-1",
           question.question_type === "boolean" ? "grid-cols-1" : "grid-cols-2",
         )}
       >
@@ -947,30 +879,42 @@ function HostRoom() {
         ))}
       </div>
 
-      {showExitModal ? (
-        <div className="fixed inset-0 z-50 grid place-items-center bg-background/80 p-5 backdrop-blur-sm">
-          <div className="w-full max-w-sm rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-xl animate-pop">
-            <h2 className="font-display text-2xl">{t("host.exitGame")}</h2>
-            <p className="mt-2 text-sm text-muted-foreground">{t("host.exitConfirm")}</p>
-            <div className="mt-6 flex gap-3">
-              <button
-                type="button"
-                onClick={() => void exitGame()}
-                className="press flex-1 rounded-2xl bg-destructive py-3 font-display text-destructive-foreground shadow-md"
-              >
-                {t("host.exitBtn")}
-              </button>
-              <button
-                type="button"
-                onClick={() => setShowExitConfirm(false)}
-                className="press flex-1 rounded-2xl border border-border bg-background py-3 font-display"
-              >
-                {t("host.cancel")}
-              </button>
-            </div>
-          </div>
-        </div>
-      ) : null}
+      {exitDialog}
     </main>
+  );
+}
+
+/** A compact choice row: one label, a few mutually exclusive options. */
+function Segmented<T extends string | number>({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: T;
+  options: { value: T; label: string }[];
+  onChange: (value: T) => void;
+}) {
+  return (
+    <div className="flex flex-wrap items-center justify-between gap-2">
+      {label ? <span className="font-semibold">{label}</span> : null}
+      <div className="flex flex-wrap gap-1.5" role="group" aria-label={label || undefined}>
+        {options.map((option) => (
+          <button
+            key={String(option.value)}
+            type="button"
+            aria-pressed={value === option.value}
+            onClick={() => onChange(option.value)}
+            className={cn(
+              "press rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors duration-150",
+              value === option.value ? "bg-sun text-on-sun" : "bg-secondary text-foreground",
+            )}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }

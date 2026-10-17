@@ -414,7 +414,7 @@ export function DisplayControls({ className }: { className?: string }) {
               <button
                 type="button"
                 onClick={() => void handleTriggerChromecast()}
-                className="press w-full rounded-2xl border border-border/80 bg-background/40 p-4 text-start transition-all hover:bg-background/80 hover:border-border group flex items-start gap-3.5"
+                className="press group flex w-full items-start gap-3.5 rounded-2xl bg-background p-4 text-start"
               >
                 <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-surface-gradient border border-border text-muted-foreground group-hover:text-foreground">
                   <Monitor size={18} />
@@ -485,7 +485,7 @@ export function ExitFullscreenButton() {
       onClick={() => exit()}
       aria-label={t("display.exitFullscreen")}
       title={t("display.exitFullscreen")}
-      className="fixed end-3 top-3 z-50 flex items-center gap-1.5 rounded-full border border-border bg-background/70 px-3 py-1.5 text-xs font-semibold text-muted-foreground backdrop-blur transition-opacity duration-300 hover:text-foreground opacity-100"
+      className="fixed end-3 top-3 z-50 flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-semibold text-muted-foreground transition-colors duration-150 hover:text-foreground"
     >
       <Minimize size={14} />
       {t("display.exitFullscreen")}

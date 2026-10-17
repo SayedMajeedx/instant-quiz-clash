@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "@tanstack/react-router";
+import { Trophy } from "lucide-react";
 import { Confetti } from "@/components/quiz/Confetti";
 import { Leaderboard } from "@/components/quiz/Leaderboard";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
@@ -42,18 +43,23 @@ export function Podium({
   return (
     <div className="relative mx-auto w-full max-w-4xl px-4 py-10">
       <Confetti />
-      <p className="text-center text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+      <p className="text-center font-semibold text-muted-foreground">
         {t("podium.final")}
       </p>
       <h1 className="mt-2 text-center font-display text-4xl md:text-6xl text-gradient">{title}</h1>
 
       {teamRows.length > 1 ? (
-        <div className="mx-auto mt-8 max-w-2xl overflow-hidden rounded-3xl border border-amber-300/30 bg-gradient-to-r from-amber-500/15 via-fuchsia-500/15 to-violet-500/15 p-5 text-center shadow-[0_0_40px_rgba(168,85,247,.18)] animate-pop">
-          <p className="text-xs font-black uppercase tracking-[0.28em] text-amber-300">🏆 الفريق البطل</p>
-          <div className="mt-3 flex items-center justify-center gap-3">
-            <span className="size-6 rounded-full shadow-[0_0_20px_currentColor]" style={{ backgroundColor: teamColors[teamRows[0]!.teamIndex], color: teamColors[teamRows[0]!.teamIndex] }} />
-            <span className="font-display text-3xl sm:text-4xl">{teamNames[teamRows[0]!.teamIndex] ?? `الفريق ${teamRows[0]!.teamIndex + 1}`}</span>
-            <span className="rounded-full bg-amber-300/15 px-3 py-1 font-display text-amber-300">متوسط {teamRows[0]!.total}</span>
+        <div className="mx-auto mt-8 max-w-2xl animate-pop rounded-3xl bg-card p-5 text-center ring-2 ring-sun">
+          <p className="flex items-center justify-center gap-2 font-semibold text-sun">
+            <Trophy className="size-5" aria-hidden />
+            {t("podium.championTeam")}
+          </p>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
+            <span className="size-6 rounded-full" style={{ backgroundColor: teamColors[teamRows[0]!.teamIndex] }} />
+            <span className="font-display text-3xl sm:text-4xl">{teamNames[teamRows[0]!.teamIndex] ?? `${teamRows[0]!.teamIndex + 1}`}</span>
+            <span className="rounded-full bg-secondary px-3 py-1 font-display">
+              {t("host.average")} {teamRows[0]!.total}
+            </span>
           </div>
         </div>
       ) : null}
@@ -109,7 +115,7 @@ export function Podium({
             {categoryBreakdown.map((item) => (
               <div
                 key={item.category}
-                className="rounded-2xl border border-border bg-surface-gradient p-4"
+                className="rounded-2xl bg-card p-4"
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className="font-bold">{item.category}</span>
@@ -126,17 +132,11 @@ export function Podium({
 
       {actions ? (
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link
-            to="/browse"
-            className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky"
-          >
-            {t("podium.chooseQuiz")}
+          <Link to="/browse" className="ledge ledge-blue">
+            <span className="ledge-face h-14 px-8 font-display text-lg">{t("podium.chooseQuiz")}</span>
           </Link>
-          <Link
-            to="/"
-            className="press rounded-2xl border border-border bg-surface-gradient px-6 py-3 font-display text-lg"
-          >
-            {t("podium.home")}
+          <Link to="/" className="ledge ledge-panel">
+            <span className="ledge-face h-14 px-8 font-display text-lg">{t("podium.home")}</span>
           </Link>
         </div>
       ) : null}

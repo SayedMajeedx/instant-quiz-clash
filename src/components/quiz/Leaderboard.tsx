@@ -93,35 +93,31 @@ export function Leaderboard({
         return (
           <div
             key={row.player.id}
-            className="absolute left-0 right-0 transition-[transform,opacity,filter] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] motion-reduce:transition-none"
+            className="absolute left-0 right-0 transition-[transform,opacity] duration-[450ms] ease-[var(--ease-in-out)] motion-reduce:transition-opacity"
             style={{
               transform: `translateY(${(currentRank - 1) * rowHeight}px) scale(${isVisible ? 1 : 0.96})`,
               opacity: isVisible ? 1 : 0,
-              filter: isVisible ? "blur(0)" : "blur(3px)",
               zIndex: Math.max(1, limit - currentRank + 1),
             }}
           >
             <div
               className={cn(
-                "relative flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-surface-gradient px-4 py-3.5 shadow-sm transition-all duration-500 motion-reduce:transition-none",
+                "relative flex items-center gap-4 overflow-hidden rounded-2xl bg-card px-4 py-3.5",
                 row.player.id === highlightPlayerId && "ring-2 ring-sun",
-                isSwapped && rankDiff > 0 && "border-lime/60 bg-lime/10 shadow-glow",
+                isSwapped && rankDiff > 0 && "ring-2 ring-lime",
                 isBiggestClimber && "leaderboard-climber",
               )}
             >
-              {isBiggestClimber ? (
-                <span className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 skew-x-[-20deg] bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[leaderboard-shine_900ms_ease-out_1] motion-reduce:hidden" />
-              ) : null}
               {/* Rank number badge */}
               <div className="relative shrink-0">
-                <span className="grid size-10 place-items-center rounded-xl bg-background/50 font-display text-lg tabular-nums transition-all duration-500">
+                <span className="grid size-10 place-items-center rounded-xl bg-background font-display text-lg tabular-nums">
                   {currentRank}
                 </span>
                 {isSwapped && rankDiff !== 0 ? (
                   <span
                     className={cn(
                       "absolute -top-2 -right-2 rounded-full px-1.5 py-0.5 font-display text-[10px] font-extrabold animate-pop shadow-md",
-                      rankDiff > 0 ? "bg-lime text-background" : "bg-destructive text-destructive-foreground",
+                      rankDiff > 0 ? "bg-lime text-background" : "bg-destructive text-white",
                     )}
                   >
                     {rankDiff > 0 ? `▲ +${rankDiff}` : `▼ ${rankDiff}`}
@@ -135,17 +131,18 @@ export function Leaderboard({
               {/* Nickname & Progress Bar */}
               <div className="min-w-0 flex-1">
                 <div className="truncate font-display text-lg">{row.player.nickname}</div>
-                <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-background/50">
+                <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-background">
+                  {/* Width is fixed; scaleX animates so the bar never triggers layout. */}
                   <div
-                    className="h-full rounded-full bg-gradient-hero transition-all duration-800 ease-out"
-                    style={{ width: `${Math.max(4, barWidth)}%` }}
+                    className="h-full w-full rounded-full bg-sun transition-transform duration-500 ease-[var(--ease-out)] ltr:origin-left rtl:origin-right"
+                    style={{ transform: `scaleX(${Math.max(4, barWidth) / 100})` }}
                   />
                 </div>
               </div>
 
               {/* Score & Delta */}
               <div className="text-end shrink-0">
-                <div className={cn("font-display text-2xl tabular-nums leading-none", isPastInitial && row.lastPoints > 0 && "animate-[score-lock_500ms_ease-out_1] motion-reduce:animate-none")}>
+                <div className={cn("font-display text-2xl tabular-nums leading-none", isPastInitial && row.lastPoints > 0 && "animate-[score-lock_260ms_var(--ease-out)_1] motion-reduce:animate-none")}>
                   <CounterNumber from={row.prevTotal} target={row.total} active={isPastInitial} />
                 </div>
 

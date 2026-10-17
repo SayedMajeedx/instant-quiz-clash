@@ -382,12 +382,9 @@ export function PlayerAvatar({
     <div className={cn("relative shrink-0 select-none", sizeClasses, className)}>
       <div
         className={cn(
-          "relative flex size-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br p-1 shadow-md transition-transform duration-300 hover:scale-105",
+          "relative flex size-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br p-1",
           character.bg,
         )}
-        style={{
-          boxShadow: player.avatar_color ? `0 4px 14px -2px ${player.avatar_color}80` : undefined,
-        }}
       >
         {character.render()}
       </div>
@@ -395,7 +392,7 @@ export function PlayerAvatar({
       {crownRank && crownRank <= 3 ? (
         <span
           className={cn(
-            "absolute -top-3 -right-2 z-10 grid place-items-center animate-bounce",
+            "absolute -top-3 -right-2 z-10 grid place-items-center animate-pop",
             size === "xl" ? "text-3xl -top-5 -right-3" : size === "lg" ? "text-2xl -top-4 -right-2" : "text-base",
           )}
         >
