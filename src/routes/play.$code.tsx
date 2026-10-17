@@ -1,10 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { GameCountdown } from "@/components/quiz/GameCountdown";
-import { AnswerTile } from "@/components/quiz/AnswerTile";
-import { CountdownRing } from "@/components/quiz/CountdownRing";
+import { AnswerShape, AnswerTile } from "@/components/quiz/AnswerTile";
+import { CountdownBar } from "@/components/quiz/CountdownRing";
 import { PlayerAvatar } from "@/components/quiz/PlayerAvatar";
 import { Podium } from "@/components/quiz/Podium";
 import { QuestionImage } from "@/components/quiz/QuestionImage";
@@ -14,7 +13,7 @@ import { useI18n } from "@/lib/i18n";
 import { fastestCorrectAnswer, optionCount, roomTeamColor, roomTeamName, standings, teamStandings } from "@/lib/quizclash";
 import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 
-import { Volume2, VolumeX } from "lucide-react";
+import { Check, Clock, Lightbulb, LogOut, Pause, Target, Volume2, VolumeX, X, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { sounds } from "@/lib/audio";
 import { clearStoredPlayer, storedPlayerSession, type PlayerSession } from "@/lib/session";
@@ -168,24 +167,22 @@ function Play() {
 
   if (!sessionResolved || state.loading) {
     return (
-      <main className="grid min-h-screen place-items-center">
-        <AnimatedBg />
-        <p className="text-muted-foreground">{t("play.connecting")}</p>
+      <main className="grid min-h-[100dvh] place-items-center px-5">
+        <div className="flex flex-col items-center gap-4 text-muted-foreground">
+          <span className="size-8 animate-spin rounded-full border-4 border-secondary border-t-sun" aria-hidden />
+          <p>{t("play.connecting")}</p>
+        </div>
       </main>
     );
   }
 
   if (state.missing || !room) {
     return (
-      <main className="grid min-h-screen place-items-center px-5 text-center">
-        <AnimatedBg />
-        <div>
+      <main className="grid min-h-[100dvh] place-items-center px-5 text-center">
+        <div className="w-full max-w-sm rounded-3xl bg-card p-8">
           <h1 className="font-display text-3xl">{t("play.notFound")}</h1>
-          <Link
-            to="/join"
-            className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
-          >
-            {t("play.tryAnother")}
+          <Link to="/join" className="ledge ledge-yellow mt-6 w-full">
+            <span className="ledge-face h-14 font-display text-xl">{t("play.tryAnother")}</span>
           </Link>
         </div>
       </main>
@@ -194,16 +191,13 @@ function Play() {
 
   if (!playerId || !me || state.playerRejected) {
     return (
-      <main className="grid min-h-screen place-items-center px-5 text-center">
-        <AnimatedBg />
-        <div>
+      <main className="grid min-h-[100dvh] place-items-center px-5 text-center">
+        <div className="w-full max-w-sm rounded-3xl bg-card p-8">
           <h1 className="font-display text-3xl">{t("play.notInGame")}</h1>
-          <Link
-            to="/join"
-            search={{ code: room.code }}
-            className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
-          >
-            {t("play.joinRoom", { code: room.code })}
+          <Link to="/join" search={{ code: room.code }} className="ledge ledge-yellow mt-6 w-full">
+            <span className="ledge-face h-14 font-display text-xl">
+              {t("play.joinRoom", { code: room.code })}
+            </span>
           </Link>
         </div>
       </main>
@@ -213,8 +207,7 @@ function Play() {
   if (phase.kind === "ended") {
     const categoryBreakdown = buildCategoryBreakdown(questions, answers, playerId);
     return (
-      <main className="relative min-h-screen">
-        <AnimatedBg dense />
+      <main className="min-h-[100dvh]">
         <Podium
           rows={rows}
           title={quiz?.title ?? "QuizClash"}
@@ -233,29 +226,33 @@ function Play() {
     return <GameCountdown msLeft={phase.msLeft} />;
   }
 
+  const teamChip =
+    me.team_index !== null && me.team_index !== undefined ? (
+      <span
+        className="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1 text-sm font-semibold"
+      >
+        <span className="size-2.5 rounded-full" style={{ backgroundColor: roomTeamColor(room, me.team_index) }} />
+        {roomTeamName(room, me.team_index)}
+      </span>
+    ) : null;
+
   if (phase.kind === "lobby") {
     const startsIn = room.started_at
       ? Math.ceil((new Date(room.started_at).getTime() - state.now) / 1000)
       : null;
     return (
-      <main className="relative grid min-h-screen place-items-center px-5 text-center">
-        <AnimatedBg dense />
-        <div className="animate-pop flex flex-col items-center">
-          <PlayerAvatar player={me} size="xl" className="animate-float" />
-          <h1 className="mt-6 font-display text-4xl text-gradient">{t("play.youreIn")}</h1>
-          <p className="mt-2 font-display text-2xl">{me.nickname}</p>
-          {me.team_index !== null && me.team_index !== undefined ? (
-            <div className="mt-4 flex items-center gap-2 rounded-full border border-white/15 bg-background/45 px-4 py-2 font-bold shadow-lg">
-              <span className="size-3 rounded-full shadow-[0_0_14px_currentColor]" style={{ backgroundColor: roomTeamColor(room, me.team_index), color: roomTeamColor(room, me.team_index) }} />
-              {roomTeamName(room, me.team_index)}
-            </div>
-          ) : null}
-          <p className="mt-6 text-muted-foreground">
+      <main className="grid min-h-[100dvh] place-items-center px-5 text-center">
+        <div className="flex w-full max-w-sm animate-pop flex-col items-center">
+          <PlayerAvatar player={me} size="xl" />
+          <h1 className="mt-6 font-display text-4xl">{t("play.youreIn")}</h1>
+          <p className="mt-1 font-display text-2xl text-sun">{me.nickname}</p>
+          {teamChip ? <div className="mt-4">{teamChip}</div> : null}
+          <div className="mt-8 w-full rounded-2xl bg-card px-5 py-4 text-muted-foreground">
             {startsIn !== null && startsIn > 0
               ? t("play.startingIn", { n: startsIn })
               : t("play.waitingHost")}
-          </p>
-          <p className="mt-10 text-sm text-muted-foreground">
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground" dir="ltr">
             {t("play.room", { code: room.code })}
           </p>
         </div>
@@ -264,33 +261,29 @@ function Play() {
   }
 
   if (phase.kind === "leaderboard") {
+    const ahead = myRow && myRow.rank > 1 ? rows[myRow.rank - 2] : null;
     return (
-      <main className="relative grid min-h-screen place-items-center px-5 text-center">
-        <AnimatedBg dense />
-        <div className="w-full max-w-sm animate-pop rounded-3xl border border-border bg-surface-gradient p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-muted-foreground">
-            {t("play.yourRank")}
+      <main className="grid min-h-[100dvh] place-items-center px-5 text-center">
+        <div className="w-full max-w-sm animate-pop rounded-3xl bg-card p-8">
+          <p className="font-semibold text-muted-foreground">{t("play.yourRank")}</p>
+          <p className="mt-1 font-display text-8xl leading-none text-sun tabular-nums">
+            {myRow?.rank ?? "-"}
           </p>
-          <p className="mt-2 font-display text-7xl text-gradient tabular-nums">
-            #{myRow?.rank ?? "-"}
-          </p>
-          <p className="mt-2 font-display text-3xl tabular-nums">
+          <p className="mt-3 font-display text-3xl tabular-nums">
             {t("play.points", { n: myRow?.total ?? 0 })}
           </p>
-          {myRow && myRow.rank > 1 ? (
-            <p className="mt-4 text-muted-foreground">
-              {t("play.behind", {
-                n: (rows[myRow.rank - 2]?.total ?? 0) - myRow.total,
-                name: rows[myRow.rank - 2]?.player.nickname ?? "",
-              })}
-            </p>
-          ) : (
-            <p className="mt-4 text-sun">{t("play.lead")}</p>
-          )}
+          <p className="mt-3 text-muted-foreground">
+            {ahead && myRow
+              ? t("play.behind", { n: ahead.total - myRow.total, name: ahead.player.nickname })
+              : t("play.lead")}
+          </p>
           {questions[phase.index]?.explanation ? (
-            <div className="mt-5 rounded-2xl border border-sun/40 bg-sun/10 p-3.5 text-start text-xs sm:text-sm text-sun shadow-sm animate-pop">
-              <span className="font-bold">💡 هل تعلم؟ </span>
-              {questions[phase.index]?.explanation}
+            <div className="mt-6 rounded-2xl bg-secondary p-4 text-start text-sm">
+              <p className="flex items-center gap-2 font-semibold text-sun">
+                <Lightbulb className="size-4" aria-hidden />
+                {t("play.didYouKnow")}
+              </p>
+              <p className="mt-1.5 leading-relaxed">{questions[phase.index]?.explanation}</p>
             </div>
           ) : null}
           <p className="mt-6 text-sm text-muted-foreground">
@@ -309,43 +302,55 @@ function Play() {
     const correct = myAnswer?.is_correct;
     const fastest = fastestCorrectAnswer(answers, question.id);
     const isFastest = fastest?.player_id === playerId;
+    const verdict = correct ? "correct" : myAnswer ? "wrong" : "slow";
+    const VerdictIcon = verdict === "correct" ? Check : verdict === "wrong" ? X : Clock;
     return (
-      <main className="relative grid min-h-screen place-items-center px-5 text-center">
-        <AnimatedBg dense />
+      <main className="grid min-h-[100dvh] place-items-center px-5 text-center">
         <div className="w-full max-w-sm animate-pop">
-          <p className="font-display text-7xl">{correct ? "✅" : myAnswer ? "❌" : "⏰"}</p>
-          <h1 className="mt-4 font-display text-4xl">
-            {correct ? t("play.correct") : myAnswer ? t("play.incorrect") : t("play.tooSlow")}
+          <span
+            className={cn(
+              "mx-auto grid size-24 place-items-center rounded-full text-white",
+              verdict === "correct" ? "bg-answer-4" : verdict === "wrong" ? "bg-answer-1" : "bg-secondary",
+            )}
+          >
+            <VerdictIcon className="size-12" strokeWidth={3} aria-hidden />
+          </span>
+          <h1 className="mt-5 font-display text-4xl">
+            {verdict === "correct" ? t("play.correct") : verdict === "wrong" ? t("play.incorrect") : t("play.tooSlow")}
           </h1>
-          <p className="mt-3 font-display text-3xl text-sun tabular-nums">
+          <p className="mt-2 font-display text-3xl text-sun tabular-nums">
             {t("play.gained", { n: myAnswer?.points_awarded ?? 0 })}
           </p>
           {isFastest ? (
-            <div className="mx-auto mt-4 w-fit rounded-2xl border border-amber-300/60 bg-gradient-to-r from-amber-500/20 via-fuchsia-500/20 to-violet-500/20 px-5 py-3 font-display text-lg text-amber-200 shadow-[0_0_28px_rgba(245,158,11,.3)] animate-pop">⚡ أنت صاحب أسرع إجابة صحيحة!</div>
-          ) : null}
-          {myRow && myRow.streak > 1 ? (
-            <p className="mt-2 font-display text-lg text-lime">
-              {t("play.inARow", { n: myRow.streak })}
+            <p className="mx-auto mt-4 inline-flex items-center gap-2 rounded-full bg-sun px-4 py-2 font-display text-lg text-on-sun">
+              <Zap className="size-5" aria-hidden />
+              {t("play.fastest")}
             </p>
           ) : null}
+          {myRow && myRow.streak > 1 ? (
+            <p className="mt-3 font-display text-lg text-lime">{t("play.inARow", { n: myRow.streak })}</p>
+          ) : null}
           {question.correct_index >= 0 ? (
-            <div className="mt-8 rounded-2xl border border-border bg-surface-gradient p-4 text-start">
-              <p className="text-sm text-muted-foreground text-center">{t("play.correctAnswer")}</p>
-              <p className="mt-1 font-display text-xl text-center">
+            <div className="mt-8 rounded-2xl bg-card p-4 text-start">
+              <p className="text-sm text-muted-foreground">{t("play.correctAnswer")}</p>
+              <p className="mt-2 flex items-center gap-3 font-display text-xl">
+                <span
+                  className="grid size-9 shrink-0 place-items-center rounded-lg"
+                  style={{ backgroundColor: `var(--answer-${question.correct_index + 1})` }}
+                >
+                  <AnswerShape index={question.correct_index} className="size-4" />
+                </span>
                 {question.options[question.correct_index]}
               </p>
               {question.explanation ? (
-                <div className="mt-3 border-t border-border/50 pt-3 text-sm text-sun animate-pop">
-                  <span className="font-bold">💡 الشرح: </span>
+                <div className="mt-3 border-t border-border pt-3 text-sm leading-relaxed">
+                  <span className="font-semibold text-sun">{t("play.explanation")}: </span>
                   {question.explanation}
                 </div>
               ) : null}
             </div>
           ) : null}
-
-          <p className="mt-6 text-sm text-muted-foreground">
-            {t("play.total", { n: myRow?.total ?? 0 })}
-          </p>
+          <p className="mt-6 text-sm text-muted-foreground">{t("play.total", { n: myRow?.total ?? 0 })}</p>
         </div>
       </main>
     );
@@ -355,79 +360,70 @@ function Play() {
   const choices = optionCount(question);
   const isBoolean = question.question_type === "boolean";
   const fiftyHidden = me.fifty_question_id === question.id ? (me.fifty_hidden ?? []) : [];
+  const lockedChoice = myAnswer?.choice_index ?? optimisticChoice;
+  const secondsLeft = Math.max(0, Math.ceil(phase.msLeft / 1000));
 
   return (
-    <main className="relative flex h-[100dvh] max-h-[100dvh] flex-col justify-between overflow-hidden px-3.5 pt-2.5 pb-12 sm:pb-14">
-      <AnimatedBg />
-      <header className="flex shrink-0 items-center justify-between">
-        <span className="flex items-center gap-2 font-semibold">
+    <main className="flex h-[100dvh] max-h-[100dvh] flex-col gap-3 overflow-hidden px-4 pt-3 pb-4">
+      <header className="flex shrink-0 items-center justify-between gap-3">
+        <span className="flex min-w-0 items-center gap-2 font-semibold">
           <PlayerAvatar player={me} size="sm" />
-          {me.nickname}
+          <span className="truncate">{me.nickname}</span>
         </span>
-        <span className="flex items-center gap-3">
-          {me.team_index !== null && me.team_index !== undefined ? (
-            <span
-              className="rounded-full px-3 py-1 text-xs font-bold text-background"
-              style={{ backgroundColor: roomTeamColor(room, me.team_index) }}
-            >
-              {roomTeamName(room, me.team_index)}
-            </span>
-          ) : null}
-          <span className="font-display tabular-nums">
-            {t("play.points", { n: myRow?.total ?? 0 })}
-          </span>
+        <span className="flex shrink-0 items-center gap-2">
+          {teamChip}
+          <span className="font-display text-xl tabular-nums">{(myRow?.total ?? 0).toLocaleString()}</span>
           <button
             type="button"
             onClick={toggleMute}
-            aria-label={muted ? "Unmute sound" : "Mute sound"}
-            title={muted ? "تفعيل الأصوات" : "كتم الأصوات"}
-            className="press liquid-glass flex h-8 w-8 items-center justify-center rounded-full text-foreground shadow-md transition-all"
+            aria-label={muted ? t("play.unmute") : t("play.mute")}
+            className="press grid size-10 place-items-center rounded-full bg-secondary"
           >
-            {muted ? <VolumeX size={15} /> : <Volume2 size={15} />}
+            {muted ? <VolumeX className="size-5" /> : <Volume2 className="size-5" />}
           </button>
           <button
             type="button"
             onClick={() => setShowLeaveConfirm(true)}
-            className="press liquid-glass rounded-full border border-destructive/40 bg-destructive/10 px-3 py-1 text-xs font-semibold text-destructive hover:bg-destructive/20"
+            aria-label={t("play.exitGame")}
+            className="press grid size-10 place-items-center rounded-full bg-secondary text-muted-foreground"
           >
-            🚪 {t("play.exitGame")}
+            <LogOut className="size-5 rtl:-scale-x-100" />
           </button>
         </span>
       </header>
 
-      {myAnswer || optimisticChoice !== null ? (
-        <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="animate-pop flex flex-col items-center">
-            <div className="flex size-20 items-center justify-center rounded-3xl border border-lime/50 bg-lime/10 text-4xl shadow-glow animate-bounce">
-              🔒
-            </div>
-            <h1 className="mt-4 font-display text-3xl text-gradient">{t("play.locked")}</h1>
-            <p className="mt-2 text-sm text-muted-foreground">{t("play.waitingOthers")}</p>
-          </div>
-          <div className="mt-8">
-            <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={110} />
-          </div>
+      <div className="shrink-0">
+        <div className="mb-2 flex items-center justify-between text-sm font-semibold text-muted-foreground">
+          <span>{t("play.questionOf", { n: phase.index + 1, total: questions.length })}</span>
+          <span className={cn("tabular-nums", secondsLeft <= 5 && "text-destructive")}>
+            {t("play.secondsLeft", { n: secondsLeft })}
+          </span>
+        </div>
+        <CountdownBar msLeft={phase.msLeft} totalMs={totalMs} withTick />
+      </div>
+
+      {lockedChoice !== null && lockedChoice !== undefined ? (
+        <div className="flex flex-1 animate-pop flex-col items-center justify-center text-center">
+          <span
+            className="grid size-28 place-items-center rounded-[28px]"
+            style={{ backgroundColor: `var(--answer-${lockedChoice + 1})` }}
+          >
+            <AnswerShape index={lockedChoice} className="size-14" />
+          </span>
+          <h1 className="mt-6 font-display text-3xl">{t("play.locked")}</h1>
+          <p className="mt-2 text-muted-foreground">{t("play.waitingOthers")}</p>
         </div>
       ) : (
         <>
-          <div className="flex shrink-0 items-center justify-center py-1.5">
-            <CountdownRing msLeft={phase.msLeft} totalMs={totalMs} size={76} />
-          </div>
-          <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground shrink-0">
-            {t("play.questionOf", { n: phase.index + 1, total: questions.length })}
-          </p>
           {question.image_url ? (
             <QuestionImage
               path={question.image_url}
-              className="mx-auto mt-2 max-h-[16vh] rounded-2xl border border-border object-contain shrink-0"
+              className="mx-auto max-h-[16vh] shrink-0 rounded-2xl object-contain"
             />
           ) : null}
           <div
             dir="ltr"
-            className={cn(
-              "my-2 grid flex-1 min-h-0 gap-2.5",
-              isBoolean ? "grid-cols-1" : "grid-cols-2",
-            )}
+            className={cn("grid min-h-0 flex-1 gap-3", isBoolean ? "grid-cols-1" : "grid-cols-2")}
           >
             {Array.from({ length: choices }, (_, i) => {
               const hidden = fiftyHidden.includes(i);
@@ -446,108 +442,69 @@ function Play() {
             })}
           </div>
 
-          {/* Power-ups Section - High-Visibility Glowing Liquid Glass */}
-          <div className="pb-1 pt-1 shrink-0">
-            <div className="flex items-center justify-between px-1 mb-1.5">
-              <span className="flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-sun">
-                <span className="size-2 rounded-full bg-sun animate-ping" />✨ {t("play.powerups")}
+          <div className="grid shrink-0 grid-cols-2 gap-3">
+            <button
+              type="button"
+              disabled={me.used_double}
+              onClick={() => setArmedDouble((v) => !v)}
+              aria-pressed={armedDouble}
+              data-pressed={armedDouble || undefined}
+              className={cn("ledge ledge-panel w-full disabled:opacity-40", armedDouble && "ledge-yellow")}
+            >
+              <span className="ledge-face flex-col gap-0 px-3 py-2.5">
+                <span className="flex items-center gap-1.5 font-display text-base">
+                  <Zap className="size-4" aria-hidden />
+                  {t("play.double")}
+                </span>
+                <span className="text-xs opacity-80">
+                  {me.used_double ? t("play.powerupUsed") : armedDouble ? t("play.doubleArmed") : t("play.doubleHint")}
+                </span>
               </span>
-              {armedDouble && !me.used_double ? (
-                <span className="rounded-full border border-sun bg-sun/20 px-2 py-0.5 text-[10px] font-extrabold text-sun animate-pulse">
-                  ⚡ {t("play.doubleArmed")}
+            </button>
+            <button
+              type="button"
+              disabled={me.used_fifty || isBoolean}
+              onClick={() => void activateFifty()}
+              title={isBoolean ? t("play.fiftyUnavailable") : undefined}
+              className="ledge ledge-panel w-full disabled:opacity-40"
+            >
+              <span className="ledge-face flex-col gap-0 px-3 py-2.5">
+                <span className="flex items-center gap-1.5 font-display text-base">
+                  <Target className="size-4" aria-hidden />
+                  {t("play.fifty")}
                 </span>
-              ) : null}
-            </div>
-
-            <div className="grid grid-cols-2 gap-2.5">
-              {/* Double Points Button */}
-              <button
-                type="button"
-                disabled={me.used_double}
-                onClick={() => setArmedDouble((v) => !v)}
-                className={cn(
-                  "press relative flex flex-col items-center justify-center gap-0.5 overflow-hidden rounded-2xl border p-2.5 transition-all shadow-lg",
-                  armedDouble
-                    ? "border-sun bg-gradient-to-b from-sun/30 via-sun/15 to-background text-sun ring-2 ring-sun/80 shadow-glow animate-pulse-hard"
-                    : me.used_double
-                      ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
-                      : "liquid-glass border-sun/60 bg-gradient-to-b from-sun/10 to-background text-foreground hover:border-sun hover:shadow-glow",
-                )}
-              >
-                {/* Glossy Reflection */}
-                <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
-                <div className="flex items-center gap-1 font-display text-sm font-extrabold sm:text-base">
-                  <span className="text-lg">⚡</span>
-                  <span>{me.used_double ? "تم الاستخدام" : "دبل نقاط"}</span>
-                </div>
-                <span className="text-[9px] font-semibold text-muted-foreground">
-                  {me.used_double ? "مستعملة" : "مضاعفة نقاط السؤال"}
+                <span className="text-xs opacity-80">
+                  {me.used_fifty ? t("play.powerupUsed") : t("play.fiftyHint")}
                 </span>
-              </button>
-
-              {/* 50:50 Button */}
-              <button
-                type="button"
-                disabled={me.used_fifty || isBoolean}
-                onClick={() => void activateFifty()}
-                title={isBoolean ? t("play.fiftyUnavailable") : undefined}
-                className={cn(
-                  "press relative flex flex-col items-center justify-center gap-0.5 overflow-hidden rounded-2xl border p-2.5 transition-all shadow-lg",
-                  me.used_fifty
-                    ? "border-border/40 bg-background/20 opacity-40 text-muted-foreground"
-                    : isBoolean
-                      ? "border-border/30 bg-background/20 opacity-30 text-muted-foreground"
-                      : "liquid-glass border-electric/60 bg-gradient-to-b from-electric/10 to-background text-foreground hover:border-electric hover:shadow-glow",
-                )}
-              >
-                {/* Glossy Reflection */}
-                <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
-                <div className="flex items-center gap-1 font-display text-sm font-extrabold sm:text-base">
-                  <span className="text-lg">🎯</span>
-                  <span>{me.used_fifty ? "تم الاستخدام" : "حذف إجابتين"}</span>
-                </div>
-                <span className="text-[9px] font-semibold text-muted-foreground">
-                  {me.used_fifty ? "مستعملة" : "إزالة خيارين خاطئين"}
-                </span>
-              </button>
-            </div>
+              </span>
+            </button>
           </div>
         </>
       )}
 
       {showLeaveModal ? (
-        <div className="fixed inset-0 z-50 grid place-items-center bg-background/80 p-5 backdrop-blur-sm">
-          <div className="w-full max-w-sm rounded-3xl border border-border bg-surface-gradient p-6 text-center shadow-xl animate-pop">
+        <div className="fixed inset-0 z-50 grid place-items-center bg-black/70 p-5">
+          <div role="dialog" aria-modal="true" className="w-full max-w-sm animate-pop rounded-3xl bg-card p-6 text-center">
             <h2 className="font-display text-2xl">{t("play.exitGame")}</h2>
-            <p className="mt-2 text-sm text-muted-foreground">{t("play.exitConfirm")}</p>
+            <p className="mt-2 text-muted-foreground">{t("play.exitConfirm")}</p>
             <div className="mt-6 flex gap-3">
-              <button
-                type="button"
-                onClick={() => setShowLeaveConfirm(false)}
-                className="press flex-1 rounded-2xl border border-border bg-background/50 py-3 font-display text-lg"
-              >
-                {t("import.cancel")}
+              <button type="button" onClick={() => setShowLeaveConfirm(false)} className="ledge ledge-panel flex-1">
+                <span className="ledge-face h-12 font-display text-lg">{t("import.cancel")}</span>
               </button>
-              <button
-                type="button"
-                onClick={() => void leaveGame()}
-                className="press flex-1 rounded-2xl bg-destructive py-3 font-display text-lg text-destructive-foreground shadow-chunky"
-              >
-                {t("play.exitGame")}
+              <button type="button" onClick={() => void leaveGame()} className="ledge ledge-red flex-1">
+                <span className="ledge-face h-12 font-display text-lg">{t("play.exitGame")}</span>
               </button>
             </div>
           </div>
         </div>
       ) : null}
       {room?.is_paused ? (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/90 p-6 backdrop-blur-md animate-fade-in text-center">
-          <div className="flex size-24 items-center justify-center rounded-3xl border border-sun/50 bg-sun/10 text-5xl shadow-glow animate-pulse">
-            ⏸️
-          </div>
-          <h2 className="mt-6 font-display text-4xl text-gradient">اللعبة متوقفة مؤقتاً</h2>
-          <p className="mt-2 text-center text-muted-foreground max-w-xs">
-            أوقف المضيف اللعبة لبرهة. سنستأنف فوراً بمجرد الضغط على استئناف...
-          </p>
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/95 p-6 text-center">
+          <span className="grid size-20 place-items-center rounded-full bg-secondary">
+            <Pause className="size-9" aria-hidden />
+          </span>
+          <h2 className="mt-6 font-display text-3xl">{t("play.paused")}</h2>
+          <p className="mt-2 max-w-xs text-muted-foreground">{t("play.pausedBody")}</p>
         </div>
       ) : null}
 

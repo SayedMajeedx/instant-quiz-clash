@@ -62,13 +62,48 @@ export function CountdownRing({
   );
 }
 
-export function CountdownBar({ msLeft, totalMs }: { msLeft: number; totalMs: number }) {
+/**
+ * Linear time bar. Only transform animates (scaleX), linear because time is constant
+ * motion, and it shrinks toward the reading start. Ticks for the last five seconds
+ * when `withTick` is set.
+ */
+export function CountdownBar({
+  msLeft,
+  totalMs,
+  withTick = false,
+  className,
+}: {
+  msLeft: number;
+  totalMs: number;
+  withTick?: boolean;
+  className?: string;
+}) {
   const pct = Math.max(0, Math.min(1, msLeft / Math.max(1, totalMs)));
+  const secs = Math.max(0, Math.ceil(msLeft / 1000));
+  const urgent = msLeft <= 5000;
+  const lastSecRef = useRef(secs);
+
+  useEffect(() => {
+    if (withTick && secs > 0 && secs <= 5 && secs !== lastSecRef.current) {
+      lastSecRef.current = secs;
+      sounds.playTick();
+    }
+  }, [secs, withTick]);
+
   return (
-    <div className="h-3 w-full overflow-hidden rounded-full bg-secondary">
+    <div
+      role="progressbar"
+      aria-valuemin={0}
+      aria-valuemax={Math.round(totalMs / 1000)}
+      aria-valuenow={secs}
+      className={cn("h-3 w-full overflow-hidden rounded-full bg-secondary", className)}
+    >
       <div
-        className={cn("h-full rounded-full", msLeft <= 5000 ? "bg-destructive" : "bg-gradient-hero")}
-        style={{ width: `${pct * 100}%` }}
+        className={cn(
+          "h-full w-full rounded-full ltr:origin-left rtl:origin-right transition-[transform,background-color] duration-200 ease-linear",
+          urgent ? "bg-destructive" : "bg-sun",
+        )}
+        style={{ transform: `scaleX(${pct})` }}
       />
     </div>
   );

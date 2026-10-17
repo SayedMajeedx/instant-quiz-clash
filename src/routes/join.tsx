@@ -1,13 +1,13 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { Check } from "lucide-react";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { Logo } from "@/components/quiz/Logo";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { AVATAR_COLORS, type Player } from "@/lib/quizclash";
 import { storePlayerSession } from "@/lib/session";
-import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/join")({
   validateSearch: (search: Record<string, unknown>): { code?: string } =>
@@ -76,52 +76,70 @@ function Join() {
   }
 
   return (
-    <main className="relative grid min-h-screen place-items-center px-5">
-      <AnimatedBg dense />
+    <main className="grid min-h-[100dvh] place-items-center px-5 py-10">
       <div className="w-full max-w-sm">
-        <div className="mb-6 flex items-center justify-between gap-3">
-          <Link to="/" className="font-display text-3xl">
-            {t("brand.quiz")}<span className="text-gradient">{t("brand.clash")}</span>
+        <div className="mb-8 flex items-center justify-between gap-3">
+          <Link to="/">
+            <Logo />
           </Link>
           <LanguageToggle />
         </div>
 
         {joined ? (
-          <div className="animate-pop rounded-3xl border border-border bg-surface-gradient p-10 text-center shadow-glow">
-            <p className="font-display text-5xl">🎉</p>
-            <p className="mt-3 font-display text-3xl text-gradient">{t("join.youreIn")}</p>
+          <div className="animate-pop rounded-3xl bg-card p-10 text-center">
+            <span className="mx-auto grid size-16 place-items-center rounded-full bg-answer-4 text-white">
+              <Check className="size-9" strokeWidth={3} />
+            </span>
+            <p className="mt-4 font-display text-3xl">{t("join.youreIn")}</p>
           </div>
         ) : (
-          <div className="rounded-3xl border border-border bg-surface-gradient p-6 shadow-glow">
+          <form
+            className="rounded-3xl bg-card p-6"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void join();
+            }}
+          >
+            <h1 className="font-display text-3xl">{t("join.title")}</h1>
+
+            <label htmlFor="join-code" className="mt-6 block font-semibold">
+              {t("join.codeLabel")}
+            </label>
             <input
+              id="join-code"
               value={code}
-              onChange={(e) => setCode(e.target.value.toUpperCase().slice(0, 6))}
-              placeholder={t("join.codePlaceholder")}
+              onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 6))}
+              placeholder="K7Q2M4"
               autoCapitalize="characters"
+              autoComplete="off"
+              spellCheck={false}
               inputMode="text"
-              className={cn(
-                "w-full rounded-2xl border border-border bg-background/60 px-4 py-4 text-center font-display text-3xl outline-none focus:ring-2 focus:ring-ring",
-                code ? "dir-ltr tracking-[0.25em]" : "",
-              )}
+              dir="ltr"
+              aria-describedby="join-code-hint"
+              className="mt-2 h-20 w-full rounded-2xl border-2 border-border bg-background text-center font-display text-4xl tracking-[0.3em] uppercase outline-none transition-colors duration-150 placeholder:text-muted-foreground/40 focus:border-sun"
             />
+            <p id="join-code-hint" className="mt-2 text-sm text-muted-foreground">
+              {t("join.codeHint")}
+            </p>
+
+            <label htmlFor="join-nick" className="mt-5 block font-semibold">
+              {t("join.nickLabel")}
+            </label>
             <input
+              id="join-nick"
               value={nickname}
               onChange={(e) => setNickname(e.target.value.slice(0, 18))}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") void join();
-              }}
               placeholder={t("join.nickPlaceholder")}
-              className="mt-3 w-full rounded-2xl border border-border bg-background/60 px-4 py-4 text-center text-xl outline-none focus:ring-2 focus:ring-ring"
+              autoComplete="nickname"
+              className="mt-2 h-14 w-full rounded-2xl border-2 border-border bg-background px-4 text-center text-xl outline-none transition-colors duration-150 focus:border-sun"
             />
-            <button
-              type="button"
-              disabled={busy}
-              onClick={() => void join()}
-              className="press mt-4 w-full rounded-2xl bg-gradient-hero px-6 py-4 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
-            >
-              {busy ? t("join.joining") : t("join.enter")}
+
+            <button type="submit" disabled={busy} className="ledge ledge-yellow mt-6 w-full disabled:opacity-60">
+              <span className="ledge-face h-16 font-display text-2xl">
+                {busy ? t("join.joining") : t("join.enter")}
+              </span>
             </button>
-          </div>
+          </form>
         )}
       </div>
     </main>

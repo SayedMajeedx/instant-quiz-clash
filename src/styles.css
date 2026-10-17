@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Outfit:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap');
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -6,17 +6,20 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * QuizClash design system — bold, high-energy game-show language.
- * All colors are oklch tokens. Never hardcode colors in components.
+ * QuizClash design system: a party game, not a landing-page template.
+ * - Solid colour, no gradients, no glass, no blur. The four answer colours are the brand.
+ * - Pressable things sit on a solid ledge and move down into it.
+ * - Motion: transform and opacity only, strong ease-out, under 300ms for UI.
+ * Never hardcode colours in components; use these tokens.
  */
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
   --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 6px);
-  --radius-2xl: calc(var(--radius) + 14px);
-  --radius-3xl: calc(var(--radius) + 24px);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 6px);
+  --radius-3xl: calc(var(--radius) + 10px);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -43,6 +46,7 @@
   --color-hot: var(--hot);
   --color-sun: var(--sun);
   --color-lime: var(--lime);
+  --color-on-sun: var(--on-sun);
 
   --color-answer-1: var(--answer-1);
   --color-answer-2: var(--answer-2);
@@ -57,184 +61,130 @@
   --color-silver: var(--silver);
   --color-bronze: var(--bronze);
 
-  --font-display: "Bricolage Grotesque", "Cairo", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Outfit", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Baloo Bhaijaan 2", "Rubik", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Rubik", ui-sans-serif, system-ui, sans-serif;
 
-  --animate-float: float 14s ease-in-out infinite;
-  --animate-blob: blob 22s ease-in-out infinite;
-  --animate-pop: pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-  --animate-rise: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
-  --animate-pulse-hard: pulse-hard 0.6s ease-in-out infinite;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  /* One-shot entrances. Nothing loops except loading indicators. */
+  --animate-pop: pop 220ms var(--ease-out) both;
+  --animate-rise: rise 220ms var(--ease-out) both;
+  --animate-pulse-hard: settle 260ms var(--ease-out) both;
+  --animate-float: none;
+  --animate-blob: none;
   --animate-confetti: confetti-fall 3.2s linear forwards;
-  --animate-shimmer: shimmer 2.6s linear infinite;
+  --animate-shimmer: shimmer 1.4s linear infinite;
 }
 
 :root {
   --radius: 1rem;
-  --background: oklch(0.17 0.062 295);
-  --foreground: oklch(0.98 0.01 300);
-  --surface: oklch(0.24 0.075 295);
-  --card: oklch(0.24 0.075 295);
-  --card-foreground: oklch(0.98 0.01 300);
-  --popover: oklch(0.22 0.07 295);
-  --popover-foreground: oklch(0.98 0.01 300);
-  --primary: oklch(0.66 0.245 302);
-  --primary-foreground: oklch(0.99 0.005 300);
-  --secondary: oklch(0.3 0.09 295);
-  --secondary-foreground: oklch(0.98 0.01 300);
-  --muted: oklch(0.28 0.075 295);
-  --muted-foreground: oklch(0.76 0.045 300);
-  --accent: oklch(0.7 0.24 350);
-  --accent-foreground: oklch(0.99 0.005 300);
-  --destructive: oklch(0.62 0.24 25);
-  --destructive-foreground: oklch(0.99 0.005 300);
-  --border: oklch(0.35 0.09 295);
-  --input: oklch(0.3 0.08 295);
-  --ring: oklch(0.7 0.2 305);
 
-  --electric: oklch(0.68 0.19 250);
-  --hot: oklch(0.7 0.25 352);
-  --sun: oklch(0.85 0.17 88);
-  --lime: oklch(0.8 0.2 145);
+  /* Stage: deep navy reads well on a TV in a dim room and keeps the answer colours bright. */
+  --background: #141631;
+  --foreground: #ffffff;
+  --surface: #1f2247;
+  --card: #1f2247;
+  --card-foreground: #ffffff;
+  --popover: #1f2247;
+  --popover-foreground: #ffffff;
+  --secondary: #2a2e5c;
+  --secondary-foreground: #ffffff;
+  --muted: #2a2e5c;
+  --muted-foreground: #aeb3d9;
+  --border: #363b70;
+  --input: #363b70;
+  --ring: #ffc53d;
 
-  --answer-1: oklch(0.62 0.23 25);
-  --answer-1-shade: oklch(0.48 0.2 25);
-  --answer-2: oklch(0.6 0.19 252);
-  --answer-2-shade: oklch(0.46 0.17 252);
-  --answer-3: oklch(0.81 0.17 88);
-  --answer-3-shade: oklch(0.66 0.16 76);
-  --answer-4: oklch(0.68 0.19 148);
-  --answer-4-shade: oklch(0.54 0.17 148);
+  /* The four answer colours are the brand. Each passes 4.5:1 with its text colour. */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --accent: #ffc53d;
+  --accent-foreground: #1f1500;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
 
-  --gold: oklch(0.85 0.17 88);
-  --silver: oklch(0.83 0.02 280);
-  --bronze: oklch(0.68 0.13 55);
+  --electric: #2563eb;
+  --hot: #dc2626;
+  --sun: #ffc53d;
+  --on-sun: #1f1500;
+  --lime: #5bd08f;
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.66 0.245 302), oklch(0.7 0.24 350) 55%, oklch(0.85 0.17 88));
-  --gradient-surface: linear-gradient(160deg, oklch(0.26 0.085 296), oklch(0.2 0.07 292));
-  --shadow-chunky: 0 10px 0 0 oklch(0.14 0.05 295), 0 22px 45px -18px oklch(0.1 0.05 295 / 80%);
-  --shadow-glow: 0 4px 18px -2px oklch(0.66 0.245 302 / 20%), 0 0 10px 0 oklch(0.66 0.245 302 / 12%);
-}
+  --answer-1: #dc2626;
+  --answer-1-shade: #9e1b1b;
+  --answer-2: #2563eb;
+  --answer-2-shade: #1a44a8;
+  --answer-3: #ffc53d;
+  --answer-3-shade: #c98f0a;
+  --answer-4: #18794b;
+  --answer-4-shade: #0f5233;
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(0, -28px, 0) scale(1.06);
-  }
-}
+  --gold: #ffc53d;
+  --silver: #c9cde6;
+  --bronze: #d48a4f;
 
-@keyframes blob {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  33% {
-    transform: translate3d(6%, -8%, 0) scale(1.15);
-  }
-  66% {
-    transform: translate3d(-7%, 6%, 0) scale(0.92);
-  }
+  --ledge-shade: #0b0c1e;
+  --shadow-chunky: 0 6px 0 0 var(--ledge-shade);
+  --shadow-glow: 0 0 0 1px var(--border);
 }
 
 @keyframes pop {
-  0% {
-    transform: scale(0.72);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 @keyframes rise {
-  0% {
-    transform: translateY(18px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes pulse-hard {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.09);
-  }
+@keyframes settle {
+  from { transform: scale(0.96); }
+  to { transform: scale(1); }
 }
 
 @keyframes confetti-fall {
-  0% {
-    transform: translate3d(0, -12vh, 0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(var(--drift, 0px), 105vh, 0) rotate(880deg);
-    opacity: 0.9;
-  }
+  0% { transform: translate3d(0, -12vh, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(var(--drift, 0px), 105vh, 0) rotate(880deg); opacity: 0.9; }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 @keyframes leaderboard-shine {
-  0% {
-    transform: translateX(-180%) skewX(-20deg);
-    opacity: 0;
-  }
+  0% { transform: translateX(-180%) skewX(-20deg); opacity: 0; }
   25% { opacity: 1; }
-  100% {
-    transform: translateX(650%) skewX(-20deg);
-    opacity: 0;
-  }
+  100% { transform: translateX(650%) skewX(-20deg); opacity: 0; }
 }
 
 @keyframes score-lock {
-  0% { transform: scale(0.86); color: var(--color-lime); }
-  55% { transform: scale(1.16); color: var(--color-sun); }
+  0% { transform: scale(0.94); }
   100% { transform: scale(1); }
 }
 
 @keyframes climber-glow {
-  0%, 100% { box-shadow: 0 0 0 0 transparent; }
-  45% { box-shadow: 0 0 28px 2px color-mix(in oklch, var(--color-lime) 42%, transparent); }
+  0%, 100% { opacity: 0; }
+  40% { opacity: 1; }
 }
 
 .leaderboard-climber {
-  animation: climber-glow 1.1s ease-out 1;
+  animation: settle 260ms var(--ease-out) 1;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .leaderboard-climber { animation: none; }
-}
-
+/* Kept for existing class names: solid colours replace the old gradients. */
 @utility text-gradient {
-  background: var(--gradient-hero);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--sun);
 }
 
 @utility bg-gradient-hero {
-  background: var(--gradient-hero);
+  background: var(--primary);
+  color: var(--primary-foreground);
 }
 
 @utility bg-surface-gradient {
-  background: var(--gradient-surface);
+  background: var(--surface);
 }
 
 @utility shadow-chunky {
@@ -245,16 +195,90 @@
   box-shadow: var(--shadow-glow);
 }
 
+/* Press feedback: the only property that animates is transform. */
 @utility press {
-  transition:
-    transform 0.11s cubic-bezier(0.3, 1.4, 0.6, 1),
-    filter 0.2s ease;
-  &:hover {
-    transform: translateY(-2px);
-    filter: saturate(1.12);
-  }
+  transition: transform 140ms var(--ease-out);
   &:active {
-    transform: translateY(4px) scale(0.985);
+    transform: scale(0.97);
+  }
+}
+
+/*
+ * The game button: a face that sits on a solid ledge and moves down into it on press.
+ * Markup: <button class="ledge ledge-blue"><span class="ledge-face">…</span></button>
+ */
+@utility ledge {
+  --ledge-color: var(--primary);
+  --ledge-shade-color: var(--answer-2-shade);
+  --ledge-depth: 6px;
+  position: relative;
+  display: inline-flex;
+  padding: 0;
+  margin-bottom: var(--ledge-depth);
+  border-radius: var(--radius);
+  background: var(--ledge-shade-color);
+  -webkit-tap-highlight-color: transparent;
+  &:focus-visible {
+    outline: 3px solid var(--foreground);
+    outline-offset: 4px;
+  }
+  &:disabled {
+    cursor: default;
+  }
+}
+
+@utility ledge-face {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: inherit;
+  background: var(--ledge-color);
+  transform: translateY(calc(var(--ledge-depth) * -1));
+  transition: transform 120ms var(--ease-out);
+}
+
+@utility ledge-red {
+  --ledge-color: var(--answer-1);
+  --ledge-shade-color: var(--answer-1-shade);
+  color: #ffffff;
+}
+@utility ledge-blue {
+  --ledge-color: var(--answer-2);
+  --ledge-shade-color: var(--answer-2-shade);
+  color: #ffffff;
+}
+@utility ledge-yellow {
+  --ledge-color: var(--answer-3);
+  --ledge-shade-color: var(--answer-3-shade);
+  color: var(--on-sun);
+}
+@utility ledge-green {
+  --ledge-color: var(--answer-4);
+  --ledge-shade-color: var(--answer-4-shade);
+  color: #ffffff;
+}
+@utility ledge-panel {
+  --ledge-color: var(--secondary);
+  --ledge-shade-color: var(--ledge-shade);
+  color: var(--foreground);
+}
+
+/* Pressed and locked-in states sit on the ledge. */
+.ledge:active:not(:disabled) > .ledge-face,
+.ledge[data-pressed="true"] > .ledge-face {
+  transform: translateY(0);
+  transition-duration: 60ms;
+}
+
+/* Hover lift only where hover is real; touch devices fire hover on tap. */
+@media (hover: hover) and (pointer: fine) {
+  .ledge:hover:not(:disabled) > .ledge-face {
+    transform: translateY(calc(var(--ledge-depth) * -1 - 2px));
+  }
+  .ledge:active:not(:disabled) > .ledge-face {
+    transform: translateY(0);
   }
 }
 
@@ -280,14 +304,12 @@
   .font-display {
     font-family: var(--font-display);
     font-weight: 800;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
 }
 
-/* Arabic glyphs & font rules: Prioritize Cairo and remove letter-spacing in RTL mode to prevent broken/disconnected characters */
+/* Arabic: connected letterforms must never be letter-spaced. */
 [dir="rtl"] {
-  --font-display: "Cairo", "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Cairo", "Outfit", ui-sans-serif, system-ui, sans-serif;
   letter-spacing: normal !important;
 }
 
@@ -301,31 +323,33 @@ input::placeholder {
 [dir="rtl"] .font-display,
 [dir="rtl"] h1,
 [dir="rtl"] h2 {
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
-/* iOS Liquid Glass Design System */
+/* Legacy class from the glass look, now a flat panel so existing screens stay consistent. */
 .liquid-glass {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow:
-    0 10px 30px -5px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.28),
-    inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  transition: background-color 150ms ease;
 }
 
-.liquid-glass:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.32);
-  box-shadow:
-    0 14px 40px -5px rgba(0, 0, 0, 0.42),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.45);
+@media (hover: hover) and (pointer: fine) {
+  .liquid-glass:hover {
+    background: var(--border);
+  }
 }
 
-.liquid-glass:active {
-  background: rgba(255, 255, 255, 0.04);
-  transform: scale(0.97);
+/* Reduced motion means gentler, not none: keep fades, drop movement. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .ledge-face,
+  .press {
+    transition-property: opacity !important;
+  }
 }

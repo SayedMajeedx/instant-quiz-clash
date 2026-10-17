@@ -4,9 +4,19 @@ import { ANSWER_STYLES } from "@/lib/quizclash";
 import { sounds } from "@/lib/audio";
 import { cn } from "@/lib/utils";
 
+/** Ledge colour per answer slot; yellow carries dark text, the rest white. */
+const LEDGE_CLASSES = ["ledge-red", "ledge-blue", "ledge-yellow", "ledge-green"];
+/** Readable ink on each answer colour. */
+const SHAPE_INK = ["bg-white", "bg-white", "bg-on-sun", "bg-white"];
+/** Exam-style option letters, so answers never rely on colour alone. */
+const OPTION_LETTERS = {
+  ar: ["أ", "ب", "ج", "د"],
+  en: ["A", "B", "C", "D"],
+};
+
 export function AnswerShape({ index, className }: { index: number; className?: string }) {
   const shape = ANSWER_STYLES[index]?.shape ?? "square";
-  const common = cn("bg-primary-foreground", className);
+  const common = cn(SHAPE_INK[index] ?? "bg-white", className);
   if (shape === "triangle") {
     return <span className={cn(common, "block")} style={{ clipPath: "polygon(50% 4%, 100% 96%, 0 96%)" }} />;
   }
@@ -38,8 +48,8 @@ export const AnswerTile = memo(function AnswerTile({
   size = "host",
   count,
 }: TileProps) {
-  const style = ANSWER_STYLES[index]!;
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const letter = OPTION_LETTERS[lang === "ar" ? "ar" : "en"][index];
 
   useEffect(() => {
     if (state === "correct") {
@@ -53,42 +63,58 @@ export const AnswerTile = memo(function AnswerTile({
     sounds.playTap();
     if (onClick) onClick();
   }
+
+  const isPlayer = size === "player";
+
   return (
     <button
       type="button"
       onClick={handleClick}
       disabled={disabled}
-      aria-label={t(SHAPE_KEYS[index] ?? "shape.square")}
+      aria-label={`${letter ?? ""} ${t(SHAPE_KEYS[index] ?? "shape.square")}`}
+      data-pressed={state === "chosen" || undefined}
+      style={{ ["--ledge-depth" as string]: isPlayer ? "8px" : "5px" }}
       className={cn(
-        "press relative flex w-full items-center gap-3 sm:gap-4 overflow-hidden rounded-2xl border-b-[5px] sm:border-b-[6px] px-3 sm:px-4 text-start font-display text-primary-foreground transition-all",
-        style.bg,
-        size === "player" ? "min-h-[20vh] justify-center" : "min-h-[48px] sm:min-h-[58px] lg:min-h-[68px] py-1.5 sm:py-2.5",
-        state === "correct" && "animate-pulse-hard ring-4 ring-primary-foreground",
-        state === "wrong" && "opacity-35 grayscale",
+        "ledge w-full transition-opacity duration-200",
+        LEDGE_CLASSES[index],
+        isPlayer && "rounded-[22px]",
+        state === "correct" && "animate-pulse-hard",
+        state === "wrong" && "opacity-35",
         state === "dimmed" && "opacity-30",
-        state === "chosen" && "ring-4 ring-primary-foreground",
-        disabled && "cursor-default",
+        disabled && state === "idle" && !isPlayer && "cursor-default",
       )}
-      style={{ borderBottomColor: `var(--answer-${index + 1}-shade)` }}
     >
-      {/* iOS Liquid Glass Specular Reflection Overlay */}
-      <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/25 via-white/10 to-transparent rounded-t-2xl" />
       <span
         className={cn(
-          "grid shrink-0 place-items-center",
-          size === "player" ? "size-14 sm:size-16" : "size-7 sm:size-9 lg:size-10",
+          "ledge-face font-display",
+          isPlayer
+            ? "min-h-[18vh] flex-col gap-1 px-3 text-4xl"
+            : "min-h-[48px] justify-start px-3 py-1.5 text-start sm:min-h-[58px] sm:px-4 sm:py-2.5 lg:min-h-[68px]",
+          (state === "chosen" || state === "correct") && "outline outline-4 -outline-offset-4 outline-white/90",
         )}
       >
-        <AnswerShape index={index} className={size === "player" ? "size-12 sm:size-14" : "size-6 sm:size-7 lg:size-8"} />
-      </span>
-      {children ? (
-        <span className={cn("flex-1 leading-snug line-clamp-2", size === "host" ? "text-sm sm:text-lg lg:text-xl xl:text-2xl" : "text-lg sm:text-xl")}>
-          {children}
+        <span className={cn("flex shrink-0 items-center gap-2", isPlayer && "flex-col gap-1")}>
+          <span className={cn("grid place-items-center", isPlayer ? "size-14" : "size-6 sm:size-7 lg:size-8")}>
+            <AnswerShape index={index} className={isPlayer ? "size-12" : "size-5 sm:size-6 lg:size-7"} />
+          </span>
+          <span aria-hidden className={cn("leading-none", isPlayer ? "text-4xl" : "text-base sm:text-lg lg:text-xl")}>
+            {letter}
+          </span>
         </span>
-      ) : null}
-      {typeof count === "number" ? (
-        <span className="ml-auto rounded-full bg-background/35 px-3 py-1 text-lg tabular-nums">{count}</span>
-      ) : null}
+        {children ? (
+          <span
+            className={cn(
+              "flex-1 leading-snug line-clamp-2",
+              isPlayer ? "text-center text-xl" : "text-sm sm:text-lg lg:text-xl xl:text-2xl",
+            )}
+          >
+            {children}
+          </span>
+        ) : null}
+        {typeof count === "number" ? (
+          <span className="ms-auto rounded-full bg-black/25 px-3 py-1 text-lg tabular-nums">{count}</span>
+        ) : null}
+      </span>
     </button>
   );
 });
