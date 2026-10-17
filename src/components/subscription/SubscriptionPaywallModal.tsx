@@ -22,8 +22,8 @@ interface SubscriptionPaywallModalProps {
 // Displayed prices only. What PayPal charges is set by the PayPal plans
 // (PAYPAL_PLAN_ID_MONTHLY / PAYPAL_PLAN_ID_YEARLY); keep the two in sync.
 const PLAN_PRICES = {
-  monthly: { amount: "1.200", short: "1.2", currency: { ar: "د.ب", en: "BHD" } },
-  yearly: { amount: "10.000", short: "10", currency: { ar: "د.ب", en: "BHD" } },
+  monthly: { amount: "3", short: "3", currency: { ar: "دولار", en: "USD" } },
+  yearly: { amount: "30", short: "30", currency: { ar: "دولار", en: "USD" } },
 };
 
 export function SubscriptionPaywallModal({
