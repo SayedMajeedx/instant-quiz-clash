@@ -715,6 +715,10 @@ export type Database = {
           payhip_customer_id: string | null
           payhip_subscription_id: string | null
           plan_type: string
+          provider: string
+          provider_plan_id: string | null
+          provider_status: string | null
+          provider_subscription_id: string | null
           started_at: string
           status: string
           updated_at: string
@@ -728,6 +732,10 @@ export type Database = {
           payhip_customer_id?: string | null
           payhip_subscription_id?: string | null
           plan_type?: string
+          provider?: string
+          provider_plan_id?: string | null
+          provider_status?: string | null
+          provider_subscription_id?: string | null
           started_at?: string
           status?: string
           updated_at?: string
@@ -741,6 +749,10 @@ export type Database = {
           payhip_customer_id?: string | null
           payhip_subscription_id?: string | null
           plan_type?: string
+          provider?: string
+          provider_plan_id?: string | null
+          provider_status?: string | null
+          provider_subscription_id?: string | null
           started_at?: string
           status?: string
           updated_at?: string
@@ -811,7 +823,7 @@ export type Database = {
           isSetofReturn: false
         }
       }
-      archive_room: { Args: { p_room_id: string }; Returns: string | null }
+      archive_room: { Args: { p_room_id: string }; Returns: string }
       check_user_hosting_eligibility: { Args: never; Returns: Json }
       claim_monthly_ai_usage: { Args: { p_feature: string }; Returns: boolean }
       create_custom_quiz_room: {
@@ -920,43 +932,30 @@ export type Database = {
           is_correct: boolean
           player_id: string
           points_awarded: number
-          powerup: string | null
+          powerup: string
           question_id: string
           room_id: string
           streak_bonus: number
         }[]
-        SetofOptions: {
-          from: "*"
-          to: "answers"
-          isOneToOne: false
-          isSetofReturn: true
-        }
       }
       room_players: {
         Args: { p_player_id: string; p_room_id: string; p_token: string }
         Returns: {
           avatar_color: string
-          fifty_hidden: number[] | null
-          fifty_question_id: string | null
+          fifty_hidden: number[]
+          fifty_question_id: string
           id: string
           joined_at: string
           nickname: string
           room_id: string
-          team_index: number | null
+          team_index: number
           used_double: boolean
           used_fifty: boolean
         }[]
-        SetofOptions: {
-          from: "*"
-          to: "players"
-          isOneToOne: false
-          isSetofReturn: true
-        }
       }
       room_questions: {
         Args: { p_room_id: string }
         Returns: {
-          explanation: string
           id: string
           image_url: string
           options: Json
@@ -964,6 +963,8 @@ export type Database = {
           question_text: string
           question_type: string
           quiz_id: string
+          source_category: string
+          subcategory: string
           time_limit_seconds: number
         }[]
       }
@@ -971,7 +972,7 @@ export type Database = {
         Args: { p_room_id: string }
         Returns: {
           correct_index: number
-          explanation: string | null
+          explanation: string
           question_id: string
         }[]
       }
