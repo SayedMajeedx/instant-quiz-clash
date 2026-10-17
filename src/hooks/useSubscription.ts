@@ -33,7 +33,7 @@ export function useSubscription() {
         return;
       }
 
-      const { data, error: rpcError } = await supabase.rpc("check_user_hosting_eligibility");
+      const { data, error: rpcError } = await (supabase as any).rpc("check_user_hosting_eligibility");
       if (rpcError) {
         console.warn("Eligibility check RPC fallback:", rpcError);
         // Resilient fallback for newly initialized accounts
@@ -57,7 +57,7 @@ export function useSubscription() {
 
   const claimDailyQuiz = useCallback(async (): Promise<boolean> => {
     try {
-      const { data, error: rpcError } = await supabase.rpc("claim_daily_hosted_quiz");
+      const { data, error: rpcError } = await (supabase as any).rpc("claim_daily_hosted_quiz");
       if (rpcError) {
         console.error("Failed to claim daily quiz:", rpcError);
         return false;

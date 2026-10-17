@@ -101,7 +101,7 @@ function HostCreate() {
 
     // 1. Verify Hosting Quota / Subscription
     try {
-      const { data: eligibility, error: elErr } = await supabase.rpc("check_user_hosting_eligibility");
+      const { data: eligibility, error: elErr } = await (supabase as any).rpc("check_user_hosting_eligibility");
       if (elErr) {
         console.warn("Eligibility RPC fallback:", elErr);
       } else if (eligibility && !eligibility.allowed) {
@@ -112,7 +112,7 @@ function HostCreate() {
       }
 
       // Claim daily usage quota
-      const { error: claimErr } = await supabase.rpc("claim_daily_hosted_quiz");
+      const { error: claimErr } = await (supabase as any).rpc("claim_daily_hosted_quiz");
       if (claimErr) {
         setPaywallReason("daily_limit_reached");
         setShowPaywall(true);

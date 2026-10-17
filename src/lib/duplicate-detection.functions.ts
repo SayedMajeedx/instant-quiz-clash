@@ -63,12 +63,12 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
     const accepted = groupCandidates(acceptedPairs);
     // A scan is a fresh snapshot. Remove only unresolved rows so stale findings do not
     // accumulate across algorithm revisions; dismissed/resolved audit decisions remain.
-    const { error: clearError } = await (supabaseAdmin.from("quiz_duplicate_reviews") as any)
+    const { error: clearError } = await ((supabaseAdmin as any).from("quiz_duplicate_reviews") as any)
       .delete()
       .eq("status", "pending");
     if (clearError) throw clearError;
     const { data: reviewed, error: reviewedError } = await (
-      supabaseAdmin.from("quiz_duplicate_reviews") as any
+      (supabaseAdmin as any).from("quiz_duplicate_reviews") as any
     )
       .select("fingerprint")
       .in("status", ["dismissed", "resolved"]);
@@ -80,7 +80,7 @@ export const scanDuplicateQuestions = createServerFn({ method: "POST" })
       (candidate) => !reviewedFingerprints.has(candidate.fingerprint),
     );
     for (const candidate of queued) {
-      const { error: saveError } = await (supabaseAdmin.from("quiz_duplicate_reviews") as any).upsert(
+      const { error: saveError } = await ((supabaseAdmin as any).from("quiz_duplicate_reviews") as any).upsert(
         {
           fingerprint: candidate.fingerprint,
           status: "pending",
@@ -109,7 +109,7 @@ export const listDuplicateReviews = createServerFn({ method: "GET" })
   .handler(async ({ context }) => {
     await requireAdmin(context.supabase, context.userId);
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const { data, error } = await (supabaseAdmin.from("quiz_duplicate_reviews") as any)
+    const { data, error } = await ((supabaseAdmin as any).from("quiz_duplicate_reviews") as any)
       .select("*")
       .eq("status", "pending")
       .order("confidence", { ascending: false })
@@ -134,7 +134,7 @@ export const resolveDuplicateReview = createServerFn({ method: "POST" })
     await requireAdmin(context.supabase, context.userId);
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data: review, error: reviewError } = await (
-      supabaseAdmin.from("quiz_duplicate_reviews") as any
+      (supabaseAdmin as any).from("quiz_duplicate_reviews") as any
     )
       .select("*")
       .eq("id", data.reviewId)
@@ -154,7 +154,7 @@ export const resolveDuplicateReview = createServerFn({ method: "POST" })
         if (error) throw error;
       }
     }
-    const { error: updateError } = await (supabaseAdmin.from("quiz_duplicate_reviews") as any)
+    const { error: updateError } = await ((supabaseAdmin as any).from("quiz_duplicate_reviews") as any)
       .update({
         status: data.action === "dismiss" ? "dismissed" : "resolved",
         reviewed_at: new Date().toISOString(),
