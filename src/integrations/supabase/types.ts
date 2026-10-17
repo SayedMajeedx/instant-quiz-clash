@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.15"
+    PostgrestVersion: "14.17"
   }
   public: {
     Tables: {
@@ -32,6 +32,27 @@ export type Database = {
           deleted_by?: string | null
           library_id?: string
           title?: string
+        }
+        Relationships: []
+      }
+      ai_monthly_usage: {
+        Row: {
+          consumed_at: string
+          feature: string
+          month_start: string
+          user_id: string
+        }
+        Insert: {
+          consumed_at?: string
+          feature: string
+          month_start: string
+          user_id: string
+        }
+        Update: {
+          consumed_at?: string
+          feature?: string
+          month_start?: string
+          user_id?: string
         }
         Relationships: []
       }
@@ -126,6 +147,27 @@ export type Database = {
           name_en?: string | null
           slug?: string
           sort_order?: number | null
+        }
+        Relationships: []
+      }
+      daily_hosted_quiz_usage: {
+        Row: {
+          hosted_count: number
+          last_hosted_at: string
+          usage_date: string
+          user_id: string
+        }
+        Insert: {
+          hosted_count?: number
+          last_hosted_at?: string
+          usage_date?: string
+          user_id: string
+        }
+        Update: {
+          hosted_count?: number
+          last_hosted_at?: string
+          usage_date?: string
+          user_id?: string
         }
         Relationships: []
       }
@@ -373,6 +415,57 @@ export type Database = {
           },
         ]
       }
+      quiz_duplicate_reviews: {
+        Row: {
+          confidence: number
+          created_at: string
+          deleted_question_ids: string[]
+          fingerprint: string
+          id: string
+          kept_question_id: string | null
+          questions: Json
+          rationale: string
+          reviewed_at: string | null
+          reviewed_by: string | null
+          shared_fact: string
+          signals: Json
+          status: string
+          verdict: string
+        }
+        Insert: {
+          confidence: number
+          created_at?: string
+          deleted_question_ids?: string[]
+          fingerprint: string
+          id?: string
+          kept_question_id?: string | null
+          questions: Json
+          rationale?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          shared_fact?: string
+          signals?: Json
+          status?: string
+          verdict: string
+        }
+        Update: {
+          confidence?: number
+          created_at?: string
+          deleted_question_ids?: string[]
+          fingerprint?: string
+          id?: string
+          kept_question_id?: string | null
+          questions?: Json
+          rationale?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          shared_fact?: string
+          signals?: Json
+          status?: string
+          verdict?: string
+        }
+        Relationships: []
+      }
       quiz_play_stats: {
         Row: {
           created_at: string
@@ -445,6 +538,32 @@ export type Database = {
         }
         Relationships: []
       }
+      room_join_rate_windows: {
+        Row: {
+          attempts: number
+          room_id: string
+          window_start: string
+        }
+        Insert: {
+          attempts?: number
+          room_id: string
+          window_start: string
+        }
+        Update: {
+          attempts?: number
+          room_id?: string
+          window_start?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "room_join_rate_windows_room_id_fkey"
+            columns: ["room_id"]
+            isOneToOne: false
+            referencedRelation: "rooms"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       rooms: {
         Row: {
           advance_mode: string
@@ -507,75 +626,27 @@ export type Database = {
           },
         ]
       }
-      daily_hosted_quiz_usage: {
+      security_privileged_role_audit: {
         Row: {
-          hosted_count: number
-          last_hosted_at: string
-          usage_date: string
+          captured_at: string
+          email: string | null
+          previous_role: string
+          reason: string
           user_id: string
         }
         Insert: {
-          hosted_count?: number
-          last_hosted_at?: string
-          usage_date?: string
+          captured_at?: string
+          email?: string | null
+          previous_role: string
+          reason: string
           user_id: string
         }
         Update: {
-          hosted_count?: number
-          last_hosted_at?: string
-          usage_date?: string
+          captured_at?: string
+          email?: string | null
+          previous_role?: string
+          reason?: string
           user_id?: string
-        }
-        Relationships: []
-      }
-      quiz_duplicate_reviews: {
-        Row: {
-          confidence: number
-          created_at: string
-          deleted_question_ids: string[]
-          fingerprint: string
-          id: string
-          kept_question_id: string | null
-          questions: Json
-          rationale: string
-          reviewed_at: string | null
-          reviewed_by: string | null
-          shared_fact: string
-          signals: Json
-          status: string
-          verdict: string
-        }
-        Insert: {
-          confidence: number
-          created_at?: string
-          deleted_question_ids?: string[]
-          fingerprint: string
-          id?: string
-          kept_question_id?: string | null
-          questions: Json
-          rationale?: string
-          reviewed_at?: string | null
-          reviewed_by?: string | null
-          shared_fact?: string
-          signals?: Json
-          status?: string
-          verdict: string
-        }
-        Update: {
-          confidence?: number
-          created_at?: string
-          deleted_question_ids?: string[]
-          fingerprint?: string
-          id?: string
-          kept_question_id?: string | null
-          questions?: Json
-          rationale?: string
-          reviewed_at?: string | null
-          reviewed_by?: string | null
-          shared_fact?: string
-          signals?: Json
-          status?: string
-          verdict?: string
         }
         Relationships: []
       }
@@ -614,60 +685,6 @@ export type Database = {
           },
         ]
       }
-      user_subscriptions: {
-        Row: {
-          created_at: string
-          customer_email: string | null
-          expires_at: string | null
-          id: string
-          payhip_customer_id: string | null
-          payhip_subscription_id: string | null
-          plan_type: string
-          provider: string
-          provider_plan_id: string | null
-          provider_status: string | null
-          provider_subscription_id: string | null
-          started_at: string
-          status: string
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          created_at?: string
-          customer_email?: string | null
-          expires_at?: string | null
-          id?: string
-          payhip_customer_id?: string | null
-          payhip_subscription_id?: string | null
-          plan_type?: string
-          provider?: string
-          provider_plan_id?: string | null
-          provider_status?: string | null
-          provider_subscription_id?: string | null
-          started_at?: string
-          status?: string
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          created_at?: string
-          customer_email?: string | null
-          expires_at?: string | null
-          id?: string
-          payhip_customer_id?: string | null
-          payhip_subscription_id?: string | null
-          plan_type?: string
-          provider?: string
-          provider_plan_id?: string | null
-          provider_status?: string | null
-          provider_subscription_id?: string | null
-          started_at?: string
-          status?: string
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
       user_roles: {
         Row: {
           created_at: string
@@ -685,6 +702,48 @@ export type Database = {
           created_at?: string
           id?: string
           role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_subscriptions: {
+        Row: {
+          created_at: string
+          customer_email: string | null
+          expires_at: string | null
+          id: string
+          payhip_customer_id: string | null
+          payhip_subscription_id: string | null
+          plan_type: string
+          started_at: string
+          status: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          customer_email?: string | null
+          expires_at?: string | null
+          id?: string
+          payhip_customer_id?: string | null
+          payhip_subscription_id?: string | null
+          plan_type?: string
+          started_at?: string
+          status?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          customer_email?: string | null
+          expires_at?: string | null
+          id?: string
+          payhip_customer_id?: string | null
+          payhip_subscription_id?: string | null
+          plan_type?: string
+          started_at?: string
+          status?: string
+          updated_at?: string
           user_id?: string
         }
         Relationships: []
@@ -754,6 +813,7 @@ export type Database = {
       }
       archive_room: { Args: { p_room_id: string }; Returns: string | null }
       check_user_hosting_eligibility: { Args: never; Returns: Json }
+      claim_monthly_ai_usage: { Args: { p_feature: string }; Returns: boolean }
       create_custom_quiz_room: {
         Args: {
           p_advance_mode?: string
@@ -800,6 +860,14 @@ export type Database = {
         }[]
       }
       get_all_admin_quizzes: { Args: never; Returns: Json }
+      get_catalog_deleted_quizzes: {
+        Args: never
+        Returns: {
+          deleted_at: string
+          library_id: string
+          title: string
+        }[]
+      }
       get_room_by_code: {
         Args: { p_code: string }
         Returns: {
@@ -825,14 +893,6 @@ export type Database = {
           isOneToOne: false
           isSetofReturn: true
         }
-      }
-      get_catalog_deleted_quizzes: {
-        Args: never
-        Returns: {
-          deleted_at: string
-          library_id: string
-          title: string
-        }[]
       }
       has_role: {
         Args: {
@@ -860,30 +920,43 @@ export type Database = {
           is_correct: boolean
           player_id: string
           points_awarded: number
-          powerup: string
+          powerup: string | null
           question_id: string
           room_id: string
           streak_bonus: number
         }[]
+        SetofOptions: {
+          from: "*"
+          to: "answers"
+          isOneToOne: false
+          isSetofReturn: true
+        }
       }
       room_players: {
         Args: { p_player_id: string; p_room_id: string; p_token: string }
         Returns: {
           avatar_color: string
-          fifty_hidden: number[]
-          fifty_question_id: string
+          fifty_hidden: number[] | null
+          fifty_question_id: string | null
           id: string
           joined_at: string
           nickname: string
           room_id: string
-          team_index: number
+          team_index: number | null
           used_double: boolean
           used_fifty: boolean
         }[]
+        SetofOptions: {
+          from: "*"
+          to: "players"
+          isOneToOne: false
+          isSetofReturn: true
+        }
       }
       room_questions: {
         Args: { p_room_id: string }
         Returns: {
+          explanation: string
           id: string
           image_url: string
           options: Json
@@ -891,8 +964,6 @@ export type Database = {
           question_text: string
           question_type: string
           quiz_id: string
-          source_category: string
-          subcategory: string
           time_limit_seconds: number
         }[]
       }
@@ -987,12 +1058,12 @@ export type Tables<
   DefaultSchemaTableNameOrOptions extends
     | keyof (DefaultSchema["Tables"] & DefaultSchema["Views"])
     | { schema: keyof DatabaseWithoutInternals },
-  TableName extends DefaultSchemaTableNameOrOptions extends {
+  TableName extends (DefaultSchemaTableNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
     ? keyof (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
         DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])
-    : never = never,
+    : never) = never,
 > = DefaultSchemaTableNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
@@ -1016,11 +1087,11 @@ export type TablesInsert<
   DefaultSchemaTableNameOrOptions extends
     | keyof DefaultSchema["Tables"]
     | { schema: keyof DatabaseWithoutInternals },
-  TableName extends DefaultSchemaTableNameOrOptions extends {
+  TableName extends (DefaultSchemaTableNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
     ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
-    : never = never,
+    : never) = never,
 > = DefaultSchemaTableNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
@@ -1041,11 +1112,11 @@ export type TablesUpdate<
   DefaultSchemaTableNameOrOptions extends
     | keyof DefaultSchema["Tables"]
     | { schema: keyof DatabaseWithoutInternals },
-  TableName extends DefaultSchemaTableNameOrOptions extends {
+  TableName extends (DefaultSchemaTableNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
     ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
-    : never = never,
+    : never) = never,
 > = DefaultSchemaTableNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
@@ -1066,11 +1137,11 @@ export type Enums<
   DefaultSchemaEnumNameOrOptions extends
     | keyof DefaultSchema["Enums"]
     | { schema: keyof DatabaseWithoutInternals },
-  EnumName extends DefaultSchemaEnumNameOrOptions extends {
+  EnumName extends (DefaultSchemaEnumNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
     ? keyof DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"]
-    : never = never,
+    : never) = never,
 > = DefaultSchemaEnumNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
@@ -1083,11 +1154,11 @@ export type CompositeTypes<
   PublicCompositeTypeNameOrOptions extends
     | keyof DefaultSchema["CompositeTypes"]
     | { schema: keyof DatabaseWithoutInternals },
-  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+  CompositeTypeName extends (PublicCompositeTypeNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
     ? keyof DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
-    : never = never,
+    : never) = never,
 > = PublicCompositeTypeNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
