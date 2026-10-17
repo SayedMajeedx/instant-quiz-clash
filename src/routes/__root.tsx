@@ -132,8 +132,6 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const router = useRouter();
-  const pathname = router.state.location.pathname;
-  const isLiveGameScreen = pathname.startsWith("/play") || pathname.startsWith("/host/");
 
   useEffect(() => {
     const { data: sub } = supabase.auth.onAuthStateChange((event) => {
@@ -150,13 +148,6 @@ function RootComponent() {
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
         <Toaster position="top-center" theme="dark" />
-        {!isLiveGameScreen ? (
-          <div className="fixed bottom-3 left-4 z-40 flex items-center pointer-events-none">
-            <span className="pointer-events-auto flex items-center gap-1.5 rounded-full border border-white/20 bg-background/80 px-3.5 py-1.5 text-xs font-semibold text-muted-foreground shadow-lg backdrop-blur-md transition-all hover:text-foreground hover:border-primary/50">
-              ✨ Designed by Sayed
-            </span>
-          </div>
-        ) : null}
       </LanguageProvider>
     </QueryClientProvider>
   );

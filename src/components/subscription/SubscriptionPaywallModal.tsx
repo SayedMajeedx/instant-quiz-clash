@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useI18n } from "@/lib/i18n";
 import { startPayPalCheckout, type PaidPlan } from "@/lib/paypal";
+import { PLAN_PRICES } from "@/lib/pricing";
 
 interface SubscriptionPaywallModalProps {
   open: boolean;
@@ -19,12 +20,6 @@ interface SubscriptionPaywallModalProps {
   reason?: string;
 }
 
-// Displayed prices only. What PayPal charges is set by the PayPal plans
-// (PAYPAL_PLAN_ID_MONTHLY / PAYPAL_PLAN_ID_YEARLY); keep the two in sync.
-const PLAN_PRICES = {
-  monthly: { amount: "3", short: "3", currency: { ar: "دولار", en: "USD" } },
-  yearly: { amount: "30", short: "30", currency: { ar: "دولار", en: "USD" } },
-};
 
 export function SubscriptionPaywallModal({
   open,
