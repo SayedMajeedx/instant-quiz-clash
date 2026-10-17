@@ -2,7 +2,8 @@ import { recordQuizPlay } from "@/lib/quiz-stats.functions";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { ChevronRight, Play, Timer } from "lucide-react";
+import { AnswerShape } from "@/components/quiz/AnswerTile";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { cloneQuiz } from "@/lib/clone-quiz";
@@ -240,126 +241,107 @@ function QuizPreviewPage() {
   const displayTitle = quizMeta ? cleanQuizTitle(quizMeta.title) : "";
 
   return (
-    <main className="relative min-h-screen px-5 py-8 pb-28">
-      <AnimatedBg />
+    <main className="min-h-screen px-5 py-6 pb-32">
       <div className="mx-auto max-w-4xl">
-        {/* Top Header */}
         <header className="flex items-center justify-between gap-4">
-          <Link
-            to="/browse"
-            className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm flex items-center gap-2 hover:border-primary/50"
-          >
-            <span>←</span>
-            <span>مكتبة الكويزات</span>
+          <Link to="/browse" className="press flex items-center gap-2 rounded-xl bg-secondary px-4 py-2 font-semibold">
+            <ChevronRight className="size-4 ltr:rotate-180" aria-hidden />
+            مكتبة الكويزات
           </Link>
           <LanguageToggle />
         </header>
 
         {loading ? (
-          <div className="mt-16 text-center text-muted-foreground">{t("editor.loading")}</div>
+          <div className="mt-8 space-y-4" aria-busy="true" aria-label={t("editor.loading")}>
+            <div className="h-56 animate-pulse rounded-3xl bg-card" aria-hidden />
+            <div className="h-48 animate-pulse rounded-2xl bg-card" aria-hidden />
+            <div className="h-48 animate-pulse rounded-2xl bg-card" aria-hidden />
+          </div>
         ) : !quizMeta ? (
-          <div className="mt-16 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
+          <div className="mt-16 rounded-3xl bg-card p-10 text-center">
             <p className="font-display text-2xl">{t("preview.notFound")}</p>
-            <Link
-              to="/browse"
-              className="press mt-4 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
-            >
-              {t("nav.browse")}
+            <Link to="/browse" className="ledge ledge-blue mt-6">
+              <span className="ledge-face h-12 px-6 font-display text-lg">{t("nav.browse")}</span>
             </Link>
           </div>
         ) : (
           <>
-            {/* Quiz Info Card */}
-            <div className="mt-8 rounded-3xl border border-border bg-surface-gradient p-6 md:p-8 shadow-xl">
+            <div className="mt-6 rounded-3xl bg-card p-6 md:p-8">
               <div className="flex flex-wrap items-center justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  <span className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-sm font-bold text-primary">
-                    {quizMeta.category || "عام"}
-                  </span>
-                </div>
-                <span className="text-sm font-bold text-muted-foreground">
+                <span className="rounded-full bg-secondary px-4 py-1 font-semibold">{quizMeta.category || "عام"}</span>
+                <span className="text-muted-foreground">
                   {t("quizzes.questionCount", { count: quizMeta.question_count })}
                 </span>
               </div>
-
-              <h1 className="mt-4 font-display text-3xl md:text-5xl leading-tight">{displayTitle}</h1>
-              <p className="mt-2 text-sm text-muted-foreground">
-                اطّلع على الأسئلة والخيارات قبل البدء — الإجابات الصحيحة مخفية حتى لا تُفسد اللعبة.
+              <h1 className="mt-4 font-display text-3xl leading-tight md:text-5xl">{displayTitle}</h1>
+              <p className="mt-2 text-muted-foreground">
+                اطّلع على الأسئلة والخيارات قبل البدء. الإجابات الصحيحة مخفية حتى لا تُفسد اللعبة.
               </p>
-
-              <div className="mt-6 flex flex-wrap items-center gap-4">
-                <button
-                  type="button"
-                  disabled={cloning}
-                  onClick={() => void handleCloneAndHost()}
-                  className="press rounded-2xl bg-gradient-hero px-8 py-4 font-display text-xl text-primary-foreground shadow-chunky disabled:opacity-50 flex items-center gap-2"
-                >
-                  <span>✨</span>
-                  <span>{cloning ? "جارٍ التجهيز…" : "ابدأ اللعب بهذا الكويز"}</span>
-                </button>
-              </div>
-            </div>
-
-            {/* Questions List (Neutral Preview) */}
-            <div className="mt-8 space-y-6">
-              <h2 className="font-display text-2xl text-gradient">
-                أسئلة الكويز ({questions.length})
-              </h2>
-
-              {questions.map((q, idx) => (
-                <div
-                  key={q.id || idx}
-                  className="rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/30"
-                >
-                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/40 pb-3">
-                    <span className="font-display text-lg text-primary">
-                      سؤال {idx + 1} من {questions.length}
-                    </span>
-                    <div className="flex items-center gap-2 text-xs">
-                      <span className="rounded-full border border-border bg-background/40 px-2.5 py-0.5 font-semibold text-muted-foreground">
-                        ⏱️ {q.time_limit_seconds}ث
-                      </span>
-                    </div>
-                  </div>
-
-                  <h3 className="mt-4 font-display text-xl md:text-2xl leading-relaxed text-foreground">
-                    {q.question_text}
-                  </h3>
-
-                  {/* Neutral Options Display — Zero Correct Answer Indication */}
-                  <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                    {q.options.map((opt, optIdx) => (
-                      <div
-                        key={optIdx}
-                        className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/30 p-3.5 text-start transition-all hover:bg-background/50"
-                      >
-                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-border/80 bg-surface-gradient font-display text-sm text-muted-foreground">
-                          {optionLabels[optIdx] || optIdx + 1}
-                        </span>
-                        <span className="font-display text-base text-foreground/90 leading-snug">
-                          {opt}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Bottom Floating Action Bar */}
-            <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-xl rounded-3xl border border-primary/30 bg-background/80 backdrop-blur-xl p-4 shadow-2xl flex items-center justify-between gap-4">
-              <div>
-                <p className="font-display text-lg truncate max-w-[200px] sm:max-w-xs">{displayTitle}</p>
-                <p className="text-xs text-muted-foreground">{t("quizzes.questionCount", { count: quizMeta.question_count })}</p>
-              </div>
               <button
                 type="button"
                 disabled={cloning}
                 onClick={() => void handleCloneAndHost()}
-                className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-base text-primary-foreground shadow-chunky disabled:opacity-50 shrink-0"
+                className="ledge ledge-blue mt-6 disabled:opacity-60"
               >
-                {cloning ? "جارٍ التجهيز…" : "ابدأ اللعب"}
+                <span className="ledge-face h-14 px-8 font-display text-xl">
+                  <Play className="size-5" aria-hidden />
+                  {cloning ? "جارٍ التجهيز…" : "ابدأ اللعب بهذا الكويز"}
+                </span>
               </button>
+            </div>
+
+            <h2 className="mt-10 font-display text-2xl">أسئلة الكويز ({questions.length})</h2>
+            <ol className="mt-4 space-y-4">
+              {questions.map((q, idx) => (
+                <li key={q.id || idx} className="rounded-2xl bg-card p-5 md:p-6">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
+                    <span className="font-semibold text-sun">
+                      سؤال {idx + 1} من {questions.length}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Timer className="size-4" aria-hidden />
+                      {q.time_limit_seconds} ث
+                    </span>
+                  </div>
+                  <h3 className="mt-3 font-display text-xl leading-relaxed md:text-2xl">{q.question_text}</h3>
+                  {/* Options shown neutrally: same treatment for every option, nothing marks the answer. */}
+                  <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
+                    {q.options.map((opt, optIdx) => (
+                      <li key={optIdx} className="flex items-center gap-3 rounded-xl bg-background p-3">
+                        <span
+                          className="grid size-9 shrink-0 place-items-center rounded-lg"
+                          style={{ backgroundColor: `var(--answer-${optIdx + 1})` }}
+                        >
+                          <AnswerShape index={optIdx} className="size-4" />
+                        </span>
+                        <span className="font-semibold text-muted-foreground">{optionLabels[optIdx] || optIdx + 1}</span>
+                        <span className="leading-snug">{opt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ol>
+
+            <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background">
+              <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-5 py-3">
+                <div className="min-w-0">
+                  <p className="truncate font-display text-lg">{displayTitle}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {t("quizzes.questionCount", { count: quizMeta.question_count })}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  disabled={cloning}
+                  onClick={() => void handleCloneAndHost()}
+                  className="ledge ledge-blue shrink-0 disabled:opacity-60"
+                >
+                  <span className="ledge-face h-12 px-6 font-display text-lg">
+                    {cloning ? "جارٍ التجهيز…" : "ابدأ اللعب"}
+                  </span>
+                </button>
+              </div>
             </div>
           </>
         )}

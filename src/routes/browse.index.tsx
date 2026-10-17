@@ -1,15 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { ChevronLeft, Search, X } from "lucide-react";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { QuizCard, type PublicQuiz } from "@/components/quiz/QuizCard";
+import { Logo } from "@/components/quiz/Logo";
+import { SiteFooter } from "@/components/quiz/SiteFooter";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
-import {
-  cleanQuizTitle,
-  getCategoryIcon,
-  type CategoryInfo,
-} from "@/lib/browse-helpers";
+import { cleanQuizTitle, getCategoryMark } from "@/lib/browse-helpers";
 
 import { getAllAdminQuizzes, getAllAdminCategories, type AdminCategoryItem } from "@/lib/admin-data-helper";
 
@@ -43,11 +41,14 @@ function BrowseLandingPage() {
     void (async () => {
       setLoading(true);
       try {
-        const [quizzesRes, categoriesRes, statsRes] = await Promise.allSettled([
-          getAllAdminQuizzes(),
-          getAllAdminCategories(),
+        // One catalogue fetch (counts only), reused for the category totals.
+        const [quizzesRes, statsRes] = await Promise.allSettled([
+          getAllAdminQuizzes({ withQuestions: false }),
           supabase.from("quiz_play_stats").select("source_quiz_id, play_count, last_played_at"),
         ]);
+        const categoriesRes = await Promise.allSettled([
+          getAllAdminCategories(quizzesRes.status === "fulfilled" ? quizzesRes.value : []),
+        ]).then(([result]) => result!);
 
         const adminQuizzes = quizzesRes.status === "fulfilled" ? quizzesRes.value : [];
         const adminCategories = categoriesRes.status === "fulfilled" ? categoriesRes.value : [];
@@ -88,7 +89,6 @@ function BrowseLandingPage() {
     return categoriesList.map((c) => ({
       id: c.id,
       name: c.name,
-      icon: getCategoryIcon(c.name),
       count: c.quiz_count,
       subcategories: c.subcategories || [],
     }));
@@ -141,176 +141,148 @@ function BrowseLandingPage() {
   const hasMoreSearch = searchVisibleCount < searchResults.length;
 
   return (
-    <main className="relative min-h-screen px-5 py-8 pb-24">
-      <AnimatedBg />
-      <div className="mx-auto max-w-6xl">
-        {/* Header */}
-        <header className="flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <Link to="/" className="font-display text-3xl">
-              {t("brand.quiz")}<span className="text-gradient">{t("brand.clash")}</span>
-            </Link>
-            <h1 className="mt-2 font-display text-3xl sm:text-5xl text-gradient">مكتبة الكويزات الجاهزة</h1>
-            <p className="mt-1 text-sm text-muted-foreground">
-              استكشف مئات الكويزات الممتعة والمجهزة للعب المباشر مع أصدقائك وعائلتك!
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            <Link
-              to="/quizzes"
-              className="press rounded-2xl border border-border bg-surface-gradient px-4 py-2 font-display text-sm hover:border-primary/50"
-            >
-              {t("nav.quizzes")}
-            </Link>
-            <LanguageToggle />
-          </div>
-        </header>
+    <div className="flex min-h-screen flex-col">
+      <header className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-5">
+        <Link to="/">
+          <Logo />
+        </Link>
+        <div className="flex items-center gap-2">
+          <Link to="/quizzes" className="press rounded-xl bg-secondary px-4 py-2 text-sm font-semibold">
+            {t("nav.quizzes")}
+          </Link>
+          <LanguageToggle />
+        </div>
+      </header>
 
-        {/* Global Search Bar */}
-        <div className="mt-8">
-          <div className="relative mx-auto max-w-3xl">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="🔍 ابحث عن كويز أو موضوع (مثال: ون بيس، جغرافيا، تاريخ، الدوري الإنجليزي...)"
-              className="w-full rounded-3xl border border-primary/40 bg-background/80 px-6 py-4 pe-12 font-display text-base text-foreground placeholder:text-muted-foreground shadow-glow backdrop-blur-xl transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
-            />
-            {searchQuery ? (
-              <button
-                type="button"
-                onClick={() => setSearchQuery("")}
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-muted-foreground hover:text-foreground"
-              >
-                ✕ مسح
-              </button>
-            ) : null}
-          </div>
+      <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-20">
+        <h1 className="mt-4 font-display text-4xl sm:text-5xl">مكتبة الكويزات</h1>
+        <p className="mt-2 text-lg text-muted-foreground">
+          كويزات عربية جاهزة للعب المباشر مع أصدقائك وعائلتك.
+        </p>
+
+        <div className="relative mt-8 max-w-3xl">
+          <Search className="pointer-events-none absolute inset-y-0 start-4 my-auto size-5 text-muted-foreground" aria-hidden />
+          <input
+            type="search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            aria-label="ابحث في المكتبة"
+            placeholder="ابحث عن كويز أو موضوع: ون بيس، جغرافيا، تاريخ…"
+            className="h-14 w-full rounded-2xl border-2 border-border bg-card ps-12 pe-12 text-lg outline-none transition-colors duration-150 placeholder:text-muted-foreground focus:border-sun"
+          />
+          {searchQuery ? (
+            <button
+              type="button"
+              onClick={() => setSearchQuery("")}
+              aria-label="مسح البحث"
+              className="press absolute inset-y-0 end-3 my-auto grid size-9 place-items-center rounded-full bg-secondary"
+            >
+              <X className="size-4" aria-hidden />
+            </button>
+          ) : null}
         </div>
 
-        {/* SEARCH RESULTS VIEW (When query is active) */}
         {searchQuery.trim() ? (
-          <div className="mt-10">
-            <div className="flex items-center justify-between border-b border-border/40 pb-4">
+          <section className="mt-10">
+            <div className="flex flex-wrap items-baseline justify-between gap-3">
               <h2 className="font-display text-2xl">
-                نتائج البحث عن «{searchQuery}»{" "}
-                <span className="text-sm font-normal text-muted-foreground">({searchResults.length} كويز)</span>
+                نتائج «{searchQuery}»{" "}
+                <span className="text-base font-normal text-muted-foreground">({searchResults.length})</span>
               </h2>
-              <button
-                type="button"
-                onClick={() => setSearchQuery("")}
-                className="press text-sm text-primary hover:underline font-semibold"
-              >
+              <button type="button" onClick={() => setSearchQuery("")} className="font-semibold text-sun hover:underline">
                 العودة إلى الأقسام
               </button>
             </div>
 
             {searchResults.length === 0 ? (
-              <div className="mt-10 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
-                <p className="font-display text-2xl">لم نجد كويزات تطابق «{searchQuery}»</p>
-                <p className="mt-2 text-sm text-muted-foreground">جرب البحث بكلمات أخرى أو تصفح الأقسام الرئيسية</p>
+              <div className="mt-6 rounded-2xl bg-card p-10 text-center">
+                <p className="font-display text-2xl">لا توجد كويزات تطابق «{searchQuery}»</p>
+                <p className="mt-2 text-muted-foreground">جرّب كلمات أخرى أو تصفّح الأقسام.</p>
               </div>
             ) : (
               <>
-                <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {visibleSearchResults.map((quiz) => (
                     <QuizCard key={quiz.id} quiz={quiz} />
                   ))}
                 </div>
-
-                {/* Pagination */}
-                <div className="mt-10 flex flex-col items-center justify-center gap-3">
-                  <p className="text-xs font-semibold text-muted-foreground">
-                    عرض {visibleSearchResults.length} من أصل {searchResults.length} كويز
+                <div className="mt-10 flex flex-col items-center gap-3">
+                  <p className="text-sm text-muted-foreground">
+                    {visibleSearchResults.length} من {searchResults.length}
                   </p>
                   {hasMoreSearch ? (
                     <button
                       type="button"
                       onClick={() => setSearchVisibleCount((v) => v + BATCH_SIZE)}
-                      className="press rounded-2xl bg-gradient-hero px-8 py-3.5 font-display text-lg text-primary-foreground shadow-chunky hover:scale-[1.02]"
+                      className="ledge ledge-panel"
                     >
-                      عرض المزيد (+12 كويز) ⬇️
+                      <span className="ledge-face h-12 px-8 font-display text-lg">عرض المزيد</span>
                     </button>
                   ) : null}
                 </div>
               </>
             )}
-          </div>
+          </section>
         ) : (
-          /* STANDARD TWO-STAGE LANDING VIEW */
           <>
-            {/* ROW 1: Most Popular / Featured Row */}
             <section className="mt-10">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="font-display text-2xl text-gradient flex items-center gap-2">
-                  <span>🔥</span>
-                  <span>الأحدث والأكثر شهرة</span>
-                </h2>
-                <span className="text-xs font-bold text-sun border border-sun/40 bg-sun/10 px-3 py-1 rounded-full">
-                  جاهزة للعب فوراً
-                </span>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 [&>div]:rounded-2xl [&>div]:p-4 [&_h2]:text-lg [&_h2]:mt-2 [&>div>div:last-child]:mt-3">
-                {popularQuizzes.map((quiz) => (
-                  <QuizCard key={quiz.id} quiz={quiz} />
-                ))}
+              <h2 className="font-display text-2xl">الأحدث والأكثر لعباً</h2>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {loading
+                  ? Array.from({ length: 4 }, (_, i) => <CardSkeleton key={i} />)
+                  : popularQuizzes.map((quiz) => <QuizCard key={quiz.id} quiz={quiz} />)}
               </div>
             </section>
 
-            {/* ROW 2: Category Grid */}
             <section className="mt-14">
-              <div className="flex items-center justify-between mb-6 border-b border-border/40 pb-4">
-                <div>
-                  <h2 className="font-display text-2xl sm:text-3xl text-gradient flex items-center gap-2">
-                    <span>📚</span>
-                    <span>الأقسام الرئيسية</span>
-                  </h2>
-                  <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
-                    اختر القسم المناسب للوصول إلى كافة الكويزات التابعة له
-                  </p>
-                </div>
-                <span className="text-xs font-bold text-muted-foreground border border-border bg-background/50 px-3 py-1.5 rounded-full">
-                  إجمالي الأقسام: {categories.length}
-                </span>
+              <div className="flex flex-wrap items-baseline justify-between gap-3">
+                <h2 className="font-display text-2xl">الأقسام</h2>
+                {!loading ? <span className="text-muted-foreground">{categories.length} قسم</span> : null}
               </div>
-
-              {loading ? (
-                <div className="mt-12 text-center text-muted-foreground">{t("editor.loading")}</div>
-              ) : (
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {categories.map((cat) => (
-                    <Link
-                      key={cat.id}
-                      to="/browse/$category"
-                      params={{ category: encodeURIComponent(cat.name) }}
-                      className="press group flex items-center justify-between rounded-3xl border border-border/80 bg-surface-gradient/80 p-6 shadow-md transition-all hover:border-primary/60 hover:bg-background/90 hover:shadow-glow hover:-translate-y-1"
-                    >
-                      <div className="flex items-center gap-4">
-                        <span className="grid size-14 place-items-center shrink-0 rounded-2xl border border-primary/30 bg-primary/10 text-3xl shadow-sm transition-transform group-hover:scale-110">
-                          {cat.icon}
-                        </span>
-                        <div>
-                          <h3 className="font-display text-xl sm:text-2xl text-foreground group-hover:text-primary transition-colors">
-                            {cat.name}
-                          </h3>
-                          <p className="mt-1 text-xs font-bold text-sun">
-                            {cat.count} {cat.count === 1 ? "كويز" : "كويزات"}
-                          </p>
-                        </div>
-                      </div>
-
-                      <span className="font-display text-2xl text-muted-foreground transition-transform group-hover:translate-x-[-4px] group-hover:text-primary">
-                        ←
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {loading
+                  ? Array.from({ length: 6 }, (_, i) => (
+                      <div key={i} className="h-24 animate-pulse rounded-2xl bg-card" aria-hidden />
+                    ))
+                  : categories.map((cat) => {
+                      const mark = getCategoryMark(cat.name);
+                      const MarkIcon = mark.Icon;
+                      return (
+                        <Link
+                          key={cat.id}
+                          to="/browse/$category"
+                          params={{ category: encodeURIComponent(cat.name) }}
+                          className="press flex items-center gap-4 rounded-2xl bg-card p-5 transition-colors duration-150 hover:bg-secondary"
+                        >
+                          <span className={`grid size-12 shrink-0 place-items-center rounded-xl ${mark.bg} ${mark.fg}`}>
+                            <MarkIcon className="size-6" aria-hidden />
+                          </span>
+                          <span className="min-w-0 flex-1">
+                            <span className="block truncate font-display text-xl">{cat.name}</span>
+                            <span className="text-sm text-muted-foreground">{cat.count} كويز</span>
+                          </span>
+                          <ChevronLeft className="size-5 shrink-0 text-muted-foreground ltr:rotate-180" aria-hidden />
+                        </Link>
+                      );
+                    })}
+              </div>
             </section>
           </>
         )}
-      </div>
-    </main>
+      </main>
+
+      <SiteFooter />
+    </div>
+  );
+}
+
+/** Placeholder with the same footprint as a QuizCard, so the grid does not jump on load. */
+function CardSkeleton() {
+  return (
+    <div className="h-[220px] animate-pulse rounded-2xl bg-card p-5" aria-hidden>
+      <div className="size-10 rounded-xl bg-secondary" />
+      <div className="mt-4 h-6 w-3/4 rounded bg-secondary" />
+      <div className="mt-3 h-4 w-1/2 rounded bg-secondary" />
+    </div>
   );
 }

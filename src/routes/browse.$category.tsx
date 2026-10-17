@@ -1,15 +1,15 @@
 import { recordQuizPlay } from "@/lib/quiz-stats.functions";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { QuizCard, type PublicQuiz } from "@/components/quiz/QuizCard";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import {
   cleanQuizTitle,
-  getCategoryIcon,
+  getCategoryMark,
   getDifficultyDetails,
+  getDifficultyStyle,
 } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
@@ -19,7 +19,8 @@ import {
   getAllAdminQuizzes,
   type AdminSubcategoryItem,
 } from "@/lib/admin-data-helper";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, Eye, Play, Search, X } from "lucide-react";
+import { SiteFooter } from "@/components/quiz/SiteFooter";
 
 export const Route = createFileRoute("/browse/$category")({
   head: ({ params }) => {
@@ -56,7 +57,6 @@ export function CategoryBreadcrumb({
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-muted-foreground flex-wrap dir-rtl">
       <Link to="/" className="hover:text-primary transition-colors flex items-center gap-1.5">
-        <span>🏠</span>
         <span>الرئيسية</span>
       </Link>
       <span className="text-muted-foreground/40">←</span>
@@ -125,7 +125,7 @@ export function SubcategoryChips({
       .trim();
 
   return (
-    <div className="relative my-2 rounded-3xl border border-border/60 bg-background/35 px-2 py-2 shadow-sm backdrop-blur-md">
+    <div className="relative my-2 rounded-2xl bg-card px-2 py-2">
       <div
         ref={scrollerRef}
         className="w-full overflow-x-auto px-1 py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
@@ -136,19 +136,19 @@ export function SubcategoryChips({
           type="button"
           onClick={() => onSelectSubcategory("all")}
           className={cn(
-            "press rounded-2xl px-4 py-2 text-xs sm:text-sm font-bold transition-all flex items-center gap-2 cursor-pointer border",
+            "press flex cursor-pointer items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-colors duration-150",
             selectedSubcategory === "all"
-              ? "bg-gradient-hero text-primary-foreground border-primary/50 shadow-glow scale-[1.02]"
-              : "bg-background/80 text-muted-foreground border-border/80 hover:border-primary/40 hover:text-foreground"
+              ? "bg-sun text-on-sun"
+              : "bg-secondary text-foreground"
           )}
         >
           <span>الكل</span>
           <span
             className={cn(
-              "rounded-full px-2 py-0.5 text-[10px] font-extrabold",
+              "rounded-full px-2 py-0.5 text-xs font-bold tabular-nums",
               selectedSubcategory === "all"
-                ? "bg-white/20 text-white"
-                : "bg-muted text-muted-foreground"
+                ? "bg-black/15"
+                : "bg-background text-muted-foreground"
             )}
           >
             {quizzes.length}
@@ -169,19 +169,19 @@ export function SubcategoryChips({
               type="button"
               onClick={() => onSelectSubcategory(sub.name)}
               className={cn(
-                "press rounded-2xl px-4 py-2 text-xs sm:text-sm font-bold transition-all flex items-center gap-2 cursor-pointer border",
+                "press flex cursor-pointer items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-colors duration-150",
                 isSelected
-                  ? "bg-gradient-hero text-primary-foreground border-primary/50 shadow-glow scale-[1.02]"
-                  : "bg-background/80 text-muted-foreground border-border/80 hover:border-primary/40 hover:text-foreground"
+                  ? "bg-sun text-on-sun"
+                  : "bg-secondary text-foreground"
               )}
             >
               <span>{sub.name}</span>
               <span
                 className={cn(
-                  "rounded-full px-2 py-0.5 text-[10px] font-extrabold",
+                  "rounded-full px-2 py-0.5 text-xs font-bold tabular-nums",
                   isSelected
-                    ? "bg-white/20 text-white"
-                    : "bg-muted text-muted-foreground"
+                    ? "bg-black/15"
+                    : "bg-background text-muted-foreground"
                 )}
               >
                 {count}
@@ -200,7 +200,7 @@ export function SubcategoryChips({
             type="button"
             aria-label="عرض التصنيفات السابقة"
             onClick={() => scrollChips(-1)}
-            className="press absolute left-2 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full border border-primary/40 bg-background/95 text-primary shadow-lg backdrop-blur hover:bg-primary hover:text-primary-foreground"
+            className="press absolute left-2 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full bg-secondary text-foreground"
           >
             <ChevronLeft className="size-5" />
           </button>
@@ -208,7 +208,7 @@ export function SubcategoryChips({
             type="button"
             aria-label="عرض التصنيفات التالية"
             onClick={() => scrollChips(1)}
-            className="press absolute right-2 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full border border-primary/40 bg-background/95 text-primary shadow-lg backdrop-blur hover:bg-primary hover:text-primary-foreground"
+            className="press absolute right-2 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full bg-secondary text-foreground"
           >
             <ChevronRight className="size-5" />
           </button>
@@ -225,7 +225,7 @@ function CarouselQuizCard({ quiz }: { quiz: PublicQuiz }) {
   const [isCloning, setIsCloning] = useState(false);
 
   const cleanedTitle = cleanQuizTitle(quiz.title);
-  const diffInfo = getDifficultyDetails(quiz);
+  const diffInfo = getDifficultyStyle(quiz);
 
   async function handleClone() {
     setIsCloning(true);
@@ -258,45 +258,42 @@ function CarouselQuizCard({ quiz }: { quiz: PublicQuiz }) {
   }
 
   return (
-    <div className="shrink-0 w-[150px] sm:w-[210px] flex flex-col justify-between rounded-3xl border border-border/80 bg-surface-gradient p-3.5 sm:p-4 shadow-md transition-all hover:border-primary/50 hover:shadow-glow">
+    <div className="flex w-[160px] shrink-0 flex-col justify-between rounded-2xl bg-card p-4 sm:w-[220px]">
       <div>
         {/* Difficulty Badge */}
         <div className="flex items-center justify-between gap-1">
-          <span
-            className={`rounded-full border px-2 py-0.5 text-[10px] sm:text-xs font-bold flex items-center gap-1 ${diffInfo.badgeClass}`}
-          >
-            <span className="text-[10px]">{diffInfo.icon}</span>
-            <span>{diffInfo.label}</span>
+          <span className="flex items-center gap-1.5 rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold">
+            <span className={`size-2 rounded-full ${diffInfo.dot}`} aria-hidden />
+            {diffInfo.label}
           </span>
         </div>
 
         {/* Title */}
-        <h3 className="mt-2.5 font-display text-xs sm:text-base leading-tight text-foreground line-clamp-2 min-h-[2.2rem] sm:min-h-[2.6rem]">
+        <h3 className="mt-3 line-clamp-2 min-h-[2.6rem] font-display text-base leading-tight sm:text-lg">
           {cleanedTitle}
         </h3>
 
         {/* Subcategory & Questions */}
-        <p className="mt-1.5 text-[10px] sm:text-xs font-medium text-muted-foreground line-clamp-1">
+        <p className="mt-1.5 line-clamp-1 text-sm text-muted-foreground">
           {quiz.subcategory || quiz.category || "عام"} · {quiz.question_count} أسئلة
         </p>
       </div>
 
       {/* Buttons */}
-      <div className="mt-3 flex flex-col gap-1.5">
-        <button
-          type="button"
-          onClick={handleClone}
-          disabled={isCloning}
-          className="press w-full rounded-xl bg-gradient-hero py-1.5 sm:py-2 text-[11px] sm:text-xs font-bold text-primary-foreground shadow-sm hover:scale-[1.02] disabled:opacity-50 cursor-pointer"
-        >
-          {isCloning ? "جارٍ التحضير..." : "العب الآن 🚀"}
+      <div className="mt-4 flex flex-col gap-2">
+        <button type="button" onClick={handleClone} disabled={isCloning} className="ledge ledge-blue w-full disabled:opacity-60">
+          <span className="ledge-face h-10 font-display text-sm">
+            <Play className="size-4" aria-hidden />
+            {isCloning ? "جارٍ التحضير…" : "العب الآن"}
+          </span>
         </button>
         <Link
           to="/browse/$quizId/preview"
           params={{ quizId: quiz.id }}
-          className="press w-full text-center rounded-xl border border-border py-1 text-[10px] sm:text-[11px] font-bold text-muted-foreground hover:bg-muted hover:text-foreground"
+          className="press flex h-9 items-center justify-center gap-1.5 rounded-xl bg-secondary text-sm font-semibold"
         >
-          شاهد الأسئلة 👁️
+          <Eye className="size-4" aria-hidden />
+          شاهد الأسئلة
         </Link>
       </div>
     </div>
@@ -316,12 +313,12 @@ function MoreSubcategoryCard({
     <button
       type="button"
       onClick={onSelect}
-      className="shrink-0 w-[140px] sm:w-[170px] flex flex-col items-center justify-center rounded-3xl border border-dashed border-primary/50 bg-primary/5 p-4 sm:p-6 shadow-sm hover:bg-primary/10 hover:border-primary transition-all group cursor-pointer"
+      className="press flex w-[140px] shrink-0 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-border p-4 sm:w-[170px] sm:p-6"
     >
-      <span className="grid size-10 sm:size-12 place-items-center rounded-2xl bg-primary/20 text-primary text-xl sm:text-2xl font-black group-hover:scale-110 transition-transform">
+      <span className="grid size-12 place-items-center rounded-xl bg-secondary font-display text-2xl">
         +{count}
       </span>
-      <span className="mt-3 text-xs sm:text-sm font-extrabold text-primary group-hover:underline flex items-center gap-1">
+      <span className="mt-3 flex items-center gap-1 text-sm font-semibold text-sun">
         <span>عرض الكل</span>
         <span>←</span>
       </span>
@@ -350,11 +347,8 @@ export function QuizSectionRow({
       {/* Section Header */}
       <div className="flex items-center justify-between mb-3 px-1">
         <div className="flex items-center gap-2">
-          <h2 className="font-display text-lg sm:text-2xl text-foreground flex items-center gap-2">
-            <span className="inline-block size-2 rounded-full bg-primary animate-pulse" />
-            <span>{title}</span>
-          </h2>
-          <span className="rounded-full bg-primary/10 border border-primary/30 px-2.5 py-0.5 text-xs font-extrabold text-primary">
+          <h2 className="font-display text-xl sm:text-2xl">{title}</h2>
+          <span className="rounded-full bg-secondary px-2.5 py-0.5 text-sm font-semibold tabular-nums">
             {quizzes.length} كويز
           </span>
         </div>
@@ -362,7 +356,7 @@ export function QuizSectionRow({
         <button
           type="button"
           onClick={onViewAll}
-          className="press text-xs sm:text-sm font-bold text-primary hover:underline flex items-center gap-1 cursor-pointer"
+          className="press flex cursor-pointer items-center gap-1 text-sm font-semibold text-sun hover:underline"
         >
           <span>عرض الكل</span>
           <span>←</span>
@@ -409,16 +403,20 @@ function CategoryDetailPage() {
   // Pagination state
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
 
-  const icon = getCategoryIcon(category);
+  const mark = getCategoryMark(category);
+  const MarkIcon = mark.Icon;
 
   useEffect(() => {
     void (async () => {
       setLoading(true);
       try {
-        const [catsRes, quizzesRes] = await Promise.allSettled([
-          getAllAdminCategories(),
-          getAllAdminQuizzes(),
-        ]);
+        // One catalogue fetch (counts only), reused for the category list.
+        const quizzesRes = await Promise.allSettled([getAllAdminQuizzes({ withQuestions: false })]).then(
+          ([result]) => result!,
+        );
+        const catsRes = await Promise.allSettled([
+          getAllAdminCategories(quizzesRes.status === "fulfilled" ? quizzesRes.value : []),
+        ]).then(([result]) => result!);
 
         const adminCats = catsRes.status === "fulfilled" ? catsRes.value : [];
         const adminQuizzes = quizzesRes.status === "fulfilled" ? quizzesRes.value : [];
@@ -586,8 +584,8 @@ function CategoryDetailPage() {
   }, [selectedSubcategory, subcategories, quizzes, category]);
 
   return (
-    <main className="relative min-h-screen px-4 sm:px-6 py-8 pb-24">
-      <AnimatedBg />
+    <div className="flex min-h-screen flex-col">
+    <main className="flex-1 px-4 py-8 pb-24 sm:px-6">
       <div className="mx-auto max-w-6xl">
         {/* Top Header & Breadcrumb */}
         <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -600,21 +598,23 @@ function CategoryDetailPage() {
         </header>
 
         {/* Category Main Header Card */}
-        <div className="mt-6 rounded-3xl border border-primary/40 bg-gradient-to-br from-primary/10 via-surface-gradient to-background p-6 md:p-8 shadow-glow backdrop-blur-xl">
+        <div className="mt-6 rounded-3xl bg-card p-6 md:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-3.5">
-              <span className="text-4xl sm:text-5xl">{icon}</span>
+            <div className="flex items-center gap-4">
+              <span className={`grid size-14 shrink-0 place-items-center rounded-2xl ${mark.bg} ${mark.fg}`}>
+                <MarkIcon className="size-7" aria-hidden />
+              </span>
               <div>
-                <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl text-gradient">{category}</h1>
-                <p className="mt-1 text-xs sm:text-sm text-muted-foreground max-w-xl">
+                <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl">{category}</h1>
+                <p className="mt-1 max-w-xl text-muted-foreground">
                   استكشف أفضل الكويزات والأسئلة التفاعلية في قسم {category} والعبها مباشرة مع أصدقائك!
                 </p>
               </div>
             </div>
 
             {/* Total Count Badge */}
-            <div className="rounded-2xl border border-sun/40 bg-sun/10 px-4 py-2 font-display text-xs sm:text-sm text-sun shadow-sm">
-              إجمالي الكويزات: <span className="font-extrabold text-base sm:text-lg tabular-nums">{quizzes.length} كويز</span>
+            <div className="rounded-2xl bg-background px-4 py-2 text-muted-foreground">
+              <span className="font-display text-2xl text-foreground tabular-nums">{quizzes.length}</span> كويز
             </div>
           </div>
         </div>
@@ -634,35 +634,36 @@ function CategoryDetailPage() {
         {/* Search & Sort Controls Bar */}
         <div className="mt-4 flex flex-col gap-3 md:flex-row md:items-center">
           <div className="relative flex-1">
-            <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-muted-foreground text-sm">
-              🔎
-            </span>
+            <Search className="pointer-events-none absolute inset-y-0 start-4 my-auto size-5 text-muted-foreground" aria-hidden />
             <input
               type="search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={`ابحث داخل قسم ${category}...`}
-              className="w-full rounded-2xl border border-border bg-background/60 py-2.5 pr-10 pl-4 font-semibold text-xs sm:text-sm text-foreground outline-none placeholder:text-muted-foreground focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+              aria-label={`ابحث داخل قسم ${category}`}
+              className="h-12 w-full rounded-xl border-2 border-border bg-card ps-12 pe-12 outline-none transition-colors duration-150 placeholder:text-muted-foreground focus:border-sun"
             />
             {search ? (
               <button
                 type="button"
                 onClick={() => setSearch("")}
-                className="absolute inset-y-0 left-3 my-auto h-7 rounded-lg border border-border px-2 text-xs text-muted-foreground hover:text-foreground"
+                aria-label="مسح البحث"
+                className="press absolute inset-y-0 end-2 my-auto grid size-8 place-items-center rounded-full bg-secondary"
               >
-                مسح
+                <X className="size-4" aria-hidden />
               </button>
             ) : null}
           </div>
 
           {/* Sort dropdown */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-muted-foreground whitespace-nowrap">ترتيب حسب:</span>
+            <label htmlFor="category-sort" className="whitespace-nowrap font-semibold text-muted-foreground">ترتيب حسب</label>
             <div className="relative">
               <select
+                id="category-sort"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="w-full appearance-none rounded-2xl border border-border bg-background/60 py-2 pr-4 pl-9 text-xs sm:text-sm font-semibold text-foreground outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/30"
+                className="h-12 w-full appearance-none rounded-xl border-2 border-border bg-card ps-4 pe-10 font-semibold outline-none transition-colors duration-150 focus:border-sun"
               >
                 <option value="newest">الأحدث أولاً</option>
                 <option value="popular">الأكثر لعباً</option>
@@ -670,24 +671,21 @@ function CategoryDetailPage() {
                 <option value="questions">عدد الأسئلة (الأقل → الأكثر)</option>
                 <option value="alpha">أبجدياً</option>
               </select>
-              <span className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-xs text-muted-foreground">
-                ▼
-              </span>
+              <ChevronDown className="pointer-events-none absolute inset-y-0 end-3 my-auto size-4 text-muted-foreground" aria-hidden />
             </div>
           </div>
         </div>
 
         {/* Collapsible Scoped Difficulty Filter Bar */}
-        <div className="mt-3 rounded-2xl border border-border/80 bg-surface-gradient p-3.5 sm:p-4 shadow-sm">
+        <div className="mt-3 rounded-2xl bg-card p-4">
           <div className="flex items-center justify-between">
             <button
               type="button"
               onClick={() => setFilterExpanded((v) => !v)}
-              className="press font-display text-xs sm:text-sm flex items-center gap-2 text-foreground"
+              className="press flex items-center gap-2 font-semibold"
             >
-              <span>⚙️</span>
               <span>تصفية حسب المستوى</span>
-              <span className="text-[11px] text-muted-foreground">
+              <span className="text-sm text-muted-foreground">
                 ({selectedDiff === "all" ? "جميع المستويات" : "تحديد مخصص"})
               </span>
             </button>
@@ -695,32 +693,32 @@ function CategoryDetailPage() {
             <button
               type="button"
               onClick={() => setFilterExpanded((v) => !v)}
-              className="md:hidden press rounded-xl border border-border px-2.5 py-1 text-[11px] font-semibold text-muted-foreground"
+              className="press rounded-lg bg-secondary px-3 py-1.5 text-sm font-semibold md:hidden"
             >
-              {filterExpanded ? "إخفاء ▲" : "تحديد ▼"}
+              {filterExpanded ? "إخفاء" : "تحديد"}
             </button>
           </div>
 
-          <div className={cn("mt-3 space-y-3 pt-2.5 border-t border-border/40", !filterExpanded && "hidden md:block")}>
+          <div className={cn("mt-3 border-t border-border pt-3", !filterExpanded && "hidden md:block")}>
             <div className="flex flex-wrap items-center gap-4">
-              <span className="text-xs font-bold text-muted-foreground">📊 المستوى:</span>
+              <span className="font-semibold text-muted-foreground">المستوى</span>
               {[
-                { id: "all", label: "الكل" },
-                { id: "easy", label: "🟢 سهل" },
-                { id: "medium", label: "🟡 متوسط" },
-                { id: "hard", label: "🔴 صعب" },
+                { id: "all", label: "الكل", dot: "" },
+                { id: "easy", label: "سهل", dot: "bg-answer-4" },
+                { id: "medium", label: "متوسط", dot: "bg-answer-3" },
+                { id: "hard", label: "صعب", dot: "bg-answer-1" },
               ].map((diff) => (
                 <button
                   key={diff.id}
                   type="button"
                   onClick={() => setSelectedDiff(diff.id)}
+                  aria-pressed={selectedDiff === diff.id}
                   className={cn(
-                    "press rounded-full border px-3 py-1 text-xs font-semibold cursor-pointer",
-                    selectedDiff === diff.id
-                      ? "border-primary bg-primary/20 text-primary ring-1 ring-primary"
-                      : "border-border bg-background/40 text-muted-foreground hover:text-foreground"
+                    "press flex cursor-pointer items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-semibold transition-colors duration-150",
+                    selectedDiff === diff.id ? "bg-sun text-on-sun" : "bg-secondary text-foreground",
                   )}
                 >
+                  {diff.dot ? <span className={cn("size-2 rounded-full", diff.dot)} aria-hidden /> : null}
                   {diff.label}
                 </button>
               ))}
@@ -730,17 +728,21 @@ function CategoryDetailPage() {
 
         {/* MAIN CONTENT AREA */}
         {loading ? (
-          <div className="mt-12 text-center text-muted-foreground font-semibold">{t("editor.loading")}</div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-busy="true" aria-label={t("editor.loading")}>
+            {Array.from({ length: 8 }, (_, i) => (
+              <div key={i} className="h-[220px] animate-pulse rounded-2xl bg-card" aria-hidden />
+            ))}
+          </div>
         ) : filteredQuizzes.length === 0 ? (
-          <div className="mt-10 rounded-3xl border border-border bg-surface-gradient p-10 text-center">
-            <p className="font-display text-xl sm:text-2xl">لا توجد كويزات تطابق هذا البحث أو المستوى حالياً</p>
+          <div className="mt-10 rounded-2xl bg-card p-10 text-center">
+            <p className="font-display text-2xl">لا توجد كويزات تطابق هذا البحث أو المستوى حالياً</p>
             {selectedSubcategory !== "all" && (
               <button
                 type="button"
                 onClick={() => setSelectedSubcategory("all")}
-                className="mt-4 rounded-xl bg-primary px-4 py-2 text-xs font-bold text-primary-foreground"
+                className="press mt-4 rounded-xl bg-secondary px-4 py-2 font-semibold"
               >
-                عرض كل الكويزات ↺
+                عرض كل الكويزات
               </button>
             )}
           </div>
@@ -787,9 +789,9 @@ function CategoryDetailPage() {
                 <button
                   type="button"
                   onClick={() => setVisibleCount((v) => v + BATCH_SIZE)}
-                  className="press rounded-2xl bg-gradient-hero px-8 py-3 font-display text-base text-primary-foreground shadow-chunky hover:scale-[1.02]"
+                  className="ledge ledge-panel"
                 >
-                  عرض المزيد (+12 كويز) ⬇️
+                  <span className="ledge-face h-12 px-8 font-display text-lg">عرض المزيد</span>
                 </button>
               ) : null}
             </div>
@@ -797,5 +799,7 @@ function CategoryDetailPage() {
         )}
       </div>
     </main>
+    <SiteFooter />
+    </div>
   );
 }

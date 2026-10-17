@@ -409,9 +409,15 @@ export async function deleteLocalSubcategory(subId: string, subName?: string) {
 }
 
 /**
- * Fetch ALL quizzes across DB and QUIZ_LIBRARY
+ * Fetch ALL quizzes across DB and QUIZ_LIBRARY.
+ *
+ * `withQuestions: false` asks the database only for question counts instead of every
+ * question row, for catalogue pages that show counts. Admin screens keep the default.
  */
-export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
+export async function getAllAdminQuizzes(
+  options: { withQuestions?: boolean } = {},
+): Promise<AdminQuizItem[]> {
+  const withQuestions = options.withQuestions ?? true;
   const { QUIZ_LIBRARY } = await import("@/lib/quiz-library");
   const overrides = getLocalQuizOverrides();
   const dbQuizzes: AdminQuizItem[] = [];
@@ -438,7 +444,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
 
   try {
     const { data, error } = await (supabase.from("quizzes") as any)
-      .select("*, questions(*)")
+      .select(withQuestions ? "*, questions(*)" : "*, questions(count)")
       .order("created_at", { ascending: false });
 
     if (!error && Array.isArray(data)) {
@@ -448,10 +454,19 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
           (libraryQuiz) =>
             libraryQuiz.id === q.id || cleanTitle(libraryQuiz.title) === cleanTitle(q.title),
         );
-        const resolvedQuestions =
-          Array.isArray(q.questions) && q.questions.length > 0
+        const dbQuestionCount = withQuestions
+          ? (Array.isArray(q.questions) ? q.questions.length : 0)
+          : Number(q.questions?.[0]?.count ?? 0);
+        const resolvedQuestions = withQuestions
+          ? Array.isArray(q.questions) && q.questions.length > 0
             ? q.questions
-            : matchingLibraryQuiz?.questions || [];
+            : matchingLibraryQuiz?.questions || []
+          : [];
+        const resolvedCount = withQuestions
+          ? resolvedQuestions.length
+          : dbQuestionCount > 0
+            ? dbQuestionCount
+            : matchingLibraryQuiz?.questions?.length ?? 0;
         if (q.id) dbIds.add(q.id);
         if (q.title) dbTitles.add(cleanTitle(q.title));
 
@@ -465,7 +480,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
           quiz_difficulty: q.quiz_difficulty === "challenge" ? "challenge" : q.quiz_difficulty === "easy" ? "easy" : "standard",
           is_public: ov.is_public !== undefined ? ov.is_public : (q.is_public ?? true),
           created_at: q.created_at || new Date().toISOString(),
-          question_count: resolvedQuestions.length,
+          question_count: resolvedCount,
           user_id: q.user_id,
           questions: resolvedQuestions,
           source: "db",
@@ -500,7 +515,7 @@ export async function getAllAdminQuizzes(): Promise<AdminQuizItem[]> {
       created_at: q.created_at || new Date().toISOString(),
       question_count: Array.isArray(q.questions) ? q.questions.length : 0,
       user_id: q.user_id || "system",
-      questions: q.questions || [],
+      questions: withQuestions ? q.questions || [] : [],
       source: "library",
     };
   });

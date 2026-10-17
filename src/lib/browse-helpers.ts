@@ -1,3 +1,25 @@
+import {
+  BookOpen,
+  Clapperboard,
+  Car,
+  Cpu,
+  FlaskConical,
+  Gamepad2,
+  Globe2,
+  Landmark,
+  Lightbulb,
+  Palette,
+  PenLine,
+  Puzzle,
+  Rocket,
+  ScrollText,
+  Sigma,
+  Swords,
+  Trophy,
+  UtensilsCrossed,
+  type LucideIcon,
+} from "lucide-react";
+
 export type CategoryInfo = {
   id: string;
   name: string;
@@ -89,4 +111,52 @@ export function getDifficultyDetails(q: { difficulty?: string | null; quiz_diffi
     icon: "🟡",
     badgeClass: "bg-amber-500/15 text-amber-400 border-amber-500/40",
   };
+}
+
+/* ---------- Redesign: category marks and difficulty badges without emoji ---------- */
+
+
+// Order matters: "رياضيات" (maths) must match before "رياض" (sports).
+const CATEGORY_MARKS: Array<[string[], LucideIcon]> = [
+  [["رياضيات", "Math"], Sigma],
+  [["سيارات", "مركبات", "Car"], Car],
+  [["أهل البيت", "إسلام", "دين", "قرآن"], BookOpen],
+  [["أنمي", "Anime"], Swords],
+  [["ألعاب فيديو", "Game"], Gamepad2],
+  [["تاريخ", "History"], ScrollText],
+  [["جغراف", "Geo"], Globe2],
+  [["معالم", "عواصم"], Landmark],
+  [["علوم", "طب", "Science"], FlaskConical],
+  [["رياض", "Sport"], Trophy],
+  [["فنون", "ثقافة وفن"], Palette],
+  [["لغة", "أدب", "عرب"], PenLine],
+  [["ألغاز", "منطق"], Puzzle],
+  [["أفلام", "مسلسل", "Movie"], Clapperboard],
+  [["تكنولوجيا", "تقن", "Tech"], Cpu],
+  [["فضاء", "Space"], Rocket],
+  [["مطابخ", "طبخ"], UtensilsCrossed],
+];
+
+const MARK_COLORS = [
+  { bg: "bg-answer-2", fg: "text-white" },
+  { bg: "bg-answer-4", fg: "text-white" },
+  { bg: "bg-answer-1", fg: "text-white" },
+  { bg: "bg-answer-3", fg: "text-on-sun" },
+];
+
+/** An icon and one of the four answer colours for a category, stable per name. */
+export function getCategoryMark(catName: string): { Icon: LucideIcon; bg: string; fg: string } {
+  const name = catName || "";
+  const match = CATEGORY_MARKS.find(([keys]) => keys.some((key) => name.includes(key)));
+  let hash = 0;
+  for (const ch of name) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+  const color = MARK_COLORS[hash % MARK_COLORS.length]!;
+  return { Icon: match ? match[1] : Lightbulb, ...color };
+}
+
+/** Flat difficulty badge: the dot carries the level, the label says it in words. */
+export function getDifficultyStyle(q: { difficulty?: string | null; quiz_difficulty?: string | null; title?: string }) {
+  const { label } = getDifficultyDetails(q);
+  const dot = label === "سهل" ? "bg-answer-4" : label === "صعب" ? "bg-answer-1" : "bg-answer-3";
+  return { label, dot };
 }
