@@ -25,7 +25,6 @@ import {
   type CursorPhase,
   type Room,
 } from "@/lib/quizclash";
-import { getSyncedNow } from "@/lib/server-time";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
@@ -192,14 +191,15 @@ function HostRoom() {
 
   async function exitGame() {
     if (!room) return;
-    await supabase
-      .from("rooms")
-      .update({ status: "ended" } as never)
-      .eq("id", room.id);
+    // Ends the room and records the standings so far.
+    archivedRef.current = true;
+    const { error } = await supabase.rpc("archive_room", { p_room_id: room.id });
+    if (error) console.error("Failed to end room:", error);
     void navigate({ to: "/quizzes" });
   }
 
-  // Guaranteed Room Advancement with direct UPDATE fallback to prevent room freezes
+  // advance_room is idempotent (it only moves from the expected stage), so
+  // the auto-advance effect and the watchdog below can both call it safely.
   const refresh = state.refresh;
   const isAdvancingRef = useRef(false);
   const advance = useCallback(
@@ -207,58 +207,13 @@ function HostRoom() {
       if (!roomId || isAdvancingRef.current) return;
       isAdvancingRef.current = true;
       try {
-        const nowIso = new Date(getSyncedNow()).toISOString();
-        let directPayload: Record<string, unknown> = {};
-
-        if (fromPhase === "question") {
-          directPayload = { cursor_phase: "reveal", phase_started_at: nowIso };
-        } else if (fromPhase === "reveal") {
-          if (fromIndex >= questions.length - 1) {
-            directPayload = { status: "ended", phase_started_at: nowIso };
-          } else {
-            directPayload = { cursor_phase: "board", phase_started_at: nowIso };
-          }
-        } else if (fromPhase === "board") {
-          if (fromIndex >= questions.length - 1) {
-            directPayload = { status: "ended", phase_started_at: nowIso };
-          } else {
-            directPayload = {
-              cursor_index: fromIndex + 1,
-              cursor_phase: "question",
-              phase_started_at: nowIso,
-            };
-          }
-        }
-
-        // 1. Try RPC first
-        const { data: rpcRes, error: rpcErr } = await supabase.rpc("advance_room", {
+        const { data, error } = await supabase.rpc("advance_room", {
           p_room_id: roomId,
           p_expect_index: fromIndex,
           p_expect_phase: fromPhase,
         });
-
-        // 2. Fallback to direct DB update if RPC didn't advance or threw phase mismatch
-        const rpcAdvanced =
-          !rpcErr &&
-          rpcRes &&
-          (rpcRes.cursor_phase !== fromPhase ||
-            rpcRes.cursor_index !== fromIndex ||
-            rpcRes.status !== "active");
-
-        if (rpcAdvanced) {
-          setLocalRoomPatch((prev) => ({ ...prev, ...(rpcRes as unknown as Partial<Room>) }));
-        } else if (Object.keys(directPayload).length > 0) {
-          console.warn(
-            "RPC advance_room mismatch fallback -> applying direct update",
-            directPayload,
-          );
-          await supabase
-            .from("rooms")
-            .update(directPayload as never)
-            .eq("id", roomId);
-          setLocalRoomPatch((prev) => ({ ...prev, ...directPayload }));
-        }
-
+        if (error) throw error;
+        if (data) setLocalRoomPatch((prev) => ({ ...prev, ...(data as unknown as Partial<Room>) }));
         await refresh();
       } catch (e) {
         console.error("Failed to advance room:", e);
@@ -266,7 +221,7 @@ function HostRoom() {
         isAdvancingRef.current = false;
       }
     },
-    [roomId, questions.length, refresh],
+    [roomId, refresh],
   );
 
   // Snapshot final standings once the room is over so they survive cleanup.
@@ -416,7 +371,7 @@ function HostRoom() {
     setAssigning(pid);
     const next = current === null ? 0 : (current + 1) % room.team_count;
     setLocalPlayerTeams((prev) => ({ ...prev, [pid]: next }));
-    await supabase.from("players").update({ team_index: next }).eq("id", pid);
+    await supabase.rpc("set_player_team", { p_player_id: pid, p_team_index: next });
     await refresh();
     setAssigning(null);
   }
@@ -432,10 +387,7 @@ function HostRoom() {
 
     await Promise.all(
       list.map((p, i) =>
-        supabase
-          .from("players")
-          .update({ team_index: i % room.team_count })
-          .eq("id", p.id),
+        supabase.rpc("set_player_team", { p_player_id: p.id, p_team_index: i % room.team_count }),
       ),
     );
     await refresh();

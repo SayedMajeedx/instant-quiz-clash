@@ -14,17 +14,28 @@ export function playerKey(code: string) {
   return `quizclash:player:${code.toUpperCase()}`;
 }
 
-export function storedPlayerId(code: string): string | null {
-  if (typeof window === "undefined") return null;
-  return window.localStorage.getItem(playerKey(code));
+function tokenKey(code: string) {
+  return `quizclash:player-token:${code.toUpperCase()}`;
 }
 
-export function storePlayerId(code: string, id: string) {
-  window.localStorage.setItem(playerKey(code), id);
+export type PlayerSession = { playerId: string; token: string };
+
+/** The player's id plus the secret token join_room issued; both are needed to play. */
+export function storedPlayerSession(code: string): PlayerSession | null {
+  if (typeof window === "undefined") return null;
+  const playerId = window.localStorage.getItem(playerKey(code));
+  const token = window.localStorage.getItem(tokenKey(code));
+  return playerId && token ? { playerId, token } : null;
+}
+
+export function storePlayerSession(code: string, session: PlayerSession) {
+  window.localStorage.setItem(playerKey(code), session.playerId);
+  window.localStorage.setItem(tokenKey(code), session.token);
 }
 
 export function clearStoredPlayer(code: string) {
   if (typeof window !== "undefined") {
     window.localStorage.removeItem(playerKey(code));
+    window.localStorage.removeItem(tokenKey(code));
   }
 }

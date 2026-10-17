@@ -25,7 +25,8 @@ export function useIsAdmin() {
           .maybeSingle();
 
         const role = (profile as any)?.role;
-        const adminState = role === "admin" || role === "super_admin" || role === "owner";
+        // Must match public.is_admin(), which the database enforces.
+        const adminState = role === "admin";
         if (mounted) {
           setIsAdmin(adminState);
           setLoading(false);

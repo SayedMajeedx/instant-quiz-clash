@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import { Check, Sparkles, Zap, ShieldCheck, Crown } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
+import { Check, Sparkles, ShieldCheck, Crown, Loader2 } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -10,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useI18n } from "@/lib/i18n";
-import { supabase } from "@/integrations/supabase/client";
+import { startPayPalCheckout, type PaidPlan } from "@/lib/paypal";
 
 interface SubscriptionPaywallModalProps {
   open: boolean;
@@ -18,10 +19,11 @@ interface SubscriptionPaywallModalProps {
   reason?: string;
 }
 
-// Configurable Payhip Product Links (connected to actual Payhip membership products)
-export const PAYHIP_CONFIG = {
-  monthlyProductUrl: "https://payhip.com/order?link=hP2Fr&pricing_plan=xABmKPdKW1",
-  yearlyProductUrl: "https://payhip.com/order?link=hP2Fr&pricing_plan=lNzM4b8gW7",
+// Displayed prices only. What PayPal charges is set by the PayPal plans
+// (PAYPAL_PLAN_ID_MONTHLY / PAYPAL_PLAN_ID_YEARLY); keep the two in sync.
+const PLAN_PRICES = {
+  monthly: { amount: "1.200", short: "1.2", currency: { ar: "د.ب", en: "BHD" } },
+  yearly: { amount: "10.000", short: "10", currency: { ar: "د.ب", en: "BHD" } },
 };
 
 export function SubscriptionPaywallModal({
@@ -30,62 +32,34 @@ export function SubscriptionPaywallModal({
   reason,
 }: SubscriptionPaywallModalProps) {
   const { lang } = useI18n();
-  const [selectedPlan, setSelectedPlan] = useState<"monthly" | "yearly">("yearly");
-  const [userEmail, setUserEmail] = useState<string>("");
-  const [userId, setUserId] = useState<string>("");
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    async function loadUser() {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (user) {
-        setUserEmail(user.email || "");
-        setUserId(user.id);
-      }
-    }
-    if (open) void loadUser();
-  }, [open]);
-
-  // Load Payhip.js script for seamless in-app overlay checkout
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const existing = document.getElementById("payhip-js");
-    if (!existing) {
-      const script = document.createElement("script");
-      script.id = "payhip-js";
-      script.src = "https://payhip.com/payhip.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
-
-  function handleCheckout(plan: "monthly" | "yearly") {
-    setLoading(true);
-    const baseUrl =
-      plan === "yearly"
-        ? PAYHIP_CONFIG.yearlyProductUrl
-        : PAYHIP_CONFIG.monthlyProductUrl;
-
-    const url = new URL(baseUrl);
-    if (userEmail) url.searchParams.set("email", userEmail);
-    if (userId) url.searchParams.set("custom[user_id]", userId);
-
-    // If Payhip overlay is available, trigger it, otherwise open secure checkout
-    if (typeof window !== "undefined" && (window as any).Payhip?.openModal) {
-      try {
-        (window as any).Payhip.openModal(url.toString());
-        setLoading(false);
-        return;
-      } catch {
-        // fallback
-      }
-    }
-
-    window.open(url.toString(), "_blank", "noopener,noreferrer");
-    setLoading(false);
-  }
+  const [selectedPlan, setSelectedPlan] = useState<PaidPlan>("yearly");
+  const [pendingPlan, setPendingPlan] = useState<PaidPlan | null>(null);
 
   const isAr = lang === "ar";
+  const currency = (plan: PaidPlan) => PLAN_PRICES[plan].currency[isAr ? "ar" : "en"];
+
+  async function handleCheckout(plan: PaidPlan) {
+    if (pendingPlan) return;
+    setPendingPlan(plan);
+    try {
+      const result = await startPayPalCheckout(plan);
+      if ("alreadySubscribed" in result) {
+        setPendingPlan(null);
+        toast.success(isAr ? "اشتراكك فعّال بالفعل." : "You already have an active subscription.");
+        onOpenChange(false);
+        return;
+      }
+      // Full-page redirect (the button stays busy): PayPal sends the user
+      // back to /subscription/return.
+      window.location.assign(result.approveUrl);
+    } catch (err) {
+      setPendingPlan(null);
+      console.error("PayPal checkout failed:", err);
+      toast.error(
+        isAr ? "تعذر بدء الدفع عبر PayPal. حاول مرة أخرى." : "Could not start PayPal checkout. Please try again.",
+      );
+    }
+  }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -130,10 +104,10 @@ export function SubscriptionPaywallModal({
               </div>
               <div className="mt-3 flex items-baseline gap-1">
                 <span className="text-3xl md:text-4xl font-extrabold text-foreground">
-                  1.200
+                  {PLAN_PRICES.monthly.amount}
                 </span>
                 <span className="text-sm text-muted-foreground font-medium">
-                  {isAr ? "د.ب / شهرياً" : "BHD / month"}
+                  {currency("monthly")} {isAr ? "/ شهرياً" : "/ month"}
                 </span>
               </div>
               <ul className="mt-4 space-y-2 text-xs md:text-sm text-muted-foreground">
@@ -157,10 +131,14 @@ export function SubscriptionPaywallModal({
                 e.stopPropagation();
                 handleCheckout("monthly");
               }}
+              disabled={pendingPlan !== null}
               variant={selectedPlan === "monthly" ? "default" : "outline"}
               className="mt-6 w-full rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold"
             >
-              {isAr ? "اشترك شهرياً (1.2 د.ب)" : "Subscribe Monthly (1.2 BHD)"}
+              {pendingPlan === "monthly" && <Loader2 className="h-4 w-4 animate-spin" />}
+              {isAr
+                ? `اشترك شهرياً (${PLAN_PRICES.monthly.short} ${currency("monthly")})`
+                : `Subscribe Monthly (${PLAN_PRICES.monthly.short} ${currency("monthly")})`}
             </Button>
           </div>
 
@@ -186,15 +164,15 @@ export function SubscriptionPaywallModal({
                   {isAr ? "الباقة السنوية" : "Yearly Pro"}
                 </span>
                 <Badge variant="outline" className="text-xs border-amber-500/40 text-amber-300">
-                  {isAr ? "دفعة واحدة" : "1 Year Pass"}
+                  {isAr ? "تجديد سنوي" : "Billed Yearly"}
                 </Badge>
               </div>
               <div className="mt-3 flex items-baseline gap-1">
                 <span className="text-3xl md:text-4xl font-extrabold text-foreground">
-                  10.000
+                  {PLAN_PRICES.yearly.amount}
                 </span>
                 <span className="text-sm text-muted-foreground font-medium">
-                  {isAr ? "د.ب / سنوياً" : "BHD / year"}
+                  {currency("yearly")} {isAr ? "/ سنوياً" : "/ year"}
                 </span>
               </div>
               <ul className="mt-4 space-y-2 text-xs md:text-sm text-muted-foreground">
@@ -218,9 +196,13 @@ export function SubscriptionPaywallModal({
                 e.stopPropagation();
                 handleCheckout("yearly");
               }}
+              disabled={pendingPlan !== null}
               className="mt-6 w-full rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black font-bold shadow-md shadow-amber-500/20"
             >
-              {isAr ? "احصل على العرض السنوي (10 د.ب)" : "Get Yearly Pass (10 BHD)"}
+              {pendingPlan === "yearly" && <Loader2 className="h-4 w-4 animate-spin" />}
+              {isAr
+                ? `اشترك سنوياً (${PLAN_PRICES.yearly.short} ${currency("yearly")})`
+                : `Subscribe Yearly (${PLAN_PRICES.yearly.short} ${currency("yearly")})`}
             </Button>
           </div>
         </div>
@@ -230,8 +212,8 @@ export function SubscriptionPaywallModal({
           <ShieldCheck className="h-4 w-4 text-purple-400 shrink-0" />
           <span>
             {isAr
-              ? "دفع آمن 100% عبر Payhip · يتجدد الكويز المجاني تلقائياً كل 24 ساعة لجميع الحسابات."
-              : "100% Secure payment powered by Payhip · Free quiz resets automatically every 24 hours."}
+              ? "دفع آمن عبر PayPal · يمكنك الإلغاء في أي وقت · يتجدد الكويز المجاني تلقائياً كل 24 ساعة."
+              : "Secure payment with PayPal · Cancel anytime · Free quiz resets automatically every 24 hours."}
           </span>
         </div>
       </DialogContent>

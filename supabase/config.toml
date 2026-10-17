@@ -1,1 +1,13 @@
 project_id = "rplxgxgfehjmrsipbfnb"
+
+# PayPal calls the webhook without a Supabase session; it verifies PayPal's
+# signature itself.
+[functions.paypal-webhook]
+verify_jwt = false
+
+# Verifies the caller's session itself with auth.getUser().
+[functions.paypal-subscription]
+verify_jwt = false
+
+[functions.payhip-webhook]
+verify_jwt = false

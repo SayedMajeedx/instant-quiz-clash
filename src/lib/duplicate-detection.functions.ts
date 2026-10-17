@@ -2,12 +2,10 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
-/* Supabase's generated client does not know the review table until its migration is applied. */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 async function requireAdmin(supabase: any, userId: string) {
   const { data } = await supabase.from("profiles").select("role").eq("id", userId).maybeSingle();
-  if (!["admin", "super_admin", "owner"].includes(String(data?.role ?? "")))
+  // Must match public.is_admin(), which the database enforces.
+  if (data?.role !== "admin")
     throw new Error("Admin access required");
 }
 

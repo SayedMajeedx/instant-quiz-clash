@@ -4,13 +4,28 @@ import { supabase } from "@/integrations/supabase/client";
 export type SubscriptionEligibility = {
   allowed: boolean;
   is_subscribed: boolean;
-  plan: "free" | "monthly" | "yearly" | "lifetime" | "admin";
+  plan: "free" | "monthly" | "yearly" | "lifetime" | "custom" | "admin";
   quota_remaining: number | null;
+  status?: "active" | "cancelled";
+  provider?: "paypal" | "payhip" | "manual";
   expires_at?: string | null;
   reason?: string;
   usage_date?: string;
 };
 
+/** Room creation fails with this when a free host has used today's quiz. */
+export function isDailyLimitError(error: { message?: string } | null | undefined): boolean {
+  return Boolean(error?.message?.includes("daily_limit_reached"));
+}
+
+// Every mounted useSubscription() refetches when any of them refreshes, so
+// the badge updates after a room is created elsewhere on the page.
+const listeners = new Set<() => Promise<void>>();
+
+/**
+ * Display-only view of the hosting quota. The database enforces it when a
+ * room is created, so a failed lookup here only affects what the UI shows.
+ */
 export function useSubscription() {
   const [eligibility, setEligibility] = useState<SubscriptionEligibility | null>(null);
   const [loading, setLoading] = useState(true);
@@ -21,7 +36,9 @@ export function useSubscription() {
       setLoading(true);
       setError(null);
 
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         setEligibility({
           allowed: false,
@@ -34,45 +51,28 @@ export function useSubscription() {
       }
 
       const { data, error: rpcError } = await supabase.rpc("check_user_hosting_eligibility");
-      if (rpcError) {
-        console.warn("Eligibility check RPC fallback:", rpcError);
-        // Resilient fallback for newly initialized accounts
-        setEligibility({
-          allowed: true,
-          is_subscribed: false,
-          plan: "free",
-          quota_remaining: 1,
-        });
-        return;
-      }
-
+      if (rpcError) throw rpcError;
       setEligibility(data as unknown as SubscriptionEligibility);
-    } catch (err: any) {
+    } catch (err) {
       console.error("Failed to load subscription status:", err);
-      setError(err?.message || "Failed to load subscription");
+      setError(err instanceof Error ? err.message : "Failed to load subscription");
     } finally {
       setLoading(false);
     }
   }, []);
 
-  const claimDailyQuiz = useCallback(async (): Promise<boolean> => {
-    try {
-      const { data, error: rpcError } = await supabase.rpc("claim_daily_hosted_quiz");
-      if (rpcError) {
-        console.error("Failed to claim daily quiz:", rpcError);
-        return false;
-      }
-      await fetchEligibility();
-      return true;
-    } catch (err) {
-      console.error("Error claiming daily quiz:", err);
-      return false;
-    }
-  }, [fetchEligibility]);
-
   useEffect(() => {
     void fetchEligibility();
+    const listener = () => fetchEligibility();
+    listeners.add(listener);
+    return () => {
+      listeners.delete(listener);
+    };
   }, [fetchEligibility]);
+
+  const refresh = useCallback(async () => {
+    await Promise.all([...listeners].map((listener) => listener()));
+  }, []);
 
   return {
     eligibility,
@@ -82,7 +82,6 @@ export function useSubscription() {
     allowed: eligibility?.allowed ?? true,
     loading,
     error,
-    refresh: fetchEligibility,
-    claimDailyQuiz,
+    refresh,
   };
 }

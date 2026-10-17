@@ -452,13 +452,16 @@ export type Database = {
           created_at: string
           cursor_index: number
           cursor_phase: string
+          host_id: string | null
           id: string
           phase_started_at: string | null
           quiz_id: string
           started_at: string | null
           status: string
+          team_colors: Json
           team_count: number
           team_mode: string
+          team_names: Json
         }
         Insert: {
           advance_mode?: string
@@ -466,13 +469,16 @@ export type Database = {
           created_at?: string
           cursor_index?: number
           cursor_phase?: string
+          host_id?: string | null
           id?: string
           phase_started_at?: string | null
           quiz_id: string
           started_at?: string | null
           status?: string
+          team_colors?: Json
           team_count?: number
           team_mode?: string
+          team_names?: Json
         }
         Update: {
           advance_mode?: string
@@ -480,13 +486,16 @@ export type Database = {
           created_at?: string
           cursor_index?: number
           cursor_phase?: string
+          host_id?: string | null
           id?: string
           phase_started_at?: string | null
           quiz_id?: string
           started_at?: string | null
           status?: string
+          team_colors?: Json
           team_count?: number
           team_mode?: string
+          team_names?: Json
         }
         Relationships: [
           {
@@ -497,6 +506,78 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      daily_hosted_quiz_usage: {
+        Row: {
+          hosted_count: number
+          last_hosted_at: string
+          usage_date: string
+          user_id: string
+        }
+        Insert: {
+          hosted_count?: number
+          last_hosted_at?: string
+          usage_date?: string
+          user_id: string
+        }
+        Update: {
+          hosted_count?: number
+          last_hosted_at?: string
+          usage_date?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      quiz_duplicate_reviews: {
+        Row: {
+          confidence: number
+          created_at: string
+          deleted_question_ids: string[]
+          fingerprint: string
+          id: string
+          kept_question_id: string | null
+          questions: Json
+          rationale: string
+          reviewed_at: string | null
+          reviewed_by: string | null
+          shared_fact: string
+          signals: Json
+          status: string
+          verdict: string
+        }
+        Insert: {
+          confidence: number
+          created_at?: string
+          deleted_question_ids?: string[]
+          fingerprint: string
+          id?: string
+          kept_question_id?: string | null
+          questions: Json
+          rationale?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          shared_fact?: string
+          signals?: Json
+          status?: string
+          verdict: string
+        }
+        Update: {
+          confidence?: number
+          created_at?: string
+          deleted_question_ids?: string[]
+          fingerprint?: string
+          id?: string
+          kept_question_id?: string | null
+          questions?: Json
+          rationale?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          shared_fact?: string
+          signals?: Json
+          status?: string
+          verdict?: string
+        }
+        Relationships: []
       }
       subcategories: {
         Row: {
@@ -532,6 +613,60 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      user_subscriptions: {
+        Row: {
+          created_at: string
+          customer_email: string | null
+          expires_at: string | null
+          id: string
+          payhip_customer_id: string | null
+          payhip_subscription_id: string | null
+          plan_type: string
+          provider: string
+          provider_plan_id: string | null
+          provider_status: string | null
+          provider_subscription_id: string | null
+          started_at: string
+          status: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          customer_email?: string | null
+          expires_at?: string | null
+          id?: string
+          payhip_customer_id?: string | null
+          payhip_subscription_id?: string | null
+          plan_type?: string
+          provider?: string
+          provider_plan_id?: string | null
+          provider_status?: string | null
+          provider_subscription_id?: string | null
+          started_at?: string
+          status?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          customer_email?: string | null
+          expires_at?: string | null
+          id?: string
+          payhip_customer_id?: string | null
+          payhip_subscription_id?: string | null
+          plan_type?: string
+          provider?: string
+          provider_plan_id?: string | null
+          provider_status?: string | null
+          provider_subscription_id?: string | null
+          started_at?: string
+          status?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
       }
       user_roles: {
         Row: {
@@ -599,13 +734,16 @@ export type Database = {
           created_at: string
           cursor_index: number
           cursor_phase: string
+          host_id: string | null
           id: string
           phase_started_at: string | null
           quiz_id: string
           started_at: string | null
           status: string
+          team_colors: Json
           team_count: number
           team_mode: string
+          team_names: Json
         }
         SetofOptions: {
           from: "*"
@@ -614,7 +752,8 @@ export type Database = {
           isSetofReturn: false
         }
       }
-      archive_room: { Args: { p_room_id: string }; Returns: string }
+      archive_room: { Args: { p_room_id: string }; Returns: string | null }
+      check_user_hosting_eligibility: { Args: never; Returns: Json }
       create_custom_quiz_room: {
         Args: {
           p_advance_mode?: string
@@ -661,6 +800,32 @@ export type Database = {
         }[]
       }
       get_all_admin_quizzes: { Args: never; Returns: Json }
+      get_room_by_code: {
+        Args: { p_code: string }
+        Returns: {
+          advance_mode: string
+          code: string
+          created_at: string
+          cursor_index: number
+          cursor_phase: string
+          host_id: string | null
+          id: string
+          phase_started_at: string | null
+          quiz_id: string
+          started_at: string | null
+          status: string
+          team_colors: Json
+          team_count: number
+          team_mode: string
+          team_names: Json
+        }[]
+        SetofOptions: {
+          from: "*"
+          to: "rooms"
+          isOneToOne: false
+          isSetofReturn: true
+        }
+      }
       get_catalog_deleted_quizzes: {
         Args: never
         Returns: {
@@ -679,28 +844,15 @@ export type Database = {
       is_admin: { Args: never; Returns: boolean }
       join_room: {
         Args: { p_avatar_color?: string; p_code: string; p_nickname: string }
-        Returns: {
-          avatar_color: string
-          fifty_hidden: number[] | null
-          fifty_question_id: string | null
-          id: string
-          joined_at: string
-          nickname: string
-          room_id: string
-          team_index: number | null
-          used_double: boolean
-          used_fifty: boolean
-        }
-        SetofOptions: {
-          from: "*"
-          to: "players"
-          isOneToOne: true
-          isSetofReturn: false
-        }
+        Returns: Json
+      }
+      leave_room: {
+        Args: { p_player_id: string; p_token: string }
+        Returns: boolean
       }
       record_quiz_play: { Args: { p_source_id: string }; Returns: number }
       room_answers: {
-        Args: { p_player_id: string; p_room_id: string }
+        Args: { p_player_id: string; p_room_id: string; p_token: string }
         Returns: {
           answered_at: string
           choice_index: number
@@ -715,7 +867,7 @@ export type Database = {
         }[]
       }
       room_players: {
-        Args: { p_player_id: string; p_room_id: string }
+        Args: { p_player_id: string; p_room_id: string; p_token: string }
         Returns: {
           avatar_color: string
           fifty_hidden: number[]
@@ -748,6 +900,7 @@ export type Database = {
         Args: { p_room_id: string }
         Returns: {
           correct_index: number
+          explanation: string | null
           question_id: string
         }[]
       }
@@ -772,12 +925,14 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      start_room_v2: { Args: { p_room_id: string }; Returns: Json }
       submit_answer: {
         Args: {
           p_choice: number
           p_player_id: string
           p_powerup?: string
           p_question_id: string
+          p_token: string
         }
         Returns: {
           answered_at: string
@@ -811,7 +966,7 @@ export type Database = {
         Returns: string
       }
       use_fifty_fifty: {
-        Args: { p_player_id: string; p_question_id: string }
+        Args: { p_player_id: string; p_question_id: string; p_token: string }
         Returns: number[]
       }
     }

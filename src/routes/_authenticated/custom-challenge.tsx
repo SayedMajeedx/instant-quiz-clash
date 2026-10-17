@@ -3,6 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { AnimatedBg } from "@/components/quiz/AnimatedBg";
 import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { SubscriptionPaywallModal } from "@/components/subscription/SubscriptionPaywallModal";
+import { isDailyLimitError } from "@/hooks/useSubscription";
 import { supabase } from "@/integrations/supabase/client";
 import { getAllAdminQuizzes } from "@/lib/admin-data-helper";
 import { selectCustomQuestions } from "@/lib/custom-quiz";
@@ -53,6 +55,7 @@ function CustomChallengeSetup() {
   const [loadingCategories, setLoadingCategories] = useState(true);
   const [checking, setChecking] = useState(false);
   const [creating, setCreating] = useState(false);
+  const [showPaywall, setShowPaywall] = useState(false);
 
   const ar = lang === "ar";
 
@@ -232,6 +235,10 @@ function CustomChallengeSetup() {
     });
     setCreating(false);
 
+    if (isDailyLimitError(error)) {
+      setShowPaywall(true);
+      return;
+    }
     if (error || !data?.room_code) {
       toast.error(
         error?.message || (ar ? "تعذر إنشاء غرفة التحدي" : "Could not create challenge room"),
@@ -244,6 +251,11 @@ function CustomChallengeSetup() {
   return (
     <main className="relative min-h-screen px-5 py-8" dir={ar ? "rtl" : "ltr"}>
       <AnimatedBg dense />
+      <SubscriptionPaywallModal
+        open={showPaywall}
+        onOpenChange={setShowPaywall}
+        reason="daily_limit_reached"
+      />
       <div className="relative mx-auto max-w-4xl">
         <header className="flex items-center justify-between gap-3">
           <Link to="/" className="text-sm font-bold text-muted-foreground hover:text-foreground">

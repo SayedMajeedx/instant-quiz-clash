@@ -56,7 +56,8 @@ function AdminLayout() {
 
         if (profile) {
           const role = (profile as any)?.role;
-          const isAllowed = role === "admin" || role === "super_admin" || role === "owner";
+          // Must match public.is_admin(), which the database enforces.
+          const isAllowed = role === "admin";
           if (mounted) {
             setDisplayName(
               (profile as any).display_name || user.email || "",

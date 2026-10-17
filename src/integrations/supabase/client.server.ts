@@ -31,7 +31,12 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
 
 function createSupabaseAdminClient() {
   const SUPABASE_URL = process.env['SUPABASE_URL'] || "https://rplxgxgfehjmrsipbfnb.supabase.co";
-  const SUPABASE_SERVICE_ROLE_KEY = process.env['SUPABASE_SERVICE_ROLE_KEY'] || process.env['SUPABASE_PUBLISHABLE_KEY'] || "sb_publishable_RfT-3DjN9j5IRBvYGFsL_w_YJ7-7JE-";
+  // No fallback to the publishable key: that silently turned "admin" calls
+  // into anonymous ones. Fail loudly instead.
+  const SUPABASE_SERVICE_ROLE_KEY = process.env['SUPABASE_SERVICE_ROLE_KEY'];
+  if (!SUPABASE_SERVICE_ROLE_KEY) {
+    throw new Error('SUPABASE_SERVICE_ROLE_KEY is not set; server-side admin operations are unavailable.');
+  }
 
   return createClient<Database>(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
     global: {

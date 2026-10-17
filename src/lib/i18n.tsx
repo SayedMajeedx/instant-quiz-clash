@@ -128,6 +128,7 @@ const en: Dict = {
   "hostPick.creating": "Creating room…",
   "hostPick.needQuestion": "Add at least one question first",
   "hostPick.createError": "Could not create a room, try again",
+  "hostPick.checkoutCancelled": "Checkout cancelled. You have not been charged.",
 
   "host.loading": "Loading room…",
   "host.notFound": "Room not found",
@@ -464,6 +465,7 @@ const ar: Dict = {
   "hostPick.creating": "جارٍ التجهيز…",
   "hostPick.needQuestion": "أضف سؤالًا واحدًا على الأقل أولًا",
   "hostPick.createError": "تعذّر إنشاء الغرفة، حاول مرة أخرى",
+  "hostPick.checkoutCancelled": "تم إلغاء الدفع. لم يتم خصم أي مبلغ.",
 
   "host.loading": "جارٍ تحميل الغرفة…",
   "host.notFound": "الغرفة غير موجودة",

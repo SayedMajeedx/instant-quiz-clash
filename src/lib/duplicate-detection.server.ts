@@ -133,7 +133,7 @@ export function retrieveCandidates(questions: DuplicateQuestion[]): DuplicateCan
   const candidates: DuplicateCandidate[] = [];
   for (const [key, votes] of pairVotes) {
     if (votes < 2) continue;
-    const [a, b] = key.split(":").map(Number);
+    const [a = -1, b = -1] = key.split(":").map(Number);
     const left = questions[a];
     const right = questions[b];
     if (!left || !right) continue;
@@ -226,7 +226,13 @@ async function judgeBatch(
   const body = (await response.json()) as { choices?: Array<{ message?: { content?: string } }> };
   const raw = body.choices?.[0]?.message?.content?.replace(/^```json\s*|```$/g, "").trim() ?? "[]";
   try {
-    const rows = JSON.parse(raw) as Array<Record<string, unknown>>;
+    const rows = JSON.parse(raw) as Array<{
+      id?: unknown;
+      verdict?: unknown;
+      confidence?: unknown;
+      shared_fact?: unknown;
+      rationale?: unknown;
+    }>;
     return new Map(
       rows.map((row) => [
         String(row.id),

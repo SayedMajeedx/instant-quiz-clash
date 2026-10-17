@@ -95,7 +95,7 @@ function UserManagementPage() {
         id: p.id,
         display_name: p.name || p.display_name || p.email?.split("@")[0] || "مستخدم",
         email: p.email || "",
-        role: (p.role === "admin" || p.role === "super_admin" || p.role === "owner") ? "admin" : "user",
+        role: p.role === "admin" ? "admin" : "user",
         created_at: p.created_at || new Date().toISOString(),
         total_games_hosted: Number(p.total_games_hosted || 0),
       }));

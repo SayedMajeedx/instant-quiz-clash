@@ -28,6 +28,7 @@ import { Route as AuthenticatedHostIndexRouteImport } from './routes/_authentica
 import { Route as AuthenticatedHostCodeRouteImport } from './routes/_authenticated/host.$code'
 import { Route as AuthenticatedQuizzesIndexRouteImport } from './routes/_authenticated/quizzes.index'
 import { Route as AuthenticatedQuizzesQuizIdRouteImport } from './routes/_authenticated/quizzes.$quizId'
+import { Route as AuthenticatedSubscriptionReturnRouteImport } from './routes/_authenticated/subscription.return'
 import { Route as AdminQuizzesIndexRouteImport } from './routes/admin/quizzes.index'
 import { Route as BrowseQuizIdPreviewRouteImport } from './routes/browse.$quizId.preview'
 import { Route as AdminQuizzesQuizIdEditRouteImport } from './routes/admin/quizzes.$quizId.edit'
@@ -129,6 +130,12 @@ const AuthenticatedQuizzesQuizIdRoute =
     path: '/quizzes/$quizId',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const AuthenticatedSubscriptionReturnRoute =
+  AuthenticatedSubscriptionReturnRouteImport.update({
+    id: '/subscription/return',
+    path: '/subscription/return',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const AdminQuizzesIndexRoute = AdminQuizzesIndexRouteImport.update({
   id: '/quizzes/',
   path: '/quizzes/',
@@ -162,6 +169,7 @@ export interface FileRoutesByFullPath {
   '/browse/': typeof BrowseIndexRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
+  '/subscription/return': typeof AuthenticatedSubscriptionReturnRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
   '/host/': typeof AuthenticatedHostIndexRoute
   '/quizzes/': typeof AuthenticatedQuizzesIndexRoute
@@ -184,6 +192,7 @@ export interface FileRoutesByTo {
   '/browse': typeof BrowseIndexRoute
   '/host/$code': typeof AuthenticatedHostCodeRoute
   '/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
+  '/subscription/return': typeof AuthenticatedSubscriptionReturnRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
   '/host': typeof AuthenticatedHostIndexRoute
   '/quizzes': typeof AuthenticatedQuizzesIndexRoute
@@ -209,6 +218,7 @@ export interface FileRoutesById {
   '/browse/': typeof BrowseIndexRoute
   '/_authenticated/host/$code': typeof AuthenticatedHostCodeRoute
   '/_authenticated/quizzes/$quizId': typeof AuthenticatedQuizzesQuizIdRoute
+  '/_authenticated/subscription/return': typeof AuthenticatedSubscriptionReturnRoute
   '/browse/$quizId/preview': typeof BrowseQuizIdPreviewRoute
   '/_authenticated/host/': typeof AuthenticatedHostIndexRoute
   '/_authenticated/quizzes/': typeof AuthenticatedQuizzesIndexRoute
@@ -234,6 +244,7 @@ export interface FileRouteTypes {
     | '/browse/'
     | '/host/$code'
     | '/quizzes/$quizId'
+    | '/subscription/return'
     | '/browse/$quizId/preview'
     | '/host/'
     | '/quizzes/'
@@ -256,6 +267,7 @@ export interface FileRouteTypes {
     | '/browse'
     | '/host/$code'
     | '/quizzes/$quizId'
+    | '/subscription/return'
     | '/browse/$quizId/preview'
     | '/host'
     | '/quizzes'
@@ -280,6 +292,7 @@ export interface FileRouteTypes {
     | '/browse/'
     | '/_authenticated/host/$code'
     | '/_authenticated/quizzes/$quizId'
+    | '/_authenticated/subscription/return'
     | '/browse/$quizId/preview'
     | '/_authenticated/host/'
     | '/_authenticated/quizzes/'
@@ -434,6 +447,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedQuizzesQuizIdRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/subscription/return': {
+      id: '/_authenticated/subscription/return'
+      path: '/subscription/return'
+      fullPath: '/subscription/return'
+      preLoaderRoute: typeof AuthenticatedSubscriptionReturnRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/admin/quizzes/': {
       id: '/admin/quizzes/'
       path: '/quizzes'
@@ -462,6 +482,7 @@ interface AuthenticatedRouteRouteChildren {
   AuthenticatedCustomChallengeRoute: typeof AuthenticatedCustomChallengeRoute
   AuthenticatedHostCodeRoute: typeof AuthenticatedHostCodeRoute
   AuthenticatedQuizzesQuizIdRoute: typeof AuthenticatedQuizzesQuizIdRoute
+  AuthenticatedSubscriptionReturnRoute: typeof AuthenticatedSubscriptionReturnRoute
   AuthenticatedHostIndexRoute: typeof AuthenticatedHostIndexRoute
   AuthenticatedQuizzesIndexRoute: typeof AuthenticatedQuizzesIndexRoute
 }
@@ -470,6 +491,7 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedCustomChallengeRoute: AuthenticatedCustomChallengeRoute,
   AuthenticatedHostCodeRoute: AuthenticatedHostCodeRoute,
   AuthenticatedQuizzesQuizIdRoute: AuthenticatedQuizzesQuizIdRoute,
+  AuthenticatedSubscriptionReturnRoute: AuthenticatedSubscriptionReturnRoute,
   AuthenticatedHostIndexRoute: AuthenticatedHostIndexRoute,
   AuthenticatedQuizzesIndexRoute: AuthenticatedQuizzesIndexRoute,
 }

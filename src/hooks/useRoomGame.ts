@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import type { RealtimeChannel } from "@supabase/supabase-js";
 import { supabase } from "@/integrations/supabase/client";
 import {
   phaseAt,
@@ -8,6 +9,7 @@ import {
   type Quiz,
   type Room,
 } from "@/lib/quizclash";
+import type { PlayerSession } from "@/lib/session";
 import { getSyncedNow, getServerOffset, syncServerTime } from "@/lib/server-time";
 
 export type ConnectionStatus = "connecting" | "connected" | "reconnecting" | "offline";
@@ -15,6 +17,8 @@ export type ConnectionStatus = "connecting" | "connected" | "reconnecting" | "of
 export type GameState = {
   loading: boolean;
   missing: boolean;
+  /** The stored player session was rejected (e.g. removed from the room). */
+  playerRejected: boolean;
   room: Room | null;
   quiz: Quiz | null;
   questions: Question[];
@@ -26,16 +30,38 @@ export type GameState = {
   refresh: () => Promise<void>;
 };
 
+// Players cannot read the game tables or receive realtime events, so they
+// poll the room cursor quickly and the slower-changing lists less often.
+const PLAYER_ROOM_POLL_MS = { lobby: 1500, active: 800 } as const;
+const PLAYER_LISTS_POLL_MS = 2500;
+// Hosts get realtime events; polling is only a safety net.
+const HOST_POLL_MS = 3000;
+const MAX_RECONNECTS = 10;
+
+async function fetchRoom(code: string): Promise<Room | null> {
+  const { data, error } = await supabase.rpc("get_room_by_code", { p_code: code.toUpperCase() });
+  if (error) throw error;
+  const row = Array.isArray(data) ? data[0] : data;
+  return (row as unknown as Room | undefined) ?? null;
+}
+
+function isRejectedPlayerError(error: { message?: string } | null): boolean {
+  return Boolean(error?.message?.includes("unknown player") || error?.message?.includes("forbidden"));
+}
+
+function withOptions(rows: Question[]): Question[] {
+  return rows.map((q) => ({ ...q, options: (Array.isArray(q.options) ? q.options : []) as string[] }));
+}
+
 /**
- * Live room state: one realtime channel + synced server clock. Phase is derived, never pushed.
+ * Live room state with a synced server clock. Phase is derived, never pushed.
  *
- * Optimizations & Resilience:
- * - Uses getSyncedNow() instead of local Date.now()
- * - Fetches static quiz/questions ONCE and polls only dynamic room/players/answers deltas
- * - Realtime connection status tracking with exponential backoff
- * - Immediately re-syncs server time and re-fetches room state on tab visibility/focus
+ * Hosts read the room's tables directly (row-level security limits them to
+ * their own rooms) and get realtime updates. Players go through RPCs that
+ * check their session token, never see correct answers before the reveal,
+ * and never see other players' choices.
  */
-export function useRoomGame(code: string, playerId?: string | null): GameState {
+export function useRoomGame(code: string, player?: PlayerSession | null): GameState {
   const [room, setRoom] = useState<Room | null>(null);
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -43,321 +69,292 @@ export function useRoomGame(code: string, playerId?: string | null): GameState {
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [loading, setLoading] = useState(true);
   const [missing, setMissing] = useState(false);
+  const [playerRejected, setPlayerRejected] = useState(false);
   const [now, setNow] = useState(() => getSyncedNow());
   const [connectionStatus, setConnectionStatus] = useState<ConnectionStatus>("connecting");
 
-  const roomIdRef = useRef<string | null>(null);
-  const quizRef = useRef<Quiz | null>(null);
-  const questionsRef = useRef<Question[]>([]);
-  const retryCountRef = useRef<number>(0);
-  const reconnectTimerRef = useRef<number | null>(null);
+  const playerId = player?.playerId ?? null;
+  const playerToken = player?.token ?? null;
+  const isPlayer = Boolean(playerId && playerToken);
 
-  // Sync server time on initial hook mount
-  useEffect(() => {
-    void syncServerTime();
+  const applyRoom = useCallback((next: Room) => {
+    setRoom((prev) => (prev && JSON.stringify(prev) === JSON.stringify(next) ? prev : next));
   }, []);
 
-  const load = useCallback(
-    async (forceFull = false) => {
-      const upper = code.toUpperCase();
-      let roomRow: any = null;
-
-      try {
-        const { data: roomRows, error: rpcErr } = await (supabase as any).rpc("get_room_by_code", {
-          p_code: upper,
-        });
-        if (!rpcErr && roomRows) {
-          roomRow = Array.isArray(roomRows) ? roomRows[0] : roomRows;
+  const loadLists = useCallback(
+    async (roomId: string) => {
+      if (isPlayer) {
+        const args = { p_room_id: roomId, p_player_id: playerId!, p_token: playerToken! };
+        const [p, a] = await Promise.all([
+          supabase.rpc("room_players", args),
+          supabase.rpc("room_answers", args),
+        ]);
+        if (isRejectedPlayerError(p.error) || isRejectedPlayerError(a.error)) {
+          setPlayerRejected(true);
+          return;
         }
-      } catch {
-        // Fallback below
-      }
-
-      if (!roomRow) {
-        const { data: directRoom } = await supabase
-          .from("rooms")
-          .select("*")
-          .eq("code", upper)
-          .maybeSingle();
-        roomRow = directRoom;
-      }
-
-      if (!roomRow) {
-        setMissing(true);
-        setLoading(false);
+        if (p.error) throw p.error;
+        if (a.error) throw a.error;
+        setPlayers((p.data ?? []) as unknown as Player[]);
+        setAnswers((a.data ?? []) as unknown as Answer[]);
         return;
       }
-      const typedRoom = roomRow as unknown as Room;
-      roomIdRef.current = typedRoom.id;
-      setRoom(typedRoom);
 
-      const needsFullLoad = forceFull || !quizRef.current || questionsRef.current.length === 0;
-
-      if (needsFullLoad) {
-        const [quizRes, ownerQuestionRes, playerRes, answerRes] = await Promise.all([
-          supabase.from("quizzes").select("*").eq("id", typedRoom.quiz_id).maybeSingle(),
-          supabase
-            .from("questions")
-            .select("*")
-            .eq("quiz_id", typedRoom.quiz_id)
-            .order("order_index"),
-          supabase.from("players").select("*").eq("room_id", typedRoom.id).order("joined_at"),
-          supabase.from("answers").select("*").eq("room_id", typedRoom.id),
-        ]);
-
-        let rows = (ownerQuestionRes.data ?? []) as unknown as Question[];
-        const isOwner = rows.length > 0 && rows.some((q) => q.correct_index !== -1 && q.correct_index !== undefined);
-        if (!isOwner) {
-          try {
-            const { data: publicRows } = await supabase.rpc("room_questions", {
-              p_room_id: typedRoom.id,
-            });
-            if (publicRows && publicRows.length > 0) {
-              rows = ((publicRows ?? []) as unknown as Question[]).map((q) => ({
-                ...q,
-                correct_index: -1,
-              }));
-              const { data: reveals } = await supabase.rpc("room_reveals", { p_room_id: typedRoom.id });
-              const map = new Map((reveals ?? []).map((r: any) => [r.question_id, r.correct_index]));
-              rows = rows.map((q) => (map.has(q.id) ? { ...q, correct_index: map.get(q.id)! } : q));
-            }
-          } catch {
-            // Keep rows as ownerQuestionRes
-          }
-        }
-
-        let playerRows = (playerRes.data ?? []) as unknown as Player[];
-        let answerRows = (answerRes.data ?? []) as unknown as Answer[];
-        if (playerRows.length === 0 && playerId) {
-          try {
-            const [p, a] = await Promise.all([
-              supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
-              supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
-            ]);
-            if (p.data) playerRows = p.data as unknown as Player[];
-            if (a.data) answerRows = a.data as unknown as Answer[];
-          } catch {
-            // keep fallback
-          }
-        }
-
-        const loadedQuiz = (quizRes.data as unknown as Quiz) ?? null;
-        const loadedQuestions = rows.map((q) => ({
-          ...q,
-          options: (Array.isArray(q.options) ? q.options : []) as string[],
-        }));
-
-        quizRef.current = loadedQuiz;
-        questionsRef.current = loadedQuestions;
-
-        setQuiz(loadedQuiz);
-        setQuestions(loadedQuestions);
-        setPlayers(playerRows);
-        setAnswers(answerRows);
-      } else {
-        // Lightweight delta load: fetch only dynamic players and answers
-        const [playerRes, answerRes] = await Promise.all([
-          supabase.from("players").select("*").eq("room_id", typedRoom.id).order("joined_at"),
-          supabase.from("answers").select("*").eq("room_id", typedRoom.id),
-        ]);
-        let playerRows = (playerRes.data ?? []) as unknown as Player[];
-        let answerRows = (answerRes.data ?? []) as unknown as Answer[];
-
-        if (playerRows.length === 0 && playerId) {
-          try {
-            const [p, a] = await Promise.all([
-              supabase.rpc("room_players", { p_room_id: typedRoom.id, p_player_id: playerId }),
-              supabase.rpc("room_answers", { p_room_id: typedRoom.id, p_player_id: playerId }),
-            ]);
-            if (p.data) playerRows = p.data as unknown as Player[];
-            if (a.data) answerRows = a.data as unknown as Answer[];
-          } catch {
-            // keep table data
-          }
-        }
-
-        setPlayers(playerRows);
-        setAnswers(answerRows);
-      }
-
-      setMissing(false);
-      setLoading(false);
+      const [p, a] = await Promise.all([
+        supabase.from("players").select("*").eq("room_id", roomId).order("joined_at"),
+        supabase.from("answers").select("*").eq("room_id", roomId),
+      ]);
+      if (p.error) throw p.error;
+      if (a.error) throw a.error;
+      setPlayers((p.data ?? []) as unknown as Player[]);
+      setAnswers((a.data ?? []) as unknown as Answer[]);
     },
-    [code, playerId],
+    [isPlayer, playerId, playerToken],
   );
 
+  const loadQuestions = useCallback(
+    async (target: Room) => {
+      if (!isPlayer) {
+        const { data, error } = await supabase
+          .from("questions")
+          .select("*")
+          .eq("quiz_id", target.quiz_id)
+          .order("order_index");
+        if (error) throw error;
+        setQuestions(withOptions((data ?? []) as unknown as Question[]));
+        return;
+      }
+
+      // Players: question text from room_questions, answers and explanations
+      // only for questions the room has already revealed.
+      const [q, r] = await Promise.all([
+        supabase.rpc("room_questions", { p_room_id: target.id }),
+        supabase.rpc("room_reveals", { p_room_id: target.id }),
+      ]);
+      if (q.error) throw q.error;
+      if (r.error) throw r.error;
+      const reveals = new Map((r.data ?? []).map((row) => [row.question_id, row]));
+      setQuestions(
+        withOptions(
+          ((q.data ?? []) as unknown as Question[]).map((question) => {
+            const reveal = reveals.get(question.id);
+            return {
+              ...question,
+              correct_index: reveal?.correct_index ?? -1,
+              explanation: reveal?.explanation ?? null,
+            };
+          }),
+        ),
+      );
+    },
+    [isPlayer],
+  );
+
+  const staticLoadedRef = useRef(false);
+
+  /** `full` also reloads the quiz and questions (and with them, reveals). */
+  const load = useCallback(async (full = true) => {
+    try {
+      const next = await fetchRoom(code);
+      if (!next) {
+        setMissing(true);
+        return;
+      }
+      applyRoom(next);
+      if (full || !staticLoadedRef.current) {
+        const { data: quizRow } = await supabase
+          .from("quizzes")
+          .select("*")
+          .eq("id", next.quiz_id)
+          .maybeSingle();
+        setQuiz((quizRow as unknown as Quiz | null) ?? null);
+        await Promise.all([loadQuestions(next), loadLists(next.id)]);
+        staticLoadedRef.current = true;
+      } else {
+        await loadLists(next.id);
+      }
+      setMissing(false);
+      if (isPlayer) setConnectionStatus("connected");
+    } catch (err) {
+      console.error("Failed to load room:", err);
+      if (isPlayer) setConnectionStatus("reconnecting");
+    } finally {
+      setLoading(false);
+    }
+  }, [code, applyRoom, loadQuestions, loadLists, isPlayer]);
+
+  const loadRef = useRef(load);
+  loadRef.current = load;
+  const refresh = useCallback(() => load(true), [load]);
+
   useEffect(() => {
-    void load(true);
+    void syncServerTime();
+    void load();
   }, [load]);
 
-  // Active polling fallback: Fast 600ms polling during active game or for player devices
-  // that don't receive rooms-table Realtime events due to RLS security.
-  useEffect(() => {
-    const intervalMs = room?.status === "active" || playerId ? 600 : 2000;
-    const id = window.setInterval(() => void load(false), intervalMs);
-    return () => window.clearInterval(id);
-  }, [load, room?.status, playerId]);
+  const roomId = room?.id ?? null;
+  const roomStatus = room?.status;
 
-  // Anonymous players cannot rely on rooms-table Realtime after security hardening.
-  // Poll room snapshot frequently (600ms) during active play and lobby so phase/cursor
-  // changes sync immediately.
+  // Players: follow the room cursor.
   useEffect(() => {
-    if (!playerId || !room || room.status === "ended") return;
-    let cancelled = false;
+    if (!isPlayer || !roomId || roomStatus === "ended") return;
     let inFlight = false;
-
-    const refreshRoomSnapshot = async () => {
+    const tick = async () => {
       if (inFlight) return;
       inFlight = true;
       try {
-        let nextRoom: any = null;
-        const { data, error } = await (supabase as any).rpc("get_room_by_code", {
-          p_code: code.toUpperCase(),
-        });
-        if (!error && data) {
-          nextRoom = Array.isArray(data) ? data[0] : data;
-        } else {
-          const { data: directRoom } = await supabase
-            .from("rooms")
-            .select("*")
-            .eq("code", code.toUpperCase())
-            .maybeSingle();
-          nextRoom = directRoom;
-        }
-        if (!cancelled && nextRoom) setRoom(nextRoom as unknown as Room);
+        const next = await fetchRoom(code);
+        if (next) applyRoom(next);
+        setConnectionStatus("connected");
+      } catch {
+        setConnectionStatus("reconnecting");
       } finally {
         inFlight = false;
       }
     };
+    const ms = roomStatus === "active" ? PLAYER_ROOM_POLL_MS.active : PLAYER_ROOM_POLL_MS.lobby;
+    const id = window.setInterval(() => void tick(), ms);
+    return () => window.clearInterval(id);
+  }, [isPlayer, roomId, roomStatus, code, applyRoom]);
 
-    void refreshRoomSnapshot();
-    const intervalMs = room.status === "lobby" ? 500 : 600;
-    const id = window.setInterval(() => void refreshRoomSnapshot(), intervalMs);
-    return () => {
-      cancelled = true;
-      window.clearInterval(id);
+  // Players: refresh lists and reveals whenever the room moves on, plus a
+  // slow poll for joins and other players' answers.
+  const cursorKey = room ? `${room.status}:${room.cursor_index}:${room.cursor_phase}` : null;
+  useEffect(() => {
+    if (!isPlayer || !room) return;
+    void loadLists(room.id).catch(() => setConnectionStatus("reconnecting"));
+    if (room.cursor_phase !== "question" || room.status === "ended") {
+      void loadQuestions(room).catch(() => setConnectionStatus("reconnecting"));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlayer, cursorKey]);
+
+  useEffect(() => {
+    if (!isPlayer || !roomId || roomStatus === "ended") return;
+    const id = window.setInterval(
+      () => void loadLists(roomId).catch(() => setConnectionStatus("reconnecting")),
+      PLAYER_LISTS_POLL_MS,
+    );
+    return () => window.clearInterval(id);
+  }, [isPlayer, roomId, roomStatus, loadLists]);
+
+  // Hosts: realtime, with a slow poll as a safety net.
+  useEffect(() => {
+    if (isPlayer || !roomId) return;
+    let disposed = false;
+    let channel: RealtimeChannel | null = null;
+    let retryTimer: number | null = null;
+    let retries = 0;
+
+    const connect = () => {
+      const current = supabase
+        .channel(`room-${roomId}-${Date.now()}`)
+        .on(
+          "postgres_changes",
+          { event: "*", schema: "public", table: "players", filter: `room_id=eq.${roomId}` },
+          (payload) => {
+            setPlayers((prev) => {
+              if (payload.eventType === "DELETE") {
+                return prev.filter((p) => p.id !== (payload.old as Player).id);
+              }
+              const next = payload.new as unknown as Player;
+              const rest = prev.filter((p) => p.id !== next.id);
+              return [...rest, next].sort((a, b) => a.joined_at.localeCompare(b.joined_at));
+            });
+          },
+        )
+        .on(
+          "postgres_changes",
+          { event: "*", schema: "public", table: "answers", filter: `room_id=eq.${roomId}` },
+          (payload) => {
+            if (payload.eventType === "DELETE") return;
+            const next = payload.new as unknown as Answer;
+            setAnswers((prev) => [...prev.filter((a) => a.id !== next.id), next]);
+          },
+        )
+        .on(
+          "postgres_changes",
+          { event: "UPDATE", schema: "public", table: "rooms", filter: `id=eq.${roomId}` },
+          (payload) => applyRoom(payload.new as unknown as Room),
+        )
+        .subscribe((status) => {
+          // Ignore callbacks from channels we have already replaced.
+          if (disposed || current !== channel) return;
+          if (status === "SUBSCRIBED") {
+            retries = 0;
+            setConnectionStatus("connected");
+            void syncServerTime();
+            void loadRef.current(false);
+            return;
+          }
+          if (status !== "CLOSED" && status !== "CHANNEL_ERROR" && status !== "TIMED_OUT") return;
+
+          retries += 1;
+          if (retries > MAX_RECONNECTS) {
+            setConnectionStatus("offline");
+            return;
+          }
+          setConnectionStatus("reconnecting");
+          if (retryTimer !== null) return;
+          retryTimer = window.setTimeout(
+            () => {
+              retryTimer = null;
+              if (disposed) return;
+              const stale = channel;
+              channel = null;
+              if (stale) void supabase.removeChannel(stale);
+              connect();
+            },
+            Math.min(1000 * Math.pow(1.5, retries), 15000),
+          );
+        });
+      channel = current;
     };
-  }, [code, playerId, room?.id, room?.status]);
 
-  // Five updates per second keeps countdowns visually smooth while avoiding a
-  // full host/player route render every 100ms on lower-powered phones.
+    setConnectionStatus("connecting");
+    connect();
+    const pollId = window.setInterval(() => void loadRef.current(false), HOST_POLL_MS);
+
+    return () => {
+      disposed = true;
+      window.clearInterval(pollId);
+      if (retryTimer !== null) window.clearTimeout(retryTimer);
+      const stale = channel;
+      channel = null;
+      if (stale) void supabase.removeChannel(stale);
+    };
+  }, [isPlayer, roomId, applyRoom]);
+
+  // Five updates per second keeps countdowns smooth without re-rendering the
+  // whole screen every 100ms on low-powered phones.
   useEffect(() => {
     const id = window.setInterval(() => setNow(getSyncedNow()), 200);
     return () => window.clearInterval(id);
   }, []);
 
-  // Handle visibility changes and tab reactivation
+  // Catch up after the tab was hidden, the window refocused or the network
+  // came back.
   useEffect(() => {
     const handleReactivate = () => {
-      if (document.visibilityState === "visible") {
-        void syncServerTime();
-        void load(false);
-        setNow(getSyncedNow());
-      }
+      if (document.visibilityState !== "visible") return;
+      void syncServerTime();
+      void loadRef.current(false);
+      setNow(getSyncedNow());
     };
-
     document.addEventListener("visibilitychange", handleReactivate);
     window.addEventListener("focus", handleReactivate);
     window.addEventListener("online", handleReactivate);
-
     return () => {
       document.removeEventListener("visibilitychange", handleReactivate);
       window.removeEventListener("focus", handleReactivate);
       window.removeEventListener("online", handleReactivate);
     };
-  }, [load]);
-
-  // Realtime subscription setup with reconnect status and exponential backoff
-  useEffect(() => {
-    if (!room?.id) return;
-
-    let isSubscribed = true;
-
-    const setupChannel = () => {
-      setConnectionStatus("connecting");
-
-      const channel = supabase.channel(`room-${room.id}`);
-
-      // Host monitors player joins and answers in real-time
-      if (!playerId) {
-        channel
-          .on(
-            "postgres_changes",
-            { event: "*", schema: "public", table: "players", filter: `room_id=eq.${room.id}` },
-            (payload) => {
-              setPlayers((prev) => {
-                if (payload.eventType === "DELETE") {
-                  return prev.filter((p) => p.id !== (payload.old as Player).id);
-                }
-                const next = payload.new as unknown as Player;
-                const rest = prev.filter((p) => p.id !== next.id);
-                return [...rest, next].sort((a, b) => a.joined_at.localeCompare(b.joined_at));
-              });
-            },
-          )
-          .on(
-            "postgres_changes",
-            { event: "*", schema: "public", table: "answers", filter: `room_id=eq.${room.id}` },
-            (payload) => {
-              if (payload.eventType === "DELETE") return;
-              const next = payload.new as unknown as Answer;
-              setAnswers((prev) => [...prev.filter((a) => a.id !== next.id), next]);
-            },
-          );
-      }
-
-      channel
-        .on(
-          "postgres_changes",
-          { event: "UPDATE", schema: "public", table: "rooms", filter: `id=eq.${room.id}` },
-          (payload) => setRoom(payload.new as unknown as Room),
-        )
-        .subscribe((status) => {
-          if (!isSubscribed) return;
-
-          if (status === "SUBSCRIBED") {
-            setConnectionStatus("connected");
-            retryCountRef.current = 0;
-            // Catch up on missed events and re-sync time upon reconnection
-            void syncServerTime();
-            void load(false);
-          } else if (status === "CLOSED" || status === "CHANNEL_ERROR" || status === "TIMED_OUT") {
-            setConnectionStatus("reconnecting");
-            retryCountRef.current += 1;
-
-            if (retryCountRef.current > 10) {
-              setConnectionStatus("offline");
-            } else {
-              const backoffMs = Math.min(1000 * Math.pow(1.5, retryCountRef.current), 15000);
-              reconnectTimerRef.current = window.setTimeout(() => {
-                if (isSubscribed) {
-                  void supabase.removeChannel(channel);
-                  setupChannel();
-                }
-              }, backoffMs);
-            }
-          }
-        });
-
-      return channel;
-    };
-
-    const currentChannel = setupChannel();
-
-    return () => {
-      isSubscribed = false;
-      if (reconnectTimerRef.current) {
-        window.clearTimeout(reconnectTimerRef.current);
-      }
-      void supabase.removeChannel(currentChannel);
-    };
-  }, [room?.id, playerId, load]);
-
-  const refresh = useCallback(() => load(true), [load]);
+  }, []);
 
   return {
     loading,
     missing,
+    playerRejected,
     room,
     quiz,
     questions,

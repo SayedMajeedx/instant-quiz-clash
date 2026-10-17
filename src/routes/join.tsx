@@ -6,7 +6,7 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { AVATAR_COLORS, type Player } from "@/lib/quizclash";
-import { storePlayerId } from "@/lib/session";
+import { storePlayerSession } from "@/lib/session";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/join")({
@@ -56,9 +56,9 @@ function Join() {
       p_nickname: nick,
       p_avatar_color: AVATAR_COLORS[Math.floor(Math.random() * AVATAR_COLORS.length)]!,
     });
-    const player = (data as unknown as Player | null) ?? null;
+    const player = (data as unknown as (Player & { session_token: string }) | null) ?? null;
 
-    if (error || !player) {
+    if (error || !player?.session_token) {
       setBusy(false);
       const message = error?.message ?? "";
       if (message.includes("room not found")) toast.error(t("join.errNoGame"));
@@ -68,7 +68,7 @@ function Join() {
     }
 
 
-    storePlayerId(cleanCode, player.id);
+    storePlayerSession(cleanCode, { playerId: player.id, token: player.session_token });
     setJoined(true);
     window.setTimeout(() => {
       void navigate({ to: "/play/$code", params: { code: cleanCode } });

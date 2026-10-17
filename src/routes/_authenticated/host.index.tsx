@@ -8,18 +8,19 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { randomCode, type Quiz } from "@/lib/quizclash";
-import { getSyncedNow } from "@/lib/server-time";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
 import { cn } from "@/lib/utils";
-import { useSubscription } from "@/hooks/useSubscription";
+import { isDailyLimitError, useSubscription } from "@/hooks/useSubscription";
 import { SubscriptionStatusBadge } from "@/components/subscription/SubscriptionStatusBadge";
 import { SubscriptionPaywallModal } from "@/components/subscription/SubscriptionPaywallModal";
 
 const PAGE_SIZE = 10;
 
 export const Route = createFileRoute("/_authenticated/host/")({
-  validateSearch: (search: Record<string, unknown>): { quiz?: string } =>
-    typeof search["quiz"] === "string" ? { quiz: search["quiz"] } : {},
+  validateSearch: (search: Record<string, unknown>): { quiz?: string; checkout?: string } => ({
+    ...(typeof search["quiz"] === "string" ? { quiz: search["quiz"] } : {}),
+    ...(typeof search["checkout"] === "string" ? { checkout: search["checkout"] } : {}),
+  }),
   head: () => ({
     meta: [
       { title: "استضافة لعبة — QuizClash" },
@@ -33,7 +34,7 @@ export const Route = createFileRoute("/_authenticated/host/")({
 function HostCreate() {
   const navigate = useNavigate();
   const { t } = useI18n();
-  const { quiz: preselected } = Route.useSearch();
+  const { quiz: preselected, checkout } = Route.useSearch();
   const { user } = Route.useRouteContext();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [counts, setCounts] = useState<Record<string, number>>({});
@@ -43,6 +44,10 @@ function HostCreate() {
   const [showPaywall, setShowPaywall] = useState(false);
   const [paywallReason, setPaywallReason] = useState<string>("");
   const { refresh: refreshSub } = useSubscription();
+
+  useEffect(() => {
+    if (checkout === "cancelled") toast.info(t("hostPick.checkoutCancelled"));
+  }, [checkout, t]);
 
   const load = useCallback(async () => {
     // 1. Fetch from Supabase
@@ -99,45 +104,24 @@ function HostCreate() {
     }
     setBusy(true);
 
-    // 1. Verify Hosting Quota / Subscription
-    try {
-      const { data: eligibility, error: elErr } = await supabase.rpc("check_user_hosting_eligibility");
-      if (elErr) {
-        console.warn("Eligibility RPC fallback:", elErr);
-      } else if (eligibility && !eligibility.allowed) {
-        setPaywallReason("daily_limit_reached");
-        setShowPaywall(true);
-        setBusy(false);
-        return;
-      }
-
-      // Claim daily usage quota
-      const { error: claimErr } = await supabase.rpc("claim_daily_hosted_quiz");
-      if (claimErr) {
-        setPaywallReason("daily_limit_reached");
-        setShowPaywall(true);
-        setBusy(false);
-        return;
-      }
-      void refreshSub();
-    } catch (e) {
-      console.error("Quota check failed:", e);
-    }
-
-    // Housekeeping: finished/abandoned rooms free their codes after 6 hours.
-    await supabase
-      .from("rooms")
-      .delete()
-      .lt("created_at", new Date(getSyncedNow() - 6 * 60 * 60 * 1000).toISOString());
+    // The database assigns the host and consumes the daily free quota on
+    // insert; a duplicate code rolls the quota back, so retrying is safe.
     for (let attempt = 0; attempt < 6; attempt += 1) {
       const code = randomCode();
-      const { error } = await supabase
-        .from("rooms")
-        .insert({ code, quiz_id: selected, status: "lobby" });
+      const { error } = await supabase.from("rooms").insert({ code, quiz_id: selected });
       if (!error) {
+        void refreshSub();
         void navigate({ to: "/host/$code", params: { code } });
         return;
       }
+      if (isDailyLimitError(error)) {
+        setPaywallReason("daily_limit_reached");
+        setShowPaywall(true);
+        setBusy(false);
+        void refreshSub();
+        return;
+      }
+      if (error.code !== "23505") break;
     }
     setBusy(false);
     toast.error(t("hostPick.createError"));

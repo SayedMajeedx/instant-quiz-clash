@@ -17,7 +17,7 @@ import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 import { Volume2, VolumeX } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { sounds } from "@/lib/audio";
-import { clearStoredPlayer, storedPlayerId } from "@/lib/session";
+import { clearStoredPlayer, storedPlayerSession, type PlayerSession } from "@/lib/session";
 import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
 
@@ -47,8 +47,9 @@ function Play() {
 
   // Keep player phone screen awake during active game session
   useWakeLock(true);
-  const [playerId, setPlayerId] = useState<string | null>(() => storedPlayerId(code));
-  const [sessionResolved, setSessionResolved] = useState(() => Boolean(storedPlayerId(code)));
+  const [session, setSession] = useState<PlayerSession | null>(() => storedPlayerSession(code));
+  const [sessionResolved, setSessionResolved] = useState(() => Boolean(storedPlayerSession(code)));
+  const playerId = session?.playerId ?? null;
   const [showLeaveModal, setShowLeaveConfirm] = useState(false);
   const [muted, setMuted] = useState(() => sounds.getMuted());
 
@@ -59,7 +60,7 @@ function Play() {
       sounds.playTap();
     }
   }
-  const state = useRoomGame(code, playerId);
+  const state = useRoomGame(code, session);
   const { t } = useI18n();
   const phase = usePhase(state);
   const { room, quiz, questions, players, answers } = state;
@@ -68,17 +69,23 @@ function Play() {
   const [optimisticChoice, setOptimisticChoice] = useState<number | null>(null);
 
   async function leaveGame() {
-    if (playerId) {
-      void supabase.from("players").delete().eq("id", playerId);
+    if (session) {
+      void supabase.rpc("leave_room", { p_player_id: session.playerId, p_token: session.token });
     }
     clearStoredPlayer(code);
     void navigate({ to: "/join" });
   }
 
   useEffect(() => {
-    setPlayerId(storedPlayerId(code));
+    setSession(storedPlayerSession(code));
     setSessionResolved(true);
   }, [code]);
+
+  // The room no longer accepts this session (kicked, or it predates player
+  // tokens): forget it so the player can rejoin.
+  useEffect(() => {
+    if (state.playerRejected) clearStoredPlayer(code);
+  }, [state.playerRejected, code]);
 
   const me = players.find((p) => p.id === playerId) ?? null;
   const phaseKind = phase.kind;
@@ -105,17 +112,11 @@ function Play() {
     setOptimisticChoice(null);
   }, [currentQuestion?.id, Boolean(myAnswer)]);
 
-  // Correct answers are revealed by the server once a question's clock runs out.
-  useEffect(() => {
-    if (phase.kind === "reveal") void state.refresh();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase.kind, phase.kind === "reveal" ? phase.index : -1]);
-
   async function submit(choice: number) {
     if (
       phase.kind !== "question" ||
       !room?.started_at ||
-      !playerId ||
+      !session ||
       myAnswer ||
       sending ||
       optimisticChoice !== null
@@ -130,7 +131,8 @@ function Play() {
 
     try {
       const { error } = await supabase.rpc("submit_answer", {
-        p_player_id: playerId,
+        p_player_id: session.playerId,
+        p_token: session.token,
         p_question_id: question.id,
         p_choice: choice,
         ...(armedDouble ? { p_powerup: "double" } : {}),
@@ -151,9 +153,10 @@ function Play() {
   }
 
   async function activateFifty() {
-    if (phase.kind !== "question" || !playerId || myAnswer || !me || me.used_fifty) return;
+    if (phase.kind !== "question" || !session || myAnswer || !me || me.used_fifty) return;
     const { error } = await supabase.rpc("use_fifty_fifty", {
-      p_player_id: playerId,
+      p_player_id: session.playerId,
+      p_token: session.token,
       p_question_id: phase.question.id,
     });
     if (error) {
@@ -189,7 +192,7 @@ function Play() {
     );
   }
 
-  if (!playerId || !me) {
+  if (!playerId || !me || state.playerRejected) {
     return (
       <main className="grid min-h-screen place-items-center px-5 text-center">
         <AnimatedBg />
