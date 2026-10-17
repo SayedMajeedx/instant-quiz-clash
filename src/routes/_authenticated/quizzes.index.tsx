@@ -1,9 +1,11 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
-import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { Pencil, Play, Plus, Sparkles, Trash2 } from "lucide-react";
+import { AppHeader } from "@/components/quiz/AppHeader";
+import { ConfirmDialog } from "@/components/quiz/ConfirmDialog";
+import { Pager } from "@/components/quiz/Pager";
+import { SiteFooter } from "@/components/quiz/SiteFooter";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { cleanQuizTitle } from "@/lib/browse-helpers";
@@ -25,49 +27,32 @@ export const Route = createFileRoute("/_authenticated/quizzes/")({
 
 function MyQuizzes() {
   const navigate = useNavigate();
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const { user } = Route.useRouteContext();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
+  const [pendingDelete, setPendingDelete] = useState<Quiz | null>(null);
 
   const load = useCallback(async () => {
-    // 1. Fetch from Supabase
-    const { data } = await supabase
-      .from("quizzes")
-      .select("*")
+    // One request: each quiz with the number of questions it really has.
+    const { data } = await (supabase.from("quizzes") as any)
+      .select("*, questions(count)")
       .eq("user_id", user.id)
       .eq("personal_library", true)
       .order("created_at", { ascending: false });
 
-    const rows = ((data ?? []) as unknown as Quiz[]).filter(
+    const rows = ((data ?? []) as (Quiz & { questions?: { count: number }[] })[]).filter(
       (quiz) => quiz.quiz_kind !== "custom_generated",
     );
+    const map: Record<string, number> = {};
+    for (const row of rows) map[row.id] = row.questions?.[0]?.count ?? 0;
 
     setQuizzes(rows);
+    setCounts(map);
     setPage(1);
-
-    if (rows.length) {
-      const { data: qs } = await supabase
-        .from("questions")
-        .select("id, quiz_id")
-        .in(
-          "quiz_id",
-          rows.map((q) => q.id),
-        );
-      const map: Record<string, number> = {};
-      for (const q of (qs ?? []) as { quiz_id: string }[])
-        map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
-
-      rows.forEach((rq) => {
-        if (!map[rq.id]) map[rq.id] = 10;
-      });
-
-      setCounts(map);
-    }
     setLoading(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user.id]);
 
   useEffect(() => {
@@ -130,7 +115,11 @@ function MyQuizzes() {
   }
 
   async function remove(id: string) {
-    await supabase.from("quizzes").delete().eq("id", id);
+    const { error } = await supabase.from("quizzes").delete().eq("id", id);
+    if (error) {
+      toast.error(t("auth.error"));
+      return;
+    }
     setQuizzes((prev) => {
       const updated = prev.filter((q) => q.id !== id);
       const localKey = `quizclash_user_quizzes_${user.id}`;
@@ -147,131 +136,166 @@ function MyQuizzes() {
   const totalPages = Math.max(1, Math.ceil(quizzes.length / PAGE_SIZE));
   const pageQuizzes = quizzes.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
+  const newLabel = t("quizzes.new").replace(/^\+\s*/, "");
+
   return (
-    <main className="relative min-h-screen">
-      <AnimatedBg />
-      <div className="mx-auto max-w-3xl px-5 py-10">
-        <div className="flex items-center justify-between gap-3">
-          <Link
-            to="/"
-            className="text-sm font-semibold text-muted-foreground hover:text-foreground"
-          >
-            {t("nav.backHome")}
-          </Link>
-          <LanguageToggle />
-        </div>
+    <div className="flex min-h-screen flex-col">
+      <AppHeader>
+        <Link to="/browse" className="press rounded-xl bg-secondary px-4 py-2 text-sm font-semibold">
+          {t("nav.browse")}
+        </Link>
+      </AppHeader>
+
+      <main className="mx-auto w-full max-w-3xl flex-1 px-5 pb-20">
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
-          <h1 className="font-display text-4xl md:text-5xl">{t("quizzes.title")}</h1>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              to="/browse"
-              className="press rounded-2xl border border-primary/50 bg-primary/10 px-5 py-3 font-display text-lg text-primary hover:bg-primary/20"
-            >
-              ✨ {t("browse.title")}
-            </Link>
-            <button
-              type="button"
-              onClick={() => void createQuiz(false)}
-              className="press rounded-2xl bg-gradient-hero px-5 py-3 font-display text-lg text-primary-foreground shadow-chunky"
-            >
-              {t("quizzes.new")}
-            </button>
-            <button
-              type="button"
-              onClick={() => void createQuiz(true)}
-              className="press rounded-2xl border border-border bg-surface-gradient px-5 py-3 font-display text-lg"
-            >
-              ✨ {t("import.open")}
-            </button>
+          <div>
+            <h1 className="font-display text-4xl sm:text-5xl">{t("quizzes.title")}</h1>
+            {!loading && quizzes.length > 0 ? (
+              <p className="mt-1 text-muted-foreground">
+                {quizzes.length} {lang === "ar" ? "كويز" : quizzes.length === 1 ? "quiz" : "quizzes"}
+              </p>
+            ) : null}
           </div>
+          {quizzes.length > 0 ? (
+            <div className="flex flex-wrap gap-3">
+              <button type="button" onClick={() => void createQuiz(true)} className="ledge ledge-panel">
+                <span className="ledge-face h-12 px-5 font-semibold">
+                  <Sparkles className="size-5 text-sun" aria-hidden />
+                  {t("import.open")}
+                </span>
+              </button>
+              <button type="button" onClick={() => void createQuiz(false)} className="ledge ledge-blue">
+                <span className="ledge-face h-12 px-5 font-display text-lg">
+                  <Plus className="size-5" aria-hidden />
+                  {newLabel}
+                </span>
+              </button>
+            </div>
+          ) : null}
         </div>
 
         <div className="mt-8 space-y-3">
-          {loading ? <p className="text-muted-foreground">{t("quizzes.loading")}</p> : null}
+          {loading
+            ? Array.from({ length: 4 }, (_, i) => (
+                <div key={i} className="h-[84px] animate-pulse rounded-2xl bg-card" aria-hidden />
+              ))
+            : null}
+
           {!loading && quizzes.length === 0 ? (
-            <div className="rounded-3xl border border-primary/30 bg-surface-gradient p-8 text-center shadow-glow">
-              <p className="font-display text-3xl text-gradient">{t("quizzes.emptyTitle")}</p>
-              <p className="mt-2 text-muted-foreground">{t("quizzes.emptyBody")}</p>
-              <div className="mt-6 flex flex-wrap justify-center gap-3">
-                <Link
-                  to="/browse"
-                  className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky"
-                >
-                  ✨ {t("browse.ctaBtn")}
-                </Link>
-                <button
-                  type="button"
-                  onClick={() => void createQuiz(false)}
-                  className="press rounded-2xl border border-border bg-background/50 px-6 py-3 font-display text-lg"
-                >
-                  {t("quizzes.new")}
+            <div className="animate-rise rounded-3xl bg-card p-8 text-center sm:p-10">
+              <ShapesMark />
+              <p className="mt-5 font-display text-3xl">{t("quizzes.emptyTitle")}</p>
+              <p className="mx-auto mt-2 max-w-sm text-muted-foreground">{t("quizzes.emptyBody")}</p>
+              <div className="mt-7 flex flex-wrap justify-center gap-3">
+                <button type="button" onClick={() => void createQuiz(false)} className="ledge ledge-blue">
+                  <span className="ledge-face h-12 px-6 font-display text-lg">
+                    <Plus className="size-5" aria-hidden />
+                    {newLabel}
+                  </span>
+                </button>
+                <button type="button" onClick={() => void createQuiz(true)} className="ledge ledge-panel">
+                  <span className="ledge-face h-12 px-6 font-semibold">
+                    <Sparkles className="size-5 text-sun" aria-hidden />
+                    {t("import.open")}
+                  </span>
                 </button>
               </div>
+              <Link to="/browse" className="mt-6 inline-block font-semibold text-sun hover:underline">
+                {t("browse.ctaBtn")}
+              </Link>
             </div>
           ) : null}
+
           {pageQuizzes.map((quiz) => {
             const displayTitle = cleanQuizTitle(quiz.title);
+            const count = counts[quiz.id] ?? 0;
             return (
-              <div
-                key={quiz.id}
-                className="flex flex-wrap items-center gap-3 rounded-2xl border border-border bg-surface-gradient p-4"
-              >
-                <div className="min-w-0 flex-1">
-                  <p className="truncate font-display text-xl">{displayTitle}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {t("quizzes.questionCount", { count: counts[quiz.id] ?? 0 })}
-                  </p>
-                </div>
+              <article key={quiz.id} className="flex flex-wrap items-center gap-3 rounded-2xl bg-card p-4 sm:flex-nowrap">
                 <Link
                   to="/quizzes/$quizId"
                   params={{ quizId: quiz.id }}
                   search={{ import: undefined }}
-                  className="press rounded-xl border border-border px-4 py-2 text-sm font-semibold hover:border-primary"
+                  className="min-w-0 flex-1 rounded-lg"
                 >
-                  ✏️ {t("quizzes.edit")}
+                  <p className="truncate font-display text-xl">{displayTitle}</p>
+                  <p className={count === 0 ? "text-sm text-sun" : "text-sm text-muted-foreground"}>
+                    {count === 0
+                      ? lang === "ar"
+                        ? "لا توجد أسئلة بعد"
+                        : "No questions yet"
+                      : t("quizzes.questionCount", { count })}
+                  </p>
                 </Link>
-                <Link
-                  to="/host"
-                  search={{ quiz: quiz.id }}
-                  className="press rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
-                >
-                  🎮 {t("quizzes.host")}
-                </Link>
-                <button
-                  type="button"
-                  onClick={() => void remove(quiz.id)}
-                  className="press rounded-xl border border-border px-4 py-2 text-sm font-semibold text-destructive"
-                >
-                  {t("quizzes.delete")}
-                </button>
-              </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setPendingDelete(quiz)}
+                    aria-label={`${t("quizzes.delete")}: ${displayTitle}`}
+                    className="press grid size-10 place-items-center rounded-xl text-muted-foreground transition-colors duration-150 hover:bg-secondary hover:text-foreground"
+                  >
+                    <Trash2 className="size-5" aria-hidden />
+                  </button>
+                  <Link
+                    to="/quizzes/$quizId"
+                    params={{ quizId: quiz.id }}
+                    search={{ import: undefined }}
+                    className="press flex h-10 items-center gap-2 rounded-xl bg-secondary px-4 text-sm font-semibold"
+                  >
+                    <Pencil className="size-4" aria-hidden />
+                    {t("quizzes.edit")}
+                  </Link>
+                  <Link
+                    to="/host"
+                    search={{ quiz: quiz.id }}
+                    className="press flex h-10 items-center gap-2 rounded-xl bg-answer-4 px-4 text-sm font-semibold text-white"
+                  >
+                    <Play className="size-4 fill-current rtl:rotate-180" aria-hidden />
+                    {t("quizzes.host")}
+                  </Link>
+                </div>
+              </article>
             );
           })}
+
           {!loading && quizzes.length > PAGE_SIZE ? (
-            <div className="flex items-center justify-center gap-3 pt-5" dir="ltr">
-              <button
-                type="button"
-                disabled={page === 1}
-                onClick={() => setPage((current) => Math.max(1, current - 1))}
-                className="rounded-xl border border-border px-4 py-2 font-bold disabled:opacity-35"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </button>
-              <span className="min-w-20 text-center text-sm font-bold text-muted-foreground">
-                {page} / {totalPages}
-              </span>
-              <button
-                type="button"
-                disabled={page === totalPages}
-                onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
-                className="rounded-xl border border-border px-4 py-2 font-bold disabled:opacity-35"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
+            <Pager page={page} totalPages={totalPages} onPage={setPage} />
           ) : null}
         </div>
-      </div>
-    </main>
+      </main>
+
+      <SiteFooter />
+
+      <ConfirmDialog
+        open={pendingDelete !== null}
+        onOpenChange={(open) => {
+          if (!open) setPendingDelete(null);
+        }}
+        title={lang === "ar" ? "حذف هذا الكويز؟" : "Delete this quiz?"}
+        body={
+          pendingDelete
+            ? lang === "ar"
+              ? `«${cleanQuizTitle(pendingDelete.title)}» وكل أسئلته ستُحذف نهائياً.`
+              : `“${cleanQuizTitle(pendingDelete.title)}” and all its questions will be deleted for good.`
+            : undefined
+        }
+        confirmLabel={t("quizzes.delete")}
+        onConfirm={() => {
+          if (pendingDelete) void remove(pendingDelete.id);
+          setPendingDelete(null);
+        }}
+      />
+    </div>
+  );
+}
+
+/** The four answer shapes, used as a quiet illustration on empty states. */
+function ShapesMark() {
+  return (
+    <span aria-hidden className="mx-auto grid w-fit grid-cols-2 gap-1.5">
+      <span className="size-5 bg-answer-1 [clip-path:polygon(50%_6%,100%_94%,0_94%)]" />
+      <span className="size-5 bg-answer-2 [clip-path:polygon(50%_0,100%_50%,50%_100%,0_50%)]" />
+      <span className="size-5 rounded-full bg-answer-3" />
+      <span className="size-5 rounded-[4px] bg-answer-4" />
+    </span>
   );
 }

@@ -1,10 +1,11 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
+import { Check, Loader2, Pencil } from "lucide-react";
+import { AppHeader } from "@/components/quiz/AppHeader";
 import { GameHistory } from "@/components/quiz/GameHistory";
-import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { Pager } from "@/components/quiz/Pager";
+import { SiteFooter } from "@/components/quiz/SiteFooter";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import { randomCode, type Quiz } from "@/lib/quizclash";
@@ -33,7 +34,7 @@ export const Route = createFileRoute("/_authenticated/host/")({
 
 function HostCreate() {
   const navigate = useNavigate();
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const { quiz: preselected, checkout } = Route.useSearch();
   const { user } = Route.useRouteContext();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
@@ -41,6 +42,7 @@ function HostCreate() {
   const [selected, setSelected] = useState<string | null>(preselected ?? null);
   const [busy, setBusy] = useState(false);
   const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
   const [showPaywall, setShowPaywall] = useState(false);
   const [paywallReason, setPaywallReason] = useState<string>("");
   const { refresh: refreshSub } = useSubscription();
@@ -50,42 +52,26 @@ function HostCreate() {
   }, [checkout, t]);
 
   const load = useCallback(async () => {
-    // 1. Fetch from Supabase
-    const { data } = await supabase
-      .from("quizzes")
-      .select("*")
+    // One request: each quiz with the number of questions it really has, so the
+    // "add a question first" guard below sees the truth.
+    const { data } = await (supabase.from("quizzes") as any)
+      .select("*, questions(count)")
       .eq("user_id", user.id)
       .eq("personal_library", true)
       .order("created_at", { ascending: false });
 
-    const rows = ((data ?? []) as unknown as Quiz[]).filter(
+    const rows = ((data ?? []) as (Quiz & { questions?: { count: number }[] })[]).filter(
       (quiz) => quiz.quiz_kind !== "custom_generated",
     );
+    const map: Record<string, number> = {};
+    for (const row of rows) map[row.id] = row.questions?.[0]?.count ?? 0;
 
     setQuizzes(rows);
+    setCounts(map);
     const selectedIndex = preselected ? rows.findIndex((quiz) => quiz.id === preselected) : -1;
     setPage(selectedIndex >= 0 ? Math.floor(selectedIndex / PAGE_SIZE) + 1 : 1);
-
-    if (rows.length) {
-      const { data: qs } = await supabase
-        .from("questions")
-        .select("id, quiz_id")
-        .in(
-          "quiz_id",
-          rows.map((q) => q.id),
-        );
-      const map: Record<string, number> = {};
-      for (const q of (qs ?? []) as { quiz_id: string }[])
-        map[q.quiz_id] = (map[q.quiz_id] ?? 0) + 1;
-
-      // Ensure fallback question count for local cached quizzes if questions table query is empty
-      rows.forEach((rq) => {
-        if (!map[rq.id]) map[rq.id] = 10;
-      });
-
-      setCounts(map);
-      if (!selected && rows[0]) setSelected(rows[0].id);
-    }
+    if (!selected && rows[0]) setSelected(rows[0].id);
+    setLoading(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user.id]);
 
@@ -127,121 +113,143 @@ function HostCreate() {
     toast.error(t("hostPick.createError"));
   }
 
+  const selectedQuiz = quizzes.find((quiz) => quiz.id === selected) ?? null;
+  const ar = lang === "ar";
+
   return (
-    <main className="relative min-h-screen">
-      <AnimatedBg />
-      <SubscriptionPaywallModal
-        open={showPaywall}
-        onOpenChange={setShowPaywall}
-        reason={paywallReason}
-      />
-      <div className="mx-auto max-w-2xl px-5 py-10">
-        <div className="flex items-center justify-between gap-3">
-          <Link
-            to="/"
-            className="text-sm font-semibold text-muted-foreground hover:text-foreground"
-          >
-            {t("nav.backHome")}
-          </Link>
-          <div className="flex items-center gap-2.5">
-            <SubscriptionStatusBadge onOpenUpgrade={() => setShowPaywall(true)} />
-            <LanguageToggle />
-          </div>
-        </div>
-        <h1 className="mt-4 font-display text-4xl md:text-5xl">{t("hostPick.title")}</h1>
-        <p className="mt-2 text-muted-foreground">{t("hostPick.sub")}</p>
+    <div className="flex min-h-screen flex-col">
+      <SubscriptionPaywallModal open={showPaywall} onOpenChange={setShowPaywall} reason={paywallReason} />
+      <AppHeader>
+        <SubscriptionStatusBadge onOpenUpgrade={() => setShowPaywall(true)} />
+        <Link to="/quizzes" className="press rounded-xl bg-secondary px-4 py-2 text-sm font-semibold">
+          {t("nav.myQuizzes")}
+        </Link>
+      </AppHeader>
+
+      <main className="mx-auto w-full max-w-3xl flex-1 px-5 pb-16">
+        <h1 className="mt-4 font-display text-4xl sm:text-5xl">{t("hostPick.title")}</h1>
+        <p className="mt-2 text-lg text-muted-foreground">{t("hostPick.sub")}</p>
 
         <div className="mt-8 space-y-3">
-          {quizzes.length === 0 ? (
-            <div className="rounded-3xl border border-border bg-surface-gradient p-8 text-center">
+          {loading
+            ? Array.from({ length: 3 }, (_, i) => (
+                <div key={i} className="h-[76px] animate-pulse rounded-2xl bg-card" aria-hidden />
+              ))
+            : null}
+
+          {!loading && quizzes.length === 0 ? (
+            <div className="animate-rise rounded-3xl bg-card p-8 text-center">
               <p className="font-display text-2xl">{t("hostPick.needQuiz")}</p>
-              <Link
-                to="/quizzes"
-                className="press mt-4 inline-block rounded-2xl bg-gradient-hero px-5 py-3 font-display text-primary-foreground shadow-chunky"
-              >
-                {t("hostPick.buildQuiz")}
-              </Link>
-            </div>
-          ) : null}
-          {pageQuizzes.map((quiz) => {
-            const displayTitle = cleanQuizTitle(quiz.title);
-            const isSel = selected === quiz.id;
-            return (
-              <div
-                key={quiz.id}
-                onClick={() => setSelected(quiz.id)}
-                className={cn(
-                  "press flex w-full items-center justify-between rounded-2xl border bg-surface-gradient p-4 text-start cursor-pointer transition-all hover:border-primary/50",
-                  isSel ? "border-primary ring-2 ring-primary" : "border-border",
-                )}
-              >
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-display text-xl">{displayTitle}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {t("quizzes.questionCount", { count: counts[quiz.id] ?? 0 })}
-                  </span>
-                </span>
-
-                <div className="flex items-center gap-3 shrink-0">
-                  <Link
-                    to="/quizzes/$quizId"
-                    params={{ quizId: quiz.id }}
-                    search={{ import: undefined }}
-                    onClick={(e) => e.stopPropagation()}
-                    className="press rounded-xl border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-xs font-bold text-primary hover:bg-primary/20 transition-all flex items-center gap-1"
-                  >
-                    ✏️ تعديل
-                  </Link>
-
-                  {isSel ? (
-                    <span className="font-display text-lime font-bold text-sm bg-lime/10 border border-lime/30 px-3 py-1 rounded-full">
-                      محدد
-                    </span>
-                  ) : null}
-                </div>
+              <p className="mx-auto mt-2 max-w-sm text-muted-foreground">
+                {ar
+                  ? "اختر كويزاً جاهزاً من المكتبة أو اكتب كويزك الخاص."
+                  : "Pick a ready-made quiz from the library or write your own."}
+              </p>
+              <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <Link to="/browse" className="ledge ledge-blue">
+                  <span className="ledge-face h-12 px-6 font-display text-lg">{t("nav.browse")}</span>
+                </Link>
+                <Link to="/quizzes" className="ledge ledge-panel">
+                  <span className="ledge-face h-12 px-6 font-semibold">{t("hostPick.buildQuiz")}</span>
+                </Link>
               </div>
-            );
-          })}
-          {quizzes.length > PAGE_SIZE ? (
-            <div className="flex items-center justify-center gap-3 pt-5" dir="ltr">
-              <button
-                type="button"
-                disabled={page === 1}
-                onClick={() => setPage((current) => Math.max(1, current - 1))}
-                className="rounded-xl border border-border p-2.5 disabled:opacity-35"
-                aria-label="Previous page"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </button>
-              <span className="min-w-20 text-center text-sm font-bold text-muted-foreground">
-                {page} / {totalPages}
-              </span>
-              <button
-                type="button"
-                disabled={page === totalPages}
-                onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
-                className="rounded-xl border border-border p-2.5 disabled:opacity-35"
-                aria-label="Next page"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
             </div>
           ) : null}
+
+          {quizzes.length > 0 ? (
+            <div role="radiogroup" aria-label={t("hostPick.title")} className="space-y-3">
+              {pageQuizzes.map((quiz) => {
+                const displayTitle = cleanQuizTitle(quiz.title);
+                const isSel = selected === quiz.id;
+                const count = counts[quiz.id] ?? 0;
+                return (
+                  <div
+                    key={quiz.id}
+                    className={cn(
+                      "flex items-center gap-2 rounded-2xl bg-card pe-3 ring-2 transition-[box-shadow,background-color] duration-150",
+                      isSel ? "bg-secondary ring-sun" : "ring-transparent",
+                    )}
+                  >
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked={isSel}
+                      onClick={() => setSelected(quiz.id)}
+                      className="flex min-w-0 flex-1 items-center gap-4 rounded-2xl p-4 text-start"
+                    >
+                      <span
+                        aria-hidden
+                        className={cn(
+                          "grid size-6 shrink-0 place-items-center rounded-full border-2 transition-colors duration-150",
+                          isSel ? "border-sun bg-sun text-on-sun" : "border-border",
+                        )}
+                      >
+                        {isSel ? <Check className="size-4" strokeWidth={3} /> : null}
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate font-display text-xl">{displayTitle}</span>
+                        <span className={cn("text-sm", count === 0 ? "text-sun" : "text-muted-foreground")}>
+                          {count === 0
+                            ? ar
+                              ? "لا توجد أسئلة بعد"
+                              : "No questions yet"
+                            : t("quizzes.questionCount", { count })}
+                        </span>
+                      </span>
+                    </button>
+                    <Link
+                      to="/quizzes/$quizId"
+                      params={{ quizId: quiz.id }}
+                      search={{ import: undefined }}
+                      aria-label={`${t("quizzes.edit")}: ${displayTitle}`}
+                      className="press grid size-10 shrink-0 place-items-center rounded-xl text-muted-foreground transition-colors duration-150 hover:bg-background hover:text-foreground"
+                    >
+                      <Pencil className="size-5" aria-hidden />
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          ) : null}
+
+          {quizzes.length > PAGE_SIZE ? <Pager page={page} totalPages={totalPages} onPage={setPage} /> : null}
         </div>
 
-        {quizzes.length > 0 ? (
-          <button
-            type="button"
-            disabled={!selected || busy}
-            onClick={() => void createRoom()}
-            className="press mt-8 w-full rounded-3xl bg-gradient-hero px-6 py-5 font-display text-2xl text-primary-foreground shadow-chunky disabled:opacity-50"
-          >
-            {busy ? t("hostPick.creating") : t("hostPick.create")}
-          </button>
-        ) : null}
+        <p className="mt-6 text-sm text-muted-foreground">
+          {ar ? "تريد أسئلة من عدة أقسام؟ " : "Want questions from several categories? "}
+          <Link to="/custom-challenge" className="font-semibold text-sun hover:underline">
+            {ar ? "أنشئ تحدياً مخصصاً" : "Build a custom challenge"}
+          </Link>
+        </p>
 
         <GameHistory userId={user.id} />
-      </div>
-    </main>
+      </main>
+
+      {quizzes.length > 0 ? (
+        <div className="sticky bottom-0 z-10 border-t border-border bg-background">
+          <div className="mx-auto flex w-full max-w-3xl items-center gap-4 px-5 pb-4 pt-3">
+            <div className="hidden min-w-0 flex-1 sm:block">
+              <p className="text-sm text-muted-foreground">{ar ? "الكويز المختار" : "Selected quiz"}</p>
+              <p className="truncate font-display text-lg">
+                {selectedQuiz ? cleanQuizTitle(selectedQuiz.title) : "—"}
+              </p>
+            </div>
+            <button
+              type="button"
+              disabled={!selected || busy}
+              onClick={() => void createRoom()}
+              className="ledge ledge-green w-full disabled:opacity-50 sm:w-auto"
+            >
+              <span className="ledge-face h-14 px-8 font-display text-xl">
+                {busy ? <Loader2 className="size-5 animate-spin" aria-hidden /> : null}
+                {busy ? t("hostPick.creating") : t("hostPick.create")}
+              </span>
+            </button>
+          </div>
+        </div>
+      ) : null}
+
+      <SiteFooter />
+    </div>
   );
 }

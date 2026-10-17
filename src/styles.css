@@ -203,6 +203,24 @@
   }
 }
 
+/* Text inputs: a flat well that takes the yellow focus colour. Only the border colour animates. */
+@utility field {
+  width: 100%;
+  border-radius: calc(var(--radius) - 4px);
+  border: 2px solid var(--border);
+  background: var(--background);
+  padding: 0.7rem 1rem;
+  color: var(--foreground);
+  outline: none;
+  transition: border-color 150ms ease;
+  &::placeholder {
+    color: var(--muted-foreground);
+  }
+  &:focus {
+    border-color: var(--sun);
+  }
+}
+
 /*
  * The game button: a face that sits on a solid ledge and moves down into it on press.
  * Markup: <button class="ledge ledge-blue"><span class="ledge-face">…</span></button>

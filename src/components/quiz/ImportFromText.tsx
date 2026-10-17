@@ -1,6 +1,8 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
+import { AlertTriangle, Check, Loader2, Sparkles, X } from "lucide-react";
 import { AnswerShape } from "@/components/quiz/AnswerTile";
+import { Segmented } from "@/components/quiz/Segmented";
 import { generateQuizFromTopicFn, importQuestionsFromText } from "@/lib/import-questions.functions";
 import { MAX_IMPORT_CHARS, type ParsedQuestion } from "@/lib/import-questions.shared";
 import { useI18n } from "@/lib/i18n";
@@ -34,6 +36,16 @@ export function ImportFromText({
   const overLimit = text.length > MAX_IMPORT_CHARS;
   const nearLimit = text.length > MAX_IMPORT_CHARS * 0.9;
   const selectedCount = useMemo(() => (drafts ?? []).filter((d) => d.include).length, [drafts]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && !saving) close();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, saving]);
 
   if (!open) return null;
 
@@ -130,42 +142,41 @@ export function ImportFromText({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-background/80 p-4 backdrop-blur-sm">
-      <div className="my-6 w-full max-w-3xl rounded-3xl border border-border bg-surface-gradient p-6 shadow-chunky">
+    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/70 p-4">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="import-title"
+        className="my-6 w-full max-w-3xl animate-pop rounded-3xl bg-card p-6 sm:p-8"
+      >
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 className="font-display text-3xl">{t("import.title")}</h2>
+            <h2 id="import-title" className="font-display text-3xl">{t("import.title")}</h2>
             <p className="mt-1 text-sm text-muted-foreground">{t("import.sub")}</p>
           </div>
           <button
             type="button"
             onClick={close}
-            className="press rounded-xl border border-border px-3 py-1 text-sm"
+            className="press grid size-10 shrink-0 place-items-center rounded-xl bg-secondary text-muted-foreground transition-colors duration-150 hover:text-foreground"
             aria-label={t("import.close")}
           >
-            ✕
+            <X className="size-5" aria-hidden />
           </button>
         </div>
 
         {drafts === null ? (
           <>
-            <div className="mt-5 flex gap-2 rounded-2xl border border-border bg-background/40 p-1">
-              {(["topic", "text"] as const).map((m) => (
-                <button
-                  key={m}
-                  type="button"
-                  onClick={() => setMode(m)}
-                  className={cn(
-                    "press flex-1 rounded-xl px-4 py-2 font-display text-sm",
-                    mode === m
-                      ? "bg-gradient-hero text-primary-foreground shadow-chunky"
-                      : "text-muted-foreground",
-                  )}
-                >
-                  {t(m === "topic" ? "aiGen.tabTopic" : "aiGen.tabText")}
-                </button>
-              ))}
-            </div>
+            <Segmented
+              label={t("import.title")}
+              size="lg"
+              className="mt-6"
+              value={mode}
+              options={[
+                { value: "topic", label: t("aiGen.tabTopic") },
+                { value: "text", label: t("aiGen.tabText") },
+              ]}
+              onChange={setMode}
+            />
 
             {mode === "topic" ? (
               <>
@@ -183,7 +194,7 @@ export function ImportFromText({
                     if (e.key === "Enter") void generate();
                   }}
                   placeholder={t("aiGen.topicPlaceholder")}
-                  className="mt-2 w-full rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
+                  className="field mt-2 text-base"
                 />
 
                 <div className="mt-4 grid gap-4 sm:grid-cols-3">
@@ -191,7 +202,7 @@ export function ImportFromText({
                   <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
                     <div className="flex justify-between items-center">
                       <span>{t("aiGen.count")}</span>
-                      <span className="font-display text-primary text-base tabular-nums">
+                      <span className="font-display text-base tabular-nums text-sun">
                         {count}
                       </span>
                     </div>
@@ -201,56 +212,41 @@ export function ImportFromText({
                       max={20}
                       value={count}
                       onChange={(e) => setCount(Number(e.target.value))}
-                      className="mt-3 w-full accent-primary h-2 rounded-lg cursor-pointer"
+                      className="mt-3 h-2 w-full cursor-pointer accent-[var(--sun)]"
                     />
                   </div>
 
                   {/* Difficulty */}
                   <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
                     {t("aiGen.difficulty")}
-                    <div className="mt-2 flex gap-1">
-                      {(["standard", "challenge"] as const).map((d) => (
-                        <button
-                          key={d}
-                          type="button"
-                          onClick={() => setDifficulty(d)}
-                          className={cn(
-                            "press flex-1 rounded-xl border px-1.5 py-2 text-xs font-semibold flex items-center justify-center gap-1",
-                            difficulty === d
-                              ? "border-primary bg-primary/20 text-foreground ring-1 ring-primary"
-                              : "border-border bg-background/30",
-                          )}
-                        >
-                          <span>{d === "standard" ? "🟡" : "🔴"}</span>
-                          <span>{t(`aiGen.${d}`)}</span>
-                        </button>
-                      ))}
-                    </div>
+                    <Segmented
+                      label={t("aiGen.difficulty")}
+                      className="mt-2 flex-nowrap [&>button]:flex-1"
+                      value={difficulty}
+                      options={[
+                        { value: "standard", label: t("aiGen.standard") },
+                        { value: "challenge", label: t("aiGen.challenge") },
+                      ]}
+                      onChange={setDifficulty}
+                    />
                   </div>
 
                   {/* Language */}
                   <div className="text-sm font-semibold text-muted-foreground sm:col-span-1">
                     {t("aiGen.language")}
-                    <div className="mt-2 flex gap-1">
-                      {(["ar", "en"] as const).map((l) => (
-                        <button
-                          key={l}
-                          type="button"
-                          onClick={() => {
-                            setLanguage(l);
-                            setUserOverrodeLang(true);
-                          }}
-                          className={cn(
-                            "press flex-1 rounded-xl border px-1.5 py-2 text-xs font-semibold",
-                            language === l
-                              ? "border-primary bg-primary/20 text-foreground ring-1 ring-primary"
-                              : "border-border bg-background/30",
-                          )}
-                        >
-                          {t(l === "ar" ? "aiGen.langAr" : "aiGen.langEn")}
-                        </button>
-                      ))}
-                    </div>
+                    <Segmented
+                      label={t("aiGen.language")}
+                      className="mt-2 flex-nowrap [&>button]:flex-1"
+                      value={language}
+                      options={[
+                        { value: "ar", label: t("aiGen.langAr") },
+                        { value: "en", label: t("aiGen.langEn") },
+                      ]}
+                      onChange={(l) => {
+                        setLanguage(l);
+                        setUserOverrodeLang(true);
+                      }}
+                    />
                   </div>
                 </div>
 
@@ -259,23 +255,19 @@ export function ImportFromText({
                     type="button"
                     disabled={loading || topic.trim().length < 2}
                     onClick={() => void generate()}
-                    className="press flex items-center gap-2 rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
+                    className="ledge ledge-blue disabled:opacity-50"
                   >
-                    {loading ? (
-                      <>
-                        <span className="inline-block size-5 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent" />
-                        {t("aiGen.generating")}
-                      </>
-                    ) : (
-                      <>✨ {t("aiGen.generate")}</>
-                    )}
+                    <span className="ledge-face h-12 px-6 font-display text-lg">
+                      {loading ? (
+                        <Loader2 className="size-5 animate-spin" aria-hidden />
+                      ) : (
+                        <Sparkles className="size-5" aria-hidden />
+                      )}
+                      {loading ? t("aiGen.generating") : t("aiGen.generate")}
+                    </span>
                   </button>
-                  <button
-                    type="button"
-                    onClick={close}
-                    className="press rounded-2xl border border-border px-5 py-3"
-                  >
-                    {t("import.cancel")}
+                  <button type="button" onClick={close} className="ledge ledge-panel">
+                    <span className="ledge-face h-12 px-5 font-semibold">{t("import.cancel")}</span>
                   </button>
                 </div>
               </>
@@ -286,7 +278,8 @@ export function ImportFromText({
                   onChange={(e) => setText(e.target.value)}
                   rows={12}
                   placeholder={t("import.placeholder")}
-                  className="mt-5 w-full resize-y rounded-2xl border border-border bg-background/50 px-4 py-3 text-base outline-none focus:ring-2 focus:ring-ring"
+                  aria-label={t("aiGen.tabText")}
+                  className="field mt-5 resize-y text-base"
                 />
                 <div className="mt-2 flex items-center justify-between gap-3 text-sm">
                   <span
@@ -309,31 +302,30 @@ export function ImportFromText({
                     type="button"
                     disabled={loading || overLimit || !text.trim()}
                     onClick={() => void parse()}
-                    className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
+                    className="ledge ledge-blue disabled:opacity-50"
                   >
-                    {loading ? t("import.loading") : t("import.parse")}
+                    <span className="ledge-face h-12 px-6 font-display text-lg">
+                      {loading ? <Loader2 className="size-5 animate-spin" aria-hidden /> : null}
+                      {loading ? t("import.loading") : t("import.parse")}
+                    </span>
                   </button>
-                  <button
-                    type="button"
-                    onClick={close}
-                    className="press rounded-2xl border border-border px-5 py-3"
-                  >
-                    {t("import.cancel")}
+                  <button type="button" onClick={close} className="ledge ledge-panel">
+                    <span className="ledge-face h-12 px-5 font-semibold">{t("import.cancel")}</span>
                   </button>
                 </div>
               </>
             )}
           </>
         ) : drafts.length === 0 ? (
-          <div className="mt-6 rounded-2xl border border-border bg-background/40 p-6 text-center">
+          <div className="mt-6 rounded-2xl bg-background p-6 text-center">
             <p className="font-display text-2xl">{t("import.emptyTitle")}</p>
             <p className="mt-2 text-muted-foreground">{t("import.emptyBody")}</p>
             <button
               type="button"
               onClick={() => setDrafts(null)}
-              className="press mt-5 rounded-2xl border border-border px-5 py-3 font-semibold"
+              className="ledge ledge-panel mt-5"
             >
-              {t("import.tryAgain")}
+              <span className="ledge-face h-12 px-5 font-semibold">{t("import.tryAgain")}</span>
             </button>
           </div>
         ) : (
@@ -346,10 +338,8 @@ export function ImportFromText({
                 <section
                   key={index}
                   className={cn(
-                    "rounded-2xl border p-4",
-                    draft.include
-                      ? "border-border bg-background/40"
-                      : "border-border/50 bg-background/20 opacity-60",
+                    "rounded-2xl bg-background p-4 transition-opacity duration-150",
+                    !draft.include && "opacity-50",
                   )}
                 >
                   <header className="flex flex-wrap items-center gap-2">
@@ -358,7 +348,7 @@ export function ImportFromText({
                         type="checkbox"
                         checked={draft.include}
                         onChange={(e) => patch(index, { include: e.target.checked })}
-                        className="size-4 accent-[var(--answer-3)]"
+                        className="size-5 accent-[var(--sun)]"
                       />
                       {t("editor.question", { n: index + 1 })}
                     </label>
@@ -374,7 +364,7 @@ export function ImportFromText({
                     onChange={(e) => patch(index, { question_text: e.target.value })}
                     rows={2}
                     placeholder={t("editor.questionPlaceholder")}
-                    className="mt-3 w-full resize-none rounded-xl border border-border bg-background/50 px-3 py-2 outline-none focus:ring-2 focus:ring-ring"
+                    className="field mt-3 resize-none bg-card"
                   />
 
                   <div className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -395,20 +385,21 @@ export function ImportFromText({
                               ),
                             })
                           }
-                          className="min-w-0 flex-1 rounded-xl border border-border bg-background/50 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
+                          className="field h-10 min-w-0 flex-1 bg-card py-0 text-sm"
                         />
                         <button
                           type="button"
                           onClick={() => patch(index, { correct_index: i })}
                           aria-label={t("editor.markCorrect")}
+                          aria-pressed={draft.correct_index === i}
                           className={cn(
-                            "press grid size-8 shrink-0 place-items-center rounded-full border-2 text-xs",
+                            "press grid size-9 shrink-0 place-items-center rounded-full border-2 transition-colors duration-150",
                             draft.correct_index === i
                               ? "border-lime bg-lime text-background"
                               : "border-border text-muted-foreground",
                           )}
                         >
-                          ✓
+                          <Check className="size-4" strokeWidth={3} aria-hidden />
                         </button>
                       </div>
                     ))}
@@ -429,7 +420,7 @@ export function ImportFromText({
                           ),
                         })
                       }
-                      className="w-20 rounded-xl border border-border bg-background/50 px-3 py-1 text-center text-foreground outline-none focus:ring-2 focus:ring-ring"
+                      className="field h-9 w-20 bg-card px-2 py-0 text-center tabular-nums"
                     />
                     {t("editor.seconds")}
                   </label>
@@ -442,16 +433,19 @@ export function ImportFromText({
                 type="button"
                 disabled={saving || selectedCount === 0}
                 onClick={() => void confirm()}
-                className="press rounded-2xl bg-gradient-hero px-6 py-3 font-display text-lg text-primary-foreground shadow-chunky disabled:opacity-50"
+                className="ledge ledge-green disabled:opacity-50"
               >
-                {saving ? t("import.adding") : t("import.addToQuiz", { n: selectedCount })}
+                <span className="ledge-face h-12 px-6 font-display text-lg">
+                  {saving ? <Loader2 className="size-5 animate-spin" aria-hidden /> : null}
+                  {saving ? t("import.adding") : t("import.addToQuiz", { n: selectedCount })}
+                </span>
               </button>
               <button
                 type="button"
                 onClick={() => setDrafts(null)}
-                className="press rounded-2xl border border-border px-5 py-3"
+                className="ledge ledge-panel"
               >
-                {t("import.backToPaste")}
+                <span className="ledge-face h-12 px-5 font-semibold">{t("import.backToPaste")}</span>
               </button>
             </div>
           </>
@@ -463,8 +457,9 @@ export function ImportFromText({
 
 function Badge({ label }: { label: string }) {
   return (
-    <span className="rounded-full border border-sun/50 bg-sun/15 px-2 py-0.5 text-xs font-semibold text-sun">
-      ⚠ {label}
+    <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs font-semibold text-sun">
+      <AlertTriangle className="size-3.5" aria-hidden />
+      {label}
     </span>
   );
 }

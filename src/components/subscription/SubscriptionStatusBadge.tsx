@@ -1,36 +1,37 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import { Sparkles, Zap, Lock, Crown } from "lucide-react";
+import { Crown, ShieldCheck } from "lucide-react";
+import { ConfirmDialog } from "@/components/quiz/ConfirmDialog";
 import { useSubscription } from "@/hooks/useSubscription";
 import { useI18n } from "@/lib/i18n";
 import { cancelPayPalSubscription } from "@/lib/paypal";
-import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 interface SubscriptionStatusBadgeProps {
   onOpenUpgrade?: () => void;
   className?: string;
 }
 
+const chip = "inline-flex h-9 items-center gap-1.5 rounded-xl px-3 text-sm font-semibold";
+
+/** The host's plan at a glance: Pro, admin, or how today's free game stands. */
 export function SubscriptionStatusBadge({ onOpenUpgrade, className = "" }: SubscriptionStatusBadgeProps) {
   const { eligibility, isSubscribed, plan, quotaRemaining, loading, refresh } = useSubscription();
   const { lang } = useI18n();
   const [cancelling, setCancelling] = useState(false);
+  const [confirmOpen, setConfirmOpen] = useState(false);
   const isAr = lang === "ar";
 
   if (loading) {
-    return (
-      <Badge variant="outline" className={`animate-pulse border-border/40 text-xs ${className}`}>
-        ...
-      </Badge>
-    );
+    return <span className={cn(chip, "w-28 animate-pulse bg-secondary", className)} aria-hidden />;
   }
 
   if (plan === "admin") {
     return (
-      <Badge className={`bg-amber-500/20 text-amber-300 border-amber-500/40 gap-1.5 py-1 px-2.5 font-medium ${className}`}>
-        <Crown className="w-3.5 h-3.5 text-amber-400" />
+      <span className={cn(chip, "bg-secondary", className)}>
+        <ShieldCheck className="size-4 text-sun" aria-hidden />
         {isAr ? "مسؤول" : "Admin"}
-      </Badge>
+      </span>
     );
   }
 
@@ -42,12 +43,6 @@ export function SubscriptionStatusBadge({ onOpenUpgrade, className = "" }: Subsc
     const canCancel = !cancelled && eligibility?.provider === "paypal";
 
     async function cancel() {
-      const confirmed = window.confirm(
-        isAr
-          ? "إلغاء التجديد التلقائي؟ يبقى اشتراكك فعّالاً حتى نهاية الفترة المدفوعة."
-          : "Cancel auto-renewal? You keep Pro until the end of the paid period.",
-      );
-      if (!confirmed) return;
       setCancelling(true);
       try {
         await cancelPayPalSubscription();
@@ -62,27 +57,33 @@ export function SubscriptionStatusBadge({ onOpenUpgrade, className = "" }: Subsc
     }
 
     return (
-      <span className={`inline-flex items-center gap-2 ${className}`}>
-        <Badge className="bg-purple-500/20 text-purple-300 border-purple-500/40 gap-1.5 py-1 px-2.5 font-medium">
-          <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-          {cancelled && until
-            ? isAr
-              ? `برو حتى ${until}`
-              : `Pro until ${until}`
-            : isAr
-              ? "مشترك برو ✦ غير محدود"
-              : "Pro ✦ Unlimited"}
-        </Badge>
-        {canCancel && (
+      <span className={cn("inline-flex items-center gap-2", className)}>
+        <span className={cn(chip, "bg-sun text-on-sun")}>
+          <Crown className="size-4" aria-hidden />
+          {cancelled && until ? (isAr ? `برو حتى ${until}` : `Pro until ${until}`) : "Pro"}
+        </span>
+        {canCancel ? (
           <button
             type="button"
-            onClick={() => void cancel()}
+            onClick={() => setConfirmOpen(true)}
             disabled={cancelling}
-            className="text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline disabled:opacity-50"
+            className="text-sm text-muted-foreground underline-offset-2 hover:text-foreground hover:underline disabled:opacity-50"
           >
-            {isAr ? "إلغاء الاشتراك" : "Cancel"}
+            {isAr ? "إلغاء الاشتراك" : "Cancel plan"}
           </button>
-        )}
+        ) : null}
+        <ConfirmDialog
+          open={confirmOpen}
+          onOpenChange={setConfirmOpen}
+          title={isAr ? "إلغاء التجديد التلقائي؟" : "Cancel auto-renewal?"}
+          body={
+            isAr
+              ? "يبقى اشتراكك فعّالاً حتى نهاية الفترة المدفوعة، ثم تعود للخطة المجانية."
+              : "You keep Pro until the end of the paid period, then return to the free plan."
+          }
+          confirmLabel={isAr ? "إلغاء التجديد" : "Cancel renewal"}
+          onConfirm={() => void cancel()}
+        />
       </span>
     );
   }
@@ -90,26 +91,19 @@ export function SubscriptionStatusBadge({ onOpenUpgrade, className = "" }: Subsc
   const hasQuota = quotaRemaining > 0;
 
   return (
-    <Badge
-      variant="outline"
+    <button
+      type="button"
       onClick={onOpenUpgrade}
-      className={`cursor-pointer transition-all hover:scale-105 gap-1.5 py-1 px-2.5 font-medium ${
-        hasQuota
-          ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20"
-          : "bg-red-500/10 text-red-400 border-red-500/30 hover:bg-red-500/20"
-      } ${className}`}
+      className={cn(chip, "press bg-secondary transition-colors duration-150 hover:bg-border", className)}
     >
-      {hasQuota ? (
-        <>
-          <Zap className="w-3.5 h-3.5 text-emerald-400" />
-          {isAr ? "1 كويز مجاني متبقي اليوم" : "1 Free Quiz Remaining Today"}
-        </>
-      ) : (
-        <>
-          <Lock className="w-3.5 h-3.5 text-red-400" />
-          {isAr ? "نفد رصيد اليوم · ترقية لـ Pro" : "Daily Limit Used · Upgrade"}
-        </>
-      )}
-    </Badge>
+      <span aria-hidden className={cn("size-2.5 rounded-full", hasQuota ? "bg-lime" : "bg-answer-1")} />
+      {hasQuota
+        ? isAr
+          ? "لعبة مجانية متبقية اليوم"
+          : "1 free game left today"
+        : isAr
+          ? "استخدمت لعبة اليوم · ترقية"
+          : "Today's free game used · Upgrade"}
+    </button>
   );
 }

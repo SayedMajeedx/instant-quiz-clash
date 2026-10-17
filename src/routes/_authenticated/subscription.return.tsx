@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
-import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { AlertTriangle, Clock, Crown, Loader2 } from "lucide-react";
+import { AppHeader } from "@/components/quiz/AppHeader";
 import { useI18n } from "@/lib/i18n";
 import { confirmPayPalSubscription } from "@/lib/paypal";
 
@@ -57,24 +57,28 @@ function SubscriptionReturn() {
 
   const copy = {
     checking: {
-      icon: "⏳",
+      Icon: Loader2,
+      tone: "bg-secondary text-foreground",
       title: isAr ? "جارٍ تأكيد اشتراكك..." : "Confirming your subscription...",
       body: isAr ? "لحظات من فضلك." : "This only takes a moment.",
     },
     active: {
-      icon: "🎉",
+      Icon: Crown,
+      tone: "bg-sun text-on-sun",
       title: isAr ? "أهلاً بك في QuizClash Pro!" : "Welcome to QuizClash Pro!",
       body: isAr ? "استضافة غير محدودة مفعّلة الآن." : "Unlimited hosting is now active.",
     },
     processing: {
-      icon: "🕐",
+      Icon: Clock,
+      tone: "bg-answer-2 text-white",
       title: isAr ? "الدفع قيد المعالجة" : "Payment is processing",
       body: isAr
         ? "سيتم تفعيل اشتراكك تلقائياً خلال دقائق عند تأكيد PayPal للدفع."
         : "Your subscription will activate automatically within a few minutes, once PayPal confirms the payment.",
     },
     failed: {
-      icon: "⚠️",
+      Icon: AlertTriangle,
+      tone: "bg-answer-1 text-white",
       title: isAr ? "لم نتمكن من العثور على الاشتراك" : "We couldn't find that subscription",
       body: isAr
         ? "إذا تم خصم المبلغ، سيتم تفعيل اشتراكك تلقائياً. وإلا يمكنك المحاولة مرة أخرى."
@@ -82,27 +86,27 @@ function SubscriptionReturn() {
     },
   }[state];
 
+  const Icon = copy.Icon;
+
   return (
-    <main className="relative grid min-h-screen place-items-center px-5" dir={isAr ? "rtl" : "ltr"}>
-      <AnimatedBg />
-      <div className="w-full max-w-md">
-        <div className="mb-6 flex justify-end">
-          <LanguageToggle />
-        </div>
-        <div className="rounded-3xl border border-border bg-surface-gradient p-8 text-center shadow-glow">
-          <p className="font-display text-5xl">{copy.icon}</p>
-          <h1 className="mt-3 font-display text-3xl text-gradient">{copy.title}</h1>
-          <p className="mt-3 text-muted-foreground">{copy.body}</p>
-          {state !== "checking" && (
-            <Link
-              to="/host"
-              className="press mt-6 inline-block rounded-2xl bg-gradient-hero px-6 py-3 font-display text-primary-foreground shadow-chunky"
-            >
-              {isAr ? "استضف لعبة" : "Host a game"}
+    <div className="flex min-h-screen flex-col">
+      <AppHeader />
+      <main className="grid flex-1 place-items-center px-5 pb-16">
+        <div role="status" aria-live="polite" className="w-full max-w-md rounded-3xl bg-card p-8 text-center">
+          <span className={`mx-auto grid size-14 place-items-center rounded-2xl ${copy.tone}`}>
+            <Icon className={state === "checking" ? "size-7 animate-spin" : "size-7"} aria-hidden />
+          </span>
+          <h1 key={state} className="mt-5 animate-rise font-display text-3xl">
+            {copy.title}
+          </h1>
+          <p className="mt-2 text-muted-foreground">{copy.body}</p>
+          {state !== "checking" ? (
+            <Link to="/host" className="ledge ledge-green mt-7 w-full">
+              <span className="ledge-face h-14 font-display text-xl">{isAr ? "استضف لعبة" : "Host a game"}</span>
             </Link>
-          )}
+          ) : null}
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

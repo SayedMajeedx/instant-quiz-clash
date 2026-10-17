@@ -1,8 +1,10 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
-import { AnimatedBg } from "@/components/quiz/AnimatedBg";
-import { LanguageToggle } from "@/components/quiz/LanguageToggle";
+import { Check, Loader2 } from "lucide-react";
+import { AppHeader } from "@/components/quiz/AppHeader";
+import { Segmented } from "@/components/quiz/Segmented";
+import { SiteFooter } from "@/components/quiz/SiteFooter";
 import { SubscriptionPaywallModal } from "@/components/subscription/SubscriptionPaywallModal";
 import { isDailyLimitError } from "@/hooks/useSubscription";
 import { supabase } from "@/integrations/supabase/client";
@@ -10,6 +12,7 @@ import { getAllAdminQuizzes } from "@/lib/admin-data-helper";
 import { selectCustomQuestions } from "@/lib/custom-quiz";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { getCategoryMark } from "@/lib/browse-helpers";
 
 export const Route = createFileRoute("/_authenticated/custom-challenge")({
   component: CustomChallengeSetup,
@@ -42,7 +45,7 @@ const subcategoryKey = (category: string, subcategory: string) => `${category}\u
 
 function CustomChallengeSetup() {
   const navigate = useNavigate();
-  const { lang } = useI18n();
+  const { t, lang } = useI18n();
   const [categories, setCategories] = useState<CategoryOption[]>([]);
   const [questionBank, setQuestionBank] = useState<UnifiedQuestion[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -248,253 +251,215 @@ function CustomChallengeSetup() {
     void navigate({ to: "/host/$code", params: { code: data.room_code } });
   }
 
+  const allSelected = selectedCategories.length === categories.length && categories.length > 0;
+  const enough = available !== null && available >= questionCount;
+
   return (
-    <main className="relative min-h-screen px-5 py-8" dir={ar ? "rtl" : "ltr"}>
-      <AnimatedBg dense />
-      <SubscriptionPaywallModal
-        open={showPaywall}
-        onOpenChange={setShowPaywall}
-        reason="daily_limit_reached"
-      />
-      <div className="relative mx-auto max-w-4xl">
-        <header className="flex items-center justify-between gap-3">
-          <Link to="/" className="text-sm font-bold text-muted-foreground hover:text-foreground">
-            {ar ? "العودة للرئيسية" : "Back home"}
-          </Link>
-          <LanguageToggle />
-        </header>
+    <div className="flex min-h-screen flex-col">
+      <SubscriptionPaywallModal open={showPaywall} onOpenChange={setShowPaywall} reason="daily_limit_reached" />
+      <AppHeader>
+        <Link to="/quizzes" className="press rounded-xl bg-secondary px-4 py-2 text-sm font-semibold">
+          {t("nav.myQuizzes")}
+        </Link>
+      </AppHeader>
 
-        <div className="mt-6 rounded-3xl border border-primary/40 bg-background/80 p-6 shadow-glow backdrop-blur-xl sm:p-8">
-          <p className="text-sm font-bold text-sun">
-            ⚡ {ar ? "تحدي جماعي بلا حدود" : "Dynamic multiplayer challenge"}
-          </p>
-          <h1 className="mt-2 font-display text-4xl text-gradient sm:text-5xl">
-            {ar ? "تحدي كويز مخصص" : "Custom Quiz Challenge"}
-          </h1>
-          <p className="mt-2 text-muted-foreground">
-            {ar
-              ? "اختر بنك الأسئلة، وسننشئ غرفة عشوائية برمز الانضمام المعتاد. كل سؤال مدته 30 ثانية."
-              : "Choose the question pools and we’ll create a shuffled room with the usual join code. Every question has 30 seconds."}
-          </p>
+      <main className="mx-auto w-full max-w-4xl flex-1 px-5 pb-12">
+        <h1 className="mt-4 font-display text-4xl sm:text-5xl">{ar ? "تحدي مخصص" : "Custom challenge"}</h1>
+        <p className="mt-2 max-w-2xl text-lg text-muted-foreground">
+          {ar
+            ? "اختر الأقسام، وسنسحب أسئلة عشوائية منها في غرفة برمز انضمام عادي. لكل سؤال 30 ثانية."
+            : "Pick the categories and we'll draw random questions from them into a room with the usual join code. Every question gets 30 seconds."}
+        </p>
 
-          <section className="mt-8">
-            <div className="flex items-center justify-between gap-3">
-              <h2 className="font-display text-2xl">{ar ? "1. الأقسام" : "1. Categories"}</h2>
-              <button
-                type="button"
-                onClick={() => {
-                  if (selectedCategories.length === categories.length) {
-                    setSelectedCategories([]);
-                    setSelectedSubcategories([]);
-                  } else {
-                    setSelectedCategories(categories.map((category) => category.name));
-                    setSelectedSubcategories([]);
-                  }
-                }}
-                className="rounded-xl border border-primary/40 px-3 py-1.5 text-xs font-bold text-primary"
-              >
-                {selectedCategories.length === categories.length && categories.length > 0
-                  ? ar
-                    ? "إلغاء تحديد الكل"
-                    : "Clear all"
-                  : ar
-                    ? "تحديد الكل"
-                    : "Select all"}
-              </button>
-            </div>
-            {loadingCategories ? (
-              <p className="mt-4 text-muted-foreground">{ar ? "جارٍ التحميل..." : "Loading..."}</p>
-            ) : (
-              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {categories.map((category) => {
+        <Step n={1} title={ar ? "الأقسام" : "Categories"}>
+          <div className="flex justify-end">
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedCategories(allSelected ? [] : categories.map((category) => category.name));
+                setSelectedSubcategories([]);
+              }}
+              className="text-sm font-semibold text-sun hover:underline"
+            >
+              {allSelected ? (ar ? "إلغاء تحديد الكل" : "Clear all") : ar ? "تحديد الكل" : "Select all"}
+            </button>
+          </div>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {loadingCategories
+              ? Array.from({ length: 6 }, (_, i) => (
+                  <div key={i} className="h-[72px] animate-pulse rounded-2xl bg-card" aria-hidden />
+                ))
+              : categories.map((category) => {
                   const active = selectedCategories.includes(category.name);
+                  const mark = getCategoryMark(category.name);
+                  const MarkIcon = mark.Icon;
                   return (
                     <button
                       key={category.id}
                       type="button"
+                      aria-pressed={active}
                       onClick={() => toggleCategory(category.name)}
                       className={cn(
-                        "rounded-2xl border p-4 text-start font-bold transition",
-                        active
-                          ? "border-primary bg-primary/35 text-white shadow-glow"
-                          : "border-border bg-background/50",
+                        "press flex items-center gap-3 rounded-2xl p-3 text-start ring-2 transition-[box-shadow,background-color] duration-150",
+                        active ? "bg-secondary ring-sun" : "bg-card ring-transparent",
                       )}
                     >
-                      <span className="me-2">{active ? "☑" : "☐"}</span>
-                      {category.name}
+                      <span className={`grid size-11 shrink-0 place-items-center rounded-xl ${mark.bg} ${mark.fg}`}>
+                        <MarkIcon className="size-5" aria-hidden />
+                      </span>
+                      <span className="min-w-0 flex-1 truncate font-semibold">{category.name}</span>
+                      <span
+                        aria-hidden
+                        className={cn(
+                          "grid size-6 shrink-0 place-items-center rounded-md border-2 transition-colors duration-150",
+                          active ? "border-sun bg-sun text-on-sun" : "border-border",
+                        )}
+                      >
+                        {active ? <Check className="size-4" strokeWidth={3} /> : null}
+                      </span>
                     </button>
                   );
                 })}
-              </div>
-            )}
-          </section>
+          </div>
 
-          {visibleSubcategories.length > 0 && (
-            <section className="mt-7">
-              <h2 className="font-display text-xl">
-                {ar ? "الأقسام الفرعية (اختياري)" : "Subcategories (optional)"}
-              </h2>
-              <p className="mt-1 text-xs text-muted-foreground">
+          {visibleSubcategories.length > 0 ? (
+            <div className="mt-6 animate-rise">
+              <h3 className="font-semibold">{ar ? "الأقسام الفرعية (اختياري)" : "Subcategories (optional)"}</h3>
+              <p className="mt-0.5 text-sm text-muted-foreground">
                 {ar
-                  ? "اتركها بدون تحديد لاستخدام جميع أسئلة الأقسام المختارة."
-                  : "Leave blank to use every question in the selected categories."}
+                  ? "اتركها بدون تحديد لاستخدام كل أسئلة القسم."
+                  : "Leave them all off to use every question in the category."}
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {visibleSubcategories.map((sub) => {
-                  const active = selectedSubcategories.includes(
-                    subcategoryKey(sub.category, sub.name),
-                  );
+                  const active = selectedSubcategories.includes(subcategoryKey(sub.category, sub.name));
                   return (
                     <button
                       key={`${sub.category}-${sub.id}`}
                       type="button"
+                      aria-pressed={active}
                       onClick={() => toggleSubcategory(sub.category, sub.name)}
                       className={cn(
-                        "rounded-full border px-3 py-2 text-xs font-bold",
-                        active
-                          ? "border-primary bg-primary/40 text-white shadow-glow"
-                          : "border-border",
+                        "press flex items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-semibold transition-colors duration-150",
+                        active ? "bg-sun text-on-sun" : "bg-secondary",
                       )}
                     >
-                      {active ? "✓ " : ""}
+                      {active ? <Check className="size-4" strokeWidth={3} aria-hidden /> : null}
                       {sub.name}
                     </button>
                   );
                 })}
               </div>
-            </section>
-          )}
+            </div>
+          ) : null}
 
-          {selectedCategories.length > 1 && (
-            <p className="mt-5 rounded-2xl border border-primary/25 bg-primary/10 px-4 py-3 text-sm text-muted-foreground">
+          {selectedCategories.length > 1 ? (
+            <p className="mt-5 rounded-2xl bg-card px-4 py-3 text-sm text-muted-foreground">
               {ar
-                ? "عند اختيار عدة أقسام، تُستخدم جميع أقسامها الفرعية تلقائياً. اختر قسماً رئيسياً واحداً فقط إذا أردت تصفية أقسامه الفرعية."
-                : "With multiple categories selected, all of their subcategories are included automatically. Select one category to refine its subcategories."}
+                ? "مع اختيار أكثر من قسم تُستخدم كل أقسامها الفرعية. اختر قسماً واحداً لتصفية أقسامه الفرعية."
+                : "With more than one category selected, all their subcategories are used. Pick one category to narrow its subcategories."}
             </p>
-          )}
+          ) : null}
+        </Step>
 
-          <section className="mt-8 grid gap-7 md:grid-cols-2">
-            <div>
-              <h2 className="font-display text-xl">
-                {ar ? "2. عدد الأسئلة" : "2. Question count"}
-              </h2>
-              <div className="mt-3 grid grid-cols-4 gap-2">
-                {QUESTION_COUNTS.map((count) => (
-                  <button
-                    key={count}
-                    type="button"
-                    onClick={() => setQuestionCount(count)}
-                    className={cn(
-                      "rounded-2xl border px-2 py-3 font-display text-lg",
-                      questionCount === count
-                        ? "border-primary bg-primary/20 text-primary"
-                        : "border-border",
-                    )}
-                  >
-                    {count}
-                  </button>
-                ))}
-              </div>
-              <p className="mt-2 text-xs text-muted-foreground">
-                {checking
-                  ? ar
-                    ? "جارٍ فحص بنك الأسئلة..."
-                    : "Checking question pool..."
-                  : ar
-                    ? `${available ?? 0} سؤال متاح`
-                    : `${available ?? 0} questions available`}
-              </p>
-            </div>
+        <div className="grid gap-x-8 md:grid-cols-2">
+          <Step n={2} title={ar ? "عدد الأسئلة" : "Questions"}>
+            <Segmented
+              label={ar ? "عدد الأسئلة" : "Questions"}
+              size="lg"
+              className="flex-nowrap"
+              value={questionCount}
+              options={QUESTION_COUNTS.map((count) => ({ value: count, label: String(count) }))}
+              onChange={setQuestionCount}
+            />
+          </Step>
+          <Step n={3} title={ar ? "الصعوبة" : "Difficulty"}>
+            <Segmented
+              label={ar ? "الصعوبة" : "Difficulty"}
+              size="lg"
+              className="flex-nowrap"
+              value={difficulty}
+              options={[
+                { value: "all", label: ar ? "الكل" : "All" },
+                { value: "standard", label: ar ? "قياسي" : "Standard" },
+                { value: "challenge", label: ar ? "تحدي" : "Challenge" },
+              ]}
+              onChange={setDifficulty}
+            />
+          </Step>
+          <Step n={4} title={ar ? "تقدّم الأسئلة" : "Pacing"}>
+            <Segmented
+              label={ar ? "تقدّم الأسئلة" : "Pacing"}
+              size="lg"
+              className="flex-nowrap"
+              value={advanceMode}
+              options={[
+                { value: "auto", label: ar ? "تلقائي" : "Automatic" },
+                { value: "manual", label: ar ? "يدوي" : "Manual" },
+              ]}
+              onChange={setAdvanceMode}
+            />
+          </Step>
+          <Step n={5} title={ar ? "الفرق" : "Teams"}>
+            <Segmented
+              label={ar ? "الفرق" : "Teams"}
+              size="lg"
+              className="flex-nowrap"
+              value={teamCount}
+              options={[0, 2, 3, 4].map((count) => ({
+                value: count,
+                label: count === 0 ? (ar ? "فردي" : "Solo") : String(count),
+              }))}
+              onChange={setTeamCount}
+            />
+          </Step>
+        </div>
+      </main>
 
-            <div>
-              <h2 className="font-display text-xl">{ar ? "3. الصعوبة" : "3. Difficulty"}</h2>
-              <div className="mt-3 grid grid-cols-3 gap-2">
-                {(["all", "standard", "challenge"] as Difficulty[]).map((value) => (
-                  <button
-                    key={value}
-                    type="button"
-                    onClick={() => setDifficulty(value)}
-                    className={cn(
-                      "rounded-2xl border px-2 py-3 text-sm font-bold",
-                      difficulty === value
-                        ? "border-primary bg-primary/20 text-primary"
-                        : "border-border",
-                    )}
-                  >
-                    {value === "all"
-                      ? ar
-                        ? "الكل"
-                        : "All"
-                      : value === "standard"
-                        ? ar
-                          ? "قياسي"
-                          : "Standard"
-                        : ar
-                          ? "تحدي"
-                          : "Challenge"}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section className="mt-8 grid gap-7 md:grid-cols-2">
-            <div>
-              <h2 className="font-display text-xl">
-                {ar ? "4. تقدم الأسئلة" : "4. Question pacing"}
-              </h2>
-              <div className="mt-3 grid grid-cols-2 gap-2">
-                {(["auto", "manual"] as const).map((mode) => (
-                  <button
-                    key={mode}
-                    type="button"
-                    onClick={() => setAdvanceMode(mode)}
-                    className={cn(
-                      "rounded-2xl border p-3 font-bold",
-                      advanceMode === mode ? "border-primary bg-primary/20" : "border-border",
-                    )}
-                  >
-                    {mode === "auto" ? (ar ? "تلقائي" : "Automatic") : ar ? "يدوي" : "Manual"}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h2 className="font-display text-xl">{ar ? "5. الفرق" : "5. Teams"}</h2>
-              <div className="mt-3 grid grid-cols-4 gap-2">
-                {[0, 2, 3, 4].map((count) => (
-                  <button
-                    key={count}
-                    type="button"
-                    onClick={() => setTeamCount(count)}
-                    className={cn(
-                      "rounded-2xl border p-3 font-bold",
-                      teamCount === count ? "border-primary bg-primary/20" : "border-border",
-                    )}
-                  >
-                    {count === 0 ? (ar ? "فردي" : "Solo") : count}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </section>
-
+      <div className="sticky bottom-0 z-10 border-t border-border bg-background">
+        <div className="mx-auto flex w-full max-w-4xl flex-wrap items-center gap-x-4 gap-y-2 px-5 pb-4 pt-3">
+          <p role="status" className="min-w-0 flex-1 text-sm">
+            {checking ? (
+              <span className="text-muted-foreground">{ar ? "جارٍ فحص بنك الأسئلة…" : "Checking the question pool…"}</span>
+            ) : available === null ? null : enough ? (
+              <span className="text-muted-foreground">
+                {ar ? `${available} سؤال متاح` : `${available} questions available`}
+              </span>
+            ) : (
+              <span className="font-semibold text-sun">
+                {ar
+                  ? `${available} سؤال فقط متاح. اختر أقساماً أكثر أو عدداً أقل.`
+                  : `Only ${available} questions available. Add categories or pick fewer.`}
+              </span>
+            )}
+          </p>
           <button
             type="button"
-            disabled={creating || checking || available === null || available < questionCount}
+            disabled={creating || checking || !enough}
             onClick={() => void createChallenge()}
-            className="press mt-9 w-full rounded-3xl bg-gradient-hero px-8 py-5 font-display text-2xl text-primary-foreground shadow-chunky disabled:cursor-not-allowed disabled:opacity-45"
+            className="ledge ledge-green w-full disabled:opacity-50 sm:w-auto"
           >
-            {creating
-              ? ar
-                ? "جارٍ إنشاء الغرفة..."
-                : "Creating room..."
-              : ar
-                ? "ابدأ التحدي وأنشئ الغرفة"
-                : "Create challenge room"}
+            <span className="ledge-face h-14 px-8 font-display text-xl">
+              {creating ? <Loader2 className="size-5 animate-spin" aria-hidden /> : null}
+              {creating ? (ar ? "جارٍ إنشاء الغرفة…" : "Creating room…") : ar ? "أنشئ الغرفة" : "Create room"}
+            </span>
           </button>
         </div>
       </div>
-    </main>
+
+      <SiteFooter />
+    </div>
+  );
+}
+
+function Step({ n, title, children }: { n: number; title: string; children: React.ReactNode }) {
+  return (
+    <section className="mt-10">
+      <h2 className="flex items-center gap-2.5 font-display text-2xl">
+        <span className="grid size-8 place-items-center rounded-lg bg-secondary text-base tabular-nums">{n}</span>
+        {title}
+      </h2>
+      <div className="mt-4">{children}</div>
+    </section>
   );
 }
