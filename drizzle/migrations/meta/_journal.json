@@ -15,6 +15,13 @@
       "when": 1792325304133,
       "tag": "0001_quiz_play_stats_select_use_private_is_admin",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792327337296,
+      "tag": "0002_position_based_rooms",
+      "breakpoints": true
     }
   ]
 }
