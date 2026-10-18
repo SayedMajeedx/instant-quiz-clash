@@ -3,6 +3,8 @@ import type { RealtimeChannel } from "@supabase/supabase-js";
 import { supabase } from "@/integrations/supabase/client";
 import {
   phaseAt,
+  BOARD_MS,
+  REVEAL_MS,
   type Answer,
   type Player,
   type Question,
@@ -11,6 +13,7 @@ import {
 } from "@/lib/quizclash";
 import type { PlayerSession } from "@/lib/session";
 import { getSyncedNow, getServerOffset, syncServerTime } from "@/lib/server-time";
+import { timeoutSignal } from "@/lib/request-timeout";
 
 export type ConnectionStatus = "connecting" | "connected" | "reconnecting" | "offline";
 
@@ -28,6 +31,10 @@ export type GameState = {
   connectionStatus: ConnectionStatus;
   serverOffsetMs: number;
   refresh: () => Promise<void>;
+  /** Takes a room row returned by an RPC (start, advance) without waiting for a refetch. */
+  acceptRoom: (room: Room) => void;
+  /** Players: ask the server to move on if the current stage is over. */
+  tick: () => void;
 };
 
 // Players cannot read the game tables or receive realtime events, so they
@@ -37,12 +44,39 @@ const PLAYER_LISTS_POLL_MS = 2500;
 // Hosts get realtime events; polling is only a safety net.
 const HOST_POLL_MS = 3000;
 const MAX_RECONNECTS = 10;
+// The host's screen normally moves the room on. Players only step in once a
+// stage has been over for this long (plus jitter, so phones don't all fire
+// at once), e.g. when the host's tab is backgrounded, asleep or offline.
+const PLAYER_TICK_GRACE_MS = 2500;
+const PLAYER_TICK_JITTER_MS = 1500;
+const PLAYER_TICK_RETRY_MS = 3000;
 
 async function fetchRoom(code: string): Promise<Room | null> {
-  const { data, error } = await supabase.rpc("get_room_by_code", { p_code: code.toUpperCase() });
+  const { data, error } = await supabase
+    .rpc("get_room_by_code", { p_code: code.toUpperCase() })
+    .abortSignal(timeoutSignal());
   if (error) throw error;
   const row = Array.isArray(data) ? data[0] : data;
   return (row as unknown as Room | undefined) ?? null;
+}
+
+const STATUS_ORDER: Record<Room["status"], number> = { lobby: 0, active: 1, ended: 2 };
+const PHASE_ORDER: Record<Room["cursor_phase"], number> = { question: 0, reveal: 1, board: 2 };
+
+/**
+ * Rooms only ever move forward. Responses can arrive out of order (a slow
+ * poll after a realtime event or an RPC result), so an older snapshot must
+ * never rewind the screen to a stage that is already over.
+ */
+function isBehind(next: Room, prev: Room): boolean {
+  if (next.id !== prev.id) return false;
+  if (next.status === "ended" || prev.status === "ended") return next.status !== "ended";
+  const a = [STATUS_ORDER[next.status] ?? 0, next.cursor_index, PHASE_ORDER[next.cursor_phase] ?? 0];
+  const b = [STATUS_ORDER[prev.status] ?? 0, prev.cursor_index, PHASE_ORDER[prev.cursor_phase] ?? 0];
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] !== b[i]) return a[i]! < b[i]!;
+  }
+  return false;
 }
 
 function isRejectedPlayerError(error: { message?: string } | null): boolean {
@@ -78,7 +112,11 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
   const isPlayer = Boolean(playerId && playerToken);
 
   const applyRoom = useCallback((next: Room) => {
-    setRoom((prev) => (prev && JSON.stringify(prev) === JSON.stringify(next) ? prev : next));
+    setRoom((prev) => {
+      if (!prev) return next;
+      if (isBehind(next, prev)) return prev;
+      return JSON.stringify(prev) === JSON.stringify(next) ? prev : next;
+    });
   }, []);
 
   const loadLists = useCallback(
@@ -86,8 +124,8 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
       if (isPlayer) {
         const args = { p_room_id: roomId, p_player_id: playerId!, p_token: playerToken! };
         const [p, a] = await Promise.all([
-          supabase.rpc("room_players", args),
-          supabase.rpc("room_answers", args),
+          supabase.rpc("room_players", args).abortSignal(timeoutSignal()),
+          supabase.rpc("room_answers", args).abortSignal(timeoutSignal()),
         ]);
         if (isRejectedPlayerError(p.error) || isRejectedPlayerError(a.error)) {
           setPlayerRejected(true);
@@ -101,8 +139,13 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
       }
 
       const [p, a] = await Promise.all([
-        supabase.from("players").select("*").eq("room_id", roomId).order("joined_at"),
-        supabase.from("answers").select("*").eq("room_id", roomId),
+        supabase
+          .from("players")
+          .select("*")
+          .eq("room_id", roomId)
+          .order("joined_at")
+          .abortSignal(timeoutSignal()),
+        supabase.from("answers").select("*").eq("room_id", roomId).abortSignal(timeoutSignal()),
       ]);
       if (p.error) throw p.error;
       if (a.error) throw a.error;
@@ -119,7 +162,10 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
           .from("questions")
           .select("*")
           .eq("quiz_id", target.quiz_id)
-          .order("order_index");
+          // Same order as the server's question positions.
+          .order("order_index")
+          .order("id")
+          .abortSignal(timeoutSignal());
         if (error) throw error;
         setQuestions(withOptions((data ?? []) as unknown as Question[]));
         return;
@@ -128,8 +174,8 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
       // Players: question text from room_questions, answers and explanations
       // only for questions the room has already revealed.
       const [q, r] = await Promise.all([
-        supabase.rpc("room_questions", { p_room_id: target.id }),
-        supabase.rpc("room_reveals", { p_room_id: target.id }),
+        supabase.rpc("room_questions", { p_room_id: target.id }).abortSignal(timeoutSignal()),
+        supabase.rpc("room_reveals", { p_room_id: target.id }).abortSignal(timeoutSignal()),
       ]);
       if (q.error) throw q.error;
       if (r.error) throw r.error;
@@ -166,6 +212,7 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
           .from("quizzes")
           .select("*")
           .eq("id", next.quiz_id)
+          .abortSignal(timeoutSignal())
           .maybeSingle();
         setQuiz((quizRow as unknown as Quiz | null) ?? null);
         await Promise.all([loadQuestions(next), loadLists(next.id)]);
@@ -199,7 +246,7 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
   useEffect(() => {
     if (!isPlayer || !roomId || roomStatus === "ended") return;
     let inFlight = false;
-    const tick = async () => {
+    const poll = async () => {
       if (inFlight) return;
       inFlight = true;
       try {
@@ -213,7 +260,7 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
       }
     };
     const ms = roomStatus === "active" ? PLAYER_ROOM_POLL_MS.active : PLAYER_ROOM_POLL_MS.lobby;
-    const id = window.setInterval(() => void tick(), ms);
+    const id = window.setInterval(() => void poll(), ms);
     return () => window.clearInterval(id);
   }, [isPlayer, roomId, roomStatus, code, applyRoom]);
 
@@ -237,6 +284,59 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
     );
     return () => window.clearInterval(id);
   }, [isPlayer, roomId, roomStatus, loadLists]);
+
+  // Players: if the host's screen stops moving the room on, nudge the server.
+  // tick_room only acts once the stage is really over by the database clock,
+  // so an early or duplicate tick is a harmless no-op.
+  const roomRef = useRef(room);
+  roomRef.current = room;
+  const tick = useCallback(() => {
+    const current = roomRef.current;
+    if (!isPlayer || !current || current.status !== "active") return;
+    void supabase
+      .rpc("tick_room", {
+        p_room_id: current.id,
+        p_expect_index: current.cursor_index,
+        p_expect_phase: current.cursor_phase,
+        p_player_id: playerId!,
+        p_token: playerToken!,
+      })
+      .abortSignal(timeoutSignal())
+      .then(({ data, error }) => {
+        if (!error && data) applyRoom(data as unknown as Room);
+      });
+  }, [isPlayer, playerId, playerToken, applyRoom]);
+
+  const stageQuestion = room ? questions[Math.min(room.cursor_index, questions.length - 1)] : undefined;
+  const stageMs =
+    !room || room.status !== "active"
+      ? null
+      : room.cursor_phase === "question"
+        ? stageQuestion
+          ? Math.max(1, stageQuestion.time_limit_seconds) * 1000
+          : null
+        : room.advance_mode === "manual"
+          ? null
+          : room.cursor_phase === "reveal"
+            ? REVEAL_MS
+            : (room.board_ms ?? BOARD_MS);
+  const stageStartedAt = room?.phase_started_at ?? room?.started_at ?? null;
+  useEffect(() => {
+    if (!isPlayer || stageMs === null || !stageStartedAt) return;
+    const dueAt = new Date(stageStartedAt).getTime() + stageMs + PLAYER_TICK_GRACE_MS;
+    let retryId: number | null = null;
+    const firstId = window.setTimeout(
+      () => {
+        tick();
+        retryId = window.setInterval(tick, PLAYER_TICK_RETRY_MS);
+      },
+      Math.max(0, dueAt - getSyncedNow()) + Math.random() * PLAYER_TICK_JITTER_MS,
+    );
+    return () => {
+      window.clearTimeout(firstId);
+      if (retryId !== null) window.clearInterval(retryId);
+    };
+  }, [isPlayer, cursorKey, stageMs, stageStartedAt, tick]);
 
   // Hosts: realtime, with a slow poll as a safety net.
   useEffect(() => {
@@ -364,6 +464,8 @@ export function useRoomGame(code: string, player?: PlayerSession | null): GameSt
     connectionStatus,
     serverOffsetMs: getServerOffset(),
     refresh,
+    acceptRoom: applyRoom,
+    tick,
   };
 }
 

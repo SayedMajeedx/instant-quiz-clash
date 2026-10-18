@@ -14,6 +14,8 @@ import { useRoomGame } from "@/hooks/useRoomGame";
 import { supabase } from "@/integrations/supabase/client";
 import { useI18n } from "@/lib/i18n";
 import {
+  BOARD_MS,
+  REVEAL_MS,
   optionCount,
   phaseAt,
   standings,
@@ -33,6 +35,7 @@ import { cn } from "@/lib/utils";
 import { buildCategoryBreakdown } from "@/lib/custom-quiz";
 
 import { useWakeLock } from "@/hooks/useWakeLock";
+import { timeoutSignal } from "@/lib/request-timeout";
 import { Check, Lightbulb, LogOut, Shuffle, Zap } from "lucide-react";
 
 export const Route = createFileRoute("/_authenticated/host/$code")({
@@ -58,25 +61,8 @@ function HostRoom() {
   const state = useRoomGame(code);
   const { t } = useI18n();
 
-  const [interQuestionSec, setInterQuestionSecState] = useState<number>(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem(`quizclash_delay_${code}`);
-      if (saved) return Number(saved) || 5;
-    }
-    return 5;
-  });
-
-  const setInterQuestionSec = useCallback(
-    (sec: number) => {
-      setInterQuestionSecState(sec);
-      if (typeof window !== "undefined") {
-        localStorage.setItem(`quizclash_delay_${code}`, String(sec));
-      }
-    },
-    [code],
-  );
-
-  // Optimistic local state for 0ms instant UI responses
+  // Optimistic room settings (pacing, teams) so the lobby responds instantly.
+  // Game progress (start, cursor) comes straight from the server's RPC results.
   const [localRoomPatch, setLocalRoomPatch] = useState<Partial<Room>>({});
   const [localPlayerTeams, setLocalPlayerTeams] = useState<Record<string, number | null>>({});
 
@@ -85,22 +71,14 @@ function HostRoom() {
     return { ...state.room, ...localRoomPatch };
   }, [state.room, localRoomPatch]);
 
-  // Drop optimistic values as soon as the server snapshot confirms them. This
-  // prevents the start timestamp/cursor from masking later realtime updates.
+  // Drop optimistic values as soon as the server snapshot confirms them.
   useEffect(() => {
     if (!state.room) return;
     setLocalRoomPatch((prev) => {
       const next = { ...prev };
       let changed = false;
       for (const key of Object.keys(prev) as (keyof Room)[]) {
-        if (key === "phase_started_at" || key === "started_at") {
-          const serverTime = state.room?.[key] ? new Date(state.room[key] as string).getTime() : 0;
-          const patchTime = prev[key] ? new Date(prev[key] as string).getTime() : 0;
-          if (Math.abs(serverTime - patchTime) < 2500) {
-            delete next[key];
-            changed = true;
-          }
-        } else if (state.room?.[key] === prev[key]) {
+        if (JSON.stringify(state.room?.[key]) === JSON.stringify(prev[key])) {
           delete next[key];
           changed = true;
         }
@@ -108,6 +86,15 @@ function HostRoom() {
       return changed ? next : prev;
     });
   }, [state.room]);
+
+  // Scoreboard length lives on the room so players' phones count down the
+  // same time. The local value keeps the host's own pacing if saving fails.
+  const [delayOverride, setDelayOverride] = useState<number | null>(null);
+  const interQuestionSec = delayOverride ?? Math.round((room?.board_ms ?? BOARD_MS) / 1000);
+  const setInterQuestionSec = (sec: number) => {
+    setDelayOverride(sec);
+    void patchRoom({ board_ms: sec * 1000 });
+  };
 
   const { quiz, questions, players: rawPlayers, answers } = state;
   const rawPhase = useMemo(
@@ -130,7 +117,7 @@ function HostRoom() {
     if (rawPhase.kind === "reveal" || rawPhase.kind === "leaderboard") {
       const phaseStartedAt = new Date(room.phase_started_at ?? room.started_at ?? 0).getTime();
       const elapsed = Math.max(0, state.now - phaseStartedAt);
-      const limit = rawPhase.kind === "reveal" ? 2500 : ms;
+      const limit = rawPhase.kind === "reveal" ? REVEAL_MS : ms;
       return { ...rawPhase, msLeft: Math.max(0, limit - elapsed) };
     }
     return rawPhase;
@@ -156,7 +143,8 @@ function HostRoom() {
     const { error } = await supabase
       .from("rooms")
       .update(patch as never)
-      .eq("id", room.id);
+      .eq("id", room.id)
+      .abortSignal(timeoutSignal());
 
     if (error) {
       setLocalRoomPatch((prev) => {
@@ -173,21 +161,14 @@ function HostRoom() {
 
   async function handleStartGame() {
     if (!room) return;
-    const { data, error } = await supabase.rpc("start_room_v2", { p_room_id: room.id });
+    const { data, error } = await supabase
+      .rpc("start_room_v2", { p_room_id: room.id })
+      .abortSignal(timeoutSignal());
     if (error || !data) {
       console.error("Failed to start room:", error);
       return;
     }
-
-    const startedRoom = data as unknown as Room;
-    setLocalRoomPatch({
-      status: startedRoom.status,
-      cursor_index: startedRoom.cursor_index,
-      cursor_phase: startedRoom.cursor_phase,
-      started_at: startedRoom.started_at,
-      phase_started_at: startedRoom.phase_started_at,
-    });
-    await state.refresh();
+    state.acceptRoom(data as unknown as Room);
   }
 
   async function exitGame() {
@@ -201,28 +182,32 @@ function HostRoom() {
 
   // advance_room is idempotent (it only moves from the expected stage), so
   // the auto-advance effect and the watchdog below can both call it safely.
+  // The request times out so a dropped connection can't hold the lock and
+  // stop every later advance.
   const refresh = state.refresh;
+  const acceptRoom = state.acceptRoom;
   const isAdvancingRef = useRef(false);
   const advance = useCallback(
     async (fromIndex: number, fromPhase: CursorPhase) => {
       if (!roomId || isAdvancingRef.current) return;
       isAdvancingRef.current = true;
       try {
-        const { data, error } = await supabase.rpc("advance_room", {
-          p_room_id: roomId,
-          p_expect_index: fromIndex,
-          p_expect_phase: fromPhase,
-        });
+        const { data, error } = await supabase
+          .rpc("advance_room", {
+            p_room_id: roomId,
+            p_expect_index: fromIndex,
+            p_expect_phase: fromPhase,
+          })
+          .abortSignal(timeoutSignal());
         if (error) throw error;
-        if (data) setLocalRoomPatch((prev) => ({ ...prev, ...(data as unknown as Partial<Room>) }));
-        await refresh();
+        if (data) acceptRoom(data as unknown as Room);
       } catch (e) {
         console.error("Failed to advance room:", e);
       } finally {
         isAdvancingRef.current = false;
       }
     },
-    [roomId, refresh],
+    [roomId, acceptRoom],
   );
 
   // Snapshot final standings once the room is over so they survive cleanup.

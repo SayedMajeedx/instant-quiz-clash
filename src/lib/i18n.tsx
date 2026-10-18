@@ -240,6 +240,8 @@ const en: Dict = {
   "play.doubleUsed": "2× used",
   "play.fiftyUsed": "50:50 used",
   "play.powerupFailed": "That power-up isn't available right now",
+  "play.answerClosed": "Too late, that question has closed",
+  "play.answerFailed": "Your answer didn't go through. Tap again.",
   "play.yourTeam": "Team {n}",
 
   "aiGen.tabText": "Paste text",
@@ -624,6 +626,8 @@ const ar: Dict = {
   "play.doubleUsed": "تم الاستخدام",
   "play.fiftyUsed": "تم الاستخدام",
   "play.powerupFailed": "هذه القدرة غير متاحة الآن",
+  "play.answerClosed": "فات الأوان، انتهى وقت هذا السؤال",
+  "play.answerFailed": "لم تصل إجابتك. اضغط مرة أخرى.",
   "play.yourTeam": "الفريق {n}",
 
   "aiGen.tabText": "لصق نص",

@@ -21,6 +21,7 @@ import { ReconnectingBanner } from "@/components/quiz/ReconnectingBanner";
 import { DebugPanel } from "@/components/quiz/DebugPanel";
 
 import { useWakeLock } from "@/hooks/useWakeLock";
+import { timeoutSignal } from "@/lib/request-timeout";
 
 export const Route = createFileRoute("/play/$code")({
   head: () => ({
@@ -128,22 +129,33 @@ function Play() {
 
     const question = phase.question;
 
+    // Times out so a dropped connection can't leave the buttons disabled for
+    // the rest of the game.
     try {
-      const { error } = await supabase.rpc("submit_answer", {
-        p_player_id: session.playerId,
-        p_token: session.token,
-        p_question_id: question.id,
-        p_choice: choice,
-        ...(armedDouble ? { p_powerup: "double" } : {}),
-      });
+      const { error } = await supabase
+        .rpc("submit_answer", {
+          p_player_id: session.playerId,
+          p_token: session.token,
+          p_question_id: question.id,
+          p_choice: choice,
+          ...(armedDouble ? { p_powerup: "double" } : {}),
+        })
+        .abortSignal(timeoutSignal());
       if (!error) {
         setArmedDouble(false);
+        // If this was the last answer, the room can move on without waiting
+        // for the host's screen.
+        state.tick();
         void state.refresh();
       } else {
+        toast.error(
+          error.message?.includes("not active") ? t("play.answerClosed") : t("play.answerFailed"),
+        );
         void state.refresh();
         setOptimisticChoice(null);
       }
     } catch {
+      toast.error(t("play.answerFailed"));
       void state.refresh();
       setOptimisticChoice(null);
     } finally {
@@ -153,11 +165,13 @@ function Play() {
 
   async function activateFifty() {
     if (phase.kind !== "question" || !session || myAnswer || !me || me.used_fifty) return;
-    const { error } = await supabase.rpc("use_fifty_fifty", {
-      p_player_id: session.playerId,
-      p_token: session.token,
-      p_question_id: phase.question.id,
-    });
+    const { error } = await supabase
+      .rpc("use_fifty_fifty", {
+        p_player_id: session.playerId,
+        p_token: session.token,
+        p_question_id: phase.question.id,
+      })
+      .abortSignal(timeoutSignal());
     if (error) {
       toast.error(t("play.powerupFailed"));
       return;
