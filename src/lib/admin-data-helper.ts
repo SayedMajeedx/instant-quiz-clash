@@ -1,5 +1,6 @@
 import { supabase } from "@/integrations/supabase/client";
 import type { LibraryQuiz } from "@/lib/quiz-library";
+import { fetchQuestionCounts } from "@/lib/question-counts";
 
 export type AdminQuizItem = {
   id: string;
@@ -443,9 +444,16 @@ export async function getAllAdminQuizzes(
   }
 
   try {
-    const { data, error } = await (supabase.from("quizzes") as any)
-      .select(withQuestions ? "*, questions(*)" : "*, questions(count)")
-      .order("created_at", { ascending: false });
+    // Counts come from fetchQuestionCounts: questions(count) embeds fail for
+    // anonymous visitors, who can't read every questions column.
+    const [{ data, error }, questionCounts] = await Promise.all([
+      (supabase.from("quizzes") as any)
+        .select(withQuestions ? "*, questions(*)" : "*")
+        .order("created_at", { ascending: false }),
+      withQuestions
+        ? Promise.resolve(new Map<string, number>())
+        : fetchQuestionCounts().catch(() => new Map<string, number>()),
+    ]);
 
     if (!error && Array.isArray(data)) {
       data.forEach((q: any) => {
@@ -456,7 +464,7 @@ export async function getAllAdminQuizzes(
         );
         const dbQuestionCount = withQuestions
           ? (Array.isArray(q.questions) ? q.questions.length : 0)
-          : Number(q.questions?.[0]?.count ?? 0);
+          : (questionCounts.get(q.id) ?? 0);
         const resolvedQuestions = withQuestions
           ? Array.isArray(q.questions) && q.questions.length > 0
             ? q.questions

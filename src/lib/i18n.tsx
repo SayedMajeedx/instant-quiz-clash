@@ -149,6 +149,7 @@ const en: Dict = {
   "hostPick.create": "Create room",
   "hostPick.creating": "Creating room…",
   "hostPick.needQuestion": "Add at least one question first",
+  "hostPick.incomplete": "Finish or delete the empty questions in this quiz first",
   "hostPick.createError": "Could not create a room, try again",
   "hostPick.checkoutCancelled": "Checkout cancelled. You have not been charged.",
 
@@ -536,6 +537,7 @@ const ar: Dict = {
   "hostPick.create": "ابدأ اللعبة",
   "hostPick.creating": "جارٍ التجهيز…",
   "hostPick.needQuestion": "أضف سؤالًا واحدًا على الأقل أولًا",
+  "hostPick.incomplete": "أكمل الأسئلة الفارغة في هذا الكويز أو احذفها أولًا",
   "hostPick.createError": "تعذّر إنشاء الغرفة، حاول مرة أخرى",
   "hostPick.checkoutCancelled": "تم إلغاء الدفع. لم يتم خصم أي مبلغ.",
 

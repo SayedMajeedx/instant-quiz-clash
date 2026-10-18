@@ -67,6 +67,8 @@ function MyQuizzes() {
         title: t("quizzes.newTitle"),
         personal_library: true,
         personal_library_origin: "created",
+        // Drafts stay out of the public catalog.
+        is_public: false,
       } as never)
       .select()
       .single();

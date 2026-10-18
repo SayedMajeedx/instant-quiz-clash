@@ -13,6 +13,7 @@ import { LanguageToggle } from "@/components/quiz/LanguageToggle";
 import { useI18n } from "@/lib/i18n";
 import { getCategoryIcon } from "@/lib/browse-helpers";
 import { PLAN_PRICES } from "@/lib/pricing";
+import { fetchQuestionCounts } from "@/lib/question-counts";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,17 +51,16 @@ function Home() {
     let active = true;
     void (async () => {
       try {
-        const { data, error } = await supabase
-          .from("quizzes")
-          .select("id,category,questions(count)")
-          .eq("is_public", true);
+        const [{ data, error }, questionCounts] = await Promise.all([
+          supabase.from("quizzes").select("id,category").eq("is_public", true),
+          fetchQuestionCounts(),
+        ]);
 
         if (error) throw error;
         if (!active) return;
         const playable = (data ?? []) as unknown as Array<{
           id: string;
           category: string | null;
-          questions: Array<{ count: number }>;
         }>;
         const categoryCounts = new Map<string, number>();
         for (const quiz of playable) {
@@ -74,7 +74,7 @@ function Home() {
 
         setLibraryStats({
           quizzes: playable.length,
-          questions: playable.reduce((sum, quiz) => sum + (quiz.questions[0]?.count ?? 0), 0),
+          questions: playable.reduce((sum, quiz) => sum + (questionCounts.get(quiz.id) ?? 0), 0),
           categories,
         });
       } catch (error) {
@@ -104,7 +104,7 @@ function Home() {
     try {
       const { data, error } = await supabase
         .from("quizzes")
-        .insert({ user_id: user.id, title: t("quizzes.newTitle") })
+        .insert({ user_id: user.id, title: t("quizzes.newTitle"), is_public: false })
         .select()
         .single();
 

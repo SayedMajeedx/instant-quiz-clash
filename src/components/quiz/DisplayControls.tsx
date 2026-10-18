@@ -97,57 +97,11 @@ function useCast() {
   const [deviceName, setDeviceName] = useState<string | null>(null);
   const connectionRef = useRef<PresentationConnection | null>(null);
 
+  // The Google Cast SDK is not used: its default receiver plays media files and
+  // cannot show this page. Casting goes through the Presentation API or Chrome's
+  // own Cast menu instead.
   useEffect(() => {
     setApple(isAppleBrowser());
-
-    // Initialize Google Cast Sender SDK callback if on browser
-    if (typeof window !== "undefined") {
-      const win = window as unknown as {
-        __onGCastApiAvailable?: (isAvailable: boolean) => void;
-        cast?: {
-          framework?: {
-            CastContext?: {
-              getInstance: () => {
-                setOptions: (opts: unknown) => void;
-              };
-            };
-          };
-        };
-        chrome?: {
-          cast?: {
-            media?: {
-              DEFAULT_MEDIA_RECEIVER_APP_ID?: string;
-            };
-            AutoJoinPolicy?: {
-              ORIGIN_SCOPED?: string;
-            };
-          };
-        };
-      };
-
-      win.__onGCastApiAvailable = (isAvailable: boolean) => {
-        if (isAvailable && win.cast?.framework && win.chrome?.cast) {
-          try {
-            const context = (win.cast.framework as any).CastContext.getInstance();
-            context.setOptions({
-              receiverApplicationId: win.chrome.cast.media?.DEFAULT_MEDIA_RECEIVER_APP_ID || "CC1AD845",
-              autoJoinPolicy: win.chrome.cast.AutoJoinPolicy?.ORIGIN_SCOPED,
-            });
-          } catch (err) {
-            console.warn("Cast SDK setup error:", err);
-          }
-        }
-      };
-
-      // Load Google Cast Sender SDK if missing
-      if (!document.getElementById("google-cast-sdk")) {
-        const script = document.createElement("script");
-        script.id = "google-cast-sdk";
-        script.src = "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1";
-        script.async = true;
-        document.body.appendChild(script);
-      }
-    }
   }, []);
 
   const startCast = useCallback(async () => {
@@ -231,33 +185,9 @@ export function DisplayControls({ className }: { className?: string }) {
   }
 
   async function handleTriggerChromecast() {
-    const win = window as unknown as {
-      cast?: {
-        framework?: {
-          CastContext?: {
-            getInstance: () => {
-              requestSession: () => Promise<unknown>;
-            };
-          };
-        };
-      };
-      PresentationRequest?: PresentationRequestCtor;
-    };
+    const win = window as unknown as { PresentationRequest?: PresentationRequestCtor };
 
-    // 1. Try Google Cast Framework SDK session
-    if (win.cast?.framework?.CastContext) {
-      try {
-        const context = win.cast.framework.CastContext.getInstance();
-        await context.requestSession();
-        toast.success(t("cast.castingTo", { name: "Chromecast / Google TV" }));
-        setModalOpen(false);
-        return;
-      } catch (err) {
-        console.warn("Cast SDK session request failed or cancelled:", err);
-      }
-    }
-
-    // 2. Try Web Presentation Request API
+    // 1. Try Web Presentation Request API
     const ctor = win.PresentationRequest;
     if (typeof ctor === "function") {
       try {
@@ -271,7 +201,7 @@ export function DisplayControls({ className }: { className?: string }) {
       }
     }
 
-    // 3. Fallback guidance toast if browser requires right-click -> Cast
+    // 2. Fallback guidance toast if browser requires right-click -> Cast
     toast.info(
       lang === "ar"
         ? "للبث المباشر عبر Google Chrome: انقر بزر الماوس الأيمن في أي مكان بالشاشة واختر «بث... / Cast...» للاتصال بـ Chromecast أو التلفزيون."

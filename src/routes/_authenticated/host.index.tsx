@@ -107,6 +107,11 @@ function HostCreate() {
         void refreshSub();
         return;
       }
+      if (error.message?.includes("incomplete questions")) {
+        setBusy(false);
+        toast.error(t("hostPick.incomplete"));
+        return;
+      }
       if (error.code !== "23505") break;
     }
     setBusy(false);

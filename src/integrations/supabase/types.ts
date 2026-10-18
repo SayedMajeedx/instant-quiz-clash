@@ -928,6 +928,13 @@ export type Database = {
         Returns: boolean
       }
       record_quiz_play: { Args: { p_source_id: string }; Returns: number }
+      quiz_question_counts: {
+        Args: never
+        Returns: {
+          question_count: number
+          quiz_id: string
+        }[]
+      }
       room_answers: {
         Args: { p_player_id: string; p_room_id: string; p_token: string }
         Returns: {
