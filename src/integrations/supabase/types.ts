@@ -567,7 +567,6 @@ export type Database = {
       rooms: {
         Row: {
           advance_mode: string
-          board_ms: number
           code: string
           created_at: string
           cursor_index: number
@@ -585,7 +584,6 @@ export type Database = {
         }
         Insert: {
           advance_mode?: string
-          board_ms?: number
           code: string
           created_at?: string
           cursor_index?: number
@@ -603,7 +601,6 @@ export type Database = {
         }
         Update: {
           advance_mode?: string
-          board_ms?: number
           code?: string
           created_at?: string
           cursor_index?: number
@@ -804,7 +801,6 @@ export type Database = {
         }
         Returns: {
           advance_mode: string
-          board_ms: number
           code: string
           created_at: string
           cursor_index: number
@@ -888,7 +884,6 @@ export type Database = {
         Args: { p_code: string }
         Returns: {
           advance_mode: string
-          board_ms: number
           code: string
           created_at: string
           cursor_index: number
@@ -1026,39 +1021,6 @@ export type Database = {
         SetofOptions: {
           from: "*"
           to: "answers"
-          isOneToOne: true
-          isSetofReturn: false
-        }
-      }
-      tick_room: {
-        Args: {
-          p_expect_index: number
-          p_expect_phase: string
-          p_player_id?: string
-          p_room_id: string
-          p_token?: string
-        }
-        Returns: {
-          advance_mode: string
-          board_ms: number
-          code: string
-          created_at: string
-          cursor_index: number
-          cursor_phase: string
-          host_id: string | null
-          id: string
-          phase_started_at: string | null
-          quiz_id: string
-          started_at: string | null
-          status: string
-          team_colors: Json
-          team_count: number
-          team_mode: string
-          team_names: Json
-        }
-        SetofOptions: {
-          from: "*"
-          to: "rooms"
           isOneToOne: true
           isSetofReturn: false
         }
