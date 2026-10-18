@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792325281831,
+      "tag": "0000_scope_quiz_play_stats_select",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792325304133,
+      "tag": "0001_quiz_play_stats_select_use_private_is_admin",
+      "breakpoints": true
+    }
+  ]
+}
